@@ -1,0 +1,25 @@
+# 敏感資訊
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Logs
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows Task Scheduler XML（含路徑，不適合共用）
+scripts/*.xml
+
+# 暫存
+*.tmp
+*.bak

@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "date": "2026-06-01",
+      "mode": "paper",
+      "topics": [
+        "AI置信幾何 arXiv2605.16824",
+        "量子電腦1萬位元 arXiv2603.28627",
+        "腸腦軸蛋白質迴路",
+        "大氣胺類成核 arXiv2605.25795",
+        "電腦視覺DoE arXiv2605.00832",
+        "LEIA材料模擬 arXiv2605.28368"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "mode": "paper",
+      "topics": [
+        "神經記憶粒線體 day0602-neuro-memory",
+        "CRISPR基因編輯 day0602-bio-crispr",
+        "暗物質物理 day0602-phys-darkmatter",
+        "海洋CO2鹼化 day0602-ocean-co2",
+        "機器手UniHM day0602-robot-unihm",
+        "AI安全推理SaRO arXiv2504.09420"
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "mode": "paper",
+      "topics": [
+        "AI模型合併ResMerge arXiv2606.02252",
+        "量子凝聚態物理模擬 arXiv2606.02721",
+        "神經形態計算星狀細胞 arXiv2606.01841",
+        "氣候熱浪持續機制 arXiv2606.02005",
+        "AI逆向材料設計 arXiv2606.02507",
+        "Eyettention II眼球軌跡預測 arXiv2606.01964"
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "mode": "weekend",
+      "topics": [
+        "章魚學會用鏡子找食物",
+        "系外行星天氣由磁場驅動",
+        "ADHD大腦清醒時也在偷偷「小睡」",
+        "深海探勘發現24個新物種含全新超科",
+        "北極熊正在遺傳層面適應氣候暖化",
+        "AI全程設計的冠狀病毒疫苗首次人體試驗"
+      ]
+    }
+  ]
+}
