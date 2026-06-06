@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-06",
+  "mode": "weekend",
+  "paper_date": "2026-06-06",
+  "generated_at": "2026-06-06",
+  "cards": [
+    {
+      "id": "nature-2606a",
+      "domain": "nature",
+      "day": "2026-06-06",
+      "author": "Dartmouth College / 2026",
+      "ref": "Current Biology 2026",
+      "url": "https://www.sciencedaily.com/news/top/science/",
+      "color": "#fbd38d",
+      "title": {
+        "zh-TW": "章魚學會用鏡子找食物",
+        "en": "Octopuses Learn to Use Mirrors to Locate Food",
+        "zh-CN": "章鱼学会用镜子找食物",
+        "ja": "タコが鏡を使って食べ物を見つけることを学ぶ",
+        "ko": "문어가 거울을 이용해 먹이를 찾는 법을 배우다"
+      },
+      "tag": {
+        "zh-TW": "🐠 自然生物",
+        "en": "🐠 Nature & Wildlife",
+        "zh-CN": "🐠 自然生物",
+        "ja": "🐠 自然生物",
+        "ko": "🐠 자연 생물"
+      },
+      "tech": {
+        "zh-TW": "達特茅斯學院研究人員發現，章魚能學會使用鏡子來定位藏在身後的食物。這種鏡像認知能力此前只在脊椎動物中觀察到，如哺乳動物和鳥類。章魚的神經系統大多分布在八條腕上，卻展現出令人驚訝的視覺空間整合能力。",
+        "en": "Researchers at Dartmouth College found that octopuses can learn to use mirrors to locate food hidden behind them. This mirror-based spatial cognition was previously observed only in vertebrates like mammals and birds. Remarkably, most of an octopus's neurons are distributed across its eight arms, yet it shows surprising visual-spatial integration.",
+        "zh-CN": "达特茅斯学院研究人员发现，章鱼能学会使用镜子来定位藏在身后的食物。这种镜像认知能力此前只在脊椎动物中被观察到，如哺乳动物和鸟类。章鱼的神经系统大多分布在八条触手上，却展现出令人惊讶的视觉空间整合能力。",
+        "ja": "ダートマス大学の研究者たちは、タコが鏡を使って背後に隠された食べ物を見つけることを学べることを発見しました。この鏡を利用した空間認知能力は、これまで哺乳類や鳥類などの脊椎動物でのみ観察されていました。タコの神経細胞の大部分が8本の腕に分散しているにもかかわらず、驚異的な視覚空間統合能力を示しています。",
+        "ko": "다트머스 대학 연구진은 문어가 거울을 이용해 뒤에 숨겨진 먹이를 찾는 법을 배울 수 있다는 것을 발견했습니다. 이 거울 기반 공간 인지 능력은 이전까지 포유류와 조류 같은 척추동물에서만 관찰되었습니다. 문어의 신경세포 대부분이 여덟 개의 팔에 분산되어 있음에도 놀라운 시각-공간 통합 능력을 보입니다."
+      },
+      "plain": {
+        "zh-TW": "章魚在鏡子前，能聰明地利用鏡中反射找到藏起來的食物──這種推理能力連很多人都沒想到牠們有！",
+        "en": "Octopuses can look in a mirror and cleverly use the reflection to find hidden food—a reasoning ability most people never expected from them!",
+        "zh-CN": "章鱼能聪明地利用镜中反射找到藏起来的食物——这种推理能力连很多人都没想到它们会有！",
+        "ja": "タコは鏡を見て、映った反射を巧みに使って隠された食べ物を見つけることができます。多くの人が予想もしなかった推理能力です！",
+        "ko": "문어는 거울을 보고 반사를 영리하게 활용해 숨겨진 먹이를 찾을 수 있습니다. 대부분의 사람들이 예상하지 못했던 추론 능력입니다!"
+      },
+      "insight": {
+        "zh-TW": "💡 智慧並非脊椎動物的專利！章魚的「分散式大腦」挑戰了我們對認知演化的理解，暗示高等思維可以在截然不同的神經架構中獨立演化出來。",
+        "en": "💡 Intelligence is not exclusive to vertebrates! The octopus's 'distributed brain' challenges our understanding of cognitive evolution, suggesting advanced thinking can independently emerge in vastly different neural architectures.",
+        "zh-CN": "💡 智慧并非脊椎动物的专利！章鱼的「分散式大脑」挑战了我们对认知演化的理解，暗示高等思维可以在截然不同的神经架构中独立演化出来。",
+        "ja": "💡 知性は脊椎動物の専売特許ではありません！タコの「分散型脳」は認知進化に関する私たちの理解に挑戦し、高度な思考が全く異なる神経アーキテクチャで独立して生まれ得ることを示唆しています。",
+        "ko": "💡 지능은 척추동물만의 전유물이 아닙니다! 문어의 '분산형 뇌'는 인지 진화에 대한 우리의 이해에 도전하며, 고급 사고가 전혀 다른 신경 구조에서 독립적으로 발생할 수 있음을 시사합니다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fbd38d22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fbd38d\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🐠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fbd38d\" font-weight=\"bold\">自然生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">章魚學會用鏡子找食物...</text>\n</svg>"
+    },
+    {
+      "id": "space-2606b",
+      "domain": "space",
+      "day": "2026-06-06",
+      "author": "ESA / Nature Astronomy 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://www.sciencedaily.com/news/space_time/astronomy/",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "系外行星天氣由磁場驅動",
+        "en": "Exoplanet Weather Systems Driven by Magnetic Fields",
+        "zh-CN": "系外行星天气由磁场驱动",
+        "ja": "系外惑星の気象は磁場によって駆動されている",
+        "ko": "외계 행성 날씨 시스템이 자기장으로 구동된다"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Space & Astronomy",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 宇宙天文",
+        "ko": "🌌 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "天文學家研究遙遠系外行星的風速時，發現其天氣系統由磁場驅動，而非僅由溫差和大氣壓力決定。這提供了迄今最有力的系外行星存在磁場的證據。磁場可保護大氣層不被恆星風侵蝕，對行星宜居性至關重要。",
+        "en": "Astronomers studying wind speeds on distant exoplanets discovered that weather systems are driven by magnetic fields, not just temperature gradients and atmospheric pressure. This provides among the best evidence yet for magnetic fields on exoplanets. Magnetic fields can shield atmospheres from stellar wind erosion—critical for planetary habitability.",
+        "zh-CN": "天文学家研究遥远系外行星的风速时，发现其天气系统由磁场驱动，而非仅由温差和大气压力决定。这提供了迄今最有力的系外行星存在磁场的证据。磁场可保护大气层不被恒星风侵蚀，对行星宜居性至关重要。",
+        "ja": "遠くの系外惑星の風速を研究した天文学者たちは、気象システムが温度差や気圧だけでなく磁場によって駆動されていることを発見しました。これは系外惑星の磁場存在に関するこれまでで最も有力な証拠を提供します。磁場は大気が恒星風によって侵食されるのを防ぎ、惑星の居住可能性にとって重要です。",
+        "ko": "먼 외계 행성의 풍속을 연구한 천문학자들은 날씨 시스템이 온도 차이와 대기압뿐만 아니라 자기장에 의해 구동된다는 것을 발견했습니다. 이는 외계 행성의 자기장 존재에 대한 지금까지 가장 강력한 증거를 제공합니다. 자기장은 대기를 항성풍의 침식으로부터 보호하며, 행성 거주 가능성에 매우 중요합니다."
+      },
+      "plain": {
+        "zh-TW": "太陽系外的行星也有天氣，而且是「磁場天氣」——這像是宇宙在提醒我們，地球之外可能有比我們想像中更多的宜居世界！",
+        "en": "Planets beyond our solar system have weather too—and it's 'magnetic weather'—as if the universe is hinting that there might be more potentially habitable worlds out there than we imagined!",
+        "zh-CN": "太阳系外的行星也有天气，而且是「磁场天气」——这像是宇宙在提醒我们，地球之外可能有比我们想象中更多的宜居世界！",
+        "ja": "太陽系外の惑星にも天気があり、しかもそれは「磁場天気」です。まるで宇宙が、地球の外に私たちが想像するより多くの居住可能な世界があるかもしれないとほのめかしているようです！",
+        "ko": "태양계 너머의 행성에도 날씨가 있으며, 그것은 '자기장 날씨'입니다. 마치 우주가 우리가 상상하는 것보다 더 많은 거주 가능한 세계가 있을지도 모른다고 암시하는 것 같습니다!"
+      },
+      "insight": {
+        "zh-TW": "💡 找到系外行星磁場的間接證據，代表我們評估「外星生命宜居條件」又前進了一大步——磁場是地球生命的重要保護傘，也可能是外星生命的必要條件。",
+        "en": "💡 Indirect evidence of exoplanet magnetic fields marks a major step in assessing conditions for extraterrestrial life—magnetic fields shield Earth life from radiation, and may be a prerequisite for life elsewhere.",
+        "zh-CN": "💡 找到系外行星磁场的间接证据，代表我们评估「外星生命宜居条件」又前进了一大步——磁场是地球生命的重要保护伞，也可能是外星生命的必要条件。",
+        "ja": "💡 系外惑星の磁場の間接的証拠を見つけたことは、「地球外生命の居住可能条件」の評価において大きな前進を意味します。磁場は地球の生命を放射線から守る重要な盾であり、他の場所の生命にも必要条件かもしれません。",
+        "ko": "💡 외계 행성 자기장의 간접 증거 발견은 '외계 생명 거주 가능 조건' 평가에서 큰 발전을 의미합니다. 자기장은 지구 생명체를 방사선으로부터 보호하는 중요한 방패이며, 다른 곳의 생명체에도 필수 조건일 수 있습니다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">系外行星天氣由磁場驅動...</text>\n</svg>"
+    },
+    {
+      "id": "health-2606c",
+      "domain": "health",
+      "day": "2026-06-06",
+      "author": "Neuroscience Research / 2026",
+      "ref": "Nature Neuroscience 2026",
+      "url": "https://www.massgeneralbrigham.org/en/about/newsroom/articles/2026-predictions-about-neurology",
+      "color": "#fc8181",
+      "title": {
+        "zh-TW": "ADHD大腦清醒時也在偷偷「小睡」",
+        "en": "ADHD Brains Slip Into Sleep-Like Episodes While Awake",
+        "zh-CN": "ADHD大脑清醒时也在偷偷「小睡」",
+        "ja": "ADHDの脳は起きている間も睡眠に似た状態に入っている",
+        "ko": "ADHD 뇌는 깨어 있는 동안에도 수면 유사 상태에 빠진다"
+      },
+      "tag": {
+        "zh-TW": "🏥 醫療健康",
+        "en": "🏥 Health & Medicine",
+        "zh-CN": "🏥 医疗健康",
+        "ja": "🏥 医療健康",
+        "ko": "🏥 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "研究人員發現ADHD患者難以維持專注的原因可能有新解釋：他們的大腦即使在清醒狀態下，也會短暫進入類似睡眠的腦波活動模式。這些「微睡眠」片段會打斷認知處理，解釋了為何ADHD患者即便想專心也常常「神游」。腦電圖顯示這些片段只持續幾毫秒至數秒。",
+        "en": "Researchers discovered a new explanation for why ADHD patients struggle to maintain focus: their brains slip into brief sleep-like brainwave activity even while awake. These microsleep episodes interrupt cognitive processing, explaining why ADHD individuals often zone out even when they want to concentrate. EEG readings show these episodes last from milliseconds to a few seconds.",
+        "zh-CN": "研究人员发现ADHD患者难以维持专注的原因可能有新解释：他们的大脑即使在清醒状态下，也会短暂进入类似睡眠的脑波活动模式。这些「微睡眠」片段会打断认知处理，解释了为何ADHD患者即便想专心也常常「神游」。脑电图显示这些片段只持续几毫秒至数秒。",
+        "ja": "研究者たちは、ADHDの患者が集中力を維持するのに苦労する理由についての新しい説明を発見しました。彼らの脳は起きている状態でも、睡眠に似た脳波活動パターンに短時間入ることがあります。これらのマイクロスリープエピソードが認知処理を中断させ、ADHDの人が集中しようとしてもぼーっとする理由を説明しています。",
+        "ko": "연구자들은 ADHD 환자가 집중력을 유지하기 어려운 이유에 대한 새로운 설명을 발견했습니다. 그들의 뇌는 깨어 있는 상태에서도 수면과 유사한 뇌파 활동 패턴에 잠깐 빠져듭니다. 이 미세수면 에피소드가 인지 처리를 방해하여, ADHD를 가진 사람들이 집중하려 해도 자주 멍해지는 이유를 설명합니다."
+      },
+      "plain": {
+        "zh-TW": "有ADHD的人不是「懶」或「不努力」——他們的大腦在清醒時就像在打盹，這不是意志力的問題，而是神經科學可以量測到的現象！",
+        "en": "People with ADHD are not lazy or not trying—their brains are literally dozing off while awake. It is not a willpower issue; it is a measurable neuroscience phenomenon!",
+        "zh-CN": "有ADHD的人不是「懒」或「不努力」——他们的大脑在清醒时就像在打盹，这不是意志力的问题，而是神经科学可以量测到的现象！",
+        "ja": "ADHDを持つ人は怠け者でも努力不足でもありません。彼らの脳は起きている間に文字通り居眠りしているのです。これは意志力の問題ではなく、神経科学で測定できる現象です！",
+        "ko": "ADHD를 가진 사람들은 게으른 것도 노력하지 않는 것도 아닙니다. 그들의 뇌는 말 그대로 깨어 있는 동안 졸고 있습니다. 의지력의 문제가 아니라 신경과학으로 측정할 수 있는 현상입니다!"
+      },
+      "insight": {
+        "zh-TW": "💡 這個發現可能徹底改變ADHD的治療方向——從「加強注意力」轉向「調節睡眠-清醒切換機制」，也有助於消除社會對ADHD患者的誤解與偏見。",
+        "en": "💡 This discovery may revolutionize ADHD treatment—shifting from boosting attention to regulating the sleep-wake switching mechanism, while also helping eliminate social stigma around ADHD.",
+        "zh-CN": "💡 这个发现可能彻底改变ADHD的治疗方向——从「加强注意力」转向「调节睡眠-清醒切换机制」，也有助于消除社会对ADHD患者的误解与偏见。",
+        "ja": "💡 この発見はADHDの治療方針を根本的に変える可能性があります。注意力を高めるから睡眠・覚醒切り替えメカニズムを調整するへのシフトであり、ADHDに対する社会的偏見を解消するのにも役立ちます。",
+        "ko": "💡 이 발견은 ADHD 치료 방향을 혁신적으로 바꿀 수 있습니다. 주의력 향상에서 수면-각성 전환 메커니즘 조절로의 전환이며, ADHD에 대한 사회적 편견을 없애는 데도 도움이 됩니다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fc818122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fc8181\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🏥</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fc8181\" font-weight=\"bold\">醫療健康</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">ADHD大腦清醒時也在偷...</text>\n</svg>"
+    },
+    {
+      "id": "ocean-2606d",
+      "domain": "ocean",
+      "day": "2026-06-06",
+      "author": "Natural History Museum / 2026",
+      "ref": "ZooKeys 2026",
+      "url": "https://www.nhm.ac.uk/discover/news/2026/march/dozens-deep-sea-species-discovered-new-crustaceans-named.html",
+      "color": "#76e4f7",
+      "title": {
+        "zh-TW": "深海探勘發現24個新物種含全新超科",
+        "en": "Deep-Sea Expedition Uncovers 24 New Species Including a New Superfamily",
+        "zh-CN": "深海探勘发现24个新物种含全新超科",
+        "ja": "深海探査で新超科を含む24の新種を発見",
+        "ko": "심해 탐사에서 새로운 상과 포함 24종 신종 발견"
+      },
+      "tag": {
+        "zh-TW": "🦈 海洋生物",
+        "en": "🦈 Ocean & Marine Life",
+        "zh-CN": "🦈 海洋生物",
+        "ja": "🦈 海洋生物",
+        "ko": "🦈 해양 생물"
+      },
+      "tech": {
+        "zh-TW": "在太平洋克拉里昂-克利珀頓帶（CCZ）進行的深海探勘中，科學家發現了24種全新的片腳類甲殼動物，其中包含一個過去從未記錄過的全新超科。CCZ 面積約600萬平方公里，是採礦業覬覦的深海錳結核礦區。此發現突顯深海生態系統的豐富多樣性，以及在採礦前充分調查的迫切性。",
+        "en": "During a deep-sea expedition in the Pacific Ocean's Clarion-Clipperton Zone (CCZ), scientists discovered 24 previously unknown amphipod crustacean species, including one entirely new superfamily never recorded before. The CCZ covers around six million square kilometres and is coveted by mining interests for its polymetallic nodules. The discovery highlights the rich biodiversity of deep-sea ecosystems and the urgency of surveys before mining begins.",
+        "zh-CN": "在太平洋克拉里昂-克利珀顿带（CCZ）进行的深海探勘中，科学家发现了24种全新的片脚类甲壳动物，其中包含一个过去从未记录过的全新超科。CCZ面积约600万平方公里，是采矿业觊觎的深海锰结核矿区。此发现突显深海生态系统的丰富多样性，以及在采矿前充分调查的迫切性。",
+        "ja": "太平洋のクラリオン・クリッパートン帯（CCZ）での深海探査中に、科学者たちはこれまで記録されたことのない新しい超科を含む24種の未知の端脚類甲殻動物を発見しました。CCZは約600万平方キロメートルの広大な海域で、多金属団塊の採掘が検討されています。この発見は深海生態系の豊かな生物多様性と、採掘前に十分な調査を行う緊急性を浮き彫りにしています。",
+        "ko": "태평양 클라리온-클리퍼튼 지대(CCZ)에서 실시된 심해 탐사 중, 과학자들은 이전에 기록된 적 없는 새로운 상과를 포함하여 24종의 미지의 단각류 갑각동물을 발견했습니다. CCZ는 약 600만 평방킬로미터에 달하는 광대한 해역으로 다금속 단괴 채굴이 검토되고 있습니다. 이 발견은 심해 생태계의 풍부한 생물 다양성과 채굴 전 충분한 조사의 긴박성을 부각시킵니다."
+      },
+      "plain": {
+        "zh-TW": "我們對深海的了解程度還不如月球表面！這次發現一個從沒人見過的全新生物「超科」，提醒我們地球上還有無數等待發現的神秘物種。",
+        "en": "We know less about the deep ocean than the surface of the Moon! This discovery of a completely new biological superfamily reminds us that countless mysterious species are still waiting to be found on Earth.",
+        "zh-CN": "我们对深海的了解程度还不如月球表面！这次发现一个从没人见过的全新生物「超科」，提醒我们地球上还有无数等待发现的神秘物种。",
+        "ja": "私たちは深海について月面よりも知識が少ないのです！完全に新しい生物の超科を発見したことは、地球上にはまだ無数の謎の種が発見を待っていることを思い出させてくれます。",
+        "ko": "우리는 달 표면보다 심해에 대해 더 모릅니다! 완전히 새로운 생물학적 상과 발견은 지구에 아직도 무수한 신비로운 종들이 발견을 기다리고 있다는 것을 상기시켜 줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 深海採礦熱潮正在加速，但科學家擔憂人類還沒了解清楚就先破壞了這些生態系。24個新物種的發現是一記警鐘：讓科學跑在破壞前面！",
+        "en": "💡 Deep-sea mining is accelerating, but scientists worry humans may destroy these ecosystems before understanding them. The discovery of 24 new species is a wake-up call: let science run ahead of destruction!",
+        "zh-CN": "💡 深海采矿热潮正在加速，但科学家担忧人类还没了解清楚就先破坏了这些生态系。24个新物种的发现是一记警钟：让科学跑在破坏前面！",
+        "ja": "💡 深海採掘ブームが加速していますが、科学者たちは人間がこれらの生態系を理解する前に破壊してしまうことを心配しています。24種の新種発見は警鐘です：科学を破壊より先に進めましょう！",
+        "ko": "💡 심해 채굴 붐이 가속화되고 있지만, 과학자들은 인간이 이 생태계를 이해하기 전에 파괴할 수 있다고 우려합니다. 24종의 신종 발견은 경종입니다: 파괴보다 과학이 앞서 나가게 합시다!"
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#76e4f722\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#76e4f7\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🦈</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#76e4f7\" font-weight=\"bold\">海洋生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">深海探勘發現24個新物種...</text>\n</svg>"
+    },
+    {
+      "id": "bio-2606e",
+      "domain": "bio",
+      "day": "2026-06-06",
+      "author": "Climate Science / Yale / 2026",
+      "ref": "Science 2026",
+      "url": "https://news.yale.edu/2026/05/21/wildlife-watching-us-too-and-changing-their-behavior-response",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "北極熊正在遺傳層面適應氣候暖化",
+        "en": "Polar Bears Are Genetically Adapting to Climate Warming",
+        "zh-CN": "北极熊正在遗传层面适应气候暖化",
+        "ja": "ホッキョクグマが遺伝的に気候温暖化に適応しつつある",
+        "ko": "북극곰이 기후 온난화에 유전적으로 적응하고 있다"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "研究人員識別出北極熊族群中的遺傳轉變，這些變化可能幫助牠們應對北極暖化的環境。科學家認為北極熊未來可能更依賴植物性食物，因為海冰融化使獵捕海豹越來越困難。這些遺傳適應包括新陳代謝和消化效率的改變，反映出演化壓力正在實時發生。",
+        "en": "Researchers have identified genetic shifts in polar bear populations that may help them cope with warming Arctic conditions. Scientists believe polar bears may increasingly rely on vegetation for caloric needs as melting sea ice makes hunting seals harder. These genetic adaptations include changes in metabolism and digestive efficiency, reflecting real-time evolutionary pressure.",
+        "zh-CN": "研究人员识别出北极熊族群中的遗传转变，这些变化可能帮助它们应对北极暖化的环境。科学家认为北极熊未来可能更依赖植物性食物，因为海冰融化使猎捕海豹越来越困难。这些遗传适应包括新陈代谢和消化效率的改变，反映出演化压力正在实时发生。",
+        "ja": "研究者たちはホッキョクグマの個体群における遺伝的変化を特定しました。これらの変化は北極の温暖化した環境への適応を助ける可能性があります。科学者たちは、溶ける海氷がアザラシ狩りをますます困難にするにつれ、ホッキョクグマが植物性食料により依存するようになるかもしれないと考えています。",
+        "ko": "연구자들은 북극곰 개체군에서 유전적 변화를 확인했으며, 이는 온난화된 북극 환경에 적응하는 데 도움이 될 수 있습니다. 과학자들은 녹는 해빙으로 인해 바다표범 사냥이 점점 어려워짐에 따라 북극곰이 식물성 먹이에 더 의존하게 될 수 있다고 생각합니다."
+      },
+      "plain": {
+        "zh-TW": "北極熊不只是氣候變遷的受害者，牠們的基因正在悄悄改變以適應新環境——這場「實時演化」讓科學家又驚又憂。",
+        "en": "Polar bears are not just victims of climate change—their genes are quietly shifting to adapt to the new environment. This real-time evolution both amazes and worries scientists.",
+        "zh-CN": "北极熊不只是气候变迁的受害者，它们的基因正在悄悄改变以适应新环境——这场「实时演化」让科学家又惊又忧。",
+        "ja": "ホッキョクグマは気候変動の被害者であるだけでなく、その遺伝子が新しい環境に適応するために静かに変化しています。このリアルタイム進化は科学者たちを驚かせると同時に懸念させています。",
+        "ko": "북극곰은 기후 변화의 피해자만이 아닙니다. 그들의 유전자는 새로운 환경에 적응하기 위해 조용히 변화하고 있습니다. 이 실시간 진화는 과학자들을 놀라게 하면서도 걱정시킵니다."
+      },
+      "insight": {
+        "zh-TW": "💡 演化從未停止！這提醒我們，即使面對快速氣候變遷，生命仍在以令人驚嘆的韌性回應。但遺傳適應需要幾十代，遠比氣候暖化的速度慢，北極熊能否跟上，仍是未知數。",
+        "en": "💡 Evolution never stops! This reminds us that even facing rapid climate change, life responds with remarkable resilience. But genetic adaptation takes dozens of generations, far slower than the pace of warming—whether polar bears can keep up remains an open question.",
+        "zh-CN": "💡 演化从未停止！这提醒我们，即使面对快速气候变迁，生命仍在以令人惊叹的韧性回应。但遗传适应需要几十代，远比气候暖化的速度慢，北极熊能否跟上，仍是未知数。",
+        "ja": "💡 進化は止まりません！これは、急速な気候変動に直面しても、生命が驚くべき回復力で応答していることを思い出させます。しかし遺伝的適応には何十世代もかかり、温暖化のペースよりはるかに遅い——ホッキョクグマが追いつけるかどうかはまだわかりません。",
+        "ko": "💡 진화는 멈추지 않습니다! 이는 급격한 기후 변화에 직면해서도 생명이 놀라운 회복력으로 반응하고 있음을 상기시킵니다. 하지만 유전적 적응에는 수십 세대가 걸리며, 온난화 속도보다 훨씬 느립니다. 북극곰이 따라잡을 수 있을지는 여전히 미지수입니다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#48bb7822\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#48bb78\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧬</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#48bb78\" font-weight=\"bold\">生命科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">北極熊正在遺傳層面適應氣...</text>\n</svg>"
+    },
+    {
+      "id": "tech-2606f",
+      "domain": "tech",
+      "day": "2026-06-06",
+      "author": "MIT / Oxford / 2026",
+      "ref": "Nature Medicine 2026",
+      "url": "https://www.sciencing.com/2171796/greatest-scientific-discoveries-2026/",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "AI全程設計的冠狀病毒疫苗首次人體試驗",
+        "en": "First Human Trial of AI-Designed Universal Coronavirus Vaccine",
+        "zh-CN": "AI全程设计的冠状病毒疫苗首次人体试验",
+        "ja": "AI設計のコロナウイルスワクチン初の人体試験",
+        "ko": "AI 설계 범용 코로나바이러스 백신 첫 인체 임상시험"
+      },
+      "tag": {
+        "zh-TW": "📶 科技趣聞",
+        "en": "📶 Tech & Innovation",
+        "zh-CN": "📶 科技趣闻",
+        "ja": "📶 テクノロジー",
+        "ko": "📶 기술 혁신"
+      },
+      "tech": {
+        "zh-TW": "科學家首次完成了一款完全由 AI 電腦模擬設計的廣效冠狀病毒疫苗的人體臨床試驗，並發現安全且耐受性良好。這款疫苗的活性成分從頭到尾由電腦計算設計，無需依賴傳統的病毒培養或抗體篩選流程。AI 能夠同時模擬數百萬種蛋白質結構變體，找出最可能誘發廣效免疫反應的設計。",
+        "en": "Scientists completed the first human clinical trial of a universal coronavirus vaccine whose active component was designed entirely by computer simulations, finding it safe and well tolerated. This vaccine required no traditional virus culturing or antibody screening. AI simultaneously modeled millions of protein structure variants to find the design most likely to trigger a broad immune response.",
+        "zh-CN": "科学家首次完成了一款完全由AI电脑模拟设计的广效冠状病毒疫苗的人体临床试验，并发现安全且耐受性良好。这款疫苗的活性成分从头到尾由电脑计算设计，无需依赖传统的病毒培养或抗体筛选流程。AI能够同时模拟数百万种蛋白质结构变体，找出最可能诱发广效免疫反应的设计。",
+        "ja": "科学者たちは、活性成分が完全にコンピュータシミュレーションで設計された汎用コロナウイルスワクチンの初の人体臨床試験を完了し、安全で忍容性が良好であることを発見しました。このワクチンは従来のウイルス培養や抗体スクリーニングを必要としません。AIは何百万もの蛋白質構造変体を同時にモデル化し、幅広い免疫反応を引き起こす可能性が最も高い設計を見つけました。",
+        "ko": "과학자들은 활성 성분이 완전히 컴퓨터 시뮬레이션으로 설계된 범용 코로나바이러스 백신의 첫 인체 임상시험을 완료했으며, 안전하고 내약성이 좋다는 것을 발견했습니다. 이 백신은 전통적인 바이러스 배양이나 항체 스크리닝이 필요하지 않습니다. AI는 수백만 가지 단백질 구조 변형을 동시에 모델링하여 광범위한 면역 반응을 유발할 가능성이 가장 높은 설계를 찾아냈습니다."
+      },
+      "plain": {
+        "zh-TW": "人類第一次把「疫苗設計」這件事完全交給 AI 來做，然後拿去打進人體——而且成功了！這不只是醫學突破，更是 AI 真正開始「治癒」人類的起點。",
+        "en": "For the first time, humans handed the entire task of vaccine design to AI, then injected it into human bodies—and it worked! This is not just a medical breakthrough; it is the moment AI truly began to heal humanity.",
+        "zh-CN": "人类第一次把「疫苗设计」这件事完全交给AI来做，然后拿去打进人体——而且成功了！这不只是医学突破，更是AI真正开始「治愈」人类的起点。",
+        "ja": "人類は初めてワクチン設計という仕事を完全にAIに委ね、それを人体に投与しました——そして成功しました！これは医学的突破であるだけでなく、AIが本当に人類を癒やし始めた瞬間です。",
+        "ko": "인류는 처음으로 백신 설계라는 작업을 AI에게 완전히 맡기고 그것을 인체에 투여했습니다. 그리고 성공했습니다! 이것은 단순한 의학적 돌파구가 아니라 AI가 진정으로 인류를 치유하기 시작한 순간입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 AI 藥物研發已從「輔助工具」進化為「主設計師」。未來面對新型病毒威脅，AI 或許能在幾週內設計出疫苗候選物，大幅縮短傳統研發所需的幾年時間。",
+        "en": "💡 AI drug development has evolved from an assistant tool to a primary designer. In the future, when facing new virus threats, AI may design vaccine candidates within weeks, dramatically shortening the years required by traditional development.",
+        "zh-CN": "💡 AI药物研发已从「辅助工具」进化为「主设计师」。未来面对新型病毒威胁，AI或许能在几周内设计出疫苗候选物，大幅缩短传统研发所需的几年时间。",
+        "ja": "💡 AI創薬は補助ツールから主要設計者へと進化しました。将来、新型ウイルスの脅威に直面した際、AIは従来の開発に必要な数年間を大幅に短縮して、数週間以内にワクチン候補を設計できるかもしれません。",
+        "ko": "💡 AI 신약 개발은 보조 도구에서 주요 설계자로 진화했습니다. 미래에 새로운 바이러스 위협에 직면할 때, AI는 전통적인 개발에 필요한 수년을 대폭 단축하여 수 주 내에 백신 후보물질을 설계할 수 있을 것입니다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#68d39122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#68d391\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">📶</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#68d391\" font-weight=\"bold\">科技趣聞</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">AI全程設計的冠狀病毒疫...</text>\n</svg>"
+    }
+  ]
+}
