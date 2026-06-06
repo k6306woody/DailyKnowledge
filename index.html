@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>每日新知 · Daily Knowledge Digest</title>
+<style>
+/* ── TOKENS ── */
+:root{--fz:1;
+  --tf:#4dbdb5;--tf-b:#81D8D0;--tf-p:#e0f7f5;--tf-d:#2a8a82;
+  --bg:#f4fcfb;--bg2:#fff;--bg3:#e8f8f6;--su:#fff;
+  --bd:#c8eeeb;--tx:#0e2a28;--tx2:#2a5a55;--tx3:#4a7a76;
+  --tf-tx:#1a6b64;--sh:rgba(77,189,181,.18);
+  --nb:#fff;--hf:#2a8a82;--ht:#4dbdb5;
+}
+[data-theme=dark]{
+  --bg:#081c1b;--bg2:#0d2523;--bg3:#122f2d;--su:#163330;
+  --bd:#1e4542;--tx:#d4f5f2;--tx2:#90d4cf;--tx3:#6abab5;
+  --tf-tx:#81D8D0;--sh:rgba(0,0,0,.45);
+  --nb:#0d2523;--hf:#0d2523;--ht:#163330;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow-x:hidden}
+body{font-family:Georgia,'Noto Serif TC',serif;background:var(--bg);color:var(--tx);transition:background .3s,color .3s}
+a{color:var(--tf-tx);text-decoration:none}
+button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
+
+/* ══════════════════════════════════
+   SPLASH – full-screen Design 3
+══════════════════════════════════ */
+#splash{
+  position:fixed;inset:0;z-index:9999;background:#0a2a28;
+  display:flex;align-items:center;justify-content:center;
+  animation:splashOut .8s ease-in 3.8s forwards;
+}
+@keyframes splashOut{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.04);pointer-events:none;visibility:hidden}}
+#splash.gone{display:none}
+.sp-bg{position:absolute;inset:0;overflow:hidden}
+.sp-bg img{width:100%;height:100%;object-fit:cover;display:block;animation:bgZoom 5s ease-out forwards}
+@keyframes bgZoom{from{transform:scale(1.08);opacity:.75}to{transform:scale(1);opacity:1}}
+.sp-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,30,28,.2) 0%,rgba(8,30,28,.72) 100%)}
+.sp-content{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+.sp-title{color:#fff;font-size:clamp(32px,7vw,68px);font-weight:800;letter-spacing:.5px;text-shadow:0 4px 32px rgba(0,0,0,.45);animation:fadeUp .6s .4s both}
+.sp-sub{color:rgba(255,255,255,.82);font-size:clamp(13px,2.5vw,18px);letter-spacing:1.5px;animation:fadeUp .6s .6s both}
+.sp-date{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);color:#fff;font-size:13px;font-weight:700;padding:8px 26px;border-radius:26px;letter-spacing:1px;animation:fadeUp .6s .85s both;border:1px solid rgba(255,255,255,.25)}
+.sp-hint{color:rgba(255,255,255,.48);font-size:11px;animation:fadeUp .5s 1.1s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══════════════════════════════════
+   MAIN APP
+══════════════════════════════════ */
+#app{animation:appIn .6s 3.5s both}
+@keyframes appIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:var(--nb);border-bottom:1px solid var(--bd);box-shadow:0 2px 16px var(--sh);display:flex;align-items:center;padding:0 16px;height:52px;gap:10px;transition:background .3s}
+.logo{font-size:15px;font-weight:700;color:var(--tf-tx);white-space:nowrap;flex-shrink:0}
+#logo-sub{color:var(--tx3);font-weight:400;font-size:11px}
+.vpills{display:flex;gap:3px;background:var(--bg3);padding:3px;border-radius:18px;flex-shrink:0}
+.vpill{padding:4px 12px;border-radius:14px;font-size:12px;font-weight:600;background:transparent;color:var(--tx2)}
+.vpill.on{background:var(--tf);color:#fff}
+.lpills{display:flex;gap:3px;margin-left:auto;flex-shrink:0}
+.lpill{padding:4px 9px;border-radius:12px;font-size:11px;font-weight:600;background:transparent;color:var(--tx3);border:1.5px solid var(--bd)}
+.lpill.on{border-color:var(--tf);color:var(--tf-tx);background:var(--tf-p)}
+[data-theme=dark] .lpill.on{background:var(--bg3);color:var(--tf-b)}
+.icon-btn{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--bd);background:var(--bg3);color:var(--tx2);font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-btn:hover{border-color:var(--tf);color:var(--tf-tx)}
+
+/* HEADER */
+header{background:linear-gradient(135deg,var(--hf),var(--ht));padding:44px 24px 36px;text-align:center;position:relative;overflow:hidden}
+header::before,header::after{content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.07)}
+header::before{width:240px;height:240px;top:-70px;right:-50px}
+header::after{width:160px;height:160px;bottom:-50px;left:-30px}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.18);color:rgba(255,255,255,.92);font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:4px 16px;border-radius:16px;margin-bottom:14px}
+header h1{font-size:clamp(24px,4.5vw,46px);font-weight:800;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.2);margin-bottom:6px}
+header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
+.datepill{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--tf-d);font-size:12px;font-weight:700;padding:7px 20px;border-radius:28px;margin-top:18px;box-shadow:0 4px 18px rgba(0,0,0,.14)}
+
+/* DAY / CAT nav */
+.subnav{display:flex;gap:8px;justify-content:center;padding:22px 20px 0;flex-wrap:wrap}
+.chip{padding:7px 16px;border-radius:18px;font-size:12px;font-weight:600;background:var(--su);color:var(--tx2);border:1.5px solid var(--bd);cursor:pointer;transition:all .2s}
+.chip.on{background:var(--tf);border-color:var(--tf);color:#fff}
+.dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--tf-b);margin-right:4px;vertical-align:middle}
+.chip.on .dot{background:#fff}
+.catbar{display:none;gap:8px;justify-content:center;padding:22px 20px 0;flex-wrap:wrap}
+.catbar.show{display:flex}
+.cbtn{padding:7px 16px;border-radius:18px;font-size:12px;font-weight:600;background:var(--su);color:var(--tx2);border:1.5px solid var(--bd)}
+.cbtn.on{color:#fff;border-color:transparent}
+.cbtn[data-cat=all].on{background:#4dbdb5}.cbtn[data-cat=ai].on{background:#2a9d8f}
+.cbtn[data-cat=bio].on{background:#52b788}.cbtn[data-cat=arch].on{background:#e9a84c}
+.cbtn[data-cat=phys].on{background:#4a7bbf}.cbtn[data-cat=chem].on{background:#bf5b9b}
+.cbtn[data-cat=fin].on{background:#7dba3a}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:22px;max-width:1020px;margin:24px auto 60px;padding:0 20px}
+.card{background:var(--su);border-radius:18px;border:1.5px solid var(--bd);overflow:hidden;box-shadow:0 4px 18px var(--sh);display:flex;flex-direction:column;cursor:pointer;transition:transform .22s,box-shadow .22s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 32px var(--sh)}
+.card.hide{display:none}
+.card[data-domain=ai]   .stripe{background:#2a9d8f}.card[data-domain=bio]  .stripe{background:#52b788}
+.card[data-domain=arch] .stripe{background:#e9a84c}.card[data-domain=phys] .stripe{background:#4a7bbf}
+.card[data-domain=chem] .stripe{background:#bf5b9b}.card[data-domain=fin]  .stripe{background:#7dba3a}
+.card[data-domain=nature].stripe{background:#2e7d32}.card[data-domain=neuro].stripe{background:#6a1b9a}
+.card[data-domain=health].stripe{background:#b71c1c}.card[data-domain=space].stripe{background:#1a237e}
+.card[data-domain=tech]  .stripe{background:#00695c}.card[data-domain=ocean].stripe{background:#01579b}
+.card[data-domain=ai]   .dtag{color:#2a9d8f;background:rgba(42,157,143,.12)}
+.card[data-domain=bio]  .dtag{color:#52b788;background:rgba(82,183,136,.12)}
+.card[data-domain=arch] .dtag{color:#e9a84c;background:rgba(233,168,76,.12)}
+.card[data-domain=phys] .dtag{color:#4a7bbf;background:rgba(74,123,191,.12)}
+.card[data-domain=chem] .dtag{color:#bf5b9b;background:rgba(191,91,155,.12)}
+.card[data-domain=fin]  .dtag{color:#7dba3a;background:rgba(125,186,58,.12)}
+.card[data-domain=nature].dtag{color:#2e7d32;background:rgba(46,125,50,.12)}
+.card[data-domain=neuro] .dtag{color:#6a1b9a;background:rgba(106,27,154,.12)}
+.card[data-domain=health].dtag{color:#b71c1c;background:rgba(183,28,28,.12)}
+.card[data-domain=space] .dtag{color:#1a237e;background:rgba(26,35,126,.12)}
+.card[data-domain=tech]  .dtag{color:#00695c;background:rgba(0,105,92,.12)}
+.card[data-domain=ocean] .dtag{color:#01579b;background:rgba(1,87,155,.12)}
+.card[data-domain=ai]   .rbtn{background:#2a9d8f}.card[data-domain=bio]  .rbtn{background:#52b788}
+.card[data-domain=arch] .rbtn{background:#e9a84c}.card[data-domain=phys] .rbtn{background:#4a7bbf}
+.card[data-domain=chem] .rbtn{background:#bf5b9b}.card[data-domain=fin]  .rbtn{background:#7dba3a}
+.card[data-domain=nature].rbtn{background:#2e7d32}.card[data-domain=neuro].rbtn{background:#6a1b9a}
+.card[data-domain=health].rbtn{background:#b71c1c}.card[data-domain=space].rbtn{background:#1a237e}
+.card[data-domain=tech]  .rbtn{background:#00695c}.card[data-domain=ocean].rbtn{background:#01579b}
+.stripe{height:5px}
+.illus{padding:16px 18px 2px;display:flex;justify-content:center}
+.illus svg{width:100%;max-width:230px;height:auto}
+.cbody{padding:12px 18px 18px;flex:1;display:flex;flex-direction:column;gap:10px}
+.dtag{display:inline-flex;align-items:center;gap:4px;font-size:calc(10px * var(--fz));font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:8px;width:fit-content}
+.card h2{font-size:calc(15px * var(--fz));font-weight:700;line-height:1.5;color:var(--tx)}
+.intro{font-size:calc(12.5px * var(--fz));color:var(--tx2);line-height:1.7;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.insight{background:var(--bg3);border-left:3px solid var(--tf);border-radius:0 8px 8px 0;padding:8px 12px;font-size:calc(11.5px * var(--fz));color:var(--tf-tx);line-height:1.6;font-style:italic}
+
+/* Search bar */
+.searchbar{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--su);border-bottom:1px solid var(--bd)}
+.searchbar input{flex:1;padding:9px 14px;border-radius:12px;border:1.5px solid var(--bd);background:var(--bg3);color:var(--tx);font-size:14px;outline:none;transition:border-color .2s}
+.searchbar input:focus{border-color:var(--tf)}
+.searchbar input::placeholder{color:var(--tx3)}
+.search-clear{width:28px;height:28px;border-radius:50%;background:var(--bg3);color:var(--tx3);font-size:14px;display:none;align-items:center;justify-content:center;flex-shrink:0}
+.search-clear.show{display:flex}
+#search-count{font-size:11px;color:var(--tx3);font-weight:600;white-space:nowrap}
+
+/* Font size control */
+.fz-ctrl{display:flex;align-items:center;gap:3px}
+.fz-btn{width:28px;height:28px;border-radius:8px;border:1.5px solid var(--bd);background:var(--bg3);color:var(--tx2);font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;flex-shrink:0}
+.fz-btn:hover{background:var(--tf-p);color:var(--tf-d)}
+.fz-btn.active{background:var(--tf);color:#fff;border-color:var(--tf)}
+.fz-s{font-size:10px}.fz-m{font-size:13px}.fz-l{font-size:16px}
+
+[data-theme=dark] .insight{color:var(--tf-b);background:rgba(77,189,181,.08)}
+.cfoot{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--bd)}
+.ref{font-size:calc(10.5px * var(--fz));font-weight:600;color:var(--tx3)}
+.heart-btn{background:none;font-size:18px;padding:2px 6px;border-radius:8px;transition:transform .15s}
+.heart-btn:hover{transform:scale(1.2)}
+.heart-btn.liked{color:#e05}
+.heart-count{font-size:11px;color:var(--tx3);font-weight:600}
+
+/* ══════════════════════════════════
+   MODAL
+══════════════════════════════════ */
+#modal-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
+#modal-overlay.open{display:flex}
+#modal{background:var(--su);border-radius:24px;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,.3);animation:modalIn .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes modalIn{from{opacity:0;transform:scale(.92) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.modal-stripe{height:6px;border-radius:24px 24px 0 0}
+.modal-head{padding:22px 24px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.modal-close{width:32px;height:32px;border-radius:50%;background:var(--bg3);color:var(--tx2);font-size:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.modal-close:hover{background:var(--bd)}
+.modal-body{padding:0 24px 28px}
+.modal-dtag{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:8px;margin-bottom:10px}
+.modal-title{font-size:calc(20px * var(--fz));font-weight:800;line-height:1.4;color:var(--tx);margin-bottom:6px}
+.modal-author{font-size:calc(11px * var(--fz));color:var(--tx3);margin-bottom:16px}
+.modal-section{margin-bottom:18px}
+.modal-section h3{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tf-tx);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+[data-theme=dark] .modal-section h3{color:var(--tf-b)}
+.modal-section p{font-size:calc(13.5px * var(--fz));color:var(--tx2);line-height:1.8}
+.modal-illus{padding:10px 0 6px;display:flex;justify-content:center}
+.modal-illus svg{width:100%;max-width:340px;height:auto}
+.modal-insight{background:var(--bg3);border-left:4px solid var(--tf);border-radius:0 12px 12px 0;padding:12px 16px;font-size:calc(13px * var(--fz));color:var(--tf-tx);line-height:1.7;font-style:italic;margin-bottom:18px}
+[data-theme=dark] .modal-insight{color:var(--tf-b);background:rgba(77,189,181,.08)}
+.modal-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.modal-rbtn{font-size:13px;font-weight:700;padding:10px 22px;border-radius:14px;color:#fff;display:inline-flex;align-items:center;gap:6px}
+.modal-rbtn:hover{opacity:.85;text-decoration:none}
+.modal-heart{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--tx2);background:var(--bg3);padding:9px 16px;border-radius:14px}
+.modal-heart:hover{color:#e05}
+.modal-heart.liked{color:#e05}
+
+/* ══════════════════════════════════
+   RIGHT DRAWER
+══════════════════════════════════ */
+#drawer-toggle{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:300;background:var(--tf);color:#fff;width:40px;padding:14px 0;border-radius:0 12px 12px 0;writing-mode:vertical-lr;letter-spacing:2px;font-size:12px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:6px;box-shadow:4px 0 20px var(--sh)}
+#drawer{position:fixed;left:-320px;top:0;height:100vh;width:300px;background:var(--su);border-right:1.5px solid var(--bd);box-shadow:8px 0 40px var(--sh);z-index:400;transition:left .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding-bottom:30px}
+#drawer.open{left:0}
+.drawer-head{padding:18px 18px 14px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between}
+.drawer-head h3{font-size:14px;font-weight:700;color:var(--tx)}
+.drawer-close{width:28px;height:28px;border-radius:50%;background:var(--bg3);color:var(--tx2);font-size:16px;display:flex;align-items:center;justify-content:center}
+.drawer-tabs{display:flex;border-bottom:1px solid var(--bd)}
+.dtab{flex:1;padding:10px 0;font-size:11px;font-weight:700;text-align:center;color:var(--tx3);background:transparent;border-bottom:2px solid transparent}
+.dtab.on{color:var(--tf-tx);border-color:var(--tf)}
+[data-theme=dark] .dtab.on{color:var(--tf-b)}
+.drawer-section{padding:14px 16px}
+.drawer-section h4{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:10px}
+.filter-item{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:10px;cursor:pointer;transition:background .15s;margin-bottom:3px}
+.filter-item:hover,.filter-item.on{background:var(--bg3)}
+.filter-item.on .fi-label{color:var(--tf-tx);font-weight:700}
+[data-theme=dark] .filter-item.on .fi-label{color:var(--tf-b)}
+.fi-label{font-size:13px;color:var(--tx2)}
+.fi-count{font-size:11px;font-weight:600;color:var(--tx3);background:var(--bg3);padding:2px 8px;border-radius:10px}
+.filter-item.on .fi-count{background:var(--tf-p);color:var(--tf-d)}
+
+
+/* FOOTER */
+footer{background:var(--bg2);border-top:1px solid var(--bd);padding:28px 24px;text-align:center;font-size:12px;color:var(--tx3)}
+footer strong{color:var(--tf-tx)}
+[data-theme=dark] footer strong{color:var(--tf-b)}
+.ftags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+.ftag{padding:3px 10px;border-radius:10px;background:var(--bg3);color:var(--tx2);font-size:10px}
+
+@media(max-width:600px){.nav{padding:0 10px;gap:6px}.lpill{padding:3px 7px;font-size:10px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ══ SPLASH ══ -->
+<div id="splash">
+  <div class="sp-bg">
+    <img src="https://design.canva.ai/2rqd7sW_81Jiny7" alt="每日新知封面"
+         onerror="this.parentElement.style.background='linear-gradient(135deg,#1a5a54,#4dbdb5)'"/>
+  </div>
+  <div class="sp-overlay"></div>
+  <div class="sp-content">
+    <div class="sp-title" id="sp-title">每日新知</div>
+    <div class="sp-sub" id="sp-sub">最新研究 × 多元領域 × 白話解說</div>
+    <div class="sp-date" id="sp-date">📅 2026年5月31日</div>
+    <div class="sp-hint" id="sp-hint">自動進入… · 點擊跳過</div>
+  </div>
+</div>
+
+<!-- ══ APP ══ -->
+<div id="app">
+<nav class="nav">
+  <div class="logo"><span id="logo-main">每日新知</span><small id="logo-sub"> · Daily Digest</small></div>
+  <div class="vpills">
+    <button class="vpill on" id="vday">📅 By Day</button>
+    <button class="vpill" id="vcat">🗂 Category</button>
+  </div>
+  <div class="lpills">
+    <button class="lpill on" data-l="zh-TW">繁中</button>
+    <button class="lpill" data-l="zh-CN">简中</button>
+    <button class="lpill" data-l="ja">日本語</button>
+    <button class="lpill" data-l="ko">한국어</button>
+    <button class="lpill" data-l="en">EN</button>
+  </div>
+  <button class="icon-btn" id="darkbtn">🌙</button>
+    <div class="fz-ctrl" title="字體大小">
+      <button class="fz-btn fz-s" data-fz="0.85">A</button>
+      <button class="fz-btn fz-m active" data-fz="1">A</button>
+      <button class="fz-btn fz-l" data-fz="1.22">A</button>
+    </div>
+</nav>
+
+<header>
+  <div class="eyebrow">Daily Knowledge Digest</div>
+  <h1 id="hl">每日新知</h1>
+  <p class="sub" id="sub">最新研究 × 多元領域 × 白話解說</p>
+  <div class="datepill">📅 <span id="ds">2026年5月31日（週日）</span></div>
+</header>
+
+<div class="subnav" id="daynav"></div>
+<div class="searchbar"><input type="search" id="searchbox" placeholder="🔍 搜尋標題、作者、領域…" oninput="doSearch(this.value)" /><button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button><span id="search-count"></span></div>
+<div class="catbar" id="catbar">
+  <button class="cbtn on" data-cat="all">🌐 <span data-key="catAll">全部</span></button>
+  <button class="cbtn" data-cat="ai">🤖 AI</button>
+  <button class="cbtn" data-cat="bio">🧬 <span data-key="catBio">生醫</span></button>
+  <button class="cbtn" data-cat="arch">🏛️ <span data-key="catArch">建築</span></button>
+  <button class="cbtn" data-cat="phys">⚛️ <span data-key="catPhys">物理</span></button>
+  <button class="cbtn" data-cat="chem">🧪 <span data-key="catChem">化學</span></button>
+  <button class="cbtn" data-cat="fin">💰 <span data-key="catFin">財經</span></button>
+</div>
+
+<!-- CARDS -->
+<div class="grid" id="grid"></div>
+
+<footer>
+  <strong id="ft-title">每日新知 · Daily Knowledge Digest</strong> &nbsp;·&nbsp;
+  <span id="ft-sub">由 Claude AI 整理，僅供教育用途</span>
+  <div class="ftags">
+    <span class="ftag">arXiv</span><span class="ftag">bioRxiv</span>
+    <span class="ftag">ACS Publications</span><span class="ftag">Canva AI</span>
+  </div>
+</footer>
+</div><!-- /app -->
+
+<!-- ══ MODAL ══ -->
+<div id="modal-overlay">
+  <div id="modal">
+    <div class="modal-stripe" id="m-stripe"></div>
+    <div class="modal-head">
+      <div>
+        <div class="modal-dtag" id="m-dtag"></div>
+        <div class="modal-title" id="m-title"></div>
+        <div class="modal-author" id="m-author"></div>
+      </div>
+      <button class="modal-close" id="modal-close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h3>📋 <span data-key="mTech">這篇論文在研究什麼？</span></h3>
+        <p id="m-tech"></p>
+      </div>
+      <div class="modal-illus" id="m-illus"></div>
+      <div class="modal-section">
+        <h3>💬 <span data-key="mPlain">用大白話說</span></h3>
+        <p id="m-plain"></p>
+      </div>
+      <div class="modal-insight" id="m-insight"></div>
+      <div class="modal-foot">
+        <a class="modal-rbtn" id="m-link" target="_blank">📄 <span data-key="read">閱讀原文論文</span></a>
+        <button class="modal-heart" id="m-heart">🤍 <span id="m-hcount">0</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ DRAWER ══ -->
+<div id="drawer-toggle" onclick="toggleDrawer()">☰<br><span id="dt-label">篩選</span></div>
+<div id="drawer">
+  <div class="drawer-head">
+    <h3 id="drawer-title">篩選 / Filter</h3>
+    <button class="drawer-close" onclick="toggleDrawer()">✕</button>
+  </div>
+  <div class="drawer-tabs">
+    <button class="dtab on" data-dtab="date" onclick="switchDTab(this,'date')" id="dtab-date">📅</button>
+    <button class="dtab" data-dtab="cat" onclick="switchDTab(this,'cat')" id="dtab-cat">🗂</button>
+    <button class="dtab" data-dtab="author" onclick="switchDTab(this,'author')" id="dtab-author">👤</button>
+    <button class="dtab" data-dtab="likes" onclick="switchDTab(this,'likes')" id="dtab-likes">❤️</button>
+  </div>
+  <div id="drawer-content"></div>
+</div>
+
+<script>
+// ════════════════════════════════
+// DATA
+// ════════════════════════════════
+let CARDS = [];
+
+async function loadTodayData() {
+  const today = new Date().toISOString().split('T')[0];
+  try {
+    const res = await fetch(`data/${today}.json`);
+    if (res.ok) return await res.json();
+    const hist = await fetch('history.json').then(r => r.json());
+    const last = hist.entries?.[hist.entries.length - 1]?.date;
+    if (last) {
+      const res2 = await fetch(`data/${last}.json`);
+      if (res2.ok) return await res2.json();
+    }
+  } catch(e) { console.error('載入資料失敗', e); }
+  return null;
+}
+
+// ════════════════════════════════
+// TRANSLATIONS
+// ════════════════════════════════
+const T = {
+'zh-TW':{
+  logoMain:'每日新知',logoSub:' · Daily Digest',hl:'每日新知',sub:'最新研究 × 多元領域 × 白話解說',
+  ds:'2026年5月31日（週日）',vday:'📅 依日期',vcat:'🗂 分類',
+  catAll:'全部',catAI:'AI 人工智慧',catBio:'生醫科學',catArch:'建築設計',catPhys:'物理量子',catChem:'化學材料',catFin:'財經金融',
+  read:'閱讀原文論文',mTech:'這篇論文在研究什麼？',mPlain:'用大白話說',
+  ftTitle:'每日新知 · Daily Knowledge Digest',ftSub:'由 Claude AI 整理，僅供教育用途',
+  exportBtn:'匯出後台 CSV',drawerTitle:'篩選 / Filter',dtDate:'日期',dtCat:'分類',dtAuthor:'作者',dtLikes:'喜好',
+  spHint:'自動進入…',
+  cards:{
+    'ai-2602':{tag:'🤖 AI 人工智慧',title:'讓多個 AI 腦袋合體：混合模型視角重新定義 LLM 集成',author:'Jiale Fu et al.（2026）',tech:'傳統 LLM 集成通常對多個模型輸出做平均，但這會模糊各模型在不同 token 位置的強項。本論文提出「混合模型集成」（ME）：在每個 token 生成步驟，隨機從模型池中抽選一個模型決定該 token，而非平均所有模型的機率分佈。這讓整體輸出更連貫多樣，並降低模型間的干擾效應。',plain:'想像五個廚師合作煮一道菜——傳統平均法是把所有人的意見加在一起（半匙鹽+半匙醬+半匙辣…），最後反而什麼味道都不像。這篇論文說：每個步驟只讓一個廚師決定，隨機換手，最後做出的菜更像一道完整料理。',insight:'💡 就像爵士樂即興演奏，每個樂手輪流帶頭，比所有人同時演奏相同旋律更有創意、更好聽。'},
+    'bio-2025':{tag:'🧬 生醫科學',title:'讀懂細胞、設計藥物：AI 從轉錄組反推最佳分子結構',author:'Bremler-Barr et al.（2026）',tech:'論文提出轉錄組導向藥物設計（TBDD）框架，將藥物設計定義為生成式逆問題：給定細胞希望達到的基因表達狀態轉變，讓 AI 反向生成能觸發該變化的分子結構。系統採用擾動條件式分子擴散模型，直接從 RNA 表達數據反推最合適的藥物候選分子。',plain:'傳統找藥：設計分子→試試能不能改變細胞→不行就換。這篇反過來：先告訴 AI 你希望細胞變成什麼樣，讓 AI 直接設計出能觸發那個變化的分子——就像先設好目的地，再讓導航規劃路線。',insight:'💡 這個方法可根據每個患者自己的細胞狀態定製設計藥物，是真正的精準醫療。'},
+    'arch-2505':{tag:'🏛️ 建築設計',title:'生成式 AI 與人類專家協作設計城市',author:'Generative AI Urban Lab（2025）',tech:'這篇論文提出「逐步式人機協作城市設計框架」，整合多模態擴散模型與都市設計規則，讓 AI 在每個設計階段自動生成大量符合法規與使用者需求的方案候選集，再由人類專家進行語義篩選、偏好標注，形成一個迭代優化的協作閉環。',plain:'蓋一棟樓很難，規劃一個城市更難。以前建築師要手動畫幾十個方案比較，現在 AI 一秒鐘生成幾千個——就像叫外賣時你不用自己煮，只需要從幾千道菜裡選一道最喜歡的，然後微調鹹淡就好。',insight:'💡 就像 Netflix 的推薦演算法幫你選片，AI 幫城市規劃師篩選出最適合當地居民生活型態的設計方案。'},
+    'phys-2605':{tag:'⚛️ 物理量子',title:'量子電腦讀懂「資料的物理規律」',author:'W. Mauerer & M. Schönberger（2026）',tech:'這篇論文從物理學視角重新詮釋量子資料管理系統的行為，提出一套「量子資料物理工具箱」，利用能量間隙、本徵態等量子力學概念分析資料庫的光譜特性與動態屬性。研究者發現，量子資料系統的優化問題在數學結構上與凝態物理中的相變現象高度相似。',plain:'你有沒有想過，一堆資料其實跟磁鐵、晶體一樣有「物理規律」？這篇論文讓科學家用看 X 光的方式「透視」資料——找出資料裡隱藏的能量結構，就像醫生看骨頭密度一樣，一眼看穿哪裡有問題、哪裡有規律。',insight:'💡 你的密碼、AI 模型的參數、基因序列——都有物理規律藏在裡面，這套工具箱幫你把它們挖出來。'},
+    'chem-2026':{tag:'🧪 化學材料',title:'量子電腦突破 12,000 原子障壁：超算計算蛋白質與藥物的結合',author:'Robert Izsak et al.（2026）',tech:'論文開發了量子-古典混合超算工作流程，結合量子嵌入技術將蛋白質-配體複合物拆解成片段，每個片段在量子處理器上以最多 94 個量子比特進行電子結構計算，成功突破 12,000 原子的計算規模障壁。研究共執行超過 9,200 個量子電路，累計運算超過 100 小時。',plain:'化學家預測藥分子是否能緊緊黏住目標蛋白質，需要模擬成千上萬個原子間的量子交互——這對普通電腦太難了。這篇論文讓量子電腦和傳統超算合體，共同完成了 12,000 個原子的計算，以前根本不可能。',insight:'💡 量子電腦正從理論走向實踐——預測藥物結合，是它改變人類生命的第一個真實戰場。'},
+    'fin-2605':{tag:'💰 財經金融',title:'用物理學看穿股市：統計力學揭示 S&P 500 的隱藏法則',author:'Marc Homs-Dones et al.（2026）',tech:'論文將伊辛模型——原本描述磁性物質粒子相互作用的統計物理模型——應用於 S&P 500 從 1996 到 2026 年長達 30 年的數據。研究發現股票間的成對互動關係隨時間動態演化，並在市場壓力時期出現類似物理相變的集體行為，能提前預測市場崩盤的臨界信號。',plain:'幾千支股票的漲跌，其實跟磁鐵裡的原子翻轉很像？磁鐵在臨界溫度時會突然全部翻面，股市在恐慌臨界點時也會突然崩盤。這篇論文用物理學找出股市快要全體翻面的預警信號。',insight:'💡 物理學家眼中，股市不是隨機的——它是複雜系統，有自己的臨界點和相變定律，找到它就能預測崩盤前的最後信號。'},
+
+    'fun-clownfish':{tag:'🐠 自然生物',title:'小丑魚為了活命會「縮身」——真的會把自己變小',author:'CSIRO / Nature 2026',tech:'科學家在熱帶海域研究中發現，小丑魚面對極端高溫時，會主動縮小自身體積1~2%。這是一種代謝適應策略：身體縮小後需要的氧氣和能量更少，讓牠們在水溫異常升高的海洋環境中仍能正常覓食、遷徙和繁殖。',plain:'想像你在超熱的夏天把自己「壓縮」一點，這樣就不會那麼熱、不需要吃那麼多、也能繼續生活——小丑魚就是這樣做的！牠不是「長大」或「縮小」，而是身體真的在物理上自我調整了大小。',insight:'💡 動物的求生本能遠比我們想像的更靈活——未來的醫學也許可以借鑒這種「主動調低代謝」的機制。'},
+    'fun-brain-clean':{tag:'🧠 神經科學',title:'收腹就能清潔大腦？核心肌群運動觸發腦部「自動洗滌」',author:'Neuroscience Daily 2026',tech:'科學家發現，當人輕微收緊腹部核心肌群時，大腦在顱骨內會產生微小的物理搖晃。這個動作似乎能啟動大腦的「類淋巴系統」（glymphatic system）——這是一套在我們睡眠時負責清除有害蛋白質廢物的機制，清醒時也能透過特定動作部分觸發。',plain:'你有沒有聽說「睡眠清潔大腦」？這篇研究說：就算醒著，只要輕輕收腹，大腦可能就開始自我清潔了。就像用溫柔的搖晃幫一杯水裡的沙沉澱下去。',insight:'💡 每天幾分鐘的核心訓練，不只練肌肉——可能也在「洗」你的大腦。'},
+    'fun-cancer-blood':{tag:'🏥 醫療健康',title:'一滴血揪出50種癌症！血液檢測革命改寫癌症早期篩查',author:'Cancer Research 2026',tech:'2026年最受矚目的醫療突破之一：科學家開發出新型液態活檢技術，能從一管血液中偵測癌細胞釋放的 DNA 片段，識別約50種不同的癌症，並可準確判斷癌症起源器官。此技術在症狀出現前即可偵測，大幅提前確診時機。',plain:'以前發現癌症，要等到有症狀、照影像、切片……現在只需要抽一管血，AI 分析血中飄散的腫瘤 DNA，就能告訴你「肝臟有早期跡象」或「肺部需要追蹤」——比任何目前的篩查方法都早。',insight:'💡 如果這項技術普及，每年一次「癌症血液健檢」可能成為常規。50種癌症、一管血、一個答案。'},
+    'fun-jwst-exo':{tag:'🌌 天文宇宙',title:'韋伯望遠鏡拍到系外行星有冰雲——大氣模型被迫重寫',author:'NASA / JWST Team 2026',tech:'詹姆斯韋伯太空望遠鏡在2026年觀測到一顆木星型系外行星的大氣層中存在水冰雲（water-ice clouds），這是此類行星首次被直接確認。這一發現挑戰了現有大氣模型的假設，迫使行星科學家重新評估系外行星的氣候與化學成分預測框架。',plain:'科學家以為那類行星的大氣層應該只有氣體——結果韋伯望遠鏡拍到了「雪」。一顆遠在數光年外的行星，飄著冰晶雲，就像地球的高空卷雲，卻是由水冰構成的。整個模型被打臉，要重新來過。',insight:'💡 宇宙的奇妙之處在於：我們每次以為「搞懂了」，就會有一個望遠鏡告訴你「並沒有」。'},
+    'fun-wifi-id':{tag:'📶 科技趣聞',title:'WiFi 訊號可以辨認你！穿牆偵測身分不再是科幻',author:'German Research Institute 2026',tech:'德國研究人員展示，透過分析 WiFi 無線電波在房間內的反射和散射模式，可以唯一識別牆後特定人物的身分，無需任何攝影機或穿戴設備。系統分析每個人走路、呼吸、身形造成的波形干擾，建立「無線電身份指紋」。',plain:'你的 WiFi 路由器可能正在「看著」你。不是駭客入侵，而是物理原理：你的身體讓 WiFi 訊號彎折的方式，就像指紋一樣獨一無二。研究人員只用普通路由器，就在隔壁房間認出了特定的人。',insight:'💡 未來的智慧家居可能不需要任何感測器或攝影機——只要有 WiFi，房子就知道是誰在哪個房間。'},
+    'fun-ghost-shark':{tag:'🦈 海洋生物',title:'「幽靈鯊」新物種現身——眼睛會發光的6呎深海怪客',author:'CSIRO Australia 2026',tech:'澳洲聯邦科學與工業研究組織（CSIRO）2026年對深海進行系統性普查，一次發現超過110個新物種，其中包括一種全新的銀鮫（chimera，俗稱幽靈鯊）。這種生物是鯊魚和魟魚的古老親戚，體長超過180公分，眼睛覆蓋反光組織，在深海黑暗中看起來像在發光。',plain:'銀鮫不是鯊魚，但比鯊魚更古老——牠們是4億年前就存在的生物，幾乎沒有進化。新發現的這種，眼睛會反光，在深海裡看起來像幽靈，體型比你高還長。澳洲科學家一次就找到了110種以上從未記錄過的生物。',insight:'💡 地球上已知物種不到實際存在物種的15%——每次深海探測，都像打開了一個新的世界。'}
+  }
+},
+'en':{
+  logoMain:'Daily Digest',logoSub:' · Knowledge',hl:'Daily Knowledge Digest',sub:'Latest Research × Multi-Domain × Plain Language',
+  ds:'May 31, 2026 (Sunday)',vday:'📅 By Day',vcat:'🗂 Category',
+  catAll:'All',catAI:'AI',catBio:'Biomedical',catArch:'Architecture',catPhys:'Physics',catChem:'Chemistry',catFin:'Finance',
+  read:'Read Full Paper',mTech:'What does this paper research?',mPlain:'In plain English',
+  ftTitle:'Daily Knowledge Digest',ftSub:'Curated by Claude AI · Educational purposes only',
+  exportBtn:'Export CSV',drawerTitle:'Filter',dtDate:'Date',dtCat:'Category',dtAuthor:'Author',dtLikes:'Likes',
+  spHint:'Loading…',
+  cards:{
+    'ai-2602':{tag:'🤖 AI',title:'Merging AI Brains: Mixture-of-Models Redefines LLM Ensembles',author:'Jiale Fu et al. (2026)',tech:'Traditional LLM ensembles average multiple model outputs, diluting each model\'s strengths at specific token positions. This paper proposes Mixture Ensembling (ME): at each token generation step, one model is randomly sampled from the pool to decide that token—rather than averaging all models\' probability distributions. This produces more coherent, diverse outputs with less inter-model interference.',plain:'Imagine 5 chefs cooking a dish together—traditional averaging mixes every opinion at every step (half a teaspoon of salt + half of soy sauce + half of chili…) and the result tastes like nothing. This paper says: let one chef decide each step, rotating randomly. The result is a real dish, not a committee compromise.',insight:'💡 Like jazz improvisation where musicians take turns leading—rotating control beats everyone playing the same melody simultaneously, producing something more creative and coherent.'},
+    'bio-2025':{tag:'🧬 Biomedical',title:'Reading Cells to Design Drugs: AI Reverse-Engineers Optimal Molecules from RNA',author:'Bremler-Barr et al. (2026)',tech:'This paper proposes the Transcriptome-Based Drug Design (TBDD) framework, framing drug design as a generative inverse problem: given a desired cellular gene-expression state transition, AI reverse-generates the molecular structure that would trigger it. A perturbation-conditioned molecular diffusion model directly infers optimal drug candidates from RNA expression data.',plain:'Old drug discovery: design a molecule → test if it changes the cell → if not, try another. This paper flips it: tell AI how you want the cell to change (e.g., turn cancer cells back to normal), and AI directly designs the molecule that triggers that change—like setting a destination first, then letting GPS plan the route.',insight:'💡 This approach enables truly personalized medicine—designing drugs based on each patient\'s own cellular state, not a one-size-fits-all average.'},
+    'arch-2505':{tag:'🏛️ Architecture',title:'Generative AI + Human Experts Collaborate on City Design',author:'Generative AI Urban Lab (2025)',tech:'This paper proposes a Stepwise Human-AI Urban Design Framework integrating multimodal diffusion models with urban design rules. AI auto-generates thousands of regulation-compliant design candidates at each stage, which human experts then semantically filter and annotate, forming an iterative collaborative loop.',plain:'Building one house is hard; planning a whole city is harder. Before, architects manually drew dozens of layouts. Now AI generates thousands in a second—like having a food delivery app with 10,000 options where you just pick your favorite and fine-tune the seasoning.',insight:'💡 Like Netflix\'s recommendation algorithm picking movies for you, AI filters out the ideal city design that best fits local residents\' lifestyle.'},
+    'phys-2605':{tag:'⚛️ Physics',title:'Quantum Computers Learn the "Physics of Data"',author:'W. Mauerer & M. Schönberger (2026)',tech:'This paper reinterprets quantum data management systems from a physics perspective, proposing a Quantum Data Physics Toolbox that uses quantum mechanics concepts—energy gaps, eigenstates—to analyze spectral and dynamic properties of data systems. Researchers found quantum data optimization problems are mathematically similar to phase transitions in condensed matter physics.',plain:'Ever thought that a pile of data could have physical laws, like magnets or crystals? This paper lets scientists use an X-ray-like tool to see through data—finding hidden energy structures, just like a doctor reads bone density to spot problems and patterns at a glance.',insight:'💡 Your passwords, AI model parameters, gene sequences—all hide physical laws inside. This toolbox helps you dig them out.'},
+    'chem-2026':{tag:'🧪 Chemistry',title:'Quantum Computer Breaks the 12,000-Atom Barrier: Computing Protein-Drug Binding',author:'Robert Izsak et al. (2026)',tech:'This paper develops a quantum-classical hybrid supercomputing workflow using quantum embedding to decompose protein-ligand complexes into fragments. Each fragment\'s electronic structure is computed on a quantum processor with up to 94 qubits. Over 9,200 quantum circuits were executed across 100+ hours, successfully breaking the 12,000-atom computation barrier.',plain:'Predicting whether a drug molecule will tightly bind to its target protein requires simulating quantum interactions among tens of thousands of atoms—too hard for regular computers. This paper combines quantum and classical supercomputers to tackle a 12,000-atom calculation that was previously impossible.',insight:'💡 Quantum computing is moving from theory to practice—predicting drug-protein binding is its first real battlefield for changing human lives.'},
+    'fin-2605':{tag:'💰 Finance',title:'Physics Sees Through the Stock Market: Statistical Mechanics Reveals Hidden Laws of S&P 500',author:'Marc Homs-Dones et al. (2026)',tech:'This paper applies the Ising model—originally describing particle interactions in magnetic materials—to 30 years of S&P 500 data (1996–2026). It finds that pairwise stock interactions evolve dynamically and exhibit collective behavior resembling physical phase transitions during market stress, providing early critical signals of market crashes.',plain:'Could thousands of stock price movements behave like atoms flipping in a magnet? A magnet suddenly flips all at once at its critical temperature; markets suddenly crash at their panic threshold. This paper uses physics to detect early warning signals before the market flips.',insight:'💡 To physicists, markets aren\'t random—they\'re complex systems with their own critical points and phase-transition laws. Find the laws, predict the crash signal before it happens.'},
+
+    'fun-clownfish':{tag:'🐠 Nature',title:'Clownfish Actually Shrink When It\'s Too Hot—And It Saves Their Lives',author:'CSIRO / Nature 2026',tech:'Scientists studying tropical clownfish discovered they can physically shrink their body size by 1–2% during extreme heat events. This is an active metabolic adaptation: a smaller body requires less oxygen and energy, allowing them to continue hunting, migrating, and reproducing even in dangerously warm ocean waters.',plain:'Imagine compressing yourself slightly on a sweltering day so you need less food and oxygen to survive—that\'s exactly what clownfish do. Not a gradual evolutionary change, but an active, reversible physical adjustment in real time.',insight:'💡 Animal survival instincts are far more flexible than we imagined. Medicine may one day borrow this "metabolic downshift" mechanism.'},
+    'fun-brain-clean':{tag:'🧠 Neuroscience',title:'Clenching Your Core Might Clean Your Brain—Literally',author:'Neuroscience Daily 2026',tech:'Scientists discovered that lightly tightening the abdominal core muscles causes the brain to gently sway inside the skull. This mechanical motion appears to activate the glymphatic system—the brain\'s waste-clearance network normally active during sleep—even while awake.',plain:'You\'ve heard that sleep "cleans the brain." This research says: even while awake, a gentle core squeeze might start the process. Like rocking a glass of water to settle the sediment—but the glass is your skull.',insight:'💡 A few minutes of core training daily doesn\'t just build muscle—it may literally wash your brain.'},
+    'fun-cancer-blood':{tag:'🏥 Health',title:'One Blood Test Detects 50 Cancers Before Symptoms Appear',author:'Cancer Research 2026',tech:'A breakthrough liquid biopsy can detect cancer-cell DNA fragments in a single blood draw, identifying approximately 50 different cancer types and pinpointing their tissue of origin—before any symptoms appear. This dramatically shifts cancer detection from reactive to proactive.',plain:'Previously, finding cancer meant waiting for symptoms, imaging, and biopsies. Now one blood tube analyzed by AI can flag "early liver signal" or "lung needs monitoring"—earlier than any existing screening method.',insight:'💡 If widely adopted, an annual "cancer blood check" covering 50 types could become routine. One draw. One answer.'},
+    'fun-jwst-exo':{tag:'🌌 Space',title:'JWST Spots Ice Clouds on an Exoplanet—Forcing Scientists to Rewrite Atmospheric Models',author:'NASA / JWST Team 2026',tech:'The James Webb Space Telescope detected water-ice clouds in the atmosphere of a Jupiter-type exoplanet—the first direct confirmation for this class of planet. The discovery challenges existing atmospheric models and forces planetary scientists to revise climate and chemical composition prediction frameworks.',plain:'Scientists assumed gas-giant exoplanet atmospheres were just that—gas. Then JWST photographed snow. Ice-crystal clouds drifting on a planet light-years away, like Earth\'s cirrus clouds but made of water ice. The whole model has to be rewritten.',insight:'💡 The universe\'s charm: every time we think we\'ve figured it out, a telescope says "not quite."'},
+    'fun-wifi-id':{tag:'📶 Tech',title:'WiFi Can Identify You Through Walls—Without Any Camera',author:'German Research Institute 2026',tech:'German researchers demonstrated that analyzing how WiFi radio waves bounce around a room can uniquely identify specific individuals through walls—no cameras, no wearables required. Each person\'s walking gait, breathing pattern, and body shape creates a unique "radio fingerprint" in the wave distortion patterns.',plain:'Your WiFi router might already be "watching" you—not via hacking, but pure physics. The way your body bends WiFi signals is as unique as a fingerprint. Researchers used an ordinary router to identify specific people in the next room.',insight:'💡 Future smart homes may not need any sensors or cameras. With just WiFi, the house knows who\'s in which room.'},
+    'fun-ghost-shark':{tag:'🦈 Ocean',title:'Meet the "Ghost Shark": A 6-Foot Deep-Sea Creature With Glowing Eyes',author:'CSIRO Australia 2026',tech:'Australia\'s CSIRO conducted a systematic deep-sea survey in 2026, discovering over 110 new species in a single expedition—including a new chimaera ("ghost shark") species. These ancient relatives of sharks and rays have existed for 400 million years virtually unchanged; this new species exceeds 180cm in length and has reflective tissue over its eyes, making them appear to glow in the deep-sea darkness.',plain:'Ghost sharks aren\'t sharks—they\'re older than sharks, surviving unchanged for 400 million years. This new one has glowing eyes and is longer than most humans are tall. CSIRO found over 110 undiscovered species in one trip. One trip.',insight:'💡 Less than 15% of Earth\'s species are known to science. Every deep-sea expedition opens a new world.'},
+    'day0602-neuro-memory':{tag:'🧠 Neuroscience',title:'Recharging the Brain\'s Tiny Engines: Mitochondrial Boost Restores Memory in Dementia Mice',author:'Inserm / Univ. Bordeaux | Nature Neuroscience 2026',tech:'Researchers developed a tool that temporarily boosts mitochondrial activity in brain cells, successfully restoring memory performance in mouse models of dementia. Experiments revealed that energy depletion inside neurons may occur before cell death — suggesting energy failure is an early event in Alzheimer\'s, not a consequence.',plain:'Think of dementia brain cells as phones with nearly dead batteries — not yet broken, but refusing to work. Scientists found a way to recharge them, restoring near-lost memories in mice.',insight:'💡 Rather than treating after brain cells die, boosting energy early may be the most practical new front against Alzheimer\'s.'},
+    'day0602-bio-crispr':{tag:'🧬 Molecular Biology',title:'Rewriting the CRISPR Textbook: DNA-Guided System Achieves Programmable RNA Cleavage',author:'HKUST Prof. Hsing I-Ming | Nature Biotechnology 2026',tech:'Traditional CRISPR-Cas uses RNA guides to target DNA. HKUST developed the world\'s first DNA-guided CRISPR-Cas system capable of programmable RNA targeting and cleavage — overturning the core CRISPR paradigm and opening new paths for viral diagnostics and RNA-targeted therapies.',plain:'Before, CRISPR was scissors that cut DNA. This team flipped it: DNA now guides cuts in RNA. RNA is at the core of how viruses spread, making this new tool a direct strike at their weakness.',insight:'💡 RNA-targeting CRISPR tools could dramatically shorten timelines for rapid viral diagnostics and broad-spectrum antivirals.'},
+    'day0602-phys-darkmatter':{tag:'⚛️ Particle Physics',title:'Dark Matter Signal Declared Dead: Two Experiments Refute DAMA\'s 20-Year Claim at 4σ',author:'ANAIS-112 & COSINE-100 Collaboration 2026',tech:'ANAIS-112 (Spain) and COSINE-100 (Korea) jointly analyzed their datasets and found no significant annual modulation signal, ruling out DAMA/LIBRA\'s claimed dark matter origin at 99.97% confidence — one of the clearest null results in dark matter search history.',plain:'Italy\'s DAMA experiment claimed to see "more dark matter every summer." Physicists argued for 20 years. Now two independent experiments simultaneously say: "That\'s not dark matter." Science\'s self-correcting mechanism finally issued a clear verdict.',insight:'💡 Ruling out wrong answers is progress — dark matter remains a mystery, but science\'s most honest moment is when it says no.'},
+    'day0602-ocean-co2':{tag:'🌊 Ocean Science',title:'Ocean as Carbon Vacuum: Alkalinity Enhancement Trial Absorbs up to 50 Tonnes CO₂/Year',author:'Ocean Sciences Meeting 2026 / Gulf of Maine Team',tech:'Ocean alkalinity enhancement (OAE) dissolves alkaline minerals into seawater to boost its capacity to absorb atmospheric CO₂. A Gulf of Maine trial absorbed 2–10 additional tonnes of CO₂ in 4 days of monitoring, with models projecting 50 tonnes annually — the most convincing open-water validation to date.',plain:'Adding natural lime to seawater is like dissolving baking soda into a drink to hold more carbonation — but here the gas is atmospheric CO₂. No machinery needed; it leverages the ocean\'s own chemistry.',insight:'💡 The ocean covers 2.4× more surface than land. If alkalinity enhancement proves safe, Earth\'s largest carbon sink could be dramatically amplified.'},
+    'day0602-robot-unihm':{tag:'🤖 Robotics',title:'One Framework to Rule All Robot Hands: Free-Text Commands Work Across Morphologies',author:'arXiv:2603.00732 | 2026',tech:'UniHM is the first framework enabling dexterous robot hands of different morphologies to follow free-form language commands. Its Unified Hand-Dexterous Tokenizer maps diverse hand structures into a shared codebook; a vision-language model then translates human instructions into cross-hand executable action sequences.',plain:'Before, each type of robot hand needed separate training — change the hand design, start over. UniHM is a universal translator: say "tighten this bottle," and it works whether the hand has five fingers or three.',insight:'💡 Language as the robot hand\'s OS means future home robots need people who can speak, not engineers who can code.'},
+    'day0602-ai-saro':{tag:'🛡️ AI Safety',title:'Think Before You Speak: SaRO\'s Safety Reasoning Makes LLM Refusals Smarter',author:'arXiv:2504.09420 | 2026',tech:'SaRO (Safety-oriented Reasoning Optimization) makes language models perform a safety reasoning warm-up before generating responses, then optimizes via safety-oriented reasoning processes. This enables models to actively identify the hidden intent of harmful requests, dramatically lowering false-refusal rates while maintaining high safety.',plain:'Old AI safety was a blunt bouncer: trigger a keyword, get blocked. SaRO makes AI reason about actual intent first — like a doctor who doesn\'t suspect you for asking about drug dosages, but precisely flags truly dangerous requests.',insight:'💡 The safest AI isn\'t the one that says "no" most often — it\'s the one that knows exactly when to say it.'},
+    'day0603-ai-resmerge':{tag:'🤖 AI Merging',title:'No Training Required: ResMerge Fuses Expert LLMs via Spectral Residuals',author:'arXiv:2606.02252 | 2026',tech:'ResMerge introduces residual-based spectral merging for RL-trained expert LLMs. It decomposes each model\'s weight delta into spectral components, identifies each expert\'s unique contribution, and merges without retraining—outperforming prior methods on multiple benchmarks.',plain:'Imagine combining several specialist AIs into one super-model with no extra training. ResMerge analyzes the unique mathematical fingerprint each expert adds, then stacks their contributions intelligently.',insight:'💡 Model merging may become the standard way to build capable AI: combine existing experts rather than training from scratch.'},
+    'day0603-phys-quantum-sim':{tag:'⚛️ Quantum Simulation',title:'Quantum Computers as Physics Labs: Simulating Topological Phases and Strongly Correlated Matter',author:'arXiv:2606.02721 | 2026',tech:'This review covers quantum hardware platforms—superconducting qubits, trapped ions, ultracold atoms, Rydberg arrays—and their applications to condensed-matter physics: topological phases, strongly correlated systems, non-equilibrium dynamics, and open-system physics.',plain:'Traditional computers struggle to simulate quantum materials. Quantum computers speak quantum language natively, making them the ideal tool for studying these exotic systems.',insight:'💡 Quantum computing\'s first killer app may not be cryptography—it may be designing the next generation of superconductors and quantum materials.'},
+    'day0603-neuro-morphic':{tag:'🧠 Neuromorphic Computing',title:'Astrocytes to the Rescue: Neuromorphic Architecture Challenges Deep Learning\'s Dominance',author:'arXiv:2606.01841 | 2026',tech:'The paper proposes Neuromorphic Supremacy: a learning architecture inspired by astrocytic dynamics in the brain. Unlike traditional deep learning, it supports lifelong learning in dynamic environments, data-efficient unsupervised spiking neural networks, and avoids catastrophic forgetting.',plain:'Brains have astrocytes that quietly regulate learning behind the scenes. This AI architecture borrows that trick, enabling machines to keep learning without forgetting old skills.',insight:'💡 The next AI breakthrough may come from a brain cell scientists have long overlooked—not the neuron, but the astrocyte.'},
+    'day0603-climate-heatwave':{tag:'🌡️ Climate Science',title:'Heatwaves Are Getting Stickier: Multiscale Dynamics Explain Prolonged Extreme Heat',author:'arXiv:2606.02005 | 2026',tech:'Using multiresolution dynamic mode decomposition on summer temperature fields over southern Canada, this study shows climate change significantly increases both the duration and intensity of heatwaves, identifying multiscale temperature variance structures responsible for persistence.',plain:'Heatwaves used to pass in a few days; now they linger. Like a bathtub that won\'t drain, scientists found the atmospheric plug keeping heat in place—tightly linked to climate change.',insight:'💡 Future disaster planning must focus not just on peak temperature but on duration—a prolonged heatwave is far deadlier than a brief spike.'},
+    'day0603-chem-matdesign':{tag:'🧪 Materials Design',title:'AI-Automated Materials Discovery: Generative Models and Closed-Loop Pipelines Flip the Script',author:'arXiv:2606.02507 | 2026',tech:'This review covers generative crystal structure models, multimodal learning, and closed-loop design workflows, shifting materials science from forward prediction to inverse design—target properties in, candidate structures out.',plain:'Finding new materials used to mean trying millions of combinations. AI inverse design lets you specify what you want and get a designed material back, eliminating 99% of trial and error.',insight:'💡 AI isn\'t just helping scientists experiment—it\'s now designing the materials itself, taking discovery from serendipity to precision.'},
+    'day0603-bio-eyetrack':{tag:'👁️ Cognitive Science',title:'AI Eye Detective: Eyettention II Predicts Human Gaze Trajectories During Reading',author:'arXiv:2606.01964 | 2026',tech:'Eyettention II is an end-to-end deep learning model predicting complete reader scanpaths from text: fixation location, within-word landing position, and fixation duration. It surpasses state-of-the-art models and reproduces psycholinguistic effects such as word-frequency and word-length effects.',plain:'Eyes don\'t scan text left-to-right—they jump around, lingering on long or rare words. Eyettention II predicts where your eyes land next and for how long, matching real eye-tracking data.',insight:'💡 Understanding how humans see text will lead to better-designed interfaces, smarter reading aids, and more precise dyslexia diagnostics.'}
+  }
+},
+'zh-CN':{
+  logoMain:'每日新知',logoSub:' · Daily Digest',hl:'每日新知',sub:'最新研究 × 多元领域 × 白话解说',
+  ds:'2026年5月31日（周日）',vday:'📅 按日期',vcat:'🗂 分类',
+  catAll:'全部',catAI:'AI 人工智能',catBio:'生医科学',catArch:'建筑设计',catPhys:'物理量子',catChem:'化学材料',catFin:'财经金融',
+  read:'阅读原文论文',mTech:'这篇论文在研究什么？',mPlain:'用大白话说',
+  ftTitle:'每日新知 · Daily Knowledge Digest',ftSub:'由 Claude AI 整理，仅供教育用途',
+  exportBtn:'导出 CSV',drawerTitle:'筛选 / Filter',dtDate:'日期',dtCat:'分类',dtAuthor:'作者',dtLikes:'喜好',spHint:'自动进入…',
+  cards:{
+    'ai-2602':{tag:'🤖 AI 人工智能',title:'让多个 AI 脑袋合体：混合模型视角重新定义 LLM 集成',author:'Jiale Fu et al.（2026）',tech:'传统 LLM 集成通常对多个模型输出做平均，但这会模糊各模型在不同 token 位置的强项。本论文提出「混合模型集成」（ME）：在每个 token 生成步骤，随机从模型池中抽选一个模型决定该 token，而非平均所有模型的概率分布。这让整体输出更连贯多样，并降低模型间的干扰效应。',plain:'想象五个厨师合作煮一道菜——传统平均法是把所有人的意见加在一起（半匙盐+半匙酱+半匙辣…），最后反而什么味道都不像。这篇论文说：每个步骤只让一个厨师决定，随机换手，最后做出的菜更像一道完整料理。',insight:'💡 就像爵士乐即兴演奏，每个乐手轮流带头，比所有人同时演奏相同旋律更有创意、更好听。'},
+    'bio-2025':{tag:'🧬 生医科学',title:'读懂细胞、设计药物：AI 从转录组反推最佳分子结构',author:'Bremler-Barr et al.（2026）',tech:'论文提出转录组导向药物设计（TBDD）框架，将药物设计定义为生成式逆问题：给定细胞希望达到的基因表达状态转变，让 AI 反向生成能触发该变化的分子结构。系统采用扰动条件式分子扩散模型，直接从 RNA 表达数据反推最合适的药物候选分子。',plain:'传统找药：设计分子→试试能不能改变细胞→不行就换。这篇反过来：先告诉 AI 你希望细胞变成什么样，让 AI 直接设计出能触发那个变化的分子——就像先设好目的地，再让导航规划路线。',insight:'💡 这个方法可根据每个患者自己的细胞状态定制设计药物，是真正的精准医疗。'},
+    'arch-2505':{tag:'🏛️ 建筑设计',title:'生成式 AI 与人类专家协作设计城市',author:'Generative AI Urban Lab（2025）',tech:'论文提出「逐步式人机协作城市设计框架」，整合多模态扩散模型与都市设计规则，让 AI 在每个设计阶段自动生成大量符合法规与用户需求的方案，再由人类专家进行语义筛选，形成迭代优化的协作闭环。',plain:'以前建筑师要手动画几十个方案比较，现在 AI 一秒钟生成几千个——就像叫外卖时你不用自己煮，只需要从几千道菜里选一道最喜欢的，然后微调咸淡就好。',insight:'💡 就像 Netflix 的推荐算法帮你选片，AI 帮城市规划师筛选出最适合当地居民生活方式的设计方案。'},
+    'phys-2605':{tag:'⚛️ 物理量子',title:'量子计算机读懂「数据的物理规律」',author:'W. Mauerer & M. Schönberger（2026）',tech:'论文从物理学视角重新诠释量子数据管理系统，提出「量子数据物理工具箱」，利用能量间隙、本征态等量子力学概念分析数据库的光谱特性与动态属性，发现量子数据系统的优化问题与凝态物理中的相变现象高度相似。',plain:'你有没有想过，一堆数据其实跟磁铁、晶体一样有「物理规律」？这篇论文让科学家用看 X 光的方式「透视」数据——找出数据里隐藏的能量结构。',insight:'💡 你的密码、AI 模型的参数、基因序列——都有物理规律藏在里面，这套工具箱帮你把它们挖出来。'},
+    'chem-2026':{tag:'🧪 化学材料',title:'量子计算机突破 12,000 原子障壁：超算计算蛋白质与药物的结合',author:'Robert Izsak et al.（2026）',tech:'论文开发了量子-古典混合超算工作流程，结合量子嵌入技术将蛋白质-配体复合物拆解成片段，每个片段在量子处理器上以最多 94 个量子比特进行电子结构计算，成功突破 12,000 原子的计算规模障壁。研究共执行超过 9,200 个量子电路，累计运算超过 100 小时。',plain:'化学家预测药分子是否能紧紧黏住目标蛋白质，需要模拟成千上万个原子间的量子交互——这对普通电脑太难了。这篇论文让量子电脑和传统超算合体，共同完成了 12,000 个原子的计算，以前根本不可能。',insight:'💡 量子计算机正从理论走向实践——预测药物结合，是它改变人类生命的第一个真实战场。'},
+    'fin-2605':{tag:'💰 财经金融',title:'用物理学看穿股市：统计力学揭示 S&P 500 的隐藏法则',author:'Marc Homs-Dones et al.（2026）',tech:'论文将伊辛模型——原本描述磁性物质粒子相互作用的统计物理模型——应用于 S&P 500 从 1996 到 2026 年长达 30 年的数据。研究发现股票间的成对互动关系随时间动态演化，并在市场压力时期出现类似物理相变的集体行为，能提前预测市场崩盘的临界信号。',plain:'几千支股票的涨跌，其实跟磁铁里的原子翻转很像？磁铁在临界温度时会突然全部翻面，股市在恐慌临界点时也会突然崩盘。这篇论文用物理学找出股市快要全体翻面的预警信号。',insight:'💡 物理学家眼中，股市不是随机的——它是复杂系统，有自己的临界点和相变定律，找到它就能预测崩盘前的最后信号。'},
+
+    'fun-clownfish':{tag:'🐠 自然生物',title:'小丑鱼为了活命会「缩身」——真的会把自己变小',author:'CSIRO / Nature 2026',tech:'科学家在热带海域研究中发现，小丑鱼面对极端高温时，会主动缩小自身体积1~2%。这是一种代谢适应策略：身体缩小后需要的氧气和能量更少，让它们在水温异常升高的海洋环境中仍能正常觅食、迁徙和繁殖。',plain:'想象你在超热的夏天把自己「压缩」一点，这样就不会那么热、不需要吃那么多、也能继续生活——小丑鱼就是这样做的！它不是「长大」或「缩小」，而是身体真的在物理上自我调整了大小。',insight:'💡 动物的求生本能远比我们想象的更灵活——未来的医学也许可以借鉴这种「主动调低代谢」的机制。'},
+    'fun-brain-clean':{tag:'🧠 神经科学',title:'收腹就能清洁大脑？核心肌群运动触发脑部「自动洗涤」',author:'Neuroscience Daily 2026',tech:'科学家发现，当人轻微收紧腹部核心肌群时，大脑在颅骨内会产生微小的物理摇晃，似乎能激活大脑的「类淋巴系统」——这套清除有害蛋白质废物的机制通常只在睡眠时运作，但清醒时通过特定动作也能部分触发。',plain:'你听说过「睡眠清洁大脑」？这篇研究说：就算醒着，只要轻轻收腹，大脑可能就开始自我清洁了。就像用温柔的摇晃帮一杯水里的沙沉淀下去。',insight:'💡 每天几分钟的核心训练，不只练肌肉——可能也在「洗」你的大脑。'},
+    'fun-cancer-blood':{tag:'🏥 医疗健康',title:'一滴血揪出50种癌症！血液检测革命改写癌症早期筛查',author:'Cancer Research 2026',tech:'2026年最受瞩目的医疗突破之一：科学家开发出新型液态活检技术，能从一管血液中检测癌细胞释放的DNA片段，识别约50种不同的癌症，并可准确判断癌症起源器官，在症状出现前即可检测。',plain:'以前发现癌症，要等到有症状、照影像、切片……现在只需要抽一管血，AI分析血中飘散的肿瘤DNA，就能告诉你「肝脏有早期迹象」或「肺部需要追踪」——比任何目前的筛查方法都早。',insight:'💡 如果这项技术普及，每年一次「癌症血液健检」可能成为常规。50种癌症、一管血、一个答案。'},
+    'fun-jwst-exo':{tag:'🌌 天文宇宙',title:'韦伯望远镜拍到系外行星有冰云——大气模型被迫重写',author:'NASA / JWST Team 2026',tech:'詹姆斯韦伯太空望远镜在2026年观测到一颗木星型系外行星的大气层中存在水冰云，这是此类行星首次被直接确认。这一发现挑战了现有大气模型的假设，迫使行星科学家重新评估系外行星的气候预测框架。',plain:'科学家以为那类行星的大气层应该只有气体——结果韦伯望远镜拍到了「雪」。一颗远在数光年外的行星，飘着冰晶云，就像地球的高空卷云，却是由水冰构成的。整个模型被打脸，要重新来过。',insight:'💡 宇宙的奇妙之处在于：我们每次以为「搞懂了」，就会有一个望远镜告诉你「并没有」。'},
+    'fun-wifi-id':{tag:'📶 科技趣闻',title:'WiFi信号可以辨认你！穿墙侦测身份不再是科幻',author:'German Research Institute 2026',tech:'德国研究人员展示，通过分析WiFi无线电波在房间内的反射和散射模式，可以唯一识别墙后特定人物的身份，无需任何摄影机或穿戴设备。每个人走路、呼吸、体型造成的波形干扰，建立了「无线电身份指纹」。',plain:'你的WiFi路由器可能正在「看着」你。不是黑客入侵，而是物理原理：你的身体让WiFi信号弯折的方式，就像指纹一样独一无二。研究人员只用普通路由器，就在隔壁房间认出了特定的人。',insight:'💡 未来的智能家居可能不需要任何传感器或摄影机——只要有WiFi，房子就知道是谁在哪个房间。'},
+    'fun-ghost-shark':{tag:'🦈 海洋生物',title:'「幽灵鲨」新物种现身——眼睛会发光的6呎深海怪客',author:'CSIRO Australia 2026',tech:'澳大利亚联邦科学与工业研究组织（CSIRO）2026年对深海进行系统性普查，一次发现超过110个新物种，其中包括一种全新的银鲛（幽灵鲨）。体长超过180厘米，眼睛覆盖反光组织，在深海黑暗中看起来像在发光。',plain:'银鲛不是鲨鱼，但比鲨鱼更古老——它们是4亿年前就存在的生物，几乎没有进化。新发现的这种，眼睛会反光，在深海里看起来像幽灵，体型比你高还长。澳洲科学家一次就找到了110种以上从未记录过的生物。',insight:'💡 地球上已知物种不到实际存在物种的15%——每次深海探测，都像打开了一个新的世界。'},
+    'day0602-neuro-memory':{tag:'🧠 神经科学',title:'为大脑微型引擎充电：线粒体激活让痴呆症小鼠记忆重返',author:'Inserm / 波尔多大学 | Nature Neuroscience 2026',tech:'研究者开发出可暂时提升脑细胞线粒体活性的工具，在痴呆症小鼠模型中成功恢复记忆表现。实验显示神经元内的能量耗竭可能在细胞死亡前就已发生，意味着能量失败是阿尔茨海默症的早期事件而非结果。',plain:'把痴呆症的脑细胞想成电快没的手机——还没死掉，但已经罢工。科学家找到方法帮它充电，让几乎消失的记忆恢复过来。',insight:'💡 与其等到脑细胞死亡才治疗，提早补充能量可能是对抗阿尔茨海默症最务实的新方向。'},
+    'day0602-bio-crispr':{tag:'🧬 分子生物',title:'CRISPR教科书被改写：DNA引导首次实现RNA精准切割',author:'香港科大 谢学明团队 | Nature Biotechnology 2026',tech:'传统CRISPR-Cas用RNA引导针对DNA；香港科大开发出全球首个以DNA为引导的CRISPR-Cas系统，可对RNA进行可编程靶向切割。此突破颠覆CRISPR核心范式，为病毒诊断与RNA靶向疗法开辟全新路径。',plain:'以前CRISPR像剪刀剪DNA；这次科学家把它反过来，用DNA去剪RNA。RNA是病毒传播的核心，这把新剪刀直接攻击它的弱点。',insight:'💡 能靶向RNA的CRISPR工具，让快速诊断病毒与开发广谱抗病毒药物的时间轴大幅缩短。'},
+    'day0602-phys-darkmatter':{tag:'⚛️ 粒子物理',title:'暗物质信号宣告终结：两大实验以4σ推翻DAMA 20年主张',author:'ANAIS-112 & COSINE-100合作团队 2026',tech:'ANAIS-112（西班牙）与COSINE-100（韩国）合并分析，发现各自数据集均无显著年调变信号，以99.97%置信度排除DAMA/LIBRA所声称的暗物质起源，是暗物质搜寻史上最清晰的否定性结果之一。',plain:'意大利DAMA实验声称看到「暗物质每年夏天比冬天多」，物理学界争论20年。现在两个独立实验同时宣告：「那根本不是暗物质。」科学的自我修正机制给出了清晰的裁决。',insight:'💡 排除错误答案本身就是进步——暗物质依然是谜，但科学最诚实的样子就是说「不」。'},
+    'day0602-ocean-co2':{tag:'🌊 海洋科学',title:'海洋变成碳吸尘器：碱化增强首次实海测试年化可吸50吨CO₂',author:'Ocean Sciences Meeting 2026 / 缅因湾研究团队',tech:'海洋碱化增强（OAE）技术将碱性矿物溶入海水以提升其吸收大气CO₂的能力。缅因湾4天实验期间额外吸收2~10吨CO₂，建模预测年化可达50吨，是迄今最具说服力的实海验证。',plain:'把适量天然石灰溶进海水，就像在饮料里加小苏打让它更能溶解气泡——只是这次溶解的是大气中的CO₂，用的是海洋本身的化学特性。',insight:'💡 海洋面积是陆地的2.4倍，若碱化技术安全可行，地球最大的碳吸收器有机会被大幅强化。'},
+    'day0602-robot-unihm':{tag:'🤖 机器人学',title:'一个框架统治所有机器手：自然语言指令跨形态操控成真',author:'arXiv:2603.00732 | 2026',tech:'UniHM是首个让不同形态灵巧机器手接受自由文字指令的统一框架。核心「统一手部灵巧分词器」将不同结构机器手映射到共享码本，视觉语言模型解析人类指令后转化为跨手型可执行动作序列。',plain:'以前每种机器手要单独训练，换了手型就要重新学。UniHM像通用翻译官：你说「把瓶子旋紧」，不管是五指还是三指手都能理解并执行。',insight:'💡 语言成为机器手的操作系统，意味着未来家用机器人只需要能说话的人，不需要程序设计师。'},
+    'day0602-ai-saro':{tag:'🛡️ AI安全',title:'让AI先想清楚再说话：SaRO安全推理让拒绝更精准',author:'arXiv:2504.09420 | 2026',tech:'SaRO（Safety-oriented Reasoning Optimization）框架让语言模型在回应前先进行安全推理预热，再以安全导向推理过程优化，使模型主动识别有害请求的隐含意图，大幅降低误拒率同时维持高安全性。',plain:'以前AI的安全护栏像粗暴保安：看到关键词就拦。SaRO让AI先推理真正意图，就像医生不因你问药物剂量就起疑——但确实危险的请求反而被更精准识别。',insight:'💡 真正安全的AI不是最会说「不」的AI，而是懂得判断什么时候该说「不」的AI。'},
+    'day0603-ai-resmerge':{tag:'🤖 AI 合并',title:'无需训练的天才融合术：ResMerge 用频谱残差合并大型语言模型',author:'arXiv:2606.02252 | 2026',tech:'ResMerge 提出基于残差的频谱合并框架，融合多个强化学习训练的专家语言模型。通过分解各模型权重增量频谱，识别独特贡献并加权融合，无需重新训练即可超越先前最优合并方法。',plain:'就像把几位顶尖顾问的知识魔法般倒进同一个大脑——不用上学、不用补课，只需把各自强项叠加起来。ResMerge 就是这个知识合并器。',insight:'💡 未来的 AI 不需从头训练，只要把现有专家模型拼接，就能诞生超越任何单一模型的新能力。'},
+    'day0603-phys-quantum-sim':{tag:'⚛️ 量子模拟',title:'量子计算机化身物理实验室：全面模拟拓扑相与强关联量子材料',author:'arXiv:2606.02721 | 2026',tech:'本文全面回顾超导量子比特、离子阱、超冷原子、里德堡阵列等量子硬件平台，评估其在凝聚态物理模拟方面的能力，涵盖拓扑相、强关联物质、非平衡动力学等重要课题。',plain:'传统计算机模拟量子世界就像用算盘算火箭轨道。量子计算机天生说量子语言，用它模拟量子材料就像用母语翻译诗歌，效率天差地别。',insight:'💡 量子计算机最快落地的应用可能不是破解密码，而是设计下一代超导体与量子材料。'},
+    'day0603-neuro-morphic':{tag:'🧠 神经形态计算',title:'星状胶质细胞改写 AI 学习规则：神经形态架构挑战深度学习霸主地位',author:'arXiv:2606.01841 | 2026',tech:'以大脑星状胶质细胞动态调节机制为灵感，建立可终身学习的神经形态网络。相比传统深度学习，此架构在动态环境中数据效率更高，并能在无监督模式下持续更新知识而不发生灾难性遗忘。',plain:'大脑除了神经元，还有星状胶质细胞在幕后调控学习。新架构把这个机制引入 AI，让机器也能持续学习、不会学新忘旧。',insight:'💡 下一代 AI 的灵感可能来自神经科学里长期被忽视的细胞——不是神经元，而是星状胶质细胞。'},
+    'day0603-climate-heatwave':{tag:'🌡️ 气候科学',title:'热浪越来越粘：多尺度动力学解析气候变化下的极端高温持续机制',author:'arXiv:2606.02005 | 2026',tech:'研究利用多分辨率动态模式分解分析加拿大南部夏季气温场，发现气候变化使热浪持续时间和强度均显著增加，并识别出推动热浪持续的多尺度温度变异结构。',plain:'以前热浪来几天就走；现在它粘住了。就像浴缸没拔塞子——科学家找到大气中让热浪赖着不走的塞子，它与气候变化紧密相关。',insight:'💡 未来防灾不只要考虑最高温度，更要考虑高温持续天数——持续的热浪才是真正的杀手。'},
+    'day0603-chem-matdesign':{tag:'🧪 材料设计',title:'AI 自动化材料探索：生成模型加闭环工作流程打造逆向材料设计革命',author:'arXiv:2606.02507 | 2026',tech:'本文回顾生成式晶体结构模型、多模态学习与闭环设计管线最新进展，提出从正向预测到逆向设计的材料科学范式转变——输入目标性质，AI 直接提出候选结构。',plain:'传统找新材料就像大海捞针。AI 逆向设计是先说我要能承受高温又导电的材料，让 AI 直接设计出来，省掉99%的试错过程。',insight:'💡 AI 不只帮科学家做实验，现在它能自己设计目标材料——材料科学从偶然发现走向精准创造。'},
+    'day0603-bio-eyetrack':{tag:'👁️ 认知科学',title:'AI 眼球侦探：Eyettention II 精准预测人类阅读视线轨迹与停留时间',author:'arXiv:2606.01964 | 2026',tech:'Eyettention II 是端对端深度学习模型，输入文本后能完整预测读者视线轨迹：注视落点、词内着陆位置、注视时长。超越现有最优方法，并重现词频效应和词长效应等关键心理语言学现象。',plain:'人眼看文字时不是逐字扫，而是跳跃式移动——长词难词多看一眼，常见词一瞬间略过。Eyettention II 能预测你的眼球接下来要看哪里、看多久，准确率媲美真实人眼数据。',insight:'💡 理解人类如何看文字，将帮助设计更易读的界面、更好的阅读辅助工具，以及更精准的阅读障碍诊断方法。'}
+  }
+},
+'ja':{
+  logoMain:'毎日新知',logoSub:' · Daily Digest',hl:'毎日新知',sub:'最新研究 × 多分野 × わかりやすい解説',
+  ds:'2026年5月31日（日曜日）',vday:'📅 日付別',vcat:'🗂 カテゴリ',
+  catAll:'すべて',catAI:'AI・人工知能',catBio:'生命医学',catArch:'建築',catPhys:'物理・量子',catChem:'化学材料',catFin:'経済・金融',
+  read:'論文を読む',mTech:'この論文は何を研究している？',mPlain:'わかりやすく言うと',
+  ftTitle:'毎日新知 · Daily Knowledge Digest',ftSub:'Claude AIが整理 · 教育目的のみ',
+  exportBtn:'CSV エクスポート',drawerTitle:'フィルター',dtDate:'日付',dtCat:'カテゴリ',dtAuthor:'著者',dtLikes:'いいね',spHint:'自動で入る…',
+  cards:{'ai-2602':{tag:'🤖 AI・人工知能',title:'複数のAI頭脳が合体：混合モデル視点でLLMアンサンブルを再定義',author:'Jiale Fu et al.（2026）',tech:'従来のLLMアンサンブルは複数モデルの出力を平均しますが、各トークン位置での各モデルの強みが薄れます。本論文は混合モデルアンサンブル（ME）を提案：各トークン生成ステップで、モデルプールから1モデルを確率的に選択しそのトークンを決定させることで、より一貫した多様な出力を実現します。',plain:'5人のシェフが料理を作るとき、全員の意見を毎ステップで平均すると（塩半さじ+醤油半さじ+唐辛子半さじ...）何の味もしなくなる。この論文は「各ステップで1人のシェフがランダムに担当する」方式を提案。できあがりは委員会の妥協案ではなく、本物の料理になります。',insight:'💡 ジャズの即興演奏のように、音楽家が交代でリードするほうが全員が同じメロディーを同時に演奏するより創造的で良い音楽になります。'},
+  'bio-2025':{tag:'🧬 生命医学',title:'細胞を読んで薬を設計：AIがRNAトランスクリプトームから最適分子を逆設計',author:'Bremler-Barr et al.（2026）',tech:'本論文はトランスクリプトーム基盤薬物設計（TBDD）フレームワークを提案。所望の細胞遺伝子発現状態遷移を与えると、それを引き起こす薬物分子を逆生成する生成的逆問題として定式化します。RNA発現データから直接最適な候補分子を逆算する摂動条件付き分子拡散モデルを使用します。',plain:'従来の創薬：分子を設計→細胞が変化するか試す→ダメなら別の分子を試す。この論文は逆順：AIに細胞をどう変えたいか（がん細胞を正常に戻す）を伝えると、AIが直接その変化を引き起こす分子を設計します。目的地を設定してからGPSにルートを計画させる感じです。',insight:'💡 このフレームワークで本当の意味での個別化医療が可能に——平均的な患者向けの一律の薬ではなく、あなた自身の細胞状態に基づいて薬を設計できます。'},
+  'arch-2505':{tag:'🏛️ 建築デザイン',title:'生成AIと人間専門家が協力して都市を設計',author:'Generative AI Urban Lab（2025）',tech:'論文は「段階的人間-AI都市設計フレームワーク」を提案し、マルチモーダル拡散モデルと都市設計ルールを統合。AIが各設計段階で法規制に準拠した大量の方案候補を自動生成し、専門家がセマンティックフィルタリングを行う反復的協調ループを形成します。',plain:'以前は建築家が手作業で何十もの案を描いて比較していました。今はAIが一瞬で数千の案を生成——デリバリーアプリで数千のメニューから一番好きなものを選んで、味付けを微調整するだけでいい感じです。',insight:'💡 Netflixの推薦アルゴリズムが映画を選ぶように、AIが地域住民の生活スタイルに最適な都市設計を絞り込みます。'},
+  'phys-2605':{tag:'⚛️ 物理・量子',title:'量子コンピューターが「データの物理法則」を理解する',author:'W. Mauerer & M. Schönberger（2026）',tech:'論文は量子データ管理システムを物理学の視点から再解釈し、エネルギーギャップや固有状態などの量子力学的概念でデータシステムのスペクトル特性を分析。量子データ最適化問題が凝縮系物理の相転移と数学的に類似していることを発見しました。',plain:'データの塊が磁石や結晶のように「物理法則」を持っていると考えたことはありますか？この論文はX線でデータを透視するような手法で隠れたエネルギー構造を発見します。',insight:'💡 パスワード・AIモデルのパラメータ・遺伝子配列——すべてに物理法則が隠れています。このツールボックスがそれを掘り出します。'},
+  'chem-2026':{tag:'🧪 化学材料',title:'量子コンピューターが12,000原子の壁を突破：タンパク質と薬の結合を計算',author:'Robert Izsak et al.（2026）',tech:'本論文は量子埋め込みを用いてタンパク質-リガンド複合物をフラグメントに分解する量子古典ハイブリッド超計算ワークフローを開発。各フラグメントの電子構造を最大94量子ビットの量子プロセッサで計算し、9,200以上の量子回路を100時間以上実行して12,000原子の計算障壁を突破しました。',plain:'薬分子が標的タンパク質にしっかり結合するか予測するには、数万個の原子間の量子相互作用をシミュレートする必要があります——通常のコンピューターには難しすぎる。この論文は量子コンピューターと古典的スーパーコンピューターを組み合わせて、以前は不可能だった12,000原子の計算を成功させました。',insight:'💡 量子コンピューターは理論から実用へ——薬とタンパク質の結合予測は、人類の命を直接変えられる最初の本物の戦場です。'},
+  'fin-2605':{tag:'💰 経済・金融',title:'物理学で株式市場を透視：イジングモデルがS&P 500の隠れた法則を解明',author:'Marc Homs-Dones et al.（2026）',tech:'本論文は磁性粒子の相互作用を記述する統計物理モデル「イジングモデル」を、1996年から2026年の30年間のS&P 500データに適用。株式間の対相互作用が時間とともに動的に変化し、市場ストレス時に物理的相転移に似た集団的挙動を示し、市場崩壊の臨界シグナルを事前に提供できることを発見しました。',plain:'数千の株の上下動は、磁石の中の原子が反転するのと似ているかもしれません？磁石は臨界温度で突然全部反転し、市場はパニックの臨界点で突然崩壊します。この論文は物理学を使って市場が全体的に反転しそうな警告シグナルを見つけます。',insight:'💡 物理学者の目には市場はランダムではない——それは独自の臨界点と相転移法則を持つ複雑系。法則を見つければ崩壊前の最後のシグナルが予測できる。'},
+
+    'fun-clownfish':{tag:'🐠 自然・生物',title:'クマノミは暑すぎると体を縮める——命を守るための自己圧縮術',author:'CSIRO / Nature 2026',tech:'熱帯海域の研究で、クマノミは極端な高温環境下で体積を1〜2%縮小できることが判明。これは代謝適応戦略で、体が小さいほど酸素と エネルギーの消費が減り、海水温が異常上昇した環境でも採餌・移動・繁殖を続けられます。',plain:'猛暑の日に自分を少し「圧縮」できたら、体温も食欲も抑えられる——クマノミはまさにそれをやっています。進化的な変化ではなく、リアルタイムの物理的な体サイズ調整です。',insight:'💡 動物の生存本能は想像以上に柔軟。医学はこの「代謝ダウンシフト」メカニズムをいつか応用できるかもしれません。'},
+    'fun-brain-clean':{tag:'🧠 神経科学',title:'腹筋を締めると脳が洗われる？体幹運動が脳の「自動洗浄」を起動',author:'Neuroscience Daily 2026',tech:'腹部の体幹筋を軽く収縮させると、脳が頭蓋骨内でわずかに揺れ、これがグリンパティックシステム（脳の老廃物除去ネットワーク）を活性化させる可能性があることが判明。このシステムは通常、睡眠中に動作しますが、特定の動作で覚醒中にも部分的に起動できることが示されました。',plain:'「睡眠が脳を洗う」という話は聞いたことがあるでしょう。この研究によると、起きていても軽く腹筋を締めるだけで、脳の自己洗浄が始まるかもしれません。コップの水を優しく揺らして底の砂を沈める感じ。',insight:'💡 毎日数分の体幹トレーニングは筋肉だけでなく、文字通り脳を「洗って」いる可能性があります。'},
+    'fun-cancer-blood':{tag:'🏥 医療・健康',title:'血液1本で50種のがんを早期発見——液体生検が医療を変える',author:'Cancer Research 2026',tech:'新しい液体生検技術が開発され、採血1本でがん細胞が放出するDNA断片を検出し、約50種類のがんを特定できるだけでなく、起源臓器まで正確に判別できます。症状が出る前に発見が可能です。',plain:'以前はがんを見つけるために症状を待ち、画像検査し、生検が必要でした。今は採血1本でAIが浮遊する腫瘍DNAを解析し「肝臓に早期サイン」「肺に要観察」と教えてくれます——既存のどの検診より早く。',insight:'💡 この技術が普及すれば、年1回の「がん血液健診」（50種類カバー）が日常になるかもしれません。'},
+    'fun-jwst-exo':{tag:'🌌 宇宙・天文',title:'JWSTが系外惑星の氷の雲を撮影——大気モデルが根底から覆される',author:'NASA / JWST Team 2026',tech:'ジェームズ・ウェッブ宇宙望遠鏡が木星型系外惑星の大気中に水氷の雲を観測——この種の惑星では初の直接確認。既存の大気モデルの前提を覆し、惑星科学者は系外惑星の気候・化学組成の予測フレームワーク全体を見直すことになりました。',plain:'科学者はあの種の惑星の大気はガスだけのはずと思っていました。ところがJWSTは「雪」を撮影した。何光年も離れた惑星に、地球の巻雲のような水氷の雲が漂っていたのです。モデル全体を書き直す必要が生じました。',insight:'💡 宇宙の魅力：「わかった」と思うたびに、望遠鏡が「そうでもない」と教えてくれます。'},
+    'fun-wifi-id':{tag:'📶 テクノロジー',title:'WiFiが壁越しにあなたを特定——カメラ不要の「電波指紋」技術',author:'German Research Institute 2026',tech:'ドイツの研究者が、WiFi電波が部屋内で反射・散乱するパターンを解析することで、壁の向こうにいる特定の人物を識別できることを実証。歩行・呼吸・体型による波形の乱れが「電波指紋」として機能します。',plain:'あなたのWiFiルーターはすでにあなたを「見ている」かもしれません。ハッキングではなく物理の話：あなたの体がWiFi信号を曲げる方法は指紋のように唯一無二。研究者は普通のルーターで隣の部屋の特定の人物を識別しました。',insight:'💡 センサーもカメラも不要——WiFiがあるだけで、家が誰がどの部屋にいるかを知る未来が来るかもしれません。'},
+    'fun-ghost-shark':{tag:'🦈 海洋生物',title:'「ゴーストシャーク」新種発見——光る目を持つ6フィートの深海の幽霊',author:'CSIRO Australia 2026',tech:'オーストラリアCSIROが2026年に深海の系統的調査を実施し、一度に110種以上の新種を発見。その中には新種のギンザメ（ゴーストシャーク）も含まれます。サメとエイの古代の親戚で、4億年前からほぼ変化なく生存。体長180cm超、目に反射組織があり深海の暗闇で光って見えます。',plain:'ギンザメはサメではなく、サメより古い生き物——4億年間ほぼ変化せず生き続けています。今回発見された新種は光る目を持ち、あなたより長い体をしています。CSIROは1回の調査で110種以上の未記録生物を発見しました。',insight:'💡 地球の既知生物は実際の15%以下。深海探査のたびに新しい世界が開かれます。'},
+    'day0602-neuro-memory':{tag:'🧠 神経科学',title:'脳の小さなエンジンを充電：ミトコンドリア活性化で認知症マウスの記憶が回復',author:'Inserm / ボルドー大学 | Nature Neuroscience 2026',tech:'研究者が脳細胞のミトコンドリア活性を一時的に高めるツールを開発し、認知症マウスモデルで記憶機能の回復に成功。神経細胞内のエネルギー枯渇は細胞死の前に起きている可能性が示され、エネルギー不足がアルツハイマー症の結果ではなく早期原因である可能性が浮上。',plain:'認知症の脳細胞はバッテリー切れ寸前のスマホのようなもの——壊れてはいないのに動かない。科学者はその充電方法を見つけ、ほぼ失われていた記憶をマウスで回復させた。',insight:'💡 脳細胞が死んでから治療するより、早期にエネルギーを補うことがアルツハイマー対策として最も現実的な新方向かもしれない。'},
+    'day0602-bio-crispr':{tag:'🧬 分子生物学',title:'CRISPRの教科書が塗り替えられた：DNA誘導でRNAの精密切断に世界初成功',author:'香港科技大学 謝学明チーム | Nature Biotechnology 2026',tech:'従来のCRISPR-CasはRNAガイドでDNAを標的にするが、香港科技大学はDNAをガイドにしてRNAをプログラム可能に標的切断する世界初のCRISPR-Casシステムを開発。CRISPRの核心パラダイムを覆し、ウイルス診断とRNA標的療法への新経路を切り開いた。',plain:'これまでCRISPRはDNAを切るハサミだった。今回の研究はそれを逆にした——DNAでRNAを切る。RNAはウイルス感染の核心であり、新しいハサミはその弱点を直接狙う。',insight:'💡 RNAを標的にできるCRISPRツールは、ウイルスの迅速診断と広域抗ウイルス薬開発の時間軸を大幅に短縮する可能性がある。'},
+    'day0602-phys-darkmatter':{tag:'⚛️ 素粒子物理',title:'暗黒物質シグナル終焉宣言：2実験がDAMAの20年間の主張を4σで否定',author:'ANAIS-112 & COSINE-100共同研究 2026',tech:'ANAIS-112（スペイン）とCOSINE-100（韓国）が合同分析を行い、それぞれのデータセットに有意な年次変動シグナルは存在せず、DAMA/LIBRAが主張した暗黒物質起源を99.97%の信頼水準で除外。暗黒物質探索史上最も明確な否定的結果の一つ。',plain:'イタリアのDAMA実験は「夏は冬より暗黒物質が多い」と主張し、物理学者が20年間議論した。今、2つの独立した実験が同時に「それは暗黒物質ではない」と宣言した。科学の自己修正メカニズムが明確な判決を下した。',insight:'💡 間違いを排除することも進歩——暗黒物質はまだ謎だが、科学の最も誠実な姿は「ノー」と言える時だ。'},
+    'day0602-ocean-co2':{tag:'🌊 海洋科学',title:'海がCO₂掃除機に：アルカリ度増強の実海試験で年間50トン吸収を実証',author:'Ocean Sciences Meeting 2026 / メイン湾研究チーム',tech:'海洋アルカリ度増強（OAE）技術はアルカリ性鉱物を海水に溶かして大気CO₂の吸収能力を高める。メイン湾試験では4日間の監視期間中に2〜10トンの追加吸収を達成、年換算で50トンに達するとモデルが予測。最も説得力のある実海実証となった。',plain:'海水に天然石灰を適量溶かすのは、飲み物に重曹を加えて炭酸を溶かしやすくするようなもの——ただし溶かすのはCO₂で、海自身の化学特性を利用している。',insight:'💡 海洋は陸地の2.4倍の面積を持つ。アルカリ化技術の安全性が確認されれば、地球最大の炭素吸収源を大幅に強化できる。'},
+    'day0602-robot-unihm':{tag:'🤖 ロボット工学',title:'全ロボットハンドを統括する1フレームワーク：自然言語で形態を超えた操作が実現',author:'arXiv:2603.00732 | 2026',tech:'UniHMは、異なる形態の巧みなロボットハンドが自由形式の言語コマンドに従える初の統一フレームワーク。統一ハンド巧みさトークナイザーが異なる構造のハンドを共有コードブックにマッピングし、ビジョン言語モデルが人間の指示をクロスハンドで実行可能なアクションシーケンスに変換する。',plain:'以前は種類ごとに別々のトレーニングが必要で、ハンドを変えたら最初からやり直しだった。UniHMは万能翻訳者——「このボトルを締めて」と言えば、5本指でも3本指でも理解して実行できる。',insight:'💡 言語がロボットハンドのOSになるということは、未来の家庭用ロボットにはプログラマーではなく話せる人間が必要ということだ。'},
+    'day0602-ai-saro':{tag:'🛡️ AI安全',title:'話す前によく考えろ：SaROの安全推論でLLMの拒否がよりスマートに',author:'arXiv:2504.09420 | 2026',tech:'SaRO（Safety-oriented Reasoning Optimization）フレームワークは、言語モデルが応答生成前に安全推論ウォームアップを行い、安全志向の推論プロセス最適化によって有害リクエストの隠れた意図を能動的に識別できるようにする。誤拒否率を大幅に低下させながら高い安全性を維持する。',plain:'従来のAI安全ガードは乱暴なガードマンのようなもの：キーワードを見ただけで遮断。SaROはAIがまず本当の意図を推論させる——医師が薬の投与量を聞いたからといって疑わないが、真に危険なリクエストはより正確に識別する。',insight:'💡 最も安全なAIは最もよく「ノー」と言うAIではなく、いつ「ノー」と言うべきかを知っているAIだ。'},
+    'day0603-ai-resmerge':{tag:'🤖 AIマージ',title:'訓練なしで天才を融合：ResMergeがスペクトル残差でLLMを統合',author:'arXiv:2606.02252 | 2026',tech:'ResMergeはRLで訓練された複数の専門LLMを融合する残差ベーススペクトルマージフレームワーク。各モデルの重み差分をスペクトル分解し、独自貢献を特定して加重融合——再訓練なしで既存の最良手法を上回る。',plain:'複数の専門家AIの知識を追加学習なしに一つの超モデルにまとめる——ResMergeは各専門モデルの固有な数学的指紋を分析し、賢くスタックします。',insight:'💡 モデルマージはゼロから訓練するより効率的なAI構築の標準手法になるかもしれない。'},
+    'day0603-phys-quantum-sim':{tag:'⚛️ 量子シミュレーション',title:'量子コンピュータが物理実験室に：トポロジカル相と強相関量子物質のシミュレーション',author:'arXiv:2606.02721 | 2026',tech:'超電導量子ビット、イオントラップ、超冷原子、リュードベリ配列などの量子ハードウェアプラットフォームを包括的に概説し、凝縮系物理学——トポロジカル相、強相関物質、非平衡ダイナミクス——への応用を評価する。',plain:'従来のコンピュータで量子世界をシミュレートするのはそろばんでロケット軌道を計算するようなもの。量子コンピュータは量子の言語を生まれながらに話しており最適です。',insight:'💡 量子コンピュータの最初のキラーアプリは暗号解読ではなく、次世代超電導体や量子材料の設計かもしれない。'},
+    'day0603-neuro-morphic':{tag:'🧠 ニューロモーフィック',title:'アストロサイトがAI学習を塗り替える：ニューロモーフィック架構が深層学習の覇権に挑む',author:'arXiv:2606.01841 | 2026',tech:'脳のアストロサイト動態に着想を得た終身学習ネットワークを提唱。従来の深層学習より動的環境でのデータ効率が高く、教師なしスパイキングニューラルネットで壊滅的忘却を防ぐ。',plain:'脳にはニューロンだけでなく、学習を陰で調整するアストロサイトがいます。この新アーキテクチャはその仕組みをAIに取り入れ、学びながら忘れない機械を実現します。',insight:'💡 次世代AIの突破口は長年見過ごされてきた脳細胞——ニューロンではなくアストロサイト——から来るかもしれない。'},
+    'day0603-climate-heatwave':{tag:'🌡️ 気候科学',title:'熱波が粘着化：多スケール力学が気候変動下の極端高温持続メカニズムを解明',author:'arXiv:2606.02005 | 2026',tech:'多解像度動的モード分解でカナダ南部の夏季気温場を解析。気候変動により熱波の持続時間と強度が有意に増加し、熱波持続を促す多スケール温度変動構造を特定した。',plain:'かつて熱波は数日で過ぎ去っていた。今や居座り続ける。抜栓されない浴槽のように、科学者は大気中で熱を閉じ込める栓を発見した——それは気候変動と密接に関連している。',insight:'💡 将来の防災計画は最高気温だけでなく高温持続日数に注目すべき——長引く熱波こそが本当の脅威だ。'},
+    'day0603-chem-matdesign':{tag:'🧪 材料設計',title:'AI自動化材料探索：生成モデルとクローズドループが逆設計革命を起こす',author:'arXiv:2606.02507 | 2026',tech:'結晶構造の生成モデル、マルチモーダル学習、クローズドループ設計パイプラインの進展を概説し、材料科学を順方向予測から逆設計——目標特性から候補構造——へとシフトさせる方法論を示す。',plain:'新材料を見つける従来法は大海で針を探すようなもの。AI逆設計は欲しい特性を伝えると直接設計してくれる——試行錯誤の99%を省略できる。',insight:'💡 AIは実験を助けるだけでなく、今や材料そのものを設計できる——材料科学は偶然の発見から精密な創造へ。'},
+    'day0603-bio-eyetrack':{tag:'👁️ 認知科学',title:'AI眼球探偵：Eyettention IIが読書中の視線軌跡と注視時間を精密予測',author:'arXiv:2606.01964 | 2026',tech:'Eyettention IIはテキスト入力から読者の完全な視線軌跡——注視位置、語内着地位置、注視時間——を予測するエンドツーエンド深層学習モデル。最先端手法を上回り、語頻度・語長効果などの心理言語学的現象を再現する。',plain:'目は文字を左から右へ順に読まない——長い単語や難しい単語に長く止まり、なじみある単語は瞬時に飛ばす。Eyettention IIはあなたの眼球が次にどこを見るか実際の視線データ精度で予測する。',insight:'💡 人間がどのように文字を見るかを理解することで、より読みやすいインターフェース、優れた読書支援ツール、精密な読書障害診断が実現する。'}
+  }
+},
+'ko':{
+  logoMain:'매일 새지식',logoSub:' · Daily Digest',hl:'매일 새지식',sub:'최신 연구 × 다양한 분야 × 쉬운 해설',
+  ds:'2026년 5월 31일（일요일）',vday:'📅 날짜별',vcat:'🗂 카테고리',
+  catAll:'전체',catAI:'AI 인공지능',catBio:'생명의학',catArch:'건축 디자인',catPhys:'물리 양자',catChem:'화학 재료',catFin:'경제 금융',
+  read:'논문 읽기',mTech:'이 논문은 무엇을 연구하나요?',mPlain:'쉽게 말하면',
+  ftTitle:'매일 새지식 · Daily Knowledge Digest',ftSub:'Claude AI가 정리 · 교육 목적 전용',
+  exportBtn:'CSV 내보내기',drawerTitle:'필터',dtDate:'날짜',dtCat:'카테고리',dtAuthor:'저자',dtLikes:'좋아요',spHint:'자동으로 들어갑니다…',
+  cards:{'ai-2602':{tag:'🤖 AI 인공지능',title:'여러 AI 두뇌가 합체: 혼합 모델 관점으로 LLM 앙상블 재정의',author:'Jiale Fu et al.（2026）',tech:'기존 LLM 앙상블은 여러 모델 출력을 평균하지만, 각 토큰 위치에서 각 모델의 강점이 희석됩니다. 본 논문은 혼합 모델 앙상블（ME）을 제안합니다: 각 토큰 생성 단계에서 모델 풀에서 하나의 모델을 확률적으로 선택해 해당 토큰을 단독 결정하게 하여 더 일관되고 다양한 출력을 실현합니다.',plain:'5명의 셰프가 요리를 만들 때 매 단계에서 모든 의견을 평균하면（소금 반 스푼 + 간장 반 스푼 + 고추 반 스푼...） 아무 맛도 나지 않습니다. 이 논문은 각 단계에서 한 명의 셰프가 랜덤하게 담당하는 방식을 제안합니다. 결과는 위원회의 타협안이 아닌 진짜 요리가 됩니다.',insight:'💡 재즈 즉흥 연주처럼, 음악가들이 교대로 리드하는 게 모두가 동시에 같은 멜로디를 연주하는 것보다 더 창의적이고 좋은 음악이 됩니다.'},
+  'bio-2025':{tag:'🧬 생명의학',title:'세포를 읽고 약을 설계: AI가 RNA 전사체에서 최적 분자 역설계',author:'Bremler-Barr et al.（2026）',tech:'논문은 전사체 기반 약물 설계（TBDD） 프레임워크를 제안합니다. 원하는 세포 유전자 발현 상태 전환을 주면 이를 유발하는 약물 분자를 역생성하는 생성적 역문제로 정의합니다. RNA 발현 데이터에서 직접 최적 후보 분자를 역산하는 섭동 조건 분자 확산 모델을 사용합니다.',plain:'기존 신약 개발: 분자 설계→세포가 변하는지 테스트→안 되면 다른 분자. 이 논문은 역순: AI에게 세포를 어떻게 바꾸고 싶은지（암세포를 정상으로）알려주면, AI가 직접 그 변화를 일으키는 분자를 설계합니다. 목적지를 먼저 설정하고 GPS가 경로를 계획하는 것처럼요.',insight:'💡 이 프레임워크로 진정한 맞춤형 의료가 가능합니다——평균적인 환자를 위한 획일적인 약이 아니라, 당신 자신의 세포 상태에 기반한 약을 설계할 수 있습니다.'},
+  'arch-2505':{tag:'🏛️ 건축 디자인',title:'생성형 AI와 인간 전문가가 협력하여 도시 설계',author:'Generative AI Urban Lab（2025）',tech:'논문은 「단계적 인간-AI 도시 설계 프레임워크」를 제안하며, 멀티모달 확산 모델과 도시 설계 규칙을 통합합니다. AI가 각 설계 단계에서 규제를 준수하는 대량의 방안 후보를 자동 생성하고, 전문가가 의미론적 필터링을 수행하는 반복 협업 루프를 형성합니다.',plain:'이전에는 건축가가 수십 개의 안을 수작업으로 그려 비교했습니다. 이제 AI는 1초에 수천 개를 생성합니다——배달 앱에서 수천 가지 메뉴 중 가장 좋아하는 것을 골라 간만 맞추면 되는 것처럼요.',insight:'💡 넷플릭스 추천 알고리즘이 영화를 골라주듯, AI가 지역 주민의 생활 방식에 가장 적합한 도시 설계를 걸러냅니다.'},
+  'phys-2605':{tag:'⚛️ 물리 양자',title:'양자 컴퓨터가 「데이터의 물리 법칙」을 이해하다',author:'W. Mauerer & M. Schönberger（2026）',tech:'논문은 양자 데이터 관리 시스템을 물리학 관점에서 재해석하고, 에너지 갭·고유 상태 등 양자역학 개념으로 데이터 시스템의 스펙트럼 특성을 분석합니다. 양자 데이터 최적화 문제가 응집 물질 물리의 상전이와 수학적으로 유사함을 발견했습니다.',plain:'데이터 더미가 자석이나 결정처럼 「물리 법칙」을 가질 수 있다고 생각해 보셨나요? 이 논문은 X선으로 데이터를 투시하듯 숨겨진 에너지 구조를 발견하는 방법을 제시합니다.',insight:'💡 비밀번호·AI 모델 매개변수·유전자 서열——모두에 물리 법칙이 숨어 있습니다. 이 도구 상자가 그것을 캐냅니다.'},
+  'chem-2026':{tag:'🧪 화학 재료',title:'양자 컴퓨터가 12,000원자 장벽을 돌파: 단백질과 약의 결합 계산',author:'Robert Izsak et al.（2026）',tech:'논문은 양자 임베딩으로 단백질-리간드 복합체를 단편으로 분해하는 양자-고전 하이브리드 초컴퓨팅 워크플로우를 개발했습니다. 각 단편의 전자 구조를 최대 94 큐비트 양자 프로세서에서 계산하고, 9,200개 이상의 양자 회로를 100시간 이상 실행해 12,000원자의 계산 장벽을 돌파했습니다.',plain:'약 분자가 목표 단백질에 꼭 결합하는지 예측하려면 수만 개 원자 간의 양자 상호작용을 시뮬레이션해야 합니다——일반 컴퓨터에는 너무 어렵습니다. 이 논문은 양자 컴퓨터와 고전 슈퍼컴퓨터를 합체시켜 이전엔 불가능했던 12,000원자 계산에 성공했습니다.',insight:'💡 양자 컴퓨터는 이론에서 실용으로 이행 중——약물-단백질 결합 예측은 인류의 생명을 직접 바꿀 수 있는 첫 번째 진짜 전쟁터입니다.'},
+  'fin-2605':{tag:'💰 경제 금융',title:'물리학으로 주식시장을 투시: 이징 모델이 S&P 500의 숨겨진 법칙 해명',author:'Marc Homs-Dones et al.（2026）',tech:'논문은 자성 입자 상호작용을 설명하는 통계 물리 모델 이징 모델을 1996년부터 2026년까지 30년간의 S&P 500 데이터에 적용합니다. 주식 간의 쌍별 상호작용이 시간에 따라 동적으로 변하며, 시장 스트레스 시기에 물리적 상전이와 유사한 집단적 행동을 보여 시장 붕괴의 임계 신호를 사전에 제공할 수 있음을 발견했습니다.',plain:'수천 개 주식의 등락이 자석 속 원자 반전과 비슷할 수 있습니다? 자석은 임계 온도에서 갑자기 모두 반전되고, 시장은 공황 임계점에서 갑자기 붕괴합니다. 이 논문은 물리학을 사용해 시장이 전체적으로 반전하려는 경고 신호를 찾아냅니다.',insight:'💡 물리학자의 눈에 시장은 무작위가 아닙니다——고유한 임계점과 상전이 법칙을 가진 복잡계입니다. 법칙을 찾으면 붕괴 전 마지막 신호를 예측할 수 있습니다.'},
+
+    'fun-clownfish':{tag:'🐠 자연·생물',title:'흰동가리가 생존을 위해 몸을 줄인다——실제로 자기 몸을 작게 만들 수 있다',author:'CSIRO / Nature 2026',tech:'과학자들은 열대 해역 연구에서 흰동가리가 극심한 고온 환경에서 체적을 1~2% 줄일 수 있다는 사실을 발견했습니다. 이는 대사 적응 전략으로, 몸이 작아지면 산소와 에너지 소비가 줄어 비정상적으로 수온이 높아진 해양 환경에서도 먹이 활동, 이동, 번식을 계속할 수 있습니다.',plain:'폭염 날에 자신을 약간 「압축」해서 덜 덥고, 덜 먹어도 살 수 있다면? 흰동가리가 바로 그렇게 합니다. 진화적 변화가 아니라 실시간으로 몸 크기를 물리적으로 조절하는 것입니다.',insight:'💡 동물의 생존 본능은 우리가 상상하는 것보다 훨씬 유연합니다. 미래 의학이 이 「대사 다운시프트」 메커니즘을 참고할 수도 있습니다.'},
+    'fun-brain-clean':{tag:'🧠 신경과학',title:'복근을 조이면 뇌가 청소된다? 코어 운동이 뇌의 「자동 세척」 작동',author:'Neuroscience Daily 2026',tech:'과학자들은 복부 코어 근육을 가볍게 수축시키면 두개골 안에서 뇌가 미세하게 흔들리고, 이것이 글림프 시스템(뇌 노폐물 제거 네트워크)을 활성화할 수 있다는 것을 발견했습니다. 이 시스템은 보통 수면 중에만 작동하지만, 특정 동작으로 깨어 있을 때도 부분적으로 시작할 수 있습니다.',plain:'「수면이 뇌를 청소한다」는 말을 들어본 적 있나요? 이 연구에 따르면 깨어 있어도 살짝 복근을 조이기만 해도 뇌 자가 세척이 시작될 수 있습니다. 유리컵을 살짝 흔들어 바닥의 모래를 가라앉히는 것처럼요.',insight:'💡 매일 몇 분의 코어 트레이닝은 근육만 단련하는 것이 아니라 문자 그대로 뇌를 「씻고」 있을 수도 있습니다.'},
+    'fun-cancer-blood':{tag:'🏥 의료·건강',title:'혈액 한 관으로 50종 암 조기 발견——혈액 검사 혁명이 암 선별을 바꾼다',author:'Cancer Research 2026',tech:'새로운 액체 생검 기술이 개발되어 혈액 한 관에서 암세포가 방출하는 DNA 단편을 감지해 약 50종의 다양한 암을 식별하고 암의 기원 장기까지 정확히 판별할 수 있습니다. 증상이 나타나기 전에 감지가 가능합니다.',plain:'이전에는 암을 발견하려면 증상을 기다리고, 영상 검사를 하고, 조직 검사가 필요했습니다. 이제는 혈액 한 관을 뽑으면 AI가 혈중 부유 종양 DNA를 분석해 「간에 초기 신호」 또는 「폐 추적 필요」를 알려줍니다.',insight:'💡 이 기술이 보급되면 연간 「암 혈액 건강검진」(50종 커버)이 일상이 될 수 있습니다. 한 번의 채혈, 하나의 답.'},
+    'fun-jwst-exo':{tag:'🌌 우주·천문',title:'웹 망원경이 외계행성의 얼음 구름 촬영——대기 모델 전면 재수정',author:'NASA / JWST Team 2026',tech:'제임스 웹 우주 망원경이 2026년 목성형 외계행성 대기에서 수빙 구름을 관측——이 유형 행성으로는 최초의 직접 확인입니다. 기존 대기 모델의 가정에 도전하며 행성과학자들이 외계행성 기후 예측 프레임워크 전체를 재검토하게 만들었습니다.',plain:'과학자들은 그 종류의 행성 대기는 기체만 있을 거라 생각했습니다. 그런데 웹 망원경이 「눈」을 촬영했습니다. 수광년 떨어진 행성에 지구의 권운 같은 수빙 구름이 떠 있었던 것입니다. 모델 전체를 다시 써야 합니다.',insight:'💡 우주의 매력: 「이제 알았다」고 생각할 때마다 망원경이 「그렇지 않다」고 알려줍니다.'},
+    'fun-wifi-id':{tag:'📶 기술·트렌드',title:'WiFi 신호로 당신을 식별한다——카메라 없이 벽 너머 인물 특정',author:'German Research Institute 2026',tech:'독일 연구진이 WiFi 전파가 방 안에서 반사·산란되는 패턴을 분석해 벽 너머 특정 인물을 고유하게 식별할 수 있음을 실증했습니다. 각 사람의 걸음걸이, 호흡, 체형이 파형 왜곡에서 「전파 지문」 역할을 합니다.',plain:'당신의 WiFi 공유기가 이미 당신을 「보고」 있을 수도 있습니다. 해킹이 아니라 물리학의 문제입니다: 당신의 몸이 WiFi 신호를 굴절시키는 방식은 지문처럼 고유합니다. 연구진은 일반 공유기로 옆방의 특정 인물을 식별했습니다.',insight:'💡 센서도 카메라도 불필요——WiFi만 있으면 집이 누가 어느 방에 있는지 아는 미래가 올 수 있습니다.'},
+    'fun-ghost-shark':{tag:'🦈 해양생물',title:'「유령 상어」 신종 발견——눈이 빛나는 6피트 심해 괴물',author:'CSIRO Australia 2026',tech:'호주 CSIRO가 2026년 심해 체계 조사를 실시해 한 번에 110종 이상의 신종을 발견했습니다. 여기에는 새로운 은상어(유령 상어) 종도 포함되어 있습니다. 상어와 가오리의 고대 친척으로 4억 년 전부터 거의 변화 없이 생존하며, 체장 180cm 이상에 눈에 반사 조직이 있어 심해 어둠 속에서 빛나 보입니다.',plain:'은상어는 상어가 아니라 상어보다 더 오래된 생물——4억 년 동안 거의 변화 없이 살아왔습니다. 이번에 발견된 종은 빛나는 눈을 가지고 있고 당신보다 길며 심해에서 유령처럼 보입니다. CSIRO는 한 번의 조사에서 110종 이상의 미기록 생물을 발견했습니다.',insight:'💡 지구의 알려진 생물은 실제 존재하는 생물의 15% 미만입니다. 매번 심해 탐사는 새로운 세계를 여는 것과 같습니다.'},
+    'day0603-ai-resmerge':{tag:'🤖 AI 병합',title:'훈련 없이 천재를 합치다: ResMerge의 스펙트럼 잔차 모델 병합',author:'arXiv:2606.02252 | 2026',tech:'ResMerge는 RL로 훈련된 여러 전문 LLM을 융합하는 잔차 기반 스펙트럼 병합 프레임워크입니다. 각 모델의 가중치 델타를 스펙트럼 분해하여 고유 기여도를 파악하고 재훈련 없이 병합——기존 최고 방법을 여러 벤치마크에서 능가합니다.',plain:'여러 전문가 AI의 지식을 추가 학습 없이 하나의 슈퍼 모델에 합치는 것——ResMerge는 각 전문 모델의 고유한 수학적 지문을 분석해 지능적으로 쌓아 올립니다.',insight:'💡 모델 병합은 처음부터 훈련하는 것보다 효율적인 AI 구축의 표준 방법이 될 수 있습니다.'},
+    'day0603-phys-quantum-sim':{tag:'⚛️ 양자 시뮬레이션',title:'양자 컴퓨터가 물리 실험실로: 위상학적 상과 강상관 양자 물질의 전면 시뮬레이션',author:'arXiv:2606.02721 | 2026',tech:'초전도 큐비트, 이온트랩, 초냉원자, 리드버그 배열 등 양자 하드웨어 플랫폼을 포괄적으로 검토하고 위상학적 상, 강상관 물질, 비평형 동역학 등 응집물리 문제 시뮬레이션 응용을 평가합니다.',plain:'기존 컴퓨터로 양자 세계를 시뮬레이션하는 것은 주판으로 로켓 궤도를 계산하는 것과 같습니다. 양자 컴퓨터는 태어날 때부터 양자의 언어를 구사하므로 최적입니다.',insight:'💡 양자 컴퓨터의 첫 번째 킬러앱은 암호 해독이 아니라 차세대 초전도체와 양자 소재 설계일 수 있습니다.'},
+    'day0603-neuro-morphic':{tag:'🧠 뉴로모픽 컴퓨팅',title:'성상세포가 AI 학습 규칙을 바꾼다: 뉴로모픽 아키텍처가 딥러닝 패권에 도전',author:'arXiv:2606.01841 | 2026',tech:'뇌의 성상세포 동적 조절 메커니즘에서 영감을 받은 뉴로모픽 학습 아키텍처를 제안합니다. 기존 딥러닝보다 동적 환경에서 데이터 효율이 높고, 비지도 스파이킹 신경망으로 파국적 망각을 방지합니다.',plain:'뇌에는 뉴런만 있는 게 아닙니다——성상세포가 뒤에서 학습을 조율합니다. 새 아키텍처는 이 메커니즘을 AI에 도입해 새것을 배워도 옛것을 잊지 않는 기계를 실현합니다.',insight:'💡 다음 세대 AI의 돌파구는 오랫동안 간과된 뇌세포——뉴런이 아닌 성상세포——에서 올 수 있습니다.'},
+    'day0603-climate-heatwave':{tag:'🌡️ 기후과학',title:'열파가 점점 더 끈적해진다: 기후변화 속 극한 고온 지속 메커니즘 해석',author:'arXiv:2606.02005 | 2026',tech:'다중 해상도 동적 모드 분해를 사용해 캐나다 남부 여름 기온장을 분석한 결과, 기후변화로 열파의 지속 시간과 강도가 모두 유의미하게 증가함을 확인했습니다.',plain:'예전에 열파는 며칠이면 지나갔지만 이제는 눌러붙습니다. 마개를 빼지 않은 욕조처럼 과학자들은 대기 속에서 열을 가두는 마개를 발견했습니다.',insight:'💡 미래의 재난 대비는 최고 기온뿐 아니라 고온 지속 일수에 주목해야 합니다——끈질긴 열파야말로 진짜 살인마입니다.'},
+    'day0603-chem-matdesign':{tag:'🧪 소재 설계',title:'AI 자동화 소재 탐색: 생성 모델과 폐쇄 루프 워크플로우가 역방향 소재 설계 혁명을 일으키다',author:'arXiv:2606.02507 | 2026',tech:'결정 구조의 생성 모델, 다중모달 학습, 폐쇄 루프 설계 파이프라인의 최신 발전을 검토하고, 소재 과학을 순방향 예측에서 역방향 설계——목표 특성에서 후보 구조——로 전환하는 방법론을 제시합니다.',plain:'기존 신소재 탐색은 바다에서 바늘 찾기입니다. AI 역방향 설계는 원하는 특성을 말하면 AI가 직접 소재를 설계해 줍니다——시행착오의 99%를 줄입니다.',insight:'💡 AI는 이제 실험을 돕는 것을 넘어 소재 자체를 설계합니다——소재 과학은 우연한 발견에서 정밀한 창조로 나아갑니다.'},
+    'day0603-bio-eyetrack':{tag:'👁️ 인지과학',title:'AI 안구 탐정: Eyettention II가 독서 중 시선 궤적과 고정 시간을 정밀 예측',author:'arXiv:2606.01964 | 2026',tech:'Eyettention II는 텍스트 입력으로 독자의 완전한 시선 궤적——고정 위치, 단어 내 착지 위치, 고정 시간——을 예측하는 종단간 딥러닝 모델입니다. 최첨단 방법을 능가하며 단어 빈도·길이 효과 등 심리언어학적 현상을 재현합니다.',plain:'눈은 문자를 왼쪽에서 오른쪽으로 순서대로 읽지 않습니다——긴 단어·어려운 단어에는 오래 머물고 친숙한 단어는 순식간에 건너뜁니다. Eyettention II는 당신의 눈이 다음에 어디를 볼지 실제 안구 추적 데이터 수준으로 예측합니다.',insight:'💡 인간이 문자를 어떻게 보는지 이해하면 더 읽기 쉬운 인터페이스, 더 나은 독서 보조 도구, 더 정확한 난독증 진단이 가능해집니다.'}
+  }
+}
+};
+
+// ════════════════════════════════
+// STATE
+// ════════════════════════════════
+let curLang='zh-TW', curDay='', isDark=false, drawerOpen=false, curDTab='date';
+const likes = JSON.parse(localStorage.getItem('dkLikes')||'{}');
+
+function cardText(c){
+  if(c.title && typeof c.title==='object'){
+    return{tag:c.tag?.[curLang]||'',title:c.title[curLang]||'',tech:c.tech?.[curLang]||'',plain:c.plain?.[curLang]||'',insight:c.insight?.[curLang]||'',author:c.author||''};
+  }
+  return T[curLang]?.cards?.[c.id]||c;
+}
+
+function renderDayChips(){
+  const days=[...new Set(CARDS.map(c=>c.day))].sort().reverse();
+  const nav=document.getElementById('daynav');
+  nav.innerHTML=days.map((d,i)=>`<div class="chip${i===0?' on':''}" data-day="${d}"><span class="dot"></span>${d}</div>`).join('');
+  nav.querySelectorAll('.chip').forEach(chip=>chip.addEventListener('click',function(){
+    curDay=this.dataset.day;filterByDay(curDay);renderDrawer();
+  }));
+}
+
+function saveLikes(){localStorage.setItem('dkLikes',JSON.stringify(likes))}
+function getLikes(id){return likes[id]||0}
+function toggleLike(id){
+  if(likes[id]&&likes[id]>0) delete likes[id];
+  else likes[id]=(likes[id]||0)+1;
+  saveLikes();
+}
+function isLiked(id){return (likes[id]||0)>0}
+
+// ════════════════════════════════
+// RENDER CARDS
+// ════════════════════════════════
+function renderCards(){
+  const grid=document.getElementById('grid');
+  grid.innerHTML='';
+  CARDS.forEach((c,i)=>{
+    const ct=cardText(c);
+    const liked=isLiked(c.id);
+    const lc=getLikes(c.id);
+    const el=document.createElement('article');
+    el.className='card'+(c.day!==curDay?' hide':'');
+    el.dataset.domain=c.domain; el.dataset.day=c.day; el.dataset.id=c.id;
+    el.style.animationDelay=(i*0.06)+'s';
+    el.innerHTML=`
+      <div class="stripe"></div>
+      <div class="illus">${c.illus||''}</div>
+      <div class="cbody">
+        <span class="dtag">${ct.tag}</span>
+        <h2>${ct.title}</h2>
+        <p class="intro">${ct.plain}</p>
+        <div class="insight">${ct.insight}</div>
+        <div class="cfoot">
+          <span class="ref">${c.ref}</span>
+          <div style="display:flex;align-items:center;gap:6px">
+            <button class="heart-btn${liked?' liked':''}" data-id="${c.id}">${liked?'❤️':'🤍'}</button>
+            <span class="heart-count">${lc||''}</span>
+          </div>
+        </div>
+      </div>`;
+    el.addEventListener('click',function(e){
+      if(e.target.classList.contains('heart-btn')||e.target.closest('.heart-btn')) return;
+      openModal(c.id);
+    });
+    el.querySelector('.heart-btn').addEventListener('click',function(e){
+      e.stopPropagation();
+      toggleLike(c.id);
+      renderCards();
+      renderDrawer();
+    });
+    grid.appendChild(el);
+  });
+}
+
+// ════════════════════════════════
+// MODAL
+// ════════════════════════════════
+function openModal(id){
+  const c=CARDS.find(x=>x.id===id);
+  const ct=cardText(c);
+  document.getElementById('m-stripe').style.background=c.color;
+  document.getElementById('m-dtag').textContent=ct.tag;
+  document.getElementById('m-dtag').style.cssText=`color:${c.color};background:${c.color}22;display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:8px;margin-bottom:10px`;
+  document.getElementById('m-title').textContent=ct.title;
+  document.getElementById('m-author').textContent=ct.author+' · '+c.ref;
+  document.getElementById('m-tech').textContent=ct.tech;
+  document.getElementById('m-illus').innerHTML=(c.illus||'').replace('viewBox="0 0 340 160"','viewBox="0 0 340 160" style="max-width:440px"');
+  document.getElementById('m-plain').textContent=ct.plain;
+  document.getElementById('m-insight').textContent=ct.insight;
+  const link=document.getElementById('m-link');
+  link.href=c.url; link.style.background=c.color;
+  link.querySelector('[data-key="read"]').textContent=t.read;
+  const hbtn=document.getElementById('m-heart');
+  const liked=isLiked(id);
+  hbtn.className='modal-heart'+(liked?' liked':'');
+  hbtn.querySelector('#m-hcount').textContent=getLikes(id)||0;
+  hbtn.onclick=()=>{toggleLike(id);renderCards();renderDrawer();openModal(id)};
+  document.querySelectorAll('.modal-section h3 [data-key]').forEach(el=>{
+    const k=el.dataset.key; if(t[k]) el.textContent=t[k];
+  });
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+document.getElementById('modal-close').onclick=closeModal;
+document.getElementById('modal-overlay').onclick=function(e){if(e.target===this)closeModal()};
+function closeModal(){
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+
+// ════════════════════════════════
+// DRAWER
+// ════════════════════════════════
+function toggleDrawer(){
+  drawerOpen=!drawerOpen;
+  document.getElementById('drawer').classList.toggle('open',drawerOpen);
+}
+function switchDTab(el,tab){
+  curDTab=tab;
+  document.querySelectorAll('.dtab').forEach(b=>b.classList.remove('on'));
+  el.classList.add('on');
+  renderDrawer();
+}
+function renderDrawer(){
+  const t=T[curLang]; const el=document.getElementById('drawer-content');
+  document.getElementById('drawer-title').textContent=t.drawerTitle;
+  document.getElementById('dtab-date').title=t.dtDate;
+  document.getElementById('dtab-cat').title=t.dtCat;
+  document.getElementById('dtab-author').title=t.dtAuthor;
+  document.getElementById('dtab-likes').title=t.dtLikes;
+  document.querySelector('[data-key="exportBtn"]').textContent=t.exportBtn;
+  if(curDTab==='date'){
+    const days=[...new Set(CARDS.map(c=>c.day))].sort().reverse();
+    el.innerHTML=`<div class="drawer-section"><h4>${t.dtDate}</h4>${days.map(d=>{
+      const cnt=CARDS.filter(c=>c.day===d).length;
+      return`<div class="filter-item${d===curDay?' on':''}" onclick="selectDay('${d}')">
+        <span class="fi-label">${d}</span><span class="fi-count">${cnt}</span></div>`;
+    }).join('')}</div>`;
+  } else if(curDTab==='cat'){
+    const cats=[...new Set(CARDS.map(c=>c.domain))];
+    el.innerHTML=`<div class="drawer-section"><h4>${t.dtCat}</h4>${cats.map(cat=>{
+      const lbl=t['cat'+cat.charAt(0).toUpperCase()+cat.slice(1)]||cat;
+      const cnt=CARDS.filter(c=>c.domain===cat).length;
+      return`<div class="filter-item" onclick="filterCat('${cat}')">
+        <span class="fi-label">${lbl}</span><span class="fi-count">${cnt}</span></div>`;
+    }).join('')}</div>`;
+  } else if(curDTab==='author'){
+    const authors=[...new Set(CARDS.map(c=>c.author))];
+    el.innerHTML=`<div class="drawer-section"><h4>${t.dtAuthor}</h4>${authors.map(a=>{
+      const cnt=CARDS.filter(c=>c.author===a).length;
+      return`<div class="filter-item"><span class="fi-label" style="font-size:12px">${a}</span><span class="fi-count">${cnt}</span></div>`;
+    }).join('')}</div>`;
+  } else {
+    const sorted=[...CARDS].sort((a,b)=>getLikes(b.id)-getLikes(a.id));
+    el.innerHTML=`<div class="drawer-section"><h4>${t.dtLikes}</h4>${sorted.map(c=>{
+      const ct=cardText(c); const lc=getLikes(c.id);
+      return`<div class="filter-item" onclick="openModal('${c.id}');toggleDrawer()">
+        <span class="fi-label" style="font-size:12px">${ct.title}</span>
+        <span class="fi-count">${lc?'❤️'+lc:'-'}</span></div>`;
+    }).join('')}</div>`;
+  }
+}
+function selectDay(day){curDay=day;filterByDay(day);renderDrawer();}
+function filterByDay(day){
+  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',c.dataset.day!==day));
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.day===day));
+}
+function filterCat(cat){
+  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',cat!=='all'&&c.dataset.domain!==cat));
+  toggleDrawer();
+}
+
+// ════════════════════════════════
+// EXPORT CSV
+// ════════════════════════════════
+function exportCSV(){
+  const t=T[curLang];
+  const rows=[['日期/Date','種類/Domain','標題/Title','作者/Author','參考資料/Reference','連結/URL','喜好數/Likes']];
+  CARDS.forEach(c=>{
+    const ct=cardText(c);
+    rows.push([c.day,c.domain,ct.title,c.author,c.ref,c.url,getLikes(c.id)]);
+  });
+  const csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\n');
+  const blob=new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8;'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='daily-knowledge-'+new Date().toISOString().slice(0,10)+'.csv';
+  a.click();
+}
+
+// ════════════════════════════════
+// LANG
+// ════════════════════════════════
+function applyLang(){
+  const t=T[curLang];
+  document.documentElement.lang=curLang;
+  document.getElementById('logo-main').textContent=t.logoMain;
+  document.getElementById('logo-sub').textContent=t.logoSub;
+  document.getElementById('hl').textContent=t.hl;
+  document.getElementById('sub').textContent=t.sub;
+  document.getElementById('ds').textContent=t.ds;
+  document.getElementById('vday').textContent=t.vday;
+  document.getElementById('vcat').textContent=t.vcat;
+  document.getElementById('ft-title').textContent=t.ftTitle;
+  document.getElementById('ft-sub').textContent=t.ftSub;
+  document.getElementById('sp-title').textContent=t.hl;
+  document.getElementById('sp-sub').textContent=t.sub;
+  document.getElementById('sp-date').textContent='📅 '+t.ds;
+  document.getElementById('sp-hint').textContent=t.spHint;
+  document.getElementById('dt-label').textContent=t.dtDate;
+  document.querySelectorAll('[data-key]').forEach(el=>{
+    const k=el.dataset.key; if(t[k]) el.textContent=t[k];
+  });
+  document.querySelectorAll('.lpill').forEach(p=>p.classList.toggle('on',p.dataset.l===curLang));
+  renderCards();
+  renderDrawer();
+}
+
+// ════════════════════════════════
+// INIT & EVENTS
+// ════════════════════════════════
+// Splash: hide after animation + on click
+document.getElementById('splash').addEventListener('click',()=>{
+  document.getElementById('splash').classList.add('gone');
+});
+setTimeout(()=>document.getElementById('splash').classList.add('gone'), 3800);
+
+// Dark mode
+document.getElementById('darkbtn').addEventListener('click',function(){
+  isDark=!isDark;
+  document.documentElement.setAttribute('data-theme',isDark?'dark':'light');
+  this.textContent=isDark?'☀️':'🌙';
+});
+
+// View switch
+document.getElementById('vday').addEventListener('click',function(){
+  document.getElementById('vday').classList.add('on');
+  document.getElementById('vcat').classList.remove('on');
+  document.getElementById('daynav').style.display='flex';
+  document.getElementById('catbar').classList.remove('show');
+  filterByDay(curDay);
+  const sq=document.getElementById('searchbox'); if(sq&&sq.value) doSearch(sq.value);
+});
+document.getElementById('vcat').addEventListener('click',function(){
+  document.getElementById('vcat').classList.add('on');
+  document.getElementById('vday').classList.remove('on');
+  document.getElementById('daynav').style.display='none';
+  document.getElementById('catbar').classList.add('show');
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('hide'));
+});
+
+// Cat filter
+document.querySelectorAll('.cbtn').forEach(b=>b.addEventListener('click',function(){
+  document.querySelectorAll('.cbtn').forEach(x=>x.classList.remove('on'));
+  this.classList.add('on');
+  const cat=this.dataset.cat;
+  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',cat!=='all'&&c.dataset.domain!==cat));
+}));
+
+// Lang
+document.querySelectorAll('.lpill').forEach(p=>p.addEventListener('click',function(){
+  curLang=this.dataset.l; applyLang();
+}));
+
+// Keyboard
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();if(drawerOpen)toggleDrawer()}});
+
+
+
+// Search
+function doSearch(q){
+  q = q.trim().toLowerCase();
+  document.getElementById('search-clear').classList.toggle('show', q.length > 0);
+  const t = T[curLang];
+  let count = 0;
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const ct = cardText(c);
+    const c = CARDS.find(x=>x.id===id);
+    const text = [ct?.title||'', ct?.tag||'', ct?.plain||'', ct?.tech||'', c?.author||''].join(' ').toLowerCase();
+    const match = !q || text.includes(q);
+    const dayMatch = c?.day === curDay;
+    card.classList.toggle('hide', !match || !dayMatch);
+    if(match && dayMatch) count++;
+  });
+  document.getElementById('search-count').textContent = q ? count + ' 筆' : '';
+}
+function clearSearch(){
+  document.getElementById('searchbox').value='';
+  doSearch('');
+}
+
+// Font size control
+const fzBtns = document.querySelectorAll('.fz-btn');
+const savedFz = parseFloat(localStorage.getItem('fz') || '1');
+function applyFz(v){
+  document.documentElement.style.setProperty('--fz', v);
+  localStorage.setItem('fz', v);
+  fzBtns.forEach(b => b.classList.toggle('active', parseFloat(b.dataset.fz) === v));
+}
+fzBtns.forEach(b => b.addEventListener('click', () => applyFz(parseFloat(b.dataset.fz))));
+applyFz(savedFz);
+
+// Init — load JSON then render
+loadTodayData().then(data=>{
+  if(data && data.cards && data.cards.length){
+    CARDS=data.cards;
+    curDay=data.date;
+  }
+  renderDayChips();
+  applyLang();
+  renderDrawer();
+});
+</script>
+</body>
+</html>
