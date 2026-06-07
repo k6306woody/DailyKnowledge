@@ -116,6 +116,18 @@ def save_history(history, date_str, mode, topics):
     log.info(f"history.json 已更新 ({date_str})")
 
 # ── Anthropic API 呼叫 ────────────────────────────────────────────────────
+def extract_json(raw):
+    """從 Claude 回傳文字中取出 JSON 陣列，容忍 markdown code block 包裝"""
+    # 去掉 ```json 或 ``` 開頭與結尾
+    text = re.sub(r'^```(?:json)?\s*', '', raw.strip())
+    text = re.sub(r'\s*```$', '', text.strip())
+    # 找第一個 [ 到最後一個 ]
+    start = text.find('[')
+    end = text.rfind(']')
+    if start != -1 and end != -1 and end > start:
+        return text[start:end+1]
+    return None
+
 def call_claude(prompt, max_tokens=4000):
     try:
         msg = client.messages.create(
@@ -204,11 +216,11 @@ def generate_cards_paper(date_info, recent_topics):
     raw = call_claude(prompt, max_tokens=6000)
 
     # 取出 JSON 部分
-    json_match = re.search(r'\[[\s\S]*\]', raw)
-    if not json_match:
+    json_str = extract_json(raw)
+    if not json_str:
         raise ValueError(f"API 回傳內容無法解析為 JSON:\n{raw[:500]}")
 
-    cards = json.loads(json_match.group())
+    cards = json.loads(json_str)
     log.info(f"生成 {len(cards)} 張論文卡片")
     return cards
 
@@ -217,12 +229,14 @@ def generate_cards_weekend(date_info, recent_topics):
     today_str = date_info["today_str"]
     recent_str = "\n".join(f"- {t}" for t in recent_topics[-20:])
 
-    prompt = f"""你是「每日新知」科普卡片編輯，今天是 {today_str}（週末），要產生 6 張有趣科學新知卡片。
+    prompt = f"""你是「每日新知」科普卡片編輯，今天是 {today_str}（週末），要產生 4 張有趣科學新知卡片。
+
+重要限制：每個語言的 tech/plain/insight 欄位各限 1～2 句話，保持精簡！
 
 已出現過的主題（請勿重複）：
 {recent_str}
 
-請選 6 個 2025-2026 年真實的科學新發現或自然奇聞，涵蓋多元領域：
+請選 4 個 2025-2026 年真實的科學新發現或自然奇聞，涵蓋多元領域：
 - 自然生物（動物行為、演化、生態）
 - 海洋生物（深海、珊瑚礁、新物種）
 - 神經科學（大腦、記憶、感知）
@@ -284,13 +298,14 @@ def generate_cards_weekend(date_info, recent_topics):
 - url 盡量填真實文章連結
 - 只輸出 JSON 陣列，不要有任何說明文字"""
 
-    raw = call_claude(prompt, max_tokens=6000)
+    raw = call_claude(prompt, max_tokens=8192)
 
-    json_match = re.search(r'\[[\s\S]*\]', raw)
-    if not json_match:
+    json_str = extract_json(raw)
+    if not json_str:
+        log.error(f"raw 末尾: {raw[-200:]}")
         raise ValueError(f"API 回傳內容無法解析為 JSON:\n{raw[:500]}")
 
-    cards = json.loads(json_match.group())
+    cards = json.loads(json_str)
     log.info(f"生成 {len(cards)} 張週末趣知卡片")
     return cards
 
