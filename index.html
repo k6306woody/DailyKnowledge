@@ -190,24 +190,45 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
    RIGHT DRAWER
 ══════════════════════════════════ */
 #drawer-toggle{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:300;background:var(--tf);color:#fff;width:40px;padding:14px 0;border-radius:0 12px 12px 0;writing-mode:vertical-lr;letter-spacing:2px;font-size:12px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:6px;box-shadow:4px 0 20px var(--sh)}
-#drawer{position:fixed;left:-320px;top:0;height:100vh;width:300px;background:var(--su);border-right:1.5px solid var(--bd);box-shadow:8px 0 40px var(--sh);z-index:400;transition:left .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding-bottom:30px}
+#drawer{position:fixed;left:-320px;top:0;height:100vh;width:310px;background:var(--su);border-right:1.5px solid var(--bd);box-shadow:8px 0 40px var(--sh);z-index:400;transition:left .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
 #drawer.open{left:0}
-.drawer-head{padding:18px 18px 14px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between}
+.drawer-head{padding:16px 18px 12px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .drawer-head h3{font-size:14px;font-weight:700;color:var(--tx)}
 .drawer-close{width:28px;height:28px;border-radius:50%;background:var(--bg3);color:var(--tx2);font-size:16px;display:flex;align-items:center;justify-content:center}
-.drawer-tabs{display:flex;border-bottom:1px solid var(--bd)}
-.dtab{flex:1;padding:10px 0;font-size:11px;font-weight:700;text-align:center;color:var(--tx3);background:transparent;border-bottom:2px solid transparent}
-.dtab.on{color:var(--tf-tx);border-color:var(--tf)}
-[data-theme=dark] .dtab.on{color:var(--tf-b)}
-.drawer-section{padding:14px 16px}
-.drawer-section h4{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:10px}
-.filter-item{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:10px;cursor:pointer;transition:background .15s;margin-bottom:3px}
-.filter-item:hover,.filter-item.on{background:var(--bg3)}
-.filter-item.on .fi-label{color:var(--tf-tx);font-weight:700}
+/* Tab strip */
+.drawer-tabs{display:flex;border-bottom:2px solid var(--bd);flex-shrink:0;background:var(--bg2)}
+.dtab{flex:1;padding:12px 4px 10px;font-size:18px;text-align:center;color:var(--tx3);background:transparent;border-bottom:3px solid transparent;transition:color .15s,border-color .15s;margin-bottom:-2px}
+.dtab.on{color:var(--tf);border-color:var(--tf)}
+.dtab-label{display:block;font-size:9px;font-weight:700;letter-spacing:.5px;margin-top:2px;color:inherit}
+/* Drawer body scroll */
+#drawer-content{flex:1;overflow-y:auto;padding-bottom:20px}
+/* Filter items */
+.drawer-section{padding:14px 16px 4px}
+.drawer-section h4{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.filter-item{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-radius:10px;cursor:pointer;transition:background .15s,transform .1s;margin-bottom:3px;border:1.5px solid transparent}
+.filter-item:hover{background:var(--bg3);transform:translateX(2px)}
+.filter-item.on{background:var(--tf-p);border-color:var(--tf);transform:translateX(2px)}
+.filter-item.on .fi-label{color:var(--tf);font-weight:700}
 [data-theme=dark] .filter-item.on .fi-label{color:var(--tf-b)}
-.fi-label{font-size:13px;color:var(--tx2)}
-.fi-count{font-size:11px;font-weight:600;color:var(--tx3);background:var(--bg3);padding:2px 8px;border-radius:10px}
-.filter-item.on .fi-count{background:var(--tf-p);color:var(--tf-d)}
+.fi-left{display:flex;align-items:center;gap:8px;min-width:0}
+.fi-emoji{font-size:16px;flex-shrink:0}
+.fi-label{font-size:13px;color:var(--tx2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fi-count{font-size:11px;font-weight:700;color:var(--tx3);background:var(--bg3);padding:2px 8px;border-radius:20px;flex-shrink:0}
+.filter-item.on .fi-count{background:var(--tf);color:#fff}
+/* Likes ranking */
+.likes-card{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;cursor:pointer;margin-bottom:4px;transition:background .15s}
+.likes-card:hover{background:var(--bg3)}
+.likes-rank{font-size:18px;width:24px;text-align:center;flex-shrink:0}
+.likes-info{flex:1;min-width:0}
+.likes-title{font-size:12px;font-weight:600;color:var(--tx);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.likes-meta{font-size:10px;color:var(--tx3);margin-top:2px}
+.likes-heart{font-size:13px;font-weight:700;color:#e05;flex-shrink:0}
+/* Empty state */
+.drawer-empty{padding:40px 20px;text-align:center;color:var(--tx3);font-size:13px}
+.drawer-empty .de-icon{font-size:36px;margin-bottom:10px}
+/* Reset filter btn */
+.filter-reset{display:block;margin:8px 16px 0;padding:8px;border-radius:8px;text-align:center;font-size:11px;font-weight:700;color:var(--tf);background:var(--tf-p);cursor:pointer;transition:background .15s}
+.filter-reset:hover{background:var(--tf);color:#fff}
 
 
 /* FOOTER */
@@ -323,10 +344,18 @@ footer strong{color:var(--tf-tx)}
     <button class="drawer-close" onclick="toggleDrawer()">✕</button>
   </div>
   <div class="drawer-tabs">
-    <button class="dtab on" data-dtab="date" onclick="switchDTab(this,'date')" id="dtab-date">📅</button>
-    <button class="dtab" data-dtab="cat" onclick="switchDTab(this,'cat')" id="dtab-cat">🗂</button>
-    <button class="dtab" data-dtab="author" onclick="switchDTab(this,'author')" id="dtab-author">👤</button>
-    <button class="dtab" data-dtab="likes" onclick="switchDTab(this,'likes')" id="dtab-likes">❤️</button>
+    <button class="dtab on" data-dtab="cat" onclick="switchDTab(this,'cat')" id="dtab-cat">
+      🗂<span class="dtab-label">主題</span>
+    </button>
+    <button class="dtab" data-dtab="date" onclick="switchDTab(this,'date')" id="dtab-date">
+      📅<span class="dtab-label">日期</span>
+    </button>
+    <button class="dtab" data-dtab="author" onclick="switchDTab(this,'author')" id="dtab-author">
+      👤<span class="dtab-label">作者</span>
+    </button>
+    <button class="dtab" data-dtab="likes" onclick="switchDTab(this,'likes')" id="dtab-likes">
+      ❤️<span class="dtab-label">收藏</span>
+    </button>
   </div>
   <div id="drawer-content"></div>
 </div>
@@ -693,6 +722,7 @@ function closeModal(){
 function toggleDrawer(){
   drawerOpen=!drawerOpen;
   document.getElementById('drawer').classList.toggle('open',drawerOpen);
+  if(drawerOpen) renderDrawer(); // always re-render on open
 }
 function switchDTab(el,tab){
   curDTab=tab;
@@ -700,46 +730,204 @@ function switchDTab(el,tab){
   el.classList.add('on');
   renderDrawer();
 }
+
+// ── Active filters state ─────────────────────────────────────────────────────
+let activeFilters = { cat: null, day: null, author: null };
+
+function applyActiveFilters(){
+  CARDS.forEach(c => {
+    const el = document.querySelector(`.card[data-id="${c.id}"]`);
+    if(!el) return;
+    const hideCat    = activeFilters.cat    && c.domain !== activeFilters.cat;
+    const hideDay    = activeFilters.day    && c.day    !== activeFilters.day;
+    const hideAuthor = activeFilters.author && c.author !== activeFilters.author;
+    el.classList.toggle('hide', hideCat || hideDay || hideAuthor);
+  });
+}
+
+function resetFilters(){
+  activeFilters = { cat: null, day: null, author: null };
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('hide'));
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.day===curDay));
+  renderDrawer();
+}
+
 function renderDrawer(){
-  const t=T[curLang]; const el=document.getElementById('drawer-content');
-  document.getElementById('drawer-title').textContent=t.drawerTitle;
-  document.getElementById('dtab-date').title=t.dtDate;
-  document.getElementById('dtab-cat').title=t.dtCat;
-  document.getElementById('dtab-author').title=t.dtAuthor;
-  document.getElementById('dtab-likes').title=t.dtLikes;
-  document.querySelector('[data-key="exportBtn"]').textContent=t.exportBtn;
-  if(curDTab==='date'){
-    const days=[...new Set(CARDS.map(c=>c.day))].sort().reverse();
-    el.innerHTML=`<div class="drawer-section"><h4>${t.dtDate}</h4>${days.map(d=>{
-      const cnt=CARDS.filter(c=>c.day===d).length;
-      return`<div class="filter-item${d===curDay?' on':''}" onclick="selectDay('${d}')">
-        <span class="fi-label">${d}</span><span class="fi-count">${cnt}</span></div>`;
-    }).join('')}</div>`;
-  } else if(curDTab==='cat'){
-    const cats=[...new Set(CARDS.map(c=>c.domain))];
-    el.innerHTML=`<div class="drawer-section"><h4>${t.dtCat}</h4>${cats.map(cat=>{
-      const lbl=t['cat'+cat.charAt(0).toUpperCase()+cat.slice(1)]||cat;
-      const cnt=CARDS.filter(c=>c.domain===cat).length;
-      return`<div class="filter-item" onclick="filterCat('${cat}')">
-        <span class="fi-label">${lbl}</span><span class="fi-count">${cnt}</span></div>`;
-    }).join('')}</div>`;
-  } else if(curDTab==='author'){
-    const authors=[...new Set(CARDS.map(c=>c.author))];
-    el.innerHTML=`<div class="drawer-section"><h4>${t.dtAuthor}</h4>${authors.map(a=>{
-      const cnt=CARDS.filter(c=>c.author===a).length;
-      return`<div class="filter-item"><span class="fi-label" style="font-size:12px">${a}</span><span class="fi-count">${cnt}</span></div>`;
-    }).join('')}</div>`;
+  const t = T[curLang] || T['zh-TW'];
+  const el = document.getElementById('drawer-content');
+  if(!el) return;
+
+  // Update label text
+  const titleEl = document.getElementById('drawer-title');
+  if(titleEl) titleEl.textContent = t.drawerTitle||'篩選 / Filter';
+
+  // Update tab labels for current lang
+  const tabLabels = {
+    cat:    {zh:'主題',en:'Topic',sc:'主题',ja:'テーマ',ko:'주제'},
+    date:   {zh:'日期',en:'Date', sc:'日期',ja:'日付',ko:'날짜'},
+    author: {zh:'作者',en:'Author',sc:'作者',ja:'著者',ko:'저자'},
+    likes:  {zh:'收藏',en:'Likes',sc:'收藏',ja:'いいね',ko:'좋아요'},
+  };
+  const lk = {zh:'zh-TW',en:'en',sc:'zh-CN',ja:'ja',ko:'ko'}; // reverse lookup not needed; use simple map
+  const ll = curLang==='en'?'en':curLang==='zh-CN'?'sc':curLang==='ja'?'ja':curLang==='ko'?'ko':'zh';
+  ['cat','date','author','likes'].forEach(tab=>{
+    const span = document.querySelector(`#dtab-${tab} .dtab-label`);
+    if(span) span.textContent = tabLabels[tab][ll]||tabLabels[tab].zh;
+  });
+
+  // Loading state
+  if(!CARDS.length){
+    el.innerHTML = `<div class="drawer-empty"><div class="de-icon">⏳</div>資料載入中…</div>`;
+    return;
+  }
+
+  const hasFilter = activeFilters.cat || activeFilters.day || activeFilters.author;
+  const resetBtn = hasFilter
+    ? `<div class="filter-reset" onclick="resetFilters()">✕ 清除篩選</div>`
+    : '';
+
+  if(curDTab === 'cat'){
+    // Group by domain, sorted by count
+    const domainCounts = {};
+    CARDS.forEach(c=>{ domainCounts[c.domain]=(domainCounts[c.domain]||0)+1; });
+    const domains = Object.entries(domainCounts).sort((a,b)=>b[1]-a[1]);
+
+    el.innerHTML = resetBtn + `<div class="drawer-section">
+      <h4>🗂 依主題篩選</h4>
+      <div class="filter-item${!activeFilters.cat?' on':''}" onclick="filterDrawerCat(null)">
+        <div class="fi-left"><span class="fi-emoji">🌐</span><span class="fi-label">全部主題</span></div>
+        <span class="fi-count">${CARDS.length}</span>
+      </div>
+      ${domains.map(([dom,cnt])=>{
+        const m = DOMAIN_META[dom]||{emoji:'📌',label:{'zh-TW':dom}};
+        const lbl = m.label[curLang]||m.label['zh-TW']||dom;
+        const on = activeFilters.cat===dom;
+        return`<div class="filter-item${on?' on':''}" onclick="filterDrawerCat('${dom}')">
+          <div class="fi-left"><span class="fi-emoji">${m.emoji}</span><span class="fi-label">${lbl}</span></div>
+          <span class="fi-count">${cnt}</span>
+        </div>`;
+      }).join('')}
+    </div>`;
+
+  } else if(curDTab === 'date'){
+    const dayCounts = {};
+    CARDS.forEach(c=>{ dayCounts[c.day]=(dayCounts[c.day]||0)+1; });
+    const days = Object.entries(dayCounts).sort((a,b)=>b[0].localeCompare(a[0]));
+    const weekdayNames = ['日','一','二','三','四','五','六'];
+
+    el.innerHTML = resetBtn + `<div class="drawer-section">
+      <h4>📅 依日期篩選</h4>
+      <div class="filter-item${!activeFilters.day?' on':''}" onclick="filterDrawerDay(null)">
+        <div class="fi-left"><span class="fi-emoji">🗓</span><span class="fi-label">所有日期</span></div>
+        <span class="fi-count">${CARDS.length}</span>
+      </div>
+      ${days.map(([day,cnt])=>{
+        const d=new Date(day+'T00:00:00');
+        const wd=weekdayNames[d.getDay()];
+        const label=`${day} (週${wd})`;
+        const on = activeFilters.day===day;
+        const isToday = day===curDay;
+        return`<div class="filter-item${on?' on':''}" onclick="filterDrawerDay('${day}')">
+          <div class="fi-left">
+            <span class="fi-emoji">${isToday?'📌':'📄'}</span>
+            <span class="fi-label">${label}${isToday?' 今日':''}</span>
+          </div>
+          <span class="fi-count">${cnt}</span>
+        </div>`;
+      }).join('')}
+    </div>`;
+
+  } else if(curDTab === 'author'){
+    const authorCounts = {};
+    CARDS.forEach(c=>{ authorCounts[c.author]=(authorCounts[c.author]||0)+1; });
+    const authors = Object.entries(authorCounts).sort((a,b)=>b[1]-a[1]);
+
+    el.innerHTML = resetBtn + `<div class="drawer-section">
+      <h4>👤 依作者篩選</h4>
+      <div class="filter-item${!activeFilters.author?' on':''}" onclick="filterDrawerAuthor(null)">
+        <div class="fi-left"><span class="fi-emoji">👥</span><span class="fi-label">所有作者</span></div>
+        <span class="fi-count">${CARDS.length}</span>
+      </div>
+      ${authors.map(([author,cnt])=>{
+        const on = activeFilters.author===author;
+        // short display: take up to first comma or 30 chars
+        const shortName = author.length>32 ? author.slice(0,30)+'…' : author;
+        return`<div class="filter-item${on?' on':''}" onclick="filterDrawerAuthor('${author.replace(/'/g,"\\'") }')">
+          <div class="fi-left"><span class="fi-emoji">👤</span><span class="fi-label">${shortName}</span></div>
+          <span class="fi-count">${cnt}</span>
+        </div>`;
+      }).join('')}
+    </div>`;
+
   } else {
-    const sorted=[...CARDS].sort((a,b)=>getLikes(b.id)-getLikes(a.id));
-    el.innerHTML=`<div class="drawer-section"><h4>${t.dtLikes}</h4>${sorted.map(c=>{
-      const ct=cardText(c); const lc=getLikes(c.id);
-      return`<div class="filter-item" onclick="openModal('${c.id}');toggleDrawer()">
-        <span class="fi-label" style="font-size:12px">${ct.title}</span>
-        <span class="fi-count">${lc?'❤️'+lc:'-'}</span></div>`;
-    }).join('')}</div>`;
+    // Likes tab: ranked list of all cards
+    const sorted = [...CARDS].sort((a,b)=>getLikes(b.id)-getLikes(a.id));
+    const medals = ['🥇','🥈','🥉'];
+    const likedCards = sorted.filter(c=>getLikes(c.id)>0);
+    const unlikedCards = sorted.filter(c=>getLikes(c.id)===0);
+
+    el.innerHTML = `<div class="drawer-section">
+      <h4>❤️ 收藏排行</h4>
+      ${likedCards.length===0
+        ? `<div class="drawer-empty"><div class="de-icon">🤍</div>還沒有收藏的卡片<br><small>點卡片上的 🤍 來收藏</small></div>`
+        : likedCards.map((c,i)=>{
+          const ct=cardText(c); const lc=getLikes(c.id);
+          const m = DOMAIN_META[c.domain]||{emoji:'📌'};
+          return`<div class="likes-card" onclick="openModal('${c.id}');toggleDrawer()">
+            <span class="likes-rank">${medals[i]||'#'+(i+1)}</span>
+            <div class="likes-info">
+              <div class="likes-title">${ct.title}</div>
+              <div class="likes-meta">${m.emoji} ${c.day}</div>
+            </div>
+            <span class="likes-heart">❤️ ${lc}</span>
+          </div>`;
+        }).join('')
+      }
+      ${unlikedCards.length>0 && likedCards.length>0 ? `
+      <div style="border-top:1px solid var(--bd);margin:10px 0 8px;padding-top:10px">
+        <div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:1px;padding:0 2px 6px">其他卡片</div>
+        ${unlikedCards.map(c=>{
+          const ct=cardText(c);
+          const m = DOMAIN_META[c.domain]||{emoji:'📌'};
+          return`<div class="likes-card" onclick="openModal('${c.id}');toggleDrawer()">
+            <span class="likes-rank" style="opacity:.4">—</span>
+            <div class="likes-info">
+              <div class="likes-title" style="opacity:.7">${ct.title}</div>
+              <div class="likes-meta">${m.emoji} ${c.day}</div>
+            </div>
+            <span class="likes-heart" style="opacity:.4">🤍</span>
+          </div>`;
+        }).join('')}
+      </div>` : ''}
+    </div>`;
   }
 }
-function selectDay(day){curDay=day;filterByDay(day);renderDrawer();}
+
+// Filter action handlers
+function filterDrawerCat(cat){
+  activeFilters.cat = cat;
+  applyActiveFilters();
+  // also update catbar highlight
+  document.querySelectorAll('.cbtn').forEach(b=>{
+    b.classList.toggle('on', cat ? b.dataset.cat===cat : b.dataset.cat==='all');
+  });
+  renderDrawer();
+}
+function filterDrawerDay(day){
+  activeFilters.day = day;
+  if(day){ curDay=day; updateDateDisplay(); }
+  applyActiveFilters();
+  // update daynav chips
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.day===day));
+  renderDrawer();
+}
+function filterDrawerAuthor(author){
+  activeFilters.author = author;
+  applyActiveFilters();
+  renderDrawer();
+}
+
+function selectDay(day){ curDay=day; filterByDay(day); updateDateDisplay(); renderDrawer(); }
 function filterByDay(day){
   document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',c.dataset.day!==day));
   document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.day===day));
