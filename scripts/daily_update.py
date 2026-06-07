@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 daily_update.py — 每日知識卡片自動更新腳本
 - 平日（週一~週五）：抓 arXiv 最新論文
@@ -67,8 +67,8 @@ DOMAIN_CONFIG = {
 LANGS = ["zh-TW", "en", "zh-CN", "ja", "ko"]
 
 # ── 日期邏輯 ──────────────────────────────────────────────────────────────
-def get_date_info():
-    today = date.today()
+def get_date_info(override_date=None):
+    today = date.fromisoformat(override_date) if override_date else date.today()
     wd = today.weekday()  # 0=Mon, 6=Sun
     is_weekend = wd >= 5
 
@@ -116,6 +116,17 @@ def save_history(history, date_str, mode, topics):
     log.info(f"history.json 已更新 ({date_str})")
 
 # ── Anthropic API 呼叫 ────────────────────────────────────────────────────
+def sanitize_json(text):
+    """修復 Claude 常見的 JSON 格式問題"""
+    # 把中文引號「」『』《》換成直角引號（避免破壞 JSON 字串）
+    replacements = [
+        ('“', '「'), ('”', '」'),  # " " → 「 」
+        ('‘', "'"), ('’', "'"),              # ' ' → '
+    ]
+    for old, new in replacements:
+        text = text.replace(old, new)
+    return text
+
 def extract_json(raw):
     """從 Claude 回傳文字中取出 JSON 陣列，容忍 markdown code block 包裝"""
     # 去掉 ```json 或 ``` 開頭與結尾
@@ -125,7 +136,7 @@ def extract_json(raw):
     start = text.find('[')
     end = text.rfind(']')
     if start != -1 and end != -1 and end > start:
-        return text[start:end+1]
+        return sanitize_json(text[start:end+1])
     return None
 
 def call_claude(prompt, max_tokens=4000):
@@ -141,88 +152,76 @@ def call_claude(prompt, max_tokens=4000):
         raise
 
 # ── 產生卡片 ──────────────────────────────────────────────────────────────
+PAPER_BATCHES = [
+    [("ai","🤖","人工智慧/機器學習"), ("bio","🧬","生命科學/生物醫學"), ("phys","⚛️","物理/量子")],
+    [("neuro","🧠","神經科學"), ("space","🌌","太空/天文"), ("tech","📶","自選：化學/材料/技術/海洋/經濟（domain 自選 chem/tech/ocean/fin/arch/health）")],
+]
+
+def _paper_prompt(today_str, paper_date, recent_str, domains):
+    domain_list = "\n".join(f"{i+1}. {d[2]}（domain: {d[0]}）" for i,d in enumerate(domains))
+    pid = paper_date[2:4] + paper_date[5:7]
+    d0 = domains[0]
+    color_map = {"ai":"#667eea","bio":"#48bb78","phys":"#ed8936","neuro":"#9f7aea",
+                 "space":"#4299e1","tech":"#68d391","chem":"#f6e05e","ocean":"#76e4f7",
+                 "fin":"#f687b3","arch":"#a0aec0","health":"#fc8181"}
+    ex_color = color_map.get(d0[0],"#667eea")
+    return f"""你是「每日新知」科普卡片編輯，為 {today_str}（arXiv 日期 {paper_date}）產生 3 張論文卡片。
+
+已出現過的主題（請勿重複）：
+{recent_str}
+
+請從以下 3 個領域各選一篇真實的 2026 年 arXiv 論文：
+{domain_list}
+
+輸出純 JSON 陣列（不要有任何說明）：
+[
+  {{
+    "id": "{d0[0]}-{pid}",
+    "domain": "{d0[0]}",
+    "day": "{today_str}",
+    "author": "作者名 et al. 2026",
+    "ref": "arXiv:2606.XXXXX",
+    "url": "https://arxiv.org/abs/2606.XXXXX",
+    "color": "{ex_color}",
+    "title": {{"zh-TW":"繁體中文標題","en":"English Title","zh-CN":"简体中文","ja":"日本語","ko":"한국어"}},
+    "tag":   {{"zh-TW":"{d0[1]} 人工智慧","en":"{d0[1]} AI","zh-CN":"{d0[1]} 人工智能","ja":"{d0[1]} 人工知能","ko":"{d0[1]} 인공지능"}},
+    "tech":  {{"zh-TW":"技術說明（2句內）","en":"Tech explanation","zh-CN":"技术说明","ja":"技術説明","ko":"기술 설명"}},
+    "plain": {{"zh-TW":"白話解釋（1-2句）","en":"Plain explanation","zh-CN":"白话解释","ja":"わかりやすく","ko":"쉬운 설명"}},
+    "insight":{{"zh-TW":"💡 洞見","en":"💡 Insight","zh-CN":"💡 洞见","ja":"💡 洞察","ko":"💡 통찰"}}
+  }}
+]
+
+重要：
+- ref 用真實 arXiv ID（2606.XXXXX）
+- color 用對應領域色碼（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, fin:#f687b3, arch:#a0aec0, health:#fc8181）
+- 每個語言的 tech/plain/insight 各限 **1 句話**，絕對不要超過 50 個字
+- JSON 字串值中禁止使用中文引號「""」，改用「」
+- 只輸出 JSON 陣列"""
+
+
 def generate_cards_paper(date_info, recent_topics):
     paper_date = date_info["paper_date_str"]
     today_str = date_info["today_str"]
     recent_str = "\n".join(f"- {t}" for t in recent_topics[-20:])
 
-    prompt = f"""你是「每日新知」科普卡片編輯，今天要為 {today_str}（arXiv 日期 {paper_date}）產生 6 張論文卡片。
+    all_cards = []
+    for batch_num, domains in enumerate(PAPER_BATCHES, 1):
+        prompt = _paper_prompt(today_str, paper_date, recent_str, domains)
+        raw = call_claude(prompt, max_tokens=8000)
+        json_str = extract_json(raw)
+        if not json_str:
+            log.error(f"論文第{batch_num}批 raw 末尾: {raw[-200:]}")
+            raise ValueError(f"論文第{batch_num}批 API 回傳無法解析:\n{raw[:300]}")
+        try:
+            cards = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            log.error(f"論文第{batch_num}批 JSON 錯誤: {e}, 附近: {json_str[max(0,e.pos-80):e.pos+80]}")
+            raise
+        log.info(f"論文第{batch_num}批生成 {len(cards)} 張卡片")
+        all_cards.extend(cards)
 
-已出現過的主題（請勿重複）：
-{recent_str}
-
-請從以下領域各選一篇真實的 2026 年 arXiv 論文：
-1. 人工智慧 / 機器學習（domain: ai）
-2. 生命科學 / 生物醫學（domain: bio）
-3. 物理 / 量子（domain: phys）
-4. 神經科學（domain: neuro）
-5. 太空 / 天文（domain: space）
-6. 自選：化學/材料/技術/海洋/經濟（domain: chem/tech/ocean/fin/arch）
-
-每張卡片輸出 JSON，格式如下（輸出純 JSON 陣列，不要加任何說明）：
-[
-  {{
-    "id": "ai-{paper_date[2:4]}{paper_date[5:7]}",
-    "domain": "ai",
-    "day": "{today_str}",
-    "author": "作者名 et al. 2026",
-    "ref": "arXiv:2606.XXXXX",
-    "url": "https://arxiv.org/abs/2606.XXXXX",
-    "color": "#667eea",
-    "title": {{
-      "zh-TW": "繁體中文標題",
-      "en": "English Title",
-      "zh-CN": "简体中文标题",
-      "ja": "日本語タイトル",
-      "ko": "한국어 제목"
-    }},
-    "tag": {{
-      "zh-TW": "🤖 人工智慧",
-      "en": "🤖 Artificial Intelligence",
-      "zh-CN": "🤖 人工智能",
-      "ja": "🤖 人工知能",
-      "ko": "🤖 인공지능"
-    }},
-    "tech": {{
-      "zh-TW": "技術說明（2-3句）",
-      "en": "Technical explanation (2-3 sentences)",
-      "zh-CN": "技术说明（2-3句）",
-      "ja": "技術説明（2〜3文）",
-      "ko": "기술 설명 (2-3문장)"
-    }},
-    "plain": {{
-      "zh-TW": "白話解釋（1-2句，生活化）",
-      "en": "Plain explanation (1-2 sentences)",
-      "zh-CN": "白话解释（1-2句）",
-      "ja": "わかりやすい説明（1〜2文）",
-      "ko": "쉬운 설명 (1-2문장)"
-    }},
-    "insight": {{
-      "zh-TW": "💡 洞見（對未來的影響）",
-      "en": "💡 Insight",
-      "zh-CN": "💡 洞见",
-      "ja": "💡 洞察",
-      "ko": "💡 통찰"
-    }}
-  }}
-]
-
-重要：
-- ref 必須是真實存在的 arXiv ID 格式（2606.XXXXX 或 2605.XXXXX）
-- 每個領域用對應的 color（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, fin:#f687b3, arch:#a0aec0）
-- 英文字串中的撇號寫 ' 即可（這是 JSON，不是 JS）
-- 只輸出 JSON 陣列，不要有任何說明文字"""
-
-    raw = call_claude(prompt, max_tokens=6000)
-
-    # 取出 JSON 部分
-    json_str = extract_json(raw)
-    if not json_str:
-        raise ValueError(f"API 回傳內容無法解析為 JSON:\n{raw[:500]}")
-
-    cards = json.loads(json_str)
-    log.info(f"生成 {len(cards)} 張論文卡片")
-    return cards
+    log.info(f"論文共生成 {len(all_cards)} 張卡片")
+    return all_cards
 
 
 def _weekend_prompt(today_str, recent_str, batch, suffixes):
@@ -333,20 +332,20 @@ def write_json(date_info, cards):
 
 
 # ── 主程式 ────────────────────────────────────────────────────────────────
-def main():
+def main(override_date=None, force=False):
     log.info("=" * 60)
     log.info("每日新知自動更新開始")
 
-    date_info = get_date_info()
-    log.info(f"今天：{date_info['today_str']} | 模式：{date_info['mode']} | paper_date：{date_info['paper_date_str']}")
+    date_info = get_date_info(override_date)
+    log.info(f"日期：{date_info['today_str']} | 模式：{date_info['mode']} | paper_date：{date_info['paper_date_str']}")
 
     history = load_history()
     recent_topics = get_recent_topics(history)
 
-    # 檢查今天是否已更新
+    # 檢查是否已更新（--force 可跳過）
     existing = [e for e in history["entries"] if e.get("date") == date_info["today_str"]]
-    if existing:
-        log.info(f"今天 {date_info['today_str']} 已更新過，跳過")
+    if existing and not force:
+        log.info(f"{date_info['today_str']} 已更新過，跳過（加 --force 可強制重新生成）")
         return
 
     # 產生卡片
@@ -367,4 +366,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", help="補歷史資料用，格式 YYYY-MM-DD", default=None)
+    parser.add_argument("--force", action="store_true", help="強制重新生成（即使已存在）")
+    args = parser.parse_args()
+    main(override_date=args.date, force=args.force)
