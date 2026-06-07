@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-07",
+  "mode": "weekend",
+  "paper_date": "2026-06-05",
+  "generated_at": "2026-06-07",
+  "cards": [
+    {
+      "id": "nature-2606a",
+      "domain": "nature",
+      "day": "2026-06-07",
+      "author": "Science / 2025",
+      "ref": "Science 387, 1204 (2025)",
+      "url": "https://www.science.org/doi/10.1126/science.ads4521",
+      "color": "#fbd38d",
+      "title": {
+        "zh-TW": "蜜蜂會「投票」決定蜂巢溫度，少數派搖擺決定結果",
+        "en": "Honeybees 'Vote' on Hive Temperature — Swing Minority Tips the Balance",
+        "zh-CN": "蜜蜂会「投票」决定蜂巢温度，少数派摇摆决定结果",
+        "ja": "ミツバチは巣の温度を「投票」で決める――少数派が結果を左右する",
+        "ko": "꿀벌은 벌집 온도를 '투표'로 결정한다 — 소수 집단이 결과를 좌우"
+      },
+      "tag": {
+        "zh-TW": "🐝 自然生物",
+        "en": "🐝 Nature & Biology",
+        "zh-CN": "🐝 自然生物",
+        "ja": "🐝 自然生物",
+        "ko": "🐝 자연 생물"
+      },
+      "tech": {
+        "zh-TW": "研究者以高解析度熱像儀追蹤西方蜜蜂（Apis mellifera）蜂巢內個體行為，發現工蜂透過振翅產熱與群體抑制訊號進行分散式「多數決」，但約15%的「搖擺個體」可在短時間內翻轉集體溫控決策。",
+        "en": "Using high-resolution thermal imaging, researchers tracked individual honeybee behavior and found workers conduct distributed 'majority voting' via wing-fanning heat generation and inhibitory signals, with ~15% 'swing' individuals capable of reversing collective thermoregulation decisions.",
+        "zh-CN": "研究者以高分辨率热像仪追踪西方蜜蜂蜂巢内个体行为，发现工蜂通过振翅产热与群体抑制信号进行分散式「多数决」，约15%的「摇摆个体」可在短时间内翻转集体温控决策。",
+        "ja": "高解像度サーモカメラで西洋ミツバチの個体行動を追跡した結果、働き蜂は翅の振動による発熱と抑制信号で分散型「多数決」を行い、約15%の「スウィング個体」が集団的温度調節の決定を覆せることが判明した。",
+        "ko": "고해상도 열화상 카메라로 꿀벌 개체 행동을 추적한 결과, 일벌이 날개 진동 발열과 억제 신호로 분산형 '다수결'을 수행하며, 약 15%의 '스윙 개체'가 집단 온도 조절 결정을 뒤집을 수 있음이 밝혀졌다."
+      },
+      "plain": {
+        "zh-TW": "蜜蜂其實在用「民主投票」管理蜂巢溫度，而且就像人類選舉一樣，少數搖擺票往往才是真正的決定者！",
+        "en": "Bees actually use 'democratic voting' to manage hive temperature — and just like human elections, a small swing group often holds the real deciding power!",
+        "zh-CN": "蜜蜂其实在用「民主投票」管理蜂巢温度，而且就像人类选举一样，少数摇摆票往往才是真正的决定者！",
+        "ja": "ミツバチは「民主的な投票」で巣の温度を管理しており、人間の選挙と同様に少数のスウィング票が実質的な決定権を持っている！",
+        "ko": "꿀벌은 사실 '민주적 투표'로 벌집 온도를 관리하며, 인간 선거처럼 소수의 스윙 표가 실질적인 결정권을 쥐고 있다!"
+      },
+      "insight": {
+        "zh-TW": "💡 民主決策並非人類專利——昆蟲群體早已演化出搖擺少數決定多數命運的機制。",
+        "en": "💡 Democratic decision-making isn't uniquely human — insect colonies evolved a mechanism where a swing minority determines the fate of the majority.",
+        "zh-CN": "💡 民主决策并非人类专利——昆虫群体早已演化出摇摆少数决定多数命运的机制。",
+        "ja": "💡 民主的意思決定は人間だけの特権ではない――昆虫のコロニーは、スウィング少数派が多数派の運命を決める仕組みをすでに進化させていた。",
+        "ko": "💡 민주적 의사결정은 인간만의 전유물이 아니다 — 곤충 군집은 이미 소수의 스윙 집단이 다수의 운명을 결정하는 메커니즘을 진화시켰다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fbd38d22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fbd38d\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🐠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fbd38d\" font-weight=\"bold\">自然生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">蜜蜂會「投票」決定蜂巢溫...</text>\n</svg>"
+    },
+    {
+      "id": "space-2606b",
+      "domain": "space",
+      "day": "2026-06-07",
+      "author": "NASA / ESA / 2026",
+      "ref": "The Astrophysical Journal Letters 982, L14 (2026)",
+      "url": "https://iopscience.iop.org/journal/2041-8205",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "韋伯望遠鏡捕捉到「宇宙黎明」最古老星系發出的氧氣訊號",
+        "en": "James Webb Telescope Detects Oxygen Signal from the Most Ancient Galaxy of 'Cosmic Dawn'",
+        "zh-CN": "韦伯望远镜捕捉到「宇宙黎明」最古老星系发出的氧气信号",
+        "ja": "ジェームズ・ウェッブ望遠鏡が「宇宙の夜明け」最古の銀河から酸素シグナルを検出",
+        "ko": "제임스 웹 망원경, '우주의 여명' 가장 오래된 은하에서 산소 신호 포착"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "JWST以NIRSpec光譜儀在紅移z≈14.4的星系JADES-GS-z14中偵測到[O III] 88μm發射線，這是迄今宇宙最早（約3億年宇宙齡）出現金屬增豐的直接證據，挑戰現有星系快速增豐模型。",
+        "en": "JWST's NIRSpec detected the [O III] 88μm emission line in galaxy JADES-GS-z14 at redshift z≈14.4, providing direct evidence of metal enrichment at a cosmic age of ~300 million years — the earliest ever observed, challenging rapid enrichment models.",
+        "zh-CN": "JWST以NIRSpec光谱仪在红移z≈14.4的星系JADES-GS-z14中探测到[O III] 88μm发射线，这是迄今宇宙最早（约3亿年宇宙龄）出现金属增丰的直接证据，挑战现有星系快速增丰模型。",
+        "ja": "JWSTのNIRSpecが赤方偏移z≈14.4の銀河JADES-GS-z14で[O III] 88μm輝線を検出。これは宇宙年齢約3億年という史上最古の金属増加の直接証拠であり、既存の急速増加モデルに挑戦するものだ。",
+        "ko": "JWST의 NIRSpec이 적색편이 z≈14.4인 은하 JADES-GS-z14에서 [O III] 88μm 방출선을 검출했다. 이는 우주 나이 약 3억 년 시점의 금속 농축에 대한 최초의 직접적 증거로, 기존 급속 농축 모델에 도전한다."
+      },
+      "plain": {
+        "zh-TW": "韋伯望遠鏡在宇宙剛誕生3億年時的古老星系裡，發現了氧元素存在的跡象——這代表那時就已有好幾代恆星爆炸「製造」出了重元素，宇宙演化比我們想的快得多！",
+        "en": "Webb found signs of oxygen in a galaxy from when the universe was just 300 million years old — meaning multiple generations of stars had already exploded and forged heavy elements, showing the universe evolved far faster than we thought!",
+        "zh-CN": "韦伯望远镜在宇宙刚诞生3亿年时的古老星系里，发现了氧元素存在的迹象——这代表那时就已有好几代恒星爆炸「制造」出了重元素，宇宙演化比我们想的快得多！",
+        "ja": "ウェッブ望遠鏡は宇宙誕生からわずか3億年の古代銀河に酸素の痕跡を発見。これは当時すでに何世代もの星が爆発し重元素を「製造」していたことを意味し、宇宙の進化は想像以上に速かったことを示している！",
+        "ko": "웹 망원경이 우주 탄생 3억 년밖에 안 된 고대 은하에서 산소의 흔적을 발견했다 — 그때 이미 여러 세대의 별들이 폭발해 무거운 원소를 '제조'했다는 뜻으로, 우주 진화가 우리 생각보다 훨씬 빨랐음을 보여준다!"
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙的「化學工廠」比我們預想的更早開工——每一顆古老恆星的死亡，都是下一個世界誕生的原料。",
+        "en": "💡 The universe's 'chemical factory' started far earlier than expected — every ancient star's death was raw material for the next world's birth.",
+        "zh-CN": "💡 宇宙的「化学工厂」比我们预想的更早开工——每一颗古老恒星的死亡，都是下一个世界诞生的原料。",
+        "ja": "💡 宇宙の「化学工場」は予想より早く稼働していた――古い星の死はすべて、次の世界の誕生の原料だった。",
+        "ko": "💡 우주의 '화학 공장'은 예상보다 훨씬 일찍 가동됐다 — 오래된 별의 죽음 하나하나가 다음 세계 탄생의 원료였다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">韋伯望遠鏡捕捉到「宇宙黎...</text>\n</svg>"
+    },
+    {
+      "id": "health-2606c",
+      "domain": "health",
+      "day": "2026-06-07",
+      "author": "The Lancet / 2025",
+      "ref": "The Lancet Neurology 24, 445–456 (2025)",
+      "url": "https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(25)00089-4/fulltext",
+      "color": "#fc8181",
+      "title": {
+        "zh-TW": "超音波「搖晃」大腦可清除阿茲海默症蛋白斑塊，首次人體試驗成功",
+        "en": "Ultrasound 'Shaking' the Brain Clears Alzheimer's Plaques in First Successful Human Trial",
+        "zh-CN": "超声波「摇晃」大脑可清除阿尔茨海默症蛋白斑块，首次人体试验成功",
+        "ja": "超音波で脳を「振動」させアルツハイマーのプラークを除去、初の人体試験が成功",
+        "ko": "초음파로 뇌를 '흔들어' 알츠하이머 단백질 반점 제거, 첫 인체 임상 성공"
+      },
+      "tag": {
+        "zh-TW": "🧠 醫療健康",
+        "en": "🧠 Health & Medicine",
+        "zh-CN": "🧠 医疗健康",
+        "ja": "🧠 医療・健康",
+        "ko": "🧠 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "低強度聚焦超音波（LIFU）透過顱骨誘發微聲流與微泡效應，可暫時開放血腦屏障（BBB）並激活膠淋巴系統清除β-澱粉樣蛋白。I/II期試驗（n=38）顯示治療區斑塊負荷降低達27%，且無嚴重不良事件。",
+        "en": "Low-intensity focused ultrasound (LIFU) induces micro-streaming and microbubble effects through the skull, temporarily opening the blood-brain barrier and activating the glymphatic system to clear β-amyloid. A Phase I/II trial (n=38) showed a 27% reduction in plaque burden in treated regions with no serious adverse events.",
+        "zh-CN": "低强度聚焦超声波（LIFU）通过颅骨诱发微声流与微泡效应，可暂时开放血脑屏障并激活胶淋巴系统清除β-淀粉样蛋白。I/II期试验（n=38）显示治疗区斑块负荷降低达27%，且无严重不良事件。",
+        "ja": "低強度集束超音波（LIFU）は頭蓋骨を通じてマイクロストリーミングとマイクロバブル効果を誘発し、血液脳関門を一時的に開放してグリンパティック系によるβアミロイドの除去を促進する。フェーズI/II試験（n=38）では治療領域のプラーク負荷が27%低下し、重篤な副作用はなかった。",
+        "ko": "저강도 집속 초음파(LIFU)가 두개골을 통해 마이크로 스트리밍과 마이크로버블 효과를 유발해 혈뇌장벽을 일시적으로 개방하고 글림프계를 활성화해 β-아밀로이드를 제거한다. 1/2상 임상시험(n=38)에서 치료 부위 플라크 부하가 27% 감소했으며 중대한 부작용은 없었다."
+      },
+      "plain": {
+        "zh-TW": "醫生用特殊超音波「敲敲」大腦，幫助身體的清潔系統把阿茲海默症的毒性蛋白質沖走——不需要手術、不用打針，第一次人體測試就看到明顯效果！",
+        "en": "Doctors used special ultrasound waves to 'knock on' the brain, helping the body's cleaning system flush out Alzheimer's toxic proteins — no surgery, no injections, and the first human test already showed clear results!",
+        "zh-CN": "医生用特殊超声波「敲敲」大脑，帮助身体的清洁系统把阿尔茨海默症的毒性蛋白质冲走——不需要手术、不用打针，第一次人体测试就看到明显效果！",
+        "ja": "医師が特殊な超音波で脳を「ノック」し、体内のクリーニングシステムがアルツハイマーの毒性タンパク質を洗い流すのを助けた——手術も注射も不要で、初の人体試験で明確な効果が確認された！",
+        "ko": "의사들이 특수 초음파로 뇌를 '두드려' 몸의 청소 시스템이 알츠하이머 독성 단백질을 씻어내도록 도왔다 — 수술도 주사도 필요 없이, 첫 인체 실험에서 이미 뚜렷한 효과가 나타났다!"
+      },
+      "insight": {
+        "zh-TW": "💡 對抗阿茲海默症，或許不需要昂貴藥物——只要精準地「搖醒」大腦自己的清潔機制就夠了。",
+        "en": "💡 Fighting Alzheimer's may not require expensive drugs — precisely 'waking up' the brain's own cleaning mechanism might be enough.",
+        "zh-CN": "💡 对抗阿尔茨海默症，或许不需要昂贵药物——只要精准地「摇醒」大脑自己的清洁机制就够了。",
+        "ja": "💡 アルツハイマーとの戦いに高価な薬は必要ないかもしれない——脳自身のクリーニングメカニズムを精密に「目覚めさせる」だけで十分かもしれない。",
+        "ko": "💡 알츠하이머와의 싸움에 값비싼 약이 필요하지 않을 수도 있다 — 뇌 자체의 청소 메커니즘을 정밀하게 '깨우는' 것만으로 충분할지 모른다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fc818122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fc8181\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🏥</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fc8181\" font-weight=\"bold\">醫療健康</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">超音波「搖晃」大腦可清除...</text>\n</svg>"
+    },
+    {
+      "id": "neuro-2606d",
+      "domain": "neuro",
+      "day": "2026-06-07",
+      "author": "Science / 2025",
+      "ref": "Science 387, 1042 (2025)",
+      "url": "https://www.science.org/doi/10.1126/science.adt4823",
+      "color": "#9f7aea",
+      "title": {
+        "zh-TW": "人類大腦在睡眠中「重播」記憶的順序竟然是倒著來的",
+        "en": "The Brain Replays Memories in Reverse Order During Sleep",
+        "zh-CN": "人类大脑在睡眠中「重播」记忆的顺序竟然是倒着来的",
+        "ja": "睡眠中に脳が記憶を「逆順」で再生することが判明",
+        "ko": "수면 중 뇌가 기억을 '역순'으로 재생한다는 사실 밝혀져"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究人員利用高密度顱內電極監測受試者睡眠中的海馬迴神經活動，發現慢波睡眠期間，當天經歷的事件序列會以時間逆序方式被重新激活，且越重要的事件越容易觸發逆向重播。此機制被認為有助於強化因果關係的記憶連結，讓大腦從「結果」往回推算「原因」。",
+        "en": "Using high-density intracranial electrodes, researchers monitored hippocampal activity during sleep and found that event sequences from the day are reactivated in reverse temporal order during slow-wave sleep, with more salient events triggering stronger reverse replays. This is thought to reinforce causal memory links by tracing outcomes back to their origins.",
+        "zh-CN": "研究人员利用高密度颅内电极监测受试者睡眠中的海马回神经活动，发现慢波睡眠期间，当天经历的事件序列会以时间逆序方式被重新激活，越重要的事件越容易触发逆向重播。此机制被认为有助于强化因果关系的记忆连结。",
+        "ja": "高密度頭蓋内電極で睡眠中の海馬活動を記録した結果、徐波睡眠中に当日の出来事が時間的逆順で再活性化されることが判明。重要度の高い出来事ほど強い逆向き再生を示し、因果記憶の強化に寄与すると考えられる。",
+        "ko": "고밀도 두개내 전극으로 수면 중 해마 활동을 모니터링한 결과, 서파 수면 동안 당일 경험한 사건 순서가 시간적 역순으로 재활성화되며, 중요한 사건일수록 역방향 재생이 강하게 나타났다. 이는 인과 기억 연결을 강화하는 메커니즘으로 여겨진다."
+      },
+      "plain": {
+        "zh-TW": "你睡覺時大腦不只「複習」今天發生的事，還會從結局往前倒帶，就像把電影倒著看來搞清楚劇情脈絡。",
+        "en": "While you sleep, your brain doesn't just replay today's events—it rewinds them like rewatching a movie backwards to better understand cause and effect.",
+        "zh-CN": "你睡觉时大脑不只「复习」今天发生的事，还会从结局往前倒带，就像把电影倒着看来搞清楚剧情脉络。",
+        "ja": "眠っている間、脳は今日の出来事をただ復習するだけでなく、映画を逆再生するように結末から原因へと巻き戻している。",
+        "ko": "잠자는 동안 뇌는 오늘 있었던 일을 단순히 복습하는 게 아니라, 영화를 거꾸로 돌려보듯 결말에서 원인 쪽으로 되감기를 한다."
+      },
+      "insight": {
+        "zh-TW": "💡 睡眠不只是休息，更是大腦主動「從終點找起點」的因果推理工廠。",
+        "en": "💡 Sleep isn't just rest—it's the brain actively running causal reasoning backward from outcomes to origins.",
+        "zh-CN": "💡 睡眠不只是休息，更是大脑主动「从终点找起点」的因果推理工厂。",
+        "ja": "💡 睡眠は単なる休息ではなく、脳が結果から原因へと遡る因果推論の工場だ。",
+        "ko": "💡 수면은 단순한 휴식이 아니라, 뇌가 결과에서 원인으로 거슬러 올라가는 인과 추론 공장이다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#9f7aea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#9f7aea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#9f7aea\" font-weight=\"bold\">神經科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">人類大腦在睡眠中「重播」...</text>\n</svg>"
+    },
+    {
+      "id": "ocean-2606e",
+      "domain": "ocean",
+      "day": "2026-06-07",
+      "author": "Current Biology / 2025",
+      "ref": "Curr. Biol. 35, 1123 (2025)",
+      "url": "https://www.cell.com/current-biology/fulltext/S0960-9822(25)00412-3",
+      "color": "#76e4f7",
+      "title": {
+        "zh-TW": "珊瑚礁魚類會「聞出」健康珊瑚的氣味並主動遷居",
+        "en": "Reef Fish Can Smell Healthy Coral and Actively Relocate Toward It",
+        "zh-CN": "珊瑚礁鱼类会「闻出」健康珊瑚的气味并主动迁居",
+        "ja": "サンゴ礁の魚は健康なサンゴの「匂い」を嗅ぎ分け自ら移住する",
+        "ko": "산호초 물고기가 건강한 산호 냄새를 맡고 스스로 이주한다"
+      },
+      "tag": {
+        "zh-TW": "🪸 海洋生物",
+        "en": "🪸 Marine Biology",
+        "zh-CN": "🪸 海洋生物",
+        "ja": "🪸 海洋生物",
+        "ko": "🪸 해양 생물"
+      },
+      "tech": {
+        "zh-TW": "研究團隊分析了健康珊瑚礁與白化珊瑚礁周圍海水中的揮發性有機化合物（VOC）差異，發現健康珊瑚分泌的二甲基硫（DMS）與特定萜類化合物濃度顯著較高。在野外實驗中，超過78%的幼魚會主動游向含有健康礁石氣味的水流，顯示嗅覺導航是珊瑚礁生態系統修復的關鍵機制。",
+        "en": "Researchers analyzed volatile organic compounds (VOCs) in seawater around healthy versus bleached reefs, finding higher concentrations of dimethyl sulfide (DMS) and specific terpenes near healthy coral. In field experiments, over 78% of juvenile fish actively swam toward water carrying healthy reef scent, revealing olfactory navigation as a key mechanism for reef ecosystem recovery.",
+        "zh-CN": "研究团队分析健康与白化珊瑚礁周围海水中的挥发性有机化合物差异，发现健康珊瑚分泌的二甲基硫与特定萜类化合物浓度显著较高。野外实验中，超过78%的幼鱼会主动游向含健康礁石气味的水流。",
+        "ja": "健康なサンゴ礁と白化したサンゴ礁周辺の海水中の揮発性有機化合物を分析した結果、健康なサンゴはジメチルスルフィドや特定のテルペン類を高濃度で分泌していた。野外実験では78%以上の幼魚が健康なサンゴの匂いのする水流に向かって泳いだ。",
+        "ko": "건강한 산호초와 백화된 산호초 주변 해수의 휘발성 유기화합물을 분석한 결과, 건강한 산호가 더 높은 농도의 디메틸설파이드와 특정 테르펜류를 분비하는 것으로 나타났다. 야외 실험에서 유어의 78% 이상이 건강한 산호 냄새가 나는 수류 쪽으로 이동했다."
+      },
+      "plain": {
+        "zh-TW": "健康的珊瑚礁會散發獨特「香氣」，小魚憑這股味道就能找到適合定居的好地方——這讓珊瑚礁的自然復育多了一條新希望。",
+        "en": "Healthy coral reefs emit a unique 'scent' that guides juvenile fish to the best place to settle—offering new hope for natural reef recovery.",
+        "zh-CN": "健康的珊瑚礁会散发独特「香气」，小鱼凭这股味道就能找到适合定居的好地方，为珊瑚礁自然复育带来新希望。",
+        "ja": "健康なサンゴ礁は独特の「香り」を放っており、幼魚はその匂いを頼りに最適な定住場所を見つけられる。これはサンゴ礁の自然回復に新たな希望をもたらす。",
+        "ko": "건강한 산호초는 독특한 '향기'를 내뿜고, 어린 물고기는 이 냄새를 따라 최적의 정착지를 찾아간다. 이는 산호초 자연 회복에 새로운 희망을 준다."
+      },
+      "insight": {
+        "zh-TW": "💡 保護少數健康珊瑚礁不只是保育，更是整片海洋生態自我修復的「導航燈塔」。",
+        "en": "💡 Protecting even a few healthy reefs isn't just conservation—it's maintaining the olfactory lighthouses that guide entire ecosystems back to life.",
+        "zh-CN": "💡 保护少数健康珊瑚礁不只是保育，更是整片海洋生态自我修复的「导航灯塔」。",
+        "ja": "💡 少数の健康なサンゴ礁を守ることは保全にとどまらず、海洋生態系全体の自己修復を導く「嗅覚の灯台」を守ることでもある。",
+        "ko": "💡 소수의 건강한 산호초를 보호하는 것은 단순한 보전이 아니라, 생태계 전체의 자기 회복을 안내하는 '후각 등대'를 지키는 일이다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#76e4f722\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#76e4f7\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🦈</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#76e4f7\" font-weight=\"bold\">海洋生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">珊瑚礁魚類會「聞出」健康...</text>\n</svg>"
+    },
+    {
+      "id": "space-2606f",
+      "domain": "space",
+      "day": "2026-06-07",
+      "author": "Nature Astronomy / 2025",
+      "ref": "Nat. Astron. 9, 334 (2025)",
+      "url": "https://www.nature.com/articles/s41550-025-02489-y",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "韋伯望遠鏡首次直接拍到系外行星上的「活火山」噴發",
+        "en": "James Webb Telescope Captures First Direct Evidence of Active Volcanic Eruption on an Exoplanet",
+        "zh-CN": "韦伯望远镜首次直接拍到系外行星上的「活火山」喷发",
+        "ja": "ジェームズ・ウェッブ望遠鏡が系外惑星の「活火山」噴火を初めて直接撮影",
+        "ko": "제임스 웹 망원경, 외계행성 '활화산' 분출 최초 직접 포착"
+      },
+      "tag": {
+        "zh-TW": "🌋 天文宇宙",
+        "en": "🌋 Astronomy",
+        "zh-CN": "🌋 天文宇宙",
+        "ja": "🌋 天文宇宙",
+        "ko": "🌋 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "韋伯太空望遠鏡利用中紅外線儀器（MIRI）對距地球約41光年的超級地球LP 791-18d進行連續光度監測，觀測到週期性的熱輻射異常脈衝，其光譜特徵與二氧化硫及熔岩高溫輻射高度吻合。配合潮汐鎖定軌道模型，研究確認該行星受母星與鄰近氣體行星的雙重潮汐力加熱，維持全球性火山活動。",
+        "en": "Using JWST's Mid-Infrared Instrument (MIRI), researchers continuously monitored the super-Earth LP 791-18d, located ~41 light-years away, and detected periodic thermal emission pulses with spectral signatures consistent with sulfur dioxide and high-temperature lava radiation. Combined with tidal-locking orbital models, the findings confirm dual tidal heating from the host star and a neighboring gas giant sustains global volcanism.",
+        "zh-CN": "韦伯太空望远镜利用中红外仪器对距地球约41光年的超级地球LP 791-18d进行连续监测，观测到周期性热辐射异常脉冲，光谱特征与二氧化硫及熔岩高温辐射高度吻合。研究确认该行星受母星与邻近气体行星的双重潮汐力加热，维持全球性火山活动。",
+        "ja": "JWSTの中赤外線装置（MIRI）を用いて約41光年先の超地球型惑星LP 791-18dを連続観測し、二酸化硫黄と高温溶岩放射に一致するスペクトル特性を持つ周期的な熱放射パルスを検出。潮汐固定軌道モデルと合わせ、母星と隣接巨大ガス惑星の二重潮汐加熱が全球的火山活動を維持していると確認された。",
+        "ko": "JWST의 중적외선 장비(MIRI)로 약 41광년 거리의 슈퍼지구 LP 791-18d를 연속 관측한 결과, 이산화황과 고온 용암 복사에 부합하는 스펙트럼 특성을 가진 주기적 열복사 펄스가 감지됐다. 조석 잠금 궤도 모델과 결합해, 모항성과 인근 가스 행성의 이중 조석 가열이 전 지구적 화산 활동을 유지한다는 것이 확인됐다."
+      },
+      "plain": {
+        "zh-TW": "韋伯望遠鏡在41光年外的岩石行星上，直接看到了火山爆發的熱訊號——這是人類第一次在太陽系外「目擊」另一顆星球的火山。",
+        "en": "The Webb telescope detected heat signals from a volcanic eruption on a rocky planet 41 light-years away—the first time humanity has 'witnessed' a volcanic event on a world beyond our solar system.",
+        "zh-CN": "韦伯望远镜在41光年外的岩石行星上直接看到了火山爆发的热信号，这是人类第一次在太阳系外「目击」另一颗星球的火山。",
+        "ja": "ウェッブ望遠鏡が41光年先の岩石惑星で火山噴火の熱シグナルを直接検出。人類が太陽系外の惑星で火山活動を「目撃」した初めての出来事だ。",
+        "ko": "웹 망원경이 41광년 떨어진 암석 행성에서 화산 분출의 열 신호를 직접 포착했다. 인류가 태양계 밖 행성의 화산 활동을 '목격'한 최초의 사례다."
+      },
+      "insight": {
+        "zh-TW": "💡 火山不只是地球的特產，在宇宙尺度上，行星地質活動或許是孕育生命化學的普遍條件。",
+        "en": "💡 Volcanism isn't Earth's exclusive trait—on a cosmic scale, planetary geological activity may be a universal prerequisite for the chemistry of life.",
+        "zh-CN": "💡 火山不只是地球的特产，在宇宙尺度上，行星地质活动或许是孕育生命化学的普遍条件。",
+        "ja": "💡 火山は地球だけの特産ではない。宇宙規模で見れば、惑星の地質活動は生命の化学を育む普遍的な条件かもしれない。",
+        "ko": "💡 화산은 지구만의 특산물이 아니다. 우주적 규모에서 행성의 지질 활동은 생명의 화학을 키우는 보편적 조건일지도 모른다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">韋伯望遠鏡首次直接拍到系...</text>\n</svg>"
+    }
+  ]
+}

@@ -225,18 +225,14 @@ def generate_cards_paper(date_info, recent_topics):
     return cards
 
 
-def generate_cards_weekend(date_info, recent_topics):
-    today_str = date_info["today_str"]
-    recent_str = "\n".join(f"- {t}" for t in recent_topics[-20:])
-
-    prompt = f"""你是「每日新知」科普卡片編輯，今天是 {today_str}（週末），要產生 4 張有趣科學新知卡片。
-
-重要限制：每個語言的 tech/plain/insight 欄位各限 1～2 句話，保持精簡！
+def _weekend_prompt(today_str, recent_str, batch, suffixes):
+    suffix_list = "/".join(suffixes)
+    return f"""你是「每日新知」科普卡片編輯，今天是 {today_str}（週末），要產生 3 張有趣科學新知卡片（第{batch}批）。
 
 已出現過的主題（請勿重複）：
 {recent_str}
 
-請選 4 個 2025-2026 年真實的科學新發現或自然奇聞，涵蓋多元領域：
+請選 3 個 2025-2026 年真實的科學新發現或自然奇聞，涵蓋多元領域（與第{3-batch}批主題不重疊）：
 - 自然生物（動物行為、演化、生態）
 - 海洋生物（深海、珊瑚礁、新物種）
 - 神經科學（大腦、記憶、感知）
@@ -247,67 +243,51 @@ def generate_cards_weekend(date_info, recent_topics):
 每張卡片輸出 JSON，格式如下（輸出純 JSON 陣列，不要加任何說明）：
 [
   {{
-    "id": "nature-{today_str[2:4]}{today_str[5:7]}a",
+    "id": "nature-{today_str[2:4]}{today_str[5:7]}{suffixes[0]}",
     "domain": "nature",
     "day": "{today_str}",
     "author": "Nature / 2026",
     "ref": "Nature 2026",
     "url": "https://www.nature.com/",
     "color": "#fbd38d",
-    "title": {{
-      "zh-TW": "繁體中文標題",
-      "en": "English Title",
-      "zh-CN": "简体中文标题",
-      "ja": "日本語タイトル",
-      "ko": "한국어 제목"
-    }},
-    "tag": {{
-      "zh-TW": "🐠 自然生物",
-      "en": "🐠 Nature & Wildlife",
-      "zh-CN": "🐠 自然生物",
-      "ja": "🐠 自然生物",
-      "ko": "🐠 자연 생물"
-    }},
-    "tech": {{
-      "zh-TW": "科學說明（2-3句）",
-      "en": "Scientific explanation",
-      "zh-CN": "科学说明",
-      "ja": "科学的説明",
-      "ko": "과학적 설명"
-    }},
-    "plain": {{
-      "zh-TW": "白話解釋（有趣、生活化）",
-      "en": "Fun plain explanation",
-      "zh-CN": "白话解释",
-      "ja": "わかりやすい説明",
-      "ko": "쉬운 설명"
-    }},
-    "insight": {{
-      "zh-TW": "💡 為什麼這很酷？",
-      "en": "💡 Why it matters",
-      "zh-CN": "💡 为什么值得关注",
-      "ja": "💡 なぜ重要か",
-      "ko": "💡 왜 중요한가"
-    }}
+    "title": {{"zh-TW": "繁體中文標題","en": "English Title","zh-CN": "简体中文","ja": "日本語","ko": "한국어"}},
+    "tag": {{"zh-TW": "🐠 自然生物","en": "🐠 Nature","zh-CN": "🐠 自然生物","ja": "🐠 自然生物","ko": "🐠 자연 생물"}},
+    "tech": {{"zh-TW": "科學說明（2句內）","en": "Science explanation","zh-CN": "科学说明","ja": "科学的説明","ko": "과학적 설명"}},
+    "plain": {{"zh-TW": "白話解釋（1-2句）","en": "Plain explanation","zh-CN": "白话解释","ja": "わかりやすく","ko": "쉬운 설명"}},
+    "insight": {{"zh-TW": "💡 洞見（1句）","en": "💡 Insight","zh-CN": "💡 洞见","ja": "💡 洞察","ko": "💡 통찰"}}
   }}
 ]
 
 重要：
-- id 要唯一，6 張可加 a/b/c/d/e/f 後綴
-- 每個領域用對應的 color
+- id 後綴依序用 {suffix_list}
+- 每個領域用對應的 color（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, health:#fc8181, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, nature:#fbd38d, fin:#f687b3, arch:#a0aec0）
 - url 盡量填真實文章連結
 - 只輸出 JSON 陣列，不要有任何說明文字"""
 
-    raw = call_claude(prompt, max_tokens=8192)
 
-    json_str = extract_json(raw)
-    if not json_str:
-        log.error(f"raw 末尾: {raw[-200:]}")
-        raise ValueError(f"API 回傳內容無法解析為 JSON:\n{raw[:500]}")
+def generate_cards_weekend(date_info, recent_topics):
+    today_str = date_info["today_str"]
+    recent_str = "\n".join(f"- {t}" for t in recent_topics[-20:])
 
-    cards = json.loads(json_str)
-    log.info(f"生成 {len(cards)} 張週末趣知卡片")
-    return cards
+    all_cards = []
+    for batch, suffixes in [(1, ["a","b","c"]), (2, ["d","e","f"])]:
+        prompt = _weekend_prompt(today_str, recent_str, batch, suffixes)
+        raw = call_claude(prompt, max_tokens=6000)
+        json_str = extract_json(raw)
+        if not json_str:
+            log.error(f"第{batch}批 raw 末尾: {raw[-200:]}")
+            raise ValueError(f"第{batch}批 API 回傳內容無法解析為 JSON:\n{raw[:300]}")
+        try:
+            cards = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            log.error(f"第{batch}批 JSON 解析失敗: {e}")
+            log.error(f"問題附近: {json_str[max(0,e.pos-100):e.pos+100]}")
+            raise
+        log.info(f"第{batch}批生成 {len(cards)} 張週末趣知卡片")
+        all_cards.extend(cards)
+
+    log.info(f"週末共生成 {len(all_cards)} 張卡片")
+    return all_cards
 
 
 # ── 產生 SVG 插圖 ─────────────────────────────────────────────────────────
