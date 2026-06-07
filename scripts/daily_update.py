@@ -223,6 +223,8 @@ def _paper_prompt(today_str, paper_date, recent_str, domains):
 - ref 用真實 arXiv ID（2606.XXXXX）
 - color 用對應領域色碼（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, fin:#f687b3, arch:#a0aec0, health:#fc8181）
 - 每個語言的 tech/plain/insight 各限 **1 句話**，絕對不要超過 50 個字
+- url 必須是 arXiv 具體論文頁面：https://arxiv.org/abs/2606.XXXXX（真實 ID）
+  不要填 arXiv 首頁或搜尋頁
 - JSON 字串值內禁止出現任何 ASCII 雙引號 "，需要引號請用「」或（）代替
 - 只輸出 JSON 陣列，不加任何說明"""
 
@@ -279,9 +281,9 @@ def _weekend_prompt(today_str, recent_str, batch, suffixes):
     "id": "nature-{today_str[2:4]}{today_str[5:7]}{suffixes[0]}",
     "domain": "nature",
     "day": "{today_str}",
-    "author": "Nature / 2026",
+    "author": "Zhang et al. / Nature 2026",
     "ref": "Nature 2026",
-    "url": "https://www.nature.com/",
+    "url": "https://doi.org/10.1038/...",
     "color": "#fbd38d",
     "title": {{"zh-TW": "繁體中文標題","en": "English Title","zh-CN": "简体中文","ja": "日本語","ko": "한국어"}},
     "tag": {{"zh-TW": "🐠 自然生物","en": "🐠 Nature","zh-CN": "🐠 自然生物","ja": "🐠 自然生物","ko": "🐠 자연 생물"}},
@@ -294,7 +296,14 @@ def _weekend_prompt(today_str, recent_str, batch, suffixes):
 重要：
 - id 後綴依序用 {suffix_list}
 - 每個領域用對應的 color（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, health:#fc8181, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, nature:#fbd38d, fin:#f687b3, arch:#a0aec0）
-- url 盡量填真實文章連結（Nature / Science / arXiv / DOI）
+- url 必須填具體文章的直達連結，格式優先：
+    arXiv: https://arxiv.org/abs/XXXX.XXXXX
+    DOI:   https://doi.org/10.xxxx/xxxxxx
+    Nature: https://www.nature.com/articles/s41586-xxxx-xxxx-x
+    Science: https://www.science.org/doi/10.1126/science.xxxxxxx
+    絕對不要填期刊首頁（如 https://www.nature.com/ 或 https://www.science.org/）
+- ref 填期刊縮寫 + 年份（如 "Nature 2026"、"Science 2025"）
+- author 填真實第一作者姓氏（如 "Zhang et al. / Nature 2026"）
 - JSON 字串值內禁止出現任何 ASCII 雙引號 "，需要引號請用「」或（）代替
 - 只輸出 JSON 陣列，不要有任何說明文字"""
 
@@ -330,24 +339,67 @@ def generate_cards_weekend(date_info, recent_topics):
     return all_cards
 
 
-# ── 產生 SVG 插圖（使用 gen_illustration.py）──────────────────────────────
-try:
-    from gen_illustration import generate_illus
-    log.info("✅ 使用 gen_illustration.py 精美插圖")
-except ImportError:
-    log.warning("gen_illustration.py 不存在，使用簡易備用插圖")
-    def generate_illus(card):
-        domain = card.get("domain", "ai")
-        cfg = DOMAIN_CONFIG.get(domain, DOMAIN_CONFIG["ai"])
-        color = cfg["color"]
-        emoji = cfg["emoji"]
-        label = cfg["label"]
-        return (f'<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">'
-                f'<rect width="200" height="120" fill="{color}22" rx="10"/>'
-                f'<rect width="200" height="4" rx="2" fill="{color}"/>'
-                f'<text x="100" y="70" text-anchor="middle" font-size="42">{emoji}</text>'
-                f'<text x="10" y="113" font-size="9" fill="{color}" font-weight="600" font-family="sans-serif">{label}</text>'
-                f'</svg>')
+# ── 產生 AI 客製化 SVG 插圖 ────────────────────────────────────────────────
+def _fallback_illus(card):
+    """Domain-based fallback SVG when API call fails"""
+    domain = card.get("domain", "ai")
+    cfg = DOMAIN_CONFIG.get(domain, DOMAIN_CONFIG["ai"])
+    color = cfg["color"]
+    emoji = cfg["emoji"]
+    label = cfg["label"]
+    return (f'<svg viewBox="0 0 340 160" xmlns="http://www.w3.org/2000/svg">'
+            f'<rect width="340" height="160" fill="{color}18" rx="12"/>'
+            f'<rect width="340" height="5" rx="2" fill="{color}"/>'
+            f'<text x="170" y="97" text-anchor="middle" font-size="56">{emoji}</text>'
+            f'<text x="12" y="150" font-size="11" fill="{color}" font-weight="700" '
+            f'font-family="sans-serif">{label}</text>'
+            f'</svg>')
+
+def generate_illus(card):
+    """Call Claude API to generate a paper-specific SVG illustration (340x160)."""
+    title_zh = card.get("title", {}).get("zh-TW", "")
+    plain_zh = card.get("plain", {}).get("zh-TW", "")
+    domain   = card.get("domain", "ai")
+    color    = card.get("color", DOMAIN_CONFIG.get(domain, {}).get("color", "#667eea"))
+
+    prompt = f"""設計一張科普插圖 SVG（340×160），視覺呈現以下概念：
+
+主題：{title_zh}
+概念：{plain_zh[:80]}
+主色：{color}
+
+【嚴格規範】
+1. 開頭直接輸出 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 160">
+2. 最多使用 12 個圖形元素（circle/rect/line/polygon/path）
+3. 禁止 <defs>、<linearGradient>、<radialGradient>、<filter>、<clipPath>（這些讓 SVG 太長）
+4. 背景：<rect width="340" height="160" fill="{color}18"/>
+5. 主色 {color}，可加 1-2 個搭配色
+6. 禁止任何文字元素（<text>）
+7. 最後一行必須是 </svg>
+8. 不加任何說明文字，只輸出 SVG"""
+
+    try:
+        raw = call_claude(prompt, max_tokens=2000)
+        # Strip markdown code fences (```svg ... ``` or ```xml ... ```)
+        text = re.sub(r'^```[a-z]*\s*', '', raw.strip(), flags=re.IGNORECASE)
+        text = re.sub(r'\s*```$', '', text.strip())
+        # Extract <svg>...</svg>
+        start = text.find("<svg")
+        end = text.rfind("</svg>")
+        if start != -1 and end != -1:
+            svg = text[start:end+6]
+            # Ensure viewBox
+            if 'viewBox' not in svg:
+                svg = svg.replace('<svg', '<svg viewBox="0 0 340 160"', 1)
+            log.info(f"插圖生成成功 ({card.get('id')}, {len(svg)}B)")
+            return svg
+        else:
+            log.warning(f"SVG 提取失敗，使用備用插圖 ({card.get('id')})")
+            log.debug(f"Raw output: {raw[:200]}")
+            return _fallback_illus(card)
+    except Exception as e:
+        log.warning(f"插圖 API 失敗 ({card.get('id')}): {e}，使用備用插圖")
+        return _fallback_illus(card)
 
 
 # ── 寫出 JSON ─────────────────────────────────────────────────────────────
