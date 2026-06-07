@@ -1,113 +1,68 @@
 {
   "date": "2026-06-07",
   "mode": "weekend",
-  "paper_date": "2026-06-05",
+  "paper_date": "2026-06-07",
   "generated_at": "2026-06-07",
   "cards": [
     {
-      "id": "nature-2606a",
+      "id": "nature-2607a",
       "domain": "nature",
       "day": "2026-06-07",
-      "author": "Reinhold et al. / Nature 2025",
-      "ref": "Nature 2025",
-      "url": "https://doi.org/10.1038/s41586-025-07821-3",
+      "author": "Oliver, Yanco et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://news.yale.edu/2026/05/21/wildlife-watching-us-too-and-changing-their-behavior-response",
       "color": "#fbd38d",
       "title": {
-        "zh-TW": "大象會為死去的同伴「命名」：首次證實野生動物使用個體化音節呼喚逝者",
-        "en": "Elephants Name Their Dead: First Evidence of Individualized Calls for Deceased Companions",
-        "zh-CN": "大象会为死去的同伴「命名」：首次证实野生动物使用个体化音节呼唤逝者",
-        "ja": "ゾウは死んだ仲間に「名前」で呼びかける：野生動物で初めて証明された個体識別音節",
-        "ko": "코끼리가 죽은 동료를 「이름」으로 부른다: 야생동물의 개체화 호칭 사용 첫 증거"
+        "zh-TW": "野生動物也在「監視」我們：GPS巨型研究首次大規模證實65%物種因人類存在改變行為",
+        "en": "Wildlife Is Watching Us Too: GPS Mega-Study Shows 65% of Species Change Behavior Due to Human Presence",
+        "zh-CN": "野生动物也在「监视」我们：GPS巨型研究首次大规模证实65%物种因人类存在改变行为",
+        "ja": "野生動物も私たちを「監視」している：GPS大規模研究で65%の種が人間の存在で行動を変えると初証明",
+        "ko": "야생동물도 우리를 「감시」하고 있다：GPS 대규모 연구로 65%의 종이 인간 존재로 행동 변화 첫 증명"
       },
       "tag": {
-        "zh-TW": "🐘 自然生物",
-        "en": "🐘 Nature",
-        "zh-CN": "🐘 自然生物",
-        "ja": "🐘 自然生物",
-        "ko": "🐘 자연 생물"
+        "zh-TW": "🐾 自然生物",
+        "en": "🐾 Nature",
+        "zh-CN": "🐾 自然生物",
+        "ja": "🐾 自然生物",
+        "ko": "🐾 자연 생물"
       },
       "tech": {
-        "zh-TW": "研究團隊分析肯亞安博塞利國家公園逾500小時的野外錄音，利用機器學習比對聲紋，發現大象對剛死亡同伴會持續發出一組獨特的低頻音節序列，且該序列與生前溝通時的呼喚高度一致，排除了隨機發聲的可能性。",
-        "en": "Analyzing over 500 hours of field recordings from Amboseli with machine learning, researchers found elephants emit a unique low-frequency syllable sequence directed at recently deceased companions, nearly identical to calls used during the individual's lifetime.",
-        "zh-CN": "研究团队分析肯尼亚安博塞利国家公园逾500小时野外录音，利用机器学习比对声纹，发现大象对刚死亡同伴会持续发出一组独特低频音节序列，与生前呼唤高度一致。",
-        "ja": "ケニアのアンボセリでの500時間超のフィールド録音を機械学習で解析した結果、ゾウが死んだ仲間に対して生前と酷似した固有の低周波音節列を繰り返し発することが判明した。",
-        "ko": "케냐 암보셀리의 500시간 이상 야외 녹음을 머신러닝으로 분석한 결과, 코끼리가 최근 사망한 동료에게 생전과 거의 동일한 고유 저주파 음절 서열을 지속적으로 발성하는 것이 확인됐다."
+        "zh-TW": "耶魯大學領導的六年全球合作研究，利用GPS追蹤美國境內37種動物（22種鳥類與15種哺乳動物）逾4500個個體共1180萬個位置點，並結合行動電話數據與衛星測量人類活動密度，發現超過65%的物種依人類存在密度顯著調整移動範圍與棲地使用。2020年疫情封城期間人類移動銳減，提供了難得的自然對照實驗，確認此效應源自人類本身而非棲地改變。",
+        "en": "Led by Yale, this six-year global collaboration GPS-tracked 37 species (22 birds, 15 mammals) across 4,500+ individuals using 11.8 million location points, combined with mobile phone data and satellite-measured human presence density. Over 65% of species significantly adjusted movement range and habitat use in response to human density. The COVID-19 lockdown provided a rare natural control experiment, confirming the effect stems from human presence itself rather than habitat change.",
+        "zh-CN": "耶鲁大学领导的六年全球合作研究，利用GPS追踪美国境内37种动物（22种鸟类与15种哺乳动物）逾4500个个体共1180万个位置点，结合手机数据与卫星测量人类活动密度，发现超过65%的物种依人类存在密度显著调整移动范围与栖地使用。2020年疫情封城期间提供了难得的自然对照实验，确认此效应源自人类本身。",
+        "ja": "イェール大学主導の6年にわたるグローバル共同研究で、米国内37種（鳥類22種、哺乳類15種）4,500個体以上の1,180万位置情報をGPS追跡。携帯電話データと衛星による人間密度測定と組み合わせた結果、65%以上の種が人間密度に応じて移動範囲と生息地利用を著しく変化させることが判明。COVID-19ロックダウン時の急変は貴重な自然対照実験となった。",
+        "ko": "예일대학교가 이끄는 6년 글로벌 공동 연구로, 미국 내 37종(조류 22종, 포유류 15종) 4,500개체 이상의 GPS 위치 데이터 1,180만 점과 휴대폰 데이터, 위성 인간 밀도 측정을 결합했다. 65% 이상의 종이 인간 존재 밀도에 따라 이동 범위와 서식지 사용을 크게 조정했으며, 2020년 COVID-19 봉쇄로 인한 변화가 귀중한 자연 대조 실험이 됐다."
       },
       "plain": {
-        "zh-TW": "大象不只有記憶，牠們還會用專屬「名字」呼喚已死去的朋友，就像人類悼念時喃喃呼喚逝者的名字一樣。",
-        "en": "Elephants don't just remember the dead — they call out to them by name, much like humans murmuring a loved one's name in grief.",
-        "zh-CN": "大象不只有记忆，它们还会用专属「名字」呼唤已死去的朋友，就像人类悼念时喃喃呼唤逝者的名字一样。",
-        "ja": "ゾウは死んだ友を記憶するだけでなく、まるで人間が故人の名を呼ぶように、固有の「名前」で呼びかけ続ける。",
-        "ko": "코끼리는 죽은 친구를 기억할 뿐 아니라, 마치 인간이 고인의 이름을 부르듯 고유한 「이름」으로 계속 불렀다."
+        "zh-TW": "不是只有我們在觀察野生動物——牠們也在「看著」我們：只要你出現在森林或公園，65%的物種就會改變行動路線來躲開你，就連附近的狼和鷹也不例外。",
+        "en": "It's not just us watching wildlife — they're watching us too. When you enter a forest or park, 65% of species change their routes to avoid you, including wolves and hawks nearby.",
+        "zh-CN": "不是只有我们在观察野生动物——它们也在「看着」我们：只要你出现在森林或公园，65%的物种就会改变行动路线来躲开你，就连附近的狼和鹰也不例外。",
+        "ja": "野生動物を観察しているのは私たちだけではない——彼らも私たちを「見ている」。あなたが森や公園に入ると、65%の種があなたを避けるためにルートを変える。近くのオオカミや鷹も例外ではない。",
+        "ko": "야생동물을 관찰하는 건 우리뿐만이 아니다—그들도 우리를 「보고 있다」. 당신이 숲이나 공원에 들어서면 65%의 종이 당신을 피해 이동 경로를 바꾼다. 근처 늑대와 매도 예외가 아니다."
       },
       "insight": {
-        "zh-TW": "💡 悼念行為或許不是人類的專利，而是高度社會性動物共同演化出的情感語言。",
-        "en": "💡 Mourning rituals may not be uniquely human — they could be an emotional language co-evolved among highly social animals.",
-        "zh-CN": "💡 悼念行为或许不是人类的专利，而是高度社会性动物共同演化出的情感语言。",
-        "ja": "💡 追悼行動は人間だけのものではなく、高度な社会性動物が共に進化させた感情の言語かもしれない。",
-        "ko": "💡 애도 행동은 인간만의 전유물이 아니라, 고도로 사회적인 동물들이 함께 진화시킨 감정의 언어일 수 있다."
+        "zh-TW": "💡 保育野生動物不只是保護棲地，人類「在哪裡、何時出現」本身就是一種足以改變生態系的隱形力量。",
+        "en": "💡 Wildlife conservation isn't just about protecting habitat — where and when humans physically appear is itself an invisible force powerful enough to reshape ecosystems.",
+        "zh-CN": "💡 保育野生动物不只是保护栖地，人类「在哪里、何时出现」本身就是一种足以改变生态系的隐形力量。",
+        "ja": "💡 野生動物の保護は生息地を守るだけではない——人間が「どこに、いつ現れるか」そのものが生態系を変える目に見えない力だ。",
+        "ko": "💡 야생동물 보전은 서식지 보호만이 아니다—인간이 「어디에, 언제 나타나는가」 자체가 생태계를 바꾸는 보이지 않는 힘이다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#fbd38d18\"/>\n  <rect width=\"340\" height=\"160\" fill=\"#2d1a0e\"/>\n\n  <!-- Ground -->\n  <rect x=\"0\" y=\"120\" width=\"340\" height=\"40\" fill=\"#4a2f1a\"/>\n\n  <!-- Ghost/spirit elephant (faded, right side) -->\n  <ellipse cx=\"240\" cy=\"90\" rx=\"38\" ry=\"25\" fill=\"#fbd38d22\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n  <circle cx=\"240\" cy=\"68\" r=\"16\" fill=\"#fbd38d22\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n  <path d=\"M228 78 Q218 95 220 110\" stroke=\"#fbd38d\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n\n  <!-- Living elephant body (left side) -->\n  <ellipse cx=\"100\" cy=\"95\" rx=\"45\" ry=\"28\" fill=\"#fbd38d\"/>\n  <!-- Head -->\n  <circle cx=\"72\" cy=\"78\" r=\"20\" fill=\"#fbd38d\"/>\n  <!-- Trunk curled upward (calling) -->\n  <path d=\"M60 82 Q40 75 38 60 Q36 48 48 50\" stroke=\"#e8a020\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n  <!-- Ear -->\n  <ellipse cx=\"82\" cy=\"76\" rx=\"10\" ry=\"14\" fill=\"#e8a020\"/>\n  <!-- Eye -->\n  <circle cx=\"67\" cy=\"73\" r=\"3\" fill=\"#2d1a0e\"/>\n  <!-- Legs -->\n  <rect x=\"75\" y=\"118\" width=\"10\" height=\"18\" rx=\"4\" fill=\"#e8a020\"/>\n  <rect x=\"110\" y=\"118\" width=\"10\" height=\"18\" rx=\"4\" fill=\"#e8a020\"/>\n\n  <!-- Sound waves (name-call) from trunk tip -->\n  <path d=\"M50 48 Q60 38 70 48\" stroke=\"#fbd38d\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M44 42 Q60 28 76 42\" stroke=\"#fbd38d\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.7\"/>\n  <path d=\"M38 36 Q60 18 82 36\" stroke=\"#fbd38d\" stroke-width=\"1\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.4\"/>\n\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#fbd38d15\"/><circle cx=\"270\" cy=\"50\" r=\"22\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"270\" cy=\"50\" r=\"14\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><circle cx=\"270\" cy=\"50\" r=\"5\" fill=\"#fbd38d\"/><circle cx=\"100\" cy=\"110\" r=\"18\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"100\" cy=\"110\" r=\"10\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><circle cx=\"100\" cy=\"110\" r=\"4\" fill=\"#fbd38d\"/><circle cx=\"180\" cy=\"80\" r=\"20\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"180\" cy=\"80\" r=\"12\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><circle cx=\"180\" cy=\"80\" r=\"4\" fill=\"#52b788\"/><path d=\"M155 50 Q135 40 120 55 Q110 65 118 75\" stroke=\"#fbd38d\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"118\" cy=\"75\" r=\"4\" fill=\"#fbd38d\"/><path d=\"M60 70 Q50 55 62 45 Q72 38 80 48\" stroke=\"#52b788\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"48\" r=\"3.5\" fill=\"#52b788\"/><rect x=\"20\" y=\"68\" width=\"28\" height=\"40\" rx=\"4\" fill=\"#2e7d32\" opacity=\"0.6\"/><circle cx=\"34\" cy=\"60\" r=\"10\" fill=\"#2e7d32\" opacity=\"0.6\"/><line x1=\"34\" y1=\"50\" x2=\"34\" y2=\"45\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"52\" x2=\"27\" y2=\"48\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/><line x1=\"38\" y1=\"52\" x2=\"41\" y2=\"48\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/></svg>"
     },
     {
-      "id": "neuro-2606b",
-      "domain": "neuro",
-      "day": "2026-06-07",
-      "author": "Tian et al. / Science 2026",
-      "ref": "Science 2026",
-      "url": "https://doi.org/10.1126/science.adq7741",
-      "color": "#9f7aea",
-      "title": {
-        "zh-TW": "大腦「痛覺橡皮擦」找到了：脊髓中特定抑制性神經元可選擇性關閉慢性疼痛",
-        "en": "Brain's Pain Eraser Discovered: Spinal Inhibitory Neurons Selectively Silence Chronic Pain",
-        "zh-CN": "大脑「痛觉橡皮擦」找到了：脊髓中特定抑制性神经元可选择性关闭慢性疼痛",
-        "ja": "脳の「痛み消しゴム」発見：脊髄の特定抑制性ニューロンが慢性疼痛を選択的に遮断",
-        "ko": "뇌의 「통증 지우개」 발견: 척수 특정 억제성 뉴런이 만성 통증을 선택적으로 차단"
-      },
-      "tag": {
-        "zh-TW": "🧠 神經科學",
-        "en": "🧠 Neuroscience",
-        "zh-CN": "🧠 神经科学",
-        "ja": "🧠 神経科学",
-        "ko": "🧠 신경과학"
-      },
-      "tech": {
-        "zh-TW": "研究者使用單細胞RNA定序結合光遺傳學，在小鼠脊髓背角鑑別出一群表達（Npr3+）標記的甘胺酸能抑制性中間神經元；光刺激活化這群細胞可在不影響急性觸覺的情況下，將神經病理性疼痛敏感性降低達78%。",
-        "en": "Using single-cell RNA sequencing and optogenetics, researchers identified a glycinergic inhibitory interneuron population marked by Npr3+ in the mouse dorsal horn; optogenetic activation reduced neuropathic pain sensitivity by 78% without impairing acute touch.",
-        "zh-CN": "研究者使用单细胞RNA测序结合光遗传学，在小鼠脊髓背角鉴别出表达（Npr3+）标记的甘氨酸能抑制性中间神经元；光刺激活化这群细胞可将神经病理性疼痛敏感性降低达78%，且不影响急性触觉。",
-        "ja": "単一細胞RNAシーケンシングと光遺伝学を組み合わせ、マウス脊髄背角でNpr3+を発現するグリシン作動性抑制性介在ニューロン群を同定。この細胞群を光刺激すると、急性触覚を損なわずに神経障害性疼痛感受性を78%低下させた。",
-        "ko": "단일세포 RNA 시퀀싱과 광유전학을 결합하여 마우스 척수 배각에서 Npr3+ 표지 글리신성 억제 중간뉴런 집단을 규명했으며, 이를 광자극으로 활성화하면 급성 촉각 손상 없이 신경병증성 통증 민감도를 78% 낮출 수 있었다."
-      },
-      "plain": {
-        "zh-TW": "科學家找到了脊髓裡的「疼痛開關」——只要打開這個開關，慢性疼痛就能大幅減退，而正常的觸感卻完全不受影響。",
-        "en": "Scientists found a pain switch in the spinal cord — flipping it dramatically reduces chronic pain while leaving normal touch completely intact.",
-        "zh-CN": "科学家找到了脊髓里的「疼痛开关」——只要打开这个开关，慢性疼痛就能大幅减退，而正常的触感却完全不受影响。",
-        "ja": "脊髄に「痛みのスイッチ」が見つかった。これをオンにするだけで慢性疼痛が大幅に軽減され、通常の触覚はまったく損なわれない。",
-        "ko": "척수에서 「통증 스위치」가 발견됐다. 이 스위치를 켜기만 하면 만성 통증이 크게 줄어들고, 정상적인 촉각은 전혀 영향을 받지 않는다."
-      },
-      "insight": {
-        "zh-TW": "💡 這項發現為不依賴類鴉片藥物的慢性疼痛治療開啟了全新窗口，或將改寫疼痛醫學的遊戲規則。",
-        "en": "💡 This discovery opens a new window for opioid-free chronic pain treatment, potentially rewriting the rules of pain medicine.",
-        "zh-CN": "💡 这项发现为不依赖类阿片药物的慢性疼痛治疗开启了全新窗口，或将改写疼痛医学的游戏规则。",
-        "ja": "💡 この発見はオピオイドに依存しない慢性疼痛治療への新たな扉を開き、疼痛医学のゲームルールを書き換える可能性がある。",
-        "ko": "💡 이 발견은 오피오이드 없는 만성 통증 치료의 새로운 창을 열어, 통증 의학의 판도를 바꿀 가능성이 있다."
-      },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<ellipse cx=\"60\" cy=\"80\" rx=\"38\" ry=\"44\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"3\"/>\n<path d=\"M42 58 Q52 48 62 58 Q72 48 82 58\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/>\n<path d=\"M38 72 Q55 62 78 72\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2\"/>\n<path d=\"M36 88 Q55 78 84 88\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2\"/>\n<line x1=\"98\" y1=\"80\" x2=\"148\" y2=\"80\" stroke=\"#9f7aea\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\"/>\n<rect x=\"150\" y=\"50\" width=\"40\" height=\"60\" rx=\"10\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#ffffff\" opacity=\"0.95\"/>\n<line x1=\"190\" y1=\"80\" x2=\"240\" y2=\"80\" stroke=\"#e879f9\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\"/>\n<circle cx=\"270\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#e879f9\" stroke-width=\"2.5\"/>\n<line x1=\"258\" y1=\"68\" x2=\"282\" y2=\"92\" stroke=\"#e879f9\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"282\" y1=\"68\" x2=\"258\" y2=\"92\" stroke=\"#e879f9\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"170\" cy=\"80\" r=\"4\" fill=\"#9f7aea\"/>\n</svg>"
-    },
-    {
-      "id": "space-2606c",
+      "id": "space-2607b",
       "domain": "space",
       "day": "2026-06-07",
-      "author": "Adamo et al. / Nature Astronomy 2025",
-      "ref": "Nature Astronomy 2025",
-      "url": "https://doi.org/10.1038/s41550-025-02481-6",
+      "author": "University of Sydney / CSIRO 2026",
+      "ref": "ScienceDaily June 2026",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260602021631.htm",
       "color": "#4299e1",
       "title": {
-        "zh-TW": "JWST拍到宇宙最早「星團托兒所」：大爆炸後僅4.6億年的恆星集體誕生現場",
-        "en": "JWST Captures Universe's Earliest Star Cluster Nursery: Stellar Birthplace Just 460 Million Years After Big Bang",
-        "zh-CN": "JWST拍到宇宙最早「星团托儿所」：大爆炸后仅4.6亿年的恒星集体诞生现场",
-        "ja": "JWSTが宇宙最古の「星団保育所」を撮影：ビッグバンからわずか4億6000万年後の集団星形成現場",
-        "ko": "JWST가 우주 최초의 「성단 탁아소」 포착: 빅뱅 후 불과 4억 6천만 년의 별 집단 탄생 현장"
+        "zh-TW": "困擾天文學家十餘年的「宇宙神秘電波閃光」謎底揭曉：源自雙星系統的伴星噴發",
+        "en": "A Decade-Long Cosmic Mystery Solved: Fast Radio Bursts Traced to Companion Star Eruptions in Binary Systems",
+        "zh-CN": "困扰天文学家十余年的「宇宙神秘电波闪光」谜底揭晓：源自双星系统的伴星喷发",
+        "ja": "天文学者を10年以上悩ませた「宇宙の謎の電波閃光」が解明：連星系の伴星噴発が起源",
+        "ko": "천문학자들을 10년 이상 괴롭혔던 「우주 신비 전파 섬광」 수수께끼 풀렸다：쌍성계 동반성 분출이 원인"
       },
       "tag": {
         "zh-TW": "🌌 天文宇宙",
@@ -117,162 +72,207 @@
         "ko": "🌌 천문우주"
       },
       "tech": {
-        "zh-TW": "JWST利用重力透鏡放大效應，在紅移z≈9.8的星系中解析出5個緊密排列的星團候選體，每個半徑不足10秒差距，總質量達10的7次方太陽質量，恆星形成效率超過現今典型星系的50倍，挑戰了現有宇宙早期星系形成模型。",
-        "en": "Using gravitational lensing magnification, JWST resolved five compact star cluster candidates at redshift z≈9.8, each under 10 parsecs in radius with stellar masses reaching 10^7 solar masses and star formation efficiencies 50 times higher than typical present-day galaxies, challenging current early-universe models.",
-        "zh-CN": "JWST利用引力透镜放大效应，在红移z≈9.8的星系中解析出5个紧密排列的星团候选体，每个半径不足10秒差距，总质量达10的7次方太阳质量，恒星形成效率超过现今典型星系的50倍，挑战了现有宇宙早期星系形成模型。",
-        "ja": "JWSTは重力レンズ効果を利用し、赤方偏移z≈9.8の銀河内で半径10パーセク未満・質量10の7乗太陽質量に達する5つの密集した星団候補を分解した。その星形成効率は現在の典型的な銀河の50倍を超え、初期宇宙の銀河形成モデルに挑戦する。",
-        "ko": "JWST는 중력 렌즈 확대 효과를 이용해 적색편이 z≈9.8 은하에서 반경 10파섹 미만, 질량 10의 7승 태양질량에 달하는 5개의 밀집 성단 후보를 분해했다. 별 형성 효율은 현재 전형적인 은하의 50배를 넘어 초기 우주 은하 형성 모델에 도전한다."
+        "zh-TW": "澳洲雪梨大學領導的研究團隊使用CSIRO的ASKAP射電望遠鏡，持續追蹤一組距地球約25億光年的重複快速電波爆發（FRB）近20個月，偵測到罕見的「偏振旋轉量突變事件（RM flare）」——這是伴星的日冕物質拋射（CME）穿過FRB源區域時所造成的訊號極化驟變，為重複FRB的形成機制提供了迄今最直接的觀測證據。",
+        "en": "Led by the University of Sydney and using CSIRO's ASKAP telescope, researchers monitored a repeating FRB located roughly 2.5 billion light-years away for nearly 20 months, detecting a rare 'RM flare' — an extreme polarization shift caused by a coronal mass ejection (CME) from a companion star passing through the FRB source region. This provides the strongest direct observational evidence yet for the origin of repeating fast radio bursts.",
+        "zh-CN": "澳大利亚悉尼大学领导的研究团队使用CSIRO的ASKAP射电望远镜，持续追踪一组距地球约25亿光年的重复快速电波爆发（FRB）近20个月，探测到罕见「偏振旋转量突变事件（RM flare）」——伴星的日冕物质抛射（CME）穿过FRB源区域时造成的信号偏振骤变，提供了迄今最直接的观测证据。",
+        "ja": "シドニー大学主導でCSIROのASKAPを使用し、約25億光年離れた繰り返しFRBを約20ヶ月追跡。伴星のコロナ質量放出（CME）がFRB源領域を通過する際に生じる希少な「RMフレア」を検出し、繰り返しFRBの起源に関するこれまでで最も直接的な観測証拠を提供した。",
+        "ko": "시드니대학교 주도로 CSIRO의 ASKAP 망원경을 사용해 약 25억 광년 떨어진 반복 FRB를 약 20개월간 추적, 동반성의 코로나 질량 방출(CME)이 FRB 원점 영역을 통과할 때 발생하는 희귀한 「RM 플레어」를 감지했다. 반복 FRB 기원에 대한 가장 직접적인 관측 증거다."
       },
       "plain": {
-        "zh-TW": "JWST找到了宇宙有史以來最古老的「星星托兒所」——在宇宙才剛誕生不到5億年時，就有數百萬顆恆星擠在一起同時出生，速度之快讓科學家大吃一驚。",
-        "en": "JWST found the universe's oldest star nursery — just 460 million years after the Big Bang, millions of stars were born clustered together at a pace that left scientists astonished.",
-        "zh-CN": "JWST找到了宇宙有史以来最古老的「星星托儿所」——在宇宙才刚诞生不到5亿年时，就有数百万颗恒星挤在一起同时出生，速度之快让科学家大吃一惊。",
-        "ja": "JWSTが宇宙最古の「星の保育所」を発見。ビッグバンからわずか4億6千万年後に、数百万個の星が密集して一斉に誕生しており、その速さに科学者たちは驚愕した。",
-        "ko": "JWST가 우주 역사상 가장 오래된 「별의 탁아소」를 발견했다. 빅뱅 후 불과 4억 6천만 년 만에 수백만 개의 별이 한데 모여 동시에 탄생했으며, 그 속도에 과학자들이 놀랐다."
+        "zh-TW": "宇宙裡這些神出鬼沒的「無線電閃光」，原來是兩顆星星相互繞行時，其中一顆噴出的電漿雲觸發了旁邊中子星發出訊號——就像一顆星在另一顆耳朵旁打了個嗝。",
+        "en": "Those mysterious cosmic radio flashes are triggered when one star in a pair spits out a plasma cloud that jolts its companion neutron star into sending a signal — like one star hiccupping right in another's ear.",
+        "zh-CN": "宇宙里这些神出鬼没的「无线电闪光」，原来是两颗星星相互绕行时，其中一颗喷出的电浆云触发了旁边中子星发出信号——就像一颗星在另一颗耳朵旁打了个嗝。",
+        "ja": "宇宙をさまよう謎の「電波閃光」は実は、連星系の一方が噴き出したプラズマ雲が隣の中性子星の信号を誘発していた——まるで一方の星がもう一方の耳元でしゃっくりするように。",
+        "ko": "우주에서 신출귀몰하던 「전파 섬광」의 정체는, 두 별이 공전하는 동안 한 별이 뿜어낸 플라즈마 구름이 옆 중성자별의 신호를 자극하는 것이었다—마치 한 별이 다른 별의 귀 옆에서 딸꾹질하듯."
       },
       "insight": {
-        "zh-TW": "💡 如果宇宙早期星團的形成效率真的如此極端，現有的星系演化理論可能需要從根本上重新改寫。",
-        "en": "💡 If early star cluster formation was truly this extreme, our entire framework for galaxy evolution may need a fundamental rewrite.",
-        "zh-CN": "💡 如果宇宙早期星团的形成效率真的如此极端，现有的星系演化理论可能需要从根本上重新改写。",
-        "ja": "💡 もし初期宇宙の星団形成効率が本当にこれほど極端だったなら、銀河進化の理論全体を根本から書き直す必要があるかもしれない。",
-        "ko": "💡 초기 우주의 성단 형성 효율이 정말 이토록 극단적이었다면, 은하 진화에 대한 현재의 이론 전체를 근본부터 다시 써야 할지도 모른다."
+        "zh-TW": "💡 宇宙最難解的「隨機訊號」，背後往往是最優雅的物理機制——找到「伴星」才能解開謎團。",
+        "en": "💡 The universe's most baffling signals often hide the most elegant physics — finding the companion was the key to the mystery.",
+        "zh-CN": "💡 宇宙最难解的「随机信号」，背后往往是最优雅的物理机制——找到「伴星」才能解开谜团。",
+        "ja": "💡 宇宙で最も解読困難な「ランダムな信号」の裏には最もエレガントな物理法則が隠れている——「伴星」を見つけることが謎解きの鍵だった。",
+        "ko": "💡 우주에서 가장 풀기 어려운 「무작위 신호」 뒤에는 가장 우아한 물리 법칙이 숨어 있다—「동반성」을 찾는 것이 수수께끼의 열쇠였다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<ellipse cx=\"170\" cy=\"85\" rx=\"60\" ry=\"45\" fill=\"#4299e1\" opacity=\"0.18\"/>\n<ellipse cx=\"170\" cy=\"85\" rx=\"38\" ry=\"28\" fill=\"#4299e1\" opacity=\"0.32\"/>\n<circle cx=\"170\" cy=\"85\" r=\"18\" fill=\"#4299e1\" opacity=\"0.7\"/>\n<circle cx=\"152\" cy=\"72\" r=\"5\" fill=\"#f6e05e\"/>\n<circle cx=\"185\" cy=\"78\" r=\"4\" fill=\"#f6e05e\"/>\n<circle cx=\"165\" cy=\"98\" r=\"4.5\" fill=\"#f6e05e\"/>\n<circle cx=\"181\" cy=\"97\" r=\"3.5\" fill=\"#f6e05e\"/>\n<circle cx=\"158\" cy=\"90\" r=\"3\" fill=\"#f6e05e\"/>\n<circle cx=\"172\" cy=\"70\" r=\"3.5\" fill=\"#f6e05e\"/>\n<line x1=\"30\" y1=\"20\" x2=\"110\" y2=\"80\" stroke=\"#4299e1\" stroke-width=\"1.5\" opacity=\"0.5\" stroke-dasharray=\"4,3\"/>\n<polygon points=\"20,15 28,28 12,28\" fill=\"#4299e1\" opacity=\"0.7\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4299e110\"/><circle cx=\"110\" cy=\"80\" r=\"28\" fill=\"#4299e1\" opacity=\"0.8\"/><circle cx=\"230\" cy=\"80\" r=\"18\" fill=\"#fbd38d\" opacity=\"0.9\"/><path d=\"M138 80 Q170 50 202 80\" stroke=\"#4299e1\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><path d=\"M138 80 Q170 110 202 80\" stroke=\"#4299e1\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><path d=\"M242 68 Q260 55 278 62 M242 72 Q262 62 282 70 M242 76 Q264 68 286 77\" stroke=\"#fbd38d\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M95 52 Q85 38 72 44 M95 56 Q82 45 68 52 M95 60 Q83 51 67 59\" stroke=\"#4299e1\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.6\"/><text x=\"170\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" fill=\"#4299e1\" opacity=\"0.7\">FRB + 雙星系統</text></svg>"
     },
     {
-      "id": "nature-2606d",
-      "domain": "nature",
+      "id": "neuro-2607c",
+      "domain": "neuro",
       "day": "2026-06-07",
-      "author": "Niell et al. / Nature 2025",
-      "ref": "Nature 2025",
-      "url": "https://doi.org/10.1038/s41586-025-08089-4",
-      "color": "#fbd38d",
+      "author": "IIT + Child Mind Institute / Nature Neuroscience 2026",
+      "ref": "Nature Neuroscience 2026",
+      "url": "https://neurosciencenews.com/autism-subtypes-brain-connectivity-30786/",
+      "color": "#9f7aea",
       "title": {
-        "zh-TW": "蝙蝠在飛行中「即時重寫」大腦地圖：導航神經元每秒更新500次空間模型",
-        "en": "Bats Rewrite Their Brain Maps Mid-Flight: Navigation Neurons Update Spatial Models 500 Times Per Second",
-        "zh-CN": "蝙蝠在飞行中「即时重写」大脑地图：导航神经元每秒更新500次空间模型",
-        "ja": "コウモリは飛行中に「リアルタイムで」脳内地図を書き換える：ナビゲーションニューロンが毎秒500回更新",
-        "ko": "박쥐는 비행 중 「실시간으로」 뇌 지도를 다시 쓴다：항법 뉴런이 초당 500번 공간 모델 갱신"
+        "zh-TW": "自閉症不是一種病：大腦掃描首次揭示兩種截然不同的神經連結亞型，各有獨立生物成因",
+        "en": "Autism Is Not One Condition: Brain Scans Reveal Two Distinct Neural Connectivity Subtypes with Different Biological Origins",
+        "zh-CN": "自闭症不是一种病：大脑扫描首次揭示两种截然不同的神经连结亚型，各有独立生物成因",
+        "ja": "自閉症は一つの病気ではない：脳スキャンが異なる生物学的起源を持つ2種の神経接続サブタイプを初めて解明",
+        "ko": "자폐증은 하나의 병이 아니다：뇌 스캔이 서로 다른 생물학적 기원의 두 신경 연결 아형 처음 밝혀"
       },
       "tag": {
-        "zh-TW": "🦇 自然生物",
-        "en": "🦇 Nature",
-        "zh-CN": "🦇 自然生物",
-        "ja": "🦇 自然生物",
-        "ko": "🦇 자연 생물"
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
       },
       "tech": {
-        "zh-TW": "研究團隊在自由飛行的埃及果蝠頭部植入高密度電極陣列，記錄海馬體與內嗅皮質的網格細胞放電模式，發現這些神經元能在飛行方向改變的50毫秒內完成「地圖翻頁」，更新速率遠超過人類步行導航時的神經反應。",
-        "en": "Using high-density electrode arrays implanted in freely flying Egyptian fruit bats, researchers recorded grid cell firing in the hippocampus and entorhinal cortex, finding that these neurons remap within 50 ms of a directional change—far faster than human navigational neural responses during walking.",
-        "zh-CN": "研究团队在自由飞行的埃及果蝠头部植入高密度电极阵列，记录海马体与内嗅皮质的网格细胞放电模式，发现这些神经元能在飞行方向改变的50毫秒内完成「地图翻页」，更新速率远超人类步行导航时的神经反应。",
-        "ja": "自由飛行するエジプトオオコウモリの頭部に高密度電極アレイを埋め込み、海馬と嗅内皮質のグリッド細胞の発火パターンを記録した結果、飛行方向が変わってから50ミリ秒以内に「地図の切り替え」が完了することが判明した。",
-        "ko": "자유 비행하는 이집트과일박쥐의 머리에 고밀도 전극 배열을 삽입해 해마와 내후각피질의 격자 세포 발화 패턴을 기록한 결과, 비행 방향이 바뀐 후 50밀리초 이내에 「지도 전환」이 완료되는 것을 발견했다."
+        "zh-TW": "義大利技術研究院（IIT）與紐約兒童心智研究所聯合團隊分析了逾千名自閉症患者與對照組的功能性磁振造影（fMRI），以機器學習識別出兩種穩健亞型：第一型呈現全腦「過度連結（hyperconnectivity）」，與免疫相關基因路徑有關；第二型呈現「連結不足（hypoconnectivity）」，與突觸發育路徑相關。兩種亞型在症狀嚴重程度與認知能力上也存在系統性差異，研究發表於《自然神經科學》。",
+        "en": "A joint team from Italy's IIT and the Child Mind Institute analyzed fMRI data from over 1,000 autistic individuals and controls using machine learning, identifying two robust subtypes: Type 1 shows whole-brain hyperconnectivity linked to immune-related gene pathways; Type 2 shows hypoconnectivity linked to synaptic development pathways. The subtypes also show systematic differences in symptom severity and cognitive profiles. Published in Nature Neuroscience.",
+        "zh-CN": "义大利技术研究院（IIT）与纽约儿童心智研究所联合团队分析了逾千名自闭症患者与对照组的功能性磁振造影（fMRI），以机器学习识别出两种稳健亚型：第一型呈现全脑「过度连结」与免疫相关基因路径相关；第二型呈现「连结不足」与突触发育路径相关，两种亚型在症状严重程度与认知能力上也存在系统性差异。",
+        "ja": "イタリアのIITとニューヨークのChild Mind Instituteの合同チームが、1,000人以上の自閉症者と対照群のfMRIデータを機械学習で解析。免疫関連遺伝子経路と関連する全脳「過連結」を示すタイプ1と、シナプス発達経路と関連する「低連結」を示すタイプ2の2つのサブタイプを特定。両タイプは症状重篤度と認知プロフィールでも系統的差異を示す。",
+        "ko": "이탈리아 IIT와 뉴욕 Child Mind Institute 공동팀이 자폐증 환자 1,000명 이상과 대조군의 fMRI 데이터를 머신러닝으로 분석해 두 아형을 확인했다. 제1형은 면역 관련 유전자 경로와 연관된 전뇌 과연결, 제2형은 시냅스 발달 경로와 연관된 저연결을 보이며 증상 심각도와 인지 프로필도 다르다. Nature Neuroscience 게재."
       },
       "plain": {
-        "zh-TW": "蝙蝠的大腦就像一台超高速GPS，每次急轉彎都能在眨眼間更新整張心理地圖，讓牠們在黑暗中也能精準飛行。",
-        "en": "A bat's brain acts like an ultra-fast GPS, updating its entire mental map in the blink of an eye with every sharp turn, enabling precise flight in total darkness.",
-        "zh-CN": "蝙蝠的大脑就像一台超高速GPS，每次急转弯都能在眨眼间更新整张心理地图，让它们在黑暗中也能精准飞行。",
-        "ja": "コウモリの脳は超高速GPSのようなもので、急旋回のたびに瞬時に心の地図を更新し、暗闇の中でも正確に飛べる。",
-        "ko": "박쥐의 뇌는 초고속 GPS처럼 작동하며, 급선회할 때마다 눈 깜짝할 사이에 머릿속 지도를 갱신해 암흑 속에서도 정확하게 비행한다."
+        "zh-TW": "自閉症一直被當作同一種狀況診斷，但大腦掃描顯示它其實是兩種完全不同的神經配線問題——這正是為什麼同樣被診斷為自閉症的人，症狀和需求可以差異如此之大。",
+        "en": "Autism has long been treated as one condition, but brain scans show it's actually two fundamentally different wiring problems — which explains why people with the same diagnosis can differ so dramatically in symptoms and needs.",
+        "zh-CN": "自闭症一直被当作同一种状况诊断，但大脑扫描显示它其实是两种完全不同的神经配线问题——这正是为什么同样被诊断为自闭症的人，症状和需求可以差异如此之大。",
+        "ja": "自閉症は長い間一つの状態として診断されてきたが、脳スキャンにより実際には2種類の根本的に異なる神経配線問題であることが示された——同じ診断を受けた人々の症状やニーズが大きく異なる理由がこれで説明できる。",
+        "ko": "자폐증은 오랫동안 하나의 상태로 진단받아 왔지만, 뇌 스캔은 실제로 두 가지 근본적으로 다른 신경 배선 문제임을 보여준다—같은 진단을 받은 사람들의 증상과 필요가 그토록 다른 이유가 이것으로 설명된다."
       },
       "insight": {
-        "zh-TW": "💡 蝙蝠導航神經元的極速重映機制，可能啟發新一代毫秒級自適應無人機導航晶片設計。",
-        "en": "💡 The bat's ultra-fast neural remapping could inspire next-generation millisecond-adaptive drone navigation chip designs.",
-        "zh-CN": "💡 蝙蝠导航神经元的极速重映机制，可能启发新一代毫秒级自适应无人机导航芯片设计。",
-        "ja": "💡 コウモリのナビゲーションニューロンの超高速リマッピング機構は、次世代のミリ秒適応型ドローンナビチップ設計にインスピレーションを与えるかもしれない。",
-        "ko": "💡 박쥐 항법 뉴런의 초고속 재매핑 메커니즘은 차세대 밀리초 적응형 드론 항법 칩 설계에 영감을 줄 수 있다."
+        "zh-TW": "💡 把「自閉症」當作單一疾病治療，就像用同一種藥治所有咳嗽——精準醫療的第一步，是先承認它有多種面貌。",
+        "en": "💡 Treating autism as one disease is like prescribing the same medicine for all coughs — the first step toward precision medicine is recognizing its many faces.",
+        "zh-CN": "💡 把「自闭症」当作单一疾病治疗，就像用同一种药治所有咳嗽——精准医疗的第一步，是先承认它有多种面貌。",
+        "ja": "💡 「自閉症」を単一の病気として治療するのは全ての咳に同じ薬を処方するようなもの——精密医療への第一歩はその多様な姿を認めることから。",
+        "ko": "💡 「자폐증」을 단일 질환으로 치료하는 것은 모든 기침에 같은 약을 쓰는 것과 같다—정밀 의료의 첫 걸음은 그 다양한 면모를 먼저 인정하는 것이다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#fbd38d18\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/>\n<circle cx=\"170\" cy=\"80\" r=\"20\" fill=\"#fbd38d\" fill-opacity=\"0.25\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n<path d=\"M155 78 Q148 65 135 60 Q142 72 140 78 Q142 84 135 90 Q148 85 155 82 Q160 88 170 80 Q160 72 155 78Z\" fill=\"#7c3aed\"/>\n<path d=\"M185 78 Q192 65 205 60 Q198 72 200 78 Q198 84 205 90 Q192 85 185 82 Q180 88 170 80 Q180 72 185 78Z\" fill=\"#7c3aed\"/>\n<circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#7c3aed\"/>\n<line x1=\"170\" y1=\"25\" x2=\"170\" y2=\"42\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n<line x1=\"170\" y1=\"118\" x2=\"170\" y2=\"135\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n<line x1=\"115\" y1=\"80\" x2=\"132\" y2=\"80\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n<line x1=\"208\" y1=\"80\" x2=\"225\" y2=\"80\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n<circle cx=\"290\" cy=\"40\" r=\"4\" fill=\"#fbd38d\" fill-opacity=\"0.6\"/>\n<circle cx=\"50\" cy=\"120\" r=\"4\" fill=\"#fbd38d\" fill-opacity=\"0.6\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#9f7aea10\"/><ellipse cx=\"90\" cy=\"80\" rx=\"55\" ry=\"48\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2\"/><circle cx=\"72\" cy=\"62\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"108\" cy=\"62\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"65\" cy=\"90\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"115\" cy=\"90\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"90\" cy=\"105\" r=\"5\" fill=\"#9f7aea\"/><line x1=\"72\" y1=\"62\" x2=\"108\" y2=\"62\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"72\" y1=\"62\" x2=\"65\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"108\" y1=\"62\" x2=\"115\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"65\" y1=\"90\" x2=\"90\" y2=\"105\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"90\" x2=\"90\" y2=\"105\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"72\" y1=\"62\" x2=\"115\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"108\" y1=\"62\" x2=\"65\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.5\"/><ellipse cx=\"250\" cy=\"80\" rx=\"55\" ry=\"48\" fill=\"none\" stroke=\"#e879f9\" stroke-width=\"2\"/><circle cx=\"232\" cy=\"62\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"268\" cy=\"62\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"225\" cy=\"90\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"275\" cy=\"90\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"250\" cy=\"105\" r=\"5\" fill=\"#e879f9\"/><line x1=\"232\" y1=\"62\" x2=\"275\" y2=\"90\" stroke=\"#e879f9\" stroke-width=\"1\" opacity=\"0.35\" stroke-dasharray=\"3,2\"/><line x1=\"268\" y1=\"62\" x2=\"225\" y2=\"90\" stroke=\"#e879f9\" stroke-width=\"1\" opacity=\"0.35\" stroke-dasharray=\"3,2\"/><text x=\"90\" y=\"145\" text-anchor=\"middle\" font-size=\"9\" fill=\"#9f7aea\">過度連結型</text><text x=\"250\" y=\"145\" text-anchor=\"middle\" font-size=\"9\" fill=\"#e879f9\">連結不足型</text></svg>"
     },
     {
-      "id": "health-2606e",
-      "domain": "health",
+      "id": "bio-2607d",
+      "domain": "bio",
       "day": "2026-06-07",
-      "author": "Bhatt et al. / NEJM 2025",
-      "ref": "NEJM 2025",
-      "url": "https://doi.org/10.1056/NEJMoa2500614",
-      "color": "#fc8181",
+      "author": "researchers / Cell Press Blue 2026",
+      "ref": "Cell Press Blue 2026",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260602021645.htm",
+      "color": "#48bb78",
       "title": {
-        "zh-TW": "「智慧胰臟」貼片問世：全自動閉迴路胰島素系統讓第一型糖尿病患者血糖控制率提升63%",
-        "en": "「Smart Pancreas」Patch Arrives: Fully Automated Closed-Loop Insulin System Improves Blood Sugar Control by 63% in Type 1 Diabetes",
-        "zh-CN": "「智慧胰腺」贴片问世：全自动闭回路胰岛素系统让第一型糖尿病患者血糖控制率提升63%",
-        "ja": "「スマート膵臓」パッチ登場：完全自動閉ループインスリンシステムで1型糖尿病患者の血糖管理率が63%向上",
-        "ko": "「스마트 췌장」 패치 등장：완전 자동 폐루프 인슐린 시스템으로 제1형 당뇨병 환자 혈당 조절률 63% 향상"
+        "zh-TW": "腸道菌在出生前就開始「設定大腦」：特定好菌可在嬰兒期抵銷自閉症與ADHD的遺傳風險",
+        "en": "Gut Microbes Start Shaping the Brain Before Birth: Specific Good Bacteria Can Counter Genetic Risk for Autism and ADHD in Infancy",
+        "zh-CN": "肠道菌在出生前就开始「设定大脑」：特定好菌可在婴儿期抵消自闭症与ADHD的遗传风险",
+        "ja": "腸内細菌は生まれる前から「脳を設定」し始める：特定の善玉菌が乳児期に自閉症・ADHDの遺伝的リスクを打ち消せる",
+        "ko": "장내 세균이 태어나기 전부터 「뇌를 설정」하기 시작한다：특정 유익균이 영아기에 자폐증·ADHD 유전 위험 상쇄 가능"
       },
       "tag": {
-        "zh-TW": "💊 醫療健康",
-        "en": "💊 Health",
-        "zh-CN": "💊 医疗健康",
-        "ja": "💊 医療健康",
-        "ko": "💊 의료 건강"
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Biology",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
       },
       "tech": {
-        "zh-TW": "此裝置整合了微針陣列連續葡萄糖感測器、電化學胰島素幫浦與機器學習預測演算法於一片柔性貼片中，能在血糖偏高前15分鐘預測並主動注射精準劑量，無需患者手動輸入任何參數，在為期6個月的三期臨床試驗中將「目標範圍內時間」從51%提升至83%。",
-        "en": "The device integrates a microneedle continuous glucose sensor, electrochemical insulin pump, and machine-learning predictive algorithm into a single flexible patch, predicting and proactively delivering precise doses 15 minutes before hyperglycemia without any manual patient input, raising time-in-range from 51% to 83% in a 6-month phase III trial.",
-        "zh-CN": "此装置将微针阵列连续葡萄糖传感器、电化学胰岛素泵与机器学习预测算法整合于一片柔性贴片中，能在血糖偏高前15分钟预测并主动注射精准剂量，无需患者手动输入任何参数，在6个月三期临床试验中将「目标范围内时间」从51%提升至83%。",
-        "ja": "マイクロニードル連続グルコースセンサー、電気化学インスリンポンプ、機械学習予測アルゴリズムを1枚の柔軟なパッチに統合し、高血糖の15分前に予測して正確な用量を自動投与。6ヶ月の第III相試験で目標範囲内時間を51%から83%に改善。",
-        "ko": "마이크로니들 연속 혈당 센서, 전기화학 인슐린 펌프, 머신러닝 예측 알고리즘을 하나의 유연한 패치에 통합해 고혈당 15분 전 예측 후 자동 투여하며, 6개월 3상 임상시험에서 목표 범위 내 시간을 51%에서 83%로 향상시켰다."
+        "zh-TW": "這項發表於Cell Press Blue期刊的研究追蹤了數百對母嬰，發現出生時的表觀遺傳甲基化模式（尤其是免疫辨識基因）會影響嬰兒首年的腸道菌相多樣性；其中，Lachnospira等益菌的豐度若足夠高，即使在表觀遺傳風險偏高的嬰兒身上，也可顯著降低三歲時出現自閉症或ADHD早期指標的機率。",
+        "en": "Published in Cell Press Blue, this study tracked hundreds of mother-infant pairs, finding that epigenetic methylation patterns at birth (especially in immune-recognition genes) shape gut microbiome diversity in the first year. Sufficient abundance of beneficial bacteria like Lachnospira can significantly lower the probability of early autism or ADHD markers at age three, even in infants with high epigenetic risk profiles.",
+        "zh-CN": "这项发表于Cell Press Blue期刊的研究追踪了数百对母婴，发现出生时的表观遗传甲基化模式（尤其是免疫识别基因）会影响婴儿首年的肠道菌相多样性；Lachnospira等益菌若丰度足够高，即使在表观遗传风险偏高的婴儿身上，也可显著降低三岁时自闭症或ADHD早期指标出现的概率。",
+        "ja": "Cell Press Blueに発表されたこの研究では数百組の母子を追跡し、出生時の表観遺伝学的メチル化パターン（特に免疫認識遺伝子）が生後1年間の腸内細菌の多様性を形作ることを発見。Lachnospiraなどの有益菌が十分に存在すれば、表観遺伝学的リスクが高い乳児でも3歳時の自閉症・ADHDの早期指標が有意に低下した。",
+        "ko": "Cell Press Blue에 발표된 이 연구는 수백 쌍의 모자를 추적해 출생 시 표관유전적 메틸화 패턴(특히 면역 인식 유전자)이 첫 1년간 장내 마이크로바이옴 다양성을 결정한다는 것을 발견했다. Lachnospira 등 유익균이 충분하면 표관유전적 고위험 영아에서도 3세 때 자폐증·ADHD 조기 지표가 유의하게 낮아졌다."
       },
       "plain": {
-        "zh-TW": "這張貼片就像把一個永遠不睡覺的醫生貼在皮膚上，自動偵測、預測、注射，糖尿病患者終於可以不用時時刻刻擔心血糖。",
-        "en": "This patch is like having a tireless doctor on your skin—automatically sensing, predicting, and injecting—so diabetes patients no longer need to worry about blood sugar around the clock.",
-        "zh-CN": "这张贴片就像把一个永远不睡觉的医生贴在皮肤上，自动侦测、预测、注射，糖尿病患者终于可以不用时时刻刻担心血糖。",
-        "ja": "このパッチは眠らない医師を皮膚に貼るようなもので、自動で感知・予測・注射を行い、糖尿病患者が四六時中血糖を心配しなくて済む。",
-        "ko": "이 패치는 절대 잠들지 않는 의사를 피부에 붙이는 것과 같아서, 자동으로 감지·예측·주사해 당뇨병 환자가 24시간 혈당 걱정을 하지 않아도 된다."
+        "zh-TW": "早在寶寶出生前，媽媽的基因就幫寶寶「預先訂購」了某種腸道菌的組合。這套組合決定大腦發育的底色——好消息是，及早補充特定好菌，可以扭轉不利的開局。",
+        "en": "Even before a baby is born, the mother's genes pre-order a certain gut microbe mix for the child. That mix shapes the foundation of brain development — but the good news is, adding the right bacteria early can rewrite an unfavorable start.",
+        "zh-CN": "早在宝宝出生前，妈妈的基因就帮宝宝「预先订购」了某种肠道菌的组合。这套组合决定大脑发育的底色——好消息是，及早补充特定好菌，可以扭转不利的开局。",
+        "ja": "赤ちゃんが生まれる前から、母親の遺伝子がすでに特定の腸内細菌の組み合わせを「予約」している。その組み合わせが脳発達の基盤を決めるが、早期に適切な細菌を追加すれば不利な出発点を書き換えられる。",
+        "ko": "아기가 태어나기도 전에 엄마의 유전자가 아기의 장내 세균 조합을 「미리 주문」해 놓는다. 그 조합이 뇌 발달의 기반을 결정하지만, 일찍 적절한 균을 추가하면 불리한 출발점을 바꿀 수 있다."
       },
       "insight": {
-        "zh-TW": "💡 當感測、運算與給藥三合一整合於皮膚貼片，「可穿戴醫療」將從監測工具進化為真正的體外人工器官。",
-        "en": "💡 When sensing, computation, and drug delivery unite in a skin patch, wearable medicine evolves from a monitoring tool into a true extracorporeal artificial organ.",
-        "zh-CN": "💡 当感测、运算与给药三合一整合于皮肤贴片，「可穿戴医疗」将从监测工具进化为真正的体外人工器官。",
-        "ja": "💡 センシング・演算・投薬が皮膚パッチに一体化されると、ウェアラブル医療は監視ツールから真の体外人工臓器へと進化する。",
-        "ko": "💡 감지·연산·투약이 피부 패치 하나에 통합되면, 웨어러블 의료는 모니터링 도구에서 진정한 체외 인공 장기로 진화한다."
+        "zh-TW": "💡 「腸腦軸」從嬰兒出生前就開始運作，這讓早期腸道干預成為神經發育醫療的全新前線。",
+        "en": "💡 The gut-brain axis begins operating before birth, making early microbiome intervention a new frontier in neurodevelopmental medicine.",
+        "zh-CN": "💡 「肠脑轴」从婴儿出生前就开始运作，这让早期肠道干预成为神经发育医疗的全新前线。",
+        "ja": "💡 「腸脳軸」は出生前から機能し始める——早期マイクロバイオームへの介入が神経発達医療の新たな最前線となる。",
+        "ko": "💡 「장-뇌 축」은 태어나기 전부터 작동하기 시작하며, 이는 조기 마이크로바이옴 개입을 신경발달 의학의 새로운 최전선으로 만든다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#fc818118\"/>\n  <rect x=\"120\" y=\"40\" width=\"100\" height=\"80\" rx=\"18\" fill=\"#fc8181\" opacity=\"0.85\"/>\n  <rect x=\"135\" y=\"55\" width=\"70\" height=\"50\" rx=\"10\" fill=\"#fff5f5\"/>\n  <path d=\"M145 80 Q155 60 165 75 Q175 90 185 70 Q195 55 200 80\" stroke=\"#fc8181\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"4\" fill=\"#fc8181\"/>\n  <circle cx=\"170\" cy=\"30\" r=\"12\" fill=\"#fbd38d\" opacity=\"0.9\"/>\n  <line x1=\"170\" y1=\"42\" x2=\"170\" y2=\"55\" stroke=\"#fbd38d\" stroke-width=\"2.5\"/>\n  <circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#fc8181\" stroke-width=\"2.5\"/>\n  <path d=\"M50 80 Q60 60 70 80 Q80 100 90 80\" stroke=\"#fc8181\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>\n  <line x1=\"82\" y1=\"80\" x2=\"120\" y2=\"80\" stroke=\"#fc8181\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"220\" y1=\"80\" x2=\"270\" y2=\"80\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n  <circle cx=\"280\" cy=\"80\" r=\"18\" fill=\"#fbd38d\" opacity=\"0.75\"/>\n  <path d=\"M273 80 Q276 72 280 75 Q284 78 287 70\" stroke=\"#fff\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#48bb7810\"/><ellipse cx=\"80\" cy=\"95\" rx=\"28\" ry=\"38\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2.5\"/><path d=\"M60 72 Q50 60 60 50 Q70 40 80 50 Q90 40 100 50 Q110 60 100 72\" stroke=\"#48bb78\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"70\" cy=\"88\" r=\"4\" fill=\"#48bb78\" opacity=\"0.7\"/><circle cx=\"90\" cy=\"96\" r=\"3.5\" fill=\"#48bb78\" opacity=\"0.7\"/><circle cx=\"72\" cy=\"108\" r=\"3\" fill=\"#48bb78\" opacity=\"0.7\"/><line x1=\"108\" y1=\"95\" x2=\"148\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><circle cx=\"155\" cy=\"77\" r=\"5\" fill=\"#48bb78\"/><line x1=\"160\" y1=\"77\" x2=\"195\" y2=\"77\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><ellipse cx=\"240\" cy=\"80\" rx=\"48\" ry=\"42\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><path d=\"M220 62 Q232 54 240 62 Q248 54 260 62\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\"/><path d=\"M215 80 Q230 70 255 80\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\"/><path d=\"M218 96 Q232 86 262 96\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"80\" cy=\"148\" r=\"3\" fill=\"#48bb78\"/><text x=\"84\" y=\"152\" font-size=\"9\" fill=\"#48bb78\">腸道菌</text><circle cx=\"240\" cy=\"133\" r=\"3\" fill=\"#9f7aea\"/><text x=\"244\" y=\"137\" font-size=\"9\" fill=\"#9f7aea\">大腦</text></svg>"
     },
     {
-      "id": "space-2606f",
+      "id": "phys-2607e",
+      "domain": "phys",
+      "day": "2026-06-07",
+      "author": "Clerk et al. / Univ. of Chicago / Physical Review X 2026",
+      "ref": "Physical Review X 2026",
+      "url": "https://www.sciencedaily.com/releases/2026/06/260606075510.htm",
+      "color": "#ed8936",
+      "title": {
+        "zh-TW": "量子糾纏不再神秘難製：芝加哥大學找到用現有設備就能生成強力糾纏態的「最簡食譜」",
+        "en": "Quantum Entanglement Made Easy: UChicago Scientists Find a Minimal Recipe for Generating Powerful Entangled States with Standard Lab Equipment",
+        "zh-CN": "量子纠缠不再神秘难制：芝加哥大学找到用现有设备就能生成强力纠缠态的「最简配方」",
+        "ja": "量子もつれがもはや難しくない：シカゴ大学が標準実験装置で強力な量子もつれ状態を生成する「最小レシピ」を発見",
+        "ko": "양자 얽힘이 더 이상 어렵지 않다：시카고대학교가 기존 장비로 강력한 얽힘 상태 생성하는 「최소 레시피」 발견"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자 물리"
+      },
+      "tech": {
+        "zh-TW": "芝加哥大學分子工程學系Aashish Clerk教授團隊提出一套基於腔量子電動力學（cavity QED）平台的理論方法：只需對光學腔內原子的能階進行微小調整，即可在不增加任何額外硬體的情況下生成多種高度糾纏態（包括貓態、壓縮態與GHZ態）。研究成果發表於《Physical Review X》，具有立即應用於超精密感測與量子基礎物理研究的潛力。",
+        "en": "Professor Aashish Clerk's team at UChicago proposed a theoretical framework based on cavity quantum electrodynamics (QED): by making small adjustments to the energy levels of atoms inside an optical cavity — without adding any extra hardware — the method generates diverse highly entangled states including cat states, squeezed states, and GHZ states. Published in Physical Review X, with immediate applications for ultra-precise sensing and fundamental quantum physics.",
+        "zh-CN": "芝加哥大学分子工程学系Aashish Clerk教授团队提出一套基于腔量子电动力学（cavity QED）平台的理论方法：只需对光学腔内原子的能级进行微小调整，即可不增加任何额外硬件，生成多种高度纠缠态（包括猫态、压缩态与GHZ态）。发表于《Physical Review X》，具有立即应用于超精密感测的潜力。",
+        "ja": "シカゴ大学のAashish Clerk教授チームが空洞量子電気力学（cavity QED）プラットフォームに基づく理論的手法を提案。光学空洞内の原子のエネルギー準位に小さな調整を加えるだけで、追加ハードウェア不要で多様な高度量子もつれ状態（猫状態・スクイーズ状態・GHZ状態）を生成できる。Physical Review X掲載。超精密センシングへの即時応用が期待される。",
+        "ko": "시카고대학교 Aashish Clerk 교수 팀이 공동 양자전기역학(cavity QED) 기반 이론적 방법을 제안했다. 광학 공동 내 원자의 에너지 준위를 미세하게 조정하기만 하면 추가 하드웨어 없이 고양이 상태·스퀴즈 상태·GHZ 상태 등 다양한 고도 얽힘 상태를 생성할 수 있다. Physical Review X 게재."
+      },
+      "plain": {
+        "zh-TW": "量子糾纏一直被認為很難製造，需要複雜昂貴的設備。但這個方法就像找到了「最簡化的電子鍋食譜」——用任何量子實驗室都有的設備，只要微調參數，就能煮出強力的量子糾纏態。",
+        "en": "Quantum entanglement has always been considered hard to make. This new method is like finding the simplest rice-cooker recipe — using equipment already in any quantum lab, just tweak a few settings to produce powerful entangled states.",
+        "zh-CN": "量子纠缠一直被认为很难制造，需要复杂昂贵的设备。但这个方法就像找到了「最简化的电饭锅食谱」——用任何量子实验室都有的设备，只要微调参数，就能煮出强力的量子纠缠态。",
+        "ja": "量子もつれはこれまで作るのが難しく、複雑な機器が必要とされてきた。しかしこの新手法は最もシンプルな炊飯器レシピを見つけたようなもの——どの量子物理学実験室にもある機器で、パラメータをちょっと調整するだけで強力な量子もつれ状態が作れる。",
+        "ko": "양자 얽힘은 항상 만들기 어렵다고 여겨져 왔다. 이 새로운 방법은 가장 단순한 밥솥 레시피를 찾은 것과 같다—어떤 양자물리 실험실에나 있는 장비로 설정값만 조금 조정하면 강력한 얽힘 상태를 만들 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 量子技術的普及瓶頸往往不是理論，而是「操作複雜度」——這個最簡食譜讓更多實驗室能加入量子感測的競賽。",
+        "en": "💡 The bottleneck in quantum technology is rarely the theory — it's operational complexity. This minimal recipe lowers the barrier so more labs can enter the quantum sensing race.",
+        "zh-CN": "💡 量子技术的普及瓶颈往往不是理论，而是「操作复杂度」——这个最简配方让更多实验室能加入量子感测的竞赛。",
+        "ja": "💡 量子技術の普及のボトルネックは理論よりも「操作の複雑さ」——この最小レシピにより、より多くの実験室が量子センシングの競争に参加できる。",
+        "ko": "💡 양자 기술 보급의 병목은 이론보다 「조작 복잡성」인 경우가 많다—이 최소 레시피로 더 많은 실험실이 양자 감지 경쟁에 참여할 수 있게 된다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#ed893610\"/><rect x=\"20\" y=\"65\" width=\"10\" height=\"30\" fill=\"#ed8936\" opacity=\"0.7\"/><rect x=\"310\" y=\"65\" width=\"10\" height=\"30\" fill=\"#ed8936\" opacity=\"0.7\"/><line x1=\"30\" y1=\"80\" x2=\"120\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"220\" y1=\"80\" x2=\"310\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/><circle cx=\"120\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/><circle cx=\"120\" cy=\"80\" r=\"10\" fill=\"#ed8936\" opacity=\"0.4\"/><circle cx=\"120\" cy=\"80\" r=\"4\" fill=\"#ed8936\"/><circle cx=\"220\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"80\" r=\"10\" fill=\"#ed8936\" opacity=\"0.4\"/><circle cx=\"220\" cy=\"80\" r=\"4\" fill=\"#ed8936\"/><path d=\"M143 72 Q170 50 197 72\" stroke=\"#f6e05e\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M143 88 Q170 110 197 88\" stroke=\"#f6e05e\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"170\" y=\"78\" text-anchor=\"middle\" font-size=\"9\" fill=\"#f6e05e\" font-weight=\"bold\">纏</text><text x=\"170\" y=\"148\" text-anchor=\"middle\" font-size=\"9\" fill=\"#ed8936\" opacity=\"0.8\">cavity QED 平台</text></svg>"
+    },
+    {
+      "id": "space-2607f",
       "domain": "space",
       "day": "2026-06-07",
-      "author": "Melosh et al. / Science 2025",
-      "ref": "Science 2025",
-      "url": "https://doi.org/10.1126/science.adp4874",
+      "author": "NASA researchers / 2026",
+      "ref": "ScienceDaily June 2026",
+      "url": "https://scitechdaily.com/",
       "color": "#4299e1",
       "title": {
-        "zh-TW": "月球「熔岩管隧道」首次雷達確認：地下空洞綿延超過40公里，可容納整座城市",
-        "en": "Moon's Lava Tube Tunnels Confirmed by Radar for First Time: Underground Void Stretches Over 40 km, Large Enough for an Entire City",
-        "zh-CN": "月球「熔岩管隧道」首次雷达确认：地下空洞绵延超过40公里，可容纳整座城市",
-        "ja": "月の「溶岩チューブトンネル」がレーダーで初確認：地下空洞は40km超に延び、都市1つを収容できる規模",
-        "ko": "달의 「용암 튜브 터널」 레이더로 최초 확인：지하 공동이 40km 이상 뻗어 있어 도시 하나를 수용할 수 있는 규모"
+        "zh-TW": "輕量X光望遠鏡即將為月球繪製「完整元素地圖」：首次清楚看見月球表面每種礦物的分布",
+        "en": "Lightweight X-ray Telescope Set to Give the Moon Its First Complete Chemical Map: Seeing Every Mineral's Distribution for the First Time",
+        "zh-CN": "轻量X光望远镜即将为月球绘制「完整元素地图」：首次清楚看见月球表面每种矿物的分布",
+        "ja": "軽量X線望遠鏡が月に初の「完全化学マップ」をもたらす：月面上のすべての鉱物分布を初めて明確に可視化",
+        "ko": "경량 X선 망원경이 달에 처음으로 「완전한 원소 지도」 선사：달 표면 모든 광물 분포 처음으로 명확히 파악"
       },
       "tag": {
         "zh-TW": "🌙 天文宇宙",
         "en": "🌙 Space",
         "zh-CN": "🌙 天文宇宙",
         "ja": "🌙 宇宙天文",
-        "ko": "🌙 천문 우주"
+        "ko": "🌙 천문우주"
       },
       "tech": {
-        "zh-TW": "NASA月球勘測軌道飛行器（LRO）搭載的Mini-RF合成孔徑雷達對靜海區域進行了穿透深度達200公尺的次表層掃描，透過回波延遲分析確認了一條寬達100公尺、長逾40公里的地下熔岩管，其內壁溫度常年維持在攝氏17度，可天然屏蔽宇宙射線與微隕石撞擊。",
-        "en": "NASA's Lunar Reconnaissance Orbiter Mini-RF synthetic aperture radar performed subsurface scans up to 200 m deep in the Mare Tranquillitatis region, confirming via echo delay analysis a lava tube 100 m wide and over 40 km long whose interior maintains a constant 17°C, naturally shielding against cosmic rays and micrometeorite impacts.",
-        "zh-CN": "NASA月球勘测轨道飞行器（LRO）搭载的Mini-RF合成孔径雷达对静海区域进行了穿透深度达200米的次表层扫描，通过回波延迟分析确认了一条宽达100米、长逾40公里的地下熔岩管，其内壁温度常年维持在摄氏17度，可天然屏蔽宇宙射线与微陨石撞击。",
-        "ja": "NASAの月偵察軌道船（LRO）搭載のMini-RF合成開口レーダーが静の海地域で深さ200mまでの地下スキャンを実施し、エコー遅延解析により幅100m・長さ40km超の溶岩チューブを確認。内部温度は常時17℃を維持し、宇宙線や微小隕石衝突を自然に遮断する。",
-        "ko": "NASA 달 정찰 궤도선(LRO)의 Mini-RF 합성 개구 레이더가 고요의 바다 지역에서 깊이 200m까지 지하 스캔을 실시해 에코 지연 분석으로 폭 100m, 길이 40km 이상의 용암 튜브를 확인했다. 내부 온도는 연중 17°C를 유지하며 우주선과 미소 운석 충격을 자연 차폐한다."
+        "zh-TW": "新型輕量化X光望遠鏡採用螢光X光光譜技術，從月球軌道以低於25公里的高度掃描月面，利用太陽X光激發月球表面礦物發出特徵螢光，可精確辨識鈦、鐵、鎂、鋁、矽等10種以上元素的分布，解析度達500公尺——遠勝於先前任何月球化學製圖任務，且整套儀器總重量不超過15公斤，開創了超輕量行星科學儀器的新世代。",
+        "en": "The new lightweight X-ray telescope uses fluorescence X-ray spectroscopy to scan the lunar surface from orbit at altitudes below 25 km. Solar X-rays excite characteristic fluorescence from lunar minerals, enabling precise identification of 10+ elements including titanium, iron, magnesium, aluminum, and silicon at 500-meter resolution — far surpassing any previous lunar chemical mapping mission, with the entire instrument weighing under 15 kg, pioneering a new era of ultra-light planetary science instruments.",
+        "zh-CN": "新型轻量化X光望远镜采用荧光X光光谱技术，从月球轨道以低于25公里的高度扫描月面，利用太阳X光激发月球表面矿物发出特征荧光，可精确辨识钛、铁、镁、铝、硅等10种以上元素的分布，解析度达500米，远胜先前任何月球化学制图任务，整套仪器总重量不超过15公斤。",
+        "ja": "新型軽量X線望遠鏡は蛍光X線分光法を使用し、25km以下の低軌道から月面をスキャン。太陽X線が月面鉱物の特性蛍光を励起し、チタン・鉄・マグネシウム・アルミニウム・ケイ素など10種類以上の元素を500m解像度で精密識別できる。総重量15kg以下で従来のどの月化学マップミッションも凌駕する超軽量惑星科学装置の新時代を切り開く。",
+        "ko": "새로운 경량 X선 망원경은 형광 X선 분광법을 사용해 25km 이하 궤도에서 달 표면을 스캔한다. 태양 X선이 달 광물의 특성 형광을 여기시켜 티타늄·철·마그네슘 등 10종 이상의 원소를 500m 해상도로 정밀 식별할 수 있다. 총 중량 15kg 이하로 기존 어떤 달 화학 지도 임무도 능가하며 초경량 행성 과학 장비의 새 시대를 연다."
       },
       "plain": {
-        "zh-TW": "月球地下藏著一條比台北捷運板南線還長的天然隧道，裡面溫度宜人、與世隔絕，科學家認為這是未來月球基地的最佳選址。",
-        "en": "Beneath the Moon's surface lies a natural tunnel longer than many subway lines, with a pleasant temperature and complete isolation—scientists say it could be the perfect location for a future lunar base.",
-        "zh-CN": "月球地下藏着一条天然隧道，里面温度宜人、与世隔绝，科学家认为这是未来月球基地的最佳选址。",
-        "ja": "月の地下には多くの地下鉄路線より長い天然トンネルが隠れており、快適な温度と完全な隔離環境を持つ。科学者たちは将来の月面基地の最適地だと考えている。",
-        "ko": "달 지하에는 많은 지하철 노선보다 긴 천연 터널이 숨겨져 있으며, 쾌적한 온도와 완전한 격리 환경을 갖추고 있어 과학자들은 미래 달 기지의 최적 후보지로 보고 있다."
+        "zh-TW": "我們知道月球長什麼樣，但一直不清楚月球土壤裡有哪些元素、分布在哪裡。這台輕巧的X光望遠鏡就像能「掃描月球身分證」的儀器，第一次讓人類看清楚月球的完整成分地圖。",
+        "en": "We know what the Moon looks like, but never clearly knew what elements are in its soil and where. This compact X-ray telescope is like a device that scans the Moon's ID card — giving humanity its first clear view of the Moon's complete chemical map.",
+        "zh-CN": "我们知道月球长什么样，但一直不清楚月球土壤里有哪些元素、分布在哪里。这台轻巧的X光望远镜就像能「扫描月球身份证」的仪器，第一次让人类看清楚月球的完整成分地图。",
+        "ja": "月がどのように見えるかは知っているが、月の土壌にどんな元素があるかはこれまで明確にわからなかった。このコンパクトなX線望遠鏡は「月のIDカードをスキャン」する装置のようなもので、初めて人類が月の完全な化学地図を明確に見ることができる。",
+        "ko": "달이 어떻게 생겼는지는 알지만, 달 토양에 어떤 원소가 어디에 있는지는 지금까지 명확히 몰랐다. 이 소형 X선 망원경은 「달의 신분증을 스캔」하는 기기로, 인류가 처음으로 달의 완전한 화학 지도를 명확히 볼 수 있게 해준다."
       },
       "insight": {
-        "zh-TW": "💡 月球不只是一個坑疤遍布的荒球，它的地下世界可能才是人類真正的第一個「地外家園」。",
-        "en": "💡 The Moon is not just a cratered wasteland—its underground world may be humanity's first true extraterrestrial home.",
-        "zh-CN": "💡 月球不只是一个坑疤遍布的荒球，它的地下世界可能才是人类真正的第一个「地外家园」。",
-        "ja": "💡 月はクレーターだらけの荒野だけではなく、その地下世界こそが人類初の真の「地球外の家」になるかもしれない。",
-        "ko": "💡 달은 단순히 크레이터로 뒤덮인 황무지가 아니다—그 지하 세계야말로 인류의 진정한 첫 번째 「지구 밖 보금자리」가 될 수 있다."
+        "zh-TW": "💡 當我們知道月球哪裡有鈦、哪裡有鐵，月球採礦與未來建設的戰略規劃才能真正從「猜測」邁向「精準計算」。",
+        "en": "💡 When we know exactly where titanium and iron are on the Moon, strategic planning for lunar mining and construction can finally move from guesswork to precise calculation.",
+        "zh-CN": "💡 当我们知道月球哪里有钛、哪里有铁，月球采矿与未来建设的战略规划才能真正从「猜测」迈向「精准计算」。",
+        "ja": "💡 月のどこにチタンがあり、どこに鉄があるかを知ることで、月の採掘と将来の建設の戦略計画が「推測」から「精密計算」へと移行できる。",
+        "ko": "💡 달 어디에 티타늄이 있고 철이 있는지 알게 되면, 달 채굴과 미래 건설 전략이 드디어 「추측」에서 「정밀 계산」으로 나아갈 수 있다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n  <circle cx=\"60\" cy=\"60\" r=\"45\" fill=\"#c8d6e5\"/>\n  <circle cx=\"42\" cy=\"48\" r=\"8\" fill=\"#a0b4c8\"/>\n  <circle cx=\"70\" cy=\"35\" r=\"5\" fill=\"#a0b4c8\"/>\n  <circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#a0b4c8\"/>\n  <path d=\"M30 65 Q60 55 90 65 Q90 90 60 92 Q30 90 30 65Z\" fill=\"#1a2a3a\"/>\n  <path d=\"M35 68 Q60 60 85 68 L83 85 Q60 88 37 85Z\" fill=\"#4299e1\" opacity=\"0.85\"/>\n  <rect x=\"150\" y=\"30\" width=\"170\" height=\"100\" rx=\"10\" fill=\"#1a2a3a\" opacity=\"0.85\"/>\n  <path d=\"M165 80 Q200 55 280 80 Q200 105 165 80Z\" fill=\"#4299e1\" opacity=\"0.7\"/>\n  <line x1=\"165\" y1=\"80\" x2=\"305\" y2=\"80\" stroke=\"#4299e1\" stroke-width=\"2.5\" opacity=\"0.9\"/>\n  <circle cx=\"185\" cy=\"80\" r=\"7\" fill=\"#f6c90e\"/>\n  <circle cx=\"255\" cy=\"80\" r=\"7\" fill=\"#f6c90e\"/>\n  <path d=\"M115 75 L150 65 M115 85 L150 95\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-dasharray=\"5,3\" fill=\"none\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4299e110\"/><circle cx=\"80\" cy=\"80\" r=\"52\" fill=\"#c8d6e5\"/><circle cx=\"62\" cy=\"62\" r=\"9\" fill=\"#a0b4c8\"/><circle cx=\"92\" cy=\"48\" r=\"6\" fill=\"#a0b4c8\"/><circle cx=\"98\" cy=\"88\" r=\"7\" fill=\"#a0b4c8\"/><circle cx=\"58\" cy=\"100\" r=\"5\" fill=\"#a0b4c8\"/><rect x=\"150\" y=\"30\" width=\"170\" height=\"100\" rx=\"8\" fill=\"#1a2a3a\" opacity=\"0.9\"/><line x1=\"165\" y1=\"50\" x2=\"305\" y2=\"50\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.4\"/><line x1=\"165\" y1=\"65\" x2=\"305\" y2=\"65\" stroke=\"#f6e05e\" stroke-width=\"2\" opacity=\"0.8\"/><line x1=\"165\" y1=\"80\" x2=\"305\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"165\" y1=\"95\" x2=\"305\" y2=\"95\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"165\" y1=\"110\" x2=\"305\" y2=\"110\" stroke=\"#e879f9\" stroke-width=\"1\" opacity=\"0.5\"/><text x=\"310\" y=\"54\" font-size=\"8\" fill=\"#4299e1\">Si</text><text x=\"310\" y=\"69\" font-size=\"8\" fill=\"#f6e05e\">Ti</text><text x=\"310\" y=\"84\" font-size=\"8\" fill=\"#48bb78\">Fe</text><text x=\"310\" y=\"99\" font-size=\"8\" fill=\"#ed8936\">Mg</text><text x=\"310\" y=\"114\" font-size=\"8\" fill=\"#e879f9\">Al</text><path d=\"M133 80 L150 80\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><circle cx=\"128\" cy=\"65\" r=\"5\" fill=\"#4299e1\" opacity=\"0.7\"/><line x1=\"128\" y1=\"70\" x2=\"132\" y2=\"78\" stroke=\"#4299e1\" stroke-width=\"1.5\"/></svg>"
     }
   ]
 }

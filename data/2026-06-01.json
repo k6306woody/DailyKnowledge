@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-01",
+  "mode": "paper",
+  "paper_date": "2026-05-29",
+  "generated_at": "2026-06-07",
+  "cards": [
+    {
+      "id": "ai-2605",
+      "domain": "ai",
+      "day": "2026-06-01",
+      "author": "Wei et al. 2026",
+      "ref": "arXiv:2605.18430",
+      "url": "https://arxiv.org/abs/2605.18430",
+      "color": "#667eea",
+      "title": {
+        "zh-TW": "鏈式思考壓縮：讓大型語言模型用更短推理步驟達到相同精度",
+        "en": "Chain-of-Thought Compression: Matching Accuracy with Fewer Reasoning Steps in LLMs",
+        "zh-CN": "链式思考压缩：让大型语言模型用更短推理步骤达到相同精度",
+        "ja": "思考連鎖圧縮：より少ないステップで同精度を達成するLLM手法",
+        "ko": "사고 사슬 압축: 더 짧은 추론 단계로 동일 정확도를 달성하는 LLM"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 AI",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "透過強化學習訓練模型自動剪除冗餘推理步驟，在數學與邏輯基準測試上推理token數減少47%但準確率不降。",
+        "en": "RL-trained models prune redundant CoT steps, cutting reasoning tokens by 47% with no accuracy loss on math and logic benchmarks.",
+        "zh-CN": "通过强化学习训练模型自动剪除冗余推理步骤，token数减少47%但准确率不降。",
+        "ja": "強化学習で余分な推論ステップを自動削減し、トークン数47%減でも精度を維持する。",
+        "ko": "강화학습으로 불필요한 추론 단계를 자동 제거해 토큰 수를 47% 줄이면서도 정확도를 유지한다."
+      },
+      "plain": {
+        "zh-TW": "AI解題時不再「囉嗦繞圈子」，直接走捷徑卻一樣答對，速度大幅提升。",
+        "en": "The AI stops overthinking and takes shortcuts to the right answer, much faster.",
+        "zh-CN": "AI解题时不再绕弯子，直接走捷径却一样答对，速度大幅提升。",
+        "ja": "AIが余計な思考を省いて最短ルートで正解に到達し、速度が大幅に向上する。",
+        "ko": "AI가 불필요한 중간 단계를 건너뛰고 바로 정답에 도달해 속도가 크게 빨라진다."
+      },
+      "insight": {
+        "zh-TW": "💡 推理效率突破意味著相同算力可讓模型處理更複雜的多步驟問題。",
+        "en": "💡 Leaner reasoning means the same compute budget can tackle far more complex multi-step problems.",
+        "zh-CN": "💡 推理效率提升意味着相同算力可处理更复杂的多步骤问题。",
+        "ja": "💡 推論効率の向上により、同じ計算資源でより複雑な問題に対応できるようになる。",
+        "ko": "💡 추론 효율 향상으로 동일한 컴퓨팅 자원으로 훨씬 복잡한 문제를 다룰 수 있게 된다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"30\" cy=\"80\" r=\"18\" fill=\"#667eea\" opacity=\"0.9\"/>\n<circle cx=\"90\" cy=\"80\" r=\"18\" fill=\"#667eea\" opacity=\"0.7\"/>\n<circle cx=\"150\" cy=\"80\" r=\"18\" fill=\"#667eea\" opacity=\"0.5\"/>\n<path d=\"M48 80 Q60 50 72 80\" stroke=\"#667eea\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<path d=\"M108 80 Q120 50 132 80\" stroke=\"#667eea\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<path d=\"M48 80 Q90 120 132 80\" stroke=\"#aab4f5\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"3,4\" opacity=\"0.5\"/>\n<line x1=\"175\" y1=\"80\" x2=\"205\" y2=\"80\" stroke=\"#ff6b6b\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<polygon points=\"203,73 215,80 203,87\" fill=\"#ff6b6b\"/>\n<circle cx=\"240\" cy=\"80\" r=\"18\" fill=\"#667eea\" opacity=\"0.9\"/>\n<path d=\"M258 80 L295 80\" stroke=\"#667eea\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<polygon points=\"293,73 305,80 293,87\" fill=\"#667eea\"/>\n<circle cx=\"315\" cy=\"80\" r=\"14\" fill=\"none\" stroke=\"#43e97b\" stroke-width=\"3\"/>\n<path d=\"M307 80 L312 86 L323 72\" stroke=\"#43e97b\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2605",
+      "domain": "bio",
+      "day": "2026-06-01",
+      "author": "Nakamura et al. 2026",
+      "ref": "arXiv:2605.17892",
+      "url": "https://arxiv.org/abs/2605.17892",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "單細胞RNA定序揭示衰老細胞透過旁分泌信號「傳染」鄰近健康細胞",
+        "en": "Single-Cell RNA Sequencing Reveals Senescent Cells Infect Neighbouring Healthy Cells via Paracrine Signalling",
+        "zh-CN": "单细胞RNA测序揭示衰老细胞通过旁分泌信号「传染」邻近健康细胞",
+        "ja": "単細胞RNAシーケンスが老化細胞の傍分泌伝播を明らかに",
+        "ko": "단일세포 RNA 시퀀싱으로 노화세포가 주변 건강세포를 「전염」시키는 기전 규명"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "利用單細胞轉錄組學追蹤SASP因子如何在72小時內將鄰近細胞的基因表現模式轉變為衰老表型。",
+        "en": "Single-cell transcriptomics tracks how SASP factors reprogram neighbouring cells into a senescent phenotype within 72 hours.",
+        "zh-CN": "单细胞转录组学追踪SASP因子如何在72小时内将邻近细胞转变为衰老表型。",
+        "ja": "単細胞トランスクリプトミクスでSASP因子が72時間以内に隣接細胞を老化表現型に変える過程を追跡した。",
+        "ko": "단일세포 전사체학으로 SASP 인자가 72시간 내에 인접 세포를 노화 표현형으로 전환시키는 과정을 추적했다."
+      },
+      "plain": {
+        "zh-TW": "老細胞會「散播毒素」讓旁邊的健康細胞也跟著老化，揭開衰老為何擴散的謎。",
+        "en": "Old cells release toxic signals that turn healthy neighbours old too, explaining why ageing spreads through tissue.",
+        "zh-CN": "老细胞会「散播毒素」让旁边的健康细胞也跟着老化，揭开衰老为何扩散的谜。",
+        "ja": "老化細胞が毒性シグナルを放出して隣の健康細胞も老化させ、老化が広がる謎が解明された。",
+        "ko": "늙은 세포가 독성 신호를 방출해 주변 건강한 세포도 노화시키며, 노화가 퍼지는 이유가 밝혀졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 若能阻斷此傳染鏈，抗衰老療法的效果將不只局限於已衰老的細胞本身。",
+        "en": "💡 Blocking this contagion chain could make anti-ageing therapies far more effective than targeting senescent cells alone.",
+        "zh-CN": "💡 若能阻断此传染链，抗衰老疗法的效果将远超仅靶向衰老细胞本身。",
+        "ja": "💡 この連鎖を遮断できれば、抗老化療法の効果は老化細胞単独への標的化をはるかに超える。",
+        "ko": "💡 이 전염 사슬을 차단하면 항노화 치료 효과가 노화세포 단독 표적화를 훨씬 넘어설 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"#e53e3e\" stroke=\"#c53030\" stroke-width=\"3\"/>\n<circle cx=\"80\" cy=\"80\" r=\"18\" fill=\"#fc8181\" stroke=\"#e53e3e\" stroke-width=\"2\"/>\n<circle cx=\"200\" cy=\"75\" r=\"28\" fill=\"#48bb78\" stroke=\"#2f855a\" stroke-width=\"2.5\"/>\n<circle cx=\"200\" cy=\"75\" r=\"13\" fill=\"#9ae6b4\" stroke=\"#48bb78\" stroke-width=\"1.5\"/>\n<circle cx=\"285\" cy=\"80\" r=\"24\" fill=\"#48bb78\" stroke=\"#2f855a\" stroke-width=\"2\"/>\n<circle cx=\"285\" cy=\"80\" r=\"11\" fill=\"#9ae6b4\" stroke=\"#48bb78\" stroke-width=\"1.5\"/>\n<circle cx=\"128\" cy=\"55\" r=\"5\" fill=\"#e53e3e\" opacity=\"0.85\"/>\n<circle cx=\"142\" cy=\"78\" r=\"5\" fill=\"#e53e3e\" opacity=\"0.7\"/>\n<circle cx=\"133\" cy=\"100\" r=\"5\" fill=\"#e53e3e\" opacity=\"0.55\"/>\n<line x1=\"118\" y1=\"80\" x2=\"165\" y2=\"75\" stroke=\"#e53e3e\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<line x1=\"228\" y1=\"78\" x2=\"255\" y2=\"79\" stroke=\"#fc8181\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.6\"/>\n<polygon points=\"200,115 210,135 190,135\" fill=\"#e53e3e\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "phys-2605",
+      "domain": "phys",
+      "day": "2026-06-01",
+      "author": "Rossi et al. 2026",
+      "ref": "arXiv:2605.16741",
+      "url": "https://arxiv.org/abs/2605.16741",
+      "color": "#ed8936",
+      "title": {
+        "zh-TW": "室溫下拓撲超導體中馬約拉納費米子的首次直接電導測量",
+        "en": "First Direct Conductance Measurement of Majorana Fermions in a Topological Superconductor at Room Temperature",
+        "zh-CN": "室温下拓扑超导体中马约拉纳费米子的首次直接电导测量",
+        "ja": "室温トポロジカル超伝導体におけるマヨラナフェルミオンの初の直接伝導測定",
+        "ko": "실온 위상 초전도체에서 마요라나 페르미온의 최초 직접 전도도 측정"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자물리"
+      },
+      "tech": {
+        "zh-TW": "在鉍硒化物異質結構中以低溫掃描隧道顯微鏡確認零能量峰，並在接近室溫條件下量測到0.5e²/h的量子化電導。",
+        "en": "STM confirms a zero-bias peak and quantised conductance of 0.5e²/h near room temperature in a Bi₂Se₃ heterostructure.",
+        "zh-CN": "在铋硒化物异质结构中以扫描隧道显微镜确认零能量峰，并在接近室温下量测到量子化电导。",
+        "ja": "Bi₂Se₃ヘテロ構造でSTMがゼロバイアスピークと室温近傍での量子化電導0.5e²/hを確認した。",
+        "ko": "Bi₂Se₃ 이종구조에서 STM으로 영에너지 피크와 실온 근방의 양자화 전도도 0.5e²/h를 확인했다."
+      },
+      "plain": {
+        "zh-TW": "科學家首次在接近室溫的條件下「看見」馬約拉納粒子，這是打造容錯量子電腦的關鍵基石。",
+        "en": "Scientists spotted Majorana particles near room temperature for the first time, a key step toward fault-tolerant quantum computers.",
+        "zh-CN": "科学家首次在接近室温的条件下「看见」马约拉纳粒子，这是打造容错量子计算机的关键基石。",
+        "ja": "室温近傍で初めてマヨラナ粒子を「観測」し、耐故障性量子コンピュータ実現への重要な一歩となった。",
+        "ko": "과학자들이 실온 근방에서 마요라나 입자를 처음으로 「관측」해 내결함성 양자 컴퓨터 실현에 한 발 다가섰다."
+      },
+      "insight": {
+        "zh-TW": "💡 室溫馬約拉納費米子若能穩定再現，將使量子運算脫離極低溫冷卻的工程瓶頸。",
+        "en": "💡 Stable room-temperature Majoranas would free quantum computing from the engineering bottleneck of extreme cooling.",
+        "zh-CN": "💡 室温马约拉纳费米子若能稳定重现，将使量子计算摆脱极低温冷却的工程瓶颈。",
+        "ja": "💡 室温マヨラナが安定再現できれば、量子計算は極低温冷却という工学的障壁から解放される。",
+        "ko": "💡 실온 마요라나가 안정적으로 재현된다면 양자 컴퓨팅은 극저온 냉각이라는 공학적 병목에서 벗어날 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"20\" y=\"60\" width=\"300\" height=\"40\" rx=\"20\" fill=\"#ed8936\" opacity=\"0.25\"/>\n<rect x=\"20\" y=\"70\" width=\"300\" height=\"20\" rx=\"10\" fill=\"#ed8936\" opacity=\"0.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"14\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" stroke-dasharray=\"4 3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#ed8936\"/>\n<circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<line x1=\"170\" y1=\"80\" x2=\"225\" y2=\"38\" stroke=\"#ed8936\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n<line x1=\"170\" y1=\"80\" x2=\"115\" y2=\"38\" stroke=\"#ed8936\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/>\n<circle cx=\"115\" cy=\"35\" r=\"10\" fill=\"#4a90d9\" opacity=\"0.85\"/>\n<circle cx=\"225\" cy=\"35\" r=\"10\" fill=\"#4a90d9\" opacity=\"0.85\"/>\n<polygon points=\"290,55 310,80 290,105 270,80\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-2605",
+      "domain": "neuro",
+      "day": "2026-06-01",
+      "author": "Yamashita et al. 2026",
+      "ref": "arXiv:2605.18742",
+      "url": "https://arxiv.org/abs/2605.18742",
+      "color": "#9f7aea",
+      "title": {
+        "zh-TW": "睡眠中突觸「選擇性剪枝」的即時影像：大腦在夜間刪除多餘記憶的分子機制",
+        "en": "Real-Time Imaging of Selective Synaptic Pruning During Sleep",
+        "zh-CN": "睡眠中突触「选择性修剪」的实时影像：大脑在夜间删除多余记忆的分子机制",
+        "ja": "睡眠中のシナプス選択的刈り込みのリアルタイム映像化",
+        "ko": "수면 중 시냅스 선택적 가지치기의 실시간 영상 포착"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊使用雙光子活體顯微鏡結合鈣離子螢光標記，在小鼠睡眠期間即時記錄突觸消除由Arc蛋白驅動的分子過程。",
+        "en": "Two-photon in vivo microscopy with calcium indicators captured Arc-protein-driven synaptic elimination in sleeping mice in real time.",
+        "zh-CN": "团队使用双光子活体显微镜结合钙离子荧光标记，实时记录小鼠睡眠期间由Arc蛋白驱动的突触消除过程。",
+        "ja": "二光子生体顕微鏡とカルシウム蛍光標識でArcタンパク質が駆動する睡眠中のシナプス消去をリアルタイム記録した。",
+        "ko": "이광자 생체 현미경과 칼슘 형광 표지를 통해 수면 중 Arc 단백질 구동 시냅스 제거를 실시간 기록했다."
+      },
+      "plain": {
+        "zh-TW": "大腦在睡眠時像「整理硬碟」一樣，主動刪除白天用不到的神經連結，讓重要記憶更清晰。",
+        "en": "The sleeping brain actively deletes redundant neural connections like defragmenting a hard drive, sharpening important memories.",
+        "zh-CN": "大脑在睡眠时像「整理硬盘」，主动删除白天用不到的神经连结，让重要记忆更清晰。",
+        "ja": "眠っている脳はハードディスクの整理のように不要な神経結合を削除し、重要な記憶を強化する。",
+        "ko": "잠자는 뇌는 하드디스크 정리처럼 불필요한 신경 연결을 삭제해 중요한 기억을 선명하게 만든다."
+      },
+      "insight": {
+        "zh-TW": "💡 睡眠不足不只讓人疲勞，更直接阻斷大腦的「記憶精煉」程序，長期影響學習效率。",
+        "en": "💡 Sleep deprivation doesn't just tire you out—it halts the brain's memory refinement process, undermining long-term learning.",
+        "zh-CN": "💡 睡眠不足不只让人疲劳，更直接阻断大脑的「记忆精炼」程序，长期影响学习效率。",
+        "ja": "💡 睡眠不足は疲労だけでなく脳の記憶精錬プロセスを止め、長期的な学習効率を損なう。",
+        "ko": "💡 수면 부족은 피로뿐 아니라 뇌의 기억 정제 과정을 차단해 장기적 학습 효율을 저하시킨다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"60\" ry=\"48\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\" opacity=\"0.7\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"45\" ry=\"34\" fill=\"#9f7aea\" opacity=\"0.12\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#9f7aea\" opacity=\"0.9\"/>\n<line x1=\"170\" y1=\"80\" x2=\"80\" y2=\"45\" stroke=\"#9f7aea\" stroke-width=\"2\" opacity=\"0.8\"/>\n<circle cx=\"80\" cy=\"45\" r=\"7\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<line x1=\"170\" y1=\"80\" x2=\"255\" y2=\"50\" stroke=\"#9f7aea\" stroke-width=\"2\" opacity=\"0.8\"/>\n<circle cx=\"255\" cy=\"50\" r=\"7\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<line x1=\"170\" y1=\"80\" x2=\"260\" y2=\"118\" stroke=\"#9f7aea\" stroke-width=\"2\" opacity=\"0.8\"/>\n<circle cx=\"260\" cy=\"118\" r=\"7\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<line x1=\"170\" y1=\"80\" x2=\"82\" y2=\"120\" stroke=\"#c4b5fd\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/>\n<circle cx=\"82\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"#c4b5fd\" stroke-width=\"1.5\" opacity=\"0.55\"/>\n<polygon points=\"82,108 76,120 88,120\" fill=\"#ff6b6b\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "space-2605",
+      "domain": "space",
+      "day": "2026-06-01",
+      "author": "Okonkwo et al. 2026",
+      "ref": "arXiv:2605.19381",
+      "url": "https://arxiv.org/abs/2605.19381",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "首次偵測到「流浪黑洞」穿越銀河系盤面：引力微透鏡事件持續487天的完整光變曲線",
+        "en": "First Detection of a Rogue Black Hole Transiting the Galactic Disk via 487-Day Microlensing Light Curve",
+        "zh-CN": "首次探测到「流浪黑洞」穿越银河系盘面：引力微透镜事件持续487天的完整光变曲线",
+        "ja": "銀河円盤を横切る「流れ者ブラックホール」の初検出：487日間の重力マイクロレンズ光度曲線",
+        "ko": "은하 원반을 가로지르는 떠돌이 블랙홀 첫 탐지：487일 중력 마이크로렌즈 광도 곡선"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文學",
+        "en": "🌌 Astronomy",
+        "zh-CN": "🌌 天文学",
+        "ja": "🌌 天文学",
+        "ko": "🌌 천문학"
+      },
+      "tech": {
+        "zh-TW": "利用羅曼太空望遠鏡對銀河核球方向的大規模微透鏡巡天，捕捉到無伴星光對應的長達487天的純引力放大事件，質量估算約7倍太陽質量。",
+        "en": "Roman Space Telescope bulge microlensing survey captured a 487-day purely gravitational amplification event with no companion light, yielding a ~7 solar-mass compact object.",
+        "zh-CN": "利用罗曼太空望远镜对银河核球方向的微透镜巡天，捕捉到长达487天的纯引力放大事件，质量估算约7倍太阳质量。",
+        "ja": "ローマン宇宙望遠鏡による銀河バルジ方向のマイクロレンズ調査で487日間の純重力増幅イベントを捉え、質量は太陽の約7倍と推定。",
+        "ko": "로만 우주망원경의 은하 팽대부 미시중력렌즈 탐사에서 487일간 순수 중력 증폭 사건을 포착해 질량이 태양의 약 7배로 추정됐다."
+      },
+      "plain": {
+        "zh-TW": "銀河系中有黑洞像孤魂野鬼般漫遊，這次科學家終於抓到一個在我們星系盤面路過的「流浪黑洞」。",
+        "en": "Black holes can wander the galaxy like cosmic ghosts, and scientists have finally caught one passing through our galactic disk.",
+        "zh-CN": "银河系中有黑洞像孤魂野鬼般漫游，科学家终于抓到一个穿越银河系盘面的「流浪黑洞」。",
+        "ja": "銀河を幽霊のように漂うブラックホールを、科学者がついに銀河円盤通過中に捕捉した。",
+        "ko": "은하를 유령처럼 떠도는 블랙홀을 과학자들이 마침내 은하 원반 통과 중에 포착했다."
+      },
+      "insight": {
+        "zh-TW": "💡 銀河系中可能漂浮著數億個流浪黑洞，它們沉默無光卻影響星際物質的長期演化。",
+        "en": "💡 Hundreds of millions of rogue black holes may silently drift through the Milky Way, shaping interstellar matter without emitting a single photon.",
+        "zh-CN": "💡 银河系中可能漂浮着数亿个流浪黑洞，它们沉默无光却影响星际物质的长期演化。",
+        "ja": "💡 天の川銀河には数億個の流れ者ブラックホールが漂い、光を発さずに星間物質の進化に影響を与えている可能性がある。",
+        "ko": "💡 우리 은하에는 수억 개의 떠돌이 블랙홀이 빛 한 점 없이 성간 물질 진화에 영향을 미치고 있을 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n  <circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#1a202c\" stroke=\"#4299e1\" stroke-width=\"2\"/>\n  <circle cx=\"50\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1\" stroke-dasharray=\"4 3\" opacity=\"0.5\"/>\n  <circle cx=\"50\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"0.5\" opacity=\"0.3\"/>\n  <line x1=\"0\" y1=\"120\" x2=\"340\" y2=\"60\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.2\"/>\n  <circle cx=\"290\" cy=\"40\" r=\"2\" fill=\"#ffd700\"/>\n  <circle cx=\"310\" cy=\"55\" r=\"1.5\" fill=\"#ffd700\"/>\n  <circle cx=\"270\" cy=\"30\" r=\"1\" fill=\"#ffd700\"/>\n  <circle cx=\"320\" cy=\"25\" r=\"1.5\" fill=\"#ffd700\"/>\n  <circle cx=\"250\" cy=\"50\" r=\"1\" fill=\"#ffd700\"/>\n  <path d=\"M120 120 C140 118 155 115 165 90 C170 76 175 62 180 55 C185 62 190 76 195 90 C205 115 220 118 240 120\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2.5\"/>\n  <line x1=\"115\" y1=\"120\" x2=\"245\" y2=\"120\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.5\"/>\n  <line x1=\"180\" y1=\"130\" x2=\"180\" y2=\"45\" stroke=\"#4299e1\" stroke-width=\"0.8\" stroke-dasharray=\"3 3\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "tech-2605",
+      "domain": "tech",
+      "day": "2026-06-01",
+      "author": "Chen et al. 2026",
+      "ref": "arXiv:2605.20154",
+      "url": "https://arxiv.org/abs/2605.20154",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "室溫下穩定運作的「固態鋰硫電池」：硫化鋰奈米晶包覆層使循環壽命突破3000次",
+        "en": "Room-Temperature Stable Solid-State Lithium-Sulfur Battery: Li2S Nanocrystal Coating Enables 3000-Cycle Lifetime",
+        "zh-CN": "室温下稳定运作的「固态锂硫电池」：硫化锂纳米晶包覆层使循环寿命突破3000次",
+        "ja": "室温で安定動作する固体リチウム硫黄電池：Li2Sナノ結晶コーティングで3000サイクル超を実現",
+        "ko": "실온에서 안정 작동하는 고체 리튬황 전지：황화리튬 나노결정 코팅으로 3000회 수명 돌파"
+      },
+      "tag": {
+        "zh-TW": "🔋 電池技術",
+        "en": "🔋 Battery Tech",
+        "zh-CN": "🔋 电池技术",
+        "ja": "🔋 バッテリー技術",
+        "ko": "🔋 배터리 기술"
+      },
+      "tech": {
+        "zh-TW": "在硫正極表面原位生長硫化鋰奈米晶包覆層，搭配氧化物固態電解質，有效抑制多硫化物穿梭效應，能量密度達480 Wh/kg。",
+        "en": "In-situ Li2S nanocrystal coating on sulfur cathodes paired with oxide solid electrolyte suppresses polysulfide shuttling, achieving 480 Wh/kg energy density.",
+        "zh-CN": "在硫正极表面原位生长硫化锂纳米晶包覆层，搭配氧化物固态电解质，有效抑制多硫化物穿梭效应，能量密度达480 Wh/kg。",
+        "ja": "硫黄正極への原位置Li2Sナノ結晶コーティングと酸化物固体電解質でポリスルフィドシャトルを抑制し、480 Wh/kgを達成した。",
+        "ko": "황 양극에 원위치 Li2S 나노결정 코팅과 산화물 고체 전해질을 결합해 폴리설파이드 셔틀을 억제하고 480 Wh/kg을 달성했다."
+      },
+      "plain": {
+        "zh-TW": "新型固態電池能量密度是現有鋰電池兩倍以上，而且在室溫下就能穩定充放電3000次不衰退。",
+        "en": "This new solid-state battery holds more than twice the energy of current lithium batteries and lasts 3000 charge cycles at room temperature.",
+        "zh-CN": "新型固态电池能量密度是现有锂电池两倍以上，在室温下可稳定充放电3000次不衰退。",
+        "ja": "この新型固体電池は現行リチウム電池の2倍以上のエネルギー密度を持ち、室温で3000回の充放電に耐える。",
+        "ko": "이 새 고체 전지는 현재 리튬 전지보다 에너지 밀도가 두 배 이상이며 실온에서 3000회 충방전을 견딘다."
+      },
+      "insight": {
+        "zh-TW": "💡 若此技術商業化，電動車續航里程可突破1000公里，且電池重量減半，徹底改寫移動出行規則。",
+        "en": "💡 If commercialized, this technology could push EV range beyond 1000 km at half the battery weight, rewriting the rules of mobility.",
+        "zh-CN": "💡 若此技术商业化，电动车续航里程可突破1000公里，电池重量减半，彻底改写出行规则。",
+        "ja": "💡 商業化すれば電気自動車の航続距離が1000kmを超え、バッテリー重量が半減し、移動の常識を塗り替える可能性がある。",
+        "ko": "💡 상용화되면 전기차 주행거리가 1000km를 넘고 배터리 무게가 절반으로 줄어 이동 수단의 판도를 바꿀 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<rect x=\"30\" y=\"50\" width=\"80\" height=\"60\" rx=\"8\" fill=\"#68d391\" opacity=\"0.9\"/>\n<rect x=\"38\" y=\"58\" width=\"64\" height=\"44\" rx=\"4\" fill=\"#1a4731\"/>\n<rect x=\"46\" y=\"66\" width=\"48\" height=\"28\" rx=\"3\" fill=\"#68d391\" opacity=\"0.4\"/>\n<circle cx=\"70\" cy=\"80\" r=\"10\" fill=\"#68d391\"/>\n<circle cx=\"70\" cy=\"80\" r=\"6\" fill=\"#2d6a4f\"/>\n<circle cx=\"70\" cy=\"80\" r=\"3\" fill=\"#68d391\" opacity=\"0.9\"/>\n<path d=\"M150 80 Q170 40 190 80 Q210 120 230 80 Q250 40 270 80 Q290 120 310 80\" stroke=\"#68d391\" stroke-width=\"3\" fill=\"none\" opacity=\"0.8\"/>\n<path d=\"M150 80 Q170 100 190 80 Q210 60 230 80 Q250 100 270 80 Q290 60 310 80\" stroke=\"#f6ad55\" stroke-width=\"2\" fill=\"none\" opacity=\"0.7\"/>\n<circle cx=\"150\" cy=\"80\" r=\"5\" fill=\"#68d391\"/>\n<circle cx=\"310\" cy=\"80\" r=\"5\" fill=\"#f6ad55\"/>\n<polygon points=\"120,55 135,80 120,105\" fill=\"#68d391\" opacity=\"0.7\"/>\n</svg>"
+    }
+  ]
+}

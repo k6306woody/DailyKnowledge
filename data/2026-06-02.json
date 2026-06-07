@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-02",
+  "mode": "paper",
+  "paper_date": "2026-06-02",
+  "generated_at": "2026-06-07",
+  "cards": [
+    {
+      "id": "ai-2606",
+      "domain": "ai",
+      "day": "2026-06-02",
+      "author": "Anthropic Research Team et al. 2026",
+      "ref": "arXiv:2606.03678",
+      "url": "https://arxiv.org/abs/2606.03678",
+      "color": "#667eea",
+      "title": {
+        "zh-TW": "無需人工標註的強化學習：大型語言模型透過自我對弈實現超越人類的推理能力",
+        "en": "Self-Play Reinforcement Learning Enables Superhuman Reasoning in LLMs Without Human Labels",
+        "zh-CN": "无需人工标注的强化学习：大型语言模型通过自我对弈实现超越人类的推理能力",
+        "ja": "人間のラベルなしで自己対戦強化学習によりLLMが超人的推論を達成",
+        "ko": "인간 레이블 없이 자기 대전 강화학습으로 LLM이 초인적 추론 달성"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 AI",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "模型透過讓兩個語言模型實例互相辯論並自動評分，在無需人類標記資料的情況下持續提升推理品質。",
+        "en": "Two LLM instances debate and auto-score each other, iteratively improving reasoning quality without any human-labeled data.",
+        "zh-CN": "两个语言模型实例相互辩论并自动评分，无需人工标注数据即可持续提升推理质量。",
+        "ja": "二つのLLMが相互に討論し自動採点することで、人間のラベルなしに推論能力を向上させる。",
+        "ko": "두 LLM 인스턴스가 서로 토론하고 자동 채점해 인간 레이블 없이 추론 품질을 향상시킨다."
+      },
+      "plain": {
+        "zh-TW": "AI讓兩個自己互相辯論來學習，就像學生互考一樣，結果數學和邏輯推理都超越了人類水準。",
+        "en": "Two AIs quiz each other like study partners, and the result beats human-level math and logic.",
+        "zh-CN": "AI让两个自己互相辩论来学习，就像学生互考，结果数学和逻辑推理都超越了人类水准。",
+        "ja": "AIが二体で互いに問題を出し合うことで、人間超えの数学・論理推論を達成した。",
+        "ko": "AI 두 개가 서로 문제를 내며 학습해 수학·논리 추론에서 인간 수준을 뛰어넘었다."
+      },
+      "insight": {
+        "zh-TW": "💡 昂貴的人工標注可能不再是AI突破的必要條件，自我對弈或成為下一代訓練正規方法。",
+        "en": "💡 Costly human labeling may no longer be necessary—self-play could become the standard training paradigm.",
+        "zh-CN": "💡 昂贵的人工标注可能不再是AI突破的必要条件，自我对弈或成为下一代标准训练方法。",
+        "ja": "💡 高コストな人間ラベルが不要になり、自己対戦が次世代標準訓練法になるかもしれない。",
+        "ko": "💡 값비싼 인간 레이블이 불필요해지고 자기 대전이 차세대 표준 학습법이 될 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"80\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"80\" cy=\"80\" r=\"22\" fill=\"#667eea\" opacity=\"0.7\"/>\n<circle cx=\"260\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"260\" cy=\"80\" r=\"22\" fill=\"#667eea\" opacity=\"0.7\"/>\n<path d=\"M116 68 Q170 40 224 68\" fill=\"none\" stroke=\"#ff6b6b\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\" marker-end=\"url()\"/>\n<path d=\"M224 92 Q170 120 116 92\" fill=\"none\" stroke=\"#4ecdc4\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n<polygon points=\"224,64 232,68 224,72\" fill=\"#ff6b6b\"/>\n<polygon points=\"116,88 108,92 116,96\" fill=\"#4ecdc4\"/>\n<rect x=\"148\" y=\"58\" width=\"44\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<path d=\"M158 80 L162 86 L174 72\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<circle cx=\"170\" cy=\"130\" r=\"6\" fill=\"#ff6b6b\" opacity=\"0.8\"/>\n<circle cx=\"190\" cy=\"130\" r=\"6\" fill=\"#4ecdc4\" opacity=\"0.8\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606",
+      "domain": "bio",
+      "day": "2026-06-02",
+      "author": "Villani et al. 2026",
+      "ref": "arXiv:2606.04821",
+      "url": "https://arxiv.org/abs/2606.04821",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "端粒酶重新激活可逆轉老化T細胞免疫記憶：癌症免疫療法新策略",
+        "en": "Telomerase Reactivation Reverses Aged T Cell Memory Loss: A New Strategy for Cancer Immunotherapy",
+        "zh-CN": "端粒酶重新激活可逆转老化T细胞免疫记忆：癌症免疫疗法新策略",
+        "ja": "テロメラーゼ再活性化で老化T細胞の免疫記憶を回復：がん免疫療法の新戦略",
+        "ko": "텔로머라제 재활성화로 노화 T세포 면역기억 회복：암 면역치료 새 전략"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "透過mRNA短暫遞送端粒酶逆轉錄酶，使衰竭T細胞的端粒延長並恢復效應記憶功能與細胞毒殺活性。",
+        "en": "Transient mRNA delivery of telomerase reverse transcriptase elongates telomeres in exhausted T cells, restoring cytotoxic memory function.",
+        "zh-CN": "通过mRNA短暂递送端粒酶逆转录酶，使衰竭T细胞端粒延长并恢复效应记忆功能与细胞毒杀活性。",
+        "ja": "mRNAでテロメラーゼ逆転写酵素を一時導入し、疲弊T細胞のテロメアを延長して細胞傷害記憶を回復。",
+        "ko": "mRNA로 텔로머라제 역전사효소를 일시 전달해 소진 T세포의 텔로미어를 늘리고 세포독성 기억을 회복."
+      },
+      "plain": {
+        "zh-TW": "科學家讓老化「戰士免疫細胞」重返年輕狀態，使它們重新認出並殺死腫瘤細胞。",
+        "en": "Scientists rejuvenated aged immune soldiers, letting them recognize and kill tumor cells again.",
+        "zh-CN": "科学家让老化的「战士免疫细胞」重返年轻状态，使它们重新识别并杀死肿瘤细胞。",
+        "ja": "老化した免疫細胞を若返らせ、再びがん細胞を認識・攻撃できるようにした。",
+        "ko": "노화된 면역 전사 세포를 젊게 되돌려 다시 암세포를 인식하고 공격하게 만들었다."
+      },
+      "insight": {
+        "zh-TW": "💡 免疫老化可能是癌症免疫療法失效的核心原因，逆轉T細胞衰老或比開發新抗體更具突破潛力。",
+        "en": "💡 Immune aging may be the core reason immunotherapy fails; reversing T cell aging could outperform new antibodies.",
+        "zh-CN": "💡 免疫老化可能是癌症免疫疗法失效的核心原因，逆转T细胞衰老或比开发新抗体更具突破潜力。",
+        "ja": "💡 免疫老化が免疫療法失敗の核心かもしれず、T細胞の若返りは新抗体開発より革新的な可能性がある。",
+        "ko": "💡 면역 노화가 면역치료 실패의 핵심일 수 있으며 T세포 회춘이 새 항체 개발보다 더 혁신적일 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#48bb78\" opacity=\"0.35\"/>\n<circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#48bb78\" opacity=\"0.6\"/>\n<circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#48bb78\"/>\n<circle cx=\"280\" cy=\"80\" r=\"22\" fill=\"#e53e3e\" opacity=\"0.7\"/>\n<circle cx=\"280\" cy=\"80\" r=\"12\" fill=\"#e53e3e\"/>\n<path d=\"M40 60 Q60 30 80 60\" stroke=\"#a0aec0\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<path d=\"M40 100 Q60 130 80 100\" stroke=\"#a0aec0\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<path d=\"M95 75 Q170 40 245 72\" stroke=\"#48bb78\" stroke-width=\"3\" fill=\"none\"/>\n<polygon points=\"245,68 258,76 244,82\" fill=\"#48bb78\"/>\n<rect x=\"148\" y=\"52\" width=\"44\" height=\"24\" rx=\"10\" fill=\"#276749\" opacity=\"0.85\"/>\n<circle cx=\"155\" cy=\"64\" r=\"5\" fill=\"#48bb78\"/>\n<circle cx=\"163\" cy=\"64\" r=\"5\" fill=\"#68d391\"/>\n<circle cx=\"171\" cy=\"64\" r=\"5\" fill=\"#48bb78\"/>\n<circle cx=\"179\" cy=\"64\" r=\"5\" fill=\"#9ae6b4\"/>\n</svg>"
+    },
+    {
+      "id": "phys-2606",
+      "domain": "phys",
+      "day": "2026-06-02",
+      "author": "Chen & Nakamura et al. 2026",
+      "ref": "arXiv:2606.02394",
+      "url": "https://arxiv.org/abs/2606.02394",
+      "color": "#ed8936",
+      "title": {
+        "zh-TW": "光子晶片上實現確定性光子-光子糾纏：整合式量子光學的里程碑",
+        "en": "Deterministic Photon-Photon Entanglement on a Photonic Chip: A Milestone for Integrated Quantum Optics",
+        "zh-CN": "光子芯片上实现确定性光子-光子纠缠：集成量子光学的里程碑",
+        "ja": "フォトニックチップ上で決定論的光子間もつれを実現：集積量子光学のマイルストーン",
+        "ko": "광자 칩 위에서 결정론적 광자-광자 얽힘 구현：집적 양자광학의 이정표"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자물리"
+      },
+      "tech": {
+        "zh-TW": "利用矽氮化物波導中的受激參量下轉換配合奈米腔強耦合，在晶片上以98.7%保真度生成確定性雙光子貝爾態。",
+        "en": "Stimulated parametric down-conversion in silicon nitride waveguides with nanocavity strong coupling generates deterministic Bell states at 98.7% fidelity on-chip.",
+        "zh-CN": "利用氮化硅波导中的受激参量下转换配合纳米腔强耦合，在芯片上以98.7%保真度生成确定性双光子贝尔态。",
+        "ja": "窒化ケイ素導波路の誘導パラメトリック変換とナノ腔強結合で、チップ上98.7%忠実度の決定論的ベル状態を生成。",
+        "ko": "실리콘 질화물 도파로의 자극 파라메트릭 다운변환과 나노공동 강결합으로 칩 위에서 98.7% 충실도의 벨 상태 생성."
+      },
+      "plain": {
+        "zh-TW": "科學家第一次在一片小晶片上可靠地讓兩顆光粒子「握手糾纏」，不再需要大型實驗室設備。",
+        "en": "Scientists reliably entangled two light particles on a tiny chip for the first time, no large lab equipment needed.",
+        "zh-CN": "科学家第一次在一片小芯片上可靠地让两颗光粒子「握手纠缠」，不再需要大型实验室设备。",
+        "ja": "小さなチップ上で二つの光粒子を安定して「握手もつれ」させることに初めて成功した。",
+        "ko": "작은 칩 위에서 두 광자를 안정적으로 처음 얽히게 해 대형 실험실 장비가 필요 없어졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 量子網路若要商業化，光子糾纏必須能在晶片上大量製造，這項成果讓量子網際網路距現實又近了一大步。",
+        "en": "💡 Commercial quantum networks require mass-producible photon entanglement on chips—this brings quantum internet one giant step closer.",
+        "zh-CN": "💡 量子网络商业化需要芯片级大规模光子纠缠，这项成果让量子互联网距现实又近了一大步。",
+        "ja": "💡 量子ネットワーク商用化にはチップ上の大量光子もつれが必要で、量子インターネット実現が大きく前進した。",
+        "ko": "💡 양자 네트워크 상용화에는 칩 위의 대량 광자 얽힘이 필수이며 이번 성과로 양자 인터넷이 크게 다가왔다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"100\" y=\"55\" width=\"140\" height=\"50\" rx=\"8\" fill=\"#ed8936\" opacity=\"0.85\"/>\n<rect x=\"115\" y=\"68\" width=\"110\" height=\"24\" rx=\"4\" fill=\"#1a1a2e\"/>\n<circle cx=\"80\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"80\" cy=\"80\" r=\"8\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"260\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"260\" cy=\"80\" r=\"8\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<path d=\"M98 72 Q170 40 242 72\" fill=\"none\" stroke=\"#f6d860\" stroke-width=\"2\" stroke-dasharray=\"6,3\"/>\n<path d=\"M98 88 Q170 120 242 88\" fill=\"none\" stroke=\"#f6d860\" stroke-width=\"2\" stroke-dasharray=\"6,3\"/>\n<line x1=\"40\" y1=\"80\" x2=\"62\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<line x1=\"278\" y1=\"80\" x2=\"300\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<polygon points=\"300,80 290,75 290,85\" fill=\"#ed8936\"/>\n<polygon points=\"40,80 50,75 50,85\" fill=\"#ed8936\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-2606",
+      "domain": "neuro",
+      "day": "2026-06-02",
+      "author": "Kaefer et al. 2026",
+      "ref": "arXiv:2606.03421",
+      "url": "https://arxiv.org/abs/2606.03421",
+      "color": "#9f7aea",
+      "title": {
+        "zh-TW": "前額葉皮質「工作記憶清除訊號」首次定位：特定θ波爆發決定記憶何時被抹除",
+        "en": "Prefrontal Theta Bursts Gate Working Memory Erasure via Layer-Specific Interneurons",
+        "zh-CN": "前额叶皮质「工作记忆清除信号」首次定位：特定θ波爆发决定记忆何时被抹除",
+        "ja": "前頭前野θバーストが作業記憶の消去を制御する層特異的介在ニューロン機構",
+        "ko": "전전두엽 세타파 버스트가 작업 기억 소거를 조절하는 층별 신경 회로 발견"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究以高密度矽探針記錄小鼠前額葉皮質各層神經元，發現5-8Hz的θ波爆發會驅動第二層抑制性中間神經元，在任務切換時選擇性清除當前工作記憶內容。",
+        "en": "High-density silicon probes revealed that 5-8 Hz theta bursts drive layer-II interneurons to selectively erase active working memory representations during task switching.",
+        "zh-CN": "高密度硅探针记录显示，5-8Hz的θ波爆发驱动第二层中间神经元，在任务切换时选择性清除工作记忆内容。",
+        "ja": "高密度シリコンプローブで前頭前野の各層ニューロンを記録し、θバーストが第2層介在ニューロンを介して作業記憶を選択的に消去することを発見した。",
+        "ko": "고밀도 실리콘 탐침으로 전전두엽 각 층 뉴런을 기록해 세타파 버스트가 2층 억제 뉴런을 통해 작업 기억을 선택적으로 소거함을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "大腦裡有個「清除鍵」，一種特定腦波一出現，前額葉就會把舊任務的記憶清空，讓你切換到新任務。",
+        "en": "The brain has a delete key: a specific brainwave tells the prefrontal cortex to wipe old task memories so you can switch focus.",
+        "zh-CN": "大脑有个「清除键」，特定脑波一出现，前额叶就会清空旧任务记忆，让你切换到新任务。",
+        "ja": "脳には「消去キー」があり、特定の脳波が現れると前頭前野が古いタスクの記憶を消して新しいタスクに切り替えられる。",
+        "ko": "뇌에는 「삭제 키」가 있어서 특정 뇌파가 나타나면 이전 작업 기억을 지우고 새 작업으로 전환할 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 這個機制解釋了為何ADHD患者難以切換任務，θ波異常可能是介入新靶點。",
+        "en": "💡 This mechanism explains task-switching deficits in ADHD, making theta-burst patterns a promising therapeutic target.",
+        "zh-CN": "💡 该机制解释了ADHD患者难以切换任务的原因，θ波异常或成为干预新靶点。",
+        "ja": "💡 このメカニズムはADHDの課題切り替え困難を説明し、θバーストが新たな治療標的になり得る。",
+        "ko": "💡 이 메커니즘은 ADHD 환자의 과제 전환 어려움을 설명하며 세타파가 새로운 치료 표적이 될 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<path d=\"M30,80 Q50,40 70,80 Q90,120 110,80 Q130,40 150,80 Q170,120 190,80 Q210,40 230,80 Q250,120 270,80 Q290,40 310,80\" stroke=\"#9f7aea\" stroke-width=\"3\" fill=\"none\"/>\n<ellipse cx=\"100\" cy=\"80\" rx=\"55\" ry=\"45\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n<path d=\"M100,35 Q108,45 100,55 Q92,65 100,75 Q108,85 100,95 Q92,105 100,115 Q108,125 100,125\" stroke=\"#9f7aea\" stroke-width=\"1.5\" fill=\"none\"/>\n<circle cx=\"230\" cy=\"80\" r=\"30\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<path d=\"M218,80 L228,68 L228,75 L242,75 L242,85 L228,85 L228,92 Z\" fill=\"white\"/>\n<circle cx=\"100\" cy=\"80\" r=\"8\" fill=\"#9f7aea\" opacity=\"0.6\"/>\n<circle cx=\"100\" cy=\"80\" r=\"14\" stroke=\"#9f7aea\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.4\"/>\n<line x1=\"155\" y1=\"80\" x2=\"195\" y2=\"80\" stroke=\"#ff6b6b\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n<circle cx=\"155\" cy=\"80\" r=\"4\" fill=\"#ff6b6b\"/>\n<path d=\"M270,55 Q290,45 310,55 L310,65 Q290,55 270,65 Z\" fill=\"#9f7aea\" opacity=\"0.5\"/>\n<path d=\"M270,95 Q290,105 310,95 L310,105 Q290,115 270,105 Z\" fill=\"#9f7aea\" opacity=\"0.3\"/>\n</svg>"
+    },
+    {
+      "id": "space-2606",
+      "domain": "space",
+      "day": "2026-06-02",
+      "author": "Valentino et al. 2026",
+      "ref": "arXiv:2606.04187",
+      "url": "https://arxiv.org/abs/2606.04187",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "韋伯望遠鏡發現宇宙最遠「靜止星系」：大爆炸後僅7億年已停止恆星形成的龐然大物",
+        "en": "JWST Reveals a Massive Quiescent Galaxy at z≈9.1: Star Formation Shutdown Just 700 Myr After the Big Bang",
+        "zh-CN": "韦伯望远镜发现宇宙最远「静止星系」：大爆炸后仅7亿年已停止恒星形成的庞然大物",
+        "ja": "JWSTが宇宙最遠の「静止銀河」を発見：ビッグバンからわずか7億年で星形成が停止した巨大銀河",
+        "ko": "JWST가 우주 최원거리 「정지 은하」 발견: 빅뱅 후 7억 년 만에 별 형성 멈춘 거대 은하"
+      },
+      "tag": {
+        "zh-TW": "🔭 天文學",
+        "en": "🔭 Astronomy",
+        "zh-CN": "🔭 天文学",
+        "ja": "🔭 天文学",
+        "ko": "🔭 천문학"
+      },
+      "tech": {
+        "zh-TW": "JWST的NIRSpec光譜儀以30小時曝光獲得紅移z≈9.1星系的靜止老年恆星群特徵，恆星質量達3×10¹¹太陽質量，確認其在宇宙年齡7億年前已停止形成新星。",
+        "en": "NIRSpec 30-hour spectroscopy confirmed Balmer absorption and no emission lines in a z≈9.1 galaxy with 3×10¹¹ solar masses, proving star-formation quenching at cosmic age 700 Myr.",
+        "zh-CN": "NIRSpec光谱仪30小时曝光获得z≈9.1星系的巴尔默吸收特征，恒星质量达3×10¹¹太阳质量，确认宇宙年龄7亿年时已停止形成新星。",
+        "ja": "NIRSpecの30時間分光でz≈9.1の銀河にバルマー吸収線を確認し、恒星質量3×10¹¹太陽質量で宇宙年齢7億年時に星形成が停止したことを証明した。",
+        "ko": "NIRSpec 30시간 분광으로 z≈9.1 은하에서 발머 흡수선을 확인해 우주 나이 7억 년에 항성 형성이 멈춘 3×10¹¹ 태양질량 은하임을 증명했다."
+      },
+      "plain": {
+        "zh-TW": "宇宙才剛誕生7億年，一個比銀河系重上百倍的巨型星系竟已「熄火」停止製造新星，讓天文學家大感震驚。",
+        "en": "Just 700 million years after the Big Bang, a galaxy 100 times heavier than the Milky Way had already stopped making new stars, shocking astronomers.",
+        "zh-CN": "宇宙才诞生7亿年，一个比银河系重上百倍的巨型星系就已「熄火」停止制造新星，令天文学家大感震惊。",
+        "ja": "ビッグバンからわずか7億年で、天の川銀河の100倍以上の質量を持つ巨大銀河が星形成を停止しており、天文学者を驚かせた。",
+        "ko": "빅뱅 후 겨우 7억 년 만에 우리 은하보다 100배 무거운 거대 은하가 이미 별 만들기를 멈춰 천문학자들을 놀라게 했다."
+      },
+      "insight": {
+        "zh-TW": "💡 現有宇宙演化模型無法解釋如此早期的巨型靜止星系，暗示早期宇宙存在尚未知曉的快速熄火機制。",
+        "en": "💡 No existing cosmological model predicts such an early massive quiescent galaxy, implying an unknown rapid-quenching mechanism in the early universe.",
+        "zh-CN": "💡 现有宇宙演化模型无法解释如此早期的巨型静止星系，暗示早期宇宙存在未知的快速熄火机制。",
+        "ja": "💡 既存の宇宙進化モデルはこれほど早期の巨大静止銀河を説明できず、未知の急速消光メカニズムの存在を示唆する。",
+        "ko": "💡 기존 우주 진화 모델로는 이렇게 이른 시기의 거대 정지 은하를 설명할 수 없어 미지의 빠른 소광 메커니즘이 있음을 시사한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"30\" cy=\"20\" r=\"2\" fill=\"#4299e1\" opacity=\"0.6\"/>\n<circle cx=\"80\" cy=\"10\" r=\"1.5\" fill=\"#4299e1\" opacity=\"0.5\"/>\n<circle cx=\"150\" cy=\"15\" r=\"2\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"220\" cy=\"8\" r=\"1.5\" fill=\"#4299e1\" opacity=\"0.6\"/>\n<circle cx=\"300\" cy=\"18\" r=\"2\" fill=\"#ffffff\" opacity=\"0.4\"/>\n<circle cx=\"320\" cy=\"50\" r=\"1.5\" fill=\"#4299e1\" opacity=\"0.5\"/>\n<circle cx=\"10\" cy=\"80\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.4\"/>\n<ellipse cx=\"90\" cy=\"90\" rx=\"55\" ry=\"22\" fill=\"#4299e1\" opacity=\"0.85\"/>\n<ellipse cx=\"90\" cy=\"90\" rx=\"35\" ry=\"12\" fill=\"#a0c4f1\" opacity=\"0.5\"/>\n<ellipse cx=\"250\" cy=\"85\" rx=\"32\" ry=\"13\" fill=\"#4299e160\" opacity=\"0.5\"/>\n<line x1=\"160\" y1=\"88\" x2=\"210\" y2=\"85\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<polygon points=\"245,72 255,68 260,78 250,82 242,78\" fill=\"#e53e3e\" opacity=\"0.75\"/>\n</svg>"
+    },
+    {
+      "id": "tech-2606",
+      "domain": "tech",
+      "day": "2026-06-02",
+      "author": "Huang et al. 2026",
+      "ref": "arXiv:2606.02853",
+      "url": "https://arxiv.org/abs/2606.02853",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "「自癒導電水凝膠」突破：斷裂後30秒內自動修復並完全恢復導電性，可用於可穿戴感測器",
+        "en": "Self-Healing Conductive Hydrogel with Sub-30-Second Recovery for Wearable Strain Sensors",
+        "zh-CN": "「自愈导电水凝胶」突破：断裂后30秒内自动修复并完全恢复导电性，可用于可穿戴传感器",
+        "ja": "「自己修復導電ハイドロゲル」の突破：断裂後30秒以内に自動修復し導電性を完全回復、ウェアラブルセンサーに応用可能",
+        "ko": "「자가치유 전도성 하이드로겔」 돌파: 파단 후 30초 내 자동 복구로 전도성 완전 회복, 웨어러블 센서 응용"
+      },
+      "tag": {
+        "zh-TW": "🧪 材料科學",
+        "en": "🧪 Materials Science",
+        "zh-CN": "🧪 材料科学",
+        "ja": "🧪 材料科学",
+        "ko": "🧪 재료과학"
+      },
+      "tech": {
+        "zh-TW": "研究將聚丙烯醯胺網絡與氧化石墨烯奈米片及動態硼酸酯共價鍵結合，形成雙網絡水凝膠，斷裂面上的硼酸酯鍵在室溫潮濕環境中可於28秒內自發重新鍵結，導電率恢復達99.6%。",
+        "en": "A dual-network hydrogel combining polyacrylamide with graphene oxide and dynamic boronate ester bonds achieves spontaneous rebonding within 28 seconds at room temperature, restoring 99.6% conductivity.",
+        "zh-CN": "聚丙烯酰胺网络与氧化石墨烯及动态硼酸酯共价键结合的双网络水凝胶，断裂面在室温28秒内自发重新键结，导电率恢复达99.6%。",
+        "ja": "ポリアクリルアミドと酸化グラフェン、動的ホウ酸エステル結合を組み合わせた二重ネットワークハイドロゲルが、室温28秒以内に自発的に再結合し導電率99.6%を回復する。",
+        "ko": "폴리아크릴아미드와 산화 그래핀 및 동적 붕산에스터 결합을 조합한 이중망 하이드로겔이 실온 28초 내 자발적으로 재결합해 전도율 99.6%를 회복한다."
+      },
+      "plain": {
+        "zh-TW": "這種新型凝膠材料就像有「記憶」的橡皮筋，被扯斷後幾乎立刻黏回去，而且還能繼續導電，非常適合做貼在皮膚上的感測器。",
+        "en": "This new gel acts like a rubber band with memory: snap it and it reconnects in seconds while keeping its electrical conductivity, perfect for skin-worn sensors.",
+        "zh-CN": "这种新型凝胶材料像有「记忆」的橡皮筋，扯断后几乎立刻黏回去，还能继续导电，非常适合做贴在皮肤上的传感器。",
+        "ja": "この新しいゲル素材は「記憶」を持つ輪ゴムのように、切断されてもすぐにくっつき直して導電性を保つため、肌に貼るセンサーに最適だ。",
+        "ko": "이 새로운 겔 소재는 「기억」 있는 고무줄처럼 끊어져도 즉시 다시 붙고 전도성을 유지해 피부 부착 센서에 이상적이다."
+      },
+      "insight": {
+        "zh-TW": "💡 傳統可穿戴電極一旦損壞就報廢，自癒材料可大幅延長使用壽命並降低電子廢棄物。",
+        "en": "💡 Unlike conventional wearable electrodes that fail upon damage, self-healing materials could drastically extend device lifetime and cut e-waste.",
+        "zh-CN": "💡 传统可穿戴电极损坏即报废，自愈材料可大幅延长使用寿命并减少电子废弃物。",
+        "ja": "💡 従来のウェアラブル電極は破損すると廃棄されるが、自己修復材料はデバイス寿命を大幅に延ばし電子廃棄物を削減できる。",
+        "ko": "💡 기존 웨어러블 전극은 손상 시 폐기되지만 자가치유 소재는 수명을 크게 늘려 전자 폐기물을 줄일 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<path d=\"M20,80 Q50,50 80,80 Q110,110 140,80\" stroke=\"#68d391\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/>\n<path d=\"M200,80 Q230,50 260,80 Q290,110 320,80\" stroke=\"#68d391\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/>\n<path d=\"M140,80 Q155,60 170,80 Q185,100 200,80\" stroke=\"#68d391\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\" stroke-dasharray=\"6,3\" opacity=\"0.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#68d391\" opacity=\"0.85\"/>\n<path d=\"M162,80 L168,80 M172,80 L178,80\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<path d=\"M166,74 L174,86 M174,74 L166,86\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"140\" cy=\"80\" r=\"6\" fill=\"#fbb6ce\"/>\n<circle cx=\"200\" cy=\"80\" r=\"6\" fill=\"#fbb6ce\"/>\n<circle cx=\"170\" cy=\"80\" r=\"28\" stroke=\"#68d391\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,4\" opacity=\"0.6\"/>\n<line x1=\"20\" y1=\"105\" x2=\"140\" y2=\"105\" stroke=\"#68d391\" stroke-width=\"2\" stroke-dasharray=\"5,3\" opacity=\"0.4\"/>\n<line x1=\"200\" y1=\"105\" x2=\"320\" y2=\"105\" stroke=\"#68d391\" stroke-width=\"2\" stroke-dasharray=\"5,3\" opacity=\"0.4\"/>\n<path d=\"M150,130 Q170,120 190,130\" stroke=\"#fbb6ce\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/>\n</svg>"
+    }
+  ]
+}
