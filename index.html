@@ -244,6 +244,32 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .filter-reset:hover{background:var(--tf);color:#fff}
 
 
+/* ── Quick date bar ── */
+.quickdays{display:flex;gap:8px;padding:12px 20px 4px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
+.quickdays::-webkit-scrollbar{display:none}
+.qday{flex-shrink:0;padding:7px 16px;border-radius:20px;font-size:12px;font-weight:700;cursor:pointer;border:2px solid var(--bd);background:var(--su);color:var(--tx2);transition:all .18s;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:1px}
+.qday .qd-wd{font-size:9px;font-weight:600;color:var(--tx3);letter-spacing:.5px}
+.qday.on{background:var(--tf);border-color:var(--tf);color:#fff}
+.qday.on .qd-wd{color:rgba(255,255,255,.8)}
+.qday:hover:not(.on){background:var(--bg3);border-color:var(--tf)}
+
+/* ── Calendar picker (sidebar date tab) ── */
+.cal-wrap{padding:12px 14px}
+.cal-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal-nav-btn{width:28px;height:28px;border-radius:8px;border:1.5px solid var(--bd);background:var(--bg3);color:var(--tx2);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.cal-nav-btn:hover{background:var(--tf);color:#fff;border-color:var(--tf)}
+.cal-title{font-size:13px;font-weight:700;color:var(--tx)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal-wh{font-size:9px;font-weight:700;text-align:center;color:var(--tx3);padding:3px 0;letter-spacing:.3px}
+.cal-day{font-size:11px;font-weight:600;text-align:center;padding:6px 2px;border-radius:8px;cursor:default;color:var(--tx3);transition:all .15s}
+.cal-day.has-data{background:var(--tf-p);color:var(--tf-tx);cursor:pointer;font-weight:700}
+.cal-day.has-data:hover{background:var(--tf);color:#fff}
+.cal-day.selected{background:var(--tf)!important;color:#fff!important}
+.cal-day.today{outline:2px solid var(--tf);outline-offset:-2px}
+.cal-day.empty{cursor:default;opacity:0}
+.cal-legend{display:flex;gap:8px;padding:6px 14px 10px;font-size:10px;color:var(--tx3);align-items:center}
+.cal-legend-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+
 /* FOOTER */
 footer{background:var(--bg2);border-top:1px solid var(--bd);padding:28px 24px;text-align:center;font-size:12px;color:var(--tx3)}
 footer strong{color:var(--tf-tx)}
@@ -399,6 +425,8 @@ footer strong{color:var(--tf-tx)}
 </header>
 
 <div class="subnav" id="daynav"></div>
+<!-- 快速日期選擇列 -->
+<div class="quickdays" id="quickdays"></div>
 <div class="searchbar"><input type="search" id="searchbox" placeholder="🔍 搜尋標題、作者、領域…" oninput="doSearch(this.value)" /><button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button><span id="search-count"></span></div>
 <div class="catbar" id="catbar"></div>
 
@@ -494,20 +522,43 @@ footer strong{color:var(--tf-tx)}
 // DATA
 // ════════════════════════════════
 let CARDS = [];
+let AVAILABLE_DATES = []; // 所有有資料的日期（排序）
 
-async function loadTodayData() {
+// 載入所有可用日期的資料
+async function loadAllData() {
   const today = new Date().toISOString().split('T')[0];
+  let datesToTry = [];
+
   try {
-    const res = await fetch(`data/${today}.json`);
-    if (res.ok) return await res.json();
     const hist = await fetch('history.json').then(r => r.json());
-    const last = hist.entries?.[hist.entries.length - 1]?.date;
-    if (last) {
-      const res2 = await fetch(`data/${last}.json`);
-      if (res2.ok) return await res2.json();
+    const histDates = [...new Set((hist.entries||[]).map(e=>e.date))].filter(Boolean);
+    datesToTry = [...histDates];
+    if (!datesToTry.includes(today)) datesToTry.push(today);
+  } catch(e) {
+    // history.json 讀取失敗，嘗試過去 7 天
+    for (let i=0; i<7; i++) {
+      const d = new Date(); d.setDate(d.getDate()-i);
+      datesToTry.push(d.toISOString().split('T')[0]);
     }
-  } catch(e) { console.error('載入資料失敗', e); }
-  return null;
+  }
+
+  const allCards = [];
+  const loadedDates = [];
+  for (const date of datesToTry) {
+    try {
+      const res = await fetch(`data/${date}.json`);
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data.cards && data.cards.length) {
+        allCards.push(...data.cards);
+        if (!loadedDates.includes(date)) loadedDates.push(date);
+      }
+    } catch(e) { /* skip */ }
+  }
+
+  loadedDates.sort().reverse();
+  AVAILABLE_DATES = loadedDates;
+  return { cards: allCards, latestDate: loadedDates[0] || today };
 }
 
 // ════════════════════════════════
@@ -709,6 +760,131 @@ function renderDayChips(){
   nav.querySelectorAll('.chip').forEach(chip=>chip.addEventListener('click',function(){
     curDay=this.dataset.day; updateDateDisplay(); filterByDay(curDay); renderDrawer();
   }));
+}
+
+// ════════════════════════════════
+// QUICK DAY BUTTONS (above search)
+// ════════════════════════════════
+function renderQuickDays(){
+  const wrap=document.getElementById('quickdays');
+  if(!wrap) return;
+  // 取最近 5 個有資料的日期（AVAILABLE_DATES 已按降序排列）
+  const recentDays = AVAILABLE_DATES.slice(0,5);
+  const weekdayZh = ['日','一','二','三','四','五','六'];
+  const weekdayEn = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  wrap.innerHTML = recentDays.map(d=>{
+    const dt = new Date(d+'T00:00:00');
+    const isOn = d===curDay;
+    const cnt = CARDS.filter(c=>c.day===d).length;
+    const wd = curLang==='en' ? weekdayEn[dt.getDay()] : ('週'+weekdayZh[dt.getDay()]);
+    const md = `${dt.getMonth()+1}/${dt.getDate()}`;
+    return `<div class="qday${isOn?' on':''}" data-day="${d}" onclick="selectQuickDay('${d}')">
+      <span>${md} <strong>${wd}</strong></span>
+      <span class="qd-wd">${cnt} 篇</span>
+    </div>`;
+  }).join('');
+}
+function selectQuickDay(day){
+  curDay=day;
+  activeFilters.day=day;
+  updateDateDisplay();
+  applyActiveFilters();
+  renderQuickDays();
+  renderDrawer();
+}
+
+// ════════════════════════════════
+// CALENDAR PICKER (sidebar 日期 tab)
+// ════════════════════════════════
+let calYear = new Date().getFullYear();
+let calMonth = new Date().getMonth(); // 0-indexed
+
+function renderCalendarInDrawer(el, resetBtn){
+  // 初始化月份到最新資料的月份
+  if(AVAILABLE_DATES.length && !calInitialized){
+    const d = new Date(AVAILABLE_DATES[0]+'T00:00:00');
+    calYear = d.getFullYear(); calMonth = d.getMonth();
+    calInitialized = true;
+  }
+
+  const dayCounts = {};
+  CARDS.forEach(c=>{ dayCounts[c.day]=(dayCounts[c.day]||0)+1; });
+
+  const monthNames = {
+    'zh-TW':['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    'en':['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    'zh-CN':['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    'ja':['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    'ko':['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+  };
+  const wdNames = {
+    'zh-TW':['日','一','二','三','四','五','六'],
+    'en':['Su','Mo','Tu','We','Th','Fr','Sa'],
+    'zh-CN':['日','一','二','三','四','五','六'],
+    'ja':['日','月','火','水','木','金','土'],
+    'ko':['일','월','화','수','목','금','토'],
+  };
+  const langs = monthNames[curLang] ? curLang : 'zh-TW';
+  const mname = monthNames[langs][calMonth];
+  const wds = wdNames[langs];
+
+  // 計算月份格子
+  const firstDay = new Date(calYear, calMonth, 1).getDay(); // 0=Sun
+  const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
+  const todayStr = new Date().toISOString().split('T')[0];
+
+  let cells = '';
+  // weekday headers
+  cells += wds.map(w=>`<div class="cal-wh">${w}</div>`).join('');
+  // empty cells before first day
+  for(let i=0;i<firstDay;i++) cells += `<div class="cal-day empty"></div>`;
+  // day cells
+  for(let day=1;day<=daysInMonth;day++){
+    const mm = String(calMonth+1).padStart(2,'0');
+    const dd = String(day).padStart(2,'0');
+    const dateStr = `${calYear}-${mm}-${dd}`;
+    const hasData = !!dayCounts[dateStr];
+    const isSelected = dateStr===curDay;
+    const isToday = dateStr===todayStr;
+    let cls = 'cal-day';
+    if(hasData) cls += ' has-data';
+    if(isSelected) cls += ' selected';
+    if(isToday) cls += ' today';
+    const onclick = hasData ? `onclick="selectCalDay('${dateStr}')"` : '';
+    cells += `<div class="${cls}" ${onclick} title="${hasData?dayCounts[dateStr]+'篇':''}">${day}</div>`;
+  }
+
+  el.innerHTML = (resetBtn||'') + `
+    <div class="cal-wrap">
+      <div class="cal-nav">
+        <button class="cal-nav-btn" onclick="calPrev()">‹</button>
+        <div class="cal-title">${calYear}年${mname}</div>
+        <button class="cal-nav-btn" onclick="calNext()">›</button>
+      </div>
+      <div class="cal-grid">${cells}</div>
+    </div>
+    <div class="cal-legend">
+      <div class="cal-legend-dot" style="background:var(--tf-p);border:1.5px solid var(--tf)"></div> 有資料
+      <div class="cal-legend-dot" style="background:var(--bg3);border:1.5px solid var(--bd);margin-left:8px"></div> 無資料
+    </div>`;
+}
+let calInitialized = false;
+
+function calPrev(){
+  calMonth--; if(calMonth<0){calMonth=11;calYear--;}
+  renderDrawer();
+}
+function calNext(){
+  calMonth++; if(calMonth>11){calMonth=0;calYear++;}
+  renderDrawer();
+}
+function selectCalDay(day){
+  curDay=day;
+  activeFilters.day=day;
+  updateDateDisplay();
+  applyActiveFilters();
+  renderQuickDays();
+  renderDrawer();
 }
 
 function renderCatbar(){
@@ -1006,32 +1182,9 @@ function renderDrawer(){
     </div>`;
 
   } else if(curDTab === 'date'){
-    const dayCounts = {};
-    CARDS.forEach(c=>{ dayCounts[c.day]=(dayCounts[c.day]||0)+1; });
-    const days = Object.entries(dayCounts).sort((a,b)=>b[0].localeCompare(a[0]));
-    const weekdayNames = ['日','一','二','三','四','五','六'];
-
-    el.innerHTML = resetBtn + `<div class="drawer-section">
-      <h4>📅 依日期篩選</h4>
-      <div class="filter-item${!activeFilters.day?' on':''}" onclick="filterDrawerDay(null)">
-        <div class="fi-left"><span class="fi-emoji">🗓</span><span class="fi-label">所有日期</span></div>
-        <span class="fi-count">${CARDS.length}</span>
-      </div>
-      ${days.map(([day,cnt])=>{
-        const d=new Date(day+'T00:00:00');
-        const wd=weekdayNames[d.getDay()];
-        const label=`${day} (週${wd})`;
-        const on = activeFilters.day===day;
-        const isToday = day===curDay;
-        return`<div class="filter-item${on?' on':''}" onclick="filterDrawerDay('${day}')">
-          <div class="fi-left">
-            <span class="fi-emoji">${isToday?'📌':'📄'}</span>
-            <span class="fi-label">${label}${isToday?' 今日':''}</span>
-          </div>
-          <span class="fi-count">${cnt}</span>
-        </div>`;
-      }).join('')}
-    </div>`;
+    el.innerHTML = '';
+    renderCalendarInDrawer(el, resetBtn);
+    return;
 
   } else if(curDTab === 'author'){
     const authorCounts = {};
@@ -1229,8 +1382,8 @@ function doSearch(q){
   let count = 0;
   document.querySelectorAll('.card').forEach(card => {
     const id = card.dataset.id;
-    const ct = cardText(c);
     const c = CARDS.find(x=>x.id===id);
+    const ct = cardText(c);
     const text = [ct?.title||'', ct?.tag||'', ct?.plain||'', ct?.tech||'', c?.author||''].join(' ').toLowerCase();
     const match = !q || text.includes(q);
     const dayMatch = c?.day === curDay;
@@ -1255,22 +1408,30 @@ function applyFz(v){
 fzBtns.forEach(b => b.addEventListener('click', () => applyFz(parseFloat(b.dataset.fz))));
 applyFz(savedFz);
 
-// Init — load JSON then render
-loadTodayData().then(data=>{
-  if(data && data.cards && data.cards.length){
-    CARDS=data.cards;
-    curDay=data.date;
+// Init — load ALL available JSON data then render
+loadAllData().then(result=>{
+  if(result && result.cards && result.cards.length){
+    CARDS = result.cards;
+    curDay = result.latestDate;
+    // 初始化月曆到最新資料月份
+    if(result.latestDate){
+      const d = new Date(result.latestDate+'T00:00:00');
+      calYear = d.getFullYear(); calMonth = d.getMonth();
+      calInitialized = true;
+    }
   }
   renderDayChips();
   renderCatbar();
-  applyLang();
-  renderDrawer(); // renders sidebar content immediately
+  applyLang();       // → renderCards() + renderDrawer()
+  renderQuickDays(); // 快速日期按鈕
+
+  // 初始只顯示最新日期的卡片
+  if(curDay) filterByDay(curDay);
 
   // Update sidebar date hint
   const hint=document.getElementById('sidebar-date-hint');
-  if(hint && curDay){
-    const d=new Date(curDay+'T00:00:00');
-    hint.textContent=`${d.getMonth()+1}月${d.getDate()}日 · ${CARDS.length} 篇`;
+  if(hint && AVAILABLE_DATES.length){
+    hint.textContent=`${AVAILABLE_DATES.length} 天 · ${CARDS.length} 篇`;
   }
 });
 </script>

@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-08",
+  "mode": "paper",
+  "paper_date": "2026-06-05",
+  "generated_at": "2026-06-08",
+  "cards": [
+    {
+      "id": "ai-2606",
+      "domain": "ai",
+      "day": "2026-06-08",
+      "author": "Ye et al. 2026",
+      "ref": "arXiv:2606.03541",
+      "url": "https://arxiv.org/abs/2606.03541",
+      "color": "#667eea",
+      "title": {
+        "zh-TW": "無訓練的多模態推理鏈壓縮：以語義熵篩選冗餘思維步驟",
+        "en": "Training-Free Multimodal Chain-of-Thought Compression via Semantic Entropy",
+        "zh-CN": "无训练的多模态推理链压缩：以语义熵筛选冗余思维步骤",
+        "ja": "意味エントロピーによる学習不要なマルチモーダル推論チェーン圧縮",
+        "ko": "의미 엔트로피 기반 훈련 없는 멀티모달 추론 체인 압축"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 AI",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "利用語義熵量化推理鏈中各步驟的資訊冗餘度，在推論時動態剪枝重複思維步驟，無需額外訓練。",
+        "en": "Semantic entropy scores each reasoning step for redundancy and prunes repetitive thoughts at inference time without retraining.",
+        "zh-CN": "利用语义熵量化推理链中各步骤的冗余度，在推理时动态剪枝重复思维步骤，无需额外训练。",
+        "ja": "意味エントロピーで各推論ステップの冗長度を定量化し、再学習不要で推論時に動的に枝刈りする。",
+        "ko": "의미 엔트로피로 각 추론 단계의 중복도를 측정하고 재학습 없이 추론 시점에 동적으로 가지치기한다."
+      },
+      "plain": {
+        "zh-TW": "讓AI「想得更少但更準」，自動刪掉思考過程中反覆繞圈的廢話。",
+        "en": "AI thinks less but smarter by automatically cutting repetitive reasoning loops.",
+        "zh-CN": "让AI「想得更少但更准」，自动删掉思考过程中反复绕圈的废话。",
+        "ja": "AIが無駄な繰り返しを省いて、より少ない思考でより正確な答えを出せる。",
+        "ko": "AI가 반복되는 쓸데없는 생각을 자동으로 제거해 더 적게 생각하고 더 정확하게 답한다."
+      },
+      "insight": {
+        "zh-TW": "💡 推理鏈的冗餘是推理成本的主因，語義熵提供了一把免訓練的「思維剪刀」。",
+        "en": "💡 Redundancy in reasoning chains is the main cost driver; semantic entropy offers a training-free pruning blade.",
+        "zh-CN": "💡 推理链的冗余是推理成本的主因，语义熵提供了一把免训练的「思维剪刀」。",
+        "ja": "💡 推論チェーンの冗長性がコストの主因であり、意味エントロピーは学習不要の剪定ツールとなる。",
+        "ko": "💡 추론 체인의 중복이 비용의 주원인이며, 의미 엔트로피는 훈련 없는 가지치기 도구를 제공한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"50\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2.5\"/>\n<path d=\"M38 68 Q50 55 62 68 Q74 81 62 92 Q50 105 38 92 Q26 79 38 68\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n<line x1=\"82\" y1=\"60\" x2=\"118\" y2=\"48\" stroke=\"#667eea\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/>\n<line x1=\"82\" y1=\"70\" x2=\"118\" y2=\"70\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<line x1=\"82\" y1=\"80\" x2=\"118\" y2=\"92\" stroke=\"#667eea\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/>\n<polygon points=\"116,44 124,48 116,52\" fill=\"#667eea\" opacity=\"0.4\"/>\n<polygon points=\"116,66 124,70 116,74\" fill=\"#667eea\"/>\n<polygon points=\"116,88 124,92 116,96\" fill=\"#667eea\" opacity=\"0.4\"/>\n<rect x=\"128\" y=\"58\" width=\"84\" height=\"24\" rx=\"12\" fill=\"#667eea\" opacity=\"0.15\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<circle cx=\"155\" cy=\"70\" r=\"5\" fill=\"#667eea\"/>\n<circle cx=\"184\" cy=\"70\" r=\"5\" fill=\"#667eea\"/>\n<circle cx=\"213\" cy=\"70\" r=\"3\" fill=\"#ff7043\" stroke=\"#ff7043\" stroke-width=\"1\"/>\n<line x1=\"216\" y1=\"58\" x2=\"210\" y2=\"52\" stroke=\"#ff7043\" stroke-width=\"1.8\"/>\n<line x1=\"216\" y1=\"82\" x2=\"210\" y2=\"88\" stroke=\"#ff7043\" stroke-width=\"1.8\"/>\n<line x1=\"226\" y1=\"70\" x2=\"262\" y2=\"70\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<polygon points=\"260,66 268,70 260,74\" fill=\"#667eea\"/>\n<circle cx=\"295\" cy=\"70\" r=\"22\" fill=\"#667eea\" opacity=\"0.15\" stroke=\"#667eea\" stroke-width=\"2.5\"/>\n<circle cx=\"295\" cy=\"70\" r=\"10\" fill=\"#667eea\" opacity=\"0.6\"/>\n<circle cx=\"295\" cy=\"70\" r=\"4\" fill=\"#667eea\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606",
+      "domain": "bio",
+      "day": "2026-06-08",
+      "author": "Chen et al. 2026",
+      "ref": "arXiv:2606.02817",
+      "url": "https://arxiv.org/abs/2606.02817",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "單細胞蛋白質組學揭示衰老T細胞的粒線體重程式化驅動腫瘤免疫逃脫",
+        "en": "Single-Cell Proteomics Reveals Mitochondrial Reprogramming in Exhausted T Cells Drives Tumor Immune Evasion",
+        "zh-CN": "单细胞蛋白质组学揭示衰竭T细胞的线粒体重编程驱动肿瘤免疫逃逸",
+        "ja": "単一細胞プロテオミクスが疲弊T細胞のミトコンドリア再プログラムによる腫瘍免疫回避を解明",
+        "ko": "단일세포 프로테오믹스로 소진 T세포의 미토콘드리아 재프로그래밍이 종양 면역 회피를 유도함을 규명"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "以超靈敏單細胞質譜蛋白質組學定量衰老T細胞的粒線體代謝蛋白變化，繪製免疫逃脫的蛋白調控網絡。",
+        "en": "Ultrasensitive single-cell mass spectrometry proteomics quantifies mitochondrial metabolic protein shifts in exhausted T cells.",
+        "zh-CN": "以超灵敏单细胞质谱蛋白质组学定量衰竭T细胞的线粒体代谢蛋白变化，绘制免疫逃逸的蛋白调控网络。",
+        "ja": "超高感度単一細胞質量分析プロテオミクスで疲弊T細胞のミトコンドリア代謝タンパク変化を定量化する。",
+        "ko": "초고감도 단일세포 질량분석 프로테오믹스로 소진 T세포의 미토콘드리아 대사 단백질 변화를 정량화한다."
+      },
+      "plain": {
+        "zh-TW": "癌細胞讓免疫T細胞的「電廠」粒線體出問題，讓T細胞累到打不了仗。",
+        "en": "Cancer corrupts T cells by breaking their mitochondrial powerplants, leaving them too exhausted to fight.",
+        "zh-CN": "癌细胞让免疫T细胞的「电厂」线粒体出问题，导致T细胞累到无法战斗。",
+        "ja": "がん細胞がT細胞のミトコンドリアを壊し、免疫細胞が戦えないほど疲弊させる。",
+        "ko": "암세포가 T세포의 미토콘드리아를 망가뜨려 면역세포가 싸울 수 없을 만큼 지치게 만든다."
+      },
+      "insight": {
+        "zh-TW": "💡 粒線體重程式化是免疫療法抗性的核心機制，靶向此路徑可望重振衰老T細胞的戰力。",
+        "en": "💡 Mitochondrial reprogramming is central to immunotherapy resistance, and targeting it may revive exhausted T cells.",
+        "zh-CN": "💡 线粒体重编程是免疫疗法耐药的核心机制，靶向此通路有望重振衰竭T细胞的战力。",
+        "ja": "💡 ミトコンドリア再プログラムが免疫療法耐性の中核であり、標的化により疲弊T細胞を復活できる可能性がある。",
+        "ko": "💡 미토콘드리아 재프로그래밍이 면역치료 내성의 핵심이며, 이를 표적화하면 소진 T세포를 되살릴 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<circle cx=\"260\" cy=\"80\" r=\"45\" fill=\"#e53e3e\" opacity=\"0.85\"/>\n<circle cx=\"260\" cy=\"80\" r=\"32\" fill=\"#fc8181\" opacity=\"0.6\"/>\n<circle cx=\"260\" cy=\"80\" r=\"18\" fill=\"#e53e3e\" opacity=\"0.9\"/>\n<ellipse cx=\"80\" cy=\"80\" r=\"38\" ry=\"28\" fill=\"#48bb78\" opacity=\"0.9\"/>\n<ellipse cx=\"80\" cy=\"80\" r=\"24\" ry=\"16\" fill=\"#276749\" opacity=\"0.7\"/>\n<path d=\"M68 74 Q80 65 92 74 Q80 83 68 74Z\" fill=\"#9ae6b4\" opacity=\"0.9\"/>\n<ellipse cx=\"80\" cy=\"115\" r=\"14\" ry=\"8\" fill=\"#48bb78\" opacity=\"0.5\" stroke=\"#276749\" stroke-width=\"1.5\"/>\n<path d=\"M74 112 Q80 106 86 112 Q80 118 74 112Z\" fill=\"#9ae6b4\" opacity=\"0.6\"/>\n<line x1=\"130\" y1=\"80\" x2=\"205\" y2=\"80\" stroke=\"#e53e3e\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\"/>\n<polygon points=\"205,75 215,80 205,85\" fill=\"#e53e3e\"/>\n<circle cx=\"80\" cy=\"115\" r=\"4\" fill=\"#276749\" opacity=\"0.8\"/>\n<path d=\"M60,108 Q50,100 55,90 Q65,82 75,88\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "phys-2606",
+      "domain": "phys",
+      "day": "2026-06-08",
+      "author": "Nakamura et al. 2026",
+      "ref": "arXiv:2606.04102",
+      "url": "https://arxiv.org/abs/2606.04102",
+      "color": "#ed8936",
+      "title": {
+        "zh-TW": "室溫氫鍵鐵電體中量子順電相變的臨界慢化直接觀測",
+        "en": "Direct Observation of Critical Slowing Down at a Quantum Paraelectric Phase Transition in Hydrogen-Bonded Ferroelectrics at Room Temperature",
+        "zh-CN": "室温氢键铁电体中量子顺电相变的临界慢化直接观测",
+        "ja": "室温水素結合強誘電体における量子常誘電相転移の臨界スローイングダウンの直接観測",
+        "ko": "수소결합 강유전체의 실온 양자 상전이에서 임계 느려짐 현상 직접 관측"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 物理",
+        "en": "⚛️ Physics",
+        "zh-CN": "⚛️ 物理",
+        "ja": "⚛️ 物理",
+        "ko": "⚛️ 물리"
+      },
+      "tech": {
+        "zh-TW": "以超快太赫茲泵浦探測光譜在室溫下捕捉氫鍵鐵電體接近量子臨界點時軟模頻率歸零的臨界慢化動力學。",
+        "en": "Ultrafast THz pump-probe spectroscopy captures soft-mode frequency softening at room-temperature quantum criticality in hydrogen-bonded ferroelectrics.",
+        "zh-CN": "以超快太赫兹泵浦探测光谱在室温下捕捉氢键铁电体接近量子临界点时软模频率归零的临界慢化动力学。",
+        "ja": "超高速THz ポンプ・プローブ分光法で室温における水素結合強誘電体の量子臨界点近傍のソフトモード消失を観測する。",
+        "ko": "초고속 THz 펌프-프로브 분광법으로 실온 수소결합 강유전체의 양자 임계점 근방 소프트모드 소멸을 관측한다."
+      },
+      "plain": {
+        "zh-TW": "科學家在室溫下看到了材料相變前「凍結」的量子效應，這在以前只能在極低溫才觀測到。",
+        "en": "Scientists observed a quantum freezing effect before a material phase transition at room temperature, previously only seen near absolute zero.",
+        "zh-CN": "科学家在室温下观察到材料相变前「冻结」的量子效应，这以前只能在极低温才能观测到。",
+        "ja": "科学者が室温で物質の相転移直前の量子「凍結」現象を観測した。これまで極低温でしか見られなかった現象だ。",
+        "ko": "과학자들이 실온에서 물질 상전이 직전의 양자 「동결」 현상을 관측했으며, 이는 이전에는 극저온에서만 가능했다."
+      },
+      "insight": {
+        "zh-TW": "💡 室溫量子臨界性的發現打開了在常規條件下操控量子相變的大門，有望革新鐵電記憶體技術。",
+        "en": "💡 Room-temperature quantum criticality opens the door to controlling quantum phase transitions under ambient conditions, potentially revolutionizing ferroelectric memory.",
+        "zh-CN": "💡 室温量子临界性的发现打开了在常规条件下操控量子相变的大门，有望革新铁电存储器技术。",
+        "ja": "💡 室温での量子臨界性の発見は、通常条件下での量子相転移制御への扉を開き、強誘電メモリ技術に革命をもたらす可能性がある。",
+        "ko": "💡 실온 양자 임계성 발견은 일반 조건에서 양자 상전이를 제어하는 문을 열어 강유전 메모리 기술을 혁신할 가능성이 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"10\" y=\"70\" width=\"320\" height=\"3\" fill=\"#ed8936\" opacity=\"0.3\"/>\n<circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"60\" cy=\"80\" r=\"7\" fill=\"#ed8936\"/>\n<circle cx=\"130\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"130\" cy=\"80\" r=\"7\" fill=\"#ed8936\"/>\n<circle cx=\"200\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"200\" cy=\"80\" r=\"10\" fill=\"#ed8936\" opacity=\"0.6\"/>\n<circle cx=\"270\" cy=\"80\" r=\"22\" fill=\"#ed8936\" opacity=\"0.85\"/>\n<line x1=\"60\" y1=\"62\" x2=\"60\" y2=\"50\" stroke=\"#4a90d9\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"50\" stroke=\"#4a90d9\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<line x1=\"200\" y1=\"62\" x2=\"200\" y2=\"44\" stroke=\"#4a90d9\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<path d=\"M240,30 Q270,15 300,30\" fill=\"none\" stroke=\"#4a90d9\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-2606",
+      "domain": "neuro",
+      "day": "2026-06-08",
+      "author": "Kosciessa et al. 2026",
+      "ref": "arXiv:2606.03421",
+      "url": "https://arxiv.org/abs/2606.03421",
+      "color": "#9f7aea",
+      "title": {
+        "zh-TW": "前額葉皮質「節律耦合」動態調控工作記憶容量上限的神經機制",
+        "en": "Rhythmic Coupling in Prefrontal Cortex Dynamically Gates Working Memory Capacity",
+        "zh-CN": "前额叶皮质节律耦合动态调控工作记忆容量上限的神经机制",
+        "ja": "前頭前皮質のリズム結合がワーキングメモリ容量を動的に制御する神経機構",
+        "ko": "전두엽 피질 리듬 결합이 작업 기억 용량 상한을 동적으로 조절하는 신경 메커니즘"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究利用高密度EEG與層解析fMRI，追蹤前額葉θ-γ跨頻耦合強度與工作記憶負荷的即時關係。",
+        "en": "High-density EEG and laminar fMRI tracked prefrontal theta-gamma cross-frequency coupling as working memory load varied in real time.",
+        "zh-CN": "利用高密度EEG与层解析fMRI，追踪前额叶θ-γ跨频耦合强度与工作记忆负荷的实时关系。",
+        "ja": "高密度EEGと層分解fMRIで前頭前野θ-γ結合とワーキングメモリ負荷の関係をリアルタイム追跡した。",
+        "ko": "고밀도 EEG와 층 분해 fMRI로 전두엽 θ-γ교차주파수 결합과 작업 기억 부하의 실시간 관계를 추적했다."
+      },
+      "plain": {
+        "zh-TW": "大腦用不同頻率的電波「節拍」來決定你同時能記住多少件事。",
+        "en": "Your brain uses rhythmic electrical beats to set a hard limit on how many things you can hold in mind at once.",
+        "zh-CN": "大脑用不同频率的电波节拍来决定你同时能记住多少件事。",
+        "ja": "脳は電気的なリズムのビートで、同時に覚えられる物事の数の上限を決めている。",
+        "ko": "뇌는 전기 리듬 박자로 동시에 기억할 수 있는 항목 수의 한계를 결정한다."
+      },
+      "insight": {
+        "zh-TW": "💡 調控θ-γ耦合或可成為提升工作記憶的非侵入性神經刺激新靶點。",
+        "en": "💡 Modulating theta-gamma coupling could become a non-invasive neurostimulation target for boosting working memory.",
+        "zh-CN": "💡 调控θ-γ耦合或可成为提升工作记忆的非侵入性神经刺激新靶点。",
+        "ja": "💡 θ-γ結合の調節がワーキングメモリ向上の非侵襲的な神経刺激標的になりうる。",
+        "ko": "💡 θ-γ 결합 조절이 작업 기억 향상을 위한 비침습적 신경 자극의 새 표적이 될 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n  <path d=\"M10,80 Q30,50 50,80 Q70,110 90,80 Q110,50 130,80 Q150,110 170,80 Q190,50 210,80 Q230,110 250,80 Q270,50 290,80 Q310,110 330,80\" stroke=\"#9f7aea\" stroke-width=\"3\" fill=\"none\"/>\n  <path d=\"M10,100 Q25,88 40,100 Q55,112 70,100 Q85,88 100,100 Q115,112 130,100 Q145,88 160,100 Q175,112 190,100 Q205,88 220,100 Q235,112 250,100 Q265,88 280,100 Q295,112 310,100 Q325,88 340,100\" stroke=\"#f6ad55\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"80\" cy=\"38\" r=\"18\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n  <circle cx=\"80\" cy=\"38\" r=\"10\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n  <circle cx=\"170\" cy=\"28\" r=\"14\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n  <circle cx=\"170\" cy=\"28\" r=\"8\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n  <circle cx=\"260\" cy=\"38\" r=\"18\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n  <circle cx=\"260\" cy=\"38\" r=\"10\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n  <line x1=\"80\" y1=\"56\" x2=\"80\" y2=\"72\" stroke=\"#9f7aea\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"170\" y1=\"42\" x2=\"170\" y2=\"72\" stroke=\"#9f7aea\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"260\" y1=\"56\" x2=\"260\" y2=\"72\" stroke=\"#9f7aea\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <polygon points=\"155,148 170,128 185,148\" fill=\"#f6ad55\" opacity=\"0.85\"/>\n  <circle cx=\"170\" cy=\"148\" r=\"6\" fill=\"#9f7aea\"/>\n</svg>"
+    },
+    {
+      "id": "space-2606",
+      "domain": "space",
+      "day": "2026-06-08",
+      "author": "Naidu et al. 2026",
+      "ref": "arXiv:2606.02187",
+      "url": "https://arxiv.org/abs/2606.02187",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "韋伯望遠鏡偵測到大爆炸後6億年星系中首例「塵埃遮蔽的星暴」連續爆發事件",
+        "en": "JWST Detects the First Dust-Obscured Starburst Burst Sequence in a Galaxy at z~9",
+        "zh-CN": "韦伯望远镜探测到大爆炸后6亿年星系中首例尘埃遮蔽星暴连续爆发事件",
+        "ja": "JWSTがz~9の銀河で初の塵に隠れたスターバースト連続爆発イベントを検出",
+        "ko": "JWST가 빅뱅 후 6억 년 은하에서 첫 먼지 가려진 스타버스트 연속 폭발 포착"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文觀測",
+        "en": "🌌 Astronomy",
+        "zh-CN": "🌌 天文观测",
+        "ja": "🌌 天文観測",
+        "ko": "🌌 천문 관측"
+      },
+      "tech": {
+        "zh-TW": "利用JWST NIRSpec與MIRI的中紅外光譜，在紅移z≈9.1星系中解析出被塵埃遮蔽的多波段星暴指標。",
+        "en": "JWST NIRSpec and MIRI mid-infrared spectra resolved dust-obscured multi-band starburst indicators in a galaxy at redshift z≈9.1.",
+        "zh-CN": "利用JWST NIRSpec与MIRI中红外光谱，在红移z≈9.1星系中解析出被尘埃遮蔽的多波段星暴指标。",
+        "ja": "JWST NIRSpecとMIRIの中赤外スペクトルで赤方偏移z≈9.1の銀河の塵に隠れた星形成指標を分解した。",
+        "ko": "JWST NIRSpec와 MIRI 중적외선 스펙트럼으로 적색편이 z≈9.1 은하의 먼지 가려진 스타버스트 지표를 분해했다."
+      },
+      "plain": {
+        "zh-TW": "宇宙誕生僅6億年時，就有星系在厚厚的塵埃雲背後以驚人速度製造新恆星。",
+        "en": "Just 600 million years after the Big Bang, galaxies were already forming stars at a furious rate hidden behind thick dust clouds.",
+        "zh-CN": "宇宙诞生仅6亿年时，就有星系在厚厚的尘埃云背后以惊人速度制造新恒星。",
+        "ja": "ビッグバンからわずか6億年後に、厚い塵の雲の陰で猛烈な速さで星を作る銀河が存在していた。",
+        "ko": "빅뱅 후 불과 6억 년 만에 두꺼운 먼지 구름 뒤에서 엄청난 속도로 별을 만드는 은하가 있었다."
+      },
+      "insight": {
+        "zh-TW": "💡 塵埃遮蔽的早期星暴若普遍存在，現有宇宙恆星形成率模型將需大幅上調。",
+        "en": "💡 If dust-obscured early starbursts are common, cosmic star-formation rate models will need significant upward revision.",
+        "zh-CN": "💡 若尘埃遮蔽的早期星暴普遍存在，现有宇宙恒星形成率模型将需大幅上调。",
+        "ja": "💡 塵に隠れた初期スターバーストが一般的なら、宇宙の星形成率モデルは大幅な上方修正が必要になる。",
+        "ko": "💡 먼지 가려진 초기 스타버스트가 흔하다면 우주 별 형성률 모델은 대폭 상향 수정이 필요하다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#4299e1\" opacity=\"0.18\"/>\n<circle cx=\"170\" cy=\"80\" r=\"24\" fill=\"#4299e1\" opacity=\"0.35\"/>\n<circle cx=\"170\" cy=\"80\" r=\"12\" fill=\"#f6ad55\" opacity=\"0.9\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"58\" ry=\"18\" fill=\"none\" stroke=\"#a0aec0\" stroke-width=\"2.5\" opacity=\"0.5\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"72\" ry=\"26\" fill=\"none\" stroke=\"#a0aec0\" stroke-width=\"1.5\" opacity=\"0.3\"/>\n<circle cx=\"60\" cy=\"40\" r=\"4\" fill=\"#4299e1\" opacity=\"0.7\"/>\n<circle cx=\"290\" cy=\"55\" r=\"3\" fill=\"#4299e1\" opacity=\"0.6\"/>\n<circle cx=\"40\" cy=\"120\" r=\"2.5\" fill=\"#f6ad55\" opacity=\"0.6\"/>\n<circle cx=\"310\" cy=\"130\" r=\"3.5\" fill=\"#4299e1\" opacity=\"0.5\"/>\n<line x1=\"170\" y1=\"80\" x2=\"60\" y2=\"40\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.4\" stroke-dasharray=\"4,3\"/>\n<line x1=\"170\" y1=\"80\" x2=\"290\" y2=\"55\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.4\" stroke-dasharray=\"4,3\"/>\n</svg>"
+    },
+    {
+      "id": "tech-2606",
+      "domain": "tech",
+      "day": "2026-06-08",
+      "author": "Chen et al. 2026",
+      "ref": "arXiv:2606.04853",
+      "url": "https://arxiv.org/abs/2606.04853",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "以「相變儲熱微膠囊」塗層實現被動式建築外牆全天候溫度自調節：無耗能零碳冷卻新策略",
+        "en": "Phase-Change Microcapsule Coatings Enable Passive All-Day Thermal Self-Regulation for Zero-Energy Building Facades",
+        "zh-CN": "相变储热微胶囊涂层实现被动式建筑外墙全天候温度自调节：无耗能零碳冷却新策略",
+        "ja": "相変化マイクロカプセルコーティングで建物外壁の終日パッシブ温度自律調節を実現",
+        "ko": "상변화 마이크로캡슐 코팅으로 건물 외벽의 수동 전일 온도 자율 조절 실현"
+      },
+      "tag": {
+        "zh-TW": "🏗️ 綠色建材",
+        "en": "🏗️ Green Materials",
+        "zh-CN": "🏗️ 绿色建材",
+        "ja": "🏗️ グリーン建材",
+        "ko": "🏗️ 친환경 건축재료"
+      },
+      "tech": {
+        "zh-TW": "研究將正十八烷相變材料封裝於二氧化矽微膠囊並混入外牆塗料，利用熔融潛熱在白天吸熱、夜間釋熱。",
+        "en": "n-Octadecane phase-change material was encapsulated in silica microcapsules and mixed into facade coatings to absorb heat by day and release it at night via latent heat.",
+        "zh-CN": "将正十八烷相变材料封装于二氧化硅微胶囊并混入外墙涂料，利用熔融潜热白天吸热夜间放热。",
+        "ja": "n-オクタデカン相変化材料をシリカマイクロカプセルに封入し外壁塗料に混合、昼間吸熱・夜間放熱する。",
+        "ko": "n-옥타데칸 상변화 물질을 실리카 마이크로캡슐에 봉입해 외벽 도료에 혼합, 낮에 흡열하고 밤에 방열한다."
+      },
+      "plain": {
+        "zh-TW": "牆壁塗料裡藏著微小「蠟珠」，白天融化吸熱降溫，晚上凝固放熱，完全不需用電。",
+        "en": "Tiny wax beads hidden in wall paint melt to absorb heat during the day and solidify to release it at night, all without electricity.",
+        "zh-CN": "墙壁涂料里藏着微小蜡珠，白天融化吸热降温，晚上凝固放热，完全不需用电。",
+        "ja": "壁の塗料に微小なワックスビーズが入っており、昼間に溶けて吸熱し、夜間に固まって放熱する。電力不要。",
+        "ko": "벽 도료 속 미세 왁스 구슬이 낮에 녹아 열을 흡수하고 밤에 굳어 열을 방출해 전기 없이 온도를 조절한다."
+      },
+      "insight": {
+        "zh-TW": "💡 若大規模推廣至熱帶城市建築，可削減夏季空調用電高達30%，是低成本脫碳的現實路徑。",
+        "en": "💡 Scaled to tropical urban buildings, this could cut summer air-conditioning electricity by up to 30%, offering a low-cost decarbonization path.",
+        "zh-CN": "💡 若大规模推广至热带城市建筑，可削减夏季空调用电高达30%，是低成本脱碳的现实路径。",
+        "ja": "💡 熱帯都市の建物に普及すれば夏季空調電力を最大30%削減でき、低コスト脱炭素の現実的な道となる。",
+        "ko": "💡 열대 도시 건물에 보급되면 여름철 냉방 전력을 최대 30% 줄일 수 있는 저비용 탈탄소 현실 경로다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<rect x=\"10\" y=\"60\" width=\"100\" height=\"90\" fill=\"#68d391\" rx=\"4\"/>\n<rect x=\"10\" y=\"55\" width=\"100\" height=\"12\" fill=\"#4a9e6b\" rx=\"2\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"12\" fill=\"#68d391\"/>\n<circle cx=\"170\" cy=\"30\" r=\"7\" fill=\"#f6c90e\"/>\n<line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"55\" stroke=\"#f6c90e\" stroke-width=\"2\"/>\n<circle cx=\"230\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/>\n<circle cx=\"200\" cy=\"50\" r=\"10\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/>\n<circle cx=\"140\" cy=\"110\" r=\"10\" fill=\"#4a9e6b\"/>\n<path d=\"M60 55 Q60 30 80 20 Q100 10 110 30 Q115 45 110 55\" fill=\"#f6c90e\" opacity=\"0.7\"/>\n<polygon points=\"270,40 320,40 320,140 270,140\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/>\n</svg>"
+    }
+  ]
+}
