@@ -5,7 +5,7 @@
   "generated_at": "2026-06-07",
   "cards": [
     {
-      "id": "ai-2606",
+      "id": "ai-260603",
       "domain": "ai",
       "day": "2026-06-03",
       "author": "Wei et al. 2026",
@@ -50,7 +50,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"50\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2.5\"/>\n<circle cx=\"50\" cy=\"80\" r=\"10\" fill=\"#667eea\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#48bb78\" opacity=\"0.7\"/>\n<circle cx=\"290\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2.5\"/>\n<circle cx=\"290\" cy=\"80\" r=\"16\" fill=\"#667eea\" opacity=\"0.85\"/>\n<polygon points=\"110,65 125,80 110,95\" fill=\"#667eea\" opacity=\"0.5\"/>\n<polygon points=\"230,65 245,80 230,95\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<line x1=\"50\" y1=\"108\" x2=\"80\" y2=\"130\" stroke=\"#667eea\" stroke-width=\"1.5\" opacity=\"0.4\"/>\n<line x1=\"50\" y1=\"108\" x2=\"50\" y2=\"135\" stroke=\"#667eea\" stroke-width=\"1.5\" opacity=\"0.4\"/>\n<line x1=\"50\" y1=\"108\" x2=\"20\" y2=\"130\" stroke=\"#667eea\" stroke-width=\"1.5\" opacity=\"0.4\"/>\n</svg>"
     },
     {
-      "id": "bio-2606",
+      "id": "bio-260603",
       "domain": "bio",
       "day": "2026-06-03",
       "author": "Chen et al. 2026",
@@ -95,7 +95,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"60\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"6,3\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#48bb7855\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n  <path d=\"M120,60 Q140,40 160,55 Q180,70 200,50 Q220,30 240,45 Q260,60 250,80 Q240,100 220,90 Q200,80 180,95 Q160,110 145,100 Q130,90 120,60Z\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"250\" cy=\"80\" r=\"12\" fill=\"#48bb78\" opacity=\"0.9\"/>\n  <polygon points=\"246,75 258,80 246,85\" fill=\"white\"/>\n  <circle cx=\"120\" cy=\"60\" r=\"5\" fill=\"#f6ad55\" opacity=\"0.85\"/>\n  <circle cx=\"200\" cy=\"50\" r=\"5\" fill=\"#f6ad55\" opacity=\"0.6\"/>\n  <circle cx=\"180\" cy=\"95\" r=\"5\" fill=\"#f6ad55\" opacity=\"0.6\"/>\n  <circle cx=\"145\" cy=\"100\" r=\"5\" fill=\"#f6ad55\" opacity=\"0.6\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#fc8181\" stroke=\"#e53e3e\" stroke-width=\"1.5\"/>\n  <line x1=\"166\" y1=\"80\" x2=\"174\" y2=\"80\" stroke=\"white\" stroke-width=\"2\"/>\n  <line x1=\"170\" y1=\"76\" x2=\"170\" y2=\"84\" stroke=\"white\" stroke-width=\"2\"/>\n</svg>"
     },
     {
-      "id": "phys-2606",
+      "id": "phys-260603",
       "domain": "phys",
       "day": "2026-06-03",
       "author": "Nakamura et al. 2026",
@@ -140,7 +140,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"20\" y=\"60\" width=\"300\" height=\"40\" rx=\"8\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\"/>\n<circle cx=\"60\" cy=\"80\" r=\"14\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"110\" cy=\"80\" r=\"14\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"160\" cy=\"80\" r=\"14\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"210\" cy=\"80\" r=\"14\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"260\" cy=\"80\" r=\"14\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<path d=\"M60,40 Q60,20 80,15 Q100,10 110,40\" fill=\"none\" stroke=\"#4a90d9\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M160,40 Q155,25 160,15 Q165,5 170,15 Q175,25 170,40\" fill=\"none\" stroke=\"#4a90d9\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M210,40 Q225,30 235,20 Q245,10 255,20 Q265,30 260,40\" fill=\"none\" stroke=\"#4a90d9\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M60,120 L60,148 M110,120 L110,135 M160,120 L160,148 M210,120 L210,135 M260,120 L260,148\" stroke=\"#e53e3e\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M30,148 Q80,138 130,148 Q180,158 230,148 Q280,138 310,148\" fill=\"none\" stroke=\"#e53e3e\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n<path d=\"M85,80 L95,80 M135,80 L145,80 M185,80 L195,80 M235,80 L245,80\" stroke=\"#2d3748\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n</svg>"
     },
     {
-      "id": "neuro-2606",
+      "id": "neuro-260603",
       "domain": "neuro",
       "day": "2026-06-03",
       "author": "Yamada et al. 2026",
@@ -185,7 +185,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<path d=\"M50,80 Q70,40 90,80 Q110,120 130,80 Q150,40 170,80 Q190,120 210,80\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"none\"/>\n<circle cx=\"210\" cy=\"80\" r=\"6\" fill=\"#9f7aea\"/>\n<line x1=\"210\" y1=\"80\" x2=\"250\" y2=\"50\" stroke=\"#ff6b6b\" stroke-width=\"2.5\"/>\n<line x1=\"210\" y1=\"80\" x2=\"255\" y2=\"80\" stroke=\"#ff6b6b\" stroke-width=\"2.5\"/>\n<line x1=\"210\" y1=\"80\" x2=\"250\" y2=\"110\" stroke=\"#ff6b6b\" stroke-width=\"2.5\"/>\n<circle cx=\"255\" cy=\"50\" r=\"8\" fill=\"none\" stroke=\"#ff6b6b\" stroke-width=\"2\"/>\n<circle cx=\"260\" cy=\"80\" r=\"8\" fill=\"none\" stroke=\"#ff6b6b\" stroke-width=\"2\"/>\n<circle cx=\"255\" cy=\"110\" r=\"8\" fill=\"none\" stroke=\"#ff6b6b\" stroke-width=\"2\"/>\n<path d=\"M280,60 Q310,80 280,100\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"4\" fill=\"#a8edea\"/>\n<polygon points=\"210,68 216,80 210,92 204,80\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n</svg>"
     },
     {
-      "id": "space-2606",
+      "id": "space-260603",
       "domain": "space",
       "day": "2026-06-03",
       "author": "Chen et al. 2026",
@@ -230,7 +230,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n  <circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#4299e1\" opacity=\"0.85\"/>\n  <circle cx=\"170\" cy=\"40\" r=\"14\" fill=\"#4299e1\" opacity=\"0.85\"/>\n  <circle cx=\"290\" cy=\"80\" r=\"18\" fill=\"#4299e1\" opacity=\"0.85\"/>\n  <circle cx=\"170\" cy=\"120\" r=\"12\" fill=\"#4299e1\" opacity=\"0.85\"/>\n  <path d=\"M50 80 Q110 30 170 40 Q230 50 290 80\" stroke=\"#4299e1\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.7\" stroke-dasharray=\"6 3\"/>\n  <path d=\"M50 80 Q110 120 170 120 Q230 120 290 80\" stroke=\"#4299e1\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.7\" stroke-dasharray=\"6 3\"/>\n  <path d=\"M170 40 L170 120\" stroke=\"#e2a84b\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.6\" stroke-dasharray=\"4 4\"/>\n  <path d=\"M50 80 Q130 55 170 40\" stroke=\"#e2a84b\" stroke-width=\"1.2\" fill=\"none\" opacity=\"0.4\" stroke-dasharray=\"3 5\"/>\n  <circle cx=\"110\" cy=\"55\" r=\"5\" fill=\"#ffffff\" opacity=\"0.5\"/>\n  <circle cx=\"230\" cy=\"60\" r=\"4\" fill=\"#ffffff\" opacity=\"0.5\"/>\n  <circle cx=\"110\" cy=\"110\" r=\"4\" fill=\"#ffffff\" opacity=\"0.45\"/>\n  <circle cx=\"230\" cy=\"108\" r=\"5\" fill=\"#ffffff\" opacity=\"0.45\"/>\n</svg>"
     },
     {
-      "id": "tech-2606",
+      "id": "tech-260603",
       "domain": "tech",
       "day": "2026-06-03",
       "author": "Park et al. 2026",

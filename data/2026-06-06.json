@@ -5,7 +5,7 @@
   "generated_at": "2026-06-06",
   "cards": [
     {
-      "id": "nature-2606a",
+      "id": "nature-260606",
       "domain": "nature",
       "day": "2026-06-06",
       "author": "Dartmouth College / 2026",
@@ -50,7 +50,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fbd38d22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fbd38d\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🐠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fbd38d\" font-weight=\"bold\">自然生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">章魚學會用鏡子找食物...</text>\n</svg>"
     },
     {
-      "id": "space-2606b",
+      "id": "space-260606",
       "domain": "space",
       "day": "2026-06-06",
       "author": "ESA / Nature Astronomy 2026",
@@ -95,7 +95,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">系外行星天氣由磁場驅動...</text>\n</svg>"
     },
     {
-      "id": "health-2606c",
+      "id": "health-260606",
       "domain": "health",
       "day": "2026-06-06",
       "author": "Neuroscience Research / 2026",
@@ -140,7 +140,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fc818122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fc8181\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🏥</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fc8181\" font-weight=\"bold\">醫療健康</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">ADHD大腦清醒時也在偷...</text>\n</svg>"
     },
     {
-      "id": "ocean-2606d",
+      "id": "ocean-260606",
       "domain": "ocean",
       "day": "2026-06-06",
       "author": "Natural History Museum / 2026",
@@ -185,7 +185,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#76e4f722\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#76e4f7\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🦈</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#76e4f7\" font-weight=\"bold\">海洋生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">深海探勘發現24個新物種...</text>\n</svg>"
     },
     {
-      "id": "bio-2606e",
+      "id": "bio-260606",
       "domain": "bio",
       "day": "2026-06-06",
       "author": "Climate Science / Yale / 2026",
@@ -230,7 +230,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#48bb7822\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#48bb78\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧬</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#48bb78\" font-weight=\"bold\">生命科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">北極熊正在遺傳層面適應氣...</text>\n</svg>"
     },
     {
-      "id": "tech-2606f",
+      "id": "tech-260606",
       "domain": "tech",
       "day": "2026-06-06",
       "author": "MIT / Oxford / 2026",

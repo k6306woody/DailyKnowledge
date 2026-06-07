@@ -5,7 +5,7 @@
   "generated_at": "2026-06-07",
   "cards": [
     {
-      "id": "nature-2607a",
+      "id": "nature-260607",
       "domain": "nature",
       "day": "2026-06-07",
       "author": "Oliver, Yanco et al. / Science 2026",
@@ -50,7 +50,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#fbd38d15\"/><circle cx=\"270\" cy=\"50\" r=\"22\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"270\" cy=\"50\" r=\"14\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><circle cx=\"270\" cy=\"50\" r=\"5\" fill=\"#fbd38d\"/><circle cx=\"100\" cy=\"110\" r=\"18\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"100\" cy=\"110\" r=\"10\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><circle cx=\"100\" cy=\"110\" r=\"4\" fill=\"#fbd38d\"/><circle cx=\"180\" cy=\"80\" r=\"20\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"180\" cy=\"80\" r=\"12\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><circle cx=\"180\" cy=\"80\" r=\"4\" fill=\"#52b788\"/><path d=\"M155 50 Q135 40 120 55 Q110 65 118 75\" stroke=\"#fbd38d\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"118\" cy=\"75\" r=\"4\" fill=\"#fbd38d\"/><path d=\"M60 70 Q50 55 62 45 Q72 38 80 48\" stroke=\"#52b788\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"48\" r=\"3.5\" fill=\"#52b788\"/><rect x=\"20\" y=\"68\" width=\"28\" height=\"40\" rx=\"4\" fill=\"#2e7d32\" opacity=\"0.6\"/><circle cx=\"34\" cy=\"60\" r=\"10\" fill=\"#2e7d32\" opacity=\"0.6\"/><line x1=\"34\" y1=\"50\" x2=\"34\" y2=\"45\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"52\" x2=\"27\" y2=\"48\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/><line x1=\"38\" y1=\"52\" x2=\"41\" y2=\"48\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/></svg>"
     },
     {
-      "id": "space-2607b",
+      "id": "space-260607",
       "domain": "space",
       "day": "2026-06-07",
       "author": "University of Sydney / CSIRO 2026",
@@ -95,7 +95,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4299e110\"/><circle cx=\"110\" cy=\"80\" r=\"28\" fill=\"#4299e1\" opacity=\"0.8\"/><circle cx=\"230\" cy=\"80\" r=\"18\" fill=\"#fbd38d\" opacity=\"0.9\"/><path d=\"M138 80 Q170 50 202 80\" stroke=\"#4299e1\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><path d=\"M138 80 Q170 110 202 80\" stroke=\"#4299e1\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><path d=\"M242 68 Q260 55 278 62 M242 72 Q262 62 282 70 M242 76 Q264 68 286 77\" stroke=\"#fbd38d\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M95 52 Q85 38 72 44 M95 56 Q82 45 68 52 M95 60 Q83 51 67 59\" stroke=\"#4299e1\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.6\"/><text x=\"170\" y=\"148\" text-anchor=\"middle\" font-size=\"10\" fill=\"#4299e1\" opacity=\"0.7\">FRB + 雙星系統</text></svg>"
     },
     {
-      "id": "neuro-2607c",
+      "id": "neuro-260607",
       "domain": "neuro",
       "day": "2026-06-07",
       "author": "IIT + Child Mind Institute / Nature Neuroscience 2026",
@@ -140,7 +140,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#9f7aea10\"/><ellipse cx=\"90\" cy=\"80\" rx=\"55\" ry=\"48\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2\"/><circle cx=\"72\" cy=\"62\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"108\" cy=\"62\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"65\" cy=\"90\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"115\" cy=\"90\" r=\"5\" fill=\"#9f7aea\"/><circle cx=\"90\" cy=\"105\" r=\"5\" fill=\"#9f7aea\"/><line x1=\"72\" y1=\"62\" x2=\"108\" y2=\"62\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"72\" y1=\"62\" x2=\"65\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"108\" y1=\"62\" x2=\"115\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"65\" y1=\"90\" x2=\"90\" y2=\"105\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"115\" y1=\"90\" x2=\"90\" y2=\"105\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><line x1=\"72\" y1=\"62\" x2=\"115\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"108\" y1=\"62\" x2=\"65\" y2=\"90\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.5\"/><ellipse cx=\"250\" cy=\"80\" rx=\"55\" ry=\"48\" fill=\"none\" stroke=\"#e879f9\" stroke-width=\"2\"/><circle cx=\"232\" cy=\"62\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"268\" cy=\"62\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"225\" cy=\"90\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"275\" cy=\"90\" r=\"5\" fill=\"#e879f9\"/><circle cx=\"250\" cy=\"105\" r=\"5\" fill=\"#e879f9\"/><line x1=\"232\" y1=\"62\" x2=\"275\" y2=\"90\" stroke=\"#e879f9\" stroke-width=\"1\" opacity=\"0.35\" stroke-dasharray=\"3,2\"/><line x1=\"268\" y1=\"62\" x2=\"225\" y2=\"90\" stroke=\"#e879f9\" stroke-width=\"1\" opacity=\"0.35\" stroke-dasharray=\"3,2\"/><text x=\"90\" y=\"145\" text-anchor=\"middle\" font-size=\"9\" fill=\"#9f7aea\">過度連結型</text><text x=\"250\" y=\"145\" text-anchor=\"middle\" font-size=\"9\" fill=\"#e879f9\">連結不足型</text></svg>"
     },
     {
-      "id": "bio-2607d",
+      "id": "bio-260607",
       "domain": "bio",
       "day": "2026-06-07",
       "author": "researchers / Cell Press Blue 2026",
@@ -185,7 +185,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#48bb7810\"/><ellipse cx=\"80\" cy=\"95\" rx=\"28\" ry=\"38\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2.5\"/><path d=\"M60 72 Q50 60 60 50 Q70 40 80 50 Q90 40 100 50 Q110 60 100 72\" stroke=\"#48bb78\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"70\" cy=\"88\" r=\"4\" fill=\"#48bb78\" opacity=\"0.7\"/><circle cx=\"90\" cy=\"96\" r=\"3.5\" fill=\"#48bb78\" opacity=\"0.7\"/><circle cx=\"72\" cy=\"108\" r=\"3\" fill=\"#48bb78\" opacity=\"0.7\"/><line x1=\"108\" y1=\"95\" x2=\"148\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><circle cx=\"155\" cy=\"77\" r=\"5\" fill=\"#48bb78\"/><line x1=\"160\" y1=\"77\" x2=\"195\" y2=\"77\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><ellipse cx=\"240\" cy=\"80\" rx=\"48\" ry=\"42\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/><path d=\"M220 62 Q232 54 240 62 Q248 54 260 62\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\"/><path d=\"M215 80 Q230 70 255 80\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\"/><path d=\"M218 96 Q232 86 262 96\" stroke=\"#9f7aea\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"80\" cy=\"148\" r=\"3\" fill=\"#48bb78\"/><text x=\"84\" y=\"152\" font-size=\"9\" fill=\"#48bb78\">腸道菌</text><circle cx=\"240\" cy=\"133\" r=\"3\" fill=\"#9f7aea\"/><text x=\"244\" y=\"137\" font-size=\"9\" fill=\"#9f7aea\">大腦</text></svg>"
     },
     {
-      "id": "phys-2607e",
+      "id": "phys-260607",
       "domain": "phys",
       "day": "2026-06-07",
       "author": "Clerk et al. / Univ. of Chicago / Physical Review X 2026",
@@ -230,7 +230,7 @@
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#ed893610\"/><rect x=\"20\" y=\"65\" width=\"10\" height=\"30\" fill=\"#ed8936\" opacity=\"0.7\"/><rect x=\"310\" y=\"65\" width=\"10\" height=\"30\" fill=\"#ed8936\" opacity=\"0.7\"/><line x1=\"30\" y1=\"80\" x2=\"120\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"220\" y1=\"80\" x2=\"310\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/><circle cx=\"120\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/><circle cx=\"120\" cy=\"80\" r=\"10\" fill=\"#ed8936\" opacity=\"0.4\"/><circle cx=\"120\" cy=\"80\" r=\"4\" fill=\"#ed8936\"/><circle cx=\"220\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/><circle cx=\"220\" cy=\"80\" r=\"10\" fill=\"#ed8936\" opacity=\"0.4\"/><circle cx=\"220\" cy=\"80\" r=\"4\" fill=\"#ed8936\"/><path d=\"M143 72 Q170 50 197 72\" stroke=\"#f6e05e\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M143 88 Q170 110 197 88\" stroke=\"#f6e05e\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"170\" y=\"78\" text-anchor=\"middle\" font-size=\"9\" fill=\"#f6e05e\" font-weight=\"bold\">纏</text><text x=\"170\" y=\"148\" text-anchor=\"middle\" font-size=\"9\" fill=\"#ed8936\" opacity=\"0.8\">cavity QED 平台</text></svg>"
     },
     {
-      "id": "space-2607f",
+      "id": "space-260607a",
       "domain": "space",
       "day": "2026-06-07",
       "author": "NASA researchers / 2026",

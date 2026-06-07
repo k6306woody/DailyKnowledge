@@ -31,9 +31,14 @@ button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
 #splash{
   position:fixed;inset:0;z-index:9999;background:#0a2a28;
   display:flex;align-items:center;justify-content:center;
-  animation:splashOut .8s ease-in 3.8s forwards;
+  animation:splashOut .75s ease-in 2.6s forwards;
+  will-change:transform;
 }
-@keyframes splashOut{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.04);pointer-events:none;visibility:hidden}}
+@keyframes splashOut{
+  0%   { transform:translateY(0) scale(1);   opacity:1 }
+  30%  { transform:translateY(0) scale(1.04); opacity:1 }
+  100% { transform:translateY(-100%) scale(1.04); opacity:.6 }
+}
 #splash.gone{display:none}
 .sp-bg{position:absolute;inset:0;overflow:hidden}
 .sp-bg img{width:100%;height:100%;object-fit:cover;display:block;animation:bgZoom 5s ease-out forwards}
@@ -49,8 +54,8 @@ button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
 /* ══════════════════════════════════
    LAYOUT — sidebar + main
 ══════════════════════════════════ */
-#app{animation:appIn .6s 3.5s both;margin-left:268px;min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:1}
-@keyframes appIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+#app{animation:appIn .7s 3.2s cubic-bezier(.22,1,.36,1) both;margin-left:268px;min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:1}
+@keyframes appIn{from{opacity:0;transform:translateY(8%)}to{opacity:1;transform:translateY(0)}}
 
 /* NAV — full width of main area */
 .nav{position:sticky;top:0;z-index:200;background:var(--nb);border-bottom:1px solid var(--bd);box-shadow:0 2px 16px var(--sh);display:flex;align-items:center;padding:0 16px;height:52px;gap:10px;transition:background .3s}
@@ -969,7 +974,7 @@ function renderCards(){
       </div>`;
     el.addEventListener('click',function(e){
       if(e.target.classList.contains('heart-btn')||e.target.closest('.heart-btn')) return;
-      openModal(c.id);
+      openModal(c.id, c.day);  // 傳入 day 避免重複 ID 問題
     });
     el.querySelector('.heart-btn').addEventListener('click',function(e){
       e.stopPropagation();
@@ -984,9 +989,10 @@ function renderCards(){
 // ════════════════════════════════
 // MODAL
 // ════════════════════════════════
-function openModal(id){
+function openModal(id, day){
   try{
-    const c=CARDS.find(x=>x.id===id);
+    // day 參數用來區分重複 ID（多日期資料並存時）
+    const c = day ? CARDS.find(x=>x.id===id && x.day===day) : CARDS.find(x=>x.id===id);
     if(!c) return;
     const ct=cardText(c);
     const t=T[curLang]||T['zh-TW'];
@@ -1107,12 +1113,17 @@ function switchDTab(el,tab){
 let activeFilters = { cat: null, day: null, author: null };
 
 function applyActiveFilters(){
-  CARDS.forEach(c => {
-    const el = document.querySelector(`.card[data-id="${c.id}"]`);
-    if(!el) return;
-    const hideCat    = activeFilters.cat    && c.domain !== activeFilters.cat;
-    const hideDay    = activeFilters.day    && c.day    !== activeFilters.day;
-    const hideAuthor = activeFilters.author && c.author !== activeFilters.author;
+  // 直接遍歷 DOM 元素，用元素自身的 data-day/data-domain 屬性
+  // （不依賴 data-id 查詢，避免重複 ID 問題）
+  document.querySelectorAll('.card').forEach(el => {
+    const hideCat    = activeFilters.cat    && el.dataset.domain !== activeFilters.cat;
+    const hideDay    = activeFilters.day    && el.dataset.day    !== activeFilters.day;
+    let hideAuthor = false;
+    if(activeFilters.author){
+      // 用 day+id 雙重匹配找到正確的卡片物件
+      const c = CARDS.find(x => x.id === el.dataset.id && x.day === el.dataset.day);
+      hideAuthor = c ? c.author !== activeFilters.author : false;
+    }
     el.classList.toggle('hide', hideCat || hideDay || hideAuthor);
   });
 }
@@ -1337,7 +1348,7 @@ function applyLang(){
 document.getElementById('splash').addEventListener('click',()=>{
   document.getElementById('splash').classList.add('gone');
 });
-setTimeout(()=>document.getElementById('splash').classList.add('gone'), 3800);
+setTimeout(()=>document.getElementById('splash').classList.add('gone'), 3550);
 
 // Dark mode
 document.getElementById('darkbtn').addEventListener('click',function(){

@@ -5,7 +5,7 @@
   "generated_at": "2026-06-07",
   "cards": [
     {
-      "id": "ai-2606-04",
+      "id": "ai-260604",
       "domain": "ai",
       "day": "2026-06-04",
       "author": "Chen et al. 2026",
@@ -50,7 +50,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#667eea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#667eea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🤖</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#667eea\" font-weight=\"bold\">人工智慧</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">無需人類標注：大型語言模...</text>\n</svg>"
     },
     {
-      "id": "bio-2606-04",
+      "id": "bio-260604",
       "domain": "bio",
       "day": "2026-06-04",
       "author": "Nakamura et al. 2026",
@@ -95,7 +95,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#48bb7822\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#48bb78\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧬</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#48bb78\" font-weight=\"bold\">生命科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">單細胞 RNA 定序揭示...</text>\n</svg>"
     },
     {
-      "id": "phys-2606-04",
+      "id": "phys-260604",
       "domain": "phys",
       "day": "2026-06-04",
       "author": "Zhao et al. 2026",
@@ -140,7 +140,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#ed893622\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#ed8936\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">⚛️</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#ed8936\" font-weight=\"bold\">物理科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">室溫下氫化鑭體系展現穩健...</text>\n</svg>"
     },
     {
-      "id": "neuro-2606",
+      "id": "neuro-260604",
       "domain": "neuro",
       "day": "2026-06-04",
       "author": "Yamamoto et al. 2026",
@@ -185,7 +185,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#9f7aea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#9f7aea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#9f7aea\" font-weight=\"bold\">神經科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">皮質突觸可塑性中的時序依...</text>\n</svg>"
     },
     {
-      "id": "space-2606",
+      "id": "space-260604",
       "domain": "space",
       "day": "2026-06-04",
       "author": "Castillo-Rivera et al. 2026",
@@ -230,7 +230,7 @@
       "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">JWST偵測到紅移7.4...</text>\n</svg>"
     },
     {
-      "id": "tech-2606",
+      "id": "tech-260604",
       "domain": "tech",
       "day": "2026-06-04",
       "author": "Nguyen et al. 2026",
