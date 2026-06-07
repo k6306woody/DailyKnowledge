@@ -49,7 +49,7 @@ button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
 /* ══════════════════════════════════
    LAYOUT — sidebar + main
 ══════════════════════════════════ */
-#app{animation:appIn .6s 3.5s both;margin-left:268px;min-height:100vh;display:flex;flex-direction:column}
+#app{animation:appIn .6s 3.5s both;margin-left:268px;min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:1}
 @keyframes appIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 /* NAV — full width of main area */
@@ -273,7 +273,6 @@ footer strong{color:var(--tf-tx)}
 /* ── Background canvas ── */
 #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.45}
 [data-theme=dark] #bg-canvas{opacity:.6}
-#app{position:relative;z-index:1}
 </style>
 </head>
 <body>
