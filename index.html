@@ -166,15 +166,16 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 ══════════════════════════════════ */
 #content-area{display:flex;flex:1;align-items:flex-start;min-height:0}
 
-/* 卡片格有詳情面板時縮小 */
+/* 卡片格：有詳情面板時與面板各佔 50%（= 總畫面 2/5） */
 #content-area .grid{flex:1;min-width:0;transition:flex .3s}
 
 /* ══ RIGHT DETAIL PANEL ══ */
 #detail-panel{
-  display:none;                         /* 預設隱藏 */
+  display:none;
   flex-direction:column;
-  width:440px;flex-shrink:0;
-  position:sticky;top:52px;            /* 吸在導覽列下方 */
+  flex:0 0 50%;          /* 佔 content-area 的 50% = 總畫面 2/5 */
+  max-width:50%;
+  position:sticky;top:52px;
   height:calc(100vh - 52px);
   overflow-y:auto;
   border-left:2px solid var(--bd);
@@ -185,34 +186,39 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 @keyframes panelIn{from{opacity:0;transform:translateX(32px)}to{opacity:1;transform:translateX(0)}}
 
 /* Hero */
-.dp-hero{position:relative;min-height:200px;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+.dp-hero{position:relative;min-height:180px;max-height:220px;background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
 .dp-hero svg{width:100%;height:auto;display:block}
 .dp-hero-bar{position:absolute;bottom:0;left:0;right:0;height:5px}
 .dp-close{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.38);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;backdrop-filter:blur(4px);transition:background .15s;border:none;z-index:2}
 .dp-close:hover{background:rgba(0,0,0,.65)}
 
 /* Body */
-.dp-body{padding:22px 24px 36px;display:flex;flex-direction:column;gap:18px}
+.dp-body{padding:20px 24px 40px;display:flex;flex-direction:column;gap:20px}
 .dp-tag-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .dp-dtag{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:8px}
 .dp-author{font-size:12px;color:var(--tx3);background:var(--bg3);padding:4px 12px;border-radius:8px}
 
-/* Title — 大器 */
-.dp-title{font-size:calc(20px * var(--fz));font-weight:800;line-height:1.5;color:var(--tx)}
+/* Title */
+.dp-title{font-size:calc(19px * var(--fz));font-weight:800;line-height:1.55;color:var(--tx)}
 
-/* Plain — 最突出，字大、行距寬 */
-.dp-plain-wrap{background:var(--bg3);border-radius:14px;padding:18px 20px;border-left:4px solid var(--tf)}
-.dp-plain-label{font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--tf);margin-bottom:10px;display:flex;align-items:center;gap:5px}
-.dp-plain-text{font-size:calc(16px * var(--fz));color:var(--tx);line-height:2;font-weight:500}
+/* Plain — 最突出：背景色塊、大字、多行距 */
+.dp-plain-wrap{background:var(--bg3);border-radius:16px;padding:22px 24px;border-left:5px solid var(--tf)}
+.dp-plain-label{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--tf);margin-bottom:14px;display:flex;align-items:center;gap:6px}
+.dp-plain-text{font-size:calc(15.5px * var(--fz));color:var(--tx);line-height:2.1;font-weight:500;white-space:pre-line}
 
-/* Tech — 次要，字稍小但仍完整顯示 */
-.dp-tech-wrap{border-left:3px solid var(--bd);padding:4px 0 4px 16px}
-.dp-tech-label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--tx3);margin-bottom:8px}
-.dp-tech-text{font-size:calc(14px * var(--fz));color:var(--tx2);line-height:1.85}
+/* Key points 條列 */
+.dp-keypoints{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.dp-kp{display:flex;gap:10px;align-items:flex-start;font-size:calc(13.5px * var(--fz));color:var(--tx2);line-height:1.7}
+.dp-kp-dot{width:8px;height:8px;border-radius:50%;background:var(--tf);flex-shrink:0;margin-top:6px}
+
+/* Tech — 學術說明 */
+.dp-tech-wrap{border:1.5px solid var(--bd);border-radius:12px;padding:16px 18px;background:var(--bg2)}
+.dp-tech-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:10px;display:flex;align-items:center;gap:5px}
+.dp-tech-text{font-size:calc(13px * var(--fz));color:var(--tx2);line-height:1.9}
 
 /* Insight */
-.dp-insight{background:var(--bg3);border-left:4px solid var(--tf);border-radius:0 12px 12px 0;padding:14px 18px;font-size:calc(14px * var(--fz));color:var(--tf-tx);line-height:1.75;font-style:italic}
-[data-theme=dark] .dp-insight{color:var(--tf-b);background:rgba(77,189,181,.08)}
+.dp-insight{background:linear-gradient(135deg,var(--tf-p),var(--bg3));border-left:5px solid var(--tf);border-radius:0 14px 14px 0;padding:16px 20px;font-size:calc(14px * var(--fz));color:var(--tf-tx);line-height:1.8;font-style:italic;font-weight:500}
+[data-theme=dark] .dp-insight{color:var(--tf-b);background:rgba(77,189,181,.1)}
 
 /* Footer */
 .dp-foot{display:flex;gap:10px;padding-top:4px}
@@ -224,7 +230,7 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 /* 手機版 */
 @media(max-width:900px){
   #content-area{flex-direction:column}
-  #detail-panel{width:100%;position:relative;top:0;height:auto;border-left:none;border-top:2px solid var(--bd)}
+  #detail-panel{flex:none;width:100%;max-width:100%;position:relative;top:0;height:auto;border-left:none;border-top:2px solid var(--bd)}
 }
 #modal-overlay{display:none!important}
 
@@ -483,6 +489,7 @@ footer strong{color:var(--tf-tx)}
       <div class="dp-plain-wrap">
         <div class="dp-plain-label">💬 用大白話說</div>
         <div class="dp-plain-text" id="dp-plain"></div>
+        <div class="dp-keypoints" id="dp-keypoints" style="display:none"></div>
       </div>
       <div class="dp-tech-wrap">
         <div class="dp-tech-label">📋 研究內容</div>
@@ -1044,10 +1051,33 @@ function openPanel(id, day){
   dtag.textContent=ct.tag||'';
   dtag.style.color=color; dtag.style.background=color+'22';
 
-  // Author / title / plain / tech / insight
+  // Author / title
   document.getElementById('dp-author').textContent=ct.author||c.author||'';
   document.getElementById('dp-title').textContent=ct.title||'';
-  document.getElementById('dp-plain').textContent=ct.plain||'';
+
+  // Plain — 豐富化：段落拆句、加 key points
+  const plainRaw = ct.plain||'';
+  // 按句號/！/？拆句（保留標點），過濾空白
+  const sentences = plainRaw.split(/(?<=[。！？!?\.]{1,2})\s*/u).filter(s=>s.trim().length>4);
+  // 第一段：完整段落（大字）
+  const mainPara = sentences.slice(0, Math.ceil(sentences.length/2)).join('');
+  // 後段：拆成條列 key points
+  const kpSentences = sentences.slice(Math.ceil(sentences.length/2));
+  document.getElementById('dp-plain').textContent = mainPara || plainRaw;
+  // Key points 條列
+  const kpContainer = document.getElementById('dp-keypoints');
+  if(kpContainer){
+    if(kpSentences.length > 0){
+      kpContainer.style.display='flex';
+      kpContainer.innerHTML = kpSentences.map(s=>`
+        <div class="dp-kp"><div class="dp-kp-dot"></div><span>${s.trim()}</span></div>
+      `).join('');
+    } else {
+      kpContainer.style.display='none';
+      kpContainer.innerHTML='';
+    }
+  }
+
   document.getElementById('dp-tech').textContent=ct.tech||'';
   const ins=document.getElementById('dp-insight');
   ins.textContent=ct.insight||'';
@@ -1626,16 +1656,14 @@ loadAllData().then(result=>{
       calInitialized = true;
     }
   }
+  // ★ 先鎖定篩選日期，renderCards() 才能正確只顯示最新日期
+  if(curDay) activeFilters.day = curDay;
+
   renderDayChips();
   renderCatbar();
-  applyLang();       // → renderCards() + renderDrawer()
+  applyLang();       // → renderCards()（此時 activeFilters.day 已設定）
   renderQuickDays(); // 快速日期按鈕
-
-  // 預設顯示最新日期的卡片，並鎖定 activeFilters
-  if(curDay){
-    activeFilters.day = curDay;
-    filterByDay(curDay);
-  }
+  if(curDay) filterByDay(curDay); // 同步 DOM hide class
 
   // Update sidebar date hint
   const hint=document.getElementById('sidebar-date-hint');
