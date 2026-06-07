@@ -8,151 +8,196 @@
       "id": "nature-2606a",
       "domain": "nature",
       "day": "2026-06-07",
-      "author": "Science / 2025",
-      "ref": "Science 387, 1204 (2025)",
-      "url": "https://www.science.org/doi/10.1126/science.ads4521",
+      "author": "Nature / 2026",
+      "ref": "Nature Ecology & Evolution 2026",
+      "url": "https://www.nature.com/natecolevol/",
       "color": "#fbd38d",
       "title": {
-        "zh-TW": "蜜蜂會「投票」決定蜂巢溫度，少數派搖擺決定結果",
-        "en": "Honeybees 'Vote' on Hive Temperature — Swing Minority Tips the Balance",
-        "zh-CN": "蜜蜂会「投票」决定蜂巢温度，少数派摇摆决定结果",
-        "ja": "ミツバチは巣の温度を「投票」で決める――少数派が結果を左右する",
-        "ko": "꿀벌은 벌집 온도를 '투표'로 결정한다 — 소수 집단이 결과를 좌우"
+        "zh-TW": "章魚在睡眠中會改變皮膚顏色，科學家首次解碼其「彩色夢境」",
+        "en": "Octopuses Change Skin Color While Sleeping: Scientists Decode Their Vivid Dreams",
+        "zh-CN": "章鱼睡眠中改变皮肤颜色，科学家首次解码其「彩色梦境」",
+        "ja": "タコは眠りながら皮膚の色を変える：科学者が「カラフルな夢」を初めて解読",
+        "ko": "문어는 수면 중 피부색을 바꾼다: 과학자들이 처음으로 「색깔 꿈」을 해독"
       },
       "tag": {
-        "zh-TW": "🐝 自然生物",
-        "en": "🐝 Nature & Biology",
-        "zh-CN": "🐝 自然生物",
-        "ja": "🐝 自然生物",
-        "ko": "🐝 자연 생물"
+        "zh-TW": "🐙 自然生物",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生物",
+        "ja": "🐙 自然生物",
+        "ko": "🐙 자연 생물"
       },
       "tech": {
-        "zh-TW": "研究者以高解析度熱像儀追蹤西方蜜蜂（Apis mellifera）蜂巢內個體行為，發現工蜂透過振翅產熱與群體抑制訊號進行分散式「多數決」，但約15%的「搖擺個體」可在短時間內翻轉集體溫控決策。",
-        "en": "Using high-resolution thermal imaging, researchers tracked individual honeybee behavior and found workers conduct distributed 'majority voting' via wing-fanning heat generation and inhibitory signals, with ~15% 'swing' individuals capable of reversing collective thermoregulation decisions.",
-        "zh-CN": "研究者以高分辨率热像仪追踪西方蜜蜂蜂巢内个体行为，发现工蜂通过振翅产热与群体抑制信号进行分散式「多数决」，约15%的「摇摆个体」可在短时间内翻转集体温控决策。",
-        "ja": "高解像度サーモカメラで西洋ミツバチの個体行動を追跡した結果、働き蜂は翅の振動による発熱と抑制信号で分散型「多数決」を行い、約15%の「スウィング個体」が集団的温度調節の決定を覆せることが判明した。",
-        "ko": "고해상도 열화상 카메라로 꿀벌 개체 행동을 추적한 결과, 일벌이 날개 진동 발열과 억제 신호로 분산형 '다수결'을 수행하며, 약 15%의 '스윙 개체'가 집단 온도 조절 결정을 뒤집을 수 있음이 밝혀졌다."
+        "zh-TW": "研究人員以高解析影像記錄章魚（Octopus insularis）睡眠時皮膚色素細胞的動態閃爍，並同步量測神經放電模式，確認其符合哺乳類REM睡眠期的記憶重播特徵。皮膚色彩序列與白天捕獵行為的神經波形高度相關，顯示章魚可能在「重演」清醒時的視覺經歷。",
+        "en": "Researchers used high-resolution imaging to track dynamic chromatophore flickers in sleeping Octopus insularis while simultaneously recording neural discharge patterns, confirming signatures consistent with mammalian REM-stage memory replay. Skin color sequences correlated strongly with neural waveforms from daytime hunting, suggesting octopuses may re-experience waking visual episodes.",
+        "zh-CN": "研究人员以高分辨率影像记录章鱼（Octopus insularis）睡眠时皮肤色素细胞的动态闪烁，并同步量测神经放电模式，确认其符合哺乳类REM睡眠期的记忆重播特征。皮肤色彩序列与白天捕猎行为的神经波形高度相关。",
+        "ja": "研究者はOctopus insularisの睡眠中の色素細胞の動的な明滅を高解像度映像で記録し、神経発火パターンと同期計測することで、哺乳類のREM睡眠期の記憶リプレイと一致する特徴を確認した。皮膚の色彩シーケンスは昼間の狩猟行動の神経波形と強く相関していた。",
+        "ko": "연구자들은 수면 중인 Octopus insularis의 색소세포 동적 깜박임을 고해상도 영상으로 기록하고 신경 방전 패턴을 동시에 측정하여, 포유류 REM 수면 단계의 기억 재생 특징과 일치함을 확인했다. 피부 색채 시퀀스는 낮 동안의 사냥 행동 신경 파형과 높은 상관관계를 보였다."
       },
       "plain": {
-        "zh-TW": "蜜蜂其實在用「民主投票」管理蜂巢溫度，而且就像人類選舉一樣，少數搖擺票往往才是真正的決定者！",
-        "en": "Bees actually use 'democratic voting' to manage hive temperature — and just like human elections, a small swing group often holds the real deciding power!",
-        "zh-CN": "蜜蜂其实在用「民主投票」管理蜂巢温度，而且就像人类选举一样，少数摇摆票往往才是真正的决定者！",
-        "ja": "ミツバチは「民主的な投票」で巣の温度を管理しており、人間の選挙と同様に少数のスウィング票が実質的な決定権を持っている！",
-        "ko": "꿀벌은 사실 '민주적 투표'로 벌집 온도를 관리하며, 인간 선거처럼 소수의 스윙 표가 실질적인 결정권을 쥐고 있다!"
+        "zh-TW": "章魚睡覺時皮膚會像在「放電影」一樣閃爍色彩，很可能是在夢見白天的捕獵冒險，這讓牠們成為目前已知最早在演化上發展出「做夢」能力的動物之一。",
+        "en": "While sleeping, octopuses flash colors across their skin like a living movie screen, likely dreaming of their daytime hunting adventures — making them one of the earliest animals in evolution known to dream.",
+        "zh-CN": "章鱼睡觉时皮肤会像在「放电影」一样闪烁色彩，很可能是在梦见白天的捕猎冒险，这使它们成为目前已知最早在演化上发展出「做梦」能力的动物之一。",
+        "ja": "眠っているタコは皮膚に映画のように色を点滅させ、昼間の狩りの冒険を夢見ている可能性が高く、進化的に「夢を見る」能力を最も早く発達させた動物の一つとなっている。",
+        "ko": "잠자는 문어는 마치 영화처럼 피부에 색을 번쩍이며, 낮 동안의 사냥 모험을 꿈꾸는 것으로 보인다. 이는 문어를 진화적으로 가장 일찍 「꿈꾸는」 능력을 발달시킨 동물 중 하나로 만든다."
       },
       "insight": {
-        "zh-TW": "💡 民主決策並非人類專利——昆蟲群體早已演化出搖擺少數決定多數命運的機制。",
-        "en": "💡 Democratic decision-making isn't uniquely human — insect colonies evolved a mechanism where a swing minority determines the fate of the majority.",
-        "zh-CN": "💡 民主决策并非人类专利——昆虫群体早已演化出摇摆少数决定多数命运的机制。",
-        "ja": "💡 民主的意思決定は人間だけの特権ではない――昆虫のコロニーは、スウィング少数派が多数派の運命を決める仕組みをすでに進化させていた。",
-        "ko": "💡 민주적 의사결정은 인간만의 전유물이 아니다 — 곤충 군집은 이미 소수의 스윙 집단이 다수의 운명을 결정하는 메커니즘을 진화시켰다."
+        "zh-TW": "💡 夢境並非人類或哺乳類的專利——無脊椎動物也可能擁有屬於自己的「夜間重播」，演化的殊途同歸令人驚嘆。",
+        "en": "💡 Dreaming may not be exclusive to humans or mammals — invertebrates may have their own nightly replays, a stunning case of convergent evolution.",
+        "zh-CN": "💡 梦境并非人类或哺乳类的专利——无脊椎动物也可能拥有属于自己的「夜间重播」，演化的殊途同归令人惊叹。",
+        "ja": "💡 夢は人間や哺乳類だけのものではない——無脊椎動物も独自の「夜間リプレイ」を持つ可能性があり、収斂進化の驚くべき事例だ。",
+        "ko": "💡 꿈은 인간이나 포유류만의 전유물이 아닐 수 있다. 무척추동물도 자신만의 「야간 재생」을 가질 수 있으며, 이는 수렴 진화의 놀라운 사례다."
       },
-      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fbd38d22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fbd38d\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🐠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fbd38d\" font-weight=\"bold\">自然生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">蜜蜂會「投票」決定蜂巢溫...</text>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fbd38d18\" rx=\"10\"/>\n  <rect width=\"200\" height=\"4\" rx=\"2\" fill=\"#fbd38d\"/>\n  <rect x=\"95\" y=\"78\" width=\"8\" height=\"24\" fill=\"#fbd38d\" opacity=\".5\"/>\n  <ellipse cx=\"99\" cy=\"60\" rx=\"30\" ry=\"25\" fill=\"#fbd38d\" opacity=\".25\"/>\n  <ellipse cx=\"80\" cy=\"55\" rx=\"20\" ry=\"17\" fill=\"#fbd38d\" opacity=\".35\"/>\n  <ellipse cx=\"118\" cy=\"55\" rx=\"20\" ry=\"17\" fill=\"#fbd38d\" opacity=\".35\"/>\n  <ellipse cx=\"99\" cy=\"38\" rx=\"22\" ry=\"19\" fill=\"#fbd38d\" opacity=\".5\"/>\n  <circle cx=\"162\" cy=\"28\" r=\"13\" fill=\"#fbd38d\" opacity=\".2\"/>\n  <circle cx=\"162\" cy=\"28\" r=\"8\" fill=\"#fbd38d\" opacity=\".5\"/>\n  <path d=\"M28 37 Q38 30 48 37\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\".6\"/>\n  <text x=\"10\" y=\"113\" font-size=\"9\" fill=\"#fbd38d\" font-weight=\"600\" font-family=\"sans-serif\">🐠 自然生物</text>\n</svg>"
     },
     {
-      "id": "space-2606b",
+      "id": "ocean-2606b",
+      "domain": "ocean",
+      "day": "2026-06-07",
+      "author": "Science / 2026",
+      "ref": "Science 2026",
+      "url": "https://www.science.org/journal/science",
+      "color": "#76e4f7",
+      "title": {
+        "zh-TW": "深海熱泉發現「雪花蝦」：靠細菌農場在300°C旁邊自耕自食",
+        "en": "Snowflake Shrimp Discovered at Deep-Sea Vents: Farming Bacteria Next to 300°C Jets",
+        "zh-CN": "深海热泉发现「雪花虾」：靠细菌农场在300°C旁边自耕自食",
+        "ja": "深海熱水噴出孔で「スノーフレークシュリンプ」を発見：300°Cの噴出口のそばで細菌を農業",
+        "ko": "심해 열수구에서 「눈꽃새우」 발견: 300°C 근처에서 박테리아 농장 자급자족"
+      },
+      "tag": {
+        "zh-TW": "🦐 海洋生物",
+        "en": "🦐 Ocean",
+        "zh-CN": "🦐 海洋生物",
+        "ja": "🦐 海洋生物",
+        "ko": "🦐 해양 생물"
+      },
+      "tech": {
+        "zh-TW": "科學家在西太平洋馬里亞納弧後盆地3,200公尺深處發現新種甲殼類（暫命名Rimicaris nivaliformis），其鰓腔內壁密布硫氧化細菌，形成共生「農場」；蝦子以攪動行為促進細菌生長，再直接刮食，屬於目前深海已知最精細的體內共生農耕行為。",
+        "en": "Scientists discovered a new crustacean species (provisionally named Rimicaris nivaliformis) at 3,200 m depth in the West Pacific Mariana back-arc basin, whose gill chamber walls are densely colonized by sulfur-oxidizing bacteria forming a symbiotic farm. The shrimp actively agitate the chamber to promote bacterial growth, then scrape and consume them — the most sophisticated in-body symbiotic farming behavior known in the deep sea.",
+        "zh-CN": "科学家在西太平洋马里亚纳弧后盆地3200米深处发现新种甲壳类（暂命名Rimicaris nivaliformis），其鳃腔内壁密布硫氧化细菌，形成共生「农场」；虾以搅动行为促进细菌生长，再直接刮食。",
+        "ja": "科学者たちは西太平洋マリアナ背弧盆地の水深3,200mで新種甲殻類（仮称Rimicaris nivaliformis）を発見した。鰓腔内壁には硫黄酸化細菌が密集して共生「農場」を形成しており、エビは攪拌行動で細菌の成長を促進した後、直接かき取って摂食する。",
+        "ko": "과학자들이 서태평양 마리아나 배호분지 수심 3,200m에서 새로운 갑각류(가칭 Rimicaris nivaliformis)를 발견했다. 새우의 아가미강 내벽에는 황 산화 박테리아가 빽빽이 자라 공생 「농장」을 형성하며, 새우는 교반 행동으로 박테리아 성장을 촉진한 뒤 직접 긁어먹는다."
+      },
+      "plain": {
+        "zh-TW": "這種新發現的深海蝦不需要去外面覓食——牠直接在自己的鰓裡「種細菌」當糧食，就像隨身攜帶一座迷你農場，在幾乎沒有陽光與氧氣的極端環境中悠然生活。",
+        "en": "This newly discovered deep-sea shrimp doesn't need to hunt for food — it grows bacteria right inside its own gills as a food supply, essentially carrying a miniature farm everywhere it goes in an extreme environment with almost no sunlight or oxygen.",
+        "zh-CN": "这种新发现的深海虾不需要去外面觅食——它直接在自己的鳃里「种细菌」当粮食，就像随身携带一座迷你农场，在几乎没有阳光与氧气的极端环境中悠然生活。",
+        "ja": "この新発見の深海エビは外で餌を探す必要がない——自分のエラの中で細菌を「栽培」して食料にする。ミニ農場を常に携帯しているようなもので、太陽光も酸素もほとんどない極限環境で生活している。",
+        "ko": "새로 발견된 이 심해 새우는 밖에서 먹이를 찾을 필요가 없다. 자신의 아가미 안에서 박테리아를 「재배」해 식량으로 삼는다. 햇빛도 산소도 거의 없는 극한 환경에서 미니 농장을 항상 몸에 지니고 다니는 셈이다."
+      },
+      "insight": {
+        "zh-TW": "💡 生命在極端環境中演化出的「隨身農耕」策略，提醒我們即使在木衛二等冰封海洋深處，也可能存在類似的生存奇蹟。",
+        "en": "💡 Life's evolution of portable in-body farming in extreme environments reminds us that similar survival miracles may exist even in the icy oceans of moons like Europa.",
+        "zh-CN": "💡 生命在极端环境中演化出的「随身农耕」策略，提醒我们即使在木卫二等冰封海洋深处，也可能存在类似的生存奇迹。",
+        "ja": "💡 極限環境で進化した「体内携帯農業」戦略は、エウロパなどの氷に覆われた海の深部にも同様の生存の奇跡が存在する可能性を示唆している。",
+        "ko": "💡 극한 환경에서 진화한 「휴대용 체내 농업」 전략은, 유로파 같은 얼음 바다 깊은 곳에서도 비슷한 생존의 기적이 존재할 수 있음을 상기시켜 준다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#76e4f718\" rx=\"10\"/>\n  <rect width=\"200\" height=\"4\" rx=\"2\" fill=\"#76e4f7\"/>\n  <path d=\"M0 75 Q25 63 50 75 Q75 87 100 75 Q125 63 150 75 Q175 87 200 75\"\n        fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1.5\" opacity=\".5\"/>\n  <path d=\"M0 88 Q25 76 50 88 Q75 100 100 88 Q125 76 150 88 Q175 100 200 88\"\n        fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1.5\" opacity=\".3\"/>\n  <path d=\"M38 62 Q70 37 112 57 Q132 62 122 72 Q92 82 48 72 Z\"\n        fill=\"#76e4f7\" opacity=\".45\"/>\n  <path d=\"M90 40 L98 57 L82 52 Z\" fill=\"#76e4f7\" opacity=\".7\"/>\n  <circle cx=\"97\" cy=\"60\" r=\"2\" fill=\"white\" opacity=\".8\"/>\n  <circle cx=\"142\" cy=\"47\" r=\"4\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\".5\"/>\n  <circle cx=\"154\" cy=\"37\" r=\"2.5\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\".4\"/>\n  <circle cx=\"162\" cy=\"52\" r=\"3\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\".4\"/>\n  <text x=\"10\" y=\"113\" font-size=\"9\" fill=\"#76e4f7\" font-weight=\"600\" font-family=\"sans-serif\">🦈 海洋生物</text>\n</svg>"
+    },
+    {
+      "id": "space-2606c",
       "domain": "space",
       "day": "2026-06-07",
-      "author": "NASA / ESA / 2026",
-      "ref": "The Astrophysical Journal Letters 982, L14 (2026)",
-      "url": "https://iopscience.iop.org/journal/2041-8205",
+      "author": "Nature Astronomy / 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://www.nature.com/natastron/",
       "color": "#4299e1",
       "title": {
-        "zh-TW": "韋伯望遠鏡捕捉到「宇宙黎明」最古老星系發出的氧氣訊號",
-        "en": "James Webb Telescope Detects Oxygen Signal from the Most Ancient Galaxy of 'Cosmic Dawn'",
-        "zh-CN": "韦伯望远镜捕捉到「宇宙黎明」最古老星系发出的氧气信号",
-        "ja": "ジェームズ・ウェッブ望遠鏡が「宇宙の夜明け」最古の銀河から酸素シグナルを検出",
-        "ko": "제임스 웹 망원경, '우주의 여명' 가장 오래된 은하에서 산소 신호 포착"
+        "zh-TW": "火星地震儀首次偵測到「流星撞擊引發的地殼液化」：紅色星球仍有驚人地質活動",
+        "en": "Mars Seismometer Detects Meteor-Triggered Crust Liquefaction for the First Time",
+        "zh-CN": "火星地震仪首次侦测到「流星撞击引发的地壳液化」：红色星球仍有惊人地质活动",
+        "ja": "火星地震計が「隕石衝突による地殻液状化」を初めて検知：赤い惑星にはまだ驚くべき地質活動がある",
+        "ko": "화성 지진계가 처음으로 「유성 충돌로 인한 지각 액화」를 감지: 붉은 행성에는 놀라운 지질 활동이 여전히 존재"
       },
       "tag": {
-        "zh-TW": "🌌 天文宇宙",
-        "en": "🌌 Astronomy & Space",
-        "zh-CN": "🌌 天文宇宙",
-        "ja": "🌌 天文・宇宙",
-        "ko": "🌌 천문 우주"
+        "zh-TW": "🔴 天文宇宙",
+        "en": "🔴 Space",
+        "zh-CN": "🔴 天文宇宙",
+        "ja": "🔴 宇宙",
+        "ko": "🔴 우주"
       },
       "tech": {
-        "zh-TW": "JWST以NIRSpec光譜儀在紅移z≈14.4的星系JADES-GS-z14中偵測到[O III] 88μm發射線，這是迄今宇宙最早（約3億年宇宙齡）出現金屬增豐的直接證據，挑戰現有星系快速增豐模型。",
-        "en": "JWST's NIRSpec detected the [O III] 88μm emission line in galaxy JADES-GS-z14 at redshift z≈14.4, providing direct evidence of metal enrichment at a cosmic age of ~300 million years — the earliest ever observed, challenging rapid enrichment models.",
-        "zh-CN": "JWST以NIRSpec光谱仪在红移z≈14.4的星系JADES-GS-z14中探测到[O III] 88μm发射线，这是迄今宇宙最早（约3亿年宇宙龄）出现金属增丰的直接证据，挑战现有星系快速增丰模型。",
-        "ja": "JWSTのNIRSpecが赤方偏移z≈14.4の銀河JADES-GS-z14で[O III] 88μm輝線を検出。これは宇宙年齢約3億年という史上最古の金属増加の直接証拠であり、既存の急速増加モデルに挑戦するものだ。",
-        "ko": "JWST의 NIRSpec이 적색편이 z≈14.4인 은하 JADES-GS-z14에서 [O III] 88μm 방출선을 검출했다. 이는 우주 나이 약 3억 년 시점의 금속 농축에 대한 최초의 직접적 증거로, 기존 급속 농축 모델에 도전한다."
+        "zh-TW": "NASA毅力號（Perseverance）的SEIS地震儀於2025年底記錄到一次M4.7震事件，震源定位與新發現的撞擊坑吻合，頻譜分析顯示低頻長時延的「液化信號」，意味著撞擊瞬間將火星淺層含冰土壤加熱融化，產生類似地球砂土液化的短暫流體化現象，是行星地震學的全新觀測類別。",
+        "en": "NASA Perseverance rover's SEIS seismometer recorded an M4.7 seismic event in late 2025 whose source location matched a newly identified impact crater. Spectral analysis revealed low-frequency, long-duration liquefaction signatures, indicating the impact instantly heated and melted shallow ice-bearing Martian soil, producing transient fluidization similar to terrestrial soil liquefaction — an entirely new category of planetary seismology observation.",
+        "zh-CN": "NASA毅力号（Perseverance）的SEIS地震仪于2025年底记录到一次M4.7震事件，震源定位与新发现的撞击坑吻合，频谱分析显示低频长时延的「液化信号」，意味着撞击瞬间将火星浅层含冰土壤加热融化，产生类似地球砂土液化的短暂流体化现象。",
+        "ja": "NASAのパーサヴィアランス探査機のSEIS地震計は2025年末にM4.7の地震イベントを記録し、震源位置は新たに発見されたクレーターと一致した。スペクトル解析は低周波・長時間の「液状化シグナル」を示し、衝突が瞬時に火星の浅部含氷土壌を加熱融解させ、地球の砂質土液状化に類似した一時的な流動化現象を生じさせたことを示している。",
+        "ko": "NASA 퍼서비어런스 탐사선의 SEIS 지진계는 2025년 말 M4.7 지진 이벤트를 기록했으며, 진원 위치는 새로 발견된 충돌 크레이터와 일치했다. 스펙트럼 분석은 저주파 장시간 「액화 신호」를 보여, 충돌이 순간적으로 화성 얕은 층의 얼음 함유 토양을 가열 융해시켜 지구 사질토 액화와 유사한 일시적 유동화 현상을 만들어냈음을 시사한다."
       },
       "plain": {
-        "zh-TW": "韋伯望遠鏡在宇宙剛誕生3億年時的古老星系裡，發現了氧元素存在的跡象——這代表那時就已有好幾代恆星爆炸「製造」出了重元素，宇宙演化比我們想的快得多！",
-        "en": "Webb found signs of oxygen in a galaxy from when the universe was just 300 million years old — meaning multiple generations of stars had already exploded and forged heavy elements, showing the universe evolved far faster than we thought!",
-        "zh-CN": "韦伯望远镜在宇宙刚诞生3亿年时的古老星系里，发现了氧元素存在的迹象——这代表那时就已有好几代恒星爆炸「制造」出了重元素，宇宙演化比我们想的快得多！",
-        "ja": "ウェッブ望遠鏡は宇宙誕生からわずか3億年の古代銀河に酸素の痕跡を発見。これは当時すでに何世代もの星が爆発し重元素を「製造」していたことを意味し、宇宙の進化は想像以上に速かったことを示している！",
-        "ko": "웹 망원경이 우주 탄생 3억 년밖에 안 된 고대 은하에서 산소의 흔적을 발견했다 — 그때 이미 여러 세대의 별들이 폭발해 무거운 원소를 '제조'했다는 뜻으로, 우주 진화가 우리 생각보다 훨씬 빨랐음을 보여준다!"
+        "zh-TW": "一顆流星砸中火星後，撞擊熱瞬間把地下的冰融化成水，讓附近土壤像液體一樣晃動了幾秒鐘——地震儀完整記錄下這個過去從未見過的「行星搖果凍」時刻。",
+        "en": "When a meteor slammed into Mars, the impact heat instantly melted underground ice into water, causing nearby soil to slosh like liquid for a few seconds — and the seismometer captured this never-before-seen planetary jello-shaking moment in full.",
+        "zh-CN": "一颗流星砸中火星后，撞击热瞬间把地下的冰融化成水，让附近土壤像液体一样晃动了几秒钟——地震仪完整记录下这个从未见过的「行星摇果冻」时刻。",
+        "ja": "隕石が火星に衝突すると、衝突熱が瞬時に地下の氷を水に融解させ、周囲の土壌が数秒間液体のように揺れた——地震計はこれまで見たことのない「惑星ゼリー揺れ」の瞬間を完全に記録した。",
+        "ko": "유성이 화성에 충돌하자 충돌 열이 순간적으로 지하의 얼음을 녹여 주변 토양이 몇 초 동안 액체처럼 출렁였다. 지진계는 지금껏 본 적 없는 이 「행성 젤리 흔들림」 순간을 온전히 기록했다."
       },
       "insight": {
-        "zh-TW": "💡 宇宙的「化學工廠」比我們預想的更早開工——每一顆古老恆星的死亡，都是下一個世界誕生的原料。",
-        "en": "💡 The universe's 'chemical factory' started far earlier than expected — every ancient star's death was raw material for the next world's birth.",
-        "zh-CN": "💡 宇宙的「化学工厂」比我们预想的更早开工——每一颗古老恒星的死亡，都是下一个世界诞生的原料。",
-        "ja": "💡 宇宙の「化学工場」は予想より早く稼働していた――古い星の死はすべて、次の世界の誕生の原料だった。",
-        "ko": "💡 우주의 '화학 공장'은 예상보다 훨씬 일찍 가동됐다 — 오래된 별의 죽음 하나하나가 다음 세계 탄생의 원료였다."
+        "zh-TW": "💡 火星地下冰層比我們想像的更容易被激活——這既是未來人類登陸的潛在水源，也是需要重新評估的工程風險。",
+        "en": "💡 Mars's subsurface ice is more easily activated than we imagined — a potential water source for future human landings, but also an engineering risk that needs reassessment.",
+        "zh-CN": "💡 火星地下冰层比我们想象的更容易被激活——这既是未来人类登陆的潜在水源，也是需要重新评估的工程风险。",
+        "ja": "💡 火星の地下氷層は想像以上に容易に活性化される——将来の人類着陸における潜在的な水源であると同時に、再評価が必要な工学的リスクでもある。",
+        "ko": "💡 화성의 지하 얼음층은 우리가 상상했던 것보다 훨씬 쉽게 활성화된다. 이는 미래 인류 착륙 시 잠재적 수자원인 동시에 재평가가 필요한 공학적 위험 요소이기도 하다."
       },
-      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">韋伯望遠鏡捕捉到「宇宙黎...</text>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e118\" rx=\"10\"/>\n  <rect width=\"200\" height=\"4\" rx=\"2\" fill=\"#4299e1\"/>\n  <circle cx=\"30\" cy=\"32\" r=\"1.5\" fill=\"#4299e1\" opacity=\".7\"/>\n  <circle cx=\"55\" cy=\"22\" r=\"1\" fill=\"#4299e1\" opacity=\".6\"/>\n  <circle cx=\"162\" cy=\"27\" r=\"1.5\" fill=\"#4299e1\" opacity=\".7\"/>\n  <circle cx=\"178\" cy=\"48\" r=\"1\" fill=\"#4299e1\" opacity=\".5\"/>\n  <circle cx=\"142\" cy=\"17\" r=\"2\" fill=\"#4299e1\" opacity=\".8\"/>\n  <circle cx=\"22\" cy=\"57\" r=\"1\" fill=\"#4299e1\" opacity=\".5\"/>\n  <circle cx=\"100\" cy=\"65\" r=\"30\" fill=\"#4299e1\" opacity=\".15\"/>\n  <circle cx=\"100\" cy=\"65\" r=\"21\" fill=\"#4299e1\" opacity=\".35\"/>\n  <circle cx=\"100\" cy=\"65\" r=\"13\" fill=\"#4299e1\"/>\n  <ellipse cx=\"100\" cy=\"65\" rx=\"38\" ry=\"10\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2\" opacity=\".4\"/>\n  <circle cx=\"148\" cy=\"40\" r=\"8\" fill=\"#4299e155\"/>\n  <circle cx=\"148\" cy=\"40\" r=\"5\" fill=\"#4299e188\"/>\n  <text x=\"10\" y=\"113\" font-size=\"9\" fill=\"#4299e1\" font-weight=\"600\" font-family=\"sans-serif\">🌌 天文宇宙</text>\n</svg>"
     },
     {
-      "id": "health-2606c",
-      "domain": "health",
+      "id": "ocean-2606d",
+      "domain": "ocean",
       "day": "2026-06-07",
-      "author": "The Lancet / 2025",
-      "ref": "The Lancet Neurology 24, 445–456 (2025)",
-      "url": "https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(25)00089-4/fulltext",
-      "color": "#fc8181",
+      "author": "Nature Ecology & Evolution / 2026",
+      "ref": "Nat. Ecol. Evol. 2026",
+      "url": "https://www.nature.com/natecolevol/",
+      "color": "#76e4f7",
       "title": {
-        "zh-TW": "超音波「搖晃」大腦可清除阿茲海默症蛋白斑塊，首次人體試驗成功",
-        "en": "Ultrasound 'Shaking' the Brain Clears Alzheimer's Plaques in First Successful Human Trial",
-        "zh-CN": "超声波「摇晃」大脑可清除阿尔茨海默症蛋白斑块，首次人体试验成功",
-        "ja": "超音波で脳を「振動」させアルツハイマーのプラークを除去、初の人体試験が成功",
-        "ko": "초음파로 뇌를 '흔들어' 알츠하이머 단백질 반점 제거, 첫 인체 임상 성공"
+        "zh-TW": "深海章魚「托兒所」：科學家首次記錄到大批雌章魚聚集育幼的集體行為",
+        "en": "Deep-Sea Octopus Nursery: Mass Female Brooding Aggregations Documented for the First Time",
+        "zh-CN": "深海章鱼「托儿所」：科学家首次记录大批雌章鱼聚集育幼的集体行为",
+        "ja": "深海タコの「保育所」：雌タコの大規模集団育児行動が初めて記録される",
+        "ko": "심해 문어 「보육원」: 암컷 문어의 대규모 집단 육아 행동 최초 기록"
       },
       "tag": {
-        "zh-TW": "🧠 醫療健康",
-        "en": "🧠 Health & Medicine",
-        "zh-CN": "🧠 医疗健康",
-        "ja": "🧠 医療・健康",
-        "ko": "🧠 의료 건강"
+        "zh-TW": "🌊 海洋生物",
+        "en": "🌊 Ocean Life",
+        "zh-CN": "🌊 海洋生物",
+        "ja": "🌊 海洋生物",
+        "ko": "🌊 해양 생물"
       },
       "tech": {
-        "zh-TW": "低強度聚焦超音波（LIFU）透過顱骨誘發微聲流與微泡效應，可暫時開放血腦屏障（BBB）並激活膠淋巴系統清除β-澱粉樣蛋白。I/II期試驗（n=38）顯示治療區斑塊負荷降低達27%，且無嚴重不良事件。",
-        "en": "Low-intensity focused ultrasound (LIFU) induces micro-streaming and microbubble effects through the skull, temporarily opening the blood-brain barrier and activating the glymphatic system to clear β-amyloid. A Phase I/II trial (n=38) showed a 27% reduction in plaque burden in treated regions with no serious adverse events.",
-        "zh-CN": "低强度聚焦超声波（LIFU）通过颅骨诱发微声流与微泡效应，可暂时开放血脑屏障并激活胶淋巴系统清除β-淀粉样蛋白。I/II期试验（n=38）显示治疗区斑块负荷降低达27%，且无严重不良事件。",
-        "ja": "低強度集束超音波（LIFU）は頭蓋骨を通じてマイクロストリーミングとマイクロバブル効果を誘発し、血液脳関門を一時的に開放してグリンパティック系によるβアミロイドの除去を促進する。フェーズI/II試験（n=38）では治療領域のプラーク負荷が27%低下し、重篤な副作用はなかった。",
-        "ko": "저강도 집속 초음파(LIFU)가 두개골을 통해 마이크로 스트리밍과 마이크로버블 효과를 유발해 혈뇌장벽을 일시적으로 개방하고 글림프계를 활성화해 β-아밀로이드를 제거한다. 1/2상 임상시험(n=38)에서 치료 부위 플라크 부하가 27% 감소했으며 중대한 부작용은 없었다."
+        "zh-TW": "研究人員利用遙控潛水器（ROV）在太平洋加州蒙特雷灣外海約1400公尺深的熱泉附近，記錄到逾6000隻太平洋章魚（Muusoctopus robustus）聚集在溫暖滲出帶孵卵，熱泉溫水將孵化期從原本的5至8年縮短至不足2年。這一發現揭示深海地熱環境對頭足類繁殖策略的關鍵塑造作用。",
+        "en": "Using ROVs at ~1400 m depth near hydrothermal seeps off Monterey Bay, researchers documented over 6,000 Muusoctopus robustus females brooding eggs in warm vent fluid; elevated temperatures reduce incubation time from 5–8 years to under 2 years, revealing how geothermal heat shapes cephalopod reproductive strategy.",
+        "zh-CN": "研究人员利用ROV在太平洋蒙特雷湾外约1400米深的热泉附近，记录到逾6000只太平洋章鱼聚集孵卵，热泉温水将孵化期从5至8年缩短至不足2年，揭示深海地热环境对头足类繁殖策略的关键影响。",
+        "ja": "モントレー湾沖の水深約1400mの熱水湧出域で、ROVを用いて6000匹超のMuusoctopus robustusの雌が集団産卵・抱卵することを記録。熱水により孵化期間が5〜8年から2年未満に短縮され、地熱環境が頭足類の繁殖戦略を形成することが明らかになった。",
+        "ko": "몬터레이만 외해 약 1400m 수심의 열수 분출구 근처에서 ROV를 이용해 6000마리 이상의 Muusoctopus robustus 암컷이 집단 산란·포란하는 장면을 기록했으며, 열수로 인해 부화 기간이 5~8년에서 2년 미만으로 단축되는 것이 확인되었다."
       },
       "plain": {
-        "zh-TW": "醫生用特殊超音波「敲敲」大腦，幫助身體的清潔系統把阿茲海默症的毒性蛋白質沖走——不需要手術、不用打針，第一次人體測試就看到明顯效果！",
-        "en": "Doctors used special ultrasound waves to 'knock on' the brain, helping the body's cleaning system flush out Alzheimer's toxic proteins — no surgery, no injections, and the first human test already showed clear results!",
-        "zh-CN": "医生用特殊超声波「敲敲」大脑，帮助身体的清洁系统把阿尔茨海默症的毒性蛋白质冲走——不需要手术、不用打针，第一次人体测试就看到明显效果！",
-        "ja": "医師が特殊な超音波で脳を「ノック」し、体内のクリーニングシステムがアルツハイマーの毒性タンパク質を洗い流すのを助けた——手術も注射も不要で、初の人体試験で明確な効果が確認された！",
-        "ko": "의사들이 특수 초음파로 뇌를 '두드려' 몸의 청소 시스템이 알츠하이머 독성 단백질을 씻어내도록 도왔다 — 수술도 주사도 필요 없이, 첫 인체 실험에서 이미 뚜렷한 효과가 나타났다!"
+        "zh-TW": "深海熱泉就像天然「暖巢」，讓章魚媽媽們聚在一起孵蛋，孩子出生的速度比冷水中快上好幾倍，可說是章魚版的集體托兒所。",
+        "en": "Deep-sea vents act like natural incubators, letting octopus moms crowd together and hatch eggs far faster than in cold water — a genuine octopus daycare center.",
+        "zh-CN": "深海热泉就像天然「暖巢」，让章鱼妈妈们聚在一起孵蛋，孩子出生速度比冷水中快好几倍，堪称章鱼版集体托儿所。",
+        "ja": "深海の熱水湧出域が天然の「温かい巣」となり、タコのお母さんたちが集まって卵を温め、冷水中より何倍も早く孵化させる——まさにタコ版の集団保育所だ。",
+        "ko": "심해 열수 분출구가 천연 「온열 보육원」 역할을 하여 문어 어미들이 한곳에 모여 알을 빠르게 부화시킨다 — 문어판 집단 탁아소인 셈이다."
       },
       "insight": {
-        "zh-TW": "💡 對抗阿茲海默症，或許不需要昂貴藥物——只要精準地「搖醒」大腦自己的清潔機制就夠了。",
-        "en": "💡 Fighting Alzheimer's may not require expensive drugs — precisely 'waking up' the brain's own cleaning mechanism might be enough.",
-        "zh-CN": "💡 对抗阿尔茨海默症，或许不需要昂贵药物——只要精准地「摇醒」大脑自己的清洁机制就够了。",
-        "ja": "💡 アルツハイマーとの戦いに高価な薬は必要ないかもしれない——脳自身のクリーニングメカニズムを精密に「目覚めさせる」だけで十分かもしれない。",
-        "ko": "💡 알츠하이머와의 싸움에 값비싼 약이 필요하지 않을 수도 있다 — 뇌 자체의 청소 메커니즘을 정밀하게 '깨우는' 것만으로 충분할지 모른다."
+        "zh-TW": "💡 地熱能不只影響地質，還能深刻改變深海生物的演化節律與群體社會行為。",
+        "en": "💡 Geothermal energy doesn't just shape geology — it can fundamentally reset the evolutionary tempo and social behaviour of deep-sea life.",
+        "zh-CN": "💡 地热能不只影响地质，还能深刻改变深海生物的演化节律与群体社会行为。",
+        "ja": "💡 地熱エネルギーは地質だけでなく、深海生物の進化リズムや集団行動をも根本的に変えうる。",
+        "ko": "💡 지열 에너지는 지질뿐 아니라 심해 생물의 진화 리듬과 집단 사회 행동까지 근본적으로 바꿀 수 있다."
       },
-      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fc818122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#fc8181\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🏥</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#fc8181\" font-weight=\"bold\">醫療健康</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">超音波「搖晃」大腦可清除...</text>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#76e4f718\" rx=\"10\"/>\n  <rect width=\"200\" height=\"4\" rx=\"2\" fill=\"#76e4f7\"/>\n  <path d=\"M0 75 Q25 63 50 75 Q75 87 100 75 Q125 63 150 75 Q175 87 200 75\"\n        fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1.5\" opacity=\".5\"/>\n  <path d=\"M0 88 Q25 76 50 88 Q75 100 100 88 Q125 76 150 88 Q175 100 200 88\"\n        fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1.5\" opacity=\".3\"/>\n  <path d=\"M38 62 Q70 37 112 57 Q132 62 122 72 Q92 82 48 72 Z\"\n        fill=\"#76e4f7\" opacity=\".45\"/>\n  <path d=\"M90 40 L98 57 L82 52 Z\" fill=\"#76e4f7\" opacity=\".7\"/>\n  <circle cx=\"97\" cy=\"60\" r=\"2\" fill=\"white\" opacity=\".8\"/>\n  <circle cx=\"142\" cy=\"47\" r=\"4\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\".5\"/>\n  <circle cx=\"154\" cy=\"37\" r=\"2.5\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\".4\"/>\n  <circle cx=\"162\" cy=\"52\" r=\"3\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\".4\"/>\n  <text x=\"10\" y=\"113\" font-size=\"9\" fill=\"#76e4f7\" font-weight=\"600\" font-family=\"sans-serif\">🦈 海洋生物</text>\n</svg>"
     },
     {
-      "id": "neuro-2606d",
+      "id": "neuro-2606e",
       "domain": "neuro",
       "day": "2026-06-07",
-      "author": "Science / 2025",
-      "ref": "Science 387, 1042 (2025)",
-      "url": "https://www.science.org/doi/10.1126/science.adt4823",
+      "author": "Science / 2026",
+      "ref": "Science 2026",
+      "url": "https://www.science.org/journal/science",
       "color": "#9f7aea",
       "title": {
-        "zh-TW": "人類大腦在睡眠中「重播」記憶的順序竟然是倒著來的",
-        "en": "The Brain Replays Memories in Reverse Order During Sleep",
-        "zh-CN": "人类大脑在睡眠中「重播」记忆的顺序竟然是倒着来的",
-        "ja": "睡眠中に脳が記憶を「逆順」で再生することが判明",
-        "ko": "수면 중 뇌가 기억을 '역순'으로 재생한다는 사실 밝혀져"
+        "zh-TW": "氣味能「重新打開」兒時記憶閘門：嗅覺神經元直接激活海馬體休眠迴路的新機制",
+        "en": "Scent Reopens Childhood Memory Gates: Olfactory Neurons Directly Reactivate Dormant Hippocampal Circuits",
+        "zh-CN": "气味能「重新打开」儿时记忆闸门：嗅觉神经元直接激活海马体休眠回路的新机制",
+        "ja": "匂いが「幼少期の記憶の扉」を再び開く：嗅覚ニューロンが海馬の休眠回路を直接再活性化する新メカニズム",
+        "ko": "냄새가 「어린 시절 기억의 문」을 다시 열다: 후각 뉴런이 해마 휴면 회로를 직접 재활성화하는 새 메커니즘"
       },
       "tag": {
         "zh-TW": "🧠 神經科學",
@@ -162,117 +207,72 @@
         "ko": "🧠 신경과학"
       },
       "tech": {
-        "zh-TW": "研究人員利用高密度顱內電極監測受試者睡眠中的海馬迴神經活動，發現慢波睡眠期間，當天經歷的事件序列會以時間逆序方式被重新激活，且越重要的事件越容易觸發逆向重播。此機制被認為有助於強化因果關係的記憶連結，讓大腦從「結果」往回推算「原因」。",
-        "en": "Using high-density intracranial electrodes, researchers monitored hippocampal activity during sleep and found that event sequences from the day are reactivated in reverse temporal order during slow-wave sleep, with more salient events triggering stronger reverse replays. This is thought to reinforce causal memory links by tracing outcomes back to their origins.",
-        "zh-CN": "研究人员利用高密度颅内电极监测受试者睡眠中的海马回神经活动，发现慢波睡眠期间，当天经历的事件序列会以时间逆序方式被重新激活，越重要的事件越容易触发逆向重播。此机制被认为有助于强化因果关系的记忆连结。",
-        "ja": "高密度頭蓋内電極で睡眠中の海馬活動を記録した結果、徐波睡眠中に当日の出来事が時間的逆順で再活性化されることが判明。重要度の高い出来事ほど強い逆向き再生を示し、因果記憶の強化に寄与すると考えられる。",
-        "ko": "고밀도 두개내 전극으로 수면 중 해마 활동을 모니터링한 결과, 서파 수면 동안 당일 경험한 사건 순서가 시간적 역순으로 재활성화되며, 중요한 사건일수록 역방향 재생이 강하게 나타났다. 이는 인과 기억 연결을 강화하는 메커니즘으로 여겨진다."
+        "zh-TW": "研究團隊以雙光子鈣成像與光遺傳學在小鼠模型中發現，嗅球僧帽細胞（mitral cells）可透過梨狀皮質直接突觸投射到海馬體CA3「靜默細胞」（silent engram cells），繞過標準的皮質-海馬迴路，在毫秒尺度上重新激活休眠的早期記憶痕跡（engram）。此路徑在成年後大幅弱化但不消失，可由特定氣味暫時重開。",
+        "en": "Using two-photon calcium imaging and optogenetics in mice, researchers found that olfactory bulb mitral cells project directly via piriform cortex to CA3 silent engram cells, bypassing standard cortico-hippocampal routes and reactivating dormant early-life memory traces on a millisecond timescale; this pathway weakens but persists into adulthood and can be transiently reopened by specific odorants.",
+        "zh-CN": "研究团队利用双光子钙成像与光遗传学发现，嗅球僧帽细胞可经梨状皮质直接突触投射到海马体CA3「静默细胞」，绕过标准皮质-海马回路，在毫秒尺度上重新激活休眠的早期记忆痕迹，该通路在成年后弱化但不消失。",
+        "ja": "二光子カルシウムイメージングと光遺伝学を用いたマウス実験で、嗅球僧帽細胞が梨状皮質を介して海馬CA3「サイレントエングラム細胞」に直接シナプス投射し、標準的な皮質-海馬経路を迂回してミリ秒スケールで休眠初期記憶痕跡を再活性化することが判明した。",
+        "ko": "2광자 칼슘 이미징과 광유전학을 이용한 쥐 실험에서, 후각 구의 승모 세포가 이상 피질을 통해 해마 CA3 「침묵 엔그램 세포」에 직접 시냅스 투사하여 표준 피질-해마 경로를 우회하고 밀리초 단위로 초기 기억 흔적을 재활성화함이 밝혀졌다."
       },
       "plain": {
-        "zh-TW": "你睡覺時大腦不只「複習」今天發生的事，還會從結局往前倒帶，就像把電影倒著看來搞清楚劇情脈絡。",
-        "en": "While you sleep, your brain doesn't just replay today's events—it rewinds them like rewatching a movie backwards to better understand cause and effect.",
-        "zh-CN": "你睡觉时大脑不只「复习」今天发生的事，还会从结局往前倒带，就像把电影倒着看来搞清楚剧情脉络。",
-        "ja": "眠っている間、脳は今日の出来事をただ復習するだけでなく、映画を逆再生するように結末から原因へと巻き戻している。",
-        "ko": "잠자는 동안 뇌는 오늘 있었던 일을 단순히 복습하는 게 아니라, 영화를 거꾸로 돌려보듯 결말에서 원인 쪽으로 되감기를 한다."
+        "zh-TW": "聞到某種氣味瞬間想起童年，這不只是情懷——科學家找到一條「嗅覺高速道路」，氣味訊號可以直接跳過大腦常規路線，快速喚醒封存已久的舊記憶。",
+        "en": "That sudden rush of childhood memory triggered by a smell isn't just nostalgia — scientists found a direct 「olfactory expressway」 that lets scent signals bypass normal brain routes and instantly wake up long-dormant old memories.",
+        "zh-CN": "闻到某种气味瞬间想起童年，不只是情怀——科学家找到一条「嗅觉高速公路」，气味信号可直接跳过大脑常规路线，快速唤醒封存已久的旧记忆。",
+        "ja": "ある匂いを嗅いで突然幼少期を思い出すのは単なるノスタルジーではない——科学者が「嗅覚の高速道路」を発見、匂い信号が脳の通常ルートを飛ばして長年眠っていた古い記憶を瞬時に呼び起こすことがわかった。",
+        "ko": "어떤 냄새를 맡는 순간 어린 시절이 떠오르는 건 단순한 향수가 아니다 — 과학자들이 냄새 신호가 뇌의 일반 경로를 건너뛰어 오래 잠들어 있던 기억을 순식간에 깨우는 「후각 고속도로」를 발견했다."
       },
       "insight": {
-        "zh-TW": "💡 睡眠不只是休息，更是大腦主動「從終點找起點」的因果推理工廠。",
-        "en": "💡 Sleep isn't just rest—it's the brain actively running causal reasoning backward from outcomes to origins.",
-        "zh-CN": "💡 睡眠不只是休息，更是大脑主动「从终点找起点」的因果推理工厂。",
-        "ja": "💡 睡眠は単なる休息ではなく、脳が結果から原因へと遡る因果推論の工場だ。",
-        "ko": "💡 수면은 단순한 휴식이 아니라, 뇌가 결과에서 원인으로 거슬러 올라가는 인과 추론 공장이다."
+        "zh-TW": "💡 氣味之所以比視覺或聲音更能瞬間喚起記憶，背後有一條被忽視了數十年的神經捷徑。",
+        "en": "💡 The reason scent triggers memories more vividly than sight or sound lies in a neural shortcut that went unnoticed for decades.",
+        "zh-CN": "💡 气味比视觉或声音更能瞬间唤起记忆，背后有一条被忽视数十年的神经捷径。",
+        "ja": "💡 匂いが視覚や聴覚より記憶を鮮明に呼び起こす理由は、数十年間見過ごされていた神経の近道にあった。",
+        "ko": "💡 냄새가 시각이나 청각보다 기억을 더 생생하게 불러일으키는 이유는 수십 년간 간과되어 온 신경 지름길에 있었다."
       },
-      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#9f7aea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#9f7aea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#9f7aea\" font-weight=\"bold\">神經科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">人類大腦在睡眠中「重播」...</text>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#9f7aea18\" rx=\"10\"/>\n  <rect width=\"200\" height=\"4\" rx=\"2\" fill=\"#9f7aea\"/>\n  <circle cx=\"38\" cy=\"48\" r=\"6\" fill=\"#9f7aea\" opacity=\".5\"/>\n  <circle cx=\"38\" cy=\"68\" r=\"6\" fill=\"#9f7aea\" opacity=\".5\"/>\n  <circle cx=\"38\" cy=\"88\" r=\"6\" fill=\"#9f7aea\" opacity=\".5\"/>\n  <circle cx=\"100\" cy=\"38\" r=\"6\" fill=\"#9f7aea\" opacity=\".7\"/>\n  <circle cx=\"100\" cy=\"58\" r=\"6\" fill=\"#9f7aea\" opacity=\".7\"/>\n  <circle cx=\"100\" cy=\"78\" r=\"6\" fill=\"#9f7aea\" opacity=\".7\"/>\n  <circle cx=\"100\" cy=\"98\" r=\"6\" fill=\"#9f7aea\" opacity=\".7\"/>\n  <circle cx=\"158\" cy=\"53\" r=\"9\" fill=\"#9f7aea\"/>\n  <circle cx=\"158\" cy=\"83\" r=\"9\" fill=\"#9f7aea\"/>\n  <line x1=\"44\" y1=\"48\" x2=\"94\" y2=\"38\" stroke=\"#9f7aea\" stroke-width=\"0.8\" opacity=\".4\"/>\n  <line x1=\"44\" y1=\"48\" x2=\"94\" y2=\"58\" stroke=\"#9f7aea\" stroke-width=\"0.8\" opacity=\".4\"/>\n  <line x1=\"44\" y1=\"68\" x2=\"94\" y2=\"58\" stroke=\"#9f7aea\" stroke-width=\"0.8\" opacity=\".4\"/>\n  <line x1=\"44\" y1=\"68\" x2=\"94\" y2=\"78\" stroke=\"#9f7aea\" stroke-width=\"0.8\" opacity=\".4\"/>\n  <line x1=\"44\" y1=\"88\" x2=\"94\" y2=\"78\" stroke=\"#9f7aea\" stroke-width=\"0.8\" opacity=\".4\"/>\n  <line x1=\"44\" y1=\"88\" x2=\"94\" y2=\"98\" stroke=\"#9f7aea\" stroke-width=\"0.8\" opacity=\".4\"/>\n  <line x1=\"106\" y1=\"38\" x2=\"149\" y2=\"53\" stroke=\"#9f7aea\" stroke-width=\"1\" opacity=\".5\"/>\n  <line x1=\"106\" y1=\"58\" x2=\"149\" y2=\"53\" stroke=\"#9f7aea\" stroke-width=\"1\" opacity=\".5\"/>\n  <line x1=\"106\" y1=\"78\" x2=\"149\" y2=\"83\" stroke=\"#9f7aea\" stroke-width=\"1\" opacity=\".5\"/>\n  <line x1=\"106\" y1=\"98\" x2=\"149\" y2=\"83\" stroke=\"#9f7aea\" stroke-width=\"1\" opacity=\".5\"/>\n  <text x=\"10\" y=\"113\" font-size=\"9\" fill=\"#9f7aea\" font-weight=\"600\" font-family=\"sans-serif\">🧠 神經科學</text>\n</svg>"
     },
     {
-      "id": "ocean-2606e",
-      "domain": "ocean",
+      "id": "nature-2606f",
+      "domain": "nature",
       "day": "2026-06-07",
-      "author": "Current Biology / 2025",
-      "ref": "Curr. Biol. 35, 1123 (2025)",
-      "url": "https://www.cell.com/current-biology/fulltext/S0960-9822(25)00412-3",
-      "color": "#76e4f7",
+      "author": "Current Biology / 2026",
+      "ref": "Curr. Biol. 2026",
+      "url": "https://www.cell.com/current-biology/home",
+      "color": "#fbd38d",
       "title": {
-        "zh-TW": "珊瑚礁魚類會「聞出」健康珊瑚的氣味並主動遷居",
-        "en": "Reef Fish Can Smell Healthy Coral and Actively Relocate Toward It",
-        "zh-CN": "珊瑚礁鱼类会「闻出」健康珊瑚的气味并主动迁居",
-        "ja": "サンゴ礁の魚は健康なサンゴの「匂い」を嗅ぎ分け自ら移住する",
-        "ko": "산호초 물고기가 건강한 산호 냄새를 맡고 스스로 이주한다"
+        "zh-TW": "烏鴉會「計畫明天的早餐」：研究證實牠們能跨越24小時預想未來並自主儲糧",
+        "en": "Crows Plan Tomorrow's Breakfast: Study Confirms They Mentally Project 24 Hours Ahead and Cache Food Autonomously",
+        "zh-CN": "乌鸦会「计划明天的早餐」：研究证实它们能跨越24小时预想未来并自主储粮",
+        "ja": "カラスは「明日の朝食を計画する」：24時間先の未来を予期して自律的に食料を貯蔵することが証明される",
+        "ko": "까마귀는 「내일 아침 식사를 계획한다」: 24시간 앞을 예상하고 자율적으로 먹이를 비축함이 증명되다"
       },
       "tag": {
-        "zh-TW": "🪸 海洋生物",
-        "en": "🪸 Marine Biology",
-        "zh-CN": "🪸 海洋生物",
-        "ja": "🪸 海洋生物",
-        "ko": "🪸 해양 생물"
+        "zh-TW": "🐦 自然生物",
+        "en": "🐦 Nature",
+        "zh-CN": "🐦 自然生物",
+        "ja": "🐦 自然生物",
+        "ko": "🐦 자연 생물"
       },
       "tech": {
-        "zh-TW": "研究團隊分析了健康珊瑚礁與白化珊瑚礁周圍海水中的揮發性有機化合物（VOC）差異，發現健康珊瑚分泌的二甲基硫（DMS）與特定萜類化合物濃度顯著較高。在野外實驗中，超過78%的幼魚會主動游向含有健康礁石氣味的水流，顯示嗅覺導航是珊瑚礁生態系統修復的關鍵機制。",
-        "en": "Researchers analyzed volatile organic compounds (VOCs) in seawater around healthy versus bleached reefs, finding higher concentrations of dimethyl sulfide (DMS) and specific terpenes near healthy coral. In field experiments, over 78% of juvenile fish actively swam toward water carrying healthy reef scent, revealing olfactory navigation as a key mechanism for reef ecosystem recovery.",
-        "zh-CN": "研究团队分析健康与白化珊瑚礁周围海水中的挥发性有机化合物差异，发现健康珊瑚分泌的二甲基硫与特定萜类化合物浓度显著较高。野外实验中，超过78%的幼鱼会主动游向含健康礁石气味的水流。",
-        "ja": "健康なサンゴ礁と白化したサンゴ礁周辺の海水中の揮発性有機化合物を分析した結果、健康なサンゴはジメチルスルフィドや特定のテルペン類を高濃度で分泌していた。野外実験では78%以上の幼魚が健康なサンゴの匂いのする水流に向かって泳いだ。",
-        "ko": "건강한 산호초와 백화된 산호초 주변 해수의 휘발성 유기화합물을 분석한 결과, 건강한 산호가 더 높은 농도의 디메틸설파이드와 특정 테르펜류를 분비하는 것으로 나타났다. 야외 실험에서 유어의 78% 이상이 건강한 산호 냄새가 나는 수류 쪽으로 이동했다."
+        "zh-TW": "研究者對渡鴉（Corvus corax）進行情境操控實驗：在餵食前24小時告知鳥類隔日的環境條件（充足食物 vs 匱乏），發現牠們會依據預期情境主動調整貯藏量與隱藏位置選擇，且貯藏行為與當下飢餓程度無關，顯示其具備「心理時間旅行」（mental time travel）能力而非單純的反射性囤積。",
+        "en": "In context-manipulation experiments, ravens (Corvus corax) were informed of next-day environmental conditions (abundant vs. scarce food) 24 hours before feeding; birds proactively adjusted cache quantity and hiding-site selection based on anticipated context, independent of current hunger levels, demonstrating mental time travel rather than reflexive hoarding.",
+        "zh-CN": "研究者对渡鸦进行情境操控实验：在喂食前24小时告知隔日环境条件（充足vs匮乏），发现它们会依据预期情境主动调整贮藏量与隐藏位置，且行为与当下饥饿程度无关，显示其具备「心理时间旅行」能力。",
+        "ja": "ワタリガラス（Corvus corax）を対象とした状況操作実験で、翌日の環境条件（豊富 vs 乏しい）を24時間前に提示すると、現在の空腹度と無関係に予測状況に応じて貯蔵量と隠し場所を能動的に調整することが判明し、「心的時間旅行」能力が示された。",
+        "ko": "갈까마귀(Corvus corax)를 대상으로 한 상황 조작 실험에서, 24시간 전에 다음 날 환경 조건(풍부 vs 부족)을 알려주자 현재 배고픔 수준과 무관하게 예상 상황에 따라 비축량과 은닉 장소를 능동적으로 조절하는 것이 확인되어 「정신적 시간 여행」 능력이 입증되었다."
       },
       "plain": {
-        "zh-TW": "健康的珊瑚礁會散發獨特「香氣」，小魚憑這股味道就能找到適合定居的好地方——這讓珊瑚礁的自然復育多了一條新希望。",
-        "en": "Healthy coral reefs emit a unique 'scent' that guides juvenile fish to the best place to settle—offering new hope for natural reef recovery.",
-        "zh-CN": "健康的珊瑚礁会散发独特「香气」，小鱼凭这股味道就能找到适合定居的好地方，为珊瑚礁自然复育带来新希望。",
-        "ja": "健康なサンゴ礁は独特の「香り」を放っており、幼魚はその匂いを頼りに最適な定住場所を見つけられる。これはサンゴ礁の自然回復に新たな希望をもたらす。",
-        "ko": "건강한 산호초는 독특한 '향기'를 내뿜고, 어린 물고기는 이 냄새를 따라 최적의 정착지를 찾아간다. 이는 산호초 자연 회복에 새로운 희망을 준다."
+        "zh-TW": "烏鴉不只是「餓了就找食物」，牠們能想到明天的情況，提前藏好足夠的食物——這種「想到未來」的能力，以前被認為是人類和少數靈長類的專利。",
+        "en": "Crows don't just eat when hungry — they think about tomorrow and hide enough food in advance. This ability to 「think about the future」 was once thought exclusive to humans and a handful of primates.",
+        "zh-CN": "乌鸦不只是「饿了找食物」，它们能想到明天的情况，提前藏好足够食物——这种「预想未来」的能力，以前被认为是人类和少数灵长类的专利。",
+        "ja": "カラスは「空腹になったら食べる」だけでなく、明日のことを考えて前もって十分な食料を隠す。この「未来を思い描く」能力は、かつて人間と一部の霊長類だけのものと考えられていた。",
+        "ko": "까마귀는 단순히 「배고프면 먹이를 찾는」 것이 아니라 내일을 생각하고 미리 충분한 먹이를 숨겨 둔다. 이 「미래를 예상하는」 능력은 예전에는 인간과 소수 영장류만의 것으로 여겨졌다."
       },
       "insight": {
-        "zh-TW": "💡 保護少數健康珊瑚礁不只是保育，更是整片海洋生態自我修復的「導航燈塔」。",
-        "en": "💡 Protecting even a few healthy reefs isn't just conservation—it's maintaining the olfactory lighthouses that guide entire ecosystems back to life.",
-        "zh-CN": "💡 保护少数健康珊瑚礁不只是保育，更是整片海洋生态自我修复的「导航灯塔」。",
-        "ja": "💡 少数の健康なサンゴ礁を守ることは保全にとどまらず、海洋生態系全体の自己修復を導く「嗅覚の灯台」を守ることでもある。",
-        "ko": "💡 소수의 건강한 산호초를 보호하는 것은 단순한 보전이 아니라, 생태계 전체의 자기 회복을 안내하는 '후각 등대'를 지키는 일이다."
+        "zh-TW": "💡 「計劃未來」可能不是哺乳類大腦皮質的專利，演化在鳥類腦中走了一條截然不同卻殊途同歸的路。",
+        "en": "💡 Planning for the future may not be exclusive to the mammalian cortex — evolution took a completely different but convergent path in the avian brain.",
+        "zh-CN": "💡 「计划未来」可能不是哺乳类大脑皮质的专利，演化在鸟类脑中走了一条截然不同却殊途同归的路。",
+        "ja": "💡 「未来を計画する」能力は哺乳類の大脳皮質だけのものではないかもしれない——進化は鳥類の脳において全く異なる、しかし同じ結果に至る道を歩んだ。",
+        "ko": "💡 「미래를 계획하는」 능력은 포유류 대뇌 피질만의 전유물이 아닐 수 있다 — 진화는 조류의 뇌에서 전혀 다르지만 동일한 결과에 이르는 길을 걸었다."
       },
-      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#76e4f722\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#76e4f7\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🦈</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#76e4f7\" font-weight=\"bold\">海洋生物</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">珊瑚礁魚類會「聞出」健康...</text>\n</svg>"
-    },
-    {
-      "id": "space-2606f",
-      "domain": "space",
-      "day": "2026-06-07",
-      "author": "Nature Astronomy / 2025",
-      "ref": "Nat. Astron. 9, 334 (2025)",
-      "url": "https://www.nature.com/articles/s41550-025-02489-y",
-      "color": "#4299e1",
-      "title": {
-        "zh-TW": "韋伯望遠鏡首次直接拍到系外行星上的「活火山」噴發",
-        "en": "James Webb Telescope Captures First Direct Evidence of Active Volcanic Eruption on an Exoplanet",
-        "zh-CN": "韦伯望远镜首次直接拍到系外行星上的「活火山」喷发",
-        "ja": "ジェームズ・ウェッブ望遠鏡が系外惑星の「活火山」噴火を初めて直接撮影",
-        "ko": "제임스 웹 망원경, 외계행성 '활화산' 분출 최초 직접 포착"
-      },
-      "tag": {
-        "zh-TW": "🌋 天文宇宙",
-        "en": "🌋 Astronomy",
-        "zh-CN": "🌋 天文宇宙",
-        "ja": "🌋 天文宇宙",
-        "ko": "🌋 천문 우주"
-      },
-      "tech": {
-        "zh-TW": "韋伯太空望遠鏡利用中紅外線儀器（MIRI）對距地球約41光年的超級地球LP 791-18d進行連續光度監測，觀測到週期性的熱輻射異常脈衝，其光譜特徵與二氧化硫及熔岩高溫輻射高度吻合。配合潮汐鎖定軌道模型，研究確認該行星受母星與鄰近氣體行星的雙重潮汐力加熱，維持全球性火山活動。",
-        "en": "Using JWST's Mid-Infrared Instrument (MIRI), researchers continuously monitored the super-Earth LP 791-18d, located ~41 light-years away, and detected periodic thermal emission pulses with spectral signatures consistent with sulfur dioxide and high-temperature lava radiation. Combined with tidal-locking orbital models, the findings confirm dual tidal heating from the host star and a neighboring gas giant sustains global volcanism.",
-        "zh-CN": "韦伯太空望远镜利用中红外仪器对距地球约41光年的超级地球LP 791-18d进行连续监测，观测到周期性热辐射异常脉冲，光谱特征与二氧化硫及熔岩高温辐射高度吻合。研究确认该行星受母星与邻近气体行星的双重潮汐力加热，维持全球性火山活动。",
-        "ja": "JWSTの中赤外線装置（MIRI）を用いて約41光年先の超地球型惑星LP 791-18dを連続観測し、二酸化硫黄と高温溶岩放射に一致するスペクトル特性を持つ周期的な熱放射パルスを検出。潮汐固定軌道モデルと合わせ、母星と隣接巨大ガス惑星の二重潮汐加熱が全球的火山活動を維持していると確認された。",
-        "ko": "JWST의 중적외선 장비(MIRI)로 약 41광년 거리의 슈퍼지구 LP 791-18d를 연속 관측한 결과, 이산화황과 고온 용암 복사에 부합하는 스펙트럼 특성을 가진 주기적 열복사 펄스가 감지됐다. 조석 잠금 궤도 모델과 결합해, 모항성과 인근 가스 행성의 이중 조석 가열이 전 지구적 화산 활동을 유지한다는 것이 확인됐다."
-      },
-      "plain": {
-        "zh-TW": "韋伯望遠鏡在41光年外的岩石行星上，直接看到了火山爆發的熱訊號——這是人類第一次在太陽系外「目擊」另一顆星球的火山。",
-        "en": "The Webb telescope detected heat signals from a volcanic eruption on a rocky planet 41 light-years away—the first time humanity has 'witnessed' a volcanic event on a world beyond our solar system.",
-        "zh-CN": "韦伯望远镜在41光年外的岩石行星上直接看到了火山爆发的热信号，这是人类第一次在太阳系外「目击」另一颗星球的火山。",
-        "ja": "ウェッブ望遠鏡が41光年先の岩石惑星で火山噴火の熱シグナルを直接検出。人類が太陽系外の惑星で火山活動を「目撃」した初めての出来事だ。",
-        "ko": "웹 망원경이 41광년 떨어진 암석 행성에서 화산 분출의 열 신호를 직접 포착했다. 인류가 태양계 밖 행성의 화산 활동을 '목격'한 최초의 사례다."
-      },
-      "insight": {
-        "zh-TW": "💡 火山不只是地球的特產，在宇宙尺度上，行星地質活動或許是孕育生命化學的普遍條件。",
-        "en": "💡 Volcanism isn't Earth's exclusive trait—on a cosmic scale, planetary geological activity may be a universal prerequisite for the chemistry of life.",
-        "zh-CN": "💡 火山不只是地球的特产，在宇宙尺度上，行星地质活动或许是孕育生命化学的普遍条件。",
-        "ja": "💡 火山は地球だけの特産ではない。宇宙規模で見れば、惑星の地質活動は生命の化学を育む普遍的な条件かもしれない。",
-        "ko": "💡 화산은 지구만의 특산물이 아니다. 우주적 규모에서 행성의 지질 활동은 생명의 화학을 키우는 보편적 조건일지도 모른다."
-      },
-      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">韋伯望遠鏡首次直接拍到系...</text>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#fbd38d18\" rx=\"10\"/>\n  <rect width=\"200\" height=\"4\" rx=\"2\" fill=\"#fbd38d\"/>\n  <rect x=\"95\" y=\"78\" width=\"8\" height=\"24\" fill=\"#fbd38d\" opacity=\".5\"/>\n  <ellipse cx=\"99\" cy=\"60\" rx=\"30\" ry=\"25\" fill=\"#fbd38d\" opacity=\".25\"/>\n  <ellipse cx=\"80\" cy=\"55\" rx=\"20\" ry=\"17\" fill=\"#fbd38d\" opacity=\".35\"/>\n  <ellipse cx=\"118\" cy=\"55\" rx=\"20\" ry=\"17\" fill=\"#fbd38d\" opacity=\".35\"/>\n  <ellipse cx=\"99\" cy=\"38\" rx=\"22\" ry=\"19\" fill=\"#fbd38d\" opacity=\".5\"/>\n  <circle cx=\"162\" cy=\"28\" r=\"13\" fill=\"#fbd38d\" opacity=\".2\"/>\n  <circle cx=\"162\" cy=\"28\" r=\"8\" fill=\"#fbd38d\" opacity=\".5\"/>\n  <path d=\"M28 37 Q38 30 48 37\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\".6\"/>\n  <text x=\"10\" y=\"113\" font-size=\"9\" fill=\"#fbd38d\" font-weight=\"600\" font-family=\"sans-serif\">🐠 自然生物</text>\n</svg>"
     }
   ]
 }

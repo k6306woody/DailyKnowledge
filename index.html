@@ -148,6 +148,9 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 [data-theme=dark] .insight{color:var(--tf-b);background:rgba(77,189,181,.08)}
 .cfoot{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--bd)}
 .ref{font-size:calc(10.5px * var(--fz));font-weight:600;color:var(--tx3)}
+.ref-link{font-size:calc(10.5px * var(--fz));font-weight:600;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:6px;background:var(--bg3);transition:background .15s,color .15s}
+.ref-link:hover{background:var(--accent);color:#fff}
+.plain-label{font-size:calc(10px * var(--fz));font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:-6px}
 .heart-btn{background:none;font-size:18px;padding:2px 6px;border-radius:8px;transition:transform .15s}
 .heart-btn:hover{transform:scale(1.2)}
 .heart-btn.liked{color:#e05}
@@ -612,15 +615,18 @@ function renderCards(){
     el.dataset.domain=c.domain; el.dataset.day=c.day; el.dataset.id=c.id;
     el.style.animationDelay=(i*0.06)+'s';
     el.innerHTML=`
-      <div class="stripe"></div>
+      <div class="stripe" style="background:${c.color||'var(--accent)'}"></div>
       <div class="illus">${c.illus||''}</div>
       <div class="cbody">
         <span class="dtag">${ct.tag}</span>
         <h2>${ct.title}</h2>
+        <p class="plain-label">💬 白話解說</p>
         <p class="intro">${ct.plain}</p>
         <div class="insight">${ct.insight}</div>
         <div class="cfoot">
-          <span class="ref">${c.ref}</span>
+          ${c.url
+            ? `<a class="ref-link" href="${c.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📄 ${c.ref}</a>`
+            : `<span class="ref">${c.ref}</span>`}
           <div style="display:flex;align-items:center;gap:6px">
             <button class="heart-btn${liked?' liked':''}" data-id="${c.id}">${liked?'❤️':'🤍'}</button>
             <span class="heart-count">${lc||''}</span>
@@ -657,8 +663,12 @@ function openModal(id){
   document.getElementById('m-plain').textContent=ct.plain;
   document.getElementById('m-insight').textContent=ct.insight;
   const link=document.getElementById('m-link');
-  link.href=c.url; link.style.background=c.color;
-  link.querySelector('[data-key="read"]').textContent=t.read;
+  if(c.url){
+    link.href=c.url; link.style.background=c.color; link.style.display='';
+    link.querySelector('[data-key="read"]').textContent=T[curLang]?.read||'閱讀原文論文';
+  } else {
+    link.style.display='none';
+  }
   const hbtn=document.getElementById('m-heart');
   const liked=isLiked(id);
   hbtn.className='modal-heart'+(liked?' liked':'');

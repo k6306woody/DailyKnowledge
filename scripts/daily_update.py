@@ -117,15 +117,43 @@ def save_history(history, date_str, mode, topics):
 
 # ── Anthropic API 呼叫 ────────────────────────────────────────────────────
 def sanitize_json(text):
-    """修復 Claude 常見的 JSON 格式問題"""
-    # 把中文引號「」『』《》換成直角引號（避免破壞 JSON 字串）
-    replacements = [
-        ('“', '「'), ('”', '」'),  # " " → 「 」
-        ('‘', "'"), ('’', "'"),              # ' ' → '
-    ]
-    for old, new in replacements:
-        text = text.replace(old, new)
+    # Fix common JSON issues from Claude output
+    # Use chr() to avoid Python 3.12+ syntax error with smart quotes
+    text = text.replace(chr(0x201C), chr(0x300C))   # left double quote
+    text = text.replace(chr(0x201D), chr(0x300D))   # right double quote
+    text = text.replace(chr(0x2018), "'")
+    text = text.replace(chr(0x2019), "'")
     return text
+
+def repair_json_str(raw_json):
+    """Try to fix JSON strings with unescaped double quotes."""
+    result = []
+    in_string = False
+    escape_next = False
+    i = 0
+    while i < len(raw_json):
+        ch = raw_json[i]
+        if escape_next:
+            result.append(ch)
+            escape_next = False
+        elif ch == chr(92):  # backslash
+            result.append(ch)
+            escape_next = True
+        elif ch == chr(34):  # double quote
+            if not in_string:
+                in_string = True
+                result.append(ch)
+            else:
+                rest = raw_json[i+1:].lstrip()
+                if rest and rest[0] in (",", "}", "]", ":"):
+                    in_string = False
+                    result.append(ch)
+                else:
+                    result.append(chr(0xFF02))  # fullwidth quotation mark
+        else:
+            result.append(ch)
+        i += 1
+    return "".join(result)
 
 def extract_json(raw):
     """從 Claude 回傳文字中取出 JSON 陣列，容忍 markdown code block 包裝"""
@@ -195,8 +223,8 @@ def _paper_prompt(today_str, paper_date, recent_str, domains):
 - ref 用真實 arXiv ID（2606.XXXXX）
 - color 用對應領域色碼（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, fin:#f687b3, arch:#a0aec0, health:#fc8181）
 - 每個語言的 tech/plain/insight 各限 **1 句話**，絕對不要超過 50 個字
-- JSON 字串值中禁止使用中文引號「""」，改用「」
-- 只輸出 JSON 陣列"""
+- JSON 字串值內禁止出現任何 ASCII 雙引號 "，需要引號請用「」或（）代替
+- 只輸出 JSON 陣列，不加任何說明"""
 
 
 def generate_cards_paper(date_info, recent_topics):
@@ -215,8 +243,14 @@ def generate_cards_paper(date_info, recent_topics):
         try:
             cards = json.loads(json_str)
         except json.JSONDecodeError as e:
-            log.error(f"論文第{batch_num}批 JSON 錯誤: {e}, 附近: {json_str[max(0,e.pos-80):e.pos+80]}")
-            raise
+            log.warning(f"論文第{batch_num}批 JSON 初次解析失敗: {e}，嘗試 repair...")
+            try:
+                repaired = repair_json_str(json_str)
+                cards = json.loads(repaired)
+                log.info(f"論文第{batch_num}批 repair 成功")
+            except json.JSONDecodeError as e2:
+                log.error(f"論文第{batch_num}批 JSON 仍無法解析: {e2}, 附近: {json_str[max(0,e.pos-80):e.pos+80]}")
+                raise e2
         log.info(f"論文第{batch_num}批生成 {len(cards)} 張卡片")
         all_cards.extend(cards)
 
@@ -260,7 +294,8 @@ def _weekend_prompt(today_str, recent_str, batch, suffixes):
 重要：
 - id 後綴依序用 {suffix_list}
 - 每個領域用對應的 color（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, health:#fc8181, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, nature:#fbd38d, fin:#f687b3, arch:#a0aec0）
-- url 盡量填真實文章連結
+- url 盡量填真實文章連結（Nature / Science / arXiv / DOI）
+- JSON 字串值內禁止出現任何 ASCII 雙引號 "，需要引號請用「」或（）代替
 - 只輸出 JSON 陣列，不要有任何說明文字"""
 
 
@@ -279,9 +314,15 @@ def generate_cards_weekend(date_info, recent_topics):
         try:
             cards = json.loads(json_str)
         except json.JSONDecodeError as e:
-            log.error(f"第{batch}批 JSON 解析失敗: {e}")
-            log.error(f"問題附近: {json_str[max(0,e.pos-100):e.pos+100]}")
-            raise
+            log.warning(f"第{batch}批 JSON 初次解析失敗: {e}，嘗試 repair...")
+            try:
+                repaired = repair_json_str(json_str)
+                cards = json.loads(repaired)
+                log.info(f"第{batch}批 repair 成功")
+            except json.JSONDecodeError as e2:
+                log.error(f"第{batch}批 JSON 仍無法解析: {e2}")
+                log.error(f"問題附近: {json_str[max(0,e.pos-100):e.pos+100]}")
+                raise e2
         log.info(f"第{batch}批生成 {len(cards)} 張週末趣知卡片")
         all_cards.extend(cards)
 
