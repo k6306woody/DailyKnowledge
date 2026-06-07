@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-05",
+  "mode": "paper",
+  "paper_date": "2026-06-05",
+  "generated_at": "2026-06-07",
+  "cards": [
+    {
+      "id": "ai-2606",
+      "domain": "ai",
+      "day": "2026-06-05",
+      "author": "Chen et al. 2026",
+      "ref": "arXiv:2606.03142",
+      "url": "https://arxiv.org/abs/2606.03142",
+      "color": "#667eea",
+      "title": {
+        "zh-TW": "無需梯度的大型語言模型推理時對齊：黑箱偏好優化新框架",
+        "en": "Gradient-Free Inference-Time Alignment for LLMs via Black-Box Preference Optimization",
+        "zh-CN": "无需梯度的大型语言模型推理时对齐：黑盒偏好优化新框架",
+        "ja": "勾配不要の推論時LLMアライメント：ブラックボックス選好最適化",
+        "ko": "기울기 없는 추론 시 LLM 정렬: 블랙박스 선호도 최적화 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 AI",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "利用黑箱偏好信號在推理階段動態調整輸出分布，無需反向傳播即可達到對齊效果。",
+        "en": "Aligns LLM outputs at inference time using black-box preference signals without any gradient computation.",
+        "zh-CN": "利用黑箱偏好信号在推理阶段动态调整输出分布，无需反向传播即可对齐。",
+        "ja": "逆伝播なしに推論時点で黒箱選好信号を用いてLLM出力を動的に整合させる。",
+        "ko": "역전파 없이 추론 시점에서 블랙박스 선호 신호로 LLM 출력을 동적으로 정렬한다."
+      },
+      "plain": {
+        "zh-TW": "不用重新訓練 AI，就能在對話當下即時調整它的回答風格與安全性。",
+        "en": "Adjusts AI behavior on-the-fly during conversation without retraining the model.",
+        "zh-CN": "无需重新训练 AI，就能在对话当下即时调整回答风格与安全性。",
+        "ja": "再学習なしで会話中にリアルタイムでAIの返答スタイルを調整できる。",
+        "ko": "모델 재훈련 없이 대화 중 실시간으로 AI 응답 방식을 조정할 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 對齊不再需要昂貴的微調，推理即訓練的範式正在重塑 AI 安全部署方式。",
+        "en": "💡 Alignment without fine-tuning reshapes how safe AI deployment is approached at scale.",
+        "zh-CN": "💡 对齐不再需要昂贵的微调，推理即训练正在重塑 AI 安全部署方式。",
+        "ja": "💡 高コストなファインチューニング不要のアライメントがAI安全展開の概念を変える。",
+        "ko": "💡 파인튜닝 없는 정렬이 AI 안전 배포 방식을 근본적으로 바꾸고 있다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#667eea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#667eea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🤖</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#667eea\" font-weight=\"bold\">人工智慧</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">無需梯度的大型語言模型推...</text>\n</svg>"
+    },
+    {
+      "id": "bio-2606",
+      "domain": "bio",
+      "day": "2026-06-05",
+      "author": "Okafor et al. 2026",
+      "ref": "arXiv:2606.03389",
+      "url": "https://arxiv.org/abs/2606.03389",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "單細胞多組學揭示衰老T細胞如何驅動腫瘤微環境中的免疫逃逸",
+        "en": "Single-Cell Multi-Omics Reveals Senescent T Cells Drive Immune Evasion in the Tumor Microenvironment",
+        "zh-CN": "单细胞多组学揭示衰老T细胞如何驱动肿瘤微环境中的免疫逃逸",
+        "ja": "単一細胞マルチオミクスが老化T細胞による腫瘍微環境での免疫回避を解明",
+        "ko": "단일세포 멀티오믹스로 노화 T세포가 종양 미세환경에서 면역 회피를 유도함을 규명"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "結合 scRNA-seq 與 ATAC-seq，精確定位腫瘤內衰老 T 細胞的表觀遺傳重塑與訊號軸。",
+        "en": "Combines scRNA-seq and ATAC-seq to map epigenetic remodeling in senescent intra-tumoral T cells.",
+        "zh-CN": "结合 scRNA-seq 与 ATAC-seq，定位肿瘤内衰老 T 细胞的表观遗传重塑与信号轴。",
+        "ja": "scRNA-seqとATAC-seqを統合し腫瘍内老化T細胞のエピゲノム再編成を精密に解析。",
+        "ko": "scRNA-seq와 ATAC-seq를 결합해 종양 내 노화 T세포의 후성유전체 재편을 정밀 분석했다."
+      },
+      "plain": {
+        "zh-TW": "癌症腫瘤裡有一群「老化」的免疫細胞，它們不但失去攻擊力，還會幫助腫瘤躲避攻擊。",
+        "en": "Aged immune cells inside tumors not only lose fighting ability but actively help cancer hide.",
+        "zh-CN": "癌症肿瘤里有一群老化免疫细胞，它们不但失去攻击力，还帮助肿瘤躲避攻击。",
+        "ja": "腫瘍内の老化免疫細胞は攻撃力を失うだけでなく、がんが免疫から逃れるのを助ける。",
+        "ko": "종양 속 노화 면역세포는 공격력을 잃을 뿐 아니라 암이 면역을 회피하도록 돕는다."
+      },
+      "insight": {
+        "zh-TW": "💡 靶向清除衰老 T 細胞或能成為突破免疫療法瓶頸的全新策略。",
+        "en": "💡 Targeting senescent T cells could be the key to overcoming immunotherapy resistance.",
+        "zh-CN": "💡 靶向清除衰老 T 细胞或能成为突破免疫疗法瓶颈的全新策略。",
+        "ja": "💡 老化T細胞の選択的除去が免疫療法の耐性克服につながる新戦略となりうる。",
+        "ko": "💡 노화 T세포를 선택적으로 제거하는 것이 면역요법 내성 극복의 새 전략이 될 수 있다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#48bb7822\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#48bb78\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧬</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#48bb78\" font-weight=\"bold\">生命科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">單細胞多組學揭示衰老T細...</text>\n</svg>"
+    },
+    {
+      "id": "phys-2606",
+      "domain": "phys",
+      "day": "2026-06-05",
+      "author": "Nakamura et al. 2026",
+      "ref": "arXiv:2606.03571",
+      "url": "https://arxiv.org/abs/2606.03571",
+      "color": "#ed8936",
+      "title": {
+        "zh-TW": "在二維莫爾超晶格中觀測到分數量子反常霍爾態的電荷中性激發",
+        "en": "Charge-Neutral Excitations of Fractional Quantum Anomalous Hall States in 2D Moiré Superlattices",
+        "zh-CN": "在二维莫尔超晶格中观测到分数量子反常霍尔态的电荷中性激发",
+        "ja": "2Dモアレ超格子における分数量子異常ホール状態の電荷中性励起の観測",
+        "ko": "2D 모아레 초격자에서 분수 양자 이상 홀 상태의 전하 중성 여기 관측"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자물리"
+      },
+      "tech": {
+        "zh-TW": "透過低溫掃描隧穿光譜在扭轉雙層 MoTe₂ 中首次分辨出分數霍爾態的中性集體模。",
+        "en": "Low-temperature STM spectroscopy resolves neutral collective modes of fractional Hall states in twisted MoTe₂.",
+        "zh-CN": "通过低温扫描隧穿光谱在扭转双层 MoTe₂ 中首次分辨出分数霍尔态的中性集体模。",
+        "ja": "低温STM分光法でねじれ二層MoTe₂の分数ホール状態の中性集団モードを初めて分解した。",
+        "ko": "저온 STM 분광법으로 비틀린 이중층 MoTe₂에서 분수 홀 상태의 중성 집단 모드를 최초 분해했다."
+      },
+      "plain": {
+        "zh-TW": "科學家在兩層微微錯位的材料中，捕捉到量子霍爾態裡一種幾乎隱形的奇特振動模式。",
+        "en": "Scientists captured a nearly invisible exotic vibration inside quantum Hall states in slightly twisted bilayer materials.",
+        "zh-CN": "科学家在两层微微错位的材料中，捕捉到量子霍尔态里一种几乎隐形的奇特振动模式。",
+        "ja": "わずかにずれた二層材料の中で、量子ホール状態にある幻のような振動モードを捉えた。",
+        "ko": "약간 비틀린 이중층 소재 안에서 양자 홀 상태의 거의 보이지 않는 진동 모드를 포착했다."
+      },
+      "insight": {
+        "zh-TW": "💡 這類中性激發是拓撲量子計算的關鍵資訊載體，觀測突破為量子位元操控開闢新路。",
+        "en": "💡 These neutral excitations are key information carriers for topological quantum computing.",
+        "zh-CN": "💡 这类中性激发是拓扑量子计算的关键信息载体，观测突破为量子比特操控开辟新路。",
+        "ja": "💡 この中性励起はトポロジカル量子計算の鍵となる情報担体であり、量子ビット制御に道を開く。",
+        "ko": "💡 이 중성 여기는 위상 양자 컴퓨팅의 핵심 정보 담체로, 큐비트 제어의 새 길을 연다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#ed893622\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#ed8936\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">⚛️</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#ed8936\" font-weight=\"bold\">物理科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">在二維莫爾超晶格中觀測到...</text>\n</svg>"
+    },
+    {
+      "id": "neuro-2606",
+      "domain": "neuro",
+      "day": "2026-06-05",
+      "author": "Yamamoto et al. 2026",
+      "ref": "arXiv:2606.03412",
+      "url": "https://arxiv.org/abs/2606.03412",
+      "color": "#9f7aea",
+      "title": {
+        "zh-TW": "前額葉皮質的跨頻耦合在工作記憶編碼中調控神經元集群的動態同步",
+        "en": "Cross-Frequency Coupling in Prefrontal Cortex Regulates Neuronal Ensemble Synchrony During Working Memory Encoding",
+        "zh-CN": "前额叶皮质的跨频耦合在工作记忆编码中调控神经元集群的动态同步",
+        "ja": "前頭前野のクロス周波数結合が作業記憶符号化中のニューロンアンサンブル同期を制御する",
+        "ko": "전전두엽 피질의 교차 주파수 결합이 작업 기억 부호화 중 신경 집합 동기화를 조절한다"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究利用高密度電極陣列記錄靈長類前額葉皮質，發現 theta-gamma 跨頻耦合強度直接決定工作記憶容量上限。",
+        "en": "High-density electrode arrays in primate PFC revealed that theta-gamma cross-frequency coupling strength directly sets working memory capacity limits.",
+        "zh-CN": "高密度电极阵列记录灵长类前额叶皮质，发现 theta-gamma 跨频耦合强度直接决定工作记忆容量上限。",
+        "ja": "高密度電極アレイで霊長類PFCを記録し、シータ-ガンマ結合強度が作業記憶容量の上限を決定することを発見した。",
+        "ko": "고밀도 전극 배열로 영장류 전전두엽을 기록해 theta-gamma 교차 주파수 결합 강도가 작업 기억 용량 상한을 결정함을 밝혔다."
+      },
+      "plain": {
+        "zh-TW": "大腦用不同頻率的電波「打節拍」來決定短期記憶能同時儲存多少件事。",
+        "en": "The brain uses rhythmic electrical beats at different frequencies to determine how many items short-term memory can hold at once.",
+        "zh-CN": "大脑用不同频率的电波打节拍来决定短期记忆能同时储存多少件事。",
+        "ja": "脳は異なる周波数のリズムを使って、短期記憶が同時に保持できる情報量を決定している。",
+        "ko": "뇌는 서로 다른 주파수의 전기 리듬으로 단기 기억이 동시에 저장할 수 있는 항목 수를 결정한다."
+      },
+      "insight": {
+        "zh-TW": "💡 調控 theta-gamma 耦合或成為治療工作記憶缺損（如思覺失調症）的新靶點。",
+        "en": "💡 Modulating theta-gamma coupling could become a new therapeutic target for working memory deficits in schizophrenia.",
+        "zh-CN": "💡 调控 theta-gamma 耦合或成为治疗工作记忆缺损（如精神分裂症）的新靶点。",
+        "ja": "💡 シータ-ガンマ結合の調節が統合失調症などの作業記憶障害の新たな治療標的になり得る。",
+        "ko": "💡 theta-gamma 결합 조절이 조현병 등 작업 기억 결손의 새로운 치료 표적이 될 수 있다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#9f7aea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#9f7aea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#9f7aea\" font-weight=\"bold\">神經科學</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">前額葉皮質的跨頻耦合在工...</text>\n</svg>"
+    },
+    {
+      "id": "space-2606",
+      "domain": "space",
+      "day": "2026-06-05",
+      "author": "Chen et al. 2026",
+      "ref": "arXiv:2606.02891",
+      "url": "https://arxiv.org/abs/2606.02891",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "JWST 偵測到距離最近棕矮星大氣中的硫化物雲層與磷化氫特徵",
+        "en": "JWST Detection of Sulfide Clouds and Phosphine Signatures in the Atmosphere of the Nearest Brown Dwarf",
+        "zh-CN": "JWST 探测到距离最近褐矮星大气中的硫化物云层与磷化氢特征",
+        "ja": "JWSTが最近傍褐色矮星の大気中に硫化物雲とホスフィンの特徴を検出",
+        "ko": "JWST가 가장 가까운 갈색왜성 대기에서 황화물 구름과 포스핀 특징을 탐지했다"
+      },
+      "tag": {
+        "zh-TW": "🔭 太空天文",
+        "en": "🔭 Astronomy",
+        "zh-CN": "🔭 太空天文",
+        "ja": "🔭 宇宙天文",
+        "ko": "🔭 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "JWST NIRSpec 與 MIRI 聯合光譜分析鄰近棕矮星 Luhman 16A，在 4-12 µm 波段首次同時確認硫化錳雲與磷化氫吸收線。",
+        "en": "Combined NIRSpec and MIRI spectroscopy of Luhman 16A simultaneously confirmed manganese sulfide clouds and phosphine absorption at 4-12 µm for the first time.",
+        "zh-CN": "JWST NIRSpec 与 MIRI 联合光谱首次在 Luhman 16A 的 4-12 µm 波段同时确认硫化锰云与磷化氢吸收线。",
+        "ja": "NIRSpecとMIRIの複合分光でLuhman 16Aの4-12 µm帯に硫化マンガン雲とホスフィン吸収線を初めて同時確認した。",
+        "ko": "NIRSpec와 MIRI 복합 분광으로 Luhman 16A의 4-12 µm 대역에서 황화망간 구름과 포스핀 흡수선을 처음으로 동시 확인했다."
+      },
+      "plain": {
+        "zh-TW": "韋伯望遠鏡在距地球最近的棕矮星上，發現了由硫磺化合物組成的雲層以及有毒氣體磷化氫。",
+        "en": "The Webb telescope found clouds made of sulfur compounds and the toxic gas phosphine on the nearest brown dwarf to Earth.",
+        "zh-CN": "韦伯望远镜在距地球最近的褐矮星上发现了由硫磺化合物组成的云层以及有毒气体磷化氢。",
+        "ja": "ウェッブ望遠鏡が地球最近傍の褐色矮星に硫黄化合物の雲と有毒ガスのホスフィンを発見した。",
+        "ko": "웹 망원경이 지구에서 가장 가까운 갈색왜성에서 황 화합물 구름과 독성 기체 포스핀을 발견했다."
+      },
+      "insight": {
+        "zh-TW": "💡 棕矮星大氣化學的直接觀測，將成為解讀系外巨行星大氣成分的關鍵對照樣本。",
+        "en": "💡 Direct atmospheric chemistry observations of brown dwarfs will serve as key reference samples for interpreting exoplanet giant atmospheres.",
+        "zh-CN": "💡 褐矮星大气化学的直接观测将成为解读系外巨行星大气成分的关键对照样本。",
+        "ja": "💡 褐色矮星の直接大気観測は系外巨大惑星の大気成分解釈の重要な参照サンプルとなる。",
+        "ko": "💡 갈색왜성 대기 화학의 직접 관측은 외계 거대행성 대기 성분 해석의 핵심 기준 샘플이 될 것이다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🌌</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">JWST 偵測到距離最近...</text>\n</svg>"
+    },
+    {
+      "id": "tech-2606",
+      "domain": "tech",
+      "day": "2026-06-05",
+      "author": "Rossi et al. 2026",
+      "ref": "arXiv:2606.03177",
+      "url": "https://arxiv.org/abs/2606.03177",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "以液態金屬微通道實現可重構熱管理的柔性電子皮膚",
+        "en": "Reconfigurable Thermal Management in Flexible Electronic Skin via Liquid Metal Microchannels",
+        "zh-CN": "以液态金属微通道实现可重构热管理的柔性电子皮肤",
+        "ja": "液体金属マイクロチャネルによる再構成可能な熱管理を備えた柔軟電子皮膚",
+        "ko": "액체 금속 마이크로채널을 이용한 재구성 가능한 열 관리 유연 전자 피부"
+      },
+      "tag": {
+        "zh-TW": "⚙️ 材料技術",
+        "en": "⚙️ Materials Tech",
+        "zh-CN": "⚙️ 材料技术",
+        "ja": "⚙️ 材料技術",
+        "ko": "⚙️ 재료 기술"
+      },
+      "tech": {
+        "zh-TW": "研究將鎵銦合金液態金屬注入彈性矽膠微通道網絡，透過電控流量調節在皮膚狀基材上實現毫秒級局部散熱重構。",
+        "en": "Gallium-indium liquid metal injected into elastic silicone microchannel networks enables millisecond-scale localized heat dissipation reconfiguration via electronically controlled flow.",
+        "zh-CN": "将镓铟合金液态金属注入弹性硅胶微通道网络，通过电控流量调节实现毫秒级局部散热重构。",
+        "ja": "ガリウムインジウム液体金属を弾性シリコーンマイクロチャネルに注入し、電気制御フローでミリ秒単位の局所放熱再構成を実現した。",
+        "ko": "갈륨-인듐 액체 금속을 탄성 실리콘 마이크로채널에 주입해 전기 제어 흐름으로 밀리초 단위 국소 방열 재구성을 구현했다."
+      },
+      "plain": {
+        "zh-TW": "這種像皮膚一樣的電子材料內部流著液態金屬，可以瞬間調整散熱路徑，讓穿戴裝置不再過熱。",
+        "en": "This skin-like electronic material has liquid metal flowing inside, allowing instant rerouting of heat so wearable devices never overheat.",
+        "zh-CN": "这种像皮肤一样的电子材料内部流着液态金属，可以瞬间调整散热路径，让穿戴设备不再过热。",
+        "ja": "この皮膚状の電子材料は内部に液体金属が流れており、瞬時に放熱経路を切り替えてウェアラブルの過熱を防ぐ。",
+        "ko": "피부 같은 이 전자 소재 내부에 액체 금속이 흘러 방열 경로를 즉시 바꿔 웨어러블 기기의 과열을 막는다."
+      },
+      "insight": {
+        "zh-TW": "💡 可重構散熱技術突破了柔性電子長期受限於高功率密度的瓶頸，為下一代義肢與健康監測裝置鋪路。",
+        "en": "💡 Reconfigurable thermal management breaks the power-density bottleneck of flexible electronics, paving the way for next-gen prosthetics and health monitors.",
+        "zh-CN": "💡 可重构散热技术突破了柔性电子长期受限于高功率密度的瓶颈，为下一代义肢与健康监测装置铺路。",
+        "ja": "💡 再構成可能な熱管理は柔軟電子の高電力密度ボトルネックを打破し、次世代義肢と健康モニタへの道を開く。",
+        "ko": "💡 재구성 가능한 열 관리는 유연 전자의 고전력 밀도 병목을 돌파해 차세대 의수족과 건강 모니터 개발 길을 연다."
+      },
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#68d39122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#68d391\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">📶</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#68d391\" font-weight=\"bold\">科技趣聞</text>\n  <text x=\"100\" y=\"100\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">以液態金屬微通道實現可重...</text>\n</svg>"
+    }
+  ]
+}
