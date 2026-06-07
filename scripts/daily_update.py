@@ -119,7 +119,7 @@ def save_history(history, date_str, mode, topics):
 def call_claude(prompt, max_tokens=4000):
     try:
         msg = client.messages.create(
-            model="claude-opus-4-6",
+            model="claude-sonnet-4-6",
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}],
         )
