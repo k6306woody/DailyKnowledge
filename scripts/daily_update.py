@@ -289,24 +289,24 @@ def generate_cards_weekend(date_info, recent_topics):
     return all_cards
 
 
-# ── 產生 SVG 插圖 ─────────────────────────────────────────────────────────
-def generate_illus(card):
-    domain = card.get("domain", "ai")
-    cfg = DOMAIN_CONFIG.get(domain, DOMAIN_CONFIG["ai"])
-    emoji = cfg["emoji"]
-    color = cfg["color"]
-    label = cfg["label"]
-    title_short = card["title"]["zh-TW"][:12]
-
-    # 簡單 SVG，可之後由 gen_illustration.py 強化
-    svg = f'''<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="120" fill="{color}22" rx="12"/>
-  <rect x="0" y="0" width="200" height="4" fill="{color}" rx="2"/>
-  <text x="100" y="68" text-anchor="middle" font-size="44">{emoji}</text>
-  <text x="16" y="20" font-size="10" fill="{color}" font-weight="bold">{label}</text>
-  <text x="100" y="100" text-anchor="middle" font-size="9" fill="#555">{title_short}...</text>
-</svg>'''
-    return svg
+# ── 產生 SVG 插圖（使用 gen_illustration.py）──────────────────────────────
+try:
+    from gen_illustration import generate_illus
+    log.info("✅ 使用 gen_illustration.py 精美插圖")
+except ImportError:
+    log.warning("gen_illustration.py 不存在，使用簡易備用插圖")
+    def generate_illus(card):
+        domain = card.get("domain", "ai")
+        cfg = DOMAIN_CONFIG.get(domain, DOMAIN_CONFIG["ai"])
+        color = cfg["color"]
+        emoji = cfg["emoji"]
+        label = cfg["label"]
+        return (f'<svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">'
+                f'<rect width="200" height="120" fill="{color}22" rx="10"/>'
+                f'<rect width="200" height="4" rx="2" fill="{color}"/>'
+                f'<text x="100" y="70" text-anchor="middle" font-size="42">{emoji}</text>'
+                f'<text x="10" y="113" font-size="9" fill="{color}" font-weight="600" font-family="sans-serif">{label}</text>'
+                f'</svg>')
 
 
 # ── 寫出 JSON ─────────────────────────────────────────────────────────────
