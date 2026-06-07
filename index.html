@@ -249,9 +249,89 @@ footer strong{color:var(--tf-tx)}
 .ftag{padding:3px 10px;border-radius:10px;background:var(--bg3);color:var(--tx2);font-size:10px}
 
 @media(max-width:600px){.nav{padding:0 10px;gap:6px}.lpill{padding:3px 7px;font-size:10px}.grid{grid-template-columns:1fr}}
+
+/* ── Background canvas ── */
+#bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.45}
+[data-theme=dark] #bg-canvas{opacity:.6}
+#app{position:relative;z-index:1}
 </style>
 </head>
 <body>
+
+<!-- ══ PARTICLE BACKGROUND ══ -->
+<canvas id="bg-canvas"></canvas>
+<script>
+(function(){
+  const canvas=document.getElementById('bg-canvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,particles,raf;
+  const N=55, MAX_DIST=130;
+
+  function resize(){
+    W=canvas.width=window.innerWidth;
+    H=canvas.height=window.innerHeight;
+  }
+
+  function mkParticle(){
+    return{
+      x:Math.random()*W, y:Math.random()*H,
+      vx:(Math.random()-.5)*.4, vy:(Math.random()-.5)*.4,
+      r:Math.random()*1.8+.8
+    };
+  }
+
+  function init(){ resize(); particles=Array.from({length:N},mkParticle); }
+
+  function getColors(){
+    const dark=document.documentElement.getAttribute('data-theme')==='dark';
+    return dark
+      ? {dot:'rgba(77,189,181,0.7)', line:'rgba(77,189,181,'}
+      : {dot:'rgba(45,140,130,0.5)', line:'rgba(45,140,130,'};
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const {dot,line}=getColors();
+    // Move & bounce
+    particles.forEach(p=>{
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0||p.x>W) p.vx*=-1;
+      if(p.y<0||p.y>H) p.vy*=-1;
+      // dot
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=dot;
+      ctx.fill();
+    });
+    // Lines between close particles
+    for(let i=0;i<particles.length;i++){
+      for(let j=i+1;j<particles.length;j++){
+        const dx=particles[i].x-particles[j].x;
+        const dy=particles[i].y-particles[j].y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<MAX_DIST){
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x,particles[i].y);
+          ctx.lineTo(particles[j].x,particles[j].y);
+          ctx.strokeStyle=line+(1-d/MAX_DIST)*.35+')';
+          ctx.lineWidth=.8;
+          ctx.stroke();
+        }
+      }
+    }
+    raf=requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize',()=>{ resize(); });
+  init(); draw();
+
+  // Pause when tab hidden (save CPU)
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden){ cancelAnimationFrame(raf); }
+    else { draw(); }
+  });
+})();
+</script>
 
 <!-- ══ SPLASH ══ -->
 <div id="splash">
@@ -706,75 +786,97 @@ function renderCards(){
 // MODAL
 // ════════════════════════════════
 function openModal(id){
-  const c=CARDS.find(x=>x.id===id);
-  if(!c) return;
-  const ct=cardText(c);
-  const t=T[curLang]||T['zh-TW'];
+  try{
+    const c=CARDS.find(x=>x.id===id);
+    if(!c) return;
+    const ct=cardText(c);
+    const t=T[curLang]||T['zh-TW'];
+    const color=c.color||'#667eea';
 
-  // Hero illustration
-  const heroEl=document.getElementById('m-illus');
-  if(c.illus){
-    // Make SVG fill the hero area (full width)
-    heroEl.innerHTML=c.illus.replace(
-      /viewBox="0 0 340 160"/,
-      'viewBox="0 0 340 160" style="width:100%;height:auto;display:block"'
-    );
-  } else {
-    // fallback gradient hero
-    heroEl.innerHTML=`<div style="width:100%;height:160px;background:${c.color}22;display:flex;align-items:center;justify-content:center;font-size:52px">${(DOMAIN_META[c.domain]||{}).emoji||'📄'}</div>`;
+    // ① Hero illustration
+    const heroEl=document.getElementById('m-illus');
+    try{
+      if(c.illus && c.illus.includes('<svg')){
+        let svg=c.illus;
+        // Make SVG full-width
+        svg=svg.replace(/(<svg[^>]*)(>)/,function(m,p1,p2){
+          let s=p1;
+          if(!/width=/.test(s)) s+=' width="100%"';
+          else s=s.replace(/width="[^"]*"/,'width="100%"');
+          if(!/height=/.test(s)) s+=' height="auto"';
+          else s=s.replace(/height="[^"]*"/,'height="auto"');
+          return s+p2;
+        });
+        heroEl.innerHTML=svg;
+      } else {
+        const emoji=(DOMAIN_META[c.domain]||{}).emoji||'🔬';
+        heroEl.innerHTML=`<div style="width:100%;height:180px;background:${color}22;display:flex;align-items:center;justify-content:center;font-size:64px">${emoji}</div>`;
+      }
+    }catch(e){ heroEl.innerHTML=`<div style="height:160px;background:${color}18"></div>`; }
+    document.getElementById('m-hero').style.background=color+'10';
+    document.getElementById('m-hero-bar').style.background=color;
+
+    // ② Tag chip
+    const dtag=document.getElementById('m-dtag');
+    dtag.textContent=ct.tag||'';
+    dtag.style.color=color;
+    dtag.style.background=color+'22';
+
+    // ③ Author
+    document.getElementById('m-author').textContent=ct.author||c.author||'';
+
+    // ④ Title
+    document.getElementById('m-title').textContent=ct.title||'';
+
+    // ⑤ Plain summary (main focus)
+    const plainWrap=document.getElementById('m-plain-wrap');
+    plainWrap.style.borderLeftColor=color;
+    document.getElementById('m-plain').textContent=ct.plain||'';
+
+    // ⑥ Translate section labels (do BEFORE setting link text)
+    const mPlainLbl=document.querySelector('#m-plain-wrap .modal-plain-label');
+    if(mPlainLbl) mPlainLbl.innerHTML=`💬 ${t.mPlain||'用大白話說'}`;
+    const mTechLbl=document.querySelector('.modal-tech-label');
+    if(mTechLbl) mTechLbl.innerHTML=`📋 ${t.mTech||'研究內容'}`;
+
+    // ⑦ Tech explanation
+    document.getElementById('m-tech').textContent=ct.tech||'';
+
+    // ⑧ Insight
+    const insightEl=document.getElementById('m-insight');
+    insightEl.textContent=ct.insight||'';
+    insightEl.style.borderLeftColor=color;
+    insightEl.style.display=ct.insight?'':'none';
+
+    // ⑨ Paper link — show/hide based on URL validity
+    const link=document.getElementById('m-link');
+    const readSpan=link.querySelector('span');
+    if(c.url && c.url.length>12 && c.url.startsWith('http')){
+      link.href=c.url;
+      link.style.background=color;
+      link.style.display='flex';
+      if(readSpan) readSpan.textContent=(t.read||'閱讀原文論文')+(c.ref?' · '+c.ref:'');
+    } else {
+      link.style.display='none';
+    }
+
+    // ⑩ Like button
+    const hbtn=document.getElementById('m-heart');
+    const liked=isLiked(id);
+    hbtn.className='modal-heart'+(liked?' liked':'');
+    document.getElementById('m-hcount').textContent=getLikes(id)||0;
+    hbtn.onclick=()=>{toggleLike(id);renderCards();renderDrawer();openModal(id)};
+
+    // ⑪ Show modal
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow='hidden';
+
+  }catch(err){
+    console.error('openModal error:',err);
+    // fallback: force open even if partial error
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow='hidden';
   }
-  document.getElementById('m-hero').style.background=c.color+'12';
-  document.getElementById('m-hero-bar').style.background=c.color;
-
-  // Tag
-  const dtag=document.getElementById('m-dtag');
-  dtag.textContent=ct.tag;
-  dtag.style.cssText=`color:${c.color};background:${c.color}22`;
-
-  // Author chip
-  document.getElementById('m-author').textContent=ct.author||c.author;
-
-  // Title
-  document.getElementById('m-title').textContent=ct.title;
-
-  // Plain language summary — highlight with card color left border
-  const plainWrap=document.getElementById('m-plain-wrap');
-  plainWrap.style.borderLeft=`4px solid ${c.color}`;
-  document.getElementById('m-plain').textContent=ct.plain;
-
-  // Tech section
-  document.getElementById('m-tech').textContent=ct.tech;
-
-  // Insight
-  const insightEl=document.getElementById('m-insight');
-  insightEl.textContent=ct.insight;
-  insightEl.style.borderLeftColor=c.color;
-
-  // Paper link
-  const link=document.getElementById('m-link');
-  if(c.url && c.url.length>10){
-    link.href=c.url;
-    link.style.cssText=`background:${c.color};display:flex`;
-    link.querySelector('[data-key="read"]').textContent=
-      (t.read||'閱讀原文論文')+' · '+c.ref;
-  } else {
-    link.style.display='none';
-  }
-
-  // Like button
-  const hbtn=document.getElementById('m-heart');
-  const liked=isLiked(id);
-  hbtn.className='modal-heart'+(liked?' liked':'');
-  hbtn.querySelector('#m-hcount').textContent=getLikes(id)||0;
-  hbtn.onclick=()=>{toggleLike(id);renderCards();renderDrawer();openModal(id)};
-
-  // i18n labels inside modal
-  document.querySelectorAll('#modal [data-key]').forEach(el=>{
-    const k=el.dataset.key; if(t[k]) el.textContent=t[k];
-  });
-
-  document.getElementById('modal-overlay').classList.add('open');
-  document.body.style.overflow='hidden';
 }
 document.getElementById('modal-close').onclick=closeModal;
 document.getElementById('modal-overlay').onclick=function(e){if(e.target===this)closeModal()};
