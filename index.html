@@ -950,7 +950,11 @@ function renderCards(){
     const liked=isLiked(c.id);
     const lc=getLikes(c.id);
     const el=document.createElement('article');
-    el.className='card'+(c.day!==curDay?' hide':'');
+    // 綜合所有篩選條件決定是否顯示
+    const _hideDay    = activeFilters.day    ? c.day    !== activeFilters.day    : c.day !== curDay;
+    const _hideCat    = activeFilters.cat    ? c.domain !== activeFilters.cat    : false;
+    const _hideAuthor = activeFilters.author ? c.author !== activeFilters.author : false;
+    el.className='card'+(_hideDay||_hideCat||_hideAuthor?' hide':'');
     el.dataset.domain=c.domain; el.dataset.day=c.day; el.dataset.id=c.id;
     el.style.animationDelay=(i*0.06)+'s';
     el.innerHTML=`
@@ -1113,19 +1117,8 @@ function switchDTab(el,tab){
 let activeFilters = { cat: null, day: null, author: null };
 
 function applyActiveFilters(){
-  // 直接遍歷 DOM 元素，用元素自身的 data-day/data-domain 屬性
-  // （不依賴 data-id 查詢，避免重複 ID 問題）
-  document.querySelectorAll('.card').forEach(el => {
-    const hideCat    = activeFilters.cat    && el.dataset.domain !== activeFilters.cat;
-    const hideDay    = activeFilters.day    && el.dataset.day    !== activeFilters.day;
-    let hideAuthor = false;
-    if(activeFilters.author){
-      // 用 day+id 雙重匹配找到正確的卡片物件
-      const c = CARDS.find(x => x.id === el.dataset.id && x.day === el.dataset.day);
-      hideAuthor = c ? c.author !== activeFilters.author : false;
-    }
-    el.classList.toggle('hide', hideCat || hideDay || hideAuthor);
-  });
+  // 重新渲染卡片（renderCards 已整合所有 activeFilters 條件）
+  renderCards();
 }
 
 function resetFilters(){
