@@ -162,6 +162,7 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .heart-btn:hover{transform:scale(1.2)}
 .heart-btn.liked{color:#e05}
 .heart-count{font-size:11px;color:var(--tx3);font-weight:600}
+.card-date-badge{font-size:10px;font-weight:700;color:var(--tx3);background:var(--bg3);padding:2px 8px;border-radius:8px;white-space:nowrap;flex-shrink:0}
 
 /* ══════════════════════════════════
    CONTENT AREA (grid + detail panel 並排)
@@ -969,23 +970,31 @@ function isLiked(id){return (likes[id]||0)>0}
 function renderCards(){
   const grid=document.getElementById('grid');
   grid.innerHTML='';
+  // 決定「當前日期篩選」：activeFilters.day 優先，否則用 curDay，都沒有則不限制
+  const filterDay = activeFilters.day || curDay || null;
   CARDS.forEach((c,i)=>{
     const ct=cardText(c);
     const liked=isLiked(c.id);
     const lc=getLikes(c.id);
     const el=document.createElement('article');
-    // 綜合所有篩選條件決定是否顯示
-    const _hideDay    = activeFilters.day    ? c.day    !== activeFilters.day    : c.day !== curDay;
+    // ── 篩選邏輯（全部為 false = 顯示）──
+    const _hideDay    = filterDay        ? c.day    !== filterDay           : false;
     const _hideCat    = activeFilters.cat    ? c.domain !== activeFilters.cat    : false;
     const _hideAuthor = activeFilters.author ? c.author !== activeFilters.author : false;
     el.className='card'+(_hideDay||_hideCat||_hideAuthor?' hide':'');
     el.dataset.domain=c.domain; el.dataset.day=c.day; el.dataset.id=c.id;
     el.style.animationDelay=(i*0.06)+'s';
+    // 格式化日期顯示 M/D
+    const dayObj = c.day ? new Date(c.day+'T00:00:00') : null;
+    const dayLabel = dayObj ? `${dayObj.getMonth()+1}/${dayObj.getDate()}` : '';
     el.innerHTML=`
       <div class="stripe" style="background:${c.color||'var(--accent)'}"></div>
       <div class="illus">${c.illus||''}</div>
       <div class="cbody">
-        <span class="dtag">${ct.tag}</span>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:4px">
+          <span class="dtag">${ct.tag}</span>
+          ${dayLabel?`<span class="card-date-badge">📅 ${dayLabel}</span>`:''}
+        </div>
         <h2>${ct.title}</h2>
         <p class="plain-label">💬 白話解說</p>
         <p class="intro">${ct.plain}</p>
@@ -1181,16 +1190,18 @@ function renderDrawer(){
     : '';
 
   if(curDTab === 'cat'){
-    // Group by domain, sorted by count
+    // 只計算當前日期的卡片數
+    const filterDay = activeFilters.day || curDay || null;
+    const visibleCards = filterDay ? CARDS.filter(c=>c.day===filterDay) : CARDS;
     const domainCounts = {};
-    CARDS.forEach(c=>{ domainCounts[c.domain]=(domainCounts[c.domain]||0)+1; });
+    visibleCards.forEach(c=>{ domainCounts[c.domain]=(domainCounts[c.domain]||0)+1; });
     const domains = Object.entries(domainCounts).sort((a,b)=>b[1]-a[1]);
 
     el.innerHTML = resetBtn + `<div class="drawer-section">
-      <h4>🗂 依主題篩選</h4>
+      <h4>🗂 依主題篩選${filterDay?` <small style="font-weight:400;color:var(--tx3)">(${filterDay.slice(5).replace('-','/')})</small>`:''}</h4>
       <div class="filter-item${!activeFilters.cat?' on':''}" onclick="filterDrawerCat(null)">
         <div class="fi-left"><span class="fi-emoji">🌐</span><span class="fi-label">全部主題</span></div>
-        <span class="fi-count">${CARDS.length}</span>
+        <span class="fi-count">${visibleCards.length}</span>
       </div>
       ${domains.map(([dom,cnt])=>{
         const m = DOMAIN_META[dom]||{emoji:'📌',label:{'zh-TW':dom}};
@@ -1209,15 +1220,17 @@ function renderDrawer(){
     return;
 
   } else if(curDTab === 'author'){
+    const filterDay2 = activeFilters.day || curDay || null;
+    const visibleCards2 = filterDay2 ? CARDS.filter(c=>c.day===filterDay2) : CARDS;
     const authorCounts = {};
-    CARDS.forEach(c=>{ authorCounts[c.author]=(authorCounts[c.author]||0)+1; });
+    visibleCards2.forEach(c=>{ authorCounts[c.author]=(authorCounts[c.author]||0)+1; });
     const authors = Object.entries(authorCounts).sort((a,b)=>b[1]-a[1]);
 
     el.innerHTML = resetBtn + `<div class="drawer-section">
-      <h4>👤 依作者篩選</h4>
+      <h4>👤 依作者篩選${filterDay2?` <small style="font-weight:400;color:var(--tx3)">(${filterDay2.slice(5).replace('-','/')})</small>`:''}</h4>
       <div class="filter-item${!activeFilters.author?' on':''}" onclick="filterDrawerAuthor(null)">
         <div class="fi-left"><span class="fi-emoji">👥</span><span class="fi-label">所有作者</span></div>
-        <span class="fi-count">${CARDS.length}</span>
+        <span class="fi-count">${visibleCards2.length}</span>
       </div>
       ${authors.map(([author,cnt])=>{
         const on = activeFilters.author===author;
@@ -1654,22 +1667,24 @@ applyFz(savedFz);
 loadAllData().then(result=>{
   if(result && result.cards && result.cards.length){
     CARDS = result.cards;
-    curDay = result.latestDate;
-    // 初始化月曆到最新資料月份
-    if(result.latestDate){
-      const d = new Date(result.latestDate+'T00:00:00');
+    curDay = result.latestDate || AVAILABLE_DATES[0] || '';
+    if(curDay){
+      activeFilters.day = curDay; // ★ 一定要在 renderCards() 之前設好
+      const d = new Date(curDay+'T00:00:00');
       calYear = d.getFullYear(); calMonth = d.getMonth();
       calInitialized = true;
     }
   }
-  // ★ 先鎖定篩選日期，renderCards() 才能正確只顯示最新日期
-  if(curDay) activeFilters.day = curDay;
 
   renderDayChips();
   renderCatbar();
-  applyLang();       // → renderCards()（此時 activeFilters.day 已設定）
-  renderQuickDays(); // 快速日期按鈕
-  if(curDay) filterByDay(curDay); // 同步 DOM hide class
+  applyLang();       // → renderCards()（activeFilters.day 已設定）
+  renderQuickDays();
+  updateDateDisplay();
+  renderDrawer();
+
+  // 最後強制再渲染一次（防止競態問題）
+  renderCards();
 
   // Update sidebar date hint
   const hint=document.getElementById('sidebar-date-hint');
