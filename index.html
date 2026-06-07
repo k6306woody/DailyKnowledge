@@ -40,11 +40,13 @@ button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
   100% { transform:translateY(-100%) scale(1.04); opacity:.6 }
 }
 #splash.gone{display:none}
-.sp-bg{position:absolute;inset:0;overflow:hidden}
+.sp-bg{position:absolute;inset:0;overflow:hidden;z-index:0}
 .sp-bg img{width:100%;height:100%;object-fit:cover;display:block;animation:bgZoom 5s ease-out forwards}
 @keyframes bgZoom{from{transform:scale(1.08);opacity:.75}to{transform:scale(1);opacity:1}}
-.sp-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,30,28,.2) 0%,rgba(8,30,28,.72) 100%)}
-.sp-content{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+/* canvas animation covers sp-bg — overlay + content sit on top */
+#sp-canvas{z-index:1!important}
+.sp-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(8,30,28,.15) 0%,rgba(8,30,28,.6) 100%)}
+.sp-content{position:relative;z-index:3;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
 .sp-title{color:#fff;font-size:clamp(32px,7vw,68px);font-weight:800;letter-spacing:.5px;text-shadow:0 4px 32px rgba(0,0,0,.45);animation:fadeUp .6s .4s both}
 .sp-sub{color:rgba(255,255,255,.82);font-size:clamp(13px,2.5vw,18px);letter-spacing:1.5px;animation:fadeUp .6s .6s both}
 .sp-date{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);color:#fff;font-size:13px;font-weight:700;padding:8px 26px;border-radius:26px;letter-spacing:1px;animation:fadeUp .6s .85s both;border:1px solid rgba(255,255,255,.25)}
@@ -1369,6 +1371,10 @@ setTimeout(()=>document.getElementById('splash').classList.add('gone'), 3550);
   if(!canvas) return;
   const ctx = canvas.getContext('2d');
   let animId = null;
+
+  // canvas 動畫蓋過背景圖
+  const _spBg = document.querySelector('.sp-bg');
+  if(_spBg) _spBg.style.display = 'none';
 
   function resize(){
     canvas.width  = window.innerWidth;
