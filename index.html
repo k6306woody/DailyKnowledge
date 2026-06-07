@@ -266,15 +266,7 @@ footer strong{color:var(--tf-tx)}
 
 <div class="subnav" id="daynav"></div>
 <div class="searchbar"><input type="search" id="searchbox" placeholder="🔍 搜尋標題、作者、領域…" oninput="doSearch(this.value)" /><button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button><span id="search-count"></span></div>
-<div class="catbar" id="catbar">
-  <button class="cbtn on" data-cat="all">🌐 <span data-key="catAll">全部</span></button>
-  <button class="cbtn" data-cat="ai">🤖 AI</button>
-  <button class="cbtn" data-cat="bio">🧬 <span data-key="catBio">生醫</span></button>
-  <button class="cbtn" data-cat="arch">🏛️ <span data-key="catArch">建築</span></button>
-  <button class="cbtn" data-cat="phys">⚛️ <span data-key="catPhys">物理</span></button>
-  <button class="cbtn" data-cat="chem">🧪 <span data-key="catChem">化學</span></button>
-  <button class="cbtn" data-cat="fin">💰 <span data-key="catFin">財經</span></button>
-</div>
+<div class="catbar" id="catbar"></div>
 
 <!-- CARDS -->
 <div class="grid" id="grid"></div>
@@ -533,13 +525,67 @@ function cardText(c){
   return T[curLang]?.cards?.[c.id]||c;
 }
 
+// Domain 中英對照（catbar 動態生成用）
+const DOMAIN_META = {
+  ai:     {emoji:'🤖', label:{  'zh-TW':'AI','en':'AI','zh-CN':'AI','ja':'AI','ko':'AI'}},
+  bio:    {emoji:'🧬', label:{'zh-TW':'生醫','en':'Bio','zh-CN':'生医','ja':'生命','ko':'생의학'}},
+  phys:   {emoji:'⚛️', label:{'zh-TW':'物理','en':'Physics','zh-CN':'物理','ja':'物理','ko':'물리'}},
+  neuro:  {emoji:'🧠', label:{'zh-TW':'神經','en':'Neuro','zh-CN':'神经','ja':'神経','ko':'신경'}},
+  health: {emoji:'🏥', label:{'zh-TW':'健康','en':'Health','zh-CN':'健康','ja':'健康','ko':'건강'}},
+  space:  {emoji:'🌌', label:{'zh-TW':'天文','en':'Space','zh-CN':'天文','ja':'宇宙','ko':'우주'}},
+  chem:   {emoji:'🧪', label:{'zh-TW':'化學','en':'Chem','zh-CN':'化学','ja':'化学','ko':'화학'}},
+  tech:   {emoji:'📶', label:{'zh-TW':'科技','en':'Tech','zh-CN':'科技','ja':'技術','ko':'기술'}},
+  ocean:  {emoji:'🦈', label:{'zh-TW':'海洋','en':'Ocean','zh-CN':'海洋','ja':'海洋','ko':'해양'}},
+  nature: {emoji:'🐠', label:{'zh-TW':'自然','en':'Nature','zh-CN':'自然','ja':'自然','ko':'자연'}},
+  fin:    {emoji:'💰', label:{'zh-TW':'財經','en':'Finance','zh-CN':'财经','ja':'金融','ko':'금융'}},
+  arch:   {emoji:'🏛️', label:{'zh-TW':'建築','en':'Arch','zh-CN':'建筑','ja':'建築','ko':'건축'}},
+};
+
 function renderDayChips(){
   const days=[...new Set(CARDS.map(c=>c.day))].sort().reverse();
   const nav=document.getElementById('daynav');
   nav.innerHTML=days.map((d,i)=>`<div class="chip${i===0?' on':''}" data-day="${d}"><span class="dot"></span>${d}</div>`).join('');
   nav.querySelectorAll('.chip').forEach(chip=>chip.addEventListener('click',function(){
-    curDay=this.dataset.day;filterByDay(curDay);renderDrawer();
+    curDay=this.dataset.day; updateDateDisplay(); filterByDay(curDay); renderDrawer();
   }));
+}
+
+function renderCatbar(){
+  const domains=['all',...new Set(CARDS.map(c=>c.domain))];
+  const bar=document.getElementById('catbar');
+  bar.innerHTML=domains.map((d,i)=>{
+    const m=DOMAIN_META[d];
+    const lbl=m?`${m.emoji} ${m.label[curLang]||m.label['zh-TW']}`:'🌐 全部';
+    return`<button class="cbtn${i===0?' on':''}" data-cat="${d}">${i===0?'🌐 All':lbl}</button>`;
+  }).join('');
+  bar.querySelectorAll('.cbtn').forEach(b=>b.addEventListener('click',function(){
+    bar.querySelectorAll('.cbtn').forEach(x=>x.classList.remove('on'));
+    this.classList.add('on');
+    const cat=this.dataset.cat;
+    document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',cat!=='all'&&c.dataset.domain!==cat));
+  }));
+}
+
+function updateDateDisplay(){
+  // 把 curDay (YYYY-MM-DD) 格式化成各語言日期
+  if(!curDay) return;
+  const d=new Date(curDay+'T00:00:00');
+  const weekdays={
+    'zh-TW':['週日','週一','週二','週三','週四','週五','週六'],
+    'en':['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+    'zh-CN':['周日','周一','周二','周三','周四','周五','周六'],
+    'ja':['日','月','火','水','木','金','土'],
+    'ko':['일','월','화','수','목','금','토'],
+  };
+  const wd=d.getDay();
+  const wdStr=(weekdays[curLang]||weekdays['zh-TW'])[wd];
+  let ds='';
+  if(curLang==='zh-TW'||curLang==='zh-CN') ds=`${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日（${wdStr}）`;
+  else if(curLang==='ja') ds=`${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日（${wdStr}曜日）`;
+  else if(curLang==='ko') ds=`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일（${wdStr}요일）`;
+  else ds=`${d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})} (${wdStr})`;
+  const el=document.getElementById('ds'); if(el) el.textContent=ds;
+  const sp=document.getElementById('sp-date'); if(sp) sp.textContent='📅 '+ds;
 }
 
 function saveLikes(){localStorage.setItem('dkLikes',JSON.stringify(likes))}
@@ -720,14 +766,13 @@ function applyLang(){
   document.getElementById('logo-sub').textContent=t.logoSub;
   document.getElementById('hl').textContent=t.hl;
   document.getElementById('sub').textContent=t.sub;
-  document.getElementById('ds').textContent=t.ds;
   document.getElementById('vday').textContent=t.vday;
   document.getElementById('vcat').textContent=t.vcat;
   document.getElementById('ft-title').textContent=t.ftTitle;
   document.getElementById('ft-sub').textContent=t.ftSub;
   document.getElementById('sp-title').textContent=t.hl;
   document.getElementById('sp-sub').textContent=t.sub;
-  document.getElementById('sp-date').textContent='📅 '+t.ds;
+  updateDateDisplay(); // 動態格式化日期，取代硬編碼的 t.ds
   document.getElementById('sp-hint').textContent=t.spHint;
   document.getElementById('dt-label').textContent=t.dtDate;
   document.querySelectorAll('[data-key]').forEach(el=>{
@@ -771,13 +816,6 @@ document.getElementById('vcat').addEventListener('click',function(){
   document.querySelectorAll('.card').forEach(c=>c.classList.remove('hide'));
 });
 
-// Cat filter
-document.querySelectorAll('.cbtn').forEach(b=>b.addEventListener('click',function(){
-  document.querySelectorAll('.cbtn').forEach(x=>x.classList.remove('on'));
-  this.classList.add('on');
-  const cat=this.dataset.cat;
-  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',cat!=='all'&&c.dataset.domain!==cat));
-}));
 
 // Lang
 document.querySelectorAll('.lpill').forEach(p=>p.addEventListener('click',function(){
@@ -830,6 +868,7 @@ loadTodayData().then(data=>{
     curDay=data.date;
   }
   renderDayChips();
+  renderCatbar();
   applyLang();
   renderDrawer();
 });
