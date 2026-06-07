@@ -1397,9 +1397,10 @@ function doSearch(q){
     const ct = cardText(c);
     const text = [ct?.title||'', ct?.tag||'', ct?.plain||'', ct?.tech||'', c?.author||''].join(' ').toLowerCase();
     const match = !q || text.includes(q);
-    const dayMatch = c?.day === curDay;
-    card.classList.toggle('hide', !match || !dayMatch);
-    if(match && dayMatch) count++;
+    const dayMatch = !activeFilters.day || c?.day === activeFilters.day;
+    const catMatch = !activeFilters.cat || c?.domain === activeFilters.cat;
+    card.classList.toggle('hide', !match || !dayMatch || !catMatch);
+    if(match && dayMatch && catMatch) count++;
   });
   document.getElementById('search-count').textContent = q ? count + ' 筆' : '';
 }
@@ -1436,8 +1437,11 @@ loadAllData().then(result=>{
   applyLang();       // → renderCards() + renderDrawer()
   renderQuickDays(); // 快速日期按鈕
 
-  // 初始只顯示最新日期的卡片
-  if(curDay) filterByDay(curDay);
+  // 預設顯示最新日期的卡片，並鎖定 activeFilters
+  if(curDay){
+    activeFilters.day = curDay;
+    filterByDay(curDay);
+  }
 
   // Update sidebar date hint
   const hint=document.getElementById('sidebar-date-hint');
