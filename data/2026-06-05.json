@@ -10,7 +10,7 @@
       "day": "2026-06-05",
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.03142",
-      "url": "",
+      "url": "https://arxiv.org/abs/2606.03142",
       "color": "#667eea",
       "title": {
         "zh-TW": "無需梯度的大型語言模型推理時對齊：黑箱偏好優化新框架",
@@ -34,11 +34,11 @@
         "ko": "역전파 없이 추론 시점에서 블랙박스 선호 신호로 LLM 출력을 동적으로 정렬한다."
       },
       "plain": {
-        "zh-TW": "不用重新訓練 AI，就能在對話當下即時調整它的回答風格與安全性。",
-        "en": "Adjusts AI behavior on-the-fly during conversation without retraining the model.",
-        "zh-CN": "无需重新训练 AI，就能在对话当下即时调整回答风格与安全性。",
-        "ja": "再学習なしで会話中にリアルタイムでAIの返答スタイルを調整できる。",
-        "ko": "모델 재훈련 없이 대화 중 실시간으로 AI 응답 방식을 조정할 수 있다."
+        "zh-TW": "想像你養了一隻聰明的鸚鵡，牠已經學會說很多話了，但有時候會講些不太得體的內容。傳統做法就像把鸚鵡送回訓練學校重新教育一遍，既花時間又費力；而這項研究就像是在鸚鵡每次開口前，你用眼神或手勢即時提醒牠「這樣說比較好」，牠馬上就能調整語氣和內容。這對我們的日常生活超重要，因為當你在用 ChatGPT 這類 AI 助理時，它能立刻根據你的反應調整回答風格——比如你皺眉表示不滿意，它下一句就自動變得更禮貌或更精準，完全不需要工程師花好幾天重新訓練整個系統。舉個實際例子，假如你問 AI 健康建議，它一開始給的答案太學術聽不懂，你只要按個「不喜歡」，它馬上就能換成白話版本繼續對話。這種技術讓 AI 變得更像一個懂得察言觀色的聰明夥伴，而不是死板的答題機器，也讓科技公司能更快速地修正 AI 的不當行為，保護使用者安全。",
+        "en": "Imagine you're at a restaurant and the chef can adjust your dish's seasoning on the fly just by watching your facial expressions—no need to go back to culinary school or rewrite the recipe. That's essentially what this research does for AI chatbots. Instead of spending weeks or months retraining a language model from scratch (which is like sending the chef back to cooking school), this technique lets the AI adjust its responses in real-time during the conversation itself, simply by reading \"preference signals\" about what kind of answer you'd prefer. Think of it like having a smart assistant that can instantly tell whether you want a formal business email or a casual text to a friend, and switch its tone accordingly without any behind-the-scenes reprogramming. This matters because it makes AI systems way more flexible and safer—if the AI starts going off the rails or being inappropriate, it can course-correct immediately rather than needing an expensive do-over. For everyday users, this means chatbots that feel more responsive to your actual needs in the moment, whether you're asking for medical advice (where you want cautious, careful responses) or brainstorming creative ideas (where you want bold, imaginative ones). It's like having an AI that reads the room and adapts, all without the massive computational cost of traditional retraining methods.",
+        "zh-CN": "想象你养了一只聪明的鹦鹉，以前如果想改变它说话的方式，你得花好几个月重新训练它，非常费时费力。但现在有了这项新技术，就像给鹦鹉戴上一副\"智能耳机\"，它能在每次开口前瞬间调整自己的说话风格——跟小孩聊天时变得温柔有趣，面对专业问题时又能严谨准确。这个方法最酷的地方在于，它不需要\"打开AI的大脑\"去修改内部结构（也就是不用梯度下降那些复杂运算），而是像调音师一样，在AI即将说出答案的那一刻，根据\"这个回答好不好\"的信号实时微调输出。这对我们的意义是什么呢？以后你用ChatGPT这类工具时，它可以更快速地适应你的需求——比如你今天想要幽默风趣的回答，明天需要正式严肃的建议，AI都能当场切换，不用开发者每次都重新训练模型，既省资源又更灵活。这就像给AI装了一个\"实时礼仪顾问\"，让它在不同场合都能说出最得体的话。",
+        "ja": "想像你在跟一個朋友聊天，發現他講話有點太直接、不夠體貼，但你不想花好幾個月重新教育他的個性，而是希望在對話的當下就能讓他調整語氣。這篇研究就是在做類似的事情——讓AI不需要重新訓練整個大腦，只要在回答你的瞬間，根據「什麼樣的回答比較好」這個信號，即時微調它的說話方式。就像你在餐廳點餐時告訴廚師「少油少鹽」，廚師不用重新學做菜，只要在炒菜時調整調味料就好。這個技術的厲害之處在於，它把AI當成一個黑盒子來操作，不需要知道內部複雜的運作機制，就能讓它變得更安全、更符合你的需求。對一般使用者來說，這意味著未來的AI助手可以更快速地適應每個人的偏好，不會因為回答太死板或太危險而讓你困擾。比如你問AI健康建議時，它能立刻判斷該用專業術語還是白話文，該嚴謹還是輕鬆，完全不需要工程師事先設定好每一種情境。",
+        "ko": "想像你在餐廳點餐時，廚師不必回廚房重新學廚藝，只要在出菜前根據你的喜好調整一下鹹淡和擺盤就好——這就是這項研究在做的事！過去要讓AI回答得更安全、更符合人類價值觀，就像要把廚師送回廚藝學校重新訓練，既耗時又燒錢。現在這個新方法就像在AI「端菜」的瞬間，根據我們的喜好信號（比如「這個回答太冒犯了」或「這個答案不夠專業」）即時微調它的輸出，完全不需要動到AI的核心訓練過程。這為什麼重要？因為AI公司可以更快速、更便宜地讓聊天機器人變得更安全、更懂禮貌，普通用戶也可能在未來自己調整AI助手的說話風格——想要它幽默一點或嚴肅一點都可以。舉例來說，當你問AI一個敏感問題，它可以在生成答案的那一刻就察覺「這樣回答可能不妥」，然後自動轉個彎給你更得體的回應，整個過程就像條件反射一樣快。這項技術讓AI的「個性化」和「安全性」調整變得像調音量一樣簡單，不再需要工程師每次都大動干戈重新訓練模型了。"
       },
       "insight": {
         "zh-TW": "💡 對齊不再需要昂貴的微調，推理即訓練的範式正在重塑 AI 安全部署方式。",
@@ -55,7 +55,7 @@
       "day": "2026-06-05",
       "author": "Okafor et al. 2026",
       "ref": "arXiv:2606.03389",
-      "url": "",
+      "url": "https://arxiv.org/abs/2606.03389",
       "color": "#48bb78",
       "title": {
         "zh-TW": "單細胞多組學揭示衰老T細胞如何驅動腫瘤微環境中的免疫逃逸",
@@ -79,11 +79,11 @@
         "ko": "scRNA-seq와 ATAC-seq를 결합해 종양 내 노화 T세포의 후성유전체 재편을 정밀 분석했다."
       },
       "plain": {
-        "zh-TW": "癌症腫瘤裡有一群「老化」的免疫細胞，它們不但失去攻擊力，還會幫助腫瘤躲避攻擊。",
-        "en": "Aged immune cells inside tumors not only lose fighting ability but actively help cancer hide.",
-        "zh-CN": "癌症肿瘤里有一群老化免疫细胞，它们不但失去攻击力，还帮助肿瘤躲避攻击。",
-        "ja": "腫瘍内の老化免疫細胞は攻撃力を失うだけでなく、がんが免疫から逃れるのを助ける。",
-        "ko": "종양 속 노화 면역세포는 공격력을 잃을 뿐 아니라 암이 면역을 회피하도록 돕는다."
+        "zh-TW": "想像你的免疫系統是一支抗癌特種部隊，但隨著戰鬥時間拉長，有些士兵不僅體力耗盡、武器生鏽，甚至還被敵人「策反」，開始幫腫瘤打掩護。這項研究用超高解析度的技術，像是給每個免疫細胞做「基因指紋鑑定」和「開關檢查」，發現這些衰老的T細胞不只是單純罷工，它們的基因調控機制整個被改寫了，變成會分泌讓腫瘤隱身的化學訊號。這解釋了為什麼有些癌症病人明明免疫細胞數量不少，治療效果卻很差——因為這些「老兵」反而成了內鬼。更重要的是，研究找出了這些細胞變壞的具體分子開關，未來我們或許能設計藥物把它們「重新開機」，或者乾脆清除掉，讓真正能打仗的免疫細胞重新主導戰場。這對開發下一代癌症免疫療法特別關鍵，因為光是喚醒免疫系統還不夠，還得確保它不會被自己人拖後腿。",
+        "en": "Imagine your immune system's T cells as an army of security guards protecting your body from cancer—but over time, some of these guards don't just retire, they actually switch sides and start helping the intruders! This study used cutting-edge technology to spy on individual cells inside tumors, discovering exactly how these \"aged\" T cells undergo a transformation at the DNA level that flips their programming. Think of it like finding the exact moment when a loyal guard's security badge gets reprogrammed to open doors for the enemy instead of locking them out. What makes this research crucial is that these traitorous cells don't just stop fighting cancer—they actively create a protective shield around tumors, making treatments like immunotherapy far less effective. For instance, when doctors give patients drugs designed to boost the immune system's cancer-fighting abilities, these senescent T cells can sabotage the entire effort by sending \"stand down\" signals to healthy immune cells. Understanding this cellular betrayal at such precise detail means scientists can now develop therapies that either reprogram these cells back to the good side or simply remove them from the battlefield altogether, potentially making existing cancer treatments work much better for patients who currently don't respond well.",
+        "zh-CN": "想象你雇了一群保安来守护你的社区，结果发现有些保安不仅年纪大了干不动活，还偷偷给小偷递梯子、开后门。这项研究就发现了癌症肿瘤里确实存在这样的\"叛变保安\"——衰老的T细胞。科学家用超精密的单细胞技术，就像给每个保安都装了针孔摄像头和窃听器，发现这些衰老T细胞不只是懒惰罢工那么简单，它们的基因开关被重新设定了，从根子上变成了\"帮凶\"，会释放特殊信号帮肿瘤细胞躲避其他正常免疫细胞的攻击。为什么这很重要？因为很多癌症免疫疗法效果不好，可能就是这些\"内鬼\"在作祟——你再怎么训练新保安、加强防御，内部有人开门揖盗也是白搭。这项研究把这些叛变分子的\"犯罪档案\"摸得一清二楚，未来我们也许能开发出专门针对这些衰老T细胞的疗法，把它们要么改造好、要么清除掉，让免疫治疗真正发挥威力，这对提高癌症患者的存活率可能带来突破性进展。",
+        "ja": "想像你的身體裡有一支抗癌特種部隊，但隨著時間過去，有些老兵不只變得疲憊無力，甚至還會在戰場上「倒戈」幫敵人說話。這項研究就像用超高解析度的顯微鏡加上基因解碼器，一個細胞一個細胞地追蹤這些「衰老T細胞」到底發生了什麼事——原來它們的DNA開關被重新設定了，讓它們從攻擊手變成了腫瘤的保鑣。為什麼這很重要呢？因為現在很多癌症免疫療法就是要喚醒這支特種部隊，但如果我們不知道哪些士兵已經「叛變」、又是怎麼被策反的，治療效果就會大打折扣。舉個例子，有些病人打了免疫療法卻沒效，可能就是因為腫瘤裡這些衰老細胞太多，反而在扯後腿。這個研究等於畫出了一張「叛變地圖」，未來醫生也許能針對性地清除或改造這些老化免疫細胞，讓抗癌部隊真正發揮戰力，這對提升癌症治療成功率可說是一大突破。",
+        "ko": "想像你的身體是一座城市，免疫細胞就像巡邏的警察，專門抓壞人（癌細胞）。但這項研究發現，腫瘤裡有一群「退休警察」——衰老的T細胞，它們不僅懶得執勤，甚至還會向其他警察發送「這裡沒問題，不用來」的假消息，讓癌細胞躲在暗處安全長大。科學家用超高解析度的技術，像用顯微鏡加GPS一樣，精確找出這些「叛變警察」到底在基因層面發生了什麼變化，哪些開關被關掉了。這很重要，因為如果我們能重新「喚醒」或清除這些衰老細胞，就像讓退休警察退場、召集新血，免疫治療的效果可能會大幅提升。舉例來說，目前很多癌症病人打免疫藥物效果不佳，可能就是因為腫瘤裡這群「內鬼」太多；未來若能針對性處理它們，原本無效的療法或許就能起死回生。這項研究等於是在腫瘤的「黑盒子」裡，找到了一張詳細的叛徒名單和他們的作案手法。"
       },
       "insight": {
         "zh-TW": "💡 靶向清除衰老 T 細胞或能成為突破免疫療法瓶頸的全新策略。",
@@ -100,7 +100,7 @@
       "day": "2026-06-05",
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2606.03571",
-      "url": "",
+      "url": "https://arxiv.org/abs/2606.03571",
       "color": "#ed8936",
       "title": {
         "zh-TW": "在二維莫爾超晶格中觀測到分數量子反常霍爾態的電荷中性激發",
@@ -124,11 +124,11 @@
         "ko": "저온 STM 분광법으로 비틀린 이중층 MoTe₂에서 분수 홀 상태의 중성 집단 모드를 최초 분해했다."
       },
       "plain": {
-        "zh-TW": "科學家在兩層微微錯位的材料中，捕捉到量子霍爾態裡一種幾乎隱形的奇特振動模式。",
-        "en": "Scientists captured a nearly invisible exotic vibration inside quantum Hall states in slightly twisted bilayer materials.",
-        "zh-CN": "科学家在两层微微错位的材料中，捕捉到量子霍尔态里一种几乎隐形的奇特振动模式。",
-        "ja": "わずかにずれた二層材料の中で、量子ホール状態にある幻のような振動モードを捉えた。",
-        "ko": "약간 비틀린 이중층 소재 안에서 양자 홀 상태의 거의 보이지 않는 진동 모드를 포착했다."
+        "zh-TW": "想像你把兩張蜂巢網格狀的透明紙稍微轉個角度疊在一起，光線穿過時會出現美麗的莫爾紋圖案——科學家就是在這種「微微錯位」的雙層材料裡，發現了量子世界的奇妙秘密。他們利用超低溫環境和精密儀器，首次「聽見」了一種幾乎隱形的集體振動，就像音樂會上所有樂手突然同步演奏出一段和聲，但這個和聲來自無數個電子的完美協調。這個發現之所以重要，是因為它證實了理論物理學家預測已久的「分數量子態」真的存在，而且不需要強大的磁場就能觀察到，這在過去是不可能的事。舉個例子，傳統上要看到類似現象，你得動用足以讓金屬漂浮的超強磁鐵，但現在只要把兩層原子薄片轉個小角度就行了。這項突破可能為未來的量子電腦開啟新的大門，因為這些奇特的量子態非常穩定，適合用來儲存和處理資訊，就像找到了一種天然防震的保險箱來保護你最珍貴的數據。",
+        "en": "Imagine stacking two sheets of atomic-thin material with a tiny twist—like placing one piece of chicken wire slightly rotated over another—and suddenly you create a whole new playground where electrons start behaving in utterly bizarre ways. Scientists have now captured something extraordinary in this twisted setup: they've spotted a special kind of \"ghost vibration\" that emerges when electrons in these materials enter an exotic quantum state called the fractional quantum anomaly Hall effect. Think of it like this—when electrons crowd together in just the right way, they don't just sit there; they create ripples of energy that carry no electric charge, almost like invisible waves passing through a stadium crowd doing the wave, where the motion travels but individual people stay in place. This discovery is huge because these charge-neutral excitations are notoriously difficult to detect (they're electrically invisible!), yet understanding them is key to unlocking quantum computing technologies that could revolutionize everything from drug discovery to cryptography. By using an ultra-cold scanning probe—basically a quantum-scale metal detector—the research team managed to \"listen\" to these whisper-quiet vibrations in twisted bilayer MoTe₂ for the first time. It's like finally hearing the secret conversations electrons have been having all along, conversations that could teach us how to build computers that harness the weirdness of quantum mechanics to solve problems today's supercomputers can't even touch.",
+        "zh-CN": "想象你把两张超薄的纱布稍微转个角度叠在一起，光线透过时会形成美丽的莫列波纹——科学家就是在这种\"纳米纱布\"（两层只有几个原子厚的MoTe₂材料）里，发现了量子世界的神奇舞蹈。当温度降到接近绝对零度时，电子们不再各自为政，而是像编队表演的舞者一样整齐划一地运动，形成所谓的\"分数量子霍尔态\"。更酷的是，研究人员用特制的超灵敏探针（扫描隧穿显微镜）\"听\"到了这个电子舞团里一种特别的集体振动，就像你能感受到舞者整齐踏步时地板的共振一样，只不过这个振动本身不带电荷，几乎是\"隐形\"的。这个发现为什么重要？因为它帮助我们理解电子如何在极端条件下协作，未来可能用来制造几乎没有能量损耗的超级计算机，或者开发出能在室温下工作的量子计算设备。就像当年发现半导体效应最终带来了今天的智能手机一样，这种基础物理突破往往在几十年后改变我们的日常生活。",
+        "ja": "想像你把兩張網格紙稍微轉一個角度疊在一起，就會看到新的、更大的週期性圖案——這就是科學家創造的「莫爾超晶格」。在這種特殊材料裡，電子不再各自為政，而是像舞蹈團一樣整齊劃一地集體行動，形成一種叫「分數量子霍爾態」的奇異狀態。這次科學家更厲害的是，他們用極低溫的掃描探針，就像用超靈敏的「量子聽診器」，聽到了這群電子舞團發出的集體振動——那是一種不帶電荷、幾乎隱形的能量波動，就像你敲鐘時聽到的餘音，但這個「餘音」揭露了電子世界最深層的集體行為規則。為什麼重要？因為理解這些奇特的量子狀態，未來可能幫我們打造出不會出錯的量子電腦，或是發展出完全沒有能量損耗的電子元件。這就好比我們終於學會「聆聽」物質最基本的量子語言，而不只是看它的表面行為。這項突破讓我們離掌控量子世界又更近了一步，可能在幾十年後徹底改變我們的運算和能源技術。",
+        "ko": "想像你把兩張有規律圖案的透明塑膠片稍微轉個角度疊在一起，光線穿過時會出現一種全新的、肉眼可見的大圖案——這就是所謂的「莫爾紋」，而科學家現在玩的是奈米世界的莫爾紋遊戲。他們把兩層超薄的 MoTe₂ 材料微微扭轉疊放，創造出一個電子的遊樂場，在這裡電子們不再各自為政，而是像訓練有素的舞者一樣集體起舞，形成奇特的「分數量子霍爾態」。更神奇的是，研究團隊用極低溫的掃描探針，像醫生用聽診器聽心跳一樣，首次「聽」到了這些電子集體舞蹈時產生的微弱振動——那是一種不帶電荷、幾乎隱形的能量波動，就像水面上看不見但確實存在的漣漪。這項發現為什麼重要？因為這些奇異的量子態未來可能成為超穩定量子電腦的基礎，它們對外界干擾的抵抗力遠超傳統電腦，就像把資訊鎖在一個多重保險箱裡。更酷的是，這證明我們可以像樂高積木一樣，透過巧妙堆疊原子層來「設計」全新的量子物質，而不必靠大自然的恩賜碰運氣找材料。"
       },
       "insight": {
         "zh-TW": "💡 這類中性激發是拓撲量子計算的關鍵資訊載體，觀測突破為量子位元操控開闢新路。",
@@ -145,7 +145,7 @@
       "day": "2026-06-05",
       "author": "Yamamoto et al. 2026",
       "ref": "arXiv:2606.03412",
-      "url": "",
+      "url": "https://arxiv.org/abs/2606.03412",
       "color": "#9f7aea",
       "title": {
         "zh-TW": "前額葉皮質的跨頻耦合在工作記憶編碼中調控神經元集群的動態同步",
@@ -169,11 +169,11 @@
         "ko": "고밀도 전극 배열로 영장류 전전두엽을 기록해 theta-gamma 교차 주파수 결합 강도가 작업 기억 용량 상한을 결정함을 밝혔다."
       },
       "plain": {
-        "zh-TW": "大腦用不同頻率的電波「打節拍」來決定短期記憶能同時儲存多少件事。",
-        "en": "The brain uses rhythmic electrical beats at different frequencies to determine how many items short-term memory can hold at once.",
-        "zh-CN": "大脑用不同频率的电波打节拍来决定短期记忆能同时储存多少件事。",
-        "ja": "脳は異なる周波数のリズムを使って、短期記憶が同時に保持できる情報量を決定している。",
-        "ko": "뇌는 서로 다른 주파수의 전기 리듬으로 단기 기억이 동시에 저장할 수 있는 항목 수를 결정한다."
+        "zh-TW": "想像你的大腦是一個超級繁忙的餐廳廚房，主廚（theta波，慢節奏）負責喊「上菜！」的節奏，而助手們（gamma波，快節奏）則在這個節奏下迅速處理不同的菜餚。這項研究發現，當主廚和助手之間的默契越好（也就是theta和gamma波的耦合越強），廚房就能同時處理越多道菜，這正是為什麼有些人能同時記住電話號碼、購物清單和朋友的生日，有些人卻只能勉強記住其中一兩項。科學家用超精密的電極像偷聽八卦一樣監聽猴子的前額葉對話，證實了這個「打節拍」的機制確實存在。這個發現超重要，因為它可能解釋了為什麼我們走到冰箱前會突然忘記要拿什麼，或是為什麼多工處理時容易出錯——本質上就是大腦的「主廚」和「助手」沒有同步好。未來如果能找到強化這種腦波默契的方法，說不定我們就能提升記憶力，甚至幫助阿茲海默症患者找回失去的記憶能力。",
+        "en": "Imagine your brain is like a sophisticated orchestra where different instrument sections have to play in perfect sync to create beautiful music. Scientists discovered that in the prefrontal cortex—your brain's \"control center\"—there are two main rhythms constantly chatting with each other: a slow theta wave (like a steady drumbeat) and a fast gamma wave (like rapid violin notes dancing on top). The magic happens when these rhythms lock together in what researchers call \"cross-frequency coupling,\" and here's the kicker: the strength of this rhythmic handshake directly determines how many things you can juggle in your mind at once. Think about trying to remember a phone number someone just told you while also keeping track of your grocery list and recalling where you parked—that's your working memory capacity in action, and it's literally limited by how well these brain waves coordinate. When the theta-gamma coupling is strong, neural populations fire in beautifully synchronized patterns, creating more \"slots\" for temporary storage; when it's weak, you're more likely to forget why you walked into a room. This isn't just nerdy brain trivia—understanding this mechanism could eventually help us develop interventions for conditions like ADHD or age-related memory decline, where working memory often struggles. It's like we've finally found the brain's mixing board and identified which dial controls how many mental tabs you can keep open simultaneously!",
+        "zh-CN": "想象你的大脑是一个超级繁忙的交通指挥中心，里面有快速闪烁的黄灯（gamma波）和缓慢稳定的红灯（theta波），这两种节奏必须完美配合，就像乐队里鼓手和贝斯手要对上拍子一样。科学家在猴子的前额叶皮质里发现，当这两种\"脑电波节拍\"配合得越紧密，大脑同时记住的信息就越多——比如你能一边记住电话号码、一边想着等会要买什么菜、还要记得朋友刚说的笑话。这解释了为什么有些人能同时处理五六件事不出错，有些人却容易\"脑子转不过来\"，因为他们大脑里的这种\"节奏协调能力\"天生就有差异。更实际的意义是，未来我们也许能通过训练或技术手段调整这种脑波配合度，帮助注意力缺陷患者或老年人改善记忆力，就像给大脑的乐队请个更好的指挥一样。这项研究首次用生理证据钉死了\"工作记忆容量是有物理上限的\"这个事实，你真的没法一心十用，大脑硬件就这样设计的。",
+        "ja": "想像你的大腦就像一個交響樂團，裡面有慢節奏的定音鼓（theta波）和快節奏的小提琴（gamma波）同時演奏。日本的研究團隊發現，當這兩種節奏配合得越好，你的短期記憶就能同時記住越多東西——就像樂團合奏越協調，音樂就越豐富。具體來說，當你在超市裡試著記住「牛奶、雞蛋、麵包、洗髮精」這些待買清單時，前額葉皮質裡的慢波會像指揮家一樣打拍子，而快波則像樂手一樣跟著節奏把每個項目「打包」起來。如果這個「指揮與樂手的默契」變差，你可能記到第三項就開始忘記前面買了什麼。這個發現不只解釋了為什麼有些人天生記憶力比較好，未來甚至可能幫助開發治療阿茲海默症或注意力缺陷的新療法——畢竟如果我們知道大腦是用什麼「節奏」在工作，就有機會用電刺激或訓練來「調音」。更實際的應用是，這也許能解釋為什麼你同時處理太多工作時會當機，因為大腦的「指揮」根本來不及協調那麼多「樂器」啊！",
+        "ko": "想像你的大腦就像一個忙碌的廚房，廚師長（theta波）負責喊節奏「上菜、收盤、上菜、收盤」，而助手們（gamma波）則跟著這個節奏快速處理食材。科學家發現，當這兩種「節拍」配合得越好，你的短期記憶就能同時記住越多東西——比如你能一邊記電話號碼、一邊記剛才老闆交代的三件事。這個發現解釋了為什麼有些人能同時處理很多資訊，有些人卻容易「當機」，因為他們大腦裡的「節拍配合度」不一樣。更重要的是，這可能幫助我們理解阿茲海默症或注意力缺陷患者為何記憶力衰退——他們的大腦「節拍器」可能失調了。未來醫生或許能透過調整這種腦波節奏，幫助改善記憶問題，就像幫廚房重新校準工作節奏一樣。這項研究讓我們更接近「修理」記憶問題的那一天，而不只是束手無策地看著記憶力下滑。"
       },
       "insight": {
         "zh-TW": "💡 調控 theta-gamma 耦合或成為治療工作記憶缺損（如思覺失調症）的新靶點。",
@@ -190,7 +190,7 @@
       "day": "2026-06-05",
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.02891",
-      "url": "",
+      "url": "https://arxiv.org/abs/2606.02891",
       "color": "#4299e1",
       "title": {
         "zh-TW": "JWST 偵測到距離最近棕矮星大氣中的硫化物雲層與磷化氫特徵",
@@ -214,11 +214,11 @@
         "ko": "NIRSpec와 MIRI 복합 분광으로 Luhman 16A의 4-12 µm 대역에서 황화망간 구름과 포스핀 흡수선을 처음으로 동시 확인했다."
       },
       "plain": {
-        "zh-TW": "韋伯望遠鏡在距地球最近的棕矮星上，發現了由硫磺化合物組成的雲層以及有毒氣體磷化氫。",
-        "en": "The Webb telescope found clouds made of sulfur compounds and the toxic gas phosphine on the nearest brown dwarf to Earth.",
-        "zh-CN": "韦伯望远镜在距地球最近的褐矮星上发现了由硫磺化合物组成的云层以及有毒气体磷化氢。",
-        "ja": "ウェッブ望遠鏡が地球最近傍の褐色矮星に硫黄化合物の雲と有毒ガスのホスフィンを発見した。",
-        "ko": "웹 망원경이 지구에서 가장 가까운 갈색왜성에서 황 화합물 구름과 독성 기체 포스핀을 발견했다."
+        "zh-TW": "想像一下，如果木星和太陽談了場戀愛但沒修成正果，生下的孩子大概就是棕矮星——它比行星大得多，卻又不夠格當恆星發光發熱。這次韋伯太空望遠鏡盯上了我們家門口最近的這顆「失敗的太陽」Luhman 16A，距離地球只有六光年左右，結果在它的大氣層裡發現了硫化錳做成的雲朵，還有劇毒的磷化氫氣體飄來飄去。這就像是在鄰居家後院發現了一片由臭雞蛋味硫磺構成的雲海，空氣中還瀰漫著老鼠藥的成分！為什麼這很酷？因為這是我們第一次在這麼近的距離，用這麼先進的儀器同時看清這兩種化學物質，這不僅讓我們更了解這些「星際邊緣人」的真實模樣，也幫助科學家建立更好的模型，未來用來分析那些可能適合生命存在的系外行星大氣。說不定哪天我們能用類似技術，在遙遠行星的空氣中聞出生命的氣息呢！",
+        "en": "Imagine if Jupiter had a slightly cooler, weirder cousin living just down the street – that's basically what Luhman 16A is, a \"failed star\" called a brown dwarf sitting only six light-years away from us. Scientists just used the James Webb Space Telescope to peek into its atmosphere and found something wild: clouds made of manganese sulfide (think rusty, metallic sulfur compounds) floating around up there, along with phosphine gas – yes, the same toxic stuff you might associate with grain silos or, oddly enough, possible signs of life on Venus. This matters because brown dwarfs are like cosmic laboratories that help us understand what's happening in the atmospheres of giant exoplanets orbiting distant stars, many of which we can't study in such detail. By catching both the sulfur clouds and phosphine signature together for the first time in the 4-12 micrometer infrared range, astronomers are essentially reading the \"weather report\" of an alien world, learning how elements mix, condense, and cycle in atmospheres totally unlike Earth's. It's like discovering that your neighbor's weather includes raining metal and breathing poison – which sounds bizarre but teaches us the incredible diversity of worlds in our galactic neighborhood. This detection pushes the boundaries of what we can identify in distant atmospheres and hints that stranger chemical cocktails might be common across the universe.",
+        "zh-CN": "想象一下，如果你能用超级望远镜看到6光年外邻居家的天空，结果发现他们头顶飘的不是水蒸气云，而是硫磺做的云彩，空气里还弥漫着剧毒的磷化氢——这就是韦伯太空望远镜在离我们最近的棕矮星Luhman 16A上看到的景象。棕矮星是种\"失败的恒星\"，质量介于行星和恒星之间，温度够热但不足以像太阳那样发光，可以说是宇宙里的\"边缘人\"。这次发现之所以让科学家兴奋，是因为硫化锰云和磷化氢这种组合，就像在外星大气里找到了特殊的\"化学指纹\"，能帮我们理解这些奇特天体的内部运作机制。更重要的是，这为未来研究系外行星大气提供了重要参考——如果我们能在6光年外看清这些细节，就有希望在更远的类地行星上找到生命迹象。简单说，这就像是天文学家开发出了一套\"验血报告\"的读法，让我们能更精准地诊断遥远星球的\"健康状况\"，而这颗棕矮星恰好是我们家门口最方便的\"练习对象\"。",
+        "ja": "想像一下，如果木星和太陽談了場戀愛但沒修成正果，生下的孩子就是棕矮星——它們比行星大得多，卻又不夠重到能像真正的恆星那樣燃燒發光。科學家用韋伯太空望遠鏡盯著離我們最近的這顆「失敗恆星」Luhman 16A，驚訝地發現它的大氣層裡飄著硫化錳做成的雲（沒錯，就是那種聞起來像臭雞蛋的硫磺化合物），還檢測到了磷化氫這種在地球上被當作劇毒的氣體。這個發現就像在外星天氣預報裡聽到「今天有硫磺雲，伴隨毒氣霧霾」一樣超現實！更重要的是，這幫助我們理解這些介於行星與恆星之間的天體是如何演化的，也讓我們知道宇宙中的「天氣系統」可以有多瘋狂——比起地球上抱怨的陰雨天或霧霾，棕矮星上的居民（如果有的話）可真是生活在地獄模式啊。而且因為棕矮星的大氣結構跟某些巨行星很像，研究它們也能幫我們更了解太陽系外那些奇異世界的模樣。",
+        "ko": "想像一下，如果木星和太陽談了場戀愛但沒修成正果，生下的孩子就是棕矮星——它比行星大得多，但又不夠資格當恆星發光發熱。科學家用韋伯太空望遠鏡盯著距離我們最近的這顆「失敗恆星」Luhman 16A，驚訝地發現它的大氣層裡飄著硫化錳做成的雲朵，就像地球上的雨雲，只不過下的不是雨而是金屬硫化物！更神奇的是，那裡還檢測到磷化氫這種在地球上聞到會中毒的氣體，但在外星世界卻可能是生命存在的線索之一。這個發現之所以重要，是因為棕矮星的大氣結構其實跟許多系外行星很相似，搞懂它們就像拿到了一本「外星大氣指南」，幫助我們未來在尋找適合居住的星球時，知道該往哪些化學訊號看。而且Luhman 16A就在我們家門口（天文學上的「門口」啦，其實還是6光年遠），等於是送上門來的最佳研究樣本，讓科學家不用跑太遠就能研究這些奇幻世界的天氣預報。"
       },
       "insight": {
         "zh-TW": "💡 棕矮星大氣化學的直接觀測，將成為解讀系外巨行星大氣成分的關鍵對照樣本。",
@@ -235,7 +235,7 @@
       "day": "2026-06-05",
       "author": "Rossi et al. 2026",
       "ref": "arXiv:2606.03177",
-      "url": "",
+      "url": "https://arxiv.org/abs/2606.03177",
       "color": "#68d391",
       "title": {
         "zh-TW": "以液態金屬微通道實現可重構熱管理的柔性電子皮膚",
@@ -259,11 +259,11 @@
         "ko": "갈륨-인듐 액체 금속을 탄성 실리콘 마이크로채널에 주입해 전기 제어 흐름으로 밀리초 단위 국소 방열 재구성을 구현했다."
       },
       "plain": {
-        "zh-TW": "這種像皮膚一樣的電子材料內部流著液態金屬，可以瞬間調整散熱路徑，讓穿戴裝置不再過熱。",
-        "en": "This skin-like electronic material has liquid metal flowing inside, allowing instant rerouting of heat so wearable devices never overheat.",
-        "zh-CN": "这种像皮肤一样的电子材料内部流着液态金属，可以瞬间调整散热路径，让穿戴设备不再过热。",
-        "ja": "この皮膚状の電子材料は内部に液体金属が流れており、瞬時に放熱経路を切り替えてウェアラブルの過熱を防ぐ。",
-        "ko": "피부 같은 이 전자 소재 내부에 액체 금속이 흘러 방열 경로를 즉시 바꿔 웨어러블 기기의 과열을 막는다."
+        "zh-TW": "想像你穿著一件智慧衣，裡面藏著會「聽話」的液態血管系統——科學家把液態金屬（就像水銀但更安全的鎵銦合金）注入像皮膚一樣柔軟的矽膠通道裡，只要按個按鈕，這些金屬血液就會瞬間改變流動路線，把熱量從快燒起來的地方帶走。這有多快？大約只要眨眼的十分之一時間！為什麼這麼重要呢？現在的智慧手錶、VR頭盔或健康貼片常常會因為散熱不良而發燙、甚至燙傷皮膚，但有了這技術，裝置可以自己偵測哪裡太熱，立刻改變內部「血管」的流向把熱帶走，就像你身體流汗時會自動調節哪裡出汗一樣聰明。更酷的是，因為整個系統是軟的，你可以把它貼在手臂、額頭或任何彎曲的身體部位，完全不會感到僵硬或不舒服。未來穿戴裝置再也不用在「功能強大」和「不會燙手」之間做選擇了，兩者可以同時實現！",
+        "en": "Imagine your smartphone getting hot in your pocket, but instead of just suffering through it, the phone's surface could instantly redirect that heat away from your leg like a smart highway system for temperature. That's essentially what these researchers have created—a flexible electronic skin with tiny channels filled with liquid metal (a gallium-indium alloy) that flows through like blood in veins, except this \"blood\" can be electrically controlled to rush wherever cooling is needed in milliseconds. Think of it like having a mini air-conditioning system that doesn't blow air but instead intelligently reroutes liquid metal to hot spots faster than you can blink. This matters because our wearable devices—smartwatches, VR headsets, even future medical patches—constantly struggle with overheating, which drains batteries, causes discomfort, and limits how powerful they can be. For instance, imagine a fitness tracker that stays comfortably cool during your workout by instantly pumping cooling liquid to wherever the processor is working hardest, or a medical sensor on a patient's chest that never gets uncomfortably warm even after hours of continuous monitoring. By making electronics that can dynamically manage their own temperature like our skin does through sweating and blood flow, we're opening the door to more powerful, comfortable, and longer-lasting wearable technology that truly feels like a natural part of our body.",
+        "zh-CN": "想象一下你的身体血管系统——当你运动时，血液会自动流向需要散热的肌肉，而这项研究就是把类似的\"智能循环系统\"装进了电子皮肤里！科学家在柔软的硅胶材料里挖出微型通道，注入像水银一样会流动的液态金属（镓铟合金），然后通过电流控制这些金属液体的流向。当你戴着智能手表或VR设备时，哪个部位发热了，液态金属就能在几毫秒内（比眨眼还快）流到那里带走热量，就像你身体会自动调节血液分布一样。这对我们的生活意义重大，因为现在的穿戴设备最大的痛点就是发热——手表戴久了手腕出汗、VR头盔让额头闷热，甚至医疗贴片会因过热引起皮肤不适。有了这种\"会呼吸\"的电子皮肤，未来的智能衣物、医疗监测贴片，甚至机器人的触觉系统，都能像真正的皮肤一样舒适透气，再也不用担心长时间使用会被烫得难受了。",
+        "ja": "想像一下，你的身體就像一棟智慧大樓，當某個房間太熱時，空調系統會自動把冷氣送到那裡。日本研究團隊開發出一種神奇的「電子皮膚」，裡面流動著像水銀一樣的液態金屬（鎵銦合金），當感應到某個部位開始發燙時，這些液態金屬就會在千分之一秒內改變流動路線，把熱量迅速帶走。這對我們的生活意味著什麼呢？未來你戴著智慧手錶運動時，不用再擔心手腕被燙到起紅疹；或是貼在身上監測健康的醫療貼片，也能長時間使用而不會讓皮膚不舒服。更酷的是，這種材料像皮膚一樣柔軟可彎曲，完全不會影響你的活動。簡單說，這項技術就像給穿戴裝置裝上了一套「會思考的散熱系統」，讓科技真正貼近我們的身體，而不是折磨我們的皮膚。",
+        "ko": "想像一下，你的智慧手錶或VR頭盔就像一個會發燙的小暖爐貼在皮膚上，尤其是玩遊戲或運動時更是熱得受不了，對吧？科學家們現在發明了一種神奇的「電子皮膚」，裡面布滿了像血管一樣的微細通道，但流動的不是血液，而是常溫下就是液體的特殊金屬（鎵銦合金）。最酷的是，這些液態金屬可以透過電子控制在瞬間（毫秒級！）改變流動路徑，哪裡熱就往哪裡跑去散熱，就像你身體會自動把血液送到需要降溫的地方一樣。這意謂著未來的穿戴裝置、電子紋身，甚至醫療貼片都能做得更輕薄、更貼身，卻不會讓你感到不舒服的灼熱感。舉個例子，如果你戴著AR眼鏡工作一整天，處理器突然全速運轉時，這層「聰明皮膚」能立刻把熱導走，而不是讓你的太陽穴被烤得發疼。這項技術不只讓裝置更舒適，也能延長電子產品壽命，因為過熱一直是電子零件的頭號殺手啊！"
       },
       "insight": {
         "zh-TW": "💡 可重構散熱技術突破了柔性電子長期受限於高功率密度的瓶頸，為下一代義肢與健康監測裝置鋪路。",
