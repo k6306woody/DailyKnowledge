@@ -31,13 +31,17 @@ button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
 #splash{
   position:fixed;inset:0;z-index:9999;background:#0a2a28;
   display:flex;align-items:center;justify-content:center;
-  animation:splashOut .75s ease-in 2.6s forwards;
-  will-change:transform;
+  /* 2.5s 開始，共 0.9s：推近 → 融入 */
+  animation:splashOut .9s cubic-bezier(.4,0,1,1) 2.5s forwards;
+  will-change:transform,opacity;
 }
 @keyframes splashOut{
-  0%   { transform:translateY(0) scale(1);   opacity:1 }
-  30%  { transform:translateY(0) scale(1.04); opacity:1 }
-  100% { transform:translateY(-100%) scale(1.04); opacity:.6 }
+  /* 0% = 2.5s：靜止清晰 */
+  0%   { transform:scale(1);    opacity:1 }
+  /* 44% = 2.9s：輕微推近，仍完全清晰 */
+  44%  { transform:scale(1.04); opacity:1 }
+  /* 100% = 3.4s：繼續推近，完全透明 */
+  100% { transform:scale(1.12); opacity:0 }
 }
 #splash.gone{display:none}
 .sp-bg{position:absolute;inset:0;overflow:hidden;z-index:0}
@@ -56,8 +60,9 @@ button{cursor:pointer;border:none;font-family:inherit;transition:all .2s}
 /* ══════════════════════════════════
    LAYOUT — sidebar + main
 ══════════════════════════════════ */
-#app{animation:appIn .7s 3.2s cubic-bezier(.22,1,.36,1) both;margin-left:268px;min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:1}
-@keyframes appIn{from{opacity:0;transform:translateY(8%)}to{opacity:1;transform:translateY(0)}}
+#app{animation:appIn .4s 3.0s ease-out both;margin-left:268px;min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:1}
+/* 主畫面 3.0s 開始淡入，0.4s 完成 → 3.4s 完整顯示，與 splash 消失同步 */
+@keyframes appIn{from{opacity:0}to{opacity:1}}
 
 /* NAV — full width of main area */
 .nav{position:sticky;top:0;z-index:200;background:var(--nb);border-bottom:1px solid var(--bd);box-shadow:0 2px 16px var(--sh);display:flex;align-items:center;padding:0 16px;height:52px;gap:10px;transition:background .3s}
@@ -1373,7 +1378,7 @@ document.getElementById('splash').addEventListener('click',()=>{
   if(window._stopSplashAnim)window._stopSplashAnim();
   document.getElementById('splash').classList.add('gone');
 });
-setTimeout(()=>document.getElementById('splash').classList.add('gone'), 3550);
+setTimeout(()=>document.getElementById('splash').classList.add('gone'), 3450);
 
 
 // ══════════════════════════════════════════════════════
