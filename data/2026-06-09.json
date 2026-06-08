@@ -1,0 +1,188 @@
+{
+  "date": "2026-06-09",
+  "mode": "paper",
+  "paper_date": "2026-06-09",
+  "generated_at": "2026-06-09",
+  "cards": [
+    {
+      "id": "ai-260609",
+      "domain": "ai",
+      "day": "2026-06-09",
+      "author": "Luca Avena, Gianmarco Bet et al.",
+      "ref": "arXiv:2606.07515v1",
+      "url": "https://arxiv.org/abs/2606.07515v1",
+      "color": "#667eea",
+      "title": {
+        "zh-TW": "擲骰子難倒 AI？大型語言模型的機率推理極限測試",
+        "en": "Can LLMs Really Think in Probabilities? A Stress Test with Dice Problems",
+        "zh-CN": "掷骰子难倒 AI？大型语言模型的概率推理极限测试",
+        "ja": "サイコロで AI を試す：大規模言語モデルの確率推論の限界",
+        "ko": "주사위로 AI를 시험하다: 대형 언어 모델의 확률 추론 한계 테스트"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 Artificial Intelligence",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "研究團隊構建了兩組離散機率題庫：一組為標準教科書型題目，另一組為反直覺題目（刻意觸發啟發式偏誤），並以是否使用思維鏈（Chain-of-Thought）提示，對 8 個主流大型語言模型進行系統性評測。結果顯示模型在標準題上平均準確率達 0.96，但在反直覺題上驟降至 0.59，且換用語義相近卻不同的 token 表述問題時，準確率再跌逾 20%，揭示了顯著的 token 偏誤現象。",
+        "en": "The team built two benchmarks of discrete probability problems: standard textbook-style exercises and counterintuitive ones designed to trigger heuristic shortcuts, then evaluated 8 state-of-the-art LLMs with and without Chain-of-Thought prompting. Models scored an average accuracy of 0.96 on standard problems but only 0.59 on counterintuitive ones, and performance dropped by more than 20% when semantically equivalent but differently tokenized phrasings were used, revealing a strong token bias.",
+        "zh-CN": "研究团队构建了两组离散概率题库：标准教科书型题目和反直觉题目（刻意触发启发式偏误），对 8 个主流大型语言模型分别在有无思维链提示的条件下进行系统评测。模型在标准题上平均准确率达 0.96，但在反直觉题上骤降至 0.59，且换用语义相近却不同 token 表述的问题时，准确率再跌逾 20%，揭示了显著的 token 偏误现象。",
+        "ja": "研究チームは離散確率問題のベンチマークを二種類構築した：標準的な教科書型と、ヒューリスティックな誤りを誘発するよう設計された反直感型である。Chain-of-Thoughtプロンプトの有無を変えながら最新 LLM 8 モデルを評価した結果、標準問題では平均正答率 0.96 を達成したが、反直感問題では 0.59 に低下し、意味的に同一でも異なるトークン表現に切り替えると正答率がさらに 20% 以上下落するトークンバイアスが確認された。",
+        "ko": "연구팀은 이산 확률 문제 벤치마크를 두 가지로 구성했다: 표준 교과서형 문제와 휴리스틱 편향을 유발하도록 설계된 반직관적 문제. 8개의 최신 LLM을 Chain-of-Thought 프롬프트 유무에 따라 평가한 결과, 표준 문제에서는 평균 정확도 0.96을 기록했지만 반직관적 문제에서는 0.59로 급락했으며, 의미적으로 동일하지만 다르게 토크나이즈된 표현으로 바꾸면 정확도가 20% 이상 추가 하락하는 토큰 편향이 확인됐다."
+      },
+      "plain": {
+        "zh-TW": "你有沒有想過，ChatGPT 這類 AI 在解數學機率題時，到底有多可靠？研究者用「擲骰子」這類看似簡單的機率問題來考驗它們。結果發現，遇到一般教科書的題目，AI 幾乎全對，就像優等生應付普通考試一樣輕鬆。但只要題目換成需要打破直覺的版本——例如著名的「生日悖論」或「蒙提霍爾問題」那種讓人意外的答案——正確率就從 96% 暴跌到 59%，跟丟硬幣猜猜看差不多。更有趣的是，同一個問題只要換個說法，AI 的表現就天差地遠，顯示它其實是在「認字找模式」，而不是真正在「思考機率」。這很重要，因為我們愈來愈常讓 AI 幫忙分析風險、做醫療診斷或金融決策，而這些場合往往充滿反直覺的機率陷阱。如果 AI 只會應付課本題目，在真實世界的邊緣案例中它可能悄悄犯錯，而我們卻渾然不覺。",
+        "en": "Have you ever wondered how reliable ChatGPT-style AI really is when solving probability puzzles? Researchers put LLMs through a dice-rolling gauntlet of probability problems. On straightforward textbook questions, the models aced them almost perfectly—like a top student breezing through routine exams. But the moment questions required breaking intuition—think the Birthday Paradox or the Monty Hall Problem where the answer surprises everyone—accuracy nosedived from 96% to 59%, barely better than a coin flip. Even more revealing: rephrase the exact same question with slightly different wording and the AI's performance swings wildly, exposing that it is pattern-matching on language rather than genuinely reasoning about chance. This matters enormously because we increasingly rely on AI for medical risk assessments, financial decisions, and scientific analysis—all domains riddled with counterintuitive probability traps. An AI that only handles textbook scenarios could silently fail in exactly the situations where careful probabilistic thinking is most critical.",
+        "zh-CN": "你有没有想过，ChatGPT 这类 AI 在解概率题时到底有多可靠？研究者用「掷骰子」这类看似简单的概率问题来考验它们。遇到普通教科书题目，AI 几乎全对，就像优等生应付常规考试一样轻松。但只要题目换成需要打破直觉的版本——比如「生日悖论」或「蒙提霍尔问题」那种让人意外的答案——正确率就从 96% 暴跌到 59%，跟抛硬币猜答案差不多。更有意思的是，同一个问题换个说法，AI 的表现就天差地远，说明它其实在「认字找模式」而非真正思考概率。这非常重要，因为我们越来越多地让 AI 帮忙分析医疗风险、做金融决策，而这些场景往往充满反直觉的概率陷阱。一个只会应付课本题的 AI，在真实世界的边缘情况中可能悄悄犯错，而我们却浑然不觉。",
+        "ja": "ChatGPT のような AI は確率の問題をどれほど正確に解けるのだろうか？研究者たちはサイコロを使った確率問題で AI を徹底的に試した。教科書通りの問題なら AI はほぼ満点——優等生が普通のテストをこなすように楽々解く。しかし「誕生日のパラドックス」や「モンティ・ホール問題」のように直感を裏切るタイプの問題になると、正答率は 96% から 59% へと急落し、コインを投げるのとほぼ変わらないレベルになってしまう。さらに驚くことに、全く同じ問題を少し違う言い回しに変えるだけで AI の成績が大きく変わる——これは AI が確率を「考えている」のではなく、言葉のパターンを「拾っている」に過ぎないことを示している。医療リスク評価や金融判断など、反直感的な確率の落とし穴が潜む場面で AI を活用する機会が増えている今、この発見は非常に重要な警鐘だ。",
+        "ko": "ChatGPT 같은 AI가 확률 문제를 얼마나 잘 풀까요? 연구자들이 주사위 확률 문제로 AI를 철저히 시험해봤습니다. 일반 교과서 문제라면 AI는 거의 완벽하게 풀어냅니다—우등생이 쉬운 시험을 보는 것처럼요. 하지만 「생일 역설」이나 「몬티 홀 문제」처럼 직관을 깨뜨려야 하는 문제가 나오면 정확도가 96%에서 59%로 뚝 떨어집니다—동전 던지기와 별반 다르지 않은 수준이에요. 더 놀라운 건, 똑같은 문제를 살짝 다른 표현으로 바꾸기만 해도 AI 성능이 크게 흔들린다는 점입니다. 이는 AI가 확률을 '생각'하는 게 아니라 언어 패턴을 '매칭'하고 있다는 증거입니다. 의료 위험 분석, 금융 결정처럼 반직관적 확률 함정이 도사리는 분야에서 AI 의존도가 높아지는 지금, 이 발견은 중요한 경고입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 AI 在機率上的自信，往往來自語言模式的熟悉，而非真正理解隨機性——當題目變得反直覺，它的表現就像從未學過機率的人一樣。",
+        "en": "💡 An LLM's confidence in probability often reflects familiarity with language patterns rather than genuine probabilistic reasoning—when problems turn counterintuitive, its performance collapses like someone who never learned probability at all.",
+        "zh-CN": "💡 AI 在概率上的自信，往往来自对语言模式的熟悉，而非真正理解随机性——当题目变得反直觉，它的表现就像从未学过概率的人一样。",
+        "ja": "💡 LLM が確率問題で見せる「自信」は、言語パターンへの慣れに由来することが多く、本当の確率的思考ではない——問題が反直感的になった瞬間、その実力は確率を学んだことのない人と変わらなくなる。",
+        "ko": "💡 LLM이 확률 문제에서 보이는 자신감은 언어 패턴 익숙함에서 비롯된 경우가 많고 진정한 확률적 추론이 아니다—문제가 반직관적으로 바뀌는 순간 성능은 확률을 배운 적 없는 사람과 다를 바 없어진다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<rect x=\"20\" y=\"40\" width=\"70\" height=\"70\" rx=\"12\" fill=\"#667eea\" opacity=\"0.9\"/>\n<circle cx=\"55\" cy=\"75\" r=\"7\" fill=\"white\"/>\n<rect x=\"110\" y=\"40\" width=\"70\" height=\"70\" rx=\"12\" fill=\"#667eea\" opacity=\"0.7\"/>\n<circle cx=\"135\" cy=\"60\" r=\"6\" fill=\"white\"/>\n<circle cx=\"155\" cy=\"75\" r=\"6\" fill=\"white\"/>\n<circle cx=\"135\" cy=\"90\" r=\"6\" fill=\"white\"/>\n<rect x=\"200\" y=\"50\" width=\"55\" height=\"55\" rx=\"8\" fill=\"#ff6b6b\" opacity=\"0.85\"/>\n<line x1=\"215\" y1=\"65\" x2=\"240\" y2=\"90\" stroke=\"white\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"240\" y1=\"65\" x2=\"215\" y2=\"90\" stroke=\"white\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<polygon points=\"275,45 295,45 305,62 295,79 275,79 265,62\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"285\" cy=\"62\" r=\"6\" fill=\"#667eea\" opacity=\"0.6\"/>\n</svg>"
+    },
+    {
+      "id": "bio-260609",
+      "domain": "bio",
+      "day": "2026-06-09",
+      "author": "Raja Sekhar Pappala, Shreyas Vinaya Sathyanarayana et al.",
+      "ref": "arXiv:2606.07181v1",
+      "url": "https://arxiv.org/abs/2606.07181v1",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "AI逆向拆解分子：讓機器告訴你一個藥物該怎麼合成",
+        "en": "AI Reverse-Engineers Molecules: Teaching Machines How to Synthesize Any Drug",
+        "zh-CN": "AI逆向拆解分子：让机器告诉你一个药物该怎么合成",
+        "ja": "AIが分子を逆解析する：薬の合成経路を機器が提案する新手法",
+        "ko": "AI가 분자를 역설계하다：기계가 약물 합성 경로를 알려주는 새 방법"
+      },
+      "tag": {
+        "zh-TW": "🧬 化學資訊學",
+        "en": "🧬 Cheminformatics",
+        "zh-CN": "🧬 化学信息学",
+        "ja": "🧬 ケモインフォマティクス",
+        "ko": "🧬 화학정보학"
+      },
+      "tech": {
+        "zh-TW": "RETROSPECT 系統將單步逆合成分解為「提案」與「篩選」兩階段：首先以 ChemAlign Transformer 搭配混合 SMILES 增強、Pre-LayerNorm 與指數移動平均權重生成候選合成路徑，再由 LambdaMART 重排序器結合結構特徵、反應模板分數與可選的 DFT 量子化學描述符進行精排，顯著提升第一名命中率與候選清單品質。",
+        "en": "RETROSPECT decomposes single-step retrosynthesis into a proposal-then-selection pipeline: a ChemAlign Transformer generates candidate synthetic routes using hybrid root-aligned and random SMILES augmentation with Pre-LayerNorm and EMA weights, while a LambdaMART reranker refines the list using structural, reaction-template, upstream-score, and optional DFT-derived quantum chemical descriptors to boost top-1 accuracy and candidate diversity.",
+        "zh-CN": "RETROSPECT 系统将单步逆合成分解为「提案」与「筛选」两阶段：首先以 ChemAlign Transformer 搭配混合 SMILES 增强、Pre-LayerNorm 与指数移动平均权重生成候选合成路径，再由 LambdaMART 重排序器结合结构特征、反应模板分数与可选的 DFT 量子化学描述符进行精排，显著提升首位命中率与候选列表质量。",
+        "ja": "RETROSPECTは単段階逆合成を「提案」と「選択」の二段階に分解する。ChemAlignトランスフォーマーがSMILES拡張・Pre-LayerNorm・EMA重みを用いて候補経路を生成し、LambdaMART再ランカーが構造特徴・反応テンプレートスコア・オプションのDFT量子化学記述子を統合して精密に順位付けを行い、トップ1命中率と候補多様性を大幅に改善する。",
+        "ko": "RETROSPECT는 단일 단계 역합성을 「제안」과 「선택」의 두 단계로 분리한다. ChemAlign 트랜스포머가 하이브리드 SMILES 증강·Pre-LayerNorm·EMA 가중치로 후보 경로를 생성하고, LambdaMART 재순위 모델이 구조 특징·반응 템플릿 점수·선택적 DFT 양자화학 기술자를 결합해 정밀 재정렬함으로써 상위 1위 정확도와 후보 다양성을 크게 향상시킨다."
+      },
+      "plain": {
+        "zh-TW": "想像你手上有一瓶神奇藥水，但你不知道它是怎麼釀出來的——逆合成就是化學家「倒帶」的工作，把複雜分子一步步拆回最簡單的原料。這就像把一道精緻法國料理逆推回超市貨架上的食材。過去化學家要靠幾十年的直覺才能完成這件事，現在 RETROSPECT 用 AI 來做這份推理。它先像一位靈感豐富的廚師，快速提出幾十條可能的合成路線，再像一位嚴格的評審，根據化學結構、反應規則，甚至量子力學計算的能量數據，把最可行的方案排到最前面。這對製藥業來說意義重大：研發一款新藥通常要在天文數字的合成路線中挑選，AI 的精準篩選可以節省數年的人力與數億的成本。更聰明的是，它不只給你一個答案，而是給你一份排好優先順序的候選清單，讓下游的實驗室有更多選擇空間。這代表 AI 正在從「輔助工具」升格為化學家真正的「思考夥伴」。",
+        "en": "Imagine you have a miraculous medicine but have no idea how it was made—retrosynthesis is the chemist's art of rewinding a complex molecule back to its simplest starting materials, like reverse-engineering a gourmet dish into supermarket ingredients. This work used to rely on decades of expert intuition; RETROSPECT lets AI do the reasoning instead. It first acts like an imaginative chef, rapidly proposing dozens of possible synthetic routes, then like a strict judge, ranking them by chemical structure, reaction rules, and even quantum mechanical energy data. For the pharmaceutical industry, this is transformative: developing a new drug means navigating an astronomical number of possible routes, and AI-driven ranking can save years of labor and hundreds of millions in costs. Crucially, RETROSPECT doesn't just give one answer—it delivers a prioritized shortlist, giving downstream labs flexible options. This signals AI's evolution from a mere tool into a genuine thinking partner for chemists.",
+        "zh-CN": "想象你手里有一瓶神奇药水，但不知道它是怎么＂酿＂出来的——逆合成就是化学家的「倒带」工作，把复杂分子一步步拆回最简单的原料，就像把一道精致法式料理还原成超市货架上的食材。过去这件事要靠化学家数十年的直觉，现在 RETROSPECT 用 AI 来完成这份推理。它先像一位灵感丰富的厨师，快速提出几十条可能的合成路线，再像一位严格的评委，根据化学结构、反应规则，甚至量子力学计算的能量数据，把最可行的方案排到最前面。对制药业而言意义重大：研发一款新药通常要在天文数字的合成路线中挑选，AI 的精准筛选可节省数年人力与数亿成本。更聪明的是，它不只给你一个答案，而是提供排好优先级的候选清单，让下游实验室拥有更多选择空间。这标志着 AI 正在从「辅助工具」升级为化学家真正的「思考伙伴」。",
+        "ja": "手元に不思議な薬があるのに、どうやって作られたかわからない——逆合成とは、複雑な分子を最もシンプルな出発物質まで「巻き戻す」化学者の技術で、高級フランス料理をスーパーの食材に逆算するようなものです。これまで数十年の専門的直感が必要だった作業を、RETROSPECTはAIで実現します。まず発想豊かなシェフのように数十の合成経路を素早く提案し、次に厳格な審査員のように化学構造・反応ルール・量子力学的エネルギーデータをもとに最も実現可能な案を上位に並べます。新薬開発では天文学的数の合成経路から選ぶ必要があり、AIによる精密な順位付けは数年分の労力と数億円のコストを節約できます。一つの答えではなく優先順位付きの候補リストを提供する点も重要で、下流の実験室に柔軟な選択肢を与えます。AIが化学者の「補助ツール」から真の「思考パートナー」へ進化しつつあることを示す研究です。",
+        "ko": "손에 신비로운 약이 있는데 어떻게 만들어졌는지 모른다면？역합성이란 복잡한 분자를 가장 단순한 출발 물질로 '되감는' 화학자의 기술로, 고급 프랑스 요리를 슈퍼마켓 재료로 역추적하는 것과 같습니다. 수십 년의 전문가 직관이 필요했던 이 작업을 RETROSPECT는 AI로 수행합니다. 먼저 아이디어 풍부한 셰프처럼 수십 가지 합성 경로를 빠르게 제안하고, 이어 엄격한 심사위원처럼 화학 구조·반응 규칙·양자역학 에너지 데이터를 바탕으로 가장 실현 가능한 방안을 상위에 배치합니다. 신약 개발에서는 천문학적 수의 합성 경로 중에서 선택해야 하므로, AI의 정밀 순위 결정은 수년간의 인력과 수억 원의 비용을 절감할 수 있습니다. 단 하나의 답이 아닌 우선순위가 매겨진 후보 목록을 제공해 후속 실험실에 유연한 선택지를 줍니다. 이는 AI가 단순 보조 도구에서 화학자의 진정한 '사고 파트너'로 진화하고 있음을 보여줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 逆合成不只是找到「一條路」，而是找到「最值得走的那幾條路」——AI 學會排優先順序，才算真正進入科學家的工作流程。",
+        "en": "💡 Retrosynthesis isn't about finding 「one path」—it's about ranking which paths are worth taking; only when AI masters prioritization does it truly enter the scientist's workflow.",
+        "zh-CN": "💡 逆合成不只是找到「一条路」，而是找到「最值得走的那几条路」——AI 学会排优先顺序，才算真正融入科学家的工作流程。",
+        "ja": "💡 逆合成とは「一つの道」を見つけることではなく、「最も歩む価値のある道」を順位付けすることであり、AIが優先順位付けをマスターして初めて科学者のワークフローに真に組み込まれる。",
+        "ko": "💡 역합성이란 「하나의 경로」를 찾는 것이 아니라 「가장 걸어볼 만한 경로」를 순위 매기는 것이며, AI가 우선순위 결정을 습득해야 비로소 과학자의 워크플로에 진정으로 통합된다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"#48bb78\" opacity=\"0.9\"/>\n<circle cx=\"280\" cy=\"80\" r=\"18\" fill=\"#2d6a4f\"/>\n<circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#48bb78\"/>\n<polygon points=\"170,55 195,80 170,105 145,80\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"3\"/>\n<line x1=\"200\" y1=\"80\" x2=\"248\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/>\n<circle cx=\"80\" cy=\"55\" r=\"14\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/>\n<circle cx=\"110\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/>\n<circle cx=\"80\" cy=\"105\" r=\"12\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/>\n<line x1=\"80\" y1=\"69\" x2=\"102\" y2=\"76\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<line x1=\"80\" y1=\"93\" x2=\"103\" y2=\"84\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<line x1=\"94\" y1=\"55\" x2=\"100\" y2=\"74\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<line x1=\"120\" y1=\"80\" x2=\"141\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/>\n</svg>"
+    },
+    {
+      "id": "space-260609",
+      "domain": "space",
+      "day": "2026-06-09",
+      "author": "Nicholas J. Connors, Christopher Monaghan et al.",
+      "ref": "arXiv:2606.07511v1",
+      "url": "https://arxiv.org/abs/2606.07511v1",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "韋伯望遠鏡首度完整觀測岩石系外行星 GJ 3929 b，探尋大氣層的關鍵線索",
+        "en": "JWST Completes First Full Rocky World Survey: Does GJ 3929 b Have an Atmosphere?",
+        "zh-CN": "韦伯望远镜首度完整观测岩石系外行星 GJ 3929 b，探寻大气层的关键线索",
+        "ja": "ジェームズ・ウェッブ望遠鏡が岩石系外惑星 GJ 3929 b の大気を初めて完全観測",
+        "ko": "제임스 웹 망원경, 암석형 외계행성 GJ 3929 b 대기 탐색 첫 완전 관측 완료"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究利用韋伯太空望遠鏡 MIRI 儀器在15微米波段，對紅矮星 GJ 3929 周圍的地球大小岩石行星進行四次次級凌食（掩星）觀測，這也是「岩石世界 DDT 巡天計畫」的首份完整資料集。研究團隊透過測量日夜面溫差及搜尋 CO₂ 吸收特徵，判斷該行星是否存在可重新分配熱量的大氣層。此方法能夠區分「裸岩星球」與「具有大氣層的宜居候選行星」兩種截然不同的情境。",
+        "en": "This study presents four JWST/MIRI secondary eclipse observations of GJ 3929 b, an Earth-sized rocky planet orbiting an M dwarf star, forming the first complete dataset of the Rocky Worlds DDT survey. By measuring the planet's 15 μm thermal emission, the team probes for day-night heat redistribution and CO₂ absorption to determine whether a substantial atmosphere exists. This approach distinguishes between a bare-rock scenario and one where atmospheric circulation moderates surface temperatures.",
+        "zh-CN": "本研究利用韦伯太空望远镜 MIRI 仪器在15微米波段，对红矮星 GJ 3929 周围地球大小的岩石行星进行四次次级凌食观测，是「岩石世界 DDT 巡天计划」的首份完整数据集。研究团队通过测量昼夜面温差及搜寻 CO₂ 吸收特征，判断该行星是否存在可重新分配热量的大气层。此方法能够区分「裸岩星球」与「具有大气层的宜居候选行星」两种截然不同的情境。",
+        "ja": "本研究では、M型矮小星 GJ 3929 を周回する地球サイズの岩石惑星に対して、JWST/MIRI の15マイクロメートル帯で4回の副食（二次食）観測を実施し、「岩石世界 DDT サーベイ」初の完全データセットを構築した。昼夜面の熱再分配と CO₂ 吸収の有無を調べることで、大気が存在するかどうかを判定する。この手法により、裸の岩石惑星か大気を持つ候補天体かを識別できる。",
+        "ko": "이 연구는 M형 왜성 GJ 3929 주위를 도는 지구 크기의 암석 행성을 대상으로 JWST/MIRI의 15마이크로미터 대역에서 4회 이차 식(secondary eclipse) 관측을 수행하여 「암석 세계 DDT 탐사」의 첫 완전 데이터셋을 구축했다. 낮·밤 면 열 재분배와 CO₂ 흡수 특징을 분석하여 대기 존재 여부를 판별하며, 이를 통해 민낯 암석 행성과 대기 보유 후보 행성을 구별할 수 있다."
+      },
+      "plain": {
+        "zh-TW": "宇宙中最常見的恆星是紅矮星，比太陽小又暗，而圍繞它們的岩石行星數量驚人——但這些星球上有沒有空氣，至今仍是個謎。想像一下：如果月球上有大氣層，溫度分布就會像地球一樣均勻；如果完全沒有空氣，白天和夜晚的溫差就會極端到可怕。科學家就是利用這個道理，觀察 GJ 3929 b 這顆位於43光年外、大小和地球相當的行星。韋伯望遠鏡就像一支超靈敏的「溫度計」，偵測這顆行星在躲入恆星後方時消失的熱訊號，計算它的「體感溫度」。四次完整觀測讓研究人員第一次有了足夠資料，可以認真回答這顆行星是「一塊曬焦的裸岩」，還是「裹著一層氣體毯子的世界」。這項研究之所以重要，是因為宇宙中可能有數十億顆類似的行星，弄清楚它們能否留住大氣層，直接影響我們對「生命在宇宙中有多普遍」這個終極問題的判斷。GJ 3929 b 是這個巡天計畫的第一塊拼圖，未來更多行星的資料將讓答案越來越清晰。",
+        "en": "The most common stars in the universe are red dwarfs—small, dim, and surrounded by countless rocky planets. But a burning question remains: do any of those planets have air? Think of it this way—the Moon has no atmosphere, so its dayside scorches at 127°C while the nightside freezes at -173°C. A planet with a thick atmosphere, like Earth, smooths out that difference. Scientists used this same logic on GJ 3929 b, an Earth-sized planet 43 light-years away. JWST acts like an ultra-sensitive thermometer, measuring the heat that vanishes when the planet slips behind its star. Four complete observations gave researchers their first solid dataset to seriously ask: bare scorched rock, or a world wrapped in an invisible blanket of gas? The stakes are enormous—there could be billions of similar planets in our galaxy alone, and knowing whether they hold onto atmospheres reshapes our understanding of how common life-friendly worlds might be. GJ 3929 b is the first completed piece of a much larger puzzle.",
+        "zh-CN": "宇宙中最常见的恒星是红矮星，比太阳小又暗，周围围绕着数量惊人的岩石行星——但这些星球上有没有空气，至今仍是个谜。想象一下：月球没有大气层，所以白天高达127°C，夜晚低至-173°C；而地球因为有大气层，温差被大大抹平。科学家用同样的逻辑研究 GJ 3929 b，这是一颗距离我们43光年、大小与地球相当的行星。韦伯望远镜就像超灵敏「温度计」，测量这颗行星躲入恒星背后时消失的热信号。四次完整观测让研究人员首次有了足够数据，认真回答它究竟是「一块晒焦的裸岩」还是「裹着气体毯子的世界」。这项研究意义深远，因为银河系中可能有数十亿颗类似行星，弄清楚它们能否保住大气层，直接影响我们对宇宙中生命普遍程度的判断。",
+        "ja": "宇宙で最もありふれた恒星はM型矮小星（赤色矮星）で、太陽より小さく暗い。その周りには無数の岩石惑星が存在するが、そこに「空気」があるかどうかはまだ謎のままだ。月は大気がないため昼は127℃、夜は-173℃という極端な温度差が生じる。一方、地球のように大気があると熱が均されて温度差は小さくなる。研究チームはこの原理を使い、43光年先にある地球サイズの惑星 GJ 3929 b を調査した。JWSTは超高感度の「温度計」として、惑星が恒星の裏に隠れる瞬間に消える熱を捉える。4回分の完全データは、この惑星が「焼け焦げた裸岩」か「ガスの毛布を纏った世界」かを初めて本格的に判断できる材料を提供した。銀河系だけで数十億の類似惑星が存在すると考えられ、その大気保持能力の解明は生命の普遍性という究極の問いに直結する。",
+        "ko": "우주에서 가장 흔한 별은 적색왜성으로, 태양보다 작고 어두우며 수많은 암석 행성을 거느리고 있다. 하지만 그 행성들에 공기가 있는지는 여전히 미스터리다. 대기가 없는 달은 낮에 127°C, 밤에 -173°C로 극단적인 온도 차이를 보이지만, 지구처럼 대기가 있으면 열이 고르게 퍼진다. 연구팀은 이 원리를 이용해 43광년 떨어진 지구 크기 행성 GJ 3929 b를 분석했다. 제임스 웹 망원경은 초정밀 「온도계」처럼, 행성이 별 뒤로 숨을 때 사라지는 열 신호를 포착한다. 4번의 완전한 관측 데이터 덕분에 과학자들은 이 행성이 「타버린 맨 바위」인지 「가스 담요를 두른 세계」인지를 처음으로 진지하게 판단할 수 있게 됐다. 은하계에만 수십억 개의 유사 행성이 있을 수 있어, 대기 보유 여부를 밝히는 일은 우주에서 생명이 얼마나 흔한가라는 근본적인 질문과 직결된다."
+      },
+      "insight": {
+        "zh-TW": "💡 一顆行星的日夜溫差，可能就是決定它「是否值得生命期待」的最簡單密碼。",
+        "en": "💡 A planet's day-night temperature gap may be the simplest cosmic code that tells us whether life ever had a chance.",
+        "zh-CN": "💡 一颗行星的昼夜温差，可能就是决定它「是否值得生命期待」的最简单密码。",
+        "ja": "💡 惑星の昼夜温度差こそ、そこに生命の可能性があるかを示す最もシンプルな宇宙の暗号かもしれない。",
+        "ko": "💡 행성의 낮밤 온도 차이야말로 생명의 가능성을 알려주는 우주에서 가장 단순한 암호일지도 모른다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"60\" cy=\"80\" r=\"32\" fill=\"#e05a2b\" opacity=\"0.9\"/>\n<circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#e05a2b\" stroke-width=\"2\" opacity=\"0.3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#4299e1\"/>\n<circle cx=\"170\" cy=\"80\" r=\"24\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"3\" stroke-dasharray=\"4 3\" opacity=\"0.6\"/>\n<circle cx=\"170\" cy=\"80\" r=\"29\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" opacity=\"0.3\"/>\n<line x1=\"98\" y1=\"80\" x2=\"148\" y2=\"80\" stroke=\"#e05a2b\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" opacity=\"0.5\"/>\n<circle cx=\"280\" cy=\"80\" r=\"18\" fill=\"#4a5568\"/>\n<path d=\"M262 80 Q271 60 280 62 Q289 60 298 80 Q289 100 280 98 Q271 100 262 80 Z\" fill=\"#4299e1\" opacity=\"0.45\"/>\n<circle cx=\"280\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2.5\" opacity=\"0.7\"/>\n<line x1=\"208\" y1=\"80\" x2=\"258\" y2=\"80\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\" opacity=\"0.5\"/>\n<circle cx=\"20\" cy=\"20\" r=\"2\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<circle cx=\"320\" cy=\"140\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n</svg>"
+    },
+    {
+      "id": "tech-260609",
+      "domain": "tech",
+      "day": "2026-06-09",
+      "author": "Tuba Girgin, Jose Castelblanco et al.",
+      "ref": "arXiv:2606.07506v1",
+      "url": "https://arxiv.org/abs/2606.07506v1",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "四足機器人「用腳操物」：基於可負擔性感知的階層式強化學習",
+        "en": "Quadruped Robots Learn to Manipulate Objects With Their Feet Using Affordance-Guided Hierarchical RL",
+        "zh-CN": "四足机器人「用脚操物」：基于可操作性感知的层次强化学习",
+        "ja": "四足ロボットが「足で物を操る」：アフォーダンス誘導による階層型強化学習",
+        "ko": "네 발 로봇이 「발로 물체를 조작」：어포던스 기반 계층적 강화학습"
+      },
+      "tag": {
+        "zh-TW": "📶 機器人學",
+        "en": "📶 Robotics",
+        "zh-CN": "📶 机器人学",
+        "ja": "📶 ロボット工学",
+        "ko": "📶 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "本研究提出三層階層式強化學習框架，讓四足機器人能自主判斷目標物體上「適合接觸的點」（pose affordance）與自身最佳站位，並由此驅動導航策略、再由導航策略驅動底層步態控制，全程無需人工設計軌跡。最高層負責選擇可負擔的互動姿態，中層引導機器人走到位，底層則完成實際用腳操作物體的動作。這套設計讓機器人從感知到執行形成端對端的自主閉環。",
+        "en": "This work introduces a three-level hierarchical reinforcement learning framework enabling quadruped robots to autonomously identify both an affordable contact point on a target object and an optimal base pose, using pose affordances to guide a navigation policy that in turn drives a low-level locomotion policy. No expert-designed trajectories are required at any stage. The result is a fully autonomous perception-to-execution loop for foot-based object manipulation.",
+        "zh-CN": "本研究提出三层层次强化学习框架，使四足机器人能自主判断目标物体上「适合接触的点」（姿态可操作性）与自身最佳站位，并以此驱动导航策略、再由导航策略驱动底层步态控制，全程无需人工设计轨迹。最高层负责选择可操作的交互姿态，中层引导机器人就位，底层完成实际用脚操作物体的动作。",
+        "ja": "本研究は三段階の階層型強化学習フレームワークを提案し、四足ロボットが目標物体上の「接触可能点」（姿勢アフォーダンス）と最適なベースポーズを自律的に決定できるようにした。上位層がアフォーダンスを選択し、中位層がナビゲーションを担い、下位層が実際の足による操作を実行する三層構造で、専門家設計の軌道は一切不要である。",
+        "ko": "이 연구는 세 단계 계층적 강화학습 프레임워크를 제안하여, 네 발 로봇이 목표 물체의 「접촉 가능 지점」(자세 어포던스)과 최적 베이스 포즈를 자율적으로 선택하고, 이를 기반으로 내비게이션 정책과 하위 보행 정책을 순차적으로 구동한다. 전 과정에서 전문가가 설계한 궤적이 필요 없으며, 지각부터 실행까지 완전한 자율 폐루프를 구성한다."
+      },
+      "plain": {
+        "zh-TW": "想像你請一隻機器狗幫你把地上的球踢進箱子裡。過去的機器狗需要工程師事先告訴它：「先走到這個座標，再把腳抬到那個角度。」就像給人一份精確到公分的說明書才能行動。這篇研究讓機器狗學會自己「看」目標物，判斷從哪個方向靠近最省力、腳該踢哪裡最有效，就像有經驗的人一眼就能判斷怎麼搬箱子最順手。關鍵技術叫做「可負擔性（affordance）」，意思是物體本身會「告訴」機器人它可以被怎麼使用——球的頂部可以踩、側邊可以撥、門把可以勾。機器狗的大腦分成三層：最聰明的那層決定「在哪個位置互動」，中間那層負責「走過去」，最底層則管「腳要怎麼動」。這很重要，因為未來家用、救災或倉儲機器人都需要在雜亂環境中自己判斷如何操作物品，而不能永遠依賴人類遙控或預先編程。這項研究讓機器人更接近真正的「自主動手能力」。",
+        "en": "Imagine asking a robot dog to kick a ball into a box. Until now, engineers had to hand-write every step: go to this exact spot, lift your leg at this angle. It was like giving someone an instruction manual accurate to the centimeter just to move a box. This research teaches the robot dog to look at an object and figure out on its own where to approach and how to touch it most effectively — just like an experienced person instinctively knows the best way to grab something. The key idea is called affordance: the object itself signals how it can be used — a ball can be pushed from the side, a door handle can be hooked. The robot's brain is split into three layers: the top layer picks the best interaction point, the middle layer navigates there, and the bottom layer controls the actual leg movements. This matters because future home, rescue, and warehouse robots must handle objects in messy environments without relying on human remote control or pre-programmed scripts. This study is a big step toward robots with genuine autonomous dexterity.",
+        "zh-CN": "想象你让一只机器狗把地上的球踢进箱子里。以前的机器狗需要工程师事先告诉它每一个精确的坐标和角度，就像给人一份精确到厘米的说明书才能行动。这项研究让机器狗学会自己「看」目标物体，判断从哪个方向靠近最省力、脚该踢哪里最有效，就像有经验的人一眼就能判断怎么搬箱子最顺手。关键技术叫做「可操作性（affordance）」，意思是物体本身会「告诉」机器人它可以被怎么使用。机器狗的大脑分三层：最高层决定「在哪个位置互动」，中间层负责「走过去」，最底层管「脚要怎么动」。这项研究让机器人更接近真正的自主动手能力，对未来家用和救灾机器人意义重大。",
+        "ja": "ロボット犬に「床のボールを箱に蹴り込んで」と頼む場面を想像してください。これまでのロボット犬は、エンジニアが「この座標に歩いて、この角度で足を上げて」と一から指示する必要がありました。まるでセンチ単位の説明書がないと動けない状態です。この研究は、ロボット犬が目標物を自分で「見て」、どこからアプローチすると効率的か、どこに触れると最も有効かを自律的に判断できるように学習させました。カギとなる概念は「アフォーダンス」：物体が自分の使われ方をロボットに「教える」という考え方です。ロボットの頭脳は三層構造で、上層が接触点を選び、中層がそこまでナビゲートし、下層が実際の脚の動きを制御します。将来の家庭用・救助用ロボットに不可欠な自律的な「手先の器用さ」に大きく近づく研究です。",
+        "ko": "로봇 강아지에게 「바닥의 공을 상자 안으로 차 넣어」라고 부탁하는 상황을 상상해보세요. 기존 로봇 강아지는 엔지니어가 「이 좌표로 걸어가서, 이 각도로 발을 들어」라고 센티미터 단위의 지시를 사전에 입력해야 했습니다. 이 연구는 로봇 강아지가 목표 물체를 스스로 「보고」, 어느 방향에서 접근하면 효율적인지, 어디를 건드려야 가장 효과적인지 스스로 판단하도록 학습시켰습니다. 핵심 개념은 어포던스(affordance)로, 물체 자체가 자신을 어떻게 사용할 수 있는지 로봇에게 「알려주는」 것입니다. 로봇의 두뇌는 세 층으로 나뉘어, 상층이 접촉 지점을 선택하고, 중층이 이동을 담당하며, 하층이 실제 발 동작을 제어합니다. 미래의 가정용·구조용 로봇이 복잡한 환경에서 자율적으로 물체를 다루기 위한 중요한 발걸음입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的自主能力不只是「動得好」，而是先懂得「在哪裡動、為什麼這樣動」——讓感知與行動的層次對齊，才是機器人智慧的核心。",
+        "en": "💡 True autonomy isn't just about moving well — it's about knowing where to act and why, because aligning perception with action at every level is the real core of robotic intelligence.",
+        "zh-CN": "💡 真正的自主能力不只是「动得好」，而是先懂得「在哪里动、为什么这样动」——让感知与行动的层次对齐，才是机器人智慧的核心。",
+        "ja": "💡 真の自律性とは「うまく動く」ことだけでなく、「どこで、なぜその動きをするか」を理解すること——知覚と行動の階層を揃えることこそ、ロボット知性の核心である。",
+        "ko": "💡 진정한 자율성은 「잘 움직이는 것」이 아니라 「어디서, 왜 그렇게 움직이는지」를 아는 것——지각과 행동의 계층을 일치시키는 것이 로봇 지능의 핵심이다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<rect x=\"260\" y=\"90\" width=\"50\" height=\"45\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"3\"/>\n<rect x=\"265\" y=\"95\" width=\"40\" height=\"35\" fill=\"#68d39130\"/>\n<circle cx=\"100\" cy=\"125\" r=\"12\" fill=\"#68d391\"/>\n<rect x=\"120\" y=\"70\" width=\"55\" height=\"30\" rx=\"8\" fill=\"#68d391\"/>\n<line x1=\"120\" y1=\"85\" x2=\"100\" y2=\"95\" stroke=\"#2d7a4f\" stroke-width=\"3\"/>\n<line x1=\"175\" y1=\"85\" x2=\"195\" y2=\"95\" stroke=\"#2d7a4f\" stroke-width=\"3\"/>\n<line x1=\"135\" y1=\"100\" x2=\"125\" y2=\"125\" stroke=\"#2d7a4f\" stroke-width=\"3\"/>\n<line x1=\"160\" y1=\"100\" x2=\"170\" y2=\"125\" stroke=\"#2d7a4f\" stroke-width=\"3\"/>\n<line x1=\"170\" y1=\"125\" x2=\"200\" y2=\"118\" stroke=\"#ff6b6b\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n<circle cx=\"205\" cy=\"116\" r=\"7\" fill=\"#ff6b6b\" opacity=\"0.85\"/>\n<polygon points=\"147,58 155,70 139,70\" fill=\"#ffd166\"/>\n</svg>"
+    }
+  ]
+}
