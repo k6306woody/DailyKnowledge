@@ -169,6 +169,15 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .heart-count{font-size:11px;color:var(--tx3);font-weight:600}
 .card-date-badge{font-size:10px;font-weight:700;color:var(--tx3);background:var(--bg3);padding:2px 8px;border-radius:8px;white-space:nowrap;flex-shrink:0}
 
+/* ── Pagination ── */
+#pagination{display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 20px 48px;width:100%}
+.pg-info{font-size:12px;color:var(--tx3);font-weight:600}
+.pg-btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.pg-btn{padding:7px 14px;border-radius:10px;font-size:13px;font-weight:600;border:1.5px solid var(--bd);background:var(--su);color:var(--tx2);cursor:pointer;transition:all .15s}
+.pg-btn:hover:not(.on){background:var(--bg3);border-color:var(--tf)}
+.pg-btn.on{background:var(--tf);border-color:var(--tf);color:#fff}
+.pg-btn.pg-arrow{padding:7px 18px;font-size:15px}
+
 /* ══════════════════════════════════
    CONTENT AREA (grid + detail panel 並排)
 ══════════════════════════════════ */
@@ -480,6 +489,7 @@ footer strong{color:var(--tf-tx)}
 <!-- CARDS + DETAIL PANEL (同一 frame) -->
 <div id="content-area">
   <div class="grid" id="grid"></div>
+  <div id="pagination"></div>
 
   <!-- 右側詳情面板：與卡片區並排，非浮層 -->
   <div id="detail-panel">
@@ -763,6 +773,8 @@ const T = {
 // STATE
 // ════════════════════════════════
 let curLang='zh-TW', curDay='', isDark=false, drawerOpen=false, curDTab='date';
+let currentPage = 1;
+const PAGE_SIZE = 18;
 const likes = JSON.parse(localStorage.getItem('dkLikes')||'{}');
 
 function cardText(c){
@@ -820,10 +832,12 @@ function renderQuickDays(){
   }).join('');
 }
 function selectQuickDay(day){
-  curDay=day;
-  activeFilters.day=day;
+  // 再點一次同一天 → 取消日期篩選（顯示全部）
+  if(activeFilters.day === day){ activeFilters.day=null; curDay=AVAILABLE_DATES[0]||''; }
+  else { curDay=day; activeFilters.day=day; }
   updateDateDisplay();
-  applyActiveFilters();
+  currentPage=1;
+  renderCards();
   renderQuickDays();
   renderDrawer();
 }
@@ -916,6 +930,7 @@ function calNext(){
 function selectCalDay(day){
   curDay=day;
   activeFilters.day=day;
+  currentPage=1;
   updateDateDisplay();
   applyActiveFilters();
   renderQuickDays();
@@ -975,20 +990,43 @@ function isLiked(id){return (likes[id]||0)>0}
 function renderCards(){
   const grid=document.getElementById('grid');
   grid.innerHTML='';
-  // 決定「當前日期篩選」：activeFilters.day 優先，否則用 curDay，都沒有則不限制
-  const filterDay = activeFilters.day || curDay || null;
-  CARDS.forEach((c,i)=>{
+
+  // ── 篩選：日期、分類、作者、搜尋 ──
+  const filterDay = activeFilters.day || null;  // 無預設日期，顯示全部
+  const q = (document.getElementById('searchbox')?.value||'').trim().toLowerCase();
+
+  let filtered = CARDS.filter(c=>{
+    if(filterDay && c.day !== filterDay) return false;
+    if(activeFilters.cat && c.domain !== activeFilters.cat) return false;
+    if(activeFilters.author && c.author !== activeFilters.author) return false;
+    if(q){
+      const ct=cardText(c);
+      const text=[ct?.title||'',ct?.tag||'',ct?.plain||'',ct?.tech||'',c?.author||''].join(' ').toLowerCase();
+      if(!text.includes(q)) return false;
+    }
+    return true;
+  });
+
+  // 從新到舊排序
+  filtered.sort((a,b)=>b.day.localeCompare(a.day));
+
+  // 分頁
+  const totalPages = Math.max(1, Math.ceil(filtered.length/PAGE_SIZE));
+  if(currentPage > totalPages) currentPage = totalPages;
+  const pageSlice = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+
+  // 更新搜尋計數
+  const countEl=document.getElementById('search-count');
+  if(countEl) countEl.textContent = q ? filtered.length+' 筆' : (filtered.length < CARDS.length ? filtered.length+' 筆' : '');
+
+  pageSlice.forEach((c,i)=>{
     const ct=cardText(c);
     const liked=isLiked(c.id);
     const lc=getLikes(c.id);
     const el=document.createElement('article');
-    // ── 篩選邏輯（全部為 false = 顯示）──
-    const _hideDay    = filterDay        ? c.day    !== filterDay           : false;
-    const _hideCat    = activeFilters.cat    ? c.domain !== activeFilters.cat    : false;
-    const _hideAuthor = activeFilters.author ? c.author !== activeFilters.author : false;
-    el.className='card'+(_hideDay||_hideCat||_hideAuthor?' hide':'');
+    el.className='card';  // 已預先過濾，不需要 hide class
     el.dataset.domain=c.domain; el.dataset.day=c.day; el.dataset.id=c.id;
-    el.style.animationDelay=(i*0.06)+'s';
+    el.style.animationDelay=(i*0.04)+'s';
     // 格式化日期顯示 M/D
     const dayObj = c.day ? new Date(c.day+'T00:00:00') : null;
     const dayLabel = dayObj ? `${dayObj.getMonth()+1}/${dayObj.getDate()}` : '';
@@ -1026,6 +1064,35 @@ function renderCards(){
     });
     grid.appendChild(el);
   });
+
+  // 渲染分頁控制
+  renderPagination(totalPages, filtered.length);
+}
+
+function renderPagination(totalPages, total){
+  const el = document.getElementById('pagination');
+  if(!el) return;
+  if(totalPages <= 1){ el.innerHTML=''; return; }
+  const filterDay = activeFilters.day || null;
+  const label = filterDay ? '' : `共 ${total} 篇`;
+  let btns = '';
+  if(currentPage > 1) btns += `<button class="pg-btn pg-arrow" onclick="goPage(${currentPage-1})">‹</button>`;
+  const lo = Math.max(1, currentPage-2), hi = Math.min(totalPages, currentPage+2);
+  if(lo > 1) btns += `<button class="pg-btn" onclick="goPage(1)">1</button>${lo>2?'<span style="padding:0 4px;color:var(--tx3)">…</span>':''}`;
+  for(let p=lo;p<=hi;p++){
+    btns += `<button class="pg-btn${p===currentPage?' on':''}" onclick="goPage(${p})">${p}</button>`;
+  }
+  if(hi < totalPages) btns += `${hi<totalPages-1?'<span style="padding:0 4px;color:var(--tx3)">…</span>':''}<button class="pg-btn" onclick="goPage(${totalPages})">${totalPages}</button>`;
+  if(currentPage < totalPages) btns += `<button class="pg-btn pg-arrow" onclick="goPage(${currentPage+1})">›</button>`;
+  el.innerHTML = `<div class="pg-info">第 ${currentPage} / ${totalPages} 頁　${label}</div><div class="pg-btns">${btns}</div>`;
+}
+
+function goPage(p){
+  currentPage = p;
+  renderCards();
+  // 捲回卡片區頂部
+  const grid = document.getElementById('grid');
+  if(grid) grid.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 // ════════════════════════════════
@@ -1149,14 +1216,14 @@ function switchDTab(el,tab){
 let activeFilters = { cat: null, day: null, author: null };
 
 function applyActiveFilters(){
-  // 重新渲染卡片（renderCards 已整合所有 activeFilters 條件）
+  currentPage = 1;  // 篩選時回到第一頁
   renderCards();
 }
 
 function resetFilters(){
   activeFilters = { cat: null, day: null, author: null };
-  document.querySelectorAll('.card').forEach(c=>c.classList.remove('hide'));
-  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.day===curDay));
+  currentPage = 1;
+  renderCards();
   renderDrawer();
 }
 
@@ -1316,13 +1383,24 @@ function filterDrawerAuthor(author){
   renderDrawer();
 }
 
-function selectDay(day){ curDay=day; filterByDay(day); updateDateDisplay(); renderDrawer(); }
+function selectDay(day){
+  curDay=day;
+  activeFilters.day=day;
+  currentPage=1;
+  updateDateDisplay();
+  renderCards();
+  renderDrawer();
+}
 function filterByDay(day){
-  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',c.dataset.day!==day));
-  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.day===day));
+  activeFilters.day = day;
+  curDay = day;
+  currentPage = 1;
+  renderCards();
 }
 function filterCat(cat){
-  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',cat!=='all'&&c.dataset.domain!==cat));
+  activeFilters.cat = (cat==='all') ? null : cat;
+  currentPage = 1;
+  renderCards();
   toggleDrawer();
 }
 
@@ -1637,20 +1715,8 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){closePanel();if(dra
 function doSearch(q){
   q = q.trim().toLowerCase();
   document.getElementById('search-clear').classList.toggle('show', q.length > 0);
-  const t = T[curLang];
-  let count = 0;
-  document.querySelectorAll('.card').forEach(card => {
-    const id = card.dataset.id;
-    const c = CARDS.find(x=>x.id===id);
-    const ct = cardText(c);
-    const text = [ct?.title||'', ct?.tag||'', ct?.plain||'', ct?.tech||'', c?.author||''].join(' ').toLowerCase();
-    const match = !q || text.includes(q);
-    const dayMatch = !activeFilters.day || c?.day === activeFilters.day;
-    const catMatch = !activeFilters.cat || c?.domain === activeFilters.cat;
-    card.classList.toggle('hide', !match || !dayMatch || !catMatch);
-    if(match && dayMatch && catMatch) count++;
-  });
-  document.getElementById('search-count').textContent = q ? count + ' 筆' : '';
+  currentPage = 1;
+  renderCards();
 }
 function clearSearch(){
   document.getElementById('searchbox').value='';
@@ -1673,8 +1739,9 @@ loadAllData().then(result=>{
   if(result && result.cards && result.cards.length){
     CARDS = result.cards;
     curDay = result.latestDate || AVAILABLE_DATES[0] || '';
+    // 不設預設日期篩選 → 一進來顯示全部卡片（新到舊）
+    activeFilters.day = null;
     if(curDay){
-      activeFilters.day = curDay; // ★ 一定要在 renderCards() 之前設好
       const d = new Date(curDay+'T00:00:00');
       calYear = d.getFullYear(); calMonth = d.getMonth();
       calInitialized = true;
