@@ -5,10 +5,14 @@ setup_scheduler.py — 建立 Windows 工作排程器任務
 需要以「系統管理員」身分執行一次
 """
 
+import io
 import os
 import sys
 import subprocess
 from pathlib import Path
+
+# 確保 stdout 以 UTF-8 輸出（Windows cp950 預設會擋 emoji）
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 ROOT = Path(__file__).parent.parent   # D:\AI\Claude_agent\daily-knowledge
 SCRIPTS_DIR = ROOT / "scripts"
@@ -125,10 +129,9 @@ def main():
     print("=" * 60)
 
     if not check_admin():
-        print("⚠️  建議以系統管理員身分執行（確保 WakeToRun 生效）")
-        ans = input("繼續？(y/N) ").strip().lower()
-        if ans != "y":
-            sys.exit(0)
+        print("⚠️  非管理員模式（WakeToRun 喚醒功能可能需要管理員才能生效）")
+        print("   繼續安裝排程...")
+
 
     install_task()
     setup_env()

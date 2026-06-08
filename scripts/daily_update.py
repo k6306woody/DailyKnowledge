@@ -119,6 +119,46 @@ def save_history(history, date_str, mode, topics):
         json.dump(history, f, ensure_ascii=False, indent=2)
     log.info(f"history.json 已更新 ({date_str})")
 
+
+# ── Git 自動推送 ──────────────────────────────────────────────────────────
+def git_push(date_str: str):
+    """將新產生的 JSON + history.json commit 並 push 到 GitHub Pages"""
+    import subprocess
+
+    def run(cmd, **kw):
+        result = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True, **kw)
+        if result.returncode != 0:
+            raise RuntimeError(result.stderr.strip() or result.stdout.strip())
+        return result.stdout.strip()
+
+    try:
+        log.info("── Git 自動推送 ──")
+        # 確認有無遠端
+        run(["git", "remote", "get-url", "origin"])
+
+        # stage：當天 JSON + history.json
+        run(["git", "add",
+             f"data/{date_str}.json",
+             "history.json"])
+
+        # 確認有東西要 commit
+        status = run(["git", "status", "--porcelain"])
+        if not status:
+            log.info("  沒有變更，跳過 commit")
+            return
+
+        run(["git", "commit", "-m",
+             f"data: auto-update {date_str} ({len(status.splitlines())} files)"])
+        log.info("  ✓ commit 完成")
+
+        run(["git", "push"])
+        log.info("  ✓ push 完成 → GitHub Pages 已更新")
+
+    except Exception as e:
+        log.error(f"  ✗ git push 失敗：{e}")
+        log.error("    請手動執行：git add data/ history.json && git commit -m '...' && git push")
+
+
 # ── Anthropic API 呼叫 ────────────────────────────────────────────────────
 def sanitize_json(text):
     # Fix common JSON issues from Claude output
@@ -572,6 +612,10 @@ def main(override_date=None, force=False):
     save_history(history, date_info["today_str"], date_info["mode"], topics)
 
     log.info(f"✅ 完成！{len(cards)} 張卡片已儲存至 {out_path}")
+
+    # ── 自動 git push 更新網站 ───────────────────────────────────────────
+    git_push(date_info["today_str"])
+
     log.info("=" * 60)
 
 
