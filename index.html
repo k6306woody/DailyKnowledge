@@ -1439,7 +1439,7 @@ function applyLang(){
   document.getElementById('sp-sub').textContent=t.sub;
   updateDateDisplay(); // 動態格式化日期，取代硬編碼的 t.ds
   document.getElementById('sp-hint').textContent=t.spHint;
-  document.getElementById('dt-label').textContent=t.dtDate;
+  const _dtLbl=document.getElementById('dt-label'); if(_dtLbl) _dtLbl.textContent=t.dtDate;
   document.querySelectorAll('[data-key]').forEach(el=>{
     const k=el.dataset.key; if(t[k]) el.textContent=t[k];
   });
@@ -1750,12 +1750,12 @@ loadAllData().then(result=>{
 
   renderDayChips();
   renderCatbar();
-  applyLang();       // → renderCards()（activeFilters.day 已設定）
+  try{ applyLang(); } catch(e){ console.warn('applyLang error:', e); }
   renderQuickDays();
   updateDateDisplay();
   renderDrawer();
 
-  // 最後強制再渲染一次（防止競態問題）
+  // 最後強制渲染（保證執行，不受 applyLang 例外影響）
   renderCards();
 
   // Update sidebar date hint
