@@ -20,6 +20,14 @@ desktop.ini
 # Windows Task Scheduler XML（含路徑，不適合共用）
 scripts/*.xml
 
+# Instagram token meta（含到期日，不 commit）
+.ig_token_meta.json
+
+# ig_tmp PNG 檔（推到 GitHub 給 IG raw URL 用，但暫存檔不 commit）
+# 注意：ig_tmp/*.png 需要被 track 才能讓 IG raw URL 生效
+# 只排除 test_ 開頭的測試圖
+ig_tmp/test_*.png
+
 # 暫存
 *.tmp
 *.bak

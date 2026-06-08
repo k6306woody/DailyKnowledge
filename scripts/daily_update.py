@@ -616,6 +616,18 @@ def main(override_date=None, force=False):
     # ── 自動 git push 更新網站 ───────────────────────────────────────────
     git_push(date_info["today_str"])
 
+    # ── Instagram 自動發文（需設定 IG_ACCESS_TOKEN + IG_BUSINESS_ID）────
+    if os.environ.get("IG_ACCESS_TOKEN") and os.environ.get("IG_BUSINESS_ID"):
+        try:
+            sys.path.insert(0, str(ROOT))
+            from scripts.ig_poster import post_daily_card
+            best_card = cards[0]   # 預設發第一張（ai 領域）
+            post_daily_card(best_card, date_info["today_str"])
+        except Exception as e:
+            log.error(f"Instagram 發文失敗（不影響主流程）：{e}")
+    else:
+        log.info("IG_ACCESS_TOKEN / IG_BUSINESS_ID 未設定，跳過 Instagram 發文")
+
     log.info("=" * 60)
 
 
