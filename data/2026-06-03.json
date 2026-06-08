@@ -10,7 +10,7 @@
       "day": "2026-06-03",
       "author": "Wei et al. 2026",
       "ref": "arXiv:2606.01234",
-      "url": "https://arxiv.org/abs/2606.01234",
+      "url": "",
       "color": "#667eea",
       "title": {
         "zh-TW": "無需梯度的語言模型對齊：以進化策略取代RLHF的新框架",
@@ -34,11 +34,11 @@
         "ko": "진화 전략을 사용해 역전파와 보상 모델 없이 LLM을 인간 선호도에 맞게 정렬한다."
       },
       "plain": {
-        "zh-TW": "訓練AI聽話不再需要複雜的獎勵系統，就像生物演化一樣讓模型自然「選出」好答案。",
-        "en": "Training AI to behave well no longer needs complex reward systems — models evolve toward good answers naturally.",
-        "zh-CN": "训练AI听话不再需要复杂的奖励系统，模型像生物演化一样自然选出好答案。",
-        "ja": "AIを従順にするのに複雑な報酬システムは不要で、生物進化のように自然に良い答えを選ぶ。",
-        "ko": "AI를 올바르게 훈련하는 데 복잡한 보상 시스템이 필요 없고, 생물 진화처럼 자연스럽게 좋은 답을 선택한다."
+        "zh-TW": "想像你在培育一片花園，傳統方法是給每株植物裝上感應器、計算施肥量，然後用複雜的公式調整——這就是現在訓練AI的主流做法RLHF，需要建立「獎勵模型」來打分數，再用數學梯度慢慢調整。但這項研究說：何不學大自然？就像達爾文的演化論，讓一群AI模型各自回答問題，直接把表現好的「基因」留下來繁殖，淘汰表現差的，完全跳過那些複雜的計算過程。這對我們的意義在於，未來訓練ChatGPT這類AI助手可能變得更簡單、更省電，不用再跑那些耗費大量運算的反向傳播演算法。舉例來說，當AI要學會「有禮貌地拒絕不當請求」時，傳統方法得先訓練一個評分機器人來打分數，再慢慢調整；新方法則是直接讓一百個版本的AI各自回答，人類選出最好的幾個，讓它們的「特質」遺傳下去就好。這就像選拔歌手不需要先發明一台「唱功測量儀」，直接讓觀眾投票淘汰就行了，既直覺又有效率。",
+        "en": "Imagine you're breeding dogs—you don't need to teach each puppy calculus to figure out which traits are best; you just keep the ones that naturally behave well and let them have more puppies. That's essentially what this research does with AI language models, except instead of using the current complicated \"reward system\" (where you basically grade every single word the AI says and make it do homework corrections), they let different versions of the AI \"compete\" and the better-performing ones survive to the next generation, just like evolution. This matters because training AI to be helpful and harmless right now is incredibly expensive and slow—it's like having to hire thousands of teachers to correct millions of essays every day. With this evolutionary approach, you could potentially align AI models much faster and cheaper, meaning smaller companies or researchers could actually afford to make safe, well-behaved AI instead of just tech giants. For example, if you wanted your AI assistant to stop giving snarky responses, instead of painfully teaching it what \"polite\" means through endless feedback loops, you'd just run several versions of it, keep the naturally polite ones, and let the snarky ones die off—survival of the fittest, Silicon Valley style.",
+        "zh-CN": "想象一下，传统训练AI就像是给学生出考卷、打分数、再根据错题详细讲解每一步该怎么改进，这个过程既费时又复杂。但现在有研究人员发现，可以用类似\"大自然优胜劣汰\"的方式来训练AI——让模型生成一堆不同的回答，人们只需要指出\"这个好\"或\"这个不好\"，系统就会自动让那些受欢迎的回答方式存活下来，差的就淘汰掉，完全不需要像老师那样逐字逐句批改作业。这就好比养花时你不需要懂植物学博士的知识，只要定期浇水、把长得好的留下来继续培育就行了。这种方法的厉害之处在于，它省掉了原本那套超级烧钱烧算力的\"奖励打分系统\"和复杂的数学计算（反向传播），让更多研究团队和公司能够负担得起训练\"听话的AI\"，未来你手机里的AI助手可能就是用这种更经济的方式调教出来的。对普通用户来说，这意味着AI会更快变得懂你、更贴心，而且开发成本降低后，各种专门领域的AI工具也会雨后春笋般冒出来。",
+        "ja": "想像一下，教AI說話就像培育植物一樣：傳統方法像是給每片葉子裝感應器、計算陽光吸收率再調整生長方向，超級複雜；而這項研究就像讓植物自然競爭陽光，長得好的留下種子，長得差的淘汰，幾代之後自然長出最茁壯的品種。研究團隊發現，不需要建立複雜的「獎勵模型」來打分數，也不用像解數學題一樣計算每個參數該怎麼調整（這叫反向傳播），只要讓AI不斷「突變」產生不同版本，然後讓人類選出比較好的回答，差的就淘汰掉，重複這個過程就能訓練出聽話的AI。這對我們有什麼好處呢？未來訓練ChatGPT這類AI可以省下大量運算資源和電費，而且當你希望AI更符合你個人喜好時（比如回答風格更幽默或更正式），調整起來會變得簡單許多，就像園藝家培育特定花色一樣自然。舉個例子，如果你問AI「怎麼安慰失戀的朋友」，傳統方法需要先訓練一個「裁判AI」來評分，再用複雜數學調整；新方法就是讓AI生出100種安慰方式，你選出最溫暖的5種，讓這些「基因」繼續演化，幾輪之後AI就學會你喜歡的安慰風格了。這種仿生物演化的訓練法，證明了有時候大自然幾億年來的智慧，比我們設計的複雜系統更有效率呢！",
+        "ko": "想像一下養育小孩的兩種方式：傳統方法是你每次都要詳細解釋「為什麼這樣做是對的」並打分數，就像現在訓練AI的RLHF方法一樣，需要建立複雜的獎勵系統、反覆計算梯度，過程既耗時又耗資源。但這個新研究就像大自然演化生物一樣，讓AI模型們「自由競爭」——生成很多不同版本的回答，然後直接留下人類覺得好的那些，淘汰不好的，完全跳過「打分數」和「解釋為什麼」的步驟。這就好比你不用教孩子游泳的每個動作原理，而是讓一群孩子下水，自然會留下游得好的方法。這對我們的影響是：未來訓練ChatGPT這類AI可以變得更快更省電，不需要那麼多昂貴的GPU運算，也許你手機上的AI助手就能更頻繁地「升級」變聰明。更重要的是，這種方法讓小公司或研究團隊也有機會訓練出高品質的AI，不用被Google或OpenAI的巨大運算資源壓著打。簡單說，就是讓AI變聰明的過程從「精密手術」變成「自然選擇」，效率更高也更民主化。"
       },
       "insight": {
         "zh-TW": "💡 若無梯度對齊成熟，小型機構也能在不依賴超大算力的情況下安全微調開源模型。",
@@ -55,7 +55,7 @@
       "day": "2026-06-03",
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.02891",
-      "url": "https://arxiv.org/abs/2606.02891",
+      "url": "",
       "color": "#48bb78",
       "title": {
         "zh-TW": "單分子螢光追蹤揭示CRISPR-Cas9在活細胞中的真實搜索動力學",
@@ -79,11 +79,11 @@
         "ko": "단일 분자 TIRF 현미경으로 살아있는 세포핵 내 Cas9이 염색질을 탐색하는 전체 궤적을 실시간 기록한다."
       },
       "plain": {
-        "zh-TW": "科學家首次親眼「看見」基因剪刀在細胞裡到處找目標的過程，發現它比想像中更依賴隨機碰撞。",
-        "en": "Scientists watched gene scissors hunt for targets inside a cell for the first time, finding the search is far more random than expected.",
-        "zh-CN": "科学家首次亲眼看见基因剪刀在细胞里找目标的过程，发现它比想象中更依赖随机碰撞。",
-        "ja": "科学者が初めて細胞内でゲノム編集ハサミが標的を探す様子を観察し、想像以上にランダムな衝突に依存することを発見した。",
-        "ko": "과학자들이 처음으로 유전자 가위가 세포 안에서 표적을 찾는 과정을 관찰해, 예상보다 훨씬 무작위적임을 발견했다."
+        "zh-TW": "想像你在一個擁擠的圖書館裡找一本特定的書，你可能會有策略地按照分類系統搜索，也可能只是在書架間亂逛碰運氣。科學家現在終於能用超高解析度的顯微鏡「盯著」基因編輯工具CRISPR-Cas9在活生生的細胞核裡工作，就像用隱形攝影機跟拍它在DNA長廊中尋找目標基因的整個過程。結果發現，這把號稱精準的「基因剪刀」其實更像個迷路的遊客，主要靠隨機碰撞來找到正確位置，而不是我們以為的那種聰明導航系統。這個發現超級重要，因為它解釋了為什麼CRISPR有時會「剪錯地方」造成副作用——當你知道工具是靠運氣而非地圖在找路，就能理解為什麼它偶爾會誤傷無辜的基因。未來如果我們想用基因編輯治療遺傳疾病或改良作物，就得想辦法幫Cas9裝上更好的「GPS」，減少它亂逛的時間，這樣才能讓這項技術更安全、更有效率地進入我們的醫療和生活。",
+        "en": "Imagine you're trying to find a specific book in a massive, dimly lit library where all the shelves are constantly shifting—that's basically what the CRISPR \"molecular scissors\" face when searching for their target gene inside a living cell. Scientists have now managed to attach tiny glowing tags to these molecular scissors and film them in real-time as they hunt through the tangled jungle of DNA, like watching a search-and-rescue operation unfold under a microscope. What they discovered is surprisingly chaotic: instead of having some clever GPS system, these scissors mostly just bounce around randomly until they stumble upon the right spot, kind of like how you might find your keys by frantically checking every pocket rather than remembering where you left them. This matters because CRISPR is already being used to treat genetic diseases and engineer crops, but we've been flying blind about how it actually works inside living cells—it's like performing surgery without knowing how the scalpel moves in your hand. Understanding this random search process helps explain why CRISPR sometimes cuts the wrong gene (those frustrating \"off-target\" effects that researchers worry about) and opens the door to designing smarter, more accurate versions. Think of it as finally getting the instruction manual for a tool you've been using for years, which means we can now tinker with it to make gene editing safer and more reliable for everything from curing sickle cell disease to creating drought-resistant wheat.",
+        "zh-CN": "想象你在一个巨大的图书馆里找一本特定的书，但你没有目录索引，只能一排排书架随机游走，偶尔停下来翻翻看是不是你要找的那本——CRISPR基因剪刀在我们细胞里找目标的方式，就是这么\"笨拙\"！科学家用超高灵敏的荧光显微镜给Cas9蛋白装上了\"追踪器\"，像跟拍纪录片一样全程直播它在细胞核里的搜索过程，结果发现这把号称精准的\"基因手术刀\"其实主要靠运气碰撞，而不是什么聪明的导航系统。这个发现很重要，因为它解释了为什么基因编辑有时会\"剪错地方\"——想想看，一个靠随机乱撞找目标的剪刀，偶尔剪错也就不奇怪了。理解了Cas9真实的工作方式后，科学家就能设计出更精准、更少副作用的基因治疗方法，比如治疗遗传病或某些癌症时，能减少误伤健康基因的风险。这就像是我们终于知道了快递员送错包裹的真正原因，接下来就能想办法给他配个更好的导航了！",
+        "ja": "想像你在一個擁擠的圖書館裡找一本特定的書，但你沒有索引卡，只能一排排書架慢慢逛——這就是基因編輯工具CRISPR-Cas9在我們細胞核裡做的事！科學家這次真的把「分子等級的監視器」裝進活生生的細胞裡，全程直播這把「基因剪刀」怎麼在密密麻麻的DNA叢林中尋找目標。結果發現，Cas9並不是什麼神奇導航高手，而是像喝醉的路人一樣到處亂撞，靠運氣碰到正確位置才開工。這個發現超級重要，因為如果我們知道它找路這麼沒效率，就能設計出更聰明的「導航系統」，讓基因治療更快、更準、副作用更少——比如治療鐮刀型貧血症或某些遺傳疾病時，不會誤剪到不該動的基因。簡單說，我們終於看清了這位「分子級外科醫生」的真實工作方式，不再只是猜測它怎麼找到手術台了！",
+        "ko": "想像一下，你在一個巨大的圖書館裡找一本特定的書，但你沒有目錄，只能一排一排書架慢慢找——這就是基因剪刀CRISPR-Cas9在我們細胞核裡做的事情！科學家這次用超高解析度的螢光顯微鏡，就像給Cas9蛋白裝上了GPS追蹤器，第一次完整記錄下它在染色質這座「基因圖書館」裡搜索目標基因的整個過程。結果發現，這把號稱精準的「基因剪刀」其實沒有我們想的那麼聰明，它更像是一個在黑暗中摸索的人，主要靠不斷地隨機碰撞來找到正確位置，而不是有什麼精密的導航系統。這個發現非常重要，因為如果我們想用CRISPR技術治療遺傳疾病或改良作物，就必須了解它為什麼有時候會「剪錯地方」——原來很大程度上是因為這種隨機搜索的本質。未來的基因治療要更安全有效，可能需要想辦法幫Cas9蛋白裝上更好的「導航系統」，減少它亂碰亂撞的機會。就像你不會想讓外科醫生閉著眼睛動手術一樣，我們也需要讓基因剪刀更精準地找到目標，才能放心地用它來治病救人。"
       },
       "insight": {
         "zh-TW": "💡 了解Cas9的真實搜索機制，有助於設計脫靶率更低、更安全的下一代基因編輯工具。",
@@ -100,7 +100,7 @@
       "day": "2026-06-03",
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2606.03517",
-      "url": "https://arxiv.org/abs/2606.03517",
+      "url": "",
       "color": "#ed8936",
       "title": {
         "zh-TW": "超導量子比特陣列中多體局域化的直接熵測量",
@@ -124,11 +124,11 @@
         "ko": "53큐비트 2D 초전도 배열에서 무작위 측정 프로토콜로 다체 국소화 상의 폰 노이만 엔트로피를 직접 추출한다."
       },
       "plain": {
-        "zh-TW": "物理學家首次在量子電腦中直接「量出」粒子如何因無序而被困住，不再依賴間接推算。",
-        "en": "Physicists directly measured how particles get trapped by disorder in a quantum processor for the first time, skipping indirect inference.",
-        "zh-CN": "物理学家首次在量子计算机中直接量出粒子如何因无序而被困住，不再依赖间接推算。",
-        "ja": "物理学者が初めて量子コンピュータ内で無秩序により粒子が閉じ込められる様子を直接測定し、間接推定が不要になった。",
-        "ko": "물리학자들이 처음으로 양자 컴퓨터에서 무질서로 인해 입자가 갇히는 방식을 직접 측정해, 간접 추론이 불필요해졌다."
+        "zh-TW": "想像你在一個擁擠的夜市裡，如果攤位整齊排列，你可以順暢地從這頭走到那頭；但如果攤位雜亂無章，你可能會被困在某個區域繞來繞去出不去。科學家這次在量子電腦裡做了類似的實驗，他們用53個超導量子位元（就像53個微小的量子粒子）組成一個陣列，然後故意製造「混亂」，觀察這些量子粒子會不會像你在雜亂夜市中一樣被困住動彈不得。更厲害的是，他們第一次直接「測量」出這些被困粒子的混亂程度（專業術語叫「熵」），而不是像以前那樣只能用其他方法間接猜測。這項突破很重要，因為了解量子系統如何因混亂而停止運作，將幫助我們設計更穩定的量子電腦，避免量子資訊因為環境干擾而「卡住」或流失。就像我們需要知道夜市怎樣的混亂程度會讓人群完全癱瘓，才能更好地規劃動線一樣，科學家現在能精準掌握量子世界裡「混亂」與「秩序」的臨界點了。",
+        "en": "Imagine you're at a massive party where everyone should be mingling and spreading gossip throughout the room, but suddenly someone rearranges the furniture randomly—now groups of people get stuck in their little corners, unable to share information with the rest of the party. That's essentially what physicists just observed directly for the first time using a quantum computer with 53 superconducting qubits: they watched quantum particles get \"trapped\" by disorder and stop spreading information, a phenomenon called many-body localization. Previously, scientists could only infer this trapping indirectly, like guessing people aren't mingling by noticing the room stays quiet, but now they've actually measured the \"stuck-ness\" directly by calculating something called von Neumann entropy—think of it as quantifying exactly how much gossip is or isn't spreading. Why does this matter to you? Well, this could revolutionize how we build quantum computers, because understanding how to keep quantum information localized (or prevent it from leaking out) is crucial for storing and processing data in future quantum devices that might one day crack currently impossible problems like designing new medicines or solving climate models. It's like finally having a thermometer that directly measures the temperature instead of just watching ice melt and guessing how hot it is—a game-changer for controlling the quantum world.",
+        "zh-CN": "想象你的房间乱到一个程度，东西多到你自己都找不到路，最后你干脆就待在原地不动了——这就有点像\"多体局域化\"现象。科学家们用一台拥有53个超导量子比特的量子计算机，首次成功地直接\"看见\"了量子粒子是怎样因为环境太混乱而被困在原地，动弹不得的。过去要研究这种现象就像隔着毛玻璃看东西，只能通过各种间接证据来推测，但现在他们用了一种叫\"随机测量\"的新方法，能直接测出这些被困粒子的\"混乱程度\"（冯诺依曼熵）。这项突破很重要，因为它不仅帮我们理解量子世界里的\"交通堵塞\"是怎么发生的，更关键的是，未来量子计算机要长时间稳定运行，就得知道怎么避免或利用这种\"粒子被卡住\"的状态。就好比你要设计一个高效的物流系统，首先得搞清楚货物会在哪里堵住，这次实验就是给量子世界画出了第一张\"堵车地图\"。",
+        "ja": "想像你把一群朋友關在一個到處都是隨機擺放障礙物的迷宮裡，有些朋友會因為障礙太多而被困在原地動彈不得，這就像「多體局域化」現象——量子粒子因為環境太混亂而被鎖在某個區域。過去科學家只能像偵探一樣，從各種線索間接推測這些粒子是不是真的被困住了，但這次研究團隊用53個超導量子比特組成的「量子迷宮」，直接測量出粒子們的混亂程度（專業術語叫「馮諾依曼熵」），就像在迷宮裡裝了GPS直接追蹤每個人的位置一樣。這個突破很重要，因為它讓我們能更精準地理解量子系統如何保存資訊，未來可能幫助量子電腦在運算時不會因為環境干擾而「忘記」正在計算的東西。舉例來說，就像你的手機在訊號不穩的地方也能保持通話品質，量子電腦也需要類似的「抗干擾能力」才能實用化。這項研究首次把理論預測變成可直接觀測的實驗結果，為製造更穩定的量子電腦鋪了一條重要的路。",
+        "ko": "想像一下，你在一個擁擠的夜市裡迷路了，到處都是雜亂無章的攤位和人群，你越走越困惑，最後乾脆就卡在原地動彈不得——這就有點像量子世界裡的「多體局域化」現象。過去科學家只能像偵探一樣，透過各種間接證據猜測粒子是不是真的被「困住」了，但這次研究團隊用53個超導量子比特（可以想成是53個微型量子開關）組成的陣列，直接測量出粒子在混亂環境中被卡住的「混亂程度」（專業術語叫馮諾依曼熵）。這就好比我們終於發明了一個GPS定位器，可以直接看到你在夜市裡到底有多迷路，而不用再靠猜的。這項突破為什麼重要呢？因為它讓我們能更精確地理解量子系統如何保存資訊，這對未來開發更穩定的量子電腦記憶體、甚至理解宇宙中資訊如何演化都有關鍵幫助。簡單說，我們終於有了一把「直尺」可以直接丈量量子混亂的程度，而不是隔靴搔癢地猜測，這讓量子科技往實用化又邁進了一大步。"
       },
       "insight": {
         "zh-TW": "💡 多體局域化若能精確掌控，可作為量子記憶體的天然保護機制，大幅延長量子資訊儲存時間。",
@@ -145,7 +145,7 @@
       "day": "2026-06-03",
       "author": "Yamada et al. 2026",
       "ref": "arXiv:2606.01872",
-      "url": "https://arxiv.org/abs/2606.01872",
+      "url": "",
       "color": "#9f7aea",
       "title": {
         "zh-TW": "大腦「預測誤差信號」首次在單神經元層級即時追蹤：貝葉斯推論的神經基礎",
@@ -169,11 +169,11 @@
         "ko": "고밀도 실리콘 탐침과 실시간 디코딩으로 두정엽 피질 단일 뉴런에서 베이즈 예측 오차와 일치하는 발화 패턴을 포착했다."
       },
       "plain": {
-        "zh-TW": "大腦在接收意外刺激時，單一神經元會立刻發出「我猜錯了」的信號，就像內建的即時糾錯機制。",
-        "en": "When surprised, individual neurons instantly fire a correction signal, acting like a built-in real-time error-checker in the brain.",
-        "zh-CN": "大脑受到意外刺激时，单个神经元会立刻发出纠错信号，就像内置的即时纠错机制。",
-        "ja": "予期しない刺激を受けると、単一のニューロンが即座に「予測外れ」信号を発し、脳内のリアルタイム誤り修正機能として働く。",
-        "ko": "예상치 못한 자극을 받으면 단일 뉴런이 즉시 오류 신호를 발사해 뇌의 실시간 오류 수정 기능처럼 작동한다."
+        "zh-TW": "想像你每天早上習慣喝熱咖啡，某天一口喝下去卻發現是冰的——你的大腦瞬間會有種「咦？不對勁！」的感覺，而科學家現在首次在單一腦細胞的層級，即時捕捉到這個「我猜錯了」的瞬間信號。過去我們知道大腦會不斷預測接下來會發生什麼事，但這些預測機制到底怎麼在神經元層面運作，一直像個黑盒子。這次研究團隊用超高解析度的探針技術，看見了個別神經元在你「預期」和「實際遭遇」不符時，會立刻改變放電模式，而且這個模式完美符合數學上的貝葉斯推論——也就是大腦用機率在更新對世界的認知。這發現為什麼重要呢？因為當這套糾錯系統出問題，可能就會導致精神分裂症患者出現幻覺，或自閉症患者難以應對突發狀況，未來我們或許能設計更精準的治療方式，直接調整這些神經元的「校正能力」。簡單說，科學家終於看清了大腦那台超高速「現實查核機」的內部零件是怎麼運作的。",
+        "en": "Imagine your brain as a weather forecaster that's constantly making predictions about what's going to happen next—whether it's catching a ball, recognizing a friend's voice, or anticipating the taste of your morning coffee. Scientists have now caught individual brain cells red-handed in the act of saying \"Whoa, I didn't see that coming!\" when reality doesn't match expectations. Using ultra-precise recording needles that can eavesdrop on single neurons, researchers watched these cells fire in patterns that perfectly match what mathematicians call \"Bayesian prediction errors\"—basically, the brain's way of calculating how surprised it should be. Think of it like this: if you bite into what looks like a chocolate chip cookie but tastes like raisins, there's a specific neuron in your parietal cortex that immediately screams \"ERROR!\" and updates your mental model. This matters because understanding this neural \"autocorrect\" mechanism could revolutionize how we treat conditions where prediction goes haywire, like anxiety disorders (where the brain constantly predicts danger) or schizophrenia (where reality and prediction become seriously misaligned). It's the first time we've actually seen the brain's \"I was wrong\" signal happening in real-time at the most fundamental level—individual cells doing the math that keeps us adapted to an unpredictable world.",
+        "zh-CN": "想象你每天早上八点出门上班，习惯了路口那家面包店飘来的香味，但今天突然闻到的是臭豆腐味——你的大脑会立刻产生一种\"咦，不对劲！\"的感觉。科学家现在终于用超精密的探针抓到了这个瞬间：当你的预期（应该有面包香）和现实（竟然是臭豆腐味）对不上时，大脑里单个神经元会立刻发出特定的\"预测错误\"信号，就像手机APP崩溃时弹出的错误提示一样精准。这项研究首次在单细胞层级实时看到了大脑怎么做\"贝叶斯计算\"——也就是不断根据新信息更新自己的判断。为什么重要呢？因为这解释了我们如何快速学习新事物：当神经元发现\"猜错了\"，大脑就会调整模型，下次遇到臭豆腐摊就不会惊讶了。这个发现可能帮助我们理解自闭症、精神分裂症等疾病患者为什么对意外刺激反应异常，甚至未来能开发出更聪明的人工智能，让机器也学会像人类一样从错误中实时学习。",
+        "ja": "想像你正在玩「猜拳」遊戲，每次出手前大腦都會先猜對方會出什麼，如果猜錯了，腦中就會瞬間閃過「哎呀！」的感覺——科學家現在終於能即時看到這個「哎呀」在單一腦細胞上發生了！研究團隊用超精密的探針，就像在神經元上裝了微型攝影機，成功捕捉到當你的預期落空時（比如以為門鈴是快遞員，結果是推銷），某個神經元會立刻改變放電頻率來喊「預測失敗！」。這個發現超級重要，因為它證明了大腦不是被動接收資訊，而是一直在主動猜測、比對、修正，就像個永不停歇的預測機器。更酷的是，當這套系統出問題時，可能就會導致思覺失調症（老是誤判現實）或焦慮症（過度警覺每個小誤差），未來醫生或許能透過調整這些「糾錯神經元」來治療這些疾病。簡單說，科學家找到了大腦「從錯誤中學習」的生理開關，這可能改變我們理解學習、記憶甚至精神疾病的方式。",
+        "ko": "想像你每天早上習慣喝溫熱的咖啡，某天一口喝下去竟然是冰的——你的大腦會瞬間產生一股「哎呀不對勁！」的感覺，科學家現在終於在單一腦細胞的層級抓到了這個瞬間的電訊號！研究團隊用超高精密度的探針，就像在大腦裡裝了數千個微型監視器，成功記錄到當你的預期和現實不符時，單一神經元會立刻發出特定的「預測誤差」訊號，而且這訊號的模式完美符合數學上的貝葉斯理論。這發現為什麼重要呢？因為它揭露了大腦如何即時學習和調整——從學開車時判斷距離、到和新朋友互動時修正對他的印象，都仰賴這套神經糾錯系統。未來這可能幫助我們理解為何有些人學習特別快或慢，甚至開發治療注意力障礙或精神疾患的新方法，因為這些疾病往往和預測誤差的處理異常有關。簡單說，科學家找到了大腦「即時比對答案卡」的神經密碼，而且是在最小的細胞單位上看見這個魔法發生！"
       },
       "insight": {
         "zh-TW": "💡 這項發現為帕金森氏症與精神分裂症的預測處理障礙提供了可直接量測的神經生物標記。",
@@ -190,7 +190,7 @@
       "day": "2026-06-03",
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.02341",
-      "url": "https://arxiv.org/abs/2606.02341",
+      "url": "",
       "color": "#4299e1",
       "title": {
         "zh-TW": "韋伯望遠鏡首次解析「星系間磁場絲」：連接宇宙大尺度結構的隱形骨架",
@@ -214,11 +214,11 @@
         "ko": "JWST 근적외선 편광 영상으로 두 은하군 사이에 800만 광년 길이, 약 10나노가우스 자기장 필라멘트를 탐지했다."
       },
       "plain": {
-        "zh-TW": "宇宙中的星系並非隨機漂浮，而是被一張看不見的磁場網絡串連，韋伯首次讓我們直接「看見」這張網。",
-        "en": "Galaxies are not randomly adrift but linked by an invisible magnetic web that JWST has now let us directly see for the first time.",
-        "zh-CN": "宇宙中的星系并非随机漂浮，而是被一张看不见的磁场网络串联，韦伯首次让我们直接看见这张网。",
-        "ja": "銀河はランダムに漂っているのではなく見えない磁場の網でつながっており、JWSTがその網を初めて直接可視化した。",
-        "ko": "은하들은 무작위로 떠도는 것이 아니라 보이지 않는 자기장 그물로 연결돼 있으며, JWST가 처음으로 이를 직접 보여줬다."
+        "zh-TW": "想像一下，如果把宇宙比喻成一座巨大的城市，那麼星系就像是一棟棟大樓，而科學家剛剛發現了連接這些大樓的「地下電纜網」——只不過這些電纜是由磁場編織而成的。韋伯太空望遠鏡這次立了大功，它用特殊的「偏光眼鏡」看穿了宇宙的黑暗區域，在兩個星系群之間找到一條長達800萬光年的磁場絲線，這就像在地球和月球之間拉了20,000條來回的距離那麼長！為什麼這很重要呢？因為這些磁場絲可能就是宇宙的「施工藍圖」，它們引導著氣體流動、幫助新星系誕生，甚至影響著宇宙的整體架構如何演化。過去我們只能透過電腦模擬猜測這些磁場的存在，現在終於親眼看見了這張隱形的蜘蛛網，就像第一次用顯微鏡看到細胞一樣令人興奮。這個發現幫助我們理解，為什麼宇宙看起來不是一團混亂，而是有著清晰的「絲狀結構」——原來背後有這些磁場管家在默默工作著。",
+        "en": "Imagine the universe as a vast ocean where galaxies aren't just drifting randomly like scattered boats, but are actually connected by invisible highways made of magnetic fields—kind of like how iron filings line up around a magnet, except on a mind-bogglingly cosmic scale. The James Webb Space Telescope just pulled off something incredible: it actually \"saw\" one of these magnetic highways stretching 8 million light-years between galaxy clusters, which is roughly the distance light travels in 8 million years (for perspective, our entire Milky Way is only about 100,000 light-years across). This discovery matters because it reveals the hidden skeleton that shapes how matter flows through the universe—these magnetic filaments guide gas, influence where new galaxies form, and help explain why the cosmos looks like a giant web rather than random chaos. Think of it like finally discovering the underground subway system that's been secretly moving people around a city you thought everyone was just wandering through aimlessly. The magnetic field they detected is incredibly weak—about 10 nanogauss, which is millions of times weaker than a refrigerator magnet—yet it's strong enough to organize matter across distances so vast they make our solar system look like a grain of sand. This breakthrough opens up a whole new way of understanding cosmic architecture, like switching from a regular map to one that shows all the hidden connections beneath the surface.",
+        "zh-CN": "想象一下，如果把宇宙比作一座巨大的城市，星系就像是一栋栋大楼，科学家们一直好奇：这些大楼之间是不是有什么看不见的\"电线杆\"和\"电缆\"在连接它们？现在韦伯望远镜终于拍到了答案——在相距800万光年的两个星系群之间，真的存在一条磁场\"高速公路\"！这就像我们终于用特殊相机拍到了空气中看不见的WiFi信号，原来它们一直都在那里。这个发现解释了为什么宇宙看起来不是一团乱，而是有着清晰的网状结构，就像蜘蛛网一样，星系沿着这些磁场丝排列生长。对我们来说，这意味着宇宙比我们想象的更有秩序、更像一个有机整体，而不是一堆孤立的岛屿，这改变了我们理解宇宙演化和星系如何形成的基本图景。",
+        "ja": "想像一下，如果地球上的城市之間不只有公路和鐵路連接，還有一張看不見的「磁力蜘蛛網」把所有建築物串在一起——宇宙就是這樣運作的！韋伯太空望遠鏡這次發現了一條長達800萬光年的「磁場高速公路」，連接著兩個星系群，就像是宇宙建築的鋼筋骨架一樣。這為什麼重要呢？因為過去我們只知道重力讓星系聚在一起，但現在發現磁場也扮演關鍵角色，就好比蓋房子時才發現原來牆壁裡還藏著電線和水管。更酷的是，這些磁場絲可能影響著星系的形成、氣體的流動，甚至決定了宇宙為什麼長成現在這個「海綿狀」的樣子——有些地方擠滿星系，有些地方卻空蕩蕩。舉例來說，就像鐵粉灑在磁鐵旁邊會自動排列成線條，宇宙中的物質也可能沿著這些看不見的磁場軌道聚集，最終變成我們今天看到的星系。這是人類第一次真正「看見」這張隱形的宇宙骨架，讓我們更接近理解：為什麼宇宙不是一團混亂，而是有著驚人的秩序和結構。",
+        "ko": "想像一下，如果你在夜空中撒一把沙子，這些沙粒不會均勻分布，而是會沿著看不見的蜘蛛網絲聚集成一串串珍珠——宇宙中的星系就是這樣排列的！科學家早就知道星系會形成「宇宙網」結構，但一直不確定是什麼力量在維持這張網，現在韋伯望遠鏡終於拍到了答案：一條條磁場絲線，像高速公路一樣連接著星系群，長度超過800萬光年，相當於我們銀河系直徑的80倍。這個發現就像發現了城市之間原來有隱形的高架橋，解釋了為什麼物質和能量能在宇宙中長距離傳遞。更酷的是，這些磁場可能在宇宙早期就開始塑造星系的分布，影響了包括我們銀河系在內的所有星系如何成長、在哪裡出生。對我們來說，這意味著理解這張「宇宙骨架」，就能更清楚地知道地球在這個浩瀚宇宙中究竟處於什麼樣的位置，以及我們的家園是如何在137億年前那場大爆炸後，一步步被編織進這張壯觀的宇宙之網。"
       },
       "insight": {
         "zh-TW": "💡 星系間磁場的強度與分布將徹底改寫宇宙磁場起源模型，挑戰「磁場起源於恆星爆炸」的主流假說。",
@@ -235,7 +235,7 @@
       "day": "2026-06-03",
       "author": "Park et al. 2026",
       "ref": "arXiv:2606.03158",
-      "url": "https://arxiv.org/abs/2606.03158",
+      "url": "",
       "color": "#68d391",
       "title": {
         "zh-TW": "以「動態共價鍵網絡」實現可完全化學回收的碳纖維複合材料：效能零損失的循環經濟突破",
@@ -259,11 +259,11 @@
         "ko": "동적 이민 결합 에폭시 기지재가 온화한 산성 조건에서 완전 해중합되어 인장강도 98% 유지 탄소섬유를 회수할 수 있다."
       },
       "plain": {
-        "zh-TW": "過去碳纖維複合材料報廢後只能填埋，現在只需浸入溫和酸液就能完整拆解並重複使用，強度幾乎不打折。",
-        "en": "Carbon-fiber parts once destined for landfill can now be dissolved in mild acid and reborn as strong as new, ending a major recycling deadlock.",
-        "zh-CN": "过去碳纤维复合材料报废后只能填埋，现在只需浸入温和酸液就能完整拆解并重复使用，强度几乎不打折。",
-        "ja": "廃棄されるしかなかった炭素繊維複合材が温和な酸に浸けるだけで完全分解・再利用でき、強度もほぼ維持される。",
-        "ko": "매립 처리되던 탄소섬유 복합재를 온화한 산에 담그기만 해도 완전히 분해·재사용할 수 있고 강도도 거의 유지된다."
+        "zh-TW": "想像一下樂高積木，玩完後可以拆開重組；但現實中的碳纖維複合材料（像是高級跑車車殼、飛機零件）卻像是用超級膠水黏死的積木，報廢後只能整組丟掉填埋，既浪費又污染。這個研究就像是發明了一種「遇到特定溶液就會自動鬆開」的聰明膠水，科學家在樹脂裡加入了「動態亞胺鍵」這種化學結構，讓它在溫和的酸液裡會自己解體，碳纖維就能完整無傷地被取出來。更厲害的是，回收後的碳纖維重新製作成新產品時，強度還能保持98%，幾乎跟全新的一樣好！這對航太、汽車產業意義重大，因為碳纖維本身超級昂貴，如果能不斷循環使用，不但省下大筆成本，也能大幅減少製造新材料時的碳排放。簡單說，這就是讓「不可能回收」的高科技材料，變成可以無限重生的環保尖兵。",
+        "en": "Imagine trying to separate eggs from a baked cake—that's basically been the problem with carbon fiber composites used in everything from Boeing jets to tennis rackets. Once these super-strong materials are glued together with traditional resins, they're stuck that way forever, ending up in landfills when planes retire or sports equipment breaks. But here's the game-changer: scientists have created a \"smart glue\" using special chemical bonds called dynamic imine linkages that act like reversible zippers. Just dip the old composite into a mild acid solution (think somewhere between vinegar and lemon juice in strength), and the resin politely dissolves away, releasing pristine carbon fibers that are 98% as strong as brand new ones. This matters because carbon fiber is expensive—about $15-30 per pound—and we're talking about potentially rescuing millions of tons from retired aircraft alone. Instead of the current \"make-use-trash\" cycle, we can now have a true circular economy where yesterday's airplane wing becomes tomorrow's electric car body, with virtually no performance loss and massive cost savings.",
+        "zh-CN": "想象一下你花大钱买了一辆碳纤维自行车，骑了几年之后想换新的，结果发现旧车架只能当垃圾扔掉——这就是过去碳纤维材料面临的尴尬处境。现在科学家们开发出一种\"会自己松绑\"的碳纤维复合材料，就像乐高积木一样，只要泡在温和的酸性溶液里（类似醋的酸度），原本紧紧黏合的树脂就会乖乖解体，完整的碳纤维就能被取出来重新使用。更厉害的是，这些回收的碳纤维重新做成产品后，强度居然还能保持98%，几乎跟新的一样好！这对航空、汽车、运动器材产业意义重大，因为碳纤维材料既昂贵又难处理，过去报废的飞机零件、赛车部件都只能填埋，既浪费钱又污染环境。有了这项技术，未来你的碳纤维网球拍用旧了可以回收做成新球拍，甚至变成无人机的机身，真正实现材料的\"永生循环\"，既省钱又环保。",
+        "ja": "想像一下樂高積木和用強力膠黏死的模型——前者可以拆了重組，後者壞了就只能丟掉。過去製造飛機、賽車用的碳纖維複合材料就像那個被黏死的模型，報廢後只能埋進垃圾場，每年全球丟棄數萬噸價值不菲的碳纖維。現在日本研究團隊開發出一種「聰明的膠水」，它用的是可以解開的化學鍵（叫做動態亞胺鍵），只要把廢棄零件泡進溫和的酸性溶液裡，樹脂就會自動分解，完整的碳纖維就能像新的一樣被取出來。更驚人的是，這些回收纖維做成新產品後，強度還能保持98%——就像你的樂高積木拆了重組一百次，仍然一樣堅固。這項技術不僅能大幅降低航空、汽車產業的材料成本，更重要的是讓這些高價值材料真正進入循環經濟，不再是「用過即丟」的奢侈浪費。",
+        "ko": "想像一下樂高積木，玩完後可以拆開重組；但現在的碳纖維複合材料（像飛機機翼、高級跑車車體）更像是用強力膠黏死的積木，報廢後只能整組丟掉，每年全球數萬噸的廢棄碳纖維就這樣被埋進垃圾場，既浪費又污染。現在科學家發明了一種「會認酸的特殊膠水」——含有動態亞胺鍵的環氧樹脂，就像遇到檸檬汁就會自動鬆開的魔術黏土，只要把報廢零件泡進溫和的酸液裡，樹脂就會乖乖解體，讓裡面昂貴的碳纖維完整脫身。更厲害的是，這些回收的碳纖維重新製成新零件後，強度還能保持98%，幾乎跟全新的一模一樣！這對航太、汽車產業來說是超級大事，因為碳纖維一公斤要價上千元，未來報廢的波音787客機可能不再是一堆廢料，而是能重生的「材料銀行」。這項技術讓高科技材料真正進入循環經濟，既省錢又環保，對減少工業碳排放也有顯著幫助。"
       },
       "insight": {
         "zh-TW": "💡 航空與風電葉片等碳纖維大戶每年產生數十萬噸廢料，此技術若量產化將使這些廢料成為高值原料而非環境負擔。",

@@ -12,6 +12,10 @@ import sys
 import json
 import re
 import logging
+import time
+import urllib.request
+import urllib.parse
+import xml.etree.ElementTree as ET
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -179,84 +183,197 @@ def call_claude(prompt, max_tokens=4000):
         log.error(f"Anthropic API 錯誤: {e}")
         raise
 
+# ── arXiv API 抓真實論文 ──────────────────────────────────────────────────
+# domain → arXiv category 對應
+ARXIV_CATS = {
+    "ai":     "cs.AI cs.LG cs.CL",
+    "bio":    "q-bio.GN q-bio.CB q-bio.MN",
+    "phys":   "cond-mat.supr-con cond-mat.mes-hall quant-ph",
+    "neuro":  "q-bio.NC cs.NE",
+    "health": "q-bio.TO q-bio.QM",
+    "space":  "astro-ph.GA astro-ph.EP astro-ph.HE",
+    "chem":   "cond-mat.mtrl-sci physics.chem-ph",
+    "tech":   "eess.SP cs.RO cs.SY",
+    "ocean":  "q-bio.PE physics.ao-ph",
+    "nature": "q-bio.PE q-bio.OT",
+    "fin":    "q-fin.ST q-fin.GN econ.GN",
+    "arch":   "cs.GR eess.IV",
+}
+
+def fetch_arxiv_papers(domain: str, paper_date: str, n: int = 5) -> list[dict]:
+    """
+    從 arXiv API 抓指定領域的最新論文（paper_date 前後 3 天）。
+    回傳 list of {arxiv_id, title, authors, abstract, url, submitted}
+    """
+    cats = ARXIV_CATS.get(domain, "cs.AI")
+    cat_query = " OR ".join(f"cat:{c}" for c in cats.split())
+    params = urllib.parse.urlencode({
+        "search_query": cat_query,
+        "start": 0,
+        "max_results": n,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+    })
+    api_url = f"https://export.arxiv.org/api/query?{params}"
+    log.info(f"  arXiv fetch: domain={domain} cats={cats}")
+    try:
+        req = urllib.request.Request(api_url, headers={"User-Agent": "DailyKnowledge/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            xml_data = r.read()
+        root = ET.fromstring(xml_data)
+        ns = {"atom": "http://www.w3.org/2005/Atom"}
+        results = []
+        for entry in root.findall("atom:entry", ns):
+            arxiv_id = entry.find("atom:id", ns).text.strip().split("/abs/")[-1]
+            title = entry.find("atom:title", ns).text.strip().replace("\n", " ")
+            authors = [a.find("atom:name", ns).text.strip()
+                       for a in entry.findall("atom:author", ns)]
+            abstract = entry.find("atom:summary", ns).text.strip().replace("\n", " ")
+            published = entry.find("atom:published", ns).text[:10]
+            results.append({
+                "arxiv_id": arxiv_id,
+                "title": title,
+                "authors": authors[:3],
+                "abstract": abstract[:600],
+                "url": f"https://arxiv.org/abs/{arxiv_id}",
+                "ref": f"arXiv:{arxiv_id}",
+                "submitted": published,
+            })
+        log.info(f"  arXiv fetched {len(results)} papers for {domain}")
+        return results
+    except Exception as e:
+        log.warning(f"  arXiv fetch failed for {domain}: {e}")
+        return []
+
+
 # ── 產生卡片 ──────────────────────────────────────────────────────────────
-PAPER_BATCHES = [
-    [("ai","🤖","人工智慧/機器學習"), ("bio","🧬","生命科學/生物醫學"), ("phys","⚛️","物理/量子")],
-    [("neuro","🧠","神經科學"), ("space","🌌","太空/天文"), ("tech","📶","自選：化學/材料/技術/海洋/經濟（domain 自選 chem/tech/ocean/fin/arch/health）")],
+PAPER_DOMAINS = [
+    ("ai",    "🤖", "人工智慧"),
+    ("bio",   "🧬", "生命科學"),
+    ("phys",  "⚛️",  "物理"),
+    ("neuro", "🧠", "神經科學"),
+    ("space", "🌌", "天文宇宙"),
+    ("tech",  "📶", "科技材料"),
 ]
 
-def _paper_prompt(today_str, paper_date, recent_str, domains):
-    domain_list = "\n".join(f"{i+1}. {d[2]}（domain: {d[0]}）" for i,d in enumerate(domains))
-    pid = paper_date[2:4] + paper_date[5:7]
-    d0 = domains[0]
-    color_map = {"ai":"#667eea","bio":"#48bb78","phys":"#ed8936","neuro":"#9f7aea",
-                 "space":"#4299e1","tech":"#68d391","chem":"#f6e05e","ocean":"#76e4f7",
-                 "fin":"#f687b3","arch":"#a0aec0","health":"#fc8181"}
-    ex_color = color_map.get(d0[0],"#667eea")
-    return f"""你是「每日新知」科普卡片編輯，為 {today_str}（arXiv 日期 {paper_date}）產生 3 張論文卡片。
+COLOR_MAP = {
+    "ai":"#667eea","bio":"#48bb78","phys":"#ed8936","neuro":"#9f7aea",
+    "space":"#4299e1","tech":"#68d391","chem":"#f6e05e","ocean":"#76e4f7",
+    "fin":"#f687b3","arch":"#a0aec0","health":"#fc8181","nature":"#fbd38d",
+}
 
-已出現過的主題（請勿重複）：
+def _summarize_paper_prompt(today_str, domain, emoji, domain_label, paper, card_id, recent_str):
+    """讓 Claude 把真實論文的 title+abstract 轉成多語言卡片 JSON"""
+    color = COLOR_MAP.get(domain, "#667eea")
+    author_str = ", ".join(paper["authors"]) + " et al." if paper["authors"] else "et al."
+    return f"""你是「每日新知」科普卡片編輯。請把下列真實 arXiv 論文摘要轉化成一張多語言知識卡片。
+
+【論文資料】
+標題（英）：{paper["title"]}
+作者：{author_str}
+arXiv ID：{paper["arxiv_id"]}
+摘要（英）：{paper["abstract"]}
+
+【卡片規格】
+- id: "{card_id}"
+- domain: "{domain}"
+- day: "{today_str}"
+- color: "{color}"
+
+【語言要求】
+- title：各語言翻譯論文標題（可意譯讓非專業讀者理解）
+- tag：用 {emoji} 開頭，各語言填「{emoji} {domain_label}」類的領域標籤
+- tech：2-3句，技術性說明這篇論文做了什麼、方法是什麼
+- plain：5-8句，用生動比喻+舉例，讓完全不懂的人也能理解，要有「為什麼重要」
+- insight：💡 開頭，1句洞見或啟示
+
+【已出現過的主題（勿重複）】
 {recent_str}
 
-請從以下 3 個領域各選一篇真實的 2026 年 arXiv 論文：
-{domain_list}
+輸出純 JSON 物件（不要陣列，不要說明）：
+{{
+  "id": "{card_id}",
+  "domain": "{domain}",
+  "day": "{today_str}",
+  "author": "{author_str}",
+  "ref": "{paper['ref']}",
+  "url": "{paper['url']}",
+  "color": "{color}",
+  "title":   {{"zh-TW":"","en":"","zh-CN":"","ja":"","ko":""}},
+  "tag":     {{"zh-TW":"{emoji} {domain_label}","en":"{emoji} {domain_label}","zh-CN":"{emoji} {domain_label}","ja":"{emoji} {domain_label}","ko":"{emoji} {domain_label}"}},
+  "tech":    {{"zh-TW":"","en":"","zh-CN":"","ja":"","ko":""}},
+  "plain":   {{"zh-TW":"","en":"","zh-CN":"","ja":"","ko":""}},
+  "insight": {{"zh-TW":"","en":"","zh-CN":"","ja":"","ko":""}}
+}}
 
-輸出純 JSON 陣列（不要有任何說明）：
-[
-  {{
-    "id": "{d0[0]}-{pid}",
-    "domain": "{d0[0]}",
-    "day": "{today_str}",
-    "author": "作者名 et al. 2026",
-    "ref": "arXiv:2606.XXXXX",
-    "url": "https://arxiv.org/abs/2606.XXXXX",
-    "color": "{ex_color}",
-    "title": {{"zh-TW":"繁體中文標題","en":"English Title","zh-CN":"简体中文","ja":"日本語","ko":"한국어"}},
-    "tag":   {{"zh-TW":"{d0[1]} 人工智慧","en":"{d0[1]} AI","zh-CN":"{d0[1]} 人工智能","ja":"{d0[1]} 人工知能","ko":"{d0[1]} 인공지능"}},
-    "tech":  {{"zh-TW":"技術說明（2句內）","en":"Tech explanation","zh-CN":"技术说明","ja":"技術説明","ko":"기술 설명"}},
-    "plain": {{"zh-TW":"白話解釋（1-2句）","en":"Plain explanation","zh-CN":"白话解释","ja":"わかりやすく","ko":"쉬운 설명"}},
-    "insight":{{"zh-TW":"💡 洞見","en":"💡 Insight","zh-CN":"💡 洞见","ja":"💡 洞察","ko":"💡 통찰"}}
-  }}
-]
-
-重要：
-- ref 用真實 arXiv ID（2606.XXXXX）
-- color 用對應領域色碼（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, fin:#f687b3, arch:#a0aec0, health:#fc8181）
-- 每個語言的 tech/plain/insight 各限 **1 句話**，絕對不要超過 50 個字
-- url 必須是 arXiv 具體論文頁面：https://arxiv.org/abs/2606.XXXXX（真實 ID）
-  不要填 arXiv 首頁或搜尋頁
-- JSON 字串值內禁止出現任何 ASCII 雙引號 "，需要引號請用「」或（）代替
-- 只輸出 JSON 陣列，不加任何說明"""
+重要：JSON 字串內禁止出現 ASCII 雙引號，需要引號請用「」代替。只輸出 JSON，不加說明。"""
 
 
 def generate_cards_paper(date_info, recent_topics):
-    paper_date = date_info["paper_date_str"]
     today_str = date_info["today_str"]
+    paper_date = date_info["paper_date_str"]
     recent_str = "\n".join(f"- {t}" for t in recent_topics[-20:])
+    pid = today_str[2:4] + today_str[5:7] + today_str[8:10]  # YYMMDD
 
     all_cards = []
-    for batch_num, domains in enumerate(PAPER_BATCHES, 1):
-        prompt = _paper_prompt(today_str, paper_date, recent_str, domains)
-        raw = call_claude(prompt, max_tokens=8000)
-        json_str = extract_json(raw)
-        if not json_str:
-            log.error(f"論文第{batch_num}批 raw 末尾: {raw[-200:]}")
-            raise ValueError(f"論文第{batch_num}批 API 回傳無法解析:\n{raw[:300]}")
-        try:
-            cards = json.loads(json_str)
-        except json.JSONDecodeError as e:
-            log.warning(f"論文第{batch_num}批 JSON 初次解析失敗: {e}，嘗試 repair...")
-            try:
-                repaired = repair_json_str(json_str)
-                cards = json.loads(repaired)
-                log.info(f"論文第{batch_num}批 repair 成功")
-            except json.JSONDecodeError as e2:
-                log.error(f"論文第{batch_num}批 JSON 仍無法解析: {e2}, 附近: {json_str[max(0,e.pos-80):e.pos+80]}")
-                raise e2
-        log.info(f"論文第{batch_num}批生成 {len(cards)} 張卡片")
-        all_cards.extend(cards)
+    used_arxiv_ids = set()
 
-    log.info(f"論文共生成 {len(all_cards)} 張卡片")
+    for domain, emoji, domain_label in PAPER_DOMAINS:
+        log.info(f"\n── 處理領域: {domain} ({emoji} {domain_label}) ──")
+
+        # 1. 從 arXiv 抓真實論文
+        papers = fetch_arxiv_papers(domain, paper_date, n=8)
+        time.sleep(1)  # arXiv rate limit
+
+        # 選一篇未用過的
+        chosen = None
+        for p in papers:
+            if p["arxiv_id"] not in used_arxiv_ids:
+                chosen = p
+                used_arxiv_ids.add(p["arxiv_id"])
+                break
+
+        if not chosen:
+            log.warning(f"  找不到未用過的 {domain} 論文，跳過")
+            continue
+
+        log.info(f"  選用: {chosen['arxiv_id']} — {chosen['title'][:60]}")
+
+        # 2. 讓 Claude 摘要成卡片
+        card_id = f"{domain}-{pid}"
+        prompt = _summarize_paper_prompt(today_str, domain, emoji, domain_label,
+                                          chosen, card_id, recent_str)
+        raw = call_claude(prompt, max_tokens=4000)
+
+        # 解析 JSON 物件（不是陣列）
+        text = re.sub(r'^```(?:json)?\s*', '', raw.strip())
+        text = re.sub(r'\s*```$', '', text.strip())
+        start = text.find('{')
+        end = text.rfind('}')
+        if start == -1 or end == -1:
+            log.error(f"  {domain} 無法找到 JSON 物件，raw: {raw[:200]}")
+            continue
+        json_str = sanitize_json(text[start:end+1])
+        try:
+            card = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            log.warning(f"  {domain} JSON 解析失敗，嘗試 repair: {e}")
+            try:
+                card = json.loads(repair_json_str(json_str))
+            except Exception as e2:
+                log.error(f"  {domain} repair 失敗: {e2}")
+                continue
+
+        # 確保 url/ref 正確（用 arXiv API 的值覆蓋）
+        card["url"] = chosen["url"]
+        card["ref"] = chosen["ref"]
+        card["author"] = ", ".join(chosen["authors"][:2]) + (" et al." if len(chosen["authors"]) > 1 else "")
+
+        log.info(f"  ✓ 卡片生成: {card.get('id')} — {card.get('title',{}).get('zh-TW','')[:40]}")
+        all_cards.append(card)
+        time.sleep(0.5)
+
+    log.info(f"\n論文共生成 {len(all_cards)} 張卡片")
     return all_cards
 
 

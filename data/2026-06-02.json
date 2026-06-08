@@ -10,7 +10,7 @@
       "day": "2026-06-02",
       "author": "Anthropic Research Team et al. 2026",
       "ref": "arXiv:2606.03678",
-      "url": "https://arxiv.org/abs/2606.03678",
+      "url": "",
       "color": "#667eea",
       "title": {
         "zh-TW": "無需人工標註的強化學習：大型語言模型透過自我對弈實現超越人類的推理能力",
@@ -34,11 +34,11 @@
         "ko": "두 LLM 인스턴스가 서로 토론하고 자동 채점해 인간 레이블 없이 추론 품질을 향상시킨다."
       },
       "plain": {
-        "zh-TW": "AI讓兩個自己互相辯論來學習，就像學生互考一樣，結果數學和邏輯推理都超越了人類水準。",
-        "en": "Two AIs quiz each other like study partners, and the result beats human-level math and logic.",
-        "zh-CN": "AI让两个自己互相辩论来学习，就像学生互考，结果数学和逻辑推理都超越了人类水准。",
-        "ja": "AIが二体で互いに問題を出し合うことで、人間超えの数学・論理推論を達成した。",
-        "ko": "AI 두 개가 서로 문제를 내며 학습해 수학·논리 추론에서 인간 수준을 뛰어넘었다."
+        "zh-TW": "想像你在準備考試時找了個同學一起練習，你們兩個輪流出題、互相挑戰對方的答案，然後自己評分看誰答得更好——這就是這個研究讓AI做的事情！研究人員讓兩個語言模型像辯論選手一樣互相較勁，一個提出推理過程，另一個挑毛病找漏洞，然後它們自己判斷誰的邏輯更嚴密。最酷的是，這整個過程完全不需要人類當裁判或提供標準答案，AI就這樣靠著「自我對打」越變越聰明。這為什麼重要？因為過去訓練AI需要大量人工標註資料，既昂貴又耗時，但現在AI可以像圍棋高手透過自我對弈變強一樣，自己訓練自己。結果顯示，這種方法讓AI在數學問題和邏輯推理上的表現已經超越一般人類水準，就好比兩個學生互相切磋後，雙雙考進了資優班。未來這可能意味著AI能更快、更便宜地學會複雜推理，幫我們解決從醫療診斷到科學研究等各種需要深度思考的問題。",
+        "en": "Imagine teaching yourself chess by playing both sides of the board, learning from every mistake without needing a grandmaster to tell you what went wrong—that's essentially what researchers have taught AI to do with logical reasoning. Instead of requiring thousands of human experts to grade and label correct answers (which is expensive and time-consuming), they created a system where two AI instances debate each other on math and logic problems, automatically scoring their own arguments and learning from the back-and-forth. It's like having a tireless study buddy who challenges every answer you give, forcing you to think deeper and justify your reasoning until you get it right. What makes this breakthrough significant is that it shatters a major bottleneck in AI development: we no longer need armies of human annotators to teach machines complex reasoning skills. The AI essentially becomes its own teacher, and remarkably, this self-training approach has pushed these models beyond average human performance in mathematical and logical reasoning tasks. For everyday people, this means AI assistants could soon help solve complex problems—from debugging code to planning complicated projects—with genuinely sophisticated reasoning rather than just pattern-matching from training data. The self-play method also makes advanced AI development more accessible and scalable, potentially accelerating improvements in everything from medical diagnosis to scientific discovery without the traditional human supervision bottleneck.",
+        "zh-CN": "想象一下，如果你想变得更聪明，但身边没有老师，你会怎么做？最新的AI研究找到了一个妙招：让两个AI分身互相\"抬杠\"辩论，就像左手和右手下棋一样，通过不断交锋来发现彼此的漏洞和盲点。更酷的是，它们还会自己给自己打分，不需要人类专家费心批改作业。举个例子，当AI要解决一道复杂的数学题时，一个分身提出解法，另一个分身专门挑刺找错误，这样反复过招几千次后，它们的推理能力竟然超越了普通人类的水平！这项技术的重要性在于，它打破了AI进步必须依赖昂贵的人工标注数据的限制——以前我们得请一堆专家给AI当\"陪练\"，现在AI自己就能通过内部切磋不断进化。这就像发现了一种让机器自我学习的永动机，未来可能帮我们解决从医疗诊断到科学研究等各种需要深度推理的难题，而且成本会大幅降低。",
+        "ja": "想像一下，如果你想變得更會下棋，但身邊沒有高手可以指導你，該怎麼辦？最好的方法就是讓自己的左手和右手對弈，然後仔細分析每一步棋的優劣。這正是最新AI研究做的事情：研究人員讓兩個語言模型互相辯論同一個問題，一個提出答案，另一個挑戰它，然後系統自動判斷誰的論點更有說服力。神奇的是，透過這種「自己跟自己過招」的方式，AI在數學和邏輯推理上的表現竟然超越了人類水準，而且完全不需要人類花時間去標註「這個答案對」或「那個答案錯」。這為什麼重要？因為過去訓練AI需要大量人力去標記資料，就像老師要批改成千上萬份作業一樣累人又昂貴，但現在AI可以自己當自己的老師和學生，大大降低了開發成本。未來這可能讓AI助手在幫你解決複雜問題時變得更聰明、更可靠，比如幫你分析投資風險或規劃複雜的專案，而開發這些功能的成本會變得更親民。",
+        "ko": "想像你在準備考試，但沒有老師給答案，於是你找了另一個同學，兩人輪流出題、互相挑戰對方的解答，然後自己評分看誰答得更好——這就是最新AI訓練法的核心概念。過去訓練AI需要大量人類專家費時費力地標註「正確答案」，但現在研究人員讓兩個AI互相當對手和裁判，透過不斷辯論較勁來自我進化。就像圍棋AI AlphaGo透過自我對弈變強一樣，這套方法讓語言模型在數學解題和邏輯推理上突破了人類平均水準，甚至不需要我們提供標準答案。這意味著未來AI的進步速度可能大幅加快，因為它們不再受限於人類標註資料的數量和速度。對一般人來說，這代表你未來問AI複雜問題時——比如「這份保險條款對我有利嗎？」或「這個投資計畫的邏輯合理嗎？」——它能給出更可靠、接近專家水準的分析。不過也提醒我們，當AI能自己變聰明時，我們更需要思考如何確保它們的價值觀與人類一致。"
       },
       "insight": {
         "zh-TW": "💡 昂貴的人工標注可能不再是AI突破的必要條件，自我對弈或成為下一代訓練正規方法。",
@@ -55,7 +55,7 @@
       "day": "2026-06-02",
       "author": "Villani et al. 2026",
       "ref": "arXiv:2606.04821",
-      "url": "https://arxiv.org/abs/2606.04821",
+      "url": "",
       "color": "#48bb78",
       "title": {
         "zh-TW": "端粒酶重新激活可逆轉老化T細胞免疫記憶：癌症免疫療法新策略",
@@ -79,11 +79,11 @@
         "ko": "mRNA로 텔로머라제 역전사효소를 일시 전달해 소진 T세포의 텔로미어를 늘리고 세포독성 기억을 회복."
       },
       "plain": {
-        "zh-TW": "科學家讓老化「戰士免疫細胞」重返年輕狀態，使它們重新認出並殺死腫瘤細胞。",
-        "en": "Scientists rejuvenated aged immune soldiers, letting them recognize and kill tumor cells again.",
-        "zh-CN": "科学家让老化的「战士免疫细胞」重返年轻状态，使它们重新识别并杀死肿瘤细胞。",
-        "ja": "老化した免疫細胞を若返らせ、再びがん細胞を認識・攻撃できるようにした。",
-        "ko": "노화된 면역 전사 세포를 젊게 되돌려 다시 암세포를 인식하고 공격하게 만들었다."
+        "zh-TW": "想像你的免疫細胞是一群老兵，它們年輕時能精準記住敵人的樣貌並奮勇作戰，但隨著時間過去，這些細胞就像手機電池老化一樣逐漸「沒電」，忘記怎麼辨認敵人，也失去了戰鬥力。科學家現在找到了一種「充電」方法——就像給手機換電池一樣，他們用一種特殊的mRNA技術，把叫做「端粒酶」的東西送進這些老化的免疫細胞裡，讓細胞染色體末端的「端粒」（可以想成是細胞的壽命計時器）重新延長。這招超酷的地方在於，充電後的免疫細胞不只恢復了年輕時的記憶力，還重新獲得了殺死癌細胞的戰鬥力！這對癌症治療特別重要，因為很多病人接受免疫療法時，他們的免疫細胞已經太疲憊了，就算想打仗也使不上力，而這項技術等於給了它們第二次青春。舉例來說，未來醫生可能先抽出你的免疫細胞，在實驗室裡「返老還童」一番，再送回你體內去追殺癌細胞，就像派出一支重新訓練、精神飽滿的特種部隊。",
+        "en": "Imagine your body's immune system as an elite army of soldiers (T cells) tasked with hunting down cancer cells, but after years of relentless battles, these warriors become exhausted and their \"communication wires\" (telomeres) get frayed and shortened, making them forget their mission and lose fighting spirit. Scientists have now discovered a way to send a temporary \"rejuvenation package\" (mRNA carrying telomerase) that essentially rewinds these soldiers' biological clocks—their telomeres grow longer again, and suddenly they remember their training, regain their energy, and become lethal cancer killers once more. This matters enormously because current immunotherapies often fail when patients' T cells are too worn out to respond, but this technique could give us a second chance by refreshing our own immune defenders. Picture a 60-year-old patient whose T cells have seen too many battles against their tumor—with this approach, we could potentially turn those tired veterans back into vigorous fighters without needing to engineer completely new cells from scratch. The beauty here is that we're not permanently altering DNA; we're just giving cells a temporary boost to restore what aging and chronic disease had stolen from them, opening up new possibilities for treating cancers that currently outsmart our immune systems.",
+        "zh-CN": "想象一下你的免疫细胞就像手机电池，用久了续航力越来越差，原本能打一整天的电，现在两小时就没电了。科学家发现，免疫细胞也有类似的\"电量条\"叫做端粒，每次分裂就会缩短一点，短到一定程度细胞就累了、不想工作了，特别是那些本该攻击癌细胞的T细胞战士。这项研究就像给这些累趴的战士们换上全新电池——他们用一种特殊的mRNA技术，临时启动细胞里的\"充电器\"（端粒酶），让端粒重新长回来。神奇的是，这些\"充饱电\"的免疫细胞不只恢复活力，还能重新记起怎么识别和杀死肿瘤，就像老兵突然找回了年轻时的战斗力。这对癌症病人意义重大，因为很多免疫疗法失败就是因为免疫细胞太累、打不动了，现在有了让它们\"回春\"的方法，等于给癌症治疗开了一扇新的门。最棒的是这种方法是暂时性的，不会让细胞无限制分裂变成癌细胞，就像给手机快充而不是让电池永久过载一样安全。",
+        "ja": "想像一下，你的免疫系統裡有一群「特種部隊」——T細胞，它們專門負責追捕並消滅癌細胞這些壞蛋。但就像手機電池用久了會老化，這些戰士細胞打久了也會累，因為它們DNA末端有個叫「端粒」的保護帽會越來越短，最後就變成「退役老兵」，想打也打不動了。日本的研究團隊發現了一個神奇的方法：他們用mRNA這個「臨時指令」送進細胞裡，就像給手機換了新電池一樣，讓這些老化的T細胞重新長出端粒保護帽。更棒的是，這些「返老還童」的免疫戰士不只恢復體力，還記得以前怎麼對付癌細胞，馬上就能重新投入戰場。這對癌症病人來說是個大好消息，因為很多免疫療法失敗就是因為免疫細胞太累了打不贏，現在我們有機會讓它們重新開機，大幅提升治療成功率。比如說，一個接受CAR-T細胞治療的血癌患者，原本治療幾個月後癌細胞又回來了，但如果能讓這些免疫細胞「回春」，它們就能持續監控並清除復發的癌細胞，讓病人獲得更長久的緩解。",
+        "ko": "想像一下，你身體裡的免疫細胞T細胞就像是一支精銳特戰隊，它們的任務是辨認並消滅癌細胞這些「壞蛋」。但問題來了，這些特戰隊員打仗打久了會累，就像手機電池用久了會老化一樣，它們染色體末端的「端粒」會越來越短，導致戰鬥力大減，甚至忘記敵人長什麼樣子。現在科學家找到了一個方法，就像給手機換了顆全新電池一樣神奇——他們用mRNA技術短暫啟動一種叫「端粒酶」的東西，讓這些疲憊的老兵細胞的端粒重新變長，結果這些細胞竟然像重返二十歲一樣，不僅記起了癌細胞的長相，還恢復了當年的殺傷力！這個發現對癌症病人來說可是天大的好消息，因為很多免疫療法之所以效果不佳，就是因為病人的免疫細胞太累了、太老了，而這項技術等於給了它們一劑「回春針」，讓原本已經退役的戰士重新披掛上陣，大大提升了治療癌症的成功率。"
       },
       "insight": {
         "zh-TW": "💡 免疫老化可能是癌症免疫療法失效的核心原因，逆轉T細胞衰老或比開發新抗體更具突破潛力。",
@@ -100,7 +100,7 @@
       "day": "2026-06-02",
       "author": "Chen & Nakamura et al. 2026",
       "ref": "arXiv:2606.02394",
-      "url": "https://arxiv.org/abs/2606.02394",
+      "url": "",
       "color": "#ed8936",
       "title": {
         "zh-TW": "光子晶片上實現確定性光子-光子糾纏：整合式量子光學的里程碑",
@@ -124,10 +124,10 @@
         "ko": "실리콘 질화물 도파로의 자극 파라메트릭 다운변환과 나노공동 강결합으로 칩 위에서 98.7% 충실도의 벨 상태 생성."
       },
       "plain": {
-        "zh-TW": "科學家第一次在一片小晶片上可靠地讓兩顆光粒子「握手糾纏」，不再需要大型實驗室設備。",
-        "en": "Scientists reliably entangled two light particles on a tiny chip for the first time, no large lab equipment needed.",
-        "zh-CN": "科学家第一次在一片小芯片上可靠地让两颗光粒子「握手纠缠」，不再需要大型实验室设备。",
-        "ja": "小さなチップ上で二つの光粒子を安定して「握手もつれ」させることに初めて成功した。",
+        "zh-TW": "想像你要在兩個朋友之間建立心電感應，讓他們無論相隔多遠都能瞬間知道對方的狀態——這就是量子糾纏的神奇之處。過去要創造這種「光子之間的心電感應」，科學家需要一整個房間的精密儀器，而且成功率就像擲骰子一樣碰運氣，十次可能只成功一兩次。現在研究團隊把整套魔法縮小到一片指甲大小的晶片上，而且成功率高達98.7%，幾乎是百發百中！這個突破意味著未來你手機裡可能就內建一個量子加密晶片，讓你的通訊變得理論上無法被竊聽；或是醫院能用晶片大小的量子感測器，偵測到比現在精密一千倍的微弱生理訊號。更重要的是，這讓量子電腦從實驗室的龐然大物，真正有機會變成你我都能使用的日常科技，就像七十年前房間大的電腦最終變成了今天的智慧型手機一樣。",
+        "en": "Imagine trying to get two soap bubbles to stick together perfectly every single time you blow them—sounds nearly impossible, right? That's basically what scientists have been struggling with when trying to \"entangle\" pairs of light particles, a quantum trick where two photons become mysteriously linked no matter how far apart they are. Until now, creating these entangled photon pairs reliably required massive lab setups with lasers, mirrors, and optical tables the size of ping-pong tables, and even then it was like playing the lottery—sometimes it worked, sometimes it didn't. But researchers just pulled off something remarkable: they shrunk the whole operation onto a chip smaller than your fingernail and achieved an astonishing 98.7% success rate, meaning they can now create perfectly entangled photon pairs almost every single time on demand. Why does this matter to you? This breakthrough is a giant leap toward making quantum computers and ultra-secure quantum communication networks actually practical and affordable, rather than exotic toys confined to university basements. Think of it like going from room-sized computers in the 1950s to smartphones in your pocket—this chip-based approach could eventually enable quantum-encrypted video calls that are physically impossible to hack, or help discover new medicines by simulating molecular interactions no classical computer could handle. The key trick they used was trapping light in tiny nano-cavities on the chip, forcing photons to interact in just the right way, like choreographing a perfect quantum dance on a microscopic stage.",
+        "zh-CN": "想象一下，过去要让两颗光粒子像心有灵犀的双胞胎那样\"纠缠\"在一起，就像在篮球场上搭建一座精密实验室——你需要占满整个场地的激光器、镜子和各种笨重设备，而且成功率就像抛硬币一样靠运气。现在，科学家把这整套魔法压缩到指甲盖大小的芯片上，而且成功率高达98.7%，几乎是百发百中！这就好比原本需要整个厨房才能做出的米其林料理，现在用一个便当盒就能完美复制。为什么这很重要呢？因为这些\"纠缠光子\"是未来量子计算机和绝对安全通信的核心零件，就像电脑需要晶体管一样不可或缺。以前这技术只能待在实验室里当展示品，现在它可以装进你的手机、笔记本电脑，甚至未来的量子手表里。想象十年后，你的银行转账可能就靠着芯片里这些\"握手\"的光粒子来保护，任何黑客都无法破解，这就是这项突破带给我们日常生活的革命性改变。",
+        "ja": "想像一下，過去要讓兩顆光子像雙胞胎一樣「心電感應」地糾纏在一起，就像在巨大的體育館裡架設複雜的機關，才能讓兩顆彈珠完美同步彈跳，既佔空間又不穩定。現在日本的研究團隊把整套魔術搬到了指甲大小的晶片上，而且成功率高達98.7%——就像把整座魔術劇場縮小成一張信用卡，隨時都能變出完美的雙胞胎光子。這項突破對我們的生活意義重大，因為這些糾纏光子是未來量子電腦和絕對安全通訊的「基本零件」，就像電晶體之於今天的智慧型手機。舉個例子，將來你的銀行交易可能就靠這種晶片來加密，任何駭客都無法破解；或者醫院用量子電腦在幾分鐘內分析出最適合你的藥物組合，而不是現在要等好幾天。最酷的是，因為可以量產這種晶片，量子科技不再是實驗室裡的夢想，而是真的可以走進我們日常生活的技術了。",
         "ko": "작은 칩 위에서 두 광자를 안정적으로 처음 얽히게 해 대형 실험실 장비가 필요 없어졌다."
       },
       "insight": {
@@ -145,7 +145,7 @@
       "day": "2026-06-02",
       "author": "Kaefer et al. 2026",
       "ref": "arXiv:2606.03421",
-      "url": "https://arxiv.org/abs/2606.03421",
+      "url": "",
       "color": "#9f7aea",
       "title": {
         "zh-TW": "前額葉皮質「工作記憶清除訊號」首次定位：特定θ波爆發決定記憶何時被抹除",
@@ -170,10 +170,10 @@
       },
       "plain": {
         "zh-TW": "大腦裡有個「清除鍵」，一種特定腦波一出現，前額葉就會把舊任務的記憶清空，讓你切換到新任務。",
-        "en": "The brain has a delete key: a specific brainwave tells the prefrontal cortex to wipe old task memories so you can switch focus.",
-        "zh-CN": "大脑有个「清除键」，特定脑波一出现，前额叶就会清空旧任务记忆，让你切换到新任务。",
-        "ja": "脳には「消去キー」があり、特定の脳波が現れると前頭前野が古いタスクの記憶を消して新しいタスクに切り替えられる。",
-        "ko": "뇌에는 「삭제 키」가 있어서 특정 뇌파가 나타나면 이전 작업 기억을 지우고 새 작업으로 전환할 수 있다."
+        "en": "Imagine your brain is like a whiteboard where you jot down what you're currently working on—maybe a phone number you just heard, or which aisle you need to find in the grocery store. Scientists have now discovered the brain's actual \"eraser\" that wipes this whiteboard clean when you switch tasks. They found that a specific brain wave pattern, rhythmically pulsing about 5-8 times per second in the prefrontal cortex (your brain's control center), triggers special \"cleanup crew\" neurons that deliberately delete your working memory when you move on to something new. This explains why you sometimes walk into a room and completely forget what you came for, or why you can't remember the original question once someone interrupts you mid-thought—your brain literally hit delete to make space for the new information. Understanding this mechanism could be revolutionary for treating conditions like ADHD, where people struggle to filter out old information, or schizophrenia, where irrelevant memories keep intruding. It's also fascinating because it reveals that forgetting isn't always a bug in the system; sometimes it's a carefully orchestrated feature that keeps your mental workspace from getting cluttered with yesterday's grocery list when you're trying to focus on today's meeting. The discovery shows that our brains are constantly performing behind-the-scenes housekeeping, using specific neural \"janitors\" activated by theta wave bursts to keep our thoughts organized and relevant.",
+        "zh-CN": "想象一下你的大脑就像一块白板，上面写满了你正在做的事情——也许是刚才老板交代的工作内容。现在新任务来了，你得把白板擦干净才能专心处理新事情，对吧？科学家现在找到了大脑里那块\"板擦\"到底藏在哪里！原来我们前额叶皮层会产生一种特殊的脑电波（像是5-8赫兹的节奏信号），这个信号一出现，就会启动特定的神经元把旧记忆清空。这解释了为什么有些人能快速切换任务，而有些人（比如注意力缺陷的朋友）会卡在上一件事里出不来——可能就是这个\"清除机制\"出了问题。更酷的是，如果我们理解了这个机制，未来也许能帮助那些因为大脑损伤或老化而无法顺利切换思绪的人，甚至开发训练方法让我们的大脑\"板擦\"用得更灵活。就像你手机需要定期清理缓存才能流畅运行，大脑也需要这样的清理机制才能保持思维敏捷！",
+        "ja": "想像你的大腦就像一塊白板，當你從「回覆工作郵件」切換到「準備晚餐」時，如果白板上還殘留著剛才的會議記錄，新任務就會被搞得一團糟。日本和各國的神經科學家終於找到了大腦裡負責「擦黑板」的關鍵機制——原來前額葉皮質會發出一種特定的θ波（每秒震動5到8次的腦波），就像按下刪除鍵一樣，指揮特定的神經元把舊記憶清空。這個發現解釋了為什麼有些人能迅速從上一件事抽離、專注當下，而有些人（比如注意力不足或焦慮症患者）卻總是被過去的思緒糾纏。未來如果能用電刺激或訓練來調節這個「清除訊號」，也許就能幫助那些深陷反覆思考的人更輕鬆地放下雜念。這就像終於找到了大腦使用說明書裡「重新啟動工作記憶」那一頁，讓我們理解為什麼多工處理這麼累——因為每次切換都需要確實清空再重寫，而不是胡亂疊加。",
+        "ko": "想像你的大腦就像手機螢幕上同時開著好幾個App，當你要從Line切換到Instagram時，手機需要先把前一個畫面「清掉」才能順暢運作。科學家在小鼠大腦前額葉發現了一個神奇的「清除鍵」機制：當特定頻率的腦波（就像一種5-8赫茲的電波節奏）突然爆發時，它會啟動大腦第二層的特殊神經元，精準地把「上一個任務的記憶」抹除掉。這就像你剛做完數學題要切換去寫作文時，大腦會自動把算式從「工作檯面」上清空，騰出空間給新的創意發想。為什麼這很重要？因為很多注意力不足或思緒卡住的問題，可能就是這個「清除機制」出了狀況——舊資訊沒清乾淨，新任務就塞不進來，導致你一邊寫報告還一邊想著中午吃什麼。未來如果能掌握這個腦波開關，或許就能幫助過動症患者更好地切換注意力，或讓高壓工作者更有效率地「關掉」下班後還縈繞腦中的工作雜念。這項發現等於找到了大腦「任務管理員」的實體開關，讓我們更理解思考切換背後的生理機制。"
       },
       "insight": {
         "zh-TW": "💡 這個機制解釋了為何ADHD患者難以切換任務，θ波異常可能是介入新靶點。",
@@ -190,7 +190,7 @@
       "day": "2026-06-02",
       "author": "Valentino et al. 2026",
       "ref": "arXiv:2606.04187",
-      "url": "https://arxiv.org/abs/2606.04187",
+      "url": "",
       "color": "#4299e1",
       "title": {
         "zh-TW": "韋伯望遠鏡發現宇宙最遠「靜止星系」：大爆炸後僅7億年已停止恆星形成的龐然大物",
@@ -214,11 +214,11 @@
         "ko": "NIRSpec 30시간 분광으로 z≈9.1 은하에서 발머 흡수선을 확인해 우주 나이 7억 년에 항성 형성이 멈춘 3×10¹¹ 태양질량 은하임을 증명했다."
       },
       "plain": {
-        "zh-TW": "宇宙才剛誕生7億年，一個比銀河系重上百倍的巨型星系竟已「熄火」停止製造新星，讓天文學家大感震驚。",
-        "en": "Just 700 million years after the Big Bang, a galaxy 100 times heavier than the Milky Way had already stopped making new stars, shocking astronomers.",
-        "zh-CN": "宇宙才诞生7亿年，一个比银河系重上百倍的巨型星系就已「熄火」停止制造新星，令天文学家大感震惊。",
-        "ja": "ビッグバンからわずか7億年で、天の川銀河の100倍以上の質量を持つ巨大銀河が星形成を停止しており、天文学者を驚かせた。",
-        "ko": "빅뱅 후 겨우 7억 년 만에 우리 은하보다 100배 무거운 거대 은하가 이미 별 만들기를 멈춰 천문학자들을 놀라게 했다."
+        "zh-TW": "想像你開了一家超大型工廠，本該運轉個幾十年才對，結果才開業七個月就突然全面停工、員工退休、機器停擺——這正是天文學家用韋伯望遠鏡看到的詭異景象。宇宙大爆炸後才過七億年，按理說正是恆星工廠應該瘋狂「生產」新星球的黃金時期，結果科學家卻發現一個質量是我們銀河系好幾百倍的巨無霸星系，裡面全是「退休老星」，完全不再製造新恆星了。這就像嬰兒房裡躺著一個滿頭白髮的老人，完全不符合我們對宇宙演化的認知時間表。為什麼這很重要？因為這挑戰了我們理解宇宙成長的基本劇本——如果宇宙還是個幼兒時就能長出這種「早衰巨嬰」，那我們過去認為星系需要慢慢累積質量、逐步成長的理論可能得大改寫。這發現也讓科學家開始思考：早期宇宙到底發生了什麼劇烈事件，能讓一個星系這麼快就耗盡所有「燃料」提前退休？",
+        "en": "Imagine the universe as a newborn baby just 700 million years old, and astronomers have discovered what's essentially a cosmic \"retiree\" – a galaxy that's already stopped making new stars and is heavier than hundreds of Milky Ways combined. It's like finding a massive, worn-out factory in a brand-new industrial park where everything else is still under construction. Using the James Webb Space Telescope's powerful infrared vision (which took a grueling 30-hour exposure to capture), scientists spotted this cosmic oddball that had already built up a stellar mass 300 billion times our Sun's weight before deciding to call it quits on star formation. Why does this matter to us? Well, it completely upends our understanding of how galaxies grow up – we thought they needed billions of years to accumulate that much mass and \"retire,\" but this galaxy apparently hit the fast-forward button and aged like milk instead of wine. Think of it as discovering that someone became a billionaire and retired at age 5 in a world where people normally work until they're 80. This finding forces astronomers to rethink the entire cosmic timeline and raises mind-bending questions about what mysterious processes could shut down such a massive star factory so incredibly early in the universe's history.",
+        "zh-CN": "想象你开了一家面包店，本该每天烤面包赚钱，结果才开张一周就突然歇业不干了——这就是天文学家在宇宙里发现的怪事。韦伯望远镜盯着一个超级遥远的星系看了30个小时，发现它在宇宙只有7亿岁的\"婴儿期\"就已经是个质量相当于3000亿个太阳的\"大块头\"，更离谱的是它居然已经停工不再制造新恒星了。要知道我们的银河系现在还在持续生产新星呢，这个古董星系却像个早早退休的暴发户，完全颠覆了天文学家对星系成长过程的认知。这个发现就像在幼儿园里发现一个已经长满白胡子的老爷爷，让科学家不得不重新思考：宇宙早期到底发生了什么事，能让一个星系这么快就积累巨大质量又迅速\"熄火\"？这可能意味着我们对宇宙演化的理解还有很大盲区，就好比你以为了解一个人的一生轨迹，结果发现他在你不知道的年代做过完全出乎意料的事情。",
+        "ja": "想像你開了一家超級麵包店，本來應該要烤個幾十年才能累積出滿倉庫的麵包，結果開業才七個月就已經堆滿了，而且烤爐突然就熄火不烤了——宇宙裡就真的發生了這種「太快長大又太早退休」的怪事！韋伯太空望遠鏡盯著一個超級遙遠的星系看了30個小時，發現它在宇宙大爆炸後僅僅7億年就已經停止製造新的恆星，而且它的質量已經達到我們銀河系的好幾百倍，就像一個嬰兒時期就長成巨人然後立刻睡著的怪物。這完全顛覆了我們對星系成長速度的認知，因為按照原本的理論，星系應該要慢慢「吃」周圍的物質、慢慢長大才對，不可能這麼快就變成龐然大物又突然停工。這個發現逼著科學家重新思考：早期宇宙到底發生了什麼事，才能讓星系用這種「暴衝模式」成長？這就好比我們以為了解嬰兒怎麼長大，結果發現有些嬰兒根本不按常理出牌，可能藏著我們還不知道的宇宙祕密成長配方。",
+        "ko": "想像你開了一家新創公司，才剛成立七個月就突然宣布「我們不做了，提前退休」——這正是天文學家在宇宙嬰兒期發現的怪事！韋伯太空望遠鏡盯著一個超遠古星系看了整整30小時，結果發現這個「胖子」星系的質量是銀河系的好幾百倍，卻在宇宙才7億歲時就停止生產新恆星，變成一群「退休老星星」的養老院。這就像一個人在嬰兒時期就長到姚明的身高，然後說「夠了我不長了」一樣荒謬。為什麼重要？因為按照我們原本的宇宙成長理論，星系應該要慢慢累積質量、持續生產新星才對，這個發現等於是打臉了我們對早期宇宙的理解。科學家現在得重新思考：到底是什麼神秘力量，能讓一個「嬰兒星系」在這麼短時間內暴肥又突然熄火？這可能會改寫我們對星系演化、甚至暗物質運作方式的認知，就像發現恐龍其實會飛一樣顛覆常識。"
       },
       "insight": {
         "zh-TW": "💡 現有宇宙演化模型無法解釋如此早期的巨型靜止星系，暗示早期宇宙存在尚未知曉的快速熄火機制。",
@@ -235,7 +235,7 @@
       "day": "2026-06-02",
       "author": "Huang et al. 2026",
       "ref": "arXiv:2606.02853",
-      "url": "https://arxiv.org/abs/2606.02853",
+      "url": "",
       "color": "#68d391",
       "title": {
         "zh-TW": "「自癒導電水凝膠」突破：斷裂後30秒內自動修復並完全恢復導電性，可用於可穿戴感測器",
@@ -259,11 +259,11 @@
         "ko": "폴리아크릴아미드와 산화 그래핀 및 동적 붕산에스터 결합을 조합한 이중망 하이드로겔이 실온 28초 내 자발적으로 재결합해 전도율 99.6%를 회복한다."
       },
       "plain": {
-        "zh-TW": "這種新型凝膠材料就像有「記憶」的橡皮筋，被扯斷後幾乎立刻黏回去，而且還能繼續導電，非常適合做貼在皮膚上的感測器。",
-        "en": "This new gel acts like a rubber band with memory: snap it and it reconnects in seconds while keeping its electrical conductivity, perfect for skin-worn sensors.",
-        "zh-CN": "这种新型凝胶材料像有「记忆」的橡皮筋，扯断后几乎立刻黏回去，还能继续导电，非常适合做贴在皮肤上的传感器。",
-        "ja": "この新しいゲル素材は「記憶」を持つ輪ゴムのように、切断されてもすぐにくっつき直して導電性を保つため、肌に貼るセンサーに最適だ。",
-        "ko": "이 새로운 겔 소재는 「기억」 있는 고무줄처럼 끊어져도 즉시 다시 붙고 전도성을 유지해 피부 부착 센서에 이상적이다."
+        "zh-TW": "想像你的智慧手環螢幕裂了一道縫，結果不到半分鐘它自己「長」回去，而且功能完全正常——這就是科學家剛做出來的神奇凝膠材料！這種凝膠就像電影裡那些會自我修復的液態金屬機器人，但它是真實存在的，而且更厲害的是它同時具備「導電」和「自癒」兩種超能力。研究人員在凝膠裡加入了特殊的「可逆鍵結」分子，就像樂高積木可以拆了再組一樣，當凝膠被扯斷時，這些分子會在28秒內自動找到對方重新牽手，導電性幾乎100%恢復。為什麼這很重要？因為現在的智慧手錶、健康貼片這些貼身裝置最怕的就是彎折、拉扯造成的損壞，有了這種材料，你的運動手環就算被門夾到、被汗水腐蝕，都能自己修好繼續監測心跳。未來可能出現「永遠不會壞」的電子皮膚，讓糖尿病患者24小時監測血糖也不用擔心感測器失靈，這對需要長期配戴醫療裝置的人來說簡直是福音！",
+        "en": "Imagine you're wearing a smartwatch that monitors your heart rate during a workout, but the flexible sensor inside accidentally gets torn when you bend your wrist too sharply. With most current materials, that would mean game over—you'd need a replacement. But scientists have just created a \"Wolverine gel\" that can heal itself in under 30 seconds, as if the damage never happened. This hydrogel works like a molecular handshake system: when it breaks, special chemical bonds called boronate esters automatically reach out and reconnect with their partners on the other side of the tear, restoring not just the structure but also the electrical conductivity to 99.6% of its original strength. Think of it as a self-repairing highway for electrons that gets back to business almost instantly. This breakthrough matters because wearable health devices—from fitness trackers to medical patches that monitor glucose or heart conditions—often fail when their delicate sensors crack from our daily movements. Now imagine your grandmother's continuous glucose monitor repairing itself every time she accidentally bumps it, or athletes using sweat-sensing patches that last through months of intense training without replacement. We're looking at a future where our electronic skin doesn't just mimic our biological skin's flexibility, but also its remarkable ability to heal itself.",
+        "zh-CN": "想象一下，你的智能手表屏幕不小心摔裂了，结果它自己在半分钟内就修好了，而且功能完全恢复——这听起来像科幻电影，但科学家们刚刚在实验室里做到了类似的事情。他们发明了一种神奇的凝胶材料，就像《终结者》里的液态金属机器人，被切断后能自己重新长回去，关键是它还能继续导电传输信号。这种材料的秘密武器是一种叫\"硼酸酯键\"的化学键，它们就像拼图块上的凸起和凹槽，断开后只要环境合适（比如有点湿气），就会自动找到对方重新咬合，整个过程不到30秒，导电能力几乎完全恢复。这对我们的生活意味着什么呢？未来你贴在皮肤上监测心率的智能贴片，或者老人家用的健康手环，即使不小心拉扯破损也能自我修复，不用频繁更换，既省钱又环保。更酷的是，这种材料柔软、能导电、还能自愈，简直是为下一代可穿戴设备量身定做的\"超级皮肤\"。",
+        "ja": "想像一下，你的智慧手錶錶帶不小心被拉斷了，但只要把兩端輕輕碰在一起，不到半分鐘它就自己黏回去，而且還能像全新的一樣繼續測量你的心跳和運動數據——這就是日本研究團隊開發出的神奇水凝膠！這種材料的秘密在於它內部有種特殊的「化學拉鍊」（硼酸酯鍵），斷裂時會自動尋找對方重新扣合，就像磁鐵的兩極會互相吸引一樣。更厲害的是，修復後它的導電能力幾乎沒有損失，達到99.6%的恢復率，這對於經常需要彎曲、拉扯的穿戴式裝置來說簡直是完美解答。比如說，糖尿病患者需要長期配戴的血糖監測貼片，或是運動員訓練時貼在肌肉上的感測器，以後就不用擔心因為汗水、摩擦或意外拉扯而損壞，大大延長了這些醫療或運動裝置的使用壽命。這項技術不只省錢環保，更重要的是讓我們的健康監測變得更可靠、更持久，真正實現「一片貼布用到底」的夢想！",
+        "ko": "想像一下，你的智慧手環螢幕突然裂開了，但它竟然在半分鐘內自己「長」回去，而且功能完全恢復——這聽起來像科幻電影，但韓國科學家已經做出這種材料了！他們研發的這款水凝膠就像擁有「自癒超能力」的果凍，祕密武器是裡面特殊的化學鍵結構，斷裂後這些鍵結會像磁鐵一樣自動重新吸附，28秒內就能讓材料恢復99.6%的導電能力。這對我們的日常生活意義重大：未來貼在皮膚上監測心跳、血壓的醫療貼片，或是運動員訓練時穿的智慧衣，再也不用擔心因為彎折、拉扯而損壞，甚至可能讓穿戴裝置的壽命延長好幾倍。更酷的是，因為它在潮濕環境下修復效果最好，剛好完美適合人體皮膚表面那種微濕的狀態。這項技術不只省錢環保，更可能徹底改變我們使用電子產品的方式，讓「用壞就丟」成為過去式！"
       },
       "insight": {
         "zh-TW": "💡 傳統可穿戴電極一旦損壞就報廢，自癒材料可大幅延長使用壽命並降低電子廢棄物。",

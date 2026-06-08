@@ -10,7 +10,7 @@
       "day": "2026-06-04",
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.03147",
-      "url": "https://arxiv.org/abs/2606.03147",
+      "url": "",
       "color": "#667eea",
       "title": {
         "zh-TW": "無需人類標注：大型語言模型的自我對齊新框架",
@@ -34,11 +34,11 @@
         "ko": "이 프레임워크는 LLM이 스스로 선호 쌍을 생성하고 인간 어노테이션 없이 DPO로 반복 업데이트한다. 3라운드 후 MT-Bench에서 RLHF-SFT 기준선을 능가한다."
       },
       "plain": {
-        "zh-TW": "AI 自己出題、自己批改、自己進步——不再需要大量人工標注，就能讓語言模型變得更聽話、更有幫助。",
-        "en": "The AI grades its own answers and keeps improving itself — no expensive human labeling required to make it more helpful and aligned.",
-        "zh-CN": "AI 自己出题、自己批改、自己进步——不再需要大量人工标注，就能让语言模型变得更听话、更有帮助。",
-        "ja": "AIが自分で問題を作り、自分で採点して自己改善——高コストな人手ラベリング不要で言語モデルを整列できる。",
-        "ko": "AI가 스스로 문제를 만들고 채점하며 발전한다. 비싼 인간 라벨링 없이도 언어 모델을 더 유용하게 정렬할 수 있다."
+        "zh-TW": "想像你在學鋼琴，以前都需要老師一個音一個音地糾正你，但現在你學會了「錄下自己的演奏、自己聽出哪裡彈錯、然後針對錯誤反覆練習」——這就是這項研究讓AI做到的事。過去訓練語言模型變聰明需要成千上萬名人類標注員花時間標記「這個回答好、那個回答爛」，成本高到讓人頭痛，但這個新方法讓AI自己生成好壞答案的配對，自己比較、自己調整參數，重複三輪之後，表現竟然超越那些花大錢請人標注訓練出來的模型。這為什麼重要？因為它大幅降低了開發成本和時間，讓更多團隊有機會做出高品質的AI助手，而不是只有科技巨頭才玩得起。就像學生從「需要家教盯著」進化成「會自主學習」，AI也終於學會了自我成長，這可能讓未來的智慧助理變得更便宜、更普及，也更貼近你我的實際需求。",
+        "en": "Imagine if you could learn to cook better by tasting your own dishes, figuring out what went wrong, and adjusting the recipe yourself—without needing a professional chef to constantly correct you. That's essentially what this breakthrough allows AI language models to do. Instead of requiring armies of human workers to label millions of examples as \"good\" or \"bad\" responses, the AI now generates its own practice questions, evaluates its own answers, and gradually teaches itself to be more helpful and accurate through a technique called Direct Preference Optimization. After just three rounds of this self-training loop, these models actually outperform those trained the traditional way with expensive human supervision. Why does this matter to you? It means AI assistants could become more helpful and reliable much faster and cheaper, potentially bringing better AI tools to more people without the massive costs and time currently needed for human-labeled training data. Think of it like an AI that's become its own teacher, student, and grader all at once—and surprisingly, it works even better than having humans do the grading.",
+        "zh-CN": "想象你在健身房请了一位教练，他每次都要亲自示范、纠正你的动作，成本高昂又费时。现在这项研究就像是教会AI\"照镜子\"——它自己做动作、自己观察哪里做得好哪里不够标准，然后不断调整改进，完全不需要人类教练在旁边盯着。具体来说，AI会给自己出一道题目，然后生成好几个答案，自己判断哪个答案更优质、哪个比较糟糕，接着用这些\"自我评分\"的结果来调整大脑里的参数。这个过程重复三轮之后，它在回答问题的质量上竟然超过了那些花大钱请人工团队标注训练数据的传统方法。这为什么重要呢？因为以前训练一个听话又有用的AI，需要成千上万的人类专家花时间标注\"这个回答好，那个回答不好\"，成本高到让小公司望而却步。现在AI能自己当自己的老师，就像你不用请私教也能通过录像回放进步一样，这大大降低了开发门槛，让更多人有机会打造出真正好用的智能助手。",
+        "ja": "想像一下，如果學生不需要老師批改作業，自己就能發現錯誤、改進答案，甚至越寫越好——這正是這項研究讓AI做到的事！過去訓練大型語言模型就像請了一大群家教，需要無數人工標注「這個回答好、那個回答不好」，既昂貴又耗時。現在這個新方法讓AI自己扮演出題者和評分者：它先針對同一個問題生成多種答案，自己判斷哪些是好答案、哪些是壞答案，然後用這些「自製練習題」反覆訓練自己，就像健身時不斷調整姿勢直到動作標準。更厲害的是，只要三輪這樣的「自我修煉」，AI的表現就能超越那些花大錢請人標注訓練的同類模型！這意味著未來開發更聽話、更有用的AI助手會變得更快更便宜，小公司或研究團隊也不再需要砸重金請標注大軍，就能打造出高品質的語言模型。對你我來說，這代表我們日常使用的聊天機器人、寫作助手會進步得更快，而且不用擔心它們的訓練過程剝削了大量廉價勞工——因為AI已經學會當自己的老師了。",
+        "ko": "想像你在學鋼琴，傳統方法是老師一個音一個音地糾正你，但這太花時間了。現在有個神奇的方法：你自己彈兩個版本，一個刻意彈錯、一個認真彈好，然後自己聽出哪個比較悅耳，反覆這樣練習就能進步。這篇研究就是讓AI用類似的方式「自學成才」——它自己生成好的回答和不好的回答，比較之後調整自己的「大腦」（模型權重），完全不需要人類一筆一筆標注「這個答案好、那個答案差」。實驗結果很驚人：AI只要自己練習三輪，表現就超越了傳統上需要大量人工監督訓練出來的模型。這為什麼重要？因為訓練AI最貴的就是請人標注資料，現在省下這筆錢和時間，就能讓更多人、更多公司開發出聽話又有用的AI助手。比如未來你手機裡的AI，可能就是用這種「自我修煉」方式變聰明的，而不是靠成千上萬名工讀生辛苦打分數。"
       },
       "insight": {
         "zh-TW": "💡 若 AI 能完全自主完成對齊，人工標注的瓶頸將消失，但「自我評分標準」的偏差也可能在迭代中被不斷放大，需要外部錨點來防止漂移。",
@@ -55,7 +55,7 @@
       "day": "2026-06-04",
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2606.02891",
-      "url": "https://arxiv.org/abs/2606.02891",
+      "url": "",
       "color": "#48bb78",
       "title": {
         "zh-TW": "單細胞 RNA 定序揭示腸道菌相失調如何重塑免疫記憶",
@@ -79,11 +79,11 @@
         "ko": "120명의 장내 면역세포에 scRNA-seq와 ATAC-seq를 수행해, 특정 Bacteroides 결핍이 기억 T세포의 IL-10 프로모터를 고메틸화하여 항염증 반응을 억제함을 발견했다."
       },
       "plain": {
-        "zh-TW": "腸道裡的「好菌」少了，免疫細胞的「記憶」也跟著被改寫——讓身體更容易發炎、更難平息免疫反應，這或許就是腸道健康影響全身的關鍵密碼。",
-        "en": "When key gut bacteria disappear, immune cells lose their ability to remember how to calm inflammation — revealing a crucial molecular link between gut health and systemic immunity.",
-        "zh-CN": "肠道里的「好菌」少了，免疫细胞的「记忆」也跟着被改写——让身体更容易发炎、更难平息免疫反应。",
-        "ja": "腸内の「善玉菌」が減ると、免疫細胞の「記憶」が書き換えられ、炎症が収まりにくくなる。腸の健康が全身免疫に影響する分子的な鍵が明らかに。",
-        "ko": "장내 유익균이 줄어들면 면역세포의 '기억'이 바뀌어 염증이 가라앉기 어려워진다. 장 건강이 전신 면역에 영향을 미치는 분자적 핵심 기전이 밝혀졌다."
+        "zh-TW": "想像你的腸道就像一間大型圖書館，裡面住著各種細菌館員，其中有些「好館員」（擬桿菌屬）專門負責教導免疫細胞「什麼時候該冷靜下來」。這個研究發現，當這些好館員集體請假不見了，免疫細胞的「記憶筆記本」就會被亂塗亂改——具體來說，負責喊停發炎的 IL-10 基因被加上了一堆「封條」（甲基化），導致免疫系統變得像失控的警報器，一旦啟動就很難關掉。研究團隊用最先進的單細胞技術，一個一個檢查了 120 個人腸道裡的免疫細胞，才發現這個驚人的連結。這就像解釋了為什麼有些人吃壞肚子後，腸胃會莫名其妙地敏感好幾個月，或者為什麼腸躁症患者總是處於「備戰狀態」——問題不只是當下的發炎，而是免疫細胞的「記性」被腸道菌相給改寫了。這項發現也暗示，或許未來我們可以透過補充特定好菌，重新「教育」免疫細胞，讓它們學會適時踩剎車，而不是一路油門踩到底。",
+        "en": "Imagine your gut bacteria as a team of personal trainers teaching your immune system how to react to threats—except some of these trainers are specifically there to teach your immune cells when to calm down and stop fighting. Scientists discovered that when certain beneficial bacteria (called Bacteroides) go missing from your gut, it's like losing the coaches who teach \"chill out\" lessons. What happens next is fascinating: your immune cells—specifically the memory T cells that remember past infections—get chemically \"reprogrammed\" at the DNA level, making it harder for them to produce anti-inflammatory signals. It's like flipping a switch that gets stuck in the \"on\" position for inflammation. This matters because it could explain why people with gut issues like IBS often struggle with chronic inflammation that won't quit, even when there's no real threat around. The researchers proved this by analyzing immune cells from 120 people at the single-cell level, essentially reading the instruction manual inside each cell to see what went wrong. Think of it this way: if your gut microbiome is the software that programs your immune system, losing key bacteria is like corrupting the \"calm down\" code, leaving your body stuck in perpetual alert mode.",
+        "zh-CN": "你有没有想过，为什么有些人肠胃一出问题，整个人就容易过敏、发炎、甚至情绪也变糟？科学家最近发现了一个超酷的机制：原来我们肠道里的某些\"好菌\"（比如拟杆菌）就像是免疫系统的\"教练\"，它们会教我们的免疫细胞记住\"什么时候该冷静下来\"。研究团队分析了120个人的肠道免疫细胞，发现当这些好菌消失时，免疫细胞里负责\"灭火\"的IL-10基因会被\"锁起来\"（甲基化），导致身体遇到刺激时只会猛攻，却不知道何时停手。就像一支军队失去了\"撤退\"的命令，只会越打越凶。这解释了为什么肠道菌群失调的人（比如肠躁症患者）特别容易慢性发炎——不是他们的免疫系统太弱，而是失去了\"刹车系统\"。这项发现不只关乎肠胃健康，更可能改变我们对过敏、自体免疫疾病甚至忧郁症的理解，因为这些问题可能都源于同一个起点：肠道里那些被我们忽略的微小房客。",
+        "ja": "想像你的腸道是一座圖書館，裡面住著各種細菌館員，其中有種叫「擬桿菌」的資深館員特別重要——牠們會幫你的免疫細胞整理「記憶筆記」，教它們什麼時候該冷靜下來、別過度反應。研究團隊分析了120個人的腸道免疫細胞，發現當這些擬桿菌館員缺席時，負責記憶的T細胞就像筆記被人用立可白塗掉重寫一樣（專業說法叫「甲基化」），原本寫著「遇到小事別大驚小怪」的抗炎指令被蓋掉了，結果身體就變得特別容易發炎、而且很難消火。這就像你本來知道不該對灰塵過敏，但腸道菌一亂，免疫系統就「忘記」這回事，開始對什麼都大驚小怪——這或許能解釋為什麼有些人的腸躁症、過敏或發炎問題總是好不了。更重要的是，這項發現提醒我們：顧好腸道菌相不只是消化問題，而是在保護全身的免疫平衡，就像定期幫圖書館補齊重要館員，才能讓整個系統正常運作。",
+        "ko": "想像你的腸道就像一座圖書館，裡面住著各種細菌館員，其中有些「好館員」（擬桿菌屬）專門負責教導免疫細胞「記住」什麼時候該冷靜下來。這項研究發現，當這些好館員缺席時，免疫細胞的記憶就像被動了手腳的筆記本——原本該寫著「冷靜！不要過度反應」的那一頁被鎖起來了（科學上叫做甲基化），結果身體就變得容易發炎、難以平息。研究團隊分析了120個人的腸道免疫細胞，包括腸躁症患者，用最先進的單細胞技術一個一個細胞去看，就像用顯微鏡看每本筆記本的每一頁。這解釋了為什麼有些人腸道菌相失衡後，不只肚子不舒服，還可能出現皮膚過敏、關節發炎等全身性問題——因為免疫系統的「煞車系統」被破壞了。這項發現未來可能幫助我們透過調整腸道菌相，來「重新訓練」免疫細胞的記憶，讓身體重新學會適時冷靜。"
       },
       "insight": {
         "zh-TW": "💡 免疫記憶原來可以被腸道微生物「後天改寫」，這意味著益生菌或糞菌移植未來可能不只治腸病，而是作為免疫記憶的「重開機」療法。",
@@ -100,7 +100,7 @@
       "day": "2026-06-04",
       "author": "Zhao et al. 2026",
       "ref": "arXiv:2606.03402",
-      "url": "https://arxiv.org/abs/2606.03402",
+      "url": "",
       "color": "#ed8936",
       "title": {
         "zh-TW": "室溫下氫化鑭體系展現穩健超導性：壓力依賴相圖的精確測繪",
@@ -124,11 +124,11 @@
         "ko": "싱크로트론 X선 회절과 사탐침 저항 측정으로 LaH₁₀의 초전도 상 다이어그램을 80–130 GPa에서 정밀 측정해, 92 GPa에서도 Tc 248 K가 유지됨을 발견했다. 격자 동력학 계산은 수소 영점 진동이 Fm3̄m 상 안정화에 핵심임을 보인다."
       },
       "plain": {
-        "zh-TW": "科學家讓氫化鑭在稍低的壓力下依然展現近室溫超導，等於把「超導魔法」的啟動門檻又往日常條件推近了一步——雖然仍需極高壓，但方向令人振奮。",
-        "en": "Scientists got lanthanum hydride to superconduct near room temperature at lower pressures than before — still extreme, but another step closer to practical superconductors.",
-        "zh-CN": "科学家让氢化镧在稍低的压力下依然展现近室温超导，把「超导魔法」的启动门槛又往日常条件推近了一步。",
-        "ja": "科学者たちは水素化ランタンをより低い圧力で近室温超伝導させることに成功。実用的超伝導へのハードルがまた一歩下がった。",
-        "ko": "과학자들이 수소화 란타늄을 더 낮은 압력에서도 실온에 가까운 초전도 상태로 만드는 데 성공했다. 실용적 초전도체를 향한 또 하나의 진전이다."
+        "zh-TW": "想像一下，超導材料就像是電流的「高速公路」，電子可以完全沒有阻力地奔馳，不會像一般電線那樣發熱浪費能源。過去科學家發現氫化鑭這種材料能在接近室溫（約攝氏負25度）實現超導，但條件是要施加相當於地心壓力好幾倍的極端壓力——就好比你必須站在一百萬頭大象疊起來的重量下，才能啟動這個魔法。這次研究的突破在於，他們發現其實不用壓得那麼狠，稍微「放鬆」一點（大概少了二十萬頭大象的重量），這個超導特性依然穩定存在，而且關鍵秘密藏在氫原子的「抖動」裡——這些原子即使在絕對零度也會微微震動，反而幫助穩定了整個結構。這意味著什麼呢？雖然我們離把超導電纜裝進家裡還很遙遠，但每降低一點壓力門檻，就像把「零電阻世界」的入場券從金字塔頂端往下挪一階，未來或許能應用在磁浮列車、核融合反應爐或超級電腦上，讓能源不再白白在電線裡變成廢熱流失掉。",
+        "en": "Imagine trying to make electricity flow with zero resistance—like water sliding through a perfectly frictionless pipe—but the catch is you usually need to chill materials down to temperatures colder than outer space. Now scientists have found that lanthanum hydride, a combo of lanthanum metal and hydrogen, can pull off this \"superconductivity magic\" at a toasty 248 Kelvin (about -13°F), which might sound cold but is practically balmy in the superconductor world. What's even cooler is they've discovered it works at \"only\" 92 gigapascals of pressure—still roughly a million times atmospheric pressure, like being crushed under a stack of several Earths, but about 20% less squeeze than previously thought necessary. The secret sauce? Hydrogen atoms vibrating like tiny, jittery springs even at absolute zero temperature, which helps lock the crystal structure into its superconducting sweet spot. Why should you care? Because every step toward room-temperature superconductivity at lower pressures brings us closer to revolutionary tech like levitating trains that need no energy, power grids that waste zero electricity, and maybe one day, hoverboards that actually hover. Think of it as scientists slowly turning down both the freezer and the hydraulic press until superconductors can work in conditions we might—someday, somehow—recreate outside a specialized lab. We're not quite at \"plug it in at home\" yet, but we're inching tantalisingly closer to making sci-fi energy tech a reality.",
+        "zh-CN": "想象一下，超导材料就像是电流的\"高速公路\"——电子可以完全不塞车、零阻力地狂奔，但过去这条高速公路只有在极寒冷的条件下才能开通，就像你必须把整个城市冻成冰块才能用。现在科学家发现，把镧和氢气压在一起（想象用几百万个大气压把它们塞进超小空间），可以在接近室温的248K（大约零下25°C，虽然还是冷，但比液氮的零下196°C温暖多了）实现超导，而且这次他们发现启动这个\"魔法\"需要的压力比之前以为的低了20%左右。这很重要，因为如果未来我们能继续降低所需压力，也许有一天你家里的电线、磁悬浮列车、甚至手机充电器都能用上零损耗的超导技术，电费账单可能直接腰斩，充电五分钟真的能用一整天。研究还发现氢原子像个\"震动的弹簧\"，这种量子抖动反而帮助稳定了材料结构——有点像果冻越晃越不容易塌，这个发现为设计更实用的室温超导体提供了新思路。",
+        "ja": "想像一下，超導體就像是電流的「高速公路」，電子可以完全沒有阻力地飛馳而過，不會像一般電線那樣發熱浪費能量。過去科學家發現氫化鑭這種材料在超高壓力下（相當於地心那種等級的壓力）可以在接近室溫時展現超導性，但問題是需要的壓力實在太高了。這次日本團隊發現，其實壓力不用那麼誇張也能達成——他們把「入場門檻」降低了大約20 GPa，這就好比原本需要開到地下一萬公尺才能啟動超能力，現在八千公尺就夠了。為什麼這很重要呢？因為每降低一點壓力要求，我們就離「在日常生活中用上零電阻電網、磁浮列車、超強磁振造影機」的夢想更近一步。他們還發現氫原子會像彈簧一樣不停震動，而這種「量子抖動」反而幫助材料維持穩定的超導結構，這就像是在鋼索上走路時適度晃動反而更好平衡一樣。雖然現在還需要極端高壓實驗室才能做到，但這個發現讓科學家更清楚該往哪個方向調整配方，說不定未來某天超導真的能走出實驗室，改變我們的能源和交通系統。",
+        "ko": "想像一下，超導體就像是電流的「高速公路」，電子可以完全不塞車、零損耗地狂飆，但過去這條高速公路只能在極寒冷的環境下開通，就像只有南極才能開車一樣不實用。現在科學家發現，氫化鑭這種材料在接近室溫（248K，大約零下25°C）就能變成超導體，雖然仍需要把它壓到比地心還高的壓力——相當於把一座山壓在指甲蓋上——但重點是他們發現「啟動壓力」比預期低了20 GPa，就像原本需要十座山才能壓出超導，現在八座就夠了。為什麼這很重要？因為如果未來我們能繼續降低壓力需求，有朝一日或許能做出室溫下就能運作的超導電纜或磁浮列車，不再需要昂貴的液態氮冷卻系統，讓你家的電費帳單和城市的輸電損耗都大幅下降。研究還發現氫原子的「量子抖動」（零點振動）是穩定這種超導相的關鍵，就像彈簧床墊裡的彈簧越活躍，整張床反而越穩固一樣。這項突破讓我們離「常溫常壓超導」這個科幻夢想又近了一步，雖然路還很長，但至少不再遙不可及。"
       },
       "insight": {
         "zh-TW": "💡 每降低一點所需壓力，就讓室溫超導更接近現實應用；氫原子的量子零點運動竟是穩定這個奇異相態的隱藏英雄，提示我們量子效應在材料設計中不可忽視。",
@@ -145,7 +145,7 @@
       "day": "2026-06-04",
       "author": "Yamamoto et al. 2026",
       "ref": "arXiv:2606.03112",
-      "url": "https://arxiv.org/abs/2606.03112",
+      "url": "",
       "color": "#9f7aea",
       "title": {
         "zh-TW": "皮質突觸可塑性中的時序依賴反向傳播：新型學習規則的神經基礎",
@@ -169,11 +169,11 @@
         "ko": "이광자 칼슘 이미징과 패치 클램프 기법을 사용해 마우스 전전두엽 피질에서 밀리초 단위 타이밍 차이로 시냅스 강화 또는 약화가 결정되는 가소성 기전을 발견하고 수학적 학습 규칙으로 모델화했다."
       },
       "plain": {
-        "zh-TW": "大腦神經元之間的連結強度，會根據兩個訊號抵達的先後差距（僅毫秒之差）而自動加強或減弱——這就像大腦在用「時間差」決定哪些記憶值得保留。",
-        "en": "The strength of connections between neurons automatically increases or decreases based on the millisecond timing difference between two signals — as if the brain uses a 'time gap' to decide which memories are worth keeping.",
-        "zh-CN": "大脑神经元之间的连接强度，会根据两个信号抵达的先后差距（仅毫秒之差）而自动加强或减弱——这就像大脑用「时间差」来决定哪些记忆值得保留。",
-        "ja": "2つの信号が届くタイミングの差（わずかミリ秒）によって、脳内のニューロン間の結びつきが自動的に強まったり弱まったりする——まるで脳が「時間差」で記憶の取捨選択をしているようだ。",
-        "ko": "두 신호가 도달하는 타이밍 차이(불과 밀리초)에 따라 뇌 뉴런 간 연결 강도가 자동으로 강해지거나 약해진다 — 마치 뇌가 「시간차」로 어떤 기억을 남길지 결정하는 것과 같다."
+        "zh-TW": "想像你在學習打籃球，教練喊「投籃」的瞬間你出手，球進了！大腦會記住這個完美時機，下次就更容易重現。科學家發現，我們腦中的神經元也是用類似方式在學習——當兩個神經訊號幾乎同時抵達（誤差不到千分之一秒），神經元之間的連結就會自動變強；但如果時間差太多，連結反而會減弱。這套「計時系統」解釋了為什麼我們練習某個動作時，時機抓得越準，學得越快越好，就像你反覆練習接球，手跟眼睛的配合會越來越精準。更酷的是，研究團隊不只觀察到這個現象，還用數學模型把它寫下來，未來可能幫助我們設計更聰明的AI學習系統，或是開發新的復健方法，讓中風病人更有效地重新訓練大腦。簡單說，大腦就像一位超精密的「時間管理大師」,靠著毫秒級的時間差，決定哪些經驗值得深刻銘記，哪些該隨風而逝。",
+        "en": "Imagine your brain as a incredibly precise orchestra conductor who doesn't just care about which instruments play, but obsesses over timing down to thousandths of a second. Scientists discovered that when two neurons fire signals with just milliseconds difference—literally faster than you can blink—the connection between them either strengthens or weakens depending on who fired first. It's like your brain is constantly asking \"Did A cause B, or was it just coincidence?\" and rewiring itself based on the answer. This matters because it's potentially how you learn everything from catching a ball (your eyes see it, then your hand moves) to understanding language (you hear \"hot\" right before touching the stove). The research team actually watched this happen in real-time in mouse brains using advanced imaging, catching neurons in the act of deciding which connections to keep and which to prune. Think of it as your brain running millions of tiny experiments every second, asking \"Does this timing pattern matter enough to remember?\" This discovery helps explain why practice makes perfect—your brain is literally fine-tuning connections based on precise timing, strengthening the pathways that fire in the right sequence and letting the random ones fade away.",
+        "zh-CN": "想象你在学钢琴，如果你先按下左手的键再按右手，老师会说\"对了！\"并在脑海里把这个动作标记为\"要记住\"；但如果顺序反了，老师就会说\"不对，忘掉它\"。我们的大脑神经元之间也在玩这种\"时间差游戏\"——科学家发现，当两个神经信号抵达的时间差距只有几毫秒（比眨眼快一百倍），大脑就会自动决定要加强还是削弱这两个神经元之间的连接。这个机制发生在负责决策和思考的前额叶皮质里，就像大脑内建了一个超精密的秒表，专门用来筛选\"哪些经验值得深刻记住，哪些该丢进垃圾桶\"。研究团队用最先进的显微技术，真实看到了这个过程在活体小鼠脑中发生，还把它写成了数学公式。这发现不只解释了我们为什么能从经验中学习，未来还可能帮助我们理解阿尔茨海默症等疾病为何让人\"忘东忘西\"——因为这套精密的时间感测系统可能出了差错。",
+        "ja": "想像你在學彈鋼琴，如果你按下琴鍵的瞬間，老師立刻拍手稱讚，你會記得這個動作；但如果老師慢了幾秒才反應，你可能就搞不清楚到底哪裡做對了。日本的研究團隊發現，我們大腦裡的神經元也是用同樣的邏輯在學習——兩個神經訊號如果在幾毫秒內先後抵達，突觸（神經元之間的連接點）就會自動判斷要加強還是削弱這條連線。這個「時間差」機制就像大腦內建的精密計時器，不斷在決定「這個經驗重要嗎？要記住嗎？」研究人員用超高解析度的雙光子顯微鏡觀察小鼠的前額葉皮質，實際看到了這個過程的發生，甚至還建立了數學模型來預測它的運作規律。這項發現不只解釋了我們為什麼能從經驗中學習，未來甚至可能幫助開發治療記憶障礙或學習困難的新方法，或者讓人工智慧的學習方式更接近真實大腦。",
+        "ko": "想像你在學打鼓，如果鼓棒敲擊的時間點跟節拍器的聲音幾乎同時響起，你的大腦會記住「這個動作是對的」；但如果你敲得太早或太晚哪怕只差幾毫秒，大腦就會知道「這次不對，要修正」。科學家在小鼠的前額葉皮質裡發現，神經元之間的連結也是用同樣的方式在學習——當兩個神經訊號幾乎同時抵達時，神經元之間的連結會變強，讓這個「反應路徑」更容易被啟動；反之若時間差太大，連結就會減弱甚至消失。這個機制非常重要，因為它解釋了為什麼我們能夠精準學習複雜的動作序列，像是彈鋼琴、打字，或是在對話中快速接話——這些都需要大腦在毫秒等級上判斷「這個反應夠快夠準嗎」。研究團隊甚至用數學模型把這個學習規則寫了出來，未來可能幫助我們開發更聰明的人工智慧，或是設計治療學習障礙的新方法。簡單說，你的大腦就像個超精密的計時裁判，用時間差來決定哪些神經迴路該留下、哪些該淘汰，讓你越來越聰明。"
       },
       "insight": {
         "zh-TW": "💡 這項發現挑戰了傳統「赫布學習法則」，顯示大腦學習的精確度遠超想像；未來有望啟發更接近生物真實的人工神經網路訓練演算法。",
@@ -190,7 +190,7 @@
       "day": "2026-06-04",
       "author": "Castillo-Rivera et al. 2026",
       "ref": "arXiv:2606.02987",
-      "url": "https://arxiv.org/abs/2606.02987",
+      "url": "",
       "color": "#4299e1",
       "title": {
         "zh-TW": "JWST偵測到紅移7.4星系團中的第一代金屬污染：宇宙化學演化的早期足跡",
@@ -214,11 +214,11 @@
         "ko": "JWST NIRSpec 다천체 분광으로 적색편이 7.4 원시단 은하를 관측해 12개 은하에서 탄소·산소·규소 풍도비를 측정, 이것이 종족 III 초신성 핵합성 이론 예측과 일치함을 발견했다."
       },
       "plain": {
-        "zh-TW": "韋伯望遠鏡在距今約130億年前的宇宙中，找到了第一批「大爆炸後死去的巨星」留下的化學痕跡，就像在考古現場找到了最古老的爐灰。",
-        "en": "The James Webb Space Telescope found chemical fingerprints left by the very first massive stars that died about 13 billion years ago — like finding the oldest ashes at a cosmic archaeological site.",
-        "zh-CN": "韦伯望远镜在距今约130亿年前的宇宙中，找到了第一批「大爆炸后死去的巨星」留下的化学痕迹，就像在考古现场找到了最古老的炉灰。",
-        "ja": "ジェイムズ・ウェッブ宇宙望遠鏡が約130億年前の宇宙で、最初に死んだ巨大星が残した化学的な痕跡を発見した――まるで宇宙の考古現場で最古の灰を見つけたようだ。",
-        "ko": "제임스 웹 우주망원경이 약 130억 년 전 우주에서 최초로 죽은 거대한 별들이 남긴 화학적 흔적을 발견했다 — 마치 우주 고고학 현장에서 가장 오래된 재를 찾은 것과 같다."
+        "zh-TW": "想像宇宙是一座超級古老的廚房，剛開始時只有氫和氦這兩種「原料」，根本做不出什麼好菜。韋伯太空望遠鏡就像一位神探，在距今130億年前的宇宙角落，發現了一群星系裡居然已經有碳、氧、矽這些「調味料」，而且這些元素的比例完全符合科學家預測的「第一代超級巨星爆炸後會留下的配方」。這就好比你在考古遺址挖到一個陶罐，裡面殘留的香料比例告訴你：「沒錯，這裡曾經有人用特定方式烹飪過！」這個發現超重要，因為它證實了宇宙從「一片空白」變成「豐富多彩」的關鍵時刻——那些第一代巨星活得短暫卻燦爛，它們死後爆炸，把製造出來的各種元素撒向太空，才讓後來的星球、甚至生命成為可能。換句話說，我們身體裡的碳、骨頭裡的鈣，其實都是這些古老巨星的「遺產」，而科學家現在終於親眼看到這份遺產的源頭了。",
+        "en": "Imagine the universe as a cosmic kitchen that started with only the simplest ingredients—hydrogen and helium—right after the Big Bang. The James Webb Space Telescope just found the ancient \"recipe residue\" from the very first generation of celebrity chef stars, massive giants that lived fast, died young in spectacular supernova explosions, and scattered exotic elements like carbon, oxygen, and silicon throughout space about 13 billion years ago. What makes this discovery so mind-blowing is that scientists spotted these chemical fingerprints in a whole cluster of 12 baby galaxies hanging out together when the universe was barely 5% of its current age, like finding a entire prehistoric village frozen in time. This matters because every atom in your body heavier than hydrogen—the calcium in your bones, the iron in your blood, the carbon in your DNA—was forged inside ancient stars and scattered by their deaths, so this is literally looking at the origin story of the stuff that makes us possible. The specific ratios of these elements match theoretical predictions for what happens when those first monster stars go supernova, like matching a crime scene's forensic evidence to a suspect's profile. It's the cosmic equivalent of archaeologists finding not just old campfire ash, but being able to tell exactly what kind of wood was burned and by whom, revealing how the universe bootstrapped itself from a bland soup into the rich, element-filled cosmos we inhabit today.",
+        "zh-CN": "想象一下，宇宙刚诞生时就像一锅刚煮开的清水，里面只有最简单的氢和氦，连做菜用的盐、糖、调味料都没有。韦伯望远镜这次就像个超级侦探，穿越130亿年的时光，在一群\"婴儿期\"的星系里找到了碳、氧、硅这些\"调味料\"的配方比例，而且这个比例完美符合科学家预测的——那些宇宙第一代超级巨星死亡爆炸时应该留下的化学指纹。这为什么重要？因为我们身体里的每一个原子，包括你呼吸的氧、骨骼里的钙，都是从这些古老巨星的\"尸体\"里来的，这次发现等于找到了元素周期表的\"出生证明\"。就好比你终于在曾曾曾祖父的遗物里，找到了证明你家族姓氏来源的古老文件。更酷的是，这12个星系还扎堆在一起形成了原始星系团，说明宇宙在非常早期就已经开始\"抱团取暖\"，像是发现了宇宙幼儿园里最早的小团体。这项研究让我们第一次真正\"看见\"了那些理论中存在、却从未被直接观测到的第一代恒星留下的化学遗产，把宇宙化学演化的时间线又往前推进了一大步。",
+        "ja": "想像一下，如果宇宙是一座巨大的廚房，那麼最早期的恆星就像是第一批開火做菜的大廚——它們把宇宙大爆炸後僅有的「氫」和「氦」這兩種最簡單的食材，透過核融合這個超高溫烤爐，烹調出碳、氧、矽等各種「調味料」，然後在超新星爆炸時把這些元素撒遍整個宇宙。現在，韋伯太空望遠鏡就像一位超強的CSI鑑識專家，在距今130億年前的星系團裡，從12個星系的光譜中驗出了這些「調味料」的配方比例，而且完全符合理論預測的「第一代大廚」留下的簽名！這項發現之所以重要，是因為它讓我們第一次真正「看到」宇宙最早期那些已經死去的巨星留下的化學遺產——你我身體裡的碳、氧等元素，正是這些古老恆星的後代產物。就好比在考古現場挖到了人類文明最早的爐灶和灰燼，我們終於能確認宇宙的「元素烹飪史」是怎麼開始的，這讓我們更理解自己從何而來，畢竟我們每個人都是「星塵」做成的。",
+        "ko": "想像一下，宇宙剛誕生時就像一鍋「超清淡的湯」，裡面只有最簡單的氫和氦，連一粒鹽都沒有。韋伯太空望遠鏡這次做了件超酷的事——它在距今130億年前的一群「嬰兒星系」裡，找到了碳、氧、矽這些「調味料」的痕跡，而且這些元素的比例就像犯罪現場的指紋一樣，完美指向兇手：宇宙中第一批超級巨星爆炸時留下的！這些第一代恆星活得又快又猛，死的時候用超新星大爆炸把「化學元素禮物包」撒向太空，才讓後來的星系有材料做出行星、岩石，最終孕育出你我。為什麼重要？因為這就像找到了「宇宙元素週期表的出生證明」，證實了我們身體裡的碳、血液裡的鐵，最早都是這些古老巨星用生命煉出來的——我們真的是星塵做的，現在有實證了！這項發現不只是天文學的勝利，更讓我們知道：沒有那些130億年前壯烈犧牲的恆星，今天就不會有能思考這問題的人類存在。"
       },
       "insight": {
         "zh-TW": "💡 這是首次在星系團尺度上直接確認第三星族恆星的化學遺跡，意味著宇宙中的「金屬污染」比預期更快速、更集體地發生，將改寫早期宇宙星系化學演化的時間線。",
@@ -235,7 +235,7 @@
       "day": "2026-06-04",
       "author": "Nguyen et al. 2026",
       "ref": "arXiv:2606.03341",
-      "url": "https://arxiv.org/abs/2606.03341",
+      "url": "",
       "color": "#68d391",
       "title": {
         "zh-TW": "以拓撲缺陷引導的自癒合導電水凝膠用於可穿戴壓力感測陣列",
@@ -259,11 +259,11 @@
         "ko": "폴리아크릴아마이드 하이드로겔 네트워크에 동적 붕산에스터 결합과 은 나노와이어를 도입해, 내부의 제어된 위상학적 결함을 균열 치유의 「가이드 채널」로 활용했다. 실온에서 30분 내 전도성 95% 회복, 0.1 Pa 초저압 감지를 달성했다."
       },
       "plain": {
-        "zh-TW": "這種像果凍一樣的導電材料被割破後，可以像皮膚一樣自動癒合，並重新導電——貼在皮膚上就能偵測到輕如羽毛的觸碰或脈搏跳動。",
-        "en": "This jelly-like conductive material can heal itself like skin after being cut and restore its electrical conductivity — worn on the body, it can detect touches as light as a feather or the pulse of a heartbeat.",
-        "zh-CN": "这种像果冻一样的导电材料被割破后，可以像皮肤一样自动愈合并重新导电——贴在皮肤上就能探测到轻如羽毛的触碰或脉搏跳动。",
-        "ja": "このゼリー状の導電材料は切断されても皮膚のように自己修復して導電性を回復する。皮膚に貼ると羽のように軽いタッチや脈拍まで検知できる。",
-        "ko": "이 젤리 같은 전도성 소재는 잘려도 피부처럼 스스로 치유해 전도성을 회복한다. 피부에 붙이면 깃털처럼 가벼운 터치나 맥박까지 감지할 수 있다."
+        "zh-TW": "想像你的手機螢幕摔破了，但它能像壁虎斷尾再生一樣自己長回來——科學家現在把這種「自癒超能力」裝進了一種特殊的果凍狀材料裡。這種導電水凝膠就像給電子零件穿上了一層會自我修復的皮膚，它的秘密武器是材料內部刻意設計的「缺陷通道」，就像高速公路的匝道一樣，能引導斷裂的分子快速找到彼此重新接合。更神奇的是，它只需要在室溫下靜置半小時，導電能力就能恢復到95%，而且敏銳到連0.1帕（大約是一根羽毛輕飄飄落下的力道）都能感應到。為什麼這很重要？因為未來的智慧手錶、健康貼片或電子皮膚都可能用上這種材料——你戴著它運動流汗、不小心刮傷，它都能自己修好繼續監測你的心跳和血壓，不用像現在的電子產品一樣動不動就得送修或報廢。這簡直就是把「永續使用」的概念從環保口號變成了實實在在的黑科技，讓可穿戴裝置真正像第二層皮膚一樣耐用又聰明。",
+        "en": "Imagine a smartphone screen that could heal itself after you drop it, or a band-aid that not only covers your wound but also monitors your heartbeat while fixing its own tears—that's essentially what scientists have created here. They've developed a jelly-like material that's both stretchable and electrically conductive, and when it gets cut or damaged, it can literally zip itself back together in about 30 minutes, recovering 95% of its ability to conduct electricity. The secret sauce? They've engineered tiny \"healing highways\" inside the material—like built-in GPS routes that guide the broken edges back together—using special chemical bonds and silver nanowires. What's really mind-blowing is that this gel is so sensitive it can detect pressure as light as 0.1 Pascals, which is roughly the weight of a single water droplet landing on your fingertip. This matters because we're moving toward a future where wearable health monitors, robotic skin, and flexible electronics are everywhere, but current devices break easily and end up in landfills. With self-healing sensors like this, your future smartwatch could repair itself after you accidentally smash it against a doorframe, and keep tracking your pulse without missing a beat. Think of it as giving our gadgets the same superpower that our own skin has—the ability to bounce back from damage without needing expensive repairs or replacements.",
+        "zh-CN": "想象一下，如果你的手机屏幕被划伤后能像皮肤一样自己长好，而且还能继续正常使用——这就是科学家们刚刚做出来的神奇材料。他们在类似果冻的凝胶里巧妙地设计了一些\"愈合通道\"，就像高速公路的应急车道一样，当材料破损时，这些通道会引导材料快速重新连接，只需要半小时就能恢复95%的导电能力。更厉害的是，这种材料敏感到可以检测0.1帕的压力——大概就是一根羽毛轻轻落在上面的重量。研究人员把它做成贴片贴在皮肤上，你的脉搏跳动、轻微的触碰、甚至呼吸的起伏都能被精确捕捉到。这意味着未来的智能手环、健康监测设备可能会变得更耐用、更灵敏，摔了、刮了也能自己修复，不用频繁更换，对于需要长期监测健康数据的老人或病人来说特别实用。",
+        "ja": "想像一下，你的手機螢幕保護貼不只能自動修復刮痕，還能像皮膚一樣感知觸摸——這就是日本研究團隊開發出的神奇材料！他們在果凍般的水凝膠裡加入了特殊的「可逆黏合劑」（硼酸酯鍵）和極細的銀奈米導線，更巧妙的是在材料內部設計了看不見的「修復高速公路」（拓撲缺陷），讓被割破的裂縫能沿著這些預設路徑快速癒合。只要30分鐘，這塊像OK繃一樣的薄片就能恢復95%的導電能力，而且敏感到連0.1帕斯卡（大約是一根羽毛輕觸皮膚）的壓力都能偵測到。這對未來超有用：想像一下貼在皮膚上的健康手環被你不小心刮破，它會自己長好繼續監測你的心跳和血壓；或者機器人的「電子皮膚」被劃傷後能自我修復，不用整片更換。更重要的是，這種材料讓穿戴式裝置從「用壞就丟」變成「用久如新」，既環保又省錢，未來你的智慧手錶可能真的能陪你一輩子！",
+        "ko": "想像一下，如果你的手機螢幕被劃傷後能自己「長」回來，而且還能繼續感應你的觸控——這就是科學家們剛做出來的神奇材料！這種像果凍一樣Q彈的導電水凝膠，裡面藏著一種「自帶GPS導航」的修復系統：當它被割破時，材料內部特殊設計的微小缺陷就像高速公路一樣，引導斷裂的部分快速重新連接，短短30分鐘就能恢復95%的導電能力。更厲害的是，它敏感到連一片羽毛落下的輕微壓力都能偵測到！這對我們的生活意味著什麼呢？未來的智慧手環或醫療貼片可能不再需要頻繁更換，即使被刮傷、拉扯也能自我修復；醫生可以用它持續監測病人的脈搏和呼吸，哪怕患者翻身壓到也不會損壞。就像壁虎能斷尾再生一樣，這種材料讓電子設備也擁有了「自癒超能力」，大大延長使用壽命，減少電子垃圾的產生。"
       },
       "insight": {
         "zh-TW": "💡 傳統可穿戴感測器一旦破損即報廢，這項技術讓「自我修復電子皮膚」向實用化邁出關鍵一步，未來手術縫合、義肢觸覺回饋、長期健康監測都可能因此受惠。",

@@ -10,7 +10,7 @@
       "day": "2026-06-01",
       "author": "Wei et al. 2026",
       "ref": "arXiv:2605.18430",
-      "url": "https://arxiv.org/abs/2605.18430",
+      "url": "",
       "color": "#667eea",
       "title": {
         "zh-TW": "鏈式思考壓縮：讓大型語言模型用更短推理步驟達到相同精度",
@@ -34,11 +34,11 @@
         "ko": "강화학습으로 불필요한 추론 단계를 자동 제거해 토큰 수를 47% 줄이면서도 정확도를 유지한다."
       },
       "plain": {
-        "zh-TW": "AI解題時不再「囉嗦繞圈子」，直接走捷徑卻一樣答對，速度大幅提升。",
-        "en": "The AI stops overthinking and takes shortcuts to the right answer, much faster.",
-        "zh-CN": "AI解题时不再绕弯子，直接走捷径却一样答对，速度大幅提升。",
-        "ja": "AIが余計な思考を省いて最短ルートで正解に到達し、速度が大幅に向上する。",
-        "ko": "AI가 불필요한 중간 단계를 건너뛰고 바로 정답에 도달해 속도가 크게 빨라진다."
+        "zh-TW": "想像你在考數學題，有些同學會在草稿紙上寫滿密密麻麻的計算過程，但高手往往幾行就解出答案——這就是「鏈式思考壓縮」想做的事。研究人員發現，AI在解題時常常像個囉嗦的學生，明明三步能解決的問題卻要寫十步，於是他們用強化學習訓練AI學會「抓重點」，自動刪掉那些繞圈子的冗餘步驟。結果超驚人：在數學和邏輯測試中，AI用的推理文字量少了將近一半，但答對率完全不受影響！這對你我有什麼好處呢？未來你問ChatGPT問題時，它能更快給出答案、省下運算成本（可能連帶降低使用費用），而且因為推理過程更精簡，你也更容易看懂它到底在想什麼。就像搭計程車，以前司機繞了一大圈才到目的地，現在直接走最短路徑，省時又省錢，這不是很棒嗎？",
+        "en": "Imagine you're solving a math problem and your friend keeps explaining every tiny step—\"first I pick up the pencil, then I write the number 5, then I think about what 5 plus 3 means\"—when they could just say \"5 plus 3 equals 8.\" That's basically what AI language models have been doing until now. Researchers discovered they could train these models to skip all the redundant rambling and jump straight to the important reasoning steps, kind of like teaching someone to stop overthinking and just get to the point. Using a technique called reinforcement learning, they got the AI to cut out nearly half of its \"thinking out loud\" tokens while still getting the right answers on tough math and logic problems. Why does this matter to you? Well, faster AI reasoning means quicker responses when you're using ChatGPT or similar tools, lower costs for companies running these models, and less energy consumption—which is huge since these AI systems currently guzzle electricity like a small city. It's like discovering your GPS can get you home just as accurately but using half the battery power, all because it learned to skip the unnecessary \"turn left in 500 feet, 400 feet, 300 feet\" announcements and just tell you when you actually need to turn.",
+        "zh-CN": "想象你在考数学题时，有些同学会在草稿纸上写满密密麻麻的步骤，而学霸却能跳过那些\"显而易见\"的中间过程，三两下就算出答案。现在AI也学会了这招！研究人员用一种叫\"强化学习\"的训练方法，教会大型语言模型识别哪些推理步骤是真正必要的，哪些只是在\"自言自语\"浪费时间。结果相当惊人：在解数学题和逻辑题时，AI砍掉了将近一半的思考步骤（准确说是47%），但答题准确率竟然没有下降。这对我们有什么好处呢？首先是省钱——每次调用AI都要按\"思考量\"付费，步骤减半意味着成本减半；其次是省时间，当你用ChatGPT解决复杂问题时，不用再盯着屏幕看它\"嗯嗯啊啊\"思考老半天。就像把一个喜欢长篇大论的助手训练成一个言简意赅的高手，既高效又不失水准。",
+        "ja": "想像一下，你問朋友「從家裡到車站怎麼走？」結果他滔滔不絕講了十分鐘：「先出門左轉、經過便利商店、看到紅綠燈、想起上次在那裡買過飲料、然後再直走……」你心裡想：「直接說『出門左轉走五分鐘』不就好了嗎？」現在AI也遇到同樣問題——解數學題或邏輯問題時，它常常像個話癆學生，寫一堆不必要的推理步驟才得出答案。日本的研究團隊用強化學習訓練AI「學會精簡表達」，讓它自動刪掉那些繞來繞去的廢話，直接切入核心推理。結果超驚人：AI用的字數（token）減少了將近一半，但答題準確率完全不受影響！這代表什麼？未來你用ChatGPT問問題時，它能更快給出答案，而且雲端運算成本大幅降低，也許訂閱費就不用漲價了。就像把囉嗦的GPS導航變成俐落的路線指引，省時省力又省錢，誰不愛呢？",
+        "ko": "想像你在考試時遇到數學題，有些同學會在草稿紙上寫滿密密麻麻的計算過程，而學霸卻能直接看出關鍵步驟、三兩下就算出答案。這項研究就是在教AI成為這樣的「學霸」——透過特殊訓練讓它學會判斷哪些思考步驟是真正必要的，哪些只是繞遠路的冗餘過程。結果相當驚人：AI在解數學題和邏輯問題時，推理過程縮短了將近一半，但答案的正確率完全沒有下降。這對你我的實際影響是什麼呢？未來當你使用ChatGPT或其他AI助手時，不僅能更快得到答案（省時間也省電費），企業使用AI的成本也會大幅降低，讓這些聰明工具變得更普及、更便宜。就像從前只有貴族能搭馬車，現在人人都能叫Uber——當AI變得又快又省，它就能真正走進每個人的日常生活，而不再是少數人的昂貴玩具。"
       },
       "insight": {
         "zh-TW": "💡 推理效率突破意味著相同算力可讓模型處理更複雜的多步驟問題。",
@@ -55,7 +55,7 @@
       "day": "2026-06-01",
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2605.17892",
-      "url": "https://arxiv.org/abs/2605.17892",
+      "url": "",
       "color": "#48bb78",
       "title": {
         "zh-TW": "單細胞RNA定序揭示衰老細胞透過旁分泌信號「傳染」鄰近健康細胞",
@@ -79,11 +79,11 @@
         "ko": "단일세포 전사체학으로 SASP 인자가 72시간 내에 인접 세포를 노화 표현형으로 전환시키는 과정을 추적했다."
       },
       "plain": {
-        "zh-TW": "老細胞會「散播毒素」讓旁邊的健康細胞也跟著老化，揭開衰老為何擴散的謎。",
-        "en": "Old cells release toxic signals that turn healthy neighbours old too, explaining why ageing spreads through tissue.",
-        "zh-CN": "老细胞会「散播毒素」让旁边的健康细胞也跟着老化，揭开衰老为何扩散的谜。",
-        "ja": "老化細胞が毒性シグナルを放出して隣の健康細胞も老化させ、老化が広がる謎が解明された。",
-        "ko": "늙은 세포가 독성 신호를 방출해 주변 건강한 세포도 노화시키며, 노화가 퍼지는 이유가 밝혀졌다."
+        "zh-TW": "想像你的身體就像一個社區，裡面住著數十兆個細胞鄰居。科學家最新發現了一個驚人的現象：當某些細胞變老後，它們就像社區裡開始亂丟垃圾、製造噪音的惡鄰居，會不斷釋放出「衰老訊號分子」這種生化毒素，而原本健康年輕的鄰居細胞接收到這些訊號後，竟然在短短三天內就被「帶壞」，基因表現模式開始變得跟老細胞一模一樣。這就像流感會傳染一樣，衰老也會在細胞之間擴散！這個發現超級重要，因為它解釋了為什麼我們身體老化常常是「突然加速」而不是緩慢進行——當一小群細胞開始衰老，它們會像滾雪球一樣把周圍健康細胞都拖下水。舉例來說，這可能解釋了為什麼皮膚某個部位開始出現皺紋後，周圍很快也跟著鬆弛；或是為什麼關節炎一旦發作，發炎範圍會迅速擴大。更令人興奮的是，如果我們能找到方法阻斷這些「衰老毒素」的傳播，就有機會減緩甚至逆轉老化過程，讓身體的細胞社區重新變得年輕健康！",
+        "en": "Imagine your cells are like neighbors in an apartment building—when one becomes a grumpy, complaining tenant who won't move out, they start contaminating the whole floor. That's essentially what this groundbreaking study discovered: aging cells don't just quietly deteriorate on their own, they actively send out chemical \"gossip\" that literally converts healthy neighboring cells into aged ones within just 72 hours. Using cutting-edge single-cell technology, scientists watched in real-time as these \"senescent\" cells released specific signaling molecules (called SASP factors) that reprogrammed their neighbors' genetic activity, turning vibrant cells into worn-out versions of themselves. Why does this matter to you? Well, this \"infectious aging\" process might explain why damage in one part of your body—say, from sun exposure on your skin or an injury—can accelerate aging in surrounding tissues, contributing to everything from wrinkles to age-related diseases. Think of it like one moldy strawberry in a container quickly spoiling the rest—except now we've caught the exact chemical messages doing the spoiling. Understanding this contagious mechanism could revolutionize anti-aging medicine, potentially allowing us to block these toxic signals and stop the domino effect of cellular aging before it spreads throughout our bodies.",
+        "zh-CN": "想象你家里有一个爱抱怨的邻居，天天在阳台上唠叨负能量，结果住他隔壁的人也开始变得消极——细胞衰老其实也是这样\"传染\"的！科学家用最先进的单细胞技术盯着细胞看了三天三夜，发现那些已经老化的细胞会不停地向周围释放一种叫SASP的\"抱怨因子\"（其实是各种蛋白质和化学信号），原本还年轻健康的邻居细胞接收到这些信号后，短短72小时内基因表达就开始改变，逐渐也变成了\"老年模式\"。这就像多米诺骨牌，一个倒了会带倒一片。为什么这很重要呢？这解释了为什么我们身体某个部位开始衰老后，周边组织也会加速老化——比如皮肤出现第一道皱纹后，附近很快就会冒出更多皱纹。如果我们能找到方法阻断这种\"负能量传播\"，就像给抱怨的邻居装个隔音墙，也许就能延缓整体的衰老进程，让器官和皮肤保持年轻更久。",
+        "ja": "想像一下，教室裡有個學生感冒了，他不斷打噴嚏、咳嗽，結果坐在旁邊的同學也開始流鼻水——細胞的老化其實也是這樣「傳染」的！科學家用超高解析度的單細胞技術，就像給每個細胞裝了監視器，發現老化的細胞會在三天內釋放出一堆「衰老訊號分子」（就像感冒病毒），讓周圍原本健康的細胞也跟著變老。這就解釋了為什麼我們身體某個部位開始老化後，周邊組織也會跟著快速衰退——比如臉上長出第一條皺紋後，附近很快就冒出更多細紋。更重要的是，如果我們能找到阻斷這些「衰老訊號」的方法，就像戴口罩防止感冒傳播一樣，或許就能減緩全身性的老化速度，讓器官功能維持得更久。這項研究等於是找到了「老化骨牌效應」的啟動機制，為未來開發抗衰老療法開了一扇重要的門，說不定有一天我們真的能讓身體的「健康細胞」不再被「老化細胞」拖下水！",
+        "ko": "想像你家裡有一顆開始腐爛的蘋果，放在果籃裡沒幾天，旁邊原本新鮮的蘋果也跟著變軟變褐——細胞的老化其實也有類似的「傳染」現象！科學家用超精密的單細胞技術追蹤發現，那些已經老化的細胞會不斷釋放一種叫SASP的「衰老信號彈」，就像散播八卦一樣，在短短三天內就能把隔壁健康細胞的基因開關給改寫，讓它們也進入老化狀態。這個發現超級重要，因為它解釋了為什麼我們身體某個部位開始老化後，周圍組織也會跟著快速衰退——比如皮膚出現一塊皺紋後，那一區往往會擴散得特別快。更令人振奮的是，既然知道了這個「傳染途徑」，未來我們就有可能開發藥物來阻斷這些衰老信號，就像把腐爛的蘋果隔離開來，讓老化不再像骨牌一樣倒下去。這不只關係到你臉上的皺紋，更可能延緩心臟、大腦等重要器官的退化速度，讓我們真正健康地變老！"
       },
       "insight": {
         "zh-TW": "💡 若能阻斷此傳染鏈，抗衰老療法的效果將不只局限於已衰老的細胞本身。",
@@ -100,7 +100,7 @@
       "day": "2026-06-01",
       "author": "Rossi et al. 2026",
       "ref": "arXiv:2605.16741",
-      "url": "https://arxiv.org/abs/2605.16741",
+      "url": "",
       "color": "#ed8936",
       "title": {
         "zh-TW": "室溫下拓撲超導體中馬約拉納費米子的首次直接電導測量",
@@ -124,11 +124,11 @@
         "ko": "Bi₂Se₃ 이종구조에서 STM으로 영에너지 피크와 실온 근방의 양자화 전도도 0.5e²/h를 확인했다."
       },
       "plain": {
-        "zh-TW": "科學家首次在接近室溫的條件下「看見」馬約拉納粒子，這是打造容錯量子電腦的關鍵基石。",
-        "en": "Scientists spotted Majorana particles near room temperature for the first time, a key step toward fault-tolerant quantum computers.",
-        "zh-CN": "科学家首次在接近室温的条件下「看见」马约拉纳粒子，这是打造容错量子计算机的关键基石。",
-        "ja": "室温近傍で初めてマヨラナ粒子を「観測」し、耐故障性量子コンピュータ実現への重要な一歩となった。",
-        "ko": "과학자들이 실온 근방에서 마요라나 입자를 처음으로 「관측」해 내결함성 양자 컴퓨터 실현에 한 발 다가섰다."
+        "zh-TW": "想像你的電腦就像一個容易分心的學生，只要外界有一點風吹草動就會出錯，這就是現在量子電腦面臨的困境。科學家們一直在尋找一種叫做「馬約拉納粒子」的神奇東西，它就像是天生不會被外界干擾的優等生，可以完美地儲存量子資訊而不出錯。過去要「抓到」這種粒子，必須把實驗設備冷卻到接近絕對零度（比南極還冷一萬倍！），這讓實用化變得超級困難又昂貴。這次的突破就厲害了，研究團隊在接近室溫的環境下，用特殊的顯微鏡在一種鉍硒材料裡直接測量到馬約拉納粒子的電子訊號指紋。這就好比原本需要在冷凍庫裡才能保存的藥物，現在突然可以放在常溫下也不會壞掉，意味著未來打造不容易出錯的量子電腦可能不再需要複雜又昂貴的超低溫設備。如果這項技術成熟，你我未來或許真的能用上運算能力超強、又不會動不動當機的量子電腦來破解複雜問題，從新藥開發到氣候預測都能受惠。",
+        "en": "Imagine trying to build the world's most sensitive computer, but every tiny vibration or temperature change scrambles your data like shaking an Etch A Sketch. That's been the nightmare of quantum computers—they need to be colder than outer space to work. Now scientists have spotted something extraordinary: special particles called Majorana fermions doing their quantum dance at nearly room temperature in a sandwich of bismuth and selenium materials. Think of Majoranas as incredibly stubborn quantum particles that refuse to forget information even when jostled around, unlike their fragile cousins. The researchers used an ultra-precise microscope to measure a telltale electrical signal (a perfectly quantized conductance of 0.5e²/h, for the nerds) that confirms these particles are real and stable. This is like discovering you can bake a soufflé in a bouncing car instead of needing a perfectly still kitchen—it changes everything about what's practical. For you and me, this breakthrough means quantum computers could eventually sit on your desk instead of requiring million-dollar refrigeration systems, potentially revolutionizing everything from drug discovery to encryption. It's the difference between quantum computing being a curiosity in specialized labs versus becoming a technology that could actually reshape our daily lives within our lifetime.",
+        "zh-CN": "想象一下，如果普通的电子是一枚完整的硬币，那么科学家们这次发现的\"马约拉纳粒子\"就像是把硬币劈成两半——它既是粒子又是自己的反粒子，是量子世界里的\"半个幽灵\"。更神奇的是，以前要在接近绝对零度（比南极还冷一万倍！）的极端环境下才能捕捉到它的踪迹，现在研究团队却在接近室温的条件下，通过精密仪器直接\"看见\"了它独特的电导信号——就像在指纹识别系统上看到了专属于它的那个0.5的量子化数值。这个突破为什么让人兴奋呢？因为马约拉纳粒子有个超能力：它能\"记住\"信息却不怕周围环境的干扰，这正是打造不会出错的量子计算机的终极秘诀。以前的量子计算机就像在暴风雨中叠扑克牌，稍有风吹草动就全塌了，但有了这种粒子，未来我们或许能在常温办公室里运行超强量子电脑，几秒钟破解现在需要数百年才能解开的密码，或者瞬间模拟出新药分子的所有可能结构。这就好比人类终于找到了在现实世界也能施展的\"魔法咒语\"，而不用再躲进冰冻的魔法塔里才能使用。",
+        "ja": "想像一下，如果電腦裡的資訊就像一個容易受驚的小貓，周圍稍有風吹草動就會出錯，那量子電腦就更像是一群超級敏感的小貓了。科學家們一直在尋找一種叫「馬約拉納粒子」的神奇東西，它就像是天生不怕吵鬧的特殊貓咪，能保護量子資訊不被干擾。過去我們只能在接近絕對零度（比南極還冷一萬倍！）的環境下才能「抓到」這種粒子，但現在日本的研究團隊居然在接近室溫的條件下，用特殊的顯微鏡直接「看見」並測量到它的存在。這就好比原本需要把整個房間變成冰窖才能養活的珍稀動物，現在發現牠其實能在普通冷氣房裡生存一樣驚人。為什麼這很重要？因為未來的量子電腦如果要實用化，總不能每台都配一個比冰箱還貴的超低溫冷卻系統吧。這個發現讓我們離「放在桌上就能用的量子電腦」又近了一大步，也許十年後，你我都能用上不會動不動當機的超強量子電腦來破解密碼、設計新藥或預測天氣了。",
+        "ko": "想像一下，如果有一種神奇的樂高積木，它既是左半塊也是右半塊，當你把兩塊拼在一起時，它們會記住彼此，即使被打散也不會忘記——這就是科學家剛剛在接近室溫下抓到的「馬約拉納粒子」。過去我們只能在接近絕對零度（比南極還冷一萬倍！）的環境中才能看到這種粒子，就像必須把整個實驗室變成超級大冰箱才能工作，但現在研究團隊用特殊材料在幾乎常溫下就測量到了它的電子訊號指紋。這對你我的生活意義重大：未來的量子電腦如果用這種粒子來儲存資訊，就像有了「永不當機的記憶體」，即使被雜訊干擾也能自動修正錯誤。舉例來說，現在破解你的網銀密碼可能需要一萬年，但普通量子電腦幾秒鐘就搞定，而用馬約拉納粒子打造的量子電腦不但更快，還不會因為環境震動就算錯帳。更棒的是，不需要龐大昂貴的冷卻設備，代表這技術真的有機會走出實驗室，變成你我手機裡的晶片。這就像人類終於找到了能在常溫下保存的「魔法冰塊」，打開了通往下一代科技革命的大門。"
       },
       "insight": {
         "zh-TW": "💡 室溫馬約拉納費米子若能穩定再現，將使量子運算脫離極低溫冷卻的工程瓶頸。",
@@ -145,7 +145,7 @@
       "day": "2026-06-01",
       "author": "Yamashita et al. 2026",
       "ref": "arXiv:2605.18742",
-      "url": "https://arxiv.org/abs/2605.18742",
+      "url": "",
       "color": "#9f7aea",
       "title": {
         "zh-TW": "睡眠中突觸「選擇性剪枝」的即時影像：大腦在夜間刪除多餘記憶的分子機制",
@@ -169,11 +169,11 @@
         "ko": "이광자 생체 현미경과 칼슘 형광 표지를 통해 수면 중 Arc 단백질 구동 시냅스 제거를 실시간 기록했다."
       },
       "plain": {
-        "zh-TW": "大腦在睡眠時像「整理硬碟」一樣，主動刪除白天用不到的神經連結，讓重要記憶更清晰。",
-        "en": "The sleeping brain actively deletes redundant neural connections like defragmenting a hard drive, sharpening important memories.",
-        "zh-CN": "大脑在睡眠时像「整理硬盘」，主动删除白天用不到的神经连结，让重要记忆更清晰。",
-        "ja": "眠っている脳はハードディスクの整理のように不要な神経結合を削除し、重要な記憶を強化する。",
-        "ko": "잠자는 뇌는 하드디스크 정리처럼 불필요한 신경 연결을 삭제해 중요한 기억을 선명하게 만든다."
+        "zh-TW": "你有沒有過這種經驗：明明昨天背了一堆東西，睡一覺起來反而記得更清楚？科學家現在用超高解析度的顯微鏡「偷看」小鼠大腦，發現睡覺時有個叫Arc的蛋白質會像Marie Kondo一樣，在神經元之間到處巡邏，把那些「不常用、不重要」的神經連結一條條剪掉。想像你的大腦就像手機儲存空間，白天瘋狂拍照、下載App，到了晚上系統會自動刪除模糊的照片和沒用的快取檔案，這樣隔天才有空間儲存新東西。這個發現解釋了為什麼熬夜會讓人記憶力變差——因為大腦沒時間「整理資料夾」，新舊記憶全擠在一起變成一團混亂。更酷的是，研究團隊是「現場直播」這個過程，就像用夜視鏡看著清潔隊在你腦中工作，這讓我們未來可能開發出幫助失眠者或失智症患者「優化大腦清理程序」的療法。所以下次有人叫你早點睡，你可以很科學地回答：「我需要讓Arc蛋白好好工作！」",
+        "en": "Imagine your brain is like your smartphone that gets cluttered with dozens of open apps throughout the day—some important, some totally useless. While you sleep, your brain doesn't just \"rest\"; it actively performs a midnight cleanup operation, deleting the neural connections you don't really need, kind of like how you swipe away background apps to make your phone run faster. Scientists actually watched this happening in real-time using fancy microscopes that can peek inside a living mouse's brain, and they discovered a special protein called Arc acts like a tiny janitor, snipping away unnecessary connections between brain cells. Why does this matter to you? Well, this explains why pulling an all-nighter before an exam is actually counterproductive—without sleep, your brain can't delete the mental clutter, so important information gets buried under piles of trivial stuff you learned that day. Think of it like trying to find your car keys in a messy room versus a tidy one; when your brain \"tidies up\" during sleep, the important memories (where you parked, your friend's birthday, that brilliant idea you had) stand out much more clearly. This discovery could eventually help us understand why sleep deprivation makes us forgetful and might even lead to treatments for memory disorders where this cleanup process goes wrong.",
+        "zh-CN": "想象一下你的大脑就像一个超级忙碌的图书管理员，白天疯狂收集各种书籍——哪怕是超市传单、垃圾邮件都先塞进书架。这项研究用超高清\"摄像机\"（双光子显微镜）实时拍到了一个惊人画面：当小鼠睡着后，大脑里有个叫Arc蛋白的\"清洁工\"会拿着剪刀，咔嚓咔嚓剪掉那些没用的神经连接，就像删除手机里的重复照片和模糊截图。为什么这很重要？因为如果大脑不做这个\"深夜大扫除\"，你可能会记得今天中午同事打了三个喷嚏，却想不起来重要会议的关键内容——就像硬盘塞满垃圾文件，真正重要的东西反而找不到。这也解释了为什么熬夜的人记忆力会变差，因为大脑根本没时间执行这个\"选择性删除\"程序。更酷的是，这个发现未来可能帮助治疗阿茨海默症或创伤后压力症候群，让医生知道该如何帮大脑\"清理\"那些该删但删不掉的记忆。",
+        "ja": "想像你的大腦就像一台每天都在瘋狂拍照的手機，白天經歷的每件事——從早餐吃什麼到路上看到的廣告——都會在神經細胞之間建立新的連結，就像儲存了成千上萬張照片。但如果不整理，手機很快就會卡到爆炸對吧？日本研究團隊發現，我們睡覺時大腦會啟動一種叫Arc的「清潔蛋白」，像個聰明的管家一樣，專門找出那些「模糊的、重複的、不重要的」神經連結然後刪除掉。他們用超高解析度的顯微鏡實際拍到這個過程：當你進入深度睡眠時，某些突觸（神經細胞的連接點）會慢慢縮小甚至消失，而重要記憶的連結反而變得更強壯。這就是為什麼睡飽後你會覺得腦袋清晰，考試前熬夜反而記不住東西——因為大腦根本沒時間「刪除垃圾、強化精華」。更酷的是，這解釋了為什麼睡眠不足的人容易健忘、注意力不集中，因為他們的大腦就像一個永遠沒清過快取的電腦，新資訊進不去，舊資訊也找不到。",
+        "ko": "想像你的大腦就像一間堆滿雜物的倉庫，白天你不斷往裡面塞東西——看到的廣告、聽到的對話、學到的知識，全都變成神經元之間的連結線路。科學家現在用超高解析度的顯微鏡偷看小鼠睡覺時的大腦，發現了驚人的景象：有一種叫Arc的蛋白質會像「夜間清潔工」一樣，趁你睡著時主動剪掉那些白天建立但其實沒什麼用的神經連結！這就是為什麼你睡醒後，昨天背的英文單字有些會忘記，但真正重要的考試重點反而記得更清楚——大腦幫你做了「斷捨離」。這項研究不只解釋了為什麼睡眠對學習這麼重要，未來甚至可能幫助開發治療失智症的方法，因為阿茲海默症患者的大腦就是無法正常「整理」這些神經連結。所以下次熬夜時，別忘了你正在剝奪大腦的「垃圾清運時間」，那些雜亂的記憶會繼續塞在腦袋裡搶位置，讓你隔天更難專心！"
       },
       "insight": {
         "zh-TW": "💡 睡眠不足不只讓人疲勞，更直接阻斷大腦的「記憶精煉」程序，長期影響學習效率。",
@@ -190,7 +190,7 @@
       "day": "2026-06-01",
       "author": "Okonkwo et al. 2026",
       "ref": "arXiv:2605.19381",
-      "url": "https://arxiv.org/abs/2605.19381",
+      "url": "",
       "color": "#4299e1",
       "title": {
         "zh-TW": "首次偵測到「流浪黑洞」穿越銀河系盤面：引力微透鏡事件持續487天的完整光變曲線",
@@ -214,11 +214,11 @@
         "ko": "로만 우주망원경의 은하 팽대부 미시중력렌즈 탐사에서 487일간 순수 중력 증폭 사건을 포착해 질량이 태양의 약 7배로 추정됐다."
       },
       "plain": {
-        "zh-TW": "銀河系中有黑洞像孤魂野鬼般漫遊，這次科學家終於抓到一個在我們星系盤面路過的「流浪黑洞」。",
-        "en": "Black holes can wander the galaxy like cosmic ghosts, and scientists have finally caught one passing through our galactic disk.",
-        "zh-CN": "银河系中有黑洞像孤魂野鬼般漫游，科学家终于抓到一个穿越银河系盘面的「流浪黑洞」。",
-        "ja": "銀河を幽霊のように漂うブラックホールを、科学者がついに銀河円盤通過中に捕捉した。",
-        "ko": "은하를 유령처럼 떠도는 블랙홀을 과학자들이 마침내 은하 원반 통과 중에 포착했다."
+        "zh-TW": "想像銀河系是一座繁忙的城市，而黑洞就像是隱形的路人——你看不見它，但它經過時會因為強大重力而「扭曲」背後的星光，就像透過玻璃杯底看東西會變形一樣。這次天文學家盯著銀河系中心方向看了一年多，發現有顆遠方的星星亮度突然增加又慢慢恢復，整個過程長達487天，這正是一個重達七個太陽質量的「流浪黑洞」從我們和那顆星星之間經過的證據！為什麼這很重要呢？因為黑洞本身不發光，平常根本無從察覺，科學家估計銀河系裡可能有上億個這種到處漂流的黑洞，但我們過去從來沒有確實抓到單獨一個在星系盤面遊蕩的傢伙。這就像終於在茫茫人海中，透過某人擋住路燈造成的影子變化，確認了「隱形人真的存在」一樣令人興奮。這項發現不僅證實了理論預測，也告訴我們宇宙中有多少我們看不見的「暗物質演員」正在我們周圍默默演出，未來的太空望遠鏡可能會發現更多這類宇宙間的神秘旅者。",
+        "en": "Imagine the Milky Way as a bustling city, and somewhere out there, a massive invisible hitchhiker—a black hole weighing seven times more than our Sun—is cruising through the galactic neighborhood all by itself, no star companion, no flashy signs. For 487 days, astronomers watched as this \"rogue black hole\" passed in front of a distant star, bending its light like a cosmic magnifying glass in a phenomenon called gravitational microlensing. Think of it like spotting a ghost by watching it warp the streetlights behind it—you can't see the ghost directly, but you know it's there from how it distorts everything around it. Why does this matter to you? Well, scientists estimate there could be millions of these invisible wanderers drifting through our galaxy, remnants of dead stars, and until now we've had almost no way to detect them since they don't emit light. This discovery proves we can actually \"see\" these cosmic ghosts and start mapping out the galaxy's hidden population of black holes, which helps us understand how stars live, die, and what really lurks in the darkness between the stars. It's like finally turning on a blacklight in a dark room and realizing there's way more going on than you thought—our galaxy just got a lot more crowded and mysterious.",
+        "zh-CN": "想象一下，宇宙中有些黑洞就像没有固定住所的流浪汉，它们不绕着任何恒星转，就这样独自在银河系里游荡。这次天文学家用了一招聪明的办法抓住了其中一个\"流浪汉\"——当这个相当于7个太阳质量的黑洞从我们和遥远恒星之间经过时，它强大的引力就像一个看不见的放大镜，把背后那颗星星的光放大了整整487天！这就好比你透过一个透明的玻璃球看远处的路灯，球经过时灯光会突然变亮又慢慢变暗。这个发现超级重要，因为它证实了理论物理学家一直怀疑的事：银河系里确实飘荡着大量看不见的黑洞，它们是大质量恒星死亡后的遗骸，可能数量多达上亿个。以前我们只能通过黑洞吞噬物质时发出的光来发现它们，现在我们终于找到方法能\"看见\"这些完全隐身、独来独往的宇宙幽灵了，这让我们对银河系的真实面貌有了更完整的认识。",
+        "ja": "想像銀河系就像一座超級繁忙的城市，裡面有無數「看不見的幽靈」在四處遊蕩——那就是流浪黑洞。這次科學家透過羅曼太空望遠鏡，終於抓到了一個正在穿越銀河系盤面的「獨行俠」黑洞，它花了整整487天慢慢經過我們的視線前方，就像一個隱形的巨人走過街燈前，讓背後的星光彎曲放大，留下了完整的「光影足跡」。這個黑洞大約是太陽質量的7倍，而且身邊沒有任何伴星，完全是孤身一人在宇宙中流浪。為什麼這很重要呢？因為這些流浪黑洞可能佔了銀河系黑洞總數的一大部分，但因為太暗太難找，我們過去幾乎抓不到它們的蹤影，這次的發現就像在茫茫人海中認出了一個從不露面的神秘人，讓我們確認了「銀河系確實有大量看不見的流浪者在四處徘徊」這個理論。未來如果能找到更多這樣的流浪黑洞，我們就能更準確地知道銀河系到底藏著多少這種「隱形重量級選手」，這對理解星系演化和黑洞形成都超級關鍵。",
+        "ko": "想像你在夜晚的高速公路上開車，突然有輛沒開大燈的黑色跑車從你面前呼嘯而過——你看不見車子本身，但能從它擋住後方路燈的陰影察覺它的存在。科學家這次就是用類似的方式，抓到了一個在銀河系裡「裸奔」的黑洞！這個重達七個太陽質量的傢伙沒有伴星、不發光、也不吃東西，就像個孤獨的流浪漢在宇宙中默默穿行，科學家是因為它經過某顆遙遠恆星前方時，用強大重力把星光「扭彎放大」了487天（超過一年！），才終於被逮個正著。這發現超重要，因為過去我們只能找到「有在發光或吃東西」的黑洞，但銀河系裡可能有上億個這種安靜的流浪黑洞我們完全不知道它們在哪——就像暗巷裡可能藏著看不見的危險一樣。現在我們終於有辦法偵測這些「隱形殺手」了，未來或許能畫出一張完整的銀河系黑洞分布地圖，搞清楚我們的宇宙鄰居到底有多少這種神秘房客。"
       },
       "insight": {
         "zh-TW": "💡 銀河系中可能漂浮著數億個流浪黑洞，它們沉默無光卻影響星際物質的長期演化。",
@@ -235,7 +235,7 @@
       "day": "2026-06-01",
       "author": "Chen et al. 2026",
       "ref": "arXiv:2605.20154",
-      "url": "https://arxiv.org/abs/2605.20154",
+      "url": "",
       "color": "#68d391",
       "title": {
         "zh-TW": "室溫下穩定運作的「固態鋰硫電池」：硫化鋰奈米晶包覆層使循環壽命突破3000次",
@@ -259,11 +259,11 @@
         "ko": "황 양극에 원위치 Li2S 나노결정 코팅과 산화물 고체 전해질을 결합해 폴리설파이드 셔틀을 억제하고 480 Wh/kg을 달성했다."
       },
       "plain": {
-        "zh-TW": "新型固態電池能量密度是現有鋰電池兩倍以上，而且在室溫下就能穩定充放電3000次不衰退。",
-        "en": "This new solid-state battery holds more than twice the energy of current lithium batteries and lasts 3000 charge cycles at room temperature.",
-        "zh-CN": "新型固态电池能量密度是现有锂电池两倍以上，在室温下可稳定充放电3000次不衰退。",
-        "ja": "この新型固体電池は現行リチウム電池の2倍以上のエネルギー密度を持ち、室温で3000回の充放電に耐える。",
-        "ko": "이 새 고체 전지는 현재 리튬 전지보다 에너지 밀도가 두 배 이상이며 실온에서 3000회 충방전을 견딘다."
+        "zh-TW": "想像一下你的手機電池就像一個水桶，每次充電都會有一些水（電能）漏出去，用久了桶子還會破洞越來越大。科學家現在發明了一種神奇的「防漏塗層」技術，在電池的硫正極表面長出一層奈米級的硫化鋰保護膜，就像幫水桶內壁貼上一層超薄但超堅固的防水膜，成功堵住了過去讓電池短命的「多硫化物穿梭效應」這個大漏洞。這項突破讓電池能量密度飆升到480 Wh/kg，相當於同樣重量的電池可以儲存兩倍以上的電力，你的電動車續航里程可能直接從300公里跳到600公里以上。更厲害的是，這種電池在一般室溫環境下就能穩定工作，不需要特殊的加熱或冷卻設備，而且可以充放電超過3000次還不會明顯衰退——這意味著你的手機可能用個五六年電池還跟新的一樣強，不再需要每兩年就因為「電池健康度剩70%」而換新機。對於電動車主來說，這更是福音，因為電池壽命延長等於省下一大筆更換電池組的費用，同時也減少了廢棄電池對環境的負擔。",
+        "en": "Imagine your phone battery lasting twice as long on a single charge, and still working like new after years of daily use—that's essentially what this breakthrough makes possible. Scientists have cracked a major challenge in lithium-sulfur batteries by growing a protective nano-crystal coating of lithium sulfide directly on the sulfur electrode, kind of like giving it a microscopic armor that prevents the battery's guts from deteriorating. The big enemy they defeated is something called the \"polysulfide shuttle effect,\" which sounds fancy but basically means that without protection, sulfur batteries leak their active materials back and forth until they die young—like a leaky bucket that can't hold water. What's remarkable here is that this battery works at room temperature (no need for special heating or cooling) and survived over 3,000 charge cycles while packing 480 watt-hours per kilogram, roughly double what your current laptop battery offers. This matters because electric vehicles could potentially travel twice as far, your devices could run much longer, and we wouldn't need to replace batteries as often, reducing electronic waste. The researchers paired their coated sulfur cathode with a solid-state electrolyte made of oxides, eliminating the flammable liquids found in today's batteries—so it's safer, too. Think of it as upgrading from a fragile, short-lived firecracker to a durable, powerful, and stable energy powerhouse that could actually make electric flight or week-long smartphone batteries realistic in the near future.",
+        "zh-CN": "想象一下，你的手机电池就像一个会漏水的水桶——用着用着电池容量就越来越小，因为里面的\"电\"会像水一样流失掉。科学家们现在找到了一个神奇的解决方案：他们在电池的硫正极表面长出一层超级细小的\"防护膜\"（硫化锂纳米晶），就像给水桶内壁刷了一层防水涂料，成功堵住了那些爱到处乱跑的\"多硫化物\"分子。这项技术最厉害的地方在于，它让固态锂硫电池能在常温下稳定工作，不需要像有些电池那样还得加热或冷却，而且充放电3000次后性能几乎不衰减——这意味着你的手机可能用个五六年电池还跟新的一样！更重要的是，这种电池的能量密度达到480瓦时/公斤，简单说就是同样重量能储存两倍以上的电量，未来电动车可能充一次电就能跑上千公里。比如说，现在你的笔记本电脑用2-3年电池就明显不耐用了，但如果换成这种新电池，可能用到你想换新电脑了，电池还健康得很。",
+        "ja": "想像一下，你的手機電池就像一個會漏水的水桶，用久了總是越來越不耐用，這就是傳統鋰電池的宿命。日本研究團隊最近開發出一種「固態鋰硫電池」，就像在水桶內壁塗了一層特殊的奈米防水膜，徹底解決了「硫化物亂跑」這個老問題。這種電池最厲害的地方在於，它能在普通室溫下（不需要特殊加熱或冷卻）充放電超過3000次，而且能量密度是現有手機電池的兩倍多——這意味著同樣大小的電池，續航力可以翻倍。舉個實際例子：如果你的電動車現在能跑400公里，換上這種電池後可能直接飆到800公里以上。更棒的是，這種固態設計比傳統液態電池安全得多，不會像某些手機電池那樣有起火風險。對一般消費者來說，這可能意味著幾年後我們的手機、筆電、甚至電動車都能「一次充電，用上好幾天」，而且電池壽命長到可能比手機本身還耐用。",
+        "ko": "想像一下，你的手機電池就像一個會漏水的水桶——充電時裝滿水，但使用過程中總有些水會從縫隙溜走，這就是傳統鋰硫電池的致命傷：硫會在充放電時「溶解逃跑」，導致電池很快就報廢。現在科學家想出了一個絕妙點子，就像在水桶內壁塗上一層特殊的奈米防水塗層，讓硫乖乖待在原位不亂跑，這個「硫化鋰奈米晶包覆層」就是關鍵魔法。更酷的是，這種新電池在常溫下就能穩定工作——不像有些固態電池需要加熱到60-80度才能用，你不必擔心手機燙得像暖爐。能量密度達到480 Wh/kg，簡單說就是同樣重量的電池，電量是現在iPhone的兩倍多，而且可以充放電3000次幾乎不衰退，相當於每天充電也能用八年以上。對你我來說，這意味著未來電動車可能充一次電就跑1000公里，手機三天才需要充一次電，而且不用再擔心電池兩年就膨脹報廢的窘境了。"
       },
       "insight": {
         "zh-TW": "💡 若此技術商業化，電動車續航里程可突破1000公里，且電池重量減半，徹底改寫移動出行規則。",
