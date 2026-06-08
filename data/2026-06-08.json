@@ -8,271 +8,271 @@
       "id": "ai-260608",
       "domain": "ai",
       "day": "2026-06-08",
-      "author": "Ye et al. 2026",
-      "ref": "arXiv:2606.03541",
-      "url": "",
+      "author": "Marius Dragoi, Ioana Pintilie et al.",
+      "ref": "arXiv:2606.06494v1",
+      "url": "https://arxiv.org/abs/2606.06494v1",
       "color": "#667eea",
       "title": {
-        "zh-TW": "無訓練的多模態推理鏈壓縮：以語義熵篩選冗餘思維步驟",
-        "en": "Training-Free Multimodal Chain-of-Thought Compression via Semantic Entropy",
-        "zh-CN": "无训练的多模态推理链压缩：以语义熵筛选冗余思维步骤",
-        "ja": "意味エントロピーによる学習不要なマルチモーダル推論チェーン圧縮",
-        "ko": "의미 엔트로피 기반 훈련 없는 멀티모달 추론 체인 압축"
+        "zh-TW": "TailLoR：保護核心知識、讓AI持續學新技能而不遺忘舊能力",
+        "en": "TailLoR: Teaching AI New Tricks Without Forgetting Old Ones by Protecting Core Knowledge",
+        "zh-CN": "TailLoR：保护核心知识、让AI持续学习新技能而不遗忘旧能力",
+        "ja": "TailLoR：核心知識を守りながらAIが継続的に新スキルを習得する手法",
+        "ko": "TailLoR：핵심 지식을 보호하며 AI가 새 기술을 계속 학습하는 방법"
       },
       "tag": {
         "zh-TW": "🤖 人工智慧",
-        "en": "🤖 AI",
-        "zh-CN": "🤖 人工智能",
+        "en": "🤖 Artificial Intelligence",
+        "zh-CN": "🤖 人工智慧",
         "ja": "🤖 人工知能",
         "ko": "🤖 인공지능"
       },
       "tech": {
-        "zh-TW": "利用語義熵量化推理鏈中各步驟的資訊冗餘度，在推論時動態剪枝重複思維步驟，無需額外訓練。",
-        "en": "Semantic entropy scores each reasoning step for redundancy and prunes repetitive thoughts at inference time without retraining.",
-        "zh-CN": "利用语义熵量化推理链中各步骤的冗余度，在推理时动态剪枝重复思维步骤，无需额外训练。",
-        "ja": "意味エントロピーで各推論ステップの冗長度を定量化し、再学習不要で推論時に動的に枝刈りする。",
-        "ko": "의미 엔트로피로 각 추론 단계의 중복도를 측정하고 재학습 없이 추론 시점에 동적으로 가지치기한다."
+        "zh-TW": "TailLoR 利用預訓練權重矩陣的奇異值分解（SVD），固定左右奇異基底 U 與 V 作為參考座標系，僅在奇異值矩陣上學習低秩更新。一項「軟頻譜懲罰」機制阻止更新方向對齊主要奇異方向，將細粒度的任務適應引導至頻譜長尾座標，從而在持續學習多項任務時有效降低任務間干擾與遺忘。",
+        "en": "TailLoR fixes the singular bases U and V from pre-trained weight SVD as a stable reference frame and learns low-rank updates solely on the singular value matrix. A soft spectral penalty discourages gradient updates from aligning with dominant singular directions, steering task-specific adaptation into the flexible long-tail spectral coordinates to minimize cross-task interference in continual learning.",
+        "zh-CN": "TailLoR 利用预训练权重矩阵的奇异值分解（SVD），固定左右奇异基底 U 与 V 作为参考坐标系，仅在奇异值矩阵上学习低秩更新。一项「软频谱惩罚」机制阻止更新方向对齐主要奇异方向，将细粒度的任务适应引导至频谱长尾坐标，从而在持续学习多项任务时有效降低任务间干扰与遗忘。",
+        "ja": "TailLoR は事前学習済み重み行列の特異値分解（SVD）から得た特異基底 U・V を固定の参照座標系として用い、特異値行列のみに低ランク更新を学習する。ソフトスペクトルペナルティにより支配的な特異方向への更新を抑制し、タスク固有の適応を長尾スペクトル座標へ誘導することで継続学習における干渉を低減する。",
+        "ko": "TailLoR은 사전 학습된 가중치 행렬의 특이값 분해(SVD)에서 얻은 특이 기저 U와 V를 고정 참조 좌표계로 사용하고, 특이값 행렬에만 저랭크 업데이트를 학습한다. 소프트 스펙트럴 페널티가 지배적 특이 방향으로의 업데이트를 억제하여 세밀한 태스크 적응을 장꼬리 스펙트럴 좌표로 유도함으로써 연속 학습 시 태스크 간 간섭을 줄인다."
       },
       "plain": {
-        "zh-TW": "想像你在解數學題時，明明已經算出「3+5=8」，卻又重複驗算了三次同樣的步驟，浪費時間卻沒得到新答案。現在的AI也有這個毛病——它在思考問題時常常繞圈圈，用不同說法重複同一個概念，讓運算成本暴增卻沒提升準確度。這項研究就像給AI裝了一個「廢話偵測器」，透過「語義熵」這個指標來判斷哪些思考步驟其實是在講同一件事，然後即時刪掉那些重複的部分。這對你我的影響可不小：當ChatGPT或其他AI助手回答問題時，它能更快給出答案、省下大量運算資源（也就是降低碳排放和成本），而且重點是答案品質不會因此變差。舉例來說，如果你問AI「如何規劃三天兩夜的京都行程」，它不會再囉哩囉唆地用五種方式重述「先查交通」這件事，而是直接跳到真正有用的建議。最棒的是，這套方法不需要重新訓練AI模型，就能立刻應用在現有系統上，讓所有人都能享受到更聰明、更環保的AI服務。",
-        "en": "Imagine you're explaining a math problem to a friend, but you keep repeating \"so basically what I mean is...\" five times before getting to the point—that's essentially what AI language models often do when solving complex problems through \"chain-of-thought\" reasoning. Researchers have now figured out a clever trick to help AI cut out this repetitive mental chatter by measuring something called \"semantic entropy,\" which is basically a fancy way of detecting when the AI is just saying the same thing over and over in different words. Think of it like having a really smart editor who can instantly spot when you're rambling and crosses out the redundant bits, except this happens automatically while the AI is thinking, not after. What makes this brilliant is that it requires zero extra training—the AI simply learns to recognize its own redundant thoughts on the fly and skip them, making responses faster and often more accurate. This matters because right now, powerful AI models burn through enormous computing resources (and your waiting time) generating lengthy thought processes that are partly just spinning their wheels. By trimming the fat from AI reasoning in real-time, we get quicker answers, lower costs, and often better results—like getting a expert consultant who bills you for productive thinking time only, not for every \"um\" and \"let me rephrase that\" moment.",
-        "zh-CN": "想象你在解一道数学题，脑子里反复念叨\"这题要用公式、这题要用公式、对就是要用公式\"——这种重复其实是在浪费脑力。现在的AI思考问题时也会犯同样的毛病，明明已经想通了某个关键点，却还在推理链条里反复咀嚼同样的逻辑，就像考试时在草稿纸上把同一个步骤抄了三遍。这项研究开发了一种\"智能橡皮擦\"，能用一种叫\"语义熵\"的数学工具自动识别出AI思考过程中哪些步骤是在原地打转，然后实时把这些冗余的思维步骤删掉。最妙的是这个方法不需要重新训练AI，就像给你的大脑装了个自动去重功能，让思考变得更高效。这对我们的实际影响是：未来AI助手回答问题时能更快给出答案，同时减少计算资源消耗，就好比从\"啰嗦的老学究\"升级成\"言简意赅的高手\"。比如你问ChatGPT一个复杂问题，原本它可能要绕十个弯才答完，现在直接三步到位，省时又省电。",
-        "ja": "想像你在解數學題時，會在草稿紙上寫一堆算式，但其中有些步驟其實只是在「換句話說」，並沒有真正推進解題進度——AI思考問題時也會遇到同樣的狀況。這項研究就像幫AI配了一位嚴格的編輯，能即時偵測「欸，這句話你剛才已經說過了」，然後把那些只是換個說法、沒有新資訊的思考步驟直接刪掉。最酷的是，這個「編輯」不需要事先訓練，就能在AI思考的當下判斷哪些步驟是冗餘的，透過一種叫「語義熵」的數學指標來衡量每個步驟的資訊含金量。比如當你問AI「為什麼天空是藍色的？」，它原本可能會用五種方式重複解釋「光的散射」，現在它會自動跳過那些繞圈子的說法，直接給你最精簡的答案。這對我們的實際影響是：AI不僅回答更快、更省運算資源，準確度還可能提升，因為減少廢話就等於減少出錯的機會——就像考試時刪掉冗長又容易寫錯的計算過程，反而更容易拿到正確答案。",
-        "ko": "想像你在解數學題時，腦中不斷重複「這題要用畢氏定理、對就是畢氏定理、我確定是畢氏定理」——這種繞圈子的思考其實沒幫助，反而浪費時間。現在科學家開發出一種技術，能讓AI在「思考」複雜問題時，自動偵測哪些步驟只是在重複廢話，然後即時跳過它們，就像有個聰明的編輯隨時幫你刪掉冗言贅字。這項技術的關鍵在於用「語義熵」這個指標來測量每個思考步驟到底帶來多少新資訊，如果某步驟只是換句話說同一件事，系統就會判斷「這是冗餘的」並直接略過。比如AI在回答「如何煮出好吃的義大利麵」時，可能會卡在「水要煮滾、一定要滾、必須沸騰」這種同義反覆，現在它能自己發現並跳到下一個真正有用的步驟。最棒的是，這完全不需要重新訓練AI模型，就像給現有的AI裝上一副「冗餘偵測眼鏡」，讓它在保持準確度的同時，思考速度更快、更省運算資源。對使用者來說，這意味著未來問ChatGPT複雜問題時，不僅能更快得到答案，還能省下雲端運算的電費和碳排放——AI變聰明的同時也更環保了。"
+        "zh-TW": "想像一位鋼琴演奏家正在學爵士樂，但練習過程中卻把原本精通的古典樂忘得一乾二淨——這正是AI在「持續學習」時最頭疼的問題，學界稱為「災難性遺忘」。TailLoR 的策略就像告訴這位鋼琴家：「鍵盤的位置（U 和 V 基底）永遠不變，你只需要重新調整每個琴鍵的觸感力道（奇異值）。」更聰明的是，它還設了一條規則：「別去動那些最重要的黃金琴鍵，只在邊角的輔助琴鍵上練新曲子。」這樣一來，學新任務的改變只發生在影響最小的角落，核心知識被完整保留。這對想讓同一個AI模型不斷學習新技能、又不想每次重新訓練的應用場景至關重要，例如讓客服AI持續學習新產品知識，或讓醫療AI不斷更新最新診療指引，都能從中受益。",
+        "en": "Imagine a pianist learning jazz who suddenly forgets all their classical training — this is exactly the problem AI faces in continual learning, known as catastrophic forgetting. TailLoR works like telling the pianist: 「the keyboard layout (the U and V bases) never changes; just retune how hard each key responds (the singular values).」 Even smarter, it adds a rule: 「don't touch the most important golden keys — practice new songs only on the peripheral helper keys.」 This way, new task learning only happens in corners with minimal impact, keeping core knowledge intact. This matters enormously for real-world AI systems that must keep learning — from customer service bots absorbing new product info to medical AIs updating clinical guidelines — all without expensive full retraining.",
+        "zh-CN": "想象一位钢琴演奏家正在学爵士乐，但练习过程中却把原本精通的古典乐忘得一干二净——这正是AI在「持续学习」时最头疼的问题，学界称为「灾难性遗忘」。TailLoR 的策略就像告诉这位钢琴家：「键盘的位置（U 和 V 基底）永远不变，你只需要重新调整每个琴键的触感力道（奇异值）。」更聪明的是，它还设了一条规则：「别去动那些最重要的黄金琴键，只在边角的辅助琴键上练新曲子。」这样一来，学新任务的改变只发生在影响最小的角落，核心知识被完整保留。这对想让同一个AI模型不断学习新技能、又不想每次重新训练的应用场景至关重要。",
+        "ja": "ピアニストがジャズを練習するうちにクラシックを完全に忘れてしまう――これがAIの「継続学習」で起きる「破滅的忘却」という問題だ。TailLoR のアプローチは、そのピアニストに「鍵盤の配置（U・V 基底）は絶対に変えない、各鍵の打鍵感（特異値）だけを微調整して」と伝えるようなものだ。さらに賢いのは「最も重要な黄金の鍵には触れず、端の補助鍵だけで新曲を練習する」というルールを設けている点だ。これにより新タスクの変更は影響が最小の場所にのみ生じ、核心的な知識は完全に保たれる。同じAIモデルが再訓練なしに新スキルを学び続けられる未来への重要な一歩だ。",
+        "ko": "피아니스트가 재즈를 배우다가 원래 잘하던 클래식을 완전히 잊어버리는 상황 — 이것이 AI의 「지속 학습」에서 발생하는 「파국적 망각」 문제다. TailLoR의 전략은 그 피아니스트에게 「건반 배치(U·V 기저)는 절대 바꾸지 말고, 각 건반의 터치감(특이값)만 조정해」라고 말하는 것과 같다. 더 똑똑한 점은 「가장 중요한 황금 건반은 건드리지 말고, 구석의 보조 건반에서만 새 곡을 연습해」라는 규칙을 추가한 것이다. 덕분에 새 태스크 학습은 영향이 최소인 영역에서만 일어나고, 핵심 지식은 온전히 보존된다. 재훈련 없이 계속 새 기술을 학습해야 하는 AI 시스템에 매우 중요한 발전이다."
       },
       "insight": {
-        "zh-TW": "💡 推理鏈的冗餘是推理成本的主因，語義熵提供了一把免訓練的「思維剪刀」。",
-        "en": "💡 Redundancy in reasoning chains is the main cost driver; semantic entropy offers a training-free pruning blade.",
-        "zh-CN": "💡 推理链的冗余是推理成本的主因，语义熵提供了一把免训练的「思维剪刀」。",
-        "ja": "💡 推論チェーンの冗長性がコストの主因であり、意味エントロピーは学習不要の剪定ツールとなる。",
-        "ko": "💡 추론 체인의 중복이 비용의 주원인이며, 의미 엔트로피는 훈련 없는 가지치기 도구를 제공한다."
+        "zh-TW": "💡 真正的智慧不在於全盤改寫，而在於知道哪些核心不能動——TailLoR 告訴我們，學習的藝術是在最不重要的角落裡悄悄成長。",
+        "en": "💡 True intelligence lies not in rewriting everything, but in knowing what must stay untouched — TailLoR shows that the art of learning is growing quietly in the least critical corners.",
+        "zh-CN": "💡 真正的智慧不在于全盘改写，而在于知道哪些核心不能动——TailLoR 告诉我们，学习的艺术是在最不重要的角落里悄悄成长。",
+        "ja": "💡 真の知性とはすべてを書き換えることではなく、何を変えてはならないかを知ることにある――TailLoR は「最も重要でない隅で静かに成長すること」が学習の本質だと示している。",
+        "ko": "💡 진정한 지능은 모든 것을 다시 쓰는 것이 아니라 무엇을 건드리지 말아야 하는지 아는 것에 있다 — TailLoR는 가장 덜 중요한 구석에서 조용히 성장하는 것이 학습의 본질임을 보여준다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"50\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2.5\"/>\n<path d=\"M38 68 Q50 55 62 68 Q74 81 62 92 Q50 105 38 92 Q26 79 38 68\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n<line x1=\"82\" y1=\"60\" x2=\"118\" y2=\"48\" stroke=\"#667eea\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/>\n<line x1=\"82\" y1=\"70\" x2=\"118\" y2=\"70\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<line x1=\"82\" y1=\"80\" x2=\"118\" y2=\"92\" stroke=\"#667eea\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/>\n<polygon points=\"116,44 124,48 116,52\" fill=\"#667eea\" opacity=\"0.4\"/>\n<polygon points=\"116,66 124,70 116,74\" fill=\"#667eea\"/>\n<polygon points=\"116,88 124,92 116,96\" fill=\"#667eea\" opacity=\"0.4\"/>\n<rect x=\"128\" y=\"58\" width=\"84\" height=\"24\" rx=\"12\" fill=\"#667eea\" opacity=\"0.15\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<circle cx=\"155\" cy=\"70\" r=\"5\" fill=\"#667eea\"/>\n<circle cx=\"184\" cy=\"70\" r=\"5\" fill=\"#667eea\"/>\n<circle cx=\"213\" cy=\"70\" r=\"3\" fill=\"#ff7043\" stroke=\"#ff7043\" stroke-width=\"1\"/>\n<line x1=\"216\" y1=\"58\" x2=\"210\" y2=\"52\" stroke=\"#ff7043\" stroke-width=\"1.8\"/>\n<line x1=\"216\" y1=\"82\" x2=\"210\" y2=\"88\" stroke=\"#ff7043\" stroke-width=\"1.8\"/>\n<line x1=\"226\" y1=\"70\" x2=\"262\" y2=\"70\" stroke=\"#667eea\" stroke-width=\"2\"/>\n<polygon points=\"260,66 268,70 260,74\" fill=\"#667eea\"/>\n<circle cx=\"295\" cy=\"70\" r=\"22\" fill=\"#667eea\" opacity=\"0.15\" stroke=\"#667eea\" stroke-width=\"2.5\"/>\n<circle cx=\"295\" cy=\"70\" r=\"10\" fill=\"#667eea\" opacity=\"0.6\"/>\n<circle cx=\"295\" cy=\"70\" r=\"4\" fill=\"#667eea\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"80\" cy=\"80\" r=\"45\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"80\" cy=\"80\" r=\"30\" fill=\"#667eea\" opacity=\"0.85\"/>\n<path d=\"M60 72 L60 88 M68 68 L68 92 M76 65 L76 95 M84 68 L84 92 M92 72 L92 88 M100 76 L100 84\" stroke=\"white\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\"/>\n<path d=\"M125 80 L155 80 M145 72 L155 80 L145 88\" stroke=\"#667eea\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/>\n<circle cx=\"260\" cy=\"80\" r=\"45\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"260\" cy=\"80\" r=\"30\" fill=\"#667eea\" opacity=\"0.85\"/>\n<path d=\"M240 72 L240 88 M248 68 L248 92 M256 65 L256 95 M264 68 L264 92 M272 72 L272 88 M280 76 L280 84\" stroke=\"white\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\"/>\n<path d=\"M238 88 Q248 70 258 82 Q268 94 278 72\" stroke=\"#f6ad55\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\"/>\n<circle cx=\"260\" cy=\"80\" r=\"44\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"8 4\" opacity=\"0.7\"/>\n<circle cx=\"80\" cy=\"80\" r=\"44\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"8 4\" opacity=\"0.7\"/>\n<rect x=\"230\" y=\"50\" width=\"60\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"1.5\" opacity=\"0.4\"/>\n</svg>"
     },
     {
       "id": "bio-260608",
       "domain": "bio",
       "day": "2026-06-08",
-      "author": "Chen et al. 2026",
-      "ref": "arXiv:2606.02817",
-      "url": "",
+      "author": "Rohit Goswami, Ruhila Goswami et al.",
+      "ref": "arXiv:2606.06434v1",
+      "url": "https://arxiv.org/abs/2606.06434v1",
       "color": "#48bb78",
       "title": {
-        "zh-TW": "單細胞蛋白質組學揭示衰老T細胞的粒線體重程式化驅動腫瘤免疫逃脫",
-        "en": "Single-Cell Proteomics Reveals Mitochondrial Reprogramming in Exhausted T Cells Drives Tumor Immune Evasion",
-        "zh-CN": "单细胞蛋白质组学揭示衰竭T细胞的线粒体重编程驱动肿瘤免疫逃逸",
-        "ja": "単一細胞プロテオミクスが疲弊T細胞のミトコンドリア再プログラムによる腫瘍免疫回避を解明",
-        "ko": "단일세포 프로테오믹스로 소진 T세포의 미토콘드리아 재프로그래밍이 종양 면역 회피를 유도함을 규명"
+        "zh-TW": "rsx：超高效能串流工具包，用 RAD-seq 技術快速鑑定生物性別基因標記",
+        "en": "rsx: A High-Performance Streaming Toolkit for Rapidly Identifying Sex-Determining Genetic Markers via RAD-seq",
+        "zh-CN": "rsx：超高性能流式工具包，用 RAD-seq 技术快速鉴定生物性别基因标记",
+        "ja": "rsx：RAD-seqによる性決定遺伝子マーカーを高速検出するストリーミングツールキット",
+        "ko": "rsx: RAD-seq 기반 성 결정 유전자 마커를 초고속으로 탐지하는 스트리밍 툴킷"
       },
       "tag": {
-        "zh-TW": "🧬 生命科學",
-        "en": "🧬 Life Science",
-        "zh-CN": "🧬 生命科学",
-        "ja": "🧬 生命科学",
-        "ko": "🧬 생명과학"
+        "zh-TW": "🧬 生命科學／生物資訊",
+        "en": "🧬 Life Science / Bioinformatics",
+        "zh-CN": "🧬 生命科学／生物信息学",
+        "ja": "🧬 生命科学／バイオインフォマティクス",
+        "ko": "🧬 생명과학 / 생물정보학"
       },
       "tech": {
-        "zh-TW": "以超靈敏單細胞質譜蛋白質組學定量衰老T細胞的粒線體代謝蛋白變化，繪製免疫逃脫的蛋白調控網絡。",
-        "en": "Ultrasensitive single-cell mass spectrometry proteomics quantifies mitochondrial metabolic protein shifts in exhausted T cells.",
-        "zh-CN": "以超灵敏单细胞质谱蛋白质组学定量衰竭T细胞的线粒体代谢蛋白变化，绘制免疫逃逸的蛋白调控网络。",
-        "ja": "超高感度単一細胞質量分析プロテオミクスで疲弊T細胞のミトコンドリア代謝タンパク変化を定量化する。",
-        "ko": "초고감도 단일세포 질량분석 프로테오믹스로 소진 T세포의 미토콘드리아 대사 단백질 변화를 정량화한다."
+        "zh-TW": "本論文提出 rsx，以 Rust 語言完整重新實作 RADSex 的所有指令集，採用串流式記憶體管理取代先前需載入整張百萬列標記表的做法，大幅降低記憶體使用量。rsx 同時引入貝葉斯後驗統計輸出，並提供原生 Python 與 C 整合介面，使下游分析管線更靈活。這套工具針對非模式生物（即基因組未被充分研究的物種）的性別連鎖標記發現工作流程進行端對端最佳化。",
+        "en": "rsx is a complete Rust reimplementation of the RADSex command set, replacing memory-intensive bulk table loading with a streaming approach that handles millions of RAD-tag marker rows without exhausting RAM. It introduces Bayesian posterior statistics alongside frequentist outputs and exposes native Python and C bindings for flexible pipeline integration. The toolkit is end-to-end optimized for sex-linked marker discovery in non-model organisms.",
+        "zh-CN": "本论文提出 rsx，以 Rust 语言完整重新实现 RADSex 的所有指令集，采用流式内存管理取代原先需要载入整张百万行标记表的方式，大幅降低内存占用。rsx 同时引入贝叶斯后验统计输出，并提供原生 Python 与 C 集成接口，使下游分析流程更加灵活。该工具针对非模式生物（即基因组尚未被充分研究的物种）的性别连锁标记发现工作流程进行了端到端优化。",
+        "ja": "rsx は RADSex のコマンドセット全体を Rust で再実装したもので、数百万行に及ぶ RAD タグマーカーテーブルをメモリに丸ごと読み込む従来方式をストリーミング処理に置き換え、メモリ使用量を大幅に削減します。頻度論的検定に加えてベイズ事後統計を出力し、Python・C へのネイティブバインディングも提供することで下流パイプラインとの統合を容易にします。非モデル生物における性連鎖マーカー探索ワークフロー全体を最適化したツールキットです。",
+        "ko": "rsx는 RADSex 명령어 세트 전체를 Rust로 재구현한 도구로, 수백만 행의 RAD 태그 마커 테이블을 통째로 메모리에 올리던 방식을 스트리밍 처리로 대체해 메모리 사용량을 획기적으로 줄였습니다. 빈도론적 검정 외에도 베이즈 사후 통계를 제공하며, Python 및 C 네이티브 바인딩을 통해 하위 분석 파이프라인과의 통합을 지원합니다. 비모델 생물의 성 연관 마커 발견 워크플로 전체를 최적화한 툴킷입니다."
       },
       "plain": {
-        "zh-TW": "想像你的免疫系統裡有一支特種部隊叫T細胞，它們專門負責追殺癌細胞這些壞蛋，而每個T細胞裡都有個叫「粒線體」的發電廠提供作戰能量。科學家用超精密的單細胞偵測技術發現，癌細胞其實很狡猾，它們會偷偷動手腳，重新設定T細胞發電廠的運作程式，讓這些本該精力充沛的戰士變得有氣無力、疲憊不堪。就像你手機被偷偷安裝了吃電怪獸程式，明明電池還有電卻跑得超慢一樣，T細胞也因為粒線體被「駭」了，就算想攻擊癌細胞也使不上力。這項研究之所以重要，是因為如果我們能找出癌細胞到底動了哪些手腳、改了哪些設定，未來就有機會開發新的免疫療法，幫T細胞的發電廠「重灌系統」，讓它們恢復戰力。簡單說，這就是在破解癌細胞的詐騙手法，讓我們的免疫大軍不再被耍得團團轉，對提升癌症治療效果可能有關鍵性的突破。",
-        "en": "Imagine your immune system's T cells as elite soldiers protecting your body from cancer, and their mitochondria are like the power generators keeping them battle-ready. This groundbreaking research discovered that cancer cells are essentially sabotaging these power generators, causing the T cells to become so exhausted they can barely function—like trying to fight a war with dying batteries. Using incredibly sensitive technology that can peek inside individual cells, scientists mapped out exactly how this energy crisis unfolds at the protein level, revealing a sophisticated \"reprogramming\" process that tumors exploit to slip past our defenses. Think of it like this: if you've ever felt completely drained after a bad night's sleep, that's somewhat how these T cells feel when their mitochondria get messed with, except they're supposed to be killing cancer cells. This matters because if we understand exactly which proteins are being hijacked during this metabolic sabotage, we could potentially develop drugs to restore the T cells' energy and fighting spirit. The research essentially provides a detailed instruction manual showing how cancer pulls off this immune escape trick, which could be the key to designing better immunotherapies that keep our cellular soldiers energized and effective against tumors.",
-        "zh-CN": "想象你的免疫T细胞是身体里的特种部队，而线粒体就是它们的\"能量发电厂\"——没电的士兵当然打不了仗。这项研究用超级灵敏的显微镜（单细胞质谱技术）观察发现，狡猾的癌细胞会偷偷破坏T细胞发电厂的线路，让这些原本勇猛的免疫战士变得疲惫不堪、有气无力。就像你连续熬夜加班后整个人累瘫，想做事却有心无力，T细胞也是这样——它们明明看到癌细胞在眼前，却因为\"电力不足\"根本提不起劲去攻击。更关键的是，研究团队把这整套\"电厂被破坏\"的详细过程都绘制成了一张精密地图，清楚标出哪些蛋白质零件出了问题。这个发现超重要，因为如果我们能找到方法帮T细胞的发电厂\"修复供电\"，就等于给免疫士兵重新充满电，让它们恢复战斗力去消灭癌细胞——这可能为未来的癌症免疫治疗打开全新的突破口，不再只是训练士兵怎么打仗，而是确保他们有足够的体力上战场。",
-        "ja": "想像一下，你的免疫T細胞就像身體裡的特種部隊，而粒線體就是它們背包裡的行動電源。這項研究發現，狡猾的癌細胞會偷偷動手腳，把這些特種部隊的電源搞壞，讓原本生龍活虎的戰士變得有氣無力，根本無法執行「消滅敵人」的任務。科學家用超級靈敏的單細胞質譜技術，就像用顯微鏡加放大鏡去看每一個T細胞的「電源管理系統」哪裡出了問題，甚至畫出整張「癌細胞的作弊手冊」。這為什麼重要？因為如果我們知道癌細胞怎麼讓免疫系統「累到罷工」，就能開發新藥幫T細胞「充電」或「換電池」，讓它們重新振作起來打擊癌症。比方說，未來可能有藥物專門修復這些被搞壞的粒線體，讓免疫治療對更多癌症病人有效，而不是像現在只對少數人管用。",
-        "ko": "想像你的免疫T細胞是一支守衛身體的特種部隊，而粒線體就是為這些士兵供電的「行動電源」。最新研究發現，狡猾的癌細胞竟然會偷偷動手腳，把T細胞的行動電源重新設定成「省電模式」，讓原本應該勇猛作戰的免疫戰士變得有氣無力，根本無法消滅腫瘤。科學家用超級靈敏的單細胞技術，就像給每個士兵做健康檢查一樣，精確測量出這些「累垮的」T細胞內部到底發生了什麼蛋白質變化。這項發現太重要了，因為它解釋了為什麼有些癌症患者的免疫治療效果不好——不是免疫細胞不想打仗，而是它們的「電力系統」被癌細胞搞壞了！未來如果我們能找到方法幫T細胞的粒線體「充飽電」或「重開機」，就可能讓免疫治療對更多病人有效，這就像是幫疲憊的戰士換上全新電池，重新投入抗癌戰場。"
+        "zh-TW": "想像你要在一座巨大圖書館裡，從幾百萬本書中找出哪些書「只放在男生閱覽室、不放在女生閱覽室」——這就是科學家想從基因數據裡找出性別相關基因標記時面對的挑戰。過去的工具 RADSex 就像要把所有書先搬進一間小倉庫再慢慢翻找，電腦記憶體很快就爆滿了。rsx 則像一條輸送帶，書一本一本流過你面前，你邊看邊記錄，根本不需要大倉庫。更重要的是，舊工具只告訴你「這本書可能是男生專屬」，rsx 還能告訴你「我有多少把握」，給出類似天氣預報機率的貝葉斯信心值。這對研究魚、蝦、鳥等還沒有完整基因組資料的「非模式生物」性別決定機制特別關鍵，因為這些生物的性別基因往往藏在我們還不認識的地方。用速度更快、記憶體更省的工具，科學家就能分析更多樣本、發現更多物種的性別之謎，進而幫助瀕危物種的保育與水產養殖的品種改良。",
+        "en": "Imagine searching a library of millions of books to find which ones appear only in the men's reading room and never the women's — that is essentially what scientists do when hunting for sex-linked genetic markers in DNA sequencing data. The previous tool, RADSex, worked like hauling every book into a tiny warehouse before searching, quickly overwhelming computer memory. rsx works like a conveyor belt: books pass by one at a time, you note what you see, and no giant warehouse is needed. Crucially, while the old tool simply flagged a marker as potentially male-specific, rsx also tells you how confident it is, delivering a Bayesian probability score akin to a weather forecast. This matters enormously for fish, shrimp, birds, and other non-model organisms whose sex-determining genes are still largely unknown. Faster, leaner analysis means scientists can study more species, unlock conservation strategies for endangered animals, and improve selective breeding in aquaculture.",
+        "zh-CN": "想象你要在一座拥有几百万本书的大图书馆里，找出哪些书「只放在男生阅览室、不放在女生阅览室」——这正是科学家从基因数据中寻找性别相关标记时面临的挑战。旧工具 RADSex 就像把所有书先搬进一间小仓库再慢慢翻找，电脑内存很快就不够用了。rsx 则像一条传送带，书一本一本流过，边看边记录，根本不需要大仓库。更重要的是，旧工具只告诉你「这个标记可能是雄性专属」，rsx 还能给出贝叶斯置信概率，就像天气预报一样告诉你有多大把握。这对鱼、虾、鸟等基因组尚不完整的「非模式生物」的性别决定研究尤为关键。更快、更省内存的工具，让科学家能分析更多样本，揭开更多物种的性别之谜，推动濒危物种保育和水产养殖品种改良。",
+        "ja": "何百万冊もある図書館の中から「男性閲覧室にしか置いていない本」を探す作業——これが、科学者がDNAシーケンスデータから性別に関連する遺伝子マーカーを探すときに直面する課題です。従来のツール RADSex は全ての本を小さな倉庫に運び込んでから調べるようなもので、すぐにコンピュータのメモリが限界を迎えていました。rsx はコンベアベルトのように本を一冊ずつ流しながら記録するため、大きな倉庫が不要です。さらに旧ツールが「このマーカーはオス特異的かもしれない」と伝えるだけだったのに対し、rsx は天気予報のような確率（ベイズ事後確率）も提示します。これはゲノム情報が乏しい魚・エビ・鳥などの「非モデル生物」の性決定メカニズム解明に特に重要で、絶滅危惧種の保全や養殖品種改良にもつながります。",
+        "ko": "수백만 권의 책이 있는 도서관에서 「남성 열람실에만 있고 여성 열람실에는 없는 책」을 찾아내는 작업 — 이것이 과학자들이 DNA 시퀀싱 데이터에서 성별 관련 유전자 마커를 찾을 때 직면하는 도전입니다. 기존 도구 RADSex는 모든 책을 작은 창고에 먼저 옮긴 뒤 뒤지는 방식이라 컴퓨터 메모리가 금세 바닥났습니다. rsx는 컨베이어 벨트처럼 책을 한 권씩 흘려보내며 기록하므로 큰 창고가 필요 없습니다. 더 중요한 것은, 기존 도구가 「이 마커는 수컷 전용일 수 있다」고만 알려줬다면, rsx는 일기예보처럼 베이즈 사후 확률로 신뢰도까지 제시합니다. 이는 유전체 정보가 부족한 어류·갑각류·조류 등 「비모델 생물」의 성 결정 메커니즘 연구에 특히 중요하며, 멸종위기종 보전과 양식업 품종 개량에도 기여할 수 있습니다."
       },
       "insight": {
-        "zh-TW": "💡 粒線體重程式化是免疫療法抗性的核心機制，靶向此路徑可望重振衰老T細胞的戰力。",
-        "en": "💡 Mitochondrial reprogramming is central to immunotherapy resistance, and targeting it may revive exhausted T cells.",
-        "zh-CN": "💡 线粒体重编程是免疫疗法耐药的核心机制，靶向此通路有望重振衰竭T细胞的战力。",
-        "ja": "💡 ミトコンドリア再プログラムが免疫療法耐性の中核であり、標的化により疲弊T細胞を復活できる可能性がある。",
-        "ko": "💡 미토콘드리아 재프로그래밍이 면역치료 내성의 핵심이며, 이를 표적화하면 소진 T세포를 되살릴 수 있다."
+        "zh-TW": "💡 當資料規模超越記憶體極限，真正的突破不是換更大的硬體，而是重新設計「資料流動的方式」——rsx 用串流思維解決的，是一個被工具慣例掩蓋已久的架構問題。",
+        "en": "💡 When data outgrows memory, the real breakthrough is not bigger hardware but redesigning how data flows — rsx shows that rethinking the pipeline architecture can unlock analyses that brute-force scaling never could.",
+        "zh-CN": "💡 当数据规模超越内存极限，真正的突破不是换更大的硬件，而是重新设计「数据流动的方式」——rsx 用流式思维解决的，是一个被工具惯例掩盖已久的架构问题。",
+        "ja": "💡 データがメモリの限界を超えたとき、真の突破口はより大きなハードウェアではなく「データの流れ方」の再設計にある——rsx はストリーミング思想で、従来のツールが慣習的に隠し続けてきたアーキテクチャ上の問題を解決した。",
+        "ko": "💡 데이터가 메모리 한계를 넘어설 때, 진정한 돌파구는 더 큰 하드웨어가 아니라 「데이터 흐름 방식」의 재설계에 있다 — rsx는 스트리밍 사고방식으로 기존 도구의 관행이 오랫동안 가려온 아키텍처 문제를 해결했다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<circle cx=\"260\" cy=\"80\" r=\"45\" fill=\"#e53e3e\" opacity=\"0.85\"/>\n<circle cx=\"260\" cy=\"80\" r=\"32\" fill=\"#fc8181\" opacity=\"0.6\"/>\n<circle cx=\"260\" cy=\"80\" r=\"18\" fill=\"#e53e3e\" opacity=\"0.9\"/>\n<ellipse cx=\"80\" cy=\"80\" r=\"38\" ry=\"28\" fill=\"#48bb78\" opacity=\"0.9\"/>\n<ellipse cx=\"80\" cy=\"80\" r=\"24\" ry=\"16\" fill=\"#276749\" opacity=\"0.7\"/>\n<path d=\"M68 74 Q80 65 92 74 Q80 83 68 74Z\" fill=\"#9ae6b4\" opacity=\"0.9\"/>\n<ellipse cx=\"80\" cy=\"115\" r=\"14\" ry=\"8\" fill=\"#48bb78\" opacity=\"0.5\" stroke=\"#276749\" stroke-width=\"1.5\"/>\n<path d=\"M74 112 Q80 106 86 112 Q80 118 74 112Z\" fill=\"#9ae6b4\" opacity=\"0.6\"/>\n<line x1=\"130\" y1=\"80\" x2=\"205\" y2=\"80\" stroke=\"#e53e3e\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\"/>\n<polygon points=\"205,75 215,80 205,85\" fill=\"#e53e3e\"/>\n<circle cx=\"80\" cy=\"115\" r=\"4\" fill=\"#276749\" opacity=\"0.8\"/>\n<path d=\"M60,108 Q50,100 55,90 Q65,82 75,88\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<rect x=\"10\" y=\"40\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"30\" y=\"44\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"50\" y=\"38\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"70\" y=\"42\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"90\" y=\"36\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"10\" y=\"80\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"30\" y=\"84\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"50\" y=\"78\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"70\" y=\"82\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"90\" y=\"76\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<line x1=\"120\" y1=\"80\" x2=\"160\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<polygon points=\"155,72 170,80 155,88\" fill=\"#48bb78\"/>\n<circle cx=\"200\" cy=\"52\" r=\"22\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"3\"/>\n<line x1=\"215\" y1=\"67\" x2=\"225\" y2=\"77\" stroke=\"#4299e1\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"3\"/>\n<line x1=\"268\" y1=\"80\" x2=\"292\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"280\" y1=\"68\" x2=\"280\" y2=\"92\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#48bb78\"/>\n<rect x=\"240\" y=\"118\" width=\"80\" height=\"8\" rx=\"4\" fill=\"#48bb7855\"/>\n<rect x=\"250\" y=\"128\" width=\"60\" height=\"6\" rx=\"3\" fill=\"#48bb7833\"/>\n</svg>"
     },
     {
       "id": "phys-260608",
       "domain": "phys",
       "day": "2026-06-08",
-      "author": "Nakamura et al. 2026",
-      "ref": "arXiv:2606.04102",
-      "url": "",
+      "author": "Rakesh Arul, Piper Fowler-Wright et al.",
+      "ref": "arXiv:2606.06490v1",
+      "url": "https://arxiv.org/abs/2606.06490v1",
       "color": "#ed8936",
       "title": {
-        "zh-TW": "室溫氫鍵鐵電體中量子順電相變的臨界慢化直接觀測",
-        "en": "Direct Observation of Critical Slowing Down at a Quantum Paraelectric Phase Transition in Hydrogen-Bonded Ferroelectrics at Room Temperature",
-        "zh-CN": "室温氢键铁电体中量子顺电相变的临界慢化直接观测",
-        "ja": "室温水素結合強誘電体における量子常誘電相転移の臨界スローイングダウンの直接観測",
-        "ko": "수소결합 강유전체의 실온 양자 상전이에서 임계 느려짐 현상 직접 관측"
+        "zh-TW": "室溫下奈米腔薄片中的同調偶極同步態：不需要雷射也能讓光子「齊步走」",
+        "en": "Room-Temperature Dipole Synchronization in Nanocavity Sheets: Getting Photons in Step Without a Laser",
+        "zh-CN": "室温下纳米腔薄片中的相干偶极同步态：无需激光也能让光子「齐步走」",
+        "ja": "ナノキャビティシートにおける室温コヒーレント双極子同期：レーザー不要で光子を「足並みそろえる」",
+        "ko": "나노공동 시트에서의 실온 쌍극자 동기화：레이저 없이도 광자를 「일제히 맞추는」 새로운 상태"
       },
       "tag": {
-        "zh-TW": "⚛️ 物理",
-        "en": "⚛️ Physics",
-        "zh-CN": "⚛️ 物理",
-        "ja": "⚛️ 物理",
-        "ko": "⚛️ 물리"
+        "zh-TW": "⚛️ 奈米光學／量子同調",
+        "en": "⚛️ Nano-Optics / Quantum Coherence",
+        "zh-CN": "⚛️ 纳米光学／量子相干",
+        "ja": "⚛️ ナノ光学／量子コヒーレンス",
+        "ko": "⚛️ 나노광학 / 양자 결맞음"
       },
       "tech": {
-        "zh-TW": "以超快太赫茲泵浦探測光譜在室溫下捕捉氫鍵鐵電體接近量子臨界點時軟模頻率歸零的臨界慢化動力學。",
-        "en": "Ultrafast THz pump-probe spectroscopy captures soft-mode frequency softening at room-temperature quantum criticality in hydrogen-bonded ferroelectrics.",
-        "zh-CN": "以超快太赫兹泵浦探测光谱在室温下捕捉氢键铁电体接近量子临界点时软模频率归零的临界慢化动力学。",
-        "ja": "超高速THz ポンプ・プローブ分光法で室温における水素結合強誘電体の量子臨界点近傍のソフトモード消失を観測する。",
-        "ko": "초고속 THz 펌프-프로브 분광법으로 실온 수소결합 강유전체의 양자 임계점 근방 소프트모드 소멸을 관측한다."
+        "zh-TW": "研究團隊在二維排列的電漿子奈米間隙陣列（間隙寬度小於1奈米）中，以非共振連續波雷射激發，於室溫下觀測到多個空間上相互遠離的發光偶極子形成同步相干態。此系統展現跨偶極的空間相干性，但因快速輻射與非輻射耗散，光子時間相干性受到抑制，其物理機制有別於雷射、光子玻色–愛因斯坦凝聚及激子–極化子凝聚。",
+        "en": "The team fabricated 2D plasmonic nanogap arrays with sub-nm gaps and drove them with non-resonant continuous-wave pumping at room temperature, observing a synchronized coherent state among spatially separated emissive dipoles. The system shows spatial coherence across dipoles but suppressed temporal photon coherence due to rapid radiative and non-radiative decay, distinguishing it from lasers, photonic BECs, and exciton-polariton condensates.",
+        "zh-CN": "研究团队在亚纳米间隙的二维等离子体纳米间隙阵列中，以非共振连续波激光激发，于室温下观测到空间上相互远离的发光偶极子形成同步相干态。该系统展现出跨偶极的空间相干性，但由于快速辐射与非辐射耗散，光子时间相干性受到抑制，其物理机制有别于激光、光子玻色–爱因斯坦凝聚及激子–极化子凝聚。",
+        "ja": "研究チームはサブナノメートルのギャップを持つ2次元プラズモニックナノギャップアレイを作製し、非共鳴連続波励起によって室温で空間的に離れた発光双極子間の同期コヒーレント状態を観測した。このシステムは双極子間の空間コヒーレンスを示す一方、急速な輻射・非輻射緩和により時間的光子コヒーレンスは抑制され、レーザーや光子BEC、励起子ポラリトン凝縮とは異なる物理機構を持つ。",
+        "ko": "연구팀은 1나노미터 이하의 간격을 가진 2차원 플라즈몬 나노갭 배열에서 비공명 연속파 펌핑을 이용해 실온에서 공간적으로 떨어진 발광 쌍극자들이 동기화된 결맞음 상태를 형성함을 관측했다. 이 시스템은 쌍극자 간 공간 결맞음을 보이지만, 빠른 복사 및 비복사 감쇠로 인해 광자의 시간 결맞음은 억제되어 레이저, 광자 BEC, 엑시톤-폴라리톤 응축과는 구별되는 새로운 물리 현상이다."
       },
       "plain": {
-        "zh-TW": "想像你在看一部慢動作影片，原本快速旋轉的陀螺逐漸慢下來、慢下來，最後在倒下的前一刻幾乎靜止——科學家現在就是捕捉到了材料裡原子「慢動作翻轉」的這個神奇瞬間。過去這種量子世界的「臨界慢化」現象就像北極熊，只能在接近絕對零度的極寒環境才看得到，但這次研究團隊居然在室溫下（就是你現在坐著的溫度！）用超快雷射「拍」到了這個過程。這就好比你原本以為極光只能在冰島看到，結果有一天在台北街頭就出現了，完全顛覆常識。為什麼這很重要？因為如果我們能在室溫下控制這種量子相變，未來的電腦記憶體、感測器或通訊設備就不需要笨重的冷卻系統，你的手機可能變得更快、更省電，甚至出現全新的量子科技應用。舉例來說，這種材料的特性改變就像開關一樣靈敏，可以用來製造反應超快的開關元件，或是能在瞬間儲存大量資訊的新型記憶體。這項發現等於幫科學家打開了一扇門，讓「量子科技」從實驗室的深度冷凍庫走進日常生活的可能性大增。",
-        "en": "Imagine a swing that's slowing down—normally it swings fast, then gradually slower until it stops. Now picture that same swing mysteriously \"freezing\" mid-air at room temperature, doing something physicists thought could only happen in the deep freeze of near absolute zero. That's essentially what researchers caught happening in a special crystal material using ultra-fast laser pulses that can peek at molecular movements trillionths of a second at a time. What they saw was the material's atoms getting ready to completely reorganize themselves (like dominoes about to fall), but instead of tumbling quickly, everything slowed to an eerie crawl—a phenomenon called \"critical slowing down\" that signals a quantum phase transition. This matters because most quantum weirdness evaporates at everyday temperatures, yet here's a case where quantum effects survive in your living room instead of requiring expensive cooling equipment. Think of it like finding an ice cube that refuses to melt on a hot summer day—it breaks our usual rules about when quantum physics gets to play. This discovery could open doors to room-temperature quantum technologies, from ultra-sensitive sensors to new types of electronics that harness these frozen-in-time quantum states without needing to chill them to Antarctic extremes.",
-        "zh-CN": "想象一下，你在推秋千，刚开始推得很快，秋千摆动得很利落，但如果你逐渐减慢推动的频率，秋千的摆动会变得越来越\"懒洋洋\"，最后几乎停在半空中——这就是科学家在这个研究中观察到的\"临界慢化\"现象。他们用超快的太赫兹光（比你家Wi-Fi频率还高几千倍的光波）去\"戳\"一种特殊的氢键材料，发现当这种材料接近从一个状态变到另一个状态的临界点时，它内部的振动模式就像那个秋千一样，频率会降到几乎为零，整个系统仿佛被按下了慢动作键。更酷的是，这种量子层面的\"慢动作\"以前只能在接近绝对零度（零下273度！）的极端低温下才能看到，现在他们却在舒适的室温下就捕捉到了。这个发现就像在常温下看到了量子世界的\"慢镜头回放\"，不仅帮助我们理解材料在相变时的微观行为，未来还可能用来设计新型的传感器或存储设备——比如让你的手机在室温下就能利用这种量子效应，实现更快速、更节能的数据处理。简单说，科学家找到了一个在日常温度下窥探量子世界慢动作的新窗口，这就像原本需要去南极才能看到的极光，现在在你家后院就能欣赏了。",
-        "ja": "想像你在看一部慢動作影片，但這次慢下來的不是球員的動作，而是原子本身的「舞步」！科學家們用超快速的光脈衝當作攝影機，在室溫下拍到了一個神奇瞬間：當某種材料準備要「變身」（從一種狀態轉換到另一種狀態）時，裡面的原子彷彿被按下了慢速播放鍵，越來越慢、越來越慢，最後幾乎要「凍結」了。這種現象叫做「臨界慢化」，過去科學家只在接近絕對零度（比冰箱冷一千倍！）的極端環境才看得到，但現在居然在你我身邊的室溫就能觀測到。這就像原本需要去南極才能看到的極光，突然在你家陽台就能欣賞一樣驚人。這個發現不只讓我們更了解量子世界的奇妙，未來還可能幫助開發出在常溫下運作的新型電子元件，或是更靈敏的感測器，讓你的手機、電腦變得更聰明又省電。最酷的是，科學家用的「太赫茲光」就像給物質拍攝超高速慢動作影片的專業相機，讓我們第一次看清這些原子「慢舞」的每個細節！",
-        "ko": "想像一下，你在推鞦韆，如果推的時機剛剛好配合鞦韆的節奏，它就會越盪越高——這就像材料內部原子的振動頻率。科學家發現了一種神奇的現象：當某些特殊材料準備要「變身」（從一種狀態變成另一種狀態）時，它內部原子的振動會越來越慢，就像鞦韆逐漸失去動力，最後幾乎要停下來，這個過程叫做「臨界慢化」。更驚人的是，這種現象過去只有在接近絕對零度（零下273度！）的極端低溫環境才能觀察到，但研究團隊居然在一般室溫下就捕捉到了這個瞬間！他們使用超快速的太赫茲光波當作「高速攝影機」，拍下了材料在量子世界裡準備「凍結」變身的那一剎那。這項突破不僅讓我們能在日常溫度下研究量子現象，未來可能應用在超快速記憶體或量子電腦上，因為這些材料的狀態轉換速度極快且可控。簡單說，科學家找到了在常溫下觀察「量子慢動作」的方法，這就像原本需要到南極才能看到的極光，現在在你家客廳就能欣賞了！"
+        "zh-TW": "想像一個大型合唱團：每位歌手都在不同角落，卻能在沒有指揮的情況下自動唱出完全一致的旋律——這正是這篇論文發現的現象。科學家在一張薄薄的奈米材料片上，佈滿了間距不到1奈米（約原子直徑）的微小金屬縫隙，這些縫隙能把光線「夾住」，形成超強的電磁場。當用普通的連續雷射光照射後，縫隙中被激發的微小電偶極子（想成一個個微型天線）竟然自發地「同步起來」，像合唱一樣整齊地振動，儘管彼此相距很遠。更神奇的是，這種同步不像雷射那樣會產生整齊的光束，而是一種全新的量子集體狀態——空間上相干，但時間上故意「亂」。這項發現在室溫下就能達成，不需要極低溫，大幅降低實驗門檻。未來，這種奈米同步態可能用於超靈敏感測器、奈米尺度光源控制，或量子資訊元件的新材料基礎。它告訴我們，量子同調現象並非只能躲在超低溫實驗室裡——常溫的世界也能讓量子「唱出和聲」。",
+        "en": "Imagine a huge choir where every singer, scattered across a building, spontaneously sings in perfect unison with no conductor — that is essentially what this paper found at the nanoscale. Scientists created a thin sheet covered with tiny metal slits narrower than an atom, which trap light so tightly that the electromagnetic field becomes enormous. When illuminated with ordinary laser light, tiny electric dipoles inside the slits — think of them as miniature antennas — spontaneously lock into the same rhythm, vibrating together even though they are far apart. Remarkably, unlike a laser, this synchronized state does not produce a neat beam of light; instead, it is a brand-new quantum collective state that is orderly in space but intentionally disordered in time. Best of all, it works at room temperature, no exotic cooling required. This discovery could lead to ultrasensitive sensors, nanoscale light sources, and new building blocks for quantum devices, proving that quantum coherence can thrive in everyday conditions.",
+        "zh-CN": "想象一个大型合唱团：每位歌手分散在各个角落，却能在没有指挥的情况下自动唱出完全一致的旋律——这正是这篇论文在纳米尺度上发现的现象。科学家在一张薄薄的纳米材料片上，布满了间距不到1纳米（约原子直径）的微小金属缝隙，这些缝隙能把光线「夹住」，形成超强电磁场。当用普通连续激光照射后，缝隙中被激发的微小电偶极子（想成一个个微型天线）竟然自发地「同步起来」，像合唱一样整齐振动，尽管彼此相距很远。更神奇的是，这种同步不像激光那样产生整齐光束，而是一种全新的量子集体态——空间上相干，时间上却故意「乱」。这项发现在室温下即可实现，无需超低温，大幅降低了实验门槛，未来有望用于超灵敏传感器、纳米光源控制和量子信息器件。",
+        "ja": "巨大な合唱団を想像してみてください。歌手たちは建物中に散らばっているのに、指揮者なしで自然に完璧なユニゾンを歌い出す——この論文がナノスケールで発見したのはまさにそのような現象です。研究者たちは、原子1個分にも満たない隙間を持つ金属スリットが敷き詰められた超薄シートを作製しました。このスリットは光を強力に閉じ込め、巨大な電磁場を生み出します。普通の連続波レーザーで照射すると、スリット内の微小な電気双極子（小型アンテナだと思ってください）が、互いに遠く離れているにもかかわらず、自発的に同じリズムで振動を始めました。さらに驚くべきことに、これはレーザーのような整った光を出すわけではなく、空間的には秩序があるが時間的にはあえて「乱れている」まったく新しい量子集団状態です。室温で実現できるため、超高感度センサーや量子デバイスへの応用が期待されます。",
+        "ko": "거대한 합창단을 상상해 보세요. 단원들이 건물 곳곳에 흩어져 있는데도 지휘자 없이 저절로 완벽한 화음을 맞추는 것처럼, 이 논문은 나노 세계에서 바로 그런 현상을 발견했습니다. 연구팀은 원자 하나 폭보다도 좁은 금속 틈새가 가득한 얇은 나노 시트를 만들었고, 이 틈새는 빛을 극도로 강하게 가두어 초강력 전자기장을 만듭니다. 평범한 연속파 레이저를 쏘자, 틈새 속의 작은 전기 쌍극자들(미니 안테나라고 생각하세요)이 서로 멀리 떨어져 있음에도 저절로 같은 리듬으로 진동하기 시작했습니다. 놀랍게도 이 동기화는 레이저처럼 깔끔한 빛줄기를 만들지 않고, 공간적으로는 질서 있지만 시간적으로는 의도적으로 「흐트러진」 전혀 새로운 양자 집단 상태입니다. 실온에서 구현되므로 초정밀 센서, 나노 광원, 양자 소자의 새로운 재료 기반으로 활용될 가능성이 큽니다."
       },
       "insight": {
-        "zh-TW": "💡 室溫量子臨界性的發現打開了在常規條件下操控量子相變的大門，有望革新鐵電記憶體技術。",
-        "en": "💡 Room-temperature quantum criticality opens the door to controlling quantum phase transitions under ambient conditions, potentially revolutionizing ferroelectric memory.",
-        "zh-CN": "💡 室温量子临界性的发现打开了在常规条件下操控量子相变的大门，有望革新铁电存储器技术。",
-        "ja": "💡 室温での量子臨界性の発見は、通常条件下での量子相転移制御への扉を開き、強誘電メモリ技術に革命をもたらす可能性がある。",
-        "ko": "💡 실온 양자 임계성 발견은 일반 조건에서 양자 상전이를 제어하는 문을 열어 강유전 메모리 기술을 혁신할 가능성이 있다."
+        "zh-TW": "💡 量子同調不再是低溫實驗室的專利——奈米間隙中的強近場耦合，讓室溫下的集體量子有序態成為可能，這或許意味著量子技術的應用門檻將大幅降低。",
+        "en": "💡 Quantum coherence is no longer confined to ultra-cold labs — strong near-field coupling in sub-nm gaps can sustain collective quantum order at room temperature, potentially slashing the barriers to practical quantum technologies.",
+        "zh-CN": "💡 量子相干不再是超低温实验室的专利——亚纳米间隙中的强近场耦合，使室温下的集体量子有序态成为可能，这或许意味着量子技术的应用门槛将大幅降低。",
+        "ja": "💡 量子コヒーレンスはもはや極低温実験室の専売特許ではない——サブナノメートルギャップの強近接場結合が室温での集団量子秩序を可能にし、量子技術の実用化ハードルを大きく下げる可能性がある。",
+        "ko": "💡 양자 결맞음은 더 이상 극저온 실험실의 전유물이 아니다——1나노미터 이하 간격의 강한 근접장 결합이 실온에서도 집단 양자 질서를 가능하게 하며, 이는 양자 기술의 실용화 문턱을 크게 낮출 수 있음을 시사한다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"10\" y=\"70\" width=\"320\" height=\"3\" fill=\"#ed8936\" opacity=\"0.3\"/>\n<circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"60\" cy=\"80\" r=\"7\" fill=\"#ed8936\"/>\n<circle cx=\"130\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"130\" cy=\"80\" r=\"7\" fill=\"#ed8936\"/>\n<circle cx=\"200\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2.5\"/>\n<circle cx=\"200\" cy=\"80\" r=\"10\" fill=\"#ed8936\" opacity=\"0.6\"/>\n<circle cx=\"270\" cy=\"80\" r=\"22\" fill=\"#ed8936\" opacity=\"0.85\"/>\n<line x1=\"60\" y1=\"62\" x2=\"60\" y2=\"50\" stroke=\"#4a90d9\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<line x1=\"130\" y1=\"62\" x2=\"130\" y2=\"50\" stroke=\"#4a90d9\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<line x1=\"200\" y1=\"62\" x2=\"200\" y2=\"44\" stroke=\"#4a90d9\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<path d=\"M240,30 Q270,15 300,30\" fill=\"none\" stroke=\"#4a90d9\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"30\" y=\"70\" width=\"280\" height=\"20\" rx=\"4\" fill=\"#ed8936\" opacity=\"0.3\"/>\n<circle cx=\"80\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"130\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"180\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"230\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"280\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<path d=\"M80,60 Q105,35 130,60 Q155,35 180,60 Q205,35 230,60 Q255,35 280,60\" stroke=\"#4299e1\" stroke-width=\"2.5\" fill=\"none\"/>\n<path d=\"M80,100 Q105,125 130,100 Q155,125 180,100 Q205,125 230,100 Q255,125 280,100\" stroke=\"#4299e1\" stroke-width=\"2.5\" fill=\"none\"/>\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"110\" stroke=\"#ed8936\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/>\n<line x1=\"180\" y1=\"50\" x2=\"180\" y2=\"110\" stroke=\"#ed8936\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/>\n<line x1=\"280\" y1=\"50\" x2=\"280\" y2=\"110\" stroke=\"#ed8936\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/>\n<polygon points=\"170,15 180,30 190,15\" fill=\"#4299e1\" opacity=\"0.8\"/>\n</svg>"
     },
     {
       "id": "neuro-260608",
       "domain": "neuro",
       "day": "2026-06-08",
-      "author": "Kosciessa et al. 2026",
-      "ref": "arXiv:2606.03421",
-      "url": "",
+      "author": "Shuqin Ma, Ryota Kanai et al.",
+      "ref": "arXiv:2606.06424v1",
+      "url": "https://arxiv.org/abs/2606.06424v1",
       "color": "#9f7aea",
       "title": {
-        "zh-TW": "前額葉皮質「節律耦合」動態調控工作記憶容量上限的神經機制",
-        "en": "Rhythmic Coupling in Prefrontal Cortex Dynamically Gates Working Memory Capacity",
-        "zh-CN": "前额叶皮质节律耦合动态调控工作记忆容量上限的神经机制",
-        "ja": "前頭前皮質のリズム結合がワーキングメモリ容量を動的に制御する神経機構",
-        "ko": "전두엽 피질 리듬 결합이 작업 기억 용량 상한을 동적으로 조절하는 신경 메커니즘"
+        "zh-TW": "意識不是貼標籤：大腦的計算結構必須從內部自發形成才能產生主觀體驗",
+        "en": "Consciousness From Within: Why Intrinsic Computational Structure Matters for the Mind",
+        "zh-CN": "意识不是贴标签：大脑的计算结构必须从内部自发形成才能产生主观体验",
+        "ja": "意識は「外から貼るラベル」ではない：内在的な計算構造だけが心を生む",
+        "ko": "의식은 외부 딱지가 아니다: 내재적 계산 구조만이 주관적 경험을 만든다"
       },
       "tag": {
-        "zh-TW": "🧠 神經科學",
-        "en": "🧠 Neuroscience",
-        "zh-CN": "🧠 神经科学",
-        "ja": "🧠 神経科学",
-        "ko": "🧠 신경과학"
+        "zh-TW": "🧠 意識科學／計算哲學",
+        "en": "🧠 Consciousness Science / Philosophy of Computation",
+        "zh-CN": "🧠 意识科学／计算哲学",
+        "ja": "🧠 意識科学／計算哲学",
+        "ko": "🧠 의식 과학 / 계산 철학"
       },
       "tech": {
-        "zh-TW": "研究利用高密度EEG與層解析fMRI，追蹤前額葉θ-γ跨頻耦合強度與工作記憶負荷的即時關係。",
-        "en": "High-density EEG and laminar fMRI tracked prefrontal theta-gamma cross-frequency coupling as working memory load varied in real time.",
-        "zh-CN": "利用高密度EEG与层解析fMRI，追踪前额叶θ-γ跨频耦合强度与工作记忆负荷的实时关系。",
-        "ja": "高密度EEGと層分解fMRIで前頭前野θ-γ結合とワーキングメモリ負荷の関係をリアルタイム追跡した。",
-        "ko": "고밀도 EEG와 층 분해 fMRI로 전두엽 θ-γ교차주파수 결합과 작업 기억 부하의 실시간 관계를 추적했다."
+        "zh-TW": "本文提出「內在計算功能主義」框架，以兩項操作標準區分真正由系統物理結構自身實現的計算組織（觀察者獨立）與僅由外部詮釋者賦予的計算標籤（觀察者相對）。標準C1要求相關屬性可在不訴諸外部觀察者的情況下被明確規定；標準C2要求因果結構必須在系統的物理基底中真實實現。此框架旨在為意識的計算理論提供一個抵抗「多重可實現性反駁」的形而上學基礎。",
+        "en": "This paper proposes an intrinsic computational functionalism framework, operationalised by two criteria that distinguish genuinely system-intrinsic computational organisation (observer-independent) from externally imposed interpretations (observer-relative). Criterion C1 requires that the relevant property be specifiable without appealing to an external observer; Criterion C2 requires that the causal structure be physically realised in the system's substrate. The framework aims to provide a metaphysical foundation for computational theories of consciousness that resists the multiple-realisability objection.",
+        "zh-CN": "本文提出「内在计算功能主义」框架，以两项操作标准区分真正由系统物理结构自身实现的计算组织（观察者独立）与仅由外部诠释者赋予的计算标签（观察者相对）。标准C1要求相关属性可在不诉诸外部观察者的情况下被明确规定；标准C2要求因果结构必须在系统的物理基底中真实实现。该框架旨在为意识的计算理论提供抵抗「多重可实现性反驳」的形而上学基础。",
+        "ja": "本論文は「内在的計算機能主義」のフレームワークを提案し、システム自身の物理構造から真に実現された計算組織（観察者独立）と外部の解釈者が付与した計算ラベル（観察者相対）を区別する二つの操作基準を示す。基準C1は関連属性が外部観察者に依存せず規定できることを要求し、基準C2は因果構造がシステムの物理基盤に実際に実現されていることを要求する。",
+        "ko": "이 논문은 '내재적 계산 기능주의' 프레임워크를 제안하며, 시스템 자체의 물리 구조에서 실현된 계산 조직(관찰자 독립)과 외부 해석자가 부여한 계산 레이블(관찰자 상대)을 구분하는 두 가지 운용 기준을 제시한다. 기준 C1은 관련 속성이 외부 관찰자 없이 명시될 수 있어야 함을, 기준 C2는 인과 구조가 시스템의 물리적 기반에서 실제로 구현되어야 함을 요구한다."
       },
       "plain": {
-        "zh-TW": "想像你的大腦像一個超級繁忙的指揮家，同時要協調交響樂團裡不同樂器的演奏節奏。這個研究發現，當你試著記住一串電話號碼或購物清單時，你的前額葉會用兩種不同速度的「腦波節拍」來合作：一個慢節拍（θ波）負責規劃「什麼時候該記」，一個快節拍（γ波）負責處理「記什麼內容」，就像鼓手打拍子、小提琴手快速演奏旋律一樣，兩者必須完美配合。研究團隊用超精密的腦波偵測器和腦部掃描，即時看到當你要記的東西越多，這兩種節拍的「合拍程度」就會越緊繃，直到達到極限——這就是為什麼大多數人只能同時記住大約7個項目。這個發現超重要，因為它解釋了為什麼有些人記憶力特別好（他們的腦波合奏更協調），未來甚至可能透過訓練或刺激來改善這種「神經合拍能力」，幫助學習障礙或老年失智的患者。下次當你同時處理太多事情而當機時，別自責——那只是你大腦的指揮家在喊「節奏太快，樂團跟不上了」而已！",
-        "en": "Imagine your brain is like a skilled DJ mixing two different beats together—one slow, steady rhythm (theta waves) and one fast, energetic beat (gamma waves)—to create the perfect track. Scientists discovered that the prefrontal cortex, basically your brain's \"mission control center,\" uses this mixing technique to determine how many things you can juggle in your mind at once, like remembering a phone number while also keeping track of what you need to buy at the store. Using fancy brain-scanning tools, researchers watched this neural mixing happen in real-time and found that when these two wave frequencies sync up perfectly, your working memory works at its best, but when they fall out of rhythm, you start dropping mental balls. This matters because it explains why some days you can effortlessly remember your entire to-do list while other times you forget what you walked into a room for—it's all about whether your brain's internal DJ is nailing that beat-matching or not. Think of it like trying to pat your head and rub your belly simultaneously: your brain needs that coordination between fast and slow rhythms to pull off mental multitasking. Understanding this \"neural mixing board\" could eventually help us develop better strategies for boosting memory or even treating conditions where working memory struggles, like ADHD or aging-related memory decline.",
-        "zh-CN": "想象你的大脑是一个多轨录音棚，里面有慢节奏的鼓点（θ波）和快节奏的吉他（γ波），当这两种节奏完美配合时，录音师才能同时处理更多音轨而不出错。科学家用超高清的脑电图和磁共振成像盯着你的前额叶看，发现当你努力记住一串电话号码或购物清单时，这两种脑波的\"合拍程度\"会实时变化——配合得越好，你能同时记住的东西就越多。这解释了为什么有时候你能轻松记住七八件事，但压力大或分心时连三件都记不住，因为你大脑里的\"节拍器\"失调了。这项发现很重要，未来可能帮助开发针对性训练来提升记忆力，或者帮助老年痴呆患者通过调节脑波节律来改善记忆。比如当你在超市里试图记住\"牛奶、鸡蛋、面包、番茄、洋葱\"时，你前额叶里的慢波正在给快波打拍子，拍子越稳，你结账时忘记买东西的概率就越低。",
-        "ja": "想像你的大腦就像一個DJ在混音台前工作，同時要讓慢節奏的低音鼓（θ波）和快節奏的電子音效（γ波）完美配合。這項研究發現，當你試著同時記住電話號碼、購物清單和待辦事項時，大腦前額葉就是靠這兩種「節拍」的協調程度來決定你到底能塞進多少資訊。就像DJ混音混得越好，音樂聽起來越豐富，你的大腦這兩種電波配合得越緊密，工作記憶的「容量」就越大。研究團隊用超高解析度的腦波儀和核磁共振掃描，實際看到了這個「混音過程」如何即時影響記憶表現。這為什麼重要？因為如果我們理解了這個機制，未來或許能開發訓練方法或療法，幫助注意力不集中的人、老年人，甚至學生提升他們同時處理多項任務的能力。換句話說，我們可能找到了調整大腦「工作記憶音量旋鈕」的科學依據。",
-        "ko": "想像你的大腦就像一個超級DJ在混音台前工作，同時要控制慢節奏的鼓點（θ波）和快節奏的旋律線（γ波），當這兩種節奏完美搭配時，你就能同時記住更多東西，比如一邊記購物清單、一邊想著晚餐食譜、還要記得朋友交代的事。這項研究用超高解析度的腦波儀和腦部掃描技術，實際看到了前額葉這個「指揮中心」是怎麼透過調整不同頻率腦波的配合度，來決定你此刻能塞進腦袋的資訊量上限。這就像調整音響的等化器，調得好就能同時聽清楚各種樂器，調不好就一團混亂。這個發現對未來很重要，因為如果我們理解了這個「節奏密碼」，或許就能開發出訓練方法或技術，幫助學生增強記憶力，或協助老年人和注意力缺陷患者改善認知功能。說白了，科學家終於找到了大腦「多工處理」的調音旋鈕在哪裡，未來我們可能真的有辦法「升級」自己的腦容量！"
+        "zh-TW": "想像你把一本食譜交給一隻猴子，聲稱牠「正在計算」料理步驟——但猴子根本不懂食譜，這個「計算」只存在於你的詮釋裡，不在猴子身上。過去哲學家就是用這個邏輯攻擊「大腦是一台電腦、所以能產生意識」的想法：如果計算只是人類貼上去的標籤，它怎麼能真正造就主觀感受？這篇論文的反擊是：並非所有計算都是外貼標籤，有些計算結構是從系統內部物理因果關係中自然湧現的，就像晶體的對稱性不需要任何人去「命名」它才存在。作者提出兩個具體判斷標準，讓我們能分辨哪些計算是系統「自己擁有的」、哪些只是觀察者投射上去的。這對意識研究至關重要：如果意識真的依賴計算，那它依賴的必須是這種內在的、觀察者獨立的計算，而不是任何人隨便套上去的詮釋框架。這個框架也為整合資訊理論（IIT）等意識理論提供了更嚴格的哲學護盾，幫助科學家設計出真正能測量「意識相關計算」的實驗指標。",
+        "en": "Imagine handing a recipe book to a rock and declaring the rock is 「computing」 the cooking steps — the computation exists only in your interpretation, not in the rock itself. Philosophers have used this logic to attack the idea that brains generate consciousness simply by being computers: if computation is just a label we stick on things, how can it genuinely give rise to inner experience? This paper fights back by arguing that not all computation is an external label — some computational structures emerge naturally from a system's own physical causal relationships, just as a crystal's symmetry exists without anyone naming it. The authors provide two concrete criteria to judge whether a computation truly belongs to a system or is merely projected onto it by an outside observer. This matters enormously for consciousness science: if consciousness depends on computation, it must depend on this intrinsic, observer-independent kind, not on whatever interpretation anyone chooses to impose. The framework also gives stronger philosophical footing to theories like Integrated Information Theory, helping researchers design experiments that measure genuinely consciousness-relevant computation.",
+        "zh-CN": "想象你把一本食谱交给一块石头，然后宣称石头「正在计算」烹饪步骤——但这个「计算」只存在于你的诠释里，不在石头本身。哲学家正是用这个逻辑攻击「大脑是电脑所以能产生意识」的观点：如果计算只是人类贴上去的标签，它怎么能真正造就主观感受？这篇论文的反驳是：并非所有计算都是外贴标签，有些计算结构从系统内部的物理因果关系中自然涌现，就像晶体的对称性不需要任何人命名它才存在。作者提出两个具体判断标准，帮助我们分辨哪些计算是系统「自己拥有的」、哪些只是观察者投射上去的。这对意识研究至关重要，也为整合信息理论等意识理论提供了更严格的哲学基础。",
+        "ja": "料理レシピを石に渡して「石が調理手順を計算している」と宣言する場面を想像してください。その「計算」はあなたの解釈の中にしか存在せず、石自体には何もありません。哲学者たちはこのロジックで「脳はコンピュータだから意識を生む」という考えを攻撃してきました。この論文はそれに反論します――すべての計算が外から貼られたラベルではなく、結晶の対称性が誰に命名されなくとも存在するように、システム自身の物理的因果関係から自然に湧き出る計算構造があると主張します。著者たちは「その計算が本当にシステム自身のものか」を判断する二つの具体的基準を提示し、意識研究に厳密な哲学的土台を与えます。これは統合情報理論などの意識理論をより堅固にし、真に意識に関連する計算を測定する実験指標の設計にも貢献します。",
+        "ko": "레시피 책을 돌멩이에게 건네며 '돌이 요리 순서를 계산하고 있다'고 선언하는 장면을 상상해 보세요. 그 '계산'은 당신의 해석 속에만 존재할 뿐, 돌 자체에는 없습니다. 철학자들은 이 논리로 '뇌는 컴퓨터이므로 의식을 만든다'는 주장을 공격해왔습니다. 이 논문은 반격합니다. 모든 계산이 외부에서 붙이는 레이블이 아니라, 결정의 대칭성이 누가 이름 붙이지 않아도 존재하듯, 시스템 자체의 물리적 인과 관계에서 자연스럽게 솟아나는 계산 구조가 있다고 주장합니다. 저자들은 어떤 계산이 진정으로 시스템 '자신의 것'인지 판별하는 두 가지 기준을 제시하며, 의식 연구에 엄밀한 철학적 토대를 제공합니다."
       },
       "insight": {
-        "zh-TW": "💡 調控θ-γ耦合或可成為提升工作記憶的非侵入性神經刺激新靶點。",
-        "en": "💡 Modulating theta-gamma coupling could become a non-invasive neurostimulation target for boosting working memory.",
-        "zh-CN": "💡 调控θ-γ耦合或可成为提升工作记忆的非侵入性神经刺激新靶点。",
-        "ja": "💡 θ-γ結合の調節がワーキングメモリ向上の非侵襲的な神経刺激標的になりうる。",
-        "ko": "💡 θ-γ 결합 조절이 작업 기억 향상을 위한 비침습적 신경 자극의 새 표적이 될 수 있다."
+        "zh-TW": "💡 意識或許不在於大腦「被描述成」什麼計算，而在於它的物理結構從內部「本就是」什麼計算——這個區別，決定了意識科學能否擺脫純哲學爭論、走向可實驗驗證的科學。",
+        "en": "💡 Consciousness may hinge not on what computation a brain is described as performing, but on what computation its physical structure intrinsically is — a distinction that could finally move consciousness science from philosophical debate to empirical testability.",
+        "zh-CN": "💡 意识或许不在于大脑「被描述成」什么计算，而在于它的物理结构从内部「本就是」什么计算——这个区别，决定了意识科学能否走向可实验验证的科学。",
+        "ja": "💡 意識は脳が「何の計算として描写されるか」ではなく、その物理構造が内側から「本質的に何の計算であるか」にかかっているかもしれない――この違いが、意識科学を哲学論争から実験科学へと導く鍵となりうる。",
+        "ko": "💡 의식은 뇌가 '어떤 계산으로 묘사되느냐'가 아니라, 그 물리 구조가 내부에서 '본질적으로 어떤 계산이냐'에 달려 있을지 모른다 — 이 차이가 의식 과학을 철학 논쟁에서 실험 가능한 과학으로 이끄는 열쇠다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n  <path d=\"M10,80 Q30,50 50,80 Q70,110 90,80 Q110,50 130,80 Q150,110 170,80 Q190,50 210,80 Q230,110 250,80 Q270,50 290,80 Q310,110 330,80\" stroke=\"#9f7aea\" stroke-width=\"3\" fill=\"none\"/>\n  <path d=\"M10,100 Q25,88 40,100 Q55,112 70,100 Q85,88 100,100 Q115,112 130,100 Q145,88 160,100 Q175,112 190,100 Q205,88 220,100 Q235,112 250,100 Q265,88 280,100 Q295,112 310,100 Q325,88 340,100\" stroke=\"#f6ad55\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"80\" cy=\"38\" r=\"18\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n  <circle cx=\"80\" cy=\"38\" r=\"10\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n  <circle cx=\"170\" cy=\"28\" r=\"14\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n  <circle cx=\"170\" cy=\"28\" r=\"8\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n  <circle cx=\"260\" cy=\"38\" r=\"18\" stroke=\"#9f7aea\" stroke-width=\"2.5\" fill=\"#9f7aea22\"/>\n  <circle cx=\"260\" cy=\"38\" r=\"10\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n  <line x1=\"80\" y1=\"56\" x2=\"80\" y2=\"72\" stroke=\"#9f7aea\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"170\" y1=\"42\" x2=\"170\" y2=\"72\" stroke=\"#9f7aea\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"260\" y1=\"56\" x2=\"260\" y2=\"72\" stroke=\"#9f7aea\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <polygon points=\"155,148 170,128 185,148\" fill=\"#f6ad55\" opacity=\"0.85\"/>\n  <circle cx=\"170\" cy=\"148\" r=\"6\" fill=\"#9f7aea\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/>\n<circle cx=\"60\" cy=\"65\" r=\"14\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<path d=\"M40 90 Q60 115 80 90\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<rect x=\"140\" y=\"45\" width=\"60\" height=\"72\" rx=\"4\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/>\n<line x1=\"150\" y1=\"62\" x2=\"190\" y2=\"62\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150\" y1=\"74\" x2=\"190\" y2=\"74\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150\" y1=\"86\" x2=\"190\" y2=\"86\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150\" y1=\"98\" x2=\"175\" y2=\"98\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"280\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/>\n<path d=\"M258 68 Q268 55 280 62 Q292 55 302 68 Q310 80 295 90 Q285 100 280 105 Q275 100 265 90 Q250 80 258 68Z\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n<line x1=\"108\" y1=\"80\" x2=\"132\" y2=\"80\" stroke=\"#68d391\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<polygon points=\"132,74 144,80 132,86\" fill=\"#68d391\"/>\n</svg>"
     },
     {
       "id": "space-260608",
       "domain": "space",
       "day": "2026-06-08",
-      "author": "Naidu et al. 2026",
-      "ref": "arXiv:2606.02187",
-      "url": "",
+      "author": "T. Foglizzo",
+      "ref": "arXiv:2606.06471v1",
+      "url": "https://arxiv.org/abs/2606.06471v1",
       "color": "#4299e1",
       "title": {
-        "zh-TW": "韋伯望遠鏡偵測到大爆炸後6億年星系中首例「塵埃遮蔽的星暴」連續爆發事件",
-        "en": "JWST Detects the First Dust-Obscured Starburst Burst Sequence in a Galaxy at z~9",
-        "zh-CN": "韦伯望远镜探测到大爆炸后6亿年星系中首例尘埃遮蔽星暴连续爆发事件",
-        "ja": "JWSTがz~9の銀河で初の塵に隠れたスターバースト連続爆発イベントを検出",
-        "ko": "JWST가 빅뱅 후 6억 년 은하에서 첫 먼지 가려진 스타버스트 연속 폭발 포착"
+        "zh-TW": "旋轉星核中的螺旋震盪：解析超新星爆炸裡的隱藏漩渦",
+        "en": "Spiral Instability in a Rotating Stellar Core: Decoding Hidden Vortices Inside Supernovae",
+        "zh-CN": "旋转星核中的螺旋震荡：解析超新星爆炸里的隐藏漩涡",
+        "ja": "回転する星の核に潜む螺旋不安定性：超新星爆発の隠れた渦を解き明かす",
+        "ko": "회전하는 별의 핵 속 나선 불안정성：초신성 폭발 속 숨겨진 소용돌이 해독"
       },
       "tag": {
-        "zh-TW": "🌌 天文觀測",
-        "en": "🌌 Astronomy",
-        "zh-CN": "🌌 天文观测",
-        "ja": "🌌 天文観測",
-        "ko": "🌌 천문 관측"
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
       },
       "tech": {
-        "zh-TW": "利用JWST NIRSpec與MIRI的中紅外光譜，在紅移z≈9.1星系中解析出被塵埃遮蔽的多波段星暴指標。",
-        "en": "JWST NIRSpec and MIRI mid-infrared spectra resolved dust-obscured multi-band starburst indicators in a galaxy at redshift z≈9.1.",
-        "zh-CN": "利用JWST NIRSpec与MIRI中红外光谱，在红移z≈9.1星系中解析出被尘埃遮蔽的多波段星暴指标。",
-        "ja": "JWST NIRSpecとMIRIの中赤外スペクトルで赤方偏移z≈9.1の銀河の塵に隠れた星形成指標を分解した。",
-        "ko": "JWST NIRSpec와 MIRI 중적외선 스펙트럼으로 적색편이 z≈9.1 은하의 먼지 가려진 스타버스트 지표를 분해했다."
+        "zh-TW": "本研究針對大質量旋轉恆星核心坍縮過程中的「駐波吸積震盪不穩定性（SASI）」，以攝動分析法在球形幾何框架下推導出主導模式的解析本征頻率近似解。研究揭示差旋（differential rotation）如何透過共振放大機制進一步助長順行模式的螺旋不穩定性，並預測其在微中子與重力波訊號上留下的特徵頻率印記。",
+        "en": "This study derives analytical approximations for the eigenfrequencies of the dominant SASI modes during core-collapse of a rotating massive star using perturbative analysis in spherical geometry. It identifies how differential rotation further destabilizes prograde spiral modes through a resonant amplification cycle, predicting specific frequency signatures imprinted on neutrino and gravitational wave signals.",
+        "zh-CN": "本研究针对大质量旋转恒星核心坍缩过程中的「驻波吸积震荡不稳定性（SASI）」，以摄动分析法在球形几何框架下推导出主导模式的解析本征频率近似解。研究揭示差旋（differential rotation）如何通过共振放大机制进一步助长顺行模式的螺旋不稳定性，并预测其在微中子与引力波信号上留下的特征频率印记。",
+        "ja": "本研究は、大質量回転星のコア崩壊時に生じる「定在衝撃波吸積不安定性（SASI）」について、球面幾何における摂動解析を用いて支配モードの固有振動数の解析的近似式を導出した。また差動回転が共鳴増幅サイクルを通じて順行螺旋モードをさらに不安定化させるメカニズムを解明し、ニュートリノおよび重力波シグナルへの特徴的な周波数刻印を予測した。",
+        "ko": "이 연구는 대질량 회전 별의 핵 붕괴 과정에서 발생하는 「정상 강착 충격파 불안정성（SASI）」의 지배적 모드 고유진동수를 구면 기하학 내 섭동 분석으로 해석적으로 근사했다. 차등 자전이 공명 증폭 순환을 통해 순행 나선 모드를 추가로 불안정화하는 메커니즘을 밝히고, 중성미자 및 중력파 신호에 새겨지는 특징적 주파수 패턴을 예측했다."
       },
       "plain": {
-        "zh-TW": "想像你家剛蓋好半年，鄰居就透過窗簾縫隙看到你家裡已經有人在辦熱鬧派對——這就是天文學家用韋伯望遠鏡看到的驚人景象！在宇宙誕生僅僅六億年的時候（相當於宇宙現在年齡的4%左右），科學家發現有個遙遠星系竟然已經躲在厚重的塵埃雲後面，以瘋狂的速度「量產」新恆星，就像工廠開足馬力趕工一樣。這個發現顛覆了我們原本的認知，因為過去認為早期宇宙應該還很「乾淨」，沒什麼塵埃，星系也該慢慢成長才對。這就好比你以為剛出生的嬰兒應該還在喝奶，結果發現他已經在吃牛排了！這告訴我們宇宙在嬰兒期的演化速度遠比想像中快得多，也讓科學家重新思考：星系和塵埃到底是怎麼在這麼短時間內形成的？這項研究不只改寫教科書，更幫助我們理解包括銀河系在內的所有星系，當初是如何從一片混沌中快速「長大成人」的。",
-        "en": "Imagine the universe as a newborn baby, and we just caught it having its first massive growth spurt when it was only 6 months old—except in cosmic terms, that's 600 million years after the Big Bang. Using the Webb Space Telescope's super-powered infrared vision (which can see through cosmic dust like X-rays see through skin), astronomers spotted a galaxy throwing an absolute star-making party behind thick curtains of dust, cranking out new stars at a furious pace that nobody expected to see so early in cosmic history. Think of it like discovering that prehistoric humans were already building skyscrapers instead of living in caves—it completely changes our timeline of how quickly things developed. This matters because it's rewriting the textbook on how fast galaxies could mature in the early universe, suggesting that baby galaxies were way more precocious than we thought. The dust blocking our view is actually the key clue here, like seeing smoke billowing from a kitchen and knowing someone's cooking up a storm inside, except this \"kitchen\" is forging millions of suns. This discovery means our universe was a much busier, more industrious place in its infancy than our previous baby pictures suggested, forcing scientists to rethink how cosmic evolution really worked.",
-        "zh-CN": "想象一下，你刚搬进一间新房子才六个月，却发现隔壁邻居家已经盖好了一座豪华别墅——这正是天文学家用韦伯望远镜看到的震撼场景。在宇宙大爆炸后仅仅6亿年的\"婴儿期\"，科学家发现有些星系已经躲在厚厚的\"尘埃窗帘\"后面疯狂制造新恒星，就像工厂开足马力连轴转一样。这些尘埃本来会把星光挡住，但韦伯望远镜的红外线\"透视眼\"能穿透迷雾，让我们第一次看清这场宇宙早期的\"造星狂欢\"。这个发现彻底颠覆了我们对宇宙演化速度的认知——原来星系\"长大成熟\"的速度比我们想象的快得多，就像有些孩子两岁就会背诗一样让人惊讶。理解这些早期星系如何快速成长，能帮助我们解答\"宇宙是怎么从一片混沌变成今天繁星点点的模样\"这个终极问题，也让我们重新思考包括银河系在内的所有星系的\"成长史\"。",
-        "ja": "想像你家剛搬進去半年，理論上應該還很乾淨整潔，結果掀開窗簾一看，房間裡竟然已經堆滿了各種雜物和灰塵——這就是天文學家用韋伯望遠鏡看到的驚人景象。宇宙大爆炸後才過了6億年（相當於宇宙年齡的4%左右），按理說應該還是個「新生兒」階段，科學家卻發現有些星系已經在厚厚的塵埃雲後面瘋狂製造新恆星，就像工廠開足馬力生產一樣。這些塵埃本來需要很長時間才能累積，但它們出現得如此之早，完全打破了我們對宇宙演化速度的認知。這個發現之所以重要，是因為它可能改寫宇宙「成長史」的教科書——就好比我們一直以為嬰兒要一歲才會走路，結果發現有些寶寶半歲就開始跑了。透過韋伯望遠鏡的紅外線「透視眼」，科學家終於能穿透塵埃看清楚這些早期星系的真面目，解開宇宙童年時期究竟發生了什麼事的謎團。",
-        "ko": "想像一下，你剛搬進一間全新的房子，才住了半年，房間裡就已經堆滿了各種雜物和灰塵——這正是科學家在宇宙「剛裝潢好」6億年時看到的景象！韋伯太空望遠鏡就像一台超強透視眼相機，穿透厚重的宇宙塵埃雲，抓到一個星系正在瘋狂「製造」新星星，速度快到就像工廠開足馬力趕工。這發現之所以重要，是因為它顛覆了我們的想像：原來宇宙這麼「年輕」的時候，就已經有星系能夠累積大量塵埃，並且像放連環炮一樣連續爆發性地生產恆星。舉個例子，這就好比你以為嬰兒只會爬，結果發現有個六個月大的寶寶已經在跑馬拉松了！這個發現讓我們重新思考：宇宙早期的演化速度，可能比教科書寫的還要激進得多，那些「宇宙塵埃」和恆星誕生的過程，遠比我們想得更早就開始運作了。"
+        "zh-TW": "想像一鍋沸騰的水：當你快速攪拌後放開，水面會自然出現旋轉的漩渦，而不是均勻冒泡。大質量恆星死亡時發生的超新星爆炸，內部也有類似的現象，叫做「SASI」——一種讓原本對稱的衝擊波開始搖晃、甚至螺旋旋轉的不穩定性。如果這顆恆星本來就在自轉，就像花式溜冰選手收手加速，旋轉會讓這個螺旋震盪變得更劇烈、更難平息。這篇研究用數學公式精確算出這些螺旋震盪的「節拍」——就像替鼓手的鼓點寫出樂譜。這很重要，因為這些節拍會被刻印在超新星爆炸發出的重力波與微中子訊號裡，未來偵測器（如LIGO或超級神岡探測器）收到訊號時，我們就能像讀樂譜一樣反推爆炸核心的旋轉狀態。這不只是理論演算，更是替宇宙最劇烈爆炸事件「建立語言」，讓我們得以聆聽恆星死亡的真實故事。",
+        "en": "Imagine stirring a pot of boiling water and letting go: the surface naturally develops spinning vortices instead of bubbling evenly. When a massive star dies in a supernova, something similar happens deep inside—a phenomenon called SASI, where the shockwave starts to wobble and even spiral rather than staying symmetric. If the star was already spinning, like a figure skater pulling in their arms, that rotation makes the spiral oscillations grow even wilder and harder to suppress. This study calculates the precise 'rhythm' of these spiral wobbles using mathematical formulas—like writing sheet music for the drumbeat of a dying star. This matters enormously because those rhythms get stamped onto the gravitational waves and neutrino bursts released by the explosion. Future detectors like LIGO or Super-Kamiokande could read those signals like musical notation and reconstruct how fast the star's core was spinning at the moment of death—giving us a direct window into the heart of one of the universe's most violent events.",
+        "zh-CN": "想象一锅沸腾的水：你快速搅拌后放开，水面会自然出现旋转的漩涡，而不是均匀冒泡。大质量恒星死亡时发生的超新星爆炸，内部也有类似现象，叫做「SASI」——一种让原本对称的冲击波开始摇晃、甚至螺旋旋转的不稳定性。如果这颗恒星本来就在自转，就像花样滑冰选手收手加速，旋转会让这个螺旋震荡变得更剧烈。这篇研究用数学公式精确算出这些螺旋震荡的「节拍」——就像替鼓手的鼓点写出乐谱。这很重要，因为这些节拍会被刻印在超新星爆炸发出的引力波与中微子信号里，未来探测器收到信号时，我们就能像读乐谱一样反推爆炸核心的旋转状态，聆听恒星死亡的真实故事。",
+        "ja": "沸騰した鍋をかき混ぜて手を離すと、水面に均一な泡ではなく渦が自然に現れます。大質量星が超新星爆発で死を迎えるとき、内部でも似たことが起きています——「SASI」と呼ばれる現象で、本来は対称なはずの衝撃波が揺れ動き、螺旋を描き始めます。もとから自転していた星なら、フィギュアスケーターが腕を引き寄せて加速するように、その回転が螺旋振動をさらに激しくします。この研究はその螺旋振動の「リズム」を数式で正確に求めました——いわば星の死の鼓動に楽譜を書いたようなものです。このリズムは爆発が放つ重力波やニュートリノ信号に刻み込まれるため、将来の検出器がそれを読み取ることで、星の核が死の瞬間にどれほど速く回転していたかを知る窓口になります。",
+        "ko": "끓는 냄비를 저었다 손을 놓으면, 수면에 균일한 거품 대신 자연스럽게 소용돌이가 생깁니다. 대질량 별이 초신성 폭발로 죽을 때도 내부에서 비슷한 일이 일어납니다—「SASI」라 불리는 현상으로, 원래 대칭이어야 할 충격파가 흔들리고 나선형으로 회전하기 시작합니다. 별이 원래부터 자전하고 있었다면, 피겨스케이터가 팔을 당겨 속도를 높이듯 그 회전이 나선 진동을 더욱 격렬하게 만듭니다. 이 연구는 그 나선 진동의 「리듬」을 수식으로 정확히 계산했습니다—별의 죽음을 위한 악보를 쓴 셈입니다. 이 리듬은 폭발이 방출하는 중력파와 중성미자 신호에 새겨지므로, 미래 검출기가 이를 읽어 폭발 순간 별의 핵이 얼마나 빠르게 회전했는지 역추적할 수 있는 창문이 됩니다."
       },
       "insight": {
-        "zh-TW": "💡 塵埃遮蔽的早期星暴若普遍存在，現有宇宙恆星形成率模型將需大幅上調。",
-        "en": "💡 If dust-obscured early starbursts are common, cosmic star-formation rate models will need significant upward revision.",
-        "zh-CN": "💡 若尘埃遮蔽的早期星暴普遍存在，现有宇宙恒星形成率模型将需大幅上调。",
-        "ja": "💡 塵に隠れた初期スターバーストが一般的なら、宇宙の星形成率モデルは大幅な上方修正が必要になる。",
-        "ko": "💡 먼지 가려진 초기 스타버스트가 흔하다면 우주 별 형성률 모델은 대폭 상향 수정이 필요하다."
+        "zh-TW": "💡 恆星死亡時的「螺旋節拍」被永久寫入重力波與微中子訊號，宇宙最劇烈的爆炸其實是一份等待我們解讀的樂譜。",
+        "en": "💡 The 'spiral rhythm' of a dying star is permanently encoded in gravitational waves and neutrino bursts—the universe's most violent explosions are, in fact, sheet music waiting to be read.",
+        "zh-CN": "💡 恒星死亡时的「螺旋节拍」被永久写入引力波与中微子信号，宇宙最剧烈的爆炸其实是一份等待我们解读的乐谱。",
+        "ja": "💡 死にゆく星の「螺旋のリズム」は重力波とニュートリノに永遠に刻まれており、宇宙最大の爆発はじつは解読を待つ楽譜なのだ。",
+        "ko": "💡 죽어가는 별의 「나선 리듬」은 중력파와 중성미자에 영구히 새겨진다—우주에서 가장 격렬한 폭발은 사실 우리가 해독하길 기다리는 악보다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#4299e1\" opacity=\"0.18\"/>\n<circle cx=\"170\" cy=\"80\" r=\"24\" fill=\"#4299e1\" opacity=\"0.35\"/>\n<circle cx=\"170\" cy=\"80\" r=\"12\" fill=\"#f6ad55\" opacity=\"0.9\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"58\" ry=\"18\" fill=\"none\" stroke=\"#a0aec0\" stroke-width=\"2.5\" opacity=\"0.5\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"72\" ry=\"26\" fill=\"none\" stroke=\"#a0aec0\" stroke-width=\"1.5\" opacity=\"0.3\"/>\n<circle cx=\"60\" cy=\"40\" r=\"4\" fill=\"#4299e1\" opacity=\"0.7\"/>\n<circle cx=\"290\" cy=\"55\" r=\"3\" fill=\"#4299e1\" opacity=\"0.6\"/>\n<circle cx=\"40\" cy=\"120\" r=\"2.5\" fill=\"#f6ad55\" opacity=\"0.6\"/>\n<circle cx=\"310\" cy=\"130\" r=\"3.5\" fill=\"#4299e1\" opacity=\"0.5\"/>\n<line x1=\"170\" y1=\"80\" x2=\"60\" y2=\"40\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.4\" stroke-dasharray=\"4,3\"/>\n<line x1=\"170\" y1=\"80\" x2=\"290\" y2=\"55\" stroke=\"#4299e1\" stroke-width=\"1\" opacity=\"0.4\" stroke-dasharray=\"4,3\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\" opacity=\"0.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"35\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"16\" fill=\"#4299e1\" opacity=\"0.85\"/>\n<path d=\"M170,25 C200,35 215,65 205,80 C215,95 200,125 170,135 C140,125 125,95 135,80 C125,65 140,35 170,25Z\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" opacity=\"0.8\"/>\n<path d=\"M115,50 C130,60 140,72 135,80 C140,88 130,100 115,110 C105,95 102,65 115,50Z\" fill=\"#f6ad55\" opacity=\"0.25\"/>\n<path d=\"M225,50 C210,60 200,72 205,80 C200,88 210,100 225,110 C235,95 238,65 225,50Z\" fill=\"#4299e1\" opacity=\"0.25\"/>\n<path d=\"M170,80 Q185,60 200,45 Q210,35 218,28\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M170,80 Q155,100 140,115 Q130,125 122,132\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M170,80 Q190,90 210,100 Q225,108 235,114\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M170,80 Q150,70 130,60 Q115,52 105,46\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"170\" cy=\"80\" r=\"6\" fill=\"#ffffff\" opacity=\"0.9\"/>\n</svg>"
     },
     {
       "id": "tech-260608",
       "domain": "tech",
       "day": "2026-06-08",
-      "author": "Chen et al. 2026",
-      "ref": "arXiv:2606.04853",
-      "url": "",
+      "author": "Lizhi Yang, Junheng Li et al.",
+      "ref": "arXiv:2606.06493v1",
+      "url": "https://arxiv.org/abs/2606.06493v1",
       "color": "#68d391",
       "title": {
-        "zh-TW": "以「相變儲熱微膠囊」塗層實現被動式建築外牆全天候溫度自調節：無耗能零碳冷卻新策略",
-        "en": "Phase-Change Microcapsule Coatings Enable Passive All-Day Thermal Self-Regulation for Zero-Energy Building Facades",
-        "zh-CN": "相变储热微胶囊涂层实现被动式建筑外墙全天候温度自调节：无耗能零碳冷却新策略",
-        "ja": "相変化マイクロカプセルコーティングで建物外壁の終日パッシブ温度自律調節を実現",
-        "ko": "상변화 마이크로캡슐 코팅으로 건물 외벽의 수동 전일 온도 자율 조절 실현"
+        "zh-TW": "HANDOFF：讓人形機器人「全身協調」完成任務的智慧控制框架",
+        "en": "HANDOFF: Teaching Humanoid Robots to Coordinate Their Whole Body for Real-World Tasks",
+        "zh-CN": "HANDOFF：让人形机器人「全身协调」完成任务的智慧控制框架",
+        "ja": "HANDOFF：人型ロボットが全身を協調させてタスクをこなす知能制御フレームワーク",
+        "ko": "HANDOFF：인간형 로봇이 온몸을 조율해 임무를 수행하는 지능형 제어 프레임워크"
       },
       "tag": {
-        "zh-TW": "🏗️ 綠色建材",
-        "en": "🏗️ Green Materials",
-        "zh-CN": "🏗️ 绿色建材",
-        "ja": "🏗️ グリーン建材",
-        "ko": "🏗️ 친환경 건축재료"
+        "zh-TW": "📶 機器人智慧",
+        "en": "📶 Robotics & AI",
+        "zh-CN": "📶 机器人智能",
+        "ja": "📶 ロボット知能",
+        "ko": "📶 로보틱스 & AI"
       },
       "tech": {
-        "zh-TW": "研究將正十八烷相變材料封裝於二氧化矽微膠囊並混入外牆塗料，利用熔融潛熱在白天吸熱、夜間釋熱。",
-        "en": "n-Octadecane phase-change material was encapsulated in silica microcapsules and mixed into facade coatings to absorb heat by day and release it at night via latent heat.",
-        "zh-CN": "将正十八烷相变材料封装于二氧化硅微胶囊并混入外墙涂料，利用熔融潜热白天吸热夜间放热。",
-        "ja": "n-オクタデカン相変化材料をシリカマイクロカプセルに封入し外壁塗料に混合、昼間吸熱・夜間放熱する。",
-        "ko": "n-옥타데칸 상변화 물질을 실리카 마이크로캡슐에 봉입해 외벽 도료에 혼합, 낮에 흡열하고 밤에 방열한다."
+        "zh-TW": "HANDOFF 提出一套簡潔、明確的「任務空間指令介面」，作為任務規劃與人形機器人全身控制之間的橋樑，取代過去需要密集動作學習參考的繁瑣方式。研究者透過「多教師 KL 散度蒸餾」技術，將多個專門化控制器的知識融合成單一全能控制器，使機器人在接收高階語意指令後能直接輸出全身協調動作。此方法具備模組化與可擴展性，能泛化至多樣操作技能，並在真實人形機器人上完成部署驗證。",
+        "en": "HANDOFF introduces a compact and explicit task-space command interface bridging high-level task planning and whole-body humanoid control, eliminating the need for dense kinematic references. Using multi-teacher KL distillation, knowledge from multiple specialized controllers is compressed into a single unified controller capable of diverse manipulation skills. The framework is modular and generalizable, validated on real humanoid hardware.",
+        "zh-CN": "HANDOFF 提出一套简洁、明确的「任务空间指令接口」，作为任务规划与人形机器人全身控制之间的桥梁，取代过去需要密集动作参考的繁琐方式。研究者通过「多教师 KL 散度蒸馏」技术，将多个专门化控制器的知识融合成单一全能控制器，使机器人在接收高阶语义指令后能直接输出全身协调动作。该方法具备模块化与可扩展性，能泛化至多样操作技能，并在真实人形机器人上完成部署验证。",
+        "ja": "HANDOFFは、高レベルのタスク計画と人型ロボットの全身制御をつなぐ、簡潔で明示的な「タスク空間コマンドインターフェース」を提案し、従来の密な運動参照を不要にします。複数の専門コントローラの知識を「多教師KLダイバージェンス蒸留」で単一の汎用コントローラに統合し、高次の意味指令から全身協調動作を直接生成します。モジュール式で汎化性が高く、実機の人型ロボットで検証済みです。",
+        "ko": "HANDOFF는 고수준 작업 계획과 인간형 로봇의 전신 제어를 연결하는 간결하고 명시적인 「작업 공간 명령 인터페이스」를 제안하며, 기존의 밀집 운동 참조 방식을 대체합니다. 「다중 교사 KL 발산 증류」 기법을 통해 여러 전문 컨트롤러의 지식을 단일 통합 컨트롤러로 압축하여, 고수준 의미 명령으로부터 전신 협조 동작을 직접 생성합니다. 모듈형 구조로 다양한 조작 기술에 일반화되며 실제 인간형 로봇에서 검증되었습니다."
       },
       "plain": {
-        "zh-TW": "想像你的房子外牆就像一杯珍珠奶茶，但裡面的「珍珠」其實是數百萬顆比沙粒還小的蠟球，而且它們有個超能力：會在溫度變化時自動「融化」和「凝固」來幫你調節室溫。科學家把一種叫正十八烷的特殊蠟質材料包在二氧化矽做成的微小膠囊裡，再混進普通的牆壁塗料中，這樣當大太陽曬牆壁時，這些小蠟球就會默默融化，把熱能「吃掉」存起來，讓你家不會那麼熱；等到晚上涼了，蠟球又會慢慢凝固，把白天吸的熱量溫柔地釋放出來，避免室內太冷。這對生活的影響可大了——尤其台灣夏天動輒攝氏三十幾度，如果牆壁本身就能當「免費的冷氣和暖氣」，不但電費帳單會少掉一大截，冷氣排放的熱氣和碳排也跟著減少，整個城市都能涼快一點。更棒的是，這整個過程完全不需要插電、不用遙控器，就像你家外牆長出了一層會呼吸、會調溫的「智慧皮膚」，默默為地球降溫，也為你的荷包省錢。",
-        "en": "Imagine your house walls wearing a smart jacket filled with millions of tiny wax beads that act like thermal batteries. During scorching summer days, these microscopic capsules absorb excess heat as they melt—kind of like how ice cubes cool your drink by absorbing heat while melting—preventing your walls from turning into radiators that bake your home. Then, when night falls and temperatures drop, the wax solidifies and gently releases that stored heat back outside, completing a natural cooling cycle without a single watt of electricity. This matters because air conditioning accounts for about 10% of global electricity use, and this passive coating could slash cooling bills while fighting climate change at the same time. Picture an apartment building in a hot city: instead of hundreds of AC units humming and guzzling power, the walls themselves regulate temperature automatically, day after day, powered only by the sun's natural rhythm. It's essentially giving buildings their own thermostat that runs on physics rather than electricity, making zero-carbon cooling not just a dream but a paintable reality.",
-        "zh-CN": "想象一下，你家的墙壁就像一个巨大的\"冰袋\"，但它不需要插电也不用加冰块。科学家们把一种特殊的蜡（正十八烷）装进比沙粒还小的二氧化硅小球里，然后混进普通墙面涂料中。白天太阳晒得火辣辣时，这些小蜡球就像冰棒一样慢慢融化，把热量统统吸收进去，让你家墙壁不会变成\"暖炉\"；到了晚上气温下降，蜡球又重新凝固，把白天存的热量慢慢释放出来，帮你维持舒适温度。这就好比给建筑穿上一件会呼吸、会调温的\"智能外套\"，全程零耗电、零碳排。对普通人来说，这意味着你可能再也不用为了给房子降温而开空调，每个月省下一大笔电费，同时还为地球减少碳排放做了贡献。更妙的是，这种涂料刷上去就行，老房子新房子都能用，不需要复杂的改造工程。",
-        "ja": "想像一下，如果你的房子外牆就像一杯加了冰塊的飲料——白天太陽曬得火熱時，冰塊慢慢融化幫你吸走熱氣；到了晚上氣溫降低，冰塊又重新凍回去，把白天存的熱悄悄釋放出來。日本的研究團隊就把這個道理變成現實：他們在牆壁塗料裡加入包著「特殊蠟」的微小膠囊，這些蠟珠會在攝氏28度左右融化（就像冰塊遇熱會化），過程中默默吸收大量熱能，讓你家外牆不會變成烤爐；等到半夜涼快了，蠟珠再凝固回去，溫柔地把熱釋放到夜晚的空氣中。最棒的是，這整個過程完全不用插電、不會排碳，就像牆壁自己長了「體溫調節系統」。對住在炎熱地區或冷氣費年年暴漲的你來說，這簡直是不花一毛電費就能幫房子降溫的神奇魔法——只要刷層特殊塗料，你家就能在夏天省下一大筆冷氣費，同時為地球減少碳排放。這技術未來如果普及，可能會徹底改變我們蓋房子、裝修房子的方式，讓每棟建築都變成會「呼吸」的節能高手。",
-        "ko": "想像一下，如果你的房子外牆就像一個超大號的「暖暖包」和「冰寶」的組合體，會是什麼樣子？科學家們在牆壁塗料裡偷偷藏進了數百萬顆像沙粒般大小的「魔法蠟珠」——它們的正式名字叫「相變儲熱微膠囊」。白天太陽曬得火辣辣時，這些蠟珠就像冰淇淋慢慢融化一樣，默默吸收熱量讓牆面不會燙手，你家室內自然就涼快多了；到了晚上氣溫下降，蠟珠又重新凝固，把白天儲存的熱量慢慢釋放出來，房間不會一下子變得太冷。最棒的是，這整個過程完全不需要插電、不用開冷氣，就像大自然幫你裝了一套24小時自動調溫系統！對於夏天電費帳單總是嚇人、或是住在沒有冷氣的老房子裡的人來說，這根本是福音——只要刷上這種特殊塗料，就能大幅減少空調耗電，既省錢又環保。而且因為不需要額外能源，也就意味著零碳排放，對抗全球暖化又多了一個超實用的武器。"
+        "zh-TW": "想像你雇了一位助理，但你只能用密密麻麻的舞步譜來指揮他做事——這正是現在許多人形機器人面臨的困境：任務規劃系統與全身控制系統說著完全不同的「語言」。HANDOFF 的做法就像設計了一套簡單的手勢語言，讓規劃大腦只需比個手勢，機器人全身就知道怎麼動。更聰明的是，研究者找來多位「動作達人老師」——每位都精通某種技能，然後用知識蒸餾的方式，把所有老師的本領「釀進」同一個控制器裡。結果這個機器人不只會搬箱子，還能開門、遞物品，展現真正的多工能力。這項突破的重要性在於：未來機器人進入家庭或工廠，再也不需要為每個新任務重新設計複雜的動作資料庫，只要下達自然的高階指令即可。這是讓人形機器人真正「聽懂人話再動全身」的關鍵一步。",
+        "en": "Imagine hiring an assistant but only being able to give instructions through an incredibly complex sheet of choreography — that is essentially the problem humanoid robots face today, where planners and whole-body controllers speak completely different languages. HANDOFF is like designing a simple set of hand gestures: the planning brain makes a gesture, and the robot's whole body knows exactly what to do. Even cleverer, the researchers recruited multiple specialist teachers — each an expert in a different skill — and used knowledge distillation to brew all their expertise into one single controller. The result is a robot that can carry boxes, open doors, and hand over objects without needing a new motion database for every new task. This matters because, as humanoid robots enter homes and factories, we need them to act on high-level human instructions without requiring engineers to pre-program every movement in painstaking detail.",
+        "zh-CN": "想象你雇了一位助理，但只能用密密麻麻的舞步谱来指挥他做事——这正是现在许多人形机器人面临的困境：任务规划系统与全身控制系统说着完全不同的「语言」。HANDOFF 的做法就像设计了一套简单的手势语言，让规划大脑只需比个手势，机器人全身就知道怎么动。更聪明的是，研究者找来多位「动作达人老师」——每位都精通某种技能，再用知识蒸馏把所有老师的本领「酿进」同一个控制器里。结果这个机器人不只会搬箱子，还能开门、递物品，展现真正的多工能力。这项突破的重要性在于：未来机器人进入家庭或工厂，再也不需要为每个新任务重新设计复杂的动作数据库，只要下达自然的高阶指令即可。",
+        "ja": "複雑なダンス譜でしかアシスタントに指示できないと想像してみてください——これがまさに現在の人型ロボットの悩みで、タスク計画系と全身制御系がまったく異なる「言語」を話しています。HANDOFFはシンプルなジェスチャー言語を設計するようなもので、計画脳がジェスチャーを一つ見せるだけで、ロボット全身が動き方を理解します。さらに賢いのは、それぞれ異なるスキルを持つ複数の「名人教師」を集め、知識蒸留によって全員の技をひとつのコントローラに「醸造」した点です。結果として、箱を運ぶだけでなく、ドアを開けたり物を手渡したりと、真のマルチタスクを実現しました。これは人型ロボットが家庭や工場に普及する上で、高度な人間の指示をそのまま全身動作に変換できる重要な一歩です。",
+        "ko": "복잡한 안무 악보로만 조수에게 지시할 수 있다고 상상해 보세요. 이것이 바로 현재 인간형 로봇의 고민입니다. 작업 계획 시스템과 전신 제어 시스템이 완전히 다른 「언어」로 말하고 있기 때문입니다. HANDOFF는 간단한 손짓 언어를 설계하는 것과 같아서, 계획 두뇌가 손짓 하나를 보여주면 로봇 전신이 어떻게 움직여야 하는지 바로 이해합니다. 더 영리한 점은 각기 다른 기술에 능통한 여러 「달인 선생님」을 모아 지식 증류로 모든 전문성을 하나의 컨트롤러에 담아냈다는 것입니다. 그 결과 로봇은 상자를 옮기는 것은 물론 문을 열고 물건을 건네는 등 진정한 멀티태스킹을 선보입니다. 이는 인간형 로봇이 가정과 공장에 보급될 때, 매번 새로운 동작 데이터베이스 없이도 자연스러운 고수준 지시를 따를 수 있게 해주는 핵심 발걸음입니다."
       },
       "insight": {
-        "zh-TW": "💡 若大規模推廣至熱帶城市建築，可削減夏季空調用電高達30%，是低成本脫碳的現實路徑。",
-        "en": "💡 Scaled to tropical urban buildings, this could cut summer air-conditioning electricity by up to 30%, offering a low-cost decarbonization path.",
-        "zh-CN": "💡 若大规模推广至热带城市建筑，可削减夏季空调用电高达30%，是低成本脱碳的现实路径。",
-        "ja": "💡 熱帯都市の建物に普及すれば夏季空調電力を最大30%削減でき、低コスト脱炭素の現実的な道となる。",
-        "ko": "💡 열대 도시 건물에 보급되면 여름철 냉방 전력을 최대 30% 줄일 수 있는 저비용 탈탄소 현실 경로다."
+        "zh-TW": "💡 最好的「翻譯官」不只轉換語言，更能壓縮複雜度——HANDOFF 告訴我們，人機介面的設計哲學決定了智慧機器人能走多遠。",
+        "en": "💡 The best translator doesn't just convert language — it compresses complexity; HANDOFF shows that the design philosophy of the human-robot interface ultimately determines how far intelligent robots can go.",
+        "zh-CN": "💡 最好的「翻译官」不只转换语言，更能压缩复杂度——HANDOFF 告诉我们，人机接口的设计哲学决定了智能机器人能走多远。",
+        "ja": "💡 最良の「通訳者」は言語を変換するだけでなく複雑さを圧縮する——HANDOFFは、ヒューマン・ロボットインターフェースの設計哲学が知能ロボットの未来を左右することを示している。",
+        "ko": "💡 최고의 「통역사」는 언어를 변환할 뿐만 아니라 복잡성을 압축한다——HANDOFF는 인간-로봇 인터페이스의 설계 철학이 지능형 로봇의 미래를 결정한다는 것을 보여준다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<rect x=\"10\" y=\"60\" width=\"100\" height=\"90\" fill=\"#68d391\" rx=\"4\"/>\n<rect x=\"10\" y=\"55\" width=\"100\" height=\"12\" fill=\"#4a9e6b\" rx=\"2\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"12\" fill=\"#68d391\"/>\n<circle cx=\"170\" cy=\"30\" r=\"7\" fill=\"#f6c90e\"/>\n<line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"55\" stroke=\"#f6c90e\" stroke-width=\"2\"/>\n<circle cx=\"230\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/>\n<circle cx=\"200\" cy=\"50\" r=\"10\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/>\n<circle cx=\"140\" cy=\"110\" r=\"10\" fill=\"#4a9e6b\"/>\n<path d=\"M60 55 Q60 30 80 20 Q100 10 110 30 Q115 45 110 55\" fill=\"#f6c90e\" opacity=\"0.7\"/>\n<polygon points=\"270,40 320,40 320,140 270,140\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<rect x=\"20\" y=\"55\" width=\"70\" height=\"80\" rx=\"8\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<circle cx=\"55\" cy=\"35\" r=\"18\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"55\" y1=\"53\" x2=\"55\" y2=\"55\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"20\" y1=\"90\" x2=\"5\" y2=\"110\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"90\" y1=\"90\" x2=\"105\" y2=\"110\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"35\" y1=\"135\" x2=\"30\" y2=\"155\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"75\" y1=\"135\" x2=\"80\" y2=\"155\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<rect x=\"145\" y=\"55\" width=\"50\" height=\"50\" rx=\"6\" fill=\"#68d391\" opacity=\"0.85\"/>\n<polygon points=\"195,80 215,68 215,92\" fill=\"#68d391\"/>\n<rect x=\"250\" y=\"40\" width=\"75\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<rect x=\"250\" y=\"78\" width=\"75\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<rect x=\"250\" y=\"116\" width=\"75\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n</svg>"
     }
   ]
 }
