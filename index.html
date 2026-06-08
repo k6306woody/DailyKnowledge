@@ -95,7 +95,7 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .chip.on{background:var(--tf);border-color:var(--tf);color:#fff}
 .dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--tf-b);margin-right:4px;vertical-align:middle}
 .chip.on .dot{background:#fff}
-.catbar{display:none!important}  /* sidebar handles category filter */
+.catbar{display:flex;gap:8px;padding:8px 20px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;border-bottom:1px solid var(--bd)}
 .cbtn{padding:7px 16px;border-radius:18px;font-size:12px;font-weight:600;background:var(--su);color:var(--tx2);border:1.5px solid var(--bd)}
 .cbtn.on{color:#fff;border-color:transparent}
 .cbtn[data-cat=all].on{background:#4dbdb5}.cbtn[data-cat=ai].on{background:#2a9d8f}
@@ -170,7 +170,7 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .card-date-badge{font-size:10px;font-weight:700;color:var(--tx3);background:var(--bg3);padding:2px 8px;border-radius:8px;white-space:nowrap;flex-shrink:0}
 
 /* ── Pagination ── */
-#pagination{display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 20px 48px;width:100%}
+#pagination{display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 20px 56px}
 .pg-info{font-size:12px;color:var(--tx3);font-weight:600}
 .pg-btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
 .pg-btn{padding:7px 14px;border-radius:10px;font-size:13px;font-weight:600;border:1.5px solid var(--bd);background:var(--su);color:var(--tx2);cursor:pointer;transition:all .15s}
@@ -489,7 +489,6 @@ footer strong{color:var(--tf-tx)}
 <!-- CARDS + DETAIL PANEL (同一 frame) -->
 <div id="content-area">
   <div class="grid" id="grid"></div>
-  <div id="pagination"></div>
 
   <!-- 右側詳情面板：與卡片區並排，非浮層 -->
   <div id="detail-panel">
@@ -521,6 +520,9 @@ footer strong{color:var(--tf-tx)}
     </div>
   </div>
 </div>
+
+<!-- 分頁控制列（在 content-area 外，自然流排列在卡片下方） -->
+<div id="pagination"></div>
 
 <footer>
   <strong id="ft-title">每日新知 · Daily Knowledge Digest</strong> &nbsp;·&nbsp;
@@ -949,7 +951,9 @@ function renderCatbar(){
     bar.querySelectorAll('.cbtn').forEach(x=>x.classList.remove('on'));
     this.classList.add('on');
     const cat=this.dataset.cat;
-    document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',cat!=='all'&&c.dataset.domain!==cat));
+    activeFilters.cat = (cat==='all') ? null : cat;
+    currentPage=1;
+    renderCards();
   }));
 }
 
