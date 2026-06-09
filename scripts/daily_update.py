@@ -211,17 +211,25 @@ def extract_json(raw):
         return sanitize_json(text[start:end+1])
     return None
 
-def call_claude(prompt, max_tokens=4000):
-    try:
-        msg = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=max_tokens,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return msg.content[0].text
-    except Exception as e:
-        log.error(f"Anthropic API 錯誤: {e}")
-        raise
+def call_claude(prompt, max_tokens=4000, retries=3, base_delay=15):
+    """呼叫 Claude API，含 timeout + 指數退避 retry"""
+    for attempt in range(retries):
+        try:
+            msg = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=max_tokens,
+                timeout=120.0,   # 2 分鐘 hard timeout，防止卡死
+                messages=[{"role": "user", "content": prompt}],
+            )
+            return msg.content[0].text
+        except Exception as e:
+            if attempt < retries - 1:
+                wait = base_delay * (2 ** attempt)  # 15s → 30s → 60s
+                log.warning(f"  API 第 {attempt+1} 次失敗，{wait}秒後重試：{e}")
+                time.sleep(wait)
+            else:
+                log.error(f"  API 連續 {retries} 次失敗：{e}")
+                raise
 
 # ── arXiv API 抓真實論文 ──────────────────────────────────────────────────
 # domain → arXiv category 對應
@@ -306,7 +314,7 @@ def _summarize_paper_prompt(today_str, domain, emoji, domain_label, paper, card_
     """讓 Claude 把真實論文的 title+abstract 轉成多語言卡片 JSON"""
     color = COLOR_MAP.get(domain, "#667eea")
     author_str = ", ".join(paper["authors"]) + " et al." if paper["authors"] else "et al."
-    return f"""你是「每日新知」科普卡片編輯。請把下列真實 arXiv 論文摘要轉化成一張多語言知識卡片。
+    return f"""你是「每日新知」科普卡片編輯。請把下列真實 arXiv 論文摘要轉化成一張多語言知識卡片（含 SVG 插圖）。
 
 【論文資料】
 標題（英）：{paper["title"]}
@@ -327,6 +335,13 @@ arXiv ID：{paper["arxiv_id"]}
 - plain：5-8句，用生動比喻+舉例，讓完全不懂的人也能理解，要有「為什麼重要」
 - insight：💡 開頭，1句洞見或啟示
 
+【SVG 插圖規格（illus 欄位）】
+- viewBox="0 0 340 160"，最多 12 個圖形元素
+- 禁止 <defs>/<linearGradient>/<filter>/<clipPath>/<text>
+- 背景：<rect width="340" height="160" fill="{color}18"/>
+- 主色 {color}，可搭配 1-2 個輔色
+- 用幾何圖形象徵論文核心概念
+
 【已出現過的主題（勿重複）】
 {recent_str}
 
@@ -339,6 +354,7 @@ arXiv ID：{paper["arxiv_id"]}
   "ref": "{paper['ref']}",
   "url": "{paper['url']}",
   "color": "{color}",
+  "illus": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 340 160\\">...</svg>",
   "title":   {{"zh-TW":"","en":"","zh-CN":"","ja":"","ko":""}},
   "tag":     {{"zh-TW":"{emoji} {domain_label}","en":"{emoji} {domain_label}","zh-CN":"{emoji} {domain_label}","ja":"{emoji} {domain_label}","ko":"{emoji} {domain_label}"}},
   "tech":    {{"zh-TW":"","en":"","zh-CN":"","ja":"","ko":""}},
@@ -355,10 +371,27 @@ def generate_cards_paper(date_info, recent_topics):
     recent_str = "\n".join(f"- {t}" for t in recent_topics[-20:])
     pid = today_str[2:4] + today_str[5:7] + today_str[8:10]  # YYMMDD
 
+    # ── 斷點恢復：讀取 partial save ──────────────────────────────────
+    partial_path = DATA_DIR / f"{today_str}.partial.json"
     all_cards = []
-    used_arxiv_ids = set()
+    done_domains = set()
+    if partial_path.exists():
+        try:
+            with open(partial_path, encoding="utf-8") as f:
+                partial = json.load(f)
+            all_cards = partial.get("cards", [])
+            done_domains = {c["domain"] for c in all_cards}
+            log.info(f"  ↩️  發現斷點紀錄，已完成 {done_domains}，從斷點繼續")
+        except Exception:
+            pass
+    # ─────────────────────────────────────────────────────────────────
+
+    used_arxiv_ids = {c.get("ref", "").replace("arXiv:", "") for c in all_cards}
 
     for domain, emoji, domain_label in PAPER_DOMAINS:
+        if domain in done_domains:
+            log.info(f"  ✓ {domain} 已有資料，跳過")
+            continue
         log.info(f"\n── 處理領域: {domain} ({emoji} {domain_label}) ──")
 
         # 1. 從 arXiv 抓真實論文
@@ -411,6 +444,16 @@ def generate_cards_paper(date_info, recent_topics):
 
         log.info(f"  ✓ 卡片生成: {card.get('id')} — {card.get('title',{}).get('zh-TW','')[:40]}")
         all_cards.append(card)
+
+        # ── Partial save：每張卡片完成後立即存檔，斷點可續接 ──────────
+        try:
+            with open(partial_path, "w", encoding="utf-8") as f:
+                json.dump({"date": today_str, "partial": True, "cards": all_cards}, f,
+                          ensure_ascii=False, indent=2)
+        except Exception as e:
+            log.warning(f"  partial save 失敗（不影響主流程）：{e}")
+        # ─────────────────────────────────────────────────────────────
+
         time.sleep(0.5)
 
     log.info(f"\n論文共生成 {len(all_cards)} 張卡片")
@@ -571,13 +614,22 @@ def write_json(date_info, cards):
     }
 
     for card in cards:
-        card["illus"] = generate_illus(card)
+        # 若卡片 prompt 已包含 illus（新流程），直接用；否則才另外呼叫 API
+        if not card.get("illus"):
+            card["illus"] = generate_illus(card)
         output["cards"].append(card)
 
     out_path = DATA_DIR / f"{today_str}.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     log.info(f"已寫出 {out_path} ({out_path.stat().st_size // 1024}KB)")
+
+    # 清理 partial save 檔
+    partial_path = DATA_DIR / f"{today_str}.partial.json"
+    if partial_path.exists():
+        partial_path.unlink()
+        log.info(f"已清理 {partial_path.name}")
+
     return out_path
 
 
