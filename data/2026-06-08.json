@@ -8,271 +8,271 @@
       "id": "ai-260608",
       "domain": "ai",
       "day": "2026-06-08",
-      "author": "Marius Dragoi, Ioana Pintilie et al.",
-      "ref": "arXiv:2606.06494v1",
-      "url": "https://arxiv.org/abs/2606.06494v1",
+      "author": "Bruno, A. et al. 2026",
+      "ref": "arXiv:2606.00671",
+      "url": "https://arxiv.org/abs/2606.00671",
       "color": "#667eea",
       "title": {
-        "zh-TW": "TailLoR：保護核心知識、讓AI持續學新技能而不遺忘舊能力",
-        "en": "TailLoR: Teaching AI New Tricks Without Forgetting Old Ones by Protecting Core Knowledge",
-        "zh-CN": "TailLoR：保护核心知识、让AI持续学习新技能而不遗忘旧能力",
-        "ja": "TailLoR：核心知識を守りながらAIが継続的に新スキルを習得する手法",
-        "ko": "TailLoR：핵심 지식을 보호하며 AI가 새 기술을 계속 학습하는 방법"
+        "zh-TW": "AXIOM：可驗證數學推理的神經符號執行架構",
+        "en": "AXIOM: A Trust-First Neuro-Symbolic Architecture for Verifiable Mathematical Reasoning",
+        "zh-CN": "AXIOM：可验证数学推理的神经符号执行架构",
+        "ja": "AXIOM：検証可能な数学的推論のための信頼優先ニューロシンボリック実行アーキテクチャ",
+        "ko": "AXIOM: 검증 가능한 수학적 추론을 위한 신뢰 우선 신경-기호 실행 아키텍처"
       },
       "tag": {
         "zh-TW": "🤖 人工智慧",
-        "en": "🤖 Artificial Intelligence",
-        "zh-CN": "🤖 人工智慧",
+        "en": "🤖 AI",
+        "zh-CN": "🤖 人工智能",
         "ja": "🤖 人工知能",
         "ko": "🤖 인공지능"
       },
       "tech": {
-        "zh-TW": "TailLoR 利用預訓練權重矩陣的奇異值分解（SVD），固定左右奇異基底 U 與 V 作為參考座標系，僅在奇異值矩陣上學習低秩更新。一項「軟頻譜懲罰」機制阻止更新方向對齊主要奇異方向，將細粒度的任務適應引導至頻譜長尾座標，從而在持續學習多項任務時有效降低任務間干擾與遺忘。",
-        "en": "TailLoR fixes the singular bases U and V from pre-trained weight SVD as a stable reference frame and learns low-rank updates solely on the singular value matrix. A soft spectral penalty discourages gradient updates from aligning with dominant singular directions, steering task-specific adaptation into the flexible long-tail spectral coordinates to minimize cross-task interference in continual learning.",
-        "zh-CN": "TailLoR 利用预训练权重矩阵的奇异值分解（SVD），固定左右奇异基底 U 与 V 作为参考坐标系，仅在奇异值矩阵上学习低秩更新。一项「软频谱惩罚」机制阻止更新方向对齐主要奇异方向，将细粒度的任务适应引导至频谱长尾坐标，从而在持续学习多项任务时有效降低任务间干扰与遗忘。",
-        "ja": "TailLoR は事前学習済み重み行列の特異値分解（SVD）から得た特異基底 U・V を固定の参照座標系として用い、特異値行列のみに低ランク更新を学習する。ソフトスペクトルペナルティにより支配的な特異方向への更新を抑制し、タスク固有の適応を長尾スペクトル座標へ誘導することで継続学習における干渉を低減する。",
-        "ko": "TailLoR은 사전 학습된 가중치 행렬의 특이값 분해(SVD)에서 얻은 특이 기저 U와 V를 고정 참조 좌표계로 사용하고, 특이값 행렬에만 저랭크 업데이트를 학습한다. 소프트 스펙트럴 페널티가 지배적 특이 방향으로의 업데이트를 억제하여 세밀한 태스크 적응을 장꼬리 스펙트럴 좌표로 유도함으로써 연속 학습 시 태스크 간 간섭을 줄인다."
+        "zh-TW": "AXIOM 將神經語言模型與符號執行引擎整合，對每一個數學推理步驟進行形式化驗證，確保每條推論都可追溯至數學公理。與傳統 LLM 直接生成答案不同，此架構先讓神經網路提議推理路徑，再由符號引擎逐步確認每個邏輯跳躍的合法性，實現「可被審計的 AI 數學家」。",
+        "en": "AXIOM integrates a neural language model with a symbolic execution engine to formally verify each step of mathematical reasoning, ensuring every inference traces back to axioms. Unlike standard LLMs that generate answers end-to-end, AXIOM proposes candidate proof paths neurally and then passes each step through a symbolic checker that rejects any logically invalid move.",
+        "zh-CN": "AXIOM 将神经语言模型与符号执行引擎整合，对每个数学推理步骤进行形式化验证，确保每条推论都可追溯至数学公理。与传统 LLM 直接生成答案不同，该架构先由神经网络提议推理路径，再由符号引擎逐步检查每个逻辑跳跃，实现可审计的AI数学推理。",
+        "ja": "AXIOMは神経言語モデルと記号実行エンジンを統合し、数学的推論の各ステップを形式的に検証して、すべての推論が公理に遡れることを保証する。標準的なLLMとは異なり、神経的に候補となる証明経路を提案した後、記号チェッカーが論理的に無効な手を拒否することで検証可能な推論を実現する。",
+        "ko": "AXIOM은 신경 언어 모델과 기호 실행 엔진을 통합하여 수학적 추론의 각 단계를 형식적으로 검증하고, 모든 추론이 공리로 소급 가능함을 보장한다. 일반 LLM과 달리 신경적으로 후보 증명 경로를 제안한 후 기호 검사기가 논리적으로 유효하지 않은 단계를 거부하여 감사 가능한 추론을 실현한다."
       },
       "plain": {
-        "zh-TW": "想像你正在玩一款需要不斷解鎖新關卡的遊戲，但每次學會新招式，以前練就的必殺技就會莫名其妙消失——這就是AI在「持續學習」時遇到的大麻煩，專業術語叫「災難性遺忘」。TailLoR的解決方式就像給AI裝上一套聰明的「技能管理系統」：它把AI的知識結構想像成一個多維座標系，其中有些方向是「核心主軸」（像是語言理解的基本能力），有些是「邊緣角落」（像是特定領域的小技巧）。當AI要學新東西時，TailLoR會說：「嘿，別動那些撐起整個知識體系的主要支柱，去那些不太重要的角落施工就好！」具體來說，就像你在已經裝潢好的房子裡添購新家具，聰明的做法是把新東西擺在儲藏室或陽台，而不是拆掉客廳的承重牆。這套機制讓同一個AI可以像瑞士刀一樣不斷增加新功能，卻不會因為裝了開瓶器就忘記怎麼切水果——對於想讓客服機器人持續學習新產品、或讓醫療AI不斷更新診療知識的公司來說，這簡直是救命良方，因為再也不用每次都從頭訓練一個全新模型了。",
-        "en": "Imagine teaching your smartphone to recognize your new cat without making it forget your dog—sounds simple, right? But here's the catch: AI models usually suffer from \"catastrophic forgetting,\" where learning something new wipes out old knowledge like erasing a whiteboard. TailLoR solves this by treating the AI's knowledge like a well-organized filing cabinet where the drawer structure (the U and V bases from SVD) stays fixed, but you're only allowed to adjust the thickness of folders inside (the singular values). The genius twist? It adds a \"soft penalty\" that essentially tells the AI: \"Hey, don't mess with the thick folders holding your most important memories—only tweak the thin ones in the back corner.\" This way, new skills get encoded in the low-impact \"tail\" regions of the knowledge spectrum, leaving core competencies untouched. Why does this matter? Think about a customer service chatbot that needs to learn about a new product line every quarter, or a medical AI that must stay updated with the latest treatment guidelines—TailLoR lets them keep growing without expensive retraining or embarrassing memory loss. It's like giving AI a photographic memory that actually has room for new photos, instead of having to burn the old album every time.",
-        "zh-CN": "想象你有一个超级聪明的AI助手，它已经学会了英语翻译、写代码、回答医学问题等十几项技能，现在你想教它学习法律咨询。传统方法就像用橡皮擦掉旧笔记再写新的——结果新技能学会了，但之前的医学知识全忘光了，这就是AI界著名的\"灾难性遗忘\"难题。TailLoR的解决方案特别巧妙：它把AI的知识结构想象成一座图书馆，最核心的书架（主要奇异方向）放着最重要的基础知识，绝对不能动；新技能只能往角落那些不常用的书架（频谱长尾）上塞。就像你学做川菜不需要扔掉粤菜菜谱，只要在厨房角落加个调料架就行。这个技术对我们的实际生活意义重大：未来你的智能音箱可以今天学会控制新买的扫地机器人，明天学会你家方言，后天理解你孩子的作业问题，却不会因为学新东西就把之前的技能全忘了。更棒的是，这省下了海量的重新训练成本——企业不用每次都花几百万重新训练整个模型，只需要在原有基础上\"打个小补丁\"就能让AI持续进化。",
-        "ja": "ピアノの先生が新しい曲を教えるとき、鍵盤の位置を変えたりはしませんよね？TailLoRという技術も同じ発想で、AIが新しいスキルを学ぶときに「変えてはいけない核心部分」と「調整してもいい部分」をうまく分けているんです。具体的には、鍵盤の配置（UとVという土台）は絶対に固定して、各キーのタッチの強さ（特異値）だけを微調整する仕組みになっています。さらに賢いのは、「ゴールデンキー」と呼べる重要な部分には極力触らず、隅っこのあまり使わないキーで新しい曲を練習させること。この工夫のおかげで、カスタマーサポートAIが新商品の知識を追加学習しても過去の対応ノウハウを忘れない、医療AIが最新の診療ガイドラインを学んでも基礎的な診断能力が落ちない、といった「賢く成長し続けるAI」が実現できるわけです。つまり、毎回ゼロから訓練し直す手間とコストを省きながら、AIに新しい仕事をどんどん覚えさせられる画期的なアプローチなんですね。私たちの生活に身近なチャットボットや音声アシスタントも、この技術があればもっとスムーズに進化していけるでしょう。",
-        "ko": "상상해보세요. 당신이 피아노 연주자인데 재즈를 배우다가 원래 잘 치던 클래식을 까맣게 잊어버린다면? AI도 똑같은 문제를 겪습니다. 새로운 걸 배우면 예전 지식이 사라지는 '치명적 망각'이죠. TailLoR은 마치 이 피아노 연주자에게 \"건반 위치는 절대 바꾸지 말고, 각 건반을 누르는 힘의 강약만 조절해봐\"라고 조언하는 것과 같습니다. 더 똑똑한 점은 \"가장 중요한 핵심 건반들은 건드리지 말고, 구석에 있는 보조 건반들로만 새 곡을 연습해\"라는 규칙을 추가한 거예요. 이렇게 하면 새 기술을 배울 때 영향을 최소화하면서도 핵심 지식은 고스란히 유지됩니다. 실생활에서는 고객센터 AI가 신제품 정보를 계속 학습하거나, 의료 AI가 최신 진료 가이드라인을 업데이트할 때 매번 처음부터 다시 학습할 필요 없이 효율적으로 성장할 수 있게 해주죠. 결국 한 번 만든 AI를 평생 써먹을 수 있게 만드는 핵심 기술인 셈입니다."
+        "zh-TW": "想像你有兩個數學家朋友：一個是直覺超強、反應閃電快的「天才型」，另一個是每一步都要查定理書確認無誤的「嚴謹型」。現在的 AI 數學助理通常只有第一種——能快速給你答案，但偶爾會生成看似正確卻暗藏邏輯漏洞的推導過程。AXIOM 的突破是把兩者合而為一：神經網路扮演「靈感發想者」，符號引擎扮演「不留情面的審計員」，任何推論步驟一旦違反數學規則，審計員立刻叫停。這就像飛機的雙重駕駛控制系統——每個操作都被另一個系統即時監控。對我們的實際生活而言，這代表未來的 AI 科學助手在幫你計算藥物劑量、分析財務模型時，每一個步驟都能附上「邏輯保證書」，而不是讓你只能被迫相信黑箱輸出。",
+        "en": "Picture having two math friends working together on a proof: one is blazingly fast with incredible intuition, and the other is an obsessive checker who consults the rulebook before accepting any logical step. Most of today's AI math assistants only have the first personality, which means they can produce confident-sounding but secretly flawed reasoning chains. AXIOM changes this by combining both roles into one system. The neural network acts as the creative proposer of reasoning paths, while the symbolic execution engine serves as an uncompromising referee that rejects any step that cannot be derived from established axioms. Think of it as a grammar checker, but instead of catching spelling mistakes it catches logical fallacies in mathematical arguments. For everyday users, this means AI tutors and scientific computing tools that can genuinely guarantee the correctness of their derivations, which is critical in domains like pharmaceutical dosage calculation, engineering stress analysis, or automated theorem proving.",
+        "zh-CN": "想象有两位数学家朋友合作解题：一个直觉超强、反应飞快，另一个则每一步都要对照定理检验。现在大多数AI数学助理只有第一种特质——能快速给出答案，但偶尔会产生表面正确却暗藏漏洞的推导。AXIOM的突破是将两者合为一体：神经网络负责「提出推理路径」，符号引擎负责「严格审计每个逻辑步骤」，任何违反数学规则的推论立刻被叫停。这就像飞机的双重控制系统。对普通用户而言，这意味着未来的AI科学助手在药物剂量计算、工程分析等高风险场景中，每个步骤都能附上逻辑保证，而非让你被迫信任黑箱输出。",
+        "ja": "証明に取り組む2人の数学者の友人を想像してください。1人は驚くほど速くて直感的、もう1人はすべての論理ステップをルールブックと照合する几帳面なチェッカーです。今日のAI数学アシスタントのほとんどは前者だけで、自信を持っていながら実は欠陥のある推論を生成することがあります。AXIOMは両方の役割を1つのシステムに統合することでこれを変えます。神経ネットワークが推論経路の創造的な提案者として機能し、記号実行エンジンが確立した公理から導出できないステップを拒否する妥協なき審判として機能します。これは文法チェッカーのようなものですが、スペルミスではなく数学的議論の論理的誤りを捉えます。薬物投与量計算、工学的応力解析、定理証明など重要な分野でAI数学的導出の正確性を真に保証できます。",
+        "ko": "증명을 함께 작업하는 두 명의 수학자 친구를 상상해보세요. 한 명은 놀라울 정도로 빠르고 직관적이며, 다른 한 명은 모든 논리 단계를 규칙서와 대조하는 꼼꼼한 검수자입니다. 오늘날 AI 수학 보조 도구의 대부분은 전자만 갖추고 있어서 자신감 있게 보이지만 실제로는 결함 있는 추론을 생성할 수 있습니다. AXIOM은 두 역할을 하나의 시스템으로 통합함으로써 이를 변화시킵니다. 신경망이 추론 경로의 창의적 제안자 역할을 하고, 기호 실행 엔진이 확립된 공리에서 도출할 수 없는 단계를 거부하는 타협 없는 심판 역할을 합니다. 약물 투여량 계산, 공학적 응력 분석, 자동 정리 증명 등 중요한 분야에서 AI 수학적 도출의 정확성을 진정으로 보장할 수 있게 됩니다."
       },
       "insight": {
-        "zh-TW": "💡 真正的智慧不在於全盤改寫，而在於知道哪些核心不能動——TailLoR 告訴我們，學習的藝術是在最不重要的角落裡悄悄成長。",
-        "en": "💡 True intelligence lies not in rewriting everything, but in knowing what must stay untouched — TailLoR shows that the art of learning is growing quietly in the least critical corners.",
-        "zh-CN": "💡 真正的智慧不在于全盘改写，而在于知道哪些核心不能动——TailLoR 告诉我们，学习的艺术是在最不重要的角落里悄悄成长。",
-        "ja": "💡 真の知性とはすべてを書き換えることではなく、何を変えてはならないかを知ることにある――TailLoR は「最も重要でない隅で静かに成長すること」が学習の本質だと示している。",
-        "ko": "💡 진정한 지능은 모든 것을 다시 쓰는 것이 아니라 무엇을 건드리지 말아야 하는지 아는 것에 있다 — TailLoR는 가장 덜 중요한 구석에서 조용히 성장하는 것이 학습의 본질임을 보여준다."
+        "zh-TW": "💡 可驗證推理讓 AI 從「看起來對」升級為「保證對」，是 AI 進入高風險科學應用的關鍵門票。",
+        "en": "💡 Verifiable reasoning upgrades AI from 'looks correct' to 'guaranteed correct,' the critical ticket for AI entering high-stakes scientific applications.",
+        "zh-CN": "💡 可验证推理让AI从「看起来对」升级为「保证对」，是AI进入高风险科学应用的关键门票。",
+        "ja": "💡 検証可能な推論によりAIは「正しそう」から「保証された正確さ」へと昇格し、高リスクな科学応用への重要な入場券となる。",
+        "ko": "💡 검증 가능한 추론은 AI를 '올바르게 보임'에서 '보장된 정확성'으로 업그레이드시켜 고위험 과학 응용 분야 진입의 핵심 티켓이 된다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#667eea18\"/>\n<circle cx=\"80\" cy=\"80\" r=\"45\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"80\" cy=\"80\" r=\"30\" fill=\"#667eea\" opacity=\"0.85\"/>\n<path d=\"M60 72 L60 88 M68 68 L68 92 M76 65 L76 95 M84 68 L84 92 M92 72 L92 88 M100 76 L100 84\" stroke=\"white\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\"/>\n<path d=\"M125 80 L155 80 M145 72 L155 80 L145 88\" stroke=\"#667eea\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/>\n<circle cx=\"260\" cy=\"80\" r=\"45\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"3\"/>\n<circle cx=\"260\" cy=\"80\" r=\"30\" fill=\"#667eea\" opacity=\"0.85\"/>\n<path d=\"M240 72 L240 88 M248 68 L248 92 M256 65 L256 95 M264 68 L264 92 M272 72 L272 88 M280 76 L280 84\" stroke=\"white\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\"/>\n<path d=\"M238 88 Q248 70 258 82 Q268 94 278 72\" stroke=\"#f6ad55\" stroke-width=\"2.5\" stroke-linecap=\"round\" fill=\"none\"/>\n<circle cx=\"260\" cy=\"80\" r=\"44\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"8 4\" opacity=\"0.7\"/>\n<circle cx=\"80\" cy=\"80\" r=\"44\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"8 4\" opacity=\"0.7\"/>\n<rect x=\"230\" y=\"50\" width=\"60\" height=\"60\" rx=\"6\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"1.5\" opacity=\"0.4\"/>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#667eea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#667eea\" rx=\"2\"/>\n  <circle cx=\"70\" cy=\"60\" r=\"28\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2\"/>\n  <text x=\"70\" y=\"66\" text-anchor=\"middle\" font-size=\"22\">🧠</text>\n  <line x1=\"100\" y1=\"60\" x2=\"120\" y2=\"60\" stroke=\"#667eea\" stroke-width=\"2\" marker-end=\"url(#arr)\"/>\n  <rect x=\"120\" y=\"40\" width=\"52\" height=\"40\" rx=\"6\" fill=\"#667eea33\" stroke=\"#667eea\" stroke-width=\"1.5\"/>\n  <text x=\"146\" y=\"65\" text-anchor=\"middle\" font-size=\"18\">✓</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#667eea\" font-weight=\"bold\">人工智慧</text>\n  <text x=\"100\" y=\"108\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">神經符號推理驗證</text>\n</svg>"
     },
     {
       "id": "bio-260608",
       "domain": "bio",
       "day": "2026-06-08",
-      "author": "Rohit Goswami, Ruhila Goswami et al.",
-      "ref": "arXiv:2606.06434v1",
-      "url": "https://arxiv.org/abs/2606.06434v1",
+      "author": "Luo, G., Sun, B., Zhang, K. 2026",
+      "ref": "arXiv:2606.00568",
+      "url": "https://arxiv.org/abs/2606.00568",
       "color": "#48bb78",
       "title": {
-        "zh-TW": "rsx：超高效能串流工具包，用 RAD-seq 技術快速鑑定生物性別基因標記",
-        "en": "rsx: A High-Performance Streaming Toolkit for Rapidly Identifying Sex-Determining Genetic Markers via RAD-seq",
-        "zh-CN": "rsx：超高性能流式工具包，用 RAD-seq 技术快速鉴定生物性别基因标记",
-        "ja": "rsx：RAD-seqによる性決定遺伝子マーカーを高速検出するストリーミングツールキット",
-        "ko": "rsx: RAD-seq 기반 성 결정 유전자 마커를 초고속으로 탐지하는 스트리밍 툴킷"
+        "zh-TW": "從大量基因表現數據中還原因果關係：因果推論的邊界與可能",
+        "en": "On the Recoverability of Causal Relations from Bulk Gene Expression Data",
+        "zh-CN": "从大量基因表达数据中还原因果关系：因果推断的边界与可能",
+        "ja": "バルク遺伝子発現データからの因果関係の回復可能性について",
+        "ko": "벌크 유전자 발현 데이터에서 인과 관계 복원 가능성에 관하여"
       },
       "tag": {
-        "zh-TW": "🧬 生命科學／生物資訊",
-        "en": "🧬 Life Science / Bioinformatics",
-        "zh-CN": "🧬 生命科学／生物信息学",
-        "ja": "🧬 生命科学／バイオインフォマティクス",
-        "ko": "🧬 생명과학 / 생물정보학"
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
       },
       "tech": {
-        "zh-TW": "本論文提出 rsx，以 Rust 語言完整重新實作 RADSex 的所有指令集，採用串流式記憶體管理取代先前需載入整張百萬列標記表的做法，大幅降低記憶體使用量。rsx 同時引入貝葉斯後驗統計輸出，並提供原生 Python 與 C 整合介面，使下游分析管線更靈活。這套工具針對非模式生物（即基因組未被充分研究的物種）的性別連鎖標記發現工作流程進行端對端最佳化。",
-        "en": "rsx is a complete Rust reimplementation of the RADSex command set, replacing memory-intensive bulk table loading with a streaming approach that handles millions of RAD-tag marker rows without exhausting RAM. It introduces Bayesian posterior statistics alongside frequentist outputs and exposes native Python and C bindings for flexible pipeline integration. The toolkit is end-to-end optimized for sex-linked marker discovery in non-model organisms.",
-        "zh-CN": "本论文提出 rsx，以 Rust 语言完整重新实现 RADSex 的所有指令集，采用流式内存管理取代原先需要载入整张百万行标记表的方式，大幅降低内存占用。rsx 同时引入贝叶斯后验统计输出，并提供原生 Python 与 C 集成接口，使下游分析流程更加灵活。该工具针对非模式生物（即基因组尚未被充分研究的物种）的性别连锁标记发现工作流程进行了端到端优化。",
-        "ja": "rsx は RADSex のコマンドセット全体を Rust で再実装したもので、数百万行に及ぶ RAD タグマーカーテーブルをメモリに丸ごと読み込む従来方式をストリーミング処理に置き換え、メモリ使用量を大幅に削減します。頻度論的検定に加えてベイズ事後統計を出力し、Python・C へのネイティブバインディングも提供することで下流パイプラインとの統合を容易にします。非モデル生物における性連鎖マーカー探索ワークフロー全体を最適化したツールキットです。",
-        "ko": "rsx는 RADSex 명령어 세트 전체를 Rust로 재구현한 도구로, 수백만 행의 RAD 태그 마커 테이블을 통째로 메모리에 올리던 방식을 스트리밍 처리로 대체해 메모리 사용량을 획기적으로 줄였습니다. 빈도론적 검정 외에도 베이즈 사후 통계를 제공하며, Python 및 C 네이티브 바인딩을 통해 하위 분석 파이프라인과의 통합을 지원합니다. 비모델 생물의 성 연관 마커 발견 워크플로 전체를 최적화한 툴킷입니다."
+        "zh-TW": "大量 RNA 定序（bulk RNA-seq）將數萬個細胞的基因表現整合成單一平均值，損失了細胞層級的個體差異。此研究從理論上分析：在這種資訊壓縮下，哪些基因調控的「因果箭頭」仍可被正確還原，哪些則因平均化效應而永遠無法分辨。作者提出嚴格的可恢復性判定條件，為計算生物學提供根本性的理論邊界。",
+        "en": "Bulk RNA-seq aggregates gene expression across thousands of cells into a single average, erasing cell-level heterogeneity. This study rigorously analyzes which causal relationships between genes remain recoverable under this aggregation-induced information loss and which are permanently confounded. The authors derive formal identifiability conditions, establishing a theoretical foundation for causal inference from bulk genomic data.",
+        "zh-CN": "大量RNA测序将数万个细胞的基因表达整合成单一平均值，丢失了细胞层面的个体差异。该研究从理论上分析：在这种信息压缩下，哪些基因调控的「因果箭头」仍可被正确还原，哪些则因平均化效应而永远无法辨别。作者提出严格的可恢复性判定条件，为计算生物学提供根本性的理论边界。",
+        "ja": "バルクRNA-seqは数千の細胞にわたる遺伝子発現を単一の平均値に集約し、細胞レベルの不均一性を消去する。本研究は、この集約による情報損失の下でどの遺伝子間の因果関係が回復可能で、どれが永久に交絡するかを厳密に分析する。著者らは形式的な識別可能性条件を導出し、バルクゲノムデータからの因果推論の理論的基盤を確立する。",
+        "ko": "벌크 RNA-seq는 수천 개의 세포에 걸친 유전자 발현을 단일 평균값으로 집계하여 세포 수준의 이질성을 지운다. 본 연구는 이 집계로 인한 정보 손실 하에서 유전자 간의 어떤 인과 관계가 복원 가능하고 어떤 관계가 영구적으로 교란되는지를 엄밀하게 분석한다. 저자들은 공식적인 식별 가능성 조건을 도출하여 벌크 게놈 데이터에서의 인과 추론을 위한 이론적 기반을 확립한다."
       },
       "plain": {
-        "zh-TW": "想像你在夜市撈金魚，老闆給你一大桶混養的魚，你想快速分出公母好配對繁殖，但這些魚的性別特徵藏得很隱密——傳統做法就像把整桶魚倒在桌上仔細比對每一隻，桌子小、魚太多，根本擺不下還容易翻桌。新開發的 rsx 工具就像改用一條流水線，讓魚一隻隻游過掃描器，電腦即時記錄「這隻有公魚才有的基因標記」，完全不用大桌子也不會當機。更聰明的是，它不只告訴你「這是公的」，還會說「我有 87% 把握」，就像手機人臉辨識會顯示信心分數一樣，讓研究人員知道哪些判斷最可靠。這對養殖業超實用：石斑魚、龍蝦這類經濟物種常常公母長得一模一樣，有了這工具就能在幼苗時期快速篩選，全養母的（通常長更大）或控制性別比例，省下大量飼料成本。對保育來說也是救星，像台灣特有的櫻花鉤吻鮭這種瀕危物種，科學家可以用極少量的組織樣本就找出性別基因，規劃更精準的復育配對，不用再「賭運氣」隨便湊一對。簡單說，這就是把基因性別鑑定從「需要超級電腦的研究室專利」變成「筆電就能跑的日常工具」，讓更多物種的性別秘密被破解，也讓產業和保育都能更聰明地運用這些知識。",
-        "en": "Imagine you're trying to figure out which genetic \"fingerprints\" appear only in males or only in females across millions of DNA snippets—it's like searching for gender-specific books in a library with millions of volumes, except the old software (RADSex) would try to photocopy every single book into one room before sorting them, quickly overwhelming your computer's memory. The new tool, rsx, works more like a smart conveyor belt at an Amazon warehouse: each genetic snippet flows past once, gets scanned, and the decision is made on the spot without hoarding everything in RAM. What makes this especially clever is that rsx doesn't just flag a marker as \"probably male-specific\"—it gives you a Bayesian confidence score, like a weather forecast telling you there's an 85% chance of rain rather than just saying \"might rain.\" This matters tremendously for studying fish, shrimp, exotic birds, and other \"non-model organisms\" whose genomes haven't been fully mapped yet, because their sex-determination systems often hide in uncharted genetic territory. For conservationists trying to save endangered species or fish farmers wanting to breed all-female shrimp (which grow faster), being able to quickly and accurately identify sex-linked markers from massive datasets could mean the difference between guessing in the dark and making informed breeding decisions. By slashing memory requirements and boosting speed, rsx lets researchers analyze way more samples on regular computers, democratizing this kind of genetic detective work for labs that don't have supercomputer budgets.",
-        "zh-CN": "想象你在一个超大型图书馆里寻宝，要从几百万本书中找出\"只有男生能借、女生借不到\"的那些书——这正是科学家从海量基因数据里挖掘性别相关标记时的真实处境。过去的工具RADSex就像个笨拙的管理员，非要把所有书先搬进一个小仓库堆成山，然后慢慢翻查，结果电脑内存经常直接崩溃。新工具rsx聪明多了，它像个高效的传送带系统，书一本接一本从你眼前滑过，你边看边做记号，完全不需要占用巨大的存储空间。更酷的是，老工具只会干巴巴地说\"这本书可能属于男生专区\"，rsx却能像天气预报员那样告诉你\"我有85%的把握这本书确实是男生专属\"，这种贝叶斯统计的信心值在科研中价值千金。这对研究那些基因组信息还很贫乏的鱼虾蟹、珍稀鸟类特别重要，因为这些\"非模式生物\"的性别决定机制常常藏在我们完全陌生的基因角落。有了这个又快又省、还能给出可靠概率的工具，科学家就能分析更多样本，破解更多物种的性别密码，最终帮助濒危动物保护和水产养殖业精准培育优质品种——比如只养雌性的高产鱼苗，或者保护那些雌性稀缺的珍稀物种。",
-        "ja": "想像你在一場超大型的相親派對上，要從幾百萬張臉孔中找出「只有男生有、女生沒有」的特徵——這就是科學家在基因海洋裡尋找性別標記的真實處境。過去的工具RADSex就像要把所有參加者的照片先全部列印出來鋪滿整個體育館，電腦記憶體根本撐不住；新開發的rsx則聰明得多，它像是在派對入口架了一台高速攝影機，每個人走過去就即時分析一個，完全不需要大倉庫。更酷的是，舊工具只會說「這個特徵八成是男生的」，rsx還能告訴你「我有87%的信心」，就像氣象預報給你降雨機率一樣精準。這對研究那些還沒有「身分證資料庫」的野生動物——比如某種瀕危的熱帶魚或候鳥——特別重要，因為我們根本不知道牠們的性別是怎麼決定的，可能藏在某個從未被發現的基因角落。有了這套又快又省、還能給出信心指數的工具，科學家就能分析更多物種，不僅能破解大自然的性別密碼，還能實際應用在保育瀕危動物（確保繁殖配對成功）或水產養殖（培育生長更快的單一性別魚苗）上。簡單說，rsx就是把基因偵探工作從「人工翻閱檔案櫃」升級成「AI即時掃描系統」，讓科學家終於能應付那些數據量大到嚇人的非模式生物研究了。",
-        "ko": "想像你在一座超大型圖書館裡尋找「只出現在男生借閱紀錄、不出現在女生借閱紀錄」的書單——這就是科學家想從幾百萬筆基因資料中找出性別相關標記時遇到的難題。舊工具 RADSex 就像要把整座圖書館的書先全部搬進一間小倉庫，再慢慢翻找比對，結果電腦記憶體很快就炸了。現在的 rsx 改用「輸送帶式」的聰明作法：書一本一本流過你眼前，你邊看邊記錄就好，完全不需要巨大倉庫，速度快又省空間。更酷的是，舊工具只會說「這本書可能跟性別有關」，rsx 還會告訴你「我有 87% 的把握」，就像天氣預報給你下雨機率一樣實用。這對研究那些基因組資料還很不完整的魚蝦鳥類（科學家稱為「非模式生物」）特別重要，因為牠們的性別決定基因常常藏在我們還不認識的角落。有了這套又快又準的工具，科學家就能分析更多樣本、破解更多物種的性別之謎，進而幫助瀕危動物保育或改良水產養殖品種——比如養殖場可能只想養長得快的雌魚，提早知道性別就能省下大筆成本。簡單說，rsx 就是把「大海撈針」變成「精準篩選」的超高效基因偵探工具！"
+        "zh-TW": "想像你想了解一個城市裡各個家庭的生活習慣，但你只能拿到「全市平均電費」這個數字。某些資訊（比如「用電量高的家庭在早上還是晚上用電」）在平均值裡就已經永遠消失了——這正是「大量基因定序」的根本困境。科學家們過去幾十年用的基因分析方法，就是把數萬個細胞的基因活動全部混在一起算平均，然後試圖從這個模糊的「全市平均」中，反推出哪個基因控制哪個基因。這篇研究的重要性在於，它用嚴格的數學告訴你：哪些「基因控制關係」在混合之後還能被正確推算出來，哪些則因為混合過程中的資訊損失而「永遠無法被知道」。對醫學研究者而言，這就像是拿到一份「哪些問題是你永遠回答不了的」清單——聽起來悲觀，但能讓科學家把精力投入真正可以解開的謎題，避免浪費資源在數學上根本不可能的問題上。",
+        "en": "Imagine you are trying to understand the daily habits of individual households in a city, but all you have access to is the city-wide average electricity bill. Information like whether high-energy families are morning or evening users is already lost in that average and can never be recovered. This is precisely the fundamental dilemma facing bulk gene expression analysis. For decades, researchers have taken samples containing tens of thousands of cells, blended all their gene activity into a single average, and then tried to reverse-engineer which gene controls which from that blurry city-wide average. The significance of this paper is that it rigorously proves, using formal mathematics, exactly which gene regulatory relationships remain recoverable after this blending and which ones are permanently erased by the information loss. For medical researchers, this is like receiving a map of impossible questions, which sounds discouraging but actually allows scientists to concentrate their energy on mysteries that can genuinely be solved and to stop wasting resources on problems that are mathematically unresolvable from the start.",
+        "zh-CN": "想象你想了解一个城市里各家庭的生活习惯，但只能拿到「全市平均电费」这个数字。某些信息（比如高用电家庭是早上还是晚上用电）在平均值里就已经永远消失了——这正是「大量基因测序」的根本困境。科学家们几十年来一直把数万个细胞的基因活动混合在一起取平均，然后试图从这个模糊数字中反推基因调控关系。这项研究用严格的数学告诉你：哪些「基因控制关系」在混合后还能被正确推算，哪些因信息损失而「永远无法被知道」。对医学研究者而言，这就像拿到「永远无法回答的问题清单」，让科学家把精力投入真正可解开的谜题。",
+        "ja": "ある都市の個々の家庭の生活習慣を理解しようとしているが、市全体の平均電気料金しか入手できないと想像してください。高エネルギー家族が朝型か夜型かといった情報は、その平均値の中で既に失われており、決して回復できません。これが大量遺伝子発現解析が直面している根本的なジレンマです。何十年もの間、研究者たちは数万の細胞を含むサンプルを取り、それらの遺伝子活性を単一の平均にブレンドし、その不明瞭な値からどの遺伝子がどれを制御しているかを逆算しようとしてきました。この論文の意義は、このブレンド後にどの遺伝子調節関係が回復可能で、どれが情報損失により永久に失われるかを形式数学で厳密に証明したことです。医学研究者にとって、これは解決不可能な問題のマップを受け取るようなものですが、実際には解決できる謎に集中できるようになります。",
+        "ko": "도시 내 개별 가구의 생활 습관을 이해하려고 하지만 도시 전체 평균 전기 요금만 접근할 수 있다고 상상해보세요. 에너지 소비가 많은 가구가 아침형인지 저녁형인지 같은 정보는 이미 그 평균값에서 사라져 결코 복원할 수 없습니다. 이것이 바로 벌크 유전자 발현 분석이 직면한 근본적인 딜레마입니다. 수십 년 동안 연구자들은 수만 개의 세포를 포함한 샘플을 취하여 유전자 활성을 단일 평균으로 혼합하고, 그 흐릿한 값에서 어떤 유전자가 어떤 유전자를 제어하는지 역산하려 했습니다. 이 논문의 의의는 이 혼합 후에 어떤 유전자 조절 관계가 복원 가능하고 어떤 것이 정보 손실로 영구히 지워지는지를 엄밀한 수학으로 증명한 것입니다."
       },
       "insight": {
-        "zh-TW": "💡 當資料規模超越記憶體極限，真正的突破不是換更大的硬體，而是重新設計「資料流動的方式」——rsx 用串流思維解決的，是一個被工具慣例掩蓋已久的架構問題。",
-        "en": "💡 When data outgrows memory, the real breakthrough is not bigger hardware but redesigning how data flows — rsx shows that rethinking the pipeline architecture can unlock analyses that brute-force scaling never could.",
-        "zh-CN": "💡 当数据规模超越内存极限，真正的突破不是换更大的硬件，而是重新设计「数据流动的方式」——rsx 用流式思维解决的，是一个被工具惯例掩盖已久的架构问题。",
-        "ja": "💡 データがメモリの限界を超えたとき、真の突破口はより大きなハードウェアではなく「データの流れ方」の再設計にある——rsx はストリーミング思想で、従来のツールが慣習的に隠し続けてきたアーキテクチャ上の問題を解決した。",
-        "ko": "💡 데이터가 메모리 한계를 넘어설 때, 진정한 돌파구는 더 큰 하드웨어가 아니라 「데이터 흐름 방식」의 재설계에 있다 — rsx는 스트리밍 사고방식으로 기존 도구의 관행이 오랫동안 가려온 아키텍처 문제를 해결했다."
+        "zh-TW": "💡 知道「哪些問題永遠無解」和「哪些問題可以解」同樣重要——基因組學的因果邊界正在被科學重新繪製。",
+        "en": "💡 Knowing which questions are permanently unanswerable is as vital as knowing which ones can be solved, and genomics is finally charting those causal boundaries.",
+        "zh-CN": "💡 知道「哪些问题永远无解」和「哪些可以解」同样重要——基因组学的因果边界正在被科学重新绘制。",
+        "ja": "💡 「永遠に答えられない問い」を知ることは「解ける問い」を知ることと同様に重要であり、ゲノミクスはついてその因果の境界を描き始めている。",
+        "ko": "💡 '영원히 답할 수 없는 질문'이 무엇인지 아는 것은 '답할 수 있는 질문'을 아는 것만큼 중요하며, 유전체학은 마침내 그 인과적 경계를 그리고 있다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<rect x=\"10\" y=\"40\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"30\" y=\"44\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"50\" y=\"38\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"70\" y=\"42\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"90\" y=\"36\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<rect x=\"10\" y=\"80\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"30\" y=\"84\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"50\" y=\"78\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"70\" y=\"82\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#a0aec0\"/>\n<rect x=\"90\" y=\"76\" width=\"18\" height=\"24\" rx=\"2\" fill=\"#48bb78\"/>\n<line x1=\"120\" y1=\"80\" x2=\"160\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<polygon points=\"155,72 170,80 155,88\" fill=\"#48bb78\"/>\n<circle cx=\"200\" cy=\"52\" r=\"22\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"3\"/>\n<line x1=\"215\" y1=\"67\" x2=\"225\" y2=\"77\" stroke=\"#4299e1\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"3\"/>\n<line x1=\"268\" y1=\"80\" x2=\"292\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"280\" y1=\"68\" x2=\"280\" y2=\"92\" stroke=\"#48bb78\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#48bb78\"/>\n<rect x=\"240\" y=\"118\" width=\"80\" height=\"8\" rx=\"4\" fill=\"#48bb7855\"/>\n<rect x=\"250\" y=\"128\" width=\"60\" height=\"6\" rx=\"3\" fill=\"#48bb7833\"/>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#48bb7822\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#48bb78\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧬</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#48bb78\" font-weight=\"bold\">生命科學</text>\n  <text x=\"100\" y=\"108\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">基因因果關係推論</text>\n</svg>"
     },
     {
       "id": "phys-260608",
       "domain": "phys",
       "day": "2026-06-08",
-      "author": "Rakesh Arul, Piper Fowler-Wright et al.",
-      "ref": "arXiv:2606.06490v1",
-      "url": "https://arxiv.org/abs/2606.06490v1",
+      "author": "Fiorentino, A., Marzari, N. 2026",
+      "ref": "arXiv:2606.03405",
+      "url": "https://arxiv.org/abs/2606.03405",
       "color": "#ed8936",
       "title": {
-        "zh-TW": "室溫下奈米腔薄片中的同調偶極同步態：不需要雷射也能讓光子「齊步走」",
-        "en": "Room-Temperature Dipole Synchronization in Nanocavity Sheets: Getting Photons in Step Without a Laser",
-        "zh-CN": "室温下纳米腔薄片中的相干偶极同步态：无需激光也能让光子「齐步走」",
-        "ja": "ナノキャビティシートにおける室温コヒーレント双極子同期：レーザー不要で光子を「足並みそろえる」",
-        "ko": "나노공동 시트에서의 실온 쌍극자 동기화：레이저 없이도 광자를 「일제히 맞추는」 새로운 상태"
+        "zh-TW": "量子退火應用於材料：路徑積分分子動力學驅動的全域最優化新策略",
+        "en": "Quantum Annealing for Materials: A Path-Integral Molecular Dynamics Approach to Global Structure Search",
+        "zh-CN": "量子退火应用于材料：路径积分分子动力学驱动的全局最优化新策略",
+        "ja": "材料のための量子アニーリング：経路積分分子動力学による全域構造探索",
+        "ko": "재료를 위한 양자 어닐링: 경로 적분 분자 동역학을 통한 전역 구조 탐색"
       },
       "tag": {
-        "zh-TW": "⚛️ 奈米光學／量子同調",
-        "en": "⚛️ Nano-Optics / Quantum Coherence",
-        "zh-CN": "⚛️ 纳米光学／量子相干",
-        "ja": "⚛️ ナノ光学／量子コヒーレンス",
-        "ko": "⚛️ 나노광학 / 양자 결맞음"
+        "zh-TW": "⚛️ 物理科學",
+        "en": "⚛️ Physics",
+        "zh-CN": "⚛️ 物理科学",
+        "ja": "⚛️ 物理科学",
+        "ko": "⚛️ 물리과학"
       },
       "tech": {
-        "zh-TW": "研究團隊在二維排列的電漿子奈米間隙陣列（間隙寬度小於1奈米）中，以非共振連續波雷射激發，於室溫下觀測到多個空間上相互遠離的發光偶極子形成同步相干態。此系統展現跨偶極的空間相干性，但因快速輻射與非輻射耗散，光子時間相干性受到抑制，其物理機制有別於雷射、光子玻色–愛因斯坦凝聚及激子–極化子凝聚。",
-        "en": "The team fabricated 2D plasmonic nanogap arrays with sub-nm gaps and drove them with non-resonant continuous-wave pumping at room temperature, observing a synchronized coherent state among spatially separated emissive dipoles. The system shows spatial coherence across dipoles but suppressed temporal photon coherence due to rapid radiative and non-radiative decay, distinguishing it from lasers, photonic BECs, and exciton-polariton condensates.",
-        "zh-CN": "研究团队在亚纳米间隙的二维等离子体纳米间隙阵列中，以非共振连续波激光激发，于室温下观测到空间上相互远离的发光偶极子形成同步相干态。该系统展现出跨偶极的空间相干性，但由于快速辐射与非辐射耗散，光子时间相干性受到抑制，其物理机制有别于激光、光子玻色–爱因斯坦凝聚及激子–极化子凝聚。",
-        "ja": "研究チームはサブナノメートルのギャップを持つ2次元プラズモニックナノギャップアレイを作製し、非共鳴連続波励起によって室温で空間的に離れた発光双極子間の同期コヒーレント状態を観測した。このシステムは双極子間の空間コヒーレンスを示す一方、急速な輻射・非輻射緩和により時間的光子コヒーレンスは抑制され、レーザーや光子BEC、励起子ポラリトン凝縮とは異なる物理機構を持つ。",
-        "ko": "연구팀은 1나노미터 이하의 간격을 가진 2차원 플라즈몬 나노갭 배열에서 비공명 연속파 펌핑을 이용해 실온에서 공간적으로 떨어진 발광 쌍극자들이 동기화된 결맞음 상태를 형성함을 관측했다. 이 시스템은 쌍극자 간 공간 결맞음을 보이지만, 빠른 복사 및 비복사 감쇠로 인해 광자의 시간 결맞음은 억제되어 레이저, 광자 BEC, 엑시톤-폴라리톤 응축과는 구별되는 새로운 물리 현상이다."
+        "zh-TW": "作者（EPFL）提出以路徑積分分子動力學（PIMD）框架實現量子退火，讓量子力學的「隧穿效應」代替熱擾動來跳脫局部能量最小值，找到原子排列的全域最低能量構型。此方法無需操控多體波函數，可直接與機器學習原子間勢能函數結合，對高壓氫化物等量子效應顯著的材料特別有效。",
+        "en": "The authors (EPFL) implement quantum annealing via the path-integral molecular dynamics (PIMD) framework, exploiting quantum tunneling instead of thermal fluctuations to escape local energy minima and find the globally optimal atomic arrangement. The method requires no explicit wavefunction manipulation, integrates directly with machine-learning interatomic potentials, and is especially effective for materials with strong quantum nuclear effects like high-pressure hydrides.",
+        "zh-CN": "作者（EPFL）提出以路径积分分子动力学（PIMD）框架实现量子退火，让量子力学的「隧穿效应」代替热扰动来跳脱局部能量极小值，找到原子排列的全局最低能量构型。该方法无需操控多体波函数，可直接与机器学习原子间势函数结合，对高压氢化物等量子效应显著的材料特别有效。",
+        "ja": "著者ら（EPFL）は経路積分分子動力学（PIMD）フレームワークを通じて量子アニーリングを実装し、熱的揺らぎの代わりに量子トンネリングを活用して局所エネルギー最小値から脱出し、全域最適な原子配置を見つける。この方法は多体波動関数の明示的な操作を必要とせず、機械学習原子間ポテンシャルと直接統合でき、高圧水素化物など量子核効果が顕著な材料に特に有効である。",
+        "ko": "저자들(EPFL)은 경로 적분 분자 동역학(PIMD) 프레임워크를 통해 양자 어닐링을 구현하여, 열적 요동 대신 양자 터널링을 활용해 국소 에너지 최솟값에서 탈출하고 전역적으로 최적인 원자 배열을 찾는다. 이 방법은 다체 파동함수의 명시적 조작이 필요 없고, 머신러닝 원자간 퍼텐셜과 직접 통합되며, 고압 수소화물처럼 양자 핵효과가 두드러진 재료에 특히 효과적이다."
       },
       "plain": {
-        "zh-TW": "想像一個沒有指揮的超大型交響樂團，每位樂手分散在音樂廳的不同角落，卻能在完全沒人打拍子的情況下自動演奏出完美同步的樂章——這就是科學家在比頭髮絲還細一萬倍的奈米材料上發現的神奇現象。他們在一片薄薄的金屬表面刻出密密麻麻、間距不到一奈米的微小縫隙，用普通雷射光一照，這些縫隙裡的「微型天線」（電偶極子）竟然就像有默契的舞者一樣，自己找到節奏、齊步起舞，形成一種全新的量子同步狀態。最厲害的是，這整個過程在室溫下就能發生，不像傳統量子實驗需要把溫度降到接近絕對零度、耗費大量能源和設備。為什麼這很重要？因為它就像發現了一種「常溫量子膠水」，未來可以用來製造超靈敏的化學感測器（例如檢測空氣中極微量的病毒或污染物），或是開發不需冷卻系統的量子晶片，讓量子科技從實驗室走進日常生活。更有趣的是，這種同步方式跟雷射、LED 都不一樣——它在空間上整齊劃一，但在時間上故意保持「即興」，就像爵士樂手們音高一致卻各自發揮，這種特性可能開啟全新的光學應用領域。",
-        "en": "Imagine a packed stadium where thousands of fans spontaneously start clapping in perfect rhythm without anyone conducting them—that's essentially what scientists discovered happening with tiny light-emitting \"antennas\" on a nanoscale chip. Researchers created a flat sheet covered with incredibly tiny metal gaps (each smaller than a virus), and when they shone ordinary laser light on it at room temperature, something magical happened: countless microscopic dipoles scattered across the surface began oscillating in perfect spatial sync, like synchronized swimmers performing without a choreographer. What makes this discovery a big deal is that it works at room temperature—no need for the ultra-cold lab setups that usually cost millions of dollars and require liquid helium. This synchronized state is also weird in a quantum way: the dipoles are spatially coordinated (all \"dancing\" together) but temporally messy (their individual \"beats\" are randomized), which is completely different from how lasers or other known quantum light sources work. Think of it like a flash mob where everyone does the exact same moves but at slightly different speeds—chaotic yet coordinated. This breakthrough could revolutionize ultra-sensitive detectors that spot single molecules, enable new types of nanoscale light sources for computer chips, or even form the building blocks of future quantum devices. The real kicker is that quantum physics, often thought of as something exotic happening only in extreme conditions, can actually throw a \"coherent party\" right here at everyday temperatures.",
-        "zh-CN": "想象一场没有指挥的交响乐演出：几百个乐手散布在体育场各个角落，彼此看不见对方，却能在同一瞬间奏出完全一致的音符——这听起来很魔幻，但科学家在一片比头发丝还薄千倍的纳米材料上实现了类似的\"光子交响乐\"。他们在这张薄片上布满了比病毒还小的金属缝隙，用普通激光一照，这些缝隙里的微型\"光天线\"就自动同步振动起来，就像萤火虫群会莫名其妙地一起闪烁一样神奇。最酷的地方在于，这种同步不需要把材料冷冻到接近绝对零度（传统量子实验的标配），在你喝咖啡的室温下就能发生，这意味着未来的应用成本会大幅降低。这项发现为什么重要？因为它可能彻底改变我们制造超灵敏传感器的方式——比如检测单个病毒分子的医疗设备，或者让芯片里的光通信元件小到可以塞进一根头发里。更深层的意义是，它证明了量子世界的\"集体魔法\"不一定要在昂贵的低温实验室才能施展，我们日常温度下的材料也能玩出量子把戏，这为未来的量子技术走进生活打开了一扇意想不到的大门。",
-        "ja": "想像一群螢火蟲在夏夜裡飛舞，明明沒有指揮，卻突然開始同步閃爍——這就是這項研究發現的奇妙現象，只不過主角換成了比頭髮絲還小一萬倍的「光天線」。科學家在一片薄薄的金屬奈米材料上刻出密密麻麻、間距不到1奈米的微小縫隙，用普通雷射光一照，這些縫隙裡的電偶極子（可以想成微型天線）竟然自己「對好拍子」，開始整齊劃一地振動，儘管彼此距離相對來說很遠。最厲害的是，這種同步不像傳統雷射那樣產生筆直光束，而是一種全新的量子集體狀態——空間上整齊，時間上卻保持「個性」，而且在常溫下就能實現，不需要把設備冷凍到接近絕對零度。為什麼重要呢？想像未來你的手機裡有一顆超靈敏的感測晶片，能偵測到一顆病毒、或者讓量子電腦的元件變得更穩定可靠，這都可能因為這種「常溫量子合唱」技術而成真。這項發現打破了「量子現象只能活在冰箱裡」的刻板印象，讓我們看見：即使在炎熱的夏天，量子世界依然能唱出和諧的二重唱。",
-        "ko": "想像一場沒有指揮的交響樂團，樂手們分散在音樂廳各個角落，卻能在沒有任何訊號的情況下，自動演奏出完美和諧的樂章——這就是韓國科學家在奈米世界發現的驚人現象。他們在比頭髮還要細一萬倍的金屬薄片上，製作了密密麻麻的超微小縫隙（間距不到一奈米，約莫三個原子排排站的距離），用普通雷射一照，這些縫隙裡的微型「光天線」竟然開始集體同步振動，彷彿有心電感應般整齊劃一。最厲害的是，這種神奇的量子集體舞蹈不需要像過去實驗那樣冷凍到接近絕對零度，在你我身處的常溫環境就能發生！為什麼這很重要呢？過去我們以為量子世界的奇妙現象只能在極端條件下才看得到，但這項發現打破了這個限制，意味著未來你的手機裡可能就有這種奈米同步器件，用來製造超靈敏的生物感測器（想像一滴血就能檢測出癌症早期訊號），或者開發出比現在快千倍的光學運算晶片。這個發現也挑戰了我們對「同調」的理解——原來量子粒子可以在空間上步調一致，但在時間上刻意保持「隨興」，就像爵士樂手們即興演奏時，雖然節奏自由但和聲完美，開啟了一扇通往全新量子技術的大門。"
+        "zh-TW": "在材料科學裡，找到原子最穩定的排列方式就像在一片連綿起伏的山脈中尋找最低的山谷。傳統方法像是在山上隨機行走，靠著熱能（溫度）讓你偶爾爬過小山丘；但問題是，你可能困在一個「夠低但不是最低」的山谷裡，走遍周圍卻永遠找不到更低的地方。量子退火的革命性概念是：讓原子借助量子力學的「隧穿效應」直接穿過山壁，而不是翻越它們——就像幽靈能穿牆一樣，量子粒子能在某些條件下「瞬間出現」在山壁另一側的更低山谷中。這篇研究的突破在於，它用現有的分子模擬工具（路徑積分分子動力學）就能實現這個想法，不需要昂貴的量子電腦。實際應用上，這能加速「室溫超導體」的材料搜尋、蛋白質摺疊構型預測、以及新型電池材料設計，縮短從理論到實驗的時間。",
+        "en": "In materials science, finding the most stable atomic arrangement is like searching for the lowest valley in an enormous, endlessly hilly landscape. Traditional methods are like a random walker on those hills, relying on thermal energy to occasionally jump over small ridges. The problem is you might get trapped in a valley that seems low enough locally but is nowhere near the global minimum. Quantum annealing introduces a radical shortcut: instead of climbing over barriers, atoms exploit quantum tunneling to pass straight through them, like a ghost walking through walls. A particle that cannot classically cross an energy barrier can quantum mechanically appear on the other side in a lower energy valley. The breakthrough in this paper is achieving this quantum trick using standard molecular dynamics software without requiring expensive quantum computers, simply by incorporating path-integral formulations that already describe quantum nuclear motion. In practice, this could dramatically accelerate the search for room-temperature superconductors, improved battery cathodes, and stable pharmaceuticals by efficiently navigating the astronomically large space of possible atomic configurations.",
+        "zh-CN": "在材料科学里，找到原子最稳定的排列方式就像在连绵起伏的山脉中寻找最低的山谷。传统方法像是随机行走，靠热能偶尔翻过小山丘；但可能困在「够低但不是最低」的山谷里。量子退火的革命性概念是：让原子借助量子力学的「隧穿效应」直接穿过山壁，而非翻越——就像幽灵能穿墙。这篇研究的突破在于，用现有分子模拟工具（路径积分分子动力学）就能实现，不需要昂贵的量子计算机。实际应用上，这能加速室温超导体搜索、蛋白质折叠预测和新型电池材料设计。",
+        "ja": "材料科学において最も安定した原子配置を見つけることは、広大な起伏のある風景の中で最も低い谷を探すようなものです。従来の方法はその丘の上をランダムに歩くようなもので、熱エネルギーを頼りに時々小さな尾根を越えます。問題は、局所的には十分低く見えるが全域最小値には程遠い谷に閉じ込められる可能性があることです。量子アニーリングは根本的な近道を導入します。障壁を乗り越える代わりに、原子が量子トンネリングを利用して直接通り抜けます。この論文の突破口は、高価な量子コンピュータを必要とせず、標準的な分子動力学ソフトウェアを使ってこの量子的なトリックを達成したことです。実用的には室温超導体、改良されたバッテリー材料、安定した医薬品の探索を加速できます。",
+        "ko": "재료과학에서 가장 안정적인 원자 배열을 찾는 것은 광활하고 끝없이 언덕진 지형에서 가장 낮은 계곡을 찾는 것과 같습니다. 전통적인 방법은 열에너지에 의존하여 때때로 작은 능선을 넘는 무작위 보행자 같아서, 전역 최솟값에서 멀리 떨어진 국소 계곡에 갇힐 수 있습니다. 양자 어닐링은 근본적인 지름길을 도입합니다. 장벽을 넘는 대신 원자가 양자 터널링을 활용하여 직접 통과합니다. 이 논문의 돌파구는 고가의 양자 컴퓨터 없이 표준 분자 동역학 소프트웨어로 이 양자적 묘기를 달성한 것입니다. 실용적으로는 실온 초전도체, 개선된 배터리 재료, 안정적인 의약품 탐색을 가속화할 수 있습니다."
       },
       "insight": {
-        "zh-TW": "💡 量子同調不再是低溫實驗室的專利——奈米間隙中的強近場耦合，讓室溫下的集體量子有序態成為可能，這或許意味著量子技術的應用門檻將大幅降低。",
-        "en": "💡 Quantum coherence is no longer confined to ultra-cold labs — strong near-field coupling in sub-nm gaps can sustain collective quantum order at room temperature, potentially slashing the barriers to practical quantum technologies.",
-        "zh-CN": "💡 量子相干不再是超低温实验室的专利——亚纳米间隙中的强近场耦合，使室温下的集体量子有序态成为可能，这或许意味着量子技术的应用门槛将大幅降低。",
-        "ja": "💡 量子コヒーレンスはもはや極低温実験室の専売特許ではない——サブナノメートルギャップの強近接場結合が室温での集団量子秩序を可能にし、量子技術の実用化ハードルを大きく下げる可能性がある。",
-        "ko": "💡 양자 결맞음은 더 이상 극저온 실험실의 전유물이 아니다——1나노미터 이하 간격의 강한 근접장 결합이 실온에서도 집단 양자 질서를 가능하게 하며, 이는 양자 기술의 실용화 문턱을 크게 낮출 수 있음을 시사한다."
+        "zh-TW": "💡 讓原子「穿牆而過」而非翻山越嶺，量子退火正把材料設計的搜尋空間從天文數字壓縮到可計算範疇。",
+        "en": "💡 Making atoms tunnel through barriers instead of climbing over them, quantum annealing is compressing the astronomically large search space of materials design into the computationally tractable.",
+        "zh-CN": "💡 让原子「穿墙而过」而非翻山越岭，量子退火正将材料设计的搜索空间从天文数字压缩到可计算范畴。",
+        "ja": "💡 原子を山を越えさせるのではなく障壁を透過させることで、量子アニーリングは材料設計の天文学的な探索空間を計算可能な領域に圧縮しつつある。",
+        "ko": "💡 원자를 장벽 위로 넘기는 대신 통과시킴으로써, 양자 어닐링은 재료 설계의 천문학적 탐색 공간을 계산 가능한 영역으로 압축하고 있다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<rect x=\"30\" y=\"70\" width=\"280\" height=\"20\" rx=\"4\" fill=\"#ed8936\" opacity=\"0.3\"/>\n<circle cx=\"80\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"130\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"180\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"230\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<circle cx=\"280\" cy=\"80\" r=\"10\" fill=\"#ed8936\"/>\n<path d=\"M80,60 Q105,35 130,60 Q155,35 180,60 Q205,35 230,60 Q255,35 280,60\" stroke=\"#4299e1\" stroke-width=\"2.5\" fill=\"none\"/>\n<path d=\"M80,100 Q105,125 130,100 Q155,125 180,100 Q205,125 230,100 Q255,125 280,100\" stroke=\"#4299e1\" stroke-width=\"2.5\" fill=\"none\"/>\n<line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"110\" stroke=\"#ed8936\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/>\n<line x1=\"180\" y1=\"50\" x2=\"180\" y2=\"110\" stroke=\"#ed8936\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/>\n<line x1=\"280\" y1=\"50\" x2=\"280\" y2=\"110\" stroke=\"#ed8936\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/>\n<polygon points=\"170,15 180,30 190,15\" fill=\"#4299e1\" opacity=\"0.8\"/>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#ed893622\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#ed8936\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">⚛️</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#ed8936\" font-weight=\"bold\">物理科學</text>\n  <text x=\"100\" y=\"108\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">量子退火材料搜尋</text>\n</svg>"
     },
     {
       "id": "neuro-260608",
       "domain": "neuro",
       "day": "2026-06-08",
-      "author": "Shuqin Ma, Ryota Kanai et al.",
-      "ref": "arXiv:2606.06424v1",
-      "url": "https://arxiv.org/abs/2606.06424v1",
+      "author": "Chen, J. et al. 2026",
+      "ref": "arXiv:2606.01468",
+      "url": "https://arxiv.org/abs/2606.01468",
       "color": "#9f7aea",
       "title": {
-        "zh-TW": "意識不是貼標籤：大腦的計算結構必須從內部自發形成才能產生主觀體驗",
-        "en": "Consciousness From Within: Why Intrinsic Computational Structure Matters for the Mind",
-        "zh-CN": "意识不是贴标签：大脑的计算结构必须从内部自发形成才能产生主观体验",
-        "ja": "意識は「外から貼るラベル」ではない：内在的な計算構造だけが心を生む",
-        "ko": "의식은 외부 딱지가 아니다: 내재적 계산 구조만이 주관적 경험을 만든다"
+        "zh-TW": "大型神經元群體的低維流形：解碼大腦內部表徵與認知動態的新途徑",
+        "en": "Low-Dimensional Neural Manifolds in Large Neuronal Populations: Decoding Brain Representations and Cognitive Dynamics",
+        "zh-CN": "大型神经元群体的低维流形：解码大脑内部表征与认知动态的新途径",
+        "ja": "大規模神経集団の低次元多様体：脳内部表現と認知ダイナミクスの解読への新たな道",
+        "ko": "대규모 신경 집단의 저차원 매니폴드: 뇌 내부 표현과 인지 역동성 해독의 새로운 경로"
       },
       "tag": {
-        "zh-TW": "🧠 意識科學／計算哲學",
-        "en": "🧠 Consciousness Science / Philosophy of Computation",
-        "zh-CN": "🧠 意识科学／计算哲学",
-        "ja": "🧠 意識科学／計算哲学",
-        "ko": "🧠 의식 과학 / 계산 철학"
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
       },
       "tech": {
-        "zh-TW": "本文提出「內在計算功能主義」框架，以兩項操作標準區分真正由系統物理結構自身實現的計算組織（觀察者獨立）與僅由外部詮釋者賦予的計算標籤（觀察者相對）。標準C1要求相關屬性可在不訴諸外部觀察者的情況下被明確規定；標準C2要求因果結構必須在系統的物理基底中真實實現。此框架旨在為意識的計算理論提供一個抵抗「多重可實現性反駁」的形而上學基礎。",
-        "en": "This paper proposes an intrinsic computational functionalism framework, operationalised by two criteria that distinguish genuinely system-intrinsic computational organisation (observer-independent) from externally imposed interpretations (observer-relative). Criterion C1 requires that the relevant property be specifiable without appealing to an external observer; Criterion C2 requires that the causal structure be physically realised in the system's substrate. The framework aims to provide a metaphysical foundation for computational theories of consciousness that resists the multiple-realisability objection.",
-        "zh-CN": "本文提出「内在计算功能主义」框架，以两项操作标准区分真正由系统物理结构自身实现的计算组织（观察者独立）与仅由外部诠释者赋予的计算标签（观察者相对）。标准C1要求相关属性可在不诉诸外部观察者的情况下被明确规定；标准C2要求因果结构必须在系统的物理基底中真实实现。该框架旨在为意识的计算理论提供抵抗「多重可实现性反驳」的形而上学基础。",
-        "ja": "本論文は「内在的計算機能主義」のフレームワークを提案し、システム自身の物理構造から真に実現された計算組織（観察者独立）と外部の解釈者が付与した計算ラベル（観察者相対）を区別する二つの操作基準を示す。基準C1は関連属性が外部観察者に依存せず規定できることを要求し、基準C2は因果構造がシステムの物理基盤に実際に実現されていることを要求する。",
-        "ko": "이 논문은 '내재적 계산 기능주의' 프레임워크를 제안하며, 시스템 자체의 물리 구조에서 실현된 계산 조직(관찰자 독립)과 외부 해석자가 부여한 계산 레이블(관찰자 상대)을 구분하는 두 가지 운용 기준을 제시한다. 기준 C1은 관련 속성이 외부 관찰자 없이 명시될 수 있어야 함을, 기준 C2는 인과 구조가 시스템의 물리적 기반에서 실제로 구현되어야 함을 요구한다."
+        "zh-TW": "當大腦同時記錄數萬個神經元的電活動時，這些高維數據實際上「躺」在一個低維的潛在空間（流形）上，神經元群體的相互作用可被少數幾個潛在變數所捕捉。此研究建立計算框架，從記錄到的神經集群放電模式中提取低維軌跡，並將其對應到特定的認知任務（記憶、決策、感知），揭示大腦如何用最少的自由度編碼複雜資訊。",
+        "en": "When thousands of neurons are recorded simultaneously, their high-dimensional firing patterns lie on a low-dimensional latent manifold, meaning neural population interactions can be captured by only a few latent variables. This work develops computational frameworks to extract low-dimensional trajectories from recorded neural ensemble activity and map them onto specific cognitive tasks such as memory, decision-making, and perception, revealing how the brain encodes complex information with minimal degrees of freedom.",
+        "zh-CN": "同时记录数万个神经元时，这些高维数据实际上「躺」在低维潜在空间（流形）上，神经元群体的相互作用可被少数几个潜在变量捕捉。该研究建立计算框架，从神经集群放电模式中提取低维轨迹，并映射到特定认知任务（记忆、决策、感知），揭示大脑如何用最少自由度编码复杂信息。",
+        "ja": "数万個の神経細胞を同時に記録すると、高次元の発火パターンは低次元の潜在多様体上に存在し、神経集団の相互作用が少数の潜在変数で捉えられる。本研究は記録された神経アンサンブル活動から低次元軌跡を抽出し、記憶、意思決定、知覚などの特定の認知課題にマッピングする計算フレームワークを開発し、脳が最小の自由度で複雑な情報を符号化する方法を明らかにする。",
+        "ko": "수만 개의 신경세포를 동시에 기록할 때 고차원 발화 패턴은 저차원 잠재 매니폴드 위에 존재하며, 신경 집단의 상호작용이 소수의 잠재 변수로 포착될 수 있다. 본 연구는 기록된 신경 앙상블 활성에서 저차원 궤적을 추출하고 기억, 의사결정, 지각과 같은 특정 인지 과제에 매핑하는 계산 프레임워크를 개발하여, 뇌가 최소한의 자유도로 복잡한 정보를 인코딩하는 방법을 밝힌다."
       },
       "plain": {
-        "zh-TW": "你有沒有想過，為什麼你的大腦會有「痛」的感覺，但你的手機再怎麼運算複雜的程式也不會「感到」痛？長久以來，有些哲學家會嗆科學家說：「你說大腦像電腦所以能產生意識，但『計算』這個詞根本只是你人類自己貼上去的標籤啊！我也可以說一顆石頭在『計算』重力，難道石頭有意識嗎？」這個攻擊確實很致命，因為如果「計算」只是我們觀察者隨便詮釋的概念，那它怎麼可能真的創造出你腦中那種活生生的、無法否認的主觀感受？這篇論文提出了一個聰明的反擊：有些計算結構是真的從系統內部的物理因果關係中「長出來」的，就像雪花的六角形不需要任何人命名它才存在，它就是自然從水分子的排列方式中湧現出來。作者設計了兩個嚴格的判斷標準，讓我們能區分哪些計算是系統「骨子裡就有的」，哪些只是觀察者硬貼上去的標籤——只有前者才有資格被當成意識的真正基礎。這對意識科學超級重要，因為它等於告訴研究者：如果你想用腦部掃描或演算法來偵測意識，你測量的必須是那種內建在大腦物理結構裡的計算，而不是任何你想套就能套上去的數學模型，否則你可能只是在測量自己的想像力而已。",
-        "en": "Think about how we sometimes joke that clouds \"look like a bunny\" or that a stain on the wall \"looks like a face\"—we're projecting patterns onto things that don't actually possess those patterns themselves. Philosophers have long used this same logic to attack the idea that consciousness arises from computation in the brain, arguing that calling the brain a \"computer\" is just us slapping a convenient label on neural activity, like seeing bunnies in clouds. If computation is merely in the eye of the beholder, how could it possibly generate the vivid, undeniable feeling of what it's like to be you? This paper fights back by drawing a sharp line between fake \"observer-dependent\" computation (the bunny-in-clouds kind) and genuine \"observer-independent\" computation that emerges from a system's own physical cause-and-effect structure, much like how a snowflake's six-fold symmetry exists whether or not anyone is around to notice it. The authors provide two concrete tests to tell these apart, which matters enormously because if consciousness really does depend on computation—as many neuroscientists suspect—it must depend on the real, internally-generated kind, not just whatever story we humans choose to tell about brain activity. This framework gives consciousness theories like Integrated Information Theory a much sturdier philosophical foundation and helps researchers design experiments that measure actual consciousness-related processes rather than chasing mirages. In essence, it's the difference between your brain genuinely running the \"program\" of conscious experience versus someone on the outside just saying it looks like it is—and that difference might be everything.",
-        "zh-CN": "想象你拿着一块石头说它\"正在计算天气预报\"——只要你愿意，石头表面的裂纹确实可以被解读成某种数据模式，但这显然很荒谬，因为计算只存在于你的脑补里，石头本身什么也没做。这个困境曾让哲学家们质疑：如果大脑的计算也只是我们人类贴上去的标签，那它怎么可能真的产生你现在正体验着的、活生生的意识感受呢？这篇论文提出了一个关键区分：有些计算结构就像雪花的六角形对称性，是从物理系统内部自发涌现出来的，不需要任何观察者去命名它才存在；而有些\"计算\"就像你硬说石头在算命，纯粹是外部解读。作者给出两把尺子来测量：这个计算能不能在不依赖人类诠释的情况下被明确定义？它的因果结构是不是真实刻在系统的物理零件里？这对理解意识超级重要，因为如果意识真的来自计算，那它依赖的必须是大脑自己\"长出来\"的那种内在计算架构，而不是科学家事后随便套上去的数学模型——就像你的头痛是真实的生理过程，而不是医生在病历上写个诊断码就能凭空制造出来的。这个框架也帮助像整合信息理论这样的意识理论站稳脚跟，让研究者能设计出真正测量\"系统自身拥有的计算\"的实验，而不是测量\"我们希望看到的模式\"。",
-        "ja": "想像你在沙灘上看到一堆石頭，你可以說它們「排列成一個笑臉符號」，但這個笑臉其實只存在於你的腦海裡——石頭本身根本不知道自己在笑。這就是哲學家攻擊「意識來自大腦計算」這個想法的核心武器：如果計算只是我們人類貼上去的標籤，那它怎麼可能真的產生你此刻正在體驗的「痛」或「紅色的感覺」呢？這篇論文提出了一個關鍵反擊：並非所有計算都是外來標籤，有些計算結構是從物理系統內部自然長出來的，就像雪花的六角形不需要任何人去命名它才存在一樣。作者設計了兩個具體檢驗標準，讓我們能分辨哪些計算是系統「本來就有的」，哪些只是觀察者隨便投射上去的——比如你的大腦神經元之間的電訊號傳遞模式是真實存在的因果結構，但把算盤當成「計算機」卻只是人類的詮釋。這對意識研究超級重要，因為如果我們想用計算理論解釋為什麼你會有主觀感受，我們必須確保談論的是那種「系統自己擁有」的計算，而不是科學家隨便套上去的數學模型。這個框架也幫助像整合資訊理論這類意識理論抵擋哲學批評，並且指引科學家設計實驗時，要測量的是大腦內部真實發生的因果組織，而不是任意的外部描述。",
-        "ko": "여러분이 구름을 보고 \"저기 토끼가 있네!\"라고 말할 때, 그 토끼는 정말 하늘에 존재하는 걸까요, 아니면 여러분의 상상 속에만 있는 걸까요? 이 논문은 바로 이런 질문을 뇌와 의식에 적용합니다. 많은 과학자들이 \"뇌는 컴퓨터처럼 계산을 하니까 의식이 생긴다\"고 말하는데, 철학자들은 \"잠깐, 그 '계산'이라는 건 그냥 네가 뇌에다 갖다 붙인 해석 아니야?\"라고 반박해왔죠. 이 연구는 두 가지를 구분합니다: 누군가 억지로 의미를 부여한 가짜 계산(원숭이에게 요리책을 쥐어주고 \"요리 계산 중!\"이라고 우기는 것처럼)과, 시스템 내부의 물리적 구조에서 진짜로 일어나는 계산(마치 눈송이의 육각형 패턴이 누가 이름 붙이든 말든 저절로 형성되는 것처럼). 저자들은 이 둘을 판별할 수 있는 구체적인 기준 두 가지를 제시했는데, 이건 의식 연구에 엄청 중요합니다. 왜냐하면 만약 의식이 정말 계산에서 나온다면, 그건 우리가 마음대로 해석해서 붙인 계산이 아니라 뇌 자체의 물리적 구조가 '진짜로 실행하는' 계산이어야 하거든요. 이 프레임워크 덕분에 과학자들은 이제 \"이 뇌 활동이 진짜 의식과 관련된 계"
+        "zh-TW": "想像一個管弦樂團同時有一百個音樂家在演奏，每個人都拉著不同的音符和節奏。如果你試圖用一百個個別的麥克風來「了解這段音樂」，你會淹沒在資料的洪流裡。但聰明的辦法是：找出整個樂團集體在「搖擺」、「漸強」、「收束」這幾個維度上的動態——用三到五個數字就能抓住整段音樂的靈魂。大腦神經元的集體活動正是如此：雖然有幾十億個細胞各自電活動，但它們的集體行為其實「活在」一個維度遠小於你想像的空間裡。這篇研究發展出計算工具，能從數萬個神經元的雜亂放電模式中，自動找出那幾個「真正重要的軸線」，以及大腦在思考、記憶、做決定時，沿著這些軸線如何「旅行」。未來，這類技術可以讓腦機介面更精準地讀取意圖，讓科學家更深刻地理解阿茲海默症或精神分裂症患者的大腦「軌跡」究竟偏離了什麼。",
+        "en": "Imagine a hundred-piece orchestra where every musician is playing something different. If you tried to fully understand the music by tracking each individual instrument with its own microphone, you would drown in data. The smarter approach is to identify the few underlying dimensions of the collective performance, things like how the ensemble swells, contracts, or shifts, and capture the whole musical arc in just three or four numbers. The collective activity of brain neurons works in exactly the same way. Although billions of individual cells are firing electrically at any moment, their collective behavior lives in a space of far fewer dimensions than you would expect. This research develops tools to automatically extract those few critical axes from the chaotic firing patterns of tens of thousands of neurons and to trace how the brain navigates along them during thinking, remembering, and decision-making. Future applications include brain-computer interfaces that read intentions far more accurately, and diagnostic tools that quantify exactly how the neural trajectories of Alzheimer or schizophrenia patients deviate from healthy patterns.",
+        "zh-CN": "想象一百人的管弦乐团同时演奏不同音符。如果你用一百个麦克风追踪每个乐手，会淹没在数据里。聪明的方法是找出集体「摇摆」「渐强」「收束」这几个维度的动态——用三五个数字就能抓住音乐的灵魂。大脑神经元的集体活动正是如此：数十亿细胞各自放电，但集体行为「活在」维度远小于想象的空间里。这项研究开发出计算工具，能从数万个神经元的放电模式中自动找出那几个「真正重要的轴线」，以及大脑在思考、记忆、决策时如何沿这些轴线「旅行」。未来可让脑机接口更精准地读取意图，并量化阿茲海默症患者的大脑「轨迹」偏离了什么。",
+        "ja": "百人のオーケストラで全員が異なる音を演奏していると想像してください。個別のマイクで全員を追跡しようとすると、データに溺れてしまいます。賢いアプローチは、アンサンブルが膨らんだり、縮んだり、シフトしたりする集団演奏の少数の基本次元を特定し、三、四つの数字で音楽全体のアークをとらえることです。脳神経細胞の集団活動もまったく同じです。何十億もの個々の細胞が電気的に発火していても、その集団的な振る舞いは予想よりはるかに少ない次元の空間に存在します。本研究は、数万個の神経細胞の混沌とした発火パターンから重要な軸を自動的に抽出し、思考、記憶、意思決定中に脳がどのようにそれらを移動するかを追跡するツールを開発します。将来の応用には、より正確なBMIや神経軌跡の診断ツールが含まれます。",
+        "ko": "100명의 오케스트라가 모두 다른 음을 연주한다고 상상해보세요. 각 연주자를 개별 마이크로 추적하려 하면 데이터에 빠질 것입니다. 더 스마트한 접근 방식은 앙상블의 집단적 연주에서 부풀거나 수축하거나 이동하는 등 소수의 기본 차원을 파악하여 전체 음악 흐름을 서너 개의 수치로 담아내는 것입니다. 뇌 신경세포의 집단적 활성도 정확히 같은 방식으로 작동합니다. 수십억 개의 세포가 전기적으로 발화하더라도 집단적 행동은 예상보다 훨씬 적은 차원의 공간에 존재합니다. 본 연구는 수만 개 신경세포의 혼란스러운 발화 패턴에서 중요한 축을 자동으로 추출하고 사고, 기억, 의사결정 중 뇌가 그것들을 어떻게 이동하는지 추적하는 도구를 개발합니다."
       },
       "insight": {
-        "zh-TW": "💡 意識或許不在於大腦「被描述成」什麼計算，而在於它的物理結構從內部「本就是」什麼計算——這個區別，決定了意識科學能否擺脫純哲學爭論、走向可實驗驗證的科學。",
-        "en": "💡 Consciousness may hinge not on what computation a brain is described as performing, but on what computation its physical structure intrinsically is — a distinction that could finally move consciousness science from philosophical debate to empirical testability.",
-        "zh-CN": "💡 意识或许不在于大脑「被描述成」什么计算，而在于它的物理结构从内部「本就是」什么计算——这个区别，决定了意识科学能否走向可实验验证的科学。",
-        "ja": "💡 意識は脳が「何の計算として描写されるか」ではなく、その物理構造が内側から「本質的に何の計算であるか」にかかっているかもしれない――この違いが、意識科学を哲学論争から実験科学へと導く鍵となりうる。",
-        "ko": "💡 의식은 뇌가 '어떤 계산으로 묘사되느냐'가 아니라, 그 물리 구조가 내부에서 '본질적으로 어떤 계산이냐'에 달려 있을지 모른다 — 이 차이가 의식 과학을 철학 논쟁에서 실험 가능한 과학으로 이끄는 열쇠다."
+        "zh-TW": "💡 大腦的複雜性或許是一種「幻象」——數十億神經元的集體舞蹈，可能只需要幾個核心維度就能完整描述。",
+        "en": "💡 The complexity of the brain may be an illusion — the collective dance of billions of neurons may be fully described by just a handful of core dimensions.",
+        "zh-CN": "💡 大脑的复杂性或许是一种「幻象」——数十亿神经元的集体舞蹈，可能只需几个核心维度就能完整描述。",
+        "ja": "💡 脳の複雑さは幻想かもしれない——何十億もの神経細胞の集団的なダンスは、わずかいくつかのコア次元で完全に記述できるかもしれない。",
+        "ko": "💡 뇌의 복잡성은 환상일 수 있다 — 수십억 신경세포의 집단적 춤은 단 몇 가지 핵심 차원으로 완전히 기술될 수 있을지도 모른다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/>\n<circle cx=\"60\" cy=\"65\" r=\"14\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<path d=\"M40 90 Q60 115 80 90\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<rect x=\"140\" y=\"45\" width=\"60\" height=\"72\" rx=\"4\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/>\n<line x1=\"150\" y1=\"62\" x2=\"190\" y2=\"62\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150\" y1=\"74\" x2=\"190\" y2=\"74\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150\" y1=\"86\" x2=\"190\" y2=\"86\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"150\" y1=\"98\" x2=\"175\" y2=\"98\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"280\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2.5\"/>\n<path d=\"M258 68 Q268 55 280 62 Q292 55 302 68 Q310 80 295 90 Q285 100 280 105 Q275 100 265 90 Q250 80 258 68Z\" fill=\"#9f7aea\" opacity=\"0.7\"/>\n<line x1=\"108\" y1=\"80\" x2=\"132\" y2=\"80\" stroke=\"#68d391\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<polygon points=\"132,74 144,80 132,86\" fill=\"#68d391\"/>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#9f7aea22\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#9f7aea\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🧠</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#9f7aea\" font-weight=\"bold\">神經科學</text>\n  <text x=\"100\" y=\"108\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">低維神經流形解碼</text>\n</svg>"
     },
     {
       "id": "space-260608",
       "domain": "space",
       "day": "2026-06-08",
-      "author": "T. Foglizzo",
-      "ref": "arXiv:2606.06471v1",
-      "url": "https://arxiv.org/abs/2606.06471v1",
+      "author": "Antoniadis, P. et al. 2026",
+      "ref": "arXiv:2606.00218",
+      "url": "https://arxiv.org/abs/2606.00218",
       "color": "#4299e1",
       "title": {
-        "zh-TW": "旋轉星核中的螺旋震盪：解析超新星爆炸裡的隱藏漩渦",
-        "en": "Spiral Instability in a Rotating Stellar Core: Decoding Hidden Vortices Inside Supernovae",
-        "zh-CN": "旋转星核中的螺旋震荡：解析超新星爆炸里的隐藏漩涡",
-        "ja": "回転する星の核に潜む螺旋不安定性：超新星爆発の隠れた渦を解き明かす",
-        "ko": "회전하는 별의 핵 속 나선 불안정성：초신성 폭발 속 숨겨진 소용돌이 해독"
+        "zh-TW": "脈衝星計時陣列定位個別超大質量黑洞雙星：多信使天文學的新時代前夕",
+        "en": "Prospects of Resolving and Localising Individual Supermassive Black Hole Binaries with Pulsar Timing Arrays",
+        "zh-CN": "脉冲星计时阵列定位个别超大质量黑洞双星：多信使天文学的新时代前夕",
+        "ja": "パルサータイミングアレイによる個別超大質量ブラックホール連星の分解と特定：多波長天文学の新時代の幕開け",
+        "ko": "펄서 타이밍 배열로 개별 초대질량 블랙홀 쌍성 분해 및 위치 특정: 다중 메신저 천문학의 새 시대 전야"
       },
       "tag": {
         "zh-TW": "🌌 天文宇宙",
-        "en": "🌌 Astronomy & Cosmos",
+        "en": "🌌 Space",
         "zh-CN": "🌌 天文宇宙",
-        "ja": "🌌 天文・宇宙",
-        "ko": "🌌 천문 우주"
+        "ja": "🌌 宇宙天文",
+        "ko": "🌌 우주천문"
       },
       "tech": {
-        "zh-TW": "本研究針對大質量旋轉恆星核心坍縮過程中的「駐波吸積震盪不穩定性（SASI）」，以攝動分析法在球形幾何框架下推導出主導模式的解析本征頻率近似解。研究揭示差旋（differential rotation）如何透過共振放大機制進一步助長順行模式的螺旋不穩定性，並預測其在微中子與重力波訊號上留下的特徵頻率印記。",
-        "en": "This study derives analytical approximations for the eigenfrequencies of the dominant SASI modes during core-collapse of a rotating massive star using perturbative analysis in spherical geometry. It identifies how differential rotation further destabilizes prograde spiral modes through a resonant amplification cycle, predicting specific frequency signatures imprinted on neutrino and gravitational wave signals.",
-        "zh-CN": "本研究针对大质量旋转恒星核心坍缩过程中的「驻波吸积震荡不稳定性（SASI）」，以摄动分析法在球形几何框架下推导出主导模式的解析本征频率近似解。研究揭示差旋（differential rotation）如何通过共振放大机制进一步助长顺行模式的螺旋不稳定性，并预测其在微中子与引力波信号上留下的特征频率印记。",
-        "ja": "本研究は、大質量回転星のコア崩壊時に生じる「定在衝撃波吸積不安定性（SASI）」について、球面幾何における摂動解析を用いて支配モードの固有振動数の解析的近似式を導出した。また差動回転が共鳴増幅サイクルを通じて順行螺旋モードをさらに不安定化させるメカニズムを解明し、ニュートリノおよび重力波シグナルへの特徴的な周波数刻印を予測した。",
-        "ko": "이 연구는 대질량 회전 별의 핵 붕괴 과정에서 발생하는 「정상 강착 충격파 불안정성（SASI）」의 지배적 모드 고유진동수를 구면 기하학 내 섭동 분석으로 해석적으로 근사했다. 차등 자전이 공명 증폭 순환을 통해 순행 나선 모드를 추가로 불안정화하는 메커니즘을 밝히고, 중성미자 및 중력파 신호에 새겨지는 특징적 주파수 패턴을 예측했다."
+        "zh-TW": "脈衝星計時陣列（PTA）利用毫秒脈衝星極度規律的電波脈衝作為宇宙鐘，偵測奈赫茲頻段重力波背景。此研究分析 PTA 在即將到來的觀測靈敏度下，辨識並定位個別「超大質量黑洞雙星」（SMBHB）訊號的能力：哪些雙星系統的重力波可被單獨識別、其宿主星系能否被光學望遠鏡跟進確認。",
+        "en": "Pulsar timing arrays (PTAs) exploit the extremely regular radio pulses of millisecond pulsars as cosmic clocks to detect nanohertz gravitational waves. This study analyzes PTAs' capability at near-future observing sensitivities to resolve and localize individual supermassive black hole binary (SMBHB) signals: which binary systems could be gravitationally resolved, and whether their host galaxies can be confirmed by optical follow-up telescopes.",
+        "zh-CN": "脉冲星计时阵列（PTA）利用毫秒脉冲星极度规律的射电脉冲作为宇宙时钟，探测纳赫兹频段引力波背景。该研究分析PTA在即将到来的观测灵敏度下，识别并定位个别超大质量黑洞双星（SMBHB）信号的能力：哪些双星系统的引力波可被单独识别，以及其宿主星系能否被光学望远镜跟进确认。",
+        "ja": "パルサータイミングアレイ（PTA）はミリ秒パルサーの極めて規則的な電波パルスを宇宙時計として活用し、ナノヘルツ帯の重力波を検出する。本研究は、近未来の観測感度下でPTAが個別の超大質量ブラックホール連星（SMBHB）信号を分解・特定する能力、つまりどの連星系の重力波が個別に識別でき、そのホスト銀河を光学望遠鏡で確認できるかを分析する。",
+        "ko": "펄서 타이밍 배열(PTA)은 밀리초 펄서의 극도로 규칙적인 전파 펄스를 우주 시계로 활용하여 나노헤르츠 대역 중력파를 검출한다. 본 연구는 가까운 미래의 관측 감도에서 PTA가 개별 초대질량 블랙홀 쌍성(SMBHB) 신호를 분해하고 위치를 특정하는 능력, 즉 어떤 쌍성 시스템의 중력파를 개별적으로 식별할 수 있고 그 호스트 은하를 광학 망원경으로 확인할 수 있는지를 분석한다."
       },
       "plain": {
-        "zh-TW": "想像你在浴缸裡拔掉排水塞，水流不只是直直往下流，還會形成漩渦——這就是旋轉與不穩定碰撞的結果。超新星爆炸的核心也有類似的戲碼：當巨大恆星的核心垮掉時，物質瘋狂往中心墜落，原本應該像同心圓波紋般對稱的衝擊波，卻因為一種叫SASI的不穩定性開始「抖動」甚至螺旋旋轉，就像洗衣機脫水時突然失衡狂甩。如果這顆恆星本身還在自轉（就像花式溜冰選手收手加速那樣），這股螺旋震盪會被旋轉力量「共鳴放大」，變得更瘋狂、更有節奏感。這篇研究厲害的地方在於，科學家用數學精準算出這些震盪的「頻率指紋」——就像給每種爆炸模式標上獨特的音符。為什麼重要？因為這些頻率會烙印在重力波和微中子訊號裡，未來LIGO或日本神岡探測器接收到訊號時，我們就能像解讀摩斯密碼一樣，反推出爆炸核心到底轉多快、怎麼旋轉。這不只是紙上談兵，而是替人類「翻譯」宇宙最暴力事件的語言，讓我們有機會親耳聽見恆星臨終前的最後旋律。",
-        "en": "Imagine you're watching a bathtub drain after you've given the water a good swirl—instead of flowing out smoothly, it forms a spiraling whirlpool that wobbles and dances around the drain. When a massive star dies in a supernova explosion, something eerily similar happens inside: the collapsing core doesn't just implode neatly, but develops a wobbly, spiraling shockwave dance called SASI, like a cosmic whirlpool of unimaginable violence. Now here's where it gets wild—if that dying star was spinning (and most are), it's like a figure skater pulling in their arms: the rotation amplifies these spirals, making them stronger and more persistent, almost like the core is doing a death-spiral ice dance at millions of degrees. This research cracked the mathematical code to predict exactly how fast these spirals oscillate—their \"beat\" or rhythm—which is crucial because these rhythms get stamped into the gravitational waves and neutrino signals the explosion sends rippling across the universe. Think of it like this: when detectors like LIGO or Super-Kamiokande pick up these signals from a distant supernova, scientists can now \"read the sheet music\" to figure out how fast the star's core was spinning as it died. It's basically giving us a forensic tool to reconstruct the final moments of stellar death, turning what used to be educated guesses into precise measurements of one of nature's most spectacular catastrophes.",
-        "zh-CN": "想象你用吸管在奶茶杯里快速搅出一个漩涡，放开后漩涡不会马上消失，反而可能越转越歪，甚至变成歪七扭八的螺旋——这就是超新星爆炸核心里发生的\"SASI现象\"。当一颗巨大恒星走到生命尽头，核心会像被踩扁的气球一样突然坍缩，产生一股向外冲的震波，但这股震波不会乖乖保持球形，而是会像喝醉的陀螺一样摇晃起来，尤其当恒星本身还在自转时，就像花样滑冰选手收紧手臂转得更快，这种螺旋摇晃会被\"共振放大\"，变得更加狂野。这项研究的厉害之处在于，科学家用数学公式精准算出了这些螺旋震荡的\"心跳频率\"，就像给超新星爆炸的内核装上了心电图。为什么这很重要？因为这些特定频率会被刻印在重力波和中微子信号里——就像海浪拍打礁石的节奏能告诉你风有多大，未来当LIGO或日本的超级神冈探测器捕捉到这些信号时，我们就能像侦探分析指纹一样，反推出爆炸那一刻恒星核心到底转得有多快、有多歪。这不只是纸上谈兵的理论游戏，而是真正在为人类\"翻译\"宇宙最壮烈死亡现场的密码本，让我们有机会听懂137亿年来恒星们临终前的呐喊。",
-        "ja": "宇宙のどこかで巨大な星が死ぬとき、その中心部では想像を絶するドラマが展開しています——まるでお風呂の栓を抜いたときに生まれる渦のように、星の核が崩壊しながら螺旋状に回転し始めるのです。この研究が注目したのは「SASI」と呼ばれる現象で、これは爆発の衝撃波が綺麗な球形を保てず、フィギュアスケート選手が腕を引いて高速回転するように、星自身の回転と共鳴してグルグルと渦を巻き始めるメカニズムです。研究者たちは数式を駆使して、この宇宙の「渦巻きダンス」がどんなリズムで踊るのか、その「ビート」を正確に計算することに成功しました。なぜこれが私たちにとって重要なのでしょうか？この渦のリズムは、超新星爆発が放つ重力波やニュートリノという「宇宙からの手紙」に刻み込まれており、将来LIGOやスーパーカミオカンデのような観測装置がこの信号をキャッチすれば、まるで古代の暗号を解読するように、数百万光年彼方で起きた爆発の内部構造を読み解けるようになるのです。つまり、この研究は星の死に様を「聞き取る」ための辞書を作ったようなもので、宇宙で最も劇的な瞬間の真実に一歩近づく鍵となります。",
-        "ko": "상상해보세요. 욕조에서 플러그를 뽑으면 물이 빙글빙글 돌며 빠져나가죠? 거대한 별이 죽을 때도 비슷한 일이 일어나는데, 그 중심부에서 'SASI'라는 나선형 소용돌이가 생깁니다. 마치 피겨 스케이팅 선수가 팔을 오므리면 회전이 빨라지듯, 별이 원래 자전하고 있었다면 이 소용돌이는 더 격렬하고 복잡한 패턴으로 춤을 추게 됩니다. 이 연구는 그 소용돌이의 '리듬'을 수식으로 정확히 계산해낸 거예요—마치 DJ가 비트의 BPM을 측정하는 것처럼요. 왜 중요하냐고요? 초신성 폭발이 일으킬 중력파와 중성미자를 우리가 포착하면, 그 신호 속 리듬을 분석해서 폭발 당시 별 내부가 어떻게 회전했는지 역추적할 수 있거든요. 이건 단순한 이론이 아니라 우주에서 가장 폭력적인 사건의 '블랙박스'를 해독하는 열쇠입니다. 미래의 LIGO 같은 관측소가 이 신호를 잡아내면, 우린 별의 마지막 순간을 마치 범죄 현장을 재구성하듯 정밀하게 복원할 수 있게 되는 거죠."
+        "zh-TW": "想像宇宙是一片汪洋，而超大質量黑洞雙星是兩頭在深海彼此繞行的巨鯨——它們的旋轉會像水波一樣向外傳送重力波。問題是，這片汪洋裡有無數對這樣的巨鯨同時鳴唱，形成一片難以辨識個體的「重力波噪音背景」，就像在一個嘈雜派對裡試圖辨認某一個特定對話一樣。脈衝星計時陣列（PTA）是我們目前唯一能「聽見」這個頻段重力波的耳朵——它利用遍布銀河系的毫秒脈衝星（宇宙最精準的天然時鐘）來偵測時空微小的伸縮。這篇研究用模擬分析，計算在近幾年內，當我們的「耳朵」靈敏度足夠時，有多大機率能在這片雜音中辨識出「某一對特定的黑洞雙星」，並追蹤它在哪個星系裡。這將開啟真正的「多信使天文學」——讓人類同時用重力波和光學望遠鏡，從不同角度觀察同一個宇宙事件。",
+        "en": "Imagine the universe as an ocean, and supermassive black hole pairs as two enormous whales circling each other in the deep, their orbital motion sending gravitational ripples spreading outward like water waves. The problem is that countless such pairs exist throughout the cosmos, all singing at once, creating a cacophonous gravitational wave background noise like trying to pick out one specific conversation in an extremely loud party. Pulsar timing arrays are currently our only ears capable of hearing gravitational waves in this low-frequency nanohertz band. They work by using dozens of millisecond pulsars scattered across our galaxy as ultraprecise natural clocks, detecting the tiny stretching and squeezing of spacetime as gravitational waves pass through. This paper uses simulations to calculate the probability that, within the coming years as our sensitivity improves, we can pick out one specific black hole pair from that cosmic noise and pinpoint which galaxy it inhabits. Achieving this would inaugurate true multi-messenger astronomy, where humanity simultaneously observes the same cosmic event with both gravitational waves and optical telescopes, each revealing secrets the other cannot.",
+        "zh-CN": "想象宇宙是一片大洋，超大质量黑洞双星是两头在深海彼此绕行的巨鲸——旋转会向外传送引力波。问题是，宇宙中有无数对这样的「巨鲸」同时「鸣唱」，形成难以辨识个体的引力波噪音背景，就像在嘈杂派对里辨认某个特定对话。脉冲星计时阵列（PTA）是我们唯一能「听见」这个频段引力波的耳朵。这篇研究用模拟分析，计算在几年内灵敏度足够时，有多大概率在这片杂音中辨识出「某对特定黑洞双星」，并追踪它在哪个星系里。这将开启真正的「多信使天文学」。",
+        "ja": "宇宙を大洋、超大質量ブラックホール連星を深海で互いを周回する二頭の巨大クジラと想像してください。その軌道運動は水面の波のように外向きに重力波を送り出します。問題は、宇宙には無数のそのような連星が同時に「歌って」おり、騒がしいパーティで特定の会話を聞き取ろうとするような重力波の背景ノイズを生み出していることです。パルサータイミングアレイは現在、このナノヘルツ帯の重力波を「聴ける」唯一の耳です。本論文はシミュレーションを使って、数年以内に感度が向上した時、その宇宙的なノイズから特定のブラックホール連星を識別してどの銀河に存在するかを特定できる確率を計算します。これは真の多波長天文学を開幕させ、人類が重力波と光学望遠鏡の両方で同じ宇宙イベントを観測できるようになります。",
+        "ko": "우주를 대양으로, 초대질량 블랙홀 쌍성을 깊은 바다에서 서로를 공전하는 두 마리의 거대한 고래로 상상해보세요. 그들의 궤도 운동은 수면의 파도처럼 중력파를 바깥으로 보냅니다. 문제는 우주에는 무수한 그런 쌍이 동시에 '노래하여' 시끄러운 파티에서 특정 대화를 골라내려는 것처럼 중력파 배경 잡음을 만든다는 점입니다. 펄서 타이밍 배열은 현재 이 나노헤르츠 대역의 중력파를 '들을 수 있는' 유일한 귀입니다. 본 논문은 시뮬레이션을 사용하여 수년 내에 감도가 향상될 때 우주적 잡음에서 특정 블랙홀 쌍을 식별하고 어느 은하에 있는지 특정할 확률을 계산합니다. 이는 진정한 다중 메신저 천문학을 열어 인류가 중력파와 광학 망원경 모두로 같은 우주 사건을 관측할 수 있게 할 것입니다."
       },
       "insight": {
-        "zh-TW": "💡 恆星死亡時的「螺旋節拍」被永久寫入重力波與微中子訊號，宇宙最劇烈的爆炸其實是一份等待我們解讀的樂譜。",
-        "en": "💡 The 'spiral rhythm' of a dying star is permanently encoded in gravitational waves and neutrino bursts—the universe's most violent explosions are, in fact, sheet music waiting to be read.",
-        "zh-CN": "💡 恒星死亡时的「螺旋节拍」被永久写入引力波与中微子信号，宇宙最剧烈的爆炸其实是一份等待我们解读的乐谱。",
-        "ja": "💡 死にゆく星の「螺旋のリズム」は重力波とニュートリノに永遠に刻まれており、宇宙最大の爆発はじつは解読を待つ楽譜なのだ。",
-        "ko": "💡 죽어가는 별의 「나선 리듬」은 중력파와 중성미자에 영구히 새겨진다—우주에서 가장 격렬한 폭발은 사실 우리가 해독하길 기다리는 악보다."
+        "zh-TW": "💡 從「宇宙重力波噪音」中辨識出個別黑洞雙星的那一刻，將是繼LIGO之後人類探索宇宙方式的再一次革命。",
+        "en": "💡 The moment we isolate an individual black hole binary from the cosmic gravitational-wave choir will be another revolutionary leap in how humanity observes the universe, comparable to the first LIGO detection.",
+        "zh-CN": "💡 从「宇宙引力波噪音」中辨识出个别黑洞双星的那一刻，将是继LIGO之后人类探索宇宙方式的又一次革命。",
+        "ja": "💡 宇宙重力波の合唱から個別のブラックホール連星を特定できる瞬間は、LIGOの最初の検出に匹敵する人類の宇宙観測方法における革命的な飛躍となるだろう。",
+        "ko": "💡 우주 중력파 합창에서 개별 블랙홀 쌍성을 분리해내는 순간은 LIGO 최초 검출에 비견할 인류의 우주 관측 방식에 있어 또 다른 혁명적 도약이 될 것이다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\" opacity=\"0.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"35\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"16\" fill=\"#4299e1\" opacity=\"0.85\"/>\n<path d=\"M170,25 C200,35 215,65 205,80 C215,95 200,125 170,135 C140,125 125,95 135,80 C125,65 140,35 170,25Z\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" opacity=\"0.8\"/>\n<path d=\"M115,50 C130,60 140,72 135,80 C140,88 130,100 115,110 C105,95 102,65 115,50Z\" fill=\"#f6ad55\" opacity=\"0.25\"/>\n<path d=\"M225,50 C210,60 200,72 205,80 C200,88 210,100 225,110 C235,95 238,65 225,50Z\" fill=\"#4299e1\" opacity=\"0.25\"/>\n<path d=\"M170,80 Q185,60 200,45 Q210,35 218,28\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M170,80 Q155,100 140,115 Q130,125 122,132\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M170,80 Q190,90 210,100 Q225,108 235,114\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<path d=\"M170,80 Q150,70 130,60 Q115,52 105,46\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"170\" cy=\"80\" r=\"6\" fill=\"#ffffff\" opacity=\"0.9\"/>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#4299e122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#4299e1\" rx=\"2\"/>\n  <circle cx=\"80\" cy=\"62\" r=\"14\" fill=\"#111\" stroke=\"#4299e1\" stroke-width=\"2\"/>\n  <circle cx=\"120\" cy=\"58\" r=\"10\" fill=\"#222\" stroke=\"#4299e1\" stroke-width=\"1.5\"/>\n  <ellipse cx=\"100\" cy=\"60\" rx=\"40\" ry=\"20\" fill=\"none\" stroke=\"#4299e155\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#4299e1\" font-weight=\"bold\">天文宇宙</text>\n  <text x=\"100\" y=\"110\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">超大質量黑洞雙星偵測</text>\n</svg>"
     },
     {
       "id": "tech-260608",
       "domain": "tech",
       "day": "2026-06-08",
-      "author": "Lizhi Yang, Junheng Li et al.",
-      "ref": "arXiv:2606.06493v1",
-      "url": "https://arxiv.org/abs/2606.06493v1",
+      "author": "Bezerra, R. et al. 2026",
+      "ref": "arXiv:2606.01015",
+      "url": "https://arxiv.org/abs/2606.01015",
       "color": "#68d391",
       "title": {
-        "zh-TW": "HANDOFF：讓人形機器人「全身協調」完成任務的智慧控制框架",
-        "en": "HANDOFF: Teaching Humanoid Robots to Coordinate Their Whole Body for Real-World Tasks",
-        "zh-CN": "HANDOFF：让人形机器人「全身协调」完成任务的智慧控制框架",
-        "ja": "HANDOFF：人型ロボットが全身を協調させてタスクをこなす知能制御フレームワーク",
-        "ko": "HANDOFF：인간형 로봇이 온몸을 조율해 임무를 수행하는 지능형 제어 프레임워크"
+        "zh-TW": "AI-IoT-機器人三位一體：邊緣小語言模型與雲端大語言模型共構的連結機器人學新框架",
+        "en": "AI-IoT-Robotics Integration: Edge SLMs and Cloud LLMs Converging Toward Connected Autonomous Robotics",
+        "zh-CN": "AI-IoT-机器人三位一体：边缘小语言模型与云端大语言模型共构的连接机器人学新框架",
+        "ja": "AI-IoT-ロボティクスの融合：エッジSLMとクラウドLLMが収束する接続型自律ロボット工学の新フレームワーク",
+        "ko": "AI-IoT-로봇공학 통합: 엣지 SLM과 클라우드 LLM이 수렴하는 연결 자율 로봇공학의 새 프레임워크"
       },
       "tag": {
-        "zh-TW": "📶 機器人智慧",
-        "en": "📶 Robotics & AI",
-        "zh-CN": "📶 机器人智能",
-        "ja": "📶 ロボット知能",
-        "ko": "📶 로보틱스 & AI"
+        "zh-TW": "📶 科技趣聞",
+        "en": "📶 Tech",
+        "zh-CN": "📶 科技趣闻",
+        "ja": "📶 テクノロジー",
+        "ko": "📶 기술"
       },
       "tech": {
-        "zh-TW": "HANDOFF 提出一套簡潔、明確的「任務空間指令介面」，作為任務規劃與人形機器人全身控制之間的橋樑，取代過去需要密集動作學習參考的繁瑣方式。研究者透過「多教師 KL 散度蒸餾」技術，將多個專門化控制器的知識融合成單一全能控制器，使機器人在接收高階語意指令後能直接輸出全身協調動作。此方法具備模組化與可擴展性，能泛化至多樣操作技能，並在真實人形機器人上完成部署驗證。",
-        "en": "HANDOFF introduces a compact and explicit task-space command interface bridging high-level task planning and whole-body humanoid control, eliminating the need for dense kinematic references. Using multi-teacher KL distillation, knowledge from multiple specialized controllers is compressed into a single unified controller capable of diverse manipulation skills. The framework is modular and generalizable, validated on real humanoid hardware.",
-        "zh-CN": "HANDOFF 提出一套简洁、明确的「任务空间指令接口」，作为任务规划与人形机器人全身控制之间的桥梁，取代过去需要密集动作参考的繁琐方式。研究者通过「多教师 KL 散度蒸馏」技术，将多个专门化控制器的知识融合成单一全能控制器，使机器人在接收高阶语义指令后能直接输出全身协调动作。该方法具备模块化与可扩展性，能泛化至多样操作技能，并在真实人形机器人上完成部署验证。",
-        "ja": "HANDOFFは、高レベルのタスク計画と人型ロボットの全身制御をつなぐ、簡潔で明示的な「タスク空間コマンドインターフェース」を提案し、従来の密な運動参照を不要にします。複数の専門コントローラの知識を「多教師KLダイバージェンス蒸留」で単一の汎用コントローラに統合し、高次の意味指令から全身協調動作を直接生成します。モジュール式で汎化性が高く、実機の人型ロボットで検証済みです。",
-        "ko": "HANDOFF는 고수준 작업 계획과 인간형 로봇의 전신 제어를 연결하는 간결하고 명시적인 「작업 공간 명령 인터페이스」를 제안하며, 기존의 밀집 운동 참조 방식을 대체합니다. 「다중 교사 KL 발산 증류」 기법을 통해 여러 전문 컨트롤러의 지식을 단일 통합 컨트롤러로 압축하여, 고수준 의미 명령으로부터 전신 협조 동작을 직접 생성합니다. 모듈형 구조로 다양한 조작 기술에 일반화되며 실제 인간형 로봇에서 검증되었습니다."
+        "zh-TW": "此研究系統性整合 AI（感知與推理）、物聯網（感測與通訊）、機器人學（具身執行）三個領域的技術框架，特別聚焦於「分佈式認知」架構：邊緣端的小型語言模型（SLM）負責低延遲即時決策，雲端的大型語言模型（LLM）處理複雜推理與任務規劃，兩者透過語意通訊協議協作，實現具身 AI 的全面自主化。",
+        "en": "This survey systematically integrates technical frameworks across AI, IoT, and Robotics, focusing on distributed cognition architectures where edge Small Language Models (SLMs) handle low-latency real-time decisions while cloud Large Language Models (LLMs) manage complex reasoning and task planning. The two layers communicate through semantic protocols to enable fully autonomous embodied AI systems.",
+        "zh-CN": "该研究系统整合AI（感知与推理）、物联网（感测与通信）、机器人学（具身执行）三个领域的技术框架，特别聚焦于「分布式认知」架构：边缘端的小型语言模型（SLM）负责低延迟实时决策，云端的大型语言模型（LLM）处理复杂推理与任务规划，两者通过语义通信协议协作，实现具身AI的全面自主化。",
+        "ja": "本サーベイはAI（知覚と推論）、IoT（センシングと通信）、ロボティクス（具現化された実行）の3分野を横断するフレームワークを体系的に統合し、エッジの小型言語モデル（SLM）が低遅延のリアルタイム意思決定を担い、クラウドの大型言語モデル（LLM）が複雑な推論とタスク計画を管理し、意味的通信プロトコルで連携する分散認知アーキテクチャに焦点を当てる。",
+        "ko": "본 서베이는 AI(지각과 추론), IoT(감지와 통신), 로봇공학(구현된 실행)의 세 분야에 걸친 프레임워크를 체계적으로 통합하며, 엣지의 소형 언어 모델(SLM)이 저지연 실시간 의사결정을 담당하고 클라우드의 대형 언어 모델(LLM)이 복잡한 추론과 작업 계획을 관리하며 의미 통신 프로토콜로 협력하는 분산 인지 아키텍처에 초점을 맞춘다."
       },
       "plain": {
-        "zh-TW": "你有沒有試過請朋友幫忙搬家具，結果你得一邊比手畫腳「左手往上、右腳向前、腰要彎」，一邊還要畫圖示範每個步驟？這就是現在人形機器人的窘境——工程師必須用超級複雜的動作指令，鉅細靡遺地告訴機器人「手要抬多高、腿要跨多遠」，才能讓它完成一個簡單任務。HANDOFF 的突破就像發明了「人話翻譯機」，你只要說「把那個箱子搬到桌上」，機器人全身上下的關節就自動協調好該怎麼動。更酷的是，研究團隊找來一群「專科老師」——有的擅長開門、有的擅長遞東西、有的擅長搬重物——然後用一種叫「知識蒸餾」的技術，把所有老師的絕活都「濃縮」進同一個機器人大腦裡。這對你我的生活意義重大：未來家用機器人不再需要為每件家事重新「補習」，只要一套系統就能洗碗、摺衣服、幫你開冰箱拿飲料，真正成為多才多藝的家事幫手。想像一下，你再也不用花時間教機器人「第一步先這樣、第二步再那樣」，直接下令它就懂——這才是我們夢想中那種「聰明到位」的機器人助理啊！",
-        "en": "Imagine trying to teach a humanoid robot to hand you a cup of coffee, but instead of just saying \"grab the cup and bring it here,\" you have to choreograph every single finger twitch, elbow bend, and hip shift like you're programming a dance routine frame by frame—exhausting, right? That's exactly the headache researchers faced until HANDOFF came along. This clever framework works like giving the robot a universal remote control: you press one button labeled \"fetch,\" and the robot's entire body instantly knows how to coordinate arms, legs, and torso to get the job done, no micromanagement needed. The secret sauce? They trained multiple \"specialist teachers\"—one expert at opening doors, another at carrying boxes, yet another at handing objects—then used a technique called knowledge distillation to blend all their skills into one super-competent \"student\" controller. Why does this matter to you? Because it means the humanoid robots of tomorrow won't need months of reprogramming every time you want them to do something new around your house or workplace; they'll just understand high-level commands like a capable human assistant would. Real-world tests have already proven this works on actual robots, not just in simulation, bringing us genuinely closer to that sci-fi future where robots can fluidly help with groceries, housework, or factory tasks without needing a PhD operator standing by.",
-        "zh-CN": "想象你在教一个新来的实习生做事，如果每次都要手把手演示每个细节动作——\"先用左手抓这里，右脚往前挪两步，腰转15度\"——那得累死人，但现在大多数人形机器人就是这么\"笨\"，必须靠海量动作示范才能学会新任务。HANDOFF就像给机器人装了个\"意会神经\"，你只要说\"把那个箱子搬过来\"，它的大脑就能自动翻译成全身几十个关节该怎么协调配合，不需要你预先录好每一帧动作。更酷的是，研究团队用了类似\"武侠小说里吸星大法\"的招数——让好几个各有专长的\"师傅控制器\"（比如开门专家、搬运高手）把功力传给一个\"徒弟控制器\"，最后这个徒弟就变成了十八般武艺样样精通的全能选手。这对我们普通人意味着什么？未来家里的机器人保姆不用每次换个新牌子的冰箱就得重新培训，你只需用正常人话告诉它\"帮我拿瓶水\"，它就能自己琢磨该怎么走、怎么开门、怎么递给你，就像真人助理那样自然。这项技术真正打通了\"人类想法\"到\"机器人动作\"之间的任督二脉，让钢铁身躯也能拥有灵活的理解力。",
-        "ja": "想像一下，你想請朋友幫忙搬個箱子，結果你得拿出一本厚厚的舞譜，鉅細靡遺地寫著「先抬左腳5公分、彎腰30度、右手伸直40公分」——聽起來很荒謬對吧？但現在的人形機器人就是這樣被「指揮」的，工程師得為每個動作準備超詳細的參考資料，累死人。HANDOFF這項研究就像是發明了一套「機器人手語」，你只要比個簡單手勢說「幫我開門」，機器人的全身——從腰到手到腳——就會自動協調完成，不需要你教它每個關節怎麼動。更酷的是，研究團隊找來好幾位「動作專家老師」（每位都精通不同技能），然後用知識蒸餾技術把所有老師的絕活「融合」進同一個控制器裡，就像把多位武術大師的招式濃縮成一套萬用功夫。這意味著未來在養老院、工廠或家裡，機器人助手只要聽懂「遞杯水」、「收拾桌子」這類自然指令，就能立刻全身動起來完成任務，不用工程師每次都重新寫程式。這項突破讓人形機器人從「需要精密操控的木偶」進化成「聽得懂人話的夥伴」，是通往實用化的關鍵一大步！",
-        "ko": "想像你請一位新來的助手幫忙整理房間，但你只能用專業舞蹈記譜法一個動作一個動作寫給他看——光是「把書放到架上」就得寫滿三頁紙，這就是過去人形機器人的悲哀處境。HANDOFF 的突破就像發明了一套直覺手勢：你只要指著書架比個「放這裡」，機器人的大腦、手臂、腿、腰就自動協調出流暢動作，不需要你事先編好每個關節該轉幾度。更厲害的是，研究團隊讓多位「專科老師」各自教會機器人一項絕活——開門專家、搬箱達人、遞物高手——然後用知識蒸餾技術把所有本領「熬成一鍋濃湯」，倒進單一控制器裡。結果這台機器人變成全能選手，今天幫你開冰箱拿飲料，明天搬重物上樓，後天遞工具給你修東西，完全不用重新訓練。這對未來的意義超級重大：當人形機器人真正走進你家或工廠，工程師不必為每個新任務從零寫程式，你只要像跟真人助手說話一樣下指令就行，機器人自己會想辦法用全身協調完成——這才是科幻電影裡那種「自然互動機器人」該有的樣子。"
+        "zh-TW": "想像一位送貨員騎著自行車穿越城市——他的大腦負責理解客戶的需求和規劃最佳路線（這是「雲端 LLM」的工作），而他的腿部肌肉和平衡感則在毫秒之間自動調整騎行姿勢（這是「邊緣 SLM」的工作）。現在的智慧機器人面臨一個根本矛盾：把所有決策交給遠端強大的 AI 雲端，就需要快速網路，而一旦斷線或延遲就會讓機器人原地呆住；但把所有運算放在機器人本體，又受限於電池和晶片，無法做複雜推理。這篇研究提出的解決框架是「分工合作」：機器人身上的小型語言模型負責那些「慢一秒就糟了」的即時反應（避開突然出現的障礙、調整夾持力道），複雜的長期規劃和對話理解則無線傳輸到雲端的大模型處理。對未來生活的意義是：你家的機器人管家在網路斷線時不會突然變笨，而接通後又能立刻恢復高智商服務——就像手機的「省電模式」和「效能模式」可以無縫切換。",
+        "en": "Picture a delivery cyclist navigating a city. Their brain handles understanding customer needs and plotting the optimal route, which is the job of the cloud LLM. Meanwhile their legs and balance system automatically adjust posture millisecond by millisecond without conscious thought, which is the job of the edge SLM. Modern intelligent robots face a fundamental tension. Sending all decisions to a powerful remote AI cloud requires fast connectivity, and any network lag or dropout freezes the robot in place. Yet stuffing all computation into the robot body itself is constrained by battery life and chip size, preventing complex reasoning. The framework proposed in this survey resolves this by dividing labor: the small language model running on the robot handles anything where a one-second delay would be catastrophic, like dodging a suddenly appearing obstacle or adjusting grip strength, while complex long-horizon planning and dialogue understanding are transmitted wirelessly to the cloud LLM. The practical implication is that your future household robot will not suddenly become dumb during a WiFi outage and will seamlessly resume full intelligent service when connectivity restores, like a phone smoothly switching between power-saving and performance modes.",
+        "zh-CN": "想象一位送货员骑车穿越城市——他的大脑负责理解客户需求和规划路线（「云端LLM」的工作），而腿部肌肉在毫秒间自动调整骑行姿势（「边缘SLM」的工作）。现代智能机器人面临根本矛盾：把所有决策交给远端AI云端，断网就会让机器人「呆住」；但把所有运算放在机器人本体，又受限于电池和芯片。这项研究的解决框架是「分工合作」：机器人本身的小型语言模型负责「慢一秒就糟了」的即时反应，复杂规划则传输到云端大模型处理。未来你家的机器人管家断网时不会变笨，接通后立刻恢复高智商服务。",
+        "ja": "都市を走る配達員を想像してください。その脳は顧客のニーズを理解し最適なルートを計画する（クラウドLLMの仕事）一方、脚の筋肉とバランス感覚は意識なしに毎ミリ秒ごとに自動的に姿勢を調整します（エッジSLMの仕事）。現代のインテリジェントロボットは根本的な矛盾に直面しています。すべての決定をリモートのAIクラウドに送るには高速接続が必要で、遅延や切断があればロボットはフリーズします。本論文のフレームワークはこれを解決します：ロボット上の小型言語モデルが一秒の遅延が致命的な場面（障害物を避けるなど）を処理し、複雑な計画はクラウドLLMに転送します。将来の家庭用ロボットはWiFi停止中でも機能し続け、接続回復時に即座に完全なインテリジェントサービスを再開できます。",
+        "ko": "도시를 누비는 배달 자전거 타는 사람을 상상해보세요. 그의 뇌는 고객 요구를 이해하고 최적 경로를 계획합니다(클라우드 LLM의 역할). 한편 다리 근육과 균형 감각은 의식 없이 매 밀리초마다 자동으로 자세를 조정합니다(엣지 SLM의 역할). 현대 지능형 로봇은 근본적인 긴장에 직면합니다. 모든 결정을 원격 AI 클라우드에 보내려면 빠른 연결이 필요하며 지연이나 끊김은 로봇을 멈추게 합니다. 본 논문의 프레임워크는 이를 해결합니다. 로봇의 소형 언어 모델이 1초 지연이 치명적인 상황(장애물 피하기 등)을 처리하고, 복잡한 계획은 클라우드 LLM으로 전송됩니다. 미래의 가정용 로봇은 WiFi 중단 중에도 기능하고 연결 복원 시 즉시 완전한 지능형 서비스를 재개할 수 있습니다."
       },
       "insight": {
-        "zh-TW": "💡 最好的「翻譯官」不只轉換語言，更能壓縮複雜度——HANDOFF 告訴我們，人機介面的設計哲學決定了智慧機器人能走多遠。",
-        "en": "💡 The best translator doesn't just convert language — it compresses complexity; HANDOFF shows that the design philosophy of the human-robot interface ultimately determines how far intelligent robots can go.",
-        "zh-CN": "💡 最好的「翻译官」不只转换语言，更能压缩复杂度——HANDOFF 告诉我们，人机接口的设计哲学决定了智能机器人能走多远。",
-        "ja": "💡 最良の「通訳者」は言語を変換するだけでなく複雑さを圧縮する——HANDOFFは、ヒューマン・ロボットインターフェースの設計哲学が知能ロボットの未来を左右することを示している。",
-        "ko": "💡 최고의 「통역사」는 언어를 변환할 뿐만 아니라 복잡성을 압축한다——HANDOFF는 인간-로봇 인터페이스의 설계 철학이 지능형 로봇의 미래를 결정한다는 것을 보여준다."
+        "zh-TW": "💡 真正的自主機器人需要「邊緣 + 雲端」的分工智慧：前者應對毫秒級危機，後者負責人類級理解——兩者缺一不可。",
+        "en": "💡 Truly autonomous robots require edge-plus-cloud divided intelligence: the edge for millisecond-level crises and the cloud for human-level understanding — neither alone is sufficient.",
+        "zh-CN": "💡 真正的自主机器人需要「边缘+云端」的分工智慧：前者应对毫秒级危机，后者负责人类级理解——两者缺一不可。",
+        "ja": "💡 真に自律したロボットには「エッジ＋クラウド」の分担知性が必要：前者がミリ秒レベルの危機に対応し、後者が人間レベルの理解を担う——どちらも欠かせない。",
+        "ko": "💡 진정으로 자율적인 로봇에는 '엣지+클라우드' 분담 지능이 필요하다: 전자는 밀리초 수준의 위기에 대응하고 후자는 인간 수준의 이해를 담당하며, 둘 다 없어서는 안 된다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<rect x=\"20\" y=\"55\" width=\"70\" height=\"80\" rx=\"8\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<circle cx=\"55\" cy=\"35\" r=\"18\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"55\" y1=\"53\" x2=\"55\" y2=\"55\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"20\" y1=\"90\" x2=\"5\" y2=\"110\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"90\" y1=\"90\" x2=\"105\" y2=\"110\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"35\" y1=\"135\" x2=\"30\" y2=\"155\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<line x1=\"75\" y1=\"135\" x2=\"80\" y2=\"155\" stroke=\"#68d391\" stroke-width=\"2.5\"/>\n<rect x=\"145\" y=\"55\" width=\"50\" height=\"50\" rx=\"6\" fill=\"#68d391\" opacity=\"0.85\"/>\n<polygon points=\"195,80 215,68 215,92\" fill=\"#68d391\"/>\n<rect x=\"250\" y=\"40\" width=\"75\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<rect x=\"250\" y=\"78\" width=\"75\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n<rect x=\"250\" y=\"116\" width=\"75\" height=\"28\" rx=\"5\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/>\n</svg>"
+      "illus": "<svg viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"200\" height=\"120\" fill=\"#68d39122\" rx=\"12\"/>\n  <rect x=\"0\" y=\"0\" width=\"200\" height=\"4\" fill=\"#68d391\" rx=\"2\"/>\n  <text x=\"100\" y=\"68\" text-anchor=\"middle\" font-size=\"44\">🤖</text>\n  <text x=\"16\" y=\"20\" font-size=\"10\" fill=\"#68d391\" font-weight=\"bold\">科技趣聞</text>\n  <text x=\"100\" y=\"108\" text-anchor=\"middle\" font-size=\"9\" fill=\"#555\">AI-IoT-機器人融合框架</text>\n</svg>"
     }
   ]
 }

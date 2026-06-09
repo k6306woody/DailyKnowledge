@@ -4,6 +4,18 @@
 
 ---
 
+## 零、Git Remote
+
+```bash
+git remote add origin https://github.com/k6306woody/DailyKnowledge.git
+git branch -M main
+git push -u origin main
+```
+
+Repo：https://github.com/k6306woody/DailyKnowledge
+
+---
+
 ## 一、專案概述
 
 每天凌晨 3am 自動更新知識卡片網站，並可發布到 Instagram：
