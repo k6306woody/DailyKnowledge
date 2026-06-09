@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-10",
+  "mode": "paper",
+  "paper_date": "2026-06-10",
+  "generated_at": "2026-06-10",
+  "cards": [
+    {
+      "id": "bio-260610",
+      "domain": "bio",
+      "day": "2026-06-10",
+      "author": "Mikele Milia, Louis Fabrice Tshimanga et al.",
+      "ref": "arXiv:2606.09558v1",
+      "url": "https://arxiv.org/abs/2606.09558v1",
+      "color": "#48bb78",
+      "title": {
+        "zh-TW": "把基因調控知識「內建」進 AI：scTransformer 讓單細胞基因分析更聰明、更可解釋",
+        "en": "Wiring Gene Regulatory Knowledge into AI: scTransformer Makes Single-Cell Gene Analysis Smarter and More Interpretable",
+        "zh-CN": "把基因调控知识「内建」进 AI：scTransformer 让单细胞基因分析更聪明、更可解释",
+        "ja": "遺伝子制御の知識を AI に「組み込む」：scTransformer で単一細胞解析をより賢く・解釈可能に",
+        "ko": "유전자 조절 지식을 AI에 '내장'하다：scTransformer로 단세포 유전자 분석을 더 스마트하고 해석 가능하게"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "scTransformer 是首個將基因調控先驗知識（如轉錄因子與目標基因的調控關係）直接編碼進 Transformer 注意力機制的單細胞 RNA 定序分析模型。透過在自監督預訓練中引入已知的基因調控網路作為結構偏置，模型不再把每個基因視為互相獨立的特徵，而是能感知基因之間的生物學關聯。這使得模型在細胞類型分類、基因擾動預測等下游任務上同時提升了性能與可解釋性。",
+        "en": "scTransformer is the first Transformer-based model that encodes gene regulatory prior knowledge—such as transcription factor–target gene relationships—directly into the attention mechanism for single-cell RNA sequencing analysis. By incorporating known gene regulatory networks as structural biases during self-supervised pretraining, the model treats genes not as independent features but as biologically interconnected entities. This simultaneously improves performance on downstream tasks such as cell-type classification and gene perturbation prediction, while enhancing interpretability.",
+        "zh-CN": "scTransformer 是首个将基因调控先验知识（如转录因子与靶基因的调控关系）直接编码进 Transformer 注意力机制的单细胞 RNA 测序分析模型。通过在自监督预训练中引入已知基因调控网络作为结构偏置，模型不再将每个基因视为相互独立的特征，而是能感知基因之间的生物学关联。这使模型在细胞类型分类、基因扰动预测等下游任务上同时提升了性能与可解释性。",
+        "ja": "scTransformer は、転写因子と標的遺伝子の調節関係などの遺伝子制御事前知識を Transformer のアテンション機構に直接組み込んだ、単一細胞 RNA シーケンス解析における初のモデルです。既知の遺伝子制御ネットワークを自己教師あり事前学習の構造的バイアスとして導入することで、遺伝子を独立した特徴としてではなく生物学的に相互連関したものとして扱います。これにより、細胞タイプ分類や遺伝子摂動予測などのタスクで性能と解釈可能性が同時に向上します。",
+        "ko": "scTransformer는 전사인자와 표적 유전자의 조절 관계 등 유전자 조절 사전 지식을 Transformer 어텐션 메커니즘에 직접 인코딩한 최초의 단세포 RNA 시퀀싱 분석 모델입니다. 알려진 유전자 조절 네트워크를 자기지도 사전훈련의 구조적 편향으로 활용하여, 유전자를 독립적인 특징이 아닌 생물학적으로 연결된 존재로 처리합니다. 이를 통해 세포 유형 분류 및 유전자 교란 예측 등 다운스트림 작업에서 성능과 해석 가능성이 동시에 향상됩니다."
+      },
+      "plain": {
+        "zh-TW": "想像你要分析一座城市裡每棟建築的用電量，來推斷裡面住的是哪種居民。現有的 AI 模型就像只看每棟樓的電費單，完全不知道「這條街的建築彼此相連、共用一條主幹電路」。基因也是一樣——細胞裡的基因並非各自獨立運作，而是有一套「誰管誰、誰影響誰」的調控網路，就像公司裡的組織架構圖。scTransformer 做的事，是把這張「基因公司組織圖」直接塞進 AI 的注意力機制裡，讓 AI 在學習數百萬顆細胞的基因表現資料時，從一開始就「知道」哪些基因之間有上下游關係。結果是：AI 不只預測得更準，還能告訴你「它做決定時，參考了哪些基因調控關係」，這對科學家找出疾病成因、設計新藥靶點至關重要。這就像讓偵探不僅能說出兇手是誰，還能完整重現整個犯罪鏈，而不只是靠直覺猜測。",
+        "en": "Imagine trying to figure out who lives in each building of a city just by looking at electricity bills—without knowing that buildings on the same street share a power grid. That's how most AI models analyze genes: they treat each gene as a standalone data point, ignoring the fact that genes form a complex web of 「who controls whom.」 Inside every cell, certain genes act like managers—called transcription factors—that switch other genes on or off. scTransformer is the first AI model to bake this 「corporate org chart of genes」 directly into its attention mechanism, so when it learns from millions of cells, it already 「knows」 which genes are upstream or downstream of each other. The result: the model is not only more accurate but can also explain its reasoning by pointing to specific regulatory relationships—crucial for scientists hunting for disease causes or designing new drug targets. It's the difference between a detective who just names a suspect and one who reconstructs the entire chain of events.",
+        "zh-CN": "想象一下，你要通过查看每栋楼的电费单来推断城市里每栋建筑住的是什么人，却完全不知道同一条街的建筑共用一条主干电路。现有的大多数 AI 模型分析基因时就是这样：把每个基因当作独立数据点，忽视了基因之间「谁管谁、谁影响谁」的调控网络。细胞里有一类叫转录因子的基因，就像公司里的管理层，负责开启或关闭其他基因。scTransformer 把这张「基因组织架构图」直接内置进 AI 的注意力机制，让模型在学习数百万个细胞的数据时，从一开始就「知道」基因之间的上下游关系。结果不仅预测更准确，AI 还能解释自己的决策依据，对科学家找病因、设计新药靶点至关重要。这就像侦探不只说出嫌疑人，还能还原整个犯罪链条。",
+        "ja": "街中の建物の電気代だけを見て、誰が住んでいるかを推測しようとする場面を想像してください。同じ通りの建物が同じ幹線を共有していることを知らずに。既存の AI モデルのほとんどは遺伝子をそのように扱っています——遺伝子を独立したデータ点として見て、「誰が誰を制御するか」というネットワークを無視しているのです。細胞の中では、転写因子と呼ばれる遺伝子が管理職のように他の遺伝子をオン・オフします。scTransformer はこの「遺伝子の組織図」を AI のアテンション機構に直接組み込んだ初のモデルで、数百万の細胞から学習する際に遺伝子間の上流・下流関係を最初から「知っている」状態にします。その結果、予測精度が上がるだけでなく、AI が「どの調節関係を参照して判断したか」を説明できるようになり、疾患原因の解明や新薬ターゲットの設計に不可欠です。",
+        "ko": "도시의 각 건물에 누가 사는지 전기 요금 고지서만 보고 추론하는 상황을 상상해보세요. 같은 거리의 건물들이 하나의 간선 전력망을 공유한다는 사실은 모른 채로요. 기존 AI 모델 대부분이 유전자를 이렇게 다룹니다. 각 유전자를 독립적인 데이터 포인트로 취급하고 「누가 누구를 조절하는가」라는 네트워크를 무시하죠. 세포 안에서 전사인자라 불리는 유전자들은 회사의 관리자처럼 다른 유전자를 켜거나 끕니다. scTransformer는 이 「유전자 조직도」를 AI의 어텐션 메커니즘에 직접 내장한 최초의 모델로, 수백만 개의 세포 데이터를 학습할 때 처음부터 유전자 간 상하류 관계를 「알고」 있는 상태가 됩니다. 그 결과 예측 정확도가 높아질 뿐 아니라 AI가 자신의 판단 근거를 설명할 수 있어, 질병 원인 규명과 신약 타깃 설계에 매우 중요합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 讓 AI 學習生物學「已知的規則」，不只是讓它看更多資料——把先驗知識結構化地植入模型，才是讓 AI 真正理解生命而非只是記憶模式的關鍵一步。",
+        "en": "💡 Feeding AI more data is not enough—structurally embedding what biology already knows into the model is the key step toward AI that truly understands life rather than merely memorizing patterns.",
+        "zh-CN": "💡 让 AI 学习生物学「已知的规则」，而不只是给它看更多数据——将先验知识结构化地植入模型，才是让 AI 真正理解生命而非仅仅记忆模式的关键一步。",
+        "ja": "💡 AI により多くのデータを与えるだけでは不十分——生物学がすでに知っているルールをモデルに構造的に組み込むことこそ、AI が単なるパターン記憶を超えて生命を真に理解するための重要な一歩です。",
+        "ko": "💡 AI에 더 많은 데이터를 주는 것만으로는 부족합니다——생물학이 이미 알고 있는 규칙을 모델에 구조적으로 내장하는 것이야말로 AI가 단순한 패턴 암기를 넘어 생명을 진정으로 이해하는 핵심 단계입니다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<rect x=\"20\" y=\"80\" width=\"30\" height=\"50\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<rect x=\"60\" y=\"65\" width=\"30\" height=\"65\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<rect x=\"100\" y=\"75\" width=\"30\" height=\"55\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<line x1=\"20\" y1=\"145\" x2=\"130\" y2=\"145\" stroke=\"#999\" stroke-width=\"2\"/>\n<line x1=\"20\" y1=\"145\" x2=\"130\" y2=\"145\" stroke=\"#e53e3e\" stroke-width=\"0\" opacity=\"0\"/>\n<rect x=\"190\" y=\"80\" width=\"30\" height=\"50\" fill=\"#48bb78\"/>\n<rect x=\"230\" y=\"65\" width=\"30\" height=\"65\" fill=\"#48bb78\"/>\n<rect x=\"270\" y=\"75\" width=\"30\" height=\"55\" fill=\"#48bb78\"/>\n<path d=\"M190 145 Q230 130 300 145\" stroke=\"#48bb78\" stroke-width=\"3\" fill=\"none\"/>\n<line x1=\"190\" y1=\"145\" x2=\"300\" y2=\"145\" stroke=\"#2d3748\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n<circle cx=\"215\" cy=\"145\" r=\"4\" fill=\"#48bb78\"/>\n<circle cx=\"245\" cy=\"136\" r=\"4\" fill=\"#48bb78\"/>\n<circle cx=\"275\" cy=\"141\" r=\"4\" fill=\"#48bb78\"/>\n<line x1=\"155\" y1=\"80\" x2=\"175\" y2=\"80\" stroke=\"#2d3748\" stroke-width=\"2\" marker-end=\"url()\"/>\n<polygon points=\"170,75 182,80 170,85\" fill=\"#2d3748\"/>\n</svg>"
+    },
+    {
+      "id": "phys-260610",
+      "domain": "phys",
+      "day": "2026-06-10",
+      "author": "Francesco Cioni, Lorenzo Cavicchi et al.",
+      "ref": "arXiv:2606.09812v1",
+      "url": "https://arxiv.org/abs/2606.09812v1",
+      "color": "#ed8936",
+      "title": {
+        "zh-TW": "扭轉二維材料中的神秘電流漩渦：量子拓撲絕緣體的隱藏渦流地圖",
+        "en": "Whirlpool Currents Hidden in Twisted 2D Materials: Mapping Quantum Topology from the Inside Out",
+        "zh-CN": "扭转二维材料中的神秘电流漩涡：量子拓扑绝缘体的隐藏涡流地图",
+        "ja": "ねじれた2D物質に潜む電流の渦：量子トポロジカル絶縁体の隠れた渦流マップ",
+        "ko": "비틀린 2D 소재 속 신비한 전류 소용돌이：양자 위상 절연체의 숨겨진 와류 지도"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 凝態物理",
+        "en": "⚛️ Condensed Matter Physics",
+        "zh-CN": "⚛️ 凝态物理",
+        "ja": "⚛️ 凝縮系物理",
+        "ko": "⚛️ 응집 물질 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究針對扭轉過渡金屬二硫化物同質雙層（twisted TMD homobilayer）所形成的陳絕緣態，定量分析其自發時間反演對稱性破缺所產生的持久電流與漩渦結構。研究者進一步證明，樣品體內電流密度振幅的最大值可作為追蹤局域陳數（local Chern marker）的精確指標，並提出可透過掃描探針方法實驗量測此訊號。",
+        "en": "This study quantitatively analyzes persistent spin-polarized currents and whirlpool structures arising from spontaneous time-reversal symmetry breaking in twisted TMD homobilayer Chern insulators. The authors demonstrate that the maximum amplitude of the bulk current density serves as a precise tracker of the local Chern marker, and propose that scanning probe techniques can experimentally access this topological signal.",
+        "zh-CN": "本研究针对扭转过渡金属二硫化物同质双层形成的陈绝缘态，定量分析其自发时间反演对称性破缺产生的持久电流与漩涡结构。研究者进一步证明，样品体内电流密度振幅的最大值可作为追踪局域陈数的精确指标，并提出可通过扫描探针方法实验测量此信号。",
+        "ja": "本研究は、ねじれたTMD同質二層のChern絶縁状態において、自発的時間反転対称性の破れから生じる持続電流と渦構造を定量的に解析した。さらに、試料バルク中の電流密度振幅の最大値が局所Chernマーカーを精密に追跡する指標となることを示し、走査プローブ法による実験的測定を提案している。",
+        "ko": "본 연구는 비틀린 TMD 동종 이중층에서 형성되는 천 절연 상태의 자발적 시간 반전 대칭성 깨짐으로 인해 발생하는 지속 전류와 소용돌이 구조를 정량적으로 분석하였다. 시료 내부 전류 밀도 진폭의 최댓값이 국소 천 마커를 정밀하게 추적하는 지표임을 입증하고, 주사 탐침 방법으로 실험적 측정이 가능함을 제안한다."
+      },
+      "plain": {
+        "zh-TW": "想像你把兩張極薄的材料稍微旋轉一點角度疊在一起，就像把兩塊蜂巢餅乾錯開擺放，這樣會產生一種更大的週期性花紋，稱為「莫爾超晶格」。在這種特殊結構裡，電子不需要任何外加磁場，就會自動開始繞圈流動，像是材料內部藏著無數個小漩渦。這些電流漩渦是因為材料自發地「打破時間反演對稱性」——也就是說，若把時間倒轉，這些電流就會反向，代表材料本身選擇了一個方向。更神奇的是，這些漩渦的強度直接反映了材料的「拓撲性質」，也就是一種無法輕易被外力破壞的量子特徵，類似於甜甜圈的洞無論怎麼捏都還是洞。這項研究重要在於：它提供了一把「鑰匙」——只要用掃描探針量測電流的強度，就能讀出材料的拓撲狀態，不需要複雜的間接推斷。這對未來開發不怕雜訊干擾的量子元件和拓撲量子電腦具有關鍵意義。",
+        "en": "Imagine stacking two ultra-thin sheets of material with a tiny twist — like slightly misaligning two honeycomb wafers. This creates a larger repeating pattern called a moiré superlattice. Inside this structure, electrons spontaneously start circling around, forming microscopic whirlpools of electric current — all without any external magnet. These currents arise because the material spontaneously breaks time-reversal symmetry: if you reversed time, the currents would flow backwards, meaning the material has chosen a preferred direction on its own. Remarkably, the strength of these whirlpools directly encodes the material's topological character — a quantum property as robust as the hole in a donut that cannot be smoothed away. This research is significant because it offers a practical key: simply measuring the current intensity with a scanning probe tip can reveal the material's topological state, no complex inference needed. This opens the door to more reliable quantum devices and topological quantum computers.",
+        "zh-CN": "想象把两张极薄的材料稍微旋转一点叠在一起，就像把两块蜂巢饼干错开摆放，这样会产生一种更大的周期性花纹，称为「莫尔超晶格」。在这种特殊结构里，电子不需要任何外加磁场，就会自动开始绕圈流动，像是材料内部藏着无数个小漩涡。这些电流漩涡是因为材料自发地「打破时间反演对称性」——若把时间倒转，这些电流就会反向，代表材料本身选择了一个方向。更神奇的是，这些漩涡的强度直接反映了材料的「拓扑性质」，一种无法轻易被外力破坏的量子特征，就像甜甜圈的洞无论怎么捏都还是洞。这项研究的意义在于：只要用扫描探针量测电流强度，就能读出材料的拓扑状态，为未来开发抗干扰量子元件和拓扑量子计算机奠定基础。",
+        "ja": "極薄の2枚のシートをわずかにひねって重ねると、まるでハニカムクッキーをずらして積んだように「モアレ超格子」という大きな周期模様が生まれます。この特殊な構造の中では、外部磁場なしに電子が自発的に渦を巻いて流れ始め、材料の内部に無数の小さな電流の渦が生じます。これは材料が自発的に「時間反転対称性を破る」ためで、時間を逆回しにすると電流が逆向きになり、材料自身が方向を選んだことを意味します。さらに驚くべきことに、この渦の強さは材料の「トポロジカル特性」——ドーナツの穴のようにどう変形しても消えない量子的性質——を直接反映しています。この研究の重要性は、走査プローブで電流強度を測るだけでトポロジカル状態が読み取れるという実用的な手がかりを提供した点にあり、将来のノイズに強い量子デバイス開発への道を開きます。",
+        "ko": "두 장의 극도로 얇은 소재를 살짝 비틀어 겹쳐 놓으면, 마치 벌집 모양 과자 두 개를 어긋나게 쌓은 것처럼 「모아레 초격자」라는 더 큰 주기적 무늬가 생깁니다. 이 특수한 구조 안에서 전자들은 외부 자석 없이도 자발적으로 빙빙 돌기 시작해, 마치 소재 내부에 수많은 작은 전류 소용돌이가 숨어 있는 것처럼 됩니다. 이 소용돌이는 소재가 스스로 「시간 반전 대칭성을 깨뜨리기」 때문에 생기며, 시간을 거꾸로 돌리면 전류 방향도 바뀌어 소재가 스스로 방향을 선택했음을 의미합니다. 더 놀라운 것은 이 소용돌이의 세기가 소재의 위상학적 성질을 직접 반영한다는 점인데, 이는 도넛의 구멍처럼 어떻게 변형해도 사라지지 않는 양자적 특성입니다. 이 연구의 의미는 주사 탐침으로 전류 세기를 측정하는 것만으로 위상 상태를 읽을 수 있다는 실용적인 열쇠를 제시했다는 데 있으며, 잡음에 강한 양자 소자와 위상 양자 컴퓨터 개발의 문을 엽니다."
+      },
+      "insight": {
+        "zh-TW": "💡 材料中的電流漩渦不只是奇特現象，它本身就是拓撲量子態的「指紋」——用一根探針掃過，就能看見量子世界的隱藏秩序。",
+        "en": "💡 The whirlpools of current in these materials are not mere curiosities — they are topological fingerprints, readable by a single scanning probe tip, revealing quantum order hidden in plain sight.",
+        "zh-CN": "💡 材料中的电流漩涡不只是奇特现象，它本身就是拓扑量子态的「指纹」——用一根探针扫过，就能看见量子世界的隐藏秩序。",
+        "ja": "💡 材料中の電流渦はただの珍現象ではなく、トポロジカル量子状態の「指紋」そのものであり、一本の探針で走査するだけで量子世界の隠れた秩序が読み取れる。",
+        "ko": "💡 소재 속 전류 소용돌이는 단순한 신기한 현상이 아니라 위상 양자 상태의 「지문」 그 자체이며, 탐침 하나로 스캔하는 것만으로도 양자 세계의 숨겨진 질서를 읽어낼 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<polygon points=\"80,40 97,50 97,70 80,80 63,70 63,50\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<polygon points=\"97,50 114,40 131,50 131,70 114,80 97,70\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<polygon points=\"80,80 97,70 97,90 80,100 63,90 63,80\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<polygon points=\"89,48 106,38 123,48 123,68 106,78 89,68\" fill=\"none\" stroke=\"#c05a20\" stroke-width=\"1.2\" opacity=\"0.7\" transform=\"rotate(13, 106, 58)\"/>\n<circle cx=\"200\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" opacity=\"0.4\"/>\n<circle cx=\"200\" cy=\"80\" r=\"35\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<circle cx=\"200\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" opacity=\"0.7\"/>\n<path d=\"M200,45 C220,55 225,70 210,80 C225,90 220,105 200,115 C180,105 175,90 190,80 C175,70 180,55 200,45 Z\" fill=\"#ed8936\" opacity=\"0.25\"/>\n<path d=\"M165,80 C175,60 195,55 210,65 C200,72 195,78 200,80 C195,82 200,88 210,95 C195,105 175,100 165,80 Z\" fill=\"#c05a20\" opacity=\"0.2\"/>\n<circle cx=\"200\" cy=\"80\" r=\"5\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"200\" cy=\"45\" r=\"3\" fill=\"#f6ad55\"/>\n<circle cx=\"200\" cy=\"115\" r=\"3\" fill=\"#f6ad55\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-260610",
+      "domain": "neuro",
+      "day": "2026-06-10",
+      "author": "Björn Þór Jónsson, Çağrı Erdem et al.",
+      "ref": "arXiv:2606.09780v1",
+      "url": "https://arxiv.org/abs/2606.09780v1",
+      "color": "#9f7aea",
+      "title": {
+        "zh-TW": "用演化演算法探索未知聲音宇宙：AI 為作曲家打開聲音新大門",
+        "en": "Evolving Into the Unknown: AI Explores Uncharted Sonic Spaces for Composers",
+        "zh-CN": "用演化算法探索未知声音宇宙：AI 为作曲家打开声音新大门",
+        "ja": "進化アルゴリズムで未踏の音響空間を探索：作曲家のためのAI音響発見エンジン",
+        "ko": "진화 알고리즘으로 미지의 소리 우주 탐험: AI가 작곡가에게 새로운 음향 문을 열다"
+      },
+      "tag": {
+        "zh-TW": "🎵 音樂科技 × AI",
+        "en": "🎵 Music Tech × AI",
+        "zh-CN": "🎵 音乐科技 × AI",
+        "ja": "🎵 音楽テクノロジー × AI",
+        "ko": "🎵 음악 기술 × AI"
+      },
+      "tech": {
+        "zh-TW": "本研究將「品質多樣性（Quality-Diversity, QD）」演化演算法與有監督判別模型結合，建構一套生成式聲音合成系統。系統受「創新引擎（Innovation Engine）」概念啟發，能自動在高維音色空間中搜尋出既具品質又彼此迥異的聲音樣本。透過多樣性促進機制，讓演算法主動探索人類設計師從未踏足的音色角落。",
+        "en": "This study combines Quality-Diversity (QD) evolutionary algorithms with a supervised discriminative model to build a generative sound synthesis system. Inspired by the Innovation Engine framework, the system automatically searches high-dimensional timbral spaces to discover sound samples that are both high-quality and mutually diverse. Diversity-promoting mechanisms drive the algorithm to explore sonic regions that human designers have never reached.",
+        "zh-CN": "本研究将「品质多样性（Quality-Diversity, QD）」进化算法与有监督判别模型结合，构建一套生成式声音合成系统。系统受「创新引擎（Innovation Engine）」概念启发，能自动在高维音色空间中搜索出既具品质又彼此迥异的声音样本。通过多样性促进机制，让算法主动探索人类设计师从未涉足的音色角落。",
+        "ja": "本研究は「品質多様性（QD）」進化アルゴリズムと教師あり識別モデルを組み合わせ、生成的音響合成システムを構築する。「イノベーションエンジン」の概念に着想を得て、高次元の音色空間を自動探索し、高品質かつ互いに多様な音響サンプルを発見する。多様性促進メカニズムにより、人間のデザイナーが踏み込んだことのない音響領域を能動的に開拓する。",
+        "ko": "이 연구는 「품질 다양성（Quality-Diversity, QD）」 진화 알고리즘과 지도 판별 모델을 결합하여 생성형 음향 합성 시스템을 구축한다. 「이노베이션 엔진」 개념에서 영감을 받아, 고차원 음색 공간을 자동으로 탐색하여 품질이 높으면서도 서로 다양한 음향 샘플을 발견한다. 다양성 촉진 메커니즘을 통해 인간 디자이너가 한 번도 닿지 않은 음색 영역을 능동적으로 탐험한다."
+      },
+      "plain": {
+        "zh-TW": "想像你是一位作曲家，面對一台有幾千個旋鈕的合成器，想找到那個「從未有人聽過的完美音色」——但手動轉每個旋鈕可能要花上一輩子。這篇研究讓 AI 扮演「好奇心旺盛的音色獵人」：它不只尋找「好聽的聲音」，更故意去找那些彼此完全不同的聲音，就像生物演化會讓物種越來越多樣一樣。演算法會在龐大的聲音地圖上「繁殖」並「淘汰」音色候選者，不斷朝沒人去過的角落探索。這樣一來，作曲家可以在幾分鐘內獲得一整批風格迥異的聲音靈感，而不必耗費數週手動調參。它的重要性在於：人類的創意常常被「尋找工具」的繁瑣過程所拖累，AI 若能自動把「可能性」攤開在你眼前，創作的門檻就會大幅降低，讓更多人得以實現腦中的音樂想像。",
+        "en": "Imagine you are a composer facing a synthesizer with thousands of knobs, searching for that perfect sound no one has ever heard — but turning every knob by hand could take a lifetime. This research lets AI act as a 「curious sonic hunter」: it does not just look for 「good sounds」, it deliberately seeks sounds that are wildly different from each other, much like biological evolution drives species toward greater diversity. The algorithm 「breeds」 and 「eliminates」 sound candidates across a vast sonic map, constantly pushing toward unexplored corners. As a result, composers can receive a whole palette of stylistically distinct sonic inspirations within minutes, rather than spending weeks tweaking parameters. The importance lies in the fact that human creativity is often bogged down by the tedious process of 「finding the right tool」; if AI can automatically lay all the possibilities before you, the barrier to creation drops dramatically, allowing more people to realize the music in their minds.",
+        "zh-CN": "想象你是一位作曲家，面对一台有几千个旋钮的合成器，想找到那个「从未有人听过的完美音色」——但手动转每个旋钮可能要花上一辈子。这项研究让 AI 扮演「好奇心旺盛的音色猎人」：它不只寻找「好听的声音」，更故意去找那些彼此完全不同的声音，就像生物进化会让物种越来越多样一样。算法会在庞大的声音地图上「繁殖」并「淘汰」音色候选者，不断朝没人去过的角落探索。这样一来，作曲家可以在几分钟内获得一整批风格迥异的声音灵感，而不必耗费数周手动调参。它的重要性在于：人类的创意常常被「寻找工具」的繁琐过程所拖累，AI 若能自动把「可能性」摊开在你眼前，创作的门槛就会大幅降低，让更多人得以实现脑中的音乐想象。",
+        "ja": "何千ものノブがついたシンセサイザーを前に、「誰も聞いたことのない完璧な音色」を探そうとしている作曲家を想像してほしい。すべてのノブを手動で回していたら一生かかってしまう。この研究はAIを「好奇心旺盛な音色ハンター」として機能させる。単に「良い音」を探すだけでなく、生物の進化が多様な種を生み出すように、互いにまったく異なる音を意図的に探し出す。アルゴリズムは広大な音の地図上で音色候補を「繁殖」させ「淘汰」しながら、誰も踏み込んだことのない領域へと進み続ける。その結果、作曲家は数週間のパラメータ調整なしに、数分で多彩な音のインスピレーションを得ることができる。創作において「道具を探す」という煩雑なプロセスが足かせになりがちな中、AIが可能性を目の前に広げてくれれば、より多くの人が心の中の音楽を実現できるようになる。",
+        "ko": "수천 개의 노브가 달린 신시사이저 앞에서 「아무도 들어본 적 없는 완벽한 음색」을 찾으려는 작곡가를 상상해보자. 모든 노브를 손으로 돌리다간 평생이 걸릴 수도 있다. 이 연구는 AI를 「호기심 가득한 음색 사냥꾼」으로 활용한다. 단순히 「좋은 소리」를 찾는 것을 넘어, 생물 진화가 종의 다양성을 늘리듯 서로 전혀 다른 소리를 의도적으로 찾아낸다. 알고리즘은 광대한 소리 지도 위에서 음색 후보를 「번식」시키고 「도태」시키며 아무도 가지 않은 구석으로 계속 나아간다. 그 결과 작곡가는 몇 주간의 파라미터 조정 없이 수분 내에 다양한 음향 영감을 얻을 수 있다. AI가 가능성을 눈앞에 펼쳐준다면 창작의 문턱이 크게 낮아져 더 많은 사람이 마음속의 음악을 현실로 만들 수 있게 된다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的創新不只是找到「最好的答案」，而是讓「從未被想到的可能性」浮出水面——多樣性本身就是創造力的燃料。",
+        "en": "💡 True innovation is not just about finding the 「best answer」, but about surfacing possibilities that were never imagined — diversity itself is the fuel of creativity.",
+        "zh-CN": "💡 真正的创新不只是找到「最好的答案」，而是让「从未被想到的可能性」浮出水面——多样性本身就是创造力的燃料。",
+        "ja": "💡 真のイノベーションとは「最良の答え」を見つけることではなく、「これまで想像すらされなかった可能性」を浮かび上がらせること——多様性こそが創造性の燃料である。",
+        "ko": "💡 진정한 혁신은 「최선의 답」을 찾는 것이 아니라, 「한 번도 상상되지 않았던 가능성」을 수면 위로 끌어올리는 것이다——다양성 그 자체가 창의력의 연료다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<rect x=\"10\" y=\"50\" width=\"80\" height=\"80\" rx=\"8\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<circle cx=\"30\" cy=\"70\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"55\" cy=\"70\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"80\" cy=\"70\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"30\" cy=\"95\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"55\" cy=\"95\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"80\" cy=\"95\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"30\" cy=\"120\" r=\"7\" fill=\"#f6ad55\" opacity=\"0.95\"/>\n<circle cx=\"55\" cy=\"120\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"80\" cy=\"120\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<path d=\"M100 90 C115 60, 135 120, 150 80 C165 40, 185 110, 200 70 C215 30, 230 100, 250 55 C260 35, 275 90, 290 50 C300 25, 315 75, 330 45\" stroke=\"#9f7aea\" stroke-width=\"3\" fill=\"none\" opacity=\"0.9\"/>\n<circle cx=\"290\" cy=\"50\" r=\"14\" fill=\"#f6ad55\" opacity=\"0.85\"/>\n</svg>"
+    },
+    {
+      "id": "space-260610",
+      "domain": "space",
+      "day": "2026-06-10",
+      "author": "Abhner P. De Almeida, Gary A. Mamon et al.",
+      "ref": "arXiv:2606.09817v1",
+      "url": "https://arxiv.org/abs/2606.09817v1",
+      "color": "#4299e1",
+      "title": {
+        "zh-TW": "為什麼有些矮星系特別「胖」？衛星星系被壓縮的三條命運之路",
+        "en": "Why Are Some Dwarf Galaxies So Compact? Three Pathways That Squeeze Satellite Galaxies",
+        "zh-CN": "为什么有些矮星系特别「胖」？卫星星系被压缩的三条命运之路",
+        "ja": "なぜ一部の矮小銀河は「ずんぐり」しているのか？衛星銀河を圧縮する三つの経路",
+        "ko": "왜 어떤 왜소은하는 유독 「뚱뚱」할까？위성은하를 압축하는 세 가지 운명의 경로"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "研究團隊從 TNG50 高解析度流體力學模擬中，選取紅移 z=0、恆星質量介於 log(M★/M☉) = 8.4–9.2 的矮星系，依據尺寸–質量關係將其分為「緻密」與「正常」兩類，並系統性追蹤各星系的環境與合併歷史，歸納出至少兩條穩健加上一條試探性的緻密化路徑。",
+        "en": "The team selected dwarf galaxies at z=0 with stellar masses log(M★/M☉) between 8.4 and 9.2 from the TNG50 hydrodynamical simulation, classified them as compact or normal based on the size-mass relation, and traced their merger and environmental histories to identify at least two robust and one tentative compaction pathways.",
+        "zh-CN": "研究团队从 TNG50 高分辨率流体力学模拟中，选取红移 z=0、恒星质量介于 log(M★/M☉) = 8.4–9.2 的矮星系，依据尺寸–质量关系将其分为「致密」与「正常」两类，并系统性追踪各星系的环境与并合历史，归纳出至少两条稳健加上一条试探性的致密化路径。",
+        "ja": "チームは TNG50 流体力学シミュレーションから z=0 における恒星質量 log(M★/M☉) = 8.4–9.2 の矮小銀河を選定し、サイズ–質量関係に基づいて「コンパクト」と「通常」に分類。各銀河の合体・環境履歴を追跡することで、少なくとも2つの確実な圧縮経路と1つの暫定的な経路を同定した。",
+        "ko": "연구팀은 TNG50 유체역학 시뮬레이션에서 z=0 기준 항성 질량 log(M★/M☉) = 8.4–9.2인 왜소은하를 선별하고, 크기–질량 관계에 따라 「밀집」과 「보통」으로 분류한 뒤, 각 은하의 합병 및 환경 이력을 추적하여 최소 두 가지 견고한 압축 경로와 하나의 잠정적 경로를 규명했다."
+      },
+      "plain": {
+        "zh-TW": "想像宇宙中漂浮著無數大大小小的星系，其中有一種叫「矮星系」——它就像社區裡的小公寓大樓，住的恆星比大星系少得多。但有趣的是，有些矮星系雖然住戶（恆星數量）差不多，身材卻特別「矮胖緊實」，彷彿同樣一棟公寓被硬生生壓縮成一個小套房。這種「緻密矮星系」是怎麼形成的？研究者用超級電腦模擬了整個宇宙的演化，追蹤這些小星系的一生，發現至少有兩條清楚的壓縮途徑：一條是被附近大星系的重力潮汐力像「捏泥巴」一樣擠壓成型，另一條則與劇烈的星系合併或氣體快速消耗有關。搞清楚這件事很重要，因為矮星系是宇宙裡數量最多的星系類型，它們的形狀與大小記錄著周遭環境如何塑造一個星系的命運，就像年輪記錄著一棵樹所經歷的旱澇。未來的太空望遠鏡若能找到更多緻密矮星系，就能反過來驗證這些理論，幫助我們更深入理解宇宙大尺度結構的形成。",
+        "en": "Picture the universe filled with countless galaxies of all sizes. Dwarf galaxies are like small apartment buildings compared to giant skyscrapers — they contain far fewer stars. But strangely, some dwarf galaxies with a similar number of stars are much more compact, squeezed into a tiny ball like a studio apartment crammed into the footprint of a closet. How does this happen? Researchers ran a supercomputer simulation of the entire cosmos and tracked the life stories of thousands of these small galaxies, discovering at least two clear pathways that squeeze them compact: one involves tidal forces from a nearby massive galaxy literally kneading the dwarf like clay, and another involves violent mergers or rapid gas consumption. Understanding this matters because dwarf galaxies are the most common type in the universe, and their shapes and sizes record how their surroundings shaped their fate — much like tree rings record years of drought and flood. As future telescopes find more compact dwarfs, these theoretical pathways can be tested and refined, deepening our grasp of how cosmic structure forms.",
+        "zh-CN": "想象宇宙中漂浮着无数大大小小的星系，其中有一种叫「矮星系」——它就像社区里的小公寓楼，住的恒星比大星系少得多。但有趣的是，有些矮星系虽然住户（恒星数量）差不多，身材却特别「矮胖紧实」，仿佛同样一栋公寓被硬生生压缩成一个小套间。研究者用超级计算机模拟了整个宇宙的演化，追踪这些小星系的一生，发现至少有两条清晰的压缩途径：一条是被附近大星系的潮汐力像「捏泥巴」一样挤压成型，另一条则与剧烈的星系并合或气体快速消耗有关。弄清楚这件事非常重要，因为矮星系是宇宙里数量最多的星系类型，它们的形状与大小记录着周围环境如何塑造一个星系的命运，就像年轮记录着一棵树所经历的旱涝。",
+        "ja": "宇宙には無数の銀河が漂っており、「矮小銀河」はその中でも小さなアパートのような存在です。ところが同じくらいの星の数を持つのに、異様にコンパクトにぎゅっと縮まった矮小銀河が存在します。まるで普通のアパートが押しつぶされてワンルームになったようなイメージです。研究チームはスーパーコンピューターで宇宙の進化を丸ごとシミュレーションし、こうした小さな銀河の一生を追跡しました。その結果、少なくとも2つの明確な「圧縮経路」が判明しました。ひとつは近くの大きな銀河の潮汐力に粘土のように捏ねられる経路、もうひとつは激しい銀河合体やガスの急速な消費と関係する経路です。矮小銀河は宇宙で最も数が多い銀河タイプであり、その形や大きさは周囲の環境が銀河の運命をどう刻んだかを記録しています。これはまさに年輪が木の歴史を語るようなものです。",
+        "ko": "우주에는 크고 작은 수많은 은하가 떠다니는데, 그 중 「왜소은하」는 마치 작은 아파트 같은 존재입니다. 그런데 비슷한 수의 별을 가지고 있음에도 유독 작고 빽빽하게 압축된 왜소은하들이 있습니다. 마치 같은 아파트가 고스란히 원룸으로 쭈그러든 것 같은 모습입니다. 연구팀은 슈퍼컴퓨터로 우주 전체의 진화를 시뮬레이션하며 이 작은 은하들의 일생을 추적했고, 적어도 두 가지 뚜렷한 「압축 경로」를 발견했습니다. 하나는 근처 거대 은하의 조석력이 점토를 주무르듯 왜소은하를 압축하는 경로이고, 다른 하나는 격렬한 은하 합병이나 가스의 급격한 소비와 관련된 경로입니다. 왜소은하는 우주에서 가장 흔한 은하 유형으로, 그 모양과 크기는 주변 환경이 은하의 운명을 어떻게 새겼는지를 나이테처럼 기록하고 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 一個星系的「體型」，是它一生中所有環境壓力的忠實紀錄——宇宙從不白白捏一把。",
+        "en": "💡 A galaxy's compactness is a faithful memoir of every environmental pressure it endured — the cosmos never squeezes without leaving a mark.",
+        "zh-CN": "💡 一个星系的「体型」，是它一生中所有环境压力的忠实记录——宇宙从不白白捏一把。",
+        "ja": "💡 銀河の「体型」は、その一生で受けたあらゆる環境的圧力の忠実な記録であり、宇宙は無駄に握りしめることはない。",
+        "ko": "💡 은하의 「체형」은 평생 받아온 모든 환경적 압력의 충실한 기록이다 — 우주는 결코 흔적 없이 쥐어짜지 않는다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#4299e1\" opacity=\"0.9\"/>\n<ellipse cx=\"50\" cy=\"80\" rx=\"28\" ry=\"12\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<ellipse cx=\"170\" cy=\"55\" rx=\"22\" ry=\"28\" fill=\"#4299e1\" opacity=\"0.75\"/>\n<ellipse cx=\"170\" cy=\"55\" rx=\"30\" ry=\"10\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"1.5\" opacity=\"0.6\"/>\n<ellipse cx=\"290\" cy=\"80\" rx=\"32\" ry=\"14\" fill=\"#4299e1\" opacity=\"0.7\"/>\n<ellipse cx=\"290\" cy=\"80\" rx=\"20\" ry=\"20\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<circle cx=\"290\" cy=\"80\" r=\"6\" fill=\"#68d391\" opacity=\"0.8\"/>\n<line x1=\"80\" y1=\"80\" x2=\"130\" y2=\"65\" stroke=\"#f6ad55\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<line x1=\"210\" y1=\"60\" x2=\"255\" y2=\"72\" stroke=\"#68d391\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<circle cx=\"50\" cy=\"80\" r=\"5\" fill=\"#fff\" opacity=\"0.6\"/>\n<polygon points=\"170,30 175,43 163,43\" fill=\"#f6ad55\" opacity=\"0.7\"/>\n<polygon points=\"290,55 295,68 285,68\" fill=\"#68d391\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "tech-260610",
+      "domain": "tech",
+      "day": "2026-06-10",
+      "author": "Yonathan Murin, Ali Ozer Ercan et al.",
+      "ref": "arXiv:2606.09829v1",
+      "url": "https://arxiv.org/abs/2606.09829v1",
+      "color": "#68d391",
+      "title": {
+        "zh-TW": "雜訊中提取變化率：自適應導數估計新方法 SURDE",
+        "en": "Extracting Rates of Change from Noisy Data: The Adaptive SURDE Method",
+        "zh-CN": "噪声中提取变化率：自适应导数估计新方法 SURDE",
+        "ja": "ノイズの中から変化率を抽出する：適応的微分推定法 SURDE",
+        "ko": "잡음 속에서 변화율 추출하기：적응형 미분 추정법 SURDE"
+      },
+      "tag": {
+        "zh-TW": "📶 訊號處理",
+        "en": "📶 Signal Processing",
+        "zh-CN": "📶 信号处理",
+        "ja": "📶 信号処理",
+        "ko": "📶 신호 처리"
+      },
+      "tech": {
+        "zh-TW": "本文提出 SURDE（Stein無偏風險導數估計器），針對含噪訊號的導數估計問題，利用 Stein無偏風險估計（SURE）準則在每個時間步評估一組不同長度的因果 FIR 濾波器的代價函數，再以指數加權軟組合各候選濾波器輸出。此方法自動平衡短濾波器的噪聲放大與長濾波器的平滑偏差之間的折衷，無需事先指定濾波器長度。",
+        "en": "SURDE (SURE Derivative Estimator) addresses the tradeoff between noise amplification and smoothing bias in causal FIR derivative filters. At each time step, it evaluates a data-driven SURE-based cost over a bank of candidate filter lengths and soft-combines their outputs via exponential weighting. This enables fully adaptive, parameter-free derivative estimation from noisy sampled signals.",
+        "zh-CN": "本文提出 SURDE（Stein无偏风险导数估计器），利用 SURE 准则在每个时间步评估一组不同长度的因果 FIR 滤波器的代价，并以指数加权软组合各候选滤波器输出。该方法自动平衡短滤波器的噪声放大与长滤波器的平滑偏差，无需预先指定滤波器长度。",
+        "ja": "SURDE は、因果 FIR 微分フィルタにおけるノイズ増幅と平滑化バイアスのトレードオフを解決するため、各時刻において SURE 基準で複数の候補フィルタ長のコストを評価し、指数重み付けでソフト結合する手法です。フィルタ長を事前に指定せず、データ駆動で適応的に微分を推定できます。",
+        "ko": "SURDE는 인과 FIR 미분 필터에서 발생하는 잡음 증폭과 평활 편향 간의 트레이드오프를 해결하기 위해, 매 시간 단계마다 SURE 기준으로 다양한 후보 필터 길이의 비용을 평가하고 지수 가중치로 소프트 결합합니다. 필터 길이를 사전에 지정할 필요 없이 데이터 기반으로 적응적 미분 추정이 가능합니다."
+      },
+      "plain": {
+        "zh-TW": "想像你在追蹤一輛在顛簸道路上行駛的車速——感測器每秒回傳的位置數據都帶著一點「抖動」雜訊。要算出「現在速度是多少」，你需要對位置求導數，也就是計算變化有多快。麻煩在於：如果你只看很短的時間窗口，抖動雜訊會讓速度估計忽高忽低；如果你拉長時間窗口來平滑，又會跟不上真實速度的快速變化。這就像用細筆畫圖容易手抖，用粗筆描線又太模糊。過去工程師只能憑經驗猜一個「差不多的窗口長度」，然後從頭到尾用同一個設定。SURDE 的突破在於：它同時準備了許多不同長度的濾波器，每一個時間點都即時評估「哪個長度在當下最合適」，再把各個結果聰明地混合起來，就像同時請了一群各有所長的助手，然後根據現場情況動態分配他們的發言權重。這對醫療訊號處理（如手部震顫分析）、機器人控制、以及人機介面都有直接應用價值，讓系統不再需要人工調參就能自動適應不同噪音環境。",
+        "en": "Imagine tracking the speed of a car on a bumpy road using noisy sensor data — every position reading jiggles a little. To find the speed, you need to compute how fast the position is changing, which is called a derivative. The catch is: a short time window makes the estimate jump around with the noise, while a long window smooths things out but can't keep up with sudden speed changes. It's like drawing with a thin pen that shakes versus a thick pen that blurs the lines. Engineers used to pick a window length by hand and stick with it. SURDE changes the game: it runs many different window lengths at once, scores each one in real time using a clever statistical trick called Stein's Unbiased Risk Estimator, and then blends the results with smart weighting — giving more trust to the lengths that are performing best right now. This means no manual tuning, and the filter automatically adapts moment by moment. Applications range from medical signal analysis and robotic arm control to touchscreen gesture recognition.",
+        "zh-CN": "想象你在追踪一辆行驶在颠簸路面上的汽车速度——传感器每秒返回的位置数据都带着一点「抖动」噪声。要算出「现在速度是多少」，需要对位置求导数，也就是计算变化有多快。问题在于：时间窗口太短，噪声会让速度估计忽高忽低；窗口太长，又会跟不上速度的快速变化。过去工程师只能凭经验手动设定一个固定窗口长度。SURDE 的突破是：同时准备多种不同长度的滤波器，每个时间点用 Stein 无偏风险准则实时评分，再把各结果智能混合，动态分配权重给当下表现最好的长度。这让系统无需手动调参就能自动适应不同噪声环境，在医疗信号、机器人控制和人机交互领域都有直接应用价值。",
+        "ja": "でこぼこ道を走る車の速度をノイズの多いセンサーデータで追跡する場面を想像してください。速度を求めるには位置の「変化の速さ」、つまり微分を計算する必要があります。短い時間窓を使うとノイズに振り回され、長い窓を使うと急な変化に追いつけません。細い筆で書けば手ブレが出て、太い筆で書けばぼやける、というジレンマです。従来エンジニアは経験でフィルタ長を決め固定していました。SURDE はその常識を覆し、さまざまな長さのフィルタを同時に走らせ、各時刻で Stein の不偏リスク推定量を使ってリアルタイムに評価し、最もうまくいっているフィルタに大きな重みをかけて結果を混合します。手動チューニング不要で環境に自動適応するこの手法は、医療信号処理、ロボット制御、ヒューマンインタフェースに直接役立ちます。",
+        "ko": "울퉁불퉁한 도로를 달리는 차의 속도를 잡음 섞인 센서 데이터로 추적한다고 상상해 보세요. 속도를 구하려면 위치의 「변화 속도」, 즉 미분을 계산해야 합니다. 짧은 시간 창을 쓰면 잡음에 휘둘리고, 긴 창을 쓰면 갑작스러운 변화를 따라가지 못합니다. 가는 붓으로 그리면 손이 떨리고, 굵은 붓으로 그리면 선이 뭉개지는 딜레마와 같습니다. 기존에는 엔지니어가 경험으로 필터 길이를 정해 고정했습니다. SURDE는 이 고정 관념을 깨고, 다양한 길이의 필터를 동시에 실행하면서 매 시간 단계마다 Stein 불편 위험 추정량으로 실시간 평가하고, 가장 잘 작동하는 필터에 더 큰 가중치를 주어 결과를 혼합합니다. 수동 조정 없이 자동으로 적응하는 이 방법은 의료 신호 분석, 로봇 제어, 인간-컴퓨터 인터페이스에 직접 활용될 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 最好的模型不是固定選一個「最佳參數」，而是讓數據本身在每個瞬間投票決定該相信誰。",
+        "en": "💡 The best estimator isn't one fixed choice — it's a system that lets the data itself vote, at every moment, on which model to trust.",
+        "zh-CN": "💡 最好的模型不是固定选一个「最优参数」，而是让数据本身在每个瞬间投票决定该相信谁。",
+        "ja": "💡 最良の推定器とは固定の「最適パラメータ」を選ぶことではなく、データ自身が瞬間ごとに投票して信頼するモデルを決める仕組みを作ることだ。",
+        "ko": "💡 최선의 추정기는 고정된 「최적 파라미터」를 선택하는 것이 아니라, 매 순간 데이터 자체가 어떤 모델을 믿을지 투표하게 만드는 구조다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<path d=\"M20,120 Q60,115 80,118 Q100,121 120,116 Q140,111 160,114 Q180,117 200,110 Q220,103 240,106 Q260,109 280,100 Q300,91 320,94\" stroke=\"#68d391\" stroke-width=\"2\" fill=\"none\" opacity=\"0.4\"/>\n<path d=\"M20,118 Q60,100 100,95 Q140,90 180,75 Q220,60 260,55 Q290,52 320,48\" stroke=\"#68d391\" stroke-width=\"2.5\" fill=\"none\"/>\n<path d=\"M20,80 L20,130 M20,130 L320,130\" stroke=\"#68d391\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.5\"/>\n<circle cx=\"60\" cy=\"112\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"100\" cy=\"98\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"140\" cy=\"92\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"180\" cy=\"78\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"220\" cy=\"64\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"260\" cy=\"57\" r=\"3\" fill=\"#fbb6ce\"/>\n<line x1=\"180\" y1=\"50\" x2=\"240\" y2=\"30\" stroke=\"#f6e05e\" stroke-width=\"2\"/>\n<polygon points=\"240,30 230,32 234,42\" fill=\"#f6e05e\"/>\n</svg>"
+    }
+  ]
+}
