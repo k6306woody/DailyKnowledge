@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """
-ig_card_renderer.py — 將知識卡片渲染成 1080×1080 PNG
+ig_card_renderer.py — 將知識卡片渲染成 1080×1350 PNG（4:5 直式）
+
+4:5 是目前 Instagram feed 最推薦比例：
+  - 佔螢幕面積最大 → 停留時間最長
+  - IG 演算法偏好
 
 流程：
-  card dict → 自包含 HTML → Playwright 截圖 → Pillow 合成 1080×1080
+  card dict → 自包含 HTML → Playwright 截圖 → Pillow 合成 1080×1350
 """
 
 import io
@@ -139,7 +143,7 @@ def card_to_html(card: dict, lang: str = "zh-TW") -> str:
 
 def render_card_png(card: dict, lang: str = "zh-TW") -> bytes:
     """
-    回傳 1080×1080 PNG bytes（可直接上傳 Instagram）
+    回傳 1080×1350 PNG bytes（4:5 直式，Instagram feed 最佳比例）
     """
     from playwright.sync_api import sync_playwright
 
@@ -155,51 +159,53 @@ def render_card_png(card: dict, lang: str = "zh-TW") -> bytes:
         card_png = el.screenshot(type="png")
         browser.close()
 
-    # ── Pillow：貼到 1080×1080 canvas ──
+    # ── Pillow：貼到 1080×1350 canvas（4:5）──
     card_img = Image.open(io.BytesIO(card_png)).convert("RGBA")
     cw, ch = card_img.size
 
-    canvas_size = 1080
-    # 計算縮放：卡片最多佔 canvas 的 88%
-    max_card_w = int(canvas_size * 0.88)
+    canvas_w, canvas_h = 1080, 1350  # 4:5
+    # 計算縮放：卡片寬度最多佔 canvas 的 88%
+    max_card_w = int(canvas_w * 0.88)
     if cw > max_card_w:
         scale = max_card_w / cw
         card_img = card_img.resize((int(cw * scale), int(ch * scale)), Image.LANCZOS)
         cw, ch = card_img.size
 
-    # 背景：品牌漸層感（淺綠）
-    canvas = Image.new("RGBA", (canvas_size, canvas_size), "#eaf4f3")
+    # 背景：品牌淺綠
+    canvas = Image.new("RGBA", (canvas_w, canvas_h), "#eaf4f3")
     draw = ImageDraw.Draw(canvas)
 
-    # 底部品牌色條（高度 72px）
-    bar_h = 72
-    draw.rectangle([(0, canvas_size - bar_h), (canvas_size, canvas_size)],
+    # 底部品牌色條（高度 90px，直式有更多空間）
+    bar_h = 90
+    draw.rectangle([(0, canvas_h - bar_h), (canvas_w, canvas_h)],
                    fill=BRAND_TEAL)
 
     # 品牌文字（底部色條內）
     try:
         font_path = "C:/Windows/Fonts/msjh.ttc"  # 微軟正黑體
-        font_brand = ImageFont.truetype(font_path, 24)
-        font_url   = ImageFont.truetype(font_path, 20)
+        font_brand = ImageFont.truetype(font_path, 28)
+        font_url   = ImageFont.truetype(font_path, 22)
     except Exception:
         font_brand = ImageFont.load_default()
         font_url   = font_brand
 
     brand_text = "每日新知  Daily Knowledge"
     url_text   = "k6306woody.github.io/DailyKnowledge"
-    draw.text((canvas_size // 2, canvas_size - bar_h + 18),
+    draw.text((canvas_w // 2, canvas_h - bar_h + 18),
               brand_text, fill="white", font=font_brand, anchor="mt")
-    draw.text((canvas_size // 2, canvas_size - bar_h + 46),
+    draw.text((canvas_w // 2, canvas_h - bar_h + 52),
               url_text, fill="#c8efec", font=font_url, anchor="mt")
 
-    # 卡片置中（垂直方向偏上一點，留出底部色條空間）
-    usable_h = canvas_size - bar_h - 20
-    paste_x = (canvas_size - cw) // 2
-    paste_y = max(16, (usable_h - ch) // 2)
+    # 卡片垂直位置：稍微偏上（黃金比例感），不要死置中
+    usable_h = canvas_h - bar_h
+    paste_x = (canvas_w - cw) // 2
+    # 上方留 38% 空白，卡片在視覺重心偏上的位置
+    top_margin = int((usable_h - ch) * 0.38)
+    paste_y = max(28, top_margin)
 
     canvas.paste(card_img, (paste_x, paste_y), mask=card_img)
 
-    # 輸出 PNG bytes
+    # 輸出 PNG bytes（1080×1350）
     buf = io.BytesIO()
     canvas.convert("RGB").save(buf, format="PNG", optimize=True)
     return buf.getvalue()
