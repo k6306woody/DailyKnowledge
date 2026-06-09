@@ -5,6 +5,51 @@
   "generated_at": "2026-06-10",
   "cards": [
     {
+      "id": "ai-260610",
+      "domain": "ai",
+      "day": "2026-06-10",
+      "author": "Jiarui Yao, Xiangxin Zhou, Penghui Qi et al.",
+      "ref": "arXiv:2606.09821v1",
+      "url": "https://arxiv.org/abs/2606.09821v1",
+      "color": "#667eea",
+      "illus": "<svg viewBox='0 0 340 160' xmlns='http://www.w3.org/2000/svg'><rect width='340' height='160' fill='#1a1a2e'/><circle cx='80' cy='80' r='48' fill='none' stroke='#667eea' stroke-width='2.5' stroke-dasharray='6 3'/><circle cx='80' cy='80' r='28' fill='#667eea' opacity='0.25'/><circle cx='80' cy='80' r='12' fill='#667eea' opacity='0.7'/><text x='80' y='145' text-anchor='middle' fill='#a0a8f0' font-size='10' font-family='sans-serif'>Policy</text><circle cx='220' cy='80' r='48' fill='none' stroke='#f093fb' stroke-width='2.5' stroke-dasharray='6 3'/><circle cx='220' cy='80' r='28' fill='#f093fb' opacity='0.18'/><circle cx='220' cy='80' r='12' fill='#f093fb' opacity='0.6'/><text x='220' y='145' text-anchor='middle' fill='#f0a8fb' font-size='10' font-family='sans-serif'>Reference</text><line x1='132' y1='80' x2='168' y2='80' stroke='#ffd700' stroke-width='2'/><polygon points='168,74 180,80 168,86' fill='#ffd700'/><polygon points='132,74 120,80 132,86' fill='#ffd700'/><text x='150' y='70' text-anchor='middle' fill='#ffd700' font-size='9' font-family='sans-serif'>KL div</text><rect x='255' y='30' width='60' height='18' rx='5' fill='#43e97b' opacity='0.85'/><text x='285' y='43' text-anchor='middle' fill='#1a1a2e' font-size='9' font-weight='bold' font-family='sans-serif'>Trust Zone</text><line x1='285' y1='48' x2='255' y2='70' stroke='#43e97b' stroke-width='1.5' stroke-dasharray='3 2'/></svg>",
+      "title": {
+        "zh-TW": "重新思考大型語言模型強化學習中的散度正則化",
+        "en": "Rethinking Divergence Regularization in LLM Reinforcement Learning",
+        "zh-CN": "重新思考大型语言模型强化学习中的散度正则化",
+        "ja": "LLM強化学習における発散正則化の再考",
+        "ko": "LLM 강화학습의 발산 정규화 재고찰"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 AI",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 AI",
+        "ko": "🤖 AI"
+      },
+      "tech": {
+        "zh-TW": "本論文指出，PPO 與 GRPO 等主流 LLM 強化學習方法以「重要性比率裁剪」近似信任域控制，但在長尾詞彙分佈下此比率無法準確反映策略偏移程度。作者分析以 KL 散度為基礎的遮罩機制（如 DPPO）如何更直接地量化分佈差異，並系統性地重新設計散度正則化策略，以提升訓練穩定性與最終模型性能。",
+        "en": "This paper argues that mainstream LLM RL methods like PPO and GRPO approximate trust-region control via importance-ratio clipping, which poorly captures distributional shift in long-tailed token vocabularies. The authors analyze divergence-based masking approaches (e.g., DPPO) that replace ratio clipping with direct KL divergence measurement. They systematically rethink and redesign divergence regularization to achieve more stable and effective LLM post-training.",
+        "zh-CN": "本文指出，PPO 与 GRPO 等主流 LLM 强化学习方法以「重要性比率裁剪」近似信任域控制，但在长尾词汇分布下该比率难以准确反映策略偏移。作者分析以 KL 散度为基础的掩码机制（如 DPPO）如何更直接地量化分布差异，并系统性地重新设计散度正则化策略以提升训练稳定性与模型性能。",
+        "ja": "本論文は、PPOやGRPOなどの主流LLM強化学習手法が重要度比率クリッピングで信頼域制御を近似しているが、長尾語彙分布では分布シフトを正確に捉えられないと指摘する。著者らはKLダイバージェンスに基づくマスク機構（DPPOなど）を分析し、発散正則化を体系的に再設計することで学習安定性と性能向上を図る。",
+        "ko": "본 논문은 PPO와 GRPO 같은 주류 LLM 강화학습 방법이 중요도 비율 클리핑으로 신뢰 영역을 근사하지만, 긴 꼬리 어휘 분포에서 정책 이동을 정확히 반영하지 못한다고 지적한다. 저자들은 KL 발산 기반 마스킹 메커니즘(DPPO 등)을 분석하고, 발산 정규화를 체계적으로 재설계하여 학습 안정성과 모델 성능을 개선한다."
+      },
+      "plain": {
+        "zh-TW": "想像你正在訓練一隻導盲犬：每次牠做對了，就給獎勵；做錯了，就修正。但問題是，如果每次修正的幅度太大，牠會完全忘記之前學會的東西。AI 語言模型的強化學習也面臨同樣困境——我們希望模型越變越好，但又不能讓它一次改變太多、偏離原本的樣子。現在主流的方法（PPO、GRPO）是用一個「比例尺」來控制改變的幅度，就像說「這次最多只能進步 20%」。但這把比例尺在語言模型面對罕見詞彙時會失靈，因為罕見詞的概率極小，比例變化看起來不大，實際上模型已經「跑偏」很遠了。這篇論文提出應該改用「KL 散度」這把更精準的量尺——它直接測量兩個分佈之間的真實距離，就像用 GPS 定位取代目測估算。這樣才能真正確保模型在學習新技能的同時，不會忘記原有的語言能力，讓 ChatGPT 這類 AI 的訓練更穩定、更可靠。",
+        "en": "Imagine training a dog with treats: reward good behavior, correct bad behavior — but if you correct too harshly all at once, the dog forgets everything it learned before. Training AI language models with reinforcement learning faces the same challenge: we want the model to improve, but it mustn't change too drastically in one step. Current popular methods like PPO and GRPO use a 「ratio ruler」 — essentially saying 「you can only change up to 20% this round.」 But this ruler breaks down for rare words, where tiny probability values make the ratio look fine even when the model has actually drifted far off course. This paper proposes using 「KL divergence」 as a more accurate measuring tape — it directly measures the true distance between two probability distributions, like switching from eyeballing a distance to using GPS. This ensures AI models can learn new skills without forgetting their existing language abilities, making post-training of models like ChatGPT more stable and reliable.",
+        "zh-CN": "想象你在训练一只导盲犬：做对了给奖励，做错了纠正。但如果每次纠正幅度太大，它会忘记之前学会的一切。AI 语言模型的强化学习也面临同样困境——我们希望模型越来越好，但不能让它一次改变太多、偏离原本的样子。现在主流方法（PPO、GRPO）用一把「比例尺」控制变化幅度，就像说「这次最多进步 20%」。但这把尺在面对罕见词汇时会失灵，因为罕见词的概率极小，比例看起来变化不大，实际上模型已经「跑偏」很远了。本文提出改用「KL 散度」这把更精准的量尺——它直接测量两个分布之间的真实距离，就像用 GPS 替代目测估算。这样才能真正确保模型在学习新技能的同时不忘原有语言能力，让 ChatGPT 类 AI 的训练更稳定可靠。",
+        "ja": "盲導犬を訓練することを想像してください。良い行動にはご褒美を、悪い行動には修正を与えます。でも一度に大きく修正しすぎると、犬はそれまで学んだことをすべて忘れてしまいます。AIの言語モデルを強化学習で訓練する場合も同じ問題があります。モデルを改善したいけれど、一度に大きく変えすぎると元の能力を失ってしまう。現在の主流手法（PPO・GRPO）は「比率ものさし」で変化幅を制御しますが、稀な単語では確率値が極小なため、実際には大きくずれていても比率上は正常に見えてしまいます。この論文は「KLダイバージェンス」という精密な物差しへの切り替えを提案します。これは目測の代わりにGPSを使うように、二つの分布間の真の距離を直接測ります。これにより、ChatGPTのようなAIがより安定して確実に学習できるようになります。",
+        "ko": "안내견을 훈련하는 상황을 상상해보세요. 잘하면 보상을, 잘못하면 교정을 줍니다. 하지만 한 번에 너무 크게 교정하면 이전에 배운 모든 것을 잊어버립니다. AI 언어 모델의 강화학습도 똑같은 문제가 있어요. 모델을 개선하고 싶지만, 한 번에 너무 많이 바뀌면 원래 능력을 잃게 됩니다. 현재 주류 방법(PPO, GRPO)은 「비율 자」를 사용해 변화 폭을 제어하는데, 드문 단어에서는 확률값이 매우 작아서 실제로는 크게 벗어났어도 비율상으로는 괜찮아 보입니다. 이 논문은 「KL 발산」이라는 더 정밀한 자로의 전환을 제안합니다. 눈대중 대신 GPS를 쓰듯이 두 분포 사이의 실제 거리를 직접 측정하죠. 이를 통해 ChatGPT 같은 AI 훈련이 더 안정적이고 신뢰할 수 있게 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 衡量「改變了多少」不能只看表面比例——真正重要的是機率分佈之間的實質距離，這個道理在 AI 訓練與人類學習中同樣適用。",
+        "en": "💡 Measuring 「how much has changed」 requires looking beyond surface ratios — what truly matters is the actual distance between probability distributions, a principle as relevant to AI training as to human learning.",
+        "zh-CN": "💡 衡量「改变了多少」不能只看表面比例——真正重要的是概率分布之间的实质距离，这个道理在 AI 训练与人类学习中同样适用。",
+        "ja": "💡 「どれだけ変わったか」を測るには表面的な比率だけでなく、確率分布間の本質的な距離を見ることが重要——これはAI訓練にも人間の学習にも共通する原理だ。",
+        "ko": "💡 「얼마나 변했는가」를 측정할 때 표면적인 비율만 보아서는 안 된다 — 진정으로 중요한 것은 확률 분포 간의 실질적 거리이며, 이는 AI 훈련과 인간 학습 모두에 적용되는 원리다."
+      }
+    },
+    {
       "id": "bio-260610",
       "domain": "bio",
       "day": "2026-06-10",
