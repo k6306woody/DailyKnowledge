@@ -189,12 +189,12 @@ def render_card_png(card: dict, lang: str = "zh-TW") -> bytes:
         font_brand = ImageFont.load_default()
         font_url   = font_brand
 
-    brand_text = "每日新知  Daily Knowledge"
-    url_text   = "k6306woody.github.io/DailyKnowledge"
-    draw.text((canvas_w // 2, canvas_h - bar_h + 18),
+    brand_text  = "每日新知  Daily Knowledge"
+    slogan_text = "最新研究 × 多元領域 × 白話解說"
+    draw.text((canvas_w // 2, canvas_h - bar_h + 16),
               brand_text, fill="white", font=font_brand, anchor="mt")
     draw.text((canvas_w // 2, canvas_h - bar_h + 52),
-              url_text, fill="#c8efec", font=font_url, anchor="mt")
+              slogan_text, fill="#c8efec", font=font_url, anchor="mt")
 
     # 卡片垂直位置：稍微偏上（黃金比例感），不要死置中
     usable_h = canvas_h - bar_h

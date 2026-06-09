@@ -247,7 +247,7 @@ def build_caption(card: dict) -> str:
 💡 {insight[:100]}
 
 📖 {ref}
-🔗 每日新知：k6306woody.github.io/DailyKnowledge
+🔗 每日新知 Daily Knowledge
 
 #每日新知 #DailyKnowledge #科普 #學術研究 #知識 #arXiv {extra_tags} #台灣 #繁體中文"""
 
