@@ -1,0 +1,188 @@
+{
+  "date": "2026-06-11",
+  "mode": "paper",
+  "paper_date": "2026-06-11",
+  "generated_at": "2026-06-11",
+  "cards": [
+    {
+      "id": "ai-260611",
+      "domain": "ai",
+      "day": "2026-06-11",
+      "author": "Ilay Kamai, Hugues Van Assel et al.",
+      "ref": "arXiv:2606.11190v1",
+      "url": "https://arxiv.org/abs/2606.11190v1",
+      "color": "#667eea",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#667eea18\"/><circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"#667eea\" opacity=\"0.18\"/><circle cx=\"80\" cy=\"80\" r=\"26\" fill=\"#667eea\" opacity=\"0.35\"/><circle cx=\"80\" cy=\"80\" r=\"14\" fill=\"#667eea\" opacity=\"0.8\"/><circle cx=\"260\" cy=\"80\" r=\"38\" fill=\"#f5a623\" opacity=\"0.18\"/><circle cx=\"260\" cy=\"80\" r=\"26\" fill=\"#f5a623\" opacity=\"0.35\"/><circle cx=\"260\" cy=\"80\" r=\"14\" fill=\"#f5a623\" opacity=\"0.8\"/><line x1=\"118\" y1=\"60\" x2=\"222\" y2=\"60\" stroke=\"#667eea\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\" opacity=\"0.7\"/><line x1=\"118\" y1=\"100\" x2=\"222\" y2=\"100\" stroke=\"#f5a623\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\" opacity=\"0.7\"/><polygon points=\"170,44 182,60 158,60\" fill=\"#667eea\" opacity=\"0.6\"/><polygon points=\"170,116 182,100 158,100\" fill=\"#f5a623\" opacity=\"0.6\"/><rect x=\"148\" y=\"68\" width=\"44\" height=\"24\" rx=\"6\" fill=\"#e8f0fe\" opacity=\"0.7\"/><rect x=\"155\" y=\"75\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#667eea\" opacity=\"0.9\"/><rect x=\"175\" y=\"75\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#f5a623\" opacity=\"0.9\"/></svg>",
+      "title": {
+        "zh-TW": "對齊還是預測？多模態學習的「相圖」指南",
+        "en": "Align or Predict? A Phase Diagram Guide for Multimodal Learning",
+        "zh-CN": "对齐还是预测？多模态学习的「相图」指南",
+        "ja": "揃えるか予測するか？マルチモーダル学習の「相図」ガイド",
+        "ko": "정렬할까, 예측할까? 멀티모달 학습의 '상다이어그램' 가이드"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 Artificial Intelligence",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "本文提出統一線性框架，在「尖峰協方差」模型下，以數學推導出跨模態對齊（CA）與跨模態預測（CP）各自奏效的條件，並繪製出取決於模態相關性、雜訊比與資料結構的「相圖」，讓研究者能診斷為何標準方法在生醫或天文等異質多模態資料上失效。",
+        "en": "This paper proposes a unified linear framework that, under a spiked covariance model, mathematically derives the conditions under which cross-modal alignment (CA) and cross-modal prediction (CP) each succeed or fail, producing a phase diagram governed by inter-modal correlation, noise level, and data structure to diagnose why standard methods underperform in heterogeneous multimodal settings.",
+        "zh-CN": "本文提出统一线性框架，在「尖峰协方差」模型下，以数学推导出跨模态对齐（CA）与跨模态预测（CP）各自奏效的条件，并绘制出取决于模态相关性、噪声比与数据结构的「相图」，帮助研究者诊断为何标准方法在生医或天文等异质多模态数据上失效。",
+        "ja": "本論文は統一線形フレームワークを提案し、スパイク共分散モデルのもとで、クロスモーダル整合（CA）とクロスモーダル予測（CP）それぞれが成功・失敗する条件を数学的に導出し、モダリティ間相関・ノイズ比・データ構造に依存する「相図」を描いて、標準手法が異種マルチモーダルデータで失敗する原因を診断できるようにする。",
+        "ko": "이 논문은 통합 선형 프레임워크를 제안하여, 스파이크 공분산 모델 하에서 교차 모달 정렬(CA)과 교차 모달 예측(CP)이 각각 성공하거나 실패하는 조건을 수학적으로 도출하고, 모달 간 상관관계·노이즈 비율·데이터 구조에 따른 '상다이어그램'을 제시해 표준 방법이 이질적 멀티모달 데이터에서 왜 성능이 저하되는지 진단할 수 있게 한다."
+      },
+      "plain": {
+        "zh-TW": "想像你要學西班牙文：有時你把西文和中文「對齊」記憶（看到 gato 就聯想到貓），有時你「預測」——只看中文就猜出西文怎麼說。AI 處理多種感測器資料時也面對同樣選擇：是把不同資料「拉齊」成同一個空間，還是用一種資料去「預測」另一種？過去沒人知道哪個方法在什麼情況下更好，科學家只能碰運氣。這篇論文就像畫了一張「氣象地圖」：橫軸是兩種資料有多相似，縱軸是雜訊有多大，地圖上清楚標出哪個區域用對齊、哪個區域用預測、哪個區域兩者都沒用。這對生醫研究者特別重要——基因體和細胞影像就是典型的「資料互補但不完全相關」情境，過去方法常常失敗卻找不到原因。有了這張地圖，未來研究者終於能對症下藥，節省大量計算資源與時間。",
+        "en": "Imagine learning Spanish: sometimes you memorize by pairing words side by side (alignment), other times you just guess the Spanish word from the English one (prediction). AI faces the same choice when combining data from different sensors or instruments. Until now, no one had a clear map telling practitioners which strategy to use and when — leaving scientists in fields like biomedicine and astrophysics frustrated when standard methods failed without explanation. This paper draws that map: a phase diagram where the axes represent how correlated the two data sources are and how noisy they are, clearly marking which regions favor alignment, which favor prediction, and where neither helps. This is especially valuable for biomedical researchers combining genomics with imaging data. With this roadmap, scientists can diagnose failures and choose the right strategy from the start, saving enormous time and compute.",
+        "zh-CN": "想象你在学西班牙语：有时你把西文和中文「对齐」记忆，有时你「预测」——只看中文就猜出西文怎么说。AI 处理多种传感器数据时也面临同样选择：把不同数据「拉齐」成同一个空间，还是用一种数据去「预测」另一种？过去没人知道哪个方法在什么情况下更好，科学家只能碰运气。这篇论文画了一张「气象地图」：两轴分别代表两种数据有多相似以及噪声有多大，地图上清楚标出哪个区域用对齐、哪个区域用预测、哪个区域两者都没用。对生医研究者来说意义重大——基因组和细胞图像是典型的「数据互补但不完全相关」场景，过去方法常失败却找不到原因。有了这张地图，研究者终于能对症下药。",
+        "ja": "スペイン語を学ぶとき、単語を並べて「対応を覚える」方法と、日本語だけを見てスペイン語を「予測する」方法がありますよね。AIが複数センサーのデータを統合する際も同じ選択に迫られます。これまで、どの状況でどちらの戦略が優れるかを示す体系的な地図がなく、生命科学や天文学の研究者はなぜ標準的な手法が失敗するのか診断できませんでした。この論文はその「気象図」を描きました。2つのデータがどれほど相関しているか、どれほどノイズが多いかを軸に、整合・予測・どちらも無効の領域を明確に示します。これにより研究者は失敗の原因を特定し、最初から最適な戦略を選べるようになります。",
+        "ko": "스페인어를 배울 때, 단어를 나란히 놓고 '짝지어 외우는' 방법과 한국어만 보고 스페인어를 '예측하는' 방법이 있죠. AI가 여러 센서 데이터를 결합할 때도 같은 선택에 직면합니다. 지금까지는 어떤 상황에서 어떤 전략이 나은지 알려주는 체계적인 지도가 없었고, 생의학이나 천문학 연구자들은 표준 방법이 왜 실패하는지 진단하지 못했습니다. 이 논문은 그 '기상도'를 그렸습니다. 두 데이터의 상관 정도와 노이즈 크기를 축으로, 정렬·예측·둘 다 소용없는 영역을 명확히 표시합니다. 이제 연구자들은 실패 원인을 진단하고 처음부터 올바른 전략을 선택할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 方法沒有優劣之分，只有「用對時機」之別——資料的相關性與雜訊結構，才是決定 AI 融合策略成敗的真正地圖。",
+        "en": "💡 No method is universally better — the true guide to multimodal AI success is a phase diagram defined by data correlation and noise, not intuition or convention.",
+        "zh-CN": "💡 方法没有优劣之分，只有「用对时机」之别——数据的相关性与噪声结构，才是决定 AI 融合策略成败的真正地图。",
+        "ja": "💡 手法に優劣はなく「適切なタイミング」があるだけ——データの相関性とノイズ構造こそが、AIマルチモーダル戦略の成否を決める本当の地図だ。",
+        "ko": "💡 어떤 방법이 절대적으로 우월한 게 아니라 '올바른 타이밍'이 있을 뿐이다——데이터의 상관관계와 노이즈 구조야말로 AI 멀티모달 전략의 성패를 가르는 진짜 지도다."
+      }
+    },
+    {
+      "id": "phys-260611",
+      "domain": "phys",
+      "day": "2026-06-11",
+      "author": "Rishav Chaudhuri, Sai Satyam Samal et al.",
+      "ref": "arXiv:2606.11147v1",
+      "url": "https://arxiv.org/abs/2606.11147v1",
+      "color": "#ed8936",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#ed893618\"/><circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#ed8936\" opacity=\"0.85\"/><circle cx=\"50\" cy=\"80\" r=\"10\" fill=\"#fff\" opacity=\"0.5\"/><circle cx=\"290\" cy=\"80\" r=\"18\" fill=\"#ed8936\" opacity=\"0.85\"/><circle cx=\"290\" cy=\"80\" r=\"10\" fill=\"#fff\" opacity=\"0.5\"/><line x1=\"68\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/><line x1=\"210\" y1=\"80\" x2=\"272\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/><rect x=\"130\" y=\"55\" width=\"80\" height=\"50\" rx=\"10\" fill=\"#4a90d9\" opacity=\"0.25\" stroke=\"#4a90d9\" stroke-width=\"2\"/><rect x=\"155\" y=\"68\" width=\"30\" height=\"24\" rx=\"5\" fill=\"#4a90d9\" opacity=\"0.5\"/><circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#fff\" opacity=\"0.7\" stroke=\"#4a90d9\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"55\" stroke=\"#e53e3e\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"33\" r=\"9\" fill=\"#e53e3e\" opacity=\"0.8\"/><circle cx=\"170\" cy=\"33\" r=\"4\" fill=\"#fff\" opacity=\"0.6\"/><path d=\"M 68 72 Q 110 40 130 65\" stroke=\"#ed8936\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.6\"/><path d=\"M 210 65 Q 230 40 272 72\" stroke=\"#ed8936\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "量子粒子身份大變身：量子比特如何讓費米子假裝成玻色子",
+        "en": "Quantum Identity Swap: How a Qubit Transforms Fermions into Boson-like Particles",
+        "zh-CN": "量子粒子身份大变身：量子比特如何让费米子假装成玻色子",
+        "ja": "量子粒子の正体変換：クビットがフェルミオンをボソンに化かす仕組み",
+        "ko": "양자 입자 정체 변환: 큐비트가 페르미온을 보손처럼 만드는 방법"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理学",
+        "ko": "⚛️ 양자물리학"
+      },
+      "tech": {
+        "zh-TW": "本研究將點狀量子點接觸碰撞器擴展為延伸型碰撞器，並耦合一個雙態量子比特雜質，分析費米子與玻色子波包的散射統計。透過計算交叉關聯雜訊（Hanbury Brown–Twiss 效應），研究量子統計如何隨耦合強度從費米子反聚束轉變為玻色子聚束行為。",
+        "en": "This study extends the point-like quantum point contact (QPC) collider to an extended geometry coupled to a two-level qubit impurity, analyzing the scattering statistics of fermionic and bosonic wave packets. By computing cross-correlation noise via the Hanbury Brown–Twiss setup, it tracks how quantum statistics transmute from fermionic anti-bunching to boson-like bunching as qubit coupling varies.",
+        "zh-CN": "本研究将点状量子点接触碰撞器扩展为延伸型碰撞器，并耦合一个双态量子比特杂质，分析费米子与玻色子波包的散射统计。通过计算交叉关联噪声（Hanbury Brown–Twiss效应），研究量子统计如何随耦合强度从费米子反聚束转变为玻色子聚束行为。",
+        "ja": "本研究は、点状量子点接触（QPC）コライダーを拡張型コライダーへと発展させ、2準位クビット不純物と結合させてフェルミオン・ボソン波束の散乱統計を解析する。Hanbury Brown–Twiss配置による交差相関ノイズを計算することで、クビット結合強度に応じて量子統計がフェルミオン的反バンチングからボソン的バンチングへと変化する過程を追跡する。",
+        "ko": "이 연구는 점 형태의 양자점 접합(QPC) 충돌기를 확장형 충돌기로 발전시키고 이중 준위 큐비트 불순물과 결합하여 페르미온 및 보손 파속의 산란 통계를 분석한다. Hanbury Brown–Twiss 설정을 통한 교차 상관 잡음을 계산함으로써 큐비트 결합 강도에 따라 양자 통계가 페르미온 반-묶음에서 보손 묶음으로 변화하는 과정을 추적한다."
+      },
+      "plain": {
+        "zh-TW": "自然界的基本粒子分兩大家族：費米子（如電子）喜歡「保持距離」，不願和同伴待在同一個地方；玻色子（如光子）則恰好相反，它們愛「湊熱鬧」、傾向擠在一起。這種行為差異稱為量子統計，是物質世界運作的根本規則。科學家利用一種叫「碰撞器」的微小裝置，讓兩顆粒子像在十字路口相遇，藉由觀察它們是否同時抵達另一端，判斷粒子究竟是哪種「個性」。這篇論文發現，如果在碰撞器旁邊放一個「量子比特」（一種只有兩個狀態的微型開關），它就能悄悄改變費米子的個性，讓它開始像玻色子一樣行事！更重要的是，研究者進一步把碰撞器從「點狀」延伸為「有長度的通道」，模擬更真實的實驗裝置，發現這種「身份變換」效應依然成立。這對未來製造任意子（介於兩者之間的神秘粒子）並應用於量子計算具有重大意義，因為操控粒子統計就等於操控量子資訊的儲存方式。",
+        "en": "Particles in nature come in two great families: fermions (like electrons), which stubbornly refuse to share the same space, and bosons (like photons), which love to crowd together. This behavioral difference is called quantum statistics, and it underpins how all matter and light behave. Scientists use tiny devices called colliders to shoot two particles at a junction and watch whether they arrive at the same exit or separate ones—like watching whether two strangers at a crossroads end up going the same way. This paper shows that placing a 「qubit」—a tiny two-state switch—next to the collider can secretly reprogram a fermion's personality, making it act like a boson. Crucially, the researchers extended the collider from a single point to a channel with length, making it more realistic for actual experiments, and found the identity-swap effect persists. This matters enormously for quantum computing, where exotic particles called anyons—with statistics between fermion and boson—could store information in a fundamentally error-resistant way.",
+        "zh-CN": "自然界的基本粒子分两大家族：费米子（如电子）喜欢「保持距离」，不愿和同伴待在同一个地方；玻色子（如光子）则恰好相反，它们爱「凑热闹」、倾向挤在一起。这种行为差异称为量子统计，是物质世界运作的根本规则。科学家利用一种叫「碰撞器」的微小装置，让两颗粒子像在十字路口相遇，通过观察它们是否同时抵达另一端，判断粒子究竟是哪种「个性」。这篇论文发现，如果在碰撞器旁边放一个「量子比特」（一种只有两个状态的微型开关），它就能悄悄改变费米子的个性，让它开始像玻色子一样行事！研究者进一步把碰撞器从「点状」延伸为「有长度的通道」，发现这种「身份变换」效应依然成立，为未来量子计算中操控任意子提供了重要理论基础。",
+        "ja": "自然界の素粒子は大きく二つの家族に分かれます。フェルミオン（電子など）は「個人スペース」を大切にして同じ場所に集まるのを嫌い、ボソン（光子など）はむしろ一緒に集まるのが好きです。この違いを「量子統計」と呼び、物質と光の振る舞いの根本を決めています。科学者たちは「コライダー」と呼ばれる極小装置を使い、2つの粒子を交差点でぶつけ、同じ出口から出るかどうかを観測することでその「個性」を判定します。この論文では、コライダーの横に「クビット」という2状態の小さなスイッチを置くと、フェルミオンの個性がこっそり書き換えられ、ボソンのように振る舞い始めることを示しました。さらに点状のコライダーを長さのある通路へと拡張しても効果が持続することを確認し、将来の量子コンピュータで活用が期待される「エニオン」制御への道を開きました。",
+        "ko": "자연계의 기본 입자는 두 가지 큰 가족으로 나뉩니다. 페르미온(전자 등)은 같은 공간에 함께 있기를 극도로 싫어하고, 보손(광자 등)은 반대로 함께 모이기를 좋아합니다. 이 차이를 「양자 통계」라 하며, 모든 물질과 빛의 행동을 근본적으로 결정합니다. 과학자들은 「충돌기」라는 초소형 장치를 이용해 두 입자를 교차로에서 만나게 하고, 같은 출구로 나오는지 관찰하여 입자의 「성격」을 판별합니다. 이 논문은 충돌기 옆에 「큐비트」라는 두 상태의 작은 스위치를 놓으면 페르미온의 성격이 몰래 바뀌어 보손처럼 행동하기 시작한다는 것을 보여줍니다. 더 나아가 점 형태의 충돌기를 길이가 있는 채널로 확장해도 이 「정체 변환」 효과가 유지됨을 확인하여, 양자 컴퓨팅에서 활용될 애니온 제어의 이론적 토대를 마련했습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 粒子的「身份」並非固定不變——一個微小的量子比特就能充當身份轉換器，讓費米子的靈魂住進玻色子的軀殼，揭示量子統計比我們想像的更加可塑。",
+        "en": "💡 A particle's quantum identity is not carved in stone—a single qubit acting as a 「statistical transmuter」 can reshape a fermion's soul into that of a boson, revealing that quantum statistics are far more malleable than we once thought.",
+        "zh-CN": "💡 粒子的「身份」并非固定不变——一个微小的量子比特就能充当身份转换器，让费米子的灵魂住进玻色子的躯壳，揭示量子统计比我们想象的更加可塑。",
+        "ja": "💡 粒子の「個性」は固定されたものではない——たった一つのクビットが統計変換器として機能し、フェルミオンをボソンへと変えることができる。量子統計は私たちが思っていたよりもはるかに柔軟だ。",
+        "ko": "💡 입자의 「정체성」은 고정된 것이 아니다——단 하나의 큐비트가 통계 변환기로 작동해 페르미온을 보손으로 바꿀 수 있으며, 이는 양자 통계가 우리가 생각했던 것보다 훨씬 유연하다는 것을 보여준다."
+      }
+    },
+    {
+      "id": "neuro-260611",
+      "domain": "neuro",
+      "day": "2026-06-11",
+      "author": "Sovesh Mohapatra, Christoffer G. Alexandersen et al.",
+      "ref": "arXiv:2606.11091v1",
+      "url": "https://arxiv.org/abs/2606.11091v1",
+      "color": "#9f7aea",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#9f7aea\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"40\" r=\"18\" fill=\"#9f7aea\" opacity=\"0.7\"/><circle cx=\"280\" cy=\"80\" r=\"22\" fill=\"#9f7aea\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"120\" r=\"18\" fill=\"#9f7aea\" opacity=\"0.7\"/><line x1=\"60\" y1=\"80\" x2=\"170\" y2=\"40\" stroke=\"#e879f9\" stroke-width=\"3.5\" opacity=\"0.9\"/><line x1=\"170\" y1=\"40\" x2=\"280\" y2=\"80\" stroke=\"#e879f9\" stroke-width=\"3.5\" opacity=\"0.9\"/><line x1=\"280\" y1=\"80\" x2=\"170\" y2=\"120\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><line x1=\"170\" y1=\"120\" x2=\"60\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><line x1=\"60\" y1=\"80\" x2=\"280\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"1.2\" stroke-dasharray=\"3,5\" opacity=\"0.4\"/><ellipse cx=\"115\" cy=\"57\" rx=\"14\" ry=\"6\" fill=\"#e879f9\" opacity=\"0.55\"/><ellipse cx=\"225\" cy=\"57\" rx=\"14\" ry=\"6\" fill=\"#e879f9\" opacity=\"0.55\"/><circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#ffffff\" opacity=\"0.25\"/></svg>",
+      "title": {
+        "zh-TW": "QUIET：精準調控大腦同步的「邊緣中心」神經網路控制法",
+        "en": "QUIET: Targeting Brain Synchronization by Controlling Underused Neural Connections",
+        "zh-CN": "QUIET：精准调控大脑同步的「边缘中心」神经网络控制法",
+        "ja": "QUIET：使われていない神経回路の辺を狙い打ちして脳同期を精密制御する",
+        "ko": "QUIET：활용도 낮은 신경 연결을 표적으로 뇌 동기화를 정밀 제어하는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出「QUIET」框架，以白質纖維連結（邊）而非腦區節點為中心，整合結構可控性與功能同步性，找出那些平時低度活化但極具影響力的神經連結，並以此為標靶來達成指定的大腦動態同步模式。相較於傳統節點中心式的網路控制理論，此方法同時考量結構與功能，能夠設計出跨越時間的持續性動態調控策略。",
+        "en": "QUIET is an edge-centric network control framework that identifies underutilized but highly influential white matter connections. By integrating structural controllability with functional synchronization metrics, it targets specific neural edges to achieve desired extended brain dynamics, moving beyond conventional node-centric, instantaneous-state approaches in network control theory.",
+        "zh-CN": "本研究提出「QUIET」框架，以白质纤维连结（边）而非脑区节点为中心，整合结构可控性与功能同步性，找出那些平时低度激活但极具影响力的神经连结，并以此为靶点实现指定的大脑动态同步模式。相较于传统节点中心式的网络控制理论，此方法兼顾结构与功能，能设计跨越时间的持续性动态调控策略。",
+        "ja": "QUIETは、白質の神経線維接続（エッジ）を中心に据えたネットワーク制御フレームワークです。構造的可制御性と機能的同期指標を統合し、普段は使われていないが影響力の高い神経接続を特定し、それを標的として所望の持続的な脳ダイナミクス同期パターンを実現します。従来のノード中心・瞬時状態アプローチを超えた手法です。",
+        "ko": "QUIET는 뇌 영역(노드) 대신 백질 신경 연결(엣지)을 중심으로 하는 네트워크 제어 프레임워크입니다. 구조적 제어 가능성과 기능적 동기화 지표를 통합하여 평소에 잘 활용되지 않지만 영향력이 큰 신경 연결을 찾아내고, 이를 표적으로 원하는 지속적 뇌 동역학 동기화 패턴을 달성합니다."
+      },
+      "plain": {
+        "zh-TW": "想像大腦是一座城市，神經元是城市裡的建築，而神經纖維連結就是街道。過去科學家想要「改變城市交通流量」，都是直接拆換建築（改變節點）；但 QUIET 說：其實只要找到幾條平時幾乎沒人走、卻地處要衝的小巷子，悄悄打通或調整它們，整座城市的交通模式就會截然不同。這些「沉睡的關鍵小路」就是論文中所謂「低度活化但極具影響力的邊」。更重要的是，這個方法不只追求某一瞬間的交通順暢，而是讓整個城市在一段時間內維持穩定的節律——就像讓所有路口的紅綠燈同步。這對理解癲癇、帕金森氏症等「大腦節律失調」疾病，以及設計更精準的神經刺激治療，具有深遠意義。",
+        "en": "Imagine the brain as a city where neurons are buildings and nerve fibers are the roads connecting them. Traditional approaches to controlling brain activity focused on modifying the buildings themselves. QUIET instead asks: what if we only need to tweak a few quiet, overlooked back-alleys that happen to sit at crucial crossroads? By nudging these underused but strategically placed connections, you can reshape the entire city's traffic flow. Crucially, QUIET doesn't just aim for one perfect moment of smooth traffic — it sustains a desired rhythm over time, like synchronizing every traffic light in the city. This matters enormously for conditions like epilepsy or Parkinson's disease, where the brain's rhythms go out of tune, and could guide far more targeted neurostimulation therapies.",
+        "zh-CN": "想象大脑是一座城市，神经元是建筑，神经纤维连结是街道。过去科学家想改变「城市交通流量」，都是直接改造建筑（改变节点）；但 QUIET 说：其实只要找到几条平时几乎没人走、却地处要冲的小巷，悄悄疏通或调整它们，整座城市的交通模式就会截然不同。这些「沉睡的关键小路」就是论文中所谓「低度激活但极具影响力的边」。更重要的是，这个方法不只追求某一瞬间的顺畅，而是让整座城市在一段时间内维持稳定节律——就像让所有路口红绿灯同步。这对理解癫痫、帕金森病等「大脑节律失调」疾病，以及设计更精准的神经刺激疗法，具有深远意义。",
+        "ja": "脳を都市に例えるなら、ニューロンは建物、神経線維は道路です。これまでの研究は主に建物（ノード）を改造して交通流を変えようとしてきました。しかし QUIETは「普段ほとんど使われていないのに要所に位置する小道」に注目します。そのような「眠れる重要路地」をわずかに調整するだけで、都市全体の交通パターンが大きく変わるのです。さらにこの方法は一瞬の最適化ではなく、信号機を全て同期させるように、持続的なリズムの維持を目指します。てんかんやパーキンソン病など脳のリズム異常に悩む患者にとって、より精密な神経刺激治療への道を開く可能性があります。",
+        "ko": "뇌를 도시에 비유하면, 뉴런은 건물이고 신경 섬유는 도로입니다. 기존 연구는 건물(노드)을 직접 바꿔 교통 흐름을 조절하려 했습니다. 하지만 QUIET는 평소엔 거의 쓰이지 않지만 요충지에 위치한 '잠든 골목길'을 찾아냅니다. 이 숨겨진 연결을 살짝 조정하는 것만으로 도시 전체의 교통 패턴이 바뀔 수 있습니다. 게다가 이 방법은 단 한 순간의 최적화가 아니라, 모든 신호등을 동기화하듯 지속적인 리듬 유지를 목표로 합니다. 뇌의 리듬이 어긋나는 뇌전증이나 파킨슨병 환자를 위한 더 정밀한 신경 자극 치료법 개발에 중요한 실마리를 제공합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 控制大腦不必改變最活躍的節點——那些安靜沉睡、卻身處要衝的連結，才是撬動整體節律的真正槓桿。",
+        "en": "💡 To steer the brain's rhythm, you don't need to target the loudest nodes — the quiet, overlooked connections sitting at key crossroads are often the most powerful levers of all.",
+        "zh-CN": "💡 控制大脑不必改变最活跃的节点——那些安静沉睡、却身处要冲的连结，才是撬动整体节律的真正杠杆。",
+        "ja": "💡 脳のリズムを制御するには最も活発なノードを狙う必要はない——静かに眠る要所の接続こそが、全体を動かす本当のレバーである。",
+        "ko": "💡 뇌의 리듬을 제어하려면 가장 활발한 노드를 건드릴 필요가 없다 — 조용히 잠들어 있지만 요충지에 위치한 연결이야말로 전체를 움직이는 진짜 레버다."
+      }
+    },
+    {
+      "id": "tech-260611",
+      "domain": "tech",
+      "day": "2026-06-11",
+      "author": "Yujie Zang, Yuhang Zheng et al.",
+      "ref": "arXiv:2606.11184v1",
+      "url": "https://arxiv.org/abs/2606.11184v1",
+      "color": "#68d391",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#68d39118\"/><rect x=\"20\" y=\"55\" width=\"60\" height=\"80\" rx=\"8\" fill=\"#68d391\" opacity=\"0.85\"/><rect x=\"30\" y=\"65\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#fff\" opacity=\"0.7\"/><rect x=\"30\" y=\"82\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#fff\" opacity=\"0.5\"/><rect x=\"30\" y=\"99\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#fff\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"95\" r=\"28\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"3\"/><circle cx=\"110\" cy=\"95\" r=\"16\" fill=\"#68d391\" opacity=\"0.4\"/><circle cx=\"110\" cy=\"95\" r=\"6\" fill=\"#68d391\"/><line x1=\"90\" y1=\"75\" x2=\"70\" y2=\"60\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"130\" y1=\"75\" x2=\"155\" y2=\"60\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><rect x=\"150\" y=\"40\" width=\"80\" height=\"50\" rx=\"8\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/><rect x=\"158\" y=\"50\" width=\"20\" height=\"8\" rx=\"2\" fill=\"#f6ad55\" opacity=\"0.7\"/><rect x=\"158\" y=\"63\" width=\"32\" height=\"8\" rx=\"2\" fill=\"#f6ad55\" opacity=\"0.5\"/><rect x=\"158\" y=\"76\" width=\"24\" height=\"8\" rx=\"2\" fill=\"#f6ad55\" opacity=\"0.3\"/><path d=\"M250 95 Q270 70 300 80 Q290 110 260 120 Z\" fill=\"#68d391\" opacity=\"0.5\"/><circle cx=\"265\" cy=\"100\" r=\"8\" fill=\"#fff\" opacity=\"0.6\"/><circle cx=\"280\" cy=\"88\" r=\"5\" fill=\"#fff\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "機器人的「觸覺預知」：力覺引導的觸感世界模型讓精細操作更聰明",
+        "en": "TacForeSight: Robots That Feel Ahead — Force-Guided Tactile Foresight for Dexterous Manipulation",
+        "zh-CN": "机器人的「触觉预知」：力觉引导的触感世界模型让精细操作更聪明",
+        "ja": "ロボットの「触覚予知」：力覚ガイドの触覚ワールドモデルで繊細な操作を実現",
+        "ko": "로봇의 「촉각 예지」: 힘 감각 기반 촉각 세계 모델로 정밀 조작 구현"
+      },
+      "tag": {
+        "zh-TW": "📶 機器人技術",
+        "en": "📶 Robotics & AI",
+        "zh-CN": "📶 机器人技术",
+        "ja": "📶 ロボット工学",
+        "ko": "📶 로봇 기술"
+      },
+      "tech": {
+        "zh-TW": "本研究提出 TacForeSight 框架，核心為 TacForceWM 觸覺世界模型，以全域力覺訊號為條件，預測未來短期觸覺影像序列，解決傳統方法忽略力覺與觸覺在時空尺度上不對稱角色的問題。系統採用輕量化設計，可在機器人操作期間進行即時推斷，並整合模仿學習以提升接觸豐富任務的控制精度。",
+        "en": "TacForeSight introduces a lightweight force-conditioned tactile foresight framework featuring TacForceWM, a world model that predicts short-horizon tactile image sequences conditioned on global force feedback. It explicitly models the asymmetric spatiotemporal roles of force and local tactile sensing, enabling real-time contact-aware control via imitation learning for complex manipulation tasks.",
+        "zh-CN": "本研究提出 TacForeSight 框架，核心为 TacForceWM 触觉世界模型，以全局力觉信号为条件，预测未来短期触觉图像序列，解决传统方法忽略力觉与触觉时空尺度不对称的问题。系统采用轻量化设计，可在机器人操作期间进行实时推断，并结合模仿学习提升接触密集任务的控制精度。",
+        "ja": "TacForeSightは、グローバルな力覚フィードバックを条件としたTacForceWMという触覚ワールドモデルを核心に持つ軽量フレームワークで、短期間の触覚画像シーケンスをリアルタイムで予測します。力覚と局所触覚の非対称な時空間的役割を明示的にモデル化し、模倣学習と組み合わせて複雑な接触操作タスクの精度を向上させます。",
+        "ko": "TacForeSight는 전역 힘 피드백을 조건으로 단기 촉각 이미지 시퀀스를 예측하는 TacForceWM 촉각 세계 모델을 핵심으로 하는 경량 프레임워크를 제안합니다. 힘 감각과 국소 촉각의 비대칭 시공간 역할을 명시적으로 모델링하여 모방 학습과 결합, 복잡한 접촉 집약적 작업의 제어 정확도를 향상시킵니다."
+      },
+      "plain": {
+        "zh-TW": "想像你閉著眼睛用手指擰螺絲——你的手掌感受整體力道，指尖則感知螺紋的細微起伏，兩種感覺共同引導你的動作。現在的機器人雖然有觸覺感測器，但大多無法像人類一樣把「整體力道」和「局部觸感」結合起來思考。TacForeSight 就像給機器人裝了一套「觸覺預言」系統：它先讀取手部感受到的整體力量，再預測下一刻指尖觸覺感測器會感覺到什麼，讓機器人在真正碰到問題之前就先做好準備。這和人類學武功時「預判對手動作」的道理一樣——不只被動反應，而是主動預測。這項技術對裝配電子零件、手術機器人或家用助理來說至關重要，因為這些場景充滿了形狀複雜、稍有偏差就會失敗的精細接觸。最棒的是，這套系統設計得非常輕巧，不需要超強電腦就能即時運作，讓它走出實驗室、真正用在現實世界裡更進一步。",
+        "en": "Imagine screwing in a tiny bolt with your eyes closed: your palm senses the overall force while your fingertips feel every groove of the thread, and both signals guide your movement together. Today's robots often have touch sensors, but they rarely combine 「big-picture force」 with 「local fingertip sensation」 in a smart way. TacForeSight works like a 「tactile prophecy」 system: it reads the robot's overall hand force, then predicts what the fingertip sensors will feel a moment later, so the robot can prepare before things go wrong. It's like a martial artist who reads an opponent's weight shift before the punch arrives — not just reacting, but anticipating. This matters enormously for assembling tiny electronics, surgical robots, or home assistants tackling irregular objects. Best of all, the system is lightweight enough to run in real time without powerful hardware, bringing it one step closer to practical real-world use.",
+        "zh-CN": "想象你闭着眼睛用手指拧螺丝——手掌感受整体力道，指尖感知螺纹的细微起伏，两种感觉共同引导动作。现在的机器人虽然有触觉传感器，但大多无法像人类一样把「整体力道」和「局部触感」结合起来思考。TacForeSight 就像给机器人装了一套「触觉预言」系统：它先读取手部的整体力量，再预测下一刻指尖触觉传感器会感受到什么，让机器人在真正遇到问题之前就做好准备。这和人类预判对手动作的道理一样——不只被动反应，而是主动预测。这项技术对装配电子零件、手术机器人或家用助手来说至关重要，因为这些场景充满了形状复杂、稍有偏差就会失败的精细接触。最棒的是，这套系统设计得非常轻巧，无需超强算力即可实时运行。",
+        "ja": "目を閉じたまま小さなネジを締める場面を想像してください。手のひらは全体の力を感じ、指先はネジ山の細かな凹凸を感知し、その二つが動作を導きます。現在のロボットには触覚センサーがあっても、「全体的な力覚」と「局所的な指先感覚」をうまく組み合わせることはほとんどできません。TacForeSightは「触覚予知」システムのようなもの：手全体の力を読み取り、次の瞬間に指先センサーが何を感じるかを予測し、問題が起きる前に備えます。武道家が相手の重心移動から次の動きを読むように、ただ反応するのではなく先読みするのです。電子部品の組み立てや手術ロボット、家庭用アシスタントなど複雑な接触が伴う場面で非常に重要な技術です。しかも軽量設計でリアルタイム動作が可能で、実用化への大きな一歩となります。",
+        "ko": "눈을 감고 작은 나사를 조이는 장면을 상상해 보세요. 손바닥은 전체적인 힘을 느끼고, 손가락 끝은 나사산의 미세한 굴곡을 감지하며, 두 감각이 함께 동작을 이끕니다. 현재 로봇들은 촉각 센서가 있어도 「전체 힘 감각」과 「국소 손끝 감각」을 인간처럼 결합하지 못합니다. TacForeSight는 「촉각 예지」 시스템과 같습니다. 손 전체의 힘을 읽고, 다음 순간 손끝 센서가 무엇을 느낄지 예측해 문제가 생기기 전에 미리 준비합니다. 무술가가 상대방의 무게 중심 이동으로 다음 동작을 읽듯, 수동적으로 반응하는 것이 아니라 능동적으로 예측하는 것입니다. 전자 부품 조립, 수술 로봇, 가정용 도우미 등 복잡한 접촉이 필요한 모든 분야에서 매우 중요한 기술입니다. 특히 가벼운 설계 덕분에 고성능 컴퓨터 없이도 실시간으로 작동해 실용화에 한 걸음 더 다가섰습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 感知不只是「接收訊號」，更是「預測下一刻」——能夠預見接觸的機器人，才能真正像人類的手一樣靈巧。",
+        "en": "💡 True dexterity isn't just about feeling the present — it's about predicting the next touch before it happens, just like a skilled human hand.",
+        "zh-CN": "💡 感知不只是「接收信号」，更是「预测下一刻」——能够预见接触的机器人，才能真正像人类的手一样灵巧。",
+        "ja": "💡 知覚とは「信号を受け取る」だけでなく「次の瞬間を予測する」こと——接触を先読みできるロボットだけが、人間の手のような本当の器用さを持てる。",
+        "ko": "💡 감지는 단순히 「신호를 받는 것」이 아니라 「다음 순간을 예측하는 것」이다 — 접촉을 미리 내다볼 수 있는 로봇만이 진정으로 인간의 손처럼 정교해질 수 있다."
+      }
+    }
+  ]
+}
