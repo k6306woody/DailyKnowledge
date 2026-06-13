@@ -11,7 +11,7 @@
       "author": "Bruno, A. et al. 2026",
       "ref": "arXiv:2606.00671",
       "url": "https://arxiv.org/abs/2606.00671",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "AXIOM：可驗證數學推理的神經符號執行架構",
         "en": "AXIOM: A Trust-First Neuro-Symbolic Architecture for Verifiable Mathematical Reasoning",
@@ -56,7 +56,7 @@
       "author": "Luo, G., Sun, B., Zhang, K. 2026",
       "ref": "arXiv:2606.00568",
       "url": "https://arxiv.org/abs/2606.00568",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "從大量基因表現數據中還原因果關係：因果推論的邊界與可能",
         "en": "On the Recoverability of Causal Relations from Bulk Gene Expression Data",
@@ -101,7 +101,7 @@
       "author": "Fiorentino, A., Marzari, N. 2026",
       "ref": "arXiv:2606.03405",
       "url": "https://arxiv.org/abs/2606.03405",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "量子退火應用於材料：路徑積分分子動力學驅動的全域最優化新策略",
         "en": "Quantum Annealing for Materials: A Path-Integral Molecular Dynamics Approach to Global Structure Search",
@@ -146,7 +146,7 @@
       "author": "Chen, J. et al. 2026",
       "ref": "arXiv:2606.01468",
       "url": "https://arxiv.org/abs/2606.01468",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "大型神經元群體的低維流形：解碼大腦內部表徵與認知動態的新途徑",
         "en": "Low-Dimensional Neural Manifolds in Large Neuronal Populations: Decoding Brain Representations and Cognitive Dynamics",
@@ -191,7 +191,7 @@
       "author": "Antoniadis, P. et al. 2026",
       "ref": "arXiv:2606.00218",
       "url": "https://arxiv.org/abs/2606.00218",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "脈衝星計時陣列定位個別超大質量黑洞雙星：多信使天文學的新時代前夕",
         "en": "Prospects of Resolving and Localising Individual Supermassive Black Hole Binaries with Pulsar Timing Arrays",
@@ -236,7 +236,7 @@
       "author": "Bezerra, R. et al. 2026",
       "ref": "arXiv:2606.01015",
       "url": "https://arxiv.org/abs/2606.01015",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "AI-IoT-機器人三位一體：邊緣小語言模型與雲端大語言模型共構的連結機器人學新框架",
         "en": "AI-IoT-Robotics Integration: Edge SLMs and Cloud LLMs Converging Toward Connected Autonomous Robotics",

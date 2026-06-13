@@ -99,9 +99,11 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .cbtn{padding:7px 16px;border-radius:18px;font-size:12px;font-weight:600;background:var(--su);color:var(--tx2);border:1.5px solid var(--bd)}
 .cbtn.on{color:#fff;border-color:transparent}
 .cbtn[data-cat=all].on{background:#4dbdb5}.cbtn[data-cat=ai].on{background:#2a9d8f}
-.cbtn[data-cat=bio].on{background:#52b788}.cbtn[data-cat=arch].on{background:#e9a84c}
-.cbtn[data-cat=phys].on{background:#4a7bbf}.cbtn[data-cat=chem].on{background:#bf5b9b}
-.cbtn[data-cat=fin].on{background:#7dba3a}
+.cbtn[data-cat=bio].on{background:#52b788}.cbtn[data-cat=neuro].on{background:#6a1b9a}
+.cbtn[data-cat=health].on{background:#b71c1c}.cbtn[data-cat=phys].on{background:#4a7bbf}
+.cbtn[data-cat=chem].on{background:#bf5b9b}.cbtn[data-cat=space].on{background:#1a237e}
+.cbtn[data-cat=climate].on{background:#e8590c}.cbtn[data-cat=nature].on{background:#2e7d32}
+.cbtn[data-cat=tech].on{background:#00695c}.cbtn[data-cat=human].on{background:#a0aec0}
 
 /* GRID */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:20px;margin:20px 24px 60px;padding:0}
@@ -109,29 +111,28 @@ header .sub{color:rgba(255,255,255,.78);font-size:13px;letter-spacing:.8px}
 .card:hover{transform:translateY(-5px);box-shadow:0 12px 32px var(--sh)}
 .card.hide{display:none}
 .card[data-domain=ai]   .stripe{background:#2a9d8f}.card[data-domain=bio]  .stripe{background:#52b788}
-.card[data-domain=arch] .stripe{background:#e9a84c}.card[data-domain=phys] .stripe{background:#4a7bbf}
-.card[data-domain=chem] .stripe{background:#bf5b9b}.card[data-domain=fin]  .stripe{background:#7dba3a}
-.card[data-domain=nature].stripe{background:#2e7d32}.card[data-domain=neuro].stripe{background:#6a1b9a}
-.card[data-domain=health].stripe{background:#b71c1c}.card[data-domain=space].stripe{background:#1a237e}
-.card[data-domain=tech]  .stripe{background:#00695c}.card[data-domain=ocean].stripe{background:#01579b}
+.card[data-domain=neuro].stripe{background:#6a1b9a}.card[data-domain=health].stripe{background:#b71c1c}
+.card[data-domain=phys] .stripe{background:#4a7bbf}.card[data-domain=chem] .stripe{background:#bf5b9b}
+.card[data-domain=space].stripe{background:#1a237e}.card[data-domain=climate].stripe{background:#e8590c}
+.card[data-domain=nature].stripe{background:#2e7d32}.card[data-domain=tech]  .stripe{background:#00695c}
+.card[data-domain=human].stripe{background:#a0aec0}
 .card[data-domain=ai]   .dtag{color:#2a9d8f;background:rgba(42,157,143,.12)}
 .card[data-domain=bio]  .dtag{color:#52b788;background:rgba(82,183,136,.12)}
-.card[data-domain=arch] .dtag{color:#e9a84c;background:rgba(233,168,76,.12)}
-.card[data-domain=phys] .dtag{color:#4a7bbf;background:rgba(74,123,191,.12)}
-.card[data-domain=chem] .dtag{color:#bf5b9b;background:rgba(191,91,155,.12)}
-.card[data-domain=fin]  .dtag{color:#7dba3a;background:rgba(125,186,58,.12)}
-.card[data-domain=nature].dtag{color:#2e7d32;background:rgba(46,125,50,.12)}
 .card[data-domain=neuro] .dtag{color:#6a1b9a;background:rgba(106,27,154,.12)}
 .card[data-domain=health].dtag{color:#b71c1c;background:rgba(183,28,28,.12)}
+.card[data-domain=phys] .dtag{color:#4a7bbf;background:rgba(74,123,191,.12)}
+.card[data-domain=chem] .dtag{color:#bf5b9b;background:rgba(191,91,155,.12)}
 .card[data-domain=space] .dtag{color:#1a237e;background:rgba(26,35,126,.12)}
+.card[data-domain=climate].dtag{color:#e8590c;background:rgba(232,89,12,.12)}
+.card[data-domain=nature].dtag{color:#2e7d32;background:rgba(46,125,50,.12)}
 .card[data-domain=tech]  .dtag{color:#00695c;background:rgba(0,105,92,.12)}
-.card[data-domain=ocean] .dtag{color:#01579b;background:rgba(1,87,155,.12)}
+.card[data-domain=human] .dtag{color:#718096;background:rgba(160,174,192,.18)}
 .card[data-domain=ai]   .rbtn{background:#2a9d8f}.card[data-domain=bio]  .rbtn{background:#52b788}
-.card[data-domain=arch] .rbtn{background:#e9a84c}.card[data-domain=phys] .rbtn{background:#4a7bbf}
-.card[data-domain=chem] .rbtn{background:#bf5b9b}.card[data-domain=fin]  .rbtn{background:#7dba3a}
-.card[data-domain=nature].rbtn{background:#2e7d32}.card[data-domain=neuro].rbtn{background:#6a1b9a}
-.card[data-domain=health].rbtn{background:#b71c1c}.card[data-domain=space].rbtn{background:#1a237e}
-.card[data-domain=tech]  .rbtn{background:#00695c}.card[data-domain=ocean].rbtn{background:#01579b}
+.card[data-domain=neuro].rbtn{background:#6a1b9a}.card[data-domain=health].rbtn{background:#b71c1c}
+.card[data-domain=phys] .rbtn{background:#4a7bbf}.card[data-domain=chem] .rbtn{background:#bf5b9b}
+.card[data-domain=space].rbtn{background:#1a237e}.card[data-domain=climate].rbtn{background:#e8590c}
+.card[data-domain=nature].rbtn{background:#2e7d32}.card[data-domain=tech]  .rbtn{background:#00695c}
+.card[data-domain=human].rbtn{background:#a0aec0}
 .stripe{height:5px}
 .illus{padding:16px 18px 2px;display:flex;justify-content:center}
 .illus svg{width:100%;max-width:230px;height:auto}
@@ -787,23 +788,19 @@ function cardText(c){
 }
 
 // Domain 中英對照（catbar 動態生成用）
+// 正規 11 類（與 scripts/daily_update.py 的 DOMAIN_CONFIG 一致）
 const DOMAIN_META = {
-  ai:     {emoji:'🤖', label:{  'zh-TW':'AI','en':'AI','zh-CN':'AI','ja':'AI','ko':'AI'}},
+  ai:     {emoji:'🤖', label:{'zh-TW':'AI','en':'AI','zh-CN':'AI','ja':'AI','ko':'AI'}},
   bio:    {emoji:'🧬', label:{'zh-TW':'生醫','en':'Bio','zh-CN':'生医','ja':'生命','ko':'생의학'}},
-  phys:   {emoji:'⚛️', label:{'zh-TW':'物理','en':'Physics','zh-CN':'物理','ja':'物理','ko':'물리'}},
   neuro:  {emoji:'🧠', label:{'zh-TW':'神經','en':'Neuro','zh-CN':'神经','ja':'神経','ko':'신경'}},
   health: {emoji:'🏥', label:{'zh-TW':'健康','en':'Health','zh-CN':'健康','ja':'健康','ko':'건강'}},
-  space:  {emoji:'🌌', label:{'zh-TW':'天文','en':'Space','zh-CN':'天文','ja':'宇宙','ko':'우주'}},
+  phys:   {emoji:'⚛️', label:{'zh-TW':'物理','en':'Physics','zh-CN':'物理','ja':'物理','ko':'물리'}},
   chem:   {emoji:'🧪', label:{'zh-TW':'化學','en':'Chem','zh-CN':'化学','ja':'化学','ko':'화학'}},
-  tech:   {emoji:'📶', label:{'zh-TW':'科技','en':'Tech','zh-CN':'科技','ja':'技術','ko':'기술'}},
-  ocean:  {emoji:'🦈', label:{'zh-TW':'海洋','en':'Ocean','zh-CN':'海洋','ja':'海洋','ko':'해양'}},
-  nature: {emoji:'🐠', label:{'zh-TW':'自然','en':'Nature','zh-CN':'自然','ja':'自然','ko':'자연'}},
-  fin:    {emoji:'💰', label:{'zh-TW':'財經','en':'Finance','zh-CN':'财经','ja':'金融','ko':'금융'}},
-  arch:   {emoji:'🏛️', label:{'zh-TW':'建築','en':'Arch','zh-CN':'建筑','ja':'建築','ko':'건축'}},
+  space:  {emoji:'🌌', label:{'zh-TW':'天文','en':'Space','zh-CN':'天文','ja':'宇宙','ko':'우주'}},
   climate:{emoji:'🌍', label:{'zh-TW':'氣候','en':'Climate','zh-CN':'气候','ja':'気候','ko':'기후'}},
-  quantum:{emoji:'🔮', label:{'zh-TW':'量子','en':'Quantum','zh-CN':'量子','ja':'量子','ko':'양자'}},
-  robot:  {emoji:'🦾', label:{'zh-TW':'機器人','en':'Robotics','zh-CN':'机器人','ja':'ロボット','ko':'로봇'}},
-  med:    {emoji:'💊', label:{'zh-TW':'醫學','en':'Medicine','zh-CN':'医学','ja':'医学','ko':'의학'}},
+  nature: {emoji:'🐠', label:{'zh-TW':'自然','en':'Nature','zh-CN':'自然','ja':'自然','ko':'자연'}},
+  tech:   {emoji:'📶', label:{'zh-TW':'科技','en':'Tech','zh-CN':'科技','ja':'技術','ko':'기술'}},
+  human:  {emoji:'🏛️', label:{'zh-TW':'人文','en':'Humanities','zh-CN':'人文','ja':'人文','ko':'인문'}},
 };
 
 function renderDayChips(){

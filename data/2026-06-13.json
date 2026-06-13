@@ -11,7 +11,7 @@
       "author": "Wikelski et al. / Nature 2025",
       "ref": "Nature 2025",
       "url": "https://doi.org/10.1038/s41586-025-07821-4",
-      "color": "#fbd38d",
+      "color": "#2e7d32",
       "title": {
         "zh-TW": "鳥類「磁感地圖」首度直接定位：候鳥腦中真的有GPS",
         "en": "Bird Magnetic Map Located: Migratory Birds Have a True GPS in Their Brain",
@@ -51,12 +51,12 @@
     },
     {
       "id": "ocean-2606b",
-      "domain": "ocean",
+      "domain": "nature",
       "day": "2026-06-13",
       "author": "Nasby-Lucas et al. / Science 2026",
       "ref": "Science 2026",
       "url": "https://doi.org/10.1126/science.adu4371",
-      "color": "#76e4f7",
+      "color": "#2e7d32",
       "title": {
         "zh-TW": "深海6000公尺新物種「玻璃章魚」繁殖地首度曝光",
         "en": "First Breeding Ground of Glass Octopus Discovered at 6,000 m Depth",
@@ -101,7 +101,7 @@
       "author": "Sonnenburg et al. / Cell 2025",
       "ref": "Cell 2025",
       "url": "https://doi.org/10.1016/j.cell.2025.04.018",
-      "color": "#fc8181",
+      "color": "#b71c1c",
       "title": {
         "zh-TW": "腸道菌相「個人化時鐘」：微生物組節律預測老化速度比基因更準",
         "en": "Gut Microbiome Circadian Clock Predicts Aging Rate Better Than Genetics",
@@ -146,7 +146,7 @@
       "author": "Plotnik et al. / Current Biology 2025",
       "ref": "Current Biology 2025",
       "url": "https://doi.org/10.1016/j.cub.2025.03.042",
-      "color": "#fbd38d",
+      "color": "#2e7d32",
       "title": {
         "zh-TW": "大象會叫名字了！首次證實野生動物用獨特音節互相稱呼",
         "en": "Elephants Call Each Other by Name: First Evidence of Individual Naming in Wild Animals",
@@ -186,12 +186,12 @@
     },
     {
       "id": "ocean-2606e",
-      "domain": "ocean",
+      "domain": "nature",
       "day": "2026-06-13",
       "author": "Bessho-Uehara et al. / Nature 2025",
       "ref": "Nature 2025",
       "url": "https://doi.org/10.1038/s41586-025-08873-4",
-      "color": "#76e4f7",
+      "color": "#2e7d32",
       "title": {
         "zh-TW": "深海「活光劍」：科學家首次拍到魷魚用生物發光光劍獵食的完整畫面",
         "en": "Deep-Sea 「Light Saber」: Scientists Film Squid Hunting with Bioluminescent Whips for the First Time",
@@ -236,7 +236,7 @@
       "author": "Sahoo et al. / Nature Medicine 2026",
       "ref": "Nature Medicine 2026",
       "url": "https://doi.org/10.1038/s41591-026-03124-7",
-      "color": "#fc8181",
+      "color": "#b71c1c",
       "title": {
         "zh-TW": "「睡眠排毒」新機制：腦脊液以θ波節律沖洗大腦，清除阿茲海默症毒素",
         "en": "New 「Sleep Detox」 Mechanism: CSF Flushes the Brain in Theta Rhythm, Clearing Alzheimer Toxins",

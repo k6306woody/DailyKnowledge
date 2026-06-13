@@ -11,7 +11,7 @@
       "author": "Yutong Bian, Dongjie Cheng, Heming Xia et al.",
       "ref": "arXiv:2606.09585",
       "url": "https://arxiv.org/abs/2606.09585",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "用圖像來「思考」：AI 拋棄文字推理，改以畫面作為思考的語言",
         "en": "Thinking in Pictures: AI Ditches Text and Reasons Entirely Through Images",
@@ -51,12 +51,12 @@
     },
     {
       "id": "robot-260610",
-      "domain": "robot",
+      "domain": "ai",
       "day": "2026-06-10",
       "author": "Yunhai Han, Jianuo Qiu, Linhao Bai et al.",
       "ref": "arXiv:2606.08828",
       "url": "https://arxiv.org/abs/2606.08828",
-      "color": "#68d391",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "機器人看一部影片就學會精細手部動作：Video2Sim2Real 的全流程技能習得",
         "en": "One Human Video Is All It Takes: Robots Learn Dexterous Skills with Video2Sim2Real",
@@ -96,12 +96,12 @@
     },
     {
       "id": "quantum-260610",
-      "domain": "quantum",
+      "domain": "phys",
       "day": "2026-06-10",
       "author": "Kimia Mohammadi, Paul J. Godin, Thomas Jennewein",
       "ref": "arXiv:2606.09805",
       "url": "https://arxiv.org/abs/2606.09805",
-      "color": "#4299e1",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "跨越大西洋的量子糾纏：衛星＋高空平台組合讓全球量子網路成為可能",
         "en": "Quantum Entanglement Across the Atlantic: Satellites and Stratospheric Relays Make a Global Quantum Internet Viable",
@@ -146,7 +146,7 @@
       "author": "Badr AlKhamissi, Johannes Mehrer, Lara Marinov, Martin Schrimpf et al.",
       "ref": "arXiv:2606.09770",
       "url": "https://arxiv.org/abs/2606.09770",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "大腦皮質的「地圖」終於統一：一個模型同時重現視覺、聽覺與語言的空間排列",
         "en": "The Unified Cortical Map: One Model Reproduces How the Brain Organizes Vision, Sound, and Language in Space",
@@ -191,7 +191,7 @@
       "author": "Elishevah van Kooten, Sebastian Sjørring Lodal, Isaac Onyett et al.",
       "ref": "arXiv:2606.04529",
       "url": "https://arxiv.org/abs/2606.04529",
-      "color": "#f6ad55",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "太陽系外圍曾被「星雲碎片」重新塑造——Nature Astronomy 改寫太陽系形成史",
         "en": "Our Outer Solar System Was Reshaped by Infalling Interstellar Dust: Nature Astronomy Rewrites Formation History",
@@ -236,7 +236,7 @@
       "author": "Yixuan Zhang, Yang Song, Hao Wang, Samir Bhatt, Hengguan Huang",
       "ref": "arXiv:2606.09433",
       "url": "https://arxiv.org/abs/2606.09433",
-      "color": "#ed64a6",
+      "color": "#b71c1c",
       "title": {
         "zh-TW": "下水道先知：AI 從污水偵測流感，比醫院早一步掌握疫情",
         "en": "Sewage Oracle: AI Detects Influenza in Wastewater Before Hospitals See the First Cases",

@@ -11,7 +11,7 @@
       "author": "Luca Avena, Gianmarco Bet et al.",
       "ref": "arXiv:2606.07515v1",
       "url": "https://arxiv.org/abs/2606.07515v1",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "擲骰子難倒 AI？大型語言模型的機率推理極限測試",
         "en": "Can LLMs Really Think in Probabilities? A Stress Test with Dice Problems",
@@ -56,7 +56,7 @@
       "author": "Raja Sekhar Pappala, Shreyas Vinaya Sathyanarayana et al.",
       "ref": "arXiv:2606.07181v1",
       "url": "https://arxiv.org/abs/2606.07181v1",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "AI逆向拆解分子：讓機器告訴你一個藥物該怎麼合成",
         "en": "AI Reverse-Engineers Molecules: Teaching Machines How to Synthesize Any Drug",
@@ -101,7 +101,7 @@
       "author": "Nicholas J. Connors, Christopher Monaghan et al.",
       "ref": "arXiv:2606.07511v1",
       "url": "https://arxiv.org/abs/2606.07511v1",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "韋伯望遠鏡首度完整觀測岩石系外行星 GJ 3929 b，探尋大氣層的關鍵線索",
         "en": "JWST Completes First Full Rocky World Survey: Does GJ 3929 b Have an Atmosphere?",
@@ -146,7 +146,7 @@
       "author": "Tuba Girgin, Jose Castelblanco et al.",
       "ref": "arXiv:2606.07506v1",
       "url": "https://arxiv.org/abs/2606.07506v1",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "四足機器人「用腳操物」：基於可負擔性感知的階層式強化學習",
         "en": "Quadruped Robots Learn to Manipulate Objects With Their Feet Using Affordance-Guided Hierarchical RL",
@@ -191,7 +191,7 @@
       "author": "Randall C. O'Reilly",
       "ref": "arXiv:2606.08720",
       "url": "https://arxiv.org/abs/2606.08720",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "大腦皮質如何學習？首個同時滿足計算、演算法與神經化學三大標準的學習框架",
         "en": "This Is How the Neocortex Learns: The Only Framework Meeting All Three Criteria",
@@ -236,7 +236,7 @@
       "author": "Chaoqun Ma, Hang Su, Yafang Cheng",
       "ref": "arXiv:2606.09793",
       "url": "https://arxiv.org/abs/2606.09793",
-      "color": "#ed8936",
+      "color": "#e8590c",
       "title": {
         "zh-TW": "深度學習破解數十年爭論：化石燃料對遠端臭氧的影響是生質燃燒的三倍",
         "en": "Deep Learning Settles a Decades-Long Debate: Fossil Fuels Drive Remote Ozone 3× More Than Biomass Burning",

@@ -11,7 +11,7 @@
       "author": "Wei et al. 2026",
       "ref": "arXiv:2605.18430",
       "url": "",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "鏈式思考壓縮：讓大型語言模型用更短推理步驟達到相同精度",
         "en": "Chain-of-Thought Compression: Matching Accuracy with Fewer Reasoning Steps in LLMs",
@@ -56,7 +56,7 @@
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2605.17892",
       "url": "",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "單細胞RNA定序揭示衰老細胞透過旁分泌信號「傳染」鄰近健康細胞",
         "en": "Single-Cell RNA Sequencing Reveals Senescent Cells Infect Neighbouring Healthy Cells via Paracrine Signalling",
@@ -101,7 +101,7 @@
       "author": "Rossi et al. 2026",
       "ref": "arXiv:2605.16741",
       "url": "",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "室溫下拓撲超導體中馬約拉納費米子的首次直接電導測量",
         "en": "First Direct Conductance Measurement of Majorana Fermions in a Topological Superconductor at Room Temperature",
@@ -146,7 +146,7 @@
       "author": "Yamashita et al. 2026",
       "ref": "arXiv:2605.18742",
       "url": "",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "睡眠中突觸「選擇性剪枝」的即時影像：大腦在夜間刪除多餘記憶的分子機制",
         "en": "Real-Time Imaging of Selective Synaptic Pruning During Sleep",
@@ -191,7 +191,7 @@
       "author": "Okonkwo et al. 2026",
       "ref": "arXiv:2605.19381",
       "url": "",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "首次偵測到「流浪黑洞」穿越銀河系盤面：引力微透鏡事件持續487天的完整光變曲線",
         "en": "First Detection of a Rogue Black Hole Transiting the Galactic Disk via 487-Day Microlensing Light Curve",
@@ -236,7 +236,7 @@
       "author": "Chen et al. 2026",
       "ref": "arXiv:2605.20154",
       "url": "",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "室溫下穩定運作的「固態鋰硫電池」：硫化鋰奈米晶包覆層使循環壽命突破3000次",
         "en": "Room-Temperature Stable Solid-State Lithium-Sulfur Battery: Li2S Nanocrystal Coating Enables 3000-Cycle Lifetime",

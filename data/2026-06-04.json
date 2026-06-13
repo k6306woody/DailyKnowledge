@@ -11,7 +11,7 @@
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.03147",
       "url": "",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "無需人類標注：大型語言模型的自我對齊新框架",
         "en": "Alignment Without Annotations: Self-Aligning Large Language Models via Iterative Preference Optimization",
@@ -56,7 +56,7 @@
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2606.02891",
       "url": "",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "單細胞 RNA 定序揭示腸道菌相失調如何重塑免疫記憶",
         "en": "Single-Cell Transcriptomics Reveals Gut Dysbiosis Reshapes Immunological Memory via Epigenetic Reprogramming",
@@ -101,7 +101,7 @@
       "author": "Zhao et al. 2026",
       "ref": "arXiv:2606.03402",
       "url": "",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "室溫下氫化鑭體系展現穩健超導性：壓力依賴相圖的精確測繪",
         "en": "Robust Superconductivity in Lanthanum Hydride at Near-Ambient Pressure: Precision Mapping of the Pressure-Dependent Phase Diagram",
@@ -146,7 +146,7 @@
       "author": "Yamamoto et al. 2026",
       "ref": "arXiv:2606.03112",
       "url": "",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "皮質突觸可塑性中的時序依賴反向傳播：新型學習規則的神經基礎",
         "en": "Timing-Dependent Backpropagation in Cortical Synaptic Plasticity: Neural Basis of a Novel Learning Rule",
@@ -191,7 +191,7 @@
       "author": "Castillo-Rivera et al. 2026",
       "ref": "arXiv:2606.02987",
       "url": "",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "JWST偵測到紅移7.4星系團中的第一代金屬污染：宇宙化學演化的早期足跡",
         "en": "JWST Detection of First-Generation Metal Enrichment in a z=7.4 Galaxy Protocluster: Early Footprints of Cosmic Chemical Evolution",
@@ -236,7 +236,7 @@
       "author": "Nguyen et al. 2026",
       "ref": "arXiv:2606.03341",
       "url": "",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "以拓撲缺陷引導的自癒合導電水凝膠用於可穿戴壓力感測陣列",
         "en": "Topological-Defect-Guided Self-Healing Conductive Hydrogels for Wearable Pressure-Sensing Arrays",

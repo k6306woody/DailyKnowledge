@@ -11,7 +11,7 @@
       "author": "Ilay Kamai, Hugues Van Assel et al.",
       "ref": "arXiv:2606.11190v1",
       "url": "https://arxiv.org/abs/2606.11190v1",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#667eea18\"/><circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"#667eea\" opacity=\"0.18\"/><circle cx=\"80\" cy=\"80\" r=\"26\" fill=\"#667eea\" opacity=\"0.35\"/><circle cx=\"80\" cy=\"80\" r=\"14\" fill=\"#667eea\" opacity=\"0.8\"/><circle cx=\"260\" cy=\"80\" r=\"38\" fill=\"#f5a623\" opacity=\"0.18\"/><circle cx=\"260\" cy=\"80\" r=\"26\" fill=\"#f5a623\" opacity=\"0.35\"/><circle cx=\"260\" cy=\"80\" r=\"14\" fill=\"#f5a623\" opacity=\"0.8\"/><line x1=\"118\" y1=\"60\" x2=\"222\" y2=\"60\" stroke=\"#667eea\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\" opacity=\"0.7\"/><line x1=\"118\" y1=\"100\" x2=\"222\" y2=\"100\" stroke=\"#f5a623\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\" opacity=\"0.7\"/><polygon points=\"170,44 182,60 158,60\" fill=\"#667eea\" opacity=\"0.6\"/><polygon points=\"170,116 182,100 158,100\" fill=\"#f5a623\" opacity=\"0.6\"/><rect x=\"148\" y=\"68\" width=\"44\" height=\"24\" rx=\"6\" fill=\"#e8f0fe\" opacity=\"0.7\"/><rect x=\"155\" y=\"75\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#667eea\" opacity=\"0.9\"/><rect x=\"175\" y=\"75\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#f5a623\" opacity=\"0.9\"/></svg>",
       "title": {
         "zh-TW": "對齊還是預測？多模態學習的「相圖」指南",
@@ -56,7 +56,7 @@
       "author": "Aruna Dey, Suraj Biswas et al.",
       "ref": "arXiv:2606.13556v1",
       "url": "https://arxiv.org/abs/2606.13556v1",
-      "color": "#48bb78",
+      "color": "#52b788",
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/><circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"#48bb7840\" stroke=\"#48bb78\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#48bb7870\" stroke=\"#48bb78\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"80\" r=\"9\" fill=\"#48bb78\"/><line x1=\"100\" y1=\"80\" x2=\"145\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polygon points=\"145,74 160,80 145,86\" fill=\"#48bb78\"/><rect x=\"160\" y=\"52\" width=\"56\" height=\"56\" rx=\"10\" fill=\"#2b6cb040\" stroke=\"#2b6cb0\" stroke-width=\"2.5\"/><line x1=\"172\" y1=\"68\" x2=\"204\" y2=\"68\" stroke=\"#2b6cb0\" stroke-width=\"1.8\"/><line x1=\"172\" y1=\"80\" x2=\"204\" y2=\"80\" stroke=\"#2b6cb0\" stroke-width=\"1.8\"/><line x1=\"172\" y1=\"92\" x2=\"196\" y2=\"92\" stroke=\"#2b6cb0\" stroke-width=\"1.8\"/><line x1=\"228\" y1=\"80\" x2=\"268\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polygon points=\"268,74 283,80 268,86\" fill=\"#48bb78\"/><ellipse cx=\"303\" cy=\"80\" rx=\"28\" ry=\"38\" fill=\"#f6ad5540\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/><ellipse cx=\"303\" cy=\"80\" rx=\"14\" ry=\"22\" fill=\"#f6ad5570\" stroke=\"#f6ad55\" stroke-width=\"1.8\"/><circle cx=\"303\" cy=\"80\" r=\"6\" fill=\"#f6ad55\"/></svg>",
       "title": {
         "zh-TW": "你的體質還是環境影響？用基因組當錨點，AI 一開始就懂你",
@@ -101,7 +101,7 @@
       "author": "Rishav Chaudhuri, Sai Satyam Samal et al.",
       "ref": "arXiv:2606.11147v1",
       "url": "https://arxiv.org/abs/2606.11147v1",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#ed893618\"/><circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#ed8936\" opacity=\"0.85\"/><circle cx=\"50\" cy=\"80\" r=\"10\" fill=\"#fff\" opacity=\"0.5\"/><circle cx=\"290\" cy=\"80\" r=\"18\" fill=\"#ed8936\" opacity=\"0.85\"/><circle cx=\"290\" cy=\"80\" r=\"10\" fill=\"#fff\" opacity=\"0.5\"/><line x1=\"68\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/><line x1=\"210\" y1=\"80\" x2=\"272\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/><rect x=\"130\" y=\"55\" width=\"80\" height=\"50\" rx=\"10\" fill=\"#4a90d9\" opacity=\"0.25\" stroke=\"#4a90d9\" stroke-width=\"2\"/><rect x=\"155\" y=\"68\" width=\"30\" height=\"24\" rx=\"5\" fill=\"#4a90d9\" opacity=\"0.5\"/><circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#fff\" opacity=\"0.7\" stroke=\"#4a90d9\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"55\" stroke=\"#e53e3e\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"33\" r=\"9\" fill=\"#e53e3e\" opacity=\"0.8\"/><circle cx=\"170\" cy=\"33\" r=\"4\" fill=\"#fff\" opacity=\"0.6\"/><path d=\"M 68 72 Q 110 40 130 65\" stroke=\"#ed8936\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.6\"/><path d=\"M 210 65 Q 230 40 272 72\" stroke=\"#ed8936\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.6\"/></svg>",
       "title": {
         "zh-TW": "量子粒子身份大變身：量子比特如何讓費米子假裝成玻色子",
@@ -146,7 +146,7 @@
       "author": "Sovesh Mohapatra, Christoffer G. Alexandersen et al.",
       "ref": "arXiv:2606.11091v1",
       "url": "https://arxiv.org/abs/2606.11091v1",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#9f7aea\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"40\" r=\"18\" fill=\"#9f7aea\" opacity=\"0.7\"/><circle cx=\"280\" cy=\"80\" r=\"22\" fill=\"#9f7aea\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"120\" r=\"18\" fill=\"#9f7aea\" opacity=\"0.7\"/><line x1=\"60\" y1=\"80\" x2=\"170\" y2=\"40\" stroke=\"#e879f9\" stroke-width=\"3.5\" opacity=\"0.9\"/><line x1=\"170\" y1=\"40\" x2=\"280\" y2=\"80\" stroke=\"#e879f9\" stroke-width=\"3.5\" opacity=\"0.9\"/><line x1=\"280\" y1=\"80\" x2=\"170\" y2=\"120\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><line x1=\"170\" y1=\"120\" x2=\"60\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.6\"/><line x1=\"60\" y1=\"80\" x2=\"280\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"1.2\" stroke-dasharray=\"3,5\" opacity=\"0.4\"/><ellipse cx=\"115\" cy=\"57\" rx=\"14\" ry=\"6\" fill=\"#e879f9\" opacity=\"0.55\"/><ellipse cx=\"225\" cy=\"57\" rx=\"14\" ry=\"6\" fill=\"#e879f9\" opacity=\"0.55\"/><circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#ffffff\" opacity=\"0.25\"/></svg>",
       "title": {
         "zh-TW": "QUIET：精準調控大腦同步的「邊緣中心」神經網路控制法",
@@ -191,7 +191,7 @@
       "author": "Adilkhan Assilkhan, Sabrina M. Appel et al.",
       "ref": "arXiv:2606.13666v1",
       "url": "https://arxiv.org/abs/2606.13666v1",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4299e118\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#4299e1\" opacity=\"0.18\"/><circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"#4299e1\" opacity=\"0.35\"/><circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#4299e1\" opacity=\"0.85\"/><ellipse cx=\"170\" cy=\"80\" rx=\"8\" ry=\"55\" fill=\"#f6ad55\" opacity=\"0.22\"/><ellipse cx=\"170\" cy=\"80\" rx=\"4\" ry=\"42\" fill=\"#f6ad55\" opacity=\"0.45\"/><polygon points=\"170,20 164,38 176,38\" fill=\"#f6ad55\" opacity=\"0.85\"/><polygon points=\"170,140 164,122 176,122\" fill=\"#f6ad55\" opacity=\"0.85\"/><circle cx=\"110\" cy=\"55\" r=\"5\" fill=\"#4299e1\" opacity=\"0.7\"/><circle cx=\"230\" cy=\"65\" r=\"4\" fill=\"#4299e1\" opacity=\"0.6\"/><circle cx=\"95\" cy=\"100\" r=\"3\" fill=\"#4299e1\" opacity=\"0.5\"/><circle cx=\"245\" cy=\"105\" r=\"3.5\" fill=\"#4299e1\" opacity=\"0.55\"/><circle cx=\"140\" cy=\"45\" r=\"2.5\" fill=\"#ffffff\" opacity=\"0.6\"/></svg>",
       "title": {
         "zh-TW": "星際噴流如何左右恆星誕生：年輕星團的噴流反饋研究",
@@ -236,7 +236,7 @@
       "author": "Yujie Zang, Yuhang Zheng et al.",
       "ref": "arXiv:2606.11184v1",
       "url": "https://arxiv.org/abs/2606.11184v1",
-      "color": "#68d391",
+      "color": "#00695c",
       "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#68d39118\"/><rect x=\"20\" y=\"55\" width=\"60\" height=\"80\" rx=\"8\" fill=\"#68d391\" opacity=\"0.85\"/><rect x=\"30\" y=\"65\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#fff\" opacity=\"0.7\"/><rect x=\"30\" y=\"82\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#fff\" opacity=\"0.5\"/><rect x=\"30\" y=\"99\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#fff\" opacity=\"0.3\"/><circle cx=\"110\" cy=\"95\" r=\"28\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"3\"/><circle cx=\"110\" cy=\"95\" r=\"16\" fill=\"#68d391\" opacity=\"0.4\"/><circle cx=\"110\" cy=\"95\" r=\"6\" fill=\"#68d391\"/><line x1=\"90\" y1=\"75\" x2=\"70\" y2=\"60\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"130\" y1=\"75\" x2=\"155\" y2=\"60\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><rect x=\"150\" y=\"40\" width=\"80\" height=\"50\" rx=\"8\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\"/><rect x=\"158\" y=\"50\" width=\"20\" height=\"8\" rx=\"2\" fill=\"#f6ad55\" opacity=\"0.7\"/><rect x=\"158\" y=\"63\" width=\"32\" height=\"8\" rx=\"2\" fill=\"#f6ad55\" opacity=\"0.5\"/><rect x=\"158\" y=\"76\" width=\"24\" height=\"8\" rx=\"2\" fill=\"#f6ad55\" opacity=\"0.3\"/><path d=\"M250 95 Q270 70 300 80 Q290 110 260 120 Z\" fill=\"#68d391\" opacity=\"0.5\"/><circle cx=\"265\" cy=\"100\" r=\"8\" fill=\"#fff\" opacity=\"0.6\"/><circle cx=\"280\" cy=\"88\" r=\"5\" fill=\"#fff\" opacity=\"0.4\"/></svg>",
       "title": {
         "zh-TW": "機器人的「觸覺預知」：力覺引導的觸感世界模型讓精細操作更聰明",

@@ -58,21 +58,51 @@ if not API_KEY:
 
 client = anthropic.Anthropic(api_key=API_KEY)
 
-# ── 領域設定 ──────────────────────────────────────────────────────────────
+# ── 領域設定（正規 11 類，單一真相來源）────────────────────────────────────
+# ⚠️ 卡片的 domain 只能是以下 11 個 key 之一。新增/修改分類請改這裡。
 DOMAIN_CONFIG = {
-    "ai":     {"emoji": "🤖", "color": "#667eea", "label": "人工智慧"},
-    "bio":    {"emoji": "🧬", "color": "#48bb78", "label": "生命科學"},
-    "phys":   {"emoji": "⚛️",  "color": "#ed8936", "label": "物理科學"},
-    "neuro":  {"emoji": "🧠", "color": "#9f7aea", "label": "神經科學"},
-    "health": {"emoji": "🏥", "color": "#fc8181", "label": "醫療健康"},
-    "space":  {"emoji": "🌌", "color": "#4299e1", "label": "天文宇宙"},
-    "chem":   {"emoji": "🧪", "color": "#f6e05e", "label": "化學材料"},
-    "tech":   {"emoji": "📶", "color": "#68d391", "label": "科技趣聞"},
-    "ocean":  {"emoji": "🦈", "color": "#76e4f7", "label": "海洋生物"},
-    "nature": {"emoji": "🐠", "color": "#fbd38d", "label": "自然生物"},
-    "fin":    {"emoji": "💰", "color": "#f687b3", "label": "經濟金融"},
-    "arch":   {"emoji": "🏛️", "color": "#a0aec0", "label": "建築環境"},
+    "ai":      {"emoji": "🤖", "color": "#2a9d8f", "label": "AI與機器人"},
+    "bio":     {"emoji": "🧬", "color": "#52b788", "label": "生命科學"},
+    "neuro":   {"emoji": "🧠", "color": "#6a1b9a", "label": "神經科學"},
+    "health":  {"emoji": "🏥", "color": "#b71c1c", "label": "醫療健康"},
+    "phys":    {"emoji": "⚛️",  "color": "#4a7bbf", "label": "物理量子"},
+    "chem":    {"emoji": "🧪", "color": "#bf5b9b", "label": "化學材料"},
+    "space":   {"emoji": "🌌", "color": "#1a237e", "label": "天文宇宙"},
+    "climate": {"emoji": "🌍", "color": "#e8590c", "label": "地球氣候"},
+    "nature":  {"emoji": "🐠", "color": "#2e7d32", "label": "自然生態"},
+    "tech":    {"emoji": "📶", "color": "#00695c", "label": "科技工程"},
+    "human":   {"emoji": "🏛️", "color": "#a0aec0", "label": "人文社會"},
 }
+
+# 正規 domain 集合 + 別名對照（強制把舊/自創 domain 收斂到正規 11 類）
+CANONICAL_DOMAINS = set(DOMAIN_CONFIG.keys())
+DOMAIN_ALIAS = {
+    "robot": "ai", "robotics": "ai",
+    "quantum": "phys",
+    "med": "health", "medicine": "health", "medical": "health",
+    "ocean": "nature", "marine": "nature",
+    "fin": "human", "finance": "human", "econ": "human", "economics": "human",
+    "arch": "human", "architecture": "human",
+    "earth": "climate", "environment": "climate",
+}
+
+def normalize_domain(domain: str) -> str:
+    """把任意 domain 收斂到正規 11 類；未知則記 log 並退回 'tech'。"""
+    d = (domain or "").strip().lower()
+    if d in CANONICAL_DOMAINS:
+        return d
+    if d in DOMAIN_ALIAS:
+        log.info(f"  domain 正規化：{d} → {DOMAIN_ALIAS[d]}")
+        return DOMAIN_ALIAS[d]
+    log.warning(f"  未知 domain '{domain}'，fallback → tech")
+    return "tech"
+
+def apply_canonical(card: dict) -> dict:
+    """正規化卡片 domain 並用正規色覆蓋 color（確保色條/標籤同色）。"""
+    dom = normalize_domain(card.get("domain", ""))
+    card["domain"] = dom
+    card["color"] = DOMAIN_CONFIG[dom]["color"]
+    return card
 
 LANGS = ["zh-TW", "en", "zh-CN", "ja", "ko"]
 
@@ -240,18 +270,17 @@ def call_claude(prompt, max_tokens=4000, retries=3, base_delay=15):
 # ── arXiv API 抓真實論文 ──────────────────────────────────────────────────
 # domain → arXiv category 對應
 ARXIV_CATS = {
-    "ai":     "cs.AI cs.LG cs.CL",
-    "bio":    "q-bio.GN q-bio.CB q-bio.MN",
-    "phys":   "cond-mat.supr-con cond-mat.mes-hall quant-ph",
-    "neuro":  "q-bio.NC cs.NE",
-    "health": "q-bio.TO q-bio.QM",
-    "space":  "astro-ph.GA astro-ph.EP astro-ph.HE",
-    "chem":   "cond-mat.mtrl-sci physics.chem-ph",
-    "tech":   "eess.SP cs.RO cs.SY",
-    "ocean":  "q-bio.PE physics.ao-ph",
-    "nature": "q-bio.PE q-bio.OT",
-    "fin":    "q-fin.ST q-fin.GN econ.GN",
-    "arch":   "cs.GR eess.IV",
+    "ai":      "cs.AI cs.LG cs.CL cs.RO",
+    "bio":     "q-bio.GN q-bio.CB q-bio.MN",
+    "neuro":   "q-bio.NC cs.NE",
+    "health":  "q-bio.TO q-bio.QM",
+    "phys":    "cond-mat.supr-con cond-mat.mes-hall quant-ph",
+    "chem":    "cond-mat.mtrl-sci physics.chem-ph",
+    "space":   "astro-ph.GA astro-ph.EP astro-ph.HE",
+    "climate": "physics.ao-ph physics.geo-ph",
+    "nature":  "q-bio.PE q-bio.OT",
+    "tech":    "eess.SP cs.SY eess.IV",
+    "human":   "econ.GN q-fin.GN cs.CY",
 }
 
 def fetch_arxiv_papers(domain: str, paper_date: str, n: int = 5) -> list[dict]:
@@ -260,23 +289,33 @@ def fetch_arxiv_papers(domain: str, paper_date: str, n: int = 5) -> list[dict]:
     回傳 list of {arxiv_id, title, authors, abstract, url, submitted}
     """
     cats = ARXIV_CATS.get(domain, "cs.AI")
-    cat_query = " OR ".join(f"cat:{c}" for c in cats.split())
-    params = urllib.parse.urlencode({
-        "search_query": cat_query,
-        "start": 0,
-        "max_results": n,
-        "sortBy": "submittedDate",
-        "sortOrder": "descending",
-    })
-    api_url = f"https://export.arxiv.org/api/query?{params}"
-    log.info(f"  arXiv fetch: domain={domain} cats={cats}")
+    cat_query = "(" + " OR ".join(f"cat:{c}" for c in cats.split()) + ")"
+
+    # 以 paper_date 為中心建立日期窗（前 4 天 ~ 當天），讓「週一抓上週五／補歷史」真正生效
+    date_clause = ""
     try:
+        pd = date.fromisoformat(paper_date)
+        lo = (pd - timedelta(days=4)).strftime("%Y%m%d") + "0000"
+        hi = pd.strftime("%Y%m%d") + "2359"
+        date_clause = f" AND submittedDate:[{lo} TO {hi}]"
+    except Exception:
+        pass  # paper_date 解析失敗就退回純最新
+
+    def _query(search_query):
+        params = urllib.parse.urlencode({
+            "search_query": search_query,
+            "start": 0,
+            "max_results": n,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        })
+        api_url = f"https://export.arxiv.org/api/query?{params}"
         req = urllib.request.Request(api_url, headers={"User-Agent": "DailyKnowledge/1.0"})
         with urllib.request.urlopen(req, timeout=15) as r:
             xml_data = r.read()
         root = ET.fromstring(xml_data)
         ns = {"atom": "http://www.w3.org/2005/Atom"}
-        results = []
+        out = []
         for entry in root.findall("atom:entry", ns):
             arxiv_id = entry.find("atom:id", ns).text.strip().split("/abs/")[-1]
             title = entry.find("atom:title", ns).text.strip().replace("\n", " ")
@@ -284,7 +323,7 @@ def fetch_arxiv_papers(domain: str, paper_date: str, n: int = 5) -> list[dict]:
                        for a in entry.findall("atom:author", ns)]
             abstract = entry.find("atom:summary", ns).text.strip().replace("\n", " ")
             published = entry.find("atom:published", ns).text[:10]
-            results.append({
+            out.append({
                 "arxiv_id": arxiv_id,
                 "title": title,
                 "authors": authors[:3],
@@ -293,6 +332,15 @@ def fetch_arxiv_papers(domain: str, paper_date: str, n: int = 5) -> list[dict]:
                 "ref": f"arXiv:{arxiv_id}",
                 "submitted": published,
             })
+        return out
+
+    log.info(f"  arXiv fetch: domain={domain} cats={cats} window={date_clause or '最新'}")
+    try:
+        results = _query(cat_query + date_clause)
+        # 日期窗內無結果 → 放寬退回純最新，避免空手而回
+        if not results and date_clause:
+            log.info(f"  {domain} 日期窗內無論文，放寬抓最新")
+            results = _query(cat_query)
         log.info(f"  arXiv fetched {len(results)} papers for {domain}")
         return results
     except Exception as e:
@@ -301,20 +349,12 @@ def fetch_arxiv_papers(domain: str, paper_date: str, n: int = 5) -> list[dict]:
 
 
 # ── 產生卡片 ──────────────────────────────────────────────────────────────
-PAPER_DOMAINS = [
-    ("ai",    "🤖", "人工智慧"),
-    ("bio",   "🧬", "生命科學"),
-    ("phys",  "⚛️",  "物理"),
-    ("neuro", "🧠", "神經科學"),
-    ("space", "🌌", "天文宇宙"),
-    ("tech",  "📶", "科技材料"),
-]
+# 平日 arXiv 固定 6 類（emoji/label 取自 DOMAIN_CONFIG，單一真相來源）
+_PAPER_KEYS = ["ai", "bio", "phys", "neuro", "space", "tech"]
+PAPER_DOMAINS = [(k, DOMAIN_CONFIG[k]["emoji"], DOMAIN_CONFIG[k]["label"]) for k in _PAPER_KEYS]
 
-COLOR_MAP = {
-    "ai":"#667eea","bio":"#48bb78","phys":"#ed8936","neuro":"#9f7aea",
-    "space":"#4299e1","tech":"#68d391","chem":"#f6e05e","ocean":"#76e4f7",
-    "fin":"#f687b3","arch":"#a0aec0","health":"#fc8181","nature":"#fbd38d",
-}
+# 顏色查表由 DOMAIN_CONFIG 導出（避免重複定義 / 不一致）
+COLOR_MAP = {k: v["color"] for k, v in DOMAIN_CONFIG.items()}
 
 def _summarize_paper_prompt(today_str, domain, emoji, domain_label, paper, card_id, recent_str):
     """讓 Claude 把真實論文的 title+abstract 轉成多語言卡片 JSON"""
@@ -448,6 +488,7 @@ def generate_cards_paper(date_info, recent_topics):
         card["ref"] = chosen["ref"]
         card["author"] = ", ".join(chosen["authors"][:2]) + (" et al." if len(chosen["authors"]) > 1 else "")
 
+        apply_canonical(card)  # 強制 domain 正規化 + 正規色
         log.info(f"  ✓ 卡片生成: {card.get('id')} — {card.get('title',{}).get('zh-TW','')[:40]}")
         all_cards.append(card)
 
@@ -473,13 +514,19 @@ def _weekend_prompt(today_str, recent_str, batch, suffixes):
 已出現過的主題（請勿重複）：
 {recent_str}
 
-請選 3 個 2025-2026 年真實的科學新發現或自然奇聞，涵蓋多元領域（與第{3-batch}批主題不重疊）：
-- 自然生物（動物行為、演化、生態）
-- 海洋生物（深海、珊瑚礁、新物種）
-- 神經科學（大腦、記憶、感知）
-- 天文宇宙（行星、星系、太空任務）
-- 醫療健康（新療法、研究突破）
-- 科技趣聞（材料、工程、發明）
+請選 3 個 2025-2026 年真實的科學新發現或自然奇聞，涵蓋多元領域（與第{3-batch}批主題不重疊）。
+⚠️ domain 欄位「只能」是以下 11 個 key 之一，禁止自創其他 domain：
+- nature（自然生態：動物行為、演化、生態、海洋生物）
+- neuro（神經科學：大腦、記憶、感知）
+- space（天文宇宙：行星、星系、太空任務）
+- health（醫療健康：新療法、疾病、醫學）
+- tech（科技工程：材料、工程、發明）
+- ai（AI與機器人）
+- bio（生命科學：基因、細胞）
+- phys（物理量子）
+- chem（化學材料）
+- climate（地球氣候：氣候、環境、地球科學）
+- human（人文社會：經濟、財經、建築、社會）
 
 每張卡片輸出 JSON，格式如下（輸出純 JSON 陣列，不要加任何說明）：
 [
@@ -501,7 +548,8 @@ def _weekend_prompt(today_str, recent_str, batch, suffixes):
 
 重要：
 - id 後綴依序用 {suffix_list}
-- 每個領域用對應的 color（ai:#667eea, bio:#48bb78, phys:#ed8936, neuro:#9f7aea, health:#fc8181, space:#4299e1, chem:#f6e05e, tech:#68d391, ocean:#76e4f7, nature:#fbd38d, fin:#f687b3, arch:#a0aec0）
+- domain 只能用這 11 個 key：ai, bio, neuro, health, phys, chem, space, climate, nature, tech, human
+- 每個領域用對應的 color（ai:#2a9d8f, bio:#52b788, neuro:#6a1b9a, health:#b71c1c, phys:#4a7bbf, chem:#bf5b9b, space:#1a237e, climate:#e8590c, nature:#2e7d32, tech:#00695c, human:#a0aec0）
 - url 必須填具體文章的直達連結，格式優先：
     arXiv: https://arxiv.org/abs/XXXX.XXXXX
     DOI:   https://doi.org/10.xxxx/xxxxxx
@@ -538,6 +586,8 @@ def generate_cards_weekend(date_info, recent_topics):
                 log.error(f"第{batch}批 JSON 仍無法解析: {e2}")
                 log.error(f"問題附近: {json_str[max(0,e.pos-100):e.pos+100]}")
                 raise e2
+        for c in cards:
+            apply_canonical(c)  # 強制 domain 正規化 + 正規色
         log.info(f"第{batch}批生成 {len(cards)} 張週末趣知卡片")
         all_cards.extend(cards)
 

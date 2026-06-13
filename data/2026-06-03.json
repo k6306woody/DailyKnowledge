@@ -11,7 +11,7 @@
       "author": "Wei et al. 2026",
       "ref": "arXiv:2606.01234",
       "url": "",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "無需梯度的語言模型對齊：以進化策略取代RLHF的新框架",
         "en": "Gradient-Free LLM Alignment via Evolutionary Strategies Beyond RLHF",
@@ -56,7 +56,7 @@
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.02891",
       "url": "",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "單分子螢光追蹤揭示CRISPR-Cas9在活細胞中的真實搜索動力學",
         "en": "Single-Molecule Fluorescence Reveals Real-Time CRISPR-Cas9 Target Search Dynamics in Living Cells",
@@ -101,7 +101,7 @@
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2606.03517",
       "url": "",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "超導量子比特陣列中多體局域化的直接熵測量",
         "en": "Direct Entropy Measurement of Many-Body Localization in Superconducting Qubit Arrays",
@@ -146,7 +146,7 @@
       "author": "Yamada et al. 2026",
       "ref": "arXiv:2606.01872",
       "url": "",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "大腦「預測誤差信號」首次在單神經元層級即時追蹤：貝葉斯推論的神經基礎",
         "en": "Real-Time Single-Neuron Tracking of Prediction Error Signals: Neural Basis of Bayesian Inference",
@@ -191,7 +191,7 @@
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.02341",
       "url": "",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "韋伯望遠鏡首次解析「星系間磁場絲」：連接宇宙大尺度結構的隱形骨架",
         "en": "JWST First Resolution of Intergalactic Magnetic Filaments: The Invisible Skeleton of Large-Scale Structure",
@@ -236,7 +236,7 @@
       "author": "Park et al. 2026",
       "ref": "arXiv:2606.03158",
       "url": "",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "以「動態共價鍵網絡」實現可完全化學回收的碳纖維複合材料：效能零損失的循環經濟突破",
         "en": "Fully Chemically Recyclable Carbon-Fiber Composites via Dynamic Covalent Networks: Circular Economy Without Performance Loss",

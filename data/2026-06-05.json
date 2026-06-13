@@ -11,7 +11,7 @@
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.03142",
       "url": "https://arxiv.org/abs/2606.03142",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "無需梯度的大型語言模型推理時對齊：黑箱偏好優化新框架",
         "en": "Gradient-Free Inference-Time Alignment for LLMs via Black-Box Preference Optimization",
@@ -56,7 +56,7 @@
       "author": "Okafor et al. 2026",
       "ref": "arXiv:2606.03389",
       "url": "https://arxiv.org/abs/2606.03389",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "單細胞多組學揭示衰老T細胞如何驅動腫瘤微環境中的免疫逃逸",
         "en": "Single-Cell Multi-Omics Reveals Senescent T Cells Drive Immune Evasion in the Tumor Microenvironment",
@@ -101,7 +101,7 @@
       "author": "Nakamura et al. 2026",
       "ref": "arXiv:2606.03571",
       "url": "https://arxiv.org/abs/2606.03571",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "在二維莫爾超晶格中觀測到分數量子反常霍爾態的電荷中性激發",
         "en": "Charge-Neutral Excitations of Fractional Quantum Anomalous Hall States in 2D Moiré Superlattices",
@@ -146,7 +146,7 @@
       "author": "Yamamoto et al. 2026",
       "ref": "arXiv:2606.03412",
       "url": "https://arxiv.org/abs/2606.03412",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "前額葉皮質的跨頻耦合在工作記憶編碼中調控神經元集群的動態同步",
         "en": "Cross-Frequency Coupling in Prefrontal Cortex Regulates Neuronal Ensemble Synchrony During Working Memory Encoding",
@@ -191,7 +191,7 @@
       "author": "Chen et al. 2026",
       "ref": "arXiv:2606.02891",
       "url": "https://arxiv.org/abs/2606.02891",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "JWST 偵測到距離最近棕矮星大氣中的硫化物雲層與磷化氫特徵",
         "en": "JWST Detection of Sulfide Clouds and Phosphine Signatures in the Atmosphere of the Nearest Brown Dwarf",
@@ -236,7 +236,7 @@
       "author": "Rossi et al. 2026",
       "ref": "arXiv:2606.03177",
       "url": "https://arxiv.org/abs/2606.03177",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "以液態金屬微通道實現可重構熱管理的柔性電子皮膚",
         "en": "Reconfigurable Thermal Management in Flexible Electronic Skin via Liquid Metal Microchannels",

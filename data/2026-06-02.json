@@ -11,7 +11,7 @@
       "author": "Anthropic Research Team et al. 2026",
       "ref": "arXiv:2606.03678",
       "url": "",
-      "color": "#667eea",
+      "color": "#2a9d8f",
       "title": {
         "zh-TW": "無需人工標註的強化學習：大型語言模型透過自我對弈實現超越人類的推理能力",
         "en": "Self-Play Reinforcement Learning Enables Superhuman Reasoning in LLMs Without Human Labels",
@@ -56,7 +56,7 @@
       "author": "Villani et al. 2026",
       "ref": "arXiv:2606.04821",
       "url": "",
-      "color": "#48bb78",
+      "color": "#52b788",
       "title": {
         "zh-TW": "端粒酶重新激活可逆轉老化T細胞免疫記憶：癌症免疫療法新策略",
         "en": "Telomerase Reactivation Reverses Aged T Cell Memory Loss: A New Strategy for Cancer Immunotherapy",
@@ -101,7 +101,7 @@
       "author": "Chen & Nakamura et al. 2026",
       "ref": "arXiv:2606.02394",
       "url": "",
-      "color": "#ed8936",
+      "color": "#4a7bbf",
       "title": {
         "zh-TW": "光子晶片上實現確定性光子-光子糾纏：整合式量子光學的里程碑",
         "en": "Deterministic Photon-Photon Entanglement on a Photonic Chip: A Milestone for Integrated Quantum Optics",
@@ -146,7 +146,7 @@
       "author": "Kaefer et al. 2026",
       "ref": "arXiv:2606.03421",
       "url": "",
-      "color": "#9f7aea",
+      "color": "#6a1b9a",
       "title": {
         "zh-TW": "前額葉皮質「工作記憶清除訊號」首次定位：特定θ波爆發決定記憶何時被抹除",
         "en": "Prefrontal Theta Bursts Gate Working Memory Erasure via Layer-Specific Interneurons",
@@ -191,7 +191,7 @@
       "author": "Valentino et al. 2026",
       "ref": "arXiv:2606.04187",
       "url": "",
-      "color": "#4299e1",
+      "color": "#1a237e",
       "title": {
         "zh-TW": "韋伯望遠鏡發現宇宙最遠「靜止星系」：大爆炸後僅7億年已停止恆星形成的龐然大物",
         "en": "JWST Reveals a Massive Quiescent Galaxy at z≈9.1: Star Formation Shutdown Just 700 Myr After the Big Bang",
@@ -236,7 +236,7 @@
       "author": "Huang et al. 2026",
       "ref": "arXiv:2606.02853",
       "url": "",
-      "color": "#68d391",
+      "color": "#00695c",
       "title": {
         "zh-TW": "「自癒導電水凝膠」突破：斷裂後30秒內自動修復並完全恢復導電性，可用於可穿戴感測器",
         "en": "Self-Healing Conductive Hydrogel with Sub-30-Second Recovery for Wearable Strain Sensors",

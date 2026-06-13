@@ -200,22 +200,28 @@ arXiv 週末不出版新論文。
 
 ---
 
-## 六、domain 顏色對照
+## 六、domain 正規分類（固定 11 類）
 
-| domain | emoji | 顏色 |
-|--------|-------|------|
-| ai | 🤖 | #667eea |
-| bio | 🧬 | #48bb78 |
-| phys | ⚛️ | #ed8936 |
-| neuro | 🧠 | #9f7aea |
-| health | 🏥 | #fc8181 |
-| space | 🌌 | #4299e1 |
-| chem | 🧪 | #f6e05e |
-| tech | 📶 | #68d391 |
-| ocean | 🦈 | #76e4f7 |
-| nature | 🐠 | #fbd38d |
-| fin | 💰 | #f687b3 |
-| arch | 🏛️ | #a0aec0 |
+> ⚠️ **分類規則**：每張卡的 `domain` 欄位**只能**是以下 11 個 key 之一，禁止自創（如 robot/quantum/med/ocean/fin/arch 等舊名一律收斂到母類）。
+> 單一真相來源：`scripts/daily_update.py` 的 `DOMAIN_CONFIG`；前端 `index.html` 的 `DOMAIN_META` 與 CSS 必須與之一致。
+> 產生器有 `normalize_domain()` 強制把任意 domain 收斂到這 11 類。
+
+| domain | emoji | 中文 | 顏色 | 合併來源 |
+|--------|-------|------|------|----------|
+| ai | 🤖 | AI與機器人 | #2a9d8f | ← robot |
+| bio | 🧬 | 生命科學 | #52b788 | |
+| neuro | 🧠 | 神經科學 | #6a1b9a | |
+| health | 🏥 | 醫療健康 | #b71c1c | ← med |
+| phys | ⚛️ | 物理量子 | #4a7bbf | ← quantum |
+| chem | 🧪 | 化學材料 | #bf5b9b | |
+| space | 🌌 | 天文宇宙 | #1a237e | |
+| climate | 🌍 | 地球氣候 | #e8590c | ← earth/environment |
+| nature | 🐠 | 自然生態 | #2e7d32 | ← ocean |
+| tech | 📶 | 科技工程 | #00695c | |
+| human | 🏛️ | 人文社會 | #a0aec0 | ← fin/arch |
+
+**平日（週一～五）arXiv 固定 6 類**：ai、bio、phys、neuro、space、tech
+**週末（週六～日）趣知**：可用全部 11 類
 
 ---
 
