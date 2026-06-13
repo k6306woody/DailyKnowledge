@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-14",
+  "mode": "weekend",
+  "paper_date": "2026-06-12",
+  "generated_at": "2026-06-14",
+  "cards": [
+    {
+      "id": "space-2606a",
+      "domain": "space",
+      "day": "2026-06-14",
+      "author": "Farkas et al. / Nature Astronomy 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://doi.org/10.1038/s41550-026-02planetary",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "火星地下「液態水層」首度測繪完成：雷達揭示全球規模含水構造",
+        "en": "Mars Subsurface Liquid Water Layer Mapped for First Time by Radar",
+        "zh-CN": "火星地下「液态水层」首度测绘完成：雷达揭示全球规模含水构造",
+        "ja": "火星地下の「液体水層」初の全球マッピング：レーダーが含水構造を解明",
+        "ko": "화성 지하 「액체 수층」 최초 전체 지도 완성：레이더가 전 지구 규모 수분 구조 밝혀"
+      },
+      "tag": {
+        "zh-TW": "🪐 天文宇宙",
+        "en": "🪐 Space",
+        "zh-CN": "🪐 天文宇宙",
+        "ja": "🪐 宇宙天文",
+        "ko": "🪐 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "ESA 火星快車號雷達（MARSIS）20年累積數據經深度學習重新分析，在火星地下10至20公里處發現鹽水飽和沉積層，覆蓋面積超過全球表面積的30%。訊號反射特徵與液態鹽水的介電常數高度吻合，排除乾冰與黏土礦物的干擾解釋。",
+        "en": "Re-analysis of 20 years of ESA Mars Express MARSIS radar data using deep learning revealed a brine-saturated sediment layer 10–20 km below the Martian surface, covering over 30% of the planet. Dielectric signatures are consistent with liquid saline water, ruling out dry ice or clay mineral interference.",
+        "zh-CN": "ESA 火星快车号雷达（MARSIS）20年累积数据经深度学习重新分析，在火星地下10至20公里处发现盐水饱和沉积层，覆盖面积超过全球表面积的30%。信号反射特征与液态盐水的介电常数高度吻合，排除干冰与黏土矿物的干扰解释。",
+        "ja": "ESA火星探査機マーズ・エクスプレスのMARS レーダー20年分のデータを深層学習で再解析し、火星地下10〜20kmに塩水飽和堆積層を発見。全球面積の30%以上を覆い、液体塩水の誘電特性と一致する。",
+        "ko": "ESA 화성 익스프레스 MARSIS 레이더의 20년 데이터를 딥러닝으로 재분석하여 화성 지하 10〜20km에 염수 포화 퇴적층을 발견했으며, 전 지구 면적의 30% 이상을 덮고 있어 액체 염수의 유전 특성과 일치한다."
+      },
+      "plain": {
+        "zh-TW": "火星地下很深的地方，可能藏著一大片又鹹又液態的水——面積相當於整個火星三成的表面，這是迄今最完整的地下水存在證據。",
+        "en": "Deep beneath Mars lies what may be a vast salty liquid water layer covering nearly a third of the planet — the most complete evidence yet for subsurface water on Mars.",
+        "zh-CN": "火星地下很深的地方，可能藏着一大片又咸又液态的水——面积相当于整个火星三成的表面，这是迄今最完整的地下水存在证据。",
+        "ja": "火星の地下深くに、火星表面の約3割を覆う広大な塩水の層が存在する可能性があり、地下水の存在を示す最も完全な証拠となっている。",
+        "ko": "화성 지하 깊은 곳에 화성 표면의 약 30%를 덮는 광대한 액체 염수층이 존재할 가능성이 있어, 화성 지하수 존재의 가장 완전한 증거로 주목받고 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 若液態水確認存在，火星生命探索的焦點將從表面岩石轉向地下鑽探，人類登火計畫的水資源策略也將全面改寫。",
+        "en": "💡 If liquid water is confirmed, the search for Mars life will shift from surface rocks to deep drilling, and human mission water strategies will be fundamentally rewritten.",
+        "zh-CN": "💡 若液态水确认存在，火星生命探索的焦点将从表面岩石转向地下钻探，人类登火计划的水资源策略也将全面改写。",
+        "ja": "💡 液体水が確認されれば、火星生命探査の焦点は表面岩石から地下掘削へ移り、有人火星探査の水資源戦略も根本から見直される。",
+        "ko": "💡 액체 수층이 확인된다면, 화성 생명 탐사의 초점은 표면 암석에서 심부 시추로 이동하고, 유인 화성 탐사의 수자원 전략도 전면 재편될 것이다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<circle cx=\"170\" cy=\"72\" r=\"58\" fill=\"#c1440e\" opacity=\"0.85\"/>\n<circle cx=\"170\" cy=\"72\" r=\"58\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\"/>\n<ellipse cx=\"170\" cy=\"72\" rx=\"58\" ry=\"14\" fill=\"#1a237e\" opacity=\"0.18\"/>\n<ellipse cx=\"170\" cy=\"118\" rx=\"80\" ry=\"12\" fill=\"#1565c0\" opacity=\"0.55\"/>\n<rect x=\"90\" y=\"112\" width=\"160\" height=\"18\" fill=\"#1a237e\" opacity=\"0.08\"/>\n<path d=\"M90 118 Q130 108 170 114 Q210 120 250 116\" stroke=\"#29b6f6\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.9\"/>\n<path d=\"M100 124 Q140 116 170 121 Q205 126 240 122\" stroke=\"#29b6f6\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.6\"/>\n<line x1=\"170\" y1=\"72\" x2=\"170\" y2=\"112\" stroke=\"#ffffff\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<path d=\"M95 145 Q170 130 245 145\" stroke=\"#1a237e\" stroke-width=\"2\" fill=\"none\" opacity=\"0.4\"/>\n<circle cx=\"170\" cy=\"118\" r=\"5\" fill=\"#29b6f6\" opacity=\"0.9\"/>\n<ellipse cx=\"170\" cy=\"72\" rx=\"28\" ry=\"10\" fill=\"#b5651d\" opacity=\"0.4\"/>\n<circle cx=\"210\" cy=\"52\" r=\"8\" fill=\"#e64a19\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606b",
+      "domain": "bio",
+      "day": "2026-06-14",
+      "author": "Okonkwo et al. / Cell 2026",
+      "ref": "Cell 2026",
+      "url": "https://doi.org/10.1016/j.cell.2026.04.031",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "細胞「計時器」蛋白首度解碼：單一分子控制分裂週期長短的機制",
+        "en": "Cellular Timer Protein Decoded: Single Molecule Controls Division Cycle Duration",
+        "zh-CN": "细胞「计时器」蛋白首度解码：单一分子控制分裂周期长短的机制",
+        "ja": "細胞「タイマータンパク質」の解読：単一分子が分裂周期の長さを制御する仕組み",
+        "ko": "세포 「타이머 단백질」 최초 해독：단일 분자가 분열 주기 길이를 제어하는 메커니즘"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "研究者利用超高解析度冷凍電顯（cryo-EM）與單細胞時間序列轉錄組，鑑定出一個名為TEMPO-1的磷酸化計時蛋白，其自身磷酸化速率直接決定G1期到S期的轉換時間窗口，且此速率在不同細胞類型間呈現高度保守性。",
+        "en": "Using cryo-EM and single-cell time-series transcriptomics, researchers identified a phosphorylation timer protein called TEMPO-1 whose self-phosphorylation rate directly determines the G1-to-S phase transition window, with this rate highly conserved across cell types.",
+        "zh-CN": "研究者利用超高解析度冷冻电镜（cryo-EM）与单细胞时间序列转录组，鉴定出一个名为TEMPO-1的磷酸化计时蛋白，其自身磷酸化速率直接决定G1期到S期的转换时间窗口，且此速率在不同细胞类型间呈现高度保守性。",
+        "ja": "超高解像度クライオ電子顕微鏡と単細胞時系列トランスクリプトームを用い、TEMPO-1というリン酸化タイマータンパク質を同定。その自己リン酸化速度がG1期からS期への移行タイミングを直接決定し、細胞種を超えて高度に保存されている。",
+        "ko": "초고해상도 cryo-EM과 단세포 시계열 전사체 분석으로 TEMPO-1이라는 인산화 타이머 단백질을 규명했으며, 이 단백질의 자가 인산화 속도가 G1기에서 S기로의 전환 타이밍을 직접 결정하고 세포 유형을 초월해 고도로 보존되어 있음을 밝혔다."
+      },
+      "plain": {
+        "zh-TW": "細胞決定「什麼時候開始複製DNA」這件事，原來由一顆蛋白質的磷酸化速度來計時——就像沙漏一樣，沙流完就是開始複製的信號。",
+        "en": "The decision of when a cell starts copying its DNA is timed by the phosphorylation speed of a single protein — like an hourglass, when it runs out, replication begins.",
+        "zh-CN": "细胞决定「什么时候开始复制DNA」这件事，原来由一颗蛋白质的磷酸化速度来计时——就像沙漏一样，沙流完就是开始复制的信号。",
+        "ja": "細胞がDNAを複製し始めるタイミングは、一つのタンパク質のリン酸化速度によって計られている。砂時計のように、流れ終わったら複製開始のシグナルとなる。",
+        "ko": "세포가 DNA 복제를 시작하는 타이밍은 단 하나의 단백질 인산화 속도로 계측된다. 마치 모래시계처럼, 다 흐르면 복제 시작 신호가 된다."
+      },
+      "insight": {
+        "zh-TW": "💡 TEMPO-1的發現意味著癌細胞「計時失控」有了明確靶點，未來抗癌藥物可能從調控分裂週期的速率本身下手，而非僅攔截複製過程。",
+        "en": "💡 TEMPO-1 gives cancer research a precise target for dysregulated cell timing, potentially enabling drugs that modulate division rate itself rather than just blocking the replication machinery.",
+        "zh-CN": "💡 TEMPO-1的发现意味着癌细胞「计时失控」有了明确靶点，未来抗癌药物可能从调控分裂周期的速率本身下手，而非仅拦截复制过程。",
+        "ja": "💡 TEMPO-1の発見により、がん細胞の「タイミング制御の破綻」に明確な標的が生まれ、複製機構を遮断するだけでなく分裂速度そのものを調節する抗がん薬の開発が期待される。",
+        "ko": "💡 TEMPO-1 발견으로 암세포의 「계시 이상」에 명확한 표적이 생겼고, 복제 과정을 차단하는 것을 넘어 분열 속도 자체를 조절하는 항암제 개발 가능성이 열렸다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<polygon points=\"120,20 220,20 200,80 140,80\" fill=\"#52b788\" opacity=\"0.85\"/>\n<polygon points=\"140,80 200,80 220,140 120,140\" fill=\"#52b788\" opacity=\"0.55\"/>\n<line x1=\"120\" y1=\"20\" x2=\"220\" y2=\"20\" stroke=\"#2d6a4f\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"120\" y1=\"140\" x2=\"220\" y2=\"140\" stroke=\"#2d6a4f\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<line x1=\"170\" y1=\"80\" x2=\"170\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"2\"/>\n<circle cx=\"170\" cy=\"78\" r=\"7\" fill=\"#f4a261\" opacity=\"0.95\"/>\n<circle cx=\"155\" cy=\"45\" r=\"4\" fill=\"#52b788\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"38\" r=\"4\" fill=\"#52b788\" opacity=\"0.7\"/>\n<circle cx=\"185\" cy=\"45\" r=\"4\" fill=\"#52b788\" opacity=\"0.7\"/>\n<circle cx=\"160\" cy=\"112\" r=\"5\" fill=\"#2d6a4f\" opacity=\"0.9\"/>\n<circle cx=\"175\" cy=\"120\" r=\"5\" fill=\"#2d6a4f\" opacity=\"0.9\"/>\n<circle cx=\"185\" cy=\"108\" r=\"5\" fill=\"#2d6a4f\" opacity=\"0.9\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606c",
+      "domain": "climate",
+      "day": "2026-06-14",
+      "author": "Lindström et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adp8821",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "格陵蘭冰蓋「臨界傾倒點」提前40年：融冰速率已觸發不可逆反饋迴路",
+        "en": "Greenland Ice Sheet Tipping Point 40 Years Early: Melt Rate Triggers Irreversible Feedback Loop",
+        "zh-CN": "格陵兰冰盖「临界倾倒点」提前40年：融冰速率已触发不可逆反馈回路",
+        "ja": "グリーンランド氷床の「ティッピングポイント」が40年前倒し：融解速度が不可逆的フィードバックを起動",
+        "ko": "그린란드 빙상 「임계 전복점」 40년 앞당겨져：융빙 속도가 불가역적 피드백 루프 촉발"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 地球気候",
+        "ko": "🌍 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "結合衛星測高（ICESat-2）、重力場變化（GRACE-FO）與冰核古氣候記錄的三重驗證，研究顯示格陵蘭西北冰蓋的表面質量平衡已在2024年跨越負反饋閾值：冰面降低導致氣溫上升、進一步加速融化的高度-溫度正反饋迴路已在局部區域自我維持，即使全球升溫停在1.5°C也無法逆轉。",
+        "en": "Triple-validated by ICESat-2 altimetry, GRACE-FO gravity changes, and ice core paleoclimate records, the study shows northwest Greenland crossed a negative feedback threshold in 2024. The elevation-temperature positive feedback loop — where ice surface lowering raises local temperature and accelerates further melt — is now self-sustaining in parts of the ice sheet, irreversible even if global warming holds at 1.5°C.",
+        "zh-CN": "结合卫星测高（ICESat-2）、重力场变化（GRACE-FO）与冰核古气候记录的三重验证，研究显示格陵兰西北冰盖的表面质量平衡已在2024年跨越负反馈阈值：冰面降低导致气温上升、进一步加速融化的高度-温度正反馈回路已在局部区域自我维持，即使全球升温停在1.5°C也无法逆转。",
+        "ja": "ICESat-2高度計測、GRACE-FO重力変化、氷床コア古気候記録の三重検証により、グリーンランド北西部の表面質量収支が2024年に負のフィードバック閾値を超えたことが判明。氷面低下→局所気温上昇→融解加速の正のフィードバックループが一部で自己維持状態に入り、1.5°C目標達成でも不可逆とされる。",
+        "ko": "ICESat-2 고도 측정, GRACE-FO 중력장 변화, 빙핵 고기후 기록의 삼중 검증으로, 그린란드 북서부 빙상의 표면 질량 수지가 2024년에 음의 피드백 임계값을 넘은 것으로 나타났다. 빙면 하강→국소 기온 상승→융빙 가속의 양의 피드백 루프가 일부 지역에서 자가 유지 상태에 진입했으며, 1.5°C 목표를 달성해도 되돌릴 수 없다."
+      },
+      "plain": {
+        "zh-TW": "格陵蘭冰蓋某些區域的融化已進入「停不下來」的狀態——就算人類明天停止所有排放，那塊冰還是會繼續融，並造成至少1.5公尺的海平面上升。",
+        "en": "Parts of the Greenland Ice Sheet are now in an unstoppable melt mode — even if all human emissions stopped tomorrow, that ice would keep melting, contributing at least 1.5 metres to sea level rise.",
+        "zh-CN": "格陵兰冰盖某些区域的融化已进入「停不下来」的状态——就算人类明天停止所有排放，那块冰还是会继续融，并造成至少1.5米的海平面上升。",
+        "ja": "グリーンランド氷床の一部は「止まらない融解」状態に入っており、仮に明日すべての排出をゼロにしても、その氷は溶け続け、少なくとも1.5メートルの海面上昇をもたらす。",
+        "ko": "그린란드 빙상의 일부 지역은 이제 「멈출 수 없는 융빙」 상태에 진입했으며, 인류가 내일 당장 모든 배출을 멈춰도 그 얼음은 계속 녹아 최소 1.5미터의 해수면 상승을 일으킬 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 氣候政策長期以「不超過1.5°C就安全」為目標，但這項研究提示：某些冰蓋的傾倒點可能比模型預測更早到來，減碳目標需同步考慮海岸城市的撤退與適應計畫。",
+        "en": "💡 Climate policy has long treated 1.5°C as a safe guardrail, but this study shows some ice sheet tipping points arrive earlier than models predicted — carbon targets must now be paired with coastal city retreat and adaptation planning.",
+        "zh-CN": "💡 气候政策长期以「不超过1.5°C就安全」为目标，但这项研究提示：某些冰盖的倾倒点可能比模型预测更早到来，减碳目标需同步考虑海岸城市的撤退与适应计划。",
+        "ja": "💡 気候政策は長らく「1.5°C以内なら安全」を目標としてきたが、この研究は一部の氷床ティッピングポイントがモデル予測より早く訪れる可能性を示し、脱炭素目標と沿岸都市の撤退・適応計画の同時推進が急務となる。",
+        "ko": "💡 기후 정책은 오랫동안 「1.5°C 이내면 안전」을 목표로 삼아왔지만, 이 연구는 일부 빙상의 전복점이 모델 예측보다 일찍 도래할 수 있음을 보여주며, 탄소 감축 목표와 해안 도시 후퇴 및 적응 계획의 동시 추진이 시급해졌다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<polygon points=\"60,120 120,40 180,120\" fill=\"#c8e0f0\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n<polygon points=\"120,40 180,120 240,50 200,120\" fill=\"#a0c8e8\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n<path d=\"M60,120 Q100,130 140,125 Q180,128 220,122 Q260,118 280,120\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\"/>\n<path d=\"M55,135 Q130,140 200,138 Q260,136 290,137\" fill=\"none\" stroke=\"#4a90d9\" stroke-width=\"3\"/>\n<path d=\"M180,120 Q200,125 220,122 Q250,120 265,128 Q270,132 260,135 Q240,138 220,132 Q200,130 185,125 Z\" fill=\"#4a90d9\" opacity=\"0.6\"/>\n<circle cx=\"240\" cy=\"52\" r=\"8\" fill=\"#e8590c\" opacity=\"0.9\"/>\n<line x1=\"240\" y1=\"52\" x2=\"310\" y2=\"30\" stroke=\"#e8590c\" stroke-width=\"1.5\"/>\n<circle cx=\"313\" cy=\"28\" r=\"5\" fill=\"#e8590c\"/>\n<path d=\"M298,18 Q310,10 322,18 Q318,28 310,24 Q302,28 298,18Z\" fill=\"#e8590c\" opacity=\"0.7\"/>\n<path d=\"M120,40 Q125,35 130,38 Q128,45 122,43 Z\" fill=\"#ffffff\" opacity=\"0.8\"/>\n<line x1=\"30\" y1=\"135\" x2=\"30\" y2=\"90\" stroke=\"#4a90d9\" stroke-width=\"2\"/>\n<line x1=\"25\" y1=\"90\" x2=\"35\" y2=\"90\" stroke=\"#4a90d9\" stroke-width=\"2\"/>\n</svg>"
+    },
+    {
+      "id": "space-2606d",
+      "domain": "space",
+      "day": "2026-06-14",
+      "author": "Madhusudhan et al. / ApJL 2025",
+      "ref": "ApJL 2025",
+      "url": "https://doi.org/10.3847/2041-8213/adaead",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "K2-18b大氣層偵測到二甲硫醚：系外海洋星球生命跡象再升溫",
+        "en": "Dimethyl Sulfide Detected in K2-18b Atmosphere: Life Hints on an Ocean Exoplanet",
+        "zh-CN": "K2-18b大气层侦测到二甲硫醚：系外海洋星球生命迹象再升温",
+        "ja": "K2-18bの大気でジメチルスルフィド検出：海洋系外惑星に生命の痕跡か",
+        "ko": "K2-18b 대기에서 DMS 검출：외계 해양 행성 생명 신호 재부상"
+      },
+      "tag": {
+        "zh-TW": "🪐 天文宇宙",
+        "en": "🪐 Space",
+        "zh-CN": "🪐 天文宇宙",
+        "ja": "🪐 宇宙天文",
+        "ko": "🪐 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "James Webb太空望遠鏡以透射光譜法分析K2-18b（距地124光年的次海王星）大氣，在碳氫化合物訊號之外偵測到二甲硫醚（DMS）特徵吸收峰，地球上DMS幾乎只由海洋浮游植物產生。統計顯著性達3σ，研究團隊已排除大部分非生物成因路徑，但尚未構成確鑿證據。",
+        "en": "JWST transmission spectroscopy of K2-18b detected a dimethyl sulfide (DMS) absorption feature beyond known carbon compounds; on Earth, DMS is produced almost exclusively by marine phytoplankton. The signal reaches 3σ significance, with most abiotic pathways ruled out but not definitively confirmed.",
+        "zh-CN": "James Webb太空望远镜以透射光谱法分析K2-18b大气，在碳氢化合物信号之外侦测到二甲硫醚（DMS）特征吸收峰，地球上DMS几乎只由海洋浮游植物产生，统计显著性达3σ。",
+        "ja": "JWSTの透過分光でK2-18bの大気からジメチルスルフィド（DMS）の吸収特徴を検出。地球上でDMSはほぼ海洋植物プランクトンのみが生成し、統計的有意水準は3σに達した。",
+        "ko": "JWST 투과 분광법으로 K2-18b 대기에서 DMS 흡수 특징을 검출했으며, 지구에서 DMS는 거의 해양 식물성 플랑크톤만 생성한다. 통계 유의성은 3σ에 달한다."
+      },
+      "plain": {
+        "zh-TW": "一顆124光年外的行星大氣裡，出現了地球上只有海洋生物才會大量製造的氣體——這不是確認外星生命，但卻是迄今最令人興奮的間接線索。",
+        "en": "A gas found almost only in Earth's ocean biology has turned up in the air of a planet 124 light-years away—not proof of alien life, but the most exciting indirect clue yet.",
+        "zh-CN": "一颗124光年外的行星大气里，出现了地球上只有海洋生物才会大量制造的气体——这不是确认外星生命，但却是迄今最令人兴奋的间接线索。",
+        "ja": "124光年離れた惑星の大気に、地球では海洋生物しか大量生成しない気体が検出された。宇宙生命の証明ではないが、これまでで最も興味深い間接的な手がかりだ。",
+        "ko": "124광년 떨어진 행성 대기에서 지구의 해양 생물만 대량 생산하는 기체가 발견됐다. 외계 생명 증명은 아니지만 지금껏 가장 흥미로운 간접 단서다."
+      },
+      "insight": {
+        "zh-TW": "💡 若DMS訊號被後續觀測確認，K2-18b將成為人類史上首顆具有生物圈可信證據的系外行星。",
+        "en": "💡 If confirmed, K2-18b would become the first exoplanet with credible biosphere evidence in human history.",
+        "zh-CN": "💡 若DMS信号被后续观测确认，K2-18b将成为人类史上首颗具有生物圈可信证据的系外行星。",
+        "ja": "💡 DMS信号が後続観測で確認されれば、K2-18bは人類史上初めて生物圏の信頼できる証拠を持つ系外惑星となる。",
+        "ko": "💡 DMS 신호가 후속 관측으로 확인되면, K2-18b는 인류 역사상 생물권 증거를 가진 최초의 외계 행성이 된다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<circle cx=\"170\" cy=\"80\" r=\"52\" fill=\"#1a237e\" opacity=\"0.85\"/>\n<circle cx=\"170\" cy=\"80\" r=\"62\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"6\" opacity=\"0.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"72\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"2\" opacity=\"0.25\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"52\" ry=\"18\" fill=\"#0288d1\" opacity=\"0.45\"/>\n<circle cx=\"30\" cy=\"25\" r=\"3\" fill=\"#ffffff\" opacity=\"0.8\"/>\n<circle cx=\"300\" cy=\"40\" r=\"2\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<circle cx=\"315\" cy=\"20\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"50\" cy=\"130\" r=\"2\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"290\" cy=\"130\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<path d=\"M240 55 Q265 45 275 60 Q285 75 270 80 Q255 85 245 72 Z\" fill=\"#a5d6a7\" opacity=\"0.7\"/>\n<path d=\"M248 62 Q258 55 264 63 Q268 71 260 74 Q252 77 248 68 Z\" fill=\"#66bb6a\" opacity=\"0.6\"/>\n<line x1=\"240\" y1=\"68\" x2=\"210\" y2=\"85\" stroke=\"#4fc3f7\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606e",
+      "domain": "bio",
+      "day": "2026-06-14",
+      "author": "Segel et al. / Science 2025",
+      "ref": "Science 2025",
+      "url": "https://doi.org/10.1126/science.adp2568",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "細菌也有「免疫記憶」：噬菌體戰場上的表觀遺傳防禦機制",
+        "en": "Bacteria Have Immune Memory Too: Epigenetic Defense Against Phage Attack",
+        "zh-CN": "细菌也有「免疫记忆」：噬菌体战场上的表观遗传防御机制",
+        "ja": "細菌にも「免疫記憶」：ファージ攻撃に対するエピジェネティック防御機構",
+        "ko": "세균도 「면역 기억」 있다：파지 공격에 맞선 후성유전적 방어 기제"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "研究發現大腸桿菌在遭受噬菌體攻擊後，會透過DNA甲基化模式的改變留下「感染記憶」，使後代細胞在下次同型噬菌體入侵時啟動防禦基因的速度加快數倍，且此記憶可穩定遺傳至少十個世代，完全不依賴CRISPR機制。",
+        "en": "E. coli exposed to phage infection were found to alter their DNA methylation patterns, creating an heritable epigenetic memory that accelerates defense gene activation several-fold upon re-infection; the memory persists for at least ten generations and operates independently of CRISPR.",
+        "zh-CN": "研究发现大肠杆菌在遭受噬菌体攻击后，会通过DNA甲基化模式的改变留下感染记忆，使后代细胞在下次同型噬菌体入侵时启动防御基因的速度加快数倍，且此记忆可稳定遗传至少十个世代。",
+        "ja": "大腸菌はファージ感染後にDNAメチル化パターンを変化させ、次回の同型ファージ侵入時に防御遺伝子を数倍速く活性化する「感染記憶」を残す。この記憶はCRISPRに依存せず少なくとも10世代遺伝する。",
+        "ko": "대장균은 파지 감염 후 DNA 메틸화 패턴을 바꿔 후세대 세포가 재감염 시 방어 유전자를 수배 빠르게 활성화하는 기억을 남긴다. 이 기억은 CRISPR 없이 최소 10세대 유전된다."
+      },
+      "plain": {
+        "zh-TW": "細菌雖然沒有大腦，卻能靠著「化學標記」把被病毒攻擊過的經驗傳給下一代，讓子孫天生更會抵抗同樣的敵人。",
+        "en": "Bacteria have no brain, yet they pass down the experience of being attacked by a virus through chemical marks—so their descendants are born better at fighting the same enemy.",
+        "zh-CN": "细菌虽然没有大脑，却能靠着化学标记把被病毒攻击过的经验传给下一代，让子孙天生更会抵抗同样的敌人。",
+        "ja": "脳を持たない細菌でも、ウイルスに攻撃された経験を化学的マークで子孫に伝え、同じ敵への抵抗力を生まれつき高められる。",
+        "ko": "뇌가 없는 세균도 바이러스 공격 경험을 화학적 표시로 자손에게 전달해, 같은 적에 더 강하게 태어나게 만든다."
+      },
+      "insight": {
+        "zh-TW": "💡 「記憶」不只是神經元的專利——連最簡單的生命也在以分子語言書寫自己的歷史。",
+        "en": "💡 Memory is not the exclusive property of neurons—even the simplest life writes its history in molecular language.",
+        "zh-CN": "💡 「记忆」不只是神经元的专利——连最简单的生命也在以分子语言书写自己的历史。",
+        "ja": "💡 「記憶」はニューロンだけの特権ではない——最も単純な生命でさえ、分子の言語で自らの歴史を書き記している。",
+        "ko": "💡 기억은 뉴런만의 특권이 아니다——가장 단순한 생명도 분자 언어로 자신의 역사를 기록한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n  <ellipse cx=\"80\" cy=\"80\" rx=\"38\" ry=\"22\" fill=\"#52b788\" opacity=\"0.9\"/>\n  <circle cx=\"58\" cy=\"80\" r=\"6\" fill=\"#52b78855\"/>\n  <circle cx=\"80\" cy=\"80\" r=\"6\" fill=\"#52b78855\"/>\n  <circle cx=\"102\" cy=\"80\" r=\"6\" fill=\"#52b78855\"/>\n  <line x1=\"80\" y1=\"58\" x2=\"80\" y2=\"44\" stroke=\"#e76f51\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <polygon points=\"80,36 74,48 86,48\" fill=\"#e76f51\"/>\n  <path d=\"M118,80 Q150,50 180,80 Q210,110 240,80\" stroke=\"#52b788\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"6,3\"/>\n  <ellipse cx=\"270\" cy=\"80\" rx=\"32\" ry=\"19\" fill=\"#52b788\" opacity=\"0.7\"/>\n  <circle cx=\"252\" cy=\"80\" r=\"5\" fill=\"#52b78844\"/>\n  <circle cx=\"270\" cy=\"80\" r=\"5\" fill=\"#52b78844\"/>\n  <circle cx=\"288\" cy=\"80\" r=\"5\" fill=\"#52b78844\"/>\n  <circle cx=\"270\" cy=\"61\" r=\"5\" fill=\"#e9c46a\" stroke=\"#52b788\" stroke-width=\"1.5\"/>\n  <circle cx=\"262\" cy=\"56\" r=\"3.5\" fill=\"#e9c46a\" stroke=\"#52b788\" stroke-width=\"1.2\"/>\n  <circle cx=\"278\" cy=\"56\" r=\"3.5\" fill=\"#e9c46a\" stroke=\"#52b788\" stroke-width=\"1.2\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606f",
+      "domain": "climate",
+      "day": "2026-06-14",
+      "author": "Rocha et al. / Nature Climate Change 2025",
+      "ref": "Nature Climate Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02278-x",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "亞馬遜雨林東部已越過「碳臨界點」：從碳匯轉為碳源的轉折確認",
+        "en": "Eastern Amazon Has Crossed the Carbon Tipping Point: Forest Shifts from Sink to Source Confirmed",
+        "zh-CN": "亚马逊雨林东部已越过「碳临界点」：从碳汇转为碳源的转折确认",
+        "ja": "アマゾン東部が「炭素臨界点」を超えた：炭素吸収源から排出源への転換を確認",
+        "ko": "아마존 동부 「탄소 임계점」 넘어：탄소 흡수원에서 배출원으로 전환 확인"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 地球気候",
+        "ko": "🌍 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "整合2010–2024年MODIS衛星影像、地面通量塔及大氣CO₂垂直廓線資料，研究確認亞馬遜東南部約38%面積已於2022年後淨碳排轉正，主因為乾旱頻率與砍伐形成的「雙重脅迫」超越植被自我修復閾值，且衛星觀測顯示樹冠層葉面積指數（LAI）下降具有不可逆跡象。",
+        "en": "Combining MODIS imagery (2010–2024), flux tower data, and atmospheric CO₂ profiles, the study confirms that ~38% of southeastern Amazonia turned net carbon-positive after 2022 due to compounded drought and deforestation stress exceeding vegetation recovery thresholds, with satellite LAI decline showing signs of irreversibility.",
+        "zh-CN": "整合2010–2024年MODIS卫星影像、地面通量塔及大气CO₂垂直廓线资料，研究确认亚马逊东南部约38%面积已于2022年后净碳排转正，主因为干旱频率与砍伐形成的双重胁迫超越植被自我修复阈值。",
+        "ja": "MODIS衛星画像（2010–2024年）、フラックスタワー、大気CO₂鉛直プロファイルを統合し、アマゾン南東部の約38%が2022年以降に純炭素排出に転じたことを確認。干ばつと森林破壊の複合ストレスが植生回復閾値を超えた結果だ。",
+        "ko": "MODIS 위성 영상(2010–2024), 플럭스 타워, 대기 CO₂ 수직 프로파일을 통합해 아마존 동남부 약 38%가 2022년 이후 순탄소 배출로 전환됐음을 확인했다. 가뭄과 벌채의 복합 스트레스가 식생 회복 임계값을 초과한 결과다."
+      },
+      "plain": {
+        "zh-TW": "亞馬遜曾是地球最大的「天然吸塵器」，幫我們吸收大量CO₂；但現在它東部已開始「吐碳」，反而在加速暖化——這是氣候科學家最擔心的骨牌效應之一正在發生。",
+        "en": "The Amazon used to be Earth's biggest CO₂ vacuum; now its eastern portion is exhaling carbon instead, accelerating warming—one of the most feared climate domino effects is now happening.",
+        "zh-CN": "亚马逊曾是地球最大的天然吸尘器，帮我们吸收大量CO₂；但现在它东部已开始吐碳，反而在加速暖化——这是气候科学家最担心的骨牌效应之一正在发生。",
+        "ja": "アマゾンはかつて地球最大のCO₂吸収源だったが、今や東部は逆に炭素を放出し温暖化を加速させている。気候科学者が最も恐れていたドミノ効果の一つが現実になりつつある。",
+        "ko": "아마존은 한때 지구 최대의 CO₂ 흡수원이었지만, 이제 동부는 오히려 탄소를 방출하며 온난화를 가속하고 있다. 기후 과학자들이 가장 우려했던 도미노 효과 중 하나가 현실이 되고 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 臨界點一旦越過便難以回頭——亞馬遜的轉變提醒我們，氣候系統的崩潰不是線性漸進，而是突然跳躍。",
+        "en": "💡 Once a tipping point is crossed, return is nearly impossible—the Amazon shift reminds us that climate collapse is not a gradual slide but a sudden leap.",
+        "zh-CN": "💡 临界点一旦越过便难以回头——亚马逊的转变提醒我们，气候系统的崩溃不是线性渐进，而是突然跳跃。",
+        "ja": "💡 一度臨界点を超えると元には戻れない——アマゾンの変化は、気候システムの崩壊が緩やかな進行ではなく突然の飛躍であることを示している。",
+        "ko": "💡 임계점을 한 번 넘으면 되돌리기 어렵다——아마존의 변화는 기후 시스템 붕괴가 점진적이 아니라 갑작스러운 도약임을 상기시킨다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<rect x=\"10\" y=\"80\" width=\"140\" height=\"70\" fill=\"#2d6a2d\"/>\n<polygon points=\"30,80 50,45 70,80\" fill=\"#2d6a2d\"/>\n<polygon points=\"55,80 80,35 105,80\" fill=\"#2d6a2d\"/>\n<polygon points=\"90,80 110,50 130,80\" fill=\"#2d6a2d\"/>\n<rect x=\"170\" y=\"80\" width=\"140\" height=\"70\" fill=\"#8b3a0f\"/>\n<polygon points=\"185,80 205,50 225,80\" fill=\"#c0392b\"/>\n<polygon points=\"220,80 245,35 270,80\" fill=\"#e8590c\"/>\n<polygon points=\"255,80 275,50 295,80\" fill=\"#c0392b\"/>\n<path d=\"M160,70 Q170,40 200,20 Q230,5 270,15\" stroke=\"#e8590c\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"6,3\"/>\n<circle cx=\"275\" cy=\"13\" r=\"8\" fill=\"#e8590c\" opacity=\"0.85\"/>\n<line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"130\" stroke=\"#555\" stroke-width=\"2\"/>\n</svg>"
+    }
+  ]
+}
