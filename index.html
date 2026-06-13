@@ -444,7 +444,7 @@ footer strong{color:var(--tf-tx)}
   <div class="sp-content">
     <div class="sp-title" id="sp-title">每日新知</div>
     <div class="sp-sub" id="sp-sub">最新研究 × 多元領域 × 白話解說</div>
-    <div class="sp-date" id="sp-date">📅 2026年5月31日</div>
+    <div class="sp-date" id="sp-date">📅</div>
     <div class="sp-hint" id="sp-hint">自動進入… · 點擊跳過</div>
   </div>
 </div>
@@ -477,7 +477,7 @@ footer strong{color:var(--tf-tx)}
   <div class="eyebrow">Daily Knowledge Digest</div>
   <h1 id="hl">每日新知</h1>
   <p class="sub" id="sub">最新研究 × 多元領域 × 白話解說</p>
-  <div class="datepill">📅 <span id="ds">2026年5月31日（週日）</span></div>
+  <div class="datepill">📅 <span id="ds"></span></div>
 </header>
 
 <div class="subnav" id="daynav"></div>
@@ -614,7 +614,7 @@ async function loadAllData() {
 const T = {
 'zh-TW':{
   logoMain:'每日新知',logoSub:' · Daily Digest',hl:'每日新知',sub:'最新研究 × 多元領域 × 白話解說',
-  ds:'2026年5月31日（週日）',vday:'📅 依日期',vcat:'🗂 分類',
+  vday:'📅 依日期',vcat:'🗂 分類',
   catAll:'全部',catAI:'AI 人工智慧',catBio:'生醫科學',catArch:'建築設計',catPhys:'物理量子',catChem:'化學材料',catFin:'財經金融',
   read:'閱讀原文論文',mTech:'這篇論文在研究什麼？',mPlain:'用大白話說',
   ftTitle:'每日新知 · Daily Knowledge Digest',ftSub:'由 Claude AI 整理，僅供教育用途',
@@ -638,7 +638,7 @@ const T = {
 },
 'en':{
   logoMain:'Daily Digest',logoSub:' · Knowledge',hl:'Daily Knowledge Digest',sub:'Latest Research × Multi-Domain × Plain Language',
-  ds:'May 31, 2026 (Sunday)',vday:'📅 By Day',vcat:'🗂 Category',
+  vday:'📅 By Day',vcat:'🗂 Category',
   catAll:'All',catAI:'AI',catBio:'Biomedical',catArch:'Architecture',catPhys:'Physics',catChem:'Chemistry',catFin:'Finance',
   read:'Read Full Paper',mTech:'What does this paper research?',mPlain:'In plain English',
   ftTitle:'Daily Knowledge Digest',ftSub:'Curated by Claude AI · Educational purposes only',
@@ -674,7 +674,7 @@ const T = {
 },
 'zh-CN':{
   logoMain:'每日新知',logoSub:' · Daily Digest',hl:'每日新知',sub:'最新研究 × 多元领域 × 白话解说',
-  ds:'2026年5月31日（周日）',vday:'📅 按日期',vcat:'🗂 分类',
+  vday:'📅 按日期',vcat:'🗂 分类',
   catAll:'全部',catAI:'AI 人工智能',catBio:'生医科学',catArch:'建筑设计',catPhys:'物理量子',catChem:'化学材料',catFin:'财经金融',
   read:'阅读原文论文',mTech:'这篇论文在研究什么？',mPlain:'用大白话说',
   ftTitle:'每日新知 · Daily Knowledge Digest',ftSub:'由 Claude AI 整理，仅供教育用途',
@@ -709,7 +709,7 @@ const T = {
 },
 'ja':{
   logoMain:'毎日新知',logoSub:' · Daily Digest',hl:'毎日新知',sub:'最新研究 × 多分野 × わかりやすい解説',
-  ds:'2026年5月31日（日曜日）',vday:'📅 日付別',vcat:'🗂 カテゴリ',
+  vday:'📅 日付別',vcat:'🗂 カテゴリ',
   catAll:'すべて',catAI:'AI・人工知能',catBio:'生命医学',catArch:'建築',catPhys:'物理・量子',catChem:'化学材料',catFin:'経済・金融',
   read:'論文を読む',mTech:'この論文は何を研究している？',mPlain:'わかりやすく言うと',
   ftTitle:'毎日新知 · Daily Knowledge Digest',ftSub:'Claude AIが整理 · 教育目的のみ',
@@ -743,7 +743,7 @@ const T = {
 },
 'ko':{
   logoMain:'매일 새지식',logoSub:' · Daily Digest',hl:'매일 새지식',sub:'최신 연구 × 다양한 분야 × 쉬운 해설',
-  ds:'2026년 5월 31일（일요일）',vday:'📅 날짜별',vcat:'🗂 카테고리',
+  vday:'📅 날짜별',vcat:'🗂 카테고리',
   catAll:'전체',catAI:'AI 인공지능',catBio:'생명의학',catArch:'건축 디자인',catPhys:'물리 양자',catChem:'화학 재료',catFin:'경제 금융',
   read:'논문 읽기',mTech:'이 논문은 무엇을 연구하나요?',mPlain:'쉽게 말하면',
   ftTitle:'매일 새지식 · Daily Knowledge Digest',ftSub:'Claude AI가 정리 · 교육 목적 전용',
@@ -969,9 +969,9 @@ function renderCatbar(){
 }
 
 function updateDateDisplay(){
-  // 把 curDay (YYYY-MM-DD) 格式化成各語言日期
-  if(!curDay) return;
-  const d=new Date(curDay+'T00:00:00');
+  // 把 curDay (YYYY-MM-DD) 格式化成各語言日期；尚未載入資料時先用今天，避免閃出舊日期
+  const dayStr = curDay || new Date().toISOString().split('T')[0];
+  const d=new Date(dayStr+'T00:00:00');
   const weekdays={
     'zh-TW':['週日','週一','週二','週三','週四','週五','週六'],
     'en':['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
@@ -1748,6 +1748,9 @@ function applyFz(v){
 }
 fzBtns.forEach(b => b.addEventListener('click', () => applyFz(parseFloat(b.dataset.fz))));
 applyFz(savedFz);
+
+// splash 一出現就先填今天日期（資料載入前），避免閃出佔位字
+updateDateDisplay();
 
 // Init — load ALL available JSON data then render
 loadAllData().then(result=>{
