@@ -50,6 +50,51 @@
       }
     },
     {
+      "id": "bio-260611",
+      "domain": "bio",
+      "day": "2026-06-11",
+      "author": "Aruna Dey, Suraj Biswas et al.",
+      "ref": "arXiv:2606.13556v1",
+      "url": "https://arxiv.org/abs/2606.13556v1",
+      "color": "#48bb78",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/><circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"#48bb7840\" stroke=\"#48bb78\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#48bb7870\" stroke=\"#48bb78\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"80\" r=\"9\" fill=\"#48bb78\"/><line x1=\"100\" y1=\"80\" x2=\"145\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polygon points=\"145,74 160,80 145,86\" fill=\"#48bb78\"/><rect x=\"160\" y=\"52\" width=\"56\" height=\"56\" rx=\"10\" fill=\"#2b6cb040\" stroke=\"#2b6cb0\" stroke-width=\"2.5\"/><line x1=\"172\" y1=\"68\" x2=\"204\" y2=\"68\" stroke=\"#2b6cb0\" stroke-width=\"1.8\"/><line x1=\"172\" y1=\"80\" x2=\"204\" y2=\"80\" stroke=\"#2b6cb0\" stroke-width=\"1.8\"/><line x1=\"172\" y1=\"92\" x2=\"196\" y2=\"92\" stroke=\"#2b6cb0\" stroke-width=\"1.8\"/><line x1=\"228\" y1=\"80\" x2=\"268\" y2=\"80\" stroke=\"#48bb78\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polygon points=\"268,74 283,80 268,86\" fill=\"#48bb78\"/><ellipse cx=\"303\" cy=\"80\" rx=\"28\" ry=\"38\" fill=\"#f6ad5540\" stroke=\"#f6ad55\" stroke-width=\"2.5\"/><ellipse cx=\"303\" cy=\"80\" rx=\"14\" ry=\"22\" fill=\"#f6ad5570\" stroke=\"#f6ad55\" stroke-width=\"1.8\"/><circle cx=\"303\" cy=\"80\" r=\"6\" fill=\"#f6ad55\"/></svg>",
+      "title": {
+        "zh-TW": "你的體質還是環境影響？用基因組當錨點，AI 一開始就懂你",
+        "en": "You or Your Environment? Using Your Genome as an AI Anchor for Personalized Health",
+        "zh-CN": "你的体质还是环境影响？用基因组当锚点，AI 一开始就懂你",
+        "ja": "体質か環境か？ゲノムを錨にしたパーソナル健康AIの新手法",
+        "ko": "체질인가 환경 탓인가? 유전체를 닻으로 삼는 맞춤형 건강 AI"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學 × AI 健康",
+        "en": "🧬 Life Science × Health AI",
+        "zh-CN": "🧬 生命科学 × AI 健康",
+        "ja": "🧬 生命科学 × ヘルスAI",
+        "ko": "🧬 생명과학 × 헬스 AI"
+      },
+      "tech": {
+        "zh-TW": "本研究提出以個人基因組作為貝葉斯先驗（exogenous genetic anchor），在 AI 模型收到任何行為數據之前，先提供固定且因果明確的個體化基線，從而解決個人化生理 AI 的冷啟動問題。因果推斷框架確保基因錨點不受環境反向因果干擾，使模型能快速區分先天體質變異與後天環境波動。",
+        "en": "This study proposes using an individual's genomic profile as a Bayesian prior — an exogenous genetic anchor — that initializes personalized physiological AI models before any behavioral data is collected, solving the cold-start problem. A causal inference framework ensures the genomic anchor is immune to reverse causation, enabling models to rapidly distinguish constitutional variation from environmentally driven deviation.",
+        "zh-CN": "本研究提出以个人基因组作为贝叶斯先验（exogenous genetic anchor），在 AI 模型收到任何行为数据之前，先提供固定且因果明确的个体化基线，从而解决个性化生理 AI 的冷启动问题。因果推断框架确保基因锚点不受环境反向因果干扰，使模型能快速区分先天体质变异与后天环境波动。",
+        "ja": "本研究は個人のゲノムプロファイルをベイズ事前分布（外生的遺伝的アンカー）として活用し、行動データが一切収集される前に個別化生理AIモデルを初期化することで、コールドスタート問題を解決する手法を提案する。因果推論フレームワークにより、ゲノムアンカーは逆因果の影響を受けず、先天的な体質変動と環境由来の逸脱を迅速に識別できる。",
+        "ko": "이 연구는 개인의 유전체 프로파일을 베이즈 사전확률(외생적 유전적 닻)로 활용해, 행동 데이터 수집 전에 맞춤형 생리 AI 모델을 초기화함으로써 콜드 스타트 문제를 해결하는 방법을 제안한다. 인과 추론 프레임워크를 통해 유전체 닻은 역인과 영향을 받지 않으며, 선천적 체질 변이와 환경적 편차를 빠르게 구분할 수 있다."
+      },
+      "plain": {
+        "zh-TW": "想像你第一天使用智慧手環，AI 對你一無所知——它不知道你天生心跳就比較快，還是因為今天壓力大。這就像一位剛見面的醫生，需要好幾週才能熟悉你。這篇論文的解法是：讓 AI 在認識你之前，先讀你的「基因說明書」。基因是你出生時就寫好的、不會被後天改變的藍圖，就像每個人的身體出廠設定。有了這份設定，AI 從第一天就有一個聰明的起點，知道你的「正常」範圍大概在哪裡。之後每收集一筆你的運動、睡眠數據，AI 就用貝葉斯統計不斷修正這個猜測，越來越準確地分辨「這是你的體質」還是「這是壓力或飲食造成的變化」。這很重要，因為一個不懂你個人基準的 AI，很可能把你的正常當異常，或把真正的問題忽略掉。",
+        "en": "Imagine using a smart health tracker on day one — the AI knows nothing about you. It can't tell if your heart rate is naturally high or spiked because of stress. It's like a doctor who just met you needing weeks to learn your baseline. This paper's solution: let the AI read your 「genetic instruction manual」 before it meets you. Your genome is a blueprint written at birth that never changes — it's your body's factory settings. With this anchor, the AI has a smart starting point from day one, knowing roughly what 「normal」 looks like for you specifically. As it collects your movement and sleep data, it uses Bayesian statistics to continuously refine its understanding, getting better at telling apart 「that's just your constitution」 from 「something environmental is going on.」 This matters because an AI that doesn't know your personal baseline might flag your normal as alarming — or miss a real problem entirely.",
+        "zh-CN": "想象你第一天使用智能手环，AI 对你一无所知——它不知道你天生心跳就比较快，还是因为今天压力大。这就像一位刚见面的医生，需要好几周才能熟悉你。这篇论文的解法是：让 AI 在认识你之前，先读你的「基因说明书」。基因是你出生时就写好的、不会被后天改变的蓝图，就像每个人的身体出厂设置。有了这份设置，AI 从第一天就有一个聪明的起点，知道你的「正常」范围大概在哪里。之后每收集一笔你的运动、睡眠数据，AI 就用贝叶斯统计不断修正这个猜测，越来越准确地分辨「这是你的体质」还是「这是压力或饮食造成的变化」。这很重要，因为一个不懂你个人基准的 AI，很可能把你的正常当异常，或把真正的问题忽略掉。",
+        "ja": "スマートウォッチを初めてつけた日、AIはあなたのことを何も知らない。心拍数が高いのは生まれつきなのか、今日のストレスのせいなのか、判断できない。まるで今日初めて会った医師が、あなたの「普通」を理解するのに数週間かかるようなものだ。この論文の解決策は、AIがあなたに会う前に「遺伝子の取扱説明書」を読ませること。ゲノムは生まれた瞬間に書き込まれた、変わることのない設計図——いわば体の出荷時設定だ。このアンカーがあれば、AIは初日からあなたにとっての「普通」をある程度把握した状態でスタートできる。その後、運動や睡眠データが蓄積されるたびに、ベイズ統計で推定を更新し、「それがあなたの体質」なのか「環境の影響」なのかをより正確に見分けられるようになる。個人の基準を知らないAIは、あなたの正常を異常と判断したり、本当の問題を見逃したりするかもしれないからこそ、この研究は重要だ。",
+        "ko": "스마트 헬스 기기를 처음 착용한 날, AI는 당신에 대해 아무것도 모른다. 심박수가 원래 높은 건지, 오늘 스트레스를 받아서인지 구별하지 못한다. 마치 오늘 처음 만난 의사가 당신의 「정상」 수치를 파악하는 데 몇 주가 걸리는 것과 같다. 이 논문의 해결책은 AI가 당신을 만나기 전에 「유전자 설명서」를 먼저 읽게 하는 것이다. 유전체는 태어날 때 새겨진, 평생 바뀌지 않는 설계도——즉 몸의 공장 초기 설정이다. 이 닻 덕분에 AI는 첫날부터 당신만의 「정상」 범위를 어느 정도 알고 시작할 수 있다. 이후 운동·수면 데이터가 쌓일수록 베이즈 통계로 추정을 계속 갱신해, 「원래 체질」인지 「환경·스트레스의 영향」인지를 점점 더 정확하게 구분한다. 개인 기준을 모르는 AI는 당신의 정상을 이상으로 오해하거나 진짜 문제를 놓칠 수 있기 때문에 이 연구는 매우 중요하다."
+      },
+      "insight": {
+        "zh-TW": "💡 你的基因不只決定你是誰，還能成為 AI 第一次認識你時最聰明的「先見之明」。",
+        "en": "💡 Your genome isn't just who you are — it can be the smartest first impression an AI ever gets of you.",
+        "zh-CN": "💡 你的基因不只决定你是谁，还能成为 AI 第一次认识你时最聪明的「先见之明」。",
+        "ja": "💡 ゲノムはあなたが何者かを決めるだけでなく、AIがあなたを初めて理解するための最も賢い「第一印象」にもなりうる。",
+        "ko": "💡 유전체는 당신이 누구인지를 결정할 뿐 아니라, AI가 당신을 처음 만날 때 가질 수 있는 가장 똑똑한 「선입견」이 될 수 있다."
+      }
+    },
+    {
       "id": "phys-260611",
       "domain": "phys",
       "day": "2026-06-11",
@@ -137,6 +182,51 @@
         "zh-CN": "💡 控制大脑不必改变最活跃的节点——那些安静沉睡、却身处要冲的连结，才是撬动整体节律的真正杠杆。",
         "ja": "💡 脳のリズムを制御するには最も活発なノードを狙う必要はない——静かに眠る要所の接続こそが、全体を動かす本当のレバーである。",
         "ko": "💡 뇌의 리듬을 제어하려면 가장 활발한 노드를 건드릴 필요가 없다 — 조용히 잠들어 있지만 요충지에 위치한 연결이야말로 전체를 움직이는 진짜 레버다."
+      }
+    },
+    {
+      "id": "space-260611",
+      "domain": "space",
+      "day": "2026-06-11",
+      "author": "Adilkhan Assilkhan, Sabrina M. Appel et al.",
+      "ref": "arXiv:2606.13666v1",
+      "url": "https://arxiv.org/abs/2606.13666v1",
+      "color": "#4299e1",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4299e118\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#4299e1\" opacity=\"0.18\"/><circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"#4299e1\" opacity=\"0.35\"/><circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#4299e1\" opacity=\"0.85\"/><ellipse cx=\"170\" cy=\"80\" rx=\"8\" ry=\"55\" fill=\"#f6ad55\" opacity=\"0.22\"/><ellipse cx=\"170\" cy=\"80\" rx=\"4\" ry=\"42\" fill=\"#f6ad55\" opacity=\"0.45\"/><polygon points=\"170,20 164,38 176,38\" fill=\"#f6ad55\" opacity=\"0.85\"/><polygon points=\"170,140 164,122 176,122\" fill=\"#f6ad55\" opacity=\"0.85\"/><circle cx=\"110\" cy=\"55\" r=\"5\" fill=\"#4299e1\" opacity=\"0.7\"/><circle cx=\"230\" cy=\"65\" r=\"4\" fill=\"#4299e1\" opacity=\"0.6\"/><circle cx=\"95\" cy=\"100\" r=\"3\" fill=\"#4299e1\" opacity=\"0.5\"/><circle cx=\"245\" cy=\"105\" r=\"3.5\" fill=\"#4299e1\" opacity=\"0.55\"/><circle cx=\"140\" cy=\"45\" r=\"2.5\" fill=\"#ffffff\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "星際噴流如何左右恆星誕生：年輕星團的噴流反饋研究",
+        "en": "How Protostellar Jets Shape Star Birth in Young Clusters",
+        "zh-CN": "星际喷流如何左右恒星诞生：年轻星团的喷流反馈研究",
+        "ja": "原始星ジェットが若い星団の誕生に与える影響",
+        "ko": "원시성 제트가 젊은 성단의 별 탄생에 미치는 영향"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究使用 Torch 星團形成模擬框架，針對質量約 2500 太陽質量的中心集中型分子雲，進行六對有無噴流反饋的模擬比較，探討原始星噴流對恆星形成效率、星團結構及早期動力學狀態的影響。",
+        "en": "Using the Torch star cluster formation framework, the team ran six pairs of simulations on centrally concentrated molecular clouds of ~2500 solar masses, comparing scenarios with and without protostellar jet feedback to assess effects on star formation efficiency, temporal variability, cluster structure, and early dynamical state.",
+        "zh-CN": "本研究使用 Torch 星团形成模拟框架，针对质量约 2500 太阳质量的中心集中型分子云，进行六对有无喷流反馈的模拟比较，探讨原始星喷流对恒星形成效率、星团结构及早期动力学状态的影响。",
+        "ja": "Torch 星団形成フレームワークを用い、約 2500 太陽質量の中心集中型分子雲に対して噴流フィードバックの有無を比較する 6 ペアのシミュレーションを実施し、星形成効率・時間変動・星団構造・初期力学状態への影響を調べた。",
+        "ko": "Torch 성단 형성 프레임워크를 사용해 약 2500 태양 질량의 중심 집중형 분자운에서 제트 피드백 유무를 비교하는 6쌍의 시뮬레이션을 수행하여 별 형성 효율, 시간 변동성, 성단 구조 및 초기 역학 상태에 미치는 영향을 분석했다."
+      },
+      "plain": {
+        "zh-TW": "想像一片巨大的宇宙氣體雲，就像一顆緩緩收縮的棉花糖，中心最密集的地方開始點燃第一批恆星。這些剛誕生的「嬰兒恆星」，會從兩極噴出超高速氣體柱——這就是原始星噴流，威力堪比宇宙中的消防水管。研究者想知道：這些噴流會讓周圍的氣體散掉，阻止更多恆星誕生，還是反而攪動氣體促進更多星星形成？透過電腦模擬，團隊發現噴流確實改變了恆星形成的節奏與星團的排列方式。這就好比工廠裡的安全閥——既能防止「過熱」，也會影響整條生產線的效率。理解這個過程，對我們弄清楚宇宙如何製造星系、太陽系又是怎麼誕生的，都有根本性的意義。",
+        "en": "Imagine a giant cosmic gas cloud slowly collapsing inward like a shrinking marshmallow, with the densest center igniting the first baby stars. These newborn stars shoot out powerful jets of gas from their poles — think of them as cosmic fire hoses blasting material in two directions at once. Scientists wanted to know: do these jets blow away surrounding gas and stop more stars from forming, or do they stir things up and help? Using computer simulations, the team found that jets genuinely alter the rhythm of star birth and the shape of the resulting star cluster. It is like a pressure-release valve in a factory — it prevents overheating but also changes the whole assembly line. Understanding this helps us trace how galaxies, and ultimately solar systems like ours, are built from scratch.",
+        "zh-CN": "想象一片巨大的宇宙气体云，像一颗缓慢收缩的棉花糖，中心最密集的地方开始点燃第一批恒星。这些刚诞生的「婴儿恒星」，会从两极喷出超高速气体柱——这就是原始星喷流，威力堪比宇宙中的消防水管。研究者想知道：这些喷流会让周围的气体散掉，阻止更多恒星诞生，还是反而搅动气体促进更多星星形成？通过电脑模拟，团队发现喷流确实改变了恒星形成的节奏与星团的排列方式。这就好比工厂里的安全阀——既能防止「过热」，也会影响整条生产线的效率。理解这个过程，对我们弄清楚宇宙如何制造星系、太阳系又是怎么诞生的，都有根本性的意义。",
+        "ja": "巨大な宇宙のガス雲がゆっくりと収縮し、最も密度の高い中心部で最初の星々が灯る様子を想像してください。生まれたばかりの「赤ちゃん星」は両極から超高速のガス柱を噴き出します――これが原始星ジェットで、宇宙規模の消防ホースのようなものです。研究者たちはこのジェットが周囲のガスを吹き飛ばして星形成を抑えるのか、それとも攪拌して促進するのかを知りたかったのです。コンピューターシミュレーションの結果、ジェットは星形成のリズムと星団の形状を確かに変えることがわかりました。これは工場の安全弁のようなもので、過熱を防ぎながらも生産ライン全体に影響を与えます。この仕組みを理解することは、銀河や太陽系がどのように生まれるかを解き明かす鍵になります。",
+        "ko": "거대한 우주 가스 구름이 천천히 수축하면서 가장 밀도 높은 중심부에서 첫 번째 별들이 탄생하는 모습을 상상해 보세요. 막 태어난 '아기 별'들은 양극에서 초고속 가스 기둥을 내뿜는데, 이것이 바로 원시성 제트입니다 — 우주판 소방 호스라고 할 수 있죠. 연구자들은 이 제트가 주변 가스를 날려버려 별 탄생을 억제하는지, 아니면 가스를 뒤섞어 오히려 촉진하는지 알고 싶었습니다. 컴퓨터 시뮬레이션 결과, 제트는 별 형성의 리듬과 성단의 구조를 실제로 바꾼다는 사실이 밝혀졌습니다. 마치 공장의 안전밸브처럼 과열을 막으면서도 전체 생산 라인에 영향을 줍니다. 이 과정을 이해하면 은하와 태양계가 어떻게 처음부터 만들어지는지 추적하는 데 근본적인 단서를 얻을 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 恆星誕生時的第一聲「噴嚏」，可能就決定了整個星團的命運與形狀。",
+        "en": "💡 The very first 「sneeze」 of a newborn star — its jet — may already seal the fate and shape of the entire star cluster around it.",
+        "zh-CN": "💡 恒星诞生时的第一声「喷嚏」，可能就决定了整个星团的命运与形状。",
+        "ja": "💡 生まれたばかりの星が最初に放つ「くしゃみ」＝ジェットが、星団全体の運命と形を決めてしまうかもしれない。",
+        "ko": "💡 갓 태어난 별이 내뿜는 첫 번째 「재채기」인 제트가, 성단 전체의 운명과 형태를 이미 결정짓고 있을지도 모른다."
       }
     },
     {

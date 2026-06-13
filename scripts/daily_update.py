@@ -28,6 +28,12 @@ LOG_FILE = ROOT / "logs" / "update.log"
 LOG_FILE.parent.mkdir(exist_ok=True)
 DATA_DIR.mkdir(exist_ok=True)
 
+# 強制 stdout 用 UTF-8，避免 Windows cp950 無法輸出 emoji 造成 log 錯誤
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
