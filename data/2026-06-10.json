@@ -1,203 +1,203 @@
 {
   "date": "2026-06-10",
   "mode": "paper",
-  "paper_date": "2026-06-10",
+  "paper_date": "2026-06-09",
   "generated_at": "2026-06-10",
   "cards": [
     {
       "id": "ai-260610",
       "domain": "ai",
       "day": "2026-06-10",
-      "author": "Jiarui Yao, Xiangxin Zhou, Penghui Qi et al.",
-      "ref": "arXiv:2606.09821v1",
-      "url": "https://arxiv.org/abs/2606.09821v1",
+      "author": "Yutong Bian, Dongjie Cheng, Heming Xia et al.",
+      "ref": "arXiv:2606.09585",
+      "url": "https://arxiv.org/abs/2606.09585",
       "color": "#667eea",
-      "illus": "<svg viewBox='0 0 340 160' xmlns='http://www.w3.org/2000/svg'><rect width='340' height='160' fill='#1a1a2e'/><circle cx='80' cy='80' r='48' fill='none' stroke='#667eea' stroke-width='2.5' stroke-dasharray='6 3'/><circle cx='80' cy='80' r='28' fill='#667eea' opacity='0.25'/><circle cx='80' cy='80' r='12' fill='#667eea' opacity='0.7'/><text x='80' y='145' text-anchor='middle' fill='#a0a8f0' font-size='10' font-family='sans-serif'>Policy</text><circle cx='220' cy='80' r='48' fill='none' stroke='#f093fb' stroke-width='2.5' stroke-dasharray='6 3'/><circle cx='220' cy='80' r='28' fill='#f093fb' opacity='0.18'/><circle cx='220' cy='80' r='12' fill='#f093fb' opacity='0.6'/><text x='220' y='145' text-anchor='middle' fill='#f0a8fb' font-size='10' font-family='sans-serif'>Reference</text><line x1='132' y1='80' x2='168' y2='80' stroke='#ffd700' stroke-width='2'/><polygon points='168,74 180,80 168,86' fill='#ffd700'/><polygon points='132,74 120,80 132,86' fill='#ffd700'/><text x='150' y='70' text-anchor='middle' fill='#ffd700' font-size='9' font-family='sans-serif'>KL div</text><rect x='255' y='30' width='60' height='18' rx='5' fill='#43e97b' opacity='0.85'/><text x='285' y='43' text-anchor='middle' fill='#1a1a2e' font-size='9' font-weight='bold' font-family='sans-serif'>Trust Zone</text><line x1='285' y1='48' x2='255' y2='70' stroke='#43e97b' stroke-width='1.5' stroke-dasharray='3 2'/></svg>",
       "title": {
-        "zh-TW": "重新思考大型語言模型強化學習中的散度正則化",
-        "en": "Rethinking Divergence Regularization in LLM Reinforcement Learning",
-        "zh-CN": "重新思考大型语言模型强化学习中的散度正则化",
-        "ja": "LLM強化学習における発散正則化の再考",
-        "ko": "LLM 강화학습의 발산 정규화 재고찰"
+        "zh-TW": "用圖像來「思考」：AI 拋棄文字推理，改以畫面作為思考的語言",
+        "en": "Thinking in Pictures: AI Ditches Text and Reasons Entirely Through Images",
+        "zh-CN": "用图像来「思考」：AI 抛弃文字推理，改以画面作为思考的语言",
+        "ja": "「画像で考える」：AIがテキスト推論を捨てて画像だけで思考する",
+        "ko": "「그림으로 생각하기」: AI가 텍스트를 버리고 이미지만으로 추론하다"
       },
       "tag": {
         "zh-TW": "🤖 人工智慧",
-        "en": "🤖 AI",
+        "en": "🤖 Artificial Intelligence",
         "zh-CN": "🤖 人工智能",
-        "ja": "🤖 AI",
-        "ko": "🤖 AI"
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
       },
       "tech": {
-        "zh-TW": "本論文指出，PPO 與 GRPO 等主流 LLM 強化學習方法以「重要性比率裁剪」近似信任域控制，但在長尾詞彙分佈下此比率無法準確反映策略偏移程度。作者分析以 KL 散度為基礎的遮罩機制（如 DPPO）如何更直接地量化分佈差異，並系統性地重新設計散度正則化策略，以提升訓練穩定性與最終模型性能。",
-        "en": "This paper argues that mainstream LLM RL methods like PPO and GRPO approximate trust-region control via importance-ratio clipping, which poorly captures distributional shift in long-tailed token vocabularies. The authors analyze divergence-based masking approaches (e.g., DPPO) that replace ratio clipping with direct KL divergence measurement. They systematically rethink and redesign divergence regularization to achieve more stable and effective LLM post-training.",
-        "zh-CN": "本文指出，PPO 与 GRPO 等主流 LLM 强化学习方法以「重要性比率裁剪」近似信任域控制，但在长尾词汇分布下该比率难以准确反映策略偏移。作者分析以 KL 散度为基础的掩码机制（如 DPPO）如何更直接地量化分布差异，并系统性地重新设计散度正则化策略以提升训练稳定性与模型性能。",
-        "ja": "本論文は、PPOやGRPOなどの主流LLM強化学習手法が重要度比率クリッピングで信頼域制御を近似しているが、長尾語彙分布では分布シフトを正確に捉えられないと指摘する。著者らはKLダイバージェンスに基づくマスク機構（DPPOなど）を分析し、発散正則化を体系的に再設計することで学習安定性と性能向上を図る。",
-        "ko": "본 논문은 PPO와 GRPO 같은 주류 LLM 강화학습 방법이 중요도 비율 클리핑으로 신뢰 영역을 근사하지만, 긴 꼬리 어휘 분포에서 정책 이동을 정확히 반영하지 못한다고 지적한다. 저자들은 KL 발산 기반 마스킹 메커니즘(DPPO 등)을 분석하고, 발산 정규화를 체계적으로 재설계하여 학습 안정성과 모델 성능을 개선한다."
+        "zh-TW": "本研究提出「光學推理」（Optical Reasoning）框架，以圖像作為大型多模態語言模型（MLLM）的獨立推理媒介。研究者實作了兩種變體：以版面最佳化呈現文字理由的「印刷型光學推理」，以及將文字與圖形元素組合成結構化視覺理由的「圖形型光學推理」。在數學、科學及跨模態推理基準上，光學推理在語言任務中平均減少 28.57% 的推理 token 用量、在多模態任務中減少 16%，達到文字推理 1.96 倍的 token 效率，且在多項測試中勝過或匹敵傳統文字推理鏈（CoT）。",
+        "en": "The paper proposes Optical Reasoning, a framework that treats images as a standalone reasoning medium for large multimodal language models. Two variants are introduced: typographic-based optical reasoning, which optimizes visual layouts for compact rationale rendering, and graphical-based optical reasoning, which composes text and graphical elements into structured visual rationales. On mathematical, scientific, and interleaved-modal benchmarks, optical reasoning reduces reasoning tokens by an average of 28.57% on language tasks and 16% on multimodal tasks, achieving 1.96 times the token efficiency of text-based chain-of-thought while matching or exceeding its accuracy.",
+        "zh-CN": "本研究提出「光学推理」（Optical Reasoning）框架，以图像作为大型多模态语言模型的独立推理媒介。研究者实现了两种变体：印刷型光学推理（优化视觉布局以紧凑呈现文字理由）和图形型光学推理（将文字与图形元素组合成结构化视觉理由）。在数学、科学及跨模态推理基准上，光学推理在语言任务中平均减少 28.57% 的推理 token 用量，达到文字推理 1.96 倍的 token 效率。",
+        "ja": "本研究は大型マルチモーダル言語モデルに画像を独立した推論媒体として用いる「光学推論（Optical Reasoning）」フレームワークを提案する。印刷型（テキスト理由を視覚レイアウトで最適化）とグラフィカル型（テキストとグラフィック要素を構造化ビジュアル理由に合成）の2種類を実装し、数学・科学・跨モーダル推論ベンチマークで言語タスクのトークン量を平均28.57%削減しつつ、テキストCoTの1.96倍のトークン効率を達成した。",
+        "ko": "이 연구는 대형 멀티모달 언어 모델에서 이미지를 독립적인 추론 매체로 사용하는 「광학 추론(Optical Reasoning)」 프레임워크를 제안한다. 인쇄형(텍스트 근거의 시각적 레이아웃 최적화)과 그래픽형(텍스트와 그래픽 요소를 구조화된 시각적 근거로 조합)의 두 가지 변형을 구현했으며, 수학·과학·교차 모달 추론 벤치마크에서 언어 태스크 추론 토큰을 평균 28.57% 줄이고 텍스트 CoT 대비 1.96배의 토큰 효율을 달성했다."
       },
       "plain": {
-        "zh-TW": "想像你正在訓練一隻導盲犬：每次牠做對了，就給獎勵；做錯了，就修正。但問題是，如果每次修正的幅度太大，牠會完全忘記之前學會的東西。AI 語言模型的強化學習也面臨同樣困境——我們希望模型越變越好，但又不能讓它一次改變太多、偏離原本的樣子。現在主流的方法（PPO、GRPO）是用一個「比例尺」來控制改變的幅度，就像說「這次最多只能進步 20%」。但這把比例尺在語言模型面對罕見詞彙時會失靈，因為罕見詞的概率極小，比例變化看起來不大，實際上模型已經「跑偏」很遠了。這篇論文提出應該改用「KL 散度」這把更精準的量尺——它直接測量兩個分佈之間的真實距離，就像用 GPS 定位取代目測估算。這樣才能真正確保模型在學習新技能的同時，不會忘記原有的語言能力，讓 ChatGPT 這類 AI 的訓練更穩定、更可靠。",
-        "en": "Imagine training a dog with treats: reward good behavior, correct bad behavior — but if you correct too harshly all at once, the dog forgets everything it learned before. Training AI language models with reinforcement learning faces the same challenge: we want the model to improve, but it mustn't change too drastically in one step. Current popular methods like PPO and GRPO use a 「ratio ruler」 — essentially saying 「you can only change up to 20% this round.」 But this ruler breaks down for rare words, where tiny probability values make the ratio look fine even when the model has actually drifted far off course. This paper proposes using 「KL divergence」 as a more accurate measuring tape — it directly measures the true distance between two probability distributions, like switching from eyeballing a distance to using GPS. This ensures AI models can learn new skills without forgetting their existing language abilities, making post-training of models like ChatGPT more stable and reliable.",
-        "zh-CN": "想象你在训练一只导盲犬：做对了给奖励，做错了纠正。但如果每次纠正幅度太大，它会忘记之前学会的一切。AI 语言模型的强化学习也面临同样困境——我们希望模型越来越好，但不能让它一次改变太多、偏离原本的样子。现在主流方法（PPO、GRPO）用一把「比例尺」控制变化幅度，就像说「这次最多进步 20%」。但这把尺在面对罕见词汇时会失灵，因为罕见词的概率极小，比例看起来变化不大，实际上模型已经「跑偏」很远了。本文提出改用「KL 散度」这把更精准的量尺——它直接测量两个分布之间的真实距离，就像用 GPS 替代目测估算。这样才能真正确保模型在学习新技能的同时不忘原有语言能力，让 ChatGPT 类 AI 的训练更稳定可靠。",
-        "ja": "盲導犬を訓練することを想像してください。良い行動にはご褒美を、悪い行動には修正を与えます。でも一度に大きく修正しすぎると、犬はそれまで学んだことをすべて忘れてしまいます。AIの言語モデルを強化学習で訓練する場合も同じ問題があります。モデルを改善したいけれど、一度に大きく変えすぎると元の能力を失ってしまう。現在の主流手法（PPO・GRPO）は「比率ものさし」で変化幅を制御しますが、稀な単語では確率値が極小なため、実際には大きくずれていても比率上は正常に見えてしまいます。この論文は「KLダイバージェンス」という精密な物差しへの切り替えを提案します。これは目測の代わりにGPSを使うように、二つの分布間の真の距離を直接測ります。これにより、ChatGPTのようなAIがより安定して確実に学習できるようになります。",
-        "ko": "안내견을 훈련하는 상황을 상상해보세요. 잘하면 보상을, 잘못하면 교정을 줍니다. 하지만 한 번에 너무 크게 교정하면 이전에 배운 모든 것을 잊어버립니다. AI 언어 모델의 강화학습도 똑같은 문제가 있어요. 모델을 개선하고 싶지만, 한 번에 너무 많이 바뀌면 원래 능력을 잃게 됩니다. 현재 주류 방법(PPO, GRPO)은 「비율 자」를 사용해 변화 폭을 제어하는데, 드문 단어에서는 확률값이 매우 작아서 실제로는 크게 벗어났어도 비율상으로는 괜찮아 보입니다. 이 논문은 「KL 발산」이라는 더 정밀한 자로의 전환을 제안합니다. 눈대중 대신 GPS를 쓰듯이 두 분포 사이의 실제 거리를 직접 측정하죠. 이를 통해 ChatGPT 같은 AI 훈련이 더 안정적이고 신뢰할 수 있게 됩니다."
+        "zh-TW": "我們通常認為「思考」是用文字進行的——大腦裡浮現句子，語言模型輸出一串文字推理鏈。這篇研究提出了一個大膽的問題：如果把「文字思考」換成「圖像思考」，結果會更好嗎？研究者讓 AI 把推理過程畫成圖——不是將答案畫出來，而是把思考過程用視覺方式排列，例如把數學步驟排成整齊的格狀圖表，或是把邏輯關係畫成流程圖。這樣做有個意外的好處：圖像比文字「密集」，同樣面積可以放更多資訊，所以推理用的計算量更少了。在數學和科學題目上，「圖像推理」用的計算資源比文字少了將近 30%，速度幾乎快了兩倍，而且答對率不輸給甚至超過文字推理。這個研究翻轉了一個長期假設：我們一直認為語言是最自然的思考媒介，但也許圖像才是更有效率的「思維空間」。",
+        "en": "We always assumed that thinking happens in words — sentences forming in our minds, language models outputting long text chains. This paper asks a bold question: what if AI reasoned entirely in images instead? The researchers had AI draw its reasoning process rather than write it — arranging mathematical steps into visual grids, mapping logic as flowcharts, laying out evidence as structured pictures. The surprise payoff: images pack more information per unit than text, so the AI uses nearly 30% less computation on math and science problems while matching or beating the accuracy of text-based reasoning. This challenges a long-held assumption that language is the natural medium for thought — images might actually be a more efficient space to think.",
+        "zh-CN": "我们一直认为「思考」是用文字进行的——大脑里浮现句子，语言模型输出文字推理链。这篇研究提出了一个大胆问题：如果把「文字思考」换成「图像思考」呢？研究者让 AI 把推理过程「画出来」——把数学步骤排成视觉表格、把逻辑关系画成流程图。意外的好处是图像比文字更密集，同样面积能放更多信息，推理计算量减少了近 30%，速度几乎快了两倍，答题正确率不输甚至超过文字推理。这颠覆了语言是最自然思考媒介的长期假设。",
+        "ja": "私たちはずっと「考えること＝言葉で行うこと」だと思ってきた。頭の中に文が浮かび、言語モデルは長いテキストの推論チェーンを出力する。この研究はその前提に挑む：AIがテキストの代わりに画像だけで推論したらどうなるか？研究者たちはAIに数学の手順を視覚的なグリッドに配置させ、論理関係をフローチャートで描かせた。驚くべき副産物として、画像はテキストより密度が高く同じ面積により多くの情報を詰め込めるため、数学・科学問題での計算量が約30%削減されつつ正確さはテキスト推論と同等以上になった。言語が思考の自然な媒体という長年の前提が覆されるかもしれない。",
+        "ko": "우리는 늘 「생각은 언어로 한다」고 여겨왔습니다. 머릿속에 문장이 떠오르고, 언어 모델은 긴 텍스트 추론 체인을 출력하죠. 이 연구는 대담한 질문을 던집니다: AI가 텍스트 대신 이미지만으로 추론하면 어떨까? 연구자들은 AI가 수학 단계를 시각적 그리드로 배열하고, 논리 관계를 순서도로 그리게 했습니다. 놀라운 부수효과로, 이미지는 텍스트보다 정보 밀도가 높아 같은 면적에 더 많은 정보를 담을 수 있으므로 수학·과학 문제에서 계산량이 약 30% 감소하면서도 정확도는 텍스트 추론과 같거나 더 높았습니다. 언어가 생각의 자연스러운 매체라는 오랜 가정이 흔들리고 있습니다."
       },
       "insight": {
-        "zh-TW": "💡 衡量「改變了多少」不能只看表面比例——真正重要的是機率分佈之間的實質距離，這個道理在 AI 訓練與人類學習中同樣適用。",
-        "en": "💡 Measuring 「how much has changed」 requires looking beyond surface ratios — what truly matters is the actual distance between probability distributions, a principle as relevant to AI training as to human learning.",
-        "zh-CN": "💡 衡量「改变了多少」不能只看表面比例——真正重要的是概率分布之间的实质距离，这个道理在 AI 训练与人类学习中同样适用。",
-        "ja": "💡 「どれだけ変わったか」を測るには表面的な比率だけでなく、確率分布間の本質的な距離を見ることが重要——これはAI訓練にも人間の学習にも共通する原理だ。",
-        "ko": "💡 「얼마나 변했는가」를 측정할 때 표면적인 비율만 보아서는 안 된다 — 진정으로 중요한 것은 확률 분포 간의 실질적 거리이며, 이는 AI 훈련과 인간 학습 모두에 적용되는 원리다."
-      }
+        "zh-TW": "💡 語言不是思考唯一的家——當 AI 學會用圖像「想事情」，它不只是換了個工具，而是找到了一種更密集、更高效的思維空間。",
+        "en": "💡 Language is not the only home for thought — when AI learns to reason in images, it is not just switching tools but discovering a denser and more efficient space to think.",
+        "zh-CN": "💡 语言不是思考唯一的家——当 AI 学会用图像「想事情」，它不只是换了个工具，而是找到了一种更密集、更高效的思维空间。",
+        "ja": "💡 言語は思考の唯一の住処ではない——AIが画像で「考える」ことを学んだとき、それは道具を替えたのではなく、より密度が高く効率的な思考空間を発見したのだ。",
+        "ko": "💡 언어가 생각의 유일한 집은 아니다—AI가 이미지로 「생각하는」 법을 배울 때, 도구를 바꾼 것이 아니라 더 밀도 있고 효율적인 사고 공간을 발견한 것이다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#667eea18\"/><rect x=\"20\" y=\"30\" width=\"130\" height=\"100\" rx=\"10\" fill=\"none\" stroke=\"#667eea\" stroke-width=\"2.5\"/><text x=\"30\" y=\"52\" font-size=\"9\" fill=\"#667eea\" font-weight=\"bold\">Step 1</text><rect x=\"28\" y=\"58\" width=\"50\" height=\"14\" rx=\"3\" fill=\"#667eea\" opacity=\"0.3\"/><text x=\"30\" y=\"68\" font-size=\"8\" fill=\"#333\">x² + 2x</text><text x=\"30\" y=\"85\" font-size=\"9\" fill=\"#667eea\" font-weight=\"bold\">Step 2</text><rect x=\"28\" y=\"90\" width=\"65\" height=\"14\" rx=\"3\" fill=\"#667eea\" opacity=\"0.25\"/><text x=\"30\" y=\"100\" font-size=\"8\" fill=\"#333\">= (x+1)² - 1</text><text x=\"30\" y=\"117\" font-size=\"9\" fill=\"#667eea\" font-weight=\"bold\">→ min at x=-1</text><line x1=\"165\" y1=\"80\" x2=\"190\" y2=\"80\" stroke=\"#888\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><text x=\"167\" y=\"75\" font-size=\"8\" fill=\"#888\">vs</text><rect x=\"195\" y=\"30\" width=\"125\" height=\"100\" rx=\"10\" fill=\"#667eea\" opacity=\"0.12\"/><text x=\"205\" y=\"55\" font-size=\"8\" fill=\"#555\">x² + 2x = (x+1)² - 1</text><line x1=\"205\" y1=\"65\" x2=\"310\" y2=\"65\" stroke=\"#667eea\" stroke-width=\"1\" opacity=\"0.5\"/><circle cx=\"230\" cy=\"110\" r=\"18\" fill=\"none\" stroke=\"#e53e3e\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"110\" r=\"5\" fill=\"#e53e3e\" opacity=\"0.8\"/><text x=\"252\" y=\"95\" font-size=\"8\" fill=\"#667eea\">min</text><line x1=\"248\" y1=\"97\" x2=\"237\" y2=\"106\" stroke=\"#667eea\" stroke-width=\"1.5\"/><text x=\"200\" y=\"140\" font-size=\"8\" fill=\"#667eea\" font-weight=\"bold\">圖像推理 −29%</text></svg>"
     },
     {
-      "id": "bio-260610",
-      "domain": "bio",
+      "id": "robot-260610",
+      "domain": "robot",
       "day": "2026-06-10",
-      "author": "Mikele Milia, Louis Fabrice Tshimanga et al.",
-      "ref": "arXiv:2606.09558v1",
-      "url": "https://arxiv.org/abs/2606.09558v1",
-      "color": "#48bb78",
+      "author": "Yunhai Han, Jianuo Qiu, Linhao Bai et al.",
+      "ref": "arXiv:2606.08828",
+      "url": "https://arxiv.org/abs/2606.08828",
+      "color": "#68d391",
       "title": {
-        "zh-TW": "把基因調控知識「內建」進 AI：scTransformer 讓單細胞基因分析更聰明、更可解釋",
-        "en": "Wiring Gene Regulatory Knowledge into AI: scTransformer Makes Single-Cell Gene Analysis Smarter and More Interpretable",
-        "zh-CN": "把基因调控知识「内建」进 AI：scTransformer 让单细胞基因分析更聪明、更可解释",
-        "ja": "遺伝子制御の知識を AI に「組み込む」：scTransformer で単一細胞解析をより賢く・解釈可能に",
-        "ko": "유전자 조절 지식을 AI에 '내장'하다：scTransformer로 단세포 유전자 분석을 더 스마트하고 해석 가능하게"
+        "zh-TW": "機器人看一部影片就學會精細手部動作：Video2Sim2Real 的全流程技能習得",
+        "en": "One Human Video Is All It Takes: Robots Learn Dexterous Skills with Video2Sim2Real",
+        "zh-CN": "机器人看一段视频就学会精细手部动作：Video2Sim2Real 的全流程技能习得",
+        "ja": "人間の動画1本でロボットが精巧な手技を習得：Video2Sim2Realの全工程スキル獲得",
+        "ko": "영상 하나로 정교한 손기술 습득：Video2Sim2Real의 전과정 기술 학습"
       },
       "tag": {
-        "zh-TW": "🧬 生命科學",
-        "en": "🧬 Life Science",
-        "zh-CN": "🧬 生命科学",
-        "ja": "🧬 生命科学",
-        "ko": "🧬 생명과학"
+        "zh-TW": "🤖 機器人學",
+        "en": "🤖 Robotics",
+        "zh-CN": "🤖 机器人학",
+        "ja": "🤖 ロボット工学",
+        "ko": "🤖 로보틱스"
       },
       "tech": {
-        "zh-TW": "scTransformer 是首個將基因調控先驗知識（如轉錄因子與目標基因的調控關係）直接編碼進 Transformer 注意力機制的單細胞 RNA 定序分析模型。透過在自監督預訓練中引入已知的基因調控網路作為結構偏置，模型不再把每個基因視為互相獨立的特徵，而是能感知基因之間的生物學關聯。這使得模型在細胞類型分類、基因擾動預測等下游任務上同時提升了性能與可解釋性。",
-        "en": "scTransformer is the first Transformer-based model that encodes gene regulatory prior knowledge—such as transcription factor–target gene relationships—directly into the attention mechanism for single-cell RNA sequencing analysis. By incorporating known gene regulatory networks as structural biases during self-supervised pretraining, the model treats genes not as independent features but as biologically interconnected entities. This simultaneously improves performance on downstream tasks such as cell-type classification and gene perturbation prediction, while enhancing interpretability.",
-        "zh-CN": "scTransformer 是首个将基因调控先验知识（如转录因子与靶基因的调控关系）直接编码进 Transformer 注意力机制的单细胞 RNA 测序分析模型。通过在自监督预训练中引入已知基因调控网络作为结构偏置，模型不再将每个基因视为相互独立的特征，而是能感知基因之间的生物学关联。这使模型在细胞类型分类、基因扰动预测等下游任务上同时提升了性能与可解释性。",
-        "ja": "scTransformer は、転写因子と標的遺伝子の調節関係などの遺伝子制御事前知識を Transformer のアテンション機構に直接組み込んだ、単一細胞 RNA シーケンス解析における初のモデルです。既知の遺伝子制御ネットワークを自己教師あり事前学習の構造的バイアスとして導入することで、遺伝子を独立した特徴としてではなく生物学的に相互連関したものとして扱います。これにより、細胞タイプ分類や遺伝子摂動予測などのタスクで性能と解釈可能性が同時に向上します。",
-        "ko": "scTransformer는 전사인자와 표적 유전자의 조절 관계 등 유전자 조절 사전 지식을 Transformer 어텐션 메커니즘에 직접 인코딩한 최초의 단세포 RNA 시퀀싱 분석 모델입니다. 알려진 유전자 조절 네트워크를 자기지도 사전훈련의 구조적 편향으로 활용하여, 유전자를 독립적인 특징이 아닌 생물학적으로 연결된 존재로 처리합니다. 이를 통해 세포 유형 분류 및 유전자 교란 예측 등 다운스트림 작업에서 성능과 해석 가능성이 동시에 향상됩니다."
+        "zh-TW": "Video2Sim2Real 是一個從單一人類操作影片自主習得靈巧技能的全流程框架。系統先使用現成基礎模型從影片重建數位雙胞胎模擬器，並提取機器手臂與物體的運動先驗。核心創新在於辨識「物體中心關鍵幀」，以物件資訊優化對應的機器人構型，用這些構型作為錨點修正機器人運動，確保其對環境產生正確影響。接著透過模仿學習（IL）從嘈雜點雲中重新校準構型、透過殘差強化學習（RL）進行手指級局部微調，以及碰撞感知的運動規劃實現空間泛化。",
+        "en": "Video2Sim2Real is a full-stack framework for autonomous dexterous skill acquisition from a single human manipulation video. Using off-the-shelf foundation models, it reconstructs a simulator-ready digital twin and extracts robot and object motion priors. The core innovation is identifying object-centric keyframes to optimize corresponding robot configurations using object information from the simulator, using these configurations as anchors to refine robot motion. Imitation learning then recalibrates robot configurations from noisy real-world point clouds, residual RL performs finger-level local adaptation, and collision-aware motion planning enables spatial generalization to novel object arrangements.",
+        "zh-CN": "Video2Sim2Real 是一个从单一人类操作视频自主习得灵巧技能的全流程框架。系统先用现成基础模型重建数字孪生模拟器并提取运动先验，核心创新是识别「物体中心关键帧」来优化机器人构型，以这些构型为锚点修正机器人运动。再通过模仿学习从嘈杂点云中重新校准构型、残差强化学习进行手指级微调，以及碰撞感知运动规划实现空间泛化。",
+        "ja": "Video2Sim2Realは単一の人間操作動画から自律的に巧みな技能を習得するフルスタックフレームワークだ。既製の基盤モデルを用いてシミュレータ用デジタルツインを再構築し、動作事前分布を抽出する。中核的な革新は「物体中心キーフレーム」の特定によりシミュレータの物体情報を使ってロボット構成を最適化し、これらをアンカーにロボット動作を補正することにある。その後模倣学習（IL）でノイズの多い実世界の点群から構成を再キャリブレーションし、残差RL（強化学習）で指レベルの局所適応を行い、衝突回避型運動計画で空間汎化を実現する。",
+        "ko": "Video2Sim2Real은 단일 인간 조작 영상에서 자율적으로 정교한 기술을 습득하는 전과정 프레임워크다. 기성 기반 모델을 사용해 시뮬레이터용 디지털 트윈을 재구성하고 동작 사전 정보를 추출한다. 핵심 혁신은 「물체 중심 키프레임」을 식별해 시뮬레이터의 물체 정보로 로봇 구성을 최적화하고 이를 앵커로 로봇 동작을 수정하는 것이다. 이후 모방 학습(IL)으로 실세계 포인트 클라우드에서 구성을 재보정하고, 잔차 RL로 손가락 수준의 국소 적응을 수행하며, 충돌 인식 동작 계획으로 공간 일반화를 달성한다."
       },
       "plain": {
-        "zh-TW": "想像你要分析一座城市裡每棟建築的用電量，來推斷裡面住的是哪種居民。現有的 AI 模型就像只看每棟樓的電費單，完全不知道「這條街的建築彼此相連、共用一條主幹電路」。基因也是一樣——細胞裡的基因並非各自獨立運作，而是有一套「誰管誰、誰影響誰」的調控網路，就像公司裡的組織架構圖。scTransformer 做的事，是把這張「基因公司組織圖」直接塞進 AI 的注意力機制裡，讓 AI 在學習數百萬顆細胞的基因表現資料時，從一開始就「知道」哪些基因之間有上下游關係。結果是：AI 不只預測得更準，還能告訴你「它做決定時，參考了哪些基因調控關係」，這對科學家找出疾病成因、設計新藥靶點至關重要。這就像讓偵探不僅能說出兇手是誰，還能完整重現整個犯罪鏈，而不只是靠直覺猜測。",
-        "en": "Imagine trying to figure out who lives in each building of a city just by looking at electricity bills—without knowing that buildings on the same street share a power grid. That's how most AI models analyze genes: they treat each gene as a standalone data point, ignoring the fact that genes form a complex web of 「who controls whom.」 Inside every cell, certain genes act like managers—called transcription factors—that switch other genes on or off. scTransformer is the first AI model to bake this 「corporate org chart of genes」 directly into its attention mechanism, so when it learns from millions of cells, it already 「knows」 which genes are upstream or downstream of each other. The result: the model is not only more accurate but can also explain its reasoning by pointing to specific regulatory relationships—crucial for scientists hunting for disease causes or designing new drug targets. It's the difference between a detective who just names a suspect and one who reconstructs the entire chain of events.",
-        "zh-CN": "想象一下，你要通过查看每栋楼的电费单来推断城市里每栋建筑住的是什么人，却完全不知道同一条街的建筑共用一条主干电路。现有的大多数 AI 模型分析基因时就是这样：把每个基因当作独立数据点，忽视了基因之间「谁管谁、谁影响谁」的调控网络。细胞里有一类叫转录因子的基因，就像公司里的管理层，负责开启或关闭其他基因。scTransformer 把这张「基因组织架构图」直接内置进 AI 的注意力机制，让模型在学习数百万个细胞的数据时，从一开始就「知道」基因之间的上下游关系。结果不仅预测更准确，AI 还能解释自己的决策依据，对科学家找病因、设计新药靶点至关重要。这就像侦探不只说出嫌疑人，还能还原整个犯罪链条。",
-        "ja": "街中の建物の電気代だけを見て、誰が住んでいるかを推測しようとする場面を想像してください。同じ通りの建物が同じ幹線を共有していることを知らずに。既存の AI モデルのほとんどは遺伝子をそのように扱っています——遺伝子を独立したデータ点として見て、「誰が誰を制御するか」というネットワークを無視しているのです。細胞の中では、転写因子と呼ばれる遺伝子が管理職のように他の遺伝子をオン・オフします。scTransformer はこの「遺伝子の組織図」を AI のアテンション機構に直接組み込んだ初のモデルで、数百万の細胞から学習する際に遺伝子間の上流・下流関係を最初から「知っている」状態にします。その結果、予測精度が上がるだけでなく、AI が「どの調節関係を参照して判断したか」を説明できるようになり、疾患原因の解明や新薬ターゲットの設計に不可欠です。",
-        "ko": "도시의 각 건물에 누가 사는지 전기 요금 고지서만 보고 추론하는 상황을 상상해보세요. 같은 거리의 건물들이 하나의 간선 전력망을 공유한다는 사실은 모른 채로요. 기존 AI 모델 대부분이 유전자를 이렇게 다룹니다. 각 유전자를 독립적인 데이터 포인트로 취급하고 「누가 누구를 조절하는가」라는 네트워크를 무시하죠. 세포 안에서 전사인자라 불리는 유전자들은 회사의 관리자처럼 다른 유전자를 켜거나 끕니다. scTransformer는 이 「유전자 조직도」를 AI의 어텐션 메커니즘에 직접 내장한 최초의 모델로, 수백만 개의 세포 데이터를 학습할 때 처음부터 유전자 간 상하류 관계를 「알고」 있는 상태가 됩니다. 그 결과 예측 정확도가 높아질 뿐 아니라 AI가 자신의 판단 근거를 설명할 수 있어, 질병 원인 규명과 신약 타깃 설계에 매우 중요합니다."
+        "zh-TW": "教機器人做事情有多難？通常工程師需要花幾個月，錄製幾百次示範、反覆調試程式，機器人才能學會把一個杯子從桌上拿起來放進袋子裡。Video2Sim2Real 想打破這個瓶頸：讓機器人只看一部「人類示範影片」就能學會一個新動作，而且全程自動。它先把影片裡的場景「翻譯」成電腦模擬的虛擬環境，在裡面練習到夠好了，再把技能「搬」到真實的機械手臂上。最難的部分是從影片到模擬，再從模擬到現實，每一步都有誤差。研究者的巧思是先找出動作中最關鍵的「抓住的那一刻」，以物體的實際位置去修正機器人的每個手指應該在哪裡。這樣訓練出來的機器人，在幾種日常操作任務中都做得比以前的方法更穩、更準。",
+        "en": "Teaching a robot to handle objects usually takes months of engineering, hundreds of demonstrations, and painstaking code. Video2Sim2Real wants to break that bottleneck: show the robot just one video of a human doing the task, and it learns to replicate it, entirely on its own. The system translates the video into a virtual simulation, practices there until it is good enough, then transfers the skill to a real robotic arm. The trickiest step is bridging video to simulation, then simulation to reality — each jump introduces errors. The researchers insight was to identify the critical keyframes where the hand meets the object, then use the object actual position in the simulator to precisely recalibrate where each robot finger should be at each moment. The result outperforms previous methods across several everyday manipulation tasks.",
+        "zh-CN": "教机器人做事通常需要几个月工程工作、数百次示范和反复调试。Video2Sim2Real 想打破这个瓶颈：让机器人只看一部人类示范视频就学会新动作，全程自动。系统先把视频翻译成虚拟仿真环境，在里面练习够了再迁移到真实机械手。最难的部分是从视频到模拟、再从模拟到现实的每步误差传递。研究者的巧思是找出「手接触物体的关键帧」，用模拟器中物体的真实位置精确校正每根机械手指的位置，在多个日常操作任务上超越了以往方法。",
+        "ja": "ロボットに物の扱い方を教えるには通常、数か月の作業、何百回もの実演、そして繰り返しのデバッグが必要だ。Video2Sim2Realはそのボトルネックを打破したい：人間が作業する動画を1本見せるだけでロボットが自律的にその動作を習得できるようにする。システムは動画を仮想シミュレーション環境に変換し、そこで十分に練習した後、技能を実際のロボットアームに転送する。最も難しいのは動画→シミュレーション→現実への各移行で生じる誤差だ。研究者のアイデアは「手が物体に接触する重要キーフレーム」を特定し、シミュレータ内の物体の実際の位置を使って各ロボット指の位置を精密に補正することだった。複数の日常的な操作タスクで従来手法を上回る成果を示した。",
+        "ko": "로봇에게 물체 다루는 법을 가르치려면 보통 수개월의 엔지니어링, 수백 번의 시연, 반복적인 디버깅이 필요합니다. Video2Sim2Real은 그 병목을 깨고 싶습니다: 사람이 작업하는 영상 하나만 보여주면 로봇이 스스로 그 동작을 배울 수 있게 하는 것이죠. 시스템은 영상을 가상 시뮬레이션으로 변환해 충분히 연습한 후 실제 로봇팔로 기술을 이전합니다. 가장 어려운 부분은 영상→시뮬레이션→현실 각 단계에서 발생하는 오차입니다. 연구자들의 아이디어는 「손이 물체와 접촉하는 핵심 키프레임」을 찾아내고 시뮬레이터의 실제 물체 위치를 사용해 각 로봇 손가락 위치를 정밀 보정하는 것이었습니다. 여러 일상적인 조작 과제에서 기존 방법을 뛰어넘었습니다."
       },
       "insight": {
-        "zh-TW": "💡 讓 AI 學習生物學「已知的規則」，不只是讓它看更多資料——把先驗知識結構化地植入模型，才是讓 AI 真正理解生命而非只是記憶模式的關鍵一步。",
-        "en": "💡 Feeding AI more data is not enough—structurally embedding what biology already knows into the model is the key step toward AI that truly understands life rather than merely memorizing patterns.",
-        "zh-CN": "💡 让 AI 学习生物学「已知的规则」，而不只是给它看更多数据——将先验知识结构化地植入模型，才是让 AI 真正理解生命而非仅仅记忆模式的关键一步。",
-        "ja": "💡 AI により多くのデータを与えるだけでは不十分——生物学がすでに知っているルールをモデルに構造的に組み込むことこそ、AI が単なるパターン記憶を超えて生命を真に理解するための重要な一歩です。",
-        "ko": "💡 AI에 더 많은 데이터를 주는 것만으로는 부족합니다——생물학이 이미 알고 있는 규칙을 모델에 구조적으로 내장하는 것이야말로 AI가 단순한 패턴 암기를 넘어 생명을 진정으로 이해하는 핵심 단계입니다."
+        "zh-TW": "💡 機器人模仿的最大難關不是「動作」，而是「接觸瞬間」——抓住那一刻的精確度，決定了技能能不能從影片遷移到現實。",
+        "en": "💡 The hardest moment in robot imitation is not the motion itself but the instant of contact — getting that split second right is what determines whether a skill transfers from video to reality.",
+        "zh-CN": "💡 机器人模仿的最大难关不是「动作」，而是「接触瞬间」——抓住那一刻的精确度，决定了技能能否从视频迁移到现实。",
+        "ja": "💡 ロボット模倣の最大の難関は「動き」ではなく「接触の瞬間」だ——その一瞬の精度が、技能が動画から現実に転送できるかどうかを決める。",
+        "ko": "💡 로봇 모방의 가장 큰 난관은 「동작」이 아니라 「접촉 순간」이다——그 찰나의 정확도가 기술이 영상에서 현실로 이전될 수 있는지를 결정한다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#48bb7818\"/>\n<rect x=\"20\" y=\"80\" width=\"30\" height=\"50\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<rect x=\"60\" y=\"65\" width=\"30\" height=\"65\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<rect x=\"100\" y=\"75\" width=\"30\" height=\"55\" fill=\"#48bb78\" opacity=\"0.5\"/>\n<line x1=\"20\" y1=\"145\" x2=\"130\" y2=\"145\" stroke=\"#999\" stroke-width=\"2\"/>\n<line x1=\"20\" y1=\"145\" x2=\"130\" y2=\"145\" stroke=\"#e53e3e\" stroke-width=\"0\" opacity=\"0\"/>\n<rect x=\"190\" y=\"80\" width=\"30\" height=\"50\" fill=\"#48bb78\"/>\n<rect x=\"230\" y=\"65\" width=\"30\" height=\"65\" fill=\"#48bb78\"/>\n<rect x=\"270\" y=\"75\" width=\"30\" height=\"55\" fill=\"#48bb78\"/>\n<path d=\"M190 145 Q230 130 300 145\" stroke=\"#48bb78\" stroke-width=\"3\" fill=\"none\"/>\n<line x1=\"190\" y1=\"145\" x2=\"300\" y2=\"145\" stroke=\"#2d3748\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n<circle cx=\"215\" cy=\"145\" r=\"4\" fill=\"#48bb78\"/>\n<circle cx=\"245\" cy=\"136\" r=\"4\" fill=\"#48bb78\"/>\n<circle cx=\"275\" cy=\"141\" r=\"4\" fill=\"#48bb78\"/>\n<line x1=\"155\" y1=\"80\" x2=\"175\" y2=\"80\" stroke=\"#2d3748\" stroke-width=\"2\" marker-end=\"url()\"/>\n<polygon points=\"170,75 182,80 170,85\" fill=\"#2d3748\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#68d39118\"/><rect x=\"18\" y=\"25\" width=\"80\" height=\"55\" rx=\"6\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/><text x=\"26\" y=\"44\" font-size=\"9\" fill=\"#555\" font-weight=\"bold\">👤 Human Video</text><rect x=\"24\" y=\"50\" width=\"68\" height=\"24\" rx=\"4\" fill=\"#68d39130\"/><circle cx=\"44\" cy=\"62\" r=\"7\" fill=\"#e2e8f0\"/><line x1=\"44\" y1=\"55\" x2=\"44\" y2=\"69\" stroke=\"#68d391\" stroke-width=\"2\"/><rect x=\"54\" y=\"58\" width=\"30\" height=\"8\" rx=\"2\" fill=\"#68d391\" opacity=\"0.5\"/><line x1=\"108\" y1=\"52\" x2=\"130\" y2=\"52\" stroke=\"#888\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"110\" y=\"46\" font-size=\"8\" fill=\"#888\">→Sim</text><rect x=\"133\" y=\"25\" width=\"80\" height=\"55\" rx=\"6\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"2\"/><text x=\"140\" y=\"44\" font-size=\"9\" fill=\"#4299e1\" font-weight=\"bold\">🖥 Simulation</text><rect x=\"140\" y=\"50\" width=\"66\" height=\"24\" rx=\"4\" fill=\"#4299e130\"/><circle cx=\"165\" cy=\"62\" r=\"5\" fill=\"#4299e1\" opacity=\"0.8\"/><line x1=\"155\" y1=\"60\" x2=\"162\" y2=\"60\" stroke=\"#4299e1\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"64\" x2=\"177\" y2=\"64\" stroke=\"#4299e1\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"52\" x2=\"247\" y2=\"52\" stroke=\"#888\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"225\" y=\"46\" font-size=\"8\" fill=\"#888\">→Real</text><rect x=\"250\" y=\"25\" width=\"75\" height=\"55\" rx=\"6\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2\"/><text x=\"257\" y=\"44\" font-size=\"9\" fill=\"#68d391\" font-weight=\"bold\">🦾 Real Robot</text><rect x=\"256\" y=\"50\" width=\"63\" height=\"24\" rx=\"4\" fill=\"#68d39130\"/><line x1=\"268\" y1=\"56\" x2=\"279\" y2=\"68\" stroke=\"#68d391\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"284\" y1=\"56\" x2=\"273\" y2=\"68\" stroke=\"#68d391\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"285\" cy=\"62\" r=\"4\" fill=\"#48bb78\" opacity=\"0.8\"/><rect x=\"18\" y=\"95\" width=\"307\" height=\"50\" rx=\"8\" fill=\"#68d39110\"/><text x=\"30\" y=\"113\" font-size=\"9\" fill=\"#555\" font-weight=\"bold\">Key Insight: Object-Centric Keyframe Anchoring</text><text x=\"30\" y=\"130\" font-size=\"8\" fill=\"#555\">找出「接觸瞬間」→ 以物體真實位置精確校正手指位置</text></svg>"
     },
     {
-      "id": "phys-260610",
-      "domain": "phys",
+      "id": "quantum-260610",
+      "domain": "quantum",
       "day": "2026-06-10",
-      "author": "Francesco Cioni, Lorenzo Cavicchi et al.",
-      "ref": "arXiv:2606.09812v1",
-      "url": "https://arxiv.org/abs/2606.09812v1",
-      "color": "#ed8936",
+      "author": "Kimia Mohammadi, Paul J. Godin, Thomas Jennewein",
+      "ref": "arXiv:2606.09805",
+      "url": "https://arxiv.org/abs/2606.09805",
+      "color": "#4299e1",
       "title": {
-        "zh-TW": "扭轉二維材料中的神秘電流漩渦：量子拓撲絕緣體的隱藏渦流地圖",
-        "en": "Whirlpool Currents Hidden in Twisted 2D Materials: Mapping Quantum Topology from the Inside Out",
-        "zh-CN": "扭转二维材料中的神秘电流漩涡：量子拓扑绝缘体的隐藏涡流地图",
-        "ja": "ねじれた2D物質に潜む電流の渦：量子トポロジカル絶縁体の隠れた渦流マップ",
-        "ko": "비틀린 2D 소재 속 신비한 전류 소용돌이：양자 위상 절연체의 숨겨진 와류 지도"
+        "zh-TW": "跨越大西洋的量子糾纏：衛星＋高空平台組合讓全球量子網路成為可能",
+        "en": "Quantum Entanglement Across the Atlantic: Satellites and Stratospheric Relays Make a Global Quantum Internet Viable",
+        "zh-CN": "跨越大西洋的量子纠缠：卫星＋高空平台组合让全球量子网络成为可能",
+        "ja": "大西洋を越える量子もつれ：衛星と成層圏リレーの組み合わせでグローバル量子インターネットが現実に",
+        "ko": "대서양을 넘는 양자 얽힘：위성+성층권 중계 조합으로 전지구적 양자 인터넷 실현 가능성"
       },
       "tag": {
-        "zh-TW": "⚛️ 凝態物理",
-        "en": "⚛️ Condensed Matter Physics",
-        "zh-CN": "⚛️ 凝态物理",
-        "ja": "⚛️ 凝縮系物理",
-        "ko": "⚛️ 응집 물질 물리"
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理学",
+        "ko": "⚛️ 양자물리학"
       },
       "tech": {
-        "zh-TW": "本研究針對扭轉過渡金屬二硫化物同質雙層（twisted TMD homobilayer）所形成的陳絕緣態，定量分析其自發時間反演對稱性破缺所產生的持久電流與漩渦結構。研究者進一步證明，樣品體內電流密度振幅的最大值可作為追蹤局域陳數（local Chern marker）的精確指標，並提出可透過掃描探針方法實驗量測此訊號。",
-        "en": "This study quantitatively analyzes persistent spin-polarized currents and whirlpool structures arising from spontaneous time-reversal symmetry breaking in twisted TMD homobilayer Chern insulators. The authors demonstrate that the maximum amplitude of the bulk current density serves as a precise tracker of the local Chern marker, and propose that scanning probe techniques can experimentally access this topological signal.",
-        "zh-CN": "本研究针对扭转过渡金属二硫化物同质双层形成的陈绝缘态，定量分析其自发时间反演对称性破缺产生的持久电流与漩涡结构。研究者进一步证明，样品体内电流密度振幅的最大值可作为追踪局域陈数的精确指标，并提出可通过扫描探针方法实验测量此信号。",
-        "ja": "本研究は、ねじれたTMD同質二層のChern絶縁状態において、自発的時間反転対称性の破れから生じる持続電流と渦構造を定量的に解析した。さらに、試料バルク中の電流密度振幅の最大値が局所Chernマーカーを精密に追跡する指標となることを示し、走査プローブ法による実験的測定を提案している。",
-        "ko": "본 연구는 비틀린 TMD 동종 이중층에서 형성되는 천 절연 상태의 자발적 시간 반전 대칭성 깨짐으로 인해 발생하는 지속 전류와 소용돌이 구조를 정량적으로 분석하였다. 시료 내부 전류 밀도 진폭의 최댓값이 국소 천 마커를 정밀하게 추적하는 지표임을 입증하고, 주사 탐침 방법으로 실험적 측정이 가능함을 제안한다."
+        "zh-TW": "本研究針對 6,500 公里的跨大西洋地面距離，評估多種量子糾纏分發鏈路架構，範圍涵蓋低地球軌道（LEO）衛星、中地球軌道（MEO）衛星、以及高空平台（HAP）中繼節點，且不依賴量子記憶體或量子中繼器。研究發現最佳方案為混合架構：糾纏光子源設於 LEO 衛星，兩個被動光學中繼器設於 HAP。此架構每年可用 30 公分口徑地面接收器傳輸約 5×10⁶ 個安全金鑰位元，比單一 MEO 衛星搭配 1 公尺口徑接收器的方案高出近兩個量級（100倍），同時降低系統複雜度與天氣相關中斷風險。",
+        "en": "This study investigates several quantum entanglement distribution link architectures over a 6,500 km transatlantic ground distance, including configurations involving low Earth orbit (LEO) satellites, medium Earth orbit (MEO) satellites, and stratospheric high altitude platform (HAP) relay nodes, without requiring quantum memories or repeaters. The optimal configuration is a hybrid architecture: an entangled photon source on a LEO satellite supported by two passive optical relays on HAPs. Using 30 cm aperture ground receivers, this yields approximately 5×10^6 secure key bits per year — nearly two orders of magnitude higher than a single MEO satellite with 1 m aperture receivers — while reducing system complexity and weather-related link interruptions.",
+        "zh-CN": "本研究针对 6,500 公里跨大西洋距离评估了多种量子纠缠分发链路架构，涵盖低地球轨道（LEO）卫星、中地球轨道（MEO）卫星和高空平台（HAP）中继节点，且不依赖量子存储器或量子中继器。最优方案为混合架构：纠缠光子源置于 LEO 卫星，两个无源光学中继器置于 HAP。此架构用 30 厘米口径地面接收器每年可传输约 5×10⁶ 个安全密钥比特，比单一 MEO 卫星方案高出近两个量级。",
+        "ja": "本研究は6,500kmの大西洋横断地上距離での量子もつれ分配リンクアーキテクチャを評価した。低地球軌道（LEO）衛星、中地球軌道（MEO）衛星、成層圏高高度プラットフォーム（HAP）中継ノードを含む構成を量子メモリや量子リピータなしで検討した。最適構成はLEO衛星上の量子もつれ光子源と2つのHAP上の受動光学リレーからなるハイブリッドアーキテクチャで、30cm口径の地上受信機を用いて年間約5×10⁶個のセキュアな鍵ビットを配布でき、1m口径の単一MEO衛星より約100倍高い性能を達成する。",
+        "ko": "이 연구는 6,500km의 대서양 횡단 지상 거리에서의 양자 얽힘 분배 링크 아키텍처를 평가했다. 저궤도(LEO) 위성, 중궤도(MEO) 위성, 성층권 고고도 플랫폼(HAP) 중계 노드를 포함하는 구성을, 양자 메모리나 양자 중계기 없이 검토했다. 최적 구성은 LEO 위성의 얽힘 광자 원과 HAP의 2개 수동 광학 중계기로 이루어진 하이브리드 아키텍처로, 30cm 구경 지상 수신기를 사용해 연간 약 5×10⁶개의 보안 키 비트를 분배할 수 있으며, 1m 구경 단일 MEO 위성보다 약 100배 높은 성능을 달성한다."
       },
       "plain": {
-        "zh-TW": "想像你把兩張極薄的材料稍微旋轉一點角度疊在一起，就像把兩塊蜂巢餅乾錯開擺放，這樣會產生一種更大的週期性花紋，稱為「莫爾超晶格」。在這種特殊結構裡，電子不需要任何外加磁場，就會自動開始繞圈流動，像是材料內部藏著無數個小漩渦。這些電流漩渦是因為材料自發地「打破時間反演對稱性」——也就是說，若把時間倒轉，這些電流就會反向，代表材料本身選擇了一個方向。更神奇的是，這些漩渦的強度直接反映了材料的「拓撲性質」，也就是一種無法輕易被外力破壞的量子特徵，類似於甜甜圈的洞無論怎麼捏都還是洞。這項研究重要在於：它提供了一把「鑰匙」——只要用掃描探針量測電流的強度，就能讀出材料的拓撲狀態，不需要複雜的間接推斷。這對未來開發不怕雜訊干擾的量子元件和拓撲量子電腦具有關鍵意義。",
-        "en": "Imagine stacking two ultra-thin sheets of material with a tiny twist — like slightly misaligning two honeycomb wafers. This creates a larger repeating pattern called a moiré superlattice. Inside this structure, electrons spontaneously start circling around, forming microscopic whirlpools of electric current — all without any external magnet. These currents arise because the material spontaneously breaks time-reversal symmetry: if you reversed time, the currents would flow backwards, meaning the material has chosen a preferred direction on its own. Remarkably, the strength of these whirlpools directly encodes the material's topological character — a quantum property as robust as the hole in a donut that cannot be smoothed away. This research is significant because it offers a practical key: simply measuring the current intensity with a scanning probe tip can reveal the material's topological state, no complex inference needed. This opens the door to more reliable quantum devices and topological quantum computers.",
-        "zh-CN": "想象把两张极薄的材料稍微旋转一点叠在一起，就像把两块蜂巢饼干错开摆放，这样会产生一种更大的周期性花纹，称为「莫尔超晶格」。在这种特殊结构里，电子不需要任何外加磁场，就会自动开始绕圈流动，像是材料内部藏着无数个小漩涡。这些电流漩涡是因为材料自发地「打破时间反演对称性」——若把时间倒转，这些电流就会反向，代表材料本身选择了一个方向。更神奇的是，这些漩涡的强度直接反映了材料的「拓扑性质」，一种无法轻易被外力破坏的量子特征，就像甜甜圈的洞无论怎么捏都还是洞。这项研究的意义在于：只要用扫描探针量测电流强度，就能读出材料的拓扑状态，为未来开发抗干扰量子元件和拓扑量子计算机奠定基础。",
-        "ja": "極薄の2枚のシートをわずかにひねって重ねると、まるでハニカムクッキーをずらして積んだように「モアレ超格子」という大きな周期模様が生まれます。この特殊な構造の中では、外部磁場なしに電子が自発的に渦を巻いて流れ始め、材料の内部に無数の小さな電流の渦が生じます。これは材料が自発的に「時間反転対称性を破る」ためで、時間を逆回しにすると電流が逆向きになり、材料自身が方向を選んだことを意味します。さらに驚くべきことに、この渦の強さは材料の「トポロジカル特性」——ドーナツの穴のようにどう変形しても消えない量子的性質——を直接反映しています。この研究の重要性は、走査プローブで電流強度を測るだけでトポロジカル状態が読み取れるという実用的な手がかりを提供した点にあり、将来のノイズに強い量子デバイス開発への道を開きます。",
-        "ko": "두 장의 극도로 얇은 소재를 살짝 비틀어 겹쳐 놓으면, 마치 벌집 모양 과자 두 개를 어긋나게 쌓은 것처럼 「모아레 초격자」라는 더 큰 주기적 무늬가 생깁니다. 이 특수한 구조 안에서 전자들은 외부 자석 없이도 자발적으로 빙빙 돌기 시작해, 마치 소재 내부에 수많은 작은 전류 소용돌이가 숨어 있는 것처럼 됩니다. 이 소용돌이는 소재가 스스로 「시간 반전 대칭성을 깨뜨리기」 때문에 생기며, 시간을 거꾸로 돌리면 전류 방향도 바뀌어 소재가 스스로 방향을 선택했음을 의미합니다. 더 놀라운 것은 이 소용돌이의 세기가 소재의 위상학적 성질을 직접 반영한다는 점인데, 이는 도넛의 구멍처럼 어떻게 변형해도 사라지지 않는 양자적 특성입니다. 이 연구의 의미는 주사 탐침으로 전류 세기를 측정하는 것만으로 위상 상태를 읽을 수 있다는 실용적인 열쇠를 제시했다는 데 있으며, 잡음에 강한 양자 소자와 위상 양자 컴퓨터 개발의 문을 엽니다."
+        "zh-TW": "量子網路的核心理念是：把兩個粒子「糾纏」在一起，不論相距多遠，對其中一個的測量結果會瞬間影響另一個。這可以用來建立原則上無法被竊聽的通訊系統。問題是：光子在大氣中飛行幾千公里會衰減殆盡，地面電纜也有同樣問題。這就是為什麼量子網路需要衛星的原因。但衛星的問題是：要在衛星和地面之間傳送糾纏光子，中間還有大氣、天氣和距離的阻礙。這篇研究問的問題是：如果在衛星和地面站之間，再放一個懸停在平流層的「中繼站」（類似高空氣球或超高空飛機），能不能大幅改善傳輸效率？答案是肯定的。研究人員計算出，用一顆低軌道衛星加上兩個平流層中繼節點，每年可以傳送 500 萬個量子加密金鑰位元——比目前最好的單顆衛星方案多了將近 100 倍。這代表跨大西洋的量子保密通訊在技術上已經不再是遙遠的夢想。",
+        "en": "The core idea of a quantum network is to entangle two particles so that measuring one instantly affects the other, no matter how far apart they are. This can build communication channels that are theoretically eavesdrop-proof. The problem is that photons degrade over thousands of kilometres of air or fiber. That is why quantum networks need satellites. But satellites face atmospheric interference, weather, and the geometry of beaming quantum light from orbit. This paper asks: what if you placed relay stations floating in the stratosphere between the satellite and the ground? The answer is a dramatic improvement. A LEO satellite plus two stratospheric relays delivers nearly 5 million secure quantum key bits per year to ground receivers — almost 100 times better than the best single-satellite approach today. Transatlantic quantum-secure communications just became technically credible.",
+        "zh-CN": "量子网络的核心是把两个粒子「纠缠」在一起，测量其中一个会瞬间影响另一个，无论相距多远，这可以建立理论上无法被窃听的通信系统。问题是光子在大气中飞行几千公里会大幅衰减，因此量子网络需要卫星。但卫星面临大气干扰、天气和光束几何等问题。这篇研究问：如果在卫星和地面之间放置悬停在平流层的「中继站」，能不能大幅改善传输效率？答案是肯定的。低轨道卫星加上两个平流层中继节点，每年可传送近 500 万个量子密钥比特，比目前最好的单颗卫星方案多近 100 倍。跨大西洋量子保密通信在技术上已不再遥远。",
+        "ja": "量子ネットワークの核心的アイデアは、二つの粒子を「もつれ」させることだ。一方を測定すると、どれだけ離れていても即座にもう一方に影響する。これを使えば原理的に盗聴不可能な通信システムを構築できる。問題は光子が大気中を数千キロ飛ぶと著しく減衰することで、そのため量子ネットワークには衛星が必要だ。しかし衛星も大気干渉・天気・ビーム幾何の問題を抱える。この研究が問うのは：衛星と地上の間に成層圏に浮かぶ中継局を置いたらどうなるか？答えは劇的な改善だった。低軌道衛星2つの成層圏中継を組み合わせると年間約500万個の量子鍵ビットを配布でき、現時点で最良の単一衛星方式より約100倍優れる。大西洋横断の量子セキュア通信が技術的に現実的になった。",
+        "ko": "양자 네트워크의 핵심 아이디어는 두 입자를 「얽힘」 상태로 만들어, 아무리 멀리 떨어져 있어도 하나를 측정하면 다른 하나에 즉각 영향을 미친다는 것입니다. 이를 이용하면 이론적으로 도청이 불가능한 통신 시스템을 만들 수 있습니다. 문제는 광자가 수천 킬로미터의 대기를 통과하면 심하게 감쇠된다는 점이며, 그래서 양자 네트워크에는 위성이 필요합니다. 하지만 위성도 대기 간섭, 날씨, 빔 기하학 문제를 안고 있습니다. 이 연구는 묻습니다: 위성과 지상 사이에 성층권에 부유하는 중계국을 배치하면 어떨까요? 답은 극적인 개선이었습니다. 저궤도 위성에 두 개의 성층권 중계를 더하면 연간 약 500만 개의 양자 키 비트를 전달할 수 있어, 현재 최선의 단일 위성 방식보다 약 100배 우수합니다. 대서양 횡단 양자 보안 통신이 기술적으로 현실화됐습니다."
       },
       "insight": {
-        "zh-TW": "💡 材料中的電流漩渦不只是奇特現象，它本身就是拓撲量子態的「指紋」——用一根探針掃過，就能看見量子世界的隱藏秩序。",
-        "en": "💡 The whirlpools of current in these materials are not mere curiosities — they are topological fingerprints, readable by a single scanning probe tip, revealing quantum order hidden in plain sight.",
-        "zh-CN": "💡 材料中的电流漩涡不只是奇特现象，它本身就是拓扑量子态的「指纹」——用一根探针扫过，就能看见量子世界的隐藏秩序。",
-        "ja": "💡 材料中の電流渦はただの珍現象ではなく、トポロジカル量子状態の「指紋」そのものであり、一本の探針で走査するだけで量子世界の隠れた秩序が読み取れる。",
-        "ko": "💡 소재 속 전류 소용돌이는 단순한 신기한 현상이 아니라 위상 양자 상태의 「지문」 그 자체이며, 탐침 하나로 스캔하는 것만으로도 양자 세계의 숨겨진 질서를 읽어낼 수 있다."
+        "zh-TW": "💡 量子網路不需要等待量子中繼器的完美突破——用「衛星＋平流層中繼站」的現有技術組合，全球量子加密通訊已在工程射程之內。",
+        "en": "💡 A global quantum network does not need to wait for perfect quantum repeaters — the combination of satellites and stratospheric relays using today technology already puts worldwide quantum-encrypted communication within engineering reach.",
+        "zh-CN": "💡 量子网络不需要等待量子中继器的完美突破——用「卫星＋平流层中继站」的现有技术组合，全球量子加密通信已在工程射程之内。",
+        "ja": "💡 グローバル量子ネットワークは完璧な量子リピータの登場を待たなくてよい——衛星と成層圏中継局の現在技術の組み合わせだけで、世界規模の量子暗号通信はすでに工学的射程内にある。",
+        "ko": "💡 글로벌 양자 네트워크는 완벽한 양자 중계기를 기다릴 필요가 없다—위성과 성층권 중계 조합의 현재 기술만으로도 전세계 양자 암호 통신은 이미 공학적 사정거리 안에 있다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#ed893618\"/>\n<polygon points=\"80,40 97,50 97,70 80,80 63,70 63,50\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<polygon points=\"97,50 114,40 131,50 131,70 114,80 97,70\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<polygon points=\"80,80 97,70 97,90 80,100 63,90 63,80\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<polygon points=\"89,48 106,38 123,48 123,68 106,78 89,68\" fill=\"none\" stroke=\"#c05a20\" stroke-width=\"1.2\" opacity=\"0.7\" transform=\"rotate(13, 106, 58)\"/>\n<circle cx=\"200\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" opacity=\"0.4\"/>\n<circle cx=\"200\" cy=\"80\" r=\"35\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<circle cx=\"200\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" opacity=\"0.7\"/>\n<path d=\"M200,45 C220,55 225,70 210,80 C225,90 220,105 200,115 C180,105 175,90 190,80 C175,70 180,55 200,45 Z\" fill=\"#ed8936\" opacity=\"0.25\"/>\n<path d=\"M165,80 C175,60 195,55 210,65 C200,72 195,78 200,80 C195,82 200,88 210,95 C195,105 175,100 165,80 Z\" fill=\"#c05a20\" opacity=\"0.2\"/>\n<circle cx=\"200\" cy=\"80\" r=\"5\" fill=\"#ed8936\" opacity=\"0.9\"/>\n<circle cx=\"200\" cy=\"45\" r=\"3\" fill=\"#f6ad55\"/>\n<circle cx=\"200\" cy=\"115\" r=\"3\" fill=\"#f6ad55\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4299e118\"/><ellipse cx=\"170\" cy=\"148\" rx=\"160\" ry=\"18\" fill=\"#4a9e6b\" opacity=\"0.6\"/><ellipse cx=\"170\" cy=\"130\" rx=\"160\" ry=\"8\" fill=\"#4299e1\" opacity=\"0.1\"/><circle cx=\"170\" cy=\"25\" r=\"14\" fill=\"#f6ad55\" opacity=\"0.9\"/><text x=\"163\" y=\"29\" font-size=\"9\" fill=\"white\" font-weight=\"bold\">LEO</text><circle cx=\"90\" cy=\"68\" r=\"10\" fill=\"#e2e8f0\" stroke=\"#4299e1\" stroke-width=\"2\"/><text x=\"85\" y=\"72\" font-size=\"7\" fill=\"#4299e1\">HAP</text><circle cx=\"250\" cy=\"68\" r=\"10\" fill=\"#e2e8f0\" stroke=\"#4299e1\" stroke-width=\"2\"/><text x=\"245\" y=\"72\" font-size=\"7\" fill=\"#4299e1\">HAP</text><line x1=\"162\" y1=\"36\" x2=\"97\" y2=\"62\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"178\" y1=\"36\" x2=\"243\" y2=\"62\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"82\" y1=\"76\" x2=\"55\" y2=\"135\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"258\" y1=\"76\" x2=\"285\" y2=\"135\" stroke=\"#4299e1\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><circle cx=\"55\" cy=\"138\" r=\"8\" fill=\"#555\"/><text x=\"40\" y=\"155\" font-size=\"7\" fill=\"#555\">GND</text><circle cx=\"285\" cy=\"138\" r=\"8\" fill=\"#555\"/><text x=\"270\" y=\"155\" font-size=\"7\" fill=\"#555\">GND</text><text x=\"100\" y=\"115\" font-size=\"8\" fill=\"#4299e1\" font-weight=\"bold\">~6,500 km</text><line x1=\"60\" y1=\"120\" x2=\"280\" y2=\"120\" stroke=\"#4299e1\" stroke-width=\"1\" stroke-dasharray=\"3,4\" opacity=\"0.5\"/><text x=\"135\" y=\"48\" font-size=\"8\" fill=\"#f6ad55\">糾纏光子</text><text x=\"158\" y=\"86\" font-size=\"7.5\" fill=\"#4299e1\">5×10⁶ key bits/yr</text></svg>"
     },
     {
       "id": "neuro-260610",
       "domain": "neuro",
       "day": "2026-06-10",
-      "author": "Björn Þór Jónsson, Çağrı Erdem et al.",
-      "ref": "arXiv:2606.09780v1",
-      "url": "https://arxiv.org/abs/2606.09780v1",
+      "author": "Badr AlKhamissi, Johannes Mehrer, Lara Marinov, Martin Schrimpf et al.",
+      "ref": "arXiv:2606.09770",
+      "url": "https://arxiv.org/abs/2606.09770",
       "color": "#9f7aea",
       "title": {
-        "zh-TW": "用演化演算法探索未知聲音宇宙：AI 為作曲家打開聲音新大門",
-        "en": "Evolving Into the Unknown: AI Explores Uncharted Sonic Spaces for Composers",
-        "zh-CN": "用演化算法探索未知声音宇宙：AI 为作曲家打开声音新大门",
-        "ja": "進化アルゴリズムで未踏の音響空間を探索：作曲家のためのAI音響発見エンジン",
-        "ko": "진화 알고리즘으로 미지의 소리 우주 탐험: AI가 작곡가에게 새로운 음향 문을 열다"
+        "zh-TW": "大腦皮質的「地圖」終於統一：一個模型同時重現視覺、聽覺與語言的空間排列",
+        "en": "The Unified Cortical Map: One Model Reproduces How the Brain Organizes Vision, Sound, and Language in Space",
+        "zh-CN": "大脑皮质的「地图」终于统一：一个模型同时重现视觉、听觉与语言的空间排列",
+        "ja": "大脳皮質の「地図」がついて統合された：一つのモデルが視覚・聴覚・言語の空間配置を同時に再現",
+        "ko": "대뇌피질 「지도」가 드디어 통합：하나의 모델이 시각·청각·언어의 공간 배열을 동시에 재현"
       },
       "tag": {
-        "zh-TW": "🎵 音樂科技 × AI",
-        "en": "🎵 Music Tech × AI",
-        "zh-CN": "🎵 音乐科技 × AI",
-        "ja": "🎵 音楽テクノロジー × AI",
-        "ko": "🎵 음악 기술 × AI"
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
       },
       "tech": {
-        "zh-TW": "本研究將「品質多樣性（Quality-Diversity, QD）」演化演算法與有監督判別模型結合，建構一套生成式聲音合成系統。系統受「創新引擎（Innovation Engine）」概念啟發，能自動在高維音色空間中搜尋出既具品質又彼此迥異的聲音樣本。透過多樣性促進機制，讓演算法主動探索人類設計師從未踏足的音色角落。",
-        "en": "This study combines Quality-Diversity (QD) evolutionary algorithms with a supervised discriminative model to build a generative sound synthesis system. Inspired by the Innovation Engine framework, the system automatically searches high-dimensional timbral spaces to discover sound samples that are both high-quality and mutually diverse. Diversity-promoting mechanisms drive the algorithm to explore sonic regions that human designers have never reached.",
-        "zh-CN": "本研究将「品质多样性（Quality-Diversity, QD）」进化算法与有监督判别模型结合，构建一套生成式声音合成系统。系统受「创新引擎（Innovation Engine）」概念启发，能自动在高维音色空间中搜索出既具品质又彼此迥异的声音样本。通过多样性促进机制，让算法主动探索人类设计师从未涉足的音色角落。",
-        "ja": "本研究は「品質多様性（QD）」進化アルゴリズムと教師あり識別モデルを組み合わせ、生成的音響合成システムを構築する。「イノベーションエンジン」の概念に着想を得て、高次元の音色空間を自動探索し、高品質かつ互いに多様な音響サンプルを発見する。多様性促進メカニズムにより、人間のデザイナーが踏み込んだことのない音響領域を能動的に開拓する。",
-        "ko": "이 연구는 「품질 다양성（Quality-Diversity, QD）」 진화 알고리즘과 지도 판별 모델을 결합하여 생성형 음향 합성 시스템을 구축한다. 「이노베이션 엔진」 개념에서 영감을 받아, 고차원 음색 공간을 자동으로 탐색하여 품질이 높으면서도 서로 다양한 음향 샘플을 발견한다. 다양성 촉진 메커니즘을 통해 인간 디자이너가 한 번도 닿지 않은 음색 영역을 능동적으로 탐험한다."
+        "zh-TW": "研究者介紹了 Topo-Omni，一個跨模態地形映射模型，其中視覺、聽覺和語言/認知處理共用一張連續的矽晶片「皮質板」。透過對預訓練基礎模型施加空間平滑度目標進行微調，此架構跨模態發展出與人類神經影像一致的群簇——從感覺系統到認知系統。啟動或抑制某個群簇可選擇性地偏移或損害特定感知，與人類干預研究的結果平行。研究者更用此模型在「矽晶片上」篩選新群簇，發現了自然景觀和動物網路，並在人類數據中進行驗證。",
+        "en": "The paper introduces Topo-Omni, a topographic multimodal model in which visual, auditory, and language/cognitive processing share a single contiguous in-silico sheet. Built by fine-tuning a pretrained foundation model with a spatial smoothness objective, this architecture develops clusters across modalities consistent with human neuroimaging, from sensory to cognitive systems. Activating or suppressing a cluster selectively biases or impairs perception in ways that parallel human brain intervention studies. The model was then used to screen for novel clusters in-silico, discovering previously unknown natural landscape and animal networks, which were subsequently validated in human neuroimaging data.",
+        "zh-CN": "研究者介绍了 Topo-Omni，一个跨模态地形映射模型，视觉、听觉和语言/认知处理共用一张连续的硅「皮质板」。通过对预训练基础模型施加空间平滑度目标微调，该架构跨模态发展出与人类神经影像一致的群簇——从感觉系统到认知系统。激活或抑制某个群簇可选择性地偏移或损害特定感知，与人类干预研究结果一致。研究者还用此模型筛选出新群簇，发现了自然景观和动物网络，并在人类数据中得到验证。",
+        "ja": "Topo-Omniは視覚・聴覚・言語/認知処理が一枚の連続したシリコン「皮質シート」を共有するトポグラフィックマルチモーダルモデルである。空間平滑度目標による事前訓練済み基盤モデルのファインチューニングによって構築され、感覚系から認知系まで人間の神経画像と一致したクラスターを発展させる。クラスターの活性化や抑制は知覚を選択的に偏向・障害し、人間の介入研究と並行する。さらにこのモデルを使ってインシリコで新規クラスターをスクリーニングし、自然景観・動物ネットワークを発見して人間データで検証した。",
+        "ko": "Topo-Omni는 시각·청각·언어/인지 처리가 하나의 연속된 실리콘 「피질 시트」를 공유하는 지형적 다중 모달 모델이다. 공간 평활도 목표로 사전 훈련된 기반 모델을 파인튜닝하여 구축되며, 감각계에서 인지계까지 인간 신경영상과 일치하는 클러스터를 발전시킨다. 클러스터를 활성화하거나 억제하면 특정 지각이 선택적으로 편향되거나 손상되어 인간 개입 연구와 유사하다. 또한 이 모델로 인실리코에서 새로운 클러스터를 선별해 자연 경관·동물 네트워크를 발견하고 인간 데이터로 검증했다."
       },
       "plain": {
-        "zh-TW": "想像你是一位作曲家，面對一台有幾千個旋鈕的合成器，想找到那個「從未有人聽過的完美音色」——但手動轉每個旋鈕可能要花上一輩子。這篇研究讓 AI 扮演「好奇心旺盛的音色獵人」：它不只尋找「好聽的聲音」，更故意去找那些彼此完全不同的聲音，就像生物演化會讓物種越來越多樣一樣。演算法會在龐大的聲音地圖上「繁殖」並「淘汰」音色候選者，不斷朝沒人去過的角落探索。這樣一來，作曲家可以在幾分鐘內獲得一整批風格迥異的聲音靈感，而不必耗費數週手動調參。它的重要性在於：人類的創意常常被「尋找工具」的繁瑣過程所拖累，AI 若能自動把「可能性」攤開在你眼前，創作的門檻就會大幅降低，讓更多人得以實現腦中的音樂想像。",
-        "en": "Imagine you are a composer facing a synthesizer with thousands of knobs, searching for that perfect sound no one has ever heard — but turning every knob by hand could take a lifetime. This research lets AI act as a 「curious sonic hunter」: it does not just look for 「good sounds」, it deliberately seeks sounds that are wildly different from each other, much like biological evolution drives species toward greater diversity. The algorithm 「breeds」 and 「eliminates」 sound candidates across a vast sonic map, constantly pushing toward unexplored corners. As a result, composers can receive a whole palette of stylistically distinct sonic inspirations within minutes, rather than spending weeks tweaking parameters. The importance lies in the fact that human creativity is often bogged down by the tedious process of 「finding the right tool」; if AI can automatically lay all the possibilities before you, the barrier to creation drops dramatically, allowing more people to realize the music in their minds.",
-        "zh-CN": "想象你是一位作曲家，面对一台有几千个旋钮的合成器，想找到那个「从未有人听过的完美音色」——但手动转每个旋钮可能要花上一辈子。这项研究让 AI 扮演「好奇心旺盛的音色猎人」：它不只寻找「好听的声音」，更故意去找那些彼此完全不同的声音，就像生物进化会让物种越来越多样一样。算法会在庞大的声音地图上「繁殖」并「淘汰」音色候选者，不断朝没人去过的角落探索。这样一来，作曲家可以在几分钟内获得一整批风格迥异的声音灵感，而不必耗费数周手动调参。它的重要性在于：人类的创意常常被「寻找工具」的繁琐过程所拖累，AI 若能自动把「可能性」摊开在你眼前，创作的门槛就会大幅降低，让更多人得以实现脑中的音乐想象。",
-        "ja": "何千ものノブがついたシンセサイザーを前に、「誰も聞いたことのない完璧な音色」を探そうとしている作曲家を想像してほしい。すべてのノブを手動で回していたら一生かかってしまう。この研究はAIを「好奇心旺盛な音色ハンター」として機能させる。単に「良い音」を探すだけでなく、生物の進化が多様な種を生み出すように、互いにまったく異なる音を意図的に探し出す。アルゴリズムは広大な音の地図上で音色候補を「繁殖」させ「淘汰」しながら、誰も踏み込んだことのない領域へと進み続ける。その結果、作曲家は数週間のパラメータ調整なしに、数分で多彩な音のインスピレーションを得ることができる。創作において「道具を探す」という煩雑なプロセスが足かせになりがちな中、AIが可能性を目の前に広げてくれれば、より多くの人が心の中の音楽を実現できるようになる。",
-        "ko": "수천 개의 노브가 달린 신시사이저 앞에서 「아무도 들어본 적 없는 완벽한 음색」을 찾으려는 작곡가를 상상해보자. 모든 노브를 손으로 돌리다간 평생이 걸릴 수도 있다. 이 연구는 AI를 「호기심 가득한 음색 사냥꾼」으로 활용한다. 단순히 「좋은 소리」를 찾는 것을 넘어, 생물 진화가 종의 다양성을 늘리듯 서로 전혀 다른 소리를 의도적으로 찾아낸다. 알고리즘은 광대한 소리 지도 위에서 음색 후보를 「번식」시키고 「도태」시키며 아무도 가지 않은 구석으로 계속 나아간다. 그 결과 작곡가는 몇 주간의 파라미터 조정 없이 수분 내에 다양한 음향 영감을 얻을 수 있다. AI가 가능성을 눈앞에 펼쳐준다면 창작의 문턱이 크게 낮아져 더 많은 사람이 마음속의 음악을 현실로 만들 수 있게 된다."
+        "zh-TW": "大腦皮質像一張複雜的地圖——處理視覺的區域在這裡，處理聲音的在那裡，負責語言的又在另一個地方。但這些「地圖」是怎麼形成的？過去的 AI 模型只能各自模擬其中一個功能，就像每個城市只有局部街道圖，拼不出完整全貌。Topo-Omni 是第一個在同一張「皮質板」上同時模擬視覺、聽覺和語言處理的模型。它的訓練目標很簡單：讓相鄰的神經元處理相似的東西（就像大腦裡靠近的細胞有相似功能）。結果令人驚訝：模型不只重現了已知的大腦分區，還自動「發現」了科學家之前不知道的兩個新腦區——一個特別回應自然景色、另一個特別回應動物。這兩個預測都在真實的人類大腦掃描中得到確認。這個工具有點像「腦部的望遠鏡」：讓我們在電腦裡預測哪些地方可能是新的功能腦區，再去真實大腦中驗證。",
+        "en": "The brain cortex is like a complex map — vision here, sound over there, language somewhere else. But how do these maps form? Past AI models could only simulate one function at a time, like having only a partial street map of each neighbourhood. Topo-Omni is the first model to simulate vision, hearing, and language processing on the same cortical sheet simultaneously. Its training rule is simple: nearby neurons should respond to similar things, just as neighbouring brain cells share similar functions. The result is striking: the model not only reproduces known brain regions but spontaneously discovers two new ones — a region that responds specifically to natural landscapes, and another that responds to animals. Both predictions were validated in real human brain scans. This tool acts like a telescope for the brain: predict new functional regions in the computer first, then go confirm them in real people.",
+        "zh-CN": "大脑皮质像一张复杂地图——处理视觉的区域在这里，处理声音的在那里，负责语言的又在另一个地方。以往的 AI 模型只能各自模拟其中一个功能，拼不出完整全貌。Topo-Omni 是第一个在同一张「皮质板」上同时模拟视觉、听觉和语言处理的模型。训练目标很简单：让相邻神经元处理相似的东西。结果令人惊喜：模型不只重现了已知脑区，还自动「发现」了两个新脑区——一个特别响应自然景色，另一个特别响应动物，两项预测都在真实人脑扫描中得到确认。",
+        "ja": "大脳皮質は複雑な地図のようなもので、視覚を処理する場所・音を処理する場所・言語を担当する場所がそれぞれある。これまでのAIモデルはそれぞれ一つの機能しかシミュレートできず、街の部分的な地図しか持てなかった。Topo-Omniは同じ「皮質シート」上で視覚・聴覚・言語処理を同時にシミュレートする最初のモデルだ。訓練ルールはシンプル：隣接するニューロンは似たものに反応すべき——まるで脳の隣り合う細胞が似た機能を持つように。結果は驚くべきもので、既知の脳領域を再現するだけでなく、以前未知だった二つの新領域——自然景観に特異的に反応する領域と動物に反応する領域——を自発的に発見し、いずれも実際の人間の脳スキャンで確認された。",
+        "ko": "대뇌피질은 복잡한 지도 같습니다—시각을 처리하는 곳은 여기, 소리는 저기, 언어는 또 다른 곳에 있죠. 기존의 AI 모델은 각각 하나의 기능만 시뮬레이션할 수 있어 도시의 부분적인 지도만 갖고 있는 것 같았습니다. Topo-Omni는 같은 「피질 시트」에서 시각·청각·언어 처리를 동시에 시뮬레이션하는 첫 번째 모델입니다. 훈련 규칙은 간단합니다: 인접한 뉴런은 비슷한 것에 반응해야 한다—뇌의 이웃한 세포들이 유사한 기능을 공유하는 것처럼요. 결과는 놀라웠습니다: 기존의 알려진 뇌 영역을 재현할 뿐 아니라, 이전에 알려지지 않은 두 개의 새로운 영역—자연 경관에 특이적으로 반응하는 영역과 동물에 반응하는 영역—을 자발적으로 발견했고, 두 예측 모두 실제 인간 뇌 스캔에서 확인됐습니다."
       },
       "insight": {
-        "zh-TW": "💡 真正的創新不只是找到「最好的答案」，而是讓「從未被想到的可能性」浮出水面——多樣性本身就是創造力的燃料。",
-        "en": "💡 True innovation is not just about finding the 「best answer」, but about surfacing possibilities that were never imagined — diversity itself is the fuel of creativity.",
-        "zh-CN": "💡 真正的创新不只是找到「最好的答案」，而是让「从未被想到的可能性」浮出水面——多样性本身就是创造力的燃料。",
-        "ja": "💡 真のイノベーションとは「最良の答え」を見つけることではなく、「これまで想像すらされなかった可能性」を浮かび上がらせること——多様性こそが創造性の燃料である。",
-        "ko": "💡 진정한 혁신은 「최선의 답」을 찾는 것이 아니라, 「한 번도 상상되지 않았던 가능성」을 수면 위로 끌어올리는 것이다——다양성 그 자체가 창의력의 연료다."
+        "zh-TW": "💡 大腦的空間排列不是偶然的——「鄰近的神經元處理相似的事物」這一條簡單原則，就能讓 AI 模型重現皮質地圖，甚至預測出科學家尚未發現的新腦區。",
+        "en": "💡 The spatial arrangement of the brain is not arbitrary — the single principle that nearby neurons process similar things is enough for an AI model to recreate the cortical map and even predict brain regions scientists have not yet found.",
+        "zh-CN": "💡 大脑的空间排列不是偶然的——「邻近的神经元处理相似的事物」这一条简单原则，就能让 AI 模型重现皮质地图，甚至预测出科学家尚未发现的新脑区。",
+        "ja": "💡 脳の空間配置は偶然ではない——「隣接するニューロンは似たものを処理する」というたった一つの原則だけで、AIモデルは皮質地図を再現し、科学者がまだ発見していない新たな脳領域まで予測できる。",
+        "ko": "💡 뇌의 공간 배열은 우연이 아니다—「인접한 뉴런은 비슷한 것을 처리한다」는 단 하나의 원칙만으로 AI 모델이 피질 지도를 재현하고 과학자들이 아직 발견하지 못한 새로운 뇌 영역까지 예측할 수 있다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/>\n<rect x=\"10\" y=\"50\" width=\"80\" height=\"80\" rx=\"8\" fill=\"#9f7aea\" opacity=\"0.85\"/>\n<circle cx=\"30\" cy=\"70\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"55\" cy=\"70\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"80\" cy=\"70\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"30\" cy=\"95\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"55\" cy=\"95\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"80\" cy=\"95\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"30\" cy=\"120\" r=\"7\" fill=\"#f6ad55\" opacity=\"0.95\"/>\n<circle cx=\"55\" cy=\"120\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"80\" cy=\"120\" r=\"7\" fill=\"#fff\" opacity=\"0.9\"/>\n<path d=\"M100 90 C115 60, 135 120, 150 80 C165 40, 185 110, 200 70 C215 30, 230 100, 250 55 C260 35, 275 90, 290 50 C300 25, 315 75, 330 45\" stroke=\"#9f7aea\" stroke-width=\"3\" fill=\"none\" opacity=\"0.9\"/>\n<circle cx=\"290\" cy=\"50\" r=\"14\" fill=\"#f6ad55\" opacity=\"0.85\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#9f7aea18\"/><rect x=\"20\" y=\"20\" width=\"145\" height=\"120\" rx=\"10\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2\"/><text x=\"30\" y=\"38\" font-size=\"8\" fill=\"#9f7aea\" font-weight=\"bold\">Topo-Omni: 統一皮質板</text><rect x=\"28\" y=\"44\" width=\"55\" height=\"35\" rx=\"4\" fill=\"#4299e1\" opacity=\"0.6\"/><text x=\"35\" y=\"57\" font-size=\"7\" fill=\"white\">👁 視覺</text><text x=\"35\" y=\"68\" font-size=\"7\" fill=\"white\">V1/V2/V4</text><rect x=\"88\" y=\"44\" width=\"70\" height=\"35\" rx=\"4\" fill=\"#68d391\" opacity=\"0.6\"/><text x=\"95\" y=\"57\" font-size=\"7\" fill=\"white\">👂 聽覺</text><text x=\"95\" y=\"68\" font-size=\"7\" fill=\"white\">A1/belt</text><rect x=\"28\" y=\"84\" width=\"130\" height=\"35\" rx=\"4\" fill=\"#9f7aea\" opacity=\"0.5\"/><text x=\"35\" y=\"97\" font-size=\"7\" fill=\"white\">📝 語言 / 認知</text><text x=\"35\" y=\"108\" font-size=\"7\" fill=\"white\">Broca/Wernicke/PFC</text><text x=\"35\" y=\"125\" font-size=\"7\" fill=\"#e53e3e\" font-weight=\"bold\">★ 新發現：景色・動物網絡</text><line x1=\"172\" y1=\"80\" x2=\"192\" y2=\"80\" stroke=\"#888\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><rect x=\"196\" y=\"20\" width=\"125\" height=\"120\" rx=\"10\" fill=\"none\" stroke=\"#4a5568\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/><text x=\"206\" y=\"38\" font-size=\"8\" fill=\"#555\" font-weight=\"bold\">人腦 fMRI 驗證</text><rect x=\"204\" y=\"44\" width=\"50\" height=\"28\" rx=\"4\" fill=\"#4299e1\" opacity=\"0.4\"/><text x=\"210\" y=\"61\" font-size=\"7\" fill=\"#333\">視覺皮質 ✓</text><rect x=\"260\" y=\"44\" width=\"53\" height=\"28\" rx=\"4\" fill=\"#68d391\" opacity=\"0.4\"/><text x=\"265\" y=\"61\" font-size=\"7\" fill=\"#333\">聽覺皮質 ✓</text><rect x=\"204\" y=\"78\" width=\"109\" height=\"25\" rx=\"4\" fill=\"#9f7aea\" opacity=\"0.4\"/><text x=\"210\" y=\"94\" font-size=\"7\" fill=\"#333\">語言網絡 ✓</text><rect x=\"204\" y=\"108\" width=\"109\" height=\"22\" rx=\"4\" fill=\"#e53e3e\" opacity=\"0.25\"/><text x=\"210\" y=\"122\" font-size=\"7\" fill=\"#e53e3e\" font-weight=\"bold\">★ 景色腦區 ✓  動物腦區 ✓</text></svg>"
     },
     {
       "id": "space-260610",
       "domain": "space",
       "day": "2026-06-10",
-      "author": "Abhner P. De Almeida, Gary A. Mamon et al.",
-      "ref": "arXiv:2606.09817v1",
-      "url": "https://arxiv.org/abs/2606.09817v1",
-      "color": "#4299e1",
+      "author": "Elishevah van Kooten, Sebastian Sjørring Lodal, Isaac Onyett et al.",
+      "ref": "arXiv:2606.04529",
+      "url": "https://arxiv.org/abs/2606.04529",
+      "color": "#f6ad55",
       "title": {
-        "zh-TW": "為什麼有些矮星系特別「胖」？衛星星系被壓縮的三條命運之路",
-        "en": "Why Are Some Dwarf Galaxies So Compact? Three Pathways That Squeeze Satellite Galaxies",
-        "zh-CN": "为什么有些矮星系特别「胖」？卫星星系被压缩的三条命运之路",
-        "ja": "なぜ一部の矮小銀河は「ずんぐり」しているのか？衛星銀河を圧縮する三つの経路",
-        "ko": "왜 어떤 왜소은하는 유독 「뚱뚱」할까？위성은하를 압축하는 세 가지 운명의 경로"
+        "zh-TW": "太陽系外圍曾被「星雲碎片」重新塑造——Nature Astronomy 改寫太陽系形成史",
+        "en": "Our Outer Solar System Was Reshaped by Infalling Interstellar Dust: Nature Astronomy Rewrites Formation History",
+        "zh-CN": "太阳系外围曾被「星云碎片」重新塑造——Nature Astronomy 改写太阳系形成史",
+        "ja": "太陽系外縁部は「分子雲物質の後期降着」で再形成された——Nature Astronomyが形成史を書き換える",
+        "ko": "태양계 외곽은 「분자운 물질 후기 유입」으로 재형성됐다——Nature Astronomy가 형성사를 다시 쓰다"
       },
       "tag": {
         "zh-TW": "🌌 天文宇宙",
@@ -207,72 +207,72 @@
         "ko": "🌌 천문 우주"
       },
       "tech": {
-        "zh-TW": "研究團隊從 TNG50 高解析度流體力學模擬中，選取紅移 z=0、恆星質量介於 log(M★/M☉) = 8.4–9.2 的矮星系，依據尺寸–質量關係將其分為「緻密」與「正常」兩類，並系統性追蹤各星系的環境與合併歷史，歸納出至少兩條穩健加上一條試探性的緻密化路徑。",
-        "en": "The team selected dwarf galaxies at z=0 with stellar masses log(M★/M☉) between 8.4 and 9.2 from the TNG50 hydrodynamical simulation, classified them as compact or normal based on the size-mass relation, and traced their merger and environmental histories to identify at least two robust and one tentative compaction pathways.",
-        "zh-CN": "研究团队从 TNG50 高分辨率流体力学模拟中，选取红移 z=0、恒星质量介于 log(M★/M☉) = 8.4–9.2 的矮星系，依据尺寸–质量关系将其分为「致密」与「正常」两类，并系统性追踪各星系的环境与并合历史，归纳出至少两条稳健加上一条试探性的致密化路径。",
-        "ja": "チームは TNG50 流体力学シミュレーションから z=0 における恒星質量 log(M★/M☉) = 8.4–9.2 の矮小銀河を選定し、サイズ–質量関係に基づいて「コンパクト」と「通常」に分類。各銀河の合体・環境履歴を追跡することで、少なくとも2つの確実な圧縮経路と1つの暫定的な経路を同定した。",
-        "ko": "연구팀은 TNG50 유체역학 시뮬레이션에서 z=0 기준 항성 질량 log(M★/M☉) = 8.4–9.2인 왜소은하를 선별하고, 크기–질량 관계에 따라 「밀집」과 「보통」으로 분류한 뒤, 각 은하의 합병 및 환경 이력을 추적하여 최소 두 가지 견고한 압축 경로와 하나의 잠정적 경로를 규명했다."
+        "zh-TW": "研究者分析隕石中 Si、Mg、Fe、Cr 的核合成同位素特徵，超越傳統的碳質球粒隕石分類，將焦點放在「非典型球粒隕石」（anomalous chondrites）上，以重建一致的原行星盤演化模型。結果顯示太陽系外盤在主要吸積階段後，被同位素特性截然不同的分子雲物質大量補充（>30% 的質量），而這些後來注入的物質並未貢獻到類地行星的主要吸積期，後者的揮發物庫存完全來自 Ivuna 型星子（如小行星 Ryugu 和 Bennu）。這些富冰星子在向內移動的水冰線附近形成，代表對太陽系演化的重大概念轉變。",
+        "en": "Researchers analyzed Si, Mg, Fe, and Cr nucleosynthetic isotope systematics in meteorites, moving beyond the traditional carbonaceous chondrite groups to study anomalous chondrites, to constrain a coherent model of protoplanetary disk evolution. Their results show that the outer disk was replenished through the addition of isotopically distinct molecular cloud material contributing more than 30% of the mass in the gas giant accretion region after the main accretion phase. Crucially, this late-infalling material did not contribute to terrestrial planet formation, which instead derived its volatile inventory solely from Ivuna-type planetesimals akin to asteroids Ryugu and Bennu — bodies that formed at the inward-migrating water ice line.",
+        "zh-CN": "研究者分析了陨石中 Si、Mg、Fe、Cr 的核合成同位素特征，超越传统碳质球粒陨石分类聚焦于「非典型球粒陨石」，重建一致的原行星盘演化模型。结果显示太阳系外盘在主要吸积阶段后被同位素特性截然不同的分子云物质大量补充（>30% 质量），而这些后来注入的物质并未贡献到类地行星的主要吸积期，后者的挥发物库存完全来自 Ivuna 型星子（如小行星 Ryugu 和 Bennu），这些富冰星子在向内移动的水冰线附近形成。",
+        "ja": "研究者は隕石のSi・Mg・Fe・Crの核合成同位体系統を分析し、従来の炭素質コンドライトの分類を超えて「異常コンドライト」に着目し、整合的な原始惑星系円盤進化モデルを制約した。外側円盤は主吸積フェーズ後に同位体的に異なる分子雲物質によって大量補充（>30%の質量）されたことが判明した。重要なのは、この後期降着物質が地球型惑星の主吸積期に貢献せず、地球型惑星の揮発性元素はRyuguやBennuのようなイバナ型微惑星のみに由来し、これらが内向き移動する水の氷境界線付近で形成されたことだ。",
+        "ko": "연구자들은 운석의 Si, Mg, Fe, Cr 핵합성 동위원소 계통을 분석하여 전통적인 탄소질 콘드라이트 분류를 넘어 「이상 콘드라이트」에 집중해 일관된 원시행성계 원반 진화 모델을 제약했다. 외부 원반은 주 강착 단계 이후 동위원소적으로 뚜렷이 다른 분자운 물질에 의해 대량 보충(>30% 질량)된 것으로 나타났다. 중요한 것은 이 후기 유입 물질이 지구형 행성의 주 강착기에 기여하지 않았으며, 지구형 행星의 휘발성 원소는 오직 Ryugu와 Bennu 같은 이바나형 미행성에서만 유래했고, 이 천체들이 안쪽으로 이동하는 수빙선 근처에서 형성됐다는 점이다."
       },
       "plain": {
-        "zh-TW": "想像宇宙中漂浮著無數大大小小的星系，其中有一種叫「矮星系」——它就像社區裡的小公寓大樓，住的恆星比大星系少得多。但有趣的是，有些矮星系雖然住戶（恆星數量）差不多，身材卻特別「矮胖緊實」，彷彿同樣一棟公寓被硬生生壓縮成一個小套房。這種「緻密矮星系」是怎麼形成的？研究者用超級電腦模擬了整個宇宙的演化，追蹤這些小星系的一生，發現至少有兩條清楚的壓縮途徑：一條是被附近大星系的重力潮汐力像「捏泥巴」一樣擠壓成型，另一條則與劇烈的星系合併或氣體快速消耗有關。搞清楚這件事很重要，因為矮星系是宇宙裡數量最多的星系類型，它們的形狀與大小記錄著周遭環境如何塑造一個星系的命運，就像年輪記錄著一棵樹所經歷的旱澇。未來的太空望遠鏡若能找到更多緻密矮星系，就能反過來驗證這些理論，幫助我們更深入理解宇宙大尺度結構的形成。",
-        "en": "Picture the universe filled with countless galaxies of all sizes. Dwarf galaxies are like small apartment buildings compared to giant skyscrapers — they contain far fewer stars. But strangely, some dwarf galaxies with a similar number of stars are much more compact, squeezed into a tiny ball like a studio apartment crammed into the footprint of a closet. How does this happen? Researchers ran a supercomputer simulation of the entire cosmos and tracked the life stories of thousands of these small galaxies, discovering at least two clear pathways that squeeze them compact: one involves tidal forces from a nearby massive galaxy literally kneading the dwarf like clay, and another involves violent mergers or rapid gas consumption. Understanding this matters because dwarf galaxies are the most common type in the universe, and their shapes and sizes record how their surroundings shaped their fate — much like tree rings record years of drought and flood. As future telescopes find more compact dwarfs, these theoretical pathways can be tested and refined, deepening our grasp of how cosmic structure forms.",
-        "zh-CN": "想象宇宙中漂浮着无数大大小小的星系，其中有一种叫「矮星系」——它就像社区里的小公寓楼，住的恒星比大星系少得多。但有趣的是，有些矮星系虽然住户（恒星数量）差不多，身材却特别「矮胖紧实」，仿佛同样一栋公寓被硬生生压缩成一个小套间。研究者用超级计算机模拟了整个宇宙的演化，追踪这些小星系的一生，发现至少有两条清晰的压缩途径：一条是被附近大星系的潮汐力像「捏泥巴」一样挤压成型，另一条则与剧烈的星系并合或气体快速消耗有关。弄清楚这件事非常重要，因为矮星系是宇宙里数量最多的星系类型，它们的形状与大小记录着周围环境如何塑造一个星系的命运，就像年轮记录着一棵树所经历的旱涝。",
-        "ja": "宇宙には無数の銀河が漂っており、「矮小銀河」はその中でも小さなアパートのような存在です。ところが同じくらいの星の数を持つのに、異様にコンパクトにぎゅっと縮まった矮小銀河が存在します。まるで普通のアパートが押しつぶされてワンルームになったようなイメージです。研究チームはスーパーコンピューターで宇宙の進化を丸ごとシミュレーションし、こうした小さな銀河の一生を追跡しました。その結果、少なくとも2つの明確な「圧縮経路」が判明しました。ひとつは近くの大きな銀河の潮汐力に粘土のように捏ねられる経路、もうひとつは激しい銀河合体やガスの急速な消費と関係する経路です。矮小銀河は宇宙で最も数が多い銀河タイプであり、その形や大きさは周囲の環境が銀河の運命をどう刻んだかを記録しています。これはまさに年輪が木の歴史を語るようなものです。",
-        "ko": "우주에는 크고 작은 수많은 은하가 떠다니는데, 그 중 「왜소은하」는 마치 작은 아파트 같은 존재입니다. 그런데 비슷한 수의 별을 가지고 있음에도 유독 작고 빽빽하게 압축된 왜소은하들이 있습니다. 마치 같은 아파트가 고스란히 원룸으로 쭈그러든 것 같은 모습입니다. 연구팀은 슈퍼컴퓨터로 우주 전체의 진화를 시뮬레이션하며 이 작은 은하들의 일생을 추적했고, 적어도 두 가지 뚜렷한 「압축 경로」를 발견했습니다. 하나는 근처 거대 은하의 조석력이 점토를 주무르듯 왜소은하를 압축하는 경로이고, 다른 하나는 격렬한 은하 합병이나 가스의 급격한 소비와 관련된 경로입니다. 왜소은하는 우주에서 가장 흔한 은하 유형으로, 그 모양과 크기는 주변 환경이 은하의 운명을 어떻게 새겼는지를 나이테처럼 기록하고 있습니다."
+        "zh-TW": "太陽系是怎麼形成的？這個問題的答案影響我們對地球上生命起源的理解，因為地球上的水和有機物必須在某個時間點從某個地方送達。科學家長期以來研究各種隕石，試圖拼湊出太陽系誕生時的樣子。這篇被 Nature Astronomy 接受的論文帶來了一個重要發現：太陽系外圍（木星、土星、天王星、海王星所在的區域）在太陽系誕生之後，被一大團原本就在宇宙中漂浮的「分子雲碎片」補充進來——這些外來物質佔了外盤質量的 30% 以上。關鍵的是，這些後來飄進來的物質並沒有進入地球這類岩石行星的形成區。地球的水和有機物，是靠另一批不同類型的小天體（類似日本隼鳥2號採樣回來的小行星 Ryugu）帶來的，這些天體在冰的「霜線」附近形成，之後向內遷移進入了內太陽系。這改變了我們對太陽系為什麼長成這個樣子的根本認識——外圍氣體巨行星和內圈岩石行星的「建築材料」，其實來自兩個截然不同的宇宙源頭。",
+        "en": "How did our solar system form? The answer matters enormously for the origin of life, because water and organic compounds had to arrive on Earth from somewhere. Scientists have long studied meteorites to piece together the story. This Nature Astronomy paper delivers a surprising finding: the outer solar system — where Jupiter, Saturn, Uranus, and Neptune live — was enriched after the solar system formed by a massive influx of molecular cloud material drifting through space. This late-arriving material contributed more than 30% of the outer disk mass. Crucially, this outside material never reached the inner solar system where Earth formed. Earth got its water and organics from a completely different source: Ivuna-type planetesimals similar to asteroid Ryugu, which formed near the water ice line and migrated inward. This fundamentally changes how we understand why the inner and outer solar system look so different from each other — they were built from two distinct cosmic sources.",
+        "zh-CN": "太阳系是如何形成的？这个问题与生命起源密切相关，因为地球上的水和有机物必须从某处送达。科学家长期研究陨石试图还原这段历史。这篇被 Nature Astronomy 接受的论文带来了重要发现：太阳系外围（木星、土星等气态巨行星所在区域）在太阳系诞生后被一大团宇宙间漂浮的「分子云碎片」补充——这些外来物质占外盘质量的 30% 以上。关键是这些后来飘进来的物质并未进入地球等岩石行星的形成区。地球的水和有机物来自另一批类似小行星 Ryugu 的 Ivuna 型星子，这些天体在冰霜线附近形成后向内迁移。这从根本上改变了我们对内外太阳系差异的理解——它们由两个截然不同的宇宙来源构建。",
+        "ja": "太陽系はどうやって形成されたのか？この問いは生命の起源に直結している。地球の水と有機物はどこからか届かなければならなかった。科学者たちは長年隕石を研究してその物語を組み立ててきた。Nature Astronomyに採択されたこの論文は驚くべき発見をもたらす：外太陽系——木星・土星・天王星・海王星の領域——は太陽系形成後に宇宙を漂っていた分子雲物質の大量流入によって補充された（外側円盤質量の30%以上）。決定的なのは、この後から入ってきた物質が地球などの岩石惑星が形成された内太陽系には届かなかったこと。地球の水と有機物は全く別の起源——小惑星Ryuguに似たイバナ型微惑星——から来ており、水の氷境界線近くで形成され内部に移動した。内外太陽系がなぜ異なるのかの根本的な理解が変わった。",
+        "ko": "태양계는 어떻게 형성됐을까요? 이 질문은 생명의 기원과 직결됩니다. 지구의 물과 유기물은 어딘가에서 도착해야 했으니까요. 과학자들은 오랫동안 운석을 연구해 그 이야기를 재구성해왔습니다. Nature Astronomy에 채택된 이 논문은 놀라운 발견을 전합니다: 외부 태양계—목성, 토성, 천왕성, 해왕성이 있는 영역—는 태양계 형성 이후 우주를 표류하던 분자운 물질의 대규모 유입으로 보충됐습니다(외부 원반 질량의 30% 이상). 결정적인 것은 이 나중에 들어온 물질이 지구 같은 암석 행성이 형성된 내부 태양계에는 도달하지 않았다는 점입니다. 지구의 물과 유기물은 완전히 다른 출처—소행성 Ryugu와 유사한 이바나형 미행성—에서 왔으며, 이 천체들은 수빙선 근처에서 형성되어 내부로 이동했습니다. 내외 태양계가 왜 다른지에 대한 근본적인 이해가 바뀌었습니다."
       },
       "insight": {
-        "zh-TW": "💡 一個星系的「體型」，是它一生中所有環境壓力的忠實紀錄——宇宙從不白白捏一把。",
-        "en": "💡 A galaxy's compactness is a faithful memoir of every environmental pressure it endured — the cosmos never squeezes without leaving a mark.",
-        "zh-CN": "💡 一个星系的「体型」，是它一生中所有环境压力的忠实记录——宇宙从不白白捏一把。",
-        "ja": "💡 銀河の「体型」は、その一生で受けたあらゆる環境的圧力の忠実な記録であり、宇宙は無駄に握りしめることはない。",
-        "ko": "💡 은하의 「체형」은 평생 받아온 모든 환경적 압력의 충실한 기록이다 — 우주는 결코 흔적 없이 쥐어짜지 않는다."
+        "zh-TW": "💡 地球上的水不是來自外太陽系的碎屑，而是來自在冰霜線附近誕生、之後向內遷移的星子——太陽系的「建材供應商」有兩個截然不同的宇宙地址。",
+        "en": "💡 Earth water did not come from outer solar system debris but from planetesimals born near the ice line that migrated inward — the building blocks of the inner and outer solar system came from two completely different cosmic addresses.",
+        "zh-CN": "💡 地球上的水不是来自外太阳系的碎屑，而是来自在冰霜线附近诞生、之后向内迁移的星子——太阳系的「建材供应商」有两个截然不同的宇宙地址。",
+        "ja": "💡 地球の水は外太陽系のデブリからではなく、氷境界線近くで誕生し後に内部に移動した微惑星から来た——内外太陽系の「建材の供給元」は二つの全く異なる宇宙アドレスから来ていた。",
+        "ko": "💡 지구의 물은 외부 태양계 잔해에서 온 것이 아니라 빙선 근처에서 탄생해 내부로 이동한 미행성에서 왔다—내외 태양계의 「건축 자재 공급처」는 두 개의 전혀 다른 우주 주소에서 왔다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4299e118\"/>\n<circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#4299e1\" opacity=\"0.9\"/>\n<ellipse cx=\"50\" cy=\"80\" rx=\"28\" ry=\"12\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<ellipse cx=\"170\" cy=\"55\" rx=\"22\" ry=\"28\" fill=\"#4299e1\" opacity=\"0.75\"/>\n<ellipse cx=\"170\" cy=\"55\" rx=\"30\" ry=\"10\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"1.5\" opacity=\"0.6\"/>\n<ellipse cx=\"290\" cy=\"80\" rx=\"32\" ry=\"14\" fill=\"#4299e1\" opacity=\"0.7\"/>\n<ellipse cx=\"290\" cy=\"80\" rx=\"20\" ry=\"20\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<circle cx=\"290\" cy=\"80\" r=\"6\" fill=\"#68d391\" opacity=\"0.8\"/>\n<line x1=\"80\" y1=\"80\" x2=\"130\" y2=\"65\" stroke=\"#f6ad55\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<line x1=\"210\" y1=\"60\" x2=\"255\" y2=\"72\" stroke=\"#68d391\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<circle cx=\"50\" cy=\"80\" r=\"5\" fill=\"#fff\" opacity=\"0.6\"/>\n<polygon points=\"170,30 175,43 163,43\" fill=\"#f6ad55\" opacity=\"0.7\"/>\n<polygon points=\"290,55 295,68 285,68\" fill=\"#68d391\" opacity=\"0.7\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#f6ad5518\"/><circle cx=\"170\" cy=\"80\" r=\"16\" fill=\"#f6ad55\" opacity=\"0.9\"/><text x=\"164\" y=\"84\" font-size=\"9\" fill=\"white\">☀️</text><circle cx=\"170\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-dasharray=\"3,4\"/><circle cx=\"170\" cy=\"80\" r=\"65\" fill=\"none\" stroke=\"#4299e1\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.6\"/><circle cx=\"170\" cy=\"80\" r=\"90\" fill=\"none\" stroke=\"#f6ad55\" stroke-width=\"2\" stroke-dasharray=\"6,4\" opacity=\"0.5\"/><circle cx=\"130\" cy=\"80\" r=\"5\" fill=\"#4a5568\"/><text x=\"122\" y=\"100\" font-size=\"7\" fill=\"#4a5568\">Earth</text><circle cx=\"105\" cy=\"80\" r=\"8\" fill=\"#e05a2b\" opacity=\"0.8\"/><text x=\"97\" y=\"100\" font-size=\"7\" fill=\"#e05a2b\">Mars</text><circle cx=\"85\" cy=\"80\" r=\"11\" fill=\"#805ad5\" opacity=\"0.7\"/><text x=\"75\" y=\"100\" font-size=\"7\" fill=\"#805ad5\">Jupiter</text><path d=\"M 250 30 Q 280 20 300 50 Q 310 70 290 80 Q 270 95 250 85\" stroke=\"#f6ad55\" stroke-width=\"2\" fill=\"none\" opacity=\"0.8\" stroke-dasharray=\"5,3\"/><text x=\"252\" y=\"22\" font-size=\"8\" fill=\"#f6ad55\" font-weight=\"bold\">分子雲物質</text><text x=\"248\" y=\"33\" font-size=\"7\" fill=\"#f6ad55\">(外圍+30%)</text><circle cx=\"145\" cy=\"55\" r=\"4\" fill=\"#48bb78\" opacity=\"0.8\"/><path d=\"M 148 52 Q 160 35 150 70\" stroke=\"#48bb78\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"3,2\"/><text x=\"130\" y=\"38\" font-size=\"7\" fill=\"#48bb78\">Ryugu/Bennu</text><text x=\"130\" y=\"47\" font-size=\"7\" fill=\"#48bb78\">地球水源 💧</text></svg>"
     },
     {
-      "id": "tech-260610",
-      "domain": "tech",
+      "id": "health-260610",
+      "domain": "health",
       "day": "2026-06-10",
-      "author": "Yonathan Murin, Ali Ozer Ercan et al.",
-      "ref": "arXiv:2606.09829v1",
-      "url": "https://arxiv.org/abs/2606.09829v1",
-      "color": "#68d391",
+      "author": "Yixuan Zhang, Yang Song, Hao Wang, Samir Bhatt, Hengguan Huang",
+      "ref": "arXiv:2606.09433",
+      "url": "https://arxiv.org/abs/2606.09433",
+      "color": "#ed64a6",
       "title": {
-        "zh-TW": "雜訊中提取變化率：自適應導數估計新方法 SURDE",
-        "en": "Extracting Rates of Change from Noisy Data: The Adaptive SURDE Method",
-        "zh-CN": "噪声中提取变化率：自适应导数估计新方法 SURDE",
-        "ja": "ノイズの中から変化率を抽出する：適応的微分推定法 SURDE",
-        "ko": "잡음 속에서 변화율 추출하기：적응형 미분 추정법 SURDE"
+        "zh-TW": "下水道先知：AI 從污水偵測流感，比醫院早一步掌握疫情",
+        "en": "Sewage Oracle: AI Detects Influenza in Wastewater Before Hospitals See the First Cases",
+        "zh-CN": "下水道先知：AI 从污水侦测流感，比医院早一步掌握疫情",
+        "ja": "下水道の予言者：AIが汚水からインフルエンザを検出し病院より一歩先に感染を把握",
+        "ko": "하수도 예언자：AI가 오수에서 독감을 감지해 병원보다 먼저 유행을 파악하다"
       },
       "tag": {
-        "zh-TW": "📶 訊號處理",
-        "en": "📶 Signal Processing",
-        "zh-CN": "📶 信号处理",
-        "ja": "📶 信号処理",
-        "ko": "📶 신호 처리"
+        "zh-TW": "🏥 公共衛生",
+        "en": "🏥 Public Health",
+        "zh-CN": "🏥 公共卫生",
+        "ja": "🏥 公衆衛生",
+        "ko": "🏥 공중보건"
       },
       "tech": {
-        "zh-TW": "本文提出 SURDE（Stein無偏風險導數估計器），針對含噪訊號的導數估計問題，利用 Stein無偏風險估計（SURE）準則在每個時間步評估一組不同長度的因果 FIR 濾波器的代價函數，再以指數加權軟組合各候選濾波器輸出。此方法自動平衡短濾波器的噪聲放大與長濾波器的平滑偏差之間的折衷，無需事先指定濾波器長度。",
-        "en": "SURDE (SURE Derivative Estimator) addresses the tradeoff between noise amplification and smoothing bias in causal FIR derivative filters. At each time step, it evaluates a data-driven SURE-based cost over a bank of candidate filter lengths and soft-combines their outputs via exponential weighting. This enables fully adaptive, parameter-free derivative estimation from noisy sampled signals.",
-        "zh-CN": "本文提出 SURDE（Stein无偏风险导数估计器），利用 SURE 准则在每个时间步评估一组不同长度的因果 FIR 滤波器的代价，并以指数加权软组合各候选滤波器输出。该方法自动平衡短滤波器的噪声放大与长滤波器的平滑偏差，无需预先指定滤波器长度。",
-        "ja": "SURDE は、因果 FIR 微分フィルタにおけるノイズ増幅と平滑化バイアスのトレードオフを解決するため、各時刻において SURE 基準で複数の候補フィルタ長のコストを評価し、指数重み付けでソフト結合する手法です。フィルタ長を事前に指定せず、データ駆動で適応的に微分を推定できます。",
-        "ko": "SURDE는 인과 FIR 미분 필터에서 발생하는 잡음 증폭과 평활 편향 간의 트레이드오프를 해결하기 위해, 매 시간 단계마다 SURE 기준으로 다양한 후보 필터 길이의 비용을 평가하고 지수 가중치로 소프트 결합합니다. 필터 길이를 사전에 지정할 필요 없이 데이터 기반으로 적응적 미분 추정이 가능합니다."
+        "zh-TW": "研究者提出「貝葉斯選擇性潛在推斷」（BSLI）框架，將污水優先的流感監測定義為一個選擇性決策問題：從強制性的污水證據出發，系統必須決定污水數據是否足夠、下一步要查詢哪個延遲的官方監測資料流、以及何時在來源不明確時選擇棄答。BSLI 維護一個關於潛在疾病負擔與可識別性的後驗分布，通過明確的科學閘門認證可回答性，並以成本校準的 Bellman 策略優化查詢/停止決策。在含 5,933 個預測情節和 3,102 個來源不確定情節的公開數據基準上，BSLI 在同等預算限制下改善了成本效能前沿。",
+        "en": "The researchers propose Bayesian Selective Latent Inference (BSLI), framing wastewater-first influenza monitoring as a selective decision problem: starting from mandatory wastewater evidence, the system decides whether wastewater alone is sufficient, which delayed official surveillance stream to query next, and when abstention is scientifically defensible under source ambiguity. BSLI maintains a posterior over latent disease burden and identifiability, certifies answerability through explicit scientific gates, and optimizes query-stop decisions with a cost-calibrated Bellman policy. On a public-data benchmark with 5,933 forecasting episodes and 3,102 source-ambiguity episodes, BSLI improves the matched-budget cost-performance frontier.",
+        "zh-CN": "研究者提出「贝叶斯选择性潜在推断」（BSLI）框架，将污水优先的流感监测定义为选择性决策问题：从强制性污水证据出发，系统决定污水数据是否足够、下一步查询哪个延迟的官方监测数据流、以及何时在来源不确定时选择弃答。BSLI 维护关于潜在疾病负担与可识别性的后验分布，通过科学闸门认证可回答性，并以成本校准的 Bellman 策略优化查询/停止决策，在公开数据基准上改善了同等预算限制下的成本效能前沿。",
+        "ja": "研究者は「ベイズ的選択的潜在推論（BSLI）」フレームワークを提案し、汚水優先のインフルエンザ監視を選択的意思決定問題として定式化した。強制的な汚水証拠から始まり、システムは汚水だけで十分か、次にどの遅延公式監視ストリームを照会するか、来源不明時にいつ棄権すべきかを決定する。BSLIは潜在的疾病負担と識別可能性に関する事後分布を維持し、科学的ゲートを通じて回答可能性を認証し、コスト較正ベルマン方策でクエリ/停止決定を最適化する。5,933予測エピソードと3,102来源曖昧エピソードを含む公開データベンチマークで同一予算制約下のコストパフォーマンス前線を改善した。",
+        "ko": "연구자들은 「베이지안 선택적 잠재 추론(BSLI)」 프레임워크를 제안하여 오수 우선 독감 감시를 선택적 의사결정 문제로 정식화했다. 필수적인 오수 증거에서 시작해 시스템은 오수만으로 충분한지, 다음에 어떤 지연된 공식 감시 데이터 스트림을 조회할지, 출처 불명확 시 언제 기권해야 하는지를 결정한다. BSLI는 잠재적 질병 부담과 식별 가능성에 대한 사후 분포를 유지하고 과학적 게이트를 통해 답변 가능성을 인증하며, 비용 보정 벨만 정책으로 조회/정지 결정을 최적화한다. 5,933개 예측 에피소드와 3,102개 출처 불명확 에피소드를 포함한 공개 데이터 벤치마크에서 동일 예산 제약 하에 비용 성능 프론티어를 개선했다."
       },
       "plain": {
-        "zh-TW": "想像你在追蹤一輛在顛簸道路上行駛的車速——感測器每秒回傳的位置數據都帶著一點「抖動」雜訊。要算出「現在速度是多少」，你需要對位置求導數，也就是計算變化有多快。麻煩在於：如果你只看很短的時間窗口，抖動雜訊會讓速度估計忽高忽低；如果你拉長時間窗口來平滑，又會跟不上真實速度的快速變化。這就像用細筆畫圖容易手抖，用粗筆描線又太模糊。過去工程師只能憑經驗猜一個「差不多的窗口長度」，然後從頭到尾用同一個設定。SURDE 的突破在於：它同時準備了許多不同長度的濾波器，每一個時間點都即時評估「哪個長度在當下最合適」，再把各個結果聰明地混合起來，就像同時請了一群各有所長的助手，然後根據現場情況動態分配他們的發言權重。這對醫療訊號處理（如手部震顫分析）、機器人控制、以及人機介面都有直接應用價值，讓系統不再需要人工調參就能自動適應不同噪音環境。",
-        "en": "Imagine tracking the speed of a car on a bumpy road using noisy sensor data — every position reading jiggles a little. To find the speed, you need to compute how fast the position is changing, which is called a derivative. The catch is: a short time window makes the estimate jump around with the noise, while a long window smooths things out but can't keep up with sudden speed changes. It's like drawing with a thin pen that shakes versus a thick pen that blurs the lines. Engineers used to pick a window length by hand and stick with it. SURDE changes the game: it runs many different window lengths at once, scores each one in real time using a clever statistical trick called Stein's Unbiased Risk Estimator, and then blends the results with smart weighting — giving more trust to the lengths that are performing best right now. This means no manual tuning, and the filter automatically adapts moment by moment. Applications range from medical signal analysis and robotic arm control to touchscreen gesture recognition.",
-        "zh-CN": "想象你在追踪一辆行驶在颠簸路面上的汽车速度——传感器每秒返回的位置数据都带着一点「抖动」噪声。要算出「现在速度是多少」，需要对位置求导数，也就是计算变化有多快。问题在于：时间窗口太短，噪声会让速度估计忽高忽低；窗口太长，又会跟不上速度的快速变化。过去工程师只能凭经验手动设定一个固定窗口长度。SURDE 的突破是：同时准备多种不同长度的滤波器，每个时间点用 Stein 无偏风险准则实时评分，再把各结果智能混合，动态分配权重给当下表现最好的长度。这让系统无需手动调参就能自动适应不同噪声环境，在医疗信号、机器人控制和人机交互领域都有直接应用价值。",
-        "ja": "でこぼこ道を走る車の速度をノイズの多いセンサーデータで追跡する場面を想像してください。速度を求めるには位置の「変化の速さ」、つまり微分を計算する必要があります。短い時間窓を使うとノイズに振り回され、長い窓を使うと急な変化に追いつけません。細い筆で書けば手ブレが出て、太い筆で書けばぼやける、というジレンマです。従来エンジニアは経験でフィルタ長を決め固定していました。SURDE はその常識を覆し、さまざまな長さのフィルタを同時に走らせ、各時刻で Stein の不偏リスク推定量を使ってリアルタイムに評価し、最もうまくいっているフィルタに大きな重みをかけて結果を混合します。手動チューニング不要で環境に自動適応するこの手法は、医療信号処理、ロボット制御、ヒューマンインタフェースに直接役立ちます。",
-        "ko": "울퉁불퉁한 도로를 달리는 차의 속도를 잡음 섞인 센서 데이터로 추적한다고 상상해 보세요. 속도를 구하려면 위치의 「변화 속도」, 즉 미분을 계산해야 합니다. 짧은 시간 창을 쓰면 잡음에 휘둘리고, 긴 창을 쓰면 갑작스러운 변화를 따라가지 못합니다. 가는 붓으로 그리면 손이 떨리고, 굵은 붓으로 그리면 선이 뭉개지는 딜레마와 같습니다. 기존에는 엔지니어가 경험으로 필터 길이를 정해 고정했습니다. SURDE는 이 고정 관념을 깨고, 다양한 길이의 필터를 동시에 실행하면서 매 시간 단계마다 Stein 불편 위험 추정량으로 실시간 평가하고, 가장 잘 작동하는 필터에 더 큰 가중치를 주어 결과를 혼합합니다. 수동 조정 없이 자동으로 적응하는 이 방법은 의료 신호 분석, 로봇 제어, 인간-컴퓨터 인터페이스에 직접 활용될 수 있습니다."
+        "zh-TW": "流感疫情最難對付的地方在於：當你知道它爆發的時候，往往已經太晚了。人們通常先感染、幾天後才去看醫生、再過幾天數據才進官方系統。這中間有將近兩個星期的盲區。「污水監測」是一個解法：每個人每天都會沖廁所，污水裡的病毒 RNA 可以比醫院就診早 7-10 天反映真實的感染狀況，就像整個城市共用一個「集體體溫計」。但問題是，污水數據有很多雜訊——它能告訴你「病毒在社區裡」，卻不一定能告訴你「到底有多少人真的生病了」。BSLI 這個 AI 框架的巧思是：先以污水數據作為起點，然後用一套貝葉斯機率推論來決定「這些數據夠用嗎？還是我需要去查詢醫院的報告？」如果數據模糊到無法作出科學上有把握的判斷，系統甚至會主動說「我現在不確定，不要給出估計」——這種「知道自己不知道」的謙遜，反而讓決策更可靠。",
+        "en": "The hardest part of fighting flu outbreaks is that by the time you know one is happening, it is already too late. People get infected, visit the doctor days later, and data enters official systems days after that — a blind window of nearly two weeks. Wastewater surveillance is a fix: everyone flushes every day, so virus RNA in sewage reflects real infection levels seven to ten days before clinical reports catch up, like a collective thermometer for an entire city. The problem is that wastewater data is noisy — it tells you the virus is circulating but not exactly how many people are sick. BSLI solves this by starting with wastewater data and using Bayesian inference to decide: is this enough, or do I need to query hospital reports? When the data is too ambiguous for a scientifically defensible answer, the system deliberately abstains rather than guessing. That willingness to say I do not know turns out to make decisions more reliable.",
+        "zh-CN": "流感疫情最难对付的地方在于：当你知道它爆发时，往往已经太晚了。人们先感染、几天后才去看医生、再过几天数据才进官方系统，中间有近两周盲区。「污水监测」是一个解法：每个人每天都会冲厕所，污水中的病毒 RNA 可以比医院就诊早 7-10 天反映真实感染状况。但污水数据有很多噪声——能告诉你「病毒在社区里」，却不一定能告诉你「到底多少人真的生病了」。BSLI 的巧思是先以污水数据为起点，用贝叶斯概率推断决定「这些数据够用吗？还是需要查询医院报告？」当数据太模糊时系统甚至会主动说「我现在不确定」——这种「知道自己不知道」的谦逊反而让决策更可靠。",
+        "ja": "インフルエンザ流行との戦いで最も難しいのは、流行を知ったときにはすでに手遅れになっていることだ。人々は感染し、数日後に医師を訪れ、さらに数日後にデータが公式システムに入る——約2週間の盲点がある。下水道監視はその解決策だ：誰もが毎日トイレを流すため、下水中のウイルスRNAは臨床報告より7〜10日早く実際の感染状況を反映し、都市全体の「集合体温計」のようなものだ。問題は下水データにノイズが多いこと——ウイルスが循環していることは分かっても何人が実際に病気かは分からない。BSLIは下水データを出発点にベイズ推論で「この情報で十分か、病院データを照会すべきか」を判断する。科学的に確信を持てない場合は「分からない」と明示的に棄権する——その謙虚さが逆に意思決定をより信頼できるものにする。",
+        "ko": "독감 유행과의 싸움에서 가장 어려운 점은, 유행이 시작된 걸 알았을 때는 이미 너무 늦은 경우가 많다는 것입니다. 감염되고 며칠 후에 병원을 가고, 그 후 며칠이 지나서야 데이터가 공식 시스템에 들어옵니다—약 2주의 사각지대가 생깁니다. 하수도 감시는 해결책입니다: 모든 사람이 매일 화장실을 사용하므로 하수의 바이러스 RNA는 임상 보고보다 7~10일 먼저 실제 감염 상황을 반영합니다. 문제는 하수 데이터에 잡음이 많다는 것—바이러스가 돌고 있다는 건 알아도 얼마나 많은 사람이 실제로 아픈지는 알 수 없습니다. BSLI는 하수 데이터를 출발점으로 베이지안 추론으로 「이 데이터로 충분한가, 병원 보고를 조회해야 하나」를 결정합니다. 과학적으로 확신하기 어려울 때는 시스템이 능동적으로 「모르겠다」고 기권합니다—이 겸손함이 오히려 의사결정을 더 신뢰할 수 있게 만듭니다."
       },
       "insight": {
-        "zh-TW": "💡 最好的模型不是固定選一個「最佳參數」，而是讓數據本身在每個瞬間投票決定該相信誰。",
-        "en": "💡 The best estimator isn't one fixed choice — it's a system that lets the data itself vote, at every moment, on which model to trust.",
-        "zh-CN": "💡 最好的模型不是固定选一个「最优参数」，而是让数据本身在每个瞬间投票决定该相信谁。",
-        "ja": "💡 最良の推定器とは固定の「最適パラメータ」を選ぶことではなく、データ自身が瞬間ごとに投票して信頼するモデルを決める仕組みを作ることだ。",
-        "ko": "💡 최선의 추정기는 고정된 「최적 파라미터」를 선택하는 것이 아니라, 매 순간 데이터 자체가 어떤 모델을 믿을지 투표하게 만드는 구조다."
+        "zh-TW": "💡 最準確的疫情預警系統不只要「看得早」，還要知道自己「看到的夠不夠清楚」——懂得在不確定時說不的 AI，比盲目給出答案的 AI 更可信。",
+        "en": "💡 The most accurate outbreak surveillance is not just about seeing early but about knowing when you see clearly enough — an AI that admits uncertainty is more trustworthy than one that always produces an answer.",
+        "zh-CN": "💡 最准确的疫情预警系统不只要「看得早」，还要知道自己「看到的够不够清楚」——懂得在不确定时说不的 AI，比盲目给出答案的 AI 更可信。",
+        "ja": "💡 最も正確な流行監視は「早く見える」だけでなく「十分に明確に見えているか」を知ることだ——不確かなときに「分からない」と言えるAIは、常に答えを出すAIより信頼できる。",
+        "ko": "💡 가장 정확한 유행 감시는 「일찍 보는」 것뿐 아니라 「충분히 명확하게 보고 있는지」를 아는 것이다—불확실할 때 「모르겠다」고 말할 줄 아는 AI가 항상 답을 내놓는 AI보다 신뢰할 수 있다."
       },
-      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#68d39118\"/>\n<path d=\"M20,120 Q60,115 80,118 Q100,121 120,116 Q140,111 160,114 Q180,117 200,110 Q220,103 240,106 Q260,109 280,100 Q300,91 320,94\" stroke=\"#68d391\" stroke-width=\"2\" fill=\"none\" opacity=\"0.4\"/>\n<path d=\"M20,118 Q60,100 100,95 Q140,90 180,75 Q220,60 260,55 Q290,52 320,48\" stroke=\"#68d391\" stroke-width=\"2.5\" fill=\"none\"/>\n<path d=\"M20,80 L20,130 M20,130 L320,130\" stroke=\"#68d391\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.5\"/>\n<circle cx=\"60\" cy=\"112\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"100\" cy=\"98\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"140\" cy=\"92\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"180\" cy=\"78\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"220\" cy=\"64\" r=\"3\" fill=\"#fbb6ce\"/>\n<circle cx=\"260\" cy=\"57\" r=\"3\" fill=\"#fbb6ce\"/>\n<line x1=\"180\" y1=\"50\" x2=\"240\" y2=\"30\" stroke=\"#f6e05e\" stroke-width=\"2\"/>\n<polygon points=\"240,30 230,32 234,42\" fill=\"#f6e05e\"/>\n</svg>"
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#ed64a618\"/><rect x=\"20\" y=\"105\" width=\"300\" height=\"30\" rx=\"5\" fill=\"#4a9e6b\" opacity=\"0.5\"/><text x=\"155\" y=\"124\" font-size=\"8\" fill=\"white\" text-anchor=\"middle\" font-weight=\"bold\">🏙 City Wastewater</text><rect x=\"30\" y=\"60\" width=\"60\" height=\"40\" rx=\"6\" fill=\"#ed64a6\" opacity=\"0.7\"/><text x=\"42\" y=\"80\" font-size=\"8\" fill=\"white\" font-weight=\"bold\">💧 RNA</text><text x=\"38\" y=\"92\" font-size=\"7\" fill=\"white\">Day 0</text><line x1=\"93\" y1=\"80\" x2=\"113\" y2=\"80\" stroke=\"#ed64a6\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><rect x=\"116\" y=\"50\" width=\"75\" height=\"60\" rx=\"8\" fill=\"white\" stroke=\"#ed64a6\" stroke-width=\"2\"/><text x=\"124\" y=\"68\" font-size=\"8\" fill=\"#ed64a6\" font-weight=\"bold\">BSLI</text><text x=\"124\" y=\"80\" font-size=\"7\" fill=\"#555\">Bayesian</text><text x=\"124\" y=\"90\" font-size=\"7\" fill=\"#555\">Inference</text><text x=\"124\" y=\"102\" font-size=\"7\" fill=\"#555\">+ Gate ✓</text><line x1=\"194\" y1=\"72\" x2=\"214\" y2=\"62\" stroke=\"#48bb78\" stroke-width=\"2\"/><line x1=\"194\" y1=\"88\" x2=\"214\" y2=\"98\" stroke=\"#888\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><rect x=\"218\" y=\"48\" width=\"90\" height=\"28\" rx=\"5\" fill=\"#48bb78\" opacity=\"0.8\"/><text x=\"228\" y=\"62\" font-size=\"7.5\" fill=\"white\" font-weight=\"bold\">✅ 早期預警</text><text x=\"228\" y=\"72\" font-size=\"7\" fill=\"white\">比醫院早 7-10 天</text><rect x=\"218\" y=\"84\" width=\"90\" height=\"22\" rx=\"5\" fill=\"#888\" opacity=\"0.5\"/><text x=\"228\" y=\"99\" font-size=\"7.5\" fill=\"white\">❓ 不確定→棄答</text><text x=\"62\" y=\"45\" font-size=\"8\" fill=\"#ed64a6\">污水先知</text></svg>"
     }
   ]
 }

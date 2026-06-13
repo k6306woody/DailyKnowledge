@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-12",
+  "mode": "paper",
+  "paper_date": "2026-06-12",
+  "generated_at": "2026-06-12",
+  "cards": [
+    {
+      "id": "ai-260612",
+      "domain": "ai",
+      "day": "2026-06-12",
+      "author": "Mingqing Xiao, Kai Du, Zhouchen Lin",
+      "ref": "arXiv:2606.11893v1",
+      "url": "https://arxiv.org/abs/2606.11893",
+      "color": "#5a67d8",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#5a67d818\"/><ellipse cx=\"85\" cy=\"80\" rx=\"50\" ry=\"38\" fill=\"none\" stroke=\"#5a67d8\" stroke-width=\"2.5\" opacity=\"0.7\"/><path d=\"M62 60 Q75 45 90 55 Q100 42 112 58\" fill=\"none\" stroke=\"#5a67d8\" stroke-width=\"2\" opacity=\"0.6\"/><path d=\"M65 90 Q78 102 92 95 Q105 108 118 92\" fill=\"none\" stroke=\"#5a67d8\" stroke-width=\"2\" opacity=\"0.6\"/><circle cx=\"85\" cy=\"80\" r=\"10\" fill=\"#5a67d8\" opacity=\"0.4\"/><line x1=\"140\" y1=\"80\" x2=\"185\" y2=\"80\" stroke=\"#5a67d8\" stroke-width=\"2\" stroke-dasharray=\"5,4\" opacity=\"0.7\"/><polygon points=\"183,75 195,80 183,85\" fill=\"#5a67d8\" opacity=\"0.7\"/><circle cx=\"220\" cy=\"55\" r=\"8\" fill=\"#5a67d8\" opacity=\"0.8\"/><circle cx=\"255\" cy=\"80\" r=\"8\" fill=\"#5a67d8\" opacity=\"0.8\"/><circle cx=\"220\" cy=\"105\" r=\"8\" fill=\"#5a67d8\" opacity=\"0.8\"/><circle cx=\"295\" cy=\"65\" r=\"8\" fill=\"#5a67d8\" opacity=\"0.6\"/><circle cx=\"295\" cy=\"95\" r=\"8\" fill=\"#5a67d8\" opacity=\"0.6\"/><line x1=\"220\" y1=\"55\" x2=\"255\" y2=\"80\" stroke=\"#5a67d8\" stroke-width=\"1.8\" opacity=\"0.6\"/><line x1=\"220\" y1=\"105\" x2=\"255\" y2=\"80\" stroke=\"#5a67d8\" stroke-width=\"1.8\" opacity=\"0.6\"/><line x1=\"255\" y1=\"80\" x2=\"295\" y2=\"65\" stroke=\"#5a67d8\" stroke-width=\"1.8\" opacity=\"0.6\"/><line x1=\"255\" y1=\"80\" x2=\"295\" y2=\"95\" stroke=\"#5a67d8\" stroke-width=\"1.8\" opacity=\"0.6\"/><text x=\"20\" y=\"18\" font-size=\"10\" fill=\"#5a67d8\" font-weight=\"bold\" opacity=\"0.8\">🧠→🤖 Brain-Guided AI</text></svg>",
+      "title": {
+        "zh-TW": "大腦引導語言模型：超越對齊，打造強健推理能力",
+        "en": "Brain-Guided Language Models: Beyond Alignment to Robust Reasoning",
+        "zh-CN": "大脑引导语言模型：超越对齐，打造强健推理能力",
+        "ja": "脳誘導言語モデル：表現整合を超えた堅牢な推論へ",
+        "ko": "뇌 유도 언어 모델: 표상 정렬을 넘어 강건한 추론으로"
+      },
+      "tag": {
+        "zh-TW": "🤖 人工智慧",
+        "en": "🤖 Artificial Intelligence",
+        "zh-CN": "🤖 人工智能",
+        "ja": "🤖 人工知能",
+        "ko": "🤖 인공지능"
+      },
+      "tech": {
+        "zh-TW": "本研究發現大型語言模型的內部表徵不僅與演繹推理任務的 fMRI 腦部活動部分對齊，更關鍵的是這些神經信號可直接強化模型性能。研究聚焦於演繹推理，以推理相關腦區 fMRI 活動微調語言模型，在分布內與分布外推理基準測試上均取得顯著改善，揭示人腦中語言與推理可分離性對 AI 架構設計的深遠啟示。",
+        "en": "This study finds that LLM internal representations are not only partially aligned with task-fMRI brain activity but that these neural signals can directly enhance model performance. Focusing on deductive reasoning, the team fine-tunes language models with fMRI data from reasoning-specific cortical regions and achieves significant improvements on both in-distribution and out-of-distribution benchmarks, revealing how the brain's dissociable language and reasoning systems inform next-generation AI design.",
+        "zh-CN": "本研究发现大型语言模型的内部表征不仅与演绎推理任务的fMRI脑部活动部分对齐，这些神经信号更可直接强化模型性能。研究以推理相关脑区fMRI活动微调语言模型，在分布内与分布外推理基准测试上均取得显著改善，揭示人脑中语言与推理可分离性对AI架构的深远启示。",
+        "ja": "本研究はLLMの内部表現が演繹推論タスクのfMRI脳活動と部分的に整合するだけでなく、これらの神経信号がモデル性能を直接向上させられることを発見しました。推論関連皮質のfMRIデータで言語モデルをファインチューニングし、分布内外の推論ベンチマーク両方で大幅改善を達成。人脳での言語と推論の分離可能性がAI設計に与える示唆を示します。",
+        "ko": "이 연구는 LLM 내부 표현이 연역적 추론 과제의 fMRI 뇌 활동과 부분적으로 정렬될 뿐만 아니라, 이러한 신경 신호가 모델 성능을 직접 향상시킬 수 있음을 발견했습니다. 추론 관련 피질 영역의 fMRI 데이터로 언어 모델을 미세 조정하여 분포 내외 벤치마크 모두에서 개선을 달성했습니다."
+      },
+      "plain": {
+        "zh-TW": "長久以來，科學家一直想知道：AI 語言模型和人類大腦的「推理方式」到底有多像？過去的研究大多比較兩者的「表面輸出」，就像只看學生寫的答案，卻不管他腦子裡在想什麼。這篇論文做了更深入的事：讓受試者做推理題的同時，用 fMRI 機器掃描大腦，記錄負責「推理」的特定腦區如何活化——然後把這些真實的「大腦推理信號」直接輸入 AI 訓練，讓模型的內部計算向大腦看齊。結果非常驚人：這樣訓練出來的語言模型，不只在標準推理測驗上進步，連碰到全新類型的題目時（分布外測試）也表現更好——這正是 AI 最常被批評的弱點。更重要的發現是：人腦中「語言」和「推理」其實用的是不同腦區，彼此可以分離。現有語言模型把兩者混在一起，可能正是推理能力有限的原因之一。這告訴我們，下一代 AI 架構應該刻意把「說話」和「思考」分開訓練，就像人腦那樣。",
+        "en": "For years, scientists have wondered: how similar is AI reasoning to human brain reasoning? Past studies mostly compared outputs — like grading two students on answers without looking at their thought processes. This paper goes deeper. Participants solved reasoning puzzles inside an fMRI scanner while researchers recorded exactly which brain regions activated during deductive thinking. Those real brain-activity patterns were then fed directly into language model training, making the AI's internal computations mirror the brain's reasoning circuits. The results were striking: models trained this way improved not just on standard reasoning tests, but on brand-new problem types never seen before — exactly where AI typically struggles. The deeper insight is that in the human brain, language and reasoning live in separable regions. Current language models conflate the two, which may explain why their reasoning hits a ceiling. This work suggests that next-generation AI should deliberately separate speaking from thinking — just as the brain does.",
+        "zh-CN": "长久以来，科学家一直想知道：AI语言模型和人类大脑的「推理方式」到底有多像？过去的研究大多比较两者的「表面输出」。这篇论文做了更深入的事：受试者做推理题时，fMRI机器同步扫描大脑，记录负责「推理」的特定脑区如何活化——然后把这些真实的「大脑推理信号」直接输入AI训练。结果非常惊人：这样训练出来的语言模型，不只在标准推理测验上进步，连碰到全新类型的题目时也表现更好。更重要的是：人脑中「语言」和「推理」用的是不同脑区，可以分离。现有语言模型把两者混在一起，可能正是推理能力有限的原因。",
+        "ja": "「AIの推論と人間の脳の推論はどれほど似ているのか？」長年の疑問に、この研究は正面から挑みます。参加者がfMRIスキャナーの中で推論問題を解く間、脳のどの領域が活性化するかを精密に記録。そのリアルな脳活動パターンを言語モデルの学習に直接取り込み、AIの内部計算を脳の推論回路に近づけました。結果は驚くべきもので、こうして訓練されたモデルは標準的な推論テストだけでなく、まったく見たことのない新種の問題でも改善を示しました。さらに重要な発見として、人間の脳では「言語」と「推論」は分離可能な異なる領域を使います。現在の言語モデルはこれを混同しており、それが推論の天井の一因かもしれません。",
+        "ko": "AI 언어 모델의 추론 방식은 인간 두뇌와 얼마나 비슷할까요? 참가자들이 fMRI 스캐너 안에서 추론 문제를 푸는 동안, 연역적 사고 중 어떤 뇌 영역이 활성화되는지 기록했습니다. 그 실제 뇌 활동 패턴을 언어 모델 학습에 직접 주입하여 AI의 내부 계산을 뇌의 추론 회로에 맞췄습니다. 결과는 놀라웠습니다. 이렇게 훈련된 모델은 표준 추론 테스트뿐 아니라 전혀 새로운 문제 유형에서도 개선되었습니다. 더 깊은 통찰은 인간 뇌에서 '언어'와 '추론'이 분리 가능한 영역을 사용한다는 것입니다. 이 연구는 차세대 AI가 말하기와 생각하기를 의도적으로 분리해야 함을 시사합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 AI 不只要學「說人話」，更要學「用人腦想事情」——當語言模型開始借用大腦推理迴路的藍圖，真正強健的推理能力才可能誕生。",
+        "en": "💡 AI doesn't just need to speak like humans — it needs to think like them. When language models borrow the brain's reasoning blueprint, truly robust inference becomes possible for the first time.",
+        "zh-CN": "💡 AI不只要学「说人话」，更要学「用人脑想事情」——当语言模型开始借用大脑推理回路的蓝图，真正强健的推理能力才可能诞生。",
+        "ja": "💡 AIは「人間のように話す」だけでなく「人間のように考える」ことを学ぶ必要がある——言語モデルが脳の推論回路の設計図を借りたとき、初めて真に堅牢な推論が生まれる。",
+        "ko": "💡 AI는 인간처럼 말하는 것만이 아니라 인간처럼 생각하는 것을 배워야 한다 — 언어 모델이 뇌의 추론 회로 설계도를 빌릴 때 비로소 진정한 강건한 추론이 가능해진다."
+      }
+    },
+    {
+      "id": "neuro-260612",
+      "domain": "neuro",
+      "day": "2026-06-12",
+      "author": "Dennis Wu, Yi-Chun Hung, Braden Yuille, James E. Fitzgerald, Han Liu",
+      "ref": "arXiv:2606.10238v1",
+      "url": "https://arxiv.org/abs/2606.10238",
+      "color": "#9f7aea",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#9f7aea12\"/><circle cx=\"170\" cy=\"80\" r=\"65\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.3\"/><circle cx=\"170\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.4\"/><circle cx=\"170\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"1.5\" opacity=\"0.5\"/><circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#9f7aea\" stroke-width=\"2\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#9f7aea\" opacity=\"0.9\"/><circle cx=\"130\" cy=\"52\" r=\"5\" fill=\"#9f7aea\" opacity=\"0.8\"/><circle cx=\"210\" cy=\"52\" r=\"5\" fill=\"#9f7aea\" opacity=\"0.8\"/><circle cx=\"115\" cy=\"90\" r=\"4\" fill=\"#9f7aea\" opacity=\"0.7\"/><circle cx=\"225\" cy=\"90\" r=\"4\" fill=\"#9f7aea\" opacity=\"0.7\"/><circle cx=\"148\" cy=\"118\" r=\"4\" fill=\"#9f7aea\" opacity=\"0.6\"/><circle cx=\"192\" cy=\"118\" r=\"4\" fill=\"#9f7aea\" opacity=\"0.6\"/><circle cx=\"95\" cy=\"65\" r=\"3\" fill=\"#9f7aea\" opacity=\"0.5\"/><circle cx=\"245\" cy=\"65\" r=\"3\" fill=\"#9f7aea\" opacity=\"0.5\"/><circle cx=\"105\" cy=\"108\" r=\"3\" fill=\"#9f7aea\" opacity=\"0.45\"/><circle cx=\"235\" cy=\"108\" r=\"3\" fill=\"#9f7aea\" opacity=\"0.45\"/><text x=\"20\" y=\"18\" font-size=\"10\" fill=\"#9f7aea\" font-weight=\"bold\" opacity=\"0.8\">🧠 Hyperbolic Memory</text></svg>",
+      "title": {
+        "zh-TW": "海馬體的雙曲宇宙：彎曲空間如何讓記憶容量爆炸性成長",
+        "en": "The Hippocampus Thinks in Curves: Hyperbolic Geometry Unlocks Vast Memory Capacity",
+        "zh-CN": "海马体的双曲宇宙：弯曲空间如何让记忆容量爆炸性增长",
+        "ja": "海馬は曲がった空間で考える：双曲幾何学が記憶容量を飛躍的に拡大する",
+        "ko": "해마는 곡선으로 생각한다: 쌍곡 기하학이 기억 용량을 폭발적으로 늘리는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "基於海馬體群體活動具有雙曲結構的近期神經生物學實證，本研究提出一個定義在雙曲空間中的聯想記憶模型，其記憶容量顯著超越現有最佳模型。研究同時提出動物在空間導航中將位置資訊編碼為潛在雙曲認知地圖的理論，在雙曲空間中的解碼準確度也優於歐氏空間。",
+        "en": "Building on recent neurobiological evidence that hippocampal population activity has a hyperbolic structure, this paper introduces an associative memory model defined in hyperbolic space. The model yields significantly larger capacity than leading Euclidean-based models. The paper also proposes that animals encode spatial information as a latent hyperbolic cognitive map during navigation, achieving superior decoding accuracy in hyperbolic versus Euclidean space.",
+        "zh-CN": "基于海马体群体活动具有双曲结构的近期神经生物学实证，本研究提出一个定义在双曲空间中的联想记忆模型，其记忆容量显著超越现有最佳模型。研究同时提出动物在空间导航中将位置信息编码为潜在双曲认知地图，在双曲空间中的解码准确度优于欧氏空间。",
+        "ja": "海馬の群体活動が双曲的構造を持つという近年の神経生物学的証拠を基に、双曲空間上で定義される連想記憶モデルを提案。これはユークリッドベースの最先端モデルよりも有意に大きな容量を実現します。また、空間ナビゲーション中に動物が位置情報を潜在的な双曲認知マップとして符号化することも提唱し、ユークリッド空間より高い解読精度を達成しています。",
+        "ko": "해마 군체 활동이 쌍곡 구조를 가진다는 최근 신경생물학적 증거를 바탕으로, 쌍곡 공간에 정의된 연상 기억 모델을 제안합니다. 이 모델은 기존 최고 모델보다 현저히 큰 용량을 실현합니다. 또한 공간 항법 중 동물이 위치 정보를 잠재적 쌍곡 인지 지도로 인코딩한다고 제안하며 유클리드 공간보다 높은 디코딩 정확도를 달성합니다."
+      },
+      "plain": {
+        "zh-TW": "想像你要把一整個城市的地圖記在腦子裡。如果地圖是平面的（歐幾里得空間），城市越大、需要記的東西越多，記憶就越容易混淆。但如果地圖是「雙曲空間」，就像你把一張紙不斷往外折疊——越靠外圍，空間就越多，可以放越多不重疊的東西。科學家發現，老鼠和人類的海馬體（大腦中負責空間記憶和導航的區域）就是用這種「越來越寬廣的雙曲空間」來存放記憶的。這篇論文證明，用雙曲空間建立的記憶模型，容量遠超傳統「平面」模型，就像從一個普通筆記本換成了一個魔法書包——可以塞進去的東西幾乎無限。更酷的是，研究者也模擬了老鼠在迷宮裡導航時，大腦如何把每個位置「畫」在這張雙曲地圖上，發現這種彎曲的編碼方式讓定位更準確、更不容易搞混。這個發現不只解釋了大腦為什麼記憶容量如此驚人，也給 AI 記憶架構設計提供了全新的靈感。",
+        "en": "Imagine storing an entire city map in your head. On a flat, ordinary map, as the city grows bigger, more details crowd together and memory becomes confused. But in hyperbolic space — like a piece of paper that keeps folding outward — the further you go from the center, the more room there is. Things spread out without crowding. Scientists have discovered that the hippocampus, the brain region responsible for spatial memory and navigation, appears to use exactly this expanding, curved space to store memories. This paper proves that an associative memory model built in hyperbolic space dramatically outperforms traditional flat-space models in capacity — like switching from a regular notebook to a bag that can hold almost infinite items without them getting mixed up. Even more fascinating, the researchers simulated how a rat navigating a maze encodes each location onto this curved cognitive map, finding that the hyperbolic encoding allows far more accurate and distinct position tracking. This explains why the brain can hold so many memories without confusion, and opens entirely new directions for AI memory design.",
+        "zh-CN": "想象你要把一整个城市的地图记在脑子里。如果地图是平面的，城市越大、需要记的东西越多，记忆就越容易混淆。但如果地图是「双曲空间」，就像一张纸不断往外折叠——越靠外围，空间就越多，可以放更多不重叠的东西。科学家发现，海马体（大脑中负责空间记忆和导航的区域）就是用这种「越来越宽广的双曲空间」来存放记忆的。这篇论文证明，用双曲空间建立的记忆模型，容量远超传统「平面」模型——就像从普通笔记本换成了魔法书包。更酷的是，研究者模拟了老鼠在迷宫导航时，大脑如何把每个位置「画」在这张双曲地图上，发现弯曲编码方式让定位更准确。这个发现不只解释了大脑记忆容量如此惊人的原因，也给AI记忆架构设计提供了全新灵感。",
+        "ja": "街全体の地図を頭の中に入れることを想像してください。普通の平らな地図なら、街が大きくなるほど情報が混み合い、記憶が混乱します。でも双曲空間では――紙が外側に向かって折り重なっていくように――中心から離れるほどスペースが広がり、ものがぎゅうぎゅうになりません。科学者たちは、空間記憶とナビゲーションを担う脳の海馬が、まさにこの「どこまでも広がる曲がった空間」を使って記憶を保存しているらしいことを発見しました。この論文は、双曲空間で構築した連想記憶モデルが従来の平面モデルを大幅に上回る容量を持つことを証明しています。さらに、迷路を進むラットの脳がどのように各位置をこの曲がった認知マップ上に「描く」かをシミュレートし、双曲的符号化がより正確な位置追跡を可能にすることを示しました。",
+        "ko": "도시 전체 지도를 머릿속에 저장한다고 상상해 보세요. 평평한 지도에서는 도시가 커질수록 정보가 혼잡해져 기억이 뒤섞입니다. 하지만 쌍곡 공간에서는 중심에서 멀어질수록 공간이 넓어져 항목들이 겹치지 않습니다. 과학자들은 공간 기억과 항법을 담당하는 해마가 바로 이 '점점 넓어지는 곡선 공간'으로 기억을 저장하는 것 같다는 사실을 발견했습니다. 이 논문은 쌍곡 공간에 구축된 연상 기억 모델이 기존 평면 모델을 용량 면에서 크게 능가함을 증명합니다. 또한 미로를 탐색하는 쥐의 뇌가 각 위치를 곡선 인지 지도에 어떻게 '그리는지' 시뮬레이션하여 쌍곡 인코딩이 더 정확한 위치 추적을 가능하게 함을 보였습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 大腦不是用「平面地圖」記憶世界，而是用「雙曲宇宙」——越往邊緣空間越寬廣，讓記憶容量幾乎可以無限擴展，這正是大腦遠勝電腦的秘密之一。",
+        "en": "💡 The brain doesn't store memories on a flat map — it uses a hyperbolic universe where space expands toward the edges. This gives it near-limitless capacity, and may be one key secret behind why brains so vastly outperform computers at memory.",
+        "zh-CN": "💡 大脑不是用「平面地图」记忆世界，而是用「双曲宇宙」——越往边缘空间越宽广，让记忆容量几乎可以无限扩展，这正是大脑远胜电脑的秘密之一。",
+        "ja": "💡 脳は「平らな地図」で世界を記憶するのではなく、「双曲宇宙」を使う――端に向かうほど空間が広がり、記憶容量はほぼ無限に拡張できる。これが脳がコンピュータを圧倒する秘密の一つだ。",
+        "ko": "💡 뇌는 '평면 지도'로 세계를 기억하는 것이 아니라 '쌍곡 우주'를 사용한다 — 가장자리로 갈수록 공간이 넓어져 기억 용량이 거의 무한히 확장될 수 있다. 이것이 뇌가 컴퓨터를 압도하는 비밀 중 하나다."
+      }
+    },
+    {
+      "id": "chem-260612",
+      "domain": "chem",
+      "day": "2026-06-12",
+      "author": "Tuan Minh Do, Yuichiro Yoshida, Tomoya Shiota, Wataru Mizukami",
+      "ref": "arXiv:2606.06015v1",
+      "url": "https://arxiv.org/abs/2606.06015",
+      "color": "#38b2ac",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#38b2ac12\"/><circle cx=\"80\" cy=\"80\" r=\"16\" fill=\"#38b2ac\" opacity=\"0.85\"/><circle cx=\"80\" cy=\"80\" r=\"8\" fill=\"#fff\" opacity=\"0.5\"/><circle cx=\"50\" cy=\"55\" r=\"10\" fill=\"#38b2ac\" opacity=\"0.7\"/><circle cx=\"110\" cy=\"55\" r=\"10\" fill=\"#38b2ac\" opacity=\"0.7\"/><circle cx=\"50\" cy=\"105\" r=\"10\" fill=\"#38b2ac\" opacity=\"0.7\"/><circle cx=\"110\" cy=\"105\" r=\"10\" fill=\"#38b2ac\" opacity=\"0.7\"/><line x1=\"80\" y1=\"64\" x2=\"50\" y2=\"55\" stroke=\"#38b2ac\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"64\" x2=\"110\" y2=\"55\" stroke=\"#38b2ac\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"96\" x2=\"50\" y2=\"105\" stroke=\"#38b2ac\" stroke-width=\"2.5\"/><line x1=\"80\" y1=\"96\" x2=\"110\" y2=\"105\" stroke=\"#38b2ac\" stroke-width=\"2.5\"/><rect x=\"165\" y=\"35\" width=\"140\" height=\"90\" rx=\"10\" fill=\"none\" stroke=\"#38b2ac\" stroke-width=\"2\" opacity=\"0.6\"/><rect x=\"175\" y=\"45\" width=\"25\" height=\"20\" rx=\"4\" fill=\"#38b2ac\" opacity=\"0.4\"/><rect x=\"210\" y=\"45\" width=\"25\" height=\"20\" rx=\"4\" fill=\"#38b2ac\" opacity=\"0.4\"/><rect x=\"245\" y=\"45\" width=\"25\" height=\"20\" rx=\"4\" fill=\"#38b2ac\" opacity=\"0.4\"/><rect x=\"175\" y=\"75\" width=\"25\" height=\"20\" rx=\"4\" fill=\"#38b2ac\" opacity=\"0.4\"/><rect x=\"210\" y=\"75\" width=\"25\" height=\"20\" rx=\"4\" fill=\"#38b2ac\" opacity=\"0.4\"/><rect x=\"245\" y=\"75\" width=\"25\" height=\"20\" rx=\"4\" fill=\"#38b2ac\" opacity=\"0.4\"/><line x1=\"140\" y1=\"80\" x2=\"162\" y2=\"80\" stroke=\"#38b2ac\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"160,76 170,80 160,84\" fill=\"#38b2ac\" opacity=\"0.8\"/><text x=\"20\" y=\"18\" font-size=\"10\" fill=\"#38b2ac\" font-weight=\"bold\" opacity=\"0.8\">⚗️ Quantum Chemistry</text></svg>",
+      "title": {
+        "zh-TW": "144 量子位元計算分子反應：量子電腦首次精準挑戰化學難題",
+        "en": "144-Qubit Quantum Computer Tackles Molecular Chemistry with 1 kcal/mol Accuracy",
+        "zh-CN": "144量子位元计算分子反应：量子电脑首次精准挑战化学难题",
+        "ja": "144量子ビットで分子反応を計算：量子コンピュータが化学の難問に1 kcal/molの精度で挑む",
+        "ko": "144큐비트 양자 컴퓨터, 분자 반응 1 kcal/mol 정확도로 계산 성공"
+      },
+      "tag": {
+        "zh-TW": "⚗️ 量子化學",
+        "en": "⚗️ Quantum Chemistry",
+        "zh-CN": "⚗️ 量子化学",
+        "ja": "⚗️ 量子化学",
+        "ko": "⚗️ 양자화학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出多層嵌入框架，量子演算法處理強關聯活性空間，而耦合簇理論或多參考微擾理論則回復周圍區域的剩餘關聯。量子選取組態交互（QSCI）作為量子-古典計算的橋接演算法。整個計算嵌入在 Manby 投影技術的密度泛函理論描述中，並使用日本大阪大學 144 量子位元超導量子電腦的子集進行實驗，在碳奈米管內 SN2 反應中取得與古典參考值約 1 kcal/mol 的一致性。",
+        "en": "This study presents a multilevel embedding framework where a quantum algorithm handles the strongly correlated active space while coupled cluster or multireference perturbation theory recovers the remaining correlation. Quantum-selected configuration interaction (QSCI) bridges quantum and classical treatments. The entire calculation is embedded in a DFT description using Manby's projection technique, and tested on a 144-qubit superconducting quantum computer at Osaka University, achieving ~1 kcal/mol agreement for a Menshutkin SN2 reaction inside a carbon nanotube.",
+        "zh-CN": "本研究提出多层嵌入框架，量子算法处理强关联活性空间，耦合簇理论或多参考微扰理论回复周围区域的剩余关联。量子选取组态交互（QSCI）作为量子-经典计算的桥接算法。整个计算嵌入在Manby投影技术的密度泛函理论描述中，并使用日本大阪大学144量子位元超导量子电脑进行实验，在碳纳米管内SN2反应中取得与经典参考值约1 kcal/mol的一致性。",
+        "ja": "本研究は多段階埋め込みフレームワークを提案しています。量子アルゴリズムが強相関活性空間を処理し、結合クラスター理論または多参照摂動理論が周囲領域の残留相関を回復します。量子選択配置間相互作用（QSCI）が量子と古典の橋渡しをします。全体の計算はManby投影技術によるDFT記述に埋め込まれ、大阪大学の144量子ビット超伝導量子コンピュータで検証し、カーボンナノチューブ内SN2反応で古典参照値と約1 kcal/molの一致を達成しました。",
+        "ko": "이 연구는 다단계 임베딩 프레임워크를 제안합니다. 양자 알고리즘이 강한 상관관계를 가진 활성 공간을 처리하고, 결합 클러스터 이론 또는 다참조 섭동 이론이 주변 영역의 나머지 상관관계를 회복합니다. 양자 선택 배치 상호작용(QSCI)이 양자-고전 계산을 연결합니다. 오사카 대학의 144큐비트 초전도 양자 컴퓨터에서 탄소 나노튜브 내 SN2 반응에 대해 고전 참조값과 ~1 kcal/mol 일치를 달성했습니다."
+      },
+      "plain": {
+        "zh-TW": "化學家最頭痛的問題之一，是計算一個分子反應時到底要釋放還是吸收多少能量——這直接影響藥物設計、材料開發和催化劑研究。傳統電腦雖然能處理簡單分子，但遇到電子之間有複雜「強關聯」的系統（例如過渡金屬蛋白質或奈米碳管中的反應），計算量就會爆炸性增長，讓超級電腦也束手無策。量子電腦理論上能夠精確模擬這些「量子系統」，但現有機器的雜訊太多，錯誤率太高，一直停留在「玩具問題」階段。這篇論文展示了一個聰明的「量子-古典混合」方案：把最複雜的那一小塊計算交給量子電腦，外圍輕鬆的部分交給傳統電腦，兩者無縫接合。他們用日本大阪大學最新的 144 量子位元超導量子電腦，計算了碳奈米管裡一個 SN2 化學反應的能量——誤差只有 1 大卡/莫耳，達到了化學家認為「有用」的精度標準。這是量子電腦第一次在如此複雜的真實化學問題上達到這個水準，是量子化學走向實用的重要里程碑。",
+        "en": "One of chemistry's toughest computational challenges is predicting exactly how much energy a molecular reaction releases or absorbs — knowledge that underpins drug design, materials science, and catalyst research. Classical computers handle simple molecules fine, but when electron-electron interactions become strongly correlated — as in transition-metal proteins or reactions inside carbon nanotubes — the required computation grows explosively even for supercomputers. Quantum computers could in theory simulate these quantum systems precisely, but current machines are too noisy and error-prone to move beyond toy problems. This paper presents an elegant quantum-classical hybrid: hand the most complex, strongly correlated slice of the calculation to the quantum computer, and delegate the surrounding, less demanding parts to classical computers. Using Osaka University's 144-qubit superconducting quantum computer, the team computed the energy of a Menshutkin SN2 reaction inside a carbon nanotube to within ~1 kcal/mol — the accuracy threshold chemists consider practically useful. This marks one of the first times quantum hardware has met that standard on a genuinely complex real-world chemistry problem.",
+        "zh-CN": "化学家最头痛的问题之一，是计算分子反应到底要释放还是吸收多少能量——这直接影响药物设计、材料开发和催化剂研究。传统电脑遇到电子之间有复杂「强关联」的系统，计算量就会爆炸性增长，让超级计算机也束手无策。量子电脑理论上能精确模拟这些系统，但现有机器噪声太多，一直停留在「玩具问题」阶段。这篇论文展示了一个聪明的「量子-经典混合」方案：把最复杂的那一小块计算交给量子电脑，外围部分交给传统电脑。他们用大阪大学最新的144量子位元超导量子电脑，计算了碳纳米管里一个SN2化学反应的能量——误差只有1大卡/摩尔，达到了化学家认为「有用」的精度标准，是量子化学走向实用的重要里程碑。",
+        "ja": "分子反応がどれだけのエネルギーを放出・吸収するかを正確に計算することは、創薬・材料科学・触媒研究の基盤です。しかし電子間の相互作用が強く相関する系（遷移金属タンパク質やカーボンナノチューブ内の反応など）では、スーパーコンピュータでも計算量が爆発的に膨らみます。量子コンピュータはこれらを精密にシミュレートできるはずですが、現在の機器はノイズが多く、おもちゃ問題の域を出られずにいました。この論文は巧みな「量子＋古典ハイブリッド」を提示します。最も複雑な強相関部分を量子コンピュータに、周辺の軽い計算を古典コンピュータに分担させ、シームレスに統合します。大阪大学の144量子ビット超伝導量子コンピュータで、カーボンナノチューブ内SN2反応のエネルギーを1 kcal/mol以内の精度で計算し、化学者が「実用的」と見なす基準を初めて量子ハードウェアでクリアしました。",
+        "ko": "분자 반응이 얼마나 많은 에너지를 방출하거나 흡수하는지 정확히 계산하는 것은 신약 개발, 소재 과학, 촉매 연구의 핵심입니다. 하지만 전자 간 상호작용이 강하게 얽힌 시스템에서는 슈퍼컴퓨터도 계산량이 폭발적으로 늘어납니다. 양자 컴퓨터는 이론적으로 이를 정밀하게 시뮬레이션할 수 있지만, 현재 장치는 노이즈가 너무 많아 장난감 수준의 문제를 넘지 못했습니다. 이 논문은 영리한 '양자-고전 하이브리드' 방식을 제시합니다. 오사카 대학의 144큐비트 초전도 양자 컴퓨터를 사용해 탄소 나노튜브 내 SN2 반응의 에너지를 ~1 kcal/mol 이내로 계산하여, 화학자들이 '실용적'이라고 여기는 정확도 기준을 처음으로 달성했습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 量子電腦的真正突破不在於「全面取代」傳統電腦，而在於「聰明分工」——把最複雜的量子問題交給量子機器，其餘的讓古典電腦輕鬆搞定，兩者合力才能解開化學的終極謎題。",
+        "en": "💡 Quantum computing's real breakthrough won't come from replacing classical computers — it'll come from smart collaboration: hand the hardest quantum problems to quantum hardware, let classical machines handle the rest, and together unlock chemistry's deepest secrets.",
+        "zh-CN": "💡 量子电脑的真正突破不在于「全面取代」传统电脑，而在于「聪明分工」——把最复杂的量子问题交给量子机器，其余交给经典电脑，两者合力才能解开化学的终极谜题。",
+        "ja": "💡 量子コンピュータの真の突破口は古典コンピュータを「完全に置き換える」ことではなく、「賢い分業」にある——最も複雑な量子問題を量子マシンに、残りを古典マシンに任せ、協力して化学の究極の謎を解き明かす。",
+        "ko": "💡 양자 컴퓨터의 진정한 돌파구는 고전 컴퓨터를 '완전히 대체'하는 것이 아니라 '현명한 분업'에 있다 — 가장 복잡한 양자 문제는 양자 기계에, 나머지는 고전 기계에 맡겨 협력함으로써 화학의 궁극적 비밀을 풀어낸다."
+      }
+    },
+    {
+      "id": "bio-260612",
+      "domain": "bio",
+      "day": "2026-06-12",
+      "author": "Honglin Bao, Siyang Wu, Xiao Liu, Sida Li, Shiyun Cao, James A. Evans",
+      "ref": "arXiv:2606.08251v1",
+      "url": "https://arxiv.org/abs/2606.08251",
+      "color": "#e74c3c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#e74c3c10\"/><circle cx=\"90\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#e74c3c\" stroke-width=\"2\" opacity=\"0.5\"/><circle cx=\"85\" cy=\"75\" r=\"5\" fill=\"#e74c3c\" opacity=\"0.8\"/><circle cx=\"95\" cy=\"85\" r=\"5\" fill=\"#e74c3c\" opacity=\"0.8\"/><circle cx=\"90\" cy=\"72\" r=\"5\" fill=\"#e74c3c\" opacity=\"0.8\"/><circle cx=\"80\" cy=\"82\" r=\"5\" fill=\"#e74c3c\" opacity=\"0.8\"/><circle cx=\"98\" cy=\"75\" r=\"5\" fill=\"#e74c3c\" opacity=\"0.8\"/><circle cx=\"87\" cy=\"88\" r=\"5\" fill=\"#e74c3c\" opacity=\"0.8\"/><text x=\"68\" y=\"130\" font-size=\"9\" fill=\"#e74c3c\" opacity=\"0.7\">AI: 集中</text><circle cx=\"245\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#27ae60\" stroke-width=\"2\" opacity=\"0.5\"/><circle cx=\"220\" cy=\"55\" r=\"5\" fill=\"#27ae60\" opacity=\"0.8\"/><circle cx=\"270\" cy=\"60\" r=\"5\" fill=\"#27ae60\" opacity=\"0.8\"/><circle cx=\"215\" cy=\"95\" r=\"5\" fill=\"#27ae60\" opacity=\"0.8\"/><circle cx=\"268\" cy=\"100\" r=\"5\" fill=\"#27ae60\" opacity=\"0.8\"/><circle cx=\"240\" cy=\"48\" r=\"5\" fill=\"#27ae60\" opacity=\"0.8\"/><circle cx=\"252\" cy=\"110\" r=\"5\" fill=\"#27ae60\" opacity=\"0.8\"/><text x=\"220\" y=\"130\" font-size=\"9\" fill=\"#27ae60\" opacity=\"0.7\">人類: 發散</text><line x1=\"140\" y1=\"80\" x2=\"190\" y2=\"80\" stroke=\"#999\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\" opacity=\"0.5\"/><text x=\"20\" y=\"18\" font-size=\"10\" fill=\"#e74c3c\" font-weight=\"bold\" opacity=\"0.8\">💡 AI vs Human Scientific Imagination</text></svg>",
+      "title": {
+        "zh-TW": "AI 的科學想像力邊界：12萬篇論文揭示 AI 無法否定與發散的致命弱點",
+        "en": "The Limits of AI Scientific Imagination: 121,640 Papers Reveal AI Cannot Negate or Diverge",
+        "zh-CN": "AI的科学想象力边界：12万篇论文揭示AI无法否定与发散的致命弱点",
+        "ja": "AIの科学的想像力の限界：12万論文が示す「否定と発散」ができないという致命的弱点",
+        "ko": "AI 과학적 상상력의 한계: 12만 편 논문으로 드러난 AI의 부정과 발산 불능 약점"
+      },
+      "tag": {
+        "zh-TW": "🔬 科學元研究",
+        "en": "🔬 Science of Science",
+        "zh-CN": "🔬 科学元研究",
+        "ja": "🔬 科学の科学",
+        "ko": "🔬 과학의 과학"
+      },
+      "tech": {
+        "zh-TW": "本研究邀請121,640篇跨生物學、醫學、化學和社會科學的近期預印本作者，評估大型語言模型從其論文生成的假設。6,749位科學家提供25,139組針對新穎性、實驗可行性、可能為真的機率和採用意願的評分。發現：非推理型 LLM 集中成狹窄的「集體思維」；推理型模型探索更廣的假設空間，但沒有任何模型能自發提出零假設——而人類科學家更自由地這樣做。",
+        "en": "This study invites authors of 121,640 recent preprints across biology, medicine, chemistry, and social sciences to judge hypotheses generated by large language models from their own papers. 6,749 scientists returned 25,139 rating sets assessing novelty, empirical feasibility, probability of being true, and adoption favorability. Non-reasoning LLMs collapse into a narrow \"hivemind\" of similar ideas; reasoning models explore a wider hypothesis space, yet no model class spontaneously proposes null hypotheses — a move human scientists make far more freely.",
+        "zh-CN": "本研究邀请121,640篇跨生物学、医学、化学和社会科学的近期预印本作者，评估大型语言模型从其论文生成的假设。6,749位科学家提供25,139组针对新颖性、实验可行性、可能为真的概率和采用意愿的评分。发现：非推理型LLM集中成狭窄的「集体思维」；推理型模型探索更广的假设空间，但没有任何模型能自发提出零假设——而人类科学家更自由地这样做。",
+        "ja": "本研究は、生物学・医学・化学・社会科学にわたる121,640件の最近のプレプリントの著者を招き、自身の論文から大型言語モデルが生成した仮説を評価してもらいました。6,749人の科学者が新規性・実験的実現可能性・真である確率・採用意向について25,139セットの評価を提供しました。非推論型LLMは狭い「集合思考」に収束し、推論型モデルはより広い仮説空間を探索しますが、いかなるモデルも帰無仮説を自発的には提案しません。",
+        "ko": "이 연구는 생물학, 의학, 화학, 사회과학에 걸친 121,640편의 최근 프리프린트 저자들을 초대하여 자신들의 논문에서 대형 언어 모델이 생성한 가설을 평가하도록 했습니다. 6,749명의 과학자들이 신규성, 실험적 실현 가능성, 참일 확률, 채택 의향에 대해 25,139세트의 평가를 제공했습니다. 비추론형 LLM은 좁은 '군집 사고'로 수렴하고, 추론형 모델은 더 넓은 가설 공간을 탐색하지만, 어떤 모델도 영가설을 자발적으로 제안하지 못합니다."
+      },
+      "plain": {
+        "zh-TW": "「AI 將加速科學發現」——這個說法近幾年被大量引用，但到底是不是真的？這篇論文做了迄今最大規模的驗證：邀請超過12萬篇論文的真實作者，來評估 AI 從他們自己的研究中「腦補」出來的假設有多好。結果發人深省。首先，非推理型 AI（如 GPT-4）生成的假設往往驚人地相似——來自不同領域、不同論文的 AI 想法像是同一個「集體大腦」說出來的，缺乏真正的多樣性。其次，就算是最新的推理型 AI（如 o3）能探索更廣的空間，也有一個關鍵盲點：AI 幾乎不會主動提出「也許這個現象根本不存在」或「也許反向才是對的」這類「否定性假設」——而人類科學家卻常常這樣思考。科學史上的許多重大突破，正是來自有人勇敢地說「我們以為是真的，其實是錯的」。AI 目前欠缺這種「逆向想像力」，說明它更擅長在現有框架內整合知識，而非真正突破範式。對於那些期待 AI 作為「科學合作夥伴」的研究者，這篇論文提供了一個冷靜的提醒：AI 是強大的假設生成器，但它的想像力仍有邊界。",
+        "en": "\"AI will accelerate scientific discovery\" — this claim has been widely repeated. But is it actually true? This paper conducts the largest test to date: it invited the actual authors of over 121,640 papers to evaluate hypotheses that AI generated from their own research. The findings are sobering. First, non-reasoning AI models produce hypotheses that are strikingly similar to each other — ideas generated from papers in wildly different fields sound like they came from one narrow collective mind. Second, even the most advanced reasoning AI explores more territory, yet has one critical blind spot: AI almost never spontaneously proposes null hypotheses — ideas like \"maybe this phenomenon doesn't actually exist\" or \"maybe the opposite is true.\" Human scientists make these moves constantly, and some of history's greatest discoveries came from exactly this kind of negation. AI currently lacks this \"reverse imagination,\" suggesting it is better at integrating knowledge within existing frameworks than at truly breaking paradigms. For researchers hoping AI will be a creative scientific partner, this paper offers a sobering reality check.",
+        "zh-CN": "「AI将加速科学发现」——这个说法近年被大量引用，但到底是不是真的？这篇论文做了迄今最大规模的验证：邀请超过12万篇论文的真实作者，评估AI从他们自己的研究中生成的假设有多好。结果发人深省。首先，非推理型AI生成的假设往往惊人地相似——来自不同领域的AI想法像是同一个「集体大脑」说出来的。其次，就算是最新的推理型AI，也几乎不会主动提出「也许这个现象根本不存在」这类「否定性假设」——而人类科学家却常常这样思考。科学史上的许多重大突破正是来自有人勇敢地说「我们以为是真的，其实是错的」。AI目前欠缺这种「逆向想象力」，说明它更擅长在现有框架内整合知识，而非真正突破范式。",
+        "ja": "「AIは科学的発見を加速する」——この主張は広く繰り返されてきました。でも本当にそうなのでしょうか？この論文はこれまでで最大の検証を行いました。121,640件を超える論文の実際の著者たちを招き、AIが自分たちの研究から生成した仮説を評価してもらったのです。結果は考えさせられるものでした。まず、非推論型AIが生成する仮説は驚くほど似通っており、まるで一つの狭い「集合知」から出てきたようです。次に、最先端の推論型AIでも致命的な盲点があります。AIはほとんど自発的に帰無仮説——「この現象はそもそも存在しないのでは」「逆が正しいのでは」という否定的アイデア——を提案しません。一方、人間の科学者はこの思考法を頻繁に使い、科学史上の大発見の多くはまさにこのような否定から生まれています。AIにはこの「逆向きの想像力」が欠けており、既存の枠組み内での知識統合は得意でも、真のパラダイム転換は苦手だと示唆しています。",
+        "ko": "\"AI는 과학적 발견을 가속화할 것이다\" — 이 주장이 널리 반복되어 왔습니다. 그런데 실제로 그럴까요? 이 논문은 지금까지 가장 큰 규모의 검증을 수행했습니다. 12만 편 이상의 논문 저자들을 직접 초대해 AI가 그들 자신의 연구에서 생성한 가설을 평가하게 했습니다. 결과는 충격적이었습니다. 첫째, 비추론형 AI가 생성하는 가설은 놀랍도록 유사해 마치 하나의 좁은 '집단 지성'에서 나온 것 같습니다. 둘째, 최첨단 추론형 AI도 치명적 맹점이 있습니다. AI는 '이 현상이 실제로는 존재하지 않을 수도 있다'나 '반대가 맞을 수도 있다'는 영가설을 거의 자발적으로 제안하지 못합니다. 인간 과학자들은 이런 사고를 자주 하며, 과학사의 많은 위대한 발견이 바로 이런 부정에서 탄생했습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 AI 是知識的整合大師，卻是想像力的謹慎保守者——真正的科學突破往往需要有人敢說「我們一直以為對的，其實是錯的」，而這正是 AI 目前最難做到的事。",
+        "en": "💡 AI excels at integrating existing knowledge but struggles to imagine that everything we know could be wrong — and that capacity for negation is precisely what drives history's greatest scientific revolutions.",
+        "zh-CN": "💡 AI是知识的整合大师，却是想象力的谨慎保守者——真正的科学突破往往需要有人敢说「我们一直以为对的，其实是错的」，而这正是AI目前最难做到的事。",
+        "ja": "💡 AIは知識を統合する達人だが、想像力においては保守的だ——本当の科学的突破はしばしば「ずっと正しいと思っていたことが間違っていた」と言える勇気から生まれる。そしてそれこそがAIに最も難しいことだ。",
+        "ko": "💡 AI는 기존 지식을 통합하는 달인이지만 상상력에서는 보수적이다 — 진정한 과학적 돌파구는 종종 '우리가 항상 맞다고 생각했던 것이 틀렸다'고 말할 수 있는 용기에서 나온다. 그리고 그것이 바로 AI가 가장 어려워하는 것이다."
+      }
+    },
+    {
+      "id": "phys-260612",
+      "domain": "phys",
+      "day": "2026-06-12",
+      "author": "Jiayin Fan, Xingdong Zhao, Manqi Zhang, Fangfang Xie, Jing Qian",
+      "ref": "arXiv:2606.11655v1",
+      "url": "https://arxiv.org/abs/2606.11655",
+      "color": "#ed8936",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#ed893612\"/><circle cx=\"90\" cy=\"80\" r=\"20\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"80\" r=\"6\" fill=\"#ed8936\" opacity=\"0.9\"/><ellipse cx=\"90\" cy=\"80\" rx=\"40\" ry=\"15\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.6\"/><ellipse cx=\"90\" cy=\"80\" rx=\"15\" ry=\"40\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.6\"/><line x1=\"30\" y1=\"60\" x2=\"70\" y2=\"72\" stroke=\"#e879f9\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"30\" y1=\"100\" x2=\"70\" y2=\"88\" stroke=\"#38bdf8\" stroke-width=\"2.5\" opacity=\"0.8\"/><circle cx=\"25\" cy=\"60\" r=\"5\" fill=\"#e879f9\" opacity=\"0.9\"/><circle cx=\"25\" cy=\"100\" r=\"5\" fill=\"#38bdf8\" opacity=\"0.9\"/><rect x=\"155\" y=\"50\" width=\"70\" height=\"60\" rx=\"8\" fill=\"none\" stroke=\"#ed8936\" stroke-width=\"2\" opacity=\"0.7\"/><rect x=\"165\" y=\"62\" width=\"20\" height=\"15\" rx=\"3\" fill=\"#ed8936\" opacity=\"0.5\"/><rect x=\"195\" y=\"62\" width=\"20\" height=\"15\" rx=\"3\" fill=\"#ed8936\" opacity=\"0.5\"/><line x1=\"165\" y1=\"90\" x2=\"215\" y2=\"90\" stroke=\"#ed8936\" stroke-width=\"1.5\"/><text x=\"165\" y=\"103\" font-size=\"9\" fill=\"#ed8936\" opacity=\"0.8\">CNOT</text><line x1=\"110\" y1=\"80\" x2=\"152\" y2=\"80\" stroke=\"#ed8936\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><polygon points=\"150,76 160,80 150,84\" fill=\"#ed8936\" opacity=\"0.7\"/><rect x=\"240\" y=\"55\" width=\"80\" height=\"50\" rx=\"8\" fill=\"none\" stroke=\"#27ae60\" stroke-width=\"2\" opacity=\"0.6\"/><text x=\"255\" y=\"78\" font-size=\"10\" fill=\"#27ae60\" font-weight=\"bold\" opacity=\"0.8\">10× faster</text><text x=\"252\" y=\"95\" font-size=\"9\" fill=\"#27ae60\" opacity=\"0.7\">adiabatic</text><text x=\"20\" y=\"18\" font-size=\"10\" fill=\"#ed8936\" font-weight=\"bold\" opacity=\"0.8\">⚛️ Fast Quantum Gate</text></svg>",
+      "title": {
+        "zh-TW": "量子計算加速器：利用超精細態讓絕熱量子閘速度提升十倍",
+        "en": "Quantum Gate Accelerator: Hyperfine States Make Adiabatic Quantum Gates 10× Faster",
+        "zh-CN": "量子计算加速器：利用超精细态让绝热量子门速度提升十倍",
+        "ja": "量子ゲット加速器：超微細状態を活用して断熱量子ゲートを10倍速に",
+        "ko": "양자 게이트 가속기: 초미세 상태로 단열 양자 게이트를 10배 빠르게"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理学",
+        "ko": "⚛️ 양자물리학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一種基於電磁感應透明（EIT）的絕熱 CNOT 量子閘協議，利用雙光子躍遷中天然存在的超精細中間態（HIS）來加速絕熱演化。這些超精細態通常因衰減誤差而需要抑制，但本論文引入一種新方法：透過適當選擇的 HIS 同時在「保留」路徑中增強絕熱性、並在「轉移」路徑中加速粒子數轉移，從而在維持絕熱魯棒性的同時大幅縮短閘操作時間。",
+        "en": "This study proposes an electromagnetically induced transparency (EIT)-based adiabatic CNOT gate protocol that harnesses hyperfine intermediate states (HIS) naturally present in two-photon transitions to speed up adiabatic evolution. These HIS are usually suppressed due to decay errors, but the paper introduces a novel method that uses appropriately chosen HIS both to enhance adiabaticity in the STAY pathway and to accelerate population transfer in the TRANSFER pathway, drastically shortening gate operation time while preserving adiabatic robustness.",
+        "zh-CN": "本研究提出一种基于电磁感应透明（EIT）的绝热CNOT量子门协议，利用双光子跃迁中天然存在的超精细中间态（HIS）来加速绝热演化。这些超精细态通常因衰减误差而被抑制，但本论文引入新方法：通过适当选择的HIS同时在「保留」路径中增强绝热性、并在「转移」路径中加速粒子数转移，在维持绝热鲁棒性的同时大幅缩短门操作时间。",
+        "ja": "本研究は、電磁誘起透明化（EIT）を基盤とした断熱CNOTゲートプロトコルを提案しています。二光子遷移に自然に存在する超微細中間状態（HIS）を利用して断熱的進化を高速化します。HISは通常、減衰誤差のために抑制されますが、本論文は適切に選択されたHISを使い、STAYパスでの断熱性を強化しつつTRANSFERパスでの粒子数移動も加速するという新手法を導入し、断熱的頑健性を保ちながら大幅なゲート高速化を実現します。",
+        "ko": "이 연구는 전자기 유도 투명도(EIT) 기반의 단열 CNOT 양자 게이트 프로토콜을 제안합니다. 2광자 전이에 자연적으로 존재하는 초미세 중간 상태(HIS)를 활용해 단열 진화를 가속화합니다. 이러한 HIS는 보통 감쇠 오류 때문에 억제되었지만, 이 논문은 적절히 선택된 HIS를 사용해 STAY 경로에서 단열성을 강화하고 TRANSFER 경로에서 집단 이동을 가속화하는 새로운 방법을 도입하여 단열적 강건성을 유지하면서 게이트 작동 시간을 크게 단축합니다."
+      },
+      "plain": {
+        "zh-TW": "量子電腦的核心是「量子閘」——一種對量子位元執行操作的基本單元，就像傳統電腦裡的 AND、OR 閘。其中有一種特別穩定的量子閘叫做「絕熱量子閘」：它的原理是把量子系統像慢慢加熱水一樣「緩緩引導」到目標狀態，因為夠慢，所以系統不會「跳軌」，計算非常可靠。問題是：太慢了！在量子位元「相干時間」（它保持量子特性的時間）耗盡之前，你根本來不及用絕熱方式完成運算。這就像你用微火慢燉，但鍋子10秒後就會壞掉。這篇論文找到了一個聰明的解法：原子有一種叫做「超精細能階」的特殊量子狀態，過去因為容易造成誤差而被刻意忽略。但研究者發現，只要聰明地利用這些狀態，反而能「腳踩兩條船」——一邊保持絕熱閘的穩定性，一邊大幅加速操作速度。就像找到了一條既快速又安全的捷徑。這對量子計算機的實際應用極為重要：更快的量子閘意味著在量子位元「忘記」它的量子狀態之前，可以執行更多運算步驟，大大提升整個量子電腦的實用性。",
+        "en": "At the heart of a quantum computer are quantum gates — the basic units that operate on qubits, like AND and OR gates in classical computers. One particularly reliable type is called an adiabatic quantum gate: it works by guiding a quantum system very slowly toward its target state, like heating water gradually so it never boils unexpectedly. Because the process is gradual, the system stays on track and computations are highly reliable. The problem is speed: qubits only maintain their quantum nature for a limited time (the coherence time), and classical adiabatic methods are simply too slow to finish before the qubit \"forgets\" its state. This paper finds a clever solution. Atoms have special quantum energy levels called hyperfine states, which are usually ignored because they can introduce errors. But the researchers discovered that, chosen carefully, these states can serve a dual role: they simultaneously maintain the stability of adiabatic gates while dramatically accelerating their speed. It's like finding a shortcut that is both fast and safe. For practical quantum computing, faster gates mean you can execute far more computational steps before a qubit loses its quantum information — a major step toward truly useful quantum machines.",
+        "zh-CN": "量子电脑的核心是「量子门」——对量子位元执行操作的基本单元，就像传统电脑里的AND、OR门。其中有一种特别稳定的量子门叫做「绝热量子门」：它把量子系统像慢慢加热水一样「缓缓引导」到目标状态，因为够慢，所以系统不会「跳轨」，计算非常可靠。问题是：太慢了！在量子位元「相干时间」耗尽之前，你根本来不及用绝热方式完成运算。这篇论文找到了聪明的解法：原子有一种叫做「超精细能级」的特殊量子状态，过去因为容易造成误差而被刻意忽略。但研究者发现，只要聪明地利用这些状态，反而能「脚踩两条船」——一边保持绝热门的稳定性，一边大幅加速操作速度。这对量子计算机的实际应用极为重要：更快的量子门意味着在量子位元「忘记」自己量子状态之前，可以执行更多运算步骤。",
+        "ja": "量子コンピュータの中核にあるのは「量子ゲート」です。これはANDやORゲートのように古典コンピュータの基本演算に相当するもので、量子ビットを操作します。特に信頼性が高い「断熱量子ゲート」は、量子系をゆっくりと目標状態に誘導する方式で、急激な変化がないため「軌道を外れる」ことなく高い精度を保ちます。しかし致命的な問題があります：遅すぎるのです。量子ビットが量子的な性質を保てる時間（コヒーレンス時間）が尽きる前に、断熱的な方法では演算が間に合いません。この論文は巧みな解決策を見つけました。原子には「超微細エネルギー準位」という特殊な量子状態があり、これまでは誤差を引き起こすとして無視されてきました。しかし研究者たちは、これを賢く選ぶことで「二兎を追う」ことができると発見しました：断熱ゲートの安定性を維持しながら、速度も大幅に上げられるのです。",
+        "ko": "양자 컴퓨터의 핵심은 '양자 게이트'입니다. 이는 고전 컴퓨터의 AND, OR 게이트처럼 큐비트를 조작하는 기본 단위입니다. 특히 신뢰할 수 있는 '단열 양자 게이트'는 양자 시스템을 천천히 목표 상태로 유도하는 방식으로, 점진적이기 때문에 시스템이 '궤도를 벗어나지 않아' 매우 안정적입니다. 문제는 속도입니다. 큐비트가 양자적 특성을 유지할 수 있는 시간(결맞음 시간) 내에 단열 방식은 너무 느려서 연산을 완료할 수 없습니다. 이 논문은 영리한 해결책을 찾았습니다. 원자에는 '초미세 에너지 준위'라는 특별한 양자 상태가 있는데, 오류를 일으킨다는 이유로 무시되어 왔습니다. 하지만 연구자들은 이를 영리하게 선택하면 단열 게이트의 안정성을 유지하면서도 속도를 크게 높일 수 있다는 것을 발견했습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 有時候被視為「麻煩製造者」的物理現象，換個角度就能成為最強的加速引擎——量子計算中那些長期被壓制的超精細態，竟是突破速度極限的關鍵鑰匙。",
+        "en": "💡 What was long dismissed as a source of errors turned out to be the key to speed — the hyperfine states quantum physicists once suppressed are now the very lever that unlocks ultrafast, robust quantum gates.",
+        "zh-CN": "💡 有时候被视为「麻烦制造者」的物理现象，换个角度就能成为最强的加速引擎——量子计算中那些长期被压制的超精细态，竟是突破速度极限的关键钥匙。",
+        "ja": "💡 「問題の源」とみなされてきた物理現象が、視点を変えれば最強の加速エンジンになる——量子計算で長らく抑制されてきた超微細状態が、超高速かつ堅牢な量子ゲットの鍵だったとは。",
+        "ko": "💡 오랫동안 오류의 원인으로 여겨졌던 것이 알고 보니 속도의 열쇠였다 — 양자 물리학자들이 한때 억압했던 초미세 상태가 이제 초고속이고 강건한 양자 게이트를 여는 바로 그 레버가 되었다."
+      }
+    },
+    {
+      "id": "med-260612",
+      "domain": "med",
+      "day": "2026-06-12",
+      "author": "Rajkovic A. et al.",
+      "ref": "bioRxiv 2026.06.11",
+      "url": "https://www.biorxiv.org/",
+      "color": "#48bb78",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#48bb7812\"/><ellipse cx=\"90\" cy=\"80\" rx=\"45\" ry=\"50\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"2\" opacity=\"0.5\"/><ellipse cx=\"90\" cy=\"75\" rx=\"30\" ry=\"35\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"1.5\" opacity=\"0.4\"/><circle cx=\"90\" cy=\"60\" r=\"8\" fill=\"#48bb78\" opacity=\"0.7\"/><circle cx=\"72\" cy=\"85\" r=\"6\" fill=\"#48bb78\" opacity=\"0.6\"/><circle cx=\"108\" cy=\"85\" r=\"6\" fill=\"#48bb78\" opacity=\"0.6\"/><circle cx=\"90\" cy=\"105\" r=\"6\" fill=\"#48bb78\" opacity=\"0.5\"/><line x1=\"90\" y1=\"60\" x2=\"72\" y2=\"85\" stroke=\"#48bb78\" stroke-width=\"2\"/><line x1=\"90\" y1=\"60\" x2=\"108\" y2=\"85\" stroke=\"#48bb78\" stroke-width=\"2\"/><line x1=\"72\" y1=\"85\" x2=\"90\" y2=\"105\" stroke=\"#48bb78\" stroke-width=\"1.5\"/><line x1=\"108\" y1=\"85\" x2=\"90\" y2=\"105\" stroke=\"#48bb78\" stroke-width=\"1.5\"/><rect x=\"170\" y=\"40\" width=\"140\" height=\"80\" rx=\"10\" fill=\"none\" stroke=\"#48bb78\" stroke-width=\"1.5\" opacity=\"0.5\"/><rect x=\"180\" y=\"52\" width=\"50\" height=\"12\" rx=\"3\" fill=\"#48bb78\" opacity=\"0.5\"/><rect x=\"240\" y=\"52\" width=\"60\" height=\"12\" rx=\"3\" fill=\"#e74c3c\" opacity=\"0.4\"/><rect x=\"180\" y=\"70\" width=\"70\" height=\"12\" rx=\"3\" fill=\"#48bb78\" opacity=\"0.6\"/><rect x=\"260\" y=\"70\" width=\"40\" height=\"12\" rx=\"3\" fill=\"#e74c3c\" opacity=\"0.3\"/><rect x=\"180\" y=\"88\" width=\"90\" height=\"12\" rx=\"3\" fill=\"#48bb78\" opacity=\"0.7\"/><rect x=\"280\" y=\"88\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#e74c3c\" opacity=\"0.2\"/><text x=\"175\" y=\"32\" font-size=\"9\" fill=\"#48bb78\" opacity=\"0.8\">BMP 治療 vs 對照</text><text x=\"20\" y=\"18\" font-size=\"10\" fill=\"#48bb78\" font-weight=\"bold\" opacity=\"0.8\">🧬 Parkinson's BMP Pathway</text></svg>",
+      "title": {
+        "zh-TW": "BMP 訊號通路：帕金森氏症的遺傳風險調控者與運動恢復新靶點",
+        "en": "BMP Signaling: A Genetic Risk Modifier in Parkinson's Disease That Also Promotes Motor Recovery",
+        "zh-CN": "BMP信号通路：帕金森氏症的遗传风险调控者与运动恢复新靶点",
+        "ja": "BMPシグナル経路：パーキンソン病の遺伝的リスク修飾因子かつ運動回復の新標的",
+        "ko": "BMP 신호 경로: 파킨슨병의 유전적 위험 조절 인자이자 운동 회복의 새로운 표적"
+      },
+      "tag": {
+        "zh-TW": "🧬 醫學與神經科學",
+        "en": "🧬 Medicine & Neuroscience",
+        "zh-CN": "🧬 医学与神经科学",
+        "ja": "🧬 医学・神経科学",
+        "ko": "🧬 의학 & 신경과학"
+      },
+      "tech": {
+        "zh-TW": "本研究發現骨形態發生蛋白（BMP）訊號通路在帕金森氏症中扮演雙重角色：一方面調控已知帕金森氏症遺傳風險基因的表達，另一方面在動物模型中顯示啟動 BMP 通路可以促進多巴胺神經元的存活和運動功能的恢復，為帕金森氏症的神經保護治療提供新方向。",
+        "en": "This study identifies the bone morphogenetic protein (BMP) signaling pathway as playing a dual role in Parkinson's disease: it modulates the expression of known Parkinson's genetic risk loci, and activation of BMP signaling in animal models promotes dopaminergic neuron survival and motor recovery, opening new avenues for neuroprotective therapy in Parkinson's disease.",
+        "zh-CN": "本研究发现骨形态发生蛋白（BMP）信号通路在帕金森氏症中扮演双重角色：一方面调控已知帕金森氏症遗传风险基因的表达，另一方面在动物模型中显示启动BMP通路可以促进多巴胺神经元的存活和运动功能的恢复，为帕金森氏症神经保护治疗提供新方向。",
+        "ja": "本研究は骨形態形成タンパク質（BMP）シグナル経路がパーキンソン病で二重の役割を担うことを明らかにしました。既知のパーキンソン病遺伝的リスク遺伝子座の発現を調節し、さらに動物モデルではBMPシグナルの活性化がドーパミン神経細胞の生存と運動機能の回復を促進することが示されました。神経保護療法への新しい方向性を示しています。",
+        "ko": "이 연구는 골형태형성단백질(BMP) 신호 경로가 파킨슨병에서 이중 역할을 한다는 것을 밝혔습니다. 알려진 파킨슨병 유전적 위험 좌위의 발현을 조절하며, 동물 모델에서 BMP 신호 활성화가 도파민 신경 세포 생존과 운동 기능 회복을 촉진하여 신경 보호 치료의 새로운 방향을 열어줍니다."
+      },
+      "plain": {
+        "zh-TW": "帕金森氏症是一種讓患者越來越難以控制動作的神經退化疾病，主要原因是大腦中負責分泌「多巴胺」的神經元逐漸死亡。目前的治療大多只能補充多巴胺、減緩症狀，卻無法真正阻止神經元的死亡。科學家長期在尋找能「保護」多巴胺神經元的蛋白質或分子。這篇論文聚焦在一種叫做「骨形態發生蛋白（BMP）」的訊號系統——顧名思義，它原本是在發育期間調控骨骼和組織生長的，但科學家發現它也廣泛存在於大腦中。令人興奮的發現是雙重的：首先，BMP 通路與多個已知的帕金森氏症「遺傳風險基因」的活躍程度有直接關聯，這意味著它可能是串聯多個致病基因的「總開關」。其次，在帕金森氏症動物模型中，啟動 BMP 訊號能夠讓多巴胺神經元存活更久，並且讓動物的運動能力顯著恢復——就像找到了一種能讓大腦自我修復的分子。這個發現讓 BMP 通路成為帕金森氏症治療研究中一個令人振奮的新靶點，未來有可能開發出真正能減緩甚至部分逆轉神經退化的療法。",
+        "en": "Parkinson's disease is a progressive neurological condition that makes movement increasingly difficult, primarily because the dopamine-producing neurons in the brain gradually die. Current treatments mostly replace dopamine and ease symptoms but cannot stop the underlying neuron death. Scientists have long searched for molecules that could truly protect these neurons. This paper focuses on a signaling system called bone morphogenetic protein (BMP) — originally known for regulating bone and tissue growth during development, but now found to be widely active in the brain as well. The discoveries are twofold. First, the BMP pathway is directly linked to the activity levels of multiple known Parkinson's genetic risk genes, suggesting it could be a master switch connecting several disease pathways at once. Second, in Parkinson's animal models, activating BMP signaling allowed dopaminergic neurons to survive longer and led to significant recovery of motor function — as if giving the brain a molecular self-repair kit. This makes the BMP pathway an exciting new therapeutic target, with potential to develop treatments that actually slow or partially reverse the neurodegeneration underlying Parkinson's disease.",
+        "zh-CN": "帕金森氏症让患者越来越难以控制动作，主要原因是大脑中分泌「多巴胺」的神经元逐渐死亡。目前的治疗大多只能补充多巴胺、减缓症状，却无法真正阻止神经元死亡。这篇论文聚焦在「骨形态发生蛋白（BMP）」信号系统——原本调控骨骼和组织生长，但也广泛存在于大脑中。令人兴奋的发现是双重的：首先，BMP通路与多个已知帕金森氏症「遗传风险基因」的活跃程度直接关联，可能是串联多个致病基因的「总开关」。其次，在动物模型中，启动BMP信号能让多巴胺神经元存活更久，并让动物的运动能力显著恢复——就像找到了一种能让大脑自我修复的分子。这让BMP通路成为帕金森氏症治疗研究中令人振奋的新靶点。",
+        "ja": "パーキンソン病は、ドーパミンを産生する脳の神経細胞が徐々に死んでいくことで、運動が次第に困難になる進行性の神経疾患です。現在の治療のほとんどはドーパミンを補充して症状を緩和するだけで、神経細胞の死を本当に止めることはできません。この論文は「骨形態形成タンパク質（BMP）」という信号系に注目します。もともと骨や組織の成長を調節するものとして知られていましたが、脳でも広く活性化していることがわかりました。発見は二重の意味で画期的です。第一に、BMP経路は複数の既知パーキンソン病遺伝的リスク遺伝子の活動レベルと直接連動しており、複数の発症遺伝子をつなぐ「マスタースイッチ」である可能性があります。第二に、パーキンソン病動物モデルでBMPシグナルを活性化すると、ドーパミン神経細胞がより長く生存し、運動機能が顕著に回復しました。これはBMP経路が真の神経保護療法の新標的となる可能性を示しています。",
+        "ko": "파킨슨병은 도파민을 생산하는 뇌의 신경 세포가 점차 죽어가면서 운동이 점점 어려워지는 진행성 신경 질환입니다. 현재 치료법은 대부분 도파민을 보충해 증상을 완화할 뿐 신경 세포의 사멸을 막지는 못합니다. 이 논문은 '골형태형성단백질(BMP)' 신호 시스템에 주목합니다. 원래 뼈와 조직 성장을 조절하는 것으로 알려졌지만 뇌에서도 광범위하게 활성화되어 있습니다. 발견은 두 가지 의미에서 획기적입니다. 첫째, BMP 경로는 여러 알려진 파킨슨병 유전적 위험 유전자의 활성도와 직접 연관되어 여러 발병 유전자를 연결하는 '마스터 스위치'일 수 있습니다. 둘째, 동물 모델에서 BMP 신호를 활성화하면 도파민 신경 세포가 더 오래 생존하고 운동 기능이 현저히 회복되었습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 有時候治療疾病的關鍵分子，就藏在身體「另一個功能」的訊號系統裡——讓骨骼生長的 BMP，竟可能成為讓帕金森氏症大腦「重生」的藥物靶點。",
+        "en": "💡 Sometimes the key to treating a disease hides in a signaling system that seems completely unrelated — the same protein that builds bones may hold the secret to rebuilding a brain ravaged by Parkinson's disease.",
+        "zh-CN": "💡 有时候治疗疾病的关键分子，就藏在身体「另一个功能」的信号系统里——让骨骼生长的BMP，竟可能成为让帕金森氏症大脑「重生」的药物靶点。",
+        "ja": "💡 病気を治す鍵となる分子は、まったく別の機能を持つ信号系に隠れていることがある——骨を作るBMPが、パーキンソン病に侵された脳を「再生」させる薬の標的になるかもしれない。",
+        "ko": "💡 질병 치료의 열쇠가 되는 분자는 전혀 다른 기능의 신호 시스템에 숨어 있을 때가 있다 — 뼈를 만드는 BMP가 파킨슨병으로 손상된 뇌를 '재생'시키는 약물 표적이 될 수 있다."
+      }
+    }
+  ]
+}

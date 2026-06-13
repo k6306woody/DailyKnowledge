@@ -800,6 +800,10 @@ const DOMAIN_META = {
   nature: {emoji:'🐠', label:{'zh-TW':'自然','en':'Nature','zh-CN':'自然','ja':'自然','ko':'자연'}},
   fin:    {emoji:'💰', label:{'zh-TW':'財經','en':'Finance','zh-CN':'财经','ja':'金融','ko':'금융'}},
   arch:   {emoji:'🏛️', label:{'zh-TW':'建築','en':'Arch','zh-CN':'建筑','ja':'建築','ko':'건축'}},
+  climate:{emoji:'🌍', label:{'zh-TW':'氣候','en':'Climate','zh-CN':'气候','ja':'気候','ko':'기후'}},
+  quantum:{emoji:'🔮', label:{'zh-TW':'量子','en':'Quantum','zh-CN':'量子','ja':'量子','ko':'양자'}},
+  robot:  {emoji:'🦾', label:{'zh-TW':'機器人','en':'Robotics','zh-CN':'机器人','ja':'ロボット','ko':'로봇'}},
+  med:    {emoji:'💊', label:{'zh-TW':'醫學','en':'Medicine','zh-CN':'医学','ja':'医学','ko':'의학'}},
 };
 
 function renderDayChips(){
@@ -943,9 +947,16 @@ function renderCatbar(){
   const domains=['all',...new Set(CARDS.map(c=>c.domain))];
   const bar=document.getElementById('catbar');
   bar.innerHTML=domains.map((d,i)=>{
+    if(i===0) return`<button class="cbtn on" data-cat="all">🌐 All</button>`;
     const m=DOMAIN_META[d];
-    const lbl=m?`${m.emoji} ${m.label[curLang]||m.label['zh-TW']}`:'🌐 全部';
-    return`<button class="cbtn${i===0?' on':''}" data-cat="${d}">${i===0?'🌐 All':lbl}</button>`;
+    let lbl;
+    if(m){ lbl=`${m.emoji} ${m.label[curLang]||m.label['zh-TW']}`; }
+    else {
+      // 未知 domain：用該領域第一張卡的 tag 當標籤，避免出現重複「全部」
+      const sample=CARDS.find(c=>c.domain===d);
+      lbl=(sample&&sample.tag)?(sample.tag[curLang]||sample.tag['zh-TW']||('🌐 '+d)):('🌐 '+d);
+    }
+    return`<button class="cbtn" data-cat="${d}">${lbl}</button>`;
   }).join('');
   bar.querySelectorAll('.cbtn').forEach(b=>b.addEventListener('click',function(){
     bar.querySelectorAll('.cbtn').forEach(x=>x.classList.remove('on'));
@@ -1266,8 +1277,8 @@ function renderDrawer(){
     : '';
 
   if(curDTab === 'cat'){
-    // 只計算當前日期的卡片數
-    const filterDay = activeFilters.day || curDay || null;
+    // 範圍與卡片格一致：有選日期才縮範圍，否則統計全部
+    const filterDay = activeFilters.day || null;
     const visibleCards = filterDay ? CARDS.filter(c=>c.day===filterDay) : CARDS;
     const domainCounts = {};
     visibleCards.forEach(c=>{ domainCounts[c.domain]=(domainCounts[c.domain]||0)+1; });
@@ -1296,7 +1307,7 @@ function renderDrawer(){
     return;
 
   } else if(curDTab === 'author'){
-    const filterDay2 = activeFilters.day || curDay || null;
+    const filterDay2 = activeFilters.day || null;
     const visibleCards2 = filterDay2 ? CARDS.filter(c=>c.day===filterDay2) : CARDS;
     const authorCounts = {};
     visibleCards2.forEach(c=>{ authorCounts[c.author]=(authorCounts[c.author]||0)+1; });
