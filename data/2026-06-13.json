@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-13",
+  "mode": "weekend",
+  "paper_date": "2026-06-12",
+  "generated_at": "2026-06-13",
+  "cards": [
+    {
+      "id": "nature-2606a",
+      "domain": "nature",
+      "day": "2026-06-13",
+      "author": "Wikelski et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-07821-4",
+      "color": "#fbd38d",
+      "title": {
+        "zh-TW": "鳥類「磁感地圖」首度直接定位：候鳥腦中真的有GPS",
+        "en": "Bird Magnetic Map Located: Migratory Birds Have a True GPS in Their Brain",
+        "zh-CN": "鸟类「磁感地图」首度直接定位：候鸟脑中真的有GPS",
+        "ja": "渡り鳥の脳内「磁気地図」を初めて直接特定：本物のGPSが存在",
+        "ko": "철새 뇌 속 '자기 지도' 최초 직접 발견: 진짜 GPS가 있었다"
+      },
+      "tag": {
+        "zh-TW": "🐦 自然生物",
+        "en": "🐦 Nature",
+        "zh-CN": "🐦 自然生物",
+        "ja": "🐦 自然生物",
+        "ko": "🐦 자연 생물"
+      },
+      "tech": {
+        "zh-TW": "研究團隊利用超高解析度 fMRI 結合微電極記錄，在歐洲知更鳥（Erithacus rubecula）的海馬體旁區發現一群神經元，能同時編碼地磁場強度與傾角，形成二維「磁性坐標」表徵。在模擬不同地磁環境下，這群神經元的放電模式呈現空間拓撲性排列，與哺乳動物位置細胞的結構高度同源。",
+        "en": "Using ultra-high-resolution fMRI combined with microelectrode recordings in European robins, researchers identified a neuronal cluster in the parahippocampal region that simultaneously encodes geomagnetic intensity and inclination, forming a 2D magnetic coordinate map topologically analogous to mammalian place cells.",
+        "zh-CN": "研究团队利用超高解析度fMRI结合微电极记录，在欧洲知更鸟海马体旁区发现一群神经元，能同时编码地磁场强度与倾角，形成二维「磁性坐标」表征，放电模式与哺乳动物位置细胞高度同源。",
+        "ja": "超高解像度fMRIと微小電極記録を組み合わせ、ヨーロッパコマドリの海馬傍領域に地磁気強度と傾斜角を同時符号化するニューロン群を発見。その発火パターンは哺乳類の場所細胞と位相的に類似した2次元「磁気座標マップ」を形成している。",
+        "ko": "초고해상도 fMRI와 미세전극 기록을 결합해 유럽울새의 해마주변 영역에서 지자기 강도와 기울기를 동시에 부호화하는 뉴런 군집을 발견했으며, 이는 포유류 장소세포와 위상적으로 유사한 2차원 자기 좌표 지도를 형성한다."
+      },
+      "plain": {
+        "zh-TW": "候鳥跨洲遷徙不靠記憶路線，而是腦中有一塊真實的「磁場地圖區」，就像內建GPS一樣感知自己在地球上的位置。",
+        "en": "Migratory birds do not rely on memorized routes — their brains contain a dedicated magnetic map region that works like a built-in GPS to sense their position on Earth.",
+        "zh-CN": "候鸟跨洲迁徙不靠记忆路线，而是脑中有一块真实的「磁场地图区」，像内置GPS一样感知自己在地球上的位置。",
+        "ja": "渡り鳥は覚えたルートではなく、脳内に実在する「磁気地図領域」で自分の地球上の位置を感知している。まるで内蔵GPSだ。",
+        "ko": "철새는 외운 경로가 아니라 뇌 속 실제 '자기 지도 영역'으로 지구 위 자신의 위치를 감지한다. 내장 GPS처럼 작동하는 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 動物的導航智慧不在於記路，而在於感知宇宙磁場——大自然早在人類發明GPS億萬年前就解決了定位問題。",
+        "en": "💡 Animal navigation wisdom lies not in memorizing routes but in sensing Earth's magnetic field — nature solved the positioning problem billions of years before humans invented GPS.",
+        "zh-CN": "💡 动物的导航智慧不在于记路，而在于感知宇宙磁场——大自然早在人类发明GPS之前就解决了定位问题。",
+        "ja": "💡 動物の航法の知恵はルートの記憶ではなく地磁気の感知にある。自然はGPS発明のはるか前に測位問題を解決していた。",
+        "ko": "💡 동물의 항법 지혜는 경로 암기가 아니라 지자기 감지에 있다. 자연은 인류가 GPS를 발명하기 훨씬 전에 위치 문제를 해결했다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#fbd38d18\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"60\" ry=\"60\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"2\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"40\" ry=\"40\" fill=\"none\" stroke=\"#fbd38d\" stroke-width=\"1.5\" stroke-dasharray=\"6,4\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"20\" ry=\"20\" fill=\"#fbd38d\" fill-opacity=\"0.3\" stroke=\"#fbd38d\" stroke-width=\"1.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#e53e3e\"/>\n<path d=\"M90,50 Q110,30 130,45 Q120,55 115,65 Q100,60 90,50Z\" fill=\"#fbd38d\" stroke=\"#c97d10\" stroke-width=\"1.2\"/>\n<path d=\"M90,50 Q75,48 70,55 Q80,58 90,50Z\" fill=\"#c97d10\"/>\n<line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"140\" stroke=\"#fbd38d\" stroke-width=\"1\" stroke-dasharray=\"4,4\" opacity=\"0.5\"/>\n<line x1=\"110\" y1=\"80\" x2=\"230\" y2=\"80\" stroke=\"#fbd38d\" stroke-width=\"1\" stroke-dasharray=\"4,4\" opacity=\"0.5\"/>\n<path d=\"M130,65 Q145,72 170,80\" stroke=\"#e53e3e\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"3,3\" marker-end=\"url()\"/>\n<circle cx=\"130\" cy=\"65\" r=\"3\" fill=\"#e53e3e\" opacity=\"0.7\"/>\n<path d=\"M40,100 Q60,70 80,90 Q100,110 120,85\" stroke=\"#fbd38d\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.5\"/>\n<path d=\"M220,75 Q250,50 270,65 Q290,40 310,55\" stroke=\"#fbd38d\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "ocean-2606b",
+      "domain": "ocean",
+      "day": "2026-06-13",
+      "author": "Nasby-Lucas et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adu4371",
+      "color": "#76e4f7",
+      "title": {
+        "zh-TW": "深海6000公尺新物種「玻璃章魚」繁殖地首度曝光",
+        "en": "First Breeding Ground of Glass Octopus Discovered at 6,000 m Depth",
+        "zh-CN": "深海6000米新物种「玻璃章鱼」繁殖地首度曝光",
+        "ja": "深海6000メートルで「ガラスダコ」の繁殖地を初めて発見",
+        "ko": "수심 6000m 심해 '유리 문어' 번식지 최초 발견"
+      },
+      "tag": {
+        "zh-TW": "🐙 海洋生物",
+        "en": "🐙 Ocean",
+        "zh-CN": "🐙 海洋生物",
+        "ja": "🐙 海洋生物",
+        "ko": "🐙 해양 생물"
+      },
+      "tech": {
+        "zh-TW": "透過深海遙控潛水器（ROV）搭載高解析度攝影機與環境DNA採樣，研究團隊在東太平洋克拉里翁-克利珀頓斷裂帶水下6,000公尺的玄武岩熱液噴口附近，首次記錄到近乎完全透明的玻璃章魚（Vitreledonella richardi）聚集產卵行為，並發現其卵囊附著於火山礫石上，利用低度地熱維持孵化溫度。",
+        "en": "Using ROV-mounted high-resolution cameras and eDNA sampling at hydrothermal vent fields in the Clarion-Clipperton Zone at 6,000 m depth, researchers documented the first aggregated spawning behavior of the nearly transparent glass octopus Vitreledonella richardi, with egg cases attached to volcanic gravel and warmed by residual geothermal heat.",
+        "zh-CN": "通过搭载高解析摄像机与环境DNA采样的深海ROV，研究团队在东太平洋6000米深的热液喷口附近，首次记录到近乎完全透明的玻璃章鱼（Vitreledonella richardi）聚集产卵行为，卵囊附着于火山砾石上借助地热孵化。",
+        "ja": "東太平洋クラリオン・クリッパートン断裂帯の水深6000メートルで、ROV搭載高解像度カメラとeDNAサンプリングにより、ほぼ完全に透明なガラスダコ（Vitreledonella richardi）の集団産卵行動を初めて記録。卵嚢は火山礫に付着し、残留地熱で孵化温度を維持していた。",
+        "ko": "ROV 탑재 고해상도 카메라와 환경DNA 샘플링으로 동태평양 클라리온-클리퍼턴 지대 수심 6,000m 열수공 근처에서 거의 완전히 투명한 유리 문어(Vitreledonella richardi)의 집단 산란 행동을 최초로 기록했으며, 알 주머니는 화산 자갈에 부착되어 지열로 부화 온도를 유지한다."
+      },
+      "plain": {
+        "zh-TW": "科學家首次在深海6,000公尺找到神秘「玻璃章魚」的產卵地，牠們透明的身體讓人幾乎看穿，卻把蛋藏在火山石旁借地熱孵化。",
+        "en": "Scientists found the first spawning ground of the mysterious glass octopus at 6,000 m deep — its nearly invisible transparent body hides eggs tucked against volcanic rocks warmed by geothermal heat.",
+        "zh-CN": "科学家首次在深海6000米找到神秘「玻璃章鱼」的产卵地，它们透明的身体让人几乎看穿，却把蛋藏在火山石旁借地热孵化。",
+        "ja": "科学者が深海6000メートルで謎の「ガラスダコ」の産卵地を初めて発見。ほぼ透明な体を持つこのタコは、地熱で温められた火山岩のそばに卵を産みつけていた。",
+        "ko": "과학자들이 수심 6,000m 심해에서 신비로운 '유리 문어'의 산란지를 처음 발견했다. 거의 투명한 몸을 가진 이 문어는 지열로 따뜻해진 화산 바위 옆에 알을 낳는다."
+      },
+      "insight": {
+        "zh-TW": "💡 深海最暗的角落仍是生命最有創意的搖籃——玻璃章魚告訴我們，地球的「隱形居民」遠比我們想像的更多。",
+        "en": "💡 The darkest corners of the deep sea remain life's most creative cradles — the glass octopus reminds us that Earth's invisible inhabitants are far more numerous than we imagined.",
+        "zh-CN": "💡 深海最暗的角落仍是生命最有创意的摇篮——玻璃章鱼告诉我们，地球的「隐形居民」远比我们想象的更多。",
+        "ja": "💡 深海の最も暗い場所は依然として生命の最も創造的な揺りかごだ。ガラスダコは地球の「見えない住人」が想像以上に多いことを教えてくれる。",
+        "ko": "💡 심해의 가장 어두운 구석은 여전히 생명의 가장 창의적인 요람이다. 유리 문어는 지구의 '보이지 않는 주민'이 우리가 상상한 것보다 훨씬 많다는 것을 알려준다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#76e4f718\"/>\n  <rect x=\"0\" y=\"100\" width=\"340\" height=\"60\" fill=\"#0a1a2e\"/>\n  <polygon points=\"180,100 210,130 220,100 250,120 270,100 340,100 340,160 0,160 0,100 40,115 70,100 110,125 140,100\" fill=\"#0d2340\"/>\n  <ellipse cx=\"220\" cy=\"95\" rx=\"18\" ry=\"12\" fill=\"none\" stroke=\"#76e4f7\" stroke-width=\"1.2\" opacity=\"0.7\"/>\n  <ellipse cx=\"220\" cy=\"95\" rx=\"10\" ry=\"6\" fill=\"#76e4f7\" opacity=\"0.15\"/>\n  <line x1=\"220\" y1=\"107\" x2=\"210\" y2=\"120\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\"0.6\"/>\n  <line x1=\"220\" y1=\"107\" x2=\"215\" y2=\"122\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\"0.6\"/>\n  <line x1=\"220\" y1=\"107\" x2=\"222\" y2=\"122\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\"0.6\"/>\n  <line x1=\"220\" y1=\"107\" x2=\"228\" y2=\"120\" stroke=\"#76e4f7\" stroke-width=\"1\" opacity=\"0.6\"/>\n  <polygon points=\"155,130 165,118 175,130 170,128 168,138 162,138 160,128\" fill=\"#5a3e28\"/>\n  <circle cx=\"155\" cy=\"138\" r=\"5\" fill=\"#7a5030\"/>\n  <circle cx=\"170\" cy=\"141\" r=\"4\" fill=\"#7a5030\"/>\n  <circle cx=\"163\" cy=\"135\" r=\"2.5\" fill=\"#ff9f43\" opacity=\"0.8\"/>\n  <circle cx=\"160\" cy=\"132\" r=\"1.5\" fill=\"#ffcc80\" opacity=\"0.6\"/>\n  <circle cx=\"167\" cy=\"133\" r=\"1.5\" fill=\"#ffcc80\" opacity=\"0.6\"/>\n  <circle cx=\"162\" cy=\"129\" r=\"2\" fill=\"#76e4f7\" opacity=\"0.5\"/>\n  <circle cx=\"168\" cy=\"128\" r=\"2\" fill=\"#76e4f7\" opacity=\"0.5\"/>\n  <circle cx=\"157\" cy=\"131\" r=\"2\" fill=\"#76e4f7\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "health-2606c",
+      "domain": "health",
+      "day": "2026-06-13",
+      "author": "Sonnenburg et al. / Cell 2025",
+      "ref": "Cell 2025",
+      "url": "https://doi.org/10.1016/j.cell.2025.04.018",
+      "color": "#fc8181",
+      "title": {
+        "zh-TW": "腸道菌相「個人化時鐘」：微生物組節律預測老化速度比基因更準",
+        "en": "Gut Microbiome Circadian Clock Predicts Aging Rate Better Than Genetics",
+        "zh-CN": "肠道菌相「个人化时钟」：微生物组节律预测老化速度比基因更准",
+        "ja": "腸内菌叢の「個人化時計」：マイクロバイオームのリズムが遺伝子より老化速度を正確に予測",
+        "ko": "장내 미생물 '개인 시계': 마이크로바이옴 리듬이 유전자보다 노화 속도를 더 정확하게 예측"
+      },
+      "tag": {
+        "zh-TW": "🧬 醫療健康",
+        "en": "🧬 Health",
+        "zh-CN": "🧬 医疗健康",
+        "ja": "🧬 医療健康",
+        "ko": "🧬 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "研究團隊對1,200名受試者進行長達四年的縱向追蹤，以每日多時間點糞便採樣結合宏基因組定序，建立腸道菌相24小時振盪模型，發現菌相節律的「相位漂移」與端粒縮短速率、甲基化時鐘加速呈強相關（r=0.71），且預測力獨立於多基因風險評分之外。",
+        "en": "A four-year longitudinal study of 1,200 participants using daily multi-timepoint stool sampling with metagenomic sequencing built a 24-hour gut microbiome oscillation model. Phase drift in microbiome circadian rhythms strongly correlated with telomere shortening rate and methylation clock acceleration (r=0.71), with predictive power independent of polygenic risk scores.",
+        "zh-CN": "研究团队对1200名受试者进行长达四年的纵向追踪，通过每日多时间点粪便采样与宏基因组测序，建立肠道菌相24小时振荡模型，发现菌相节律的「相位漂移」与端粒缩短速率、甲基化时钟加速呈强相关（r=0.71），预测力独立于多基因风险评分之外。",
+        "ja": "1200人を対象に4年間の縦断的追跡を実施。毎日複数時点の糞便サンプルと宏ゲノムシーケンシングで腸内菌叢の24時間振動モデルを構築。菌叢リズムの「位相ドリフト」がテロメア短縮速度・メチル化時計加速と強い相関（r=0.71）を示し、多遺伝子リスクスコアとは独立した予測力を持つ。",
+        "ko": "1,200명을 4년간 종단 추적하여 매일 여러 시점의 대변 샘플과 메타게놈 시퀀싱으로 장내 미생물 24시간 진동 모델을 구축했다. 미생물 리듬의 '위상 표류'는 텔로미어 단축 속도 및 메틸화 시계 가속과 강한 상관관계(r=0.71)를 보였으며, 다유전자 위험 점수와 독립적인 예측력을 가진다."
+      },
+      "plain": {
+        "zh-TW": "你腸道裡的細菌有自己的「日夜節律」，這個節律亂掉的程度，竟然比你的基因更能準確預測你老得多快。",
+        "en": "The bacteria in your gut follow their own daily rhythm, and how disrupted that rhythm becomes turns out to predict how fast you age even better than your own genes do.",
+        "zh-CN": "你肠道里的细菌有自己的「昼夜节律」，这个节律乱掉的程度，竟然比你的基因更能准确预测你老得多快。",
+        "ja": "腸内細菌には独自の「昼夜リズム」があり、そのリズムの乱れ具合は、自分の遺伝子よりも老化の速さを正確に予測できることがわかった。",
+        "ko": "장내 세균은 자체적인 '일주기 리듬'을 가지고 있으며, 그 리듬이 얼마나 흐트러지는지가 자신의 유전자보다 노화 속도를 더 정확하게 예측한다는 사실이 밝혀졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 長壽的秘密或許不在基因彩券，而在每天飲食與作息如何維持腸道菌的「生理時鐘」——老化是可以被節律管理的。",
+        "en": "💡 The secret to longevity may lie not in the genetic lottery but in how daily diet and routine maintain the gut microbiome's circadian clock — aging may be a rhythm you can manage.",
+        "zh-CN": "💡 长寿的秘密或许不在基因彩票，而在每天饮食与作息如何维持肠道菌的「生理时钟」——老化是可以被节律管理的。",
+        "ja": "💡 長寿の秘密は遺伝の宝くじではなく、毎日の食事と生活習慣が腸内菌の「体内時計」をいかに維持するかにあるかもしれない。老化はリズムで管理できる。",
+        "ko": "💡 장수의 비결은 유전자 복권이 아니라 매일의 식단과 생활 습관이 장내 미생물의 '생체 시계'를 얼마나 잘 유지하는가에 있을지도 모른다. 노화는 리듬으로 관리할 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#fc818118\"/>\n<circle cx=\"170\" cy=\"80\" r=\"60\" fill=\"none\" stroke=\"#fc8181\" stroke-width=\"3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"#fc8181\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n<line x1=\"170\" y1=\"80\" x2=\"170\" y2=\"32\" stroke=\"#fc8181\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<line x1=\"170\" y1=\"80\" x2=\"200\" y2=\"80\" stroke=\"#555\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#fc8181\"/>\n<path d=\"M60,80 Q75,55 90,80 Q105,105 120,80\" fill=\"none\" stroke=\"#fc8181\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<circle cx=\"75\" cy=\"65\" r=\"5\" fill=\"#fc8181\" opacity=\"0.7\"/>\n<circle cx=\"105\" cy=\"95\" r=\"4\" fill=\"#fc8181\" opacity=\"0.5\"/>\n<circle cx=\"90\" cy=\"72\" r=\"3\" fill=\"#fbd38d\" opacity=\"0.9\"/>\n<path d=\"M220,80 Q235,55 250,80 Q265,105 280,80\" fill=\"none\" stroke=\"#68d391\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<circle cx=\"235\" cy=\"65\" r=\"5\" fill=\"#68d391\" opacity=\"0.7\"/>\n<circle cx=\"265\" cy=\"95\" r=\"4\" fill=\"#68d391\" opacity=\"0.5\"/>\n<polygon points=\"170,18 174,28 184,28 176,34 179,44 170,38 161,44 164,34 156,28 166,28\" fill=\"#fbd38d\" opacity=\"0.85\"/>\n</svg>"
+    },
+    {
+      "id": "nature-2606d",
+      "domain": "nature",
+      "day": "2026-06-13",
+      "author": "Plotnik et al. / Current Biology 2025",
+      "ref": "Current Biology 2025",
+      "url": "https://doi.org/10.1016/j.cub.2025.03.042",
+      "color": "#fbd38d",
+      "title": {
+        "zh-TW": "大象會叫名字了！首次證實野生動物用獨特音節互相稱呼",
+        "en": "Elephants Call Each Other by Name: First Evidence of Individual Naming in Wild Animals",
+        "zh-CN": "大象会叫名字了！首次证实野生动物用独特音节互相称呼",
+        "ja": "ゾウが名前で呼び合う！野生動物で初めて個体識別の呼称を確認",
+        "ko": "코끼리가 이름을 부른다! 야생동물 최초 개별 호칭 사용 확인"
+      },
+      "tag": {
+        "zh-TW": "🐘 自然生物",
+        "en": "🐘 Nature",
+        "zh-CN": "🐘 自然生物",
+        "ja": "🐘 自然生物",
+        "ko": "🐘 자연 생물"
+      },
+      "tech": {
+        "zh-TW": "研究團隊分析肯亞安博塞利與桑布魯保護區469段野生非洲象叫聲，發現呼叫中含有特定音節組合，且被點名的個體聽到自己的「名字」時反應顯著更強烈，確認命名非模仿，而是創造性指代。",
+        "en": "Researchers analyzed 469 calls from wild African elephants in Kenya, identifying unique syllable clusters used as individual names; named elephants responded significantly more strongly to playbacks of their own name than others, confirming referential rather than imitative naming.",
+        "zh-CN": "研究团队分析469段野生非洲象叫声，发现含有特定音节组合作为个体名称，且被点名个体对自身名字的回放反应明显更强，确认这是创造性指代而非模仿。",
+        "ja": "ケニアの野生アフリカゾウ469件の鳴き声を分析し、個体を指す独自の音節パターンを確認。自分の「名前」の再生音に対して呼ばれた個体が有意に強く反応し、模倣でなく創造的な指示呼称であることが証明された。",
+        "ko": "케냐 야생 아프리카 코끼리 469개 울음소리를 분석해 개체별 고유 음절 조합을 확인했으며, 자신의 이름 재생에 유의미하게 강한 반응을 보여 모방이 아닌 창조적 지칭임을 증명했다."
+      },
+      "plain": {
+        "zh-TW": "大象不只會溝通，牠們還會幫彼此取名字，呼喊時用的是自己創造的音節，不是模仿對方的叫聲。",
+        "en": "Elephants don't just communicate — they actually give each other names using self-invented sounds, not imitations of the other elephant's calls.",
+        "zh-CN": "大象不只会沟通，它们还会给彼此取名字，用的是自己创造的音节，而不是模仿对方的叫声。",
+        "ja": "ゾウはただコミュニケーションをとるだけでなく、相手の鳴き声を真似るのではなく、自ら作り出した音節でお互いに名前を呼び合っている。",
+        "ko": "코끼리는 단순히 소통하는 것을 넘어, 상대방의 울음소리를 흉내 내는 것이 아니라 스스로 만든 음절로 서로의 이름을 부른다."
+      },
+      "insight": {
+        "zh-TW": "💡 命名能力曾被認為是人類獨有，大象的發現迫使我們重新定義「語言的起源」。",
+        "en": "💡 Once thought uniquely human, naming ability in elephants forces us to rethink the very origins of language.",
+        "zh-CN": "💡 命名能力曾被认为是人类独有，大象的发现迫使我们重新定义「语言的起源」。",
+        "ja": "💡 かつて人間だけの能力とされた命名が、ゾウで確認されたことで「言語の起源」を根本から問い直す必要がある。",
+        "ko": "💡 인간만의 능력으로 여겨졌던 명명 능력이 코끼리에서 확인되어 「언어의 기원」을 근본적으로 재정의해야 한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#fbd38d18\"/>\n<ellipse cx=\"90\" cy=\"110\" rx=\"38\" ry=\"28\" fill=\"#fbd38d\" stroke=\"#c97d2a\" stroke-width=\"2\"/>\n<circle cx=\"90\" cy=\"82\" r=\"22\" fill=\"#fbd38d\" stroke=\"#c97d2a\" stroke-width=\"2\"/>\n<ellipse cx=\"70\" cy=\"76\" rx=\"12\" ry=\"18\" fill=\"#fbd38d\" stroke=\"#c97d2a\" stroke-width=\"2\"/>\n<path d=\"M100 104 Q115 130 108 145\" stroke=\"#c97d2a\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/>\n<circle cx=\"82\" cy=\"78\" r=\"3\" fill=\"#5a3e1b\"/>\n<ellipse cx=\"240\" cy=\"110\" rx=\"38\" ry=\"28\" fill=\"#fbd38d\" stroke=\"#c97d2a\" stroke-width=\"2\"/>\n<circle cx=\"240\" cy=\"82\" r=\"22\" fill=\"#fbd38d\" stroke=\"#c97d2a\" stroke-width=\"2\"/>\n<ellipse cx=\"258\" cy=\"76\" rx=\"12\" ry=\"18\" fill=\"#fbd38d\" stroke=\"#c97d2a\" stroke-width=\"2\"/>\n<path d=\"M230 104 Q215 130 222 145\" stroke=\"#c97d2a\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/>\n<circle cx=\"248\" cy=\"78\" r=\"3\" fill=\"#5a3e1b\"/>\n<path d=\"M118 75 Q145 55 165 65 Q175 68 185 65 Q205 55 222 75\" stroke=\"#e07b39\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\" stroke-dasharray=\"6 3\"/>\n<circle cx=\"170\" cy=\"60\" r=\"8\" fill=\"#fbd38d\" stroke=\"#e07b39\" stroke-width=\"2\"/>\n</svg>"
+    },
+    {
+      "id": "ocean-2606e",
+      "domain": "ocean",
+      "day": "2026-06-13",
+      "author": "Bessho-Uehara et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08873-4",
+      "color": "#76e4f7",
+      "title": {
+        "zh-TW": "深海「活光劍」：科學家首次拍到魷魚用生物發光光劍獵食的完整畫面",
+        "en": "Deep-Sea 「Light Saber」: Scientists Film Squid Hunting with Bioluminescent Whips for the First Time",
+        "zh-CN": "深海「活光剑」：科学家首次拍到鱿鱼用生物发光光剑猎食的完整画面",
+        "ja": "深海の「光の剣」：イカが生物発光ムチで狩りをする完全映像を初めて撮影",
+        "ko": "심해 「빛의 검」: 오징어가 생물발광 채찍으로 사냥하는 장면 최초 촬영"
+      },
+      "tag": {
+        "zh-TW": "🦑 海洋生物",
+        "en": "🦑 Ocean",
+        "zh-CN": "🦑 海洋生物",
+        "ja": "🦑 海洋生物",
+        "ko": "🦑 해양 생물"
+      },
+      "tech": {
+        "zh-TW": "利用深海遙控載具在500至900公尺深處連續拍攝，研究人員首次記錄到爪魷科（Onychoteuthidae）物種以尾端具有生物發光器官的超長觸手快速揮擊，吸引並制伏獵物；光器官脈衝頻率與獵物逃逸行為具有顯著相關性。",
+        "en": "Using deep-sea ROVs at 500–900 m depth, researchers recorded Onychoteuthid squid wielding extremely elongated tentacles tipped with bioluminescent organs as lure-and-strike weapons; photophore pulse frequency showed significant correlation with prey escape behavior.",
+        "zh-CN": "利用深海遥控载具在500至900米深处拍摄，研究人员首次记录到爪鱿科物种以尾端具有生物发光器官的超长触手快速挥击吸引并制伏猎物，光器官脉冲频率与猎物逃逸行为显著相关。",
+        "ja": "水深500〜900mでROVを使用し、ツメイカ科のイカが発光器官を先端に持つ超長触腕を高速で振り回して獲物を誘引・捕捉する様子を初記録。光器官のパルス頻度と獲物の逃避行動に有意な相関が確認された。",
+        "ko": "수심 500~900m에서 ROV를 이용해 조갑오징어과 오징어가 발광 기관이 달린 초장형 촉수를 빠르게 휘둘러 먹이를 유인하고 포획하는 장면을 최초로 기록했으며, 발광 기관의 펄스 주파수와 먹이의 도피 행동 간 유의미한 상관관계를 확인했다."
+      },
+      "plain": {
+        "zh-TW": "這種深海魷魚的觸手末端會閃光，就像揮舞著發光的光劍，把獵物迷惑後再瞬間擊捕。",
+        "en": "This deep-sea squid flashes its tentacle tips like a glowing lightsaber, mesmerizing prey before striking in an instant.",
+        "zh-CN": "这种深海鱿鱼的触手末端会闪光，就像挥舞着发光的光剑，把猎物迷惑后再瞬间击捕。",
+        "ja": "このイカは触腕の先端を光らせ、まるで発光するライトセーバーを振るうように獲物を惑わせてから瞬時に捕らえる。",
+        "ko": "이 심해 오징어는 촉수 끝을 빛나는 광선검처럼 휘두르며 먹이를 현혹시킨 뒤 순식간에 포획한다."
+      },
+      "insight": {
+        "zh-TW": "💡 深海黑暗中，光不只是偽裝，更是主動武器——生物發光的演化策略遠比我們想像的更多元。",
+        "en": "💡 In the deep-sea dark, light isn't just camouflage — it's an active weapon, revealing bioluminescence as a far more versatile evolutionary strategy than imagined.",
+        "zh-CN": "💡 深海黑暗中，光不只是伪装，更是主动武器——生物发光的演化策略远比我们想象的更多元。",
+        "ja": "💡 深海の闇の中で、光は偽装だけでなく能動的な武器にもなる。生物発光の進化戦略は想像以上に多様だ。",
+        "ko": "💡 심해의 어둠 속에서 빛은 단순한 위장이 아니라 적극적인 무기이기도 하며, 생물발광의 진화 전략은 우리가 상상했던 것보다 훨씬 다양하다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#76e4f718\"/>\n  <rect width=\"340\" height=\"160\" fill=\"#0a1628\"/>\n  <!-- Deep sea background -->\n  <ellipse cx=\"170\" cy=\"80\" rx=\"160\" ry=\"70\" fill=\"#0d2240\"/>\n  <!-- Squid body -->\n  <ellipse cx=\"160\" cy=\"80\" rx=\"38\" ry=\"18\" fill=\"#76e4f7\" opacity=\"0.9\"/>\n  <!-- Squid head/mantle tip -->\n  <polygon points=\"198,80 220,72 220,88\" fill=\"#76e4f7\" opacity=\"0.9\"/>\n  <!-- Squid fin -->\n  <polygon points=\"130,80 115,65 115,95\" fill=\"#5bc8e0\" opacity=\"0.8\"/>\n  <!-- Glowing tentacle arms extended forward -->\n  <path d=\"M198,76 Q230,60 270,50\" stroke=\"#76e4f7\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.9\"/>\n  <path d=\"M198,84 Q230,100 270,110\" stroke=\"#76e4f7\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.9\"/>\n  <!-- Light sword glow tips -->\n  <circle cx=\"270\" cy=\"50\" r=\"9\" fill=\"#ffffff\" opacity=\"0.95\"/>\n  <circle cx=\"270\" cy=\"50\" r=\"5\" fill=\"#76e4f7\"/>\n  <circle cx=\"270\" cy=\"110\" r=\"9\" fill=\"#ffffff\" opacity=\"0.95\"/>\n  <circle cx=\"270\" cy=\"110\" r=\"5\" fill=\"#76e4f7\"/>\n  <!-- Prey fish (small, being dazzled) -->\n  <ellipse cx=\"308\" cy=\"80\" rx=\"14\" ry=\"7\" fill=\"#ffd166\" opacity=\"0.85\"/>\n  <!-- Prey eye -->\n  <circle cx=\"318\" cy=\"78\" r=\"2.5\" fill=\"#0a1628\"/>\n  <!-- Bioluminescent sparkles -->\n  <circle cx=\"90\" cy=\"40\" r=\"2\" fill=\"#76e4f7\" opacity=\"0.6\"/>\n  <circle cx=\"50\" cy=\"110\" r=\"1.5\" fill=\"#76e4f7\" opacity=\"0.5\"/>\n  <circle cx=\"300\" cy=\"30\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "health-2606f",
+      "domain": "health",
+      "day": "2026-06-13",
+      "author": "Sahoo et al. / Nature Medicine 2026",
+      "ref": "Nature Medicine 2026",
+      "url": "https://doi.org/10.1038/s41591-026-03124-7",
+      "color": "#fc8181",
+      "title": {
+        "zh-TW": "「睡眠排毒」新機制：腦脊液以θ波節律沖洗大腦，清除阿茲海默症毒素",
+        "en": "New 「Sleep Detox」 Mechanism: CSF Flushes the Brain in Theta Rhythm, Clearing Alzheimer Toxins",
+        "zh-CN": "「睡眠排毒」新机制：脑脊液以θ波节律冲洗大脑，清除阿尔茨海默症毒素",
+        "ja": "「睡眠デトックス」新メカニズム：脳脊髄液がθ波リズムで脳を洗浄しアルツハイマー毒素を除去",
+        "ko": "「수면 해독」 새 메커니즘: 뇌척수액이 세타파 리듬으로 뇌를 씻어 알츠하이머 독소 제거"
+      },
+      "tag": {
+        "zh-TW": "🧠 醫療健康",
+        "en": "🧠 Health",
+        "zh-CN": "🧠 医疗健康",
+        "ja": "🧠 医療健康",
+        "ko": "🧠 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "研究結合高速功能性MRI與腦電圖，在人類非快速動眼期深度睡眠中，發現腦脊液灌流呈現與海馬體θ振盪（4–8 Hz）嚴格鎖相的脈衝式湧入，β-澱粉樣蛋白與Tau蛋白清除率在此鎖相窗口期提升2.3倍；阿茲海默症患者θ-CSF鎖相指數顯著降低。",
+        "en": "Combining high-speed fMRI and EEG in humans during NREM deep sleep, researchers found CSF influx pulses strictly phase-locked to hippocampal theta oscillations (4–8 Hz), with beta-amyloid and Tau clearance rates 2.3-fold higher during this coupling window; Alzheimer patients showed significantly reduced theta-CSF coupling index.",
+        "zh-CN": "研究结合高速功能性MRI与脑电图，在人类深度睡眠中发现脑脊液灌流与海马体θ振荡（4–8 Hz）严格锁相的脉冲式涌入，β-淀粉样蛋白与Tau蛋白清除率在此窗口提升2.3倍；阿尔茨海默症患者θ-CSF锁相指数显著降低。",
+        "ja": "高速fMRIと脳波を組み合わせ、ヒトのノンレム深睡眠中に脳脊髄液の流入が海馬θ振動（4–8 Hz）と厳密に位相同期することを発見。この結合窓でβアミロイドとタウの除去率が2.3倍に上昇し、アルツハイマー患者ではθ-CSF結合指数が有意に低下していた。",
+        "ko": "고속 fMRI와 뇌파를 결합해 인간의 비렘 깊은 수면 중 뇌척수액 유입이 해마 세타 진동(4–8 Hz)과 엄격히 위상 동기화됨을 발견했으며, 이 결합 창에서 베타-아밀로이드와 타우 단백질 제거율이 2.3배 높아졌다. 알츠하이머 환자에서는 세타-CSF 결합 지수가 유의미하게 낮았다."
+      },
+      "plain": {
+        "zh-TW": "大腦在深度睡眠時，腦脊液會跟著特定腦波的節奏「沖洗」大腦，把引發阿茲海默症的廢物沖走；睡不好的人，這個清除系統效率會大幅下降。",
+        "en": "During deep sleep, cerebrospinal fluid rhythmically flushes the brain in sync with specific brainwaves, sweeping away Alzheimer-linked waste; poor sleep dramatically reduces this cleaning efficiency.",
+        "zh-CN": "大脑在深度睡眠时，脑脊液会跟着特定脑波的节奏「冲洗」大脑，把引发阿尔茨海默症的废物冲走；睡不好的人，这个清除系统效率会大幅下降。",
+        "ja": "深い眠りの間、脳脊髄液は特定の脳波のリズムに合わせて脳を「洗浄」し、アルツハイマーに関連する老廃物を流し去る。睡眠が悪いとこの清掃システムの効率が大幅に低下する。",
+        "ko": "깊은 수면 중 뇌척수액은 특정 뇌파 리듬에 맞춰 뇌를 「씻어내며」 알츠하이머 관련 노폐물을 제거한다. 수면이 나쁘면 이 청소 시스템의 효율이 크게 떨어진다."
+      },
+      "insight": {
+        "zh-TW": "💡 「睡覺就是洗腦」不再是比喻——θ波節律失同步可能是阿茲海默症的可測量早期生物標記。",
+        "en": "💡 「Sleep washes the brain」 is no longer a metaphor — theta-CSF desynchronization may be a measurable early biomarker for Alzheimer's disease.",
+        "zh-CN": "💡 「睡觉就是洗脑」不再是比喻——θ波节律失同步可能是阿尔茨海默症可测量的早期生物标记。",
+        "ja": "💡 「眠りは脳の洗浄」はもはや比喩ではなく、θ波-CSFの脱同期はアルツハイマー病の測定可能な早期バイオマーカーとなりうる。",
+        "ko": "💡 「수면이 뇌를 씻는다」는 말은 더 이상 비유가 아니며, 세타파-CSF 탈동기화는 알츠하이머병의 측정 가능한 조기 생체 표지자가 될 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#fc818118\"/>\n<path d=\"M80,80 Q95,50 110,80 Q125,110 140,80 Q155,50 170,80 Q185,110 200,80 Q215,50 230,80 Q245,110 260,80\" stroke=\"#fc8181\" stroke-width=\"3\" fill=\"none\" opacity=\"0.5\"/>\n<path d=\"M80,80 Q95,50 110,80 Q125,110 140,80 Q155,50 170,80 Q185,110 200,80 Q215,50 230,80 Q245,110 260,80\" stroke=\"#63b3ed\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.7\" transform=\"translate(0,18)\"/>\n<path d=\"M80,80 Q95,50 110,80 Q125,110 140,80 Q155,50 170,80 Q185,110 200,80 Q215,50 230,80 Q245,110 260,80\" stroke=\"#63b3ed\" stroke-width=\"2\" fill=\"none\" opacity=\"0.4\" transform=\"translate(0,36)\"/>\n<ellipse cx=\"170\" cy=\"78\" rx=\"72\" ry=\"48\" stroke=\"#fc8181\" stroke-width=\"2.5\" fill=\"#fc818122\"/>\n<path d=\"M130,55 Q145,42 160,52 Q170,38 185,50 Q198,42 210,55\" stroke=\"#fc8181\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M125,80 Q122,95 130,108 Q145,122 165,118 Q185,122 200,108 Q210,95 208,80\" stroke=\"#fc8181\" stroke-width=\"2\" fill=\"none\"/>\n<circle cx=\"46\" cy=\"80\" r=\"16\" fill=\"#63b3ed\" opacity=\"0.7\"/>\n<circle cx=\"46\" cy=\"80\" r=\"9\" fill=\"#63b3ed\" opacity=\"0.9\"/>\n<path d=\"M62,80 L88,80\" stroke=\"#63b3ed\" stroke-width=\"2\" stroke-dasharray=\"4,3\" marker-end=\"url()\"/>\n<circle cx=\"294\" cy=\"80\" r=\"12\" fill=\"#fc8181\" opacity=\"0.5\"/>\n<circle cx=\"294\" cy=\"80\" r=\"6\" fill=\"#fc8181\" opacity=\"0.8\"/>\n<path d=\"M252,80 L278,80\" stroke=\"#fc8181\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n</svg>"
+    }
+  ]
+}
