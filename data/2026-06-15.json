@@ -1,0 +1,143 @@
+{
+  "date": "2026-06-15",
+  "mode": "paper",
+  "paper_date": "2026-06-12",
+  "generated_at": "2026-06-15",
+  "cards": [
+    {
+      "id": "phys-260615",
+      "domain": "phys",
+      "day": "2026-06-15",
+      "author": "Hanwool Lee, Joonwoo Bae et al.",
+      "ref": "arXiv:2606.13667v1",
+      "url": "https://arxiv.org/abs/2606.13667v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"20\" y=\"50\" width=\"80\" height=\"60\" rx=\"8\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"30\" y=\"62\" width=\"20\" height=\"20\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.9\"/><rect x=\"58\" y=\"62\" width=\"20\" height=\"20\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.9\"/><rect x=\"30\" y=\"88\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#a0c4f1\" opacity=\"0.8\"/><rect x=\"58\" y=\"88\" width=\"20\" height=\"12\" rx=\"3\" fill=\"#a0c4f1\" opacity=\"0.8\"/><line x1=\"130\" y1=\"80\" x2=\"190\" y2=\"80\" stroke=\"#f4a261\" stroke-width=\"3\" stroke-dasharray=\"6,4\"/><polygon points=\"188,74 200,80 188,86\" fill=\"#f4a261\"/><circle cx=\"240\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"3\"/><circle cx=\"240\" cy=\"80\" r=\"22\" fill=\"#4a7bbf\" opacity=\"0.18\"/><line x1=\"220\" y1=\"60\" x2=\"260\" y2=\"100\" stroke=\"#e76f51\" stroke-width=\"2.5\"/><line x1=\"260\" y1=\"60\" x2=\"220\" y2=\"100\" stroke=\"#e76f51\" stroke-width=\"2.5\"/><circle cx=\"240\" cy=\"80\" r=\"8\" fill=\"#e76f51\" opacity=\"0.85\"/><circle cx=\"310\" cy=\"50\" r=\"10\" fill=\"#4a7bbf\" opacity=\"0.7\"/><circle cx=\"310\" cy=\"110\" r=\"10\" fill=\"#a0c4f1\" opacity=\"0.7\"/><line x1=\"310\" y1=\"62\" x2=\"310\" y2=\"98\" stroke=\"#4a7bbf\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/></svg>",
+      "title": {
+        "zh-TW": "不靠糾纏也能「非局域」：量子態區分的半裝置無關認證",
+        "en": "Nonlocality Without Entanglement: Semi-Device-Independent Certification via State Discrimination",
+        "zh-CN": "不靠纠缠也能「非局域」：量子态区分的半设备无关认证",
+        "ja": "もつれなしの「非局所性」：量子状態識別による半デバイス非依存認証",
+        "ko": "얽힘 없는 비국소성: 반장치 독립 양자 상태 판별 인증"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子資訊",
+        "en": "⚛️ Quantum Information",
+        "zh-CN": "⚛️ 量子信息",
+        "ja": "⚛️ 量子情報",
+        "ko": "⚛️ 양자정보"
+      },
+      "tech": {
+        "zh-TW": "本研究對可分離量子態集合進行「最大置信度辨別」，比較全局測量與可分離測量的性能差異，證明全局測量能超越可分離測量，從而在無糾纏的情況下建立「無糾纏非局域性」（NLWE）。研究進一步指出，透過驗證測量結果的可達置信度，可在半裝置無關框架下認證全局測量的使用。",
+        "en": "This work analyzes maximum-confidence discrimination—encompassing minimum-error and unambiguous strategies—for ensembles of separable states, comparing global versus separable measurements. It proves global measurements outperform separable ones in terms of achievable confidence per outcome, establishing nonlocality without entanglement (NLWE). Furthermore, certifying these confidence values enables semi-device-independent verification of global measurement usage.",
+        "zh-CN": "本研究对可分离量子态集合进行「最大置信度辨别」，比较全局测量与可分离测量的性能差异，证明全局测量能超越可分离测量，从而在无纠缠的情况下建立「无纠缠非局域性」（NLWE）。研究进一步指出，通过验证测量结果的可达置信度，可在半设备无关框架下认证全局测量的使用。",
+        "ja": "本研究は、可分離量子状態の集合に対して「最大信頼度識別」を実施し、大域測定と可分離測定の性能を比較した。大域測定が可分離測定を上回ることを示し、もつれなしの非局所性（NLWE）を確立。さらに信頼度値の検証により、半デバイス非依存な大域測定の認証が可能なことを証明した。",
+        "ko": "이 연구는 분리 가능한 양자 상태 앙상블에 대해 최대 신뢰도 판별을 수행하고, 전역 측정과 분리 가능 측정의 성능을 비교했다. 전역 측정이 분리 가능 측정을 능가함을 증명하여 얽힘 없는 비국소성(NLWE)을 확립하고, 신뢰도 값 검증을 통해 반장치 독립 프레임워크 내에서 전역 측정 사용 인증이 가능함을 보였다."
+      },
+      "plain": {
+        "zh-TW": "想像你有一個裝滿彩色球的袋子，每種顏色代表一種量子態。你的任務是猜出每次摸出的是哪種顏色。量子世界中，有兩種「猜法」：一種是把所有球放在一起整體觀察（全局測量），另一種是每次只看一顆球的局部特徵（可分離測量）。這篇論文證明，即使這些球彼此之間完全沒有「量子糾纏」的神秘連結，整體觀察仍然比分開看更厲害——這就是「無糾纏非局域性」。更酷的是，研究者設計了一套方法，光憑測量的猜對機率，就能判斷對方用的是哪種猜法，而不需要完全信任測量儀器。這對量子通訊安全認證非常重要，因為它讓我們能在資訊不完整的情況下，仍然確認量子操作是否真正發揮了威力。",
+        "en": "Imagine a bag of colored balls where each color represents a quantum state, and your job is to guess which color you pulled out. In quantum physics, you can either examine all balls together as a whole (global measurement) or inspect each ball individually (separable measurement). This paper proves that even when the balls share absolutely no mysterious quantum entanglement, looking at them together still beats looking at them separately—this is called nonlocality without entanglement. Even more remarkably, the researchers devised a method where just knowing how often you guess correctly reveals which type of measurement was used, without fully trusting the measuring device. This matters enormously for quantum communication security, as it lets us verify the power of quantum operations even when we don't have complete information about the equipment.",
+        "zh-CN": "想象一个装满彩球的袋子，每种颜色代表一种量子态，你的任务是猜出每次摸出的是哪种颜色。量子世界中有两种「猜法」：整体观察所有球（全局测量），或逐一检查每颗球的局部特征（可分离测量）。这篇论文证明，即使这些球之间完全没有「量子纠缠」的神秘连结，整体观察依然比分开看更厉害——这就是「无纠缠非局域性」。更妙的是，研究者设计了一套方法，仅凭猜对的概率就能判断对方用的是哪种测量方式，而无需完全信任测量仪器。这对量子通信安全认证至关重要。",
+        "ja": "色とりどりのボールが入った袋を想像してください。各色は量子状態を表し、あなたの仕事は引き出したボールの色を当てることです。量子の世界では、すべてのボールをまとめて観察する方法（大域測定）と、個別に調べる方法（可分離測定）があります。この論文は、ボール同士に量子もつれがまったくなくても、まとめて観察する方が個別に見るより優れていることを証明しました—これが「もつれなし非局所性」です。さらに、正解率を調べるだけでどの測定方法が使われたか判断できる認証法を開発し、量子通信のセキュリティ検証に大きく貢献します。",
+        "ko": "색깔 공이 가득 찬 가방을 상상해 보세요. 각 색깔은 양자 상태를 나타내고, 여러분의 임무는 꺼낸 공의 색을 맞추는 것입니다. 양자 세계에서는 모든 공을 한꺼번에 관찰하는 방법(전역 측정)과 하나씩 따로 조사하는 방법(분리 가능 측정)이 있습니다. 이 논문은 공들 사이에 양자 얽힘이 전혀 없어도 한꺼번에 관찰하는 것이 더 우월함을 증명했는데, 이것이 바로 '얽힘 없는 비국소성'입니다. 더 놀라운 점은, 측정 장치를 완전히 신뢰하지 않아도 정답률만으로 어떤 측정 방식이 사용됐는지 인증할 수 있다는 것으로, 양자 통신 보안에 매우 중요한 발견입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 量子優勢不一定需要糾纏——即使是「普通」的可分離量子態，整體的觀察視角本身就蘊藏著超越局部的力量。",
+        "en": "💡 Quantum advantage doesn't always require entanglement—the act of observing separable states as a whole already harbors a power that no local strategy can match.",
+        "zh-CN": "💡 量子优势不一定需要纠缠——即使是「普通」的可分离量子态，整体观察视角本身就蕴藏着超越局部的力量。",
+        "ja": "💡 量子優位性は必ずしももつれを必要としない——可分離な量子状態であっても、全体として観察するという行為自体が、局所的な戦略を超える力を秘めている。",
+        "ko": "💡 양자 우위는 반드시 얽힘을 필요로 하지 않는다—분리 가능한 양자 상태라도 전체적으로 관찰하는 행위 자체가 어떤 국소적 전략도 따라올 수 없는 힘을 지닌다."
+      }
+    },
+    {
+      "id": "space-260615",
+      "domain": "space",
+      "day": "2026-06-15",
+      "author": "Adilkhan Assilkhan, Sabrina M. Appel et al.",
+      "ref": "arXiv:2606.13666v1",
+      "url": "https://arxiv.org/abs/2606.13666v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2.5\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"#1a237e\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#ffffff\" opacity=\"0.95\"/><line x1=\"170\" y1=\"42\" x2=\"170\" y2=\"10\" stroke=\"#e65100\" stroke-width=\"3.5\" stroke-linecap=\"round\" opacity=\"0.9\"/><line x1=\"170\" y1=\"118\" x2=\"170\" y2=\"150\" stroke=\"#e65100\" stroke-width=\"3.5\" stroke-linecap=\"round\" opacity=\"0.9\"/><polygon points=\"170,6 164,18 176,18\" fill=\"#e65100\" opacity=\"0.95\"/><polygon points=\"170,154 164,142 176,142\" fill=\"#e65100\" opacity=\"0.95\"/><circle cx=\"110\" cy=\"65\" r=\"5\" fill=\"#ffd54f\" opacity=\"0.85\"/><circle cx=\"135\" cy=\"48\" r=\"4\" fill=\"#ffd54f\" opacity=\"0.75\"/><circle cx=\"225\" cy=\"95\" r=\"5\" fill=\"#ffd54f\" opacity=\"0.85\"/><circle cx=\"205\" cy=\"112\" r=\"3.5\" fill=\"#ffd54f\" opacity=\"0.7\"/><circle cx=\"88\" cy=\"100\" r=\"3\" fill=\"#ffd54f\" opacity=\"0.6\"/><circle cx=\"252\" cy=\"55\" r=\"3\" fill=\"#ffd54f\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "星際噴流如何左右星團誕生：原恆星噴流對星團形成的衝擊",
+        "en": "How Protostellar Jets Shape the Birth of Star Clusters",
+        "zh-CN": "星际喷流如何左右星团诞生：原恒星喷流对星团形成的冲击",
+        "ja": "原始星ジェットが星団誕生に与える衝撃：集中型分子雲での星形成",
+        "ko": "원시별 제트가 성단 탄생에 미치는 영향：별 형성의 새로운 이해"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究使用 Torch 星團形成模擬框架，對質量約 2500 太陽質量的中心集中分子雲進行六對數值模擬，系統比較有無原恆星噴流回饋對恆星形成效率、形成速率時間變化、星團結構及早期動力學狀態的影響。模擬涵蓋不同初始條件，以量化噴流回饋在星團組裝過程中的作用。",
+        "en": "Using the Torch star cluster formation framework, the study runs six pairs of numerical simulations of centrally concentrated molecular clouds with mass 2500 solar masses, systematically comparing scenarios with and without protostellar jet feedback to assess effects on star formation efficiency, temporal variability, cluster structure, and early dynamical state.",
+        "zh-CN": "本研究使用 Torch 星团形成模拟框架，对质量约 2500 太阳质量的中心集中分子云进行六对数值模拟，系统比较有无原恒星喷流反馈对恒星形成效率、形成速率时间变化、星团结构及早期动力学状态的影响。",
+        "ja": "Torch 星団形成フレームワークを使用し、太陽質量の約 2500 倍の中心集中型分子雲に対して 6 対の数値シミュレーションを実施。原始星ジェットのフィードバックの有無を比較し、星形成効率・時間変動・星団構造・初期力学状態への影響を定量評価した。",
+        "ko": "Torch 성단 형성 프레임워크를 사용하여 태양 질량의 약 2500배에 해당하는 중심 집중형 분자운에서 6쌍의 수치 시뮬레이션을 수행하고, 원시별 제트 피드백 유무에 따른 별 형성 효율, 시간 변동성, 성단 구조 및 초기 역학 상태의 차이를 체계적으로 비교 분석했다."
+      },
+      "plain": {
+        "zh-TW": "想像宇宙中有一團巨大的氣體雲，就像一座即將爆炸的麵糰工廠。當這團雲開始塌縮、孕育新星時，剛誕生的嬰兒恆星會噴出兩道猛烈的氣體噴流，如同火箭尾焰一樣衝穿周圍物質。這些噴流並非靜靜旁觀，而是會攪動整個「育嬰室」，影響後來還能誕生多少顆星星。科學家一直不清楚這種「嬰兒恆星的噴流反擊」對整個星團的誕生有多大的實際影響。本研究用超級電腦模擬了這個過程，發現噴流會降低整體恆星形成的效率，就像工廠裡的風扇一直把原料吹走一樣。這項發現對於理解我們銀河系中像獵戶座星雲這樣的星團如何組裝起來非常重要，也有助於解釋為什麼宇宙中的恆星形成速率比單純重力計算預測的低得多。",
+        "en": "Imagine a vast cosmic gas cloud, like a giant flour factory about to collapse and bake new stars. As the cloud contracts, newborn baby stars shoot out powerful twin jets of gas — like rocket exhausts punching through surrounding material. These jets are not passive bystanders: they stir up the entire stellar nursery and influence how many more stars can form afterward. Scientists have long wondered just how much these baby-star jets actually matter for building whole star clusters. Using supercomputer simulations, this study finds that jets reduce overall star formation efficiency, like a factory fan constantly blowing raw material away. This matters because it helps explain why star formation in real galaxies is far slower and less efficient than pure gravity alone would predict — jets act as a brake on the universe's star-making engine.",
+        "zh-CN": "想象宇宙中有一团巨大的气体云，就像一座即将爆炸的面团工厂。当这团云开始坍缩、孕育新星时，刚诞生的婴儿恒星会喷出两道猛烈的气体喷流，如同火箭尾焰一样冲穿周围物质。这些喷流会搅动整个「育婴室」，影响后来还能诞生多少颗星星。科学家一直不清楚这种「婴儿恒星的喷流反击」对整个星团的诞生有多大的实际影响。本研究用超级计算机模拟了这个过程，发现喷流会降低整体恒星形成效率，就像工厂里的风扇一直把原料吹走一样。这对于理解银河系中星团如何组装起来非常重要，也有助于解释为什么宇宙中恒星形成速率比重力预测的低得多。",
+        "ja": "宇宙に漂う巨大なガス雲を、新しい星を「焼き上げる」巨大な工場と想像してください。この雲が収縮して赤ちゃん星が生まれると、その星は両方向に強力なガスのジェットを噴き出します。まるでロケットの噴射が周囲の物質を突き破るようなイメージです。このジェットは星の「保育室」全体をかき乱し、その後に生まれる星の数にも影響します。超高性能コンピュータによるシミュレーションの結果、ジェットは全体の星形成効率を下げることがわかりました。これは宇宙全体の星形成速度が重力だけの計算より遥かに遅い理由を説明する重要な手がかりです。",
+        "ko": "우주에 거대한 가스 구름이 있다고 상상해 보세요. 마치 새 별을 구워내는 대형 공장처럼, 이 구름이 수축하면서 아기 별들이 태어납니다. 막 태어난 아기 별들은 양방향으로 강력한 가스 제트를 내뿜는데, 이는 로켓 배기가스처럼 주변 물질을 뚫고 나갑니다. 이 제트는 단순한 방관자가 아니라, 별들의 보육원 전체를 휘저어 이후 얼마나 더 많은 별이 생겨날 수 있는지를 결정합니다. 슈퍼컴퓨터 시뮬레이션 결과, 제트가 전체 별 형성 효율을 낮춘다는 사실이 밝혀졌습니다. 이는 은하의 별 형성 속도가 중력만으로 예측한 것보다 훨씬 느린 이유를 이해하는 데 중요한 단서가 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 星團誕生的剎車器，正是那些最年輕恆星自己噴出的氣流——宇宙的「育嬰室」天生就帶有自我節制機制。",
+        "en": "💡 The very first stars born in a cluster immediately begin throttling the birth of their siblings — the universe's nurseries are self-regulating from the very start.",
+        "zh-CN": "💡 星团中最早诞生的恒星，反而会通过喷流抑制后续恒星的形成——宇宙的「育婴室」天生具有自我节制机制。",
+        "ja": "💡 星団で最初に生まれた星が、自らのジェットで後続の星の誕生を抑制する——宇宙の保育室は生まれながらにして自己調節機能を持っている。",
+        "ko": "💡 성단에서 가장 먼저 태어난 별들이 제트로 동생 별들의 탄생을 억제한다——우주의 보육원은 태어나면서부터 스스로를 조절하는 메커니즘을 갖추고 있다."
+      }
+    },
+    {
+      "id": "tech-260615",
+      "domain": "tech",
+      "day": "2026-06-15",
+      "author": "Thanh-Nha To, Trung Quang Pham et al.",
+      "ref": "arXiv:2606.13582v1",
+      "url": "https://arxiv.org/abs/2606.13582v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"150\" y=\"60\" width=\"40\" height=\"40\" rx=\"5\" fill=\"#00695c\" opacity=\"0.9\"/><circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#ffffff\" opacity=\"0.9\"/><line x1=\"170\" y1=\"80\" x2=\"60\" y2=\"45\" stroke=\"#00695c\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"80\" x2=\"60\" y2=\"115\" stroke=\"#00695c\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"80\" x2=\"280\" y2=\"45\" stroke=\"#e65100\" stroke-width=\"2\" stroke-dasharray=\"6,3\"/><line x1=\"170\" y1=\"80\" x2=\"280\" y2=\"115\" stroke=\"#e65100\" stroke-width=\"2\" stroke-dasharray=\"6,3\"/><circle cx=\"60\" cy=\"45\" r=\"12\" fill=\"#00695c\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"115\" r=\"12\" fill=\"#00695c\" opacity=\"0.85\"/><circle cx=\"280\" cy=\"45\" r=\"12\" fill=\"#b71c1c\" opacity=\"0.75\"/><circle cx=\"280\" cy=\"115\" r=\"12\" fill=\"#b71c1c\" opacity=\"0.75\"/><path d=\"M260 30 Q310 45 290 60\" stroke=\"#b71c1c\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/><path d=\"M260 100 Q310 115 290 130\" stroke=\"#b71c1c\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/><rect x=\"100\" y=\"68\" width=\"140\" height=\"24\" rx=\"12\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"1.5\" opacity=\"0.5\"/><rect x=\"108\" y=\"72\" width=\"55\" height=\"16\" rx=\"8\" fill=\"#00695c\" opacity=\"0.25\"/></svg>",
+      "title": {
+        "zh-TW": "通訊感知一體化網路的「最公平保密」波束成形：讓竊聽者無縫可鑽",
+        "en": "Fairest Secrecy Beamforming for Sensing-Communication Networks: Shutting Out Eavesdroppers",
+        "zh-CN": "通信感知一体化网络的「最公平保密」波束成形：让窃听者无缝可钻",
+        "ja": "通信・センシング統合ネットワークの「最公平秘匿」ビームフォーミング：盗聴者を完全遮断",
+        "ko": "통신·감지 통합 네트워크의 「최공정 보안」 빔포밍：도청자 완전 차단"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술·공학"
+      },
+      "tech": {
+        "zh-TW": "本文針對ISAC（整合感知與通訊）系統，研究在多位通訊用戶與多位可能竊聽的感測用戶共存時，如何最大化「最弱用戶保密速率」（max-min secrecy rate）。作者以波束圖匹配誤差為感測品質約束，建立高度非凸最佳化問題，並提出全域最佳化演算法與低複雜度近似算法兩種解法。",
+        "en": "This paper studies an ISAC system where communication users coexist with untrusted sensing users who may eavesdrop. The authors formulate a max-min secrecy rate optimization under transmit power budgets and beampattern matching error constraints, then propose both a global optimization algorithm and a low-complexity approximation to solve the highly non-convex problem.",
+        "zh-CN": "本文针对ISAC（整合感知与通信）系统，研究在多位通信用户与多位可能窃听的感测用户共存时，如何最大化「最弱用户保密速率」（max-min secrecy rate）。作者以波束图匹配误差为感测质量约束，建立高度非凸优化问题，并提出全域优化算法与低复杂度近似算法两种解法。",
+        "ja": "本論文はISACシステムにおいて、通信ユーザと盗聴の可能性がある未信頼センシングユーザが共存する状況を研究する。送信電力予算とビームパターン誤差制約のもと、最弱ユーザの秘匿レートを最大化する高度非凸最適化問題を定式化し、大域最適化アルゴリズムと低複雑度近似アルゴリズムの両方を提案する。",
+        "ko": "본 논문은 통신 사용자와 도청 가능성이 있는 비신뢰 감지 사용자가 공존하는 ISAC 시스템을 연구한다. 송신 전력 예산과 빔패턴 정합 오차 제약 하에 가장 취약한 사용자의 보안 전송률을 최대화하는 비볼록 최적화 문제를 수립하고, 전역 최적화 및 저복잡도 근사 알고리즘을 제안한다."
+      },
+      "plain": {
+        "zh-TW": "想像一座無線電基地台，它既要「雷達掃描」附近的物體，又要同時「私聊」多位用戶——這就是ISAC系統的角色。問題是，負責感測的設備也有耳朵：它們可能偷聽通訊內容，就像咖啡廳的服務員趁送餐時偷聽客人說話。這篇研究要解決的，正是如何設計天線發射方向（波束成形），讓每一位通訊用戶的「保密通道」都盡可能強壯，不讓最弱的那個人成為漏洞。研究者的核心思路是「木桶原則」：整體安全性取決於最短的那塊板，所以要讓最差的用戶也有足夠好的保密速率。為此，他們同時提出了「精確但耗時」的全域最佳解，以及「快速又夠好」的低複雜度算法，讓實際系統能即時運作。這項技術對5G/6G時代的智慧感測網路、自駕車雷達通訊一體化系統都至關重要，因為未來的無線設備幾乎都兼具感測與通訊功能。",
+        "en": "Imagine a base station that simultaneously acts as a radar scanner and a private messenger for multiple users—that is the promise of ISAC technology. The catch is that the sensing devices nearby also have ears: they can eavesdrop on private communications, like a waiter overhearing a confidential business lunch. This research designs the antenna beam directions so that every communication user has the strongest possible secret channel, ensuring no one becomes the weak link. The core idea is the weakest-link principle: overall security is only as strong as the most vulnerable user, so even the worst-off user must be well protected. The authors deliver both an accurate but heavy global solution and a fast low-complexity algorithm for real-time deployment. This matters hugely for 5G/6G smart networks, autonomous vehicle radar-comm systems, and any future device that senses and communicates at once.",
+        "zh-CN": "想象一座无线基站，既能「雷达扫描」周边物体，又能同时「私聊」多位用户——这就是ISAC系统的角色。问题是，负责感测的设备也有耳朵：它们可能偷听通信内容，就像咖啡厅服务员送餐时偷听客人讲话。这篇研究要解决的，正是如何设计天线发射方向（波束成形），让每位通信用户的「保密通道」都尽可能强壮，不让最弱的那个人成为漏洞。研究者的核心思路是「木桶原则」：整体安全性取决于最短的那块板，所以要让最差的用户也有足够好的保密速率。为此，他们同时提出了「精确但耗时」的全域最优解，以及「快速又够好」的低复杂度算法，让实际系统能实时运作。这项技术对5G/6G时代的智慧感测网络和自驾车雷达通信一体化系统都至关重要。",
+        "ja": "基地局が「レーダースキャン」と「プライベート通信」を同時に行う——それがISACシステムの姿です。ところが、センシングを担うデバイスは盗聴もできます。カフェのウェイターが注文を取りながら会話を聞いてしまうような状況です。この研究はアンテナのビーム方向を設計し、全通信ユーザの秘匿チャネルを最強にすることを目指します。カギは「最弱のユーザが全体の安全を決める」という木桶の原理。そのため、精度重視の大域最適解と、リアルタイム動作向けの低複雑度アルゴリズムの両方を提案しています。5G/6G時代の自動運転レーダー通信統合など、センシングと通信を兼ねる未来デバイスに不可欠な技術です。",
+        "ko": "기지국이 「레이더 스캔」과 「개인 통신」을 동시에 수행하는 것이 ISAC 시스템의 핵심입니다. 문제는 감지 장치들도 귀를 가지고 있다는 것—카페 웨이터가 음식을 나르며 대화를 엿듣는 것처럼 도청이 가능합니다. 이 연구는 안테나 빔 방향을 설계해 모든 통신 사용자의 비밀 채널을 최대한 강하게 만듭니다. 핵심은 「가장 약한 링크가 전체 보안을 결정한다」는 나무통 원리입니다. 따라서 정확한 전역 최적해와 실시간 동작을 위한 저복잡도 알고리즘을 모두 제안합니다. 5G/6G 자율주행 레이더·통신 통합 시스템 등 감지와 통신을 겸비한 미래 기기에 필수적인 기술입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的系統安全不是保護最強的用戶，而是讓最弱的那個人也無懈可擊——ISAC時代的保密設計揭示了「公平」才是安全的最終形式。",
+        "en": "💡 True system security is not about protecting the strongest user—it is about leaving no weak link exposed; ISAC secrecy design reveals that 「fairness」 is the ultimate form of security.",
+        "zh-CN": "💡 真正的系统安全不是保护最强的用户，而是让最弱的那个人也无懈可击——ISAC时代的保密设计揭示了「公平」才是安全的最终形式。",
+        "ja": "💡 真のシステム安全とは最強ユーザを守ることではなく、最も弱いユーザにも隙を与えないこと——ISACの秘匿設計は「公平性」こそが究極のセキュリティだと示している。",
+        "ko": "💡 진정한 시스템 보안은 가장 강한 사용자를 보호하는 것이 아니라 가장 약한 사용자조차 허점이 없게 만드는 것——ISAC 보안 설계는 「공정성」이 궁극적인 보안의 형태임을 보여준다."
+      }
+    }
+  ]
+}
