@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-16",
+  "mode": "paper",
+  "paper_date": "2026-06-16",
+  "generated_at": "2026-06-16",
+  "cards": [
+    {
+      "id": "ai-260616",
+      "domain": "ai",
+      "day": "2026-06-16",
+      "author": "Rohit Gandikota, David Bau et al.",
+      "ref": "arXiv:2606.14703v1",
+      "url": "https://arxiv.org/abs/2606.14703v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"20\" width=\"100\" height=\"75\" rx=\"6\" fill=\"#e9c46a\" opacity=\"0.85\"/><rect x=\"22\" y=\"22\" width=\"44\" height=\"34\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.9\"/><rect x=\"70\" y=\"22\" width=\"44\" height=\"34\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"22\" y=\"60\" width=\"44\" height=\"30\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.4\"/><rect x=\"70\" y=\"60\" width=\"44\" height=\"30\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.5\"/><circle cx=\"44\" cy=\"39\" r=\"10\" fill=\"#e76f51\" opacity=\"0.9\"/><circle cx=\"92\" cy=\"75\" r=\"10\" fill=\"#e76f51\" opacity=\"0.9\"/><line x1=\"44\" y1=\"39\" x2=\"92\" y2=\"75\" stroke=\"#e76f51\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\" opacity=\"0.85\"/><rect x=\"155\" y=\"30\" width=\"160\" height=\"100\" rx=\"10\" fill=\"#2a9d8f\" opacity=\"0.12\"/><circle cx=\"185\" cy=\"65\" r=\"18\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"2.5\"/><circle cx=\"185\" cy=\"65\" r=\"8\" fill=\"#2a9d8f\" opacity=\"0.5\"/><line x1=\"199\" y1=\"79\" x2=\"215\" y2=\"95\" stroke=\"#2a9d8f\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"255\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"2\" stroke-dasharray=\"6,3\" opacity=\"0.7\"/><circle cx=\"255\" cy=\"80\" r=\"12\" fill=\"#e76f51\" opacity=\"0.25\"/><line x1=\"120\" y1=\"57\" x2=\"155\" y2=\"65\" stroke=\"#e76f51\" stroke-width=\"2\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "AI的凝視機制：視覺語言模型如何「用眼睛說話」",
+        "en": "Gaze Heads: How VLMs Visually Focus on What They Describe",
+        "zh-CN": "AI的凝视机制：视觉语言模型如何「用眼睛说话」",
+        "ja": "AIの視線メカニズム：視覚言語モデルは「何を見て語るか」",
+        "ko": "AI의 시선 메커니즘：시각 언어 모델은 어떻게 「눈으로 말하는가」"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボット",
+        "ko": "🤖 AI와 로봇"
+      },
+      "tech": {
+        "zh-TW": "研究者在視覺語言模型（VLM）的語言骨幹中，發現一小組稱為「注視頭」（gaze heads）的注意力頭，其注意力分布會隨模型正在描述的圖像區域同步移動。透過以漫畫格作為空間敘事受控測試場，研究者用少量前向推斷計算相關分數來定位這些注視頭，並進一步證明重導向這些注意力頭可主動操控模型描述的圖像區域。",
+        "en": "Researchers identified a small set of attention heads in the language backbone of vision-language models (VLMs), termed gaze heads, whose attention distributions dynamically track the image region currently being described. Using comic strips as a spatially structured testbed, they located these heads via a simple correlation score from a few forward passes, and demonstrated that redirecting these heads actively steers which image region the model describes.",
+        "zh-CN": "研究者在视觉语言模型（VLM）的语言主干中，发现一小组称为「注视头」（gaze heads）的注意力头，其注意力分布会随模型正在描述的图像区域同步移动。通过以漫画格作为空间叙事受控测试场，研究者用少量前向推断计算相关分数来定位这些注视头，并进一步证明重定向这些注意力头可主动操控模型描述的图像区域。",
+        "ja": "研究者たちは視覚言語モデル（VLM）の言語バックボーンに、「注視ヘッド（gaze heads）」と呼ばれる少数のアテンションヘッドを発見した。これらのヘッドのアテンション分布は、モデルが現在説明している画像領域を動的に追跡する。漫画のコマを空間的な叙事のテストベッドとして用い、少数の順伝播から相関スコアを計算してこれらのヘッドを特定し、リダイレクトすることでモデルが説明する画像領域を能動的に制御できることを示した。",
+        "ko": "연구자들은 시각 언어 모델(VLM)의 언어 백본에서 「시선 헤드(gaze heads)」라 불리는 소수의 어텐션 헤드를 발견했다. 이 헤드들의 어텐션 분포는 모델이 현재 설명하고 있는 이미지 영역을 동적으로 추적한다. 만화 칸을 공간적 서사 테스트베드로 활용해 소수의 순전파에서 상관 점수를 계산하여 이 헤드들을 찾아내고, 이를 재지향함으로써 모델이 설명하는 이미지 영역을 능동적으로 제어할 수 있음을 입증했다."
+      },
+      "plain": {
+        "zh-TW": "想像你在描述一幅圖畫——你的眼睛會自然地掃過正在說的那個角落，說到左上角就看左上角，說到右下角就看右下角。AI在看圖說話時，竟然也有類似的「眼神」機制！研究者發現，在AI龐大的神經網路裡，有一小群特殊的「注意力節點」——稱為注視頭——會在AI產生每一個詞語的當下，悄悄鎖定圖片裡對應的區域。就像舞台追光燈，詞語走到哪，光就打到哪。更驚人的是，只要「強迫」這些注視頭去看圖片的另一個角落，AI就會開始描述那個角落的內容，彷彿遙控了AI的視線。這個發現讓我們第一次能像手術刀一樣，精準操控AI到底在「看」哪裡、說什麼，對提升AI描述的準確性、找出幻覺錯誤的來源，都有重大意義。",
+        "en": "Imagine describing a painting — your eyes naturally follow what your mouth is saying, glancing left when you mention the left corner, right when you mention the right. Remarkably, AI vision-language models do something strikingly similar. Researchers discovered that buried inside the model's vast neural network is a tiny cluster of special nodes — called gaze heads — that silently spotlight the exact image region the AI is currently talking about, word by word, like a stage spotlight that moves with the script. Even more surprising: by forcing these gaze heads to look at a different part of the image, you can make the AI start describing that part instead — essentially remote-controlling its visual attention. This matters enormously because it gives us a precise surgical tool to understand and correct why AI sometimes hallucinates details that aren't really there.",
+        "zh-CN": "想象你在描述一幅图画——你的眼睛会自然地扫过正在说的那个角落，说到左上角就看左上角，说到右下角就看右下角。AI在看图说话时，竟然也有类似的「眼神」机制！研究者发现，在AI庞大的神经网络里，有一小群特殊的「注意力节点」——称为注视头——会在AI产生每一个词语的当下，悄悄锁定图片里对应的区域。就像舞台追光灯，词语走到哪，光就打到哪。更惊人的是，只要「强迫」这些注视头去看图片的另一个角落，AI就会开始描述那个角落的内容，仿佛遥控了AI的视线。这个发现让我们第一次能像手术刀一样，精准操控AI到底在「看」哪里、说什么，对提升AI描述的准确性、找出幻觉错误的来源都有重大意义。",
+        "ja": "絵画を描写するとき、人間の目は自然と今話している部分を追う——左上を話せば左上を見る、右下なら右下へ。驚くことに、AIの視覚言語モデルも同じ仕組みを持っていることがわかった。研究者たちは、巨大なニューラルネットワークの中に「注視ヘッド」と呼ばれる特殊なノードの小さな集まりを発見した。これらは、AIが単語を生成するたびに、その言葉が指す画像の領域をひっそりと照らし出すスポットライトのような存在だ。さらに驚くべきことに、この注視ヘッドを強制的に別の領域に向けると、AIはその領域の内容を描写し始める——まるでAIの視線をリモコンで操るようなものだ。この発見はAIの幻覚現象の原因解明と修正に向けた、初めての外科的ツールとなりうる。",
+        "ko": "그림을 묘사할 때 우리 눈은 자연스럽게 말하는 부분을 따라간다 — 왼쪽 위를 말하면 왼쪽 위를 보고, 오른쪽 아래를 말하면 오른쪽 아래를 본다. 놀랍게도 AI 시각 언어 모델도 이와 비슷한 메커니즘을 갖고 있다는 사실이 밝혀졌다. 연구자들은 거대한 신경망 속에 「시선 헤드」라 불리는 특수한 노드의 작은 무리를 발견했다. 이 노드들은 AI가 단어를 생성할 때마다 그 단어가 가리키는 이미지 영역을 조용히 조명하는 무대 스포트라이트 같은 역할을 한다. 더 놀라운 점은, 이 시선 헤드를 억지로 다른 영역으로 향하게 하면 AI가 그 영역의 내용을 설명하기 시작한다는 것이다 — 마치 AI의 시선을 리모컨으로 조종하는 것처럼. 이 발견은 AI가 없는 내용을 지어내는 환각 현상의 원인을 찾고 수정하는 데 최초의 정밀 수술 도구가 될 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 語言與視覺的橋樑不是整個模型，而是幾個隱藏的「眼睛」——找到它們，就能像調整鏡頭焦距一樣，精確控制AI的視覺注意力。",
+        "en": "💡 The bridge between language and vision in AI is not the whole model, but a handful of hidden 「eyes」 — find them, and you can precisely steer the model's visual focus like adjusting a camera lens.",
+        "zh-CN": "💡 语言与视觉的桥梁不是整个模型，而是几个隐藏的「眼睛」——找到它们，就能像调整镜头焦距一样，精确控制AI的视觉注意力。",
+        "ja": "💡 AIにおける言語と視覚の橋渡しは、モデル全体ではなくわずか数個の隠れた「目」だ——それを見つければ、カメラのレンズを調整するようにAIの視覚的注意を精密に制御できる。",
+        "ko": "💡 AI에서 언어와 시각을 잇는 다리는 모델 전체가 아니라 몇 개의 숨겨진 「눈」이다 — 그것을 찾아내면 카메라 렌즈를 조정하듯 AI의 시각적 주의를 정밀하게 제어할 수 있다."
+      }
+    },
+    {
+      "id": "bio-260616",
+      "domain": "bio",
+      "day": "2026-06-16",
+      "author": "Stefano Maestri",
+      "ref": "arXiv:2606.14603v1",
+      "url": "https://arxiv.org/abs/2606.14603v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2.5\"/><circle cx=\"170\" cy=\"80\" r=\"14\" fill=\"#52b788\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"36\" r=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><circle cx=\"206\" cy=\"57\" r=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><circle cx=\"206\" cy=\"103\" r=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"124\" r=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><circle cx=\"134\" cy=\"103\" r=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><circle cx=\"134\" cy=\"57\" r=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><line x1=\"170\" y1=\"43\" x2=\"170\" y2=\"66\" stroke=\"#52b788\" stroke-width=\"1.8\"/><line x1=\"199\" y1=\"61\" x2=\"184\" y2=\"70\" stroke=\"#52b788\" stroke-width=\"1.8\"/><line x1=\"199\" y1=\"99\" x2=\"184\" y2=\"90\" stroke=\"#52b788\" stroke-width=\"1.8\"/><line x1=\"170\" y1=\"117\" x2=\"170\" y2=\"94\" stroke=\"#52b788\" stroke-width=\"1.8\"/><line x1=\"141\" y1=\"99\" x2=\"156\" y2=\"90\" stroke=\"#52b788\" stroke-width=\"1.8\"/><line x1=\"141\" y1=\"61\" x2=\"156\" y2=\"70\" stroke=\"#52b788\" stroke-width=\"1.8\"/><rect x=\"28\" y=\"30\" width=\"60\" height=\"14\" rx=\"4\" fill=\"#b7e4c7\" opacity=\"0.7\"/><rect x=\"28\" y=\"52\" width=\"44\" height=\"8\" rx=\"3\" fill=\"#52b788\" opacity=\"0.35\"/><rect x=\"28\" y=\"66\" width=\"52\" height=\"8\" rx=\"3\" fill=\"#52b788\" opacity=\"0.25\"/><rect x=\"28\" y=\"80\" width=\"36\" height=\"8\" rx=\"3\" fill=\"#52b788\" opacity=\"0.2\"/><rect x=\"252\" y=\"110\" width=\"62\" height=\"14\" rx=\"4\" fill=\"#d8f3dc\" opacity=\"0.8\"/><rect x=\"258\" y=\"96\" width=\"50\" height=\"8\" rx=\"3\" fill=\"#40916c\" opacity=\"0.4\"/><rect x=\"258\" y=\"84\" width=\"38\" height=\"8\" rx=\"3\" fill=\"#40916c\" opacity=\"0.3\"/></svg>",
+      "title": {
+        "zh-TW": "虛擬癌症療法設計：GPU加速的細胞訊號模擬器",
+        "en": "Virtual Cancer Therapy Design: GPU-Accelerated Cell Signalling Simulator",
+        "zh-CN": "虚拟癌症疗法设计：GPU加速的细胞信号模拟器",
+        "ja": "仮想がん治療設計：GPU加速による細胞シグナル経路シミュレーター",
+        "ko": "가상 암 치료 설계：GPU 가속 세포 신호 경로 시뮬레이터"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學 × 計算生物學",
+        "en": "🧬 Life Science × Computational Biology",
+        "zh-CN": "🧬 生命科学 × 计算生物学",
+        "ja": "🧬 生命科学 × 計算生物学",
+        "ko": "🧬 생명과학 × 계산생물학"
+      },
+      "tech": {
+        "zh-TW": "本研究開發了一套基於FLAME GPU 2框架的GPU加速智能體模擬系統，專門用於重現癌症進程中的細胞訊號通路。每個分子或細胞以獨立「智能體」表示，系統可在不需大量動力學參數的情況下，模擬數百萬個分子交互作用，進而評估不同藥物干預策略的效果。",
+        "en": "This study develops a GPU-accelerated agent-based simulation system built on the FLAME GPU 2 framework, specifically designed to reproduce cellular signalling pathways involved in cancer progression. Each molecule or cell is represented as an independent agent, enabling simulation of millions of molecular interactions without extensive kinetic parameterisation, thereby evaluating diverse therapeutic interventions.",
+        "zh-CN": "本研究基于FLAME GPU 2框架开发了一套GPU加速智能体模拟系统，专门用于重现癌症进程中的细胞信号通路。每个分子或细胞以独立「智能体」表示，系统无需大量动力学参数即可模拟数百万分子交互作用，进而评估不同药物干预策略的效果。",
+        "ja": "本研究はFLAME GPU 2フレームワークを基盤とするGPU加速エージェントベースシミュレーションシステムを開発し、がん進行に関わる細胞シグナル経路を再現する。各分子・細胞を独立した「エージェント」として表現し、大規模な速度論パラメータなしに数百万の分子相互作用を模擬し、治療介入効果を評価する。",
+        "ko": "본 연구는 FLAME GPU 2 프레임워크 기반의 GPU 가속 에이전트 시뮬레이션 시스템을 개발하여 암 진행과 관련된 세포 신호 경로를 재현한다. 각 분자 또는 세포를 독립적인 에이전트로 표현하고, 방대한 동역학 매개변수 없이 수백만 개의 분자 상호작용을 시뮬레이션하여 다양한 치료 전략의 효과를 평가한다."
+      },
+      "plain": {
+        "zh-TW": "想像一座超級繁忙的城市，裡面有數百萬個快遞員（分子）不斷傳遞訊息，決定細胞要生長還是死亡。癌症就像這座城市的交通系統被駭客入侵，錯誤的訊號讓細胞失控增殖。過去科學家想了解這個過程，需要在真實實驗室做無數次昂貴又耗時的實驗。這項研究打造了一個「數位孿生城市」——用GPU顯示卡的超強平行運算，讓電腦同時追蹤數百萬個分子快遞員的行動。科學家可以在電腦上試驗「如果封鎖某條訊號路線，癌細胞會怎樣？」，就像在模擬城市裡先試跑交通管制方案，再真正上路。這不僅大幅節省研發時間與費用，更能在送進臨床試驗前，快速篩選出最有潛力的抗癌策略。未來，每位病人的癌症或許都能在虛擬世界裡先被「治療」一遍，再為真人量身訂做最有效的方案。",
+        "en": "Imagine a mega-city with millions of couriers (molecules) constantly relaying messages that decide whether a cell grows or dies. Cancer is like that city's traffic system getting hacked, causing cells to multiply out of control. Traditionally, scientists needed countless costly lab experiments to understand this chaos. This research builds a digital twin city: using the massive parallel power of GPU chips to simultaneously track millions of molecular couriers. Scientists can now test 「what if we block this signalling route?」 on a computer, like trialling traffic control schemes in a simulation before deploying them for real. This slashes drug development time and cost, and rapidly screens the most promising anti-cancer strategies before clinical trials. In the future, every patient's cancer could be virtually treated first, then a personalised real-world therapy designed.",
+        "zh-CN": "想象一座超级繁忙的城市，里面有数百万个快递员（分子）不断传递消息，决定细胞要生长还是死亡。癌症就像这座城市的交通系统被黑客入侵，错误的信号让细胞失控增殖。过去科学家想了解这个过程，需要在真实实验室做无数次昂贵耗时的实验。这项研究打造了一个「数字孪生城市」——用GPU显卡的超强并行运算，让电脑同时追踪数百万个分子快递员的行动。科学家可以在电脑上试验「如果封锁某条信号路线，癌细胞会怎样？」，就像在模拟城市里先试跑交通管制方案再真正上路。这不仅大幅节省研发时间与费用，更能在进入临床试验前快速筛选出最有潜力的抗癌策略。未来，每位患者的癌症或许都能在虚拟世界里先被「治疗」一遍，再为真人量身定制最有效的方案。",
+        "ja": "数百万人の宅配業者（分子）が絶えずメッセージを運び、細胞の増殖や死を決める超巨大都市を想像してほしい。がんはこの都市の交通システムがハッキングされ、誤った信号が細胞を暴走させる状態だ。これまで科学者はこのプロセスを理解するために、何度も高価な実験室実験を繰り返す必要があった。この研究はGPUの圧倒的な並列演算能力を使い、数百万の分子宅配業者を同時追跡する「デジタルツイン都市」を構築した。「この信号経路を遮断したらがん細胞はどうなるか？」をコンピューター上で試せる、いわば交通規制のシミュレーション。これにより開発時間とコストを大幅削減し、臨床試験前に最も有望な抗がん戦略を素早く絞り込める。将来は患者ごとのがんを仮想空間で先に治療し、最適な個別化療法を設計できるようになるかもしれない。",
+        "ko": "수백만 명의 택배원(분자)이 끊임없이 메시지를 전달하며 세포의 성장과 죽음을 결정하는 초대형 도시를 상상해보라. 암은 이 도시의 교통 시스템이 해킹되어 잘못된 신호가 세포를 무한 증식시키는 상태다. 과거에는 이 과정을 이해하려면 비용이 많이 드는 실험실 실험을 수없이 반복해야 했다. 이 연구는 GPU의 강력한 병렬 연산을 활용해 수백만 개의 분자 택배원을 동시에 추적하는 「디지털 트윈 도시」를 구축했다. 「이 신호 경로를 차단하면 암세포는 어떻게 될까?」를 컴퓨터에서 시험해볼 수 있어, 마치 교통 통제 방안을 시뮬레이션으로 먼저 검증하는 것과 같다. 이를 통해 신약 개발 시간과 비용을 크게 줄이고, 임상시험 전에 가장 유망한 항암 전략을 빠르게 선별할 수 있다. 미래에는 각 환자의 암을 가상 세계에서 먼저 「치료」해보고, 최적의 맞춤형 치료법을 설계할 수 있게 될 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 當GPU從遊戲加速器變成癌症研究夥伴，「先在虛擬世界治癒疾病」的時代或許已悄悄到來。",
+        "en": "💡 When GPUs transform from gaming accelerators into cancer research partners, the era of 「cure the disease in virtual reality first」 may have quietly arrived.",
+        "zh-CN": "💡 当GPU从游戏加速器变成癌症研究伙伴，「先在虚拟世界治愈疾病」的时代或许已悄然到来。",
+        "ja": "💡 GPUがゲーム用加速装置からがん研究のパートナーへと変わるとき、「まず仮想世界で病を治す」時代がひっそりと幕を開けているのかもしれない。",
+        "ko": "💡 GPU가 게임 가속기에서 암 연구 파트너로 변신할 때, 「가상 세계에서 먼저 병을 치료하는」 시대가 조용히 열리고 있는지도 모른다."
+      }
+    },
+    {
+      "id": "phys-260616",
+      "domain": "phys",
+      "day": "2026-06-16",
+      "author": "Alvan Arulandu",
+      "ref": "arXiv:2606.14698v1",
+      "url": "https://arxiv.org/abs/2606.14698v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><polygon points=\"170,18 80,130 260,130\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><polygon points=\"170,18 80,130 170,100\" fill=\"#4a7bbf\" opacity=\"0.18\"/><polygon points=\"170,18 170,100 260,130\" fill=\"#e8a020\" opacity=\"0.18\"/><polygon points=\"80,130 170,100 260,130\" fill=\"#4a7bbf\" opacity=\"0.28\"/><circle cx=\"170\" cy=\"18\" r=\"5\" fill=\"#4a7bbf\"/><circle cx=\"80\" cy=\"130\" r=\"5\" fill=\"#4a7bbf\"/><circle cx=\"260\" cy=\"130\" r=\"5\" fill=\"#4a7bbf\"/><circle cx=\"170\" cy=\"100\" r=\"5\" fill=\"#e8a020\"/><line x1=\"170\" y1=\"18\" x2=\"170\" y2=\"100\" stroke=\"#e8a020\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><line x1=\"80\" y1=\"130\" x2=\"170\" y2=\"100\" stroke=\"#e8a020\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><line x1=\"260\" y1=\"130\" x2=\"170\" y2=\"100\" stroke=\"#e8a020\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><circle cx=\"170\" cy=\"74\" r=\"22\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.2\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "解開量子金字塔之謎：找到測量量子態的最佳方法",
+        "en": "Solving the Quantum Pyramid: The Optimal Way to Measure Symmetric Quantum States",
+        "zh-CN": "解开量子金字塔之谜：找到测量量子态的最优方法",
+        "ja": "量子ピラミッドの謎を解く：対称な量子状態を測定する最適な方法",
+        "ko": "양자 피라미드의 비밀 풀기：대칭 양자 상태를 측정하는 최적의 방법"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子資訊",
+        "en": "⚛️ Quantum Information",
+        "zh-CN": "⚛️ 量子信息",
+        "ja": "⚛️ 量子情報",
+        "ko": "⚛️ 양자 정보"
+      },
+      "tech": {
+        "zh-TW": "本研究證明了「量子金字塔猜想」：對於一組等角等機率純態的量子系綜，全域資訊最優測量方式正是Englert與Řeháček於2009年所猜測的方案。關鍵突破在於完整證明了Holevo與Utkin提出的熵不等式，特別是針對鈍角與扁平金字塔型態，嚴格排除局部極小值具有三個不同座標值的可能性。",
+        "en": "This work proves the quantum pyramids conjecture by completing the entropy inequalities of Holevo and Utkin, confirming that the globally information-optimal measurement for equiangular equiprobable pure states is exactly as Englert and Řeháček conjectured in 2009. The key contribution is a rigorous proof that local minimizers of the relevant entropy inequality cannot possess three distinct coordinate values, resolving optimality for both obtuse and flat pyramid configurations.",
+        "zh-CN": "本研究证明了「量子金字塔猜想」：对于一组等角等概率纯态的量子系综，全局信息最优测量方式正是Englert与Řeháček于2009年所猜测的方案。关键突破在于完整证明了Holevo与Utkin提出的熵不等式，特别针对钝角与扁平金字塔型态，严格排除局部极小值具有三个不同坐标值的可能性。",
+        "ja": "本研究は「量子ピラミッド予想」を証明した。等角等確率純粋状態のアンサンブルに対して、全域的に情報最適な測定がEnglertとŘeháčekが2009年に予想した通りであることを確認。HolevoとUtkinのエントロピー不等式を完全に証明し、鈍角・扁平ピラミッドの局所最小値が三つの異なる座標値を持てないことを厳密に示した。",
+        "ko": "이 연구는 「양자 피라미드 추측」을 증명하여, 등각 등확률 순수 상태 앙상블에 대한 전역 정보 최적 측정이 Englert와 Řeháček이 2009년에 추측한 방식임을 확인했다. 핵심 기여는 Holevo와 Utkin의 엔트로피 불등식을 완성하여, 둔각 및 평탄 피라미드의 국소 최솟값이 세 가지 서로 다른 좌표값을 가질 수 없음을 엄밀히 증명한 것이다."
+      },
+      "plain": {
+        "zh-TW": "想像你在黑暗中摸一個神秘物體，每次只能摸一下，要怎樣「摸」才能用最少次數猜到它的真實形狀？量子世界也有同樣的問題：測量一個量子粒子時，選擇「怎麼量」會影響你能獲得多少資訊。科學家把某種對稱排列的量子態集合稱為「量子金字塔」，就像把幾個方向均等分布的箭頭插在球面上一樣漂亮而對稱。十幾年前，兩位物理學家猜測：對這種金字塔形狀的量子態，有一種「完美測量」可以榨取最多資訊——就像找到了最完美的問問題方式。這篇論文終於用嚴格的數學證明，這個猜測是對的！關鍵步驟是證明某種「熵不等式」在所有可能的測量方案中都成立。這對量子通訊、量子密碼學都有意義：知道最佳測量策略，就像知道了比賽中最有效率的戰術，讓我們能設計出理論上無法被超越的量子資訊提取方案。",
+        "en": "Imagine you are blindfolded and trying to identify a mysterious object by touching it only once — the way you touch it determines how much you learn. In the quantum world, the same challenge exists: how you choose to measure a quantum particle dramatically affects the information you can extract. Scientists call a special symmetric arrangement of quantum states a 「quantum pyramid,」 like arrows pointing in perfectly balanced directions on a sphere. Over a decade ago, two physicists conjectured that for these pyramid-shaped ensembles, there exists a single 「perfect measurement」 that squeezes out the maximum possible information. This paper finally provides the rigorous mathematical proof that the conjecture is correct. The breakthrough was proving a family of entropy inequalities that rule out any better alternatives. This matters for quantum communication and cryptography: knowing the optimal measurement strategy is like finding the unbeatable chess opening — it sets the theoretical ceiling for how efficiently quantum information can be read.",
+        "zh-CN": "想象你蒙着眼睛摸一个神秘物体，每次只能摸一下，怎么摸才能用最少次数猜到它的真实形状？量子世界也有同样的问题：测量一个量子粒子时，选择「怎么量」会影响你能获得多少信息。科学家把某种对称排列的量子态集合称为「量子金字塔」，就像把几个方向均等分布的箭头插在球面上一样漂亮而对称。十几年前，两位物理学家猜测：对这种金字塔形状的量子态，有一种「完美测量」可以榨取最多信息。这篇论文终于用严格的数学证明，这个猜测是对的！关键步骤是证明某种「熵不等式」在所有可能的测量方案中都成立。这对量子通信和量子密码学都有重要意义：知道最优测量策略，就像找到了比赛中最高效的战术。",
+        "ja": "目隠しをして一度だけ謎の物体を触り、その正体を当てるとしたら、どう触れば最も多くの情報を得られるでしょうか？量子の世界でも同じ問いがあります。量子粒子をどう測定するかによって、得られる情報量が大きく変わるのです。科学家たちは球面上に均等に配置された量子状態の集まりを「量子ピラミッド」と呼びます。十数年前、二人の物理学者がこの対称な量子ピラミッドに対して、情報を最大限に引き出せる「完璧な測定」が存在すると予想しました。この論文はついにその予想が正しいことを厳密な数学で証明しました。エントロピー不等式を完全に証明したことが突破口となりました。量子通信や量子暗号の設計において、最適な測定戦略を知ることは、チェスで最強の定跡を見つけるようなものです。",
+        "ko": "눈을 가린 채 신비로운 물체를 단 한 번만 만져서 정체를 알아내야 한다면, 어떻게 만지는 것이 가장 효율적일까요? 양자 세계에도 똑같은 질문이 있습니다. 양자 입자를 어떻게 측정하느냐에 따라 얻을 수 있는 정보량이 크게 달라집니다. 과학자들은 구면 위에 균등하게 배치된 양자 상태의 집합을 「양자 피라미드」라고 부릅니다. 10여 년 전 두 물리학자는 이 대칭적인 양자 피라미드에 대해 정보를 최대한 추출할 수 있는 「완벽한 측정」이 존재한다고 추측했습니다. 이 논문은 마침내 그 추측이 옳다는 것을 엄밀한 수학으로 증명했습니다. 엔트로피 불등식을 완전히 증명한 것이 핵심 돌파구였습니다. 이는 양자 통신과 양자 암호 설계에서 이론적으로 넘을 수 없는 최적 전략을 확립했다는 의미입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 十幾年懸而未決的數學猜測，往往需要全新的不等式工具才能破解——量子資訊理論的「最佳測量」問題，本質上是一道精妙的幾何優化難題。",
+        "en": "💡 A decade-old conjecture in quantum information finally falls — proving that the most symmetric quantum states also admit the most elegant optimal measurement, a reminder that beauty and optimality often coincide in physics.",
+        "zh-CN": "💡 十几年悬而未决的数学猜测，往往需要全新的不等式工具才能破解——量子信息论的「最优测量」问题，本质上是一道精妙的几何优化难题。",
+        "ja": "💡 10年以上未解決だった予想がついに証明された——最も対称な量子状態には最もエレガントな最適測定が存在するという事実は、物理学において美しさと最適性がしばしば一致することを示している。",
+        "ko": "💡 10년 넘게 미해결이던 추측이 마침내 증명되었다 — 가장 대칭적인 양자 상태에는 가장 우아한 최적 측정이 존재한다는 사실은, 물리학에서 아름다움과 최적성이 종종 일치함을 보여준다."
+      }
+    },
+    {
+      "id": "neuro-260616",
+      "domain": "neuro",
+      "day": "2026-06-16",
+      "author": "John J. Vastola, Kanaka Rajan et al.",
+      "ref": "arXiv:2606.14692v1",
+      "url": "https://arxiv.org/abs/2606.14692v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"50\" cy=\"80\" r=\"18\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"130\" cy=\"45\" r=\"14\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"130\" cy=\"115\" r=\"14\" fill=\"#ab47bc\" opacity=\"0.7\"/><circle cx=\"215\" cy=\"65\" r=\"14\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"215\" cy=\"110\" r=\"14\" fill=\"#ab47bc\" opacity=\"0.65\"/><circle cx=\"295\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.8\"/><line x1=\"68\" y1=\"72\" x2=\"116\" y2=\"52\" stroke=\"#6a1b9a\" stroke-width=\"2.2\" opacity=\"0.7\"/><line x1=\"68\" y1=\"88\" x2=\"116\" y2=\"108\" stroke=\"#ab47bc\" stroke-width=\"2.2\" opacity=\"0.7\"/><line x1=\"144\" y1=\"50\" x2=\"201\" y2=\"68\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.65\"/><line x1=\"144\" y1=\"112\" x2=\"201\" y2=\"107\" stroke=\"#ab47bc\" stroke-width=\"2\" opacity=\"0.65\"/><line x1=\"229\" y1=\"72\" x2=\"277\" y2=\"78\" stroke=\"#ce93d8\" stroke-width=\"2.2\" opacity=\"0.7\"/><line x1=\"229\" y1=\"106\" x2=\"277\" y2=\"84\" stroke=\"#ce93d8\" stroke-width=\"2\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "動物行為的「音節鏈」：馬可夫模型揭示行為的不可逆性與可預測性",
+        "en": "Behavior as a Chain of Syllables: What Markov Models Really Tell Us About Animal Behavior",
+        "zh-CN": "动物行为的「音节链」：马可夫模型揭示行为的不可逆性与可预测性",
+        "ja": "行動の「音節連鎖」：マルコフモデルが動物行動の不可逆性と予測可能性を解き明かす",
+        "ko": "동물 행동의 「음절 사슬」：마르코프 모델이 밝히는 행동의 비가역성과 예측 가능성"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學／行為建模",
+        "en": "🧠 Neuroscience / Behavioral Modeling",
+        "zh-CN": "🧠 神经科学／行为建模",
+        "ja": "🧠 神経科学／行動モデリング",
+        "ko": "🧠 신경과학 / 행동 모델링"
+      },
+      "tech": {
+        "zh-TW": "本研究從理論層面深入分析階層式馬可夫模型（Hierarchical Markov Models）在動物自發行為分析中的含義，探討行為「音節」序列的不可逆性、可預測性與有效維度。作者推導出一系列量化指標，說明此類模型如何精確捕捉行為序列的統計結構，並討論其對神經科學實驗設計與數據解讀的影響。",
+        "en": "This work theoretically analyzes hierarchical Markov models used to represent spontaneous animal behavior as sequences of stereotyped behavioral 「syllables」. The authors derive quantitative measures of irreversibility, predictability, and effective dimensionality, clarifying what such models genuinely reveal about the sequential and neural structure of behavior.",
+        "zh-CN": "本研究从理论层面深入分析层次马可夫模型（Hierarchical Markov Models）在动物自发行为分析中的含义，探讨行为「音节」序列的不可逆性、可预测性与有效维度。作者推导出一系列量化指标，说明此类模型如何精确捕捉行为序列的统计结构，并讨论其对神经科学实验设计与数据解读的影响。",
+        "ja": "本研究は、動物の自発行動を定型的な「音節」の系列として表現する階層的マルコフモデルを理論的に分析する。著者らは不可逆性・予測可能性・有効次元性の定量的指標を導出し、これらのモデルが行動の系列的・神経的構造について何を真に明らかにするかを考察する。",
+        "ko": "이 연구는 동물의 자발적 행동을 정형화된 「음절」 시퀀스로 표현하는 계층적 마르코프 모델을 이론적으로 분석한다. 저자들은 비가역성, 예측 가능성, 유효 차원성의 정량적 지표를 도출하여, 이러한 모델이 행동의 순서적·신경적 구조에 대해 실제로 무엇을 드러내는지 밝힌다."
+      },
+      "plain": {
+        "zh-TW": "想像你在觀察一隻小鼠在籠中自由活動：牠先「探頭」、再「洗臉」、再「奔跑」——這些動作像語言裡的「音節」一樣串成句子。科學家已能用攝影機和AI把這些動作切割、命名，並問：下一個「音節」能預測嗎？這篇論文就是要回答這個問題的數學基礎。研究者發現，用「馬可夫鏈」（也就是「下一步只看現在」的機率模型）描述行為，其實藏著豐富的訊息：行為是否有方向性（像時間只往前走，不能倒帶）？有多少種「自由度」？未來有多好猜？這不只是數學遊戲——如果我們能算出大腦控制的行為有多「規律」，就能反推大腦神經迴路的複雜度，甚至幫助診斷神經疾病。就像聽一個人說話的節奏，就能猜出他的情緒狀態一樣。",
+        "en": "Imagine watching a mouse move freely in a cage: it 「sniffs」, then 「grooms」, then 「runs」—these actions string together like syllables in a sentence. Scientists can now use cameras and AI to chop these movements into named units and ask: can we predict the next 「syllable」? This paper builds the mathematical foundation for that question. The researchers show that describing behavior with 「Markov chains」 (probability models that only look at the present moment to predict the next step) encodes rich information: Is behavior directional—like time, always moving forward? How many 「degrees of freedom」 does it have? How predictable is the future? This is not just math—if we can measure how 「regular」 brain-controlled behavior is, we can infer the complexity of neural circuits and even aid in diagnosing neurological disorders. It is like reading someone's speech rhythm to guess their emotional state.",
+        "zh-CN": "想象你在观察一只小鼠在笼中自由活动：它先「探头」、再「洗脸」、再「奔跑」——这些动作像语言里的「音节」一样串成句子。科学家已能用摄影机和AI把这些动作切割、命名，并问：下一个「音节」能预测吗？这篇论文就是要回答这个问题的数学基础。研究者发现，用「马可夫链」描述行为，其实藏着丰富的信息：行为是否有方向性？有多少种「自由度」？未来有多好猜？如果能算出大脑控制的行为有多「规律」，就能反推神经回路的复杂度，甚至帮助诊断神经疾病。就像听一个人说话的节奏，就能猜出他的情绪状态一样。",
+        "ja": "ケージの中で自由に動くマウスを観察するとしよう。「匂いを嗅ぐ」「毛づくろい」「走る」——これらの動作は言語の「音節」のように連なっている。科学者はカメラとAIでこれらの動作を切り分け、名前をつけ、「次の音節は予測できるか？」と問うようになった。この論文はその問いの数学的基盤を構築する。マルコフ連鎖で行動を記述すると、行動に方向性はあるか（時間のように不可逆か）、自由度はいくつか、未来はどれだけ予測できるかが定量化できる。これは単なる数学ではなく、行動の「規則性」を測ることで神経回路の複雑さを推定し、神経疾患の診断にも役立てられる可能性がある。",
+        "ko": "우리가 케이지 안에서 자유롭게 움직이는 쥐를 관찰한다고 상상해보자. 쥐는 「냄새를 맡고」, 「털을 핥고」, 「달린다」—이 동작들은 언어의 「음절」처럼 이어진다. 과학자들은 카메라와 AI로 이 동작들을 잘라내고 이름을 붙여, 「다음 음절을 예측할 수 있을까?」라고 묻는다. 이 논문은 그 질문의 수학적 토대를 세운다. 마르코프 체인으로 행동을 기술하면, 행동이 방향성을 가지는지(시간처럼 되돌릴 수 없는지), 자유도는 몇 개인지, 미래는 얼마나 예측 가능한지를 정량화할 수 있다. 이는 단순한 수학이 아니라 뇌가 제어하는 행동의 「규칙성」을 측정함으로써 신경 회로의 복잡성을 추론하고 신경 질환 진단에도 활용될 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 行為的「音節」序列不只是描述工具——它的不可逆性與維度，正是大腦神經迴路複雜度留下的數學指紋。",
+        "en": "💡 Behavioral 「syllable」 sequences are more than descriptive tools—their irreversibility and dimensionality are mathematical fingerprints of the underlying neural circuit complexity.",
+        "zh-CN": "💡 行为的「音节」序列不只是描述工具——它的不可逆性与维度，正是大脑神经回路复杂度留下的数学指纹。",
+        "ja": "💡 行動の「音節」系列は単なる記述ツールではなく、その不可逆性と次元性は神経回路の複雑さが残した数学的指紋である。",
+        "ko": "💡 행동의 「음절」 시퀀스는 단순한 기술 도구가 아니다—그 비가역성과 차원성은 뇌 신경 회로 복잡성이 남긴 수학적 지문이다."
+      }
+    },
+    {
+      "id": "tech-260616",
+      "domain": "tech",
+      "day": "2026-06-16",
+      "author": "Wei Hu, Binbin Xu et al.",
+      "ref": "arXiv:2606.14614v1",
+      "url": "https://arxiv.org/abs/2606.14614v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"18\" y=\"54\" width=\"54\" height=\"54\" rx=\"8\" fill=\"#00695c\" opacity=\"0.85\"/><rect x=\"24\" y=\"60\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#ffffff\" opacity=\"0.9\"/><rect x=\"42\" y=\"60\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#ffffff\" opacity=\"0.9\"/><rect x=\"24\" y=\"78\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#b2dfdb\" opacity=\"0.9\"/><rect x=\"42\" y=\"78\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#b2dfdb\" opacity=\"0.9\"/><rect x=\"24\" y=\"96\" width=\"32\" height=\"6\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.5\"/><line x1=\"80\" y1=\"81\" x2=\"108\" y2=\"81\" stroke=\"#00695c\" stroke-width=\"2.5\" stroke-dasharray=\"4 2\"/><ellipse cx=\"128\" cy=\"81\" rx=\"18\" ry=\"18\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><ellipse cx=\"128\" cy=\"81\" rx=\"10\" ry=\"10\" fill=\"#00695c\" opacity=\"0.18\"/><circle cx=\"128\" cy=\"81\" r=\"4\" fill=\"#00695c\" opacity=\"0.7\"/><line x1=\"148\" y1=\"68\" x2=\"176\" y2=\"50\" stroke=\"#ff7043\" stroke-width=\"1.8\" stroke-dasharray=\"3 2\"/><line x1=\"148\" y1=\"75\" x2=\"176\" y2=\"81\" stroke=\"#ff7043\" stroke-width=\"1.8\" stroke-dasharray=\"3 2\"/><line x1=\"148\" y1=\"88\" x2=\"176\" y2=\"112\" stroke=\"#ff7043\" stroke-width=\"1.8\" stroke-dasharray=\"3 2\"/><circle cx=\"184\" cy=\"50\" r=\"10\" fill=\"#ff7043\" opacity=\"0.75\"/><circle cx=\"184\" cy=\"81\" r=\"10\" fill=\"#00695c\" opacity=\"0.75\"/><circle cx=\"184\" cy=\"112\" r=\"10\" fill=\"#b2dfdb\" opacity=\"0.85\"/><rect x=\"206\" y=\"40\" width=\"110\" height=\"22\" rx=\"5\" fill=\"#00695c\" opacity=\"0.15\"/><rect x=\"206\" y=\"69\" width=\"110\" height=\"22\" rx=\"5\" fill=\"#00695c\" opacity=\"0.35\"/><rect x=\"206\" y=\"100\" width=\"110\" height=\"22\" rx=\"5\" fill=\"#00695c\" opacity=\"0.15\"/><rect x=\"208\" y=\"72\" width=\"70\" height=\"16\" rx=\"4\" fill=\"#00695c\" opacity=\"0.6\"/><rect x=\"208\" y=\"42\" width=\"45\" height=\"16\" rx=\"4\" fill=\"#00695c\" opacity=\"0.3\"/><rect x=\"208\" y=\"103\" width=\"55\" height=\"16\" rx=\"4\" fill=\"#00695c\" opacity=\"0.3\"/></svg>",
+      "title": {
+        "zh-TW": "腦波能讀懂「你在想哪個字」嗎？命名圖片時的語意類別解碼",
+        "en": "Can Brainwaves Reveal What Word You're Thinking? Decoding Semantic Categories from Picture-Naming EEG",
+        "zh-CN": "脑波能读懂「你在想哪个字」吗？命名图片时的语义类别解码",
+        "ja": "脳波は「思い浮かべた言葉」を読み解けるか？絵の命名中の意味カテゴリ解読",
+        "ko": "뇌파로 「어떤 단어를 떠올리는지」 알 수 있을까? 그림 명명 EEG의 의미 범주 해독"
+      },
+      "tag": {
+        "zh-TW": "📶 神經科技・腦機介面",
+        "en": "📶 Neurotechnology · Brain-Computer Interface",
+        "zh-CN": "📶 神经科技・脑机接口",
+        "ja": "📶 神経工学・ブレイン・コンピュータ・インターフェース",
+        "ko": "📶 신경공학・뇌-컴퓨터 인터페이스"
+      },
+      "tech": {
+        "zh-TW": "研究讓16名法語母語者進行圖片命名任務，同時記錄高密度腦電圖（EEG）。利用多語言文字嵌入模型將圖片標籤映射為九大語意類別，再以神經解碼方法從EEG訊號中還原受試者當下的語意類別表徵，驗證大腦語意處理過程的可解碼性。",
+        "en": "Sixteen native French speakers performed a picture-naming task under high-density EEG recording. Picture labels were embedded via a multilingual text-embedding model and organized into nine semantic categories, which served as a data-driven decoding target. The study assessed whether these semantic-category representations could be recovered from EEG signals using neural decoding techniques.",
+        "zh-CN": "研究让16名法语母语者完成图片命名任务，同步记录高密度脑电图（EEG）。利用多语言文字嵌入模型将图片标签映射为九大语义类别，再以神经解码方法从EEG信号中还原受试者当下的语义类别表征，验证大脑语义处理过程的可解码性。",
+        "ja": "フランス語母語者16名が絵の命名課題を行い、高密度EEGを同時記録した。多言語テキスト埋め込みモデルで画像ラベルを9つの意味カテゴリに整理し、EEG信号からニューラルデコーディングによってその意味カテゴリ表現が復元できるかを検証した。",
+        "ko": "프랑스어 모국어 화자 16명이 그림 명명 과제를 수행하면서 고밀도 EEG를 동시에 기록했다. 다국어 텍스트 임베딩 모델로 그림 레이블을 9개의 의미 범주로 구성하고, 신경 해독 기법을 통해 EEG 신호에서 의미 범주 표상을 복원할 수 있는지 검증했다."
+      },
+      "plain": {
+        "zh-TW": "想像你看到一張貓的圖片，大腦在0.幾秒內要完成好幾件事：辨認這是貓、想起「貓」這個詞、再開口說出來。這個過程中，大腦的電訊號會悄悄留下語意的「指紋」。這篇研究就像偵探破案——把受試者頭上貼滿感測電極，在他們說出圖片名稱的同時錄下腦波，再用AI分析這些訊號，看看能不能猜出「他當時腦中想的是哪一類東西」，比如動物、食物、還是工具。更聰明的地方在於，研究者不靠人工分類，而是用多語言AI模型自動把詞彙整理成九大語意群組，讓解碼過程更客觀、更有效。結果顯示，腦波確實藏著語意類別的訊息，AI能從中讀出一部分。這項研究的意義在於：未來或許能幫助失語症患者，只靠腦波就傳遞出「他想說的是什麼類型的事物」，讓溝通輔助技術更進一步。",
+        "en": "Imagine you see a picture of a cat. In a fraction of a second, your brain recognizes it, retrieves the word 「cat,」 and prepares to say it aloud. Throughout this lightning-fast process, your brainwaves quietly carry hidden traces of meaning. This study worked like a detective: researchers attached dozens of sensors to participants' scalps, recorded their brainwaves as they named pictures, and then used AI to analyze those signals and guess which broad semantic category — animal, food, or tool — the person was thinking of. Rather than hand-labeling categories, the team let a multilingual AI model automatically group words into nine meaningful clusters, making the analysis more objective and scalable. The results show that EEG signals do carry recoverable semantic-category information. This matters greatly: one day, such technology could help people with speech disorders communicate the gist of what they want to say, even when words fail them.",
+        "zh-CN": "想象你看到一张猫的图片，大脑在零点几秒内要完成好几件事：辨认这是猫、想起「猫」这个词、再开口说出来。在这个过程中，大脑的电信号会悄悄留下语义的「指纹」。这篇研究就像侦探破案——把受试者头上贴满感测电极，在他们说出图片名称的同时录下脑波，再用AI分析这些信号，看看能不能猜出「他当时脑中想的是哪一类东西」，比如动物、食物还是工具。更聪明的地方在于，研究者不靠人工分类，而是用多语言AI模型自动把词汇整理成九大语义群组，让解码过程更客观。结果显示，脑波确实藏着语义类别的信息。这项研究的意义在于：未来或许能帮助失语症患者，只靠脑波就传递出他想说的大致类型，让沟通辅助技术更进一步。",
+        "ja": "猫の絵を見た瞬間、脳は一瞬で「これは猫だ」と認識し、「猫」という言葉を思い浮かべ、声に出す準備をします。この超高速なプロセスの中で、脳波には意味の「指紋」がこっそり刻まれています。この研究は探偵さながら——参加者の頭にたくさんのセンサーを貼り付け、絵の名前を声に出す瞬間の脳波を記録し、AIでその信号を解析して「今どんなカテゴリのことを考えていたか（動物？食べ物？道具？）」を当てようとしました。さらに賢いのは、多言語AIモデルを使って単語を自動的に9つの意味グループに分類し、より客観的なデコードを実現した点です。結果、脳波から意味カテゴリが実際に読み取れることが示されました。将来、言葉を失った方が脳波だけで「何について伝えたいか」を伝えられる技術につながる可能性があります。",
+        "ko": "고양이 그림을 보는 순간, 뇌는 찰나에 「고양이」를 인식하고, 단어를 떠올리고, 소리 내어 말할 준비를 합니다. 이 번개 같은 과정 속에서 뇌파에는 의미의 「지문」이 몰래 새겨집니다. 이 연구는 마치 탐정처럼 — 참가자 머리에 수십 개의 센서를 붙이고, 그림 이름을 말하는 순간의 뇌파를 기록한 뒤, AI로 신호를 분석해 「지금 동물, 음식, 도구 중 어떤 범주를 생각했는지」를 맞히려 했습니다. 더 영리한 점은 다국어 AI 모델이 단어를 자동으로 9개의 의미 그룹으로 묶어, 해독 과정을 더 객관적으로 만든 것입니다. 결과적으로 뇌파에는 의미 범주 정보가 실제로 담겨 있음이 밝혀졌습니다. 언젠가 언어 장애를 가진 분들이 뇌파만으로 「무엇에 대해 말하고 싶은지」를 전달할 수 있는 기술로 이어질 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 語言不只存在於嘴巴與耳朵——大腦在開口前的瞬間，語意的輪廓早已寫在腦波裡，等待被讀取。",
+        "en": "💡 Language lives not only in the mouth and ear — the outline of meaning is already written in brainwaves before a single word is spoken, waiting to be read.",
+        "zh-CN": "💡 语言不只存在于嘴巴与耳朵——大脑在开口前的瞬间，语义的轮廓早已写在脑波里，等待被读取。",
+        "ja": "💡 言語は口や耳だけに宿るのではない——言葉を発する前の一瞬に、意味の輪郭はすでに脳波に刻まれ、読み取られるのを待っている。",
+        "ko": "💡 언어는 입과 귀에만 존재하지 않는다 — 한 마디를 내뱉기 전 그 찰나에, 의미의 윤곽은 이미 뇌파 속에 새겨져 읽히기를 기다리고 있다."
+      }
+    }
+  ]
+}
