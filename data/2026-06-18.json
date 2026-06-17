@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-18",
+  "mode": "paper",
+  "paper_date": "2026-06-18",
+  "generated_at": "2026-06-18",
+  "cards": [
+    {
+      "id": "ai-260618",
+      "domain": "ai",
+      "day": "2026-06-18",
+      "author": "Mingtong Zhang, Dhruv Shah et al.",
+      "ref": "arXiv:2606.18247v1",
+      "url": "https://arxiv.org/abs/2606.18247v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"18\" y=\"55\" width=\"70\" height=\"70\" rx=\"12\" fill=\"#2a9d8f\" opacity=\"0.85\"/><rect x=\"28\" y=\"65\" width=\"50\" height=\"10\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.9\"/><rect x=\"28\" y=\"82\" width=\"50\" height=\"10\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.7\"/><rect x=\"28\" y=\"99\" width=\"35\" height=\"10\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.5\"/><polygon points=\"110,90 130,75 130,105\" fill=\"#e9c46a\" opacity=\"0.9\"/><circle cx=\"175\" cy=\"90\" r=\"32\" fill=\"#264653\" opacity=\"0.92\"/><circle cx=\"175\" cy=\"90\" r=\"22\" fill=\"#2a9d8f\" opacity=\"0.7\"/><circle cx=\"175\" cy=\"90\" r=\"10\" fill=\"#e9c46a\" opacity=\"0.95\"/><polygon points=\"225,90 245,75 245,105\" fill=\"#e9c46a\" opacity=\"0.9\"/><rect x=\"258\" y=\"55\" width=\"64\" height=\"70\" rx=\"12\" fill=\"#264653\" opacity=\"0.88\"/><circle cx=\"290\" cy=\"82\" r=\"10\" fill=\"#2a9d8f\" opacity=\"0.9\"/><rect x=\"268\" y=\"100\" width=\"44\" height=\"8\" rx=\"4\" fill=\"#e9c46a\" opacity=\"0.8\"/><rect x=\"268\" y=\"114\" width=\"30\" height=\"6\" rx=\"3\" fill=\"#e9c46a\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "機器人學會「自我審核」：視覺驗證讓AI邊做邊進步",
+        "en": "Robots That Self-Check: Visual Verification Enables On-the-Fly Policy Improvement",
+        "zh-CN": "机器人学会「自我审核」：视觉验证让AI边做边进步",
+        "ja": "ロボットが「自己採点」を覚えた：視覚的検証でリアルタイム改善",
+        "ko": "로봇의 「자기 검증」: 시각적 확인으로 실시간 성능 향상"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "本文提出 VERITAS 框架，將預訓練通用機器人策略作為「生成器」，搭配一個無需梯度的「視覺驗證器」在推論階段評估動作品質。該驗證器不需額外訓練即可在執行時篩選出更優動作，同時透過自我改進迴路讓策略隨經驗累積不斷提升。",
+        "en": "VERITAS pairs a pre-trained generalist robot policy (generator) with a gradient-free visual verifier that scores candidate actions at inference time. Without additional training, the verifier steers the policy toward better actions, and a self-improvement loop allows the policy to autonomously learn from its own experience.",
+        "zh-CN": "本文提出 VERITAS 框架，将预训练通用机器人策略作为「生成器」，搭配无梯度「视觉验证器」在推理阶段评估动作质量。验证器无需额外训练即可筛选更优动作，并通过自我改进回路让策略随经验持续提升。",
+        "ja": "VERITASは事前学習済みの汎用ロボットポリシーを「生成器」とし、勾配不要の「視覚的検証器」を推論時に組み合わせる手法です。追加学習なしに候補動作を評価・選別し、自己改善ループによって経験から自律的に学習します。",
+        "ko": "VERITAS는 사전학습된 범용 로봇 정책을 「생성기」로, 기울기 없는 「시각 검증기」를 추론 시점에 결합하는 프레임워크입니다. 추가 학습 없이 더 나은 행동을 선별하고, 자기 개선 루프를 통해 경험으로부터 자율적으로 학습합니다."
+      },
+      "plain": {
+        "zh-TW": "想像一位廚師學徒，每次切菜前都先在腦中「預演」幾種切法，再用眼睛判斷哪一種最漂亮，然後才真正下刀——VERITAS 讓機器人做的就是這件事。機器人先提出好幾個可能的動作，由一個「視覺裁判」觀察每個動作的畫面結果，選出最可能成功的那個。更厲害的是，這位裁判不需要人類老師事先調教，它靠的是對「任務完成後應該長什麼樣子」的視覺理解。每做一次任務，機器人就累積一次寶貴經驗，下次表現自然更好。這打破了以往機器人「一旦部署就原地踏步」的困境，讓它像人一樣越做越熟練。對於需要長期在家庭、倉庫、醫院服務的機器人來說，這種「邊工作邊成長」的能力至關重要。",
+        "en": "Imagine a chef's apprentice who mentally rehearses several ways to slice a vegetable, then visually judges which looks best before actually cutting. VERITAS gives robots exactly this ability. The robot generates several candidate actions, and a visual referee examines what each action would look like, picking the most promising one. Remarkably, this referee requires no extra human coaching—it simply understands what a successfully completed task should look like. Every task the robot performs becomes a learning experience, making it progressively better. This breaks the old pattern where deployed robots stay frozen at their initial skill level. For robots serving long-term in homes, warehouses, or hospitals, the ability to grow on the job is transformative.",
+        "zh-CN": "想象一位厨师学徒，切菜前先在脑中「预演」几种切法，再用眼睛判断哪种最漂亮——VERITAS 让机器人做的正是这件事。机器人先提出几个可能动作，由一个「视觉裁判」判断哪个最可能成功。这位裁判不需要人类额外调教，靠的是对「任务完成后应该是什么样子」的视觉理解。每做一次任务，机器人就积累一次经验，下次表现自然更好。这打破了机器人「部署后原地踏步」的困境，让它像人一样越做越熟练，对长期服务于家庭、仓库或医院的机器人意义重大。",
+        "ja": "料理の見習いが実際に包丁を入れる前に、いくつかの切り方を頭の中でイメージし、どれが一番きれいか目で判断するのと同じように、VERITASはロボットにこの能力を与えます。ロボットはいくつかの候補動作を生成し、「視覚的な審判」がそれぞれの結果を評価して最善を選びます。この審判は人間による追加指導を必要とせず、「タスク完了後の正しい状態」を視覚的に理解しています。タスクをこなすたびに経験が積み重なり、自然と上達します。デプロイ後に成長が止まるという従来の限界を打ち破り、家庭・倉庫・病院で長期稼働するロボットにとって非常に重要な進歩です。",
+        "ko": "요리 견습생이 실제로 칼을 대기 전에 여러 가지 방법을 머릿속으로 그려보고 눈으로 가장 좋은 것을 고르듯, VERITAS는 로봇에게 바로 이 능력을 부여합니다. 로봇이 여러 후보 동작을 생성하면 「시각적 심판」이 각 동작의 결과를 평가해 가장 유망한 것을 선택합니다. 이 심판은 추가 훈련 없이 「작업이 완료된 올바른 상태」를 시각적으로 이해합니다. 작업할 때마다 경험이 쌓여 자연스럽게 실력이 향상됩니다. 배포 후 성장이 멈추는 기존 한계를 깨고, 가정·창고·병원에서 장기 운용되는 로봇에게 매우 중요한 발전입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正有用的AI不只是「執行命令」，而是像有經驗的工匠一樣，能在做中學、以眼校手，持續精進自己的技藝。",
+        "en": "💡 Truly useful AI doesn't just execute commands—like a seasoned craftsman, it learns by doing, uses its eyes to guide its hands, and continuously refines its own craft.",
+        "zh-CN": "💡 真正有用的AI不只是「执行命令」，而是像有经验的工匠一样，能在做中学、以眼校手，持续精进自己的技艺。",
+        "ja": "💡 本当に役立つAIは命令を実行するだけでなく、熟練の職人のように経験から学び、目で手を導きながら技を磨き続けるものだ。",
+        "ko": "💡 진정으로 유용한 AI는 명령을 실행하는 것에 그치지 않고, 숙련된 장인처럼 경험에서 배우고 눈으로 손을 이끌며 기술을 꾸준히 갈고닦는다."
+      }
+    },
+    {
+      "id": "bio-260618",
+      "domain": "bio",
+      "day": "2026-06-18",
+      "author": "Saroja Somasundaram, Nelson J. Johansen et al.",
+      "ref": "arXiv:2606.18179v1",
+      "url": "https://arxiv.org/abs/2606.18179v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><rect x=\"18\" y=\"30\" width=\"28\" height=\"100\" rx=\"4\" fill=\"#52b788\" opacity=\"0.9\"/><rect x=\"52\" y=\"55\" width=\"28\" height=\"75\" rx=\"4\" fill=\"#52b788\" opacity=\"0.75\"/><rect x=\"86\" y=\"44\" width=\"28\" height=\"86\" rx=\"4\" fill=\"#52b788\" opacity=\"0.85\"/><rect x=\"120\" y=\"70\" width=\"28\" height=\"60\" rx=\"4\" fill=\"#52b788\" opacity=\"0.6\"/><rect x=\"154\" y=\"38\" width=\"28\" height=\"92\" rx=\"4\" fill=\"#52b788\" opacity=\"0.95\"/><rect x=\"188\" y=\"62\" width=\"28\" height=\"68\" rx=\"4\" fill=\"#52b788\" opacity=\"0.65\"/><rect x=\"222\" y=\"48\" width=\"28\" height=\"82\" rx=\"4\" fill=\"#52b788\" opacity=\"0.8\"/><line x1=\"18\" y1=\"148\" x2=\"260\" y2=\"148\" stroke=\"#52b788\" stroke-width=\"2\"/><circle cx=\"302\" cy=\"40\" r=\"22\" fill=\"none\" stroke=\"#b7e4c7\" stroke-width=\"2.5\"/><circle cx=\"302\" cy=\"40\" r=\"14\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2\"/><circle cx=\"302\" cy=\"40\" r=\"6\" fill=\"#52b788\"/><line x1=\"268\" y1=\"80\" x2=\"290\" y2=\"62\" stroke=\"#b7e4c7\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/></svg>",
+      "title": {
+        "zh-TW": "基因調控元件排名神器：PyPeakRankR 自動化特徵提取工具",
+        "en": "PyPeakRankR: Auto-Ranking Regulatory DNA Elements from Chromatin Data",
+        "zh-CN": "基因调控元件排名神器：PyPeakRankR 自动化特征提取工具",
+        "ja": "遺伝子制御領域を自動ランク付け：PyPeakRankRの登場",
+        "ko": "유전자 조절 요소 자동 순위 결정 도구: PyPeakRankR"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "PyPeakRankR 是一套開源 Python 套件，針對 ATAC-seq 等染色質可及性實驗所產生的數千個候選調控區域（peak），系統性地提取 BigWig 訊號強度、GC 含量、PhyloP 演化保守分數、分佈矩（峰度、偏度、雙峰性）及細胞型別特異性排名等多維特徵，最終整合成一個可重現的 peak × 特徵矩陣（TSV 格式），供後續功能驗證優先排序使用。",
+        "en": "PyPeakRankR is an open-source Python package that systematically extracts multi-dimensional features from ATAC-seq chromatin accessibility peaks, including BigWig signal summaries, GC content, PhyloP evolutionary conservation scores, distribution moments (kurtosis, skewness, bimodality), and cell-type specificity rankings. All features are consolidated into a single reproducible peak-by-feature matrix in TSV format for downstream prioritization.",
+        "zh-CN": "PyPeakRankR 是一套开源 Python 包，针对 ATAC-seq 等染色质可及性实验产生的数千个候选调控区域（peak），系统性提取 BigWig 信号强度、GC 含量、PhyloP 演化保守分数、分布矩（峰度、偏度、双峰性）及细胞类型特异性排名等多维特征，整合成可重现的 peak × 特征矩阵（TSV 格式）供功能验证优先排序。",
+        "ja": "PyPeakRankRはオープンソースのPythonパッケージで、ATAC-seqクロマチンアクセシビリティ解析で得られた数千の候補制御領域（ピーク）に対し、BigWigシグナル、GC含量、PhyloP保存スコア、分布モーメント（尖度・歪度・二峰性）、細胞型特異性ランキングなどを一括抽出し、再現性のあるピーク×特徴量マトリクス（TSV形式）として出力する。",
+        "ko": "PyPeakRankR는 ATAC-seq 염색질 접근성 실험에서 생성된 수천 개의 후보 조절 영역(피크)에 대해 BigWig 신호 요약, GC 함량, PhyloP 진화 보존 점수, 분포 모멘트(첨도·왜도·이봉성), 세포 유형 특이성 순위 등 다차원 특징을 체계적으로 추출하여 재현 가능한 피크×특징 행렬(TSV 형식)로 통합하는 오픈소스 Python 패키지이다."
+      },
+      "plain": {
+        "zh-TW": "想像你正在翻閱一座巨大的圖書館，裡面有數千本書（基因調控區域），但你只有時間和資源精讀其中幾十本——你需要一份「最值得讀」的排行榜。人類基因組裡散布著大量「開關區域」，它們能決定哪些基因在哪種細胞裡被打開或關閉，科學家用 ATAC-seq 技術可以一次找到幾千個這樣的開關，卻苦於沒有統一方法判斷哪些最重要。PyPeakRankR 就像一位超高效的圖書館員，它會同時替每本書量測厚度（訊號強度）、紙張品質（GC含量）、被其他圖書館收藏的次數（演化保守性）、內容獨特程度（細胞特異性），把所有評分整合成一張清單。有了這張標準化清單，不同實驗室的科學家就能用同一套標準比較結果，不再各說各話。這對於找到與癌症、神經疾病相關的關鍵調控元件至關重要，因為只有先知道「哪個開關最重要」，才能設計有效的治療介入策略。",
+        "en": "Imagine you have thousands of light switches hidden inside a cell, each one controlling whether a gene gets turned on or off. Scientists can now detect all these switches at once using a technique called ATAC-seq — but suddenly you have thousands of candidates and limited time to test them all in the lab. PyPeakRankR acts like a smart assistant that scores every switch on multiple criteria at once: how strong a signal it gives, how well-preserved it is across millions of years of evolution, how uniquely active it is in one specific cell type, and even the shape of its activity pattern. All these scores are bundled into one neat, standardized table anyone can use. Before this tool, researchers in different labs would measure these features separately with different methods, making comparisons nearly impossible. Standardization here is a game-changer: it means discoveries about disease-related regulatory switches in one lab can be reliably compared and built upon by labs worldwide, accelerating the path from genomic data to medical insight.",
+        "zh-CN": "想象你面对一座巨大图书馆，里面有数千本书（基因调控区域），但你只有时间精读其中几十本——你需要一份「最值得读」的排行榜。人类基因组里散布着大量「开关区域」，决定哪些基因在哪种细胞里被打开或关闭，科学家用ATAC-seq技术可以一次找到几千个这样的开关，却苦于没有统一方法判断哪些最重要。PyPeakRankR就像一位超高效的图书馆员，同时为每本书量测厚度（信号强度）、纸张品质（GC含量）、被其他图书馆收藏的次数（进化保守性）和内容独特程度（细胞特异性），把所有评分整合成一张标准化清单。有了这张清单，不同实验室的科学家就能用同一套标准比较结果，这对找到与癌症、神经疾病相关的关键调控元件至关重要。",
+        "ja": "細胞の中には何千もの「スイッチ」が隠れていて、それぞれが遺伝子のオン・オフを制御しています。ATAC-seqという技術でこれらのスイッチを一度に検出できるようになりましたが、数千個の候補から実験で検証すべき重要なものを選ぶのは大変な作業です。PyPeakRankRは、賢い司書のように各スイッチをシグナル強度・進化的保存性・細胞型特異性・活動パターンの形状など複数の観点で同時に採点し、標準化されたひとつの表にまとめます。以前は研究室ごとにバラバラな方法で特徴を計測していたため、結果の比較が困難でした。この標準化により、がんや神経疾患に関わる重要な制御領域の発見が世界中の研究室で共有・再利用できるようになり、ゲノム研究から医療応用への道が大きく近づきます。",
+        "ko": "세포 안에는 수천 개의 '스위치'가 숨어 있어 각각의 유전자가 켜지거나 꺼지는 것을 결정합니다. ATAC-seq 기술로 이 스위치들을 한 번에 찾아낼 수 있지만, 수천 개 중 어느 것이 가장 중요한지 판단하는 표준 방법이 없었습니다. PyPeakRankR은 마치 똑똑한 사서처럼 각 스위치를 신호 강도, GC 함량, 수억 년의 진화적 보존성, 특정 세포 유형에서의 특이성 등 여러 기준으로 동시에 채점하여 표준화된 하나의 표로 통합합니다. 이전에는 각 연구실마다 다른 방법으로 특징을 측정했기 때문에 결과 비교가 거의 불가능했습니다. 이 표준화는 암이나 신경 질환과 관련된 핵심 조절 요소 발견을 전 세계 연구실이 공유하고 발전시킬 수 있게 하여, 유전체 데이터에서 의학적 통찰로 나아가는 길을 크게 앞당깁니다."
+      },
+      "insight": {
+        "zh-TW": "💡 科學進步的瓶頸往往不在於「能不能測量」，而在於「有沒有共同語言」——標準化工具的價值，有時遠超過一個新發現本身。",
+        "en": "💡 Scientific progress is often bottlenecked not by what we can measure, but by whether we all measure it the same way — standardization can be as transformative as discovery itself.",
+        "zh-CN": "💡 科学进步的瓶颈往往不在于「能不能测量」，而在于「有没有共同语言」——标准化工具的价值，有时远超过一个新发现本身。",
+        "ja": "💡 科学の進歩を妨げるのは「測定できないこと」ではなく「共通の測り方がないこと」であり、標準化ツールの価値は新発見そのものに匹敵することがある。",
+        "ko": "💡 과학 발전의 병목은 종종 '측정할 수 없다'는 것이 아니라 '같은 방식으로 측정하지 않는다'는 것에 있으며, 표준화 도구의 가치는 때로 새로운 발견 자체만큼이나 크다."
+      }
+    },
+    {
+      "id": "phys-260618",
+      "domain": "phys",
+      "day": "2026-06-18",
+      "author": "Sudip Kumar Saha, Jonathan Ruhman et al.",
+      "ref": "arXiv:2606.18251v1",
+      "url": "https://arxiv.org/abs/2606.18251v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><circle cx=\"80\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"80\" cy=\"80\" r=\"7\" fill=\"#4a7bbf\" opacity=\"0.85\"/><ellipse cx=\"80\" cy=\"80\" rx=\"38\" ry=\"12\" fill=\"none\" stroke=\"#e07b3a\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\"/><line x1=\"130\" y1=\"80\" x2=\"185\" y2=\"80\" stroke=\"#4a7bbf\" stroke-width=\"2.5\" marker-end=\"url(#none)\"/><polygon points=\"182,74 196,80 182,86\" fill=\"#4a7bbf\"/><circle cx=\"240\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><circle cx=\"240\" cy=\"55\" r=\"10\" fill=\"#4a7bbf\" opacity=\"0.5\"/><circle cx=\"268\" cy=\"108\" r=\"22\" fill=\"none\" stroke=\"#e07b3a\" stroke-width=\"2.5\"/><circle cx=\"268\" cy=\"108\" r=\"10\" fill=\"#e07b3a\" opacity=\"0.5\"/><line x1=\"240\" y1=\"77\" x2=\"260\" y2=\"96\" stroke=\"#7ec8a0\" stroke-width=\"2\" stroke-dasharray=\"4 2\"/><circle cx=\"250\" cy=\"87\" r=\"5\" fill=\"#7ec8a0\" opacity=\"0.9\"/><rect x=\"18\" y=\"128\" width=\"304\" height=\"3\" rx=\"1.5\" fill=\"#4a7bbf\" opacity=\"0.18\"/></svg>",
+      "title": {
+        "zh-TW": "鐵電量子臨界漲落如何在二維材料中催生超導",
+        "en": "How Ferroelectric Quantum Fluctuations Trigger Superconductivity in 2D",
+        "zh-CN": "铁电量子临界涨落如何在二维材料中催生超导",
+        "ja": "二次元材料で強誘電体量子ゆらぎが超伝導を生む仕組み",
+        "ko": "2차원 강유전 양자 임계 요동이 초전도를 유발하는 메커니즘"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 凝態物理",
+        "en": "⚛️ Condensed Matter Physics",
+        "zh-CN": "⚛️ 凝态物理",
+        "ja": "⚛️ 凝集系物理",
+        "ko": "⚛️ 응집물질 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究在二維系統中，提出以「跨能帶Stark耦合」取代傳統密度-密度聲子耦合的新機制，解釋鐵電量子相變附近的超導增強現象。當遠能帶被積分掉後，可等效產生二聲子（二次聲子）交互作用，並以此建立超導配對理論，計算臨界溫度與相圖。",
+        "en": "This study proposes an interband 「Stark」-like coupling mechanism in 2D systems—replacing conventional density-density phonon coupling—to explain enhanced superconductivity near ferroelectric quantum phase transitions. Integrating out the remote band yields an effective two-phonon interaction, from which the authors derive a superconducting pairing theory and calculate the phase diagram.",
+        "zh-CN": "本研究在二维系统中，提出以「跨能带Stark耦合」取代传统密度-密度声子耦合的新机制，解释铁电量子相变附近的超导增强现象。将远能带积分掉后，可等效产生二声子相互作用，并以此建立超导配对理论，计算临界温度与相图。",
+        "ja": "本研究は二次元系において、従来の密度-密度電子-フォノン結合に代わる「バンド間Stark結合」機構を提案し、強誘電体量子相転移近傍の超伝導増強を説明する。遠方バンドを積分消去すると実効的な二フォノン相互作用が生まれ、そこから超伝導ペアリング理論と相図を導出する。",
+        "ko": "본 연구는 2차원 시스템에서 기존의 밀도-밀도 전자-포논 결합 대신 「밴드 간 Stark 결합」 메커니즘을 제안하여, 강유전 양자 상전이 근방의 초전도 강화를 설명한다. 원거리 밴드를 적분하면 유효 이중 포논 상호작용이 생성되며, 이를 바탕으로 초전도 쌍형성 이론과 상도표를 계산한다."
+      },
+      "plain": {
+        "zh-TW": "想像一個舞池：電子是舞者，晶格振動（聲子）是音樂的節拍。一般超導體裡，電子靠聲子「牽線」配對共舞，就像拍子讓兩個舞者踩上同一個節奏。但在鐵電材料附近，這個「牽線」方式幾乎失效——聲子是橫向偏振的，根本「拍」不到電子。科學家很疑惑：為什麼實驗上在鐵電材料旁邊，超導反而更容易出現？這篇論文給出了新答案：電子可以借助不同能量層（能帶）之間的「跨層招手」，用一種類似靜電感應的Stark效應互相耦合，讓兩個聲子合力撮合一對電子。這就好比在舞池裡，兩個樂手同時演奏，才讓隔著遠遠的兩位舞者走到一起。這個機制不只解釋了謎題，還預測了二維材料（如薄膜、二維氧化物）中可能存在的超導態，對未來設計新型超導材料、開發量子電腦零件具有重要啟示。",
+        "en": "Imagine a dance floor where electrons are dancers and lattice vibrations (phonons) are the music. In ordinary superconductors, phonons act as matchmakers, nudging two electrons into a paired dance. But near ferroelectric materials, this matchmaking nearly breaks down—the phonons vibrate sideways and can barely touch the electrons. Experiments kept showing enhanced superconductivity near ferroelectrics, which was a real puzzle. This paper offers a fresh answer: electrons can 「wave across floors」 between energy bands of opposite symmetry via a Stark-like effect, and two phonons together can conspire to pair them up. It is like two musicians playing simultaneously to finally bring two distant dancers together. This mechanism not only solves the mystery but also predicts new superconducting states in 2D materials like thin films and oxide interfaces—directly relevant to building better quantum computing components.",
+        "zh-CN": "想象一个舞池：电子是舞者，晶格振动（声子）是音乐节拍。普通超导体里，声子充当「媒人」让电子配对共舞。但在铁电材料附近，这种「媒人」几乎失效——声子横向振动，根本「拍」不到电子。实验上铁电体附近超导反而增强，这一直是个谜。本文给出新答案：电子可以通过不同能带之间的「跨层招手」，借助类Stark效应耦合，由两个声子合力撮合一对电子，就像两位乐手同时演奏才让远处的舞者走到一起。这一机制不仅解开了谜题，还预测了二维材料（如薄膜、氧化物界面）中可能存在的超导态，对新型超导材料与量子计算器件的设计有重要意义。",
+        "ja": "ダンスフロアを想像してください。電子がダンサーで、格子振動（フォノン）が音楽のビートです。通常の超伝導体では、フォノンが仲人役となって電子をペアにします。ところが強誘電体の近くでは、フォノンが横向きに振動するため電子にほとんど「届かず」、仲人が機能しません。それなのに実験では超伝導が強化される――これが長年の謎でした。この論文の答えは、電子が異なるエネルギーバンド間で「Stark効果的な手招き」をし、2つのフォノンが協力してペアを組ませるというものです。まるで2人の演奏家が同時に演奏することで、遠く離れたダンサー同士が引き合うようなイメージです。この機構は謎を解くだけでなく、薄膜や酸化物界面など二次元材料での新しい超伝導状態を予言し、量子コンピュータ部品の設計にも直結します。",
+        "ko": "무도회장을 상상해보세요. 전자는 댄서이고, 격자 진동(포논)은 음악의 박자입니다. 보통 초전도체에서는 포논이 중매쟁이 역할을 해 전자 두 개를 짝짓습니다. 그런데 강유전체 근처에서는 포논이 가로 방향으로 진동해 전자에게 거의 닿지 못해 중매가 실패합니다. 그럼에도 실험에서는 강유전체 근방에서 초전도가 강화되는 현상이 관찰되어 수수께끼로 남아 있었습니다. 이 논문은 새로운 해답을 제시합니다. 전자가 반대 대칭성을 가진 에너지 밴드 사이에서 Stark 효과처럼 「층간 손짓」을 주고받으며, 두 개의 포논이 협력해 전자 쌍을 만들어낸다는 것입니다. 마치 두 연주자가 동시에 연주해야 멀리 떨어진 댄서들이 만나는 것과 같습니다. 이 메커니즘은 수수께끼를 풀 뿐 아니라 박막·산화물 계면 같은 2차원 재료에서 새로운 초전도 상태를 예측하며, 양자 컴퓨터 소자 설계에도 중요한 시사점을 줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當主流耦合機制「失靈」，隱藏在能帶對稱性之間的另類通道，往往才是大自然真正的超導開關。",
+        "en": "💡 When the mainstream coupling breaks down, nature's real superconducting switch often hides in the symmetry mismatch between energy bands.",
+        "zh-CN": "💡 当主流耦合机制「失灵」时，隐藏在能带对称性之间的另类通道，往往才是大自然真正的超导开关。",
+        "ja": "💡 主流の結合機構が「機能しない」とき、エネルギーバンドの対称性のずれに隠された別経路こそが、自然界の真の超伝導スイッチであることが多い。",
+        "ko": "💡 주류 결합 메커니즘이 「작동 불능」일 때, 에너지 밴드 대칭성 사이에 숨겨진 우회로야말로 자연의 진짜 초전도 스위치인 경우가 많다."
+      }
+    },
+    {
+      "id": "neuro-260618",
+      "domain": "neuro",
+      "day": "2026-06-18",
+      "author": "Kathrin Korte, Christian Medeiros Adriano et al.",
+      "ref": "arXiv:2606.17889v1",
+      "url": "https://arxiv.org/abs/2606.17889v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><rect x=\"20\" y=\"40\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.85\"/><rect x=\"90\" y=\"40\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.55\"/><rect x=\"160\" y=\"40\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.85\"/><line x1=\"80\" y1=\"70\" x2=\"90\" y2=\"70\" stroke=\"#ab47bc\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"70\" x2=\"160\" y2=\"70\" stroke=\"#ab47bc\" stroke-width=\"2.5\"/><circle cx=\"240\" cy=\"70\" r=\"30\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/><circle cx=\"240\" cy=\"70\" r=\"18\" fill=\"none\" stroke=\"#ab47bc\" stroke-width=\"1.5\"/><circle cx=\"240\" cy=\"70\" r=\"7\" fill=\"#ab47bc\" opacity=\"0.7\"/><line x1=\"220\" y1=\"120\" x2=\"230\" y2=\"100\" stroke=\"#ce93d8\" stroke-width=\"1.5\"/><line x1=\"240\" y1=\"125\" x2=\"240\" y2=\"103\" stroke=\"#ce93d8\" stroke-width=\"1.5\"/><line x1=\"260\" y1=\"120\" x2=\"250\" y2=\"100\" stroke=\"#ce93d8\" stroke-width=\"1.5\"/><rect x=\"290\" y=\"30\" width=\"30\" height=\"90\" rx=\"5\" fill=\"#6a1b9a\" opacity=\"0.2\"/><rect x=\"290\" y=\"80\" width=\"30\" height=\"40\" rx=\"5\" fill=\"#6a1b9a\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "維度高低決定模組化學習何時真正有效",
+        "en": "Dimensionality Decides When Modular AI Brains Learn Better",
+        "zh-CN": "维度高低决定模块化学习何时真正有效",
+        "ja": "次元数がモジュール学習の有効性を左右する",
+        "ko": "차원수가 모듈식 연속 학습의 성패를 가른다"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學／機器學習",
+        "en": "🧠 Neuroscience／Machine Learning",
+        "zh-CN": "🧠 神经科学／机器学习",
+        "ja": "🧠 神経科学／機械学習",
+        "ko": "🧠 신경과학／기계학습"
+      },
+      "tech": {
+        "zh-TW": "研究者使用 A-B-A 序列任務範式，比較「任務分區循環網路」與單一網路基線，並透過權重縮放操縱表徵維度，探討模組化架構、任務相似性與高／低維度表徵如何共同影響組合式持續學習中的可塑性與穩定性平衡。",
+        "en": "The authors employ an A-B-A sequential task paradigm to compare a task-partitioned recurrent network against a single-network baseline, using weight-scale manipulations to induce high- or low-dimensional representational regimes, thereby isolating how modularity, task similarity, and dimensionality jointly govern plasticity-stability trade-offs in compositional continual learning.",
+        "zh-CN": "研究者使用 A-B-A 序列任务范式，比较「任务分区循环网络」与单一网络基线，并通过权重缩放操控表征维度，探讨模块化架构、任务相似性与高／低维度表征如何共同影响组合式持续学习中的可塑性与稳定性平衡。",
+        "ja": "著者らはA-B-Aシーケンシャルタスクパラダイムを用い、タスク分割リカレントネットワークと単一ネットワークベースラインを比較しながら、重みスケール操作によって高次元・低次元表現を誘導し、モジュール性・タスク類似性・次元数が可塑性と安定性のトレードオフに与える影響を解析した。",
+        "ko": "연구팀은 A-B-A 순차 과제 패러다임을 사용하여 태스크 분리 순환 신경망과 단일 네트워크 기준선을 비교하고, 가중치 스케일 조작으로 고차원·저차원 표현 체제를 유도함으로써 모듈성·과제 유사성·차원수가 지속 학습의 가소성-안정성 균형에 미치는 영향을 규명했다."
+      },
+      "plain": {
+        "zh-TW": "想像你的大腦要先學騎腳踏車（任務A），再學開車（任務B），然後再複習腳踏車——問題是學新東西常常把舊記憶蓋掉，這叫「災難性遺忘」。科學家嘗試把AI大腦分成不同「模組」，就像在腦袋裡蓋隔間，讓新舊知識互不干擾。但這篇研究發現，模組化不是萬能藥：關鍵在於神經網路內部的「維度空間」有多寬廣。當表徵維度很高（思考空間很大），模組網路和單一網路表現差不多——因為空間大到各個任務本來就不會打架。但在低維度（思考空間擁擠）時，模組化才真正展現優勢，讓各任務在有限空間裡和平共存。這個發現告訴我們：設計會終身持續學習的AI時，不能只想著「要不要分模組」，還要同時考慮網路的內部空間結構。這對打造不會一直忘東忘西的AI助理、甚至理解人腦記憶組織，都有深遠意義。",
+        "en": "Imagine your brain learns to ride a bike (Task A), then learns to drive a car (Task B), and then needs to remember biking again — the problem is that learning new things often overwrites old memories, a phenomenon called catastrophic forgetting. Scientists tried splitting AI networks into separate modules, like building partitions inside a brain so old and new knowledge don't interfere. But this study reveals modularity alone isn't the answer: what truly matters is how wide the network's internal representational space is. In a high-dimensional regime, modular and single networks perform similarly — the space is so vast that tasks naturally avoid colliding. Only in a low-dimensional, crowded regime does modularity genuinely shine. This means designing AI that learns continuously across a lifetime requires thinking about both architecture and internal spatial structure together — a finding with implications for AI assistants and even understanding how human memory is organized.",
+        "zh-CN": "想象你的大脑先学骑自行车（任务A），再学开车（任务B），然后再复习自行车——问题是学新东西常常会覆盖旧记忆，这叫「灾难性遗忘」。科学家尝试把AI大脑分成不同「模块」，就像在脑袋里建隔间，让新旧知识互不干扰。但这篇研究发现，模块化并非万能：关键在于神经网络内部的「维度空间」有多宽广。当表征维度很高时，模块网络和单一网络表现相近——因为空间大到各任务本来就不会冲突。而在低维度（空间拥挤）时，模块化才真正体现优势。这告诉我们：设计能终身持续学习的AI，不能只考虑「要不要分模块」，还必须同时考量网络的内部空间结构。",
+        "ja": "脳が自転車の乗り方（タスクA）を学び、次に車の運転（タスクB）を学び、また自転車に戻る——新しいことを学ぶと古い記憶が上書きされてしまう「破滅的忘却」は、AIにとって長年の悩みです。研究者たちはAIの脳を「モジュール」に分割し、まるで部屋に仕切りを作るように知識が干渉しないようにしようとしました。しかしこの研究は、モジュール化だけでは不十分だと示します。本当に重要なのは、ネットワーク内部の「表現の次元数」——思考空間の広さです。次元が高いと、モジュールあり・なしで差はほぼなく、次元が低いときだけモジュール化が真価を発揮します。継続学習AIの設計には、構造だけでなく内部空間の性質も考慮する必要があるのです。",
+        "ko": "뇌가 자전거 타기(과제 A)를 배우고, 자동차 운전(과제 B)을 배운 뒤 다시 자전거를 기억해야 한다고 상상해 보세요. 새로운 것을 배우면 오래된 기억이 지워지는 「재앙적 망각」은 AI의 오랜 숙제입니다. 연구자들은 AI 두뇌를 모듈로 나눠 방마다 칸막이를 치듯 지식이 충돌하지 않게 하려 했습니다. 그런데 이 연구는 모듈화만으로는 부족하다고 밝힙니다. 진짜 핵심은 신경망 내부의 「표현 차원수」, 즉 생각의 공간이 얼마나 넓은가입니다. 차원이 높으면 모듈 유무에 관계없이 성능 차이가 거의 없고, 차원이 낮을 때만 모듈화가 빛을 발합니다. 평생 학습하는 AI를 설계하려면 구조뿐 아니라 내부 공간의 특성도 함께 고려해야 합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 模組化是解藥還是安慰劑，取決於表徵空間的維度——空間夠大時，連隔間都不需要。",
+        "en": "💡 Whether modularity is a cure or a placebo depends on representational dimensionality — when the space is vast enough, partitions become unnecessary.",
+        "zh-CN": "💡 模块化是解药还是安慰剂，取决于表征空间的维度——空间足够大时，连隔间都不需要。",
+        "ja": "💡 モジュール化が特効薬か偽薬かは表現次元数次第——空間が十分広ければ、仕切りはそもそも不要になる。",
+        "ko": "💡 모듈화가 특효약인지 위약인지는 표현 차원수에 달려 있다 — 공간이 충분히 넓다면 칸막이 자체가 필요 없어진다."
+      }
+    },
+    {
+      "id": "space-260618",
+      "domain": "space",
+      "day": "2026-06-18",
+      "author": "Fergus R. Donnan, Karin Sandstrom et al.",
+      "ref": "arXiv:2606.18244v1",
+      "url": "https://arxiv.org/abs/2606.18244v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"110\" ry=\"50\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"80\" rx=\"75\" ry=\"32\" fill=\"none\" stroke=\"#3949ab\" stroke-width=\"1.5\"/><ellipse cx=\"170\" cy=\"80\" rx=\"40\" ry=\"16\" fill=\"#1a237e\" opacity=\"0.35\"/><circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#ffd54f\"/><circle cx=\"118\" cy=\"62\" r=\"4\" fill=\"#ff8f00\" opacity=\"0.8\"/><circle cx=\"222\" cy=\"98\" r=\"4\" fill=\"#ff8f00\" opacity=\"0.8\"/><circle cx=\"145\" cy=\"95\" r=\"3\" fill=\"#ffcc02\" opacity=\"0.7\"/><circle cx=\"200\" cy=\"65\" r=\"3\" fill=\"#ffcc02\" opacity=\"0.7\"/><line x1=\"170\" y1=\"80\" x2=\"118\" y2=\"62\" stroke=\"#ff8f00\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><line x1=\"170\" y1=\"80\" x2=\"222\" y2=\"98\" stroke=\"#ff8f00\" stroke-width=\"1\" stroke-dasharray=\"4,3\"/><rect x=\"10\" y=\"10\" width=\"18\" height=\"4\" rx=\"2\" fill=\"#3949ab\" opacity=\"0.5\"/><rect x=\"10\" y=\"18\" width=\"12\" height=\"4\" rx=\"2\" fill=\"#3949ab\" opacity=\"0.3\"/><rect x=\"312\" y=\"10\" width=\"18\" height=\"4\" rx=\"2\" fill=\"#3949ab\" opacity=\"0.5\"/><rect x=\"318\" y=\"18\" width=\"12\" height=\"4\" rx=\"2\" fill=\"#3949ab\" opacity=\"0.3\"/></svg>",
+      "title": {
+        "zh-TW": "宇宙正午的星系「碳指紋」：JWST繪製百億年前多環芳烴分佈圖",
+        "en": "Galaxy 'Carbon Fingerprints' at Cosmic Noon: JWST Maps Polycyclic Aromatic Hydrocarbons 10 Billion Years Ago",
+        "zh-CN": "宇宙正午的星系「碳指纹」：JWST绘制百亿年前多环芳烃分布图",
+        "ja": "宇宙の正午に輝く銀河の「炭素指紋」：JWSTが100億年前のPAH分布を可視化",
+        "ko": "우주의 정오, 은하의 '탄소 지문': JWST로 100억 년 전 다환 방향족 탄화수소 분포 지도 제작"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "PAHSPECS計畫利用JWST/MIRI MRS對紅移z≈1.1的正常恆星形成星系進行空間解析光譜觀測，透過對數據立方體前向建模並考量PSF卷積效應，成功提取3.3、6.2、7.7、11.3 μm多環芳烴（PAH）及[ArII] 6.98 μm的精確空間輪廓，並生成「宇宙正午」時期的PAH比值圖。",
+        "en": "The PAHSPECS program uses JWST/MIRI MRS to obtain spatially resolved spectroscopy of normal star-forming galaxies at z≈1.1. By forward-modeling data cubes with PSF convolution accounted for, the team extracts accurate spatial profiles of PAH features at 3.3, 6.2, 7.7, and 11.3 μm plus [ArII] emission, producing PAH ratio maps at cosmic noon.",
+        "zh-CN": "PAHSPECS计划利用JWST/MIRI MRS对红移z≈1.1的正常恒星形成星系进行空间分辨光谱观测，通过对数据立方体前向建模并考虑PSF卷积效应，成功提取3.3、6.2、7.7、11.3 μm多环芳烃（PAH）及[ArII] 6.98 μm的精确空间轮廓，生成「宇宙正午」时期的PAH比值图。",
+        "ja": "PAHSPECSプログラムはJWST/MIRI MRSを用い、赤方偏移z≈1.1の通常の星形成銀河を空間分解分光観測した。PSFの畳み込みを考慮したデータキューブの順モデリングにより、3.3・6.2・7.7・11.3 μmのPAHと[ArII]放射の空間プロファイルを正確に抽出し、宇宙の正午のPAH比マップを生成した。",
+        "ko": "PAHSPECS 프로그램은 JWST/MIRI MRS를 사용해 적색편이 z≈1.1의 정상 별 형성 은하를 공간 분해 분광 관측했습니다. PSF 컨볼루션을 고려한 데이터 큐브 순방향 모델링으로 3.3, 6.2, 7.7, 11.3 μm PAH와 [ArII] 방출선의 정확한 공간 프로파일을 추출하고, 우주의 정오 시기 PAH 비율 지도를 생성했습니다."
+      },
+      "plain": {
+        "zh-TW": "想像星系是一座巨大的城市，恆星是路燈，而「多環芳烴（PAH）」就是空氣中漂浮的煙塵粒子——每當有新的恆星誕生，周遭就會充滿這種碳分子的光芒。JWST望遠鏡就像一台超級熱像儀，能隔著100億光年拍下這些煙塵在星系各處的分佈。這項研究選取了「宇宙正午」——也就是宇宙歷史上恆星誕生率最高的黃金時期——的星系作為樣本。科學家發現，星系外圍的PAH和中心呈現不同比例，就像城市郊區與市中心的空氣品質截然不同。這告訴我們恆星在不同位置的形成方式並不相同，而這些差異可以幫助我們理解宇宙是如何從那個最繁盛的年代一路演化至今的。能在遠如此遠的地方「嗅到」單一分子的分佈，正是JWST改寫天文學規則的最佳示範。",
+        "en": "Imagine a galaxy as a vast city: stars are the streetlights, and polycyclic aromatic hydrocarbons (PAHs) are the soot particles drifting through the air — whenever new stars are born, these carbon molecules glow brightly around them. JWST acts like a super thermal camera, photographing the distribution of this cosmic soot across galaxies 10 billion light-years away. This study targets galaxies at 'cosmic noon' — the golden age when the universe was forming stars at the highest rate in its history. Scientists found that PAHs in galaxy outskirts show different ratios than in galaxy centers, much like how air quality differs between a city's suburbs and its downtown core. This reveals that star formation works differently across a galaxy, helping us understand how the universe evolved from its most productive era to today. Being able to 'smell' individual molecules across such cosmic distances is exactly why JWST is rewriting the rules of astronomy.",
+        "zh-CN": "想象星系是一座巨大的城市，恒星是路灯，而「多环芳烃（PAH）」就是空气中漂浮的烟尘粒子——每当有新的恒星诞生，周围就会充满这种碳分子的光芒。JWST望远镜就像一台超级热像仪，能隔着100亿光年拍下这些烟尘在星系各处的分布。这项研究选取了「宇宙正午」——宇宙历史上恒星诞生率最高的黄金时期——的星系作为样本。科学家发现，星系外围的PAH与中心呈现不同比例，就像城市郊区与市中心的空气质量截然不同。这告诉我们恒星在不同位置的形成方式并不相同，这些差异可以帮助我们理解宇宙如何从那个最繁盛的年代演化至今。能在如此遥远的地方「嗅到」单一分子的分布，正是JWST改写天文学规则的最佳示范。",
+        "ja": "銀河を巨大な都市に例えるなら、恒星は街灯、そして「多環芳香族炭化水素（PAH）」は空気中に漂う煤の粒子です。新しい星が生まれるたび、周囲にこの炭素分子が輝きます。JWSTは超高性能のサーモカメラのように、100億光年先の銀河全体でこの煤の分布を撮影できます。この研究は「宇宙の正午」——宇宙史上最も活発に星が生まれていた黄金時代——の銀河を対象にしています。科学者たちは、銀河の外縁部と中心部でPAHの比率が異なることを発見しました。まるで都市の郊外と中心部で空気の質が違うように。これは場所によって星の形成方法が異なることを示し、宇宙がその最盛期からどのように進化してきたかを理解する鍵になります。これほど遠くで個々の分子の分布を「嗅ぎ取れる」ことこそ、JWSTが天文学を書き換えている証拠です。",
+        "ko": "은하를 거대한 도시라고 상상해보세요. 별은 가로등이고, '다환 방향족 탄화수소(PAH)'는 공기 중에 떠다니는 그을음 입자입니다. 새로운 별이 태어날 때마다 주변은 이 탄소 분자의 빛으로 가득 찹니다. JWST는 초고성능 열화상 카메라처럼 100억 광년 떨어진 은하 전체에서 이 그을음의 분포를 촬영합니다. 이 연구는 '우주의 정오'——우주 역사상 별 탄생률이 가장 높았던 황금기——의 은하를 대상으로 합니다. 과학자들은 은하 외곽부와 중심부에서 PAH 비율이 다르다는 사실을 발견했습니다. 마치 도시 외곽과 중심가의 공기 질이 다르듯이요. 이는 위치에 따라 별 형성 방식이 다름을 보여주며, 우주가 가장 번성했던 시대에서 오늘날까지 어떻게 진화해왔는지 이해하는 열쇠가 됩니다. 이토록 먼 곳에서 개별 분자의 분포를 '냄새 맡을 수 있다'는 사실이야말로 JWST가 천문학을 다시 쓰고 있다는 증거입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙中最微小的碳分子，正在成為我們解讀百億年前星系如何成長的最清晰地圖。",
+        "en": "💡 The universe's tiniest carbon molecules are becoming our clearest map for decoding how galaxies grew 10 billion years ago.",
+        "zh-CN": "💡 宇宙中最微小的碳分子，正在成为我们解读百亿年前星系如何成长的最清晰地图。",
+        "ja": "💡 宇宙最小の炭素分子が、100億年前に銀河がどのように成長したかを解読する最も鮮明な地図になろうとしている。",
+        "ko": "💡 우주에서 가장 작은 탄소 분자가 100억 년 전 은하의 성장 방식을 해독하는 가장 선명한 지도가 되고 있다."
+      }
+    },
+    {
+      "id": "tech-260618",
+      "domain": "tech",
+      "day": "2026-06-18",
+      "author": "Lucas Heublein, Fabian Benschuh et al.",
+      "ref": "arXiv:2606.18196v1",
+      "url": "https://arxiv.org/abs/2606.18196v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#00695c\" opacity=\"0.7\"/><line x1=\"88\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#e65100\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><line x1=\"88\" y1=\"72\" x2=\"130\" y2=\"60\" stroke=\"#e65100\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" opacity=\"0.6\"/><line x1=\"88\" y1=\"88\" x2=\"130\" y2=\"100\" stroke=\"#e65100\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" opacity=\"0.6\"/><rect x=\"130\" y=\"50\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#00695c\" opacity=\"0.15\" stroke=\"#00695c\" stroke-width=\"2\"/><rect x=\"142\" y=\"62\" width=\"36\" height=\"36\" rx=\"4\" fill=\"#00695c\" opacity=\"0.25\" stroke=\"#00695c\" stroke-width=\"1.5\"/><rect x=\"152\" y=\"72\" width=\"16\" height=\"16\" rx=\"2\" fill=\"#00695c\" opacity=\"0.6\"/><line x1=\"190\" y1=\"80\" x2=\"240\" y2=\"80\" stroke=\"#00695c\" stroke-width=\"2.5\"/><polygon points=\"240,73 255,80 240,87\" fill=\"#00695c\" opacity=\"0.8\"/><circle cx=\"285\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><circle cx=\"285\" cy=\"80\" r=\"10\" fill=\"#00695c\" opacity=\"0.3\"/><circle cx=\"285\" cy=\"80\" r=\"4\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"273\" y=\"110\" width=\"24\" height=\"6\" rx=\"3\" fill=\"#e65100\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "衛星定位被干擾時，你的接收器有多脆弱？量化雜訊影響的新方法",
+        "en": "How Vulnerable Is Your GPS Receiver to Interference? A New Way to Measure Signal Degradation",
+        "zh-CN": "卫星定位被干扰时，你的接收器有多脆弱？量化噪声影响的新方法",
+        "ja": "GPS干渉で受信機はどこまで壊れる？信号劣化を正確に測る新手法",
+        "ko": "GPS 신호 간섭에 수신기는 얼마나 취약한가? 성능 저하를 정량화하는 새로운 방법"
+      },
+      "tag": {
+        "zh-TW": "📶 衛星導航工程",
+        "en": "📶 Satellite Navigation Engineering",
+        "zh-CN": "📶 卫星导航工程",
+        "ja": "📶 衛星航法工学",
+        "ko": "📶 위성 항법 공학"
+      },
+      "tech": {
+        "zh-TW": "本研究針對衛星定位系統（GNSS）中的「頻譜分離係數（SSC）」計算方式進行改進，明確將接收器前端的硬體特性（如頻寬、濾波器響應）納入干擾效應評估，取代以往「假設接收器完美」的理想化做法。研究同時建立實驗驗證框架，對比理論分析值與真實接收器量測結果，確認新方法能更準確反映實際定位可靠度下降的程度。",
+        "en": "This paper refines the computation of the Spectral Separation Coefficient (SSC) for GNSS interference analysis by explicitly incorporating receiver-specific front-end characteristics—such as bandwidth and filter response—rather than assuming an idealized receiver. The authors also establish an experimental verification framework comparing theoretical SSC values against real receiver measurements to validate improved accuracy in predicting positioning reliability degradation.",
+        "zh-CN": "本研究针对卫星定位系统（GNSS）中的「频谱分离系数（SSC）」计算方式进行改进，明确将接收器前端的硬件特性（如带宽、滤波器响应）纳入干扰效应评估，取代以往「假设接收器完美」的理想化做法。研究同时建立实验验证框架，对比理论分析值与真实接收器测量结果，确认新方法能更准确反映实际定位可靠度下降的程度。",
+        "ja": "本研究はGNSS干渉解析における「スペクトル分離係数（SSC）」の計算を改善し、帯域幅やフィルタ応答などの受信機固有のフロントエンド特性を明示的に組み込む手法を提案する。従来の理想化された受信機仮定を排除し、実験的検証フレームワークにより理論値と実測値を比較することで、測位信頼性低下の予測精度を向上させる。",
+        "ko": "본 연구는 GNSS 간섭 분석에서 사용되는 「스펙트럼 분리 계수(SSC)」 계산 방식을 개선하여, 이상적인 수신기를 가정하는 대신 수신기별 프론트엔드 특성(대역폭, 필터 응답 등)을 명시적으로 반영하는 방법론을 제시한다. 실험적 검증 프레임워크를 통해 이론값과 실측값을 비교함으로써 실제 측위 신뢰도 저하 예측의 정확도를 높였다."
+      },
+      "plain": {
+        "zh-TW": "你手機上的 GPS 其實是在收聽衛星播放的微弱無線電訊號，就像在嘈雜餐廳裡試圖聽清楚對面的人說話。當附近有其他強烈的無線電干擾（例如刻意干擾的電子戰裝置，或無意間的工業雜訊），訊號就會「被蓋過去」，導致定位失準甚至完全失效。科學家原本用一個叫「頻譜分離係數（SSC）」的數字來衡量這種干擾有多嚴重，但問題是：這個數字以前假設所有接收器都是「完美的耳朵」，忽略了每個接收器硬體本身的個別差異。這就像評估噪音對聽力的影響，卻假設所有人的耳朵完全相同——顯然不合理！這篇論文的突破在於，它把接收器自身的濾波器特性（決定它能聽到哪些頻率）直接加進計算裡，讓評估結果更貼近現實。對於飛機導航、自駕車、無人機等高度依賴 GPS 精確度的應用來說，這種「客製化的干擾評估」能幫助工程師在系統設計階段就預判風險，避免在關鍵時刻出錯。",
+        "en": "Your phone's GPS listens to incredibly faint radio whispers from satellites far above—imagine trying to hear someone across a noisy restaurant. When strong radio interference nearby drowns out those signals, your position reading goes haywire or disappears entirely. Scientists use a number called the Spectral Separation Coefficient (SSC) to measure how badly interference hurts GPS, but there's a catch: the old method assumed every GPS receiver has a 「perfect ear,」 ignoring the real hardware differences between devices. That's like rating how noise damages hearing while pretending all ears are identical—clearly unrealistic! This paper fixes that by folding each receiver's own filter characteristics into the calculation. For aircraft navigation, self-driving cars, and drones that stake safety on GPS accuracy, this 「personalized interference assessment」 lets engineers spot vulnerabilities during design, before a critical moment goes wrong.",
+        "zh-CN": "你手机上的 GPS 其实是在收听卫星播放的微弱无线电信号，就像在嘈杂餐厅里试图听清楚对面的人说话。当附近有其他强烈的无线电干扰时，信号就会「被盖过去」，导致定位失准甚至完全失效。科学家原本用一个叫「频谱分离系数（SSC）」的数字来衡量这种干扰有多严重，但问题是：这个数字以前假设所有接收器都是「完美的耳朵」，忽略了每个接收器硬件本身的个别差异。这篇论文的突破在于，它把接收器自身的滤波器特性直接加进计算里，让评估结果更贴近现实。对于飞机导航、自动驾驶汽车、无人机等高度依赖 GPS 精确度的应用来说，这种「定制化的干扰评估」能帮助工程师在系统设计阶段就预判风险。",
+        "ja": "スマートフォンのGPSは、はるか上空の衛星から届くかすかな電波を受け取っています。騒がしいレストランで向かいの人の声を聞き取ろうとするイメージです。近くに強い電波干渉があると、その「声」がかき消され、位置情報が大きくずれたり、まったく使えなくなったりします。従来、この干渉の深刻さを測る「スペクトル分離係数（SSC）」という指標がありましたが、欠点がありました。すべての受信機を「完璧な耳」と仮定し、実際のハードウェアの個体差を無視していたのです。この論文はその欠点を修正し、各受信機のフィルタ特性を計算に組み込みました。航空機のナビ、自動運転車、ドローンなど、GPS精度に安全が依存するシステムにとって、この「受信機ごとの干渉評価」は設計段階でリスクを把握する強力なツールになります。",
+        "ko": "스마트폰의 GPS는 저 멀리 위성에서 오는 아주 약한 전파를 수신합니다. 마치 시끄러운 식당에서 맞은편 사람의 말을 들으려는 것과 같습니다. 근처에서 강한 전파 간섭이 발생하면 그 신호가 묻혀버려 위치 정보가 크게 어긋나거나 아예 작동하지 않게 됩니다. 과학자들은 「스펙트럼 분리 계수(SSC)」라는 수치로 간섭의 심각성을 측정해왔지만, 문제가 있었습니다. 모든 수신기를 「완벽한 귀」로 가정해 실제 하드웨어 차이를 무시했던 것입니다. 이 논문은 각 수신기의 필터 특성을 계산에 직접 반영해 그 한계를 극복했습니다. 항공 항법, 자율주행차, 드론처럼 GPS 정확도에 안전이 달린 시스템에서, 이 「맞춤형 간섭 평가」는 설계 단계에서 위험을 미리 파악하는 강력한 도구가 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 「假設所有接收器都一樣」聽起來像小細節，但在攸關生命安全的導航系統中，這個被長期忽視的假設，可能正是風險評估最大的盲點。",
+        "en": "💡 Assuming all receivers are identical sounds like a minor simplification, but in safety-critical navigation systems, this long-overlooked assumption may be the biggest blind spot in risk assessment.",
+        "zh-CN": "💡 「假设所有接收器都一样」听起来像小细节，但在攸关生命安全的导航系统中，这个被长期忽视的假设，可能正是风险评估最大的盲点。",
+        "ja": "💡 「すべての受信機は同じ」という仮定は些細な簡略化に見えるが、安全が命に関わるナビシステムでは、この長年見落とされてきた前提こそがリスク評価の最大の盲点かもしれない。",
+        "ko": "💡 「모든 수신기는 동일하다」는 가정은 사소한 단순화처럼 보이지만, 안전이 생명과 직결되는 항법 시스템에서는 이 오랫동안 간과된 전제가 리스크 평가의 가장 큰 맹점일 수 있다."
+      }
+    }
+  ]
+}
