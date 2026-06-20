@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-21",
+  "mode": "weekend",
+  "paper_date": "2026-06-19",
+  "generated_at": "2026-06-21",
+  "cards": [
+    {
+      "id": "nature-2606a",
+      "domain": "nature",
+      "day": "2026-06-21",
+      "author": "Mayberry et al. / Nature 2026",
+      "ref": "Nature 2026",
+      "url": "https://doi.org/10.1038/s41586-026-08821-4",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "章魚睡眠中的「彩色夢境」：皮膚閃爍揭露REM睡眠新秘密",
+        "en": "Octopus Dreaming in Color: Skin Flickers Reveal New REM Sleep Secrets",
+        "zh-CN": "章鱼睡眠中的「彩色梦境」：皮肤闪烁揭露REM睡眠新秘密",
+        "ja": "タコの「カラフルな夢」：皮膚の点滅がREM睡眠の新秘密を明かす",
+        "ko": "문어의 「컬러 꿈」：피부 깜박임이 REM 수면의 새 비밀을 밝히다"
+      },
+      "tag": {
+        "zh-TW": "🐙 自然生態",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生态",
+        "ja": "🐙 自然生態",
+        "ko": "🐙 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究團隊以高解析度攝影機連續記錄章魚睡眠，發現牠們在類REM階段皮膚色素細胞會出現快速、有序的動態圖案變化，持續時間與哺乳類REM相仿。神經活動追蹤顯示，這些皮膚閃爍與視覺皮層類似區域的放電高度同步，暗示章魚可能正在「回放」清醒時的視覺記憶。",
+        "en": "High-resolution cameras recorded octopuses during sleep, revealing rapid ordered chromatophore pattern changes during REM-like phases, synchronized with firing in visual-cortex-analogous brain regions, suggesting visual memory replay.",
+        "zh-CN": "研究团队以高解析度摄影机连续记录章鱼睡眠，发现其在类REM阶段皮肤色素细胞出现快速有序的动态图案，与视觉皮层类似区域放电高度同步。",
+        "ja": "高解像度カメラでタコの睡眠を記録し、REM様段階での色素細胞の急速なパターン変化が視覚野類似領域の発火と同期していることを発見した。",
+        "ko": "고해상도 카메라로 문어 수면을 기록한 결과, REM 유사 단계에서 색소세포의 빠른 패턴 변화가 시각 피질 유사 뇌 영역의 발화와 동기화됨을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "章魚睡覺時皮膚會像霓虹燈一樣閃爍，科學家認為這很可能是牠們在「做夢」——用皮膚重播白天看到的畫面。",
+        "en": "Octopuses flash vivid skin patterns while asleep, and scientists now believe they are likely dreaming — replaying daytime visuals through their skin.",
+        "zh-CN": "章鱼睡觉时皮肤会像霓虹灯一样闪烁，科学家认为这很可能是它们在「做梦」——用皮肤重播白天看到的画面。",
+        "ja": "タコは眠りながら皮膚をネオンのように光らせており、科学者はこれが日中の視覚記憶を「夢として再生」している可能性が高いと考えている。",
+        "ko": "문어는 잠자는 동안 피부를 네온처럼 깜박이며, 과학자들은 이것이 낮에 본 장면을 꿈으로 재생하는 것일 가능성이 높다고 본다."
+      },
+      "insight": {
+        "zh-TW": "💡 夢境可能不是脊椎動物的專利——章魚用整張皮膚「投影」出牠的內心世界。",
+        "en": "💡 Dreaming may not be a vertebrate privilege — octopuses could be projecting their inner world across their entire skin.",
+        "zh-CN": "💡 梦境可能不是脊椎动物的专利——章鱼用整张皮肤「投影」出它的内心世界。",
+        "ja": "💡 夢は脊椎動物だけの特権ではないかもしれない——タコは全身の皮膚で内なる世界を「投影」している。",
+        "ko": "💡 꿈은 척추동물만의 특권이 아닐 수 있다 — 문어는 온몸의 피부로 내면 세계를 「투영」한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<ellipse cx=\"170\" cy=\"85\" rx=\"38\" ry=\"28\" fill=\"#2e7d32\" opacity=\"0.9\"/>\n<circle cx=\"155\" cy=\"75\" r=\"5\" fill=\"#1a4a1e\"/>\n<circle cx=\"157\" cy=\"74\" r=\"2\" fill=\"white\"/>\n<path d=\"M132 95 Q118 110 108 120 Q112 115 115 125 Q120 112 130 102\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<path d=\"M140 100 Q130 118 125 132 Q130 126 135 133 Q138 120 145 106\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<path d=\"M155 103 Q152 122 150 138 Q155 130 160 137 Q160 120 162 108\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<path d=\"M170 102 Q172 120 175 135 Q179 127 183 133 Q178 118 178 106\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<path d=\"M185 98 Q195 115 202 128 Q205 120 210 125 Q202 110 194 96\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<circle cx=\"148\" cy=\"82\" r=\"6\" fill=\"#a5d6a7\" opacity=\"0.85\"/>\n<circle cx=\"165\" cy=\"90\" r=\"9\" fill=\"#ffb300\" opacity=\"0.75\"/>\n<circle cx=\"182\" cy=\"79\" r=\"5\" fill=\"#ff7043\" opacity=\"0.8\"/>\n<circle cx=\"158\" cy=\"95\" r=\"4\" fill=\"#a5d6a7\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606b",
+      "domain": "climate",
+      "day": "2026-06-21",
+      "author": "Severino et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adq7841",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "亞馬遜雨林臨界點提前：東南部已成碳排放源而非碳匯",
+        "en": "Amazon Tipping Point Ahead of Schedule: Southeast Now a Carbon Source, Not Sink",
+        "zh-CN": "亚马逊雨林临界点提前：东南部已成碳排放源而非碳汇",
+        "ja": "アマゾン臨界点が前倒し：南東部はもはや炭素吸収源ではなく排出源に",
+        "ko": "아마존 티핑 포인트 앞당겨져：동남부는 이미 탄소 흡수원이 아닌 배출원"
+      },
+      "tag": {
+        "zh-TW": "🌎 地球氣候",
+        "en": "🌎 Climate",
+        "zh-CN": "🌎 地球气候",
+        "ja": "🌎 地球気候",
+        "ko": "🌎 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "綜合衛星遙測、地面通量塔與大氣反演模型的長達20年資料分析顯示，亞馬遜東南部由於複合式乾旱與火災壓力，碳通量已於2025年轉為淨正值（即淨排放），比氣候模型預測的臨界點提早約15年。土地利用變遷與氣候暖化的協同效應被確認為主要驅動力。",
+        "en": "A 20-year synthesis of satellite remote sensing, ground flux towers, and atmospheric inversion models shows the Amazon southeast became a net carbon source in 2025 due to compounding drought and fire stress, roughly 15 years ahead of model projections.",
+        "zh-CN": "综合卫星遥测、地面通量塔与大气反演模型的20年数据分析显示，亚马逊东南部因复合干旱与火灾压力，碳通量已于2025年转为净排放，比气候模型预测提早约15年。",
+        "ja": "衛星リモートセンシング・地上フラックスタワー・大気逆解析モデルの20年データ統合により、アマゾン南東部が2025年に複合干ばつと火災により純排出源に転じ、モデル予測より約15年早まったことが判明した。",
+        "ko": "위성 원격탐사, 지상 플럭스 타워, 대기 역전 모델의 20년 데이터 분석 결과, 아마존 동남부가 복합 가뭄과 화재로 2025년에 순 탄소 배출원으로 전환됐으며 이는 모델 예측보다 약 15년 앞선 것이다."
+      },
+      "plain": {
+        "zh-TW": "亞馬遜雨林一向是地球的「綠色肺臟」幫我們吸收碳，但現在它的東南部反而開始吐出更多碳——比科學家預期的提早了整整15年。",
+        "en": "The Amazon rainforest was Earth's green lung absorbing carbon, but its southeast is now releasing more than it absorbs — a full 15 years earlier than scientists expected.",
+        "zh-CN": "亚马逊雨林一向是地球的「绿色肺脏」帮我们吸收碳，但现在它的东南部反而开始吐出更多碳——比科学家预期的提早了整整15年。",
+        "ja": "アマゾン雨林は地球の「緑の肺」として炭素を吸収してきたが、今や南東部は炭素を放出する側に転じており、科学者の予測より15年も早い。",
+        "ko": "아마존 열대우림은 지구의 「녹색 허파」로 탄소를 흡수해 왔지만, 이제 동남부는 탄소를 더 많이 배출하고 있으며 이는 과학자들의 예측보다 15년이나 빠른 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 當地球最大的碳匯開始「反噬」，氣候臨界點的骨牌效應恐怕比任何模型都來得快。",
+        "en": "💡 When Earth's largest carbon sink starts fighting back, the domino effect of climate tipping points may arrive faster than any model predicted.",
+        "zh-CN": "💡 当地球最大的碳汇开始「反噬」，气候临界点的骨牌效应恐怕比任何模型都来得快。",
+        "ja": "💡 地球最大の炭素吸収源が逆転し始めた今、気候の臨界点の連鎖反応はどのモデルの予測よりも早く訪れるかもしれない。",
+        "ko": "💡 지구 최대의 탄소 흡수원이 역전되기 시작한 지금, 기후 티핑 포인트의 연쇄 반응은 어떤 모델보다 빠르게 찾아올 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<ellipse cx=\"80\" cy=\"90\" rx=\"38\" ry=\"48\" fill=\"#2d7a2d\"/>\n<ellipse cx=\"110\" cy=\"80\" rx=\"32\" ry=\"42\" fill=\"#3a9a3a\"/>\n<ellipse cx=\"55\" cy=\"85\" rx=\"28\" ry=\"38\" fill=\"#2d7a2d\"/>\n<rect x=\"87\" y=\"118\" width=\"8\" height=\"22\" fill=\"#5a3010\"/>\n<polygon points=\"180,40 230,40 260,130 150,130\" fill=\"#e8590c\" opacity=\"0.85\"/>\n<polygon points=\"195,70 245,70 260,130 180,130\" fill=\"#b33a00\" opacity=\"0.7\"/>\n<circle cx=\"215\" cy=\"55\" r=\"18\" fill=\"#e8590c\" opacity=\"0.9\"/>\n<path d=\"M215,37 Q225,20 238,15 M215,37 Q200,18 192,12 M215,37 Q215,18 215,10\" stroke=\"#e8590c\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n<line x1=\"140\" y1=\"90\" x2=\"175\" y2=\"75\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n<rect x=\"270\" y=\"60\" width=\"18\" height=\"70\" fill=\"#b33a00\" opacity=\"0.5\"/>\n<rect x=\"295\" y=\"40\" width=\"18\" height=\"90\" fill=\"#e8590c\" opacity=\"0.7\"/>\n<rect x=\"320\" y=\"20\" width=\"18\" height=\"110\" fill=\"#ff6a1a\" opacity=\"0.85\"/>\n</svg>"
+    },
+    {
+      "id": "health-2606c",
+      "domain": "health",
+      "day": "2026-06-21",
+      "author": "Lozano et al. / NEJM 2026",
+      "ref": "N Engl J Med 2026",
+      "url": "https://doi.org/10.1056/NEJMoa2601847",
+      "color": "#b71c1c",
+      "title": {
+        "zh-TW": "一針治癒鐮刀型貧血：體內基因編輯首次人體試驗成功",
+        "en": "One Injection Cures Sickle Cell: In-Body Gene Editing Succeeds in First Human Trial",
+        "zh-CN": "一针治愈镰刀型贫血：体内基因编辑首次人体试验成功",
+        "ja": "1回の注射で鎌状赤血球症を治癒：体内遺伝子編集の初の臨床試験が成功",
+        "ko": "주사 한 방으로 겸상적혈구 빈혈 치료：체내 유전자 편집 첫 인체 시험 성공"
+      },
+      "tag": {
+        "zh-TW": "💉 醫療健康",
+        "en": "💉 Health",
+        "zh-CN": "💉 医疗健康",
+        "ja": "💉 医療健康",
+        "ko": "💉 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "研究團隊開發脂質奈米粒子（LNP）包裹的鹼基編輯器（base editor），靜脈注射後精準靶向造血幹細胞中的BCL11A增強子，重新激活胎兒血紅素（HbF）表達。12位患者追蹤18個月後，全數HbF比例超過40%，鐮刀型危象完全消失，且未偵測到脫靶編輯。",
+        "en": "Lipid nanoparticle-delivered base editors administered intravenously targeted the BCL11A enhancer in hematopoietic stem cells in vivo, reactivating fetal hemoglobin. All 12 patients achieved HbF above 40% at 18 months with zero vaso-occlusive crises and no detectable off-target edits.",
+        "zh-CN": "研究团队开发脂质纳米粒子包裹的碱基编辑器，静脉注射后精准靶向造血干细胞中的BCL11A增强子，重新激活胎儿血红素表达。12位患者追踪18个月后HbF比例全数超过40%，鐮刀型危象完全消失。",
+        "ja": "脂質ナノ粒子に包まれた塩基編集器を静脈注射し、造血幹細胞のBCL11Aエンハンサーを標的として胎児ヘモグロビンを再活性化した。12人全員が18か月後にHbF40%超を達成し、血管閉塞発作はゼロだった。",
+        "ko": "지질 나노입자에 포장된 염기 편집기를 정맥 주사해 조혈줄기세포의 BCL11A 인핸서를 표적으로 태아 헤모글로빈을 재활성화했다. 12명 전원이 18개월 후 HbF 40% 이상을 달성하고 혈관 폐색 발작은 제로였다."
+      },
+      "plain": {
+        "zh-TW": "鐮刀型貧血過去需要終身輸血或骨髓移植，現在只要打一針讓體內自己的幹細胞恢復製造正常血紅素，12位受試者追蹤一年半後全部獲得實質性治癒。",
+        "en": "Sickle cell disease once required lifelong transfusions or bone marrow transplants; now a single injection reprograms patients own stem cells to make normal hemoglobin, with all 12 trial participants essentially cured after 18 months.",
+        "zh-CN": "镰刀型贫血过去需要终身输血或骨髓移植，现在只要打一针让体内自己的干细胞恢复制造正常血红素，12位受试者追踪一年半后全部获得实质性治愈。",
+        "ja": "鎌状赤血球症はかつて生涯輸血や骨髄移植が必要だったが、今では1回の注射で自身の幹細胞を正常ヘモグロビン産生に再プログラムでき、12人全員が18か月後に実質的に治癒した。",
+        "ko": "겸상적혈구 빈혈은 과거 평생 수혈이나 골수 이식이 필요했지만, 이제 주사 한 번으로 자신의 줄기세포를 재프로그래밍해 정상 헤모글로빈을 만들게 하며 12명 전원이 18개월 후 사실상 완치됐다."
+      },
+      "insight": {
+        "zh-TW": "💡 「體內直接編輯」不再是未來式——一針改寫遺傳密碼正在讓基因治療從手術室走進診間。",
+        "en": "💡 In-body gene editing is no longer a future concept — a single injection rewriting the genetic code is bringing gene therapy from the operating room to the clinic.",
+        "zh-CN": "💡 「体内直接编辑」不再是未来式——一针改写遗传密码正在让基因治疗从手术室走进诊间。",
+        "ja": "💡 「体内直接編集」はもはや未来の話ではない——1本の注射で遺伝暗号を書き換え、遺伝子治療を手術室から外来診察室へと移行させつつある。",
+        "ko": "💡 「체내 직접 편집」은 더 이상 미래의 이야기가 아니다 — 주사 한 번으로 유전 암호를 재작성하는 것이 유전자 치료를 수술실에서 외래 진료실로 옮기고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#b71c1c18\"/>\n  <path d=\"M40,80 Q50,55 60,80 Q70,105 80,80\" stroke=\"#b71c1c\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M110,80 Q120,60 130,80 Q140,100 150,80 Q160,60 170,80\" stroke=\"#b71c1c\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/>\n  <line x1=\"85\" y1=\"80\" x2=\"105\" y2=\"80\" stroke=\"#b71c1c\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <polygon points=\"103,76 110,80 103,84\" fill=\"#b71c1c\"/>\n  <circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#b71c1c\" opacity=\"0.18\"/>\n  <path d=\"M52,80 Q60,68 68,80 Q60,92 52,80 Z\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#b71c1c\" stroke-width=\"2.5\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"13\" fill=\"#b71c1c\" opacity=\"0.25\"/>\n  <path d=\"M255,55 L265,55 L268,95 L252,95 Z\" fill=\"#b71c1c\" opacity=\"0.85\" rx=\"3\"/>\n  <rect x=\"258\" y=\"45\" width=\"8\" height=\"12\" rx=\"2\" fill=\"#c62828\"/>\n  <line x1=\"232\" y1=\"80\" x2=\"250\" y2=\"80\" stroke=\"#b71c1c\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <polygon points=\"248,76 255,80 248,84\" fill=\"#b71c1c\"/>\n  <circle cx=\"300\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2.5\"/>\n  <path d=\"M288,80 Q300,62 312,80 Q300,98 288,80 Z\" fill=\"#2e7d32\" opacity=\"0.6\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-2606d",
+      "domain": "neuro",
+      "day": "2026-06-21",
+      "author": "Huth et al. / Nature Neuroscience 2025",
+      "ref": "Nature Neuroscience 2025",
+      "url": "https://doi.org/10.1038/s41593-025-01897-3",
+      "color": "#6a1b9a",
+      "title": {
+        "zh-TW": "語言地圖升級版：fMRI揭示大腦如何同時處理語意與語法",
+        "en": "Brain's Dual Language Map: fMRI Reveals Parallel Semantic and Syntactic Processing",
+        "zh-CN": "语言地图升级版：fMRI揭示大脑如何同时处理语义与语法",
+        "ja": "脳の言語マップ更新：fMRIが意味と文法の並列処理を解明",
+        "ko": "뇌 언어 지도 업그레이드：fMRI로 의미와 문법의 동시 처리 규명"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊以高解析度7T fMRI掃描受試者聆聽連續敘事時的全腦活動，發現前顳葉皮質與後側語言網路分別平行編碼語意內容與句法結構，兩條路徑在布洛卡區匯流整合。",
+        "en": "Using 7T fMRI during naturalistic narrative listening, researchers found that anterior temporal cortex and posterior language networks encode semantics and syntax in parallel, converging at Broca's area for integration.",
+        "zh-CN": "研究团队以高分辨率7T fMRI扫描受试者聆听连续叙事时的全脑活动，发现前颞叶皮质与后侧语言网路分别平行编码语义内容与句法结构，两条路径在布洛卡区汇流整合。",
+        "ja": "7T fMRIを用いた自然な語り聴取実験により、前側頭皮質と後方言語ネットワークが意味と文法をそれぞれ並列処理し、ブローカ野で統合されることが判明した。",
+        "ko": "7T fMRI를 사용해 연속 내러티브 청취 중 전측두엽 피질과 후방 언어 네트워크가 의미와 문법을 각각 병렬로 처리하고 브로카 영역에서 통합됨을 발견했다."
+      },
+      "plain": {
+        "zh-TW": "大腦理解語言不是單一流水線，而像兩條高速公路同時跑、最後在同一個交流道匯合——這解釋了為何人能邊聽邊同時抓住意思和句子結構。",
+        "en": "The brain understands language not as a single pipeline but as two parallel highways merging at one junction, explaining how we grasp both meaning and sentence structure simultaneously.",
+        "zh-CN": "大脑理解语言不是单一流水线，而像两条高速公路同时跑、最后在同一个交流道汇合——这解释了为何人能边听边同时抓住意思和句子结构。",
+        "ja": "脳の言語理解は一本道ではなく、意味と文法の2本の高速道路が並走して1か所で合流するようなもので、同時処理の仕組みが明らかになった。",
+        "ko": "뇌의 언어 이해는 단일 파이프라인이 아니라 의미와 문법이라는 두 고속도로가 동시에 달리다 한 곳에서 합류하는 구조임이 밝혀졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 語言並非序列處理，而是平行運算——大腦早在AI多頭注意力機制之前就「發明」了這招。",
+        "en": "💡 Language is processed in parallel, not serially—the brain invented multi-stream processing long before AI attention mechanisms did.",
+        "zh-CN": "💡 语言并非序列处理，而是平行运算——大脑早在AI多头注意力机制之前就「发明」了这招。",
+        "ja": "💡 言語は逐次ではなく並列処理される——脳はAIのマルチヘッド注意機構より先にこの仕組みを「発明」していた。",
+        "ko": "💡 언어는 순차가 아닌 병렬 처리된다——뇌는 AI 멀티헤드 어텐션보다 훨씬 먼저 이 방식을 발명했다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/>\n  <ellipse cx=\"170\" cy=\"80\" rx=\"54\" ry=\"42\" fill=\"#6a1b9a\" opacity=\"0.18\"/>\n  <ellipse cx=\"170\" cy=\"80\" rx=\"54\" ry=\"42\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/>\n  <path d=\"M170 42 Q178 60 176 80 Q174 100 170 118\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n  <path d=\"M30 55 Q70 30 120 52 Q150 62 170 80\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <path d=\"M30 105 Q70 130 120 108 Q150 98 170 80\" fill=\"none\" stroke=\"#e91e63\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <path d=\"M170 80 Q190 68 220 58 Q270 38 310 55\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <path d=\"M170 80 Q190 92 220 102 Q270 122 310 105\" fill=\"none\" stroke=\"#e91e63\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#6a1b9a\"/>\n  <circle cx=\"30\" cy=\"80\" r=\"14\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/>\n  <circle cx=\"30\" cy=\"80\" r=\"7\" fill=\"#6a1b9a\" opacity=\"0.5\"/>\n  <circle cx=\"310\" cy=\"80\" r=\"14\" fill=\"none\" stroke=\"#e91e63\" stroke-width=\"2.5\"/>\n  <circle cx=\"310\" cy=\"80\" r=\"7\" fill=\"#e91e63\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606e",
+      "domain": "climate",
+      "day": "2026-06-21",
+      "author": "Bamber et al. / Nature Climate Change 2025",
+      "ref": "Nature Climate Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02287-4",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "格陵蘭冰蓋的「臨界傾倒點」比預期提前20年逼近",
+        "en": "Greenland Ice Sheet Tipping Point Approaching 20 Years Earlier Than Expected",
+        "zh-CN": "格陵兰冰盖的「临界倾倒点」比预期提前20年逼近",
+        "ja": "グリーンランド氷床の「転換点」が予想より20年早く接近",
+        "ko": "그린란드 빙상 임계 전환점, 예상보다 20년 앞당겨 접근"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 気候・地球",
+        "ko": "🌍 기후 지구"
+      },
+      "tech": {
+        "zh-TW": "透過整合衛星測高、重力測量與高解析度冰流模型，研究者發現格陵蘭西南部冰蓋的質量損失速率已觸及非線性加速門檻，若全球升溫超過1.5°C將啟動不可逆回饋迴路，導致海平面額外上升1.5至2公尺。",
+        "en": "Combining satellite altimetry, gravimetry, and high-resolution ice-flow models, researchers found that mass loss in southwest Greenland has reached a nonlinear acceleration threshold; exceeding 1.5°C warming would trigger irreversible feedbacks adding 1.5–2 m of sea-level rise.",
+        "zh-CN": "通过整合卫星测高、重力测量与高分辨率冰流模型，研究者发现格陵兰西南部冰盖的质量损失速率已触及非线性加速门槛，若全球升温超过1.5°C将启动不可逆反馈回路，导致海平面额外上升1.5至2公尺。",
+        "ja": "衛星高度計・重力計測・高解像度氷流モデルを統合し、グリーンランド南西部の質量損失が非線形加速の閾値に達しており、1.5°C超過で不可逆的フィードバックが起動し海面が1.5〜2m追加上昇すると判明した。",
+        "ko": "위성 고도계·중력 측정·고해상도 빙류 모델을 통합해 그린란드 남서부 질량 손실이 비선형 가속 임계치에 도달했으며, 1.5°C 초과 시 불가역 피드백이 작동해 해수면이 1.5~2m 추가 상승할 수 있음을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "格陵蘭的冰一旦開始「自己融化自己」的惡性循環，就像推倒骨牌一樣無法停下；最新數據顯示這個臨界點可能在2050年代就會到來，比過去預測早了將近20年。",
+        "en": "Once Greenland ice begins a self-reinforcing melt cycle—like toppling dominoes—it cannot be stopped; new data suggests this tipping point could arrive in the 2050s, nearly 20 years sooner than previously thought.",
+        "zh-CN": "格陵兰的冰一旦开始「自己融化自己」的恶性循环，就像推倒骨牌一样无法停下；最新数据显示这个临界点可能在2050年代就会到来，比过去预测早了将近20年。",
+        "ja": "グリーンランドの氷が「自己融解の悪循環」に入ると止められなくなる。新データでは、その転換点が2050年代に到来する可能性があり、従来予測より約20年早い。",
+        "ko": "그린란드 빙상이 자기강화 융해 순환에 진입하면 멈출 수 없다. 새 데이터에 따르면 이 전환점이 2050년대에 도래할 수 있어 기존 예측보다 약 20년 앞당겨졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 氣候系統的臨界點不是線性漸進的——一旦越過，沒有「後悔鍵」，這正是為何0.1°C的溫控努力都值得。",
+        "en": "💡 Climate tipping points are not gradual—once crossed, there is no undo button, which is exactly why every 0.1°C of mitigation effort matters.",
+        "zh-CN": "💡 气候系统的临界点不是线性渐进的——一旦越过，没有「后悔键」，这正是为何0.1°C的温控努力都值得。",
+        "ja": "💡 気候の転換点は線形的に近づかない——一度超えたら「元に戻す」ボタンはなく、だからこそ0.1°Cの削減努力が意味を持つ。",
+        "ko": "💡 기후 전환점은 선형적으로 다가오지 않는다——한번 넘으면 되돌릴 수 없기에, 0.1°C의 감축 노력도 의미 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<polygon points=\"30,120 70,40 110,120\" fill=\"#b0d4f1\" opacity=\"0.85\"/>\n<polygon points=\"90,120 135,50 180,120\" fill=\"#7bb8e8\" opacity=\"0.75\"/>\n<polygon points=\"160,120 200,65 240,120\" fill=\"#e8590c\" opacity=\"0.7\"/>\n<polygon points=\"220,120 255,80 290,120\" fill=\"#e8590c\" opacity=\"0.85\"/>\n<line x1=\"30\" y1=\"125\" x2=\"310\" y2=\"125\" stroke=\"#e8590c\" stroke-width=\"2.5\"/>\n<path d=\"M70,80 Q100,60 135,75 Q165,90 200,70 Q230,55 260,68\" stroke=\"#e8590c\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"5,3\"/>\n<circle cx=\"260\" cy=\"68\" r=\"7\" fill=\"#e8590c\"/>\n<circle cx=\"135\" cy=\"75\" r=\"4\" fill=\"#e8590c\" opacity=\"0.5\"/>\n<path d=\"M240,45 Q255,30 270,45 Q265,55 255,52 Q248,58 240,45Z\" fill=\"#e8590c\" opacity=\"0.6\"/>\n<line x1=\"260\" y1=\"68\" x2=\"260\" y2=\"125\" stroke=\"#e8590c\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n<path d=\"M30,30 Q50,10 70,30 Q60,45 50,40 Q42,48 30,30Z\" fill=\"#b0d4f1\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606f",
+      "domain": "bio",
+      "day": "2026-06-21",
+      "author": "Bhatt et al. / Cell 2025",
+      "ref": "Cell 2025",
+      "url": "https://doi.org/10.1016/j.cell.2025.03.047",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "「沉睡基因」甦醒：人體細胞內潛伏的古老病毒如何重塑免疫記憶",
+        "en": "Sleeping Genes Awaken: How Ancient Viral DNA in Human Cells Reshapes Immune Memory",
+        "zh-CN": "「沉睡基因」苏醒：人体细胞内潜伏的古老病毒如何重塑免疫记忆",
+        "ja": "「眠れる遺伝子」の覚醒：ヒト細胞内に潜む古代ウイルスDNAが免疫記憶を再構築する仕組み",
+        "ko": "잠든 유전자 각성：인체 세포 속 고대 바이러스 DNA가 면역 기억을 재형성하는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊以單細胞多組學技術分析數萬個免疫細胞，發現內源性逆轉錄病毒元件（ERV）在T細胞活化時被去甲基化並大規模轉錄，其產生的非編碼RNA會作為染色質組織者，重新排列增強子-啟動子迴路，加速效應記憶T細胞的分化速度達3倍。",
+        "en": "Using single-cell multi-omics on tens of thousands of immune cells, researchers found that endogenous retroviral elements (ERVs) are demethylated and massively transcribed upon T cell activation; the resulting noncoding RNAs act as chromatin organizers, rewiring enhancer-promoter loops and tripling effector memory T cell differentiation speed.",
+        "zh-CN": "研究团队以单细胞多组学技术分析数万个免疫细胞，发现内源性逆转录病毒元件（ERV）在T细胞活化时被去甲基化并大规模转录，其产生的非编码RNA会作为染色质组织者，重新排列增强子-启动子回路，加速效应记忆T细胞的分化速度达3倍。",
+        "ja": "単一細胞マルチオミクスで数万の免疫細胞を解析した結果、T細胞活性化時に内在性レトロウイルス要素（ERV）が脱メチル化・大量転写され、生成された非コードRNAがクロマチン構造を再編してエフェクター記憶T細胞の分化を3倍に加速させることが判明した。",
+        "ko": "단일세포 멀티오믹스로 수만 개의 면역세포를 분석한 결과, T세포 활성화 시 내인성 레트로바이러스 요소(ERV)가 탈메틸화·대량 전사되고, 생성된 비코딩 RNA가 염색질 구조를 재편해 효과기 기억 T세포 분화 속도를 3배 가속함을 발견했다."
+      },
+      "plain": {
+        "zh-TW": "我們基因組裡有將近8%是遠古病毒的殘骸，過去以為它們毫無用處；新研究發現這些「化石病毒」其實是免疫系統的隱藏加速器，感染來臨時會「開機」幫助身體更快記住敵人。",
+        "en": "Nearly 8% of our genome consists of ancient viral remnants once dismissed as junk; new research reveals these 'fossil viruses' are hidden immune accelerators that activate during infection to help the body memorize threats faster.",
+        "zh-CN": "我们基因组里有将近8%是远古病毒的残骸，过去以为它们毫无用处；新研究发现这些「化石病毒」其实是免疫系统的隐藏加速器，感染来临时会「开机」帮助身体更快记住敌人。",
+        "ja": "ゲノムの約8%を占める古代ウイルスの残骸はかつて「ジャンク」とされていたが、新研究でこれらが免疫の隠れた加速装置として感染時に起動し、体が脅威をより速く記憶するのを助けることが明らかになった。",
+        "ko": "게놈의 약 8%를 차지하는 고대 바이러스 잔해는 무용지물로 여겨졌지만, 새 연구에서 이 '화석 바이러스'들이 감염 시 작동해 면역 기억을 더 빠르게 형성하는 숨겨진 가속기임이 밝혀졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 億年前入侵我們祖先的病毒，如今成了我們對抗新病毒的祕密武器——演化的諷刺，也是生命的智慧。",
+        "en": "💡 Viruses that invaded our ancestors billions of years ago now serve as secret weapons against new infections—evolution's irony is life's wisdom.",
+        "zh-CN": "💡 亿年前入侵我们祖先的病毒，如今成了我们对抗新病毒的秘密武器——演化的讽刺，也是生命的智慧。",
+        "ja": "💡 数億年前に祖先に侵入したウイルスが、今や新たな感染症に対する秘密兵器となっている——進化の皮肉であり、生命の知恵でもある。",
+        "ko": "💡 수억 년 전 조상을 침범했던 바이러스가 지금은 새로운 감염에 맞서는 비밀 무기가 됐다——진화의 아이러니, 생명의 지혜다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"54\" ry=\"36\" fill=\"#52b78830\" stroke=\"#52b788\" stroke-width=\"2.5\"/>\n<path d=\"M130 65 Q150 55 170 65 Q190 75 210 65 Q190 85 170 75 Q150 65 130 65Z\" fill=\"#52b788\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#52b788\"/>\n<path d=\"M60 40 Q80 60 60 80 Q80 100 60 120\" stroke=\"#52b788\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<path d=\"M72 40 Q52 60 72 80 Q52 100 72 120\" stroke=\"#52b788\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<circle cx=\"66\" cy=\"55\" r=\"4\" fill=\"#f4a261\"/>\n<circle cx=\"66\" cy=\"80\" r=\"4\" fill=\"#f4a261\"/>\n<circle cx=\"66\" cy=\"105\" r=\"4\" fill=\"#f4a261\"/>\n<path d=\"M240 30 Q270 55 255 80 Q270 105 240 130\" stroke=\"#52b788\" stroke-width=\"2.5\" fill=\"none\"/>\n<circle cx=\"255\" cy=\"55\" r=\"7\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2\"/>\n<circle cx=\"255\" cy=\"105\" r=\"7\" fill=\"#52b788\" opacity=\"0.9\"/>\n<line x1=\"224\" y1=\"80\" x2=\"116\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\" opacity=\"0.6\"/>\n</svg>"
+    }
+  ]
+}
