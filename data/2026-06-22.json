@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-22",
+  "mode": "paper",
+  "paper_date": "2026-06-19",
+  "generated_at": "2026-06-22",
+  "cards": [
+    {
+      "id": "ai-260622",
+      "domain": "ai",
+      "day": "2026-06-22",
+      "author": "Sizhe Yang, Juncheng Mu et al.",
+      "ref": "arXiv:2606.20562v1",
+      "url": "https://arxiv.org/abs/2606.20562v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"10\" y=\"60\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.85\"/><rect x=\"90\" y=\"60\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.65\"/><rect x=\"170\" y=\"60\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.45\"/><line x1=\"70\" y1=\"80\" x2=\"90\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2.5\"/><line x1=\"150\" y1=\"80\" x2=\"170\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2.5\"/><rect x=\"255\" y=\"30\" width=\"72\" height=\"100\" rx=\"12\" fill=\"#e76f51\" opacity=\"0.18\"/><rect x=\"261\" y=\"38\" width=\"60\" height=\"84\" rx=\"8\" fill=\"#e76f51\" opacity=\"0.32\"/><circle cx=\"291\" cy=\"70\" r=\"14\" fill=\"#e76f51\" opacity=\"0.85\"/><circle cx=\"291\" cy=\"100\" r=\"10\" fill=\"#e9c46a\" opacity=\"0.8\"/><line x1=\"230\" y1=\"80\" x2=\"255\" y2=\"80\" stroke=\"#e76f51\" stroke-width=\"2.5\" stroke-dasharray=\"4,3\"/><circle cx=\"291\" cy=\"40\" r=\"6\" fill=\"#2a9d8f\" opacity=\"0.7\"/><line x1=\"291\" y1=\"46\" x2=\"291\" y2=\"56\" stroke=\"#2a9d8f\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/></svg>",
+      "title": {
+        "zh-TW": "機器手臂的「長期記憶」：用持久記憶模組突破操作瓶頸",
+        "en": "Giving Robot Arms Long-Term Memory: MemoryWAM for Smarter Manipulation",
+        "zh-CN": "机器手臂的「长期记忆」：用持久记忆模块突破操作瓶颈",
+        "ja": "ロボットアームに「長期記憶」を：永続メモリで操作性能を飛躍させる",
+        "ko": "로봇 팔에 「장기 기억」을：영구 메모리로 조작 한계를 돌파하다"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "MemoryWAM 提出一種結合「世界行動模型」與「持久記憶模組」的架構，讓機器人在推理時無需重新處理所有歷史觀測，而是將關鍵資訊壓縮儲存於可持續更新的記憶槽中。此方法在非馬可夫環境（即當前狀態不足以決定最佳行為的場景）下，同時兼顧推理效率與長期上下文建模能力，解決現有方法在速度與記憶深度之間的根本取捨。",
+        "en": "MemoryWAM introduces an architecture that combines a world action model with a persistent memory module, allowing robots to compress and retain critical historical observations without reprocessing the entire history at each inference step. This approach resolves the fundamental speed-versus-memory trade-off in existing methods, enabling efficient yet long-horizon context modeling in non-Markovian robotic manipulation tasks.",
+        "zh-CN": "MemoryWAM 提出一种结合「世界行动模型」与「持久记忆模块」的架构，让机器人在推理时无需重新处理所有历史观测，而是将关键信息压缩存储于可持续更新的记忆槽中。此方法在非马可夫环境下同时兼顾推理效率与长期上下文建模能力，解决了现有方法在速度与记忆深度之间的根本取舍。",
+        "ja": "MemoryWAMは、世界行動モデルと永続メモリモジュールを組み合わせたアーキテクチャを提案し、ロボットが推論時にすべての過去観測を再処理せず、重要情報を圧縮して更新可能なメモリスロットに保持できるようにする。これにより、非マルコフ環境における推論効率と長期文脈モデリングの根本的なトレードオフを解消する。",
+        "ko": "MemoryWAM은 세계 행동 모델과 영구 메모리 모듈을 결합한 아키텍처를 제안하여, 로봇이 추론 시 전체 과거 관측을 재처리하지 않고 핵심 정보를 압축해 지속적으로 갱신되는 메모리 슬롯에 저장할 수 있게 한다. 이를 통해 비마르코프 환경에서 추론 효율과 장기 문맥 모델링 사이의 근본적인 트레이드오프를 해소한다."
+      },
+      "plain": {
+        "zh-TW": "想像你雇了一位助理，每次你交代任務，他都只記得你「最近說的幾句話」，之前的背景全部忘光——這正是現有機器人系統的痛點。現實世界的操作任務往往需要「上下文」：比如你先把箱子放在架子左邊，幾步之後機器人才需要把它移走，它必須記得之前發生了什麼。MemoryWAM 的解法像是給機器人配備一本「隨時更新的筆記本」，把重要的過去觀測壓縮成簡短摘要，存入持久記憶槽，不需要每次都翻回所有舊頁面。這樣機器人既能快速做決定（不慢慢翻舊帳），又不會忘記關鍵的過去資訊。這對未來的家用機器人、工廠自動化和醫療輔助機器人都有重大意義，因為真實環境充滿「現在的畫面不足以告訴你該怎麼做」的情境。這項研究讓機器人操作向「真正能在複雜現實中工作」又邁進了一大步。",
+        "en": "Imagine hiring an assistant who only remembers the last few things you said and forgets all earlier context — that is exactly the problem many robots face today. Real-world tasks often require memory: for instance, a robot must remember it placed a box on the left shelf three steps ago before it knows to move it now. MemoryWAM gives robots a continuously updated notebook, compressing important past observations into concise memory slots so they never need to re-read every old page. This means robots can make fast decisions without sacrificing long-term awareness. The implications are huge for home robots, factory automation, and medical assistance, where the current camera frame alone is rarely enough to determine the right action. This work is a significant step toward robots that can truly operate in the messy, history-dependent real world.",
+        "zh-CN": "想象你雇了一位助理，每次交代任务，他只记得你「最近说的几句话」，之前的背景全部忘光——这正是现有机器人系统的痛点。现实世界的操作任务往往需要「上下文」：比如你先把箱子放在架子左边，几步之后机器人才需要把它移走，它必须记得之前发生了什么。MemoryWAM 的解法像是给机器人配备一本「随时更新的笔记本」，把重要的过去观测压缩成简短摘要，存入持久记忆槽，不需要每次都翻回所有旧页面。这样机器人既能快速做决定，又不会忘记关键的过去信息。这对未来的家用机器人、工厂自动化和医疗辅助机器人都有重大意义，因为真实环境充满「当前画面不足以告诉你该怎么做」的情境。",
+        "ja": "あなたが雇ったアシスタントが、あなたの「直近の数言」しか覚えておらず、それ以前の文脈をすべて忘れてしまうと想像してください——これが現在の多くのロボットが抱える問題です。現実の作業では記憶が必要です。たとえばロボットは、3ステップ前に箱を棚の左に置いたことを覚えていなければ、今それを動かすべきかわかりません。MemoryWAMはロボットに「常時更新されるノート」を与え、重要な過去の観測を簡潔なメモリスロットに圧縮して保存します。これにより、ロボットは古いページをすべて読み返すことなく素早く判断でき、かつ重要な過去情報も忘れません。家庭用ロボット、工場自動化、医療支援など、現在の映像だけでは判断できない場面が多い分野に大きな意義をもたらします。",
+        "ko": "당신이 고용한 보조원이 당신의 「최근 몇 마디」만 기억하고 그 이전 맥락을 모두 잊어버린다고 상상해보세요——이것이 오늘날 많은 로봇이 가진 문제입니다. 현실 세계의 작업에는 기억이 필요합니다. 예를 들어 로봇은 3단계 전에 상자를 선반 왼쪽에 놓았다는 사실을 기억해야 지금 그것을 옮겨야 한다는 것을 알 수 있습니다. MemoryWAM은 로봇에게 「실시간으로 업데이트되는 메모장」을 제공하여 중요한 과거 관측을 간결한 메모리 슬롯에 압축 저장합니다. 덕분에 로봇은 오래된 페이지를 모두 다시 읽지 않고도 빠르게 결정하면서 핵심 과거 정보를 잃지 않습니다. 가정용 로봇, 공장 자동화, 의료 보조 등 현재 화면만으로는 판단하기 어려운 분야에 큰 의미를 가집니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正智慧的行動者不只看「現在」，還懂得帶著「精煉過的過去」前行——記憶的品質比記憶的數量更重要。",
+        "en": "💡 Truly intelligent agents don't just see the present — they carry a refined version of the past, proving that the quality of memory matters far more than its raw quantity.",
+        "zh-CN": "💡 真正智慧的行动者不只看「现在」，还懂得带着「精炼过的过去」前行——记忆的质量比记忆的数量更重要。",
+        "ja": "💡 真に賢いエージェントは「今」だけを見るのではなく、「洗練された過去」を携えて前進する——記憶の質は量よりもはるかに重要だ。",
+        "ko": "💡 진정으로 지능적인 행위자는 「현재」만 보는 것이 아니라 「정제된 과거」를 함께 품고 나아간다——기억의 질은 양보다 훨씬 중요하다."
+      }
+    },
+    {
+      "id": "phys-260622",
+      "domain": "phys",
+      "day": "2026-06-22",
+      "author": "Daniel Molpeceres, Sirui Lu et al.",
+      "ref": "arXiv:2606.20551v1",
+      "url": "https://arxiv.org/abs/2606.20551v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"10\" y=\"70\" width=\"100\" height=\"60\" rx=\"8\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"10\" y=\"70\" width=\"100\" height=\"60\" rx=\"8\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\"/><rect x=\"130\" y=\"50\" width=\"100\" height=\"80\" rx=\"8\" fill=\"#e07b3a\" opacity=\"0.75\"/><rect x=\"130\" y=\"50\" width=\"100\" height=\"80\" rx=\"8\" fill=\"none\" stroke=\"#e07b3a\" stroke-width=\"2\"/><rect x=\"250\" y=\"60\" width=\"80\" height=\"70\" rx=\"8\" fill=\"#4a9f6e\" opacity=\"0.75\"/><rect x=\"250\" y=\"60\" width=\"80\" height=\"70\" rx=\"8\" fill=\"none\" stroke=\"#4a9f6e\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"100\" r=\"14\" fill=\"#ffffff\" opacity=\"0.9\"/><circle cx=\"60\" cy=\"100\" r=\"8\" fill=\"#4a7bbf\"/><circle cx=\"180\" cy=\"90\" r=\"14\" fill=\"#ffffff\" opacity=\"0.9\"/><circle cx=\"180\" cy=\"90\" r=\"8\" fill=\"#e07b3a\"/><circle cx=\"290\" cy=\"95\" r=\"14\" fill=\"#ffffff\" opacity=\"0.9\"/><circle cx=\"290\" cy=\"95\" r=\"8\" fill=\"#4a9f6e\"/><line x1=\"110\" y1=\"100\" x2=\"130\" y2=\"95\" stroke=\"#cccccc\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"230\" y1=\"95\" x2=\"250\" y2=\"95\" stroke=\"#cccccc\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><circle cx=\"60\" cy=\"30\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.5\"/><circle cx=\"180\" cy=\"22\" r=\"5\" fill=\"#e07b3a\" opacity=\"0.5\"/><circle cx=\"290\" cy=\"28\" r=\"5\" fill=\"#4a9f6e\" opacity=\"0.5\"/><line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"70\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/><line x1=\"180\" y1=\"22\" x2=\"180\" y2=\"50\" stroke=\"#e07b3a\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/><line x1=\"290\" y1=\"28\" x2=\"290\" y2=\"60\" stroke=\"#4a9f6e\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "雜訊環境下，哪種量子演算法最能找到量子系統的基態？",
+        "en": "Which Quantum Algorithm Best Prepares Ground States Under Noise?",
+        "zh-CN": "噪声环境下，哪种量子算法最能找到量子系统的基态？",
+        "ja": "ノイズ環境下でどの量子アルゴリズムが基底状態を最もうまく準備できるか？",
+        "ko": "노이즈 환경에서 어떤 양자 알고리즘이 기저 상태 준비에 가장 뛰어난가?"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 物理量子",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 物理量子",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자물리"
+      },
+      "tech": {
+        "zh-TW": "本研究以可精確求解的二次費米子哈密頓量為模型，在去極化雜訊條件下，系統性比較冷卻演算法、絕熱演算法與最佳化演算法在基態製備上的表現。研究推導出相對能量誤差與雜訊率的縮放關係，並以數值模擬驗證，特別關注跨越量子相變的兩個相區中各算法的優劣差異。",
+        "en": "Using an exactly solvable family of quadratic fermionic Hamiltonians under depolarizing noise, this study systematically benchmarks cooling, adiabatic, and optimization algorithms for ground-state preparation. It derives analytical scaling relations between achievable relative energy error and noise rate, validated by numerical simulations, with a focus on algorithm performance across two phases separated by a quantum phase transition.",
+        "zh-CN": "本研究以可精确求解的二次费米子哈密顿量为模型，在去极化噪声条件下，系统性比较冷却算法、绝热算法与优化算法在基态制备上的表现。研究推导出相对能量误差与噪声率的缩放关系，并以数值模拟验证，重点关注跨越量子相变的两个相区中各算法的优劣差异。",
+        "ja": "脱分極ノイズ下で厳密に解ける二次フェルミオンハミルトニアンを用い、冷却・断熱・最適化の各アルゴリズムによる基底状態準備の性能を系統的に比較した。到達可能な相対エネルギー誤差とノイズ率のスケーリング関係を解析的に導出し、数値シミュレーションで検証。量子相転移を挟む2つの相でのアルゴリズム優劣にも注目した。",
+        "ko": "탈분극 노이즈 조건에서 정확히 풀 수 있는 이차 페르미온 해밀토니안을 모델로, 냉각·단열·최적화 알고리즘의 기저 상태 준비 성능을 체계적으로 비교하였다. 달성 가능한 상대 에너지 오차와 노이즈율 간의 스케일링 관계를 해석적으로 도출하고 수치 시뮬레이션으로 검증하였으며, 양자 상전이를 사이에 둔 두 위상에서의 알고리즘 성능 차이에 주목하였다."
+      },
+      "plain": {
+        "zh-TW": "想像量子電腦是一台超精密的音叉，它的目標是找到某段旋律的「最低音」——也就是量子系統的基態，那是系統能量最低、最穩定的狀態。問題是，現實世界充滿雜訊，就像有人一直在旁邊敲牆壁，讓音叉不斷走音。科學家們發展了三大類演算法來應對：「冷卻法」像是把音叉泡進冰水慢慢降溫；「絕熱法」像是非常緩慢地調整琴弦；「最佳化法」則像是反覆試錯找出最佳位置。這篇研究第一次在有雜訊的情況下，同時拿這三種方法賽跑，看誰最準確。結果發現，答案不是固定的——取決於系統處於哪個「相」，就像冰和水是同種物質的不同狀態，在「普通相」絕熱法勝出，而在靠近量子相變時，各方法都面臨更大挑戰。這項研究為未來量子電腦的演算法選擇提供了科學依據，讓工程師知道在什麼條件下該用哪把鑰匙開哪把鎖。",
+        "en": "Imagine a quantum computer as an ultra-precise tuning fork whose goal is to find the lowest note of a melody — the ground state, the most stable, lowest-energy configuration of a quantum system. The problem is that the real world is full of noise, like someone constantly banging on the wall and throwing the fork out of tune. Scientists have developed three families of algorithms to tackle this: cooling methods (like dipping the fork in ice water), adiabatic methods (like adjusting strings extremely slowly), and optimization methods (like trial-and-error). This study is the first to race all three head-to-head under realistic noise. The winner? It depends — just as ice and water are the same substance in different states, in the trivial phase the adiabatic approach wins, while near a quantum phase transition all methods struggle more. This gives engineers a scientific roadmap for choosing the right algorithm for the right quantum hardware conditions.",
+        "zh-CN": "想象量子计算机是一把超精密音叉，目标是找到某段旋律的「最低音」——也就是量子系统的基态，那是系统能量最低、最稳定的状态。现实世界充满噪声，就像有人一直在旁边敲墙，让音叉不断跑调。科学家们发展了三大类算法：「冷却法」像把音叉泡进冰水；「绝热法」像非常缓慢地调整琴弦；「最优化法」像反复试错找最佳位置。这篇研究首次在有噪声的条件下让三种方法同台竞技。结果发现答案并不固定——就像冰和水是同种物质的不同状态，在「平凡相」绝热法胜出，靠近量子相变时所有方法都面临更大挑战。这为未来量子计算机的算法选择提供了科学依据。",
+        "ja": "量子コンピュータを超精密な音叉に例えると、その目標はある旋律の「最低音」、つまり量子系の基底状態（最もエネルギーが低く安定した状態）を見つけることです。現実にはノイズが絶えず、誰かが壁を叩き続けるように音叉を狂わせます。科学者たちは3種類のアルゴリズムで対抗してきました：冷却法（音叉を氷水に浸す）、断熱法（弦を極めてゆっくり調整する）、最適化法（試行錯誤で最良点を探す）。この研究は初めてノイズがある環境で3つを同時に比較しました。結果は一概には言えず、系の「相」によって勝者が変わります。これは量子コンピュータのアルゴリズム選択に科学的な指針を与える重要な成果です。",
+        "ko": "양자 컴퓨터를 초정밀 음차라고 상상해 보세요. 목표는 어떤 멜로디의 '가장 낮은 음', 즉 양자 시스템의 기저 상태(에너지가 가장 낮고 안정적인 상태)를 찾는 것입니다. 문제는 현실 세계가 온갖 노이즈로 가득해 음차가 계속 이탈한다는 점입니다. 과학자들은 세 가지 알고리즘으로 맞섰습니다: 냉각법(음차를 얼음물에 담그기), 단열법(현을 매우 천천히 조정하기), 최적화법(시행착오로 최적점 찾기). 이 연구는 노이즈 환경에서 세 방법을 처음으로 동시에 비교했습니다. 결과는 고정적이지 않으며, 시스템의 '상(phase)'에 따라 승자가 달라졌습니다. 이는 미래 양자 컴퓨터의 알고리즘 선택에 과학적 근거를 제공하는 중요한 성과입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 沒有放諸四海皆準的量子演算法——在雜訊環境下，了解系統所處的「相」比選擇演算法本身更重要。",
+        "en": "💡 No quantum algorithm is universally best under noise — knowing which phase your system is in matters more than picking a favorite algorithm.",
+        "zh-CN": "💡 噪声环境下不存在放之四海皆准的量子算法——了解系统所处的「相」比选择算法本身更重要。",
+        "ja": "💡 ノイズ下で万能な量子アルゴリズムは存在しない——どの「相」にいるかを知ることが、アルゴリズム選びより重要だ。",
+        "ko": "💡 노이즈 환경에서 만능 양자 알고리즘은 없다 — 어떤 알고리즘을 고르느냐보다 시스템이 어느 '상'에 있는지를 아는 것이 더 중요하다."
+      }
+    },
+    {
+      "id": "neuro-260622",
+      "domain": "neuro",
+      "day": "2026-06-22",
+      "author": "Fedor Buzaev, Dmitry Efremenko et al.",
+      "ref": "arXiv:2606.20442v1",
+      "url": "https://arxiv.org/abs/2606.20442v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#ffffff\" opacity=\"0.15\"/><circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#ce93d8\" opacity=\"0.9\"/><rect x=\"100\" y=\"60\" width=\"14\" height=\"40\" rx=\"4\" fill=\"#6a1b9a\" opacity=\"0.7\"/><rect x=\"120\" y=\"50\" width=\"14\" height=\"50\" rx=\"4\" fill=\"#6a1b9a\" opacity=\"0.5\"/><rect x=\"140\" y=\"70\" width=\"14\" height=\"30\" rx=\"4\" fill=\"#6a1b9a\" opacity=\"0.7\"/><rect x=\"160\" y=\"45\" width=\"14\" height=\"55\" rx=\"4\" fill=\"#ab47bc\" opacity=\"0.8\"/><rect x=\"180\" y=\"65\" width=\"14\" height=\"35\" rx=\"4\" fill=\"#6a1b9a\" opacity=\"0.5\"/><polyline points=\"215,100 230,65 245,85 260,50 275,70 290,40 305,55\" fill=\"none\" stroke=\"#ce93d8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"290\" cy=\"40\" r=\"7\" fill=\"#ffcc80\" opacity=\"0.95\"/><circle cx=\"260\" cy=\"50\" r=\"5\" fill=\"#ab47bc\" opacity=\"0.8\"/><line x1=\"95\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"#6a1b9a\" stroke-width=\"1.5\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "物理神經網路的「超參數自動調校」：讓AI更穩定地解偏微分方程",
+        "en": "Smarter Hyperparameter Tuning for Physics-Informed Neural Networks via Evolutionary Optimization",
+        "zh-CN": "物理神经网络的「超参数自动调校」：让AI更稳定地求解偏微分方程",
+        "ja": "物理情報ニューラルネットワークの超パラメータを進化的最適化で自動調整する",
+        "ko": "물리 정보 신경망의 초매개변수를 진화 전략으로 자동 최적화하기"
+      },
+      "tag": {
+        "zh-TW": "🧠 AI與科學計算",
+        "en": "🧠 AI & Scientific Computing",
+        "zh-CN": "🧠 AI与科学计算",
+        "ja": "🧠 AIと科学計算",
+        "ko": "🧠 AI 및 과학 계산"
+      },
+      "tech": {
+        "zh-TW": "本研究針對物理知識嵌入神經網路（PINNs）訓練不穩定、對超參數極度敏感的問題，提出以演化演算法（如基因演算法、差分演化）為基礎的兩階段超參數最佳化策略。外層以演化搜尋探索異質超參數空間，內層穩定訓練PDE求解器，有效跳脫局部最優，提升收斂穩定性。",
+        "en": "This work addresses PINNs' notorious sensitivity to architectural and optimization hyperparameters by proposing a two-stage evolutionary hyperparameter optimization framework. Outer-loop evolutionary algorithms (e.g., genetic algorithms, differential evolution) explore the heterogeneous hyperparameter space as a black-box problem, while the inner loop trains the PINN to solve PDEs, enabling escape from suboptimal local minima and improved convergence stability.",
+        "zh-CN": "本研究针对物理知识嵌入神经网络（PINNs）训练不稳定、对超参数极度敏感的问题，提出以进化算法（如遗传算法、差分进化）为基础的两阶段超参数优化策略。外层以进化搜索探索异质超参数空间，内层稳定训练PDE求解器，有效跳出局部最优，提升收敛稳定性。",
+        "ja": "本研究はPINNsのアーキテクチャと最適化超パラメータへの高い感受性に対処するため、進化的アルゴリズム（遺伝的アルゴリズム・差分進化等）を用いた二段階超パラメータ最適化フレームワークを提案する。外側ループが異質な超パラメータ空間をブラックボックス問題として探索し、内側ループでPDE求解器を訓練することで局所最適からの脱出と収束安定性の向上を実現する。",
+        "ko": "이 연구는 물리 정보 신경망(PINNs)의 초매개변수 민감성 및 불안정한 수렴 문제를 해결하기 위해 유전 알고리즘·차분 진화 등의 진화 알고리즘 기반 2단계 초매개변수 최적화 전략을 제안한다. 외부 루프는 이질적 초매개변수 공간을 블랙박스 문제로 탐색하고 내부 루프는 PDE 솔버를 훈련시켜 지역 최적에서 탈출하고 수렴 안정성을 높인다."
+      },
+      "plain": {
+        "zh-TW": "想像你要訓練一隻「懂物理的AI」來幫你解複雜的流體或熱傳方程式，這就是物理神經網路（PINNs）在做的事。但這隻AI非常挑剔——網路層數、學習率、損失函數的權重……任何一個參數設錯，它就可能學歪或根本學不動，就像一台精密鋼琴只要有一根弦調錯就全部走音。科學家過去只能靠手動猜測或簡單搜尋來調這些「旋鈕」，但面對幾十個旋鈕同時交互影響，這根本是大海撈針。這篇論文的創意在於：借鑒生物演化的智慧，讓一群「候選旋鈕組合」像生物族群一樣競爭、交配、突變，自動演化出最佳設定。這種兩階段策略讓AI不再卡在「差不多好」的陷阱裡，而能真正找到更優解。這對工程模擬、氣候建模、醫療影像重建等需要精確求解方程式的領域都極為重要。",
+        "en": "Imagine training an AI that must not only learn from data but also obey the laws of physics — like teaching a student who has to solve differential equations while memorizing the rules of thermodynamics. These Physics-Informed Neural Networks (PINNs) are powerful but notoriously finicky: tweak the wrong setting and the training either stalls or diverges completely, like a recipe where a tiny change in oven temperature ruins the whole dish. Scientists used to tune dozens of knobs by hand or with simple search, which easily gets stuck in 「good enough」 traps. This paper borrows from nature: a population of candidate settings evolves like organisms — competing, mating, and mutating — until the best configuration emerges. This two-stage evolutionary strategy helps PINNs converge reliably, which matters enormously for engineering simulations, climate modeling, and medical imaging reconstruction.",
+        "zh-CN": "想象你要训练一只「懂物理的AI」来帮你解复杂的流体或热传方程，这就是物理神经网络（PINNs）在做的事。但这只AI非常挑剔——网络层数、学习率、损失函数的权重……任何一个参数设错，它可能学歪或根本学不动，就像一台精密钢琴只要有一根弦调错就全部走音。科学家过去只能靠手动猜测或简单搜索来调这些「旋钮」，但面对几十个旋钮同时交互影响，简直是大海捞针。这篇论文的创意在于：借鉴生物进化的智慧，让一群「候选旋钮组合」像生物种群一样竞争、交配、突变，自动进化出最佳设定。这种两阶段策略让AI不再困在「差不多好」的陷阱里，对工程模拟、气候建模、医疗影像重建等领域极为重要。",
+        "ja": "物理法則を守りながら方程式を解く「物理を知るAI」を訓練すると想像してください。これがPINNsの目指すことです。しかしこのAIは非常に気難しく、層の数・学習率・損失の重みなどパラメータ一つ間違えるだけで学習が止まったり暴走したりします。まるで精密なピアノの弦を一本でも狂わせると全体が音外れになるようなもの。従来は数十個の「つまみ」を手動で調整するしかなく、局所的な罠に嵌まりがちでした。この論文は生物進化の知恵を借り、候補となる設定の「集団」が競争・交配・突然変異を繰り返して最良の組み合わせへと進化する二段階最適化戦略を提案します。工学シミュレーションや気候モデリング、医療画像再構成など方程式の精密な求解が必要な分野に大きな恩恵をもたらします。",
+        "ko": "물리 법칙을 지키면서 방정식을 푸는 「물리를 아는 AI」를 훈련한다고 상상해보세요. 이것이 물리 정보 신경망(PINNs)의 목표입니다. 그런데 이 AI는 매우 까다로워서 층 수, 학습률, 손실 가중치 중 하나만 잘못 설정해도 학습이 멈추거나 발산해버립니다. 마치 정밀한 피아노 줄 하나만 틀어져도 전체 음이 어긋나는 것처럼요. 기존에는 수십 개의 「조절 손잡이」를 손으로 맞추다 보니 「적당히 좋은」 함정에 쉽게 빠졌습니다. 이 논문은 생물 진화의 지혜를 빌려, 후보 설정들이 경쟁·교배·돌연변이를 반복하며 최적 조합으로 진화하는 2단계 전략을 제안합니다. 공학 시뮬레이션, 기후 모델링, 의료 영상 재구성 등 정확한 방정식 풀이가 필요한 분야에 매우 중요한 성과입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當問題太複雜、梯度無從下手，「模仿演化」的盲目搜尋反而比聰明的數學更可靠。",
+        "en": "💡 When a problem is too complex for gradients to guide, mimicking blind evolution often outperforms even the cleverest mathematical optimization.",
+        "zh-CN": "💡 当问题太复杂、梯度无从下手时，「模仿进化」的盲目搜索反而比聪明的数学更可靠。",
+        "ja": "💡 勾配が手がかりにならないほど複雑な問題では、「進化を模倣する」盲目的な探索が賢い数学的最適化を上回ることがある。",
+        "ko": "💡 기울기가 길을 잃을 만큼 복잡한 문제에서는, 진화를 흉내 낸 맹목적 탐색이 오히려 가장 영리한 수학적 최적화를 능가한다."
+      }
+    },
+    {
+      "id": "space-260622",
+      "domain": "space",
+      "day": "2026-06-22",
+      "author": "Caroline Dorn, Aaron Werlen et al.",
+      "ref": "arXiv:2606.20464v1",
+      "url": "https://arxiv.org/abs/2606.20464v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#1a237e\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"80\" r=\"28\" fill=\"#283593\" opacity=\"0.9\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#3949ab\" opacity=\"0.95\"/><ellipse cx=\"170\" cy=\"80\" rx=\"60\" ry=\"14\" fill=\"none\" stroke=\"#42a5f5\" stroke-width=\"2\" opacity=\"0.7\"/><ellipse cx=\"170\" cy=\"80\" rx=\"80\" ry=\"20\" fill=\"none\" stroke=\"#80deea\" stroke-width=\"1.2\" opacity=\"0.5\"/><circle cx=\"82\" cy=\"58\" r=\"9\" fill=\"#26c6da\" opacity=\"0.85\"/><circle cx=\"82\" cy=\"58\" r=\"5\" fill=\"#b2ebf2\" opacity=\"0.9\"/><circle cx=\"258\" cy=\"52\" r=\"7\" fill=\"#8d6e63\" opacity=\"0.85\"/><circle cx=\"258\" cy=\"52\" r=\"3.5\" fill=\"#d7ccc8\" opacity=\"0.9\"/><circle cx=\"50\" cy=\"108\" r=\"6\" fill=\"#212121\" opacity=\"0.7\"/><circle cx=\"50\" cy=\"108\" r=\"2.5\" fill=\"#757575\" opacity=\"0.9\"/><circle cx=\"290\" cy=\"112\" r=\"8\" fill=\"#1565c0\" opacity=\"0.8\"/></svg>",
+      "title": {
+        "zh-TW": "岩石、冰水、還是煤煙？——行星的「出生材料」決定大氣樣貌",
+        "en": "Rock, Water, or Soot: How a Planet's Building Blocks Shape Its Atmosphere",
+        "zh-CN": "岩石、冰水还是煤烟？——行星的「诞生材料」决定大气面貌",
+        "ja": "岩・氷・すすで変わる惑星大気：サブネプチューンの多様性を解明",
+        "ko": "암석, 물, 검댕으로 만들어진 행성: 대기 다양성의 비밀"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문·우주"
+      },
+      "tech": {
+        "zh-TW": "研究團隊以岩石、水冰與難熔碳（「煤煙」）三種原行星盤物質的不同比例，模擬次海王星級行星的內部結構與大氣化學組成。透過全球化學平衡計算與大氣結構模型，預測各種形成環境下可觀測的分子特徵，並與詹姆斯韋伯太空望遠鏡（JWST）偵測到的甲烷（CH₄）與二氧化碳（CO₂）訊號比對。",
+        "en": "The team modeled sub-Neptune interiors and atmospheres assembled from varying proportions of rock, water ice, and refractory carbon (「soot」). Using global chemical equilibrium calculations coupled with atmospheric structure models, they predicted observable molecular signatures under different formation conditions and compared them with JWST detections of CH₄ and CO₂.",
+        "zh-CN": "研究团队以岩石、水冰与难熔碳（「煤烟」）三种原行星盘物质的不同比例，模拟次海王星级行星的内部结构与大气化学组成。通过全球化学平衡计算与大气结构模型，预测各种形成环境下可观测的分子特征，并与詹姆斯韦伯太空望远镜（JWST）探测到的甲烷与二氧化碳信号进行比对。",
+        "ja": "研究チームは岩石・水氷・難熔性炭素（すす）の配合比を変えてサブネプチューンの内部構造と大気化学組成をモデル化した。全球化学平衡計算と大気構造モデルを組み合わせ、形成環境ごとの観測可能な分子シグネチャーを予測し、JWSTが検出したCH₄とCO₂のシグナルと比較した。",
+        "ko": "연구팀은 암석, 물얼음, 난융성 탄소(「검댕」)의 비율을 달리하여 서브넵튠 행성의 내부 구조와 대기 화학 조성을 모델링했다. 전구 화학 평형 계산과 대기 구조 모델을 결합해 다양한 형성 환경에서 관측 가능한 분자 신호를 예측하고, JWST가 탐지한 CH₄와 CO₂ 신호와 비교했다."
+      },
+      "plain": {
+        "zh-TW": "想像你在烤蛋糕：用的是全麥麵粉、純水，還是加了大量巧克力粉，烤出來的口感截然不同。行星誕生時也是如此——宇宙中的「材料包」含有岩石碎屑、水冰，以及一種叫做「煤煙」的碳質顆粒，不同比例的組合會決定這顆行星長出什麼樣的大氣層。科學家發現，富含水分的行星誕生地容易產生富含甲烷的大氣，而誕生在「乾燥」岩石區的行星則大氣組成截然不同。JWST近年在幾顆次海王星（比地球大、比海王星小的行星）上偵測到甲烷與二氧化碳，這項新研究提供了一把「解碼鑰匙」：只要看大氣成分，就能反推這顆行星當初在哪個星盤區域誕生。這很重要，因為太陽系外有無數這類行星，它們是否宜居、表面有沒有海洋，都藏在大氣光譜裡。未來望遠鏡觀測到的每一個分子訊號，都可能是一封來自行星誕生地的「出生證明」。",
+        "en": "Think of baking bread: the same oven produces very different loaves depending on whether you use whole wheat flour, pure water, or a hefty scoop of charcoal powder. Planet formation works similarly — the raw materials in a protoplanetary disk include rocky dust, water ice, and sooty carbon particles, and their proportions determine what kind of atmosphere a planet ends up with. Scientists found that planets born in water-rich regions tend to develop methane-rich atmospheres, while those formed in dry, rocky zones look chemically very different. JWST recently spotted methane and carbon dioxide in several sub-Neptunes — planets bigger than Earth but smaller than Neptune — and this new study provides a 「decoder ring」: the atmospheric chemistry tells you where the planet was born in its disk. This matters enormously because sub-Neptunes are the most common planet type in the galaxy, and understanding their atmospheres is a key step toward finding habitable worlds. Every molecular signal captured by future telescopes could be a 「birth certificate」 from across the cosmos.",
+        "zh-CN": "想象你在烤面包：用全麦面粉、纯水，还是加入大量木炭粉，烤出来的效果截然不同。行星诞生时也是如此——宇宙中的「原料包」含有岩石碎屑、水冰以及一种叫做「煤烟」的碳质颗粒，不同比例的组合决定了行星最终会拥有什么样的大气层。科学家发现，诞生于富水区域的行星容易形成富含甲烷的大气，而诞生于干燥岩石区的行星大气成分则大相径庭。JWST近年在几颗次海王星（比地球大、比海王星小的行星）上探测到甲烷与二氧化碳，这项新研究提供了一把「解码钥匙」：只需看大气成分，便能反推行星当初诞生于星盘的哪个区域。这非常重要，因为次海王星是银河系中最常见的行星类型，破解其大气是寻找宜居世界的关键一步。",
+        "ja": "パンを焼くとき、全粒粉・水・大量の炭粉末を使えばまったく違う仕上がりになる。惑星の誕生も同じで、原始惑星系円盤にある岩石・水氷・すすの配合比が、その惑星の大気の「味」を決める。水が豊富な場所で生まれた惑星はメタン豊富な大気を持ちやすく、乾燥した岩石帯生まれの惑星とは化学組成が大きく異なることが分かった。JWSTはすでにいくつかのサブネプチューンでCH₄とCO₂を検出しており、この研究はその「解読辞書」となる。大気組成を見れば、惑星がどの円盤領域で生まれたかを逆算できるのだ。サブネプチューンは銀河系で最も多い惑星タイプであり、その大気解読は宜居可能世界の探索につながる重要な一歩だ。",
+        "ko": "빵을 구울 때 통밀가루, 물, 숯가루의 배합에 따라 전혀 다른 결과물이 나오듯, 행성도 태어날 때 쓰인 재료의 비율에 따라 완전히 다른 대기를 갖게 된다. 원시행성계 원반 속 암석 먼지, 물얼음, 검댕 탄소 입자의 조합이 행성 대기의 화학 성분을 결정한다는 것이다. 물이 풍부한 환경에서 태어난 행성은 메탄이 많은 대기를 갖기 쉬운 반면, 건조한 암석 지대 출신 행성은 전혀 다른 성분을 보인다. JWST가 최근 서브넵튠 여러 개에서 CH₄와 CO₂를 감지했는데, 이 연구는 그 신호를 해독하는 「출생증명서 해독기」를 제공한다. 은하에서 가장 흔한 행성 유형인 서브넵튠의 대기를 이해하는 것은 생명 거주 가능 행성 탐색의 핵심 열쇠다."
+      },
+      "insight": {
+        "zh-TW": "💡 行星的大氣不只是空氣——它是一部記錄誕生地點與原始材料的「宇宙族譜」，JWST正幫助我們解讀每一顆行星的出生秘密。",
+        "en": "💡 A planet's atmosphere is not merely air — it is a cosmic 「family record」 encoding where and from what the planet was born, and JWST is now giving us the tools to read it.",
+        "zh-CN": "💡 行星的大气不只是空气——它是一部记录诞生地点与原始材料的「宇宙族谱」，JWST正帮助我们解读每一颗行星的诞生秘密。",
+        "ja": "💡 惑星の大気は単なる空気ではなく、どこで何から生まれたかを刻む「宇宙の戸籍」であり、JWSTはその解読を可能にしつつある。",
+        "ko": "💡 행성의 대기는 단순한 공기가 아니라 어디서 무엇으로 태어났는지를 새긴 「우주의 출생 기록」이며, JWST는 이제 그 기록을 읽어낼 도구를 우리에게 주고 있다."
+      }
+    },
+    {
+      "id": "tech-260622",
+      "domain": "tech",
+      "day": "2026-06-22",
+      "author": "Mahmoud AlaaEldin, Amy Inwood et al.",
+      "ref": "arXiv:2606.20450v1",
+      "url": "https://arxiv.org/abs/2606.20450v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"20\" y=\"70\" width=\"300\" height=\"8\" rx=\"4\" fill=\"#00695c\" opacity=\"0.35\"/><rect x=\"20\" y=\"95\" width=\"300\" height=\"8\" rx=\"4\" fill=\"#00695c\" opacity=\"0.35\"/><circle cx=\"80\" cy=\"74\" r=\"10\" fill=\"#00695c\"/><circle cx=\"80\" cy=\"99\" r=\"10\" fill=\"#00695c\"/><circle cx=\"190\" cy=\"74\" r=\"10\" fill=\"#26a69a\"/><circle cx=\"260\" cy=\"99\" r=\"10\" fill=\"#26a69a\"/><line x1=\"80\" y1=\"74\" x2=\"80\" y2=\"30\" stroke=\"#00695c\" stroke-width=\"3\" stroke-dasharray=\"4,3\"/><line x1=\"190\" y1=\"74\" x2=\"190\" y2=\"30\" stroke=\"#26a69a\" stroke-width=\"3\" stroke-dasharray=\"4,3\"/><line x1=\"260\" y1=\"99\" x2=\"260\" y2=\"140\" stroke=\"#26a69a\" stroke-width=\"3\" stroke-dasharray=\"4,3\"/><rect x=\"60\" y=\"14\" width=\"40\" height=\"16\" rx=\"3\" fill=\"#004d40\"/><rect x=\"170\" y=\"14\" width=\"40\" height=\"16\" rx=\"3\" fill=\"#004d40\"/><circle cx=\"160\" cy=\"140\" r=\"8\" fill=\"#ff8f00\" opacity=\"0.85\"/><circle cx=\"240\" cy=\"30\" r=\"8\" fill=\"#ff8f00\" opacity=\"0.85\"/><circle cx=\"310\" cy=\"140\" r=\"8\" fill=\"#ff8f00\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "天線會「走路」的基地台：讓每位用戶都公平上網的新技術",
+        "en": "Antennas That Move to You: Fair Wireless Access for All Users via Pinching-Antenna NOMA",
+        "zh-CN": "天线会「走路」的基站：让每位用户都公平上网的新技术",
+        "ja": "動くアンテナが公平な通信を実現：ピンチングアンテナNOMAシステム",
+        "ko": "안테나가 움직이는 기지국：모든 사용자에게 공평한 연결을 제공하는 신기술"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本論文研究「夾持天線系統（PAS）」結合非正交多址（NOMA）的多用戶下行傳輸問題。透過在波導管上動態調整夾持天線的位置，並同步優化基地台的預編碼矩陣，以最大化所有用戶中最低的通訊速率（max-min fairness），從而保障每位用戶的服務品質。",
+        "en": "This paper investigates a pinching-antenna system (PAS) combined with non-orthogonal multiple access (NOMA) for multi-user downlink communications. By jointly optimizing the physical positions of pinching antennas along waveguides and the base-station transmit precoding vectors, the proposed framework maximizes the minimum user rate to ensure fairness across all users.",
+        "zh-CN": "本论文研究「夹持天线系统（PAS）」结合非正交多址（NOMA）的多用户下行传输问题。通过在波导管上动态调整夹持天线的位置，并同步优化基站的预编码矩阵，以最大化所有用户中最低的通信速率（max-min fairness），从而保障每位用户的服务质量。",
+        "ja": "本論文は、ピンチングアンテナシステム（PAS）と非直交多元接続（NOMA）を組み合わせたマルチユーザ下りリンク通信を研究する。導波管上のアンテナ位置と基地局の送信プリコーディングを同時最適化し、全ユーザの最小通信レートを最大化することで公平性を保証する。",
+        "ko": "본 논문은 핀칭 안테나 시스템(PAS)과 비직교 다중 접속(NOMA)을 결합한 다중 사용자 하향링크 통신을 연구한다. 도파관 위 안테나 위치와 기지국 송신 프리코딩을 공동 최적화하여 모든 사용자의 최소 전송률을 최대화함으로써 공정성을 보장한다."
+      },
+      "plain": {
+        "zh-TW": "想像一座圖書館裡有幾條長長的書架軌道，管理員可以沿著軌道自由滑動一盞閱讀燈，把燈移到最需要光線的讀者旁邊。「夾持天線」就是這樣的概念——它是一種可以沿著細長波導管自由滑動、貼近使用者的迷你天線。傳統天線固定在天花板，距離角落的人很遠，訊號就弱；夾持天線則可以「走過去」幫他打光。更聰明的是，這套系統同時採用「非正交多址（NOMA）」技術，讓多位用戶共用同一條訊號頻道，就像多人可以同時在同一條跑道上用不同速度跑步，而不需要每人一條專屬跑道。本研究用數學優化方法，同時決定每根天線該停在哪個位置、基地台該怎麼分配訊號功率，讓「最弱勢的那位用戶」獲得最大的改善。這對未來工廠、倉庫、醫院等室內場景的無線網路布建意義重大，因為這些地方往往有遮蔽死角，訊號覆蓋極不均勻。",
+        "en": "Imagine a library with long shelf rails, where a librarian can slide a reading lamp to wherever a reader needs light the most. Pinching antennas work just like that — they are tiny radiating elements that can slide along a thin waveguide and reposition themselves close to any user. Traditional fixed antennas sit on the ceiling and leave corner users in the dark; pinching antennas can walk over to help. On top of that, the system uses NOMA technology, letting multiple users share the same signal channel simultaneously — like several runners sharing one track at different speeds instead of needing separate lanes. The researchers mathematically optimized both where each antenna should stop and how the base station should split its power, ensuring the worst-off user gets the biggest boost. This matters enormously for factories, warehouses, and hospitals, where obstacles create dead zones and signal coverage is highly uneven.",
+        "zh-CN": "想象一座图书馆里有几条长长的书架轨道，管理员可以沿着轨道自由滑动一盏阅读灯，把灯移到最需要光线的读者旁边。「夹持天线」就是这样的概念——它是一种可以沿着细长波导管自由滑动、贴近使用者的迷你天线。传统天线固定在天花板，距离角落的人很远，信号就弱；夹持天线则可以「走过去」帮他打光。更聪明的是，这套系统同时采用非正交多址（NOMA）技术，让多位用户共用同一条信号频道，就像多人可以同时在同一条跑道上用不同速度跑步。本研究用数学优化方法，同时决定每根天线该停在哪个位置、基站该怎么分配信号功率，让「最弱势的那位用户」获得最大改善，对未来工厂、仓库、医院等室内场景意义重大。",
+        "ja": "図書館の長い書架レールに沿って、司書が読書灯をスライドさせ、最も光が必要な読者のそばに移動させるイメージを思い浮かべてください。ピンチングアンテナはまさにそれで、細長い導波管に沿って自由に動き、ユーザーのそばに寄れる小型アンテナです。従来の固定アンテナは天井にあるため、隅の人には電波が届きにくいですが、ピンチングアンテナは「歩み寄る」ことができます。さらにNOMA技術で複数ユーザーが同じチャネルを共有し、最も弱いユーザーの通信速度を最大化するよう数学的に最適化されています。工場・倉庫・病院など遮蔽物が多い屋内環境の通信改善に大きく貢献します。",
+        "ko": "도서관의 긴 책장 레일을 따라 사서가 독서등을 가장 빛이 필요한 독자 곁으로 밀어주는 장면을 상상해보세요. 핀칭 안테나가 바로 그런 개념입니다. 가느다란 도파관을 따라 자유롭게 이동해 사용자 가까이 다가갈 수 있는 소형 안테나입니다. 기존 고정 안테나는 천장에 붙어 있어 구석의 사용자에게는 신호가 약하지만, 핀칭 안테나는 직접 다가갈 수 있습니다. 여기에 NOMA 기술로 여러 사용자가 같은 채널을 공유하며, 가장 약한 사용자의 전송률이 최대가 되도록 수학적으로 최적화합니다. 장애물이 많은 공장·창고·병원 같은 실내 환경의 통신 개선에 매우 중요한 연구입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的公平不是讓所有人「平均分配」，而是把資源主動送到最需要的人面前——無線網路的未來，或許就藏在這根會移動的小天線裡。",
+        "en": "💡 True fairness isn't about equal distribution — it's about actively bringing resources to whoever needs them most, and a tiny sliding antenna might just be the future of wireless equity.",
+        "zh-CN": "💡 真正的公平不是让所有人「平均分配」，而是把资源主动送到最需要的人面前——无线网络的未来，或许就藏在这根会移动的小天线里。",
+        "ja": "💡 真の公平とは平均的な分配ではなく、最も必要としている人にリソースを能動的に届けること——動くアンテナが無線通信の公平性の未来を切り開くかもしれない。",
+        "ko": "💡 진정한 공평함은 균등 분배가 아니라 가장 필요한 사람에게 자원을 능동적으로 가져다주는 것이며, 움직이는 작은 안테나가 무선 통신 형평성의 미래를 열 수 있다."
+      }
+    }
+  ]
+}
