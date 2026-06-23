@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-24",
+  "mode": "paper",
+  "paper_date": "2026-06-24",
+  "generated_at": "2026-06-24",
+  "cards": [
+    {
+      "id": "bio-260624",
+      "domain": "bio",
+      "day": "2026-06-24",
+      "author": "Ismail M Nur, Hotaka Kaji et al.",
+      "ref": "arXiv:2606.23114v1",
+      "url": "https://arxiv.org/abs/2606.23114v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"80\" cy=\"80\" r=\"48\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"3\" stroke-dasharray=\"6 3\"/><circle cx=\"80\" cy=\"80\" r=\"32\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"80\" r=\"10\" fill=\"#52b788\"/><ellipse cx=\"80\" cy=\"32\" rx=\"7\" ry=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><ellipse cx=\"80\" cy=\"128\" rx=\"7\" ry=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><ellipse cx=\"32\" cy=\"80\" rx=\"7\" ry=\"7\" fill=\"#52b788\" opacity=\"0.4\"/><ellipse cx=\"128\" cy=\"80\" rx=\"7\" ry=\"7\" fill=\"#52b788\" opacity=\"0.4\"/><path d=\"M148 80 Q180 50 210 80 Q240 110 270 80\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M148 80 Q180 55 210 80 Q240 105 270 80\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\" stroke-linecap=\"round\" opacity=\"0.5\"/><rect x=\"148\" y=\"68\" width=\"6\" height=\"24\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.8\"/><rect x=\"268\" y=\"68\" width=\"6\" height=\"24\" rx=\"3\" fill=\"#52b788\" opacity=\"0.9\"/><rect x=\"290\" y=\"60\" width=\"38\" height=\"40\" rx=\"8\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2\"/><circle cx=\"309\" cy=\"80\" r=\"10\" fill=\"#52b788\" opacity=\"0.25\"/><circle cx=\"309\" cy=\"80\" r=\"5\" fill=\"#52b788\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "生理時鐘的「防抖機制」：下游調控網路如何平滑細胞振盪的誤差",
+        "en": "The Body Clock's Stabilizer: How Output Networks Buffer Cellular Rhythm Variability",
+        "zh-CN": "生理时钟的「防抖机制」：下游调控网络如何平滑细胞振荡的误差",
+        "ja": "体内時計の「ブレ補正機能」：出力ネットワークが細胞リズムのばらつきを吸収する仕組み",
+        "ko": "생체시계의 「흔들림 방지 기능」: 하위 조절 네트워크가 세포 리듬 변동성을 완충하는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Sciences",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "本研究以數值模擬方式，分析一個自持振盪器（代表細胞生理時鐘）耦合至下游輸出網路後，週期變異性的變化。研究核心問題是：時鐘分子雜訊引發的週期波動，在經過下游調控網路時會被放大還是衰減？透過計算建模，團隊系統性地探討了輸出網路的拓撲結構對週期穩定性的影響。",
+        "en": "This study uses numerical simulation to analyze period variability in a self-sustained oscillator representing a cellular circadian clock coupled to a downstream output network. The central question is whether molecular noise-induced period fluctuations are amplified or attenuated as signals pass through downstream regulatory networks. Through computational modeling, the team systematically examined how the topology of output networks affects period stability.",
+        "zh-CN": "本研究以数值模拟方式，分析一个自持振荡器（代表细胞生理时钟）耦合至下游输出网络后，周期变异性的变化。研究核心问题是：时钟分子噪声引发的周期波动，经过下游调控网络时会被放大还是衰减？通过计算建模，团队系统性地探讨了输出网络的拓扑结构对周期稳定性的影响。",
+        "ja": "本研究は、細胞の概日時計を模した自律振動子に下流の出力ネットワークを接続した場合の周期変動を数値シミュレーションで解析した。分子ノイズによる周期のばらつきが下流の調節ネットワークを通過する際に増幅されるか減衰されるかを計算モデルで検討し、出力ネットワークのトポロジーが周期安定性に与える影響を体系的に調べた。",
+        "ko": "본 연구는 세포 일주기 시계를 모사한 자율 진동자에 하위 출력 네트워크를 연결했을 때의 주기 변동성을 수치 시뮬레이션으로 분석했다. 분자 소음에 의한 주기 변동이 하위 조절 네트워크를 거치면서 증폭되는지 감쇠되는지를 계산 모델로 검토하고, 출력 네트워크의 위상 구조가 주기 안정성에 미치는 영향을 체계적으로 탐구했다."
+      },
+      "plain": {
+        "zh-TW": "你的身體裡有一個「24小時鬧鐘」，每個細胞都在滴答作響。但這個鬧鐘不是完美的機械錶——分子層面的隨機抖動，就像齒輪上的細沙，會讓每個細胞的週期稍有差異。好比一支樂團裡，每位演奏者的節拍都稍微不一樣，最終合奏還能整齊嗎？這項研究發現，生理時鐘的「下游網路」——也就是時鐘訊號傳出去之後遇到的那些調控分子——扮演了指揮家的角色，能主動平滑掉這些誤差。這就像訊號經過一個「減震器」，讓輸出的節律比原始時鐘更穩定。這件事很重要，因為它告訴我們：身體不只有時鐘，還有一套容錯系統。理解這套系統，可能幫助我們解釋為何睡眠障礙、時差甚至癌症治療（許多藥物療效與時間點高度相關）會出現個體差異。未來，設計更精準的「定時給藥」策略，這份研究是重要的基礎。",
+        "en": "Every cell in your body runs its own tiny 24-hour clock, but these clocks are not perfect — random molecular jitter makes each cell tick at slightly different speeds. Imagine an orchestra where every musician plays at a slightly different tempo; can the ensemble still sound synchronized? This study found that the regulatory network downstream of the clock — the molecules that receive and relay the clock's signal — acts like a conductor, smoothing out those individual errors. It is like a shock absorber: the output rhythm can be more stable than the clock itself. This matters because it reveals that our bodies have a built-in error-correction system beyond the clock. Understanding it could explain why individuals respond differently to jet lag, shift work, or even cancer therapies that depend on precise timing. This research lays groundwork for designing smarter time-targeted medical treatments.",
+        "zh-CN": "你身体里的每个细胞都有一个「24小时闹钟」，但这个闹钟并不完美——分子层面的随机抖动会让每个细胞的节律稍有偏差。就好像一支乐团里每位演奏者的节拍都略有不同，最终合奏还能整齐吗？这项研究发现，生理时钟的「下游网络」——即时钟信号传出后遇到的调控分子——扮演了指挥家的角色，能主动平滑这些误差，就像一个「减震器」。这很重要，因为它告诉我们：身体不只有时钟，还有一套容错机制。理解这套机制，可能帮助我们解释睡眠障碍、时差反应乃至癌症治疗中的个体差异，并为未来「定时给药」策略提供重要基础。",
+        "ja": "あなたの体のすべての細胞は、独自の「24時間時計」を持っています。しかしこの時計は完璧ではなく、分子レベルのランダムなノイズが各細胞のリズムをわずかにずらします。オーケストラで全員のテンポが少しずつ違っても、演奏全体が整って聴こえるのはなぜでしょうか？この研究は、体内時計の「下流ネットワーク」——時計の信号を受け取って伝える分子群——が指揮者のような役割を果たし、ばらつきを吸収することを明らかにしました。これは「ショックアブソーバー」のようなもので、出力リズムを時計本体より安定させます。この発見は、時差ぼけや夜勤、さらにはがん治療の個人差を説明するヒントになり、将来の時間標的型医療の基盤となるでしょう。",
+        "ko": "우리 몸의 모든 세포는 각자 「24시간 시계」를 갖고 있지만, 이 시계는 완벽하지 않습니다. 분자 수준의 무작위 잡음이 각 세포의 리듬을 조금씩 다르게 만들기 때문입니다. 오케스트라에서 단원마다 박자가 미묘하게 달라도 전체 연주가 맞아떨어지는 것처럼, 과연 세포들의 합주도 가능할까요? 이 연구는 생체시계의 「하위 네트워크」——시계 신호를 받아 전달하는 조절 분자들——가 지휘자처럼 오차를 흡수하고 리듬을 안정화시킨다는 것을 밝혔습니다. 이는 몸에 시계뿐 아니라 오류 보정 시스템도 내장되어 있음을 의미합니다. 이 발견은 수면 장애, 시차증, 항암제 투여 시점 등 개인 차이를 설명하는 실마리가 될 수 있으며, 미래의 시간 맞춤형 의료 전략의 토대가 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 時鐘不需要完美，只要下游網路夠聰明——生命的精準往往藏在容錯機制裡，而非單一零件的精度中。",
+        "en": "💡 A clock doesn't need to be perfect if its downstream network is smart enough — biological precision often lives in error-correction, not in flawless parts.",
+        "zh-CN": "💡 时钟不需要完美，只要下游网络足够聪明——生命的精准往往藏在容错机制里，而非单一零件的精度中。",
+        "ja": "💡 時計が完璧でなくても、下流ネットワークが賢ければよい——生命の精密さは部品の完璧さではなく、誤り訂正の仕組みに宿っている。",
+        "ko": "💡 시계가 완벽하지 않아도 하위 네트워크가 충분히 영리하면 된다——생명의 정밀함은 부품의 완벽함이 아니라 오류 보정 메커니즘 속에 숨어 있다."
+      }
+    }
+  ]
+}
