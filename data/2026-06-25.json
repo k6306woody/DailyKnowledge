@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-25",
+  "mode": "paper",
+  "paper_date": "2026-06-25",
+  "generated_at": "2026-06-25",
+  "cards": [
+    {
+      "id": "ai-260625",
+      "domain": "ai",
+      "day": "2026-06-25",
+      "author": "Maggie Wang, Lars Osterberg et al.",
+      "ref": "arXiv:2606.24884v1",
+      "url": "https://arxiv.org/abs/2606.24884v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"80\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.18\"/><rect x=\"22\" y=\"62\" width=\"56\" height=\"16\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"22\" y=\"84\" width=\"56\" height=\"10\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.35\"/><rect x=\"22\" y=\"100\" width=\"56\" height=\"10\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.35\"/><rect x=\"22\" y=\"116\" width=\"56\" height=\"10\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.35\"/><polygon points=\"105,80 125,70 125,90\" fill=\"#e76f51\" opacity=\"0.85\"/><rect x=\"138\" y=\"55\" width=\"80\" height=\"70\" rx=\"10\" fill=\"#2a9d8f\" opacity=\"0.22\"/><circle cx=\"178\" cy=\"75\" r=\"18\" fill=\"#2a9d8f\" opacity=\"0.55\"/><line x1=\"165\" y1=\"75\" x2=\"191\" y2=\"75\" stroke=\"#ffffff\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"178\" y1=\"62\" x2=\"178\" y2=\"88\" stroke=\"#ffffff\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"178\" cy=\"108\" r=\"8\" fill=\"#f4a261\" opacity=\"0.9\"/><polygon points=\"240,80 260,70 260,90\" fill=\"#e76f51\" opacity=\"0.85\"/><rect x=\"270\" y=\"50\" width=\"50\" height=\"30\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.4\"/><rect x=\"270\" y=\"88\" width=\"50\" height=\"14\" rx=\"4\" fill=\"#f4a261\" opacity=\"0.55\"/><rect x=\"270\" y=\"108\" width=\"50\" height=\"14\" rx=\"4\" fill=\"#f4a261\" opacity=\"0.4\"/><circle cx=\"295\" cy=\"38\" r=\"10\" fill=\"#2a9d8f\" opacity=\"0.7\"/><line x1=\"295\" y1=\"48\" x2=\"295\" y2=\"50\" stroke=\"#2a9d8f\" stroke-width=\"2\"/></svg>",
+      "title": {
+        "zh-TW": "機器人自學新技能：可引導的視覺語言動作框架 InSight",
+        "en": "InSight: Robots That Teach Themselves New Skills via Steerable Vision-Language-Action Models",
+        "zh-CN": "机器人自学新技能：可引导的视觉语言动作框架 InSight",
+        "ja": "ロボットが自ら新スキルを習得：誘導可能なVLAフレームワーク「InSight」",
+        "ko": "로봇이 스스로 새 기술을 배운다: 유도 가능한 시각-언어-행동 프레임워크 InSight"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "InSight 將機器人演示動作自動切割為語意明確的「基元動作」（如「移動夾爪到碗邊」、「向上抬起」），並以視覺語言模型（VLM）引導模型逐步規劃並執行訓練資料以外的新技能。其核心在於讓視覺語言動作模型（VLA）在基元動作層級具備可被引導性，再透過 VLM 自動生成探索目標以實現自主技能獲取。",
+        "en": "InSight decomposes robot demonstrations into semantically labeled primitive actions (e.g., 「move gripper to bowl」, 「lift upward」) using VLM plan decomposition and end-effector poses, enabling VLAs to be steerable at the primitive level. A VLM-guided exploration stage then autonomously proposes and rehearses new skills beyond the training distribution.",
+        "zh-CN": "InSight 将机器人演示动作自动切割为语义明确的「基元动作」（如「移动夹爪到碗边」、「向上抬起」），并以视觉语言模型（VLM）引导模型逐步规划并执行训练数据以外的新技能。核心在于让视觉语言动作模型（VLA）在基元动作层级具备可引导性，再通过 VLM 自动生成探索目标实现自主技能获取。",
+        "ja": "InSightはVLMによる計画分解とエンドエフェクタの姿勢を用いて、デモンストレーションを意味的にラベル付けされた基本動作（例：「グリッパーをボウルに移動」「上に持ち上げる」）へ自動分割し、VLAを基本動作レベルで誘導可能にする。さらにVLMが新しい探索目標を自律的に提案し、学習データ外のスキルを自己習得する。",
+        "ko": "InSight는 VLM 계획 분해와 엔드이펙터 자세를 활용해 시연 동작을 의미 있는 기본 동작(예: 「그리퍼를 그릇으로 이동」, 「위로 들어올리기」)으로 자동 분할하여 VLA를 기본 동작 수준에서 유도 가능하게 만든다. 이후 VLM이 새로운 탐색 목표를 자율적으로 제안해 훈련 데이터 범위를 넘어선 기술을 스스로 습득한다."
+      },
+      "plain": {
+        "zh-TW": "想像你在教一個學徒做菜：你不只說「幫我做一碗湯」，而是一步一步示範——「先把鍋移到爐子上」、「倒水」、「加鹽」。InSight 就是讓機器人能把人類的示範動作自動拆解成這樣的「小步驟」，而且每個步驟都能用語言來描述和控制。更厲害的是，機器人學會這些小步驟之後，可以自己組合出從來沒被教過的新技能，就像學會了拼音就能念出沒學過的字。以前的機器人只能重複訓練資料裡的動作，遇到新情況就束手無策；現在它能主動「自修」，探索新技能。這對未來家庭服務機器人或工廠自動化意義重大——機器人不再需要工程師一一示範每個新任務，大大降低部署成本與門檻。",
+        "en": "Imagine teaching a robot assistant the way you'd teach a cooking apprentice: not just saying 「make soup」, but breaking it down into 「move the pot to the stove」, 「pour water」, 「add salt」. InSight does exactly this — it automatically slices human demonstrations into small, language-labeled steps. Once the robot masters these building blocks, it can combine them to attempt skills it was never directly taught, much like knowing the alphabet lets you read words you've never seen. Previous robots were stuck repeating only what was in their training data; InSight lets robots venture beyond that boundary and self-improve. This matters enormously for home-service robots and factory automation, where teaching every possible task from scratch is impractical and costly.",
+        "zh-CN": "想象你在教一个学徒做菜：你不只说「帮我做一碗汤」，而是一步步示范——「先把锅移到炉子上」、「倒水」、「加盐」。InSight 就是让机器人能把人类的示范动作自动拆解成这样的「小步骤」，并且每个步骤都能用语言描述和控制。更厉害的是，机器人学会这些小步骤之后，可以自己组合出从未被教过的新技能，就像学会了拼音就能念出没学过的字。以前的机器人只能重复训练数据里的动作；现在它能主动「自修」，探索新技能，大大降低了部署成本与门槛。",
+        "ja": "料理の見習いを教えるとき、「スープを作って」とだけ言うのではなく、「鍋をコンロに移して」「水を注いで」「塩を加えて」と一つひとつ教えますよね。InSightはまさにそれをロボットに実現します。人間のデモを小さな言語ラベル付きステップに自動分解し、ロボットがそのブロックを組み合わせて、直接教わっていない新しいスキルを自分で試せるようにします。これはひらがなを覚えれば初めて見る単語も読めるようなもの。従来のロボットは学習データの繰り返ししかできませんでしたが、InSightは自律的に新技能を探索・習得できます。家庭用サービスロボットや工場自動化の未来を大きく変える可能性があります。",
+        "ko": "요리 견습생을 가르칠 때 「국 끓여」라고만 하는 게 아니라, 「냄비를 화구로 옮겨」, 「물 부어」, 「소금 넣어」처럼 단계별로 알려주죠. InSight가 바로 이 방식을 로봇에게 적용합니다. 사람의 시연을 언어로 표현된 작은 동작 단위로 자동 분해하고, 로봇이 이 블록들을 조합해 한 번도 직접 배우지 않은 새 기술을 스스로 시도할 수 있게 합니다. 마치 자모를 익히면 처음 보는 단어도 읽을 수 있는 것처럼요. 기존 로봇은 학습 데이터 안에서만 움직였지만, InSight는 스스로 탐색하고 자기 계발합니다. 가정용 서비스 로봇과 공장 자동화의 미래를 크게 바꿀 수 있는 기술입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的智能不只是記住學過的動作，而是能把已知的「積木」重新組合，探索從未被教過的可能性。",
+        "en": "💡 True intelligence isn't just memorizing what you've been shown — it's recombining known building blocks to explore possibilities no one taught you.",
+        "zh-CN": "💡 真正的智能不只是记住学过的动作，而是能把已知的「积木」重新组合，探索从未被教过的可能性。",
+        "ja": "💡 真の知性とは学んだ動作を暗記するだけでなく、既知の「ブロック」を組み合わせ、教わっていない可能性を自ら探ることにある。",
+        "ko": "💡 진정한 지능이란 배운 동작을 암기하는 것이 아니라, 알고 있는 「블록」을 재조합해 아무도 가르쳐주지 않은 가능성을 스스로 탐색하는 것이다."
+      }
+    },
+    {
+      "id": "bio-260625",
+      "domain": "bio",
+      "day": "2026-06-25",
+      "author": "Shiyu Li, Ziqi Yan et al.",
+      "ref": "arXiv:2606.24779v1",
+      "url": "https://arxiv.org/abs/2606.24779v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"60\" cy=\"80\" r=\"36\" fill=\"#52b78830\" stroke=\"#52b788\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"62\" r=\"5\" fill=\"#52b788\"/><circle cx=\"44\" cy=\"74\" r=\"5\" fill=\"#52b788\"/><circle cx=\"44\" cy=\"92\" r=\"5\" fill=\"#52b788\"/><circle cx=\"60\" cy=\"100\" r=\"5\" fill=\"#52b788\"/><circle cx=\"76\" cy=\"92\" r=\"5\" fill=\"#52b788\"/><circle cx=\"76\" cy=\"74\" r=\"5\" fill=\"#52b788\"/><rect x=\"118\" y=\"30\" width=\"104\" height=\"100\" rx=\"10\" fill=\"#52b78820\" stroke=\"#52b788\" stroke-width=\"2\"/><rect x=\"130\" y=\"44\" width=\"80\" height=\"8\" rx=\"4\" fill=\"#52b78860\"/><rect x=\"130\" y=\"60\" width=\"60\" height=\"8\" rx=\"4\" fill=\"#52b78860\"/><rect x=\"130\" y=\"76\" width=\"70\" height=\"8\" rx=\"4\" fill=\"#52b78860\"/><rect x=\"130\" y=\"92\" width=\"50\" height=\"8\" rx=\"4\" fill=\"#52b78860\"/><rect x=\"130\" y=\"108\" width=\"65\" height=\"8\" rx=\"4\" fill=\"#52b78860\"/><polygon points=\"96,80 108,74 108,86\" fill=\"#52b788\"/><polygon points=\"232,80 244,74 244,86\" fill=\"#52b788\"/><circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"#f4a26120\" stroke=\"#f4a261\" stroke-width=\"2\"/><circle cx=\"280\" cy=\"80\" r=\"14\" fill=\"#f4a26140\" stroke=\"#f4a261\" stroke-width=\"1.5\"/><circle cx=\"280\" cy=\"80\" r=\"5\" fill=\"#f4a261\"/></svg>",
+      "title": {
+        "zh-TW": "AI 偵探破解先天缺陷之謎：DeepBD 自動排查致病基因變異",
+        "en": "AI Detective for Birth Defects: DeepBD Automates Genetic Variant Prioritization",
+        "zh-CN": "AI 侦探破解先天缺陷之谜：DeepBD 自动排查致病基因变异",
+        "ja": "先天性疾患のAI探偵：DeepBDが病因遺伝子変異を自動解析",
+        "ko": "AI 탐정이 선천성 결손 미스터리를 풀다：DeepBD 병원성 변이 자동 우선순위화"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Sciences",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "DeepBD 是一套以大型語言模型為核心的「有根據的代理工作流程」，能整合群體遺傳學、變異效應預測、基因—疾病關聯性、表型本體、細胞通路、蛋白質結構及臨床文獻等異質來源，對全外顯子或全基因組定序結果中的候選變異進行自動排序與診斷解釋。系統透過多步驟推理代理（agentic chain）逐層篩選，最終生成可溯源、可解釋的診斷報告，輔助臨床醫師在胎兒或新生兒表型資訊不完整的情況下做出決策。",
+        "en": "DeepBD is a grounded agentic workflow powered by large language models that integrates heterogeneous evidence sources—population genetics, variant-effect predictors, gene-disease validity, phenotype ontologies, pathway context, protein structure, and clinical literature—to automatically rank and interpret candidate variants from exome or genome sequencing. A multi-step reasoning agent chain filters variants layer by layer and generates traceable, explainable diagnostic reports to support clinicians working with incomplete fetal or neonatal phenotype data.",
+        "zh-CN": "DeepBD 是一套以大型语言模型为核心的「有根据的代理工作流程」，能整合群体遗传学、变异效应预测、基因—疾病关联性、表型本体、细胞通路、蛋白质结构及临床文献等异质来源，对全外显子或全基因组测序结果中的候选变异进行自动排序与诊断解释。系统通过多步骤推理代理逐层筛选，最终生成可溯源、可解释的诊断报告。",
+        "ja": "DeepBDは大規模言語モデルを中核とした「根拠付きエージェントワークフロー」であり、集団遺伝学・変異効果予測・遺伝子疾患妥当性・表現型オントロジー・細胞経路・タンパク質構造・臨床文献などの異質な証拠源を統合し、エクソームまたはゲノムシーケンシングの候補変異を自動ランク付け・解釈する。多段階推論エージェントが変異を層状にフィルタリングし、追跡可能で説明可能な診断レポートを生成する。",
+        "ko": "DeepBD는 대형 언어 모델 기반의 「근거 있는 에이전트 워크플로」로, 집단유전학·변이 효과 예측·유전자-질병 타당성·표현형 온톨로지·세포 경로·단백질 구조·임상 문헌 등 이질적 증거를 통합하여 엑솜·게놈 시퀀싱 결과에서 후보 변이를 자동 우선순위화하고 해석한다. 다단계 추론 에이전트가 변이를 단계적으로 걸러내고 추적 가능한 진단 보고서를 생성한다."
+      },
+      "plain": {
+        "zh-TW": "想像你是一位刑警，剛剛在犯罪現場找到了數十萬個指紋，但你只需要揪出那一個真正的兇手。先天性出生缺陷的基因診斷面臨同樣困境：全基因組定序一次能找到數百萬個基因變異，醫師卻必須在其中找出真正造成疾病的那個「壞傢伙」。更難的是，面對還沒出生或剛出生的嬰兒，症狀描述往往殘缺不全，就像案發現場的目擊者說不清楚嫌疑人長什麼樣。DeepBD 就像一位博學的 AI 偵探助理，同時翻閱數據庫、查閱醫學文獻、分析蛋白質結構，把各種線索交叉比對，替醫師把最可疑的變異排到最前面，並附上一份有憑有據的「偵查報告」。這對出生缺陷高達 6% 發生率的人類來說意義重大——越早確診，越快能給予精準治療或提供家庭遺傳諮詢，減少更多孩子受苦。",
+        "en": "Imagine a detective handed a million fingerprints from a crime scene and asked to find the one that matters. Genetic diagnosis of birth defects faces exactly this challenge: whole-genome sequencing can reveal millions of variants, but only one or a handful are actually causing the disease. To make things harder, the patient is often an unborn or newborn baby whose symptoms are barely visible yet—like a witness who can only give a vague description. DeepBD acts as a brilliant AI detective assistant: it simultaneously consults databases, scans medical literature, and analyzes protein structures, cross-referencing every clue to push the most suspicious variants to the top of the list, complete with a well-documented report. This matters enormously because birth defects affect roughly 6% of newborns worldwide—earlier and more accurate diagnosis means faster targeted treatment and better genetic counseling for families.",
+        "zh-CN": "想象你是一位刑警，刚在犯罪现场找到了数十万个指纹，却只需揪出真正的凶手。先天性出生缺陷的基因诊断面临同样困境：全基因组测序一次能找到数百万个基因变异，医生却必须从中找出真正致病的那个「坏家伙」。更难的是，面对还没出生或刚出生的婴儿，症状描述往往残缺不全，就像目击者说不清嫌疑人长什么样。DeepBD 就像一位博学的 AI 侦探助理，同时翻阅数据库、查阅医学文献、分析蛋白质结构，把各种线索交叉比对，替医生把最可疑的变异排到最前面，并附上一份有据可查的「侦查报告」。这对发生率高达 6% 的出生缺陷来说意义重大——越早确诊，越能给予精准治疗或家庭遗传咨询。",
+        "ja": "犯罪現場で100万個の指紋を渡され「真犯人を一人見つけろ」と言われたら？先天性欠損の遺伝子診断はまさにこの状況です。全ゲノム解析で何百万もの変異が見つかる一方、実際に病気を引き起こしているのはほんの一つか数個。しかも患者はまだ生まれたばかりか胎児で、症状の情報が極めて乏しい。DeepBDはまるで博識なAI探偵助手のように、データベース・医学文献・タンパク質構造を同時に調べ、すべての手がかりを照合して最も疑わしい変異を上位にリストアップし、根拠付きの「捜査報告書」を作成します。出生欠損は新生児の約6%に影響し、早期診断により精密治療や遺伝カウンセリングが可能になるため、この技術の意義は計り知れません。",
+        "ko": "범죄 현장에서 수백만 개의 지문을 건네받고 진짜 범인 하나를 찾으라는 상황을 상상해 보세요. 선천성 결손의 유전자 진단이 바로 그런 처지입니다. 전장 유전체 분석은 수백만 개의 변이를 찾아내지만, 실제로 질병을 일으키는 건 단 하나 혹은 소수입니다. 게다가 환자는 태아나 신생아라 증상 정보가 매우 부족하죠. DeepBD는 마치 박식한 AI 탐정 조수처럼 데이터베이스·의학 문헌·단백질 구조를 동시에 검색해 모든 단서를 교차 대조하고, 가장 의심스러운 변이를 상위에 올리며 근거 있는 진단 보고서를 작성합니다. 출생 결손은 신생아의 약 6%에 영향을 미치므로, 빠른 진단은 정밀 치료와 유전 상담으로 이어져 더 많은 아이들을 도울 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 在基因大海中找針，AI 的價值不在於取代醫師的判斷，而在於把最值得懷疑的那根針遞到醫師手裡。",
+        "en": "💡 Finding a needle in the genomic haystack—AI's true value lies not in replacing clinical judgment, but in handing the most suspicious needle directly to the clinician.",
+        "zh-CN": "💡 在基因大海中找针，AI 的价值不在于取代医生的判断，而在于把最值得怀疑的那根针递到医生手里。",
+        "ja": "💡 ゲノムという干し草の山から針を探すとき、AIの真価は医師の判断を置き換えることではなく、最も怪しい針を医師の手に渡すことにある。",
+        "ko": "💡 유전체라는 건초더미에서 바늘을 찾을 때, AI의 진정한 가치는 의사의 판단을 대체하는 것이 아니라 가장 의심스러운 바늘을 의사의 손에 쥐어주는 것이다."
+      }
+    },
+    {
+      "id": "phys-260625",
+      "domain": "phys",
+      "day": "2026-06-25",
+      "author": "Tsai-Chen Lee, Jacquelyn Ho et al.",
+      "ref": "arXiv:2606.24869v1",
+      "url": "https://arxiv.org/abs/2606.24869v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"10\" y=\"60\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"10\" y=\"60\" width=\"60\" height=\"40\" rx=\"8\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\"/><circle cx=\"40\" cy=\"80\" r=\"10\" fill=\"#ffffff\" opacity=\"0.9\"/><circle cx=\"40\" cy=\"80\" r=\"5\" fill=\"#4a7bbf\"/><rect x=\"90\" y=\"65\" width=\"4\" height=\"30\" rx=\"2\" fill=\"#e8a020\"/><rect x=\"104\" y=\"65\" width=\"4\" height=\"30\" rx=\"2\" fill=\"#e8a020\"/><rect x=\"118\" y=\"65\" width=\"4\" height=\"30\" rx=\"2\" fill=\"#e8a020\"/><rect x=\"132\" y=\"65\" width=\"4\" height=\"30\" rx=\"2\" fill=\"#e8a020\"/><rect x=\"146\" y=\"65\" width=\"4\" height=\"30\" rx=\"2\" fill=\"#e8a020\"/><ellipse cx=\"210\" cy=\"80\" rx=\"52\" ry=\"32\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\" opacity=\"0.8\"/><ellipse cx=\"210\" cy=\"80\" rx=\"52\" ry=\"12\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\" opacity=\"0.5\"/><circle cx=\"210\" cy=\"80\" r=\"8\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"210\" cy=\"48\" r=\"5\" fill=\"#e8a020\"/><circle cx=\"210\" cy=\"112\" r=\"5\" fill=\"#e8a020\"/><circle cx=\"258\" cy=\"80\" r=\"5\" fill=\"#e8a020\"/><line x1=\"265\" y1=\"80\" x2=\"305\" y2=\"80\" stroke=\"#4ab88a\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/><polygon points=\"305,75 318,80 305,85\" fill=\"#4ab88a\"/></svg>",
+      "title": {
+        "zh-TW": "量子電腦提速：光學共振腔讓中途量測與即時回饋快上千倍",
+        "en": "Quantum Speed Boost: Optical Cavity Enables Ultra-Fast Mid-Circuit Measurement and Feedforward",
+        "zh-CN": "量子计算提速：光学谐振腔让中途测量与实时反馈快上千倍",
+        "ja": "量子コンピュータを高速化：光学共振器で途中測定とフィードバックを超高速に",
+        "ko": "양자 컴퓨터 속도 혁신：광학 공진기로 중간 측정과 실시간 피드백을 초고속으로"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 物理量子",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 物理量子",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자 물리"
+      },
+      "tech": {
+        "zh-TW": "研究團隊將中性原子量子位元陣列耦合至高精細度光學共振腔，藉由局部光位移將資料量子位元調離共振腔共振頻率，在不干擾其相干性的前提下，對指定量子位元進行中途測量並即時將結果回饋至後續操作，將整個週期時間大幅壓縮至遠低於1毫秒。",
+        "en": "The team coupled a neutral-atom qubit array to a high-finesse optical cavity, using local light shifts to detune individual data qubits off cavity resonance, protecting their coherence while performing rapid mid-circuit measurements on selected qubits and feeding results back in real time, reducing the full cycle time well below 1 ms.",
+        "zh-CN": "研究团队将中性原子量子比特阵列耦合至高精细度光学谐振腔，利用局部光位移将数据量子比特调离谐振腔共振频率，在不干扰其相干性的前提下对指定量子比特进行中途测量，并将结果实时反馈至后续操作，将整个周期时间大幅压缩至远低于1毫秒。",
+        "ja": "研究チームは中性原子量子ビットアレイを高フィネス光学共振器に結合し、局所光シフトにより個々のデータ量子ビットを共振器の共鳴周波数からずらして干渉を防ぎながら、選択した量子ビットに対して高速な中間測定を実行し、結果をリアルタイムでフィードバックすることで、サイクル時間を1ミリ秒以下に大幅短縮した。",
+        "ko": "연구팀은 중성 원자 큐비트 배열을 고정밀 광학 공진기에 결합하고, 국소 광 이동을 이용해 개별 데이터 큐비트를 공진기 공명 주파수에서 이탈시켜 결맞음을 보호하면서 선택된 큐비트에 대한 고속 중간 측정을 수행하고 결과를 실시간으로 피드백하여 전체 사이클 시간을 1밀리초 이하로 대폭 단축했다."
+      },
+      "plain": {
+        "zh-TW": "想像你在玩一場複雜的棋局，規則是：只要某步棋落下後，你可以立刻「偷看」部分棋盤、並在下一步之前根據結果調整策略——這正是量子電腦「中途測量與回饋」的精髓。過去，中性原子量子電腦做到這件事需要超過1毫秒，聽起來很短，但對量子位元來說卻像整個宇宙的生命週期那麼漫長。這篇論文的突破在於：把一排中性原子放進一個超精密「光學共振腔」——就像把棋子放進一個能瞬間放大訊號的迴音室。不想被干擾的棋子，用一道光輕輕「撥開」，讓它暫時聽不到腔體的訊號，安全靜待。想測量的棋子則迅速被腔體感應，結果幾乎即時傳回電腦作決策。這讓量子糾錯、量子隱形傳態等關鍵技術的速度大幅提升。中途測量夠快，量子位元的脆弱狀態才來不及散掉，整台量子電腦才能真正「邊算邊修正」，成為可靠的計算工具。",
+        "en": "Imagine playing a complex board game where you can secretly peek at part of the board mid-game and immediately adjust your next move based on what you see — that is exactly what 「mid-circuit measurement and feedforward」 means for a quantum computer. In the past, neutral-atom quantum computers needed more than 1 millisecond for this peek-and-react cycle, which sounds fast but is an eternity for fragile quantum states. This paper places a row of neutral atoms inside a super-precise 「optical cavity」 — like putting game pieces inside an echo chamber that amplifies whispers into shouts. Atoms you do not want to disturb are gently nudged off-frequency by a beam of light so the cavity cannot sense them, keeping their delicate states intact. Atoms you want to measure are detected almost instantly, and the result is fed back to the computer in real time. This breakthrough dramatically speeds up quantum error correction and quantum teleportation protocols, bringing reliable, self-correcting quantum computers measurably closer to reality.",
+        "zh-CN": "想象你在下一盘复杂的棋局，规则是：某步棋落下后，你可以立刻「偷看」部分棋盘，并在下一步之前根据结果调整策略——这正是量子计算机「中途测量与反馈」的精髓。过去，中性原子量子计算机完成这一过程需要超过1毫秒，听起来很短，但对量子比特来说却漫长得危险。这篇论文的突破在于：把一排中性原子放入一个超精密「光学谐振腔」——就像把棋子放进一个能瞬间放大信号的回声室。不想被干扰的棋子用一道光轻轻「拨开」，让它暂时对腔体的信号「失聪」，安全待命。想测量的棋子则迅速被腔体感应，结果几乎即时反馈给计算机作决策。这让量子纠错、量子隐形传态等关键技术的速度大幅提升，使量子计算机真正能够「边算边纠错」。",
+        "ja": "複雑なボードゲームの途中で、盤面の一部をこっそり確認し、その結果をもとに次の一手をすぐ調整できると想像してください。それが量子コンピュータにおける「中間測定とフィードバック」の本質です。これまで中性原子量子コンピュータでは、こののぞき見と反応のサイクルに1ミリ秒以上かかっており、量子ビットの壊れやすい状態には致命的な長さでした。この論文では、原子の列を超精密な「光学共振器」――信号を瞬時に増幅するエコーチェンバー――に入れることで突破口を開きました。邪魔したくない原子は光でそっと周波数をずらし、共振器に感知されないよう保護します。測定したい原子はほぼ瞬時に検出され、結果がリアルタイムでコンピュータに送られます。この革新により、量子誤り訂正や量子テレポーテーションが劇的に高速化され、信頼性の高い量子コンピュータの実現に大きく近づきました。",
+        "ko": "복잡한 보드 게임 도중에 판의 일부를 몰래 들여다보고, 그 결과를 바탕으로 다음 수를 즉시 조정할 수 있다고 상상해 보세요. 이것이 바로 양자 컴퓨터의 「중간 측정과 피드백」의 핵심입니다. 과거에는 중성 원자 양자 컴퓨터가 이 과정을 완료하는 데 1밀리초 이상이 걸렸는데, 짧게 들리지만 취약한 양자 상태에게는 치명적으로 긴 시간입니다. 이 논문은 원자 배열을 초정밀 「광학 공진기」——신호를 순식간에 증폭하는 울림통——에 넣어 돌파구를 열었습니다. 건드리고 싶지 않은 원자는 빛으로 살짝 주파수를 벗어나게 해 공진기가 감지하지 못하도록 보호하고, 측정하고 싶은 원자는 거의 즉시 감지되어 결과가 실시간으로 컴퓨터에 전달됩니다. 이 혁신으로 양자 오류 수정과 양자 텔레포테이션 속도가 크게 향상되어 신뢰할 수 있는 양자 컴퓨터 실현에 한 걸음 더 다가섰습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 量子電腦真正的難關不只在「運算」，而在於能否在計算途中「即時監聽並糾錯」——速度，決定了量子世界裡一切糾錯協議的生死。",
+        "en": "💡 The real bottleneck in quantum computing is not just computation itself, but whether the machine can listen, measure, and correct itself fast enough mid-flight — speed is the lifeline of every quantum error-correction protocol.",
+        "zh-CN": "💡 量子计算真正的瓶颈不只在于「运算」，而在于能否在计算途中「实时监听并纠错」——速度，决定了量子世界里一切纠错协议的生死。",
+        "ja": "💡 量子コンピュータの真のボトルネックは計算そのものではなく、計算の途中でリアルタイムに測定・修正できるかどうかにある——速度こそが、すべての量子誤り訂正プロトコルの生命線だ。",
+        "ko": "💡 양자 컴퓨터의 진짜 병목은 연산 자체가 아니라, 계산 도중 실시간으로 감지하고 스스로 수정할 수 있는가에 있다——속도야말로 모든 양자 오류 수정 프로토콜의 생명선이다."
+      }
+    },
+    {
+      "id": "space-260625",
+      "domain": "space",
+      "day": "2026-06-25",
+      "author": "Salvador Curiel, María J. Rioja et al.",
+      "ref": "arXiv:2606.24862v1",
+      "url": "https://arxiv.org/abs/2606.24862v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#1a237e\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1.5\" opacity=\"0.4\"/><circle cx=\"170\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1\" opacity=\"0.25\"/><circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#3949ab\" stroke-width=\"0.8\" opacity=\"0.2\"/><circle cx=\"230\" cy=\"55\" r=\"8\" fill=\"#7986cb\" opacity=\"0.9\"/><ellipse cx=\"230\" cy=\"55\" rx=\"22\" ry=\"6\" fill=\"none\" stroke=\"#7986cb\" stroke-width=\"1.2\" opacity=\"0.6\"/><circle cx=\"95\" cy=\"105\" r=\"5\" fill=\"#90caf9\" opacity=\"0.85\"/><ellipse cx=\"95\" cy=\"105\" rx=\"14\" ry=\"4\" fill=\"none\" stroke=\"#90caf9\" stroke-width=\"1\" opacity=\"0.55\"/><line x1=\"40\" y1=\"30\" x2=\"290\" y2=\"30\" stroke=\"#7986cb\" stroke-width=\"0.6\" opacity=\"0.3\" stroke-dasharray=\"4,6\"/><circle cx=\"40\" cy=\"30\" r=\"3\" fill=\"#7986cb\" opacity=\"0.7\"/><circle cx=\"290\" cy=\"30\" r=\"3\" fill=\"#7986cb\" opacity=\"0.7\"/><circle cx=\"60\" cy=\"130\" r=\"2\" fill=\"#90caf9\" opacity=\"0.6\"/><circle cx=\"310\" cy=\"110\" r=\"2\" fill=\"#90caf9\" opacity=\"0.5\"/><circle cx=\"20\" cy=\"70\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "用SKA超長基線干涉儀精準「秤出」系外行星的存在",
+        "en": "Ultra-Precise Radio Astrometry to Hunt Exoplanets with SKA-VLBI",
+        "zh-CN": "用SKA超长基线干涉仪精准「称出」系外行星的存在",
+        "ja": "SKA-VLBIの超精密電波天文測定で系外惑星を間接検出する",
+        "ko": "SKA-VLBI 초정밀 전파 천문측정으로 외계행성을 간접 탐색하다"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究提出利用下一代平方公里陣列（SKA）的超長基線干涉測量（VLBI）技術，結合多波束綁定陣列波束（Tied Array Beams）與MultiView分析方法，對低質量恆星進行高精度無線電天體測量。透過追蹤恆星因受行星重力牽引而產生的微小位置擺動，可間接偵測木星級系外行星伴星，天體測量精度可提升約一個數量級。",
+        "en": "This study proposes using next-generation Square Kilometre Array (SKA) VLBI techniques, combined with multi-beam Tied Array Beams and MultiView analysis, to conduct ultra-precise radio astrometry of low-mass stars. By tracking subtle positional wobbles induced by planetary gravitational pull, the method indirectly detects Jovian-mass exoplanet companions with roughly an order-of-magnitude improvement in astrometric precision.",
+        "zh-CN": "本研究提出利用下一代平方千米阵列（SKA）的超长基线干涉测量（VLBI）技术，结合多波束绑定阵列波束与MultiView分析方法，对低质量恒星进行高精度射电天体测量。通过追踪恒星因受行星引力牵引产生的微小位置摆动，可间接探测木星级系外行星伴星，天体测量精度可提升约一个数量级。",
+        "ja": "本研究は、次世代の平方キロメートルアレイ（SKA）のVLBI技術と、マルチビームTied Array BeamsおよびMultiView解析を組み合わせ、低質量星の超高精度電波天文測定を行う手法を提案する。惑星の重力による恒星の微小な位置揺らぎを追跡することで木星型系外惑星を間接検出し、天文測定精度を約一桁向上させる。",
+        "ko": "이 연구는 차세대 평방킬로미터 배열(SKA)의 VLBI 기술과 다중 빔 묶음 배열 빔(Tied Array Beams) 및 MultiView 분석을 결합하여 저질량 항성의 초정밀 전파 천문측정을 수행하는 방법을 제안한다. 행성의 중력에 의해 항성이 미세하게 흔들리는 위치 변화를 추적함으로써 목성형 외계행성을 간접 탐지하며, 천문측정 정밀도를 약 10배 향상시킨다."
+      },
+      "plain": {
+        "zh-TW": "想像你在漆黑的夜裡遠遠看著一個人拿著燈籠，燈籠會隨著他的重心微微左右搖晃——如果旁邊有個看不見的人在拉他，燈籠的搖晃軌跡就會透露那個隱形人的存在。天文學家偵測系外行星，用的就是類似的邏輯：行星雖然太暗、太遠，直接看不到，但它的重力會讓母星一邊公轉、一邊輕輕「點頭」。這個「點頭」有多小？大約只有針尖在100公里外移動的距離！SKA是全球最大的無線電望遠鏡陣列，把分散各地的天線連結成一台跨洲巨型望遠鏡（VLBI），精度可以媲美用尺子量從地球到月球的距離卻只差一根頭髮。這項研究更進一步，利用多波束同時鎖定多顆參考星，消除大氣干擾，讓精度再提升10倍。這意味著我們未來不只能找到類木星這樣的大行星，連中等大小的行星也可能現形，大幅拓展我們所能觀測的系外行星種類。對於尋找宇宙中其他可能存在生命的世界，這是極為關鍵的一步。",
+        "en": "Imagine watching a lantern swinging in the dark from far away: if an invisible person is tugging on the lantern-holder, you can tell someone is there just by watching the wobble. Astronomers use the same idea to find exoplanets — a planet is too faint and distant to see directly, but its gravity makes the host star gently sway as they orbit their common center. That sway is incredibly tiny, like watching a pinhead shift by a hair's width from hundreds of kilometers away! SKA is the world's largest radio telescope network, linking antennas across continents into one giant eye (VLBI) with extraordinary precision. This research adds another trick: using multiple beams to lock onto several reference stars simultaneously, canceling out atmospheric distortions and boosting precision tenfold. That means we could soon detect not just Jupiter-sized worlds, but a much wider range of planetary companions around dim, nearby stars. Finding more planets, of more types, around more kinds of stars brings us closer to answering whether we are truly alone in the universe.",
+        "zh-CN": "想象你在漆黑的夜里远远看着一个人拿着灯笼，灯笼会随着他的重心微微左右摇晃——如果旁边有个看不见的人在拉他，灯笼的摇晃轨迹就会透露那个隐形人的存在。天文学家探测系外行星，用的就是类似的逻辑：行星虽然太暗、太远，直接看不到，但它的引力会让母星一边公转、一边轻轻「点头」。这个「点头」有多小？大约只有针尖在100公里外移动的距离！SKA是全球最大的射电望远镜阵列，把分散各地的天线连结成一台跨洲巨型望远镜（VLBI），这项研究更进一步利用多波束同时锁定多颗参考星，消除大气干扰，让精度再提升10倍。这意味着未来不只能找到类木星这样的大行星，连中等大小的行星也可能现形，大幅拓展我们所能观测的系外行星种类。",
+        "ja": "真っ暗な夜に遠くで誰かが提灯を持って歩いているとき、見えない誰かに引っ張られていたら、提灯の揺れ方でそれがわかる——天文学者が系外惑星を探す方法はまさにこれに近い。惑星は暗すぎて直接見えないが、その重力が母星をわずかに「ふらふら」させる。そのブレは針の先が100キロ先で動く程度の超微細な変化だ！SKAは世界最大の電波望遠鏡ネットワークで、大陸をまたぐアンテナをつないで巨大な一台の望遠鏡（VLBI）を作る。この研究ではさらに、複数のビームで複数の参照星を同時に捉えて大気の乱れを打ち消し、精度をさらに10倍高める。これにより、木星サイズの大きな惑星だけでなく、より小さな惑星まで検出できる可能性が広がり、宇宙に生命が存在しうる世界を探す一歩が大きく前進する。",
+        "ko": "칠흑 같은 밤에 멀리서 누군가가 등불을 들고 걷는 모습을 상상해 보자. 보이지 않는 누군가가 그를 잡아당기고 있다면, 등불이 흔들리는 패턴만으로도 그 존재를 알 수 있다. 천문학자들이 외계행성을 찾는 방법도 이와 같다. 행성은 너무 어둡고 멀어 직접 볼 수 없지만, 그 중력이 모항성을 살짝살짝 '끄덕이게' 만든다. 그 흔들림은 100킬로미터 밖에서 핀 끝이 움직이는 정도의 극미세한 변화다! SKA는 세계 최대 전파망원경 네트워크로, 대륙을 가로질러 안테나를 연결해 하나의 거대한 눈(VLBI)을 만든다. 이 연구는 여러 기준 별을 동시에 잠그는 다중 빔을 활용해 대기 왜곡을 제거하고 정밀도를 10배 더 높인다. 이를 통해 목성 크기의 행성뿐 아니라 더 다양한 크기의 행성도 탐지할 수 있게 되어, 우주 속 또 다른 생명의 가능성을 탐색하는 데 크게 기여할 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 我們看不見行星本身，卻能從恆星的「微微搖晃」中讀出它的存在——宇宙中最重要的信號，往往藏在最細微的抖動裡。",
+        "en": "💡 We cannot see the planet itself, but we can read its existence from the faintest wobble of its star — the universe's most important signals often hide in its subtlest tremors.",
+        "zh-CN": "💡 我们看不见行星本身，却能从恒星的「微微摇晃」中读出它的存在——宇宙中最重要的信号，往往藏在最细微的抖动里。",
+        "ja": "💡 惑星そのものは見えなくても、恒星のかすかな揺らぎからその存在を読み取れる——宇宙で最も重要なシグナルは、往々にして最も微細な震えの中に潜んでいる。",
+        "ko": "💡 행성 자체는 보이지 않아도, 항성의 미세한 흔들림 속에서 그 존재를 읽어낼 수 있다 — 우주에서 가장 중요한 신호는 언제나 가장 작은 떨림 안에 숨어 있다."
+      }
+    },
+    {
+      "id": "tech-260625",
+      "domain": "tech",
+      "day": "2026-06-25",
+      "author": "Aswin Jose, Roeland P-J E. Decorte et al.",
+      "ref": "arXiv:2606.24885v1",
+      "url": "https://arxiv.org/abs/2606.24885v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"18\" y=\"55\" width=\"54\" height=\"80\" rx=\"8\" fill=\"#00695c\" opacity=\"0.85\"/><rect x=\"24\" y=\"62\" width=\"42\" height=\"28\" rx=\"4\" fill=\"#b2dfdb\"/><circle cx=\"45\" cy=\"108\" r=\"7\" fill=\"#b2dfdb\"/><ellipse cx=\"130\" cy=\"80\" rx=\"38\" ry=\"30\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"3\"/><ellipse cx=\"130\" cy=\"80\" rx=\"24\" ry=\"18\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2\" opacity=\"0.6\"/><ellipse cx=\"130\" cy=\"80\" rx=\"10\" ry=\"7\" fill=\"#00695c\" opacity=\"0.5\"/><path d=\"M168 80 Q185 55 202 80 Q219 105 236 80\" fill=\"none\" stroke=\"#ff7043\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M200 80 Q208 62 216 80 Q224 98 232 80\" fill=\"none\" stroke=\"#ff7043\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\"/><circle cx=\"270\" cy=\"58\" r=\"22\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"3\"/><path d=\"M258 58 Q264 46 270 58 Q276 70 282 58\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"270\" cy=\"58\" r=\"5\" fill=\"#00695c\" opacity=\"0.7\"/><path d=\"M270 80 L270 100\" stroke=\"#00695c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M255 100 Q270 115 285 100\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"248\" cy=\"100\" r=\"4\" fill=\"#ff7043\" opacity=\"0.8\"/><circle cx=\"292\" cy=\"100\" r=\"4\" fill=\"#ff7043\" opacity=\"0.8\"/></svg>",
+      "title": {
+        "zh-TW": "手機聽診器：AI幫貓狗揪出早期心臟雜音",
+        "en": "Smartphone Stethoscope: AI Detects Early Heart Murmurs in Pets",
+        "zh-CN": "手机听诊器：AI帮猫狗发现早期心脏杂音",
+        "ja": "スマホ聴診器：AIがペットの心雑音を早期発見",
+        "ko": "스마트폰 청진기：AI로 반려동물 심장 잡음 조기 발견"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 및 공학"
+      },
+      "tech": {
+        "zh-TW": "Sonus Health 系統透過智慧型手機麥克風收錄約30秒的犬貓心臟聽診音訊，再以深度學習模型分析聲學特徵，輸出具校準信心分數的心臟雜音偵測結果。該系統設計為一般獸醫診所的初篩工具，可降低對心臟專科醫師與心臟超音波的依賴，並提供可解釋的風險分級輸出。",
+        "en": "Sonus Health records approximately 30 seconds of cardiac audio from dogs and cats via a smartphone microphone, then applies a deep learning model to extract acoustic features and output calibrated confidence scores for heart murmur detection. The system is designed as a primary-care screening tool, reducing reliance on board-certified cardiologists and in-clinic echocardiography while providing interpretable risk stratification.",
+        "zh-CN": "Sonus Health系统通过智能手机麦克风采集约30秒的犬猫心脏听诊音频，利用深度学习模型分析声学特征，输出带校准置信分数的心脏杂音检测结果。该系统定位为基层兽医诊所的初筛工具，可减少对心脏专科医师和超声心动图的依赖，并提供可解释的风险分级输出。",
+        "ja": "Sonus Healthはスマートフォンのマイクで犬猫の心音を約30秒録音し、深層学習モデルで音響特徴を解析して、校正済み信頼スコア付きで心雑音を検出する。一般獣医クリニック向けの一次スクリーニングツールとして設計されており、専門心臓内科医や心エコー検査への依存を低減し、解釈可能なリスク層別化出力を提供する。",
+        "ko": "Sonus Health는 스마트폰 마이크로 개와 고양이의 심장 소리를 약 30초 녹음한 후, 딥러닝 모델로 음향 특징을 분석하여 교정된 신뢰 점수와 함께 심장 잡음 탐지 결과를 출력한다. 일반 동물병원용 1차 선별 도구로 설계되어 전문 심장 전문의 및 심장 초음파에 대한 의존도를 줄이고 해석 가능한 위험 등급을 제공한다."
+      },
+      "plain": {
+        "zh-TW": "想像一下：醫生把聽診器放在心臟上，聽到「咻咻」的雜音，就知道心臟瓣膜可能出了問題——這對貓狗來說同樣重要。但要帶毛小孩去看心臟專科，往往要預約好幾週、費用也不便宜。Sonus Health 的做法很聰明：只要用普通手機靠近寵物胸口錄30秒聲音，AI 就像一位隨時待命的心臟科醫師，仔細「聆聽」每一個心跳節拍，判斷有沒有異常雜音。這就好比把原本只有大醫院才有的精密耳朵，裝進了每個獸醫的口袋裡。早期發現心臟雜音，可以讓寵物提早開始治療、延長壽命。這項技術最重要的意義是：讓偏遠地區或資源有限的診所，也能跟頂尖醫院一樣，給毛孩子公平的健康守護。",
+        "en": "Imagine a doctor pressing a stethoscope to a chest and hearing a soft whooshing sound — that telltale heart murmur could mean a valve isn't closing properly, and the same applies to our dogs and cats. But getting a pet to a cardiac specialist often means weeks of waiting and significant cost. Sonus Health takes a clever shortcut: just hold a regular smartphone near your pet's chest for 30 seconds, and an AI listens like a tireless cardiologist, picking up subtle acoustic clues in every heartbeat. Think of it as slipping a hospital-grade ear into every vet's pocket. Early detection of murmurs means earlier treatment and potentially years added to a pet's life. Most importantly, this technology could give remote clinics and resource-limited practices the same diagnostic power as specialist centers, making cardiac screening fair for every furry patient.",
+        "zh-CN": "想象一下：医生把听诊器贴在胸口，听到「咻咻」的杂音，就意识到心脏瓣膜可能出了问题——这对猫狗来说同样重要。但带宠物去看心脏专科，往往要等好几周、费用也不菲。Sonus Health的做法很聪明：只需用普通手机靠近宠物胸口录30秒声音，AI就像一位随时待命的心脏科医生，仔细「聆听」每一次心跳，判断是否有异常杂音。这就好比把原本只有大医院才有的精密耳朵，装进了每个兽医的口袋。早期发现心脏杂音，能让宠物提前接受治疗、延长寿命。这项技术最重要的意义在于：让偏远地区或资源有限的诊所，也能像顶级医院一样，给毛孩子公平的健康保障。",
+        "ja": "聴診器を胸に当てて「ザーザー」という雑音を聞いた医師が、心臓弁に問題があると気づく——これは犬や猫にとっても同じです。でも専門の心臓内科医に診てもらうには、予約に何週間もかかり、費用もかさみます。Sonus Healthは賢い方法を考えました。普通のスマートフォンをペットの胸に30秒近づけるだけで、AIが疲れ知らずの心臓専門医のように一拍一拍を「聴き取り」、微妙な異常音を見つけ出します。まるで大病院の精密な耳を、すべての獣医師のポケットに入れるようなものです。心雑音を早期に発見すれば、治療を早く始められ、ペットの寿命を延ばせる可能性があります。この技術の最大の意義は、遠隔地や資源の限られたクリニックでも、専門施設と同じ診断力を持てるようになることです。",
+        "ko": "청진기를 가슴에 대고 「쉭쉭」 하는 소리를 들은 의사가 심장 판막에 문제가 있다는 것을 알아채듯, 개와 고양이도 마찬가지입니다. 하지만 반려동물을 심장 전문의에게 데려가려면 몇 주를 기다리고 비용도 만만치 않습니다. Sonus Health는 영리한 방법을 택했습니다. 일반 스마트폰을 반려동물 가슴 가까이 대고 30초만 녹음하면, AI가 지치지 않는 심장 전문의처럼 심장 박동 하나하나를 「귀 기울여」 미묘한 잡음을 잡아냅니다. 마치 대형 병원의 정밀한 귀를 모든 수의사의 주머니 속에 넣어주는 것과 같습니다. 심장 잡음을 조기에 발견하면 치료를 빨리 시작해 반려동물의 수명을 늘릴 수 있습니다. 이 기술의 가장 큰 의미는 오지 지역이나 자원이 부족한 동물병원도 전문 센터와 동일한 진단 능력을 갖출 수 있게 된다는 것입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當頂尖醫療技術能裝進一支手機，「在哪裡出生」將不再決定「能得到多好的照顧」——這不只是寵物醫療的革命，更是醫療平等的縮影。",
+        "en": "💡 When cutting-edge diagnostics fit inside a smartphone, geography stops being destiny — and that principle extends far beyond pet care to the future of equitable medicine everywhere.",
+        "zh-CN": "💡 当顶尖医疗技术能装进一部手机，「在哪里出生」将不再决定「能得到多好的照护」——这不只是宠物医疗的革命，更是医疗公平的缩影。",
+        "ja": "💡 最先端の診断技術がスマートフォンに収まるとき、「どこに生まれたか」がケアの質を決めなくなる——それはペット医療だけでなく、あらゆる医療の公平性への第一歩だ。",
+        "ko": "💡 최첨단 진단 기술이 스마트폰 하나에 담길 때, 「어디서 태어났는가」가 더 이상 받을 수 있는 의료의 질을 결정하지 않게 된다——이는 반려동물 의료를 넘어 의료 평등의 미래를 보여주는 상징이다."
+      }
+    }
+  ]
+}
