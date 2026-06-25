@@ -1,0 +1,188 @@
+{
+  "date": "2026-06-26",
+  "mode": "paper",
+  "paper_date": "2026-06-26",
+  "generated_at": "2026-06-26",
+  "cards": [
+    {
+      "id": "ai-260626",
+      "domain": "ai",
+      "day": "2026-06-26",
+      "author": "Dong Jing, Tianqi Zhang et al.",
+      "ref": "arXiv:2606.26095v1",
+      "url": "https://arxiv.org/abs/2606.26095v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"18\" y=\"60\" width=\"60\" height=\"80\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.18\"/><rect x=\"28\" y=\"70\" width=\"40\" height=\"60\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.35\"/><circle cx=\"48\" cy=\"58\" r=\"14\" fill=\"#2a9d8f\" opacity=\"0.7\"/><circle cx=\"48\" cy=\"58\" r=\"7\" fill=\"#e9c46a\"/><rect x=\"38\" y=\"90\" width=\"8\" height=\"28\" rx=\"3\" fill=\"#264653\"/><rect x=\"54\" y=\"90\" width=\"8\" height=\"28\" rx=\"3\" fill=\"#264653\"/><rect x=\"18\" y=\"136\" width=\"60\" height=\"6\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.4\"/><path d=\"M100 80 Q130 40 160 80 Q190 120 220 80\" stroke=\"#e9c46a\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"6 3\"/><circle cx=\"100\" cy=\"80\" r=\"5\" fill=\"#e9c46a\"/><circle cx=\"160\" cy=\"80\" r=\"5\" fill=\"#e9c46a\"/><circle cx=\"220\" cy=\"80\" r=\"5\" fill=\"#e9c46a\"/><rect x=\"240\" y=\"50\" width=\"70\" height=\"90\" rx=\"8\" fill=\"#264653\" opacity=\"0.15\"/><rect x=\"250\" y=\"62\" width=\"50\" height=\"12\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"250\" y=\"82\" width=\"50\" height=\"12\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"250\" y=\"102\" width=\"50\" height=\"12\" rx=\"3\" fill=\"#e9c46a\" opacity=\"0.7\"/><rect x=\"250\" y=\"122\" width=\"50\" height=\"8\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.3\"/><path d=\"M220 80 L240 95\" stroke=\"#e9c46a\" stroke-width=\"2\" stroke-dasharray=\"4 2\"/></svg>",
+      "title": {
+        "zh-TW": "教機器人「先學怎麼動」：跨機體動作先驗預訓練",
+        "en": "Teaching Robots to Move First: Action Prior Pretraining for Cross-Embodiment Manipulation",
+        "zh-CN": "教机器人「先学怎么动」：跨机体动作先验预训练",
+        "ja": "まず「動き方」を学ぶロボット：異種ボディ対応の動作事前学習",
+        "ko": "로봇에게 「먼저 움직이는 법」 가르치기: 크로스 에보디먼트 동작 사전 학습"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "現有視覺語言動作模型（VLA）將動作模組直接接在視覺語言主幹上聯合訓練，導致動作模組缺乏運動先驗、優化困難。本研究提出在接入VLM之前，先以運動先驗對動作模組進行預訓練，讓模型在跨機體設定下也能快速習得物理動作動態，大幅降低跨模態對齊的學習難度。",
+        "en": "Existing Vision-Language-Action (VLA) models attach an action module to a VLM backbone and train the full policy jointly, leaving the action module to learn physical motion from scratch without any motion prior. This work proposes pretraining the action module with motion priors before integrating it with the VLM, enabling faster learning of temporal action dynamics and better cross-modal alignment across different robot embodiments.",
+        "zh-CN": "现有视觉语言动作模型（VLA）将动作模块直接接在视觉语言主干上联合训练，导致动作模块缺乏运动先验、优化困难。本研究提出在接入VLM之前先用运动先验对动作模块进行预训练，使模型在跨机体设定下也能快速习得物理动作动态，大幅降低跨模态对齐的学习难度。",
+        "ja": "既存のVLAモデルはVLMバックボーンに動作モジュールを直結して共同学習するため、動作モジュールは運動事前知識なしにゼロから物理運動を学ぶ必要がある。本研究ではVLMと統合する前に動作モジュールを運動事前知識で事前学習することで、異なるロボットボディへの汎化と跨モーダル整合の学習効率を大幅に向上させる手法を提案する。",
+        "ko": "기존 VLA 모델은 VLM 백본에 동작 모듈을 직접 붙여 공동 학습하므로, 동작 모듈은 운동 사전 지식 없이 물리적 움직임을 처음부터 배워야 한다. 본 연구는 VLM에 통합하기 전에 동작 모듈을 운동 사전 지식으로 사전 학습시켜, 다양한 로봇 몸체에서도 시간적 동작 역학을 빠르게 학습하고 크로스 모달 정렬 난이도를 낮추는 방법을 제안한다."
+      },
+      "plain": {
+        "zh-TW": "想像一個剛轉學的孩子：他語文很好、眼力也佳，但體育課完全是新手——每次都要同時搞清楚「身體怎麼動」和「老師在說什麼」，自然學得又慢又辛苦。現在的機器人AI就有這個問題：語言和視覺很強，但「動作感」幾乎是從零開始學。這篇論文的解法像是：先讓孩子單獨上幾堂體育課、把基本動作練熟，再送去上跨科整合課。研究者讓動作模組先「只學怎麼動」，建立運動先驗，之後再和語言視覺模型結合。這樣機器人不論換了哪種手臂或底盤，都能更快學會抓、推、放等操作。這很重要，因為未來工廠、家庭、醫院裡的機器人形態各異，如果每換一台就要重新從頭學動作，代價太高了。這項研究讓「通用機器人動作腦」更進一步成真。",
+        "en": "Imagine a student who is great at reading and listening but has never played sports before. If you suddenly ask them to play basketball while also understanding the coach's complex instructions, they will struggle to do both at once. Today's robot AI has exactly this problem: its language and vision abilities are strong, but its sense of physical movement is built from scratch every time. This paper's solution is like sending the student to basic gym class first—let them learn how bodies move before adding language instructions on top. The researchers pretrain the action module with motion priors before connecting it to the language-vision brain. This means robots with very different body types can all share and reuse the same motion knowledge. This matters enormously because the real world has many kinds of robots, and relearning motion every time a new body appears is extremely costly. This work brings us closer to a universal robot motion intelligence.",
+        "zh-CN": "想象一个刚转学的孩子：语文和眼力都很好，但体育课完全是新手——每次都要同时搞清楚「身体怎么动」和「老师在说什么」，自然学得又慢又辛苦。现在的机器人AI就有这个问题：语言和视觉很强，但「动作感」几乎从零开始学。这篇论文的解法是：先让孩子单独上几堂体育课练熟基本动作，再上跨科整合课。研究者让动作模块先「只学怎么动」，建立运动先验，之后再和语言视觉模型结合。这样机器人不论换了哪种手臂或底盘，都能更快学会抓、推、放等操作。这很重要，因为未来工厂、家庭、医院里的机器人形态各异，每换一台都从头学动作代价太高。这项研究让「通用机器人动作脑」更进一步成真。",
+        "ja": "語学と視力は抜群だけどスポーツは全くの初心者の転校生を想像してください。体の動かし方と先生の複雑な指示を同時に理解しようとすると、どちらもうまくいかなくなります。今のロボットAIはまさにこの問題を抱えています。言語と視覚は強力でも、物理的な動きの感覚はゼロから学ぶ必要があります。この論文の解決策は「まず体育の基礎授業を受けさせる」こと。動作モジュールを先に運動事前知識で学習させてから、言語・視覚モデルと統合します。これにより、形の異なるロボットでも共通の動作知識を活用でき、掴む・押す・置くといった操作を素早く習得できます。工場・家庭・病院など様々な形のロボットが普及する未来では、毎回動作をゼロから学ぶコストは膨大です。この研究は「汎用ロボット運動知性」の実現に大きく近づきます。",
+        "ko": "독해와 시각은 뛰어나지만 운동은 완전 초보인 전학생을 상상해 보세요. 몸 움직이는 법과 선생님의 복잡한 지시를 동시에 이해하려다 보면 둘 다 잘 안 됩니다. 지금의 로봇 AI가 바로 이 문제를 겪고 있습니다. 언어와 시각은 강력하지만 물리적인 움직임 감각은 매번 처음부터 배워야 합니다. 이 논문의 해법은 「먼저 체육 기초 수업을 들려주는 것」입니다. 동작 모듈을 운동 사전 지식으로 먼저 학습시킨 뒤 언어·시각 모델과 통합합니다. 덕분에 팔 형태나 몸체가 달라도 잡기·밀기·놓기 같은 동작을 빠르게 익힐 수 있습니다. 공장·가정·병원 등 다양한 형태의 로봇이 늘어나는 미래에, 매번 동작을 처음부터 학습하는 비용은 엄청납니다. 이 연구는 「범용 로봇 운동 두뇌」 실현에 한 발짝 더 다가섭니다."
+      },
+      "insight": {
+        "zh-TW": "💡 先學「怎麼動」再學「為何動」——把運動先驗從語言語義中解耦，正是讓AI機器人真正泛化的關鍵一步。",
+        "en": "💡 Learning 「how to move」 before 「why to move」—decoupling motion priors from language semantics is the key step toward truly generalizable robot AI.",
+        "zh-CN": "💡 先学「怎么动」再学「为何动」——把运动先验从语言语义中解耦，正是让AI机器人真正泛化的关键一步。",
+        "ja": "💡 「なぜ動くか」より先に「どう動くか」を学ぶこと——運動事前知識を言語意味論から切り離すことが、真に汎化するロボットAIへの鍵となる。",
+        "ko": "💡 「왜 움직이는가」보다 「어떻게 움직이는가」를 먼저 배우는 것——운동 사전 지식을 언어 의미론에서 분리하는 것이 진정으로 범용화된 로봇 AI로 가는 핵심 열쇠다."
+      }
+    },
+    {
+      "id": "bio-260626",
+      "domain": "bio",
+      "day": "2026-06-26",
+      "author": "Shiyu Li, Ziqi Yan et al.",
+      "ref": "arXiv:2606.24779v1",
+      "url": "https://arxiv.org/abs/2606.24779v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"60\" cy=\"80\" r=\"36\" fill=\"#52b788\" opacity=\"0.18\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#52b788\" opacity=\"0.35\"/><circle cx=\"60\" cy=\"80\" r=\"10\" fill=\"#52b788\" opacity=\"0.85\"/><line x1=\"96\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/><rect x=\"130\" y=\"60\" width=\"44\" height=\"40\" rx=\"8\" fill=\"#52b788\" opacity=\"0.22\" stroke=\"#52b788\" stroke-width=\"2\"/><rect x=\"138\" y=\"68\" width=\"28\" height=\"8\" rx=\"3\" fill=\"#52b788\" opacity=\"0.55\"/><rect x=\"138\" y=\"82\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#52b788\" opacity=\"0.35\"/><line x1=\"174\" y1=\"80\" x2=\"208\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/><polygon points=\"208,60 252,80 208,100\" fill=\"#2d6a4f\" opacity=\"0.72\"/><line x1=\"252\" y1=\"80\" x2=\"286\" y2=\"80\" stroke=\"#2d6a4f\" stroke-width=\"2.5\"/><circle cx=\"300\" cy=\"80\" r=\"18\" fill=\"#b7e4c7\" stroke=\"#2d6a4f\" stroke-width=\"2.5\"/><circle cx=\"300\" cy=\"80\" r=\"8\" fill=\"#52b788\" opacity=\"0.9\"/><circle cx=\"300\" cy=\"80\" r=\"3\" fill=\"#2d6a4f\"/></svg>",
+      "title": {
+        "zh-TW": "AI 基因偵探2.0：DeepBD 精準揪出先天缺陷致病變異",
+        "en": "AI Gene Detective 2.0: DeepBD Pinpoints Causal Variants in Genetic Birth Defects",
+        "zh-CN": "AI 基因侦探2.0：DeepBD 精准揪出先天缺陷致病变异",
+        "ja": "AIゲノム探偵2.0：DeepBDが先天性疾患の原因変異を特定する",
+        "ko": "AI 유전자 탐정 2.0：DeepBD, 선천성 결손 원인 변이 정밀 식별"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "DeepBD 是一套以大型語言模型為核心的「有根據的智慧體工作流」，能自動整合族群遺傳學、變異效應預測、基因-疾病有效性、表現型本體論、蛋白質結構與臨床文獻等多源異構證據，對患者外顯子或全基因組定序所篩出的候選變異進行優先排序與診斷解釋，並以可追溯的引用依據支撐每一項推論結論。",
+        "en": "DeepBD is a grounded agentic workflow powered by large language models that automatically integrates heterogeneous evidence—population genetics, variant-effect predictions, gene-disease validity, phenotype ontologies, protein structure, and clinical literature—to prioritize and interpret candidate variants from exome or genome sequencing of patients with suspected genetic birth defects, with each reasoning step supported by traceable citations.",
+        "zh-CN": "DeepBD 是一套以大型语言模型为核心的「有根据的智能体工作流」，能自动整合族群遗传学、变异效应预测、基因-疾病有效性、表现型本体论、蛋白质结构与临床文献等多源异构证据，对患者外显子或全基因组测序所筛出的候选变异进行优先排序与诊断解释，并以可追溯引用依据支撑每项推论结论。",
+        "ja": "DeepBDは大規模言語モデルを中核とした「根拠付きエージェント型ワークフロー」であり、集団遺伝学・変異効果予測・遺伝子-疾患妥当性・表現型オントロジー・タンパク質構造・臨床文献などの多源異種エビデンスを自動統合し、エクソームまたはゲノム解析で得られた候補変異の優先順位付けと診断解釈を、追跡可能な引用根拠とともに提供します。",
+        "ko": "DeepBD는 대형 언어 모델 기반의 「근거 기반 에이전트 워크플로」로, 집단 유전학·변이 효과 예측·유전자-질환 타당성·표현형 온톨로지·단백질 구조·임상 문헌 등 이종 다원 증거를 자동 통합하여 엑솜·전장 유전체 분석의 후보 변이를 우선순위화하고 진단 해석을 추적 가능한 인용 근거와 함께 제공합니다."
+      },
+      "plain": {
+        "zh-TW": "每個寶寶出生時，基因組裡藏著數百萬個「字母差異」——其中只有極少數是造成先天缺陷的真正元兇。醫生的工作就像在一座超大圖書館裡，僅憑幾條模糊線索找出那本藏有關鍵答案的書。過去，臨床遺傳師必須手動翻遍族群資料庫、蛋白質結構報告、疾病案例文獻……往往耗費數週仍難以定論。DeepBD 就像一位永不疲倦的AI偵探助理：它能同時拿著放大鏡審視成千上萬條線索，把每條線索的「可信程度」都標注清楚，最後列出最可疑的幾個變異，並附上完整推理過程讓醫生審閱。這對時間緊迫的胎兒或新生兒病例尤為關鍵——早一天確診，就可能早一天介入治療，挽救生命或避免長期殘疾。DeepBD 讓遺傳診斷從「大海撈針」升級為「有跡可循的精準搜查」。",
+        "en": "Every baby's genome contains millions of tiny letter differences—yet only a handful may cause a birth defect. A clinical geneticist's job is like searching an enormous library with only a few blurry clues to find the one critical book. Traditionally, specialists spent weeks manually cross-referencing population databases, protein structure reports, and disease case studies, often without a clear answer. DeepBD acts like a tireless AI detective assistant: it simultaneously examines thousands of clues, labels how trustworthy each one is, and produces a ranked shortlist of the most suspicious variants with a full, traceable reasoning trail for the doctor to review. For urgent fetal or newborn cases, earlier diagnosis can mean earlier intervention—saving lives or preventing lifelong disability. DeepBD transforms genetic diagnosis from 'finding a needle in a haystack' into a systematic, evidence-anchored investigation.",
+        "zh-CN": "每个宝宝的基因组里藏着数百万个「字母差异」，其中只有极少数是造成先天缺陷的真正元凶。医生的工作就像在一座超大图书馆里，仅凭几条模糊线索找出那本藏有关键答案的书。过去，临床遗传师必须手动翻遍族群数据库、蛋白质结构报告、疾病案例文献……往往耗费数周仍难以定论。DeepBD 就像一位永不疲倦的AI侦探助手：它能同时用放大镜审视成千上万条线索，把每条线索的「可信程度」都标注清楚，最后列出最可疑的几个变异，并附上完整推理过程供医生审阅。这对时间紧迫的胎儿或新生儿病例尤为关键——早一天确诊，就可能早一天介入治疗，挽救生命或避免长期残疾。",
+        "ja": "赤ちゃんのゲノムには数百万もの「文字の違い」が潜んでいますが、先天性疾患の真の原因となるのはそのうちのほんのわずかです。臨床遺伝専門医の仕事は、巨大な図書館の中でわずかな手がかりだけを頼りに重要な一冊を探し出すようなもの。従来は集団データベース・タンパク質構造レポート・疾患症例文献を手作業で照合するのに数週間かかることもありました。DeepBDは疲れ知らずのAI探偵アシスタントのように、何千もの手がかりを同時に検証し、信頼度を明示しながら最も疑わしい変異を順位付けし、医師が確認できる完全な推論過程とともに提示します。胎児や新生児の緊急ケースでは、早期診断が早期介入につながり、命を救い長期障害を防ぐ可能性があります。",
+        "ko": "모든 아기의 유전체에는 수백만 개의 「글자 차이」가 있지만, 선천성 결손의 진짜 원인은 그중 극히 일부입니다. 임상 유전 전문의의 역할은 거대한 도서관에서 단 몇 가지 단서만으로 핵심 책 한 권을 찾아내는 것과 같습니다. 과거에는 집단 데이터베이스·단백질 구조 보고서·임상 문헌을 수동으로 대조하는 데 몇 주가 걸리기도 했습니다. DeepBD는 지칠 줄 모르는 AI 탐정 보조원처럼 수천 개의 단서를 동시에 검토하고 신뢰도를 표시하며, 가장 의심스러운 변이의 우선순위 목록을 완전한 추론 근거와 함께 의사에게 제공합니다. 태아나 신생아 긴급 사례에서 조기 진단은 조기 개입으로 이어져 생명을 구하고 장기 장애를 예방할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當診斷證據本身就是多語言、多格式的混亂資料海，真正的突破不在於更快的計算，而在於能把所有證據「說清楚理由」地整合在一起的推理架構。",
+        "en": "💡 When diagnostic evidence is a chaotic sea of multilingual, multi-format data, the real breakthrough lies not in faster computation but in a reasoning framework that integrates all evidence with transparent, traceable justifications.",
+        "zh-CN": "💡 当诊断证据本身就是多语言、多格式的混乱数据海洋时，真正的突破不在于更快的计算，而在于能把所有证据「说清楚理由」地整合在一起的推理架构。",
+        "ja": "💡 診断根拠が多言語・多形式の混沌としたデータの海である時、真のブレークスルーは計算の高速化ではなく、すべての証拠を透明な根拠とともに統合できる推論の枠組みにある。",
+        "ko": "💡 진단 근거가 다국어·다형식의 혼란스러운 데이터 바다일 때, 진정한 돌파구는 더 빠른 계산이 아니라 모든 증거를 투명하고 추적 가능한 근거와 함께 통합하는 추론 체계에 있다."
+      }
+    },
+    {
+      "id": "neuro-260626",
+      "domain": "neuro",
+      "day": "2026-06-26",
+      "author": "Lucas A. T. X. Carneiro, Armand D. Jiofack et al.",
+      "ref": "arXiv:2606.25874v1",
+      "url": "https://arxiv.org/abs/2606.25874v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"130\" cy=\"45\" r=\"14\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"130\" cy=\"115\" r=\"14\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"210\" cy=\"60\" r=\"14\" fill=\"#ab47bc\" opacity=\"0.8\"/><circle cx=\"210\" cy=\"100\" r=\"14\" fill=\"#ab47bc\" opacity=\"0.8\"/><circle cx=\"280\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.9\"/><line x1=\"78\" y1=\"72\" x2=\"116\" y2=\"52\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"78\" y1=\"88\" x2=\"116\" y2=\"108\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"144\" y1=\"50\" x2=\"196\" y2=\"63\" stroke=\"#ab47bc\" stroke-width=\"2\" opacity=\"0.6\"/><line x1=\"144\" y1=\"110\" x2=\"196\" y2=\"97\" stroke=\"#ab47bc\" stroke-width=\"2\" opacity=\"0.6\"/><line x1=\"224\" y1=\"68\" x2=\"262\" y2=\"75\" stroke=\"#ce93d8\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"224\" y1=\"93\" x2=\"262\" y2=\"85\" stroke=\"#ce93d8\" stroke-width=\"2.5\" opacity=\"0.8\"/></svg>",
+      "title": {
+        "zh-TW": "大腦的「隱藏合唱團」：網路結構如何決定神經元同步放電的群組數量",
+        "en": "The Brain's Hidden Chorus: How Network Topology Shapes Synchronized Neuronal Firing Groups",
+        "zh-CN": "大脑的「隐藏合唱团」：网络结构如何决定神经元同步放电的群组数量",
+        "ja": "脳の「隠れた合唱団」：ネットワーク構造が神経発火グループの数を決める",
+        "ko": "뇌의 「숨겨진 합창단」：네트워크 구조가 신경세포 동기 발화 그룹을 결정하는 방식"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "本研究模擬1000個Izhikevich神經元組成的迴路網路，執行長達十小時的生物時間，並以事件驅動演算法識別出1545個獨特的多時序神經元群組（PNG）。透過Watts-Strogatz小世界拓撲掃描，以遞迴圖（Recurrence Plot）量化分析，發現網路的叢聚係數C是決定PNG數量的主要結構因子。",
+        "en": "The study simulates a recurrent network of 1000 Izhikevich neurons over ten hours of biological time, identifying 1545 unique Polychronous Neuronal Groups (PNGs) via an offline event-driven detection algorithm. A parametric Watts-Strogatz topology sweep combined with Recurrence Plot analysis reveals that the clustering coefficient C is the primary structural driver of PNG yield.",
+        "zh-CN": "本研究模拟1000个Izhikevich神经元组成的回路网络，运行长达十小时的生物时间，并以事件驱动算法识别出1545个独特的多时序神经元群组（PNG）。通过Watts-Strogatz小世界拓扑扫描与递归图量化分析，发现网络的聚类系数C是决定PNG数量的主要结构因子。",
+        "ja": "本研究は1000個のIzhikevichニューロンからなる回帰ネットワークを10時間の生物学的時間にわたってシミュレートし、イベント駆動型アルゴリズムで1545個の固有なポリクロナスニューロングループ（PNG）を同定した。Watts-Strogatzトポロジースイープとリカレンスプロット解析により、クラスタリング係数CがPNG生成の主要な構造的要因であることが明らかになった。",
+        "ko": "본 연구는 1000개의 Izhikevich 뉴런으로 구성된 순환 네트워크를 생물학적 시간으로 10시간 시뮬레이션하여, 이벤트 기반 알고리즘으로 1545개의 고유한 다시간 신경세포 그룹(PNG)을 식별하였다. Watts-Strogatz 위상 스윕과 재귀 도표 분석을 통해 클러스터링 계수 C가 PNG 생성의 주요 구조적 요인임을 밝혔다."
+      },
+      "plain": {
+        "zh-TW": "想像大腦裡有數十億個神經元，它們不是隨機亂叫，而是像樂團一樣，特定幾個神經元會以精確的時間差依序點火，形成一段「旋律」。這種固定的時序放電組合，科學家稱為「多時序神經元群組（PNG）」，就像大腦裡的隱藏合唱團。這些合唱團是怎麼形成的？關鍵在於神經元之間的「連線方式」。研究者發現，當神經元之間的連接越「抱團」（叢聚係數越高），能形成的合唱團就越多。就像一個社交圈裡大家互相認識，資訊傳遞就更有效率。研究者用電腦模擬了一千個神經元跑了相當於十小時的大腦活動，找到了1545個不同的合唱團。這很重要，因為科學家認為這些同步放電模式可能就是大腦「儲存記憶」和「進行計算」的方式，理解它的結構條件，有助於解開記憶與認知的底層機制。",
+        "en": "Imagine billions of neurons in your brain not firing randomly, but like a jazz ensemble where specific musicians play in a precise, repeating sequence. Scientists call these fixed firing sequences 「Polychronous Neuronal Groups」 or PNGs — the brain's hidden choruses. How do these choruses form? The key turns out to be how neurons are wired together. Researchers found that the more 「cliquey」 the network connections are (higher clustering coefficient), the more such groups emerge. Think of it like a tight-knit social circle where information spreads efficiently among friends. Using computer simulations of 1000 neurons running for the equivalent of ten brain-hours, they discovered 1545 distinct firing groups. This matters because these synchronized patterns may be how the brain stores memories and performs computation — understanding their structural origins could unlock the secrets of how we think and remember.",
+        "zh-CN": "想象大脑里有数十亿个神经元，它们不是随机乱响，而是像乐团一样，特定几个神经元以精确的时间差依次点火，形成一段「旋律」。这种固定的时序放电组合，科学家称为「多时序神经元群组（PNG）」，就像大脑里的隐藏合唱团。这些合唱团是怎么形成的？关键在于神经元之间的「连线方式」。研究者发现，当神经元之间的连接越「抱团」（聚类系数越高），能形成的合唱团就越多。就像一个社交圈里大家互相认识，信息传递就更有效率。研究者用电脑模拟了一千个神经元跑了相当于十小时的大脑活动，找到了1545个不同的合唱团。这很重要，因为科学家认为这些同步放电模式可能就是大脑「储存记忆」和「进行计算」的方式，理解它的结构条件，有助于解开记忆与认知的底层机制。",
+        "ja": "脳の中に何十億ものニューロンがあると想像してください。それらはランダムに発火するのではなく、ジャズアンサンブルのように特定のニューロンが正確な時間差で順番に発火し、繰り返す「メロディー」を奏でます。科学者はこれを「ポリクロナスニューロングループ（PNG）」と呼び、脳の「隠れた合唱団」です。これらの合唱団はどうやって生まれるのでしょうか？鍵はニューロン同士の「つながり方」にあります。研究者たちは、ネットワークの接続が「まとまっている」ほど（クラスタリング係数が高いほど）、より多くのグループが生まれることを発見しました。仲の良いグループの中で情報が素早く広まるようなイメージです。1000個のニューロンを10時間分シミュレーションして1545個の異なるグループを発見しました。これらの同期パターンが記憶や思考の基盤である可能性があり、その構造的条件を理解することは認知科学の大きな前進です。",
+        "ko": "뇌 속 수십억 개의 뉴런이 무작위로 발화하는 게 아니라, 재즈 앙상블처럼 특정 뉴런들이 정확한 시간 간격으로 순서대로 발화하며 반복되는 「멜로디」를 만든다고 상상해 보세요. 과학자들은 이를 「다시간 신경세포 그룹(PNG)」이라고 부르며, 뇌 속의 「숨겨진 합창단」이라 할 수 있습니다. 이 합창단은 어떻게 형성될까요? 핵심은 뉴런들이 얼마나 「뭉쳐」 연결되어 있는가(클러스터링 계수)입니다. 서로 잘 아는 친밀한 소셜 그룹에서 정보가 빠르게 퍼지는 것처럼, 연결이 촘촘할수록 더 많은 그룹이 탄생합니다. 1000개의 뉴런을 10시간 분량의 뇌 활동으로 시뮬레이션하여 1545개의 고유한 그룹을 발견했습니다. 이 동기화 패턴이 기억 저장과 인지의 핵심일 수 있으며, 그 구조적 조건을 이해하는 것은 뇌 과학의 중요한 발걸음입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 大腦「記憶」的容量，可能不只取決於神經元的數量，更取決於它們抱團連結的緊密程度——拓撲結構才是認知潛力的隱形開關。",
+        "en": "💡 The brain's capacity for memory and computation may hinge less on how many neurons it has, and more on how tightly they cluster together — topology is the hidden switch of cognitive potential.",
+        "zh-CN": "💡 大脑「记忆」的容量，可能不只取决于神经元的数量，更取决于它们抱团连结的紧密程度——拓扑结构才是认知潜力的隐形开关。",
+        "ja": "💡 脳の記憶容量はニューロンの数よりも、それらがどれだけ密にまとまって接続されているかに依存するかもしれない——トポロジーこそが認知ポテンシャルの隠れたスイッチだ。",
+        "ko": "💡 뇌의 기억 용량은 뉴런의 수보다 뉴런들이 얼마나 촘촘히 뭉쳐 연결되어 있는가에 달려 있을지 모른다 — 위상 구조야말로 인지 잠재력의 숨겨진 스위치다."
+      }
+    },
+    {
+      "id": "tech-260626",
+      "domain": "tech",
+      "day": "2026-06-26",
+      "author": "Cameron M. Pike, Animesh Yadav et al.",
+      "ref": "arXiv:2606.26020v1",
+      "url": "https://arxiv.org/abs/2606.26020v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"80\" rx=\"6\" fill=\"#00695c\" opacity=\"0.85\"/><rect x=\"30\" y=\"50\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#00897b\"/><circle cx=\"50\" cy=\"40\" r=\"14\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><circle cx=\"50\" cy=\"40\" r=\"8\" fill=\"none\" stroke=\"#00897b\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"40\" r=\"3\" fill=\"#00695c\"/><path d=\"M90 100 Q130 60 170 90 Q210 120 250 70\" fill=\"none\" stroke=\"#e65100\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/><path d=\"M90 100 Q130 75 170 100 Q210 125 250 95\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><rect x=\"260\" y=\"45\" width=\"60\" height=\"90\" rx=\"6\" fill=\"#00695c\" opacity=\"0.6\"/><rect x=\"270\" y=\"35\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#00897b\" opacity=\"0.8\"/><circle cx=\"280\" cy=\"110\" r=\"5\" fill=\"#e65100\" opacity=\"0.9\"/><circle cx=\"295\" cy=\"100\" r=\"5\" fill=\"#e65100\" opacity=\"0.7\"/><circle cx=\"310\" cy=\"108\" r=\"5\" fill=\"#e65100\" opacity=\"0.8\"/><rect x=\"155\" y=\"88\" width=\"30\" height=\"24\" rx=\"4\" fill=\"#ff8f00\" opacity=\"0.85\"/><rect x=\"163\" y=\"96\" width=\"14\" height=\"8\" rx=\"2\" fill=\"#fff\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "毫米波車聯網的放大器失真剋星：非高斯訊號的數值新解法",
+        "en": "Taming Amplifier Distortion in mmWave Vehicle Networks: A New Numerical Method for Non-Gaussian Signals",
+        "zh-CN": "毫米波车联网的放大器失真克星：非高斯信号的数值新解法",
+        "ja": "ミリ波車載通信の歪み対策：非ガウス信号の新しい数値解析法",
+        "ko": "밀리미터파 차량 통신의 증폭기 왜곡 해결사：비가우스 신호 수치 해석 신기법"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本文針對車聯網毫米波通訊中功率放大器（PA）的非線性失真問題，將 Rice 特徵函數法推廣至非高斯訊號情境。所提數值方法可有效分析非線性系統對訊號波形的扭曲效應，並精確預測波束方向圖偏差與陣列增益損失，為系統設計提供可靠的分析工具。",
+        "en": "This paper extends the Rice characteristic-function method to handle non-Gaussian signal ensembles passing through memoryless nonlinear power amplifiers in mmWave vehicular communications. The proposed numerical framework quantifies distortion-induced beam pattern deviations and array-gain loss, offering a tractable analytical tool for nonlinear PA analysis.",
+        "zh-CN": "本文针对车联网毫米波通信中功率放大器（PA）的非线性失真问题，将 Rice 特征函数法推广至非高斯信号场景。所提数值方法可有效分析非线性系统对信号波形的扭曲效应，精确预测波束方向图偏差与阵列增益损失，为系统设计提供可靠的分析工具。",
+        "ja": "本論文は、ミリ波車載通信における電力増幅器（PA）の非線形歪みに対し、Rice特性関数法を非ガウス信号に拡張する数値手法を提案する。この手法はビームパターン偏差やアレイゲイン損失を定量化し、非線形PA解析の実用的ツールを提供する。",
+        "ko": "본 논문은 밀리미터파 차량 통신에서 전력 증폭기(PA)의 비선형 왜곡 문제를 다루기 위해, Rice 특성함수법을 비가우스 신호 환경으로 확장한 수치 기법을 제안한다. 이 방법은 빔 패턴 편차와 배열 이득 손실을 정량화하여 비선형 PA 분석의 실용적 도구를 제공한다."
+      },
+      "plain": {
+        "zh-TW": "想像你在高速公路上以時速120公里行駛，車子正透過細如雷射光的毫米波訊號與路邊基地台通訊。這道「光束」必須精準對準，才能保持高速上網。但車上的功率放大器就像一位性格暴躁的音響師——訊號一旦太強，他就會扭曲原本的聲音，讓「光束」偏向錯誤方向，網路品質急速下滑。更麻煩的是，現實中的訊號並不像理論假設的那樣規規矩矩（高斯分布），而是形狀不規則、難以計算的「怪訊號」。這篇論文提出了一套新的數學工具，就像一把「失真校正尺」，能夠準確預測放大器到底把訊號扭曲成什麼樣子。有了這把尺，工程師就能在設計階段就預先補償失真，讓高速行駛中的車輛也能享有穩定可靠的毫米波通訊。這對未來自動駕駛與車聯網的安全性至關重要。",
+        "en": "Imagine driving at 120 km/h while your car stays connected via a razor-thin beam of millimeter-wave signal—like trying to aim a laser pointer at a tiny target from a moving train. The power amplifier inside your car is supposed to boost this signal, but when pushed hard it acts like an overzealous DJ who cranks the volume so high the music distorts. This distortion bends the beam in the wrong direction and weakens the connection. Worse, real-world signals are messy and irregular, not the neat bell-curve shapes that standard math tools assume. This paper introduces a new numerical toolkit that accurately predicts exactly how an amplifier will mangle any given signal, no matter how irregular it is. With this tool, engineers can design smarter compensation systems before a vehicle ever hits the road. That means faster, safer, and more reliable wireless links for tomorrow's self-driving cars.",
+        "zh-CN": "想象你在高速公路上以120公里每小时行驶，车辆正通过细如激光的毫米波信号与路边基站通信。这道「光束」必须精准对准才能保持高速上网。但车上的功率放大器就像一位脾气暴躁的音响师——信号一旦太强，他就会扭曲原本的声音，让「光束」偏向错误方向，网络质量急速下滑。更麻烦的是，现实中的信号并不像理论假设的那样规规矩矩，而是形状不规则、难以计算的「怪信号」。这篇论文提出了一套新的数学工具，能够准确预测放大器到底把信号扭曲成什么样子。有了这套工具，工程师就能在设计阶段提前补偿失真，让高速行驶中的车辆也能享有稳定可靠的毫米波通信，对未来自动驾驶的安全性至关重要。",
+        "ja": "時速120kmで走る車が、細いレーザーのようなミリ波ビームで基地局と通信しているところを想像してください。このビームは正確に向いていないと、高速通信が維持できません。ところが車載の電力増幅器は、音量を上げすぎると音が割れるアンプのように、信号を強くしすぎると波形を歪めてしまいます。歪んだビームは方向がずれ、通信品質が急落します。さらに困るのは、現実の信号は教科書が仮定するような整った形ではなく、不規則で計算しにくい「いびつな信号」だという点です。この論文は、どんな不規則な信号でも増幅器がどう歪めるかを正確に予測できる数値ツールを提案します。これにより、設計段階で歪みを補正し、自動運転車の安全な通信を実現する道が開けます。",
+        "ko": "시속 120km로 달리는 차가 레이저처럼 가느다란 밀리미터파 빔으로 기지국과 통신하는 장면을 상상해보세요. 이 빔은 정확히 겨냥되어야만 고속 인터넷이 유지됩니다. 그런데 차 안의 전력 증폭기는 볼륨을 너무 높이면 소리가 깨지는 앰프처럼, 신호를 너무 강하게 키우면 파형을 왜곡시킵니다. 왜곡된 빔은 방향이 틀어지고 통신 품질이 급락합니다. 더 어려운 점은 실제 신호가 교과서의 깔끔한 종 모양이 아니라, 불규칙하고 계산하기 어려운 「이상한 신호」라는 것입니다. 이 논문은 어떤 불규칙한 신호든 증폭기가 어떻게 왜곡하는지 정확히 예측할 수 있는 수치 도구를 제안합니다. 이를 통해 설계 단계에서 왜곡을 미리 보상하여 자율주행차의 안정적인 통신을 실현할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 現實世界的訊號從不「乖乖聽話」——只有能處理「怪訊號」的數學工具，才能真正讓毫米波車聯網走出實驗室。",
+        "en": "💡 Real-world signals never behave perfectly—only math tools built for 「messy」 signals can truly bring mmWave vehicle networks out of the lab.",
+        "zh-CN": "💡 现实世界的信号从不「乖乖听话」——只有能处理「怪信号」的数学工具，才能真正让毫米波车联网走出实验室。",
+        "ja": "💡 現実の信号は決して「お行儀よく」振る舞わない——「いびつな信号」を扱える数学ツールこそが、ミリ波車載通信を実用化する鍵だ。",
+        "ko": "💡 현실의 신호는 절대 「얌전하게」 움직이지 않는다——「이상한 신호」를 다룰 수 있는 수학 도구만이 밀리미터파 차량 통신을 실험실 밖으로 이끌 수 있다."
+      }
+    }
+  ]
+}
