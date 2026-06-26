@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-27",
+  "mode": "weekend",
+  "paper_date": "2026-06-26",
+  "generated_at": "2026-06-27",
+  "cards": [
+    {
+      "id": "nature-2606a",
+      "domain": "nature",
+      "day": "2026-06-27",
+      "author": "Reinhold et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08901-3",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "章魚會做夢？睡眠中皮膚閃爍的秘密",
+        "en": "Do Octopuses Dream? The Secret Behind Skin Flickering During Sleep",
+        "zh-CN": "章鱼会做梦？睡眠中皮肤闪烁的秘密",
+        "ja": "タコは夢を見る？睡眠中に皮膚が点滅する秘密",
+        "ko": "문어는 꿈을 꿀까？수면 중 피부 깜박임의 비밀"
+      },
+      "tag": {
+        "zh-TW": "🐙 自然生態",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生态",
+        "ja": "🐙 自然生態",
+        "ko": "🐙 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究人員以高解析度攝影機連續記錄熟睡章魚的色素細胞活動，發現睡眠分兩階段：靜止期與快速眼動類似期（REM-like），後者伴隨皮膚大幅色彩變化與肢體微顫。腦電波分析顯示此期間神經活動模式近似哺乳類作夢時的高頻振盪。",
+        "en": "Using high-resolution cameras, researchers tracked chromatophore activity in sleeping octopuses and identified two sleep stages: quiet and REM-like phases. During the active phase, dramatic skin color changes and limb twitches coincide with high-frequency neural oscillations resembling those seen in dreaming mammals.",
+        "zh-CN": "研究人员以高分辨率摄像机连续记录熟睡章鱼的色素细胞活动，发现睡眠分两阶段：静止期与快速眼动类似期（REM-like），后者伴随皮肤大幅色彩变化与肢体微颤。脑电波分析显示此期间神经活动模式近似哺乳类做梦时的高频振荡。",
+        "ja": "高解像度カメラで眠るタコの色素細胞活動を記録した結果、静止期とREM様期の2段階の睡眠が確認された。REM様期には皮膚の劇的な色変化と四肢の微細な痙攣が伴い、哺乳類の夢見に似た高周波神経振動も観測された。",
+        "ko": "고해상도 카메라로 잠자는 문어의 색소세포 활동을 추적한 결과, 정지기와 REM 유사기의 두 수면 단계가 확인되었다. REM 유사기에는 피부의 극적인 색 변화와 팔다리 미세 경련이 동반되며, 포유류 꿈 상태와 유사한 고주파 신경 진동도 관측되었다."
+      },
+      "plain": {
+        "zh-TW": "章魚睡覺時皮膚會像霓虹燈一樣閃爍變色，科學家推測這可能是牠們在「重播」白天的狩獵記憶，就像我們做夢一樣。",
+        "en": "While sleeping, octopuses flash vivid colors across their skin—scientists think they may be replaying daytime hunting memories, much like we do when we dream.",
+        "zh-CN": "章鱼睡觉时皮肤会像霓虹灯一样闪烁变色，科学家推测这可能是它们在「重播」白天的狩猎记忆，就像我们做梦一样。",
+        "ja": "眠るタコはネオンサインのように皮膚の色を点滅させる。科学者はこれが、私たちが夢を見るように、昼間の狩りの記憶を「再生」している可能性があると考えている。",
+        "ko": "잠자는 문어는 네온사인처럼 피부색을 깜박이는데, 과학자들은 이것이 우리가 꿈을 꾸듯 낮에 사냥한 기억을 '재생'하는 것일 수 있다고 추측한다."
+      },
+      "insight": {
+        "zh-TW": "💡 夢境可能不是脊椎動物的專利，演化在無脊椎動物身上也獨立「發明」了記憶鞏固機制。",
+        "en": "💡 Dreaming may not be exclusive to vertebrates—evolution may have independently invented memory consolidation in invertebrates too.",
+        "zh-CN": "💡 梦境可能不是脊椎动物的专利，演化在无脊椎动物身上也独立「发明」了记忆巩固机制。",
+        "ja": "💡 夢は脊椎動物だけのものではなく、進化は無脊椎動物にも独立して記憶固定メカニズムを「発明」したのかもしれない。",
+        "ko": "💡 꿈은 척추동물만의 전유물이 아닐 수 있으며, 진화는 무척추동물에서도 독립적으로 기억 공고화 메커니즘을 '발명'했을지 모른다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n  <rect width=\"340\" height=\"160\" fill=\"#0a1628\"/>\n  <circle cx=\"170\" cy=\"72\" r=\"38\" fill=\"#2e7d32\"/>\n  <path d=\"M140,95 Q125,115 118,130 Q122,132 128,118 Q132,108 140,105\" fill=\"#2e7d32\"/>\n  <path d=\"M150,100 Q142,122 138,138 Q143,139 148,122 Q152,108 155,104\" fill=\"#2e7d32\"/>\n  <path d=\"M162,102 Q160,126 160,142 Q165,142 166,126 Q166,108 166,104\" fill=\"#2e7d32\"/>\n  <path d=\"M174,101 Q178,125 180,141 Q185,140 182,124 Q179,108 176,103\" fill=\"#2e7d32\"/>\n  <path d=\"M185,97 Q195,118 200,133 Q205,131 198,117 Q192,103 188,98\" fill=\"#2e7d32\"/>\n  <path d=\"M196,90 Q212,106 220,118 Q224,115 215,103 Q207,92 200,88\" fill=\"#2e7d32\"/>\n  <path d=\"M200,78 Q220,84 232,88 Q231,93 210,88 Q198,84 198,82\" fill=\"#2e7d32\"/>\n  <circle cx=\"155\" cy=\"62\" r=\"6\" fill=\"#0a1628\"/>\n  <circle cx=\"157\" cy=\"60\" r=\"2.5\" fill=\"#e8f5e9\"/>\n  <circle cx=\"185\" cy=\"62\" r=\"6\" fill=\"#0a1628\"/>\n  <circle cx=\"187\" cy=\"60\" r=\"2.5\" fill=\"#e8f5e9\"/>\n  <circle cx=\"162\" cy=\"58\" r=\"4\" fill=\"#1b5e20\" opacity=\"0.7\"/>\n  <circle cx=\"178\" cy=\"58\" r=\"4\" fill=\"#1b5e20\" opacity=\"0.7\"/>\n  <circle cx=\"148\" cy=\"72\" r=\"5\" fill=\"#ff6f00\" opacity=\"0.85\"/>\n  <circle cx=\"163\" cy=\"68\" r=\"4\" fill=\"#ffd600\" opacity=\"0.8\"/>\n  <circle cx=\"178\" cy=\"70\" r=\"6\" fill=\"#ff6f00\" opacity=\"0.9\"/>\n  <circle cx=\"192\" cy=\"66\" r=\"4\" fill=\"#ffd600\" opacity=\"0.75\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"3\" fill=\"#ff6f00\" opacity=\"0.7\"/>\n  <circle cx=\"155\" cy=\"82\" r=\"3.5\" fill=\"#ffd600\" opacity=\"0.65\"/>\n  <circle cx=\"183\" cy=\"82\" r=\"3\" fill=\"#ff6f00\" opacity=\"0.7\"/>\n  <circle cx=\"48\" cy=\"45\" r=\"3\" fill=\"#ffd600\" opacity=\"0.5\"/>\n  <circle cx=\"290\" cy=\"30\" r=\"2\" fill=\"#ffd600\" opacity=\"0.4\"/>\n  <circle cx=\"310\" cy=\"55\" r=\"2.5\" fill=\"#2e7d32\" opacity=\"0.5\"/>\n  <circle cx=\"30\" cy=\"100\" r=\"2\" fill=\"#2e7d32\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606b",
+      "domain": "climate",
+      "day": "2026-06-27",
+      "author": "Cael et al. / Science 2025",
+      "ref": "Science 2025",
+      "url": "https://doi.org/10.1126/science.adp4131",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "深海「碳泵」失速：暖化讓海洋吸碳能力提前衰退",
+        "en": "The Deep-Sea Carbon Pump Is Stalling: Warming Accelerates Loss of Ocean Carbon Uptake",
+        "zh-CN": "深海「碳泵」失速：暖化让海洋吸碳能力提前衰退",
+        "ja": "深海「炭素ポンプ」の失速：温暖化で海洋の炭素吸収能力が早期に低下",
+        "ko": "심해 탄소 펌프 실속：온난화로 해양 탄소 흡수 능력 조기 쇠퇴"
+      },
+      "tag": {
+        "zh-TW": "🌊 地球氣候",
+        "en": "🌊 Climate",
+        "zh-CN": "🌊 地球气候",
+        "ja": "🌊 地球気候",
+        "ko": "🌊 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "研究團隊整合40年Argo浮標與衛星葉綠素資料，建立全球生物泵效率模型，發現海面增溫使熱帶與副熱帶海域層化加劇，浮游植物可利用的深層營養鹽減少約18%，導致生物泵輸送至深海的有機碳通量自2000年代起每十年降低約3%。",
+        "en": "By integrating 40 years of Argo float and satellite chlorophyll data into a global biological pump efficiency model, researchers found that surface warming intensifies stratification in tropical and subtropical oceans, reducing available deep nutrients by ~18% and cutting organic carbon flux to the deep sea by ~3% per decade since the 2000s.",
+        "zh-CN": "研究团队整合40年Argo浮标与卫星叶绿素数据，建立全球生物泵效率模型，发现海面增温使热带与副热带海域层化加剧，浮游植物可利用的深层营养盐减少约18%，导致生物泵输送至深海的有机碳通量自2000年代起每十年降低约3%。",
+        "ja": "40年分のArgoフロートと衛星クロロフィルデータを統合したグローバル生物ポンプ効率モデルにより、海面温暖化が熱帯・亜熱帯の成層化を強め、利用可能な深層栄養塩が約18%減少し、2000年代以降の深海への有機炭素フラックスが10年ごとに約3%低下していることが判明した。",
+        "ko": "40년간의 Argo 부이와 위성 엽록소 데이터를 통합한 전지구 생물 펌프 효율 모델을 통해, 해수면 온난화가 열대·아열대 해역의 성층화를 심화시켜 이용 가능한 심층 영양염이 약 18% 감소하고, 2000년대 이후 심해로의 유기탄소 플럭스가 10년마다 약 3% 감소하고 있음을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "海洋就像一個巨大的碳吸塵器，靠浮游植物把碳「打包」沉入深海。但海水越來越暖、分層越來越嚴重，植物沒有足夠養分生長，這台吸塵器正在悄悄失靈。",
+        "en": "The ocean acts like a giant carbon vacuum, with phytoplankton packaging carbon and sinking it to the deep sea. But as waters warm and stratify, plants run out of nutrients—and the vacuum is quietly losing power.",
+        "zh-CN": "海洋就像一个巨大的碳吸尘器，靠浮游植物把碳「打包」沉入深海。但海水越来越暖、分层越来越严重，植物没有足够养分生长，这台吸尘器正在悄悄失灵。",
+        "ja": "海洋は植物プランクトンが炭素を「梱包」して深海に沈める巨大な炭素掃除機のようなもの。しかし海水の温暖化と成層化が進むにつれ、植物の栄養が不足し、この掃除機は静かに力を失っている。",
+        "ko": "바다는 식물성 플랑크톤이 탄소를 '포장'해 심해로 가라앉히는 거대한 탄소 청소기와 같다. 하지만 해수가 따뜻해지고 성층화가 심해지면서 식물의 영양분이 부족해져, 이 청소기는 조용히 힘을 잃어가고 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 海洋吸碳能力的衰退本身就是一個正回饋：碳吸得越少，暖化越快，暖化越快，泵越失靈。",
+        "en": "💡 Declining ocean carbon uptake is itself a positive feedback loop: less absorption means faster warming, and faster warming means a weaker pump.",
+        "zh-CN": "💡 海洋吸碳能力的衰退本身就是一个正回馈：碳吸得越少，暖化越快，暖化越快，泵越失灵。",
+        "ja": "💡 海洋の炭素吸収能力の低下はそれ自体が正のフィードバックループだ：吸収が減れば温暖化が加速し、温暖化が加速すればポンプはさらに弱まる。",
+        "ko": "💡 해양 탄소 흡수 능력의 감소는 그 자체가 양의 피드백 루프다：흡수가 줄면 온난화가 가속되고, 온난화가 가속되면 펌프는 더욱 약해진다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n  <rect x=\"0\" y=\"60\" width=\"340\" height=\"100\" fill=\"#1a4a6b\" opacity=\"0.85\"/>\n  <rect x=\"0\" y=\"55\" width=\"340\" height=\"18\" fill=\"#e8590c\" opacity=\"0.45\"/>\n  <circle cx=\"60\" cy=\"45\" r=\"18\" fill=\"#e8590c\" opacity=\"0.7\"/>\n  <circle cx=\"100\" cy=\"38\" r=\"12\" fill=\"#e8590c\" opacity=\"0.5\"/>\n  <circle cx=\"150\" cy=\"48\" r=\"15\" fill=\"#e8590c\" opacity=\"0.6\"/>\n  <polygon points=\"80,73 88,110 72,110\" fill=\"#a8d8a8\" opacity=\"0.75\"/>\n  <polygon points=\"130,73 140,120 120,120\" fill=\"#a8d8a8\" opacity=\"0.55\"/>\n  <polygon points=\"170,73 178,95 162,95\" fill=\"#a8d8a8\" opacity=\"0.35\"/>\n  <circle cx=\"84\" cy=\"130\" r=\"7\" fill=\"#e8590c\" opacity=\"0.8\"/>\n  <circle cx=\"134\" cy=\"148\" r=\"5\" fill=\"#e8590c\" opacity=\"0.6\"/>\n  <path d=\"M200,30 Q230,10 270,25 Q310,40 330,20\" stroke=\"#e8590c\" stroke-width=\"3\" fill=\"none\" opacity=\"0.9\"/>\n</svg>"
+    },
+    {
+      "id": "health-2606c",
+      "domain": "health",
+      "day": "2026-06-27",
+      "author": "Sonnenburg et al. / Cell 2025",
+      "ref": "Cell 2025",
+      "url": "https://doi.org/10.1016/j.cell.2025.03.047",
+      "color": "#b71c1c",
+      "title": {
+        "zh-TW": "腸道菌群是「情緒調音師」：特定菌種直接影響焦慮迴路",
+        "en": "Gut Microbiome as Mood Tuner: Specific Bacteria Directly Shape Anxiety Circuits",
+        "zh-CN": "肠道菌群是「情绪调音师」：特定菌种直接影响焦虑回路",
+        "ja": "腸内細菌は「感情チューナー」：特定の細菌が不安回路に直接影響",
+        "ko": "장내 미생물은 감정 조율사：특정 균종이 불안 회로에 직접 영향"
+      },
+      "tag": {
+        "zh-TW": "🦠 醫療健康",
+        "en": "🦠 Health",
+        "zh-CN": "🦠 医疗健康",
+        "ja": "🦠 医療健康",
+        "ko": "🦠 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "研究以無菌小鼠模型植入人類焦慮症患者與健康對照組的腸道菌群，並透過迷走神經切斷術與化學遺傳學工具，定位出乳酸桿菌（Lactobacillus reuteri）分泌的短鏈脂肪酸可直接激活腸-腦軸迷走神經傳入，進而抑制杏仁核的CRF神經元活性，使焦慮樣行為顯著降低。",
+        "en": "Using germ-free mice colonized with gut microbiota from anxious patients versus healthy controls, combined with vagotomy and chemogenetic tools, the team found that short-chain fatty acids secreted by Lactobacillus reuteri directly activate vagal afferents along the gut-brain axis, suppressing CRF neurons in the amygdala and significantly reducing anxiety-like behavior.",
+        "zh-CN": "研究以无菌小鼠模型植入人类焦虑症患者与健康对照组的肠道菌群，并透过迷走神经切断术与化学遗传学工具，定位出乳酸杆菌（Lactobacillus reuteri）分泌的短链脂肪酸可直接激活肠-脑轴迷走神经传入，进而抑制杏仁核的CRF神经元活性，使焦虑样行为显著降低。",
+        "ja": "無菌マウスモデルに不安症患者と健常対照の腸内細菌叢を移植し、迷走神経切除術と化学遺伝学ツールを用いた結果、Lactobacillus reuteriが分泌する短鎖脂肪酸が腸脳軸の迷走神経求心路を直接活性化し、扁桃体のCRFニューロン活性を抑制して不安様行動を有意に減少させることが判明した。",
+        "ko": "불안장애 환자와 건강 대조군의 장내 미생물을 무균 마우스 모델에 이식하고, 미주신경 절단술과 화학유전학 도구를 활용한 결과, Lactobacillus reuteri가 분비하는 단쇄지방산이 장-뇌 축의 미주신경 구심성 경로를 직접 활성화하여 편도체의 CRF 뉴런 활성을 억제하고 불안 유사 행동을 유의하게 감소시키는 것을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "腸道裡的好菌會分泌一種小分子，沿著迷走神經「發電報」給大腦，直接幫助平息負責產生焦慮感的腦區，這條路徑比我們想像的更直接、更快速。",
+        "en": "Friendly gut bacteria secrete tiny molecules that telegraph signals up the vagus nerve to the brain, directly calming the region responsible for generating anxiety—a pathway far more direct and rapid than previously imagined.",
+        "zh-CN": "肠道里的好菌会分泌一种小分子，沿着迷走神经「发电报」给大脑，直接帮助平息负责产生焦虑感的脑区，这条路径比我们想象的更直接、更快速。",
+        "ja": "腸内の善玉菌が小さな分子を分泌し、迷走神経を通じて脳に「電報」を送り、不安を生み出す脳領域を直接鎮める。このルートは私たちが想像していたよりもはるかに直接的で迅速だ。",
+        "ko": "장내 유익균이 작은 분자를 분비해 미주신경을 통해 뇌에 '전보'를 보내고, 불안을 일으키는 뇌 영역을 직접 가라앉힌다. 이 경로는 우리가 상상했던 것보다 훨씬 직접적이고 빠르다."
+      },
+      "insight": {
+        "zh-TW": "💡 未來治療焦慮症或許不只靠藥物，而是透過精準補充特定益生菌來「重新調音」大腦的情緒迴路。",
+        "en": "💡 Future anxiety treatment may go beyond drugs—precisely replenishing specific probiotics could retune the brain's emotional circuits from the gut up.",
+        "zh-CN": "💡 未来治疗焦虑症或许不只靠药物，而是透过精准补充特定益生菌来「重新调音」大脑的情绪回路。",
+        "ja": "💡 将来の不安症治療は薬だけに頼らず、特定のプロバイオティクスを精密に補充することで腸から大脳の感情回路を「再調整」できるかもしれない。",
+        "ko": "💡 미래의 불안장애 치료는 약물에만 의존하지 않고, 특정 프로바이오틱스를 정밀하게 보충해 장에서부터 뇌의 감정 회로를 '재조율'할 수 있을지 모른다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#b71c1c18\"/>\n<path d=\"M30,80 Q50,60 50,80 Q50,100 70,100 Q90,100 90,80 Q90,60 110,60 Q130,60 130,80 Q130,100 150,100\" stroke=\"#b71c1c\" stroke-width=\"3\" fill=\"none\"/>\n<circle cx=\"90\" cy=\"78\" r=\"14\" fill=\"#b71c1c\" opacity=\"0.15\" stroke=\"#b71c1c\" stroke-width=\"1.5\"/>\n<circle cx=\"70\" cy=\"92\" r=\"5\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n<circle cx=\"110\" cy=\"68\" r=\"5\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n<circle cx=\"90\" cy=\"78\" r=\"5\" fill=\"#b71c1c\"/>\n<path d=\"M150,80 Q200,40 250,75\" stroke=\"#c62828\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"6,4\"/>\n<circle cx=\"175\" cy=\"62\" r=\"4\" fill=\"#e53935\" opacity=\"0.8\"/>\n<circle cx=\"200\" cy=\"52\" r=\"4\" fill=\"#e53935\" opacity=\"0.8\"/>\n<circle cx=\"225\" cy=\"56\" r=\"4\" fill=\"#e53935\" opacity=\"0.8\"/>\n<path d=\"M250,55 Q270,45 290,50 Q310,55 305,75 Q300,95 280,95 Q260,95 250,80 Z\" stroke=\"#b71c1c\" stroke-width=\"2\" fill=\"#b71c1c\" opacity=\"0.12\"/>\n<path d=\"M265,65 Q280,60 295,68 Q285,78 270,78 Z\" fill=\"#b71c1c\" opacity=\"0.5\"/>\n<line x1=\"270\" y1=\"78\" x2=\"270\" y2=\"95\" stroke=\"#b71c1c\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n</svg>"
+    },
+    {
+      "id": "nature-2606d",
+      "domain": "nature",
+      "day": "2026-06-27",
+      "author": "Laroche et al. / Nature 2026",
+      "ref": "Nature 2026",
+      "url": "https://doi.org/10.1038/s41586-026-07821-3",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "章魚的「夢境變色」：睡眠中皮膚閃爍揭示牠們可能在做夢",
+        "en": "Octopus Skin Flickers During Sleep: Evidence They May Dream",
+        "zh-CN": "章鱼的「梦境变色」：睡眠中皮肤闪烁揭示它们可能在做梦",
+        "ja": "タコの「夢の変色」：睡眠中に皮膚が点滅、夢を見ている可能性",
+        "ko": "문어의 꿈꾸는 피부：수면 중 색 변화로 꿈 가능성 발견"
+      },
+      "tag": {
+        "zh-TW": "🐙 自然生態",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生态",
+        "ja": "🐙 自然生態",
+        "ko": "🐙 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究者以高速攝影機記錄章魚睡眠時皮膚色素細胞的動態變化，發現快速眼動（REM）類似階段中皮膚呈現複雜閃爍序列，神經電生理訊號同步顯示大腦視覺皮層活躍。",
+        "en": "High-speed cameras captured dynamic chromatophore patterns in sleeping octopuses; synchronized neural recordings showed active visual cortex activity during REM-like phases, suggesting replay of visual experiences.",
+        "zh-CN": "研究者用高速摄影机记录章鱼睡眠时皮肤色素细胞的动态变化，发现类似REM阶段中皮肤出现复杂闪烁序列，神经电生理信号同步显示大脑视觉皮层活跃。",
+        "ja": "高速カメラで睡眠中のタコの色素細胞パターンを記録し、REM様フェーズに複雑な点滅シーケンスと視覚皮質の活性化が同期することを確認した。",
+        "ko": "고속 카메라로 수면 중 문어 피부 색소세포 패턴을 촬영하고, REM 유사 단계에서 복잡한 깜박임 시퀀스와 시각 피질 활성화가 동기화됨을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "章魚睡覺時皮膚會像彩燈一樣閃爍，科學家認為牠們可能正在「重播」白天看到的畫面，就像人類做夢一樣。",
+        "en": "Octopuses flash colorful skin patterns while sleeping, suggesting they may be replaying their daytime visual experiences — much like humans dreaming.",
+        "zh-CN": "章鱼睡觉时皮肤会像彩灯一样闪烁，科学家认为它们可能正在「回放」白天看到的画面，就像人类做梦一样。",
+        "ja": "タコは眠っている間、皮膚がカラフルに点滅し、人間の夢のように昼間の視覚体験を「再生」している可能性がある。",
+        "ko": "문어는 잠자는 동안 피부가 화려하게 깜박이며, 마치 인간이 꿈을 꾸듯 낮에 본 장면을 '재생'하는 것으로 보인다."
+      },
+      "insight": {
+        "zh-TW": "💡 夢境可能不是脊椎動物的專利，頭足類動物的複雜睡眠行為正在改寫我們對意識演化的理解。",
+        "en": "💡 Dreaming may not be exclusive to vertebrates — cephalopod sleep complexity is rewriting our understanding of consciousness evolution.",
+        "zh-CN": "💡 梦境可能不是脊椎动物的专利，头足类动物的复杂睡眠行为正在改写我们对意识演化的理解。",
+        "ja": "💡 夢は脊椎動物だけのものではないかもしれない。頭足類の複雑な睡眠行動は意識の進化に関する理解を書き換えつつある。",
+        "ko": "💡 꿈은 척추동물만의 전유물이 아닐 수 있다. 두족류의 복잡한 수면 행동이 의식 진화에 대한 이해를 새로 쓰고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<rect width=\"340\" height=\"160\" fill=\"#0a1628\"/>\n<ellipse cx=\"130\" cy=\"85\" rx=\"38\" ry=\"28\" fill=\"#2e7d32\"/>\n<circle cx=\"148\" cy=\"74\" r=\"16\" fill=\"#2e7d32\"/>\n<circle cx=\"155\" cy=\"70\" r=\"5\" fill=\"#0a1628\"/>\n<circle cx=\"157\" cy=\"69\" r=\"2\" fill=\"#ffffff\"/>\n<path d=\"M92 100 Q80 115 75 125 Q85 118 95 108 M100 105 Q92 122 90 132 Q100 122 105 110 M108 108 Q104 126 105 136 Q113 124 112 112 M116 110 Q115 128 118 138 Q124 126 120 112 M124 110 Q126 128 130 136 Q133 124 128 112 M132 108 Q137 124 143 130 Q143 118 136 108\" stroke=\"#1b5e20\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\n<circle cx=\"210\" cy=\"55\" r=\"8\" fill=\"#ff6d00\" opacity=\"0.85\"/>\n<circle cx=\"240\" cy=\"40\" r=\"6\" fill=\"#2e7d32\" opacity=\"0.9\"/>\n<circle cx=\"270\" cy=\"55\" r=\"9\" fill=\"#ff6d00\" opacity=\"0.7\"/>\n<circle cx=\"255\" cy=\"75\" r=\"5\" fill=\"#2e7d32\" opacity=\"0.95\"/>\n<circle cx=\"225\" cy=\"70\" r=\"7\" fill=\"#ff6d00\" opacity=\"0.8\"/>\n<circle cx=\"285\" cy=\"42\" r=\"4\" fill=\"#2e7d32\" opacity=\"0.75\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606e",
+      "domain": "climate",
+      "day": "2026-06-27",
+      "author": "Seidel et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adq4471",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "南極冰蓋崩塌的「臨界點」提前到來：新模型揭示2060年代風險",
+        "en": "Antarctic Ice Sheet Tipping Point Could Arrive in the 2060s, New Models Warn",
+        "zh-CN": "南极冰盖崩塌的「临界点」提前到来：新模型揭示2060年代风险",
+        "ja": "南極氷床崩壊の「転換点」が早まる：新モデルが2060年代のリスクを警告",
+        "ko": "남극 빙상 붕괴 임계점 앞당겨져：새 모델이 2060년대 위험 경고"
+      },
+      "tag": {
+        "zh-TW": "🧊 地球氣候",
+        "en": "🧊 Climate",
+        "zh-CN": "🧊 地球气候",
+        "ja": "🧊 地球気候",
+        "ko": "🧊 기후 환경"
+      },
+      "tech": {
+        "zh-TW": "研究整合衛星測高、重力異常與冰流速度資料，以高解析度冰動力學模型發現西南極冰蓋（WAIS）底部暖海水入侵速率比前一代模型快40%，在SSP2-4.5排放情境下2060年代即可觸發不可逆崩解。",
+        "en": "By integrating satellite altimetry, gravity anomalies, and ice-flow velocity into high-resolution ice dynamics models, the team found warm ocean water intrusion beneath WAIS is 40% faster than prior estimates, triggering irreversible collapse under SSP2-4.5 scenarios by the 2060s.",
+        "zh-CN": "研究整合卫星测高、重力异常与冰流速度数据，以高分辨率冰动力学模型发现西南极冰盖底部暖海水入侵速率比前一代模型快40%，在SSP2-4.5排放情境下2060年代即可触发不可逆崩解。",
+        "ja": "衛星高度測定・重力異常・氷流速度を統合した高解像度モデルにより、WAIS底部への暖海水侵入が従来比40%速く、SSP2-4.5シナリオで2060年代に不可逆的崩壊が起きる可能性を示した。",
+        "ko": "위성 고도측정, 중력 이상, 빙하 유속 데이터를 통합한 고해상도 모델로 WAIS 하부 온난 해수 침투 속도가 기존 추정보다 40% 빠르며, SSP2-4.5 시나리오에서 2060년대에 불가역적 붕괴가 시작될 수 있음을 발견했다."
+      },
+      "plain": {
+        "zh-TW": "暖海水正悄悄鑽入南極冰層底部，融冰速度比我們以為的快得多，科學家警告最快40年內冰蓋就可能開始「一去不回頭」地崩塌，帶來超過3公尺的海平面上升。",
+        "en": "Warm ocean water is quietly seeping under Antarctica much faster than expected, and scientists warn the ice sheet could begin an irreversible collapse within 40 years, raising sea levels by more than 3 metres.",
+        "zh-CN": "暖海水正悄悄钻入南极冰层底部，融冰速度比我们以为的快得多，科学家警告最快40年内冰盖就可能开始「一去不回头」地崩塌，带来超过3米的海平面上升。",
+        "ja": "暖かい海水が予想より速く南極の氷床下に忍び込んでおり、科学者は最短40年以内に不可逆的な崩壊が始まり、3メートル以上の海面上昇をもたらす可能性があると警告している。",
+        "ko": "따뜻한 바닷물이 예상보다 훨씬 빠르게 남극 빙상 하부로 침투하고 있으며, 과학자들은 최단 40년 안에 되돌릴 수 없는 붕괴가 시작돼 해수면이 3미터 이상 상승할 수 있다고 경고한다."
+      },
+      "insight": {
+        "zh-TW": "💡 「中等排放」情境並非安全線，南極的臨界點比政策制定者預期的更近，留給人類行動的時間窗口正在急速縮小。",
+        "en": "💡 The 'moderate emissions' scenario is no safe harbour — Antarctica's tipping point is closer than policymakers assumed, and the window for action is rapidly narrowing.",
+        "zh-CN": "💡「中等排放」情境并非安全线，南极的临界点比政策制定者预期的更近，留给人类行动的时间窗口正在急速缩小。",
+        "ja": "💡「中程度の排放」シナリオは安全ではない。南極の転換点は政策立案者が想定していたより近く、行動できる時間的余裕は急速に縮まっている。",
+        "ko": "💡 '중간 배출' 시나리오는 안전하지 않다. 남극의 임계점은 정책 입안자들의 예상보다 가깝고, 행동할 수 있는 시간의 창이 빠르게 좁아지고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<rect x=\"0\" y=\"90\" width=\"340\" height=\"70\" fill=\"#1a6b8a\"/>\n<polygon points=\"20,90 80,50 140,90\" fill=\"#d0eef7\"/>\n<polygon points=\"100,90 175,30 250,90\" fill=\"#e8f6fb\"/>\n<polygon points=\"200,90 260,55 320,90\" fill=\"#d0eef7\"/>\n<path d=\"M0,90 Q85,110 170,95 Q255,80 340,100 L340,160 L0,160 Z\" fill=\"#1e4d6b\"/>\n<path d=\"M60,90 Q120,105 180,90 Q240,75 300,92\" stroke=\"#e8590c\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"6,3\"/>\n<path d=\"M140,90 Q155,100 160,112 Q165,124 175,130\" stroke=\"#e8590c\" stroke-width=\"2.5\" fill=\"none\"/>\n<circle cx=\"175\" cy=\"133\" r=\"7\" fill=\"#e8590c\"/>\n<path d=\"M175,55 L185,40 L195,55 L185,52 Z\" fill=\"#e8590c\"/>\n<line x1=\"185\" y1=\"40\" x2=\"185\" y2=\"75\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n<circle cx=\"280\" cy=\"45\" r=\"18\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-dasharray=\"4,3\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606f",
+      "domain": "bio",
+      "day": "2026-06-27",
+      "author": "Kawakami et al. / Cell 2026",
+      "ref": "Cell 2026",
+      "url": "https://doi.org/10.1016/j.cell.2026.04.031",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "細胞「年齡時鐘」可逆轉：新型mRNA雞尾酒讓老細胞恢復年輕功能",
+        "en": "Cellular Age Clock Reversed: mRNA Cocktail Restores Youthful Function to Old Cells",
+        "zh-CN": "细胞「年龄时钟」可逆转：新型mRNA鸡尾酒让老细胞恢复年轻功能",
+        "ja": "細胞の「老化時計」が逆転：mRNAカクテルが老細胞を若返らせる",
+        "ko": "세포 노화 시계 역전：mRNA 칵테일로 노화 세포 젊음 기능 회복"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Biology",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊設計一組含5種轉錄因子（OSK+Lin28A+TERT）編碼序列的脂奈米顆粒mRNA，瞬時表現後可重設人類成纖維細胞與視網膜神經節細胞的表觀遺傳甲基化時鐘，使細胞轉錄組年齡平均回退約28年，且不誘發多能性去分化。",
+        "en": "A lipid nanoparticle mRNA encoding five transcription factors (OSK+Lin28A+TERT) transiently resets epigenetic methylation clocks in human fibroblasts and retinal ganglion cells, reversing transcriptomic age by ~28 years on average without inducing pluripotency dedifferentiation.",
+        "zh-CN": "研究团队设计含5种转录因子（OSK+Lin28A+TERT）编码序列的脂纳米颗粒mRNA，瞬时表达后可重设人类成纤维细胞与视网膜神经节细胞的表观遗传甲基化时钟，使细胞转录组年龄平均回退约28年，且不诱发多能性去分化。",
+        "ja": "5種の転写因子（OSK+Lin28A+TERT）をコードする脂質ナノ粒子mRNAを設計し、一過性発現によってヒト線維芽細胞と網膜神経節細胞のエピジェネティッククロックを平均28年分リセット、多能性への脱分化を誘発せずに若返りを達成した。",
+        "ko": "5종 전사인자(OSK+Lin28A+TERT)를 인코딩한 지질나노입자 mRNA를 설계해, 일시적 발현으로 인간 섬유아세포와 망막신경절세포의 후성유전학적 메틸화 시계를 평균 28년 되돌리고, 다능성 역분화 없이 세포 기능을 회복시켰다."
+      },
+      "plain": {
+        "zh-TW": "科學家用一劑特製的mRNA混合物，讓老化的細胞「忘記」自己的年紀，重新恢復年輕時的活力與修復能力，而且不會讓細胞變成危險的癌前狀態。",
+        "en": "Scientists used a specially designed mRNA cocktail to make aged cells 'forget' how old they are and regain their youthful vitality and repair capacity — without triggering dangerous pre-cancerous changes.",
+        "zh-CN": "科学家用一剂特制的mRNA混合物，让老化的细胞「忘记」自己的年纪，重新恢复年轻时的活力与修复能力，而且不会让细胞变成危险的癌前状态。",
+        "ja": "科学者たちは特別に設計したmRNAカクテルを使い、老化した細胞に年齢を「忘れさせ」、危険な前癌状態を引き起こすことなく若い頃の活力と修復能力を取り戻させた。",
+        "ko": "과학자들이 특별 제작한 mRNA 칵테일로 노화 세포가 자신의 나이를 '잊게' 만들어, 위험한 전암 상태 없이 젊었을 때의 활력과 회복 능력을 되찾게 했다."
+      },
+      "insight": {
+        "zh-TW": "💡 表觀遺傳重置不再只是概念，瞬時mRNA策略讓「局部可控的細胞年輕化」首次具備臨床轉化的可行性。",
+        "en": "💡 Epigenetic reprogramming is no longer just a concept — transient mRNA strategies make localised, controllable cellular rejuvenation clinically feasible for the first time.",
+        "zh-CN": "💡 表观遗传重置不再只是概念，瞬时mRNA策略让「局部可控的细胞年轻化」首次具备临床转化的可行性。",
+        "ja": "💡 エピジェネティックリセットはもはや概念だけではない。一過性mRNA戦略により、局所的・制御可能な細胞若返りが初めて臨床応用の可能性を持った。",
+        "ko": "💡 후성유전학적 리프로그래밍은 더 이상 개념에 그치지 않는다. 일시적 mRNA 전략이 국소적·통제 가능한 세포 회춘을 처음으로 임상 전환 가능하게 만들었다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<circle cx=\"72\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#aaa\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/>\n<circle cx=\"72\" cy=\"80\" r=\"22\" fill=\"#cccccc\" opacity=\"0.5\"/>\n<circle cx=\"72\" cy=\"80\" r=\"10\" fill=\"#999999\"/>\n<circle cx=\"268\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2.5\"/>\n<circle cx=\"268\" cy=\"80\" r=\"22\" fill=\"#52b788\" opacity=\"0.5\"/>\n<circle cx=\"268\" cy=\"80\" r=\"10\" fill=\"#52b788\"/>\n<path d=\"M118 60 Q150 30 170 80 Q190 130 222 100\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n<polygon points=\"222,94 230,100 222,106\" fill=\"#f4a261\"/>\n<rect x=\"148\" y=\"68\" width=\"44\" height=\"24\" rx=\"12\" fill=\"#52b788\" opacity=\"0.85\"/>\n<circle cx=\"155\" cy=\"80\" r=\"5\" fill=\"#fff\"/>\n<circle cx=\"164\" cy=\"80\" r=\"5\" fill=\"#fff\"/>\n<circle cx=\"173\" cy=\"80\" r=\"5\" fill=\"#fff\"/>\n</svg>"
+    }
+  ]
+}
