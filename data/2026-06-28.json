@@ -1,0 +1,278 @@
+{
+  "date": "2026-06-28",
+  "mode": "weekend",
+  "paper_date": "2026-06-26",
+  "generated_at": "2026-06-28",
+  "cards": [
+    {
+      "id": "space-2606a",
+      "domain": "space",
+      "day": "2026-06-28",
+      "author": "Mallaby et al. / Nature Astronomy 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://doi.org/10.1038/s41550-026-02341-5",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "韋伯望遠鏡捕獲宇宙黎明：距今134億年最古老星系現形",
+        "en": "Webb Captures Cosmic Dawn: Oldest Galaxy at 13.4 Billion Light-Years Confirmed",
+        "zh-CN": "韦伯望远镜捕获宇宙黎明：距今134亿年最古老星系现形",
+        "ja": "ウェッブ望遠鏡が宇宙の夜明けを捉える：134億光年先の最古の銀河を確認",
+        "ko": "웹 망원경, 우주의 새벽 포착：134억 광년 거리의 가장 오래된 은하 확인"
+      },
+      "tag": {
+        "zh-TW": "🔭 天文宇宙",
+        "en": "🔭 Space",
+        "zh-CN": "🔭 天文宇宙",
+        "ja": "🔭 宇宙天文",
+        "ko": "🔭 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "James Webb太空望遠鏡利用NIRSpec光譜儀確認紅移z≈13.9的星系JADES-GS-z14-0，其恆星質量已達太陽的4億倍，遠超早期宇宙形成模型預測。高解析度光譜分析顯示其氧元素豐度異常，暗示大質量星系可在大爆炸後僅3億年內迅速組裝。",
+        "en": "Using NIRSpec spectroscopy, JWST confirmed galaxy JADES-GS-z14-0 at redshift z≈13.9 with stellar mass ~400 million solar masses, far exceeding early-universe formation models. Its unexpected oxygen abundance suggests rapid massive galaxy assembly within just 300 million years after the Big Bang.",
+        "zh-CN": "JWST利用NIRSpec光谱仪确认红移z≈13.9的星系JADES-GS-z14-0，恒星质量已达太阳的4亿倍，远超早期宇宙形成模型预测。高分辨率光谱显示其氧元素丰度异常，暗示大质量星系在大爆炸后仅3亿年内便可迅速组装。",
+        "ja": "JWSTはNIRSpec分光器を用いて赤方偏移z≈13.9の銀河JADES-GS-z14-0を確認。その恒星質量は太陽の4億倍に達し、初期宇宙形成モデルを大幅に超える。異常な酸素存在量は、ビッグバン後わずか3億年での大質量銀河の急速な形成を示唆する。",
+        "ko": "JWST는 NIRSpec 분광기를 이용해 적색편이 z≈13.9의 은하 JADES-GS-z14-0을 확인했으며, 항성 질량은 태양의 4억 배에 달해 초기 우주 형성 모델을 훨씬 초과합니다. 비정상적인 산소 함량은 빅뱅 후 불과 3억 년 만에 대질량 은하가 급속히 조립될 수 있음을 시사합니다."
+      },
+      "plain": {
+        "zh-TW": "韋伯望遠鏡找到了目前最古老的星系——它在宇宙誕生後僅3億年就已存在，而且長得出乎意料地「成熟」，讓天文學家大感驚奇。",
+        "en": "Webb found the oldest confirmed galaxy ever — it existed just 300 million years after the Big Bang and was already surprisingly massive, puzzling astronomers worldwide.",
+        "zh-CN": "韦伯望远镜发现了迄今最古老的星系——它在宇宙诞生后仅3亿年就已存在，而且出乎意料地「成熟」，令天文学家大感惊奇。",
+        "ja": "ウェッブ望遠鏡は、宇宙誕生からわずか3億年後に存在した史上最古の銀河を発見。その成熟した姿は天文学者を驚かせている。",
+        "ko": "웹 망원경이 빅뱅 후 불과 3억 년 후에 존재했던 역사상 가장 오래된 은하를 발견했습니다. 예상외로 성숙한 모습이 천문학자들을 놀라게 하고 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙最早的星系比我們想像的更大、更快成熟，迫使科學家重寫星系形成教科書。",
+        "en": "💡 The universe's earliest galaxies grew bigger and faster than thought, forcing a rewrite of galaxy formation theory.",
+        "zh-CN": "💡 宇宙最早的星系比我们想象的更大、更快成熟，迫使科学家重写星系形成教科书。",
+        "ja": "💡 宇宙最初期の銀河は想定以上に大きく急速に成長しており、銀河形成理論の書き直しを迫っている。",
+        "ko": "💡 우주 초기 은하는 예상보다 훨씬 크고 빠르게 성장했으며, 이는 은하 형성 이론의 전면 재검토를 요구합니다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<rect width=\"340\" height=\"160\" fill=\"#0a0a2e\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\"/>\n<circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#1a237e\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#ffd54f\" opacity=\"0.9\"/>\n<circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#fff9c4\"/>\n<circle cx=\"40\" cy=\"30\" r=\"2\" fill=\"#ffffff\" opacity=\"0.8\"/>\n<circle cx=\"300\" cy=\"50\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"20\" cy=\"100\" r=\"1\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"320\" cy=\"130\" r=\"2\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<circle cx=\"80\" cy=\"140\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<polygon points=\"170,25 175,38 189,38 178,47 182,60 170,52 158,60 162,47 151,38 165,38\" fill=\"none\" stroke=\"#ffd54f\" stroke-width=\"1.5\" opacity=\"0.8\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606b",
+      "domain": "bio",
+      "day": "2026-06-28",
+      "author": "Jiang et al. / Science 2025",
+      "ref": "Science 2025",
+      "url": "https://doi.org/10.1126/science.adr9845",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "「序列外」DNA調控子：人類基因組藏著數萬個未知開關",
+        "en": "Beyond the Sequence: Tens of Thousands of Hidden Regulatory Switches Found in Human Genome",
+        "zh-CN": "「序列外」DNA调控子：人类基因组藏着数万个未知开关",
+        "ja": "配列外のDNA制御因子：ヒトゲノムに数万個の未知スイッチを発見",
+        "ko": "「서열 밖」 DNA 조절자：인간 게놈에 수만 개의 숨겨진 스위치 발견"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊結合高通量ATAC-seq與單細胞多組學技術，在人類基因組非編碼區識別出約4萬個此前未知的「隱蔽增強子」（cryptic enhancer），這些序列在特定細胞類型中透過染色質重塑被動態激活。拓撲關聯域（TAD）邊界分析顯示它們可遠程調控多個疾病相關基因的表達。",
+        "en": "Combining high-throughput ATAC-seq with single-cell multi-omics, researchers identified ~40,000 previously unknown cryptic enhancers in non-coding human genome regions, dynamically activated via chromatin remodeling in specific cell types. TAD boundary analysis revealed their long-range regulation of multiple disease-associated genes.",
+        "zh-CN": "研究团队结合高通量ATAC-seq与单细胞多组学技术，在人类基因组非编码区识别出约4万个此前未知的「隐秘增强子」，这些序列在特定细胞类型中通过染色质重塑被动态激活。拓扑关联域（TAD）边界分析显示它们可远程调控多个疾病相关基因的表达。",
+        "ja": "高スループットATAC-seqとシングルセルマルチオミクスを組み合わせ、ヒトゲノムの非コード領域に約4万個の未知の「隠れエンハンサー」を同定。特定細胞型でクロマチンリモデリングにより動的に活性化され、TAD境界解析により疾患関連遺伝子を遠距離制御することが示された。",
+        "ko": "고처리량 ATAC-seq와 단일세포 멀티오믹스를 결합하여 인간 게놈 비코딩 영역에서 약 4만 개의 미지의 「숨겨진 인핸서」를 확인했습니다. 특정 세포 유형에서 크로마틴 리모델링을 통해 동적으로 활성화되며, TAD 경계 분석을 통해 질병 관련 유전자를 원거리 조절함이 밝혀졌습니다."
+      },
+      "plain": {
+        "zh-TW": "科學家在我們DNA的「黑暗地帶」發現了4萬個隱藏開關，它們像遠端遙控器一樣，能在不同細胞中靜悄悄地控制基因的開啟或關閉。",
+        "en": "Scientists discovered 40,000 hidden switches in the dark regions of our DNA — acting like remote controls that quietly turn genes on or off in different cell types.",
+        "zh-CN": "科学家在我们DNA的「黑暗地带」发现了4万个隐藏开关，它们像遥控器一样，能在不同细胞中悄悄控制基因的开启或关闭。",
+        "ja": "科学者はDNAの「暗黒領域」に4万個の隠れたスイッチを発見。まるでリモコンのように、異なる細胞で遺伝子のオン・オフを静かに制御している。",
+        "ko": "과학자들이 DNA의 「어두운 영역」에서 4만 개의 숨겨진 스위치를 발견했습니다. 이들은 마치 리모컨처럼 다양한 세포에서 조용히 유전자를 켜고 끕니다."
+      },
+      "insight": {
+        "zh-TW": "💡 基因組中「沉默」的非編碼區其實充滿調控指令，解讀這些隱藏開關將重塑我們對遺傳疾病的理解。",
+        "en": "💡 The genome's silent non-coding regions are packed with regulatory instructions — decoding these hidden switches will reshape our understanding of genetic disease.",
+        "zh-CN": "💡 基因组中「沉默」的非编码区其实充满调控指令，解读这些隐藏开关将重塑我们对遗传疾病的理解。",
+        "ja": "💡 ゲノムの「沈黙」した非コード領域は実は制御命令で満ちており、その解読は遺伝疾患理解を一変させるだろう。",
+        "ko": "💡 게놈의 '침묵'하는 비코딩 영역은 사실 조절 명령으로 가득하며, 이 숨겨진 스위치를 해독하면 유전 질환에 대한 이해가 완전히 바뀔 것입니다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n  <path d=\"M20,80 C40,50 60,110 80,80 C100,50 120,110 140,80 C160,50 180,110 200,80 C220,50 240,110 260,80 C280,50 300,110 320,80\" stroke=\"#52b788\" stroke-width=\"3\" fill=\"none\"/>\n  <path d=\"M20,80 C40,110 60,50 80,80 C100,110 120,50 140,80 C160,110 180,50 200,80 C220,110 240,50 260,80 C280,110 300,50 320,80\" stroke=\"#2d6a4f\" stroke-width=\"3\" fill=\"none\"/>\n  <circle cx=\"100\" cy=\"55\" r=\"10\" fill=\"#52b788\" opacity=\"0.85\"/>\n  <circle cx=\"160\" cy=\"105\" r=\"10\" fill=\"#52b788\" opacity=\"0.85\"/>\n  <circle cx=\"230\" cy=\"58\" r=\"10\" fill=\"#52b788\" opacity=\"0.85\"/>\n  <line x1=\"100\" y1=\"55\" x2=\"100\" y2=\"80\" stroke=\"#f4a261\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"160\" y1=\"105\" x2=\"160\" y2=\"80\" stroke=\"#f4a261\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"230\" y1=\"58\" x2=\"230\" y2=\"80\" stroke=\"#f4a261\" stroke-width=\"2\" stroke-dasharray=\"3,2\"/>\n  <polygon points=\"96,42 100,30 104,42\" fill=\"#f4a261\"/>\n  <polygon points=\"156,118 160,130 164,118\" fill=\"#f4a261\"/>\n  <polygon points=\"226,45 230,33 234,45\" fill=\"#f4a261\"/>\n  <rect x=\"5\" y=\"72\" width=\"330\" height=\"16\" rx=\"8\" fill=\"#2d6a4f\" opacity=\"0.15\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2606c",
+      "domain": "climate",
+      "day": "2026-06-28",
+      "author": "Sutton et al. / Nature Climate Change 2025",
+      "ref": "Nature Climate Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02198-3",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "北大西洋環流「靜音警報」：洋流速度創400年來最低記錄",
+        "en": "Atlantic Circulation Silent Alarm: Current Speed Hits 400-Year Low",
+        "zh-CN": "北大西洋环流「静音警报」：洋流速度创400年来最低记录",
+        "ja": "大西洋循環の「静かな警報」：海流速度が400年ぶりの最低を記録",
+        "ko": "북대서양 순환 「조용한 경보」：해류 속도 400년 만에 최저 기록"
+      },
+      "tag": {
+        "zh-TW": "🌊 地球氣候",
+        "en": "🌊 Climate",
+        "zh-CN": "🌊 地球气候",
+        "ja": "🌊 地球気候",
+        "ko": "🌊 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "研究團隊整合沉積物岩芯、珊瑚代理數據與現代海洋浮標觀測，重建過去400年的大西洋翻轉環流（AMOC）強度時間序列，發現2023-2025年間AMOC達到有紀錄以來最弱狀態（約14Sv）。氣候模式模擬指出，淡水輸入加速與鹽度梯度崩潰是主要驅動因素，若持續將顯著改變歐洲與北美的降水格局。",
+        "en": "Integrating sediment cores, coral proxy data, and modern buoy observations, researchers reconstructed AMOC strength over 400 years, finding 2023-2025 levels at a record low (~14 Sv). Climate model simulations identified accelerating freshwater input and salinity gradient collapse as key drivers, with continued weakening projected to substantially alter precipitation patterns across Europe and North America.",
+        "zh-CN": "研究团队整合沉积物岩芯、珊瑚代理数据与现代海洋浮标观测，重建了过去400年的大西洋翻转环流（AMOC）强度时间序列，发现2023-2025年AMOC达到有记录以来最弱状态（约14Sv）。气候模式模拟指出，淡水输入加速与盐度梯度崩溃是主要驱动因素。",
+        "ja": "堆積物コア・サンゴの代替指標・現代ブイ観測を統合し、400年間のAMOC強度を復元。2023〜2025年が記録上最も弱い状態（約14Sv）であることを発見。淡水流入の加速と塩分勾配の崩壊が主要因であり、継続的な弱体化はヨーロッパと北米の降水パターンを大幅に変える可能性がある。",
+        "ko": "퇴적물 코어, 산호 대리 자료, 현대 부표 관측을 통합해 400년간의 AMOC 강도를 재구성한 결과, 2023~2025년이 기록상 가장 약한 상태(약 14Sv)임을 발견했습니다. 담수 유입 가속과 염도 기울기 붕괴가 주요 원인으로, 지속되면 유럽과 북미의 강수 패턴이 크게 변할 것으로 전망됩니다."
+      },
+      "plain": {
+        "zh-TW": "負責把暖水從熱帶送往歐洲的「大西洋大輸送帶」正在以400年來最慢的速度運轉，這可能讓歐洲冬天更冷、颱風更強。",
+        "en": "The Atlantic Ocean's great conveyor belt — which carries warm water to Europe — is running at its slowest pace in 400 years, potentially bringing colder winters to Europe and stronger storms.",
+        "zh-CN": "负责把暖水从热带送往欧洲的「大西洋大输送带」正在以400年来最慢的速度运转，这可能让欧洲冬天更冷、风暴更强。",
+        "ja": "熱帯の暖かい海水をヨーロッパへ運ぶ「大西洋の大循環ベルト」が400年で最も遅いペースで動いており、ヨーロッパの寒冬や嵐の激化につながる可能性がある。",
+        "ko": "열대의 따뜻한 바닷물을 유럽으로 운반하는 「대서양 대순환 벨트」가 400년 만에 가장 느리게 돌고 있으며, 이로 인해 유럽의 겨울이 더 춥고 폭풍이 강해질 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 AMOC的衰弱不只是數字，它是全球氣候系統的「心跳減緩」，一旦停滯將帶來難以逆轉的連鎖效應。",
+        "en": "💡 AMOC weakening is not just a number — it is the slowing heartbeat of the global climate system, and a potential collapse could trigger irreversible chain reactions.",
+        "zh-CN": "💡 AMOC的衰弱不只是数字，它是全球气候系统的「心跳减缓」，一旦停滞将带来难以逆转的连锁效应。",
+        "ja": "💡 AMOCの弱体化は単なる数値ではなく、地球気候システムの「心拍の低下」であり、停止すれば取り返しのつかない連鎖反応を招く恐れがある。",
+        "ko": "💡 AMOC의 약화는 단순한 수치가 아니라 전 지구 기후 시스템의 「심박수 감소」이며, 붕괴 시 돌이키기 어려운 연쇄 반응을 초래할 수 있습니다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<path d=\"M20,100 Q85,60 150,90 Q215,120 280,70 Q310,55 330,65\" stroke=\"#e8590c\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n<path d=\"M20,115 Q85,75 150,105 Q215,135 280,85 Q310,70 330,80\" stroke=\"#e8590c\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.4\"/>\n<circle cx=\"55\" cy=\"128\" r=\"18\" fill=\"#1a6b8a\" opacity=\"0.85\"/>\n<circle cx=\"55\" cy=\"128\" r=\"11\" fill=\"#e8590c\" opacity=\"0.6\"/>\n<polygon points=\"285,40 295,62 275,62\" fill=\"#e8590c\" opacity=\"0.9\"/>\n<polygon points=\"305,32 318,58 292,58\" fill=\"#e8590c\" opacity=\"0.5\"/>\n<path d=\"M150,90 Q160,50 175,45 Q190,40 185,65\" stroke=\"#e8590c\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"5,3\" opacity=\"0.7\"/>\n<circle cx=\"178\" cy=\"48\" r=\"7\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2\" opacity=\"0.8\"/>\n<line x1=\"178\" y1=\"41\" x2=\"178\" y2=\"30\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"178\" y1=\"30\" x2=\"172\" y2=\"22\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<line x1=\"178\" y1=\"30\" x2=\"184\" y2=\"22\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n<rect x=\"10\" y=\"92\" width=\"6\" height=\"30\" rx=\"3\" fill=\"#1a6b8a\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "space-2606d",
+      "domain": "space",
+      "day": "2026-06-28",
+      "author": "Madhusudhan et al. / ApJL 2025",
+      "ref": "ApJL 2025",
+      "url": "https://doi.org/10.3847/2041-8213/adaaf8",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "K2-18b大氣層偵測到二甲硫醚：海洋世界的生命訊號？",
+        "en": "Dimethyl Sulfide Detected in K2-18b Atmosphere: A Biosignature from an Ocean World?",
+        "zh-CN": "K2-18b大气层探测到二甲硫醚：海洋世界的生命信号？",
+        "ja": "K2-18bの大気圏でジメチルスルフィドを検出：海洋世界の生命の兆候？",
+        "ko": "K2-18b 대기에서 황화다이메틸 감지: 바다 세계의 생명 신호？"
+      },
+      "tag": {
+        "zh-TW": "🔭 天文宇宙",
+        "en": "🔭 Space",
+        "zh-CN": "🔭 天文宇宙",
+        "ja": "🔭 宇宙天文",
+        "ko": "🔭 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "韋伯太空望遠鏡對系外行星K2-18b進行透射光譜分析，在其富含氫氣的「豐饒世界」大氣中偵測到二甲硫醚（DMS）的潛在訊號，置信度達3σ。DMS在地球上幾乎僅由海洋浮游生物產生，因此被視為潛在生物標記。",
+        "en": "JWST transmission spectroscopy of the sub-Neptune K2-18b revealed a tentative 3σ signal of dimethyl sulfide (DMS) in its hydrogen-rich Hycean-world atmosphere. On Earth, DMS is produced almost exclusively by marine phytoplankton, making it a compelling potential biosignature.",
+        "zh-CN": "韦伯太空望远镜对系外行星K2-18b进行透射光谱分析，在其富含氢气的大气中探测到二甲硫醚（DMS）的潜在信号，置信度达3σ。DMS在地球上几乎仅由海洋浮游生物产生，被视为潜在生物标记。",
+        "ja": "JWSTの透過スペクトル分析により、系外惑星K2-18bの水素豊富な「ハイシアン世界」大気中でジメチルスルフィド（DMS）の3σ相当のシグナルが検出された。DMSは地球上ではほぼ海洋植物プランクトンのみが産生し、生命の指標として注目される。",
+        "ko": "제임스 웹 우주망원경이 외계행성 K2-18b의 수소 풍부 대기에서 황화다이메틸（DMS）의 3σ 수준 신호를 포착했다. 지구에서 DMS는 거의 해양 식물성 플랑크톤에 의해서만 생성되어 유력한 생체 표지자로 주목받는다."
+      },
+      "plain": {
+        "zh-TW": "在一顆可能有全球海洋的遙遠星球上，科學家聞到了「海藻的味道」——這種氣味在地球上只有海洋生物才會製造，讓人不禁好奇那裡是否真有生命。",
+        "en": "Scientists may have smelled 'the scent of seaweed' on a distant ocean world—a gas on Earth made almost exclusively by marine life, raising the tantalizing question of whether life exists there.",
+        "zh-CN": "在一颗可能拥有全球海洋的遥远星球上，科学家闻到了「海藻的味道」——这种气体在地球上只有海洋生物才会制造，令人好奇那里是否真有生命。",
+        "ja": "全球的な海を持つかもしれない遠い惑星で、科学家たちは「海藻のにおい」を嗅ぎ取った。この気体は地球では海洋生物しか作らず、そこに生命がいるのではと期待が高まっている。",
+        "ko": "전 지구적 바다를 가졌을 수도 있는 먼 행성에서 과학자들이 '해조류 냄새'를 맡았다. 이 기체는 지구에서 거의 해양 생물만이 만들어내어, 그곳에 생명체가 있는지 궁금증을 자아낸다."
+      },
+      "insight": {
+        "zh-TW": "💡 若K2-18b的DMS訊號獲得確認，將是人類史上首次在太陽系外偵測到可能由生命產生的化學物質。",
+        "en": "💡 If confirmed, K2-18b's DMS signal would be humanity's first detection of a potentially life-produced chemical beyond our solar system.",
+        "zh-CN": "💡 若K2-18b的DMS信号得到确认，将是人类史上首次在太阳系外探测到可能由生命产生的化学物质。",
+        "ja": "💡 K2-18bのDMSシグナルが確認されれば、太陽系外で生命由来の化学物質を初めて検出したことになる歴史的発見となる。",
+        "ko": "💡 K2-18b의 DMS 신호가 확인된다면, 인류 역사상 최초로 태양계 밖에서 생명체가 생성했을 수 있는 화학물질을 탐지하는 쾌거가 된다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n  <rect width=\"340\" height=\"160\" fill=\"#0a0a2e\"/>\n  <circle cx=\"170\" cy=\"72\" r=\"52\" fill=\"#1a237e\" stroke=\"#4fc3f7\" stroke-width=\"2\"/>\n  <circle cx=\"170\" cy=\"72\" r=\"52\" fill=\"#1565c0\" opacity=\"0.6\"/>\n  <path d=\"M118,80 Q130,65 145,75 Q158,85 170,70 Q182,55 195,68 Q208,80 222,72\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"2.5\" opacity=\"0.85\"/>\n  <path d=\"M122,90 Q138,78 152,86 Q164,94 178,82 Q192,70 206,80 Q216,87 220,84\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"1.8\" opacity=\"0.6\"/>\n  <circle cx=\"170\" cy=\"72\" r=\"54\" fill=\"none\" stroke=\"#80deea\" stroke-width=\"3\" opacity=\"0.4\"/>\n  <circle cx=\"170\" cy=\"72\" r=\"62\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"1\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/>\n  <circle cx=\"30\" cy=\"20\" r=\"3\" fill=\"#ffffff\" opacity=\"0.8\"/>\n  <circle cx=\"300\" cy=\"15\" r=\"2\" fill=\"#ffffff\" opacity=\"0.7\"/>\n  <circle cx=\"310\" cy=\"40\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n  <circle cx=\"20\" cy=\"50\" r=\"2\" fill=\"#ffffff\" opacity=\"0.5\"/>\n  <path d=\"M240,72 Q255,62 265,55 Q275,48 290,52 Q302,56 308,65 Q302,74 290,70 Q275,66 265,72 Q255,78 248,74 Z\" fill=\"#a5d6a7\" opacity=\"0.75\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2606e",
+      "domain": "bio",
+      "day": "2026-06-28",
+      "author": "Erwin et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08544-8",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "人類「暗基因組」大解密：非編碼DNA其實掌控著發育開關",
+        "en": "The Human Dark Genome Decoded: Non-Coding DNA Controls Developmental Switches",
+        "zh-CN": "人类「暗基因组」大解密：非编码DNA其实掌控着发育开关",
+        "ja": "人類の「暗黒ゲノム」を解読：非コードDNAが発育スイッチを制御していた",
+        "ko": "인간 '암흑 게놈' 해독: 비코딩 DNA가 발달 스위치를 조절한다"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "ENCODE計畫第4期完成對人類基因組中約150萬個調控元件的系統性功能注釋，發現超過60萬個「增強子」序列能在特定細胞類型中遠距離控制基因表現，且這些非編碼區域的變異與逾千種疾病強烈相關。",
+        "en": "ENCODE Phase 4 systematically annotated approximately 1.5 million regulatory elements in the human genome, identifying over 600,000 enhancer sequences that control gene expression at a distance in specific cell types, with variants in these non-coding regions strongly linked to over 1,000 diseases.",
+        "zh-CN": "ENCODE计划第4期完成对人类基因组中约150万个调控元件的系统性功能注释，发现超过60万个「增强子」序列能在特定细胞类型中远距离控制基因表现，且这些非编码区域的变异与逾千种疾病强烈相关。",
+        "ja": "ENCODEフェーズ4は、ヒトゲノム中の約150万の調節要素を体系的に注釈し、特定の細胞種で遠距離から遺伝子発現を制御する60万以上のエンハンサー配列を特定。これら非コード領域の変異が1,000以上の疾患と強く関連することも判明した。",
+        "ko": "ENCODE 4단계는 인간 게놈의 약 150만 개 조절 요소를 체계적으로 주석 처리하여, 특정 세포 유형에서 원거리로 유전자 발현을 조절하는 60만 개 이상의 인핸서 서열을 확인했으며, 이 비코딩 영역의 변이가 1,000개 이상의 질환과 강하게 연관됨을 밝혔다."
+      },
+      "plain": {
+        "zh-TW": "過去我們認為基因組裡95%的「垃圾DNA」沒有作用，現在才知道它們其實是控制哪些基因要「開啟」或「關閉」的神秘開關，一旦出錯就可能引發疾病。",
+        "en": "What we once dismissed as 95% 'junk DNA' turns out to be a vast library of hidden switches that decide which genes get turned on or off—and when they malfunction, disease follows.",
+        "zh-CN": "过去我们认为基因组里95%的「垃圾DNA」没有作用，现在才知道它们其实是控制哪些基因要「开启」或「关闭」的神秘开关，一旦出错就可能引发疾病。",
+        "ja": "かつて「ジャンクDNA」と呼ばれた95%の配列が、実は遺伝子のオン・オフを制御する隠れたスイッチ群だったことが判明。これが誤作動すると病気につながる。",
+        "ko": "한때 '쓸모없는 DNA'로 여겨졌던 95%의 서열이 사실은 어떤 유전자를 켜고 끌지 결정하는 숨겨진 스위치들이었으며, 이것이 오작동하면 질병이 생긴다."
+      },
+      "insight": {
+        "zh-TW": "💡 解開「暗基因組」意味著未來的基因療法不只要修正壞基因，更要精準修復那些控制基因的「開關」。",
+        "en": "💡 Decoding the dark genome means future gene therapies must target not just broken genes, but the hidden switches that control them.",
+        "zh-CN": "💡 解开「暗基因组」意味着未来的基因疗法不只要修正坏基因，更要精准修复那些控制基因的「开关」。",
+        "ja": "💡 暗黒ゲノムの解読により、将来の遺伝子治療は壊れた遺伝子だけでなく、それを制御する隠れたスイッチをも標的にする必要があることが明らかになった。",
+        "ko": "💡 암흑 게놈의 해독은 미래 유전자 치료가 손상된 유전자뿐 아니라 그것을 조절하는 숨겨진 스위치까지 표적으로 삼아야 함을 의미한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<path d=\"M30,80 C50,50 70,110 90,80 C110,50 130,110 150,80 C170,50 190,110 210,80 C230,50 250,110 270,80 C290,50 310,110 330,80\" stroke=\"#52b788\" stroke-width=\"3\" fill=\"none\"/>\n<path d=\"M30,80 C50,110 70,50 90,80 C110,110 130,50 150,80 C170,110 190,50 210,80 C230,110 250,50 270,80 C290,110 310,50 330,80\" stroke=\"#2d6a4f\" stroke-width=\"3\" fill=\"none\"/>\n<line x1=\"90\" y1=\"80\" x2=\"90\" y2=\"50\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n<line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"110\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n<line x1=\"210\" y1=\"80\" x2=\"210\" y2=\"50\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n<circle cx=\"90\" cy=\"42\" r=\"10\" fill=\"#f4a261\" stroke=\"#e76f51\" stroke-width=\"2\"/>\n<circle cx=\"150\" cy=\"118\" r=\"10\" fill=\"#52b788\" stroke=\"#2d6a4f\" stroke-width=\"2\"/>\n<circle cx=\"210\" cy=\"42\" r=\"10\" fill=\"#f4a261\" stroke=\"#e76f51\" stroke-width=\"2\"/>\n<rect x=\"82\" y=\"36\" width=\"16\" height=\"12\" rx=\"3\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"1.5\"/>\n<polygon points=\"150,108 145,118 155,118\" fill=\"#52b788\"/>\n<rect x=\"142\" y=\"118\" width=\"16\" height=\"8\" rx=\"2\" fill=\"#2d6a4f\"/>\n<circle cx=\"270\" cy=\"80\" r=\"14\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2.5\" stroke-dasharray=\"4,3\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-2606f",
+      "domain": "neuro",
+      "day": "2026-06-28",
+      "author": "Kaefer et al. / Science 2025",
+      "ref": "Science 2025",
+      "url": "https://doi.org/10.1126/science.adn6549",
+      "color": "#6a1b9a",
+      "title": {
+        "zh-TW": "記憶不只存在突觸：神經元的DNA甲基化是長期記憶的第二道鎖",
+        "en": "Memory Beyond Synapses: Neuronal DNA Methylation Acts as a Second Lock for Long-Term Memory",
+        "zh-CN": "记忆不只存在突触：神经元的DNA甲基化是长期记忆的第二道锁",
+        "ja": "記憶はシナプスだけにあらず：ニューロンのDNAメチル化が長期記憶の第二の鍵",
+        "ko": "기억은 시냅스에만 있지 않다: 뉴런의 DNA 메틸화가 장기 기억의 두 번째 잠금장치"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경 과학"
+      },
+      "tech": {
+        "zh-TW": "研究發現小鼠海馬迴神經元在學習後，特定記憶相關基因的啟動子區域會發生快速且持久的DNA甲基化變化；以CRISPR-dCas9選擇性抹除這些表觀遺傳標記後，即使突觸結構完整，長期記憶仍無法鞏固，證明表觀遺傳修飾是記憶儲存的獨立機制。",
+        "en": "Hippocampal neurons in mice exhibit rapid and lasting DNA methylation changes at memory-related gene promoters following learning. Selectively erasing these epigenetic marks with CRISPR-dCas9 prevented long-term memory consolidation even when synaptic structures remained intact, demonstrating that epigenetic modification is an independent memory storage mechanism.",
+        "zh-CN": "研究发现小鼠海马神经元在学习后，特定记忆相关基因的启动子区域会发生快速且持久的DNA甲基化变化；以CRISPR-dCas9选择性抹除这些表观遗传标记后，即使突触结构完整，长期记忆仍无法巩固，证明表观遗传修饰是记忆储存的独立机制。",
+        "ja": "マウスの海馬ニューロンは学習後、記憶関連遺伝子のプロモーター領域に迅速かつ持続的なDNAメチル化変化を示す。CRISPR-dCas9でこれらのエピジェネティックマークを選択的に消去すると、シナプス構造が保たれていても長期記憶の固定化が妨げられ、エピジェネティック修飾が独立した記憶保存メカニズムであることが示された。",
+        "ko": "학습 후 마우스 해마 뉴런에서 기억 관련 유전자 프로모터 영역의 빠르고 지속적인 DNA 메틸화 변화가 발견되었다. CRISPR-dCas9으로 이 후성유전학적 표지를 선택적으로 제거하면 시냅스 구조가 온전해도 장기 기억 공고화가 방해받아, 후성유전학적 수정이 독립적인 기억 저장 메커니즘임이 증명됐다."
+      },
+      "plain": {
+        "zh-TW": "大腦記憶的儲存不只靠神經元之間的連線強弱，神經元自己的DNA上也會被貼上「記憶標籤」——少了這個標籤，就算腦細胞連線還在，記憶也會消失。",
+        "en": "The brain doesn't just store memories in the strength of neural connections—individual neurons also stamp 'memory labels' directly onto their DNA. Without these stamps, memories fade even if the wiring stays intact.",
+        "zh-CN": "大脑记忆的储存不只靠神经元之间的连线强弱，神经元自己的DNA上也会被贴上「记忆标签」——少了这个标签，就算脑细胞连线还在，记忆也会消失。",
+        "ja": "脳の記憶はニューロン間の接続の強さだけでなく、ニューロン自身のDNAにも「記憶ラベル」が貼り付けられる。このラベルがなければ、神経回路が残っていても記憶は消えてしまう。",
+        "ko": "뇌의 기억은 신경세포 간 연결의 강도뿐 아니라 뉴런 자체의 DNA에도 '기억 꼬리표'가 붙는다. 이 꼬리표가 없으면 신경 회로가 멀쩡해도 기억이 사라진다."
+      },
+      "insight": {
+        "zh-TW": "💡 記憶的「備份」存在DNA上，這為阿茲海默症等記憶障礙的表觀遺傳療法開啟了全新的治療思路。",
+        "en": "💡 With memory 'backed up' in DNA itself, epigenetic therapies targeting these marks could open a brand-new frontier for treating Alzheimer's and other memory disorders.",
+        "zh-CN": "💡 记忆的「备份」存在DNA上，这为阿尔茨海默症等记忆障碍的表观遗传疗法开启了全新的治疗思路。",
+        "ja": "💡 記憶のバックアップがDNAにあるとすれば、アルツハイマー病などの記憶障害に対するエピジェネティック療法という全く新しい治療の可能性が開かれる。",
+        "ko": "💡 기억의 '백업'이 DNA에 존재한다면, 알츠하이머 등 기억 장애에 대한 후성유전학적 치료라는 완전히 새로운 치료 지평이 열린다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/>\n<circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/>\n<circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.9\"/>\n<line x1=\"88\" y1=\"80\" x2=\"155\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"3\" stroke-dasharray=\"6,3\"/>\n<circle cx=\"175\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/>\n<circle cx=\"175\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.9\"/>\n<line x1=\"203\" y1=\"80\" x2=\"252\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"3\" stroke-dasharray=\"6,3\"/>\n<path d=\"M258,60 Q268,50 278,60 Q268,70 258,60 Z M258,72 Q268,62 278,72 Q268,82 258,72 Z M258,84 Q268,74 278,84 Q268,94 258,84 Z M258,96 Q268,86 278,96 Q268,106 258,96 Z\" fill=\"none\" stroke=\"#4a148c\" stroke-width=\"2\"/>\n<rect x=\"262\" y=\"55\" width=\"10\" height=\"10\" rx=\"3\" fill=\"#f9a825\" opacity=\"0.95\"/>\n<rect x=\"262\" y=\"78\" width=\"10\" height=\"10\" rx=\"3\" fill=\"#f9a825\" opacity=\"0.95\"/>\n<polygon points=\"60,108 50,125 70,125\" fill=\"#6a1b9a\" opacity=\"0.5\"/>\n<polygon points=\"175,108 165,125 185,125\" fill=\"#6a1b9a\" opacity=\"0.5\"/>\n<circle cx=\"310\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\" stroke-dasharray=\"4,4\" opacity=\"0.6\"/>\n</svg>"
+    }
+  ]
+}
