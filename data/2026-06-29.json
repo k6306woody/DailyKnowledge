@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-29",
+  "mode": "paper",
+  "paper_date": "2026-06-26",
+  "generated_at": "2026-06-29",
+  "cards": [
+    {
+      "id": "ai-260629",
+      "domain": "ai",
+      "day": "2026-06-29",
+      "author": "Wei Zhou, Xiongwei Zhu et al.",
+      "ref": "arXiv:2606.27377v1",
+      "url": "https://arxiv.org/abs/2606.27377v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"55\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.85\"/><rect x=\"30\" y=\"65\" width=\"40\" height=\"40\" rx=\"4\" fill=\"#e9c46a\" opacity=\"0.7\"/><rect x=\"140\" y=\"30\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.6\"/><rect x=\"140\" y=\"90\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#e76f51\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"80\" r=\"6\" fill=\"#264653\"/><line x1=\"80\" y1=\"85\" x2=\"130\" y2=\"55\" stroke=\"#264653\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"80\" y1=\"85\" x2=\"130\" y2=\"110\" stroke=\"#264653\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><rect x=\"250\" y=\"55\" width=\"70\" height=\"60\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.9\"/><rect x=\"260\" y=\"65\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#e9c46a\" opacity=\"0.5\"/><rect x=\"260\" y=\"80\" width=\"50\" height=\"10\" rx=\"2\" fill=\"#e76f51\" opacity=\"0.5\"/><line x1=\"210\" y1=\"55\" x2=\"245\" y2=\"75\" stroke=\"#2a9d8f\" stroke-width=\"2.5\"/><line x1=\"210\" y1=\"110\" x2=\"245\" y2=\"90\" stroke=\"#e76f51\" stroke-width=\"2.5\"/><circle cx=\"285\" cy=\"140\" r=\"5\" fill=\"#264653\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "一個模型搞定所有事：AI圖像生成的「萬能舞者」DanceOPD",
+        "en": "One Model to Rule Them All: DanceOPD Unifies AI Image Generation",
+        "zh-CN": "一个模型搞定所有事：AI图像生成的「万能舞者」DanceOPD",
+        "ja": "一つのモデルですべてをこなす：AI画像生成の「万能ダンサー」DanceOPD",
+        "ko": "하나의 모델로 모두 해결：AI 이미지 생성의 「만능 댄서」DanceOPD"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボット",
+        "ko": "🤖 AI와 로봇"
+      },
+      "tech": {
+        "zh-TW": "DanceOPD 是一個基於流匹配模型（flow-matching model）的「在策略生成場蒸餾」框架，能將文字生成圖像（T2I）、局部編輯與全域編輯三種能力統一在單一模型中。其核心機制是依據每個樣本的特性動態路由，讓不同任務的梯度訊號不互相干擾，解決多任務之間的能力衝突問題。透過在策略（on-policy）的蒸餾方式，模型可在訓練過程中持續自我校正，維持各能力的最佳表現。",
+        "en": "DanceOPD is an on-policy generative field distillation framework built on flow-matching models that unifies text-to-image generation, local editing, and global editing within a single model. Its core mechanism dynamically routes each sample based on its characteristics, preventing gradient interference between tasks and resolving capability conflicts. Through on-policy distillation, the model continuously self-corrects during training to maintain optimal performance across all capabilities.",
+        "zh-CN": "DanceOPD 是一个基于流匹配模型（flow-matching model）的「在策略生成场蒸馏」框架，能将文字生成图像（T2I）、局部编辑与全域编辑三种能力统一在单一模型中。其核心机制是依据每个样本的特性动态路由，让不同任务的梯度信号不互相干扰，解决多任务之间的能力冲突问题。通过在策略（on-policy）的蒸馏方式，模型可在训练过程中持续自我校正，维持各能力的最佳表现。",
+        "ja": "DanceOPDは、フローマッチングモデルをベースとした「オンポリシー生成場蒸留」フレームワークで、テキストから画像生成（T2I）、局所編集、大域編集の三つの能力を単一モデルに統合します。核心的な仕組みは各サンプルの特性に応じて動的にルーティングし、タスク間の勾配干渉を防ぎ能力の衝突を解消することです。オンポリシー蒸留により、訓練中に継続的な自己修正が可能となり、すべての能力で最適なパフォーマンスを維持します。",
+        "ko": "DanceOPD는 플로우 매칭 모델 기반의 「온-폴리시 생성 필드 증류」 프레임워크로, 텍스트-이미지 생성(T2I), 로컬 편집, 글로벌 편집 세 가지 기능을 단일 모델에 통합합니다. 핵심 메커니즘은 각 샘플의 특성에 따라 동적으로 라우팅하여 태스크 간 그래디언트 간섭을 방지하고 능력 충돌을 해결합니다. 온-폴리시 증류를 통해 훈련 중 지속적인 자기 교정이 가능하며, 모든 기능에서 최적 성능을 유지합니다."
+      },
+      "plain": {
+        "zh-TW": "想像你有一位全能助手，既能從零畫出一幅畫（文字生圖），又能幫你只改掉畫中的一朵花（局部編輯），還能把整張畫的風格換成水彩（全域編輯）。問題是：過去這三種技能像三個性格衝突的人住在同一個房間，一旦磨合不好，全都變差。DanceOPD 的解法就像一位聰明的舞蹈編排師，根據每個任務的需求指揮每位舞者該在哪個時間點登場，讓他們各司其職、互不踩腳。這個「在策略」的設計更像是讓模型邊表演邊自我反省，隨時修正姿勢。結果就是，同一個 AI 模型能同時把三件事都做好，不再需要用不同模型分別處理。這對未來的 AI 創作工具來說意義重大，因為用戶只需要一個工具就能完成所有圖像創作需求。",
+        "en": "Imagine having an all-in-one assistant that can paint a picture from scratch based on your description, fix just one flower in the painting without touching anything else, and transform the entire painting into a watercolor style. The problem is these three skills used to be like three conflicting personalities forced to share one room, causing each to undermine the others. DanceOPD works like a smart choreographer, directing each dancer to take the stage at exactly the right moment so nobody steps on anyone else's toes. The on-policy design lets the model rehearse and self-correct in real time, like a performer who refines their moves mid-show. The result is a single AI model that excels at all three tasks simultaneously, eliminating the need for separate specialized tools. This matters enormously for creative AI applications, where users want one seamless tool for all their image-making needs.",
+        "zh-CN": "想象你有一位全能助手，既能从零画出一幅画（文字生图），又能帮你只改掉画中的一朵花（局部编辑），还能把整张画的风格换成水彩（全域编辑）。问题是：过去这三种技能像三个性格冲突的人住在同一个房间，一旦磨合不好，全都变差。DanceOPD 的解法就像一位聪明的舞蹈编排师，根据每个任务的需求指挥每位舞者该在哪个时间点登场，让他们各司其职、互不踩脚。这个「在策略」的设计更像是让模型边表演边自我反省，随时修正姿势。结果就是，同一个 AI 模型能同时把三件事都做好，不再需要用不同模型分别处理。这对未来的 AI 创作工具来说意义重大，因为用户只需要一个工具就能完成所有图像创作需求。",
+        "ja": "ゼロから絵を描き（テキストから画像生成）、絵の中の花一輪だけを直し（局所編集）、画風全体を水彩画に変える（大域編集）という三つの技を持つ万能アシスタントを想像してください。問題は、これら三つの技が互いに干渉し合い、一つを伸ばすと別のものが落ちることでした。DanceOPDはまるで賢いダンス振付師のように、各タスクを適切なタイミングで登場させ、誰も互いの邪魔をしない仕組みを作ります。オンポリシー設計は、モデルが演じながら自己修正を続ける稽古のようなものです。結果として、一つのAIモデルが三つの能力を同時に高いレベルで発揮できるようになります。これはAI創作ツールの未来にとって大きな一歩です。",
+        "ko": "텍스트로 그림을 그리고, 그림 속 꽃 하나만 바꾸고, 전체 그림 스타일을 수채화로 바꾸는 만능 조수를 상상해보세요. 문제는 이 세 가지 능력이 서로 충돌하며, 하나를 잘하면 다른 것이 나빠지는 현상이 반복됐다는 점입니다. DanceOPD는 마치 똑똑한 안무가처럼 각 태스크가 적절한 타이밍에 등장하도록 지휘해 서로 발을 밟지 않게 합니다. 온-폴리시 설계는 모델이 공연하면서 동시에 자기 교정을 하는 리허설과 같습니다. 그 결과 하나의 AI 모델이 세 가지 능력을 동시에 훌륭하게 발휘할 수 있게 됩니다. 이는 사용자가 모든 이미지 창작 작업을 하나의 도구로 해결할 수 있게 해주는 중요한 발전입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 多能力 AI 的真正挑戰不是「學會」各種技能，而是讓這些技能在同一個模型裡「和平共存」——DanceOPD 提醒我們，協調衝突比單純增加能力更難也更關鍵。",
+        "en": "💡 The real challenge for multi-capable AI isn't learning each skill, but making them coexist peacefully in one model—DanceOPD reminds us that harmonizing conflicts is harder and more important than simply adding more capabilities.",
+        "zh-CN": "💡 多能力 AI 的真正挑战不是「学会」各种技能，而是让这些技能在同一个模型里「和平共存」——DanceOPD 提醒我们，协调冲突比单纯增加能力更难也更关键。",
+        "ja": "💡 多機能AIの真の難しさは各スキルを「習得」することではなく、それらを一つのモデルの中で「平和共存」させること——DanceOPDは、能力を増やすより衝突を調整する方がずっと難しく重要だと教えてくれる。",
+        "ko": "💡 다기능 AI의 진짜 도전은 각 능력을 「배우는」 것이 아니라 하나의 모델 안에서 「평화롭게 공존」시키는 것이다—DanceOPD는 능력을 추가하는 것보다 충돌을 조율하는 것이 더 어렵고 중요하다는 사실을 일깨워준다."
+      }
+    },
+    {
+      "id": "bio-260629",
+      "domain": "bio",
+      "day": "2026-06-29",
+      "author": "Ian Diks, Zhen Yang et al.",
+      "ref": "arXiv:2606.26563v1",
+      "url": "https://arxiv.org/abs/2606.26563v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"60\" cy=\"80\" r=\"36\" fill=\"#52b788\" opacity=\"0.18\"/><circle cx=\"60\" cy=\"80\" r=\"24\" fill=\"#52b788\" opacity=\"0.35\"/><circle cx=\"60\" cy=\"80\" r=\"12\" fill=\"#52b788\" opacity=\"0.8\"/><circle cx=\"60\" cy=\"56\" r=\"5\" fill=\"#52b788\"/><circle cx=\"60\" cy=\"104\" r=\"5\" fill=\"#52b788\"/><circle cx=\"36\" cy=\"80\" r=\"5\" fill=\"#52b788\"/><circle cx=\"84\" cy=\"80\" r=\"5\" fill=\"#52b788\"/><rect x=\"110\" y=\"40\" width=\"180\" height=\"12\" rx=\"6\" fill=\"#52b788\" opacity=\"0.5\"/><rect x=\"110\" y=\"62\" width=\"140\" height=\"12\" rx=\"6\" fill=\"#52b788\" opacity=\"0.4\"/><rect x=\"110\" y=\"84\" width=\"160\" height=\"12\" rx=\"6\" fill=\"#52b788\" opacity=\"0.35\"/><rect x=\"110\" y=\"106\" width=\"120\" height=\"12\" rx=\"6\" fill=\"#1b4332\" opacity=\"0.3\"/><polygon points=\"300,46 316,52 300,58\" fill=\"#52b788\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "AI 單細胞生物學考場：能從原始資料自己推出科學結論嗎？",
+        "en": "Can AI Agents Derive Scientific Conclusions from Raw Single-Cell Data?",
+        "zh-CN": "AI 单细胞生物学考场：能从原始数据自己推出科学结论吗？",
+        "ja": "AIは生の単一細胞データから科学的結論を導けるか？",
+        "ko": "AI가 원시 단일세포 데이터에서 스스로 과학적 결론을 도출할 수 있을까?"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學／AI評測",
+        "en": "🧬 Life Science / AI Benchmark",
+        "zh-CN": "🧬 生命科学／AI评测",
+        "ja": "🧬 生命科学／AIベンチマーク",
+        "ko": "🧬 생명과학 / AI 벤치마크"
+      },
+      "tech": {
+        "zh-TW": "本研究提出 scBench-Long，一套針對長鏈推理的單細胞生物學基準測試，包含21項評估任務，要求AI代理人從未加工或接近原始的單細胞資料（含RNA與ATAC-seq）出發，自主完成多步驟分析流程，最終復現已知科學結論，而非遵循預設步驟。評估範疇涵蓋黑色素瘤CD8 T細胞反應性及基因調控推斷等真實生物學問題，並採用可驗證的答案設計。",
+        "en": "scBench-Long introduces a long-horizon benchmark for single-cell biology comprising 21 evaluation tasks. AI agents must autonomously process raw or near-raw single-cell omics data—including RNA-seq and ATAC-seq—through multi-step workflows without prescribed methods, ultimately recovering verifiable scientific conclusions such as melanoma CD8 T-cell reactivity and regulatory gene inference.",
+        "zh-CN": "本研究提出 scBench-Long，一套针对长链推理的单细胞生物学基准测试，包含21项评估任务，要求AI代理从未加工或接近原始的单细胞数据（含RNA与ATAC-seq）出发，自主完成多步骤分析流程，最终复现已知科学结论，而非遵循预设步骤。评估范围涵盖黑色素瘤CD8 T细胞反应性及基因调控推断等真实生物学问题，并采用可验证的答案设计。",
+        "ja": "scBench-Longは、単一細胞生物学における長期推論ベンチマークで、21の評価タスクを含む。AIエージェントは、RNA-seqやATAC-seqを含む未処理の単一細胞オミクスデータから、手順を指定されることなく多段階の解析を自律的に実行し、黒色腫CD8 T細胞反応性や遺伝子制御推論などの検証可能な科学的結論を導出することが求められる。",
+        "ko": "scBench-Long은 단일세포 생물학의 장기 추론을 위한 벤치마크로, 21개의 평가 과제를 포함한다. AI 에이전트는 RNA-seq 및 ATAC-seq를 포함한 원시 단일세포 오믹스 데이터에서 출발해 방법론의 지시 없이 다단계 분석을 자율적으로 수행하고, 흑색종 CD8 T세포 반응성 등 검증 가능한 과학적 결론을 도출해야 한다."
+      },
+      "plain": {
+        "zh-TW": "想像你是個全新的偵探，沒有任何提示，只拿到一大箱亂七八糟的案發現場照片，卻要你自己整理線索、推理，最後說出「兇手是誰」。scBench-Long 就是這樣考驗 AI 的：它把數以萬計的單細胞基因讀取數據丟給 AI，不給任何分析步驟說明，要求 AI 自己摸索、一步步推論，最後得出與真實論文一致的生物學結論。目前的 AI 工具大多只能回答填空題或按部就班跑程式，但真正的科學研究是「從混亂中找規律」的長途馬拉松。這個基準的重要性在於：它第一次讓我們能客觀量測，AI 到底有沒有能力替代或輔助真正的科學家完成整個研究週期。如果 AI 能在這項測試中表現優秀，未來癌症免疫治療、罕見病診斷等研究的速度將大幅加快。這就像給 AI 安排了一場「沒有參考書的生物學博士考試」，考的是真正的科學推理能力。",
+        "en": "Imagine handing a brand-new detective a chaotic box of crime-scene photos with zero instructions and asking them to name the culprit. That is essentially what scBench-Long does to AI: it dumps tens of thousands of raw single-cell gene readings onto an AI agent, gives it no analysis recipe, and asks it to reason step-by-step toward the same biological conclusions real scientists have published. Most AI biology tools today only answer fill-in-the-blank questions or follow pre-written scripts. Real science, however, is a long marathon of turning messy data into insight. This benchmark matters because it is the first rigorous way to measure whether AI can genuinely replace or assist scientists across a full research cycle. Success here could dramatically accelerate cancer immunotherapy and rare-disease research. Think of it as a 「no-textbook PhD biology exam」 that tests true scientific reasoning.",
+        "zh-CN": "想象你是个全新的侦探，没有任何提示，只拿到一大箱乱七八糟的案发现场照片，却要你自己整理线索、推理，最后说出「凶手是谁」。scBench-Long 就是这样考验 AI 的：它把数以万计的单细胞基因读取数据丢给 AI，不给任何分析步骤说明，要求 AI 自己摸索、一步步推论，最后得出与真实论文一致的生物学结论。目前的 AI 工具大多只能回答填空题或按部就班跑程序，但真正的科学研究是「从混乱中找规律」的长途马拉松。这个基准的重要性在于：它第一次让我们能客观衡量，AI 到底有没有能力替代或辅助真正的科学家完成整个研究周期。如果 AI 能在这项测试中表现优秀，未来癌症免疫治疗、罕见病诊断等研究的速度将大幅加快。",
+        "ja": "まったく手がかりのない混沌とした証拠の山から、犯人を特定しなければならない新米探偵を想像してください。scBench-Longはまさにそれと同じことをAIに課します。数万件の単一細胞遺伝子データを渡し、分析手順を一切教えずに、実際の論文と同じ生物学的結論を自力で導かせるのです。現在のAIツールの多くは穴埋め問題や手順通りの処理しかできませんが、本物の科学は混沌から規則性を見つける長いマラソンです。このベンチマークは、AIが科学者の研究サイクル全体を代替・支援できるかを初めて客観的に測定できる点で画期的です。成功すれば、がん免疫療法や難病研究が劇的に加速する可能性があります。",
+        "ko": "아무런 힌트 없이 뒤죽박죽 범죄 현장 사진 상자만 받고 범인을 밝혀야 하는 신입 탐정을 상상해보세요. scBench-Long은 AI에게 바로 그런 과제를 던집니다. 수만 개의 단일세포 유전자 데이터를 주고, 분석 방법은 전혀 알려주지 않은 채 실제 논문과 동일한 생물학적 결론을 스스로 도출하게 합니다. 현재 대부분의 AI 도구는 빈칸 채우기나 정해진 절차대로 코드 실행만 할 수 있지만, 진짜 과학 연구는 혼돈에서 규칙을 찾아내는 긴 마라톤입니다. 이 벤치마크는 AI가 전체 연구 사이클을 수행할 수 있는지 최초로 객관적으로 측정할 수 있다는 점에서 중요합니다. 이 시험에서 AI가 좋은 성과를 낸다면, 암 면역치료와 희귀병 연구 속도가 획기적으로 빨라질 것입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的科學智慧不在於執行步驟，而在於從混亂的原始資料中自主建構出有意義的結論——scBench-Long 首次讓我們能量測 AI 是否真的具備這種能力。",
+        "en": "💡 True scientific intelligence lies not in following steps, but in autonomously constructing meaningful conclusions from raw, messy data—scBench-Long is the first benchmark to measure whether AI truly possesses this capacity.",
+        "zh-CN": "💡 真正的科学智慧不在于执行步骤，而在于从混乱的原始数据中自主构建出有意义的结论——scBench-Long 首次让我们能量化 AI 是否真的具备这种能力。",
+        "ja": "💡 真の科学的知性とは手順を実行することではなく、混沌とした生データから自律的に意味のある結論を構築することにある——scBench-LongはAIがその能力を本当に持つかを初めて定量化するベンチマークだ。",
+        "ko": "💡 진정한 과학적 지성은 절차를 따르는 것이 아니라, 혼란스러운 원시 데이터에서 자율적으로 의미 있는 결론을 구축하는 것에 있다—scBench-Long은 AI가 그 능력을 실제로 갖추었는지 처음으로 측정하는 벤치마크다."
+      }
+    },
+    {
+      "id": "phys-260629",
+      "domain": "phys",
+      "day": "2026-06-29",
+      "author": "Christopher A. Leong, Bitan Roy et al.",
+      "ref": "arXiv:2606.27370v1",
+      "url": "https://arxiv.org/abs/2606.27370v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><circle cx=\"170\" cy=\"80\" r=\"35\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><ellipse cx=\"170\" cy=\"80\" rx=\"55\" ry=\"18\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"1.8\" stroke-dasharray=\"5 3\"/><line x1=\"170\" y1=\"25\" x2=\"170\" y2=\"135\" stroke=\"#4a7bbf\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#4a7bbf\"/><circle cx=\"170\" cy=\"80\" r=\"3.5\" fill=\"#ffffff\"/><circle cx=\"225\" cy=\"55\" r=\"5\" fill=\"#e07b39\" opacity=\"0.9\"/><circle cx=\"115\" cy=\"105\" r=\"5\" fill=\"#e07b39\" opacity=\"0.9\"/><circle cx=\"230\" cy=\"105\" r=\"4\" fill=\"#4a7bbf\" opacity=\"0.7\"/><circle cx=\"110\" cy=\"55\" r=\"4\" fill=\"#4a7bbf\" opacity=\"0.7\"/><path d=\"M130 48 Q150 30 170 25 Q190 30 210 48\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"2\" opacity=\"0.8\"/><path d=\"M130 112 Q150 130 170 135 Q190 130 210 112\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" opacity=\"0.8\"/></svg>",
+      "title": {
+        "zh-TW": "虛數磁場中的狄拉克費米子：量子零模與拓撲指標定理",
+        "en": "Dirac Fermions in Imaginary Magnetic Fields: Zero Modes and Topology",
+        "zh-CN": "虚数磁场中的狄拉克费米子：量子零模与拓扑指标定理",
+        "ja": "虚数磁場中のディラック粒子：ゼロモードとトポロジー指数定理",
+        "ko": "허수 자기장 속의 디랙 페르미온: 영에너지 모드와 위상 지표 정리"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 拓撲量子物理",
+        "en": "⚛️ Topological Quantum Physics",
+        "zh-CN": "⚛️ 拓扑量子物理",
+        "ja": "⚛️ トポロジー量子物理",
+        "ko": "⚛️ 위상 양자 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究在具有勞侖茲對稱性的非厄米狄拉克理論框架下，將空間調制的非厄米參數視為規範場，導出非厄米「磁場」。當二維狄拉克系統圍住有限非厄米磁通量時，數值計算確認系統能譜中出現空間局域化的零能量本徵態（零模），並建立對應的拓撲指標定理。",
+        "en": "Within a Lorentz-symmetric non-Hermitian Dirac framework, spatially modulated anti-Hermitian parameters are treated as gauge fields generating NH magnetic fields. When a planar Dirac system encloses finite NH magnetic flux, numerical computation confirms the emergence of spatially localized zero-energy eigenmodes, and a corresponding topological index theorem is established.",
+        "zh-CN": "在具有洛伦兹对称性的非厄米狄拉克理论框架下，将空间调制的非厄米参数视为规范场，导出非厄米「磁场」。当二维狄拉克系统围住有限非厄米磁通量时，数值计算确认能谱中出现空间局域化的零能量本征态，并建立对应的拓扑指标定理。",
+        "ja": "ローレンツ対称な非エルミートディラック理論において、空間変調した反エルミートパラメータをゲージ場として扱い、非エルミート磁場を導出する。2次元ディラック系が有限の非エルミート磁束を囲む場合、数値計算によりゼロエネルギー固有状態の出現が確認され、対応するトポロジー指数定理が構築された。",
+        "ko": "로렌츠 대칭 비에르미트 디랙 이론에서 공간적으로 변조된 반에르미트 매개변수를 게이지 장으로 취급하여 비에르미트 자기장을 도출한다. 2차원 디랙 계가 유한한 비에르미트 자기 선속을 둘러쌀 때 수치 계산으로 공간 국소화된 영에너지 고유 상태의 출현이 확인되며, 대응하는 위상 지표 정리가 수립되었다."
+      },
+      "plain": {
+        "zh-TW": "想像你在磁場中旋轉一顆陀螺，通常磁場像真實存在的力，能讓陀螺改變方向。但物理學家問：如果磁場是「虛數」的——也就是系統在失去能量的同時也在獲得能量，像一個洩漏的水桶又持續被注入——會發生什麼？這類「非厄米」系統在雷射、開放量子電路等現實裝置中天天上演。這篇論文發現，當狄拉克費米子（構成電子等基本粒子的量子實體）被這種虛數磁場圍住時，會自動冒出一群「零能量幽靈」——不吸收、不釋放能量，卻牢牢釘在空間中特定位置。更驚人的是，這些零模的數量由一個簡潔的拓撲數（指標定理）精確預測，就像甜甜圈的洞數無論怎麼變形都不會改變。這不只是數學遊戲：在量子計算與拓撲材料設計中，受保護的零能量態正是儲存量子資訊的理想載體。理解非厄米世界的拓撲規則，有助於打造更抗噪的量子位元。",
+        "en": "Imagine spinning a top inside a magnetic field — normally the field is a real, tangible force. But what if the magnetic field were 「imaginary」, existing in a system that simultaneously gains and loses energy, like a leaky bucket constantly being refilled? These 「non-Hermitian」 systems are everywhere: lasers, open quantum circuits, acoustic metamaterials. This paper discovers that when Dirac fermions — the quantum particles underlying electrons — are enclosed by such an imaginary magnetic flux, a family of 「ghost modes」 spontaneously appears at exactly zero energy, pinned firmly in space. Even more striking, their count is precisely predicted by a topological index theorem, just like how the number of holes in a donut never changes no matter how you stretch it. This matters deeply: topologically protected zero-energy states are ideal carriers for quantum information, resistant to noise and perturbation. Understanding topology in non-Hermitian worlds could lead to far more robust quantum bits.",
+        "zh-CN": "想象你在磁场中旋转一个陀螺，通常磁场是真实存在的力。但如果磁场是「虚数」的——系统同时失去和获得能量，像一个漏水的桶被不断注入——会发生什么？这类「非厄米」系统在激光器、开放量子电路中随处可见。这篇论文发现，当狄拉克费米子被虚数磁通量围住时，会自动涌现一群「零能量幽灵」——不吸收也不释放能量，却牢牢锁定在空间中。更惊人的是，这些零模的数量由拓扑指标定理精确预测，就像甜甜圈的洞数不因变形而改变。在量子计算与拓扑材料设计中，受保护的零能量态正是存储量子信息的理想载体。",
+        "ja": "磁場の中でコマを回すことを想像してみてください。通常、磁場は現実の力です。しかし「虚数」の磁場——エネルギーを同時に失いながら得続ける、穴の開いたバケツのような系——ではどうなるでしょう？このような「非エルミート」系はレーザーや開放量子回路で日常的に現れます。この論文は、ディラック費米子が虚数磁束に囲まれると、空間に固定された「ゼロエネルギーの幽霊」が自発的に出現することを発見しました。さらに驚くべきことに、その数はトポロジー指数定理で正確に予測されます——ドーナツの穴の数がどう変形しても変わらないのと同じです。量子情報の保護された担体として、この発見は量子コンピュータの耐雑音性向上に貢献する可能性があります。",
+        "ko": "자기장 속에서 팽이를 돌린다고 상상해보세요. 보통 자기장은 실제 힘입니다. 그런데 자기장이 '허수'라면 — 에너지를 잃으면서 동시에 얻는, 끊임없이 채워지는 새는 양동이 같은 계에서는 어떻게 될까요? 이런 '비에르미트' 계는 레이저, 열린 양자 회로에서 흔히 볼 수 있습니다. 이 논문은 디랙 페르미온이 허수 자기 선속에 둘러싸이면, 에너지를 흡수하지도 방출하지도 않으면서 공간에 고정된 '영에너지 유령 모드'가 자발적으로 나타난다는 것을 발견했습니다. 더 놀라운 점은 이 모드의 수가 위상 지표 정리로 정확히 예측된다는 것입니다 — 도넛의 구멍 수가 아무리 늘여도 변하지 않듯이. 이 발견은 더 강인한 양자 비트 설계에 기여할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 即使物理系統「不守恆」、能量持續洩漏，拓撲規則依然像宇宙的隱形憲法，精確決定著零模的數量——這說明拓撲保護比我們以為的更根本。",
+        "en": "💡 Even when a physical system leaks energy and breaks Hermitian symmetry, topological rules still act like an invisible constitution of nature, precisely counting the zero modes — suggesting topology is even more fundamental than we thought.",
+        "zh-CN": "💡 即使物理系统「不守恒」、能量持续泄漏，拓扑规则依然像宇宙的隐形宪法，精确决定着零模的数量——拓扑保护比我们以为的更根本。",
+        "ja": "💡 物理系がエネルギーを失い非エルミートであっても、トポロジーの法則は宇宙の見えない憲法のように働き、ゼロモードの数を正確に支配する——トポロジーの保護は私たちの想像以上に根本的だ。",
+        "ko": "💡 물리 계가 에너지를 잃고 비에르미트 대칭을 깨더라도 위상 법칙은 우주의 보이지 않는 헌법처럼 작동하여 영모드의 수를 정확히 결정한다 — 위상 보호는 우리가 생각한 것보다 훨씬 근본적이다."
+      }
+    },
+    {
+      "id": "neuro-260629",
+      "domain": "neuro",
+      "day": "2026-06-29",
+      "author": "Sayak Dutta",
+      "ref": "arXiv:2606.27229v1",
+      "url": "https://arxiv.org/abs/2606.27229v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><rect x=\"20\" y=\"50\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.85\"/><rect x=\"30\" y=\"60\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#ce93d8\"/><rect x=\"30\" y=\"76\" width=\"40\" height=\"10\" rx=\"3\" fill=\"#ce93d8\" opacity=\"0.5\"/><rect x=\"30\" y=\"92\" width=\"24\" height=\"10\" rx=\"3\" fill=\"#ce93d8\" opacity=\"0.3\"/><polygon points=\"95,80 115,68 115,92\" fill=\"#f48fb1\"/><rect x=\"125\" y=\"50\" width=\"90\" height=\"60\" rx=\"8\" fill=\"#4a148c\" opacity=\"0.9\"/><circle cx=\"155\" cy=\"75\" r=\"10\" fill=\"#ce93d8\"/><circle cx=\"185\" cy=\"75\" r=\"10\" fill=\"#f48fb1\"/><line x1=\"165\" y1=\"75\" x2=\"175\" y2=\"75\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><rect x=\"145\" y=\"92\" width=\"60\" height=\"8\" rx=\"3\" fill=\"#6a1b9a\" opacity=\"0.6\"/><polygon points=\"228,80 248,68 248,92\" fill=\"#f48fb1\"/><rect x=\"258\" y=\"50\" width=\"62\" height=\"60\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.7\"/><rect x=\"268\" y=\"60\" width=\"42\" height=\"10\" rx=\"3\" fill=\"#ce93d8\"/><rect x=\"268\" y=\"76\" width=\"42\" height=\"10\" rx=\"3\" fill=\"#ce93d8\"/><rect x=\"268\" y=\"92\" width=\"42\" height=\"10\" rx=\"3\" fill=\"#ce93d8\"/></svg>",
+      "title": {
+        "zh-TW": "會「看記憶再決定」的 AI 循環模型：CARVE 修復線性注意力三大缺陷",
+        "en": "AI That Checks Memory Before Forgetting: CARVE Fixes Three Core Flaws in Linear Attention",
+        "zh-CN": "会「看记忆再决定」的 AI 循环模型：CARVE 修复线性注意力三大缺陷",
+        "ja": "「記憶を見てから忘れる」AI循環モデル：CARVEが線形注意の三大欠陥を修正",
+        "ko": "「기억을 보고 잊는」AI 순환 모델：CARVE, 선형 어텐션 3대 결함 수정"
+      },
+      "tag": {
+        "zh-TW": "🧠 AI 架構",
+        "en": "🧠 AI Architecture",
+        "zh-CN": "🧠 AI 架构",
+        "ja": "🧠 AIアーキテクチャ",
+        "ko": "🧠 AI 아키텍처"
+      },
+      "tech": {
+        "zh-TW": "CARVE 針對以 delta-rule 為基礎的循環神經網路（如 GDN-2）提出三項修正：（1）引入「內容感知」閘控，讓遺忘機制能同時參考當前輸入與既有記憶狀態；（2）將冗餘的值軸消除遮罩替換為參數效率更高的設計；（3）從數學上證明並解除了阻礙 WY 形式三角塊平行求解器的限制，使循環模型訓練速度可與 Transformer 競爭。",
+        "en": "CARVE addresses three coupled defects in delta-rule recurrent architectures such as GDN-2: it introduces content-aware gating so the forget mechanism consults both the incoming token and the current memory state; replaces the wasteful value-axis erase mask with a parameter-efficient design; and mathematically resolves the bottleneck that blocked the WY-form triangular chunk-parallel solver, enabling recurrent training speeds competitive with Transformers.",
+        "zh-CN": "CARVE 针对以 delta-rule 为基础的循环神经网络（如 GDN-2）提出三项修正：（1）引入「内容感知」门控，让遗忘机制能同时参考当前输入与既有记忆状态；（2）将冗余的值轴消除遮罩替换为参数效率更高的设计；（3）从数学上证明并解除了阻碍 WY 形式三角块并行求解器的限制，使循环模型训练速度可与 Transformer 竞争。",
+        "ja": "CARVEは、GDN-2などのデルタルール循環アーキテクチャが持つ3つの欠陥を修正する。入力トークンだけでなく現在のメモリ状態も参照する「内容認識型」ゲーティングを導入し、冗長な値軸消去マスクをパラメータ効率の高い設計に置き換え、WY形式の三角チャンク並列ソルバーを数学的に阻害していた制約を解消することで、Transformerと競合できる訓練速度を実現する。",
+        "ko": "CARVE는 GDN-2 등 델타 룰 기반 순환 아키텍처의 세 가지 결함을 수정한다. 입력 토큰뿐 아니라 현재 메모리 상태도 참조하는 「내용 인식」 게이팅을 도입하고, 낭비적인 값 축 소거 마스크를 파라미터 효율적 설계로 교체하며, WY 형식 삼각 청크 병렬 솔버를 가로막던 수학적 제약을 해소해 Transformer와 경쟁 가능한 훈련 속도를 달성한다."
+      },
+      "plain": {
+        "zh-TW": "想像你有一本「工作記憶筆記本」，每次學新東西時，你必須決定要擦掉哪些舊內容才有空間寫新的。現有的 AI 循環模型做這件事時，有個致命缺陷：它決定「要擦哪裡」時，根本沒看筆記本裡已經寫了什麼——就像蒙著眼睛隨機塗改一樣！CARVE 的第一個修正就是讓模型「先看筆記本再決定擦哪裡」，大幅提升記憶管理的精準度。第二個問題是浪費：舊架構用了太多參數做這個「擦除」動作，就像雇了一整個搬家公司只為了移走一個茶杯。第三個問題最隱蔽：舊設計從數學結構上封死了一種超快速的並行訓練方式，導致循環模型訓練速度遠遠輸給 Transformer。CARVE 同時修復這三個問題，讓循環模型既聰明又快速，有望在語言 AI 領域重新與 Transformer 一較高下。",
+        "en": "Imagine you have a working-memory notebook, and every time you learn something new, you must decide what to erase to make room. Current AI recurrent models do this with a fatal flaw: when deciding what to erase, they never look at what is already written — like editing a notebook blindfolded. CARVE's first fix makes the model peek at its own memory before deciding what to erase, dramatically improving memory management. The second problem is waste: the old design burned too many parameters on erasing, like hiring a full moving crew just to move a teacup. The third flaw is the sneakiest: the old math structure mathematically locked out an ultra-fast parallel training method, making recurrent models far slower to train than Transformers. CARVE fixes all three at once, making recurrent models smarter and faster, and potentially repositioning them as real rivals to Transformers in language AI.",
+        "zh-CN": "想象你有一本「工作记忆笔记本」，每次学新东西时，你必须决定要擦掉哪些旧内容才有空间写新的。现有的 AI 循环模型做这件事时，有个致命缺陷：它决定「要擦哪里」时，根本没看笔记本里已经写了什么——就像蒙着眼睛随机涂改一样！CARVE 的第一个修正就是让模型「先看笔记本再决定擦哪里」，大幅提升记忆管理的精准度。第二个问题是浪费：旧架构用了太多参数做这个「擦除」动作，就像雇了一整个搬家公司只为了移走一个茶杯。第三个问题最隐蔽：旧设计从数学结构上封死了一种超快速的并行训练方式，导致循环模型训练速度远远输给 Transformer。CARVE 同时修复这三个问题，让循环模型既聪明又快速，有望在语言 AI 领域重新与 Transformer 一较高下。",
+        "ja": "「作業記憶ノート」を持っていて、新しいことを学ぶたびに何かを消して空きを作らなければならないと想像してください。現在のAI循環モデルはこれを致命的な欠陥を抱えたまま行っています。何を消すか決めるとき、すでに書かれた内容を一切見ない——目隠しでノートを編集するようなものです。CARVEの最初の修正は、消す前に自分の記憶を確認させること。第二の問題は無駄遣いで、旧設計はこの「消去」に膨大なパラメータを費やしていました。第三の欠陥が最も巧妙で、旧来の数学的構造が超高速な並列訓練法を数学的に封じており、循環モデルの訓練速度がTransformerに大きく劣る原因でした。CARVEは三つを同時に修正し、循環モデルをTransformerの真のライバルとして復権させる可能性を開きます。",
+        "ko": "「작업 기억 노트」가 있다고 상상해 보세요. 새로운 것을 배울 때마다 공간을 만들기 위해 무언가를 지워야 합니다. 현재 AI 순환 모델은 치명적인 결함을 안고 이 작업을 합니다. 무엇을 지울지 결정할 때 이미 적힌 내용을 전혀 보지 않는 것이죠 — 눈을 가리고 노트를 편집하는 것과 같습니다. CARVE의 첫 번째 수정은 지우기 전에 자신의 기억을 먼저 확인하게 만드는 것입니다. 두 번째 문제는 낭비로, 오래된 설계는 이 「소거」에 너무 많은 파라미터를 낭비했습니다. 세 번째 결함이 가장 교묘한데, 기존 수학 구조가 초고속 병렬 학습 방식을 수학적으로 차단해 순환 모델의 학습 속도를 Transformer보다 훨씬 느리게 만들었습니다. CARVE는 세 가지를 동시에 수정해 순환 모델을 Transformer의 진정한 경쟁자로 재등극시킬 가능성을 열었습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正好的「遺忘」需要先看清楚自己記得什麼——這對 AI 和人類的學習都是一樣的道理。",
+        "en": "💡 Truly intelligent forgetting requires first understanding what you already remember — a principle as true for AI as it is for human learning.",
+        "zh-CN": "💡 真正好的「遗忘」需要先看清楚自己记得什么——这对 AI 和人类的学习都是一样的道理。",
+        "ja": "💡 本当に賢い「忘却」とは、まず自分が何を覚えているかを理解することから始まる——それはAIにも人間の学習にも共通する原理だ。",
+        "ko": "💡 진정으로 지능적인 「망각」은 자신이 무엇을 기억하고 있는지 먼저 이해하는 것에서 시작된다 — AI와 인간 학습 모두에 적용되는 원리다."
+      }
+    },
+    {
+      "id": "space-260629",
+      "domain": "space",
+      "day": "2026-06-29",
+      "author": "Mehrnoosh Tahani, Anna Ordog et al.",
+      "ref": "arXiv:2606.27346v1",
+      "url": "https://arxiv.org/abs/2606.27346v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"80\" cy=\"80\" r=\"48\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\" stroke-dasharray=\"6 3\" opacity=\"0.5\"/><circle cx=\"80\" cy=\"80\" r=\"32\" fill=\"#1a237e22\" stroke=\"#1a237e\" stroke-width=\"1.5\"/><circle cx=\"80\" cy=\"80\" r=\"10\" fill=\"#1a237e\" opacity=\"0.7\"/><ellipse cx=\"200\" cy=\"70\" rx=\"38\" ry=\"18\" fill=\"#546e7a33\" stroke=\"#546e7a\" stroke-width=\"1.5\"/><ellipse cx=\"200\" cy=\"70\" rx=\"20\" ry=\"9\" fill=\"#546e7a55\" stroke=\"#546e7a\" stroke-width=\"1\"/><line x1=\"200\" y1=\"100\" x2=\"200\" y2=\"130\" stroke=\"#ff8f00\" stroke-width=\"2\"/><line x1=\"290\" y1=\"20\" x2=\"290\" y2=\"140\" stroke=\"#ff8f00\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"278\" y1=\"33\" x2=\"302\" y2=\"127\" stroke=\"#ff8f00\" stroke-width=\"1\" opacity=\"0.5\"/><line x1=\"302\" y1=\"33\" x2=\"278\" y2=\"127\" stroke=\"#ff8f00\" stroke-width=\"1\" opacity=\"0.5\"/><polygon points=\"290,14 285,26 295,26\" fill=\"#ff8f00\"/><polygon points=\"80,26 75,38 85,38\" fill=\"#1a237e\" opacity=\"0.8\"/><line x1=\"80\" y1=\"32\" x2=\"80\" y2=\"62\" stroke=\"#1a237e\" stroke-width=\"2\" opacity=\"0.8\"/><polygon points=\"200,94 196,104 204,104\" fill=\"#546e7a\"/></svg>",
+      "title": {
+        "zh-TW": "宇宙磁場3D地圖：從泡泡、雲氣到星際絲狀結構",
+        "en": "Mapping 3D Magnetic Fields in Space: Bubbles, Clouds & Filaments",
+        "zh-CN": "宇宙磁场3D地图：从泡泡、云气到星际丝状结构",
+        "ja": "宇宙磁場の3Dマップ：バブル・雲・フィラメントを立体的に描く",
+        "ko": "우주 자기장 3D 지도: 거품, 구름, 필라멘트 구조 속 벡터 추적"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究整合法拉第旋轉量測、偏振塵埃觀測與星際消光數據，重建星際介質中磁場的完整三維向量分佈。研究對象涵蓋超新星遺跡形成的磁泡、分子雲及絲狀氣體結構，突破以往只能取得磁場投影資訊的限制。透過多波段數據交叉比對，研究團隊系統性繪製出銀河系內不同尺度磁場向量的空間幾何。",
+        "en": "This study reconstructs full 3D magnetic field vectors in the interstellar medium by combining Faraday rotation measures, polarized dust emission, and stellar extinction data across multiple spatial scales. Targets include supernova-driven magnetic bubbles, molecular clouds, and filamentary structures. By cross-matching multi-wavelength datasets, the team maps the spatial geometry of Galactic magnetic fields beyond simple line-of-sight projections.",
+        "zh-CN": "本研究整合法拉第旋转测量、偏振尘埃观测与星际消光数据，重建星际介质中磁场的完整三维向量分布。研究对象涵盖超新星遗迹形成的磁泡、分子云及丝状气体结构，突破以往只能获取磁场投影信息的限制。通过多波段数据交叉比对，研究团队系统性绘制出银河系内不同尺度磁场向量的空间几何。",
+        "ja": "本研究は、ファラデー回転量・偏光ダスト放射・星間消光データを組み合わせ、星間物質における磁場の完全な3次元ベクトルを再構成する。超新星残骸が作る磁気バブル・分子雲・フィラメント状構造を対象に、従来の視線方向への投影情報を超えた立体的な磁場マッピングを実現した。",
+        "ko": "이 연구는 패러데이 회전 측정값, 편광 먼지 방출, 성간 소광 데이터를 통합하여 성간 물질 내 자기장의 완전한 3차원 벡터를 재구성한다. 초신성 잔해로 형성된 자기 거품, 분자운, 필라멘트 구조를 대상으로 기존의 시선 방향 투영 정보를 넘어선 입체 자기장 지도를 체계적으로 구축했다."
+      },
+      "plain": {
+        "zh-TW": "想像你在濃霧中，想知道風是往哪個方向吹——不只是左右，還有前後和上下的立體方向。這就是天文學家面臨的難題：宇宙磁場無法直接看見，而且過去我們只能猜出它「投影在天幕上」的方向，就像只能看到影子、卻不知道實物站在哪裡。這篇研究就像同時用三台相機從不同角度拍攝，再拼回立體圖像，把磁場的真實3D向量還原出來。研究對象包括超新星爆炸後留下的巨大磁泡、孕育恆星的分子雲，以及像宇宙蜘蛛絲一樣的氣體絲狀結構。磁場非常重要，因為它決定了星際氣體能不能被「壓縮」到足夠密集，進而塌縮成新星球。就像磁鐵會讓鐵屑排列成特定形狀，宇宙磁場也在塑造恆星誕生的舞台。繪製出完整的3D磁場地圖，是理解銀河系如何從氣體雲演化出恆星、行星乃至生命的關鍵一步。",
+        "en": "Imagine trying to figure out which way the wind blows inside a thick fog — not just left or right, but also forward, backward, up, and down in full 3D. That is exactly the challenge astronomers face with cosmic magnetic fields: invisible and previously only measurable as a flat shadow projected onto the sky. This research is like using three cameras from different angles to reconstruct a 3D sculpture from its silhouettes, recovering the true direction of magnetic fields throughout space. The targets include giant magnetic bubbles left behind by supernova explosions, star-forming molecular clouds, and wispy filaments of gas stretching across the galaxy like cosmic cobwebs. Magnetic fields matter enormously because they act like invisible scaffolding, controlling whether interstellar gas can squeeze together tightly enough to collapse into a new star. A complete 3D magnetic field map is a crucial step toward understanding how our galaxy — and ultimately life itself — came to be.",
+        "zh-CN": "想象你在浓雾中，想知道风到底往哪个方向吹——不只是左右，还有前后上下的立体方向。这就是天文学家面对宇宙磁场时的困境：磁场看不见，以前我们只能猜出它「投影在天幕上」的方向，就像只见影子不知实物在哪。这项研究像同时用三台相机从不同角度拍摄，再拼回立体图像，把磁场的真实3D向量还原出来。研究对象包括超新星爆炸后留下的巨大磁泡、孕育恒星的分子云，以及像宇宙蛛网般的气体丝状结构。磁场至关重要，因为它决定了星际气体能否被压缩到足够密集、进而塌缩成新星球。绘制完整的3D磁场地图，是理解银河系如何从气体云演化出恒星、行星乃至生命的关键一步。",
+        "ja": "濃い霧の中で、風がどの方向に吹いているか——左右だけでなく前後・上下まで立体的に知ろうとする場面を想像してください。宇宙磁場の研究者が直面しているのはまさにこの難題です。磁場は目に見えず、これまでは天球に「投影された影」しか読み取れませんでした。この研究は3方向からカメラで撮影してシルエットから立体を復元するように、磁場の真の3Dベクトルを再現します。超新星爆発が残した巨大な磁気バブル、星を育む分子雲、宇宙のクモの巣のようなガスのフィラメントが対象です。磁場は星間ガスが十分に圧縮されて新しい星へ崩壊できるかどうかを左右する、宇宙の「見えない骨格」です。完全な3D磁場マップは、銀河系がガス雲から星・惑星、そして生命へと進化した謎を解く重要な一歩です。",
+        "ko": "짙은 안개 속에서 바람이 어느 방향으로 부는지 — 좌우뿐 아니라 앞뒤와 위아래까지 입체적으로 파악하려 한다고 상상해 보세요. 우주 자기장 연구자들이 맞닥뜨린 문제가 바로 이것입니다. 자기장은 눈에 보이지 않고, 지금까지는 하늘에 투영된 그림자 방향만 읽을 수 있었습니다. 이 연구는 세 방향에서 카메라로 찍은 실루엣으로 입체 조각을 복원하듯, 자기장의 진짜 3D 벡터를 되살립니다. 초신성 폭발이 남긴 거대한 자기 거품, 별을 키우는 분자운, 우주 거미줄 같은 가스 필라멘트가 연구 대상입니다. 자기장은 성간 가스가 충분히 압축되어 새 별로 붕괴할 수 있는지를 결정하는 우주의 보이지 않는 뼈대입니다. 완전한 3D 자기장 지도는 은하가 가스 구름에서 별·행성, 나아가 생명으로 진화한 과정을 이해하는 결정적 발걸음입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙磁場的「影子」騙了我們幾十年——只有還原完整的3D向量，我們才能真正理解恆星與生命誕生的隱形推手。",
+        "en": "💡 Cosmic magnetic fields have fooled us with flat shadows for decades — only by recovering their full 3D vectors can we truly grasp the invisible architect behind the birth of stars and life.",
+        "zh-CN": "💡 宇宙磁场的「影子」骗了我们几十年——只有还原完整的3D向量，我们才能真正理解恒星与生命诞生的隐形推手。",
+        "ja": "💡 宇宙磁場の「影」は何十年も私たちを欺いてきた——完全な3Dベクトルを復元して初めて、星と生命誕生を陰で操る存在の正体が見えてくる。",
+        "ko": "💡 우주 자기장의 그림자는 수십 년간 우리를 속여 왔다 — 완전한 3D 벡터를 복원해야만 별과 생명 탄생을 이끄는 보이지 않는 설계자의 실체를 비로소 파악할 수 있다."
+      }
+    }
+  ]
+}
