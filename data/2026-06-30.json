@@ -1,0 +1,233 @@
+{
+  "date": "2026-06-30",
+  "mode": "paper",
+  "paper_date": "2026-06-30",
+  "generated_at": "2026-06-30",
+  "cards": [
+    {
+      "id": "ai-260630",
+      "domain": "ai",
+      "day": "2026-06-30",
+      "author": "Dihong Huang, Zhenyu Wei et al.",
+      "ref": "arXiv:2606.28323v1",
+      "url": "https://arxiv.org/abs/2606.28323v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"55\" width=\"28\" height=\"70\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.85\"/><rect x=\"52\" y=\"70\" width=\"14\" height=\"18\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.6\"/><rect x=\"52\" y=\"92\" width=\"14\" height=\"18\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.6\"/><rect x=\"52\" y=\"114\" width=\"14\" height=\"14\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.6\"/><rect x=\"180\" y=\"55\" width=\"28\" height=\"70\" rx=\"6\" fill=\"#e76f51\" opacity=\"0.85\"/><rect x=\"214\" y=\"70\" width=\"14\" height=\"18\" rx=\"4\" fill=\"#e76f51\" opacity=\"0.6\"/><rect x=\"214\" y=\"92\" width=\"14\" height=\"18\" rx=\"4\" fill=\"#e76f51\" opacity=\"0.6\"/><rect x=\"214\" y=\"114\" width=\"14\" height=\"14\" rx=\"4\" fill=\"#e76f51\" opacity=\"0.6\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#f4a261\" opacity=\"0.85\"/><line x1=\"66\" y1=\"80\" x2=\"152\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/><line x1=\"188\" y1=\"80\" x2=\"152\" y2=\"80\" stroke=\"#e76f51\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/><circle cx=\"170\" cy=\"110\" r=\"10\" fill=\"#2a9d8f\" opacity=\"0.5\"/><circle cx=\"170\" cy=\"110\" r=\"5\" fill=\"#e76f51\" opacity=\"0.7\"/><rect x=\"250\" y=\"45\" width=\"70\" height=\"90\" rx=\"10\" fill=\"#2a9d8f\" opacity=\"0.15\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><rect x=\"258\" y=\"60\" width=\"54\" height=\"14\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"258\" y=\"80\" width=\"54\" height=\"14\" rx=\"4\" fill=\"#e76f51\" opacity=\"0.5\"/><rect x=\"258\" y=\"100\" width=\"54\" height=\"14\" rx=\"4\" fill=\"#f4a261\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "單手多工大師：讓機器手同時執行多項靈巧操作任務",
+        "en": "One Hand, Many Tasks: Composing Dexterous Robot Policies for Multi-Task Manipulation",
+        "zh-CN": "单手多任务大师：让机械手同时执行多项灵巧操作",
+        "ja": "1本の手で多工程をこなす：器用な操作ポリシーの組み合わせ技術",
+        "ko": "한 손으로 여러 작업을: 정교한 로봇 손 정책의 다중 과제 합성"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "DexCompose 提出一個「角色感知殘差組合框架」，將兩個各自預訓練的靈巧操作策略合併，透過明確指定每根手指的「所有權」來分配動作控制權，避免兩項任務在手指層級互相衝突干擾。該方法無需從頭重新訓練，只需在預訓練策略的輸出上疊加殘差修正，即可讓單隻機械手同時維持並執行多項操作技能。",
+        "en": "DexCompose introduces a role-aware residual composition framework that merges two pretrained dexterous manipulation policies by assigning explicit finger-level action ownership to each task, preventing destructive interference at the joint level. The method adds a lightweight residual correction on top of frozen pretrained policy outputs, enabling a single robotic hand to simultaneously preserve an existing skill while executing a new one—without retraining from scratch.",
+        "zh-CN": "DexCompose 提出「角色感知残差组合框架」，通过在手指层级明确分配动作控制权，将两个独立预训练的灵巧操作策略融合，避免任务间的指级冲突干扰。该方法仅在预训练策略输出上叠加残差修正，无需重新训练，即可让单只机械手同时维持并执行多项操作技能。",
+        "ja": "DexCompose は、2つの事前学習済み器用操作ポリシーを統合する「役割認識型残差合成フレームワーク」を提案し、指レベルでのアクション所有権を明示的に割り当てることでタスク間の破壊的干渉を防ぎます。事前学習済みポリシーの出力に軽量な残差補正を重ねるだけで、再学習不要でロボットハンドが複数スキルを同時実行できます。",
+        "ko": "DexCompose는 두 개의 사전 학습된 정교한 조작 정책을 통합하는 「역할 인식 잔차 합성 프레임워크」를 제안하며, 손가락 수준에서 각 작업의 동작 소유권을 명시적으로 할당하여 충돌을 방지합니다. 재훈련 없이 사전 학습 정책 출력에 잔차 보정을 추가하는 방식으로, 단일 로봇 손이 여러 기술을 동시에 수행할 수 있게 합니다."
+      },
+      "plain": {
+        "zh-TW": "想像你是個鋼琴家，左手已學會彈一首曲子，右手想再加入新旋律——若兩手搶同一個琴鍵，就會奏出噪音。機器人的靈巧手也面臨同樣困境：每根手指都很忙，當要執行第二項任務時，手指指令互相打架，原本的技能就被破壞了。DexCompose 的解決之道就像「分工協議」：它讓每根手指清楚知道自己目前「屬於」哪個任務，不會越界搶奪控制權。更聰明的是，它不需要機器人從頭練習，只在已學好的技能上做微調補正，就像在既有樂譜上加入鉛筆記號。這讓單手機械臂可以同時抓著物體又轉動旋鈕，或者夾住零件又按下按鈕。這很重要，因為未來的服務機器人、手術機器人都需要在有限的手指資源下完成複雜多步驟任務，而不是每次都要重新訓練一個新機器人。",
+        "en": "Imagine a pianist whose left hand already knows a melody—now ask it to simultaneously play a new harmony with the same fingers. If two notes fight over the same key, the music turns to noise. Robot hands face the same problem: when a second task demands the same fingers, the commands clash and the original skill gets ruined. DexCompose acts like a smart 「task traffic controller」 that tells each finger which task it 「belongs to」 at any moment, so no finger gets hijacked by a conflicting command. Best of all, it doesn't require retraining the robot from scratch—it just adds small correction notes on top of skills the robot already knows. This means one robotic hand can grip an object while simultaneously turning a knob, or hold a part while pressing a button. This matters enormously because future service robots and surgical robots must juggle complex multi-step tasks with limited fingers, without rebuilding their entire skill set every time a new task is added.",
+        "zh-CN": "想象一位钢琴家，左手已经学会了一段旋律，现在要用同一只手同时演奏新旋律——如果两个音符抢同一个琴键，音乐就变成噪音。机器人的灵巧手面临同样困境：执行第二项任务时，手指指令互相冲突，原本的技能就被破坏了。DexCompose 就像一个「任务交通指挥官」，告诉每根手指此刻「属于」哪个任务，避免越界抢夺控制权。更聪明的是，它不需要从头训练，只在已学好的技能上做微调补正，就像在乐谱上加铅笔注记。这让单只机械手可以同时抓住物体又转动旋钮。这非常重要，因为未来的服务机器人和手术机器人都需要用有限的手指完成复杂的多步骤任务。",
+        "ja": "ピアニストがすでに左手でメロディーを覚えているとき、同じ指で新しいハーモニーも同時に弾こうとしたら——同じ鍵盤を奪い合って音楽がノイズになってしまいます。ロボットの器用な手も同じ問題を抱えています。第2のタスクが同じ指を要求すると、命令が衝突して元のスキルが壊れてしまうのです。DexCompose は「タスク交通整理係」のように機能し、各指が今どのタスクに「所属」するかを明確にして、指令の衝突を防ぎます。さらに賢いのは、ゼロから再学習せず、既存スキルに小さな補正を加えるだけだという点です。これにより1本のロボットハンドが物を掴みながらノブを回すなど複合動作が可能になります。将来の介護ロボットや手術ロボットにとって非常に重要な技術です。",
+        "ko": "피아니스트가 이미 왼손으로 멜로디를 익혔는데, 같은 손가락으로 새로운 화음도 동시에 연주하려 한다면 — 같은 건반을 서로 차지하려다 음악이 소음이 됩니다. 로봇 손도 같은 문제에 직면합니다. 두 번째 과제가 같은 손가락을 요구하면 명령이 충돌하고 기존 기술이 망가집니다. DexCompose는 「과제 교통 정리자」처럼 각 손가락이 지금 어느 과제에 「속하는지」를 명확히 알려줘 충돌을 막습니다. 더 똑똑한 점은 처음부터 재훈련하지 않고 기존 기술 위에 작은 보정만 추가한다는 것입니다. 덕분에 하나의 로봇 손이 물체를 잡으면서 동시에 손잡이를 돌릴 수 있게 됩니다. 미래의 서비스 로봇과 수술 로봇에 매우 중요한 기술입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的靈巧不是讓每根手指都聽一個老闆，而是讓每根手指知道自己此刻該聽誰的——分工明確才能多工不亂。",
+        "en": "💡 True dexterity isn't about one controller commanding all fingers—it's about each finger knowing exactly whose task it serves at each moment, so multi-tasking never becomes chaos.",
+        "zh-CN": "💡 真正的灵巧不是让所有手指听一个指令，而是让每根手指清楚知道此刻该服务于哪个任务——分工明确才能多任务不乱。",
+        "ja": "💡 真の器用さとは全指を一つの命令で動かすことではなく、各指が今どのタスクに仕えるかを正確に知ることにある——役割の明確化こそが多工程の鍵だ。",
+        "ko": "💡 진정한 정교함은 모든 손가락을 하나의 명령으로 움직이는 것이 아니라, 각 손가락이 지금 어떤 과제를 위해 움직이는지 정확히 아는 것에 있다."
+      }
+    },
+    {
+      "id": "phys-260630",
+      "domain": "phys",
+      "day": "2026-06-30",
+      "author": "Tom Holden-Dye, Max Marvell et al.",
+      "ref": "arXiv:2606.28313v1",
+      "url": "https://arxiv.org/abs/2606.28313v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><circle cx=\"170\" cy=\"80\" r=\"48\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><circle cx=\"170\" cy=\"80\" r=\"32\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"6 3\"/><circle cx=\"170\" cy=\"80\" r=\"16\" fill=\"#4a7bbf\" opacity=\"0.7\"/><line x1=\"60\" y1=\"80\" x2=\"122\" y2=\"80\" stroke=\"#e07b39\" stroke-width=\"2\"/><line x1=\"218\" y1=\"80\" x2=\"280\" y2=\"80\" stroke=\"#e07b39\" stroke-width=\"2\"/><line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"32\" stroke=\"#e07b39\" stroke-width=\"2\"/><line x1=\"170\" y1=\"128\" x2=\"170\" y2=\"140\" stroke=\"#e07b39\" stroke-width=\"2\"/><rect x=\"44\" y=\"70\" width=\"20\" height=\"20\" rx=\"4\" fill=\"#e07b39\" opacity=\"0.8\"/><rect x=\"276\" y=\"70\" width=\"20\" height=\"20\" rx=\"4\" fill=\"#e07b39\" opacity=\"0.5\"/><rect x=\"160\" y=\"10\" width=\"20\" height=\"14\" rx=\"4\" fill=\"#4a7bbf\" opacity=\"0.5\"/><circle cx=\"54\" cy=\"40\" r=\"6\" fill=\"#4a7bbf\" opacity=\"0.4\"/><circle cx=\"286\" cy=\"120\" r=\"6\" fill=\"#4a7bbf\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "剪掉多餘複雜度：量子算符演化的「直徑截斷」新方法",
+        "en": "Cutting Complexity: Diameter-Truncated Operator Evolution in Quantum Systems",
+        "zh-CN": "剪掉多余复杂度：量子算符演化的「直径截断」新方法",
+        "ja": "複雑さを切り捨てる：量子演算子発展の「直径打ち切り」新手法",
+        "ko": "복잡성을 잘라내다：양자 연산자 진화의 「직경 절단」 신방법"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究提出「直徑截斷算符演化」方法，模擬非平衡量子系統中算符的動態行為。該方法以 Pauli 字串展開為基底，限制算符在空間上的「延伸直徑」而非僅限制其權重，從而在保有物理準確性的前提下大幅壓縮計算量。此截斷策略特別適用於計算雙點無限溫度關聯函數等動力學可觀測量。",
+        "en": "This work introduces Diameter Truncated Operator Evolution (DTOE), a method for simulating operator dynamics in out-of-equilibrium quantum systems. Instead of merely truncating by operator weight (number of non-trivial Pauli string terms), DTOE restricts the spatial diameter of operators, providing a tighter and more physically motivated approximation. This yields efficient and accurate computation of dynamical quantities such as two-point infinite-temperature correlation functions.",
+        "zh-CN": "本研究提出「直径截断算符演化」方法，用于模拟非平衡量子系统中算符的动态行为。该方法以 Pauli 字符串展开为基底，限制算符在空间上的「延伸直径」而非仅限制其权重，从而在保有物理准确性的前提下大幅压缩计算量。此截断策略特别适用于计算双点无限温度关联函数等动力学可观测量。",
+        "ja": "本研究は非平衡量子系における演算子ダイナミクスを効率的にシミュレートする「直径打ち切り演算子発展（DTOE）」手法を提案する。パウリ文字列展開における演算子の重みではなく空間的な「直径」を制限することで、より物理的に自然な近似を実現する。二点無限温度相関関数などの動力学的観測量を精度よく計算できる。",
+        "ko": "이 연구는 비평형 양자 시스템에서 연산자 동역학을 시뮬레이션하는 「직경 절단 연산자 진화(DTOE)」 방법을 제안한다. Pauli 문자열 전개에서 연산자의 가중치가 아닌 공간적 「직경」을 제한함으로써 물리적으로 더 자연스러운 근사를 구현한다. 이중점 무한온도 상관함수 등 동역학적 관측량을 효율적으로 계산할 수 있다."
+      },
+      "plain": {
+        "zh-TW": "想像量子系統就像一鍋沸騰的湯：一旦離開平衡，粒子之間的糾纏與交互作用會像滾雪球一樣爆炸性增長，讓任何電腦都算不完。科學家為了追蹤這鍋湯的每一滴「量子訊息」如何流動，過去常常只能看「小塊」——只追蹤少數粒子連結在一起的算符。這篇論文的新突破是：不只看「幾個粒子連在一起」，更看「這些粒子在空間上伸展了多遠的距離」——就像限制雪球滾動的直徑，而非只看雪球的重量。這個「直徑截斷」的技巧，讓模擬更精準地捕捉到物理現實。這對理解量子電腦中的資訊傳播速度、量子材料的熱化過程，乃至量子混沌等前沿問題都至關重要。換句話說，這是一把更聰明的「剪刀」，讓我們在幾乎不失真的情況下，把原本無法計算的量子問題變得可以處理。",
+        "en": "Imagine a quantum system as a wildly boiling pot: once pushed out of equilibrium, the entanglement and interactions between particles snowball explosively, quickly outpacing any computer. Scientists trying to track how quantum information flows have typically only been able to follow 「small chunks」—operators involving few particles at once. This paper's key insight is to limit not just how many particles an operator involves, but how far it stretches across space—like capping the diameter of a snowball rather than just its weight. This 「diameter truncation」 makes simulations more physically accurate. It matters for understanding how fast information spreads in quantum computers, how quantum materials heat up, and the mysteries of quantum chaos. In short, it is a smarter pair of scissors that makes previously impossible quantum calculations tractable.",
+        "zh-CN": "想象量子系统就像一锅沸腾的汤：一旦离开平衡，粒子之间的纠缠与交互作用会像滚雪球一样爆炸性增长，让任何电脑都算不完。科学家为了追踪这锅汤的每一滴「量子信息」如何流动，过去常常只能看「小块」——只追踪少数粒子连结在一起的算符。这篇论文的新突破是：不只看「几个粒子连在一起」，更看「这些粒子在空间上伸展了多远的距离」——就像限制雪球滚动的直径，而非只看雪球的重量。这个「直径截断」的技巧，让模拟更精准地捕捉到物理现实。这对理解量子计算机中的信息传播速度、量子材料的热化过程乃至量子混沌等前沿问题都至关重要。",
+        "ja": "量子系を激しく沸騰する鍋に例えてみよう。平衡から外れた瞬間、粒子間のもつれと相互作用は雪だるま式に膨らみ、どんなコンピュータでも追いきれなくなる。従来の研究者は「少数の粒子が絡み合った小さなかたまり」だけを追うことで何とか計算してきた。この論文の新発想は、粒子の数だけでなく「空間上でどれだけ広がっているか＝直径」も制限すること。雪だるまの重さだけでなく直径も制限するイメージだ。この「直径打ち切り」により、量子情報の伝播速度・量子材料の熱化・量子カオスといった最前線の問題をより正確に、かつ現実的な計算コストで解析できるようになる。",
+        "ko": "양자 시스템을 격렬하게 끓는 냄비라고 상상해보자. 평형을 벗어나는 순간, 입자들 사이의 얽힘과 상호작용은 눈덩이처럼 폭발적으로 커져 어떤 컴퓨터도 따라잡을 수 없게 된다. 기존 연구자들은 「몇 개의 입자만 연결된 작은 덩어리」만 추적하는 방식으로 겨우 계산해왔다. 이 논문의 핵심 아이디어는 연결된 입자 수뿐 아니라 「공간상에서 얼마나 멀리 뻗어 있는가＝직경」도 제한하는 것이다. 눈덩이의 무게가 아니라 직경을 제한하는 셈이다. 이 「직경 절단」 기법으로 양자 정보의 전파 속도, 양자 재료의 열화, 양자 카오스 등 최전선 문제를 더 정확하고 현실적인 비용으로 분석할 수 있게 된다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的智慧不是算盡所有可能，而是找到一把恰到好處的「剪刀」——知道哪些複雜度可以安全地捨棄。",
+        "en": "💡 True computational wisdom lies not in calculating everything, but in finding the right scissors—knowing which complexity can safely be cut away.",
+        "zh-CN": "💡 真正的智慧不是算尽所有可能，而是找到一把恰到好处的「剪刀」——知道哪些复杂度可以安全地舍弃。",
+        "ja": "💡 本当の計算の知恵とは、すべてを計算することではなく、どの複雑さを安全に切り捨てられるかを知る「適切なハサミ」を見つけることだ。",
+        "ko": "💡 진정한 계산의 지혜는 모든 것을 계산하는 것이 아니라, 어떤 복잡성을 안전하게 잘라낼 수 있는지 아는 「적절한 가위」를 찾는 데 있다."
+      }
+    },
+    {
+      "id": "neuro-260630",
+      "domain": "neuro",
+      "day": "2026-06-30",
+      "author": "Jinliang Xu, Liping Ma et al.",
+      "ref": "arXiv:2606.28109v1",
+      "url": "https://arxiv.org/abs/2606.28109v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#6a1b9a\" opacity=\"0.25\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"80\" cy=\"50\" r=\"10\" fill=\"#e91e8c\" opacity=\"0.8\"/><circle cx=\"260\" cy=\"50\" r=\"10\" fill=\"#e91e8c\" opacity=\"0.8\"/><circle cx=\"60\" cy=\"110\" r=\"10\" fill=\"#ff9800\" opacity=\"0.8\"/><circle cx=\"280\" cy=\"110\" r=\"10\" fill=\"#ff9800\" opacity=\"0.8\"/><circle cx=\"170\" cy=\"22\" r=\"10\" fill=\"#e91e8c\" opacity=\"0.8\"/><line x1=\"80\" y1=\"50\" x2=\"148\" y2=\"72\" stroke=\"#6a1b9a\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"260\" y1=\"50\" x2=\"192\" y2=\"72\" stroke=\"#6a1b9a\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"60\" y1=\"110\" x2=\"145\" y2=\"90\" stroke=\"#ff9800\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"280\" y1=\"110\" x2=\"195\" y2=\"90\" stroke=\"#ff9800\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"170\" y1=\"22\" x2=\"170\" y2=\"42\" stroke=\"#e91e8c\" stroke-width=\"1.5\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "仿生代謝的智慧優化器：讓 AI 搜尋像生物一樣自我調節資源",
+        "en": "Bio-Metabolic AI Optimizer: Agents That Self-Regulate Energy Like Living Organisms",
+        "zh-CN": "仿生代谢的智慧优化器：让 AI 搜索像生物一样自我调节资源",
+        "ja": "生体代謝型AIオプティマイザー：生き物のようにエネルギーを自律調整する最適化",
+        "ko": "생체 대사 AI 최적화기: 생물처럼 자원을 스스로 조절하는 지능형 탐색"
+      },
+      "tag": {
+        "zh-TW": "🧠 演化計算／最佳化",
+        "en": "🧠 Evolutionary Computation / Optimization",
+        "zh-CN": "🧠 演化计算／最优化",
+        "ja": "🧠 進化計算／最適化",
+        "ko": "🧠 진화 계산／최적화"
+      },
+      "tech": {
+        "zh-TW": "MMAO 提出一種跨領域最佳化框架，每個智能體擁有內部能量、連續角色狀態、運動記憶與局部搜尋歷史，並透過「私有-公共代謝資源迴圈」將適應度提升轉化為標準化代謝收益。與傳統元啟發式演算法不同，族群規模與搜尋尺度皆由內生機制自動調節，無需人工設定或外掛參數控制模組，同時適用於連續與離散最佳化問題。",
+        "en": "MMAO introduces a cross-domain optimization framework where each agent maintains internal energy, a continuous role state, motion or structural memory, and local search history, while sharing a communal resource pool. Fitness improvements are converted into normalized metabolic gains via a private-public resource loop, enabling endogenous adaptation of population size and search scale without manual parameter tuning or external control modules, applicable to both continuous and discrete optimization.",
+        "zh-CN": "MMAO 提出一种跨领域最优化框架，每个智能体拥有内部能量、连续角色状态、运动记忆与局部搜索历史，并通过「私有-公共代谢资源循环」将适应度提升转化为标准化代谢收益。与传统元启发式算法不同，种群规模与搜索尺度均由内生机制自动调节，无需人工设定或外挂参数控制模块，同时适用于连续与离散最优化问题。",
+        "ja": "MMAOは各エージェントが内部エネルギー・連続的役割状態・運動記憶・局所探索履歴を保持し、共有資源プールと「私的-公的代謝ループ」を通じて適応度向上を正規化代謝利得に変換するフレームワークを提案する。個体数や探索スケールは内生的に自動調整され、手動パラメータ設定や外部制御モジュールが不要で、連続・離散最適化の両方に適用可能である。",
+        "ko": "MMAO는 각 에이전트가 내부 에너지, 연속적 역할 상태, 운동·구조 기억, 국소 탐색 이력을 보유하고 공유 자원 풀과 '사적-공적 대사 루프'를 통해 적합도 향상을 정규화된 대사 이득으로 변환하는 최적화 프레임워크를 제안한다. 개체 수와 탐색 규모는 내생적으로 자동 조절되어 수동 파라미터 설정이나 외부 제어 모듈이 필요 없으며, 연속·이산 최적화 모두에 적용 가능하다."
+      },
+      "plain": {
+        "zh-TW": "想像一支螞蟻大軍在地圖上尋找最短路線：傳統方法就像事先規定好「隊伍要幾隻、每隻走多大步」，一旦設錯就全軍覆沒。MMAO 的做法截然不同——每隻「智能螞蟻」都像真正的生物，有自己的體力值，找到好路線就補充能量、繼續擴張搜尋；走錯路、消耗殆盡就自動退場，釋放資源給表現好的同伴。整個族群還共享一個「公共糧倉」，讓能量在個體之間流動調配。這樣一來，隊伍規模和搜尋強度都會隨著問題難度自動縮放，就像生態系統自我平衡一樣。這項設計不只能解連續數學問題，也能處理像排班、路徑規劃這類離散組合問題。為什麼重要？因為現實工程問題千變萬化，不再需要每次都重新調參數的優化工具，才能真正省時省力地部署到工業界。",
+        "en": "Imagine an ant colony searching for the best path on a map: traditional methods pre-fix how many ants to use and how big each step should be — get it wrong and the whole search fails. MMAO works differently: each AI agent is like a living organism with its own energy reserves. When it finds a good solution, it gains metabolic energy and can explore more aggressively; when it keeps failing, it runs out of energy and exits, freeing resources for successful neighbors. The whole population also shares a communal resource pool, letting energy flow dynamically between agents. As a result, the group size and search intensity automatically scale with problem difficulty — like an ecosystem self-balancing. This design works for both smooth mathematical problems and tricky combinatorial puzzles like scheduling or routing. Why does it matter? Because real-world engineering problems are endlessly varied, and an optimizer that tunes itself saves enormous time and expertise when deployed in industry.",
+        "zh-CN": "想象一支蚂蚁大军在地图上寻找最短路线：传统方法就像事先规定好「队伍要几只、每只走多大步」，一旦设错就全军覆没。MMAO 的做法截然不同——每只「智能蚂蚁」都像真正的生物，有自己的体力值，找到好路线就补充能量、继续扩大搜索；走错路、消耗殆尽就自动退出，释放资源给表现好的同伴。整个种群还共享一个「公共粮仓」，让能量在个体之间流动调配。这样一来，队伍规模和搜索强度都会随着问题难度自动缩放，就像生态系统自我平衡一样。这项设计不只能解连续数学问题，也能处理排班、路径规划这类离散组合问题。为什么重要？因为现实工程问题千变万化，不再需要每次都重新调参数的优化工具，才能真正省时省力地部署到工业界。",
+        "ja": "地図上で最短ルートを探すアリの大群を想像してください。従来の手法は「何匹使うか、歩幅はどれくらいか」を事前に固定するため、設定を誤ると探索が完全に失敗します。MMAOはまったく異なるアプローチを取ります。各AIエージェントは本物の生き物のように内部エネルギーを持ち、良い解を見つけると代謝エネルギーを得てさらに積極的に探索し、失敗が続くとエネルギーを使い果たして自動退場し、優秀な仲間にリソースを渡します。群れ全体は共有資源プールも持ち、エネルギーが動的に流れます。その結果、群れの規模と探索強度は問題の難しさに応じて自動的に調整され、生態系が自己バランスを保つような仕組みになっています。これは数学的連続問題だけでなく、スケジューリングや経路探索といった離散組み合わせ問題にも対応できます。なぜ重要か？現実の工学問題は多種多様で、毎回パラメータを再調整しなくて済む最適化ツールこそ、産業界への実用展開を大きく加速するからです。",
+        "ko": "지도에서 최단 경로를 찾는 개미 군단을 상상해 보세요. 전통적인 방법은 '몇 마리를 쓸지, 보폭은 얼마나 할지'를 미리 고정하기 때문에 설정이 잘못되면 탐색 전체가 실패합니다. MMAO는 완전히 다른 방식을 취합니다. 각 AI 에이전트는 실제 생물처럼 내부 에너지를 가지고 있어, 좋은 해를 찾으면 대사 에너지를 얻어 더 적극적으로 탐색하고, 계속 실패하면 에너지를 소진해 자동으로 퇴장하며 잘 하는 동료에게 자원을 넘겨줍니다. 전체 집단은 공유 자원 풀도 갖고 있어 에너지가 동적으로 흐릅니다. 그 결과 집단 크기와 탐색 강도가 문제 난이도에 따라 자동으로 조절되어 생태계가 스스로 균형을 잡는 것과 같습니다. 이 설계는 수학적 연속 문제뿐 아니라 일정 계획이나 경로 탐색 같은 이산 조합 문제에도 적용됩니다. 왜 중요할까요? 현실의 공학 문제는 끝없이 다양하기 때문에, 스스로 조율하는 최적화 도구야말로 산업 현장 배포 시간과 전문 지식을 크게 절약해 줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正強大的最佳化系統，不是靠人類設定更好的參數，而是像生命體一樣，讓資源競爭與代謝循環自然篩選出最有效的搜尋策略。",
+        "en": "💡 The most powerful optimization systems don't need better human-tuned parameters — like living organisms, they let resource competition and metabolic cycles naturally select the most effective search strategies.",
+        "zh-CN": "💡 真正强大的最优化系统，不是靠人类设定更好的参数，而是像生命体一样，让资源竞争与代谢循环自然筛选出最有效的搜索策略。",
+        "ja": "💡 真に強力な最適化システムは人間によるパラメータ調整に頼るのではなく、生命体のように資源競争と代謝サイクルが最も効果的な探索戦略を自然に選び出す。",
+        "ko": "💡 진정으로 강력한 최적화 시스템은 인간이 파라미터를 더 잘 설정하는 것이 아니라, 생명체처럼 자원 경쟁과 대사 순환이 가장 효과적인 탐색 전략을 자연스럽게 선별하도록 한다."
+      }
+    },
+    {
+      "id": "space-260630",
+      "domain": "space",
+      "day": "2026-06-30",
+      "author": "Morifumi Mizuno",
+      "ref": "arXiv:2606.28317v1",
+      "url": "https://arxiv.org/abs/2606.28317v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2.5\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#5c6bc0\" stroke-width=\"1.5\" stroke-dasharray=\"6 3\"/><ellipse cx=\"170\" cy=\"80\" rx=\"55\" ry=\"18\" fill=\"none\" stroke=\"#7986cb\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><line x1=\"170\" y1=\"25\" x2=\"170\" y2=\"135\" stroke=\"#e8eaf6\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"115\" y1=\"80\" x2=\"225\" y2=\"80\" stroke=\"#e8eaf6\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><polygon points=\"170,30 178,50 170,45 162,50\" fill=\"#ffd54f\"/><polygon points=\"170,130 178,110 170,115 162,110\" fill=\"#ffd54f\"/><circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#1a237e\" stroke=\"#ffd54f\" stroke-width=\"2\"/><line x1=\"135\" y1=\"55\" x2=\"155\" y2=\"72\" stroke=\"#ff8a65\" stroke-width=\"2\"/><line x1=\"205\" y1=\"55\" x2=\"185\" y2=\"72\" stroke=\"#ff8a65\" stroke-width=\"2\"/><circle cx=\"135\" cy=\"55\" r=\"5\" fill=\"#ff8a65\"/><circle cx=\"205\" cy=\"55\" r=\"5\" fill=\"#ff8a65\"/></svg>",
+      "title": {
+        "zh-TW": "磁場失守後的宇宙電漿：無力電動力學的接力理論",
+        "en": "When Magnetic Dominance Breaks Down: A New Theory for Cosmic Plasma Fields",
+        "zh-CN": "磁场失守后的宇宙等离子体：无力电动力学的接力理论",
+        "ja": "磁気優位が崩れた後の宇宙プラズマ：無力電磁気学の継続理論",
+        "ko": "자기 우세가 무너진 후의 우주 플라즈마: 무력 전기역학의 연속 이론"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "無力電動力學（FFE）描述磁場主導電漿中的電磁演化，但當磁場能量不再高於電場時（即 F^ab F_ab > 0 條件失效），方程組失去雙曲性而無法繼續求解。本文提出以「零場理論」（null field theory）接替 FFE，要求電磁場滿足 B²=E²且E·B=0，並以主零方向與測地線共群相切為核心判據，在平坦與彎曲時空中均給出自洽的演化方案。",
+        "en": "Force-Free Electrodynamics (FFE) governs electromagnetic evolution in magnetically dominated plasmas, but loses its hyperbolic character once the magnetic dominance condition F^ab F_ab > 0 fails. This paper proposes replacing FFE with a null-field theory satisfying B²=E² and E·B=0, characterized by the condition that the principal null direction is tangent to a geodesic congruence, providing a consistent continuation in both flat and curved spacetime.",
+        "zh-CN": "无力电动力学（FFE）描述磁场主导等离子体中的电磁演化，但当磁场优势条件 F^ab F_ab > 0 失效时，方程组失去双曲性而无法继续求解。本文提出以「零场理论」接替 FFE，要求电磁场满足 B²=E²且E·B=0，以主零方向与测地线丛相切为核心判据，在平坦与弯曲时空中均给出自洽的演化方案。",
+        "ja": "無力電磁気学（FFE）は磁気優位プラズマの電磁場進化を記述するが、磁気優位条件 F^ab F_ab > 0 が失われると双曲型性質を失い求解不能となる。本論文はFFEの後継として「零場理論」を提案し、B²=E²かつE·B=0を満たし、主零方向が測地線合同に接するという条件を核心判定基準として、平坦・湾曲時空の両方で自己無撞着な進化スキームを与える。",
+        "ko": "무력 전기역학(FFE)은 자기 우세 플라즈마의 전자기장 진화를 기술하지만, 자기 우세 조건 F^ab F_ab > 0이 깨지면 쌍곡형 특성을 잃어 풀 수 없게 된다. 본 논문은 FFE의 후계 이론으로 B²=E²이고 E·B=0을 만족하는 「영장 이론(null field theory)」을 제안하며, 주 영방향이 측지선 합동에 접한다는 조건을 핵심으로 평탄·만곡 시공간 모두에서 자기 일관적 진화 방안을 제시한다."
+      },
+      "plain": {
+        "zh-TW": "想像宇宙中的黑洞或中子星周圍有一片「磁力極強的電漿海洋」，磁場就像無形的骨架撐著所有帶電粒子，使它們乖乖沿磁力線流動，這就是無力電動力學（FFE）描述的世界。但有時候，劇烈的爆炸或高速噴流會讓磁場優勢突然瓦解——電場跑贏了磁場——就像橋墩突然被洪水衝走，原本的方程式瞬間「失效」，物理學家陷入困境。這篇研究找到了一條接力棒：當磁場失守的瞬間，改用一種叫「零場」的特殊狀態繼續描述，這種狀態下電場與磁場大小相等、彼此垂直，就像兩個勢均力敵的舞者完美平衡。更妙的是，研究者發現這種零場的傳播方向遵循時空中最短路徑（測地線），就像光在彎曲宇宙中走最省力的路。這個理論對理解脈衝星磁層、伽瑪射線爆發、以及黑洞噴流中的能量釋放機制至關重要，填補了現有電漿物理理論的關鍵空白。",
+        "en": "Imagine a vast ocean of plasma surrounding a black hole or neutron star, held in perfect order by an overwhelmingly strong magnetic field — this is the world described by Force-Free Electrodynamics (FFE). But sometimes a violent explosion or jet disrupts this balance, and the electric field overtakes the magnetic field, causing the usual equations to simply break down, like a bridge suddenly losing its foundation. This paper offers a relay baton: at the moment magnetic dominance is lost, a special state called a 「null field」 takes over, where electric and magnetic fields are exactly equal in strength and perpendicular to each other — like two perfectly matched dancers in balance. Even more elegantly, the researchers found that null fields propagate along the shortest paths in curved spacetime (geodesics), just like light naturally follows the universe's own geometry. This breakthrough matters for understanding energy release in pulsar magnetospheres, gamma-ray bursts, and black hole jets, filling a critical gap in plasma physics.",
+        "zh-CN": "想象宇宙中黑洞或中子星周围有一片「磁力极强的等离子体海洋」，磁场就像无形的骨架撑着所有带电粒子，使它们沿磁力线有序流动，这就是无力电动力学（FFE）描述的世界。但有时剧烈的爆炸或高速喷流会让磁场优势突然瓦解——电场跑赢了磁场——就像桥墩突然被洪水冲走，原本的方程式瞬间「失效」。这篇研究找到了接力棒：磁场失守的瞬间，改用一种叫「零场」的特殊状态继续描述，此时电场与磁场大小相等、彼此垂直，像两个势均力敌的舞者完美平衡。更妙的是，零场的传播方向遵循时空中的测地线，就像光在弯曲宇宙中走最省力的路。这一理论对理解脉冲星磁层、伽马射线暴及黑洞喷流中的能量释放机制至关重要。",
+        "ja": "ブラックホールや中性子星の周囲には「磁力が極めて強いプラズマの海」が広がっており、磁場が見えない骨格となって荷電粒子を整然と磁力線に沿って流している——これが無力電磁気学（FFE）が描く世界です。しかし激しい爆発や高速ジェットが起きると磁場の優位性が突然崩れ、電場が磁場を上回る瞬間が訪れます。橋の支柱が洪水で流されるように、従来の方程式は突然「使えなく」なってしまいます。この研究はその瞬間に渡すバトンを見つけました：磁気優位が失われた直後、「零場」と呼ばれる特殊な状態が引き継ぎ、電場と磁場が等しい強さで互いに直交します——まるで互角の二人のダンサーが完璧な均衡を保つように。さらに零場の伝搬方向が時空の最短経路（測地線）に従うことも示され、パルサー磁気圏やガンマ線バーストの理解に道を開く重要な成果です。",
+        "ko": "블랙홀이나 중성자별 주변에는 강력한 자기장이 지배하는 플라즈마 바다가 펼쳐져 있고, 자기장은 보이지 않는 골격처럼 하전 입자들을 자기력선을 따라 질서 있게 흐르게 합니다 — 이것이 무력 전기역학(FFE)이 그리는 세계입니다. 하지만 강렬한 폭발이나 제트가 발생하면 자기장의 우세가 갑자기 무너져 전기장이 자기장을 앞지르는 순간이 찾아옵니다. 다리의 교각이 홍수에 쓸려가듯 기존 방정식은 순식간에 「작동 불능」이 됩니다. 이 연구는 그 순간을 위한 바통을 찾아냈습니다: 자기 우세가 사라지는 순간 「영장(null field)」이라는 특수 상태가 이어받아, 전기장과 자기장이 같은 크기로 서로 수직을 이루는 완벽한 균형 상태를 유지합니다. 이 발견은 펄사 자기권, 감마선 폭발, 블랙홀 제트의 에너지 방출 메커니즘 이해에 핵심적인 공백을 채웁니다."
+      },
+      "insight": {
+        "zh-TW": "💡 物理理論的邊界往往是新理論的起點：當舊方程式在極端條件下「失效」，正是宇宙邀請我們看見更深層規律的時刻。",
+        "en": "💡 The boundary where one theory breaks down is often the very birthplace of a deeper one — the universe's most extreme conditions are invitations to discover new laws.",
+        "zh-CN": "💡 物理理论的边界往往是新理论的起点：当旧方程式在极端条件下「失效」，正是宇宙邀请我们看见更深层规律的时刻。",
+        "ja": "💡 理論が限界を迎える境界こそ、より深い法則が生まれる場所だ——宇宙の極限環境は、新たな物理を発見するための招待状である。",
+        "ko": "💡 이론이 한계에 부딪히는 경계야말로 더 깊은 법칙이 탄생하는 곳이다 — 우주의 극단적 환경은 새로운 물리를 발견하라는 초대장이다."
+      }
+    },
+    {
+      "id": "tech-260630",
+      "domain": "tech",
+      "day": "2026-06-30",
+      "author": "Md Niaz Imtiaz, Naimul Khan et al.",
+      "ref": "arXiv:2606.28202v1",
+      "url": "https://arxiv.org/abs/2606.28202v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><ellipse cx=\"60\" cy=\"80\" rx=\"38\" ry=\"48\" fill=\"#00695c\" opacity=\"0.18\"/><ellipse cx=\"60\" cy=\"80\" rx=\"28\" ry=\"36\" fill=\"#00695c\" opacity=\"0.35\"/><ellipse cx=\"60\" cy=\"80\" rx=\"16\" ry=\"20\" fill=\"#00695c\" opacity=\"0.7\"/><circle cx=\"60\" cy=\"80\" r=\"7\" fill=\"#00695c\"/><rect x=\"108\" y=\"72\" width=\"40\" height=\"16\" rx=\"8\" fill=\"#00695c\" opacity=\"0.25\"/><rect x=\"118\" y=\"77\" width=\"20\" height=\"6\" rx=\"3\" fill=\"#00695c\" opacity=\"0.7\"/><circle cx=\"180\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"3\" opacity=\"0.4\"/><circle cx=\"180\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\" opacity=\"0.6\"/><circle cx=\"180\" cy=\"80\" r=\"9\" fill=\"#00695c\" opacity=\"0.8\"/><rect x=\"222\" y=\"52\" width=\"88\" height=\"56\" rx=\"10\" fill=\"#00695c\" opacity=\"0.12\" stroke=\"#00695c\" stroke-width=\"2\"/><circle cx=\"248\" cy=\"72\" r=\"7\" fill=\"#4db6ac\" opacity=\"0.85\"/><circle cx=\"248\" cy=\"108\" r=\"7\" fill=\"#ff7043\" opacity=\"0.75\"/><circle cx=\"290\" cy=\"72\" r=\"7\" fill=\"#4db6ac\" opacity=\"0.55\"/><circle cx=\"290\" cy=\"108\" r=\"7\" fill=\"#ff7043\" opacity=\"0.55\"/><line x1=\"248\" y1=\"72\" x2=\"290\" y2=\"72\" stroke=\"#00695c\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"248\" y1=\"108\" x2=\"290\" y2=\"108\" stroke=\"#00695c\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"248\" y1=\"72\" x2=\"290\" y2=\"108\" stroke=\"#00695c\" stroke-width=\"1\" opacity=\"0.3\" stroke-dasharray=\"4 2\"/></svg>",
+      "title": {
+        "zh-TW": "不看原始資料也能讀懂你的情緒：跨資料集腦波情緒辨識新框架",
+        "en": "Reading Emotions from Brainwaves Without Original Training Data: A Cross-Dataset EEG Adaptation Framework",
+        "zh-CN": "不看原始数据也能读懂你的情绪：跨数据集脑波情绪识别新框架",
+        "ja": "元データなしで感情を読む：データセット横断EEG感情認識の新フレームワーク",
+        "ko": "원본 데이터 없이도 감정을 읽는다: 교차 데이터셋 뇌파 감정 인식 새 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一套「無來源資料」的無監督域適應框架，利用預測編碼（Predictive Coding）在訓練時學習穩健的EEG情緒特徵表示，並搭配測試時訓練（Test-Time Training）機制，在推論階段即時修正跨資料集的域偏移問題。框架同時引入偽標籤去噪策略，有效降低不穩定適應帶來的雜訊干擾。實驗於多個公開EEG情緒資料集上驗證，跨資料集辨識準確率顯著超越現有方法。",
+        "en": "The proposed framework employs Predictive Coding to learn robust EEG feature representations without accessing source training data, combined with Test-Time Training that dynamically corrects domain shifts during inference on unseen target datasets. A pseudo-label denoising strategy further stabilizes adaptation under large cross-dataset domain gaps. Evaluations across multiple public EEG emotion benchmarks demonstrate significant improvements over existing source-free UDA methods.",
+        "zh-CN": "本研究提出一套「无来源数据」的无监督域适应框架，利用预测编码在训练阶段学习鲁棒的EEG情绪特征表示，并搭配测试时训练机制，在推断阶段即时修正跨数据集的域偏移问题。框架同时引入伪标签去噪策略，有效降低不稳定适应带来的噪声干扰。实验在多个公开EEG情绪数据集上验证，跨数据集识别准确率显著超越现有方法。",
+        "ja": "本研究は、ソースデータへのアクセスなしにEEG感情特徴表現を学習する予測符号化と、推論時にドメインシフトを動的に補正するテスト時訓練を組み合わせたフレームワークを提案する。また擬似ラベルのノイズ除去戦略により、大きなドメインギャップ下での適応を安定化させる。複数の公開EEG感情ベンチマークで既存手法を大幅に上回る精度を達成した。",
+        "ko": "본 연구는 소스 데이터 없이 EEG 감정 특징 표현을 학습하는 예측 코딩과, 추론 단계에서 도메인 이동을 동적으로 보정하는 테스트 시 학습을 결합한 프레임워크를 제안한다. 의사 레이블 잡음 제거 전략으로 대규모 도메인 격차 하에서도 적응을 안정화하며, 여러 공개 EEG 감정 벤치마크에서 기존 방법 대비 유의미한 성능 향상을 달성했다."
+      },
+      "plain": {
+        "zh-TW": "想像一下，你教會一位翻譯員辨認「台灣腔中文」，但接下來要翻的是「四川腔中文」——口音差太多，翻譯就會出錯。腦波情緒辨識也面臨同樣困境：每個人的腦波模式都不同，不同設備、不同實驗室錄出的資料更是天差地遠。傳統做法需要拿來「原版教材」重新訓練，但原始腦波資料常因隱私疑慮而無法取得。這套新框架的聰明之處在於：它先用「預測編碼」讓模型學會抓住腦波的深層規律，就像先把語言的底層文法記熟；到了真正測試時，再用「測試時訓練」讓模型在每個新使用者身上微調自己，如同即時聽著對方說話來調整理解方式。這不只讓情緒AI更準確，也解決了「資料不能共享」的現實障礙，讓腦機介面、心理健康監測等應用真正走進現實生活。",
+        "en": "Imagine training a translator to understand one regional accent, then asking them to handle a completely different dialect — the gap is too wide and mistakes pile up. EEG-based emotion recognition faces the same problem: every person's brainwaves are unique, and recordings from different labs or devices are even further apart. Traditional solutions require the original training data to retrain the model, but raw brainwave data is often locked away due to privacy concerns. This new framework is clever: it first uses 「predictive coding」 to teach the model deep patterns in brainwave signals, like memorizing the grammar of a language rather than specific words. Then, during real-world testing, 「test-time training」 lets the model quietly adapt to each new user on the fly, like adjusting your ear to a new speaker mid-conversation. This makes emotion AI both more accurate and practically deployable, paving the way for real mental health monitoring and brain-computer interfaces.",
+        "zh-CN": "想象一下，你教会一位翻译员辨认「北京口音」，但接下来要翻的是「四川口音」——口音差太多，翻译就会出错。脑波情绪识别也面临同样困境：每个人的脑波模式都不同，不同设备、不同实验室录制的数据更是千差万别。传统方法需要「原版教材」重新训练，但原始脑波数据常因隐私顾虑而无法获取。这套新框架的聪明之处在于：它先用「预测编码」让模型学会捕捉脑波的深层规律，就像先把语言的底层语法记熟；到了真正测试时，再用「测试时训练」让模型在每个新用户身上微调自己，如同实时聆听对方说话来调整理解方式。这不仅让情绪AI更准确，也解决了「数据不能共享」的现实障碍。",
+        "ja": "ある方言を学んだ通訳者が、突然まったく別の方言を翻訳しなければならない状況を想像してください。EEGによる感情認識も同じ問題を抱えています。人によって脳波のパターンは異なり、異なる機器や研究室で記録されたデータはさらに大きく違います。従来の方法は元の訓練データが必要ですが、プライバシー上の理由からそのデータはしばしば入手できません。この新しいフレームワークは「予測符号化」で脳波の深いパターンを学習し、テスト時には「テスト時訓練」でリアルタイムに各ユーザーへ適応します。これにより、感情AIはより正確になるだけでなく、プライバシー問題も克服し、メンタルヘルス監視や脳-コンピューターインターフェースの実用化への道を開きます。",
+        "ko": "한 방언을 배운 통역사가 갑자기 전혀 다른 방언을 번역해야 하는 상황을 상상해 보세요. 뇌파 기반 감정 인식도 똑같은 문제를 겪습니다. 사람마다 뇌파 패턴이 다르고, 다른 장비나 실험실에서 녹화된 데이터는 더욱 크게 다릅니다. 기존 방법은 원본 훈련 데이터가 필요하지만, 프라이버시 문제로 이 데이터를 구하기 어렵습니다. 이 새로운 프레임워크는 「예측 코딩」으로 뇌파의 깊은 패턴을 먼저 학습하고, 테스트 시에는 「테스트 시 학습」으로 새 사용자에게 실시간으로 적응합니다. 이를 통해 감정 AI는 더 정확해지고, 데이터 공유 불가라는 현실적 장벽도 넘어 정신 건강 모니터링과 뇌-컴퓨터 인터페이스의 실용화를 앞당깁니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正實用的AI不只要學得好，還要在「看不到原始資料」的現實限制下，依然能優雅地適應陌生環境——隱私保護與模型泛化，從來不是對立的兩難。",
+        "en": "💡 A truly practical AI must generalize gracefully under real-world constraints — privacy protection and model adaptability are not opposing forces, but complementary design goals.",
+        "zh-CN": "💡 真正实用的AI不只要学得好，还要在「看不到原始数据」的现实限制下，依然能优雅地适应陌生环境——隐私保护与模型泛化，从来不是非此即彼的两难。",
+        "ja": "💡 本当に実用的なAIは、元データが見えない現実の制約の下でも新しい環境に優雅に適応できなければならない——プライバシー保護とモデルの汎化は、対立ではなく両立すべき設計目標だ。",
+        "ko": "💡 진정으로 실용적인 AI는 원본 데이터를 볼 수 없는 현실적 제약 아래서도 새로운 환경에 우아하게 적응할 수 있어야 한다 — 프라이버시 보호와 모델 일반화는 대립이 아닌 함께 달성해야 할 설계 목표다."
+      }
+    }
+  ]
+}
