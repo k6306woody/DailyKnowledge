@@ -1,0 +1,188 @@
+{
+  "date": "2026-07-02",
+  "mode": "paper",
+  "paper_date": "2026-07-02",
+  "generated_at": "2026-07-02",
+  "cards": [
+    {
+      "id": "bio-260702",
+      "domain": "bio",
+      "day": "2026-07-02",
+      "author": "Lucie Laurence, Philippe Robert et al.",
+      "ref": "arXiv:2606.30325v1",
+      "url": "https://arxiv.org/abs/2606.30325v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#52b788\" opacity=\"0.9\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#ffffff\" opacity=\"0.7\"/><circle cx=\"60\" cy=\"80\" r=\"9\" fill=\"#52b788\"/><rect x=\"95\" y=\"73\" width=\"36\" height=\"14\" rx=\"7\" fill=\"#52b788\" opacity=\"0.7\"/><polygon points=\"131,80 145,73 145,87\" fill=\"#52b788\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"80\" r=\"28\" fill=\"#74c69d\" opacity=\"0.9\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#ffffff\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"80\" r=\"9\" fill=\"#74c69d\"/><rect x=\"205\" y=\"73\" width=\"36\" height=\"14\" rx=\"7\" fill=\"#74c69d\" opacity=\"0.7\"/><polygon points=\"241,80 255,73 255,87\" fill=\"#74c69d\" opacity=\"0.7\"/><circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"#b7e4c7\" opacity=\"0.9\"/><circle cx=\"280\" cy=\"80\" r=\"18\" fill=\"#ffffff\" opacity=\"0.7\"/><circle cx=\"280\" cy=\"80\" r=\"9\" fill=\"#40916c\"/><rect x=\"18\" y=\"115\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#52b788\" opacity=\"0.6\"/><rect x=\"152\" y=\"115\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#74c69d\" opacity=\"0.6\"/><rect x=\"262\" y=\"115\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#40916c\" opacity=\"0.6\"/><rect x=\"38\" y=\"118\" width=\"110\" height=\"10\" rx=\"5\" fill=\"#52b788\" opacity=\"0.25\"/><rect x=\"172\" y=\"118\" width=\"86\" height=\"10\" rx=\"5\" fill=\"#74c69d\" opacity=\"0.25\"/></svg>",
+      "title": {
+        "zh-TW": "細胞的「分子開關」：磷酸化反應的隨機熱力學極限",
+        "en": "The Cell's Molecular Switch: Thermodynamic Limits of Stochastic Phosphorylation Networks",
+        "zh-CN": "细胞的「分子开关」：磷酸化反应的随机热力学极限",
+        "ja": "細胞の「分子スイッチ」：リン酸化反応の確率的熱力学的限界",
+        "ko": "세포의 「분자 스위치」：인산화 반응의 확률적 열역학 한계"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Sciences",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "本文以隨機化學反應網路（CRN）框架，研究底物被激酶與磷酸酶依序磷酸化／去磷酸化的雙步驟系統，並在底物總量固定為 N、酵素總量與 N 等比例縮放的條件下，利用質量作用動力學分析系統在熱力學大 N 極限下的穩定性與漸近行為。",
+        "en": "This paper analyzes a two-step phosphorylation/dephosphorylation chemical reaction network using stochastic mass-action kinetics, where the substrate mass is fixed at N and enzyme concentrations scale proportionally with N, deriving the stability properties and asymptotic behavior in the thermodynamic large-N limit.",
+        "zh-CN": "本文以随机化学反应网络（CRN）框架，研究底物被激酶与磷酸酶依序磷酸化／去磷酸化的双步骤系统，并在底物总量固定为 N、酶总量与 N 等比例缩放的条件下，利用质量作用动力学分析系统在热力学大 N 极限下的稳定性与渐近行为。",
+        "ja": "本論文は、基質の総量を N に固定し酵素量を N に比例してスケールさせた条件のもと、質量作用速度論に基づく確率的化学反応ネットワークを用いて、二段階リン酸化／脱リン酸化システムの安定性と熱力学的大 N 極限における漸近挙動を解析する。",
+        "ko": "이 논문은 기질 총량을 N으로 고정하고 효소 총량을 N에 비례하여 스케일링한 조건에서, 질량 작용 동역학 기반 확률적 화학반응 네트워크를 통해 이중 인산화／탈인산화 시스템의 안정성과 열역학적 대 N 극한에서의 점근적 거동을 분석한다."
+      },
+      "plain": {
+        "zh-TW": "想像細胞裡有一套「音量旋鈕」，用來調節蛋白質是否被激活：磷酸化就是這個旋鈕，它把一個小小的磷酸根「貼」上蛋白質，讓蛋白質從靜止狀態切換到活躍狀態。這個過程需要兩種酵素，一種負責「開燈」（激酶），另一種負責「關燈」（磷酸酶）。科學家想知道：當細胞內部分子數量龐大時，這套開關系統會不會亂掉，還是始終保持穩定？這篇論文用數學的方式模擬了數千個分子同時碰撞、反應的過程，就像用統計學預測股市走勢一樣，追蹤整個系統最終落在哪個「平衡點」。結果發現，即使反應帶有隨機雜訊，當分子總數夠大時，系統仍會收斂到可預測的穩定狀態。這很重要，因為磷酸化異常與癌症、糖尿病等數百種疾病息息相關；理解它的熱力學極限，有助於設計更精準的藥物靶點與合成生物學電路。",
+        "en": "Imagine a cell has a set of volume knobs that control whether proteins are switched on or off — phosphorylation is exactly that knob, attaching a tiny phosphate group to a protein to flip it from idle to active. Two types of enzymes do the job: kinases turn the switch on, phosphatases turn it off. Scientists wanted to know whether this switching system stays reliable when huge numbers of molecules are jostling around, or whether random noise causes it to break down. This paper uses mathematical modeling to simulate thousands of molecules reacting simultaneously — like using statistics to forecast crowd behavior — and tracks where the whole system ultimately settles. The finding is that even with random fluctuations, when the total number of molecules is large enough, the system converges to a predictable stable state. This matters because abnormal phosphorylation is linked to hundreds of diseases including cancer and diabetes, and understanding its thermodynamic limits helps design better drug targets and synthetic biology circuits.",
+        "zh-CN": "想象细胞里有一套「音量旋钮」，用来调节蛋白质是否被激活：磷酸化就是这个旋钮，它把一个小小的磷酸根「贴」上蛋白质，让蛋白质从静止状态切换到活跃状态。这个过程需要两种酶，一种负责「开灯」（激酶），另一种负责「关灯」（磷酸酶）。科学家想知道：当细胞内部分子数量庞大时，这套开关系统会不会乱掉，还是始终保持稳定？这篇论文用数学方式模拟了数千个分子同时碰撞、反应的过程，就像用统计学预测股市走势一样，追踪整个系统最终落在哪个「平衡点」。结果发现，即使反应带有随机噪声，当分子总数足够大时，系统仍会收敛到可预测的稳定状态。这很重要，因为磷酸化异常与癌症、糖尿病等数百种疾病密切相关，理解其热力学极限有助于设计更精准的药物靶点与合成生物学线路。",
+        "ja": "細胞の中には、タンパク質をオン／オフする「音量ダイヤル」のような仕組みがあります。リン酸化はまさにそのダイヤルで、小さなリン酸基をタンパク質にくっつけることで、休止状態から活性状態へ切り替えます。キナーゼが「電気をつけ」、ホスファターゼが「電気を消す」役割を担います。研究者たちは、細胞内に大量の分子が存在する場合でもこのスイッチが安定して機能するのかを知りたいと考えました。この論文は、何千もの分子が同時に衝突・反応する過程を数学的にシミュレートし、システム全体が最終的にどの「均衡点」に落ち着くかを追跡しました。結果、ランダムなゆらぎがあっても、分子数が十分に多ければ、システムは予測可能な安定状態に収束することがわかりました。リン酸化の異常はがんや糖尿病など数百の疾患と関連しており、その熱力学的限界を理解することは、より精密な創薬や合成生物学回路の設計に役立ちます。",
+        "ko": "세포 안에는 단백질을 켜고 끄는 「볼륨 다이얼」같은 장치가 있습니다. 인산화가 바로 그 다이얼로, 작은 인산기를 단백질에 붙여 휴지 상태에서 활성 상태로 전환시킵니다. 키나아제가 「불을 켜고」, 포스파타아제가 「불을 끕니다」. 연구자들은 세포 안에 수많은 분자가 존재할 때 이 스위치 시스템이 안정적으로 작동하는지, 아니면 무작위 잡음 때문에 흐트러지는지 알고 싶었습니다. 이 논문은 수천 개의 분자가 동시에 충돌하고 반응하는 과정을 수학적으로 시뮬레이션하여, 전체 시스템이 어느 「균형점」에 정착하는지 추적했습니다. 결과적으로, 무작위 요동이 있더라도 분자 총수가 충분히 많으면 시스템은 예측 가능한 안정 상태로 수렴한다는 것을 밝혔습니다. 인산화 이상은 암·당뇨병 등 수백 가지 질환과 관련이 있어, 이 열역학적 한계를 이해하면 더 정밀한 약물 표적과 합성 생물학 회로 설계에 도움이 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 生命的精妙在於：即使每個分子的碰撞都是隨機的，龐大數量的群體仍能湧現出可靠且穩定的秩序——混沌之中，自有定律。",
+        "en": "💡 Life's elegance lies in this: even when every molecular collision is random, a large enough ensemble reliably emerges into stable, predictable order — chaos harbors its own laws.",
+        "zh-CN": "💡 生命的精妙在于：即使每个分子的碰撞都是随机的，庞大数量的群体仍能涌现出可靠且稳定的秩序——混沌之中，自有定律。",
+        "ja": "💡 生命の精妙さはここにある：個々の分子衝突がランダムであっても、十分な数の集団は信頼できる安定した秩序を自然と生み出す——混沌の中にこそ法則がある。",
+        "ko": "💡 생명의 정교함은 여기에 있다：개별 분자 충돌이 무작위라도, 충분히 많은 분자들의 집합은 신뢰할 수 있는 안정된 질서를 스스로 만들어낸다——혼돈 속에도 법칙이 있다."
+      }
+    },
+    {
+      "id": "phys-260702",
+      "domain": "phys",
+      "day": "2026-07-02",
+      "author": "Trung Nguyen, Sarah Dweik et al.",
+      "ref": "arXiv:2606.32030v1",
+      "url": "https://arxiv.org/abs/2606.32030v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"30\" y=\"55\" width=\"80\" height=\"50\" rx=\"12\" fill=\"#4a7bbf\" opacity=\"0.18\"/><rect x=\"230\" y=\"55\" width=\"80\" height=\"50\" rx=\"12\" fill=\"#4a7bbf\" opacity=\"0.18\"/><circle cx=\"70\" cy=\"80\" r=\"22\" fill=\"#4a7bbf\" opacity=\"0.85\"/><circle cx=\"270\" cy=\"80\" r=\"22\" fill=\"#4a7bbf\" opacity=\"0.85\"/><circle cx=\"70\" cy=\"80\" r=\"10\" fill=\"#e8f0fb\"/><circle cx=\"270\" cy=\"80\" r=\"10\" fill=\"#e8f0fb\"/><line x1=\"92\" y1=\"80\" x2=\"248\" y2=\"80\" stroke=\"#f5a623\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><circle cx=\"180\" cy=\"80\" r=\"8\" fill=\"#f5a623\" opacity=\"0.9\"/><ellipse cx=\"70\" cy=\"80\" rx=\"34\" ry=\"14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.5\"/><ellipse cx=\"270\" cy=\"80\" rx=\"34\" ry=\"14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.5\"/><rect x=\"140\" y=\"120\" width=\"60\" height=\"12\" rx=\"4\" fill=\"#4a7bbf\" opacity=\"0.22\"/><rect x=\"155\" y=\"123\" width=\"30\" height=\"6\" rx=\"3\" fill=\"#f5a623\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "奈米薄片上的矽自旋量子位元：雙量子位元閘的變異性與保真度模擬",
+        "en": "Simulating Two-Qubit Gate Fidelity of Silicon Spin Qubits on Nanosheet Technology",
+        "zh-CN": "纳米薄片上的硅自旋量子比特：双量子比特门的变异性与保真度模拟",
+        "ja": "ナノシート技術上のシリコンスピン量子ビット：2量子ビットゲートの変動性と忠実度シミュレーション",
+        "ko": "나노시트 기술 위의 실리콘 스핀 큐비트: 2큐비트 게이트 변동성 및 충실도 시뮬레이션"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子運算",
+        "en": "⚛️ Quantum Computing",
+        "zh-CN": "⚛️ 量子计算",
+        "ja": "⚛️ 量子コンピューティング",
+        "ko": "⚛️ 양자 컴퓨팅"
+      },
+      "tech": {
+        "zh-TW": "本研究以奈米薄片（nanosheet）半導體平台為基礎，對矽自旋量子位元中的雙量子點（double quantum dot）進行三維量子傳輸模擬，分析兩量子位元糾纏閘（two-qubit entanglement gate）的保真度及製程變異對其影響。研究採用全三維薛丁格方程求解器，超越以往僅限於二維近似或絕緣層上矽（SOI）平台的模擬框架，量化了奈米薄片幾何結構與材料變異如何導致閘操作保真度下降。",
+        "en": "This study simulates silicon spin-qubit double quantum dots on a nanosheet semiconductor platform using a full 3D Schrödinger solver, going beyond previous 2D approximations and SOI-limited models. It quantifies how nanosheet geometry and process variability affect two-qubit entanglement gate fidelity, identifying critical sources of performance degradation for large-scale integration.",
+        "zh-CN": "本研究以纳米薄片（nanosheet）半导体平台为基础，对硅自旋量子比特中的双量子点（double quantum dot）进行三维量子传输模拟，分析两量子比特纠缠门（two-qubit entanglement gate）的保真度及工艺变异对其影响。研究采用全三维薛定谔方程求解器，超越以往仅限于二维近似或绝缘层上硅（SOI）平台的模拟框架，量化了纳米薄片几何结构与材料变异如何导致门操作保真度下降。",
+        "ja": "本研究は、ナノシート半導体プラットフォーム上のシリコンスピン量子ビット二重量子ドットを、完全3次元シュレーディンガーソルバーでシミュレートし、従来の2D近似やSOIプラットフォーム限定のモデルを超える解析を行った。ナノシートの幾何形状とプロセス変動が2量子ビット絡み合いゲートの忠実度に与える影響を定量化し、大規模集積化における性能低下の主要因を特定した。",
+        "ko": "본 연구는 나노시트 반도체 플랫폼 위의 실리콘 스핀 큐비트 이중 양자점을 완전한 3D 슈뢰딩거 솔버로 시뮬레이션하여, 기존의 2D 근사 및 SOI 플랫폼 한계를 넘어선 분석을 수행하였다. 나노시트 기하 구조와 공정 변동이 2큐비트 얽힘 게이트 충실도에 미치는 영향을 정량화하고 대규모 집적화의 성능 저하 원인을 규명하였다."
+      },
+      "plain": {
+        "zh-TW": "想像量子電腦是一座超精密的管風琴，每根「管子」就是一個量子位元（qubit），而讓它們發出和諧樂音的關鍵，是兩個管子之間的「連奏閘」——兩量子位元閘。矽自旋量子位元天生適合大規模製造，因為它和我們手機、電腦裡的晶片用的是同一套半導體工廠。問題是，現實中的奈米薄片不像理論那樣完美，每片薄薄的矽層都有細微的形狀差異，就像樂器的管子粗細不一，音就走調了。這篇研究用超精細的三維電腦模擬，把奈米薄片上兩個緊鄰的量子點「照X光」，看清楚製程誤差如何悄悄破壞量子糾纏的品質。結果發現，奈米薄片的幾何變異是拉低「閘保真度」的主要兇手之一，而保真度不夠高，量子計算的錯誤率就會飆升，使大規模量子電腦無從實現。這項工作的重要性在於：它提前告訴工程師「哪裡最容易出錯」，讓未來的晶片設計可以針對性地去改善，就像在建造摩天大樓之前先用電腦跑一遍結構應力測試。",
+        "en": "Imagine a quantum computer as an ultra-precise pipe organ, where each pipe is a qubit and the magic happens when two pipes play perfectly together — that's a two-qubit gate. Silicon spin qubits are exciting because they can be made in the same factories that produce our smartphones. But real nanosheets are never perfectly uniform; tiny shape variations, like slightly uneven pipe widths, throw the quantum harmony off-key. This research used detailed 3D computer simulations to X-ray two neighboring quantum dots on a nanosheet, revealing exactly how manufacturing imperfections quietly sabotage quantum entanglement quality. The findings show that nanosheet geometry variations are a major culprit behind low gate fidelity — and low fidelity means high error rates, blocking the path to large-scale quantum computers. This work matters because it acts like a stress test before construction: it tells engineers precisely where problems will arise, so future chip designs can fix them before they're built.",
+        "zh-CN": "想象量子电脑是一台超精密管风琴，每根「管子」就是一个量子比特，而让它们发出和谐音乐的关键是两根管子之间的「连奏闸」——两量子比特门。硅自旋量子比特天生适合大规模制造，因为它和我们手机、电脑里的芯片用的是同一套半导体工厂。问题是，现实中的纳米薄片不像理论那样完美，每片薄薄的硅层都有细微的形状差异，就像乐器的管子粗细不一，音就走调了。这篇研究用超精细的三维电脑模拟，把纳米薄片上两个紧邻的量子点「照X光」，看清楚制程误差如何悄悄破坏量子纠缠的品质。结果发现，纳米薄片的几何变异是拉低「门保真度」的主要原因之一，而保真度不够高，量子计算的错误率就会飙升，使大规模量子电脑无从实现。这项工作的重要性在于：它提前告诉工程师「哪里最容易出错」，让未来的芯片设计可以针对性地改善。",
+        "ja": "量子コンピュータを超精密なパイプオルガンに例えると、各パイプが量子ビットで、2本のパイプが完璧に共鳴する仕組みが「2量子ビットゲート」です。シリコンスピン量子ビットは、スマートフォンと同じ半導体工場で作れるため、大規模製造に向いています。しかし現実のナノシートは完璧ではなく、わずかな形状のばらつきが量子もつれの品質を静かに損ないます。本研究は高精度3Dシミュレーションで、ナノシート上の2つの量子ドットを「透視」し、製造ばらつきがゲート忠実度をどう低下させるかを明らかにしました。忠実度が低いとエラー率が急増し、大規模量子コンピュータの実現が遠のきます。この研究は「建設前の構造テスト」のように、設計段階で問題箇所を特定し改善の道を示す重要な一歩です。",
+        "ko": "양자 컴퓨터를 초정밀 파이프 오르간으로 상상해보세요. 각 파이프가 큐비트이고, 두 파이프가 완벽하게 화음을 내는 것이 바로 '2큐비트 게이트'입니다. 실리콘 스핀 큐비트는 스마트폰과 같은 반도체 공장에서 만들 수 있어 대규모 제조에 유리합니다. 하지만 현실의 나노시트는 완벽하지 않아 미세한 형태 편차가 양자 얽힘의 품질을 조용히 떨어뜨립니다. 이 연구는 정밀한 3D 시뮬레이션으로 나노시트 위 두 양자점을 'X선 촬영'하여 공정 편차가 게이트 충실도를 어떻게 저하시키는지 밝혔습니다. 충실도가 낮으면 오류율이 급등하여 대규모 양자 컴퓨터 실현이 어려워집니다. 이 연구는 건설 전 구조 응력 시험처럼, 엔지니어에게 문제 발생 지점을 미리 알려주는 중요한 이정표입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 量子電腦的規模化之路，不只是物理問題，更是製造工藝的精度競賽——奈米級的形狀誤差，就足以讓量子糾纏「走音」。",
+        "en": "💡 Scaling quantum computers is not just a physics challenge but a manufacturing precision race — nanometer-scale shape variations alone can knock quantum entanglement completely out of tune.",
+        "zh-CN": "💡 量子电脑的规模化之路，不只是物理问题，更是制造工艺的精度竞赛——纳米级的形状误差，就足以让量子纠缠「走音」。",
+        "ja": "💡 量子コンピュータのスケールアップは物理学の問題だけでなく、製造精度の競争でもある——ナノメートル単位の形状誤差が量子もつれを「音外れ」にさせてしまう。",
+        "ko": "💡 양자 컴퓨터의 확장은 물리학적 과제일 뿐 아니라 제조 정밀도의 경쟁이기도 하다 — 나노미터 수준의 형태 편차만으로도 양자 얽힘이 완전히 '음이탈'할 수 있다."
+      }
+    },
+    {
+      "id": "neuro-260702",
+      "domain": "neuro",
+      "day": "2026-07-02",
+      "author": "Lukas Kammerer, Gabriel Kronberger et al.",
+      "ref": "arXiv:2606.31990v1",
+      "url": "https://arxiv.org/abs/2606.31990v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><rect x=\"10\" y=\"70\" width=\"18\" height=\"70\" fill=\"#6a1b9a\" opacity=\"0.35\"/><rect x=\"32\" y=\"50\" width=\"18\" height=\"90\" fill=\"#6a1b9a\" opacity=\"0.5\"/><rect x=\"54\" y=\"40\" width=\"18\" height=\"100\" fill=\"#6a1b9a\" opacity=\"0.65\"/><rect x=\"76\" y=\"60\" width=\"18\" height=\"80\" fill=\"#6a1b9a\" opacity=\"0.45\"/><line x1=\"10\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"#ab47bc\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.5\"/><polyline points=\"110,120 140,85 170,65 200,55 230,52 260,50 290,49\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/><polyline points=\"110,120 140,90 170,75 200,70 230,68 260,67 290,66\" fill=\"none\" stroke=\"#ab47bc\" stroke-width=\"2\" stroke-dasharray=\"6,3\"/><circle cx=\"230\" cy=\"52\" r=\"6\" fill=\"#6a1b9a\" opacity=\"0.9\"/><circle cx=\"230\" cy=\"68\" r=\"6\" fill=\"#ab47bc\" opacity=\"0.9\"/><rect x=\"110\" y=\"30\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#e1bee7\" opacity=\"0.8\"/><circle cx=\"116\" cy=\"100\" r=\"5\" fill=\"#e1bee7\" opacity=\"0.6\"/><polyline points=\"116,95 116,80 260,52\" fill=\"none\" stroke=\"#e1bee7\" stroke-width=\"1\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "初始族群怎麼選，符號迴歸差很多嗎？基因規劃初始化方法大評比",
+        "en": "Does Starting Population Matter? Comparing Initialization Methods for Symbolic Regression via Genetic Programming",
+        "zh-CN": "初始种群怎么选，符号回归差很多吗？遗传规划初始化方法大评比",
+        "ja": "出発点で結果は変わる？遺伝的プログラミングによる記号回帰の初期化手法比較",
+        "ko": "시작 집단이 중요할까? 유전 프로그래밍 기반 기호 회귀의 초기화 방법 비교"
+      },
+      "tag": {
+        "zh-TW": "🧠 AI 演算法",
+        "en": "🧠 AI Algorithm",
+        "zh-CN": "🧠 AI 算法",
+        "ja": "🧠 AIアルゴリズム",
+        "ko": "🧠 AI 알고리즘"
+      },
+      "tech": {
+        "zh-TW": "本研究比較三種隨機初始化方法與來自「窮舉符號迴歸（ESR）」預先最佳化小解的初始化方式，在基因規劃符號迴歸框架（採用多目標演化演算法 NSGA-II）下，針對12個合成問題與一個真實世界資料集，分析帕雷托前緣的精度與複雜度。結果顯示各初始化方法之間無顯著統計差異。",
+        "en": "This study compares three standard random initialization methods against seeding with small pre-optimized solutions from exhaustive symbolic regression (ESR) within a GP/SR framework using the multi-objective evolutionary algorithm NSGA-II. Pareto fronts for accuracy versus complexity are evaluated on twelve synthetic benchmarks and one real-world dataset, revealing no statistically significant differences between methods.",
+        "zh-CN": "本研究比较三种随机初始化方法与来自「穷举符号回归（ESR）」预先优化小解的初始化方式，在基于多目标进化算法 NSGA-II 的遗传规划符号回归框架下，针对12个合成问题与一个真实世界数据集分析帕累托前沿的精度与复杂度，结果显示各初始化方法间无显著统计差异。",
+        "ja": "本研究では、NSGA-IIを用いた多目的進化的GP/SR実装において、3種類のランダム初期化手法と、網羅的記号回帰（ESR）で得られた小さな最適解による初期化を比較。12の合成問題と実世界データセットでパレートフロントを評価し、手法間に統計的有意差は見られなかった。",
+        "ko": "본 연구는 다목적 진화 알고리즘 NSGA-II 기반 GP/SR 프레임워크에서 세 가지 무작위 초기화 방법과 완전 기호 회귀(ESR)로 사전 최적화된 소형 해를 초기 집단으로 사용하는 방법을 비교하였으며, 12개 합성 문제와 실세계 데이터셋에서 파레토 전선의 정확도·복잡도를 평가한 결과 방법 간 통계적 유의차가 없었다."
+      },
+      "plain": {
+        "zh-TW": "想像你要在迷宮裡尋寶，出發前你可以隨機站在任何位置，或者事先站在「離寶藏比較近的地方」——這個研究就是在問：出發點的選擇，對最終找到寶藏的速度和品質有多大影響？符號迴歸是讓電腦自動從數據中找出數學公式的技術，就像讓機器自己發現「萬有引力定律」一樣。基因規劃則像在進行公式的「演化競賽」，讓一堆候選公式互相競爭、突變、繁殖，最終留下最好的。研究者測試了三種隨機撒種的方式，以及一種「先用更聰明的方法找好的起點再開始演化」的方式。令人意外的是，不管從哪裡出發，最終找到的答案品質幾乎一樣好！這告訴我們，基因規劃的演化過程本身就很強健，就算起點不好也能找到好答案。對實際使用者來說，這是個好消息：不必花大力氣設計精巧的初始族群，簡單隨機就夠了。",
+        "en": "Imagine searching for treasure in a maze: does it matter whether you start at a random spot or near a promising location? This study asks the same question for symbolic regression—a technique where computers automatically discover mathematical formulas from data, like rediscovering Newton's law of gravity from scratch. Genetic programming runs an evolutionary competition among candidate formulas, letting them mutate, reproduce, and compete until the best survive. Researchers tested three random starting strategies and one smarter approach that seeds the population with already-good small solutions. Surprisingly, the final quality of discovered formulas was nearly identical across all methods. This means the evolutionary process itself is robust enough to overcome a poor starting point—like a marathon runner who can recover from a bad starting position. For practitioners, the takeaway is reassuring: you do not need to invest heavily in clever initialization; simple random seeding works just as well.",
+        "zh-CN": "想象你在迷宫里寻宝，出发点是随机的还是靠近宝藏——这对最终结果影响有多大？这项研究就是在问同样的问题：在让电脑自动从数据中发现数学公式（符号回归）时，初始种群的设计真的重要吗？基因规划就像一场公式的「演化锦标赛」，让候选公式互相竞争、突变和繁殖，留下最好的。研究者测试了三种随机撒种方式，以及一种用更聪明的预优化解来初始化的方式。令人惊讶的是，不管从哪里出发，最终答案的质量几乎相同！这说明演化过程本身足够强健，不需要精心设计初始种群，简单随机就已足够。",
+        "ja": "迷路で宝探しをするとき、ランダムな出発点と「宝に近い場所」から始めるのでは、最終結果に差が出るでしょうか？この研究は、コンピューターがデータから数式を自動発見する「記号回帰」において、初期集団の選び方がどれだけ重要かを問いかけます。遺伝的プログラミングは数式の「進化トーナメント」のようなもので、候補式が競い合い、突然変異し、優れたものが残ります。3種類のランダム初期化と、事前最適化された解を使う賢い方法を比較した結果、最終的な精度にほとんど差がありませんでした。つまり進化プロセス自体が非常に頑健であり、出発点に凝る必要はないということです。",
+        "ko": "미로에서 보물을 찾을 때, 무작위 위치에서 시작하는 것과 보물 근처에서 시작하는 것이 결과에 얼마나 영향을 줄까요? 이 연구는 컴퓨터가 데이터에서 수학 공식을 자동으로 발견하는 기호 회귀에서 초기 집단 선택이 얼마나 중요한지 묻습니다. 유전 프로그래밍은 후보 공식들이 경쟁·변이·번식하는 「진화 토너먼트」와 같습니다. 세 가지 무작위 초기화 방법과 사전 최적화된 해를 심는 방법을 비교한 결과, 최종 품질은 거의 동일했습니다. 이는 진화 과정 자체가 매우 강건하여 출발점이 나빠도 좋은 답을 찾을 수 있다는 뜻입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 演化的力量如此強健，連「壞的起點」都能克服——有時候，過度設計初始條件反而是在浪費資源。",
+        "en": "💡 Evolution is robust enough to overcome poor starting points—over-engineering initialization may be a waste of effort.",
+        "zh-CN": "💡 演化过程足够强健，能克服糟糕的起点——过度设计初始条件有时只是资源的浪费。",
+        "ja": "💡 進化プロセスは悪い出発点を克服できるほど頑健であり、初期化の過剰設計はしばしば無駄な努力に終わる。",
+        "ko": "💡 진화 과정은 나쁜 출발점도 극복할 만큼 강건하다—초기화를 과도하게 설계하는 것은 오히려 자원 낭비일 수 있다."
+      }
+    },
+    {
+      "id": "tech-260702",
+      "domain": "tech",
+      "day": "2026-07-02",
+      "author": "Ismail Cosandal, Sennur Ulukus et al.",
+      "ref": "arXiv:2606.32010v1",
+      "url": "https://arxiv.org/abs/2606.32010v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"20\" y=\"60\" width=\"40\" height=\"40\" rx=\"6\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"22\" y=\"62\" width=\"36\" height=\"36\" rx=\"4\" fill=\"#b2dfdb\"/><circle cx=\"40\" cy=\"80\" r=\"10\" fill=\"#00695c\"/><line x1=\"60\" y1=\"80\" x2=\"100\" y2=\"80\" stroke=\"#00695c\" stroke-width=\"2.5\" stroke-dasharray=\"6,3\"/><rect x=\"100\" y=\"55\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#00695c\" opacity=\"0.15\" stroke=\"#00695c\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"70\" r=\"5\" fill=\"#00897b\"/><circle cx=\"125\" cy=\"80\" r=\"5\" fill=\"#004d40\"/><circle cx=\"125\" cy=\"90\" r=\"5\" fill=\"#00695c\"/><line x1=\"150\" y1=\"80\" x2=\"190\" y2=\"80\" stroke=\"#ff8f00\" stroke-width=\"2.5\" stroke-dasharray=\"4,4\"/><rect x=\"190\" y=\"60\" width=\"40\" height=\"40\" rx=\"6\" fill=\"#ff8f00\" opacity=\"0.2\" stroke=\"#ff8f00\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"80\" r=\"12\" fill=\"#ff8f00\" opacity=\"0.7\"/><line x1=\"230\" y1=\"80\" x2=\"270\" y2=\"80\" stroke=\"#00695c\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/><rect x=\"270\" y=\"60\" width=\"50\" height=\"40\" rx=\"6\" fill=\"#00695c\" opacity=\"0.12\" stroke=\"#00695c\" stroke-width=\"2\"/><circle cx=\"295\" cy=\"80\" r=\"10\" fill=\"#00695c\" opacity=\"0.6\"/><path d=\"M60 120 Q125 100 190 120 Q255 140 310 120\" stroke=\"#00695c\" stroke-width=\"2\" fill=\"none\" opacity=\"0.4\"/><circle cx=\"60\" cy=\"120\" r=\"4\" fill=\"#00695c\"/><circle cx=\"190\" cy=\"120\" r=\"4\" fill=\"#ff8f00\"/><circle cx=\"310\" cy=\"120\" r=\"4\" fill=\"#00695c\"/></svg>",
+      "title": {
+        "zh-TW": "資訊「新鮮度」最優化：遠端估測中的錯誤資訊年齡最小化策略",
+        "en": "Freshness Over Accuracy: Minimizing Age of Incorrect Information in Remote Estimation",
+        "zh-CN": "信息「新鲜度」最优化：远端估测中的错误信息年龄最小化策略",
+        "ja": "情報の「鮮度」最適化：遠隔推定における誤情報年齢の最小化戦略",
+        "ko": "정보 「신선도」 최적화：원격 추정에서 오류 정보 나이 최소화 전략"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本文針對遠端估測系統，以馬可夫鏈建模資訊源狀態，利用「雙態吸收馬可夫鏈」理論分析「錯誤資訊年齡（AoII）」指標。研究者推導出最優推送策略（push policy），在非對稱延遲通道（正向用相位型分佈、反向用固定延遲建模）下將AoII期望值最小化。",
+        "en": "This paper models the information source as a discrete-time finite-state Markov chain and formulates AoII minimization as a dual-regime absorbing Markov chain problem. Optimal push policies are derived under asymmetric channel conditions—forward channel modeled by phase-type distributions and reverse channel by fixed delay—to minimize expected AoII.",
+        "zh-CN": "本文针对远端估测系统，以马可夫链建模信息源状态，利用「双态吸收马可夫链」理论分析「错误信息年龄（AoII）」指标。研究者推导出最优推送策略，在非对称延迟信道下将AoII期望值最小化。",
+        "ja": "本論文は離散時間有限状態マルコフ連鎖で情報源をモデル化し、「双制度吸収マルコフ連鎖」理論を用いてAoII最小化問題を定式化。非対称チャネル条件下で最適プッシュポリシーを導出する。",
+        "ko": "이 논문은 정보원을 이산시간 유한상태 마르코프 체인으로 모델링하고, '이중체제 흡수 마르코프 체인' 이론을 활용해 AoII 최소화 문제를 정식화한다. 비대칭 채널 조건 하에서 최적 푸시 정책을 도출한다."
+      },
+      "plain": {
+        "zh-TW": "想像你在監控一盞紅綠燈，但你不是站在路口，而是坐在遠方辦公室看監視器。問題是：傳輸影像需要時間，你看到的畫面可能已經落後現實幾秒，甚至顯示的是「錯誤的燈號顏色」。這種「你以為是綠燈，其實早變紅燈」的狀態持續越久，就越危險——這正是「錯誤資訊年齡（AoII）」所衡量的問題。這篇論文研究：何時該主動送出更新封包，才能讓遠端觀察者盡快修正錯誤認知？就像快遞員要決定何時出發、走哪條路最省時。研究者用數學上的「吸收馬可夫鏈」理論，推導出一套最優「何時傳送」的策略。這對自動駕駛、遠端醫療監測、物聯網感測器等需要即時正確資訊的場景至關重要——不只要快，更要「不能傳錯」。",
+        "en": "Imagine monitoring a traffic light from a remote office via camera feed. The delay means what you see might be seconds behind reality—and worse, you could be watching the wrong color. The longer you believe green when it's actually red, the more dangerous it gets. This is what 「Age of Incorrect Information (AoII)」 measures. This paper asks: when should a sensor proactively send an update to correct the remote observer's wrong belief? Like deciding the perfect moment for a courier to depart so the package arrives before the situation changes. Using absorbing Markov chain mathematics, researchers derive the optimal 「push policy」 for this timing. This matters enormously for autonomous vehicles, remote patient monitoring, and IoT sensors—where being fast is not enough; being correct is essential.",
+        "zh-CN": "想象你在远程办公室通过监控摄像头监视一盏红绿灯。传输延迟意味着你看到的画面可能落后现实几秒，更糟的是你可能看到错误的灯色。「错误信息年龄（AoII）」就是衡量这种状态持续了多久。这篇论文研究：传感器应该何时主动发送更新，才能尽快纠正远端观察者的错误认知？就像快递员要选择最佳出发时机。研究者用数学上的「吸收马可夫链」推导出最优发送策略，对自动驾驶、远程医疗、物联网等场景意义重大。",
+        "ja": "遠くのオフィスからカメラで信号機を監視していると想像してください。遅延のせいで、あなたが見ている映像は現実より数秒遅れており、最悪の場合は間違った色を表示しているかもしれません。「誤情報の年齢（AoII）」はこの状態がどれだけ続いているかを測る指標です。この論文は、センサーがいつ積極的に更新を送信すれば遠隔観測者の誤認識を素早く修正できるかを研究しています。自動運転・遠隔医療・IoTセンサーにとって非常に重要な成果です。",
+        "ko": "멀리 떨어진 사무실에서 카메라로 신호등을 모니터링한다고 상상해보세요. 전송 지연 때문에 당신이 보는 화면은 현실보다 몇 초 뒤처져 있고, 심지어 잘못된 신호 색을 보여줄 수도 있습니다. 「오류 정보 나이(AoII)」는 이런 잘못된 인식이 얼마나 오래 지속되는지를 측정합니다. 이 논문은 센서가 언제 업데이트를 전송해야 원격 관찰자의 오류 인식을 가장 빨리 수정할 수 있는지를 연구합니다. 자율주행, 원격 의료, IoT 센서 등에서 핵심적인 성과입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 資訊不只要「新」，更要「對」——在延遲通訊中，錯誤的舊資訊比沒有資訊更危險，最優傳送時機是系統設計的隱藏關鍵。",
+        "en": "💡 Information must be not just fresh but correct—in delayed communications, wrong old data is more dangerous than no data, and optimal transmission timing is the hidden key to system design.",
+        "zh-CN": "💡 信息不只要「新」，更要「对」——在延迟通信中，错误的旧信息比没有信息更危险，最优发送时机是系统设计的隐藏关键。",
+        "ja": "💡 情報は「新しい」だけでなく「正しい」必要がある——遅延通信では古い誤情報は無情報より危険であり、最適な送信タイミングがシステム設計の隠れた鍵となる。",
+        "ko": "💡 정보는 「새로운 것」만으로는 부족하고 「올바른 것」이어야 한다——지연 통신에서 잘못된 오래된 정보는 정보가 없는 것보다 위험하며, 최적 전송 타이밍이 시스템 설계의 숨겨진 핵심이다."
+      }
+    }
+  ]
+}
