@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-04",
+  "mode": "weekend",
+  "paper_date": "2026-07-03",
+  "generated_at": "2026-07-04",
+  "cards": [
+    {
+      "id": "space-2607a",
+      "domain": "space",
+      "day": "2026-07-04",
+      "author": "Vallenari et al. / A&A 2026",
+      "ref": "A&A 2026",
+      "url": "https://doi.org/10.1051/0004-6361/202450030",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "蓋亞衛星最終星表：20億顆恆星的銀河系精密地圖",
+        "en": "Gaia Final Catalogue: A Precision Map of 2 Billion Stars",
+        "zh-CN": "盖亚卫星最终星表：20亿颗恒星的银河系精密地图",
+        "ja": "ガイア最終カタログ：20億個の星による天の川精密マップ",
+        "ko": "가이아 최종 성표：20억 개 별로 그린 은하계 정밀 지도"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 宇宙天文",
+        "ko": "🌌 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "ESA蓋亞衛星釋出DR4最終星表，收錄逾20億天體的六維相空間資訊（位置、距離、自行速度、視向速度），並包含數百萬顆恆星的化學豐度與徑向速度新量測值，角精度達微角秒等級。",
+        "en": "ESA's Gaia DR4 final catalogue covers over 2 billion objects with 6D phase-space data and chemical abundances for millions of stars, achieving microarcsecond-level astrometric precision.",
+        "zh-CN": "ESA盖亚卫星DR4最终星表收录逾20亿天体的六维相空间信息，并包含数百万颗恒星的化学丰度与径向速度新测量值，角精度达微角秒量级。",
+        "ja": "ESAのガイアDR4最終カタログは20億天体以上の6次元位相空間データと数百万星の化学組成を収録し、マイクロ角秒精度の位置天文測定を実現した。",
+        "ko": "ESA 가이아 DR4 최종 성표는 20억 개 이상의 천체에 대한 6차원 위상 공간 정보와 수백만 별의 화학 조성을 포함하며, 마이크로각초 수준의 정밀도를 달성했다."
+      },
+      "plain": {
+        "zh-TW": "這份「宇宙戶籍冊」精確記錄了20億顆星星的位置、速度與成分，讓科學家能像拼圖一樣還原銀河系的誕生與演化歷史。",
+        "en": "This cosmic census precisely records the positions, velocities, and compositions of 2 billion stars, allowing scientists to reconstruct the Milky Way's birth and evolution like a giant puzzle.",
+        "zh-CN": "这份「宇宙户籍册」精确记录了20亿颗星星的位置、速度与成分，让科学家能像拼图一样还原银河系的诞生与演化历史。",
+        "ja": "この「宇宙戸籍簿」は20億の星の位置・速度・組成を精密に記録し、天の川銀河の誕生と進化をパズルのように復元できる。",
+        "ko": "이 「우주 호적부」는 20억 개 별의 위치, 속도, 성분을 정밀하게 기록해 과학자들이 은하계의 탄생과 진화를 퍼즐처럼 복원할 수 있게 해준다."
+      },
+      "insight": {
+        "zh-TW": "💡 有了蓋亞最終星表，銀河系考古學從此進入「普查時代」——每顆星都是一條線索。",
+        "en": "💡 With Gaia's final catalogue, Milky Way archaeology enters a census era — every star is a clue.",
+        "zh-CN": "💡 有了盖亚最终星表，银河系考古学从此进入「普查时代」——每颗星都是一条线索。",
+        "ja": "💡 ガイア最終カタログにより、天の川考古学は「センサス時代」に突入した——すべての星が手がかりとなる。",
+        "ko": "💡 가이아 최종 성표 덕분에 은하계 고고학은 이제 「총조사 시대」에 접어들었다 — 모든 별이 단서다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<ellipse cx=\"170\" cy=\"82\" rx=\"130\" ry=\"38\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2.5\"/>\n<ellipse cx=\"170\" cy=\"82\" rx=\"80\" ry=\"22\" fill=\"#1a237e\" opacity=\"0.18\"/>\n<ellipse cx=\"170\" cy=\"82\" rx=\"80\" ry=\"22\" fill=\"none\" stroke=\"#3949ab\" stroke-width=\"1.5\"/>\n<circle cx=\"170\" cy=\"82\" r=\"10\" fill=\"#ffd600\" opacity=\"0.85\"/>\n<circle cx=\"60\" cy=\"48\" r=\"2.5\" fill=\"#ffd600\" opacity=\"0.7\"/>\n<circle cx=\"290\" cy=\"55\" r=\"2\" fill=\"#ffd600\" opacity=\"0.6\"/>\n<circle cx=\"240\" cy=\"110\" r=\"2\" fill=\"#ffd600\" opacity=\"0.6\"/>\n<circle cx=\"95\" cy=\"120\" r=\"1.8\" fill=\"#ffd600\" opacity=\"0.5\"/>\n<circle cx=\"305\" cy=\"105\" r=\"1.5\" fill=\"#ffd600\" opacity=\"0.5\"/>\n<circle cx=\"42\" cy=\"95\" r=\"1.5\" fill=\"#ffd600\" opacity=\"0.5\"/>\n<path d=\"M170 82 L60 48 M170 82 L290 55 M170 82 L240 110 M170 82 L95 120\" stroke=\"#3949ab\" stroke-width=\"0.8\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607b",
+      "domain": "bio",
+      "day": "2026-07-04",
+      "author": "Bhatt et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08752-y",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "細胞衰老的「解鎖密碼」：科學家找到逆轉腎臟纖維化的關鍵分子",
+        "en": "Unlocking Cellular Senescence: Key Molecule Found to Reverse Kidney Fibrosis",
+        "zh-CN": "细胞衰老的「解锁密码」：科学家找到逆转肾脏纤维化的关键分子",
+        "ja": "細胞老化の「解除コード」：腎臓線維化を逆転させる鍵分子を発見",
+        "ko": "세포 노화의 「해제 코드」：신장 섬유화를 역전시키는 핵심 분자 발견"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊發現衰老細胞分泌的HMGB1蛋白會活化鄰近細胞的TLR4受體，觸發促纖維化級聯反應；以單株抗體阻斷HMGB1後，小鼠腎臟纖維化面積顯著縮減並伴隨腎功能回復。",
+        "en": "Senescent cells secrete HMGB1, which activates TLR4 on neighbouring cells to drive fibrotic cascades; blocking HMGB1 with a monoclonal antibody markedly reduced fibrotic area and restored renal function in mice.",
+        "zh-CN": "衰老细胞分泌的HMGB1蛋白会激活邻近细胞的TLR4受体，触发促纤维化级联反应；用单克隆抗体阻断HMGB1后，小鼠肾脏纤维化面积显著缩减并伴随肾功能恢复。",
+        "ja": "老化細胞が分泌するHMGB1タンパク質が隣接細胞のTLR4を活性化して線維化カスケードを誘発し、抗HMGB1抗体でブロックするとマウスの腎線維化が顕著に縮小し腎機能が回復した。",
+        "ko": "노화 세포가 분비하는 HMGB1 단백질이 인접 세포의 TLR4 수용체를 활성화해 섬유화 연쇄 반응을 유발하며, 단클론 항체로 HMGB1을 차단하면 마우스 신장 섬유화가 현저히 감소하고 신장 기능이 회복됐다."
+      },
+      "plain": {
+        "zh-TW": "老化細胞會向鄰居「傳播壞消息」，讓腎臟慢慢硬化；科學家找到了阻止這個訊號的方法，有望讓受損腎臟重新恢復功能。",
+        "en": "Ageing cells spread harmful signals to neighbours, gradually hardening the kidneys; scientists found a way to block this signal, potentially restoring damaged kidney function.",
+        "zh-CN": "老化细胞会向邻居「传播坏消息」，让肾脏慢慢硬化；科学家找到了阻止这个信号的方法，有望让受损肾脏重新恢复功能。",
+        "ja": "老化細胞が隣の細胞に「悪いシグナル」を伝え腎臓を徐々に硬化させる現象を発見し、そのシグナルを遮断する方法で腎機能回復の可能性が示された。",
+        "ko": "노화 세포가 이웃 세포에 「나쁜 신호」를 전달해 신장을 서서히 굳히는 메커니즘이 밝혀졌고, 이 신호를 차단하면 손상된 신장 기능이 회복될 수 있다는 가능성이 제시됐다."
+      },
+      "insight": {
+        "zh-TW": "💡 細胞衰老不只是個別細胞的問題——它會「傳染」，而我們終於找到了隔離的方法。",
+        "en": "💡 Cellular senescence isn't just a single-cell problem — it's contagious, and we've finally found a way to quarantine it.",
+        "zh-CN": "💡 细胞衰老不只是个别细胞的问题——它会「传染」，而我们终于找到了隔离的方法。",
+        "ja": "💡 細胞老化は個々の細胞の問題ではなく「伝染」する——そしてついに隔離する方法が見つかった。",
+        "ko": "💡 세포 노화는 단순히 개별 세포만의 문제가 아니라 「전염」된다 — 그리고 우리는 마침내 격리 방법을 찾았다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n  <circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"#52b788\" opacity=\"0.85\"/>\n  <circle cx=\"80\" cy=\"80\" r=\"18\" fill=\"#2d6a4f\" opacity=\"0.9\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"32\" fill=\"#b7b7b7\" opacity=\"0.7\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"14\" fill=\"#6b6b6b\" opacity=\"0.8\"/>\n  <circle cx=\"295\" cy=\"80\" r=\"28\" fill=\"#52b788\" opacity=\"0.6\"/>\n  <circle cx=\"295\" cy=\"80\" r=\"12\" fill=\"#2d6a4f\" opacity=\"0.7\"/>\n  <line x1=\"118\" y1=\"80\" x2=\"168\" y2=\"80\" stroke=\"#e07a5f\" stroke-width=\"3\" stroke-dasharray=\"6,4\"/>\n  <polygon points=\"168,73 182,80 168,87\" fill=\"#e07a5f\"/>\n  <line x1=\"232\" y1=\"80\" x2=\"262\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"3\"/>\n  <polygon points=\"262,73 276,80 262,87\" fill=\"#52b788\"/>\n  <rect x=\"148\" y=\"60\" width=\"28\" height=\"20\" rx=\"6\" fill=\"#f2cc8f\" opacity=\"0.9\"/>\n  <line x1=\"162\" y1=\"60\" x2=\"162\" y2=\"50\" stroke=\"#f2cc8f\" stroke-width=\"2\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607c",
+      "domain": "climate",
+      "day": "2026-07-04",
+      "author": "Cheng et al. / Nature Climate Change 2025",
+      "ref": "Nature Clim. Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02279-4",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "海洋在「發燒」：2024年全球海洋熱含量創史上最高紀錄",
+        "en": "Oceans Are Overheating: 2024 Global Ocean Heat Content Breaks All Records",
+        "zh-CN": "海洋在「发烧」：2024年全球海洋热含量创史上最高纪录",
+        "ja": "海洋が「発熱」：2024年の全球海洋熱容量が史上最高を更新",
+        "ko": "바다가 「열병」을 앓다：2024년 전 세계 해양 열 함량 사상 최고 기록"
+      },
+      "tag": {
+        "zh-TW": "🌊 地球氣候",
+        "en": "🌊 Climate",
+        "zh-CN": "🌊 地球气候",
+        "ja": "🌊 地球気候",
+        "ko": "🌊 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "基於Argo浮標、XBT與衛星測高資料，2024年全球2000公尺以內海洋熱含量較2023年再增15.6 ZJ（澤焦耳），延續連續第11年創新高的趨勢；深層海洋（700-2000m）升溫速率亦顯著加速。",
+        "en": "Using Argo floats, XBT, and satellite altimetry, global ocean heat content in the upper 2000 m increased by 15.6 ZJ in 2024 compared to 2023, extending an 11-consecutive-year record streak; deep ocean warming also accelerated.",
+        "zh-CN": "基于Argo浮标、XBT与卫星测高资料，2024年全球2000米以内海洋热含量较2023年再增15.6 ZJ（泽焦耳），延续连续第11年创新高的趋势；深层海洋升温速率亦显著加速。",
+        "ja": "Argoフロート・XBT・衛星測高データを用いた解析で、2024年の上層2000mの海洋熱含量は2023年比15.6 ZJ増加し11年連続最高記録を更新、深層海洋の昇温速度も顕著に加速した。",
+        "ko": "아르고 부표·XBT·위성 고도계 자료를 분석한 결과, 2024년 상층 2000m 해양 열 함량은 2023년 대비 15.6 ZJ 증가해 11년 연속 최고치를 경신했으며, 심층 해양 온난화 속도도 뚜렷이 가속됐다."
+      },
+      "plain": {
+        "zh-TW": "地球多餘的熱量有90%藏進了海洋，2024年的海水比以往任何時候都還要熱，就像整顆地球都在持續發燒卻感覺不到。",
+        "en": "About 90% of Earth's excess heat is absorbed by the oceans; in 2024 the seas were warmer than ever before, like a planet running a fever we can't directly feel.",
+        "zh-CN": "地球多余的热量有90%藏进了海洋，2024年的海水比以往任何时候都还要热，就像整颗地球都在持续发烧却感觉不到。",
+        "ja": "地球の余剰熱の90%が海洋に蓄えられており、2024年の海水温は史上最高を更新——地球全体が気づかないまま発熱し続けている状態だ。",
+        "ko": "지구 잉여 열의 90%가 바다에 저장되며, 2024년 해수 온도는 사상 최고치를 기록했다 — 마치 지구 전체가 느끼지 못하는 열병을 앓고 있는 것과 같다."
+      },
+      "insight": {
+        "zh-TW": "💡 海洋是地球的「熱緩衝器」，但它的容忍是有極限的——一旦熱量反吐，氣候衝擊將難以估量。",
+        "en": "💡 The ocean is Earth's heat buffer, but its tolerance has limits — once it releases stored heat, climate impacts will be immeasurable.",
+        "zh-CN": "💡 海洋是地球的「热缓冲器」，但它的容忍是有极限的——一旦热量反吐，气候冲击将难以估量。",
+        "ja": "💡 海洋は地球の「熱バッファー」だが許容限界がある——蓄積した熱が放出されれば気候への衝撃は計り知れない。",
+        "ko": "💡 바다는 지구의 「열 완충재」지만 한계가 있다 — 축적된 열이 방출되기 시작하면 기후 충격은 가늠하기 어렵다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<circle cx=\"170\" cy=\"80\" r=\"60\" fill=\"#1a6b8a\" opacity=\"0.85\"/>\n<circle cx=\"170\" cy=\"80\" r=\"60\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"4\" opacity=\"0.9\"/>\n<circle cx=\"170\" cy=\"80\" r=\"68\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2\" opacity=\"0.5\" stroke-dasharray=\"8 4\"/>\n<circle cx=\"170\" cy=\"80\" r=\"76\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"1.5\" opacity=\"0.3\" stroke-dasharray=\"6 5\"/>\n<path d=\"M130 85 Q145 72 160 82 Q175 92 190 78 Q205 65 215 80\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M125 95 Q140 82 158 90 Q172 98 188 86 Q202 74 218 88\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#e8590c\" opacity=\"0.15\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#e8590c\" opacity=\"0.3\"/>\n<line x1=\"170\" y1=\"8\" x2=\"170\" y2=\"14\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"170\" y1=\"146\" x2=\"170\" y2=\"152\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<line x1=\"100\" y1=\"18\" x2=\"104\" y2=\"24\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.7\"/>\n<line x1=\"236\" y1=\"136\" x2=\"240\" y2=\"142\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "space-2607d",
+      "domain": "space",
+      "day": "2026-07-04",
+      "author": "Valcin et al. / Nature Astronomy 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://doi.org/10.1038/s41550-026-02345-1",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "宇宙「聲波化石」：重子聲學振盪首次在單一星系巡天中精確定位",
+        "en": "Cosmic Sound Fossils: BAO Precisely Mapped in a Single Galaxy Survey",
+        "zh-CN": "宇宙「声波化石」：重子声学振荡首次在单一星系巡天中精确定位",
+        "ja": "宇宙の「音波化石」：単一銀河サーベイでBAOを精密に特定",
+        "ko": "우주의 「음파 화석」：단일 은하 탐사에서 BAO 최초 정밀 측위"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 宇宙天文",
+        "ko": "🌌 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "DESI巡天利用超過600萬個星系的三維分布，在約5億光年尺度上偵測到重子聲學振盪（BAO）特徵峰，哈伯常數測量精度達到0.7%，是目前最嚴格的宇宙學限制之一。",
+        "en": "The DESI survey used over 6 million galaxies to detect the baryon acoustic oscillation signature at ~500 million light-year scales, constraining the Hubble constant to 0.7% precision.",
+        "zh-CN": "DESI巡天利用超过600万个星系的三维分布，在约5亿光年尺度上探测到重子声学振荡（BAO）特征峰，哈勃常数测量精度达到0.7%。",
+        "ja": "DESIサーベイは600万以上の銀河を用いて約5億光年スケールでBAO特徴を検出し、ハッブル定数を0.7%精度で制約した。",
+        "ko": "DESI 탐사는 600만 개 이상의 은하를 활용해 약 5억 광년 스케일에서 BAO 특징을 검출하고, 허블 상수를 0.7% 정밀도로 제한했다."
+      },
+      "plain": {
+        "zh-TW": "宇宙大爆炸後遺留的「聲波漣漪」被刻在星系分布裡，科學家用這把「宇宙尺」量出宇宙膨脹速度，比以往精準許多。",
+        "en": "Sound waves from the Big Bang left imprints in galaxy distributions; scientists used this cosmic ruler to measure expansion speed more precisely than ever.",
+        "zh-CN": "大爆炸遗留的「声波涟漪」刻在星系分布里，科学家用这把「宇宙尺」量出了宇宙膨胀速度，比以往精准许多。",
+        "ja": "ビッグバン後に残された「音波の波紋」が銀河分布に刻まれており、この「宇宙のものさし」で膨張速度をこれまでより精密に測定した。",
+        "ko": "빅뱅 후 남겨진 '음파 물결'이 은하 분포에 새겨져 있으며, 과학자들은 이 '우주 자'로 팽창 속도를 전례 없이 정밀하게 측정했다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙誕生之初的聲音，成了138億年後人類測量宇宙尺寸的最佳工具。",
+        "en": "💡 The sounds of the infant universe have become our best tool for measuring cosmic scale 13.8 billion years later.",
+        "zh-CN": "💡 宇宙诞生之初的声音，成了138亿年后人类测量宇宙尺寸的最佳工具。",
+        "ja": "💡 宇宙誕生の音が、138億年後に宇宙の大きさを測る最良のツールになった。",
+        "ko": "💡 우주 탄생 초기의 소리가, 138억 년 후 우주 크기를 측정하는 최고의 도구가 되었다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<circle cx=\"170\" cy=\"80\" r=\"70\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\" opacity=\"0.3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1\" stroke-dasharray=\"2,3\" opacity=\"0.2\"/>\n<circle cx=\"170\" cy=\"80\" r=\"70\" fill=\"none\" stroke=\"#5c6bc0\" stroke-width=\"2.5\" opacity=\"0.7\"/>\n<circle cx=\"170\" cy=\"80\" r=\"40\" fill=\"none\" stroke=\"#5c6bc0\" stroke-width=\"1\" opacity=\"0.3\"/>\n<circle cx=\"170\" cy=\"80\" r=\"6\" fill=\"#1a237e\" opacity=\"0.9\"/>\n<circle cx=\"240\" cy=\"80\" r=\"3\" fill=\"#e8eaf6\" opacity=\"0.9\"/>\n<circle cx=\"100\" cy=\"80\" r=\"3\" fill=\"#e8eaf6\" opacity=\"0.9\"/>\n<circle cx=\"170\" cy=\"10\" r=\"3\" fill=\"#e8eaf6\" opacity=\"0.9\"/>\n<circle cx=\"170\" cy=\"150\" r=\"3\" fill=\"#e8eaf6\" opacity=\"0.9\"/>\n<circle cx=\"220\" cy=\"31\" r=\"2.5\" fill=\"#9fa8da\" opacity=\"0.8\"/>\n<circle cx=\"120\" cy=\"129\" r=\"2.5\" fill=\"#9fa8da\" opacity=\"0.8\"/>\n<path d=\"M60,80 Q110,60 170,80 Q230,100 280,80\" fill=\"none\" stroke=\"#ff8f00\" stroke-width=\"2\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "nature-2607e",
+      "domain": "nature",
+      "day": "2026-07-04",
+      "author": "Sheard et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.ado3812",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "蜜蜂會「教學」：工蜂透過示範傳授後代解謎技能",
+        "en": "Bees Can Teach: Worker Bees Pass Problem-Solving Skills to Offspring via Demonstration",
+        "zh-CN": "蜜蜂会「教学」：工蜂通过示范将解谜技能传授给后代",
+        "ja": "ミツバチは「教える」：働きバチが実演で問題解決スキルを伝える",
+        "ko": "꿀벌도 「가르친다」：일벌이 시범을 통해 문제 해결 기술을 전수"
+      },
+      "tag": {
+        "zh-TW": "🐝 自然生態",
+        "en": "🐝 Nature",
+        "zh-CN": "🐝 自然生态",
+        "ja": "🐝 自然生態",
+        "ko": "🐝 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究者設計雙階段拉繩謎題，讓有經驗的工蜂在幼蜂觀察下示範操作；結果顯示觀察組的學習成功率顯著高於對照組（74% vs 19%），且技能可再傳遞兩個世代，符合「主動教學」的定義標準。",
+        "en": "Experienced bees demonstrated a two-step string-pulling puzzle while naive bees watched; observers succeeded at 74% vs 19% in controls, and skills cascaded across two further generations, meeting criteria for active teaching.",
+        "zh-CN": "研究者设计双阶段拉绳谜题，有经验的工蜂在幼蜂观察下示范操作；观察组学习成功率显著高于对照组（74% vs 19%），技能可再传递两个世代。",
+        "ja": "経験のある働きバチが未経験の個体に縄引きパズルを実演し、観察群の成功率（74%）が対照群（19%）を大幅に上回り、スキルは2世代にわたって伝達された。",
+        "ko": "경험 있는 일벌이 미숙련 개체에게 줄 당기기 퍼즐을 시연했을 때, 관찰 집단의 성공률(74%)이 대조군(19%)을 크게 웃돌았고 기술은 2세대에 걸쳐 전달됐다."
+      },
+      "plain": {
+        "zh-TW": "蜜蜂不只靠本能，還能像老師一樣「示範給學生看」，讓解謎技巧代代相傳，這在昆蟲界是首次確認的主動教學行為。",
+        "en": "Bees do not rely on instinct alone; they can actively teach like a mentor, passing puzzle-solving know-how down generations—a first confirmed in insects.",
+        "zh-CN": "蜜蜂不只靠本能，还能像老师一样「示范给学生看」，让解谜技巧代代相传，这是昆虫界首次确认的主动教学行为。",
+        "ja": "ミツバチは本能だけでなく、教師のように「実演」して問題解決法を世代を超えて伝える——昆虫界で初めて確認された能動的な教育行動だ。",
+        "ko": "꿀벌은 본능만이 아니라 선생님처럼 '시범'을 보여 퍼즐 해결법을 세대 간에 전달한다—곤충에서 처음 확인된 능동적 교수 행동이다."
+      },
+      "insight": {
+        "zh-TW": "💡 教學行為不是人類的專利，腦容量不到1立方毫米的蜜蜂也懂得「言傳身教」。",
+        "en": "💡 Teaching is not exclusive to humans—bees with brains smaller than 1 cubic millimeter also know how to lead by example.",
+        "zh-CN": "💡 教学行为不是人类的专利，脑容量不到1立方毫米的蜜蜂也懂得「言传身教」。",
+        "ja": "💡 教育は人間の専売特許ではない——脳容積1立方ミリメートル未満のミツバチも「見せて教える」ことを知っている。",
+        "ko": "💡 교육은 인간만의 전유물이 아니다—뇌 부피가 1㎣도 안 되는 꿀벌도 '몸소 가르치는' 방법을 안다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<rect x=\"140\" y=\"55\" width=\"60\" height=\"50\" rx=\"8\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<polygon points=\"140,65 125,75 125,85 140,85\" fill=\"#f9a825\"/>\n<polygon points=\"200,65 215,75 215,85 200,85\" fill=\"#2e7d32\" opacity=\"0.5\"/>\n<circle cx=\"80\" cy=\"75\" r=\"14\" fill=\"#f9a825\"/>\n<ellipse cx=\"80\" cy=\"61\" rx=\"7\" ry=\"4\" fill=\"#f9a825\" opacity=\"0.5\"/>\n<ellipse cx=\"70\" cy=\"65\" rx=\"7\" ry=\"4\" fill=\"#f9a825\" opacity=\"0.5\"/>\n<line x1=\"80\" y1=\"75\" x2=\"125\" y2=\"80\" stroke=\"#2e7d32\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n<circle cx=\"260\" cy=\"75\" r=\"11\" fill=\"#a5d6a7\"/>\n<ellipse cx=\"260\" cy=\"63\" rx=\"5.5\" ry=\"3\" fill=\"#a5d6a7\" opacity=\"0.5\"/>\n<ellipse cx=\"251\" cy=\"67\" rx=\"5.5\" ry=\"3\" fill=\"#a5d6a7\" opacity=\"0.5\"/>\n<line x1=\"215\" y1=\"80\" x2=\"249\" y2=\"78\" stroke=\"#2e7d32\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n</svg>"
+    },
+    {
+      "id": "health-2607f",
+      "domain": "health",
+      "day": "2026-07-04",
+      "author": "Bhatt et al. / NEJM 2026",
+      "ref": "NEJM 2026",
+      "url": "https://doi.org/10.1056/NEJMoa2513847",
+      "color": "#b71c1c",
+      "title": {
+        "zh-TW": "腸道菌叢「移植」抗憂鬱：糞便菌叢移植改善重度憂鬱的第一項大型隨機試驗",
+        "en": "Gut Microbiome Transplant vs Depression: First Large RCT of FMT for Major Depressive Disorder",
+        "zh-CN": "肠道菌群「移植」抗抑郁：粪便菌群移植改善重度抑郁的首项大型随机试验",
+        "ja": "腸内細菌移植でうつを治す：重症うつ病に対するFMTの初の大規模RCT",
+        "ko": "장내 미생물 이식으로 우울증 치료：주요 우울장애 FMT 최초 대규모 무작위 임상시험"
+      },
+      "tag": {
+        "zh-TW": "🧬 醫療健康",
+        "en": "🧬 Health",
+        "zh-CN": "🧬 医疗健康",
+        "ja": "🧬 医療健康",
+        "ko": "🧬 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "這項納入248名重度憂鬱症患者的雙盲RCT顯示，接受健康捐贈者糞便菌叢移植（FMT）的組別在8週後HAMD-17量表改善率達52%，顯著優於安慰劑組（31%），同時血清素代謝物與短鏈脂肪酸的腸腦軸生物標記亦同步上升。",
+        "en": "A double-blind RCT of 248 MDD patients found FMT from healthy donors achieved 52% response rate on HAMD-17 at 8 weeks vs 31% for placebo, with concurrent increases in serotonin metabolites and short-chain fatty acid gut-brain axis biomarkers.",
+        "zh-CN": "这项纳入248名重度抑郁症患者的双盲RCT显示，接受健康捐献者粪便菌群移植（FMT）的组别在8周后HAMD-17量表改善率达52%，显著优于安慰剂组（31%）。",
+        "ja": "248人のMDD患者を対象とした二重盲検RCTで、健常者からのFMT群は8週後のHAMD-17改善率52%を示し、プラセボ群（31%）を有意に上回った。腸脳軸バイオマーカーも同時に上昇した。",
+        "ko": "248명의 주요 우울장애 환자를 대상으로 한 이중맹검 RCT에서, 건강한 기증자의 FMT 투여군은 8주 후 HAMD-17 반응률 52%로 위약군(31%)을 유의하게 상회했다."
+      },
+      "plain": {
+        "zh-TW": "把健康人的腸道細菌移植進憂鬱症患者體內，8週後有一半的人症狀明顯改善——「腸腦軸」不再只是理論，而是真實可操作的治療管道。",
+        "en": "Transplanting gut bacteria from healthy donors into depression patients led to significant symptom improvement in half of recipients within 8 weeks—the gut-brain axis is now a real therapeutic target.",
+        "zh-CN": "把健康人的肠道细菌移植进抑郁症患者体内，8周后有一半的人症状明显改善——「肠脑轴」不再只是理论，而是真实可操作的治疗管道。",
+        "ja": "健常者の腸内細菌をうつ病患者に移植すると、8週間で約半数が症状の著明な改善を示した——「腸脳軸」はもはや理論だけでなく、実際の治療経路だ。",
+        "ko": "건강한 사람의 장내 세균을 우울증 환자에게 이식하자 8주 후 절반에서 증상이 뚜렷하게 개선됐다—장-뇌 축이 이제 실제 치료 경로임이 확인됐다."
+      },
+      "insight": {
+        "zh-TW": "💡 憂鬱症的根源可能不只在大腦，你的腸道菌相或許才是下一代抗憂鬱療法的關鍵鑰匙。",
+        "en": "💡 Depression may not originate solely in the brain—your gut microbiome could be the key to next-generation antidepressant therapy.",
+        "zh-CN": "💡 抑郁症的根源可能不只在大脑，你的肠道菌相或许才是下一代抗抑郁疗法的关键钥匙。",
+        "ja": "💡 うつ病の根本は脳だけでないかもしれない——腸内細菌叢が次世代抗うつ療法の鍵を握っている可能性がある。",
+        "ko": "💡 우울증의 근원은 뇌에만 있지 않을 수 있다—장내 미생물이 차세대 항우울 치료의 핵심 열쇠일 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#b71c1c18\"/>\n  <ellipse cx=\"80\" cy=\"80\" rx=\"38\" ry=\"55\" fill=\"none\" stroke=\"#b71c1c\" stroke-width=\"3\"/>\n  <ellipse cx=\"80\" cy=\"80\" rx=\"22\" ry=\"38\" fill=\"none\" stroke=\"#b71c1c\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <circle cx=\"80\" cy=\"62\" r=\"5\" fill=\"#b71c1c\"/>\n  <circle cx=\"72\" cy=\"80\" r=\"4\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n  <circle cx=\"88\" cy=\"95\" r=\"4\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n  <path d=\"M120 80 Q170 55 220 80\" fill=\"none\" stroke=\"#5d4037\" stroke-width=\"2.5\" stroke-dasharray=\"6,4\"/>\n  <circle cx=\"148\" cy=\"68\" r=\"5\" fill=\"#5d4037\" opacity=\"0.6\"/>\n  <circle cx=\"192\" cy=\"68\" r=\"5\" fill=\"#5d4037\" opacity=\"0.6\"/>\n  <ellipse cx=\"270\" cy=\"80\" rx=\"45\" ry=\"55\" fill=\"none\" stroke=\"#b71c1c\" stroke-width=\"3\"/>\n  <ellipse cx=\"270\" cy=\"80\" rx=\"28\" ry=\"38\" fill=\"#b71c1c\" fill-opacity=\"0.12\" stroke=\"#b71c1c\" stroke-width=\"1.5\"/>\n  <circle cx=\"262\" cy=\"68\" r=\"5\" fill=\"#b71c1c\"/>\n  <circle cx=\"278\" cy=\"85\" r=\"5\" fill=\"#b71c1c\"/>\n</svg>"
+    }
+  ]
+}
