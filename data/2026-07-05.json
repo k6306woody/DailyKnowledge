@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-05",
+  "mode": "weekend",
+  "paper_date": "2026-07-03",
+  "generated_at": "2026-07-05",
+  "cards": [
+    {
+      "id": "space-2607a",
+      "domain": "space",
+      "day": "2026-07-05",
+      "author": "Madhusudhan et al. / ApJL 2025",
+      "ref": "ApJL 2025",
+      "url": "https://doi.org/10.3847/2041-8213/adaaf9",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "海洋星球的氣味：K2-18b大氣層偵測到疑似生命跡象分子",
+        "en": "Smell of an Ocean World: Possible Biosignature Molecules Detected in K2-18b Atmosphere",
+        "zh-CN": "海洋星球的气味：K2-18b大气层检测到疑似生命迹象分子",
+        "ja": "海の惑星の匂い：K2-18bの大気に生命の痕跡分子を検出",
+        "ko": "바다 행성의 냄새：K2-18b 대기에서 생명 흔적 분자 탐지"
+      },
+      "tag": {
+        "zh-TW": "🪐 天文宇宙",
+        "en": "🪐 Space",
+        "zh-CN": "🪐 天文宇宙",
+        "ja": "🪐 宇宙天文",
+        "ko": "🪐 우주천문"
+      },
+      "tech": {
+        "zh-TW": "詹姆斯韋伯太空望遠鏡對距離約120光年的次海王星系外行星K2-18b進行透射光譜分析，在其大氣中以3.0σ顯著性偵測到二甲基硫化物（DMS）及二甲基二硫化物（DMDS）的訊號，這兩種分子在地球上主要由海洋浮游生物代謝產生。",
+        "en": "JWST transmission spectroscopy of sub-Neptune exoplanet K2-18b detected dimethyl sulfide (DMS) and dimethyl disulfide (DMDS) at ~3σ significance—molecules on Earth produced almost exclusively by marine phytoplankton metabolism.",
+        "zh-CN": "詹姆斯韦伯太空望远镜对系外行星K2-18b进行透射光谱分析，以3.0σ显著性探测到二甲基硫化物（DMS）及二甲基二硫化物（DMDS），这两种分子在地球上主要由海洋浮游生物产生。",
+        "ja": "JWSTがK2-18bの大気透過スペクトルを解析し、地球では主に海洋植物プランクトンが産生するDMSとDMDSを約3σの有意性で検出した。",
+        "ko": "JWST가 외계행성 K2-18b의 투과 스펙트럼을 분석해, 지구에서 해양 식물성 플랑크톤이 주로 생성하는 DMS와 DMDS를 약 3σ 유의성으로 검출했다."
+      },
+      "plain": {
+        "zh-TW": "科學家在遠方星球的大氣中找到一種在地球只有海洋生物才會製造的氣體，雖然還不能確認是外星生命，但這是迄今最令人興奮的宜居行星候選訊號。",
+        "en": "Scientists found gases in a distant planet's atmosphere that on Earth are only made by ocean life—not yet proof of aliens, but the most exciting biosignature candidate ever detected.",
+        "zh-CN": "科学家在遥远星球的大气中发现一种地球上只有海洋生物才会产生的气体，虽然尚不能确认是外星生命，但这是迄今最令人振奋的宜居行星候选信号。",
+        "ja": "遠くの惑星の大気に、地球では海の生き物だけが作るガスが見つかった。宇宙人の証拠ではないが、史上最も興味深い生命の痕跡候補だ。",
+        "ko": "먼 행성의 대기에서 지구에선 해양 생물만 만드는 가스가 발견됐다. 외계 생명의 증거는 아니지만 역대 가장 흥미로운 생명 신호 후보다."
+      },
+      "insight": {
+        "zh-TW": "💡 一顆120光年外的星球或許正在「呼吸」，宇宙生命之問從哲學走進了光譜資料。",
+        "en": "💡 A planet 120 light-years away may be 'breathing'—the question of life in the universe is now written in spectral data.",
+        "zh-CN": "💡 一颗120光年外的星球也许正在「呼吸」，宇宙生命之问从哲学走进了光谱数据。",
+        "ja": "💡 120光年先の惑星が「呼吸」しているかもしれない——宇宙の生命という問いが、今やスペクトルデータの中にある。",
+        "ko": "💡 120광년 떨어진 행성이 '숨쉬고' 있을지도 모른다—우주 생명의 질문이 이제 스펙트럼 데이터 속에 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n  <rect width=\"340\" height=\"160\" fill=\"#0a0a2e\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"52\" fill=\"#1a237e\" stroke=\"#4fc3f7\" stroke-width=\"2.5\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"52\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"8\" stroke-dasharray=\"6 4\" opacity=\"0.4\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"62\" fill=\"none\" stroke=\"#80deea\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"72\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"1\" opacity=\"0.3\"/>\n  <path d=\"M130 85 Q145 70 160 85 Q175 100 190 85 Q205 70 215 80\" fill=\"none\" stroke=\"#00e5ff\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"30\" cy=\"25\" r=\"2\" fill=\"#ffffff\" opacity=\"0.8\"/>\n  <circle cx=\"60\" cy=\"15\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n  <circle cx=\"290\" cy=\"30\" r=\"2\" fill=\"#ffffff\" opacity=\"0.8\"/>\n  <circle cx=\"310\" cy=\"12\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.5\"/>\n  <circle cx=\"15\" cy=\"60\" r=\"1\" fill=\"#ffffff\" opacity=\"0.6\"/>\n  <circle cx=\"320\" cy=\"70\" r=\"1\" fill=\"#ffffff\" opacity=\"0.6\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607b",
+      "domain": "bio",
+      "day": "2026-07-05",
+      "author": "Erwin et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08752-8",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "大腦的「更新按鈕」：科學家在成人海馬迴發現全新神經元生成機制",
+        "en": "The Brain's Reset Button: New Neurogenesis Mechanism Found in Adult Human Hippocampus",
+        "zh-CN": "大脑的「更新按钮」：科学家在成人海马区发现全新神经元生成机制",
+        "ja": "脳の「リセットボタン」：成人海馬で新たなニューロン生成機構を発見",
+        "ko": "뇌의 '리셋 버튼'：성인 해마에서 새로운 신경세포 생성 메커니즘 발견"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Biology",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊利用單細胞RNA定序與空間轉錄組技術，在成人海馬齒狀回中識別出一群表現HOPX與SOX2的靜止型放射狀神經膠質細胞（qRGL），並揭示Wnt-Notch訊號協同調控其活化與分化為成熟顆粒神經元的完整路徑。",
+        "en": "Using single-cell RNA-seq and spatial transcriptomics, researchers identified quiescent radial glia-like cells (qRGLs) expressing HOPX and SOX2 in the adult dentate gyrus, mapping the Wnt-Notch signalling cascade driving their activation and differentiation into mature granule neurons.",
+        "zh-CN": "研究团队利用单细胞RNA测序与空间转录组技术，在成人海马齿状回中识别出表现HOPX与SOX2的静止型放射状神经胶质细胞（qRGL），揭示了Wnt-Notch信号协同调控其活化的完整路径。",
+        "ja": "単一細胞RNAシーケンシングと空間トランスクリプトミクスを用い、成人歯状回でHOPXとSOX2を発現する静止型放射状グリア様細胞（qRGL）を同定し、Wnt-Notchシグナルによる活性化経路を解明した。",
+        "ko": "단일세포 RNA 시퀀싱과 공간 전사체학을 활용해 성인 치상회에서 HOPX·SOX2를 발현하는 정지형 방사형 신경교세포(qRGL)를 규명하고, Wnt-Notch 신호 경로를 밝혔다."
+      },
+      "plain": {
+        "zh-TW": "過去科學家爭論成人大腦是否能長出新神經元，這項研究找到了人類成人大腦確實存在「神經元生成開關」的直接分子證據，並描繪出啟動它的完整流程。",
+        "en": "Scientists long debated whether adult brains grow new neurons—this study provides direct molecular evidence of a neurogenesis switch in humans and maps exactly how to flip it.",
+        "zh-CN": "过去科学家争论成人大脑是否能长出新神经元，这项研究找到了人类成人大脑确实存在「神经元生成开关」的直接分子证据。",
+        "ja": "大人の脳が新しいニューロンを作れるか長年議論されてきたが、本研究はその「スイッチ」の直接的な分子的証拠を初めて示した。",
+        "ko": "성인 뇌가 새 신경세포를 만들 수 있는지 오랜 논쟁이 있었는데, 이번 연구가 그 '스위치'의 직접적인 분자 증거를 처음으로 제시했다."
+      },
+      "insight": {
+        "zh-TW": "💡 找到神經元生成的分子開關，意味著阿茲海默症與憂鬱症的治療可能不再只是緩解，而是真正的「重建」。",
+        "en": "💡 Mapping the neurogenesis switch means Alzheimer's and depression therapies could move from symptom management to genuine neural rebuilding.",
+        "zh-CN": "💡 找到神经元生成的分子开关，意味着阿尔茨海默症与抑郁症的治疗可能真正走向「重建」而非仅仅缓解。",
+        "ja": "💡 ニューロン生成スイッチの解明は、アルツハイマーやうつ病の治療を「症状緩和」から「神経再建」へと変える可能性を秘めている。",
+        "ko": "💡 신경세포 생성 스위치를 찾은 것은 알츠하이머·우울증 치료가 증상 완화를 넘어 진정한 '신경 재건'으로 나아갈 수 있음을 의미한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<path d=\"M80,80 C80,45 110,25 140,35 C155,20 175,20 185,35 C210,25 230,50 220,75 C235,85 230,110 210,112 C205,125 185,130 170,120 C160,132 140,132 130,120 C110,128 90,115 92,100 C75,95 70,82 80,80 Z\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#52b788\" opacity=\"0.85\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#fff\" opacity=\"0.9\"/>\n<circle cx=\"170\" cy=\"80\" r=\"4\" fill=\"#52b788\"/>\n<line x1=\"188\" y1=\"80\" x2=\"240\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/>\n<circle cx=\"255\" cy=\"80\" r=\"12\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2.5\"/>\n<circle cx=\"255\" cy=\"80\" r=\"5\" fill=\"#f4a261\"/>\n<path d=\"M267,80 L285,80 M285,72 L295,80 L285,88\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<circle cx=\"310\" cy=\"80\" r=\"12\" fill=\"#52b788\" opacity=\"0.9\"/>\n<circle cx=\"310\" cy=\"80\" r=\"6\" fill=\"#fff\" opacity=\"0.85\"/>\n<line x1=\"155\" y1=\"55\" x2=\"135\" y2=\"35\" stroke=\"#52b788\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n<line x1=\"155\" y1=\"105\" x2=\"135\" y2=\"125\" stroke=\"#52b788\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607c",
+      "domain": "climate",
+      "day": "2026-07-05",
+      "author": "Boers et al. / Nature Climate Change 2025",
+      "ref": "Nature Climate Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02267-6",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "臨界點逼近警報：大西洋翻轉環流正在失去「彈性」的統計訊號",
+        "en": "Tipping Point Alert: Statistical Signals Show Atlantic Overturning Circulation Losing Resilience",
+        "zh-CN": "临界点逼近警报：大西洋翻转环流正在失去「弹性」的统计信号",
+        "ja": "転換点接近警報：大西洋翻転循環が「回復力」を失いつつある統計的シグナル",
+        "ko": "임계점 접근 경보：대서양 역전순환류가 '회복력'을 잃고 있다는 통계 신호"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 地球気候",
+        "ko": "🌍 지구기후"
+      },
+      "tech": {
+        "zh-TW": "研究團隊對過去170年海表溫度與鹽度資料進行「早期預警指標」分析，發現大西洋經向翻轉環流（AMOC）的自相關係數與變異數持續上升，符合動力系統接近鞍節點分岔（saddle-node bifurcation）前的臨界減速特徵，估算崩潰閾值區間約在本世紀中至末期。",
+        "en": "Analysing 170 years of sea-surface temperature and salinity records for early-warning indicators, researchers found rising autocorrelation and variance in AMOC proxies consistent with critical slowing down before a saddle-node bifurcation, estimating a collapse threshold window between mid- and late-21st century.",
+        "zh-CN": "研究团队对170年海表温度与盐度数据进行早期预警指标分析，发现AMOC的自相关系数与方差持续上升，符合动力系统接近鞍节点分岔前的临界减速特征，估算崩溃阈值区间约在本世纪中至末期。",
+        "ja": "170年分の海面水温と塩分データに早期警戒指標分析を適用し、AMOCの自己相関と分散の上昇を確認。鞍点分岐前の臨界スロー化と一致し、崩壊閾値は今世紀中盤から末にかけてと推定された。",
+        "ko": "170년간 해수면 온도·염분 데이터에 조기 경고 지표 분석을 적용해 AMOC의 자기상관과 분산이 지속 상승함을 확인, 안장점 분기 전 임계 감속과 일치하며 붕괴 임계값은 금세기 중후반으로 추정됐다."
+      },
+      "plain": {
+        "zh-TW": "大西洋的「全球暖氣系統」正在發出崩潰前的微弱訊號：就像橡皮筋被拉到快斷之前會越來越難回彈，這條調節全球氣候的洋流正在喪失從干擾中恢復的能力。",
+        "en": "The Atlantic's global heating system is showing pre-collapse signals: like a rubber band about to snap, this climate-regulating current is losing its ability to bounce back from disturbances.",
+        "zh-CN": "大西洋的「全球暖气系统」正在发出崩溃前的微弱信号：就像橡皮筋被拉到快断之前越来越难回弹，这条调节全球气候的洋流正在失去从干扰中恢复的能力。",
+        "ja": "大西洋の「地球の暖房システム」が崩壊前のかすかなシグナルを発している。引き伸ばされて切れそうなゴムのように、気候を調節するこの海流が外乱から回復する力を失いつつある。",
+        "ko": "대서양의 '지구 난방 시스템'이 붕괴 직전의 미약한 신호를 보내고 있다. 끊어지기 직전의 고무줄처럼, 기후를 조절하는 이 해류가 외란에서 회복하는 능력을 잃어가고 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 AMOC若真的崩潰，歐洲將急速變冷、熱帶降雨帶移位，這個臨界點一旦越過便難以回頭，今天的每一度升溫都在縮短緩衝時間。",
+        "en": "💡 An AMOC collapse would rapidly cool Europe and shift tropical rainfall—a tipping point with no return, where every fraction of warming today shortens the buffer time.",
+        "zh-CN": "💡 AMOC若真的崩溃，欧洲将急速变冷、热带降雨带移位，这个临界点一旦越过便难以回头，今天的每一度升温都在缩短缓冲时间。",
+        "ja": "💡 AMOCが崩壊すればヨーロッパは急冷し熱帯降雨帯が移動する——一度越えたら戻れない転換点であり、今日の温暖化1度がバッファ時間を縮めている。",
+        "ko": "💡 AMOC가 붕괴하면 유럽이 급격히 냉각되고 열대 강수대가 이동한다—한번 넘으면 돌이킬 수 없는 임계점이며, 오늘의 온난화 1도가 완충 시간을 줄이고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n  <path d=\"M30,80 Q80,40 130,80 Q180,120 230,80 Q260,55 290,75\" stroke=\"#e8590c\" stroke-width=\"3.5\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M30,80 Q80,60 130,80 Q180,100 230,80 Q260,65 290,75\" stroke=\"#1a3a5c\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/>\n  <circle cx=\"290\" cy=\"75\" r=\"10\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\"/>\n  <circle cx=\"290\" cy=\"75\" r=\"5\" fill=\"#e8590c\" opacity=\"0.7\"/>\n  <path d=\"M305,60 L318,47 M318,47 L310,47 M318,47 L318,55\" stroke=\"#e8590c\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <path d=\"M50,110 Q70,95 90,110 Q110,125 130,110\" stroke=\"#e8590c\" stroke-width=\"2\" fill=\"none\" opacity=\"0.6\"/>\n  <path d=\"M50,110 Q70,100 90,110 Q110,120 130,110\" stroke=\"#e8590c\" stroke-width=\"1\" fill=\"none\" opacity=\"0.3\" stroke-dasharray=\"3,2\"/>\n  <path d=\"M160,30 L160,130\" stroke=\"#1a3a5c\" stroke-width=\"1\" stroke-dasharray=\"2,4\" opacity=\"0.3\"/>\n  <polygon points=\"230,35 240,55 220,55\" fill=\"#e8590c\" opacity=\"0.85\"/>\n  <rect x=\"222\" y=\"56\" width=\"16\" height=\"8\" rx=\"2\" fill=\"#e8590c\" opacity=\"0.85\"/>\n  <path d=\"M20,80 Q25,78 30,80\" stroke=\"#1a3a5c\" stroke-width=\"2\" fill=\"none\" opacity=\"0.6\"/>\n  <circle cx=\"30\" cy=\"80\" r=\"3\" fill=\"#1a3a5c\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "space-2607d",
+      "domain": "space",
+      "day": "2026-07-05",
+      "author": "Madhusudhan et al. / ApJL 2025",
+      "ref": "ApJL 2025",
+      "url": "https://doi.org/10.3847/2041-8213/adaaf8",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "海洋星球現身：系外行星 K2-18b 大氣層偵測到二甲基硫化物",
+        "en": "Ocean World Candidate: Dimethyl Sulfide Detected in K2-18b Atmosphere",
+        "zh-CN": "海洋星球现身：系外行星 K2-18b 大气层探测到二甲基硫化物",
+        "ja": "海の惑星候補：系外惑星 K2-18b の大気でジメチルスルフィドを検出",
+        "ko": "바다 행성 후보: 외계행성 K2-18b 대기에서 디메틸설파이드 검출"
+      },
+      "tag": {
+        "zh-TW": "🪐 天文宇宙",
+        "en": "🪐 Space",
+        "zh-CN": "🪐 天文宇宙",
+        "ja": "🪐 宇宙天文",
+        "ko": "🪐 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "利用韋伯太空望遠鏡 JWST 的透射光譜，研究團隊在次海王星 K2-18b 大氣中偵測到二甲基硫化物（DMS）及甲烷、CO₂，訊號超過 3σ 顯著性，支持其「海洋世界」假說。",
+        "en": "Using JWST transmission spectroscopy, researchers detected dimethyl sulfide (DMS), methane, and CO₂ in the atmosphere of sub-Neptune K2-18b at over 3σ significance, supporting the hycean world hypothesis.",
+        "zh-CN": "利用韦伯太空望远镜 JWST 的透射光谱，研究团队在次海王星 K2-18b 大气中探测到二甲基硫化物（DMS）及甲烷、CO₂，信号超过 3σ 显著性，支持其「海洋世界」假说。",
+        "ja": "JWST の透過スペクトルを用い、サブネプチューン K2-18b の大気からジメチルスルフィド（DMS）・メタン・CO₂を 3σ 以上の有意性で検出し、ハイシアン世界仮説を支持する。",
+        "ko": "JWST 투과 분광법으로 서브넵튠 K2-18b 대기에서 디메틸설파이드(DMS)·메탄·CO₂를 3σ 이상의 유의성으로 검출하여 해양 세계 가설을 뒷받침했다."
+      },
+      "plain": {
+        "zh-TW": "在地球上，DMS 幾乎只由海洋中的微生物製造，若 K2-18b 確實存在 DMS，可能暗示那顆星球的廣大液態水海洋裡有生命活動。",
+        "en": "On Earth, DMS is almost exclusively produced by marine microorganisms, so its presence on K2-18b could hint at biological activity in a vast liquid-water ocean.",
+        "zh-CN": "在地球上，DMS 几乎只由海洋微生物产生，若 K2-18b 确实存在 DMS，可能暗示那颗星球的广大液态水海洋里有生命活动。",
+        "ja": "地球では DMS はほぼ海洋微生物だけが作るため、K2-18b に DMS があれば広大な液体水の海に生命が存在する可能性を示唆する。",
+        "ko": "지구에서 DMS는 거의 해양 미생물만 만들기 때문에, K2-18b에 DMS가 존재한다면 광활한 액체 바다에 생명이 있을 가능성을 암시한다."
+      },
+      "insight": {
+        "zh-TW": "💡 這不是確認外星生命，但卻是人類史上最接近「可能有生命的線索」的系外行星觀測結果。",
+        "en": "💡 Not a confirmed detection of alien life, but the closest observational hint of potentially biogenic chemistry ever found beyond our solar system.",
+        "zh-CN": "💡 这不是确认外星生命，但却是人类史上最接近「可能有生命线索」的系外行星观测结果。",
+        "ja": "💡 宇宙人の確定ではないが、太陽系外で得られた「生命の化学的痕跡」に最も近い観測結果だ。",
+        "ko": "💡 외계 생명의 확인은 아니지만, 태양계 밖에서 얻은 생명 화학의 흔적에 가장 가까운 관측 결과다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<rect width=\"340\" height=\"160\" fill=\"#0a0a2e\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"#1a6b8a\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"#1565c0\" opacity=\"0.4\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"55\" ry=\"18\" fill=\"#1a237e\" opacity=\"0.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"62\" fill=\"none\" stroke=\"#80deea\" stroke-width=\"3\" opacity=\"0.6\"/>\n<circle cx=\"170\" cy=\"80\" r=\"70\" fill=\"none\" stroke=\"#80deea\" stroke-width=\"1\" opacity=\"0.3\"/>\n<circle cx=\"30\" cy=\"25\" r=\"3\" fill=\"#ffffff\" opacity=\"0.8\"/>\n<circle cx=\"310\" cy=\"40\" r=\"2\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<circle cx=\"290\" cy=\"130\" r=\"2\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"50\" cy=\"140\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<path d=\"M240 30 Q260 20 280 35 Q265 15 245 28 Z\" fill=\"#ffd54f\" opacity=\"0.9\"/>\n</svg>"
+    },
+    {
+      "id": "neuro-2607e",
+      "domain": "neuro",
+      "day": "2026-07-05",
+      "author": "Ye et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-025-08541-3",
+      "color": "#6a1b9a",
+      "title": {
+        "zh-TW": "記憶的「重播」機制：睡眠中海馬迴如何把一天的經歷刻入長期記憶",
+        "en": "Memory Replay Decoded: How the Hippocampus Consolidates Daily Experience During Sleep",
+        "zh-CN": "记忆的「重播」机制：睡眠中海马体如何把一天的经历刻入长期记忆",
+        "ja": "記憶の「リプレイ」機構：睡眠中に海馬が一日の経験を長期記憶へ刻む仕組み",
+        "ko": "기억의 '재생' 메커니즘: 수면 중 해마가 하루 경험을 장기 기억으로 저장하는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "研究透過高密度多電極陣列同步記錄小鼠海馬迴 CA1 與新皮質超過 1,000 個神經元，在非快速動眼睡眠（NREM）的尖波漣漪（sharp-wave ripple）期間，精確解析了序列壓縮重播的細胞組裝動態。",
+        "en": "Using high-density multi-electrode arrays to simultaneously record over 1,000 neurons in mouse hippocampal CA1 and neocortex, the study precisely resolved compressed sequential replay within sharp-wave ripples during NREM sleep.",
+        "zh-CN": "研究通过高密度多电极阵列同步记录小鼠海马 CA1 与新皮质超过 1,000 个神经元，在非快速眼动睡眠（NREM）的尖波涟漪（sharp-wave ripple）期间，精确解析了序列压缩重播的细胞组装动态。",
+        "ja": "高密度多電極アレイでマウスの海馬 CA1 と新皮質の 1,000 超の神経細胞を同時記録し、NREM 睡眠の鋭波リプル中に起こる圧縮逐次リプレイのアセンブリ動態を詳細に解明した。",
+        "ko": "고밀도 다전극 배열로 마우스 해마 CA1과 신피질의 뉴런 1,000개 이상을 동시 기록하여, NREM 수면의 날카로운 파동-잔물결(sharp-wave ripple) 동안 일어나는 압축 순차 재생의 세포 조립 역학을 정밀하게 분석했다."
+      },
+      "plain": {
+        "zh-TW": "睡覺時大腦並非「關機」，海馬迴會像快轉播放電影一樣，把白天學過的事快速重演一遍，幫助將短期記憶轉成長期記憶。",
+        "en": "During sleep, the brain is far from idle—the hippocampus fast-forwards through the day's experiences like a compressed movie reel, converting short-term memories into lasting ones.",
+        "zh-CN": "睡觉时大脑并非「关机」，海马体会像快进播放电影一样，把白天学过的事快速重演一遍，帮助将短期记忆转成长期记忆。",
+        "ja": "睡眠中、脳は決して「オフ」ではなく、海馬が昼間の体験を早送り再生して短期記憶を長期記憶へと変換している。",
+        "ko": "수면 중 뇌는 결코 '꺼지지' 않으며, 해마는 낮 동안의 경험을 빠른 속도로 재생하여 단기 기억을 장기 기억으로 변환한다."
+      },
+      "insight": {
+        "zh-TW": "💡 充足的睡眠不只是休息，它是大腦「存檔」今日所學的唯一時機。",
+        "en": "💡 Adequate sleep is not merely rest—it is the brain's only window to permanently save what you learned today.",
+        "zh-CN": "💡 充足的睡眠不只是休息，它是大脑「存档」今日所学的唯一时机。",
+        "ja": "💡 十分な睡眠は単なる休息ではなく、今日学んだことを脳が永久保存できる唯一の機会だ。",
+        "ko": "💡 충분한 수면은 단순한 휴식이 아니라, 오늘 배운 것을 뇌가 영구적으로 저장하는 유일한 기회다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/>\n<ellipse cx=\"170\" cy=\"80\" rx=\"48\" ry=\"36\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"3\"/>\n<path d=\"M140,62 Q155,48 170,62 Q185,48 200,62\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"10\" fill=\"#6a1b9a\" opacity=\"0.85\"/>\n<circle cx=\"40\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ab47bc\" stroke-width=\"2.5\"/>\n<circle cx=\"40\" cy=\"80\" r=\"14\" fill=\"#ab47bc\" opacity=\"0.25\"/>\n<line x1=\"62\" y1=\"80\" x2=\"118\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n<polygon points=\"115,74 128,80 115,86\" fill=\"#6a1b9a\"/>\n<circle cx=\"300\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#4a148c\" stroke-width=\"2.5\"/>\n<circle cx=\"300\" cy=\"80\" r=\"14\" fill=\"#4a148c\" opacity=\"0.35\"/>\n<line x1=\"222\" y1=\"80\" x2=\"274\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/>\n<polygon points=\"271,74 284,80 271,86\" fill=\"#6a1b9a\"/>\n<path d=\"M155,90 Q170,110 185,90\" fill=\"none\" stroke=\"#ab47bc\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607f",
+      "domain": "bio",
+      "day": "2026-07-05",
+      "author": "Jumper et al. / Nature 2025",
+      "ref": "Nature 2025",
+      "url": "https://doi.org/10.1038/s41586-024-08245-z",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "AlphaFold 3 預測所有生命分子：蛋白質、DNA、RNA 與小分子的複合體結構一次解決",
+        "en": "AlphaFold 3 Predicts All Biomolecules: Protein, DNA, RNA and Small-Molecule Complexes in One Model",
+        "zh-CN": "AlphaFold 3 预测所有生命分子：蛋白质、DNA、RNA 与小分子的复合体结构一次解决",
+        "ja": "AlphaFold 3 が全生体分子を予測：タンパク質・DNA・RNA・低分子の複合体構造を一挙に解明",
+        "ko": "AlphaFold 3, 모든 생체 분자 예측: 단백질·DNA·RNA·소분자 복합체 구조를 한 번에 해결"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "AlphaFold 3 採用擴散式生成模型（diffusion model）取代先前的結構模組，可在單一框架內同時預測蛋白質、核酸（DNA/RNA）及小分子配體的共複合體原子坐標，在多個基準測試上超越專用對接工具。",
+        "en": "AlphaFold 3 replaces the previous structural module with a diffusion-based generative model, enabling joint atomic-coordinate prediction of proteins, nucleic acids, and small-molecule ligands within a single framework, surpassing specialized docking tools on multiple benchmarks.",
+        "zh-CN": "AlphaFold 3 采用扩散式生成模型（diffusion model）取代先前的结构模块，可在单一框架内同时预测蛋白质、核酸（DNA/RNA）及小分子配体的共复合体原子坐标，在多个基准测试上超越专用对接工具。",
+        "ja": "AlphaFold 3 は従来の構造モジュールを拡散型生成モデルに置き換え、タンパク質・核酸・低分子リガンドの共複合体の原子座標を単一フレームワークで予測し、複数のベンチマークで専用ドッキングツールを上回った。",
+        "ko": "AlphaFold 3은 기존 구조 모듈을 확산 기반 생성 모델로 대체하여, 단백질·핵산·소분자 리간드 복합체의 원자 좌표를 단일 프레임워크에서 예측하며 여러 벤치마크에서 전용 도킹 도구를 능가했다."
+      },
+      "plain": {
+        "zh-TW": "過去科學家需要多種工具才能研究藥物如何與細胞蛋白質結合，現在 AlphaFold 3 一個模型就能預測幾乎所有生物分子的立體形狀，大幅加速新藥開發。",
+        "en": "Where scientists once needed multiple specialized tools to study how drugs bind to proteins, AlphaFold 3 predicts the 3-D shapes of virtually all biomolecules in one model, dramatically accelerating drug discovery.",
+        "zh-CN": "过去科学家需要多种工具才能研究药物如何与细胞蛋白质结合，现在 AlphaFold 3 一个模型就能预测几乎所有生物分子的立体形状，大幅加速新药开发。",
+        "ja": "以前は薬が細胞タンパク質とどう結合するかを調べるのに複数のツールが必要だったが、AlphaFold 3 は 1 つのモデルでほぼすべての生体分子の立体形状を予測し、創薬を劇的に加速させる。",
+        "ko": "과거에는 약물이 단백질과 어떻게 결합하는지 연구하려면 여러 도구가 필요했지만, AlphaFold 3은 단일 모델로 거의 모든 생체 분자의 3D 구조를 예측하여 신약 개발을 크게 가속화한다."
+      },
+      "insight": {
+        "zh-TW": "💡 當 AI 能讀懂所有生命分子的形狀，藥物設計將從「碰運氣」轉變為「按圖施工」。",
+        "en": "💡 When AI can read the shape of every molecule of life, drug design shifts from trial-and-error to blueprint-driven engineering.",
+        "zh-CN": "💡 当 AI 能读懂所有生命分子的形状，药物设计将从「碰运气」转变为「按图施工」。",
+        "ja": "💡 AI がすべての生体分子の形を読み解けるようになれば、創薬は試行錯誤から設計図に基づく工学へと変わる。",
+        "ko": "💡 AI가 모든 생체 분자의 형태를 읽어낼 수 있게 되면, 신약 개발은 시행착오에서 설계도 기반 공학으로 전환된다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"3\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"#52b78840\" stroke=\"#52b788\" stroke-width=\"2\"/>\n  <circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#52b788\"/>\n  <path d=\"M60 40 C75 30 90 55 80 65 C70 75 55 60 60 40Z\" fill=\"#2d6a4f\" opacity=\"0.85\"/>\n  <path d=\"M65 95 C60 110 80 125 90 115 C100 105 85 88 65 95Z\" fill=\"#2d6a4f\" opacity=\"0.85\"/>\n  <path d=\"M250 35 C260 25 278 38 272 52 C266 66 248 58 250 35Z\" fill=\"#74c69d\" opacity=\"0.85\"/>\n  <path d=\"M255 100 C270 92 285 108 278 120 C271 132 252 122 255 100Z\" fill=\"#74c69d\" opacity=\"0.85\"/>\n  <line x1=\"108\" y1=\"60\" x2=\"142\" y2=\"72\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"108\" y1=\"100\" x2=\"142\" y2=\"88\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"198\" y1=\"68\" x2=\"232\" y2=\"52\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <line x1=\"198\" y1=\"92\" x2=\"232\" y2=\"108\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n  <polygon points=\"170,58 178,72 162,72\" fill=\"#ffffff\" opacity=\"0.7\"/>\n</svg>"
+    }
+  ]
+}
