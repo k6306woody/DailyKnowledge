@@ -1,0 +1,233 @@
+{
+  "date": "2026-07-07",
+  "mode": "paper",
+  "paper_date": "2026-07-07",
+  "generated_at": "2026-07-07",
+  "cards": [
+    {
+      "id": "bio-260707",
+      "domain": "bio",
+      "day": "2026-07-07",
+      "author": "Matteo Di Bernardo, Iain M. Cheeseman et al.",
+      "ref": "arXiv:2607.02217v1",
+      "url": "https://arxiv.org/abs/2607.02217v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><rect x=\"10\" y=\"30\" width=\"60\" height=\"100\" rx=\"6\" fill=\"#52b78840\" stroke=\"#52b788\" stroke-width=\"1.5\"/><rect x=\"16\" y=\"40\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#52b788\"/><rect x=\"16\" y=\"52\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#52b78888\"/><rect x=\"16\" y=\"64\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#52b78888\"/><rect x=\"16\" y=\"76\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#52b78888\"/><rect x=\"16\" y=\"88\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#52b78888\"/><rect x=\"16\" y=\"100\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#52b78888\"/><polygon points=\"95,80 110,72 110,88\" fill=\"#52b788\"/><rect x=\"120\" y=\"55\" width=\"50\" height=\"50\" rx=\"25\" fill=\"#2d6a4f\"/><circle cx=\"145\" cy=\"80\" r=\"14\" fill=\"#52b788\"/><circle cx=\"145\" cy=\"80\" r=\"7\" fill=\"#b7e4c7\"/><polygon points=\"195,80 210,72 210,88\" fill=\"#52b788\"/><rect x=\"220\" y=\"30\" width=\"110\" height=\"100\" rx=\"8\" fill=\"#52b78830\" stroke=\"#52b788\" stroke-width=\"1.5\"/><rect x=\"230\" y=\"44\" width=\"30\" height=\"8\" rx=\"3\" fill=\"#52b788\"/><rect x=\"266\" y=\"44\" width=\"54\" height=\"8\" rx=\"3\" fill=\"#52b78866\"/><rect x=\"230\" y=\"58\" width=\"30\" height=\"8\" rx=\"3\" fill=\"#52b788\"/><rect x=\"266\" y=\"58\" width=\"54\" height=\"8\" rx=\"3\" fill=\"#52b78866\"/><rect x=\"230\" y=\"72\" width=\"30\" height=\"8\" rx=\"3\" fill=\"#52b788\"/><rect x=\"266\" y=\"72\" width=\"54\" height=\"8\" rx=\"3\" fill=\"#52b78866\"/><rect x=\"230\" y=\"86\" width=\"30\" height=\"8\" rx=\"3\" fill=\"#52b788\"/><rect x=\"266\" y=\"86\" width=\"54\" height=\"8\" rx=\"3\" fill=\"#52b78866\"/><rect x=\"230\" y=\"100\" width=\"30\" height=\"8\" rx=\"3\" fill=\"#52b788\"/><rect x=\"266\" y=\"100\" width=\"54\" height=\"8\" rx=\"3\" fill=\"#52b78866\"/></svg>",
+      "title": {
+        "zh-TW": "Affinage：AI 自動閱讀海量文獻，為全人類基因組建立機制功能檔案",
+        "en": "Affinage: AI-Powered Genome-Scale Mechanistic Gene Annotation from Literature",
+        "zh-CN": "Affinage：AI自动阅读海量文献，为全人类基因组建立机制功能档案",
+        "ja": "Affinage：AIが文献を大規模に読破し、全ゲノム規模で遺伝子機能を自動注釈",
+        "ko": "Affinage：AI가 방대한 문헌을 읽어 전체 유전체 규모의 유전자 기능 프로파일 자동 구축"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學 × AI",
+        "en": "🧬 Life Science × AI",
+        "zh-CN": "🧬 生命科学 × AI",
+        "ja": "🧬 生命科学 × AI",
+        "ko": "🧬 생명과학 × AI"
+      },
+      "tech": {
+        "zh-TW": "Affinage 是一套大型語言模型（LLM）流程，能自動從 PubMed 等文獻資料庫中擷取與合成資訊，針對人類蛋白質組中的 19,293 個基因逐一生成可重現的機制功能摘要。透過標準化的檢索與快取架構，避免傳統臨時查詢的高成本與不可重現性，實現跨使用者的規模化部署。",
+        "en": "Affinage is an LLM-based pipeline that automatically retrieves and synthesizes mechanistic gene function information from primary literature at genome scale, generating reproducible functional annotations for 19,293 human genes. A standardized retrieval-and-caching architecture eliminates the cost and irreproducibility of ad hoc queries, enabling scalable deployment across research communities.",
+        "zh-CN": "Affinage 是一套大型语言模型（LLM）流程，能自动从 PubMed 等文献数据库中提取与合成信息，针对人类蛋白质组中的 19,293 个基因逐一生成可重现的机制功能摘要。通过标准化的检索与缓存架构，避免传统临时查询的高成本与不可重现性，实现跨用户的规模化部署。",
+        "ja": "Affinageは、PubMedなどの一次文献からLLMを用いて自動的に情報を取得・合成し、ヒトプロテオームの19,293遺伝子について再現性のある機能アノテーションを生成するパイプラインです。標準化された検索・キャッシュ構造により、従来のアドホッククエリの高コストと非再現性を解消し、研究コミュニティ全体でのスケーラブルな運用を実現します。",
+        "ko": "Affinage는 PubMed 등 1차 문헌에서 LLM을 활용해 자동으로 정보를 검색·합성하여, 인간 단백질체의 19,293개 유전자에 대한 재현 가능한 기능 주석을 생성하는 파이프라인입니다. 표준화된 검색·캐싱 구조를 통해 기존의 임시 쿼리가 가진 높은 비용과 비재현성 문제를 해결하고, 연구 커뮤니티 전반에 걸친 확장 가능한 활용을 가능하게 합니다."
+      },
+      "plain": {
+        "zh-TW": "想像你是一位研究某個基因的科學家，需要先搞清楚這個基因「到底是做什麼的」。問題是，相關知識可能散落在幾百篇甚至幾千篇論文裡，光是閱讀整理就要花好幾個月。更麻煩的是，像 UniProt 這類常用的基因資料庫，往往比最新的研究成果落後好幾年。Affinage 就像一位不眠不休的超級研究助理：它讓 AI 自動把所有相關論文找出來、讀懂、整理成一份清晰的功能說明書，而且針對人類基因組裡的近兩萬個基因全部做了一遍。更重要的是，這份「說明書」是可重現的——任何研究者在任何時候查詢同一個基因，都會得到同樣品質的答案，不像過去每次都要重新耗費大量算力臨時生成。這對加速藥物開發、罕見疾病診斷、癌症研究都有直接幫助，因為科學家不再需要在文獻叢林中迷路。",
+        "en": "Imagine you are a scientist studying a gene and need to first figure out what it actually does. The problem is that relevant knowledge may be scattered across hundreds or even thousands of papers, taking months just to read and organize. To make things worse, commonly used gene databases like UniProt often lag years behind the latest research. Affinage acts like a tireless super research assistant: it uses AI to automatically find, read, and summarize all relevant papers into a clear functional profile, and it has done this for nearly 20,000 genes in the human genome. Crucially, these profiles are reproducible — any researcher querying the same gene at any time gets the same quality of answer, unlike the costly and inconsistent one-off AI queries of the past. This directly accelerates drug development, rare disease diagnosis, and cancer research by freeing scientists from getting lost in the literature jungle.",
+        "zh-CN": "想象你是一位研究某个基因的科学家，需要先搞清楚这个基因「到底是做什么的」。问题是，相关知识可能散落在几百篇甚至几千篇论文里，光是阅读整理就要花好几个月。更麻烦的是，像 UniProt 这类常用的基因数据库，往往比最新的研究成果落后好几年。Affinage 就像一位不眠不休的超级研究助手：它让 AI 自动把所有相关论文找出来、读懂、整理成一份清晰的功能说明书，而且针对人类基因组里的近两万个基因全部做了一遍。更重要的是，这份「说明书」是可重现的——任何研究者在任何时候查询同一个基因，都会得到同样质量的答案，不像过去每次都要重新耗费大量算力临时生成。这对加速药物开发、罕见疾病诊断、癌症研究都有直接帮助。",
+        "ja": "ある遺伝子を研究している科学者が、まず「この遺伝子は何をしているのか」を把握しなければならない場面を想像してください。関連する知識は数百から数千もの論文に散らばっており、読んで整理するだけで数ヶ月かかることもあります。さらに困ったことに、UniProtのようなよく使われる遺伝子データベースは、最新の研究成果から数年遅れていることがほとんどです。Affinageは眠らない超優秀なリサーチアシスタントのようなもので、AIが関連論文をすべて自動で見つけ、読み、わかりやすい機能プロファイルにまとめます。しかもヒトゲノムの約2万の遺伝子すべてについてこれを実施しました。重要なのは再現性があること——どの研究者がいつ同じ遺伝子を検索しても、同じ品質の回答が得られます。これは創薬、希少疾患の診断、がん研究の加速に直結します。",
+        "ko": "어떤 유전자를 연구하는 과학자가 먼저 '이 유전자가 정확히 무엇을 하는지'를 파악해야 하는 상황을 상상해 보세요. 관련 지식은 수백에서 수천 편의 논문에 흩어져 있어, 읽고 정리하는 것만으로도 몇 달이 걸릴 수 있습니다. 더 큰 문제는 UniProt 같은 자주 쓰이는 유전자 데이터베이스가 최신 연구 결과보다 몇 년씩 뒤처지는 경우가 많다는 점입니다. Affinage는 쉬지 않는 초고성능 연구 보조자처럼, AI가 관련 논문을 자동으로 찾아 읽고 명확한 기능 프로파일로 정리합니다. 인간 게놈의 약 2만 개 유전자 전체에 대해 이 작업을 완료했습니다. 핵심은 재현 가능성입니다 — 어느 연구자가 언제 같은 유전자를 조회해도 동일한 품질의 답변을 얻을 수 있어, 신약 개발, 희귀 질환 진단, 암 연구를 획기적으로 가속화할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 知識本身從未消失，只是埋藏在文獻的深海——AI 的真正價值，或許不在於創造新知，而在於讓已有的知識變得真正可及。",
+        "en": "💡 Knowledge has never truly disappeared — it's buried in the depths of the literature. The real value of AI may not lie in creating new knowledge, but in making existing knowledge genuinely accessible.",
+        "zh-CN": "💡 知识本身从未消失，只是埋藏在文献的深海——AI 的真正价值，或许不在于创造新知，而在于让已有的知识变得真正可及。",
+        "ja": "💡 知識そのものは消えていない——文献の深海に埋もれているだけだ。AIの真の価値は新しい知識を生み出すことではなく、既存の知識を本当の意味でアクセス可能にすることにあるのかもしれない。",
+        "ko": "💡 지식은 사라진 것이 아니라 문헌의 깊은 바다에 묻혀 있을 뿐이다. AI의 진정한 가치는 새로운 지식을 창조하는 것이 아니라, 이미 존재하는 지식을 누구나 진정으로 접근할 수 있게 만드는 데 있을지도 모른다."
+      }
+    },
+    {
+      "id": "phys-260707",
+      "domain": "phys",
+      "day": "2026-07-07",
+      "author": "Sounak Biswas, Sthitadhi Roy et al.",
+      "ref": "arXiv:2607.02506v1",
+      "url": "https://arxiv.org/abs/2607.02506v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"10\" y=\"70\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.9\"/><rect x=\"32\" y=\"68\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.9\"/><rect x=\"54\" y=\"72\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.9\"/><rect x=\"76\" y=\"67\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"110\" cy=\"76\" r=\"9\" fill=\"#e05c2a\" opacity=\"0.92\"/><rect x=\"130\" y=\"60\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.75\"/><rect x=\"152\" y=\"52\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.7\"/><rect x=\"174\" y=\"44\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.65\"/><circle cx=\"208\" cy=\"55\" r=\"9\" fill=\"#e05c2a\" opacity=\"0.92\"/><rect x=\"228\" y=\"32\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#4a7bbf\" opacity=\"0.55\"/><rect x=\"250\" y=\"22\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#f5c842\" opacity=\"0.85\"/><rect x=\"272\" y=\"12\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#f5c842\" opacity=\"0.95\"/><rect x=\"294\" y=\"8\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#f5c842\" opacity=\"1\"/><polyline points=\"16,76 38,74 60,78 82,73 110,76 136,66 158,58 180,50 208,55 234,38 256,28 278,18 300,14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" opacity=\"0.5\"/><line x1=\"110\" y1=\"140\" x2=\"110\" y2=\"88\" stroke=\"#e05c2a\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/><line x1=\"208\" y1=\"140\" x2=\"208\" y2=\"68\" stroke=\"#e05c2a\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/><rect x=\"10\" y=\"130\" width=\"80\" height=\"6\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.35\"/><rect x=\"100\" y=\"130\" width=\"130\" height=\"6\" rx=\"3\" fill=\"#e05c2a\" opacity=\"0.35\"/><rect x=\"240\" y=\"130\" width=\"90\" height=\"6\" rx=\"3\" fill=\"#f5c842\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "從秩序到混沌的臨界點：量子多體系統如何在可調破缺下走向混亂",
+        "en": "From Order to Chaos: How Quantum Many-Body Systems Transition Under Tunable Integrability Breaking",
+        "zh-CN": "从秩序到混沌的临界点：量子多体系统如何在可调破缺下走向混乱",
+        "ja": "秩序からカオスへ：可調整な可積分性破れによる量子多体混沌の出現",
+        "ko": "질서에서 혼돈으로：조정 가능한 가적분성 붕괴에 따른 양자 다체 혼돈의 출현"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子混沌",
+        "en": "⚛️ Quantum Chaos",
+        "zh-CN": "⚛️ 量子混沌",
+        "ja": "⚛️ 量子カオス",
+        "ko": "⚛️ 양자 혼돈"
+      },
+      "tech": {
+        "zh-TW": "本研究以自由費米子電路模型為基礎，透過摻入可調密度的「破可積分閘」，利用時序外關聯函數（OTOC）追蹤從早期可積分行為到晚期混沌的微觀轉變機制。研究揭示破可積分閘在時空中作為局部熱點，局部放大 OTOC，熱點累積後最終驅動系統進入完全發展的量子混沌。",
+        "en": "Using a free-fermion circuit model doped with a tunable density of integrability-breaking gates, the authors trace the crossover from integrable to chaotic behavior via out-of-time-ordered correlators (OTOCs). The integrability-breaking gates act as local spacetime hotspots that amplify OTOCs, with their accumulation eventually driving fully-developed quantum many-body chaos.",
+        "zh-CN": "本研究以自由费米子电路模型为基础，通过掺入可调密度的「破可积分门」，利用时序外关联函数（OTOC）追踪从早期可积分行为到晚期混沌的微观转变机制。研究揭示破可积分门在时空中作为局部热点，局部放大 OTOC，热点积累后最终驱动系统进入完全发展的量子混沌。",
+        "ja": "自由フェルミオン回路モデルに可積分性を破るゲートを可調整な密度で「ドープ」し、時間順序を乱した相関関数（OTOC）を用いて、可積分的挙動から混沌への微視的移行機構を解明した。これらのゲートは時空の局所的ホットスポットとして機能し、OTOCを局所的に増幅して量子多体混沌を誘発する。",
+        "ko": "자유 페르미온 회로 모델에 조정 가능한 밀도의 가적분성 붕괴 게이트를 도핑하고, 시간 순서 외 상관함수(OTOC)를 통해 가적분 거동에서 혼돈으로의 미시적 전환 메커니즘을 규명했다. 이 게이트들은 시공간의 국소적 열점으로 작용하여 OTOC를 증폭시키고, 그 축적이 완전한 양자 다체 혼돈을 유발한다."
+      },
+      "plain": {
+        "zh-TW": "想像一個完美的撞球桌：球在上面滾動，軌跡完全可預測，這就像「可積分」的量子系統——一切有規律可循。現在，在桌面上隨機放幾個凸起的障礙物，球開始偶爾偏轉，放越多障礙，軌跡越難預測，最後變成完全混亂。這篇研究就在探索：從「有規律」到「混沌」的這段旅程，究竟是怎麼一步步發生的？科學家發現，每一個「破壞規則的障礙」都像一個局部的放大器，把周遭量子資訊的擾動越放越大；障礙夠多時，這些局部的放大效果互相連接，系統就徹底失去記憶、走向混沌。這個發現非常重要，因為幾乎所有真實的量子材料都處於這種「有點混沌、有點規律」的中間地帶，理解這個過渡過程，有助於我們設計更穩健的量子電腦和量子材料。",
+        "en": "Imagine a perfect billiard table where every ball follows a perfectly predictable path — this is like an 'integrable' quantum system, where all motion is orderly. Now scatter a few random bumps across the table: the ball starts deflecting unpredictably, and more bumps mean more chaos. This paper asks: how exactly does a quantum system travel from perfect order to full chaos? The researchers found that each 'rule-breaking gate' acts like a local amplifier, magnifying quantum disturbances nearby; once enough of these hotspots accumulate, their effects connect and the system loses all memory of its initial order. This matters deeply because real quantum materials almost always sit in this messy in-between zone, and understanding the transition is key to building robust quantum computers and novel materials.",
+        "zh-CN": "想象一张完美的台球桌：球在上面的轨迹完全可预测，这就像「可积分」的量子系统——一切有规律可循。现在随机放几个凸起的障碍物，球开始偶尔偏转，障碍越多，轨迹越难预测，最终变成完全混乱。这篇研究探索的是：从「有规律」到「混沌」的旅程究竟如何一步步发生？科学家发现，每个「破坏规则的障碍」都像局部放大器，把量子信息的扰动越放越大；障碍足够多时，局部放大效果互相连接，系统彻底走向混沌。这对量子计算机和量子材料的设计有深远意义。",
+        "ja": "完璧なビリヤード台を想像してください。球の軌道は完全に予測可能で、これが「可積分」量子系です。そこにランダムな障害物を置くと、球は予測不能に跳ね始め、障害物が増えるほど混沌が広がります。この研究は「秩序から混沌への移行がどのように起きるのか」を解明します。各「ルールを破るゲート」は局所的な増幅器として機能し、量子情報の乱れを拡大します。十分な数が積み重なると、系は完全な量子混沌へと転落します。現実の量子材料はほぼすべてこの中間地帯にあるため、この知見は量子コンピュータや新材料の設計に直結します。",
+        "ko": "완벽한 당구대를 상상해보세요. 공의 궤적이 완전히 예측 가능한 이 상태가 바로 「가적분」 양자계입니다. 여기에 무작위 장애물을 놓으면 공은 예측 불가능하게 튀기 시작하고, 장애물이 많을수록 더 혼돈스러워집니다. 이 연구는 「질서에서 혼돈으로의 전환이 어떻게 일어나는가」를 규명합니다. 각 「규칙 파괴 게이트」는 국소적 증폭기로 작용해 양자 정보의 교란을 키우며, 이것이 충분히 쌓이면 시스템은 완전한 혼돈에 빠집니다. 실제 양자 재료 대부분이 이 중간 지대에 있기 때문에, 이 전환 과정의 이해는 양자 컴퓨터 설계에 매우 중요합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 混沌不是突然爆發的，而是由無數個局部「放大熱點」緩慢累積、最終連成一片所造成的——秩序與混沌之間，原來隱藏著一條可量化的橋梁。",
+        "en": "💡 Chaos doesn't arrive all at once — it is quietly assembled from countless local amplification hotspots until they form a web that swallows all order, revealing a quantifiable bridge between regularity and randomness.",
+        "zh-CN": "💡 混沌不是突然爆发的，而是由无数个局部「放大热点」缓慢积累、最终连成一片造成的——秩序与混沌之间，原来隐藏着一条可量化的桥梁。",
+        "ja": "💡 混沌は突然訪れるのではなく、無数の局所的「増幅ホットスポット」が静かに積み重なり、やがてつながることで秩序を飲み込む——秩序と混沌の間には、定量化できる橋が隠れていた。",
+        "ko": "💡 혼돈은 갑자기 찾아오는 것이 아니라, 수많은 국소적 「증폭 열점」이 조용히 쌓이고 연결되어 질서를 삼키는 것이다——질서와 혼돈 사이에는 정량화 가능한 다리가 숨어 있었다."
+      }
+    },
+    {
+      "id": "neuro-260707",
+      "domain": "neuro",
+      "day": "2026-07-07",
+      "author": "Kuo-Chung Peng, Jiun-Cheng Jiang et al.",
+      "ref": "arXiv:2607.02363v1",
+      "url": "https://arxiv.org/abs/2607.02363v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"60\" cy=\"80\" r=\"32\" fill=\"#6a1b9a\" opacity=\"0.18\"/><circle cx=\"60\" cy=\"80\" r=\"20\" fill=\"#6a1b9a\" opacity=\"0.5\"/><circle cx=\"60\" cy=\"80\" r=\"9\" fill=\"#6a1b9a\"/><rect x=\"100\" y=\"72\" width=\"48\" height=\"16\" rx=\"8\" fill=\"#ab47bc\" opacity=\"0.85\"/><rect x=\"160\" y=\"66\" width=\"16\" height=\"28\" rx=\"6\" fill=\"#e040fb\" opacity=\"0.7\"/><rect x=\"188\" y=\"60\" width=\"16\" height=\"40\" rx=\"6\" fill=\"#e040fb\" opacity=\"0.5\"/><rect x=\"216\" y=\"54\" width=\"16\" height=\"52\" rx=\"6\" fill=\"#ab47bc\" opacity=\"0.4\"/><path d=\"M244 80 Q268 50 292 80 Q268 110 244 80 Z\" fill=\"#6a1b9a\" opacity=\"0.6\"/><circle cx=\"292\" cy=\"80\" r=\"14\" fill=\"#e040fb\" opacity=\"0.75\"/><circle cx=\"292\" cy=\"80\" r=\"7\" fill=\"#ffffff\" opacity=\"0.6\"/><line x1=\"95\" y1=\"80\" x2=\"102\" y2=\"80\" stroke=\"#ab47bc\" stroke-width=\"2.5\"/><line x1=\"244\" y1=\"80\" x2=\"230\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"2.5\"/></svg>",
+      "title": {
+        "zh-TW": "量子快速權重網路的「記憶剎車」：讓長序列不再失控的有界閘門設計",
+        "en": "Quantum Fast-Weight Networks with a 「Memory Brake」: Bounded Gates for Stable Long-Sequence Learning",
+        "zh-CN": "量子快速权重网络的「记忆刹车」：让长序列不再失控的有界门控设计",
+        "ja": "量子高速重みネットワークの「記憶ブレーキ」：長シーケンスを安定させる有界ゲート設計",
+        "ko": "양자 고속 가중치 네트워크의 「기억 브레이크」：긴 시퀀스를 안정시키는 유계 게이트 설계"
+      },
+      "tag": {
+        "zh-TW": "🧠 量子機器學習",
+        "en": "🧠 Quantum Machine Learning",
+        "zh-CN": "🧠 量子机器学习",
+        "ja": "🧠 量子機械学習",
+        "ko": "🧠 양자 머신러닝"
+      },
+      "tech": {
+        "zh-TW": "本文針對量子快速權重程式設計師（QFWP）中的自調節框架，提出「有界舊狀態調制規則」，以符號保留的 tanh 閘門限制遞迴記憶分支的增長，防止長序列下舊狀態乘數發散。新設計在保留輸入依賴閘控靈活性的同時，確保遞迴記憶有界收斂，從而提升量子序列模型的訓練穩定性。",
+        "en": "This paper proposes a bounded old-state modulation rule for Self-Modulating Quantum Fast-Weight Programmers (QFWPs), applying a sign-preserving tanh gate solely to the recurrent memory branch to prevent the unbounded growth of the old-state multiplier in long-sequence regimes. The approach preserves input-dependent gating flexibility while guaranteeing bounded convergence of recurrent memory, improving training stability for quantum sequence models.",
+        "zh-CN": "本文针对量子快速权重程序设计师（QFWP）的自调节框架，提出「有界旧状态调制规则」，以符号保留的 tanh 门控限制递归记忆分支的增长，防止长序列下旧状态乘数发散。新设计在保留输入依赖门控灵活性的同时，确保递归记忆有界收敛，提升量子序列模型的训练稳定性。",
+        "ja": "本論文は、自己変調型量子高速重みプログラマー（QFWP）において、符号保存 tanh ゲートを再帰的記憶分枝のみに適用する「有界旧状態変調則」を提案する。長シーケンスでの旧状態乗数の発散を防ぎつつ、入力依存ゲーティングの柔軟性を維持し、量子シーケンスモデルの学習安定性を向上させる。",
+        "ko": "이 논문은 자기 변조 양자 고속 가중치 프로그래머(QFWP)에서 부호 보존 tanh 게이트를 순환 메모리 분기에만 적용하는 「유계 구상태 변조 규칙」을 제안한다. 긴 시퀀스에서 구상태 승수의 발산을 방지하면서 입력 의존 게이팅의 유연성을 유지하여 양자 시퀀스 모델의 학습 안정성을 향상시킨다."
+      },
+      "plain": {
+        "zh-TW": "想像你正在用一本活頁筆記本記錄每天的行程：傳統 AI 每次都把所有舊筆記翻出來重讀，既費力又容易混亂。「快速權重」設計則像是在筆記本封面貼上「摘要便條」，AI 只需更新那張便條就能掌握脈絡，比翻閱全本快得多。量子版本（QFWP）更進一步，把這張便條「量子化」，讓它能同時記錄多種可能的狀態。但問題來了：如果便條上的字越寫越大、越積越多，最終紙張會撐破——這就是「舊狀態乘數無界發散」的問題，序列越長、系統越容易崩潰。本研究提出的解法就像替便條加了一把「彈性橡皮筋」：tanh 閘門會在字跡超出邊界前自動把它壓縮回合理範圍，但又不會把重要的正負方向資訊抹掉。如此一來，AI 在處理超長句子、超長音訊或超長時間序列時，記憶不會爆炸，訓練也更穩定。這對未來在量子硬體上運行的語言模型或語音識別系統至關重要，也是量子機器學習邁向實用化的一大步。",
+        "en": "Imagine keeping a sticky-note summary on the cover of a notebook instead of re-reading every page: that is the idea behind fast-weight networks, where a compact 「memo」 is updated with each new input rather than storing a full hidden state. The quantum version (QFWP) encodes this memo in quantum circuit parameters, allowing it to represent many possibilities at once. However, if the memo keeps getting amplified with no upper limit, it eventually explodes — especially over long sequences. This paper adds a 「rubber-band」 tanh gate that squishes the recurrent memory back into a safe range whenever it grows too large, without erasing whether the memory is positive or negative. The result is a quantum sequence model that stays stable over thousands of steps, which matters for tasks like language translation, speech recognition, or financial time-series prediction running on future quantum hardware.",
+        "zh-CN": "想象你用一张便利贴代替厚厚的笔记本来记录每天的要点：快速权重网络就是这个思路，AI 只需更新一张「摘要便条」而不必重读所有历史记录。量子版本（QFWP）把这张便条「量子化」，让它能同时储存多种可能状态。但如果便条上的内容无限叠加放大，序列一长就会崩溃。本研究给便条加了一根「弹性橡皮筋」——tanh 门控在记忆超出安全范围时自动压缩，同时保留正负方向信息不丢失。这让量子序列模型在处理超长序列时保持稳定，是量子机器学习走向实用的重要一步。",
+        "ja": "ノートを全部読み返す代わりに、表紙の付箋を更新するだけで文脈を把握できるのが「高速重み」ネットワークのアイデアです。量子版（QFWP）はその付箋を量子化し、同時に複数の状態を表現できるようにします。しかし付箋の内容が際限なく拡大すると、長いシーケンスでは破綻してしまいます。本研究は符号を保ちながら値を安全な範囲に圧縮する tanh ゲートという「伸縮するゴムバンド」を追加し、記憶が爆発しないよう抑制します。その結果、量子ハードウェア上で動く言語モデルや音声認識システムが長い入力でも安定して学習できるようになります。",
+        "ko": "두꺼운 노트 전체를 다시 읽는 대신 표지의 메모지만 업데이트하면 맥락을 파악할 수 있는 것이 「고속 가중치」 네트워크의 아이디어입니다. 양자 버전(QFWP)은 이 메모를 양자화하여 동시에 여러 상태를 표현합니다. 그러나 메모 내용이 무한정 커지면 긴 시퀀스에서 폭발적으로 발산합니다. 이 연구는 부호를 보존하면서 값을 안전한 범위로 압축하는 tanh 게이트라는 「탄성 고무밴드」를 추가해 기억이 폭발하지 않도록 억제합니다. 그 결과 양자 하드웨어에서 실행되는 언어 모델이나 음성 인식 시스템이 긴 입력에서도 안정적으로 학습할 수 있게 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 記憶的穩定不靠無限堆疊，而靠懂得「適時收斂」——量子學習也不例外。",
+        "en": "💡 Stable memory comes not from unlimited accumulation, but from knowing when to 「compress and converge」 — quantum learning is no exception.",
+        "zh-CN": "💡 记忆的稳定不靠无限堆叠，而靠懂得「适时收敛」——量子学习也不例外。",
+        "ja": "💡 記憶の安定は無限の蓄積ではなく、「適切な収束」を知ることから生まれる——量子学習も例外ではない。",
+        "ko": "💡 기억의 안정은 무한한 축적이 아니라 「적절한 수렴」을 아는 데서 나온다 — 양자 학습도 예외가 아니다."
+      }
+    },
+    {
+      "id": "space-260707",
+      "domain": "space",
+      "day": "2026-07-07",
+      "author": "C. Tsakonas, M. Arnaboldi et al.",
+      "ref": "arXiv:2607.02480v1",
+      "url": "https://arxiv.org/abs/2607.02480v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"110\" ry=\"38\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\" opacity=\"0.5\"/><ellipse cx=\"170\" cy=\"80\" rx=\"78\" ry=\"26\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2.5\" opacity=\"0.7\"/><ellipse cx=\"170\" cy=\"80\" rx=\"46\" ry=\"15\" fill=\"#1a237e\" opacity=\"0.55\"/><ellipse cx=\"170\" cy=\"80\" rx=\"28\" ry=\"9\" fill=\"#3949ab\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#7986cb\"/><ellipse cx=\"170\" cy=\"80\" rx=\"110\" ry=\"12\" fill=\"none\" stroke=\"#ff8f00\" stroke-width=\"1.2\" stroke-dasharray=\"6 4\" opacity=\"0.55\"/><circle cx=\"62\" cy=\"68\" r=\"3.5\" fill=\"#ff8f00\" opacity=\"0.8\"/><circle cx=\"278\" cy=\"92\" r=\"3.5\" fill=\"#ff8f00\" opacity=\"0.8\"/><circle cx=\"40\" cy=\"82\" r=\"2\" fill=\"#fff\" opacity=\"0.5\"/><circle cx=\"300\" cy=\"75\" r=\"2\" fill=\"#fff\" opacity=\"0.5\"/><circle cx=\"120\" cy=\"42\" r=\"1.5\" fill=\"#fff\" opacity=\"0.4\"/><circle cx=\"220\" cy=\"118\" r=\"1.5\" fill=\"#fff\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "仙女座星系的巨型延伸星盤：25億年前那場大碰撞留下的遺跡",
+        "en": "M31's Giant Extended Stellar Disc: A Fossil Record of an Ancient Galactic Merger",
+        "zh-CN": "仙女座星系的巨型延伸星盘：25亿年前那场大碰撞留下的遗迹",
+        "ja": "アンドロメダ銀河の巨大拡張星円盤：25億年前の大合体が残した痕跡",
+        "ko": "안드로메다 은하의 거대 연장 항성 원반：25억 년 전 대충돌이 남긴 화석"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문·우주"
+      },
+      "tech": {
+        "zh-TW": "研究團隊對仙女座星系（M31）外圍的巨大延伸星盤進行光譜觀測，解析出遠端恆星的徑向速度與空間分布。結合氫中性氣體（HI）運動學比對及恆星形成歷史分析，證明此結構源自約2至4億年前質量比1比4的氣體豐富主要星系合併事件。",
+        "en": "The team obtained spectroscopy of resolved giant stars in the remote outskirts of M31's disc, measuring radial velocities and spatial distributions. By comparing stellar kinematics with HI gas rotation and star formation history data, they established that the vast extended disc originated from a gas-rich major merger event approximately 2–4 Gyr ago with a mass ratio of 1:4.",
+        "zh-CN": "研究团队对仙女座星系（M31）外围的巨大延伸星盘进行光谱观测，解析出远端恒星的径向速度与空间分布。结合氢中性气体（HI）运动学比对及恒星形成历史分析，证明此结构源自约20至40亿年前质量比1比4的气体丰富主要星系合并事件。",
+        "ja": "研究チームはM31円盤の遠方外縁部にある分解された巨星の分光観測を行い、視線速度と空間分布を測定した。HIガスの運動学および星形成史と照合した結果、この巨大拡張構造は約20〜40億年前に起きた質量比1対4のガス豊富な主要合体イベントに起因することを実証した。",
+        "ko": "연구팀은 M31 원반 외곽의 분해된 거성들에 대한 분광 관측을 수행하여 시선 속도와 공간 분포를 측정했다. HI 가스 운동학 및 항성 형성 역사와 비교 분석한 결과, 이 거대 연장 구조가 약 20~40억 년 전 질량비 1:4의 가스 풍부한 주요 은하 합병 사건에서 비롯되었음을 입증했다."
+      },
+      "plain": {
+        "zh-TW": "想像你把兩顆巨大的沙球猛力撞在一起——沙粒飛濺四散，最終重新聚攏成一個更大、形狀奇特的沙堆。仙女座星系（M31）就是那顆「剛被撞過的沙球」。科學家發現它的外圍存在一個超乎想像的巨大星盤，直徑遠遠超過一般星系應有的範圍。透過分析遠端恆星的運動速度，他們發現這些恆星整齊地跟著氣體一起旋轉，就像碰撞後的殘骸被重新「梳理」整齊一樣。更驚人的是，約25億年前曾有一波爆炸性的大規模恆星形成，那正是一個較小星系「撞進來」留下的痕跡。這項發現讓我們明白：一場星系級別的大碰撞，可以在數十億年後仍留下清晰可見的巨大遺跡。對人類而言，這也是個預告——仙女座與銀河系未來也將相撞，屆時兩者都將被徹底重塑。",
+        "en": "Imagine smashing two giant sandcastles together — sand flies everywhere, then slowly settles into a new, strangely shaped mound. The Andromeda Galaxy (M31) is that recently-smashed sandcastle. Scientists found a vast stellar disc around its edges, far larger than any normal galaxy should have. By measuring how distant stars move, they discovered these stars rotate neatly alongside the galaxy's gas — like debris from a crash that was gradually combed back into order. Even more striking, a burst of new star formation occurred about 2.5 billion years ago, a fingerprint left when a smaller galaxy crashed in. This tells us that a galaxy-scale collision can leave enormous, clearly visible scars billions of years later. For us, it's also a preview: the Milky Way and Andromeda will collide one day, and both will be utterly transformed.",
+        "zh-CN": "想象把两颗巨大的沙球猛力撞在一起——沙粒四散飞溅，最终重新聚拢成一个更大、形状奇特的沙堆。仙女座星系（M31）就是那颗「刚被撞过的沙球」。科学家发现它的外围存在一个超乎想象的巨大星盘，直径远远超过一般星系应有的范围。通过分析远端恒星的运动速度，他们发现这些恒星整齐地跟着气体一起旋转，就像碰撞后的残骸被重新「梳理」整齐一样。更惊人的是，约25亿年前曾有一波爆炸性的大规模恒星形成，那正是一个较小星系「撞进来」留下的痕迹。这项发现让我们明白：一场星系级别的大碰撞，可以在数十亿年后仍留下清晰可见的巨大遗迹。",
+        "ja": "二つの巨大な砂の球を思い切りぶつけたとします——砂は四方に飛び散り、やがて再び集まって奇妙な形の山になります。アンドロメダ銀河（M31）はまさにその「ぶつかった直後の砂山」です。科学者たちは、その外縁部に通常の銀河には考えられないほど巨大な星の円盤が広がっていることを発見しました。遠方の星々の動きを測定すると、これらの星がガスと一緒に整然と回転していることがわかり、衝突の残骸が少しずつ「整理」されたようです。さらに驚くことに、約25億年前に爆発的な星形成が起きており、これは小さな銀河が衝突した証拠です。銀河規模の衝突は、何十億年後にも巨大な痕跡を残すことを、この発見は示しています。",
+        "ko": "두 개의 거대한 모래 공을 세게 부딪히면 모래가 사방으로 튀고, 나중에 다시 모여 이상한 모양의 더미가 됩니다. 안드로메다 은하(M31)가 바로 그 「방금 충돌한 모래 공」입니다. 과학자들은 그 외곽에 보통 은하에서는 상상도 못할 만큼 거대한 항성 원반이 존재한다는 것을 발견했습니다. 먼 별들의 운동을 측정하자, 이 별들이 가스와 함께 가지런히 회전하고 있었습니다. 충돌 잔해가 서서히 「정리」된 모습 그대로입니다. 더욱 놀라운 것은 약 25억 년 전에 폭발적인 별 탄생이 있었는데, 이것이 작은 은하가 충돌한 증거입니다. 이 발견은 은하 규모의 충돌이 수십억 년 후에도 선명한 흔적을 남긴다는 것을 보여줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 星系的「傷疤」不會消失，只會化為更壯觀的結構——仙女座的巨大星盤正是25億年前那場宇宙碰撞永恆銘刻在時空中的日記。",
+        "en": "💡 Galactic scars never truly vanish — they transform into grand structures, and Andromeda's vast stellar disc is a cosmic diary written 2.5 billion years ago that we are only now learning to read.",
+        "zh-CN": "💡 星系的「伤疤」不会消失，只会化为更壮观的结构——仙女座的巨大星盘正是25亿年前那场宇宙碰撞永恒铭刻在时空中的日记。",
+        "ja": "💡 銀河の「傷跡」は消えることなく、より壮大な構造へと変わる——アンドロメダの巨大な星円盤は、25億年前の宇宙的衝突が時空に刻んだ永遠の日記だ。",
+        "ko": "💡 은하의 「상처」는 사라지지 않고 더 웅장한 구조로 변한다——안드로메다의 거대한 항성 원반은 25억 년 전 우주적 충돌이 시공간에 영원히 새긴 일기다."
+      }
+    },
+    {
+      "id": "tech-260707",
+      "domain": "tech",
+      "day": "2026-07-07",
+      "author": "A. S. Anudeep, Vaanathi Sundaresan et al.",
+      "ref": "arXiv:2607.02435v1",
+      "url": "https://arxiv.org/abs/2607.02435v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><circle cx=\"170\" cy=\"80\" r=\"54\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><circle cx=\"170\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#00897b\" stroke-width=\"1.8\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#00695c\" opacity=\"0.85\"/><line x1=\"170\" y1=\"80\" x2=\"230\" y2=\"44\" stroke=\"#00695c\" stroke-width=\"2\"/><line x1=\"170\" y1=\"80\" x2=\"244\" y2=\"90\" stroke=\"#00695c\" stroke-width=\"2\"/><line x1=\"170\" y1=\"80\" x2=\"210\" y2=\"130\" stroke=\"#00695c\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"44\" r=\"9\" fill=\"#26a69a\"/><circle cx=\"244\" cy=\"90\" r=\"9\" fill=\"#26a69a\"/><circle cx=\"210\" cy=\"130\" r=\"9\" fill=\"#26a69a\"/><circle cx=\"96\" cy=\"50\" r=\"7\" fill=\"#ef5350\" opacity=\"0.85\"/><circle cx=\"80\" cy=\"95\" r=\"7\" fill=\"#ef5350\" opacity=\"0.85\"/><circle cx=\"110\" cy=\"135\" r=\"7\" fill=\"#ef5350\" opacity=\"0.85\"/><rect x=\"58\" y=\"28\" width=\"22\" height=\"6\" rx=\"3\" fill=\"#ef5350\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "MARVEL：讓醫療 AI 學會辨識「從未見過的病例」——長尾分布下的異常偵測新框架",
+        "en": "MARVEL: Teaching Medical AI to Detect Unseen Cases Under Long-Tailed Data Imbalance",
+        "zh-CN": "MARVEL：让医疗 AI 学会识别「从未见过的病例」——长尾分布下的异常检测新框架",
+        "ja": "MARVEL：医療 AI が「未知の症例」を見抜く——長尾分布に対応した異常検知の新手法",
+        "ko": "MARVEL：의료 AI가 「한 번도 본 적 없는 사례」를 감지하는 법——불균형 데이터 환경의 이상 탐지 새 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Technology & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 科学技術",
+        "ko": "📶 과학기술"
+      },
+      "tech": {
+        "zh-TW": "MARVEL 提出以 von Mises-Fischer（vMF）分布為基礎的混合專家架構，結合邊際感知對比損失（margin-aware loss），在特徵球面上為每個類別學習緊湊且分離的表示，使模型能對分佈外（OOD）樣本輸出低信心預測。針對醫療影像中常見的長尾類別不平衡問題，MARVEL 透過動態重加權與專家路由機制，有效提升罕見類別的辨識能力與 OOD 偵測穩健性。",
+        "en": "MARVEL introduces a mixture-of-experts framework built on von Mises-Fischer (vMF) distributions with a margin-aware contrastive loss, learning compact and well-separated class representations on a hypersphere so that out-of-distribution (OOD) samples yield low-confidence outputs. To handle the long-tailed class imbalance prevalent in medical imaging, the method applies dynamic re-weighting and expert routing, improving both rare-class recognition and OOD detection robustness.",
+        "zh-CN": "MARVEL 提出以 von Mises-Fischer（vMF）分布为基础的混合专家架构，结合边际感知对比损失，在特征超球面上为每个类别学习紧凑且分离的表示，使模型对分布外（OOD）样本输出低置信度预测。针对医疗影像中常见的长尾类别不平衡问题，通过动态重加权与专家路由机制提升罕见类别辨识能力与 OOD 检测鲁棒性。",
+        "ja": "MARVEL は von Mises-Fischer（vMF）分布に基づく混合エキスパート構造とマージン考慮対照損失を組み合わせ、超球面上で各クラスのコンパクトかつ分離した表現を学習することで、分布外（OOD）サンプルに低信頼度を出力する。医療画像に多い長尾クラス不均衡に対し、動的再重み付けとエキスパートルーティングで希少クラスの認識精度と OOD 検出の堅牢性を向上させる。",
+        "ko": "MARVEL은 von Mises-Fischer(vMF) 분포 기반 혼합 전문가 구조와 마진 인식 대조 손실을 결합하여, 초구면 위에서 각 클래스의 밀집되고 분리된 표현을 학습함으로써 분포 외(OOD) 샘플에 낮은 신뢰도를 출력합니다. 의료 영상에서 흔한 장기 꼬리 클래스 불균형 문제를 위해 동적 재가중치 및 전문가 라우팅으로 희귀 클래스 인식과 OOD 탐지 강건성을 향상시킵니다."
+      },
+      "plain": {
+        "zh-TW": "想像你是一位經驗豐富的醫師：你見過上千張 X 光片，但如果有人遞給你一種極罕見的疾病影像，你應該說「我不確定，需要會診」，而不是自信地給出錯誤診斷。現在的醫療 AI 卻常常犯這個錯——遇到從未見過的病例，它依然拍胸脯說「我百分之百確定！」更棘手的是，醫療資料集就像一個嚴重傾斜的班級：常見病有幾千張影像，罕見病可能只有幾張，模型因此更容易在罕見情況下出錯。MARVEL 的做法像是為每種疾病在一個圓球上劃定專屬「地盤」，地盤邊界夠清晰，才能讓陌生來者一進門就被識別為「外人」。它同時讓多位「專科醫師」（專家模組）各自負責不同領域，稀有病例也能得到充分關注。這項技術讓 AI 系統在臨床部署時更值得信賴，知道何時該說「我不確定」，從而避免高信心誤診帶來的醫療風險。",
+        "en": "Imagine a seasoned doctor who, after seeing thousands of X-rays, is handed an image of an extremely rare disease and wisely says 「I am not sure—let me consult a specialist」 instead of confidently giving a wrong answer. Today's medical AI often fails at exactly this: it sees an unfamiliar case and still claims 「I am 100% certain!」 Worse, medical datasets are heavily skewed—common diseases have thousands of examples while rare ones may have only a handful, making mistakes on rare cases even more likely. MARVEL works like assigning each disease its own clearly bounded territory on a sphere: when an unknown case arrives, it falls outside all known territories and is flagged as uncertain. Multiple expert modules each handle a specialized domain, ensuring rare cases receive enough attention. The result is an AI that knows when to say 「I don't know」, dramatically reducing the danger of overconfident misdiagnosis in real clinical settings.",
+        "zh-CN": "想象一位经验丰富的医生：看过上千张X光片后，如果遇到一种极罕见的疾病影像，他会说「我不确定，需要会诊」，而不是自信地给出错误诊断。现在的医疗AI却常犯这个错误——遇到从未见过的病例，仍然给出极高的置信度。更棘手的是，医疗数据集严重倾斜：常见病有数千张影像，罕见病可能只有几张。MARVEL的做法像是在超球面上为每种疾病划定专属「领地」，边界足够清晰，陌生样本一出现就被识别为「外来者」。同时让多位「专科医生」（专家模块）各自负责不同领域，让稀有病例也能得到充分关注。这让AI在临床部署时更可信，知道何时说「我不确定」。",
+        "ja": "経験豊富な医師が何千枚もの X 線画像を見てきた後、極めて稀な疾患の画像を渡されたとき、自信満々に誤答するのではなく「わからない、専門家に相談しよう」と言える——そんな判断力が AI にも必要です。現在の医療 AI はよくこの点で失敗し、見たことのない症例でも高い確信度を示してしまいます。さらに医療データは極端に偏っており、一般的な疾患は何千枚もあるのに希少疾患は数枚しかありません。MARVEL は超球面上で各疾患に明確な「縄張り」を割り当て、未知のサンプルが現れると「よそ者」として検出されます。複数の専門家モジュールが各領域を担当し希少症例も見逃しません。結果として、AI は「わからない」と言えるようになり、過信による誤診リスクを大幅に低減します。",
+        "ko": "수천 장의 X선 영상을 본 숙련된 의사가 극히 드문 질환 영상을 건네받았을 때, 자신 있게 틀린 답을 내놓는 대신 「잘 모르겠으니 전문의와 상의하겠다」고 말하는 것처럼 AI도 그런 판단력이 필요합니다. 현재 의료 AI는 본 적 없는 사례에도 높은 확신도를 보이는 실수를 자주 저지릅니다. 게다가 의료 데이터는 심하게 편향되어 흔한 질환은 수천 장의 이미지가 있지만 희귀 질환은 몇 장뿐입니다. MARVEL은 초구면 위에서 각 질환마다 명확한 「영역」을 할당하여, 낯선 샘플이 나타나면 「외부인」으로 감지합니다. 여러 전문가 모듈이 각 영역을 담당해 희귀 사례도 놓치지 않습니다. 그 결과 AI가 「모르겠다」고 말할 수 있게 되어 과신에 의한 오진 위험을 크게 줄입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正可靠的 AI 不只要答對，更要知道自己「何時不確定」——在醫療場景中，承認無知比過度自信更能救人。",
+        "en": "💡 A truly reliable AI must not only answer correctly but also know when it is uncertain—in medicine, admitting ignorance can save more lives than overconfidence ever will.",
+        "zh-CN": "💡 真正可靠的AI不只要答对，更要知道自己「何时不确定」——在医疗场景中，承认无知比过度自信更能救人。",
+        "ja": "💡 本当に信頼できる AI は正解するだけでなく「いつ不確かか」を知る必要がある——医療では、無知を認めることが過信よりも多くの命を救う。",
+        "ko": "💡 진정으로 신뢰할 수 있는 AI는 정답을 맞히는 것뿐 아니라 「언제 불확실한지」를 아는 것이 중요하다——의료에서는 무지를 인정하는 것이 과신보다 더 많은 생명을 구할 수 있다."
+      }
+    }
+  ]
+}
