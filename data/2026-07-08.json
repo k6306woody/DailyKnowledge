@@ -1,0 +1,233 @@
+{
+  "date": "2026-07-08",
+  "mode": "paper",
+  "paper_date": "2026-07-08",
+  "generated_at": "2026-07-08",
+  "cards": [
+    {
+      "id": "ai-260708",
+      "domain": "ai",
+      "day": "2026-07-08",
+      "author": "Wenhao Li, Xueying Jiang et al.",
+      "ref": "arXiv:2607.05396v1",
+      "url": "https://arxiv.org/abs/2607.05396v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"10\" y=\"60\" width=\"60\" height=\"80\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.25\"/><rect x=\"20\" y=\"70\" width=\"40\" height=\"28\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.7\"/><circle cx=\"40\" cy=\"120\" r=\"8\" fill=\"#2a9d8f\" opacity=\"0.5\"/><circle cx=\"20\" cy=\"130\" r=\"5\" fill=\"#2a9d8f\" opacity=\"0.35\"/><circle cx=\"60\" cy=\"130\" r=\"5\" fill=\"#2a9d8f\" opacity=\"0.35\"/><rect x=\"130\" y=\"50\" width=\"80\" height=\"80\" rx=\"12\" fill=\"#e9c46a\" opacity=\"0.22\"/><circle cx=\"170\" cy=\"90\" r=\"28\" fill=\"#e9c46a\" opacity=\"0.55\"/><polygon points=\"158,78 182,78 170,62\" fill=\"#2a9d8f\" opacity=\"0.85\"/><polygon points=\"158,102 182,102 170,118\" fill=\"#2a9d8f\" opacity=\"0.55\"/><rect x=\"260\" y=\"55\" width=\"60\" height=\"80\" rx=\"6\" fill=\"#f4a261\" opacity=\"0.22\"/><rect x=\"270\" y=\"66\" width=\"40\" height=\"28\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.65\"/><circle cx=\"290\" cy=\"118\" r=\"8\" fill=\"#f4a261\" opacity=\"0.5\"/><line x1=\"80\" y1=\"90\" x2=\"130\" y2=\"90\" stroke=\"#2a9d8f\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\" opacity=\"0.7\"/><line x1=\"210\" y1=\"90\" x2=\"260\" y2=\"90\" stroke=\"#f4a261\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "不需告訴機器人攝影機在哪：自由視角的機器人操控新模型",
+        "en": "No Need to Tell the Robot Where the Camera Is: View-Free Robot Manipulation",
+        "zh-CN": "无需告知摄像头位置：自由视角的机器人操控新模型",
+        "ja": "カメラ位置を教えなくていい：自由視点ロボット操作モデル",
+        "ko": "카메라 위치를 알려줄 필요 없다: 자유 시점 로봇 조작 새 모델"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "本研究提出 CamVLA（以攝影機為中心的視覺語言行動模型），讓機器人不需要被告知攝影機的外部參數（位置與角度），而是透過模型自身從影像中推斷視角資訊，並將操作策略與視角感知解耦，實現跨視角泛化。訓練時結合多視角資料增強與自監督視角估計，使模型在攝影機重新安裝或移位時仍能穩健執行任務。",
+        "en": "CamVLA (Camera-Centric Vision-Language-Action model) is proposed to decouple manipulation policy from camera viewpoint estimation. Instead of requiring explicit camera extrinsics as input, the model infers viewpoint information directly from images via self-supervised mechanisms, enabling robust task execution even when cameras are repositioned or remounted.",
+        "zh-CN": "本研究提出 CamVLA（以摄像头为中心的视觉语言行动模型），让机器人无需获知摄像头外参（位置与角度），而是通过模型自身从图像中推断视角信息，将操作策略与视角感知解耦，实现跨视角泛化。训练结合多视角数据增强与自监督视角估计，使模型在摄像头重新安装或移位时仍能稳健执行任务。",
+        "ja": "CamVLA（カメラ中心型視覚言語行動モデル）は、カメラの外部パラメータを明示的に与えることなく、モデル自身が画像からカメラ視点を推定する手法を提案する。操作ポリシーと視点認識を分離し、自己教師あり学習を用いることで、カメラが再設置・移動された場合でも安定したタスク実行を実現する。",
+        "ko": "CamVLA(카메라 중심 시각-언어-행동 모델)는 카메라 외부 파라미터를 명시적으로 제공하지 않아도, 모델이 이미지로부터 시점 정보를 스스로 추론하는 방법을 제안한다. 조작 정책과 시점 인식을 분리하고 자기지도 학습을 활용해, 카메라가 재설치되거나 이동해도 안정적으로 작업을 수행한다."
+      },
+      "plain": {
+        "zh-TW": "想像你訓練一位廚房助手，讓他用固定在牆角的攝影機學會切菜。但某天你把攝影機移到天花板，他就完全不知道自己在看什麼了。現在大多數機器人都有這個問題：只要攝影機位置一動，就必須重新告訴機器人「鏡頭現在在哪裡」，否則它就會手忙腳亂。CamVLA 就像一個有空間感的機器人——它不需要別人告訴它攝影機在哪，而是自己從畫面中判斷視角，就像人類換個角度看東西仍然知道自己在做什麼一樣。這項能力對真實世界的部署至關重要，因為現實中攝影機常常因為搬運、維修或環境改變而被移動。這項研究讓機器人朝著「隨插即用」的方向大大前進，未來部署機器人不再需要繁瑣的校準流程。",
+        "en": "Imagine training a kitchen assistant to chop vegetables using a camera fixed in the corner. Then one day you move the camera to the ceiling — and suddenly the robot has no idea what it is looking at. Most robots today face exactly this problem: whenever a camera shifts, someone must tell the robot where it now is, or the robot falls apart. CamVLA works like a person with strong spatial awareness — it figures out the camera angle by itself just from what it sees, the same way humans adapt when viewing something from a new angle. This matters enormously for real-world deployment, where cameras are frequently moved for repairs, reconfigurations, or new environments. This research brings robots a big step closer to true plug-and-play operation, removing the tedious calibration step every time a camera changes position.",
+        "zh-CN": "想象你训练了一个厨房助手，让它用固定在墙角的摄像头学会切菜。但某天你把摄像头移到了天花板，它就完全不知道自己在看什么了。现在大多数机器人都有这个问题：只要摄像头位置一变，就必须重新告诉机器人「镜头现在在哪里」，否则它就会手忙脚乱。CamVLA 就像一个有空间感的机器人——它不需要别人告知摄像头位置，而是自己从画面中判断视角，就像人类换个角度看东西仍然知道自己在做什么一样。这一能力对现实部署至关重要，因为摄像头常因搬运、维修或环境变化而被移动。这项研究让机器人向「即插即用」迈出了重要一步。",
+        "ja": "壁の角に固定されたカメラを使って料理ロボットを訓練したとします。ある日そのカメラを天井に移したら、ロボットは突然何も分からなくなってしまいます。現在のほとんどのロボットはこの問題を抱えています。カメラが動くたびに「カメラは今ここにある」と教え直さなければなりません。CamVLAは、まるで空間把握能力の高い人間のように、カメラの位置を自分で映像から読み取ります。人間が視点を変えても状況を把握できるのと同じです。現実の現場ではカメラが頻繁に移動・再設置されるため、この能力は非常に重要です。この研究はロボットを真の「プラグ＆プレイ」に大きく近づけます。",
+        "ko": "벽 모퉁이에 고정된 카메라로 요리 로봇을 훈련시켰다고 상상해 보세요. 어느 날 카메라를 천장으로 옮기면, 로봇은 갑자기 자신이 무엇을 보고 있는지 전혀 모르게 됩니다. 지금 대부분의 로봇은 이 문제를 안고 있습니다. 카메라가 움직일 때마다 「카메라가 지금 여기 있다」고 다시 알려줘야 합니다. CamVLA는 마치 공간 감각이 뛰어난 사람처럼 카메라 위치를 화면만 보고 스스로 파악합니다. 사람이 다른 각도에서 봐도 상황을 이해하는 것과 같습니다. 현실에서는 카메라가 수리·이동·환경 변화로 자주 재설치되기 때문에 이 능력은 매우 중요합니다. 이 연구는 로봇을 진정한 「플러그 앤 플레이」에 한 걸음 크게 다가서게 합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正智慧的系統不需要被告知環境條件——它應該能自己感知並適應，就像有經驗的人類一樣。",
+        "en": "💡 A truly intelligent system should not need to be told where it is looking — it should sense and adapt on its own, just like an experienced human would.",
+        "zh-CN": "💡 真正智慧的系统不需要被告知环境条件——它应该能自己感知并适应，就像有经验的人类一样。",
+        "ja": "💡 真に賢いシステムは、自分がどこを見ているかを教えてもらう必要はない——熟練した人間のように、自ら感知し適応できるべきだ。",
+        "ko": "💡 진정으로 지능적인 시스템은 자신이 어디를 보고 있는지 알려줄 필요가 없어야 한다——숙련된 인간처럼 스스로 감지하고 적응할 수 있어야 한다."
+      }
+    },
+    {
+      "id": "bio-260708",
+      "domain": "bio",
+      "day": "2026-07-08",
+      "author": "Dmytro Rizdvanetskyi, Nathan Ross et al.",
+      "ref": "arXiv:2607.04987v1",
+      "url": "https://arxiv.org/abs/2607.04987v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><rect x=\"18\" y=\"30\" width=\"28\" height=\"100\" rx=\"6\" fill=\"#52b788\" opacity=\"0.85\"/><rect x=\"54\" y=\"50\" width=\"28\" height=\"80\" rx=\"6\" fill=\"#52b788\" opacity=\"0.65\"/><rect x=\"90\" y=\"40\" width=\"28\" height=\"90\" rx=\"6\" fill=\"#52b788\" opacity=\"0.75\"/><rect x=\"126\" y=\"60\" width=\"28\" height=\"70\" rx=\"6\" fill=\"#52b788\" opacity=\"0.55\"/><circle cx=\"220\" cy=\"55\" r=\"28\" fill=\"#2d6a4f\" opacity=\"0.18\"/><circle cx=\"220\" cy=\"55\" r=\"18\" fill=\"#52b788\" opacity=\"0.55\"/><circle cx=\"220\" cy=\"55\" r=\"9\" fill=\"#52b788\" opacity=\"0.95\"/><circle cx=\"265\" cy=\"80\" r=\"14\" fill=\"#74c69d\" opacity=\"0.7\"/><circle cx=\"290\" cy=\"50\" r=\"10\" fill=\"#b7e4c7\" opacity=\"0.8\"/><circle cx=\"250\" cy=\"115\" r=\"10\" fill=\"#74c69d\" opacity=\"0.6\"/><line x1=\"165\" y1=\"80\" x2=\"195\" y2=\"65\" stroke=\"#2d6a4f\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\" opacity=\"0.7\"/><line x1=\"195\" y1=\"65\" x2=\"240\" y2=\"90\" stroke=\"#2d6a4f\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "從 DNA 讀取到全身細胞地圖：資料驅動的軟標籤大規模解析細胞組成",
+        "en": "From DNA Reads to Whole-Body Cell Maps: Data-Driven Soft Labeling for Large-Scale Cell-Type Deconvolution",
+        "zh-CN": "从 DNA 读取到全身细胞地图：数据驱动的软标签大规模解析细胞组成",
+        "ja": "DNA リードから全身細胞マップへ：データ駆動型ソフトラベリングによる大規模細胞種分解",
+        "ko": "DNA 리드에서 전신 세포 지도까지：데이터 기반 소프트 라벨링으로 대규모 세포 유형 분류"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出以資料驅動的「軟標籤」策略，對 DNA 甲基化讀取序列進行細胞類型分類，有效處理大規模多類別場景中非判別性讀取佔主導、硬標籤衝突的難題。透過在個別 DNA 讀取層次保留甲基化模式資訊，而非僅依賴聚合估計，模型可擴展至全身數十種細胞類型的同步解卷積分析。",
+        "en": "This study proposes a data-driven soft-labeling strategy for classifying DNA methylation reads at the individual-read level, addressing the challenges of non-discriminative read dominance and hard-label conflicts that arise when scaling to many cell types. By preserving pattern-level methylation information rather than relying on aggregated estimates, the model scales to simultaneous whole-body deconvolution across dozens of cell types.",
+        "zh-CN": "本研究提出以数据驱动的「软标签」策略，对 DNA 甲基化读取序列进行细胞类型分类，有效处理大规模多类别场景中非判别性读取占主导、硬标签冲突的难题。通过在单个 DNA 读取层次保留甲基化模式信息，而非仅依赖聚合估计，模型可扩展至全身数十种细胞类型的同步解卷积分析。",
+        "ja": "本研究は、データ駆動型のソフトラベリング戦略を提案し、個々の DNA メチル化リードをセル種レベルで分類する。大規模多クラス設定で生じる非識別的リードの支配とハードラベルの競合問題を解決し、集計推定ではなくパターンレベルの情報を活用することで、全身数十種類の細胞種を同時に解析できるよう拡張する。",
+        "ko": "본 연구는 데이터 기반 소프트 라벨링 전략을 제안하여 개별 DNA 메틸화 리드를 세포 유형별로 분류하며, 대규모 다중 클래스 환경에서 발생하는 비판별적 리드 지배 및 하드 라벨 충돌 문제를 해결한다. 집계 추정치가 아닌 패턴 수준 정보를 보존함으로써 전신 수십 가지 세포 유형의 동시 분석으로 확장할 수 있다."
+      },
+      "plain": {
+        "zh-TW": "想像你拿到一杯「細胞冰沙」——裡面混合了血球、肝細胞、神經細胞等各種細胞打碎後的 DNA 片段。科學家想知道：這杯冰沙裡每種細胞各佔幾成？這就是「細胞解卷積」的任務。過去的方法就像只看整杯飲料的顏色來猜食材，忽略了每一小片 DNA 上其實藏有獨特的「甲基化花紋」——那是細胞身份的指紋。這篇研究不再對每條 DNA 貼死板的單一標籤，而是用「軟標籤」，允許一條讀取序列同時帶有多種細胞的可能性，就像承認一個人可以同時有點像爸爸又有點像媽媽。這個方法讓系統從以前只能辨識幾種細胞，一舉擴展到全身上百種細胞類型。這對癌症早篩、器官健康監測、甚至透過血液偵測身體哪裡出問題，都有巨大潛力。",
+        "en": "Imagine you have a smoothie blended from dozens of different cell types — blood cells, liver cells, neurons — all mixed together. Scientists want to figure out the recipe: how much of each cell type is in the mix? This is called cell-type deconvolution. Old methods were like guessing ingredients just by the color of the smoothie, ignoring the unique methylation fingerprints on individual DNA fragments. This study instead uses soft labels — letting each DNA read carry a probability across multiple cell types, like admitting a face can look a bit like both parents at once. This lets the system scale from a handful of cell types to hundreds across the whole body. The implications are huge: earlier cancer detection, organ health monitoring, and blood tests that can pinpoint where in the body something is going wrong.",
+        "zh-CN": "想象你拿到一杯「细胞冰沙」——里面混合了血细胞、肝细胞、神经细胞等各种细胞打碎后的 DNA 片段。科学家想知道：这杯冰沙里每种细胞各占几成？这就是「细胞解卷积」的任务。过去的方法就像只看整杯饮料的颜色来猜食材，忽略了每一小片 DNA 上其实藏有独特的「甲基化花纹」——那是细胞身份的指纹。这篇研究不再对每条 DNA 贴死板的单一标签，而是用「软标签」，允许一条读取序列同时带有多种细胞的可能性。这个方法让系统从以前只能辨识几种细胞，一举扩展到全身上百种细胞类型，对癌症早筛和器官健康监测有巨大潜力。",
+        "ja": "血液サンプルは、血球・肝細胞・神経細胞など様々な細胞を混ぜ合わせた「スムージー」のようなもの。科学者はその「レシピ」、つまり各細胞の割合を知りたいのです。これが「細胞デコンボリューション」という課題です。従来の方法はスムージーの色だけで材料を推測するようなもので、個々の DNA 断片が持つ「メチル化パターン」という細胞固有の指紋を無視していました。本研究はソフトラベルを導入し、一本の DNA リードが複数の細胞種の可能性を同時に持てるようにしました。これにより、数種類だった識別対象が全身数百種類の細胞へと拡大し、がん早期発見や臓器健康モニタリングへの応用が期待されます。",
+        "ko": "혈액 샘플은 혈구, 간세포, 신경세포 등 다양한 세포를 섞은 '스무디'와 같습니다. 과학자들은 그 레시피, 즉 각 세포 유형의 비율을 알고 싶어합니다. 이것이 바로 세포 유형 분해 문제입니다. 기존 방법은 스무디 색깔만 보고 재료를 추측하는 것처럼, 개별 DNA 조각에 숨어 있는 메틸화 패턴이라는 세포 고유의 지문을 무시했습니다. 이 연구는 소프트 라벨을 도입해 하나의 DNA 리드가 여러 세포 유형의 가능성을 동시에 가질 수 있게 했습니다. 덕분에 몇 가지 세포 유형만 구별하던 한계를 넘어 전신 수백 종 세포 유형 분석으로 확장됐으며, 암 조기 발견과 장기 건강 모니터링에 큰 가능성을 열었습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當標籤本身存在不確定性時，擁抱模糊反而比強求精確更能讓系統走得更遠——這不只是 AI 的哲學，也是生物學的現實。",
+        "en": "💡 When labels themselves are inherently uncertain, embracing ambiguity rather than forcing precision is what allows a system to truly scale — a lesson as true in biology as in machine learning.",
+        "zh-CN": "💡 当标签本身存在不确定性时，拥抱模糊反而比强求精确更能让系统走得更远——这不只是 AI 的哲学，也是生物学的现实。",
+        "ja": "💡 ラベル自体に不確かさがある時、曖昧さを受け入れることが精度を強要するよりもシステムをより遠くへ連れていく——これは機械学習だけでなく生物学においても真実だ。",
+        "ko": "💡 라벨 자체에 불확실성이 있을 때, 억지로 정확성을 강요하기보다 모호함을 받아들이는 것이 시스템을 더 멀리 데려간다 — 이는 AI뿐 아니라 생물학에서도 진리다."
+      }
+    },
+    {
+      "id": "neuro-260708",
+      "domain": "neuro",
+      "day": "2026-07-08",
+      "author": "Qinbing Fu, Jingyu Huang et al.",
+      "ref": "arXiv:2607.05205v1",
+      "url": "https://arxiv.org/abs/2607.05205v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"40\" cy=\"80\" r=\"18\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"40\" cy=\"80\" r=\"10\" fill=\"#ce93d8\"/><circle cx=\"40\" cy=\"80\" r=\"4\" fill=\"#ffffff\"/><polygon points=\"62,70 80,80 62,90\" fill=\"#6a1b9a\" opacity=\"0.7\"/><rect x=\"88\" y=\"60\" width=\"36\" height=\"40\" rx=\"6\" fill=\"#6a1b9a\" opacity=\"0.18\" stroke=\"#6a1b9a\" stroke-width=\"2\"/><rect x=\"96\" y=\"68\" width=\"6\" height=\"6\" rx=\"1\" fill=\"#ce93d8\"/><rect x=\"106\" y=\"68\" width=\"6\" height=\"6\" rx=\"1\" fill=\"#ce93d8\"/><rect x=\"96\" y=\"80\" width=\"6\" height=\"6\" rx=\"1\" fill=\"#6a1b9a\"/><rect x=\"106\" y=\"80\" width=\"6\" height=\"6\" rx=\"1\" fill=\"#6a1b9a\"/><rect x=\"96\" y=\"92\" width=\"16\" height=\"3\" rx=\"1\" fill=\"#ce93d8\" opacity=\"0.6\"/><polygon points=\"130,70 148,80 130,90\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"172\" cy=\"56\" r=\"8\" fill=\"#ff6f00\" opacity=\"0.8\"/><circle cx=\"196\" cy=\"72\" r=\"8\" fill=\"#ff6f00\" opacity=\"0.8\"/><circle cx=\"184\" cy=\"96\" r=\"8\" fill=\"#ff6f00\" opacity=\"0.8\"/><line x1=\"172\" y1=\"56\" x2=\"196\" y2=\"72\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"196\" y1=\"72\" x2=\"184\" y2=\"96\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.7\"/><line x1=\"172\" y1=\"56\" x2=\"184\" y2=\"96\" stroke=\"#6a1b9a\" stroke-width=\"1.5\" opacity=\"0.5\"/><polygon points=\"212,70 230,80 212,90\" fill=\"#6a1b9a\" opacity=\"0.7\"/><rect x=\"238\" y=\"55\" width=\"70\" height=\"50\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.12\" stroke=\"#6a1b9a\" stroke-width=\"2\"/><line x1=\"248\" y1=\"80\" x2=\"298\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.5\"/><line x1=\"258\" y1=\"70\" x2=\"258\" y2=\"90\" stroke=\"#ff6f00\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"268\" y1=\"65\" x2=\"268\" y2=\"95\" stroke=\"#ce93d8\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"278\" y1=\"72\" x2=\"278\" y2=\"88\" stroke=\"#ff6f00\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"288\" y1=\"68\" x2=\"288\" y2=\"92\" stroke=\"#ce93d8\" stroke-width=\"2.5\" opacity=\"0.8\"/></svg>",
+      "title": {
+        "zh-TW": "學果蠅大腦偵測運動：事件驅動視覺感知新框架",
+        "en": "Fly-Inspired Brain Circuits Meet Event Cameras for Ultra-Fast Motion Detection",
+        "zh-CN": "学果蝇大脑侦测运动：事件驱动视觉感知新框架",
+        "ja": "ハエの脳回路に学ぶ：イベント駆動型超高速動体検知フレームワーク",
+        "ko": "초파리 뇌 회로에서 배운다: 이벤트 기반 초고속 움직임 감지 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經形態計算",
+        "en": "🧠 Neuromorphic Computing",
+        "zh-CN": "🧠 神经形态计算",
+        "ja": "🧠 ニューロモーフィック計算",
+        "ko": "🧠 뉴로모픽 컴퓨팅"
+      },
+      "tech": {
+        "zh-TW": "本研究將仿生果蠅視葉神經網路與事件相機（Event Camera）結合，建構出一套免訓練、前饋式的視覺運動偵測計算框架。該神經模型僅需少量可解釋參數，直接模擬昆蟲視覺系統中的運動處理迴路，大幅降低計算延遲並提升動態場景下的偵測效率。",
+        "en": "This study integrates a fly-inspired neural network modeling the optic lobe motion-processing circuits with event-based sensing to create a training-free, feed-forward visual motion detection framework. The model uses only a small set of interpretable parameters, mimicking insect visual processing to achieve low-latency, efficient detection in dynamic environments.",
+        "zh-CN": "本研究将仿生果蝇视叶神经网络与事件相机结合，构建出一套免训练、前馈式的视觉运动检测计算框架。该神经模型仅需少量可解释参数，直接模拟昆虫视觉系统中的运动处理回路，大幅降低计算延迟并提升动态场景下的检测效率。",
+        "ja": "本研究は、ハエの視葉の運動処理回路を模倣したニューラルネットワークとイベントカメラを統合し、学習不要なフィードフォワード型視覚動体検知フレームワークを構築した。このモデルは少数の解釈可能なパラメータのみを使用し、動的環境での低遅延・高効率な検知を実現する。",
+        "ko": "이 연구는 초파리 시엽의 운동 처리 회로를 모방한 신경망과 이벤트 카메라를 통합하여 훈련이 필요 없는 피드포워드 방식의 시각 움직임 감지 프레임워크를 구축했다. 이 모델은 소수의 해석 가능한 매개변수만으로 동적 환경에서 저지연·고효율 감지를 달성한다."
+      },
+      "plain": {
+        "zh-TW": "想像一隻果蠅在廚房裡飛行——它能在幾毫秒內察覺到你揮來的手，立刻閃避。這不是靠強大的「大腦CPU」，而是靠眼睛背後一套超級精簡的神經線路。科學家把這套線路「拷貝」進電腦，配合一種叫做「事件相機」的特殊鏡頭。普通相機每秒只拍幾十張照片，事件相機則像感應器一樣，只記錄畫面中「哪裡有東西在動」，速度快上千倍。把果蠅的神經線路套在這種超快鏡頭上，電腦不需要學習、不需要大量數據，就能極快地判斷「有東西在動、朝哪個方向」。這對自駕車、無人機在複雜場景下安全避障非常重要。大自然花了幾億年調教出的視覺系統，正在成為下一代機器視覺的設計藍圖。",
+        "en": "Imagine a housefly dodging your swat in milliseconds — not because it has a powerful brain, but because it has an incredibly efficient visual circuit behind its eyes. Scientists copied this circuit into a computer and paired it with a special camera called an event camera. Unlike regular cameras that snap full pictures many times a second, event cameras only record pixels that change — like a motion sensor, but a thousand times faster. By combining the fly's neural wiring with this ultra-fast camera, the system detects motion instantly without any training or big datasets. This matters enormously for self-driving cars and drones that must react to fast-moving obstacles. Nature's billion-year-old visual solution is becoming the blueprint for next-generation machine vision.",
+        "zh-CN": "想象一只果蝇在厨房里飞行——它能在几毫秒内察觉到你挥来的手，立刻闪避。这不是靠强大的「大脑CPU」，而是靠眼睛背后一套超级精简的神经线路。科学家把这套线路「拷贝」进电脑，配合一种叫做「事件相机」的特殊镜头。普通相机每秒只拍几十张照片，事件相机则像传感器一样，只记录画面中「哪里有东西在动」，速度快上千倍。把果蝇的神经线路套在这种超快镜头上，电脑不需要学习、不需要大量数据，就能极快判断「有东西在动、朝哪个方向」。这对自动驾驶车、无人机在复杂场景下安全避障非常重要。大自然花了几亿年调教出的视觉系统，正在成为下一代机器视觉的设计蓝图。",
+        "ja": "ハエが叩かれそうになった瞬間にサッと逃げる——あれは強力な脳のおかげではなく、目の裏にある超シンプルな神経回路のおかげです。科学者たちはその回路をコンピュータに「コピー」し、イベントカメラという特殊なカメラと組み合わせました。普通のカメラが毎秒数十枚の写真を撮るのに対し、イベントカメラは「動いた画素だけ」を記録する超高速センサーです。このハエ神経回路×超高速カメラの組み合わせにより、学習データなしで瞬時に動体を検知できます。自動運転車やドローンが複雑な状況で障害物を避けるうえで大きな意味を持ちます。数億年かけて進化した昆虫の視覚が、次世代マシンビジョンの設計図になろうとしています。",
+        "ko": "파리가 손이 날아오는 걸 순식간에 피하는 비결은 강력한 두뇌가 아니라, 눈 뒤에 있는 초간단 신경 회로 덕분입니다. 과학자들은 이 회로를 컴퓨터에 '복사'하고, 이벤트 카메라라는 특수 카메라와 결합했습니다. 일반 카메라가 초당 수십 장의 사진을 찍는 반면, 이벤트 카메라는 움직이는 픽셀만 기록하는 초고속 센서입니다. 초파리 신경 회로와 이 초고속 카메라를 합치면, 학습 없이도 순식간에 움직임을 감지할 수 있습니다. 이는 자율주행차와 드론이 복잡한 환경에서 장애물을 피하는 데 매우 중요합니다. 수억 년의 진화가 만들어낸 곤충의 시각 시스템이 차세대 기계 시각의 설계도가 되고 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 最好的工程設計，有時不是從零發明，而是謙遜地向億年演化的生物借一張藍圖。",
+        "en": "💡 The best engineering solutions are sometimes not invented from scratch, but humbly borrowed from blueprints refined over hundreds of millions of years of evolution.",
+        "zh-CN": "💡 最好的工程设计，有时不是从零发明，而是谦逊地向亿年演化的生物借一张蓝图。",
+        "ja": "💡 最良の工学的解決策は、ゼロから発明するのではなく、何億年もの進化が磨いた設計図を謙虚に借りることから生まれることがある。",
+        "ko": "💡 최고의 공학적 해법은 때로 처음부터 발명하는 것이 아니라, 수억 년의 진화가 다듬어온 설계도를 겸손하게 빌려오는 데서 탄생한다."
+      }
+    },
+    {
+      "id": "space-260708",
+      "domain": "space",
+      "day": "2026-07-08",
+      "author": "Raphaël Bonnet-Guerrini, Bruno Sanchez et al.",
+      "ref": "arXiv:2607.05393v1",
+      "url": "https://arxiv.org/abs/2607.05393v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#1a237e\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#ffffff\" opacity=\"0.15\"/><circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#e3f2fd\" opacity=\"0.9\"/><circle cx=\"170\" cy=\"50\" r=\"10\" fill=\"#ffb300\" opacity=\"0.9\"/><circle cx=\"200\" cy=\"90\" r=\"6\" fill=\"#ff6f00\" opacity=\"0.7\"/><circle cx=\"145\" cy=\"100\" r=\"4\" fill=\"#ef5350\" opacity=\"0.6\"/><rect x=\"95\" y=\"70\" width=\"55\" height=\"22\" rx=\"5\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\" opacity=\"0.7\"/><rect x=\"95\" y=\"70\" width=\"27\" height=\"22\" rx=\"5\" fill=\"#1a237e\" opacity=\"0.25\"/><circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"3\" opacity=\"0.7\"/><circle cx=\"280\" cy=\"80\" r=\"14\" fill=\"none\" stroke=\"#42a5f5\" stroke-width=\"2\" stroke-dasharray=\"4 3\" opacity=\"0.8\"/><circle cx=\"280\" cy=\"80\" r=\"5\" fill=\"#42a5f5\" opacity=\"0.9\"/><line x1=\"165\" y1=\"80\" x2=\"245\" y2=\"80\" stroke=\"#1a237e\" stroke-width=\"2\" stroke-dasharray=\"5 3\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "AI 自動辨識真假宇宙瞬變天體——不需人工標註、還能說出「我有多確定」",
+        "en": "AI Tells Real from Fake Cosmic Transients—No Human Labels Needed, With Built-In Uncertainty",
+        "zh-CN": "AI 自动辨别真假宇宙瞬变天体——无需人工标注，还能量化不确定性",
+        "ja": "ラベルなしで本物の宇宙閃光を見抜くAI——不確かさも数値で示す新手法",
+        "ko": "인간 라벨 없이 우주 순간 천체를 판별하는 AI——불확실성까지 정량화"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一套「真假天體分類」框架，透過模擬注入瞬變天體與高污染的巡天資料訓練雙網路模型，完全免去人工標註需求。模型同時融合校準過的不確定性量化，使系統在樣本嚴重污染下仍保持穩健，並能為每次預測給出可靠的信心分數。",
+        "en": "This study presents a Real-Bogus classification framework trained entirely without human-labeled data, combining simulated transient injections with contaminated survey observations into a dual-network architecture. The model incorporates calibrated uncertainty quantification, remaining robust under heavy class contamination and providing reliable confidence scores for each prediction.",
+        "zh-CN": "本研究提出一套「真假天体分类」框架，通过模拟注入瞬变天体与高污染巡天数据训练双网络模型，完全免去人工标注需求。模型同时融合校准过的不确定性量化，使系统在样本严重污染下仍保持稳健，并能为每次预测给出可靠的置信分数。",
+        "ja": "本研究は、シミュレーションによる瞬変天体注入と汚染された観測データを組み合わせ、人間のラベルなしで訓練できる真偽分類フレームワークを提案する。二重ネットワーク構造と校正済み不確かさ定量化により、クラス汚染が激しい状況でも堅牢に動作し、予測ごとに信頼スコアを提供する。",
+        "ko": "이 연구는 시뮬레이션으로 주입한 순간 천체와 오염된 탐사 데이터를 결합하여 인간 라벨 없이 훈련 가능한 실제-가짜 분류 프레임워크를 제안한다. 이중 네트워크 구조와 보정된 불확실성 정량화를 통해 클래스 오염이 심한 환경에서도 강건하게 작동하며 각 예측에 신뢰 점수를 제공한다."
+      },
+      "plain": {
+        "zh-TW": "每當天文學家用大型望遠鏡掃描夜空，每晚都會湧現數以百萬計的「可疑亮點」——可能是超新星、伽馬射線暴，也可能只是衛星反光或儀器雜訊。要從這堆資料裡找出真正的宇宙事件，就像在沙灘上尋找一顆特定的貝殼。過去，科學家得靠大量志工或專家逐一標註「這是真的、那是假的」，不僅耗時，標籤本身也可能因人而異出現錯誤。這篇論文的突破在於：AI 完全不需要人工標記的訓練資料，改用電腦模擬製造「假的真事件」注入資料，讓 AI 自己學會辨別真偽。更厲害的是，這個 AI 不只給答案，還會誠實說出「我對這個判斷有幾成把握」，就像一位醫生不光給診斷，還附上信心指數。這對即將啟動的新一代巡天計畫（如薇拉·魯賓天文台）至關重要，因為屆時每晚產生的資料量將超出任何人力所能負荷，可靠的自動化系統將決定人類能否即時捕捉到宇宙中最稍縱即逝的珍貴事件。",
+        "en": "Every night, giant telescopes sweep the sky and flag millions of suspicious bright spots—some could be supernovae or gamma-ray bursts, others just satellite glints or detector noise. Finding real cosmic events in this flood of data is like hunting for one specific shell on a vast beach. Traditionally, scientists relied on armies of volunteers or experts to label each alert as real or fake, a slow and error-prone process. This paper's breakthrough: the AI needs no human-labeled training data at all, instead using computer-simulated fake transients injected into real survey images to teach itself the difference. Even better, the model doesn't just give a verdict—it honestly reports how confident it is, like a doctor who attaches a certainty score alongside every diagnosis. This matters enormously for next-generation sky surveys like the Vera Rubin Observatory, which will produce more alerts per night than any human team could ever review, making trustworthy automated systems the key to catching the universe's most fleeting and precious events.",
+        "zh-CN": "每当天文学家用大型望远镜扫描夜空，每晚都会涌现数以百万计的「可疑亮点」——可能是超新星、伽马射线暴，也可能只是卫星反光或仪器噪声。要从这堆数据里找出真正的宇宙事件，就像在沙滩上寻找一颗特定的贝壳。过去，科学家得靠大量志愿者或专家逐一标注「这是真的、那是假的」，不仅耗时，标签本身也可能因人而异出现错误。这篇论文的突破在于：AI 完全不需要人工标记的训练数据，改用电脑模拟制造「假的真事件」注入数据，让 AI 自己学会辨别真伪。更厉害的是，这个 AI 不只给答案，还会诚实说出「我对这个判断有几成把握」，就像一位医生不光给诊断，还附上信心指数。这对即将启动的新一代巡天计划至关重要，届时每晚产生的数据量将超出任何人力所能负荷。",
+        "ja": "大型望遠鏡が夜空を走査するたびに、毎晩数百万もの「怪しい光点」が検出される。超新星やガンマ線バーストかもしれないし、衛星の反射や検出器ノイズかもしれない。この膨大なデータから本物の宇宙イベントを見つけるのは、広大な砂浜で特定の貝殻を探すようなものだ。従来は大勢のボランティアや専門家が一つひとつ「本物・偽物」とラベルを付けてきたが、時間がかかり誤りも生じやすかった。この論文の革新は、AIが人間ラベルを一切必要とせず、コンピュータでシミュレーションした「偽の本物」を実際の観測画像に注入することで自ら真偽を学習する点だ。さらにこのAIは判定だけでなく「どれくらい自信があるか」も正直に報告する。次世代の大規模サーベイ計画にとって、こうした信頼できる自動化システムは宇宙の瞬間的な現象を逃さず捉えるための鍵となる。",
+        "ko": "대형 망원경이 밤하늘을 훑을 때마다 매일 밤 수백만 개의 '수상한 밝은 점'이 감지된다. 초신성이나 감마선 폭발일 수도 있고, 위성 반사광이나 검출기 잡음일 수도 있다. 이 방대한 데이터에서 진짜 우주 사건을 찾는 것은 넓은 해변에서 특정 조개껍데기를 찾는 것과 같다. 기존에는 수많은 자원봉사자나 전문가가 하나씩 '진짜·가짜'를 라벨링해야 했는데, 시간이 많이 걸리고 오류도 발생하기 쉬웠다. 이 논문의 혁신은 AI가 인간 라벨 없이도, 컴퓨터로 시뮬레이션한 가짜 순간 천체를 실제 관측 이미지에 주입하여 스스로 진위를 학습한다는 점이다. 더 나아가 이 AI는 판정뿐 아니라 '얼마나 확신하는지'도 솔직하게 보고한다. 차세대 대규모 탐사 프로젝트에서 신뢰할 수 있는 자동화 시스템은 우주의 순간적인 사건을 놓치지 않는 핵심 열쇠가 될 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 當真實標籤昂貴且雜訊難免，讓模擬資料扮演「老師」、讓不確定性成為「誠信聲明」，才是未來大數據天文學的可靠之道。",
+        "en": "💡 When true labels are expensive and noisy, letting simulated data play teacher and uncertainty become an honesty statement is the reliable path forward for big-data astronomy.",
+        "zh-CN": "💡 当真实标签昂贵且噪声难免，让模拟数据担任「老师」、让不确定性成为「诚信声明」，才是未来大数据天文学的可靠之道。",
+        "ja": "💡 本物のラベルが高価でノイズが避けられないとき、シミュレーションデータを「教師」に、不確かさを「誠実な申告」にすることが、ビッグデータ天文学の信頼できる未来への道だ。",
+        "ko": "💡 진짜 라벨이 비싸고 잡음이 불가피할 때, 시뮬레이션 데이터를 '교사'로, 불확실성을 '정직한 선언'으로 삼는 것이 빅데이터 천문학의 신뢰할 수 있는 미래다."
+      }
+    },
+    {
+      "id": "tech-260708",
+      "domain": "tech",
+      "day": "2026-07-08",
+      "author": "Md. Taksimul Ahsan Tawhid, Nasif Ahmed Rafe et al.",
+      "ref": "arXiv:2607.05282v1",
+      "url": "https://arxiv.org/abs/2607.05282v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"60\" ry=\"38\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><ellipse cx=\"170\" cy=\"80\" rx=\"40\" ry=\"24\" fill=\"none\" stroke=\"#00897b\" stroke-width=\"1.8\"/><ellipse cx=\"170\" cy=\"80\" rx=\"20\" ry=\"11\" fill=\"#00695c\" opacity=\"0.18\"/><path d=\"M30 80 Q55 48 80 80 Q105 112 130 80 Q155 48 170 80\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.2\"/><path d=\"M170 80 Q185 112 200 80 Q215 48 240 80 Q265 112 290 80 Q305 65 310 80\" fill=\"none\" stroke=\"#26a69a\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"80\" r=\"5\" fill=\"#00695c\" opacity=\"0.7\"/><circle cx=\"130\" cy=\"80\" r=\"5\" fill=\"#00695c\" opacity=\"0.7\"/><circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#004d40\" opacity=\"0.9\"/><circle cx=\"220\" cy=\"80\" r=\"5\" fill=\"#26a69a\" opacity=\"0.7\"/><circle cx=\"270\" cy=\"80\" r=\"5\" fill=\"#26a69a\" opacity=\"0.7\"/><rect x=\"20\" y=\"20\" width=\"18\" height=\"8\" rx=\"2\" fill=\"#00695c\" opacity=\"0.5\"/><rect x=\"20\" y=\"32\" width=\"28\" height=\"8\" rx=\"2\" fill=\"#00695c\" opacity=\"0.35\"/><rect x=\"20\" y=\"44\" width=\"14\" height=\"8\" rx=\"2\" fill=\"#00695c\" opacity=\"0.22\"/></svg>",
+      "title": {
+        "zh-TW": "腦波「小波散射」：用 AI 解碼思覺失調症的大腦訊號",
+        "en": "Decoding Schizophrenia from Brainwaves with Wavelet Scattering AI",
+        "zh-CN": "脑波「小波散射」：用 AI 解码思觉失调症的大脑信号",
+        "ja": "脳波「ウェーブレット散乱変換」で統合失調症を AI 解読する",
+        "ko": "뇌파 「웨이블릿 산란 변환」으로 조현병을 AI로 해독하다"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本研究將小波散射轉換（Wavelet Scattering Transform）應用於靜息態腦電圖（EEG），從多尺度頻率調變與跨頻率耦合中提取可解釋性生物標記，以區分思覺失調症患者與健康對照組。研究同時指出現有方法採用的「時段級交叉驗證」會造成資料洩漏、虛高模型準確率，並提出更嚴格的受試者獨立驗證策略。",
+        "en": "This study applies the Wavelet Scattering Transform to resting-state EEG to extract interpretable biomarkers capturing amplitude modulation and cross-frequency coupling dynamics relevant to schizophrenia pathophysiology. It also identifies epoch-level cross-validation as a source of temporal data leakage inflating reported accuracy, proposing a subject-independent validation protocol.",
+        "zh-CN": "本研究将小波散射变换（Wavelet Scattering Transform）应用于静息态脑电图（EEG），从多尺度频率调制与跨频率耦合中提取可解释性生物标记，用于区分思觉失调症患者与健康对照组。研究还指出现有方法的「时段级交叉验证」会导致数据泄漏、虚高模型准确率，并提出更严格的受试者独立验证策略。",
+        "ja": "本研究では、ウェーブレット散乱変換を安静時脳波（EEG）に適用し、統合失調症の病態生理に関わる振幅変調とクロス周波数結合を捉えた解釈可能なバイオマーカーを抽出する。また、エポックレベルの交差検証が時間的データ漏洩を引き起こし性能を過大評価することを示し、被験者独立の検証プロトコルを提案する。",
+        "ko": "이 연구는 웨이블릿 산란 변환을 안정 상태 뇌파(EEG)에 적용해 조현병 병태생리와 관련된 진폭 변조 및 교차 주파수 결합을 포착하는 해석 가능한 바이오마커를 추출한다. 또한 에포크 수준 교차 검증이 시간적 데이터 누수를 유발해 성능을 과대평가함을 지적하고 피험자 독립 검증 전략을 제안한다."
+      },
+      "plain": {
+        "zh-TW": "思覺失調症是一種會嚴重影響思考與現實感知的腦部疾病，但目前診斷仍高度依賴醫師的主觀判斷。科學家長期希望能從腦波（EEG）找到客觀的「生物指紋」，就像用心電圖診斷心臟病一樣。問題是，傳統方法只會分析腦波「哪個頻率最強」，就像只看音樂播放清單裡哪首歌最常播，卻忽略了歌曲之間的節奏變化與情緒起伏。小波散射轉換就像一台能同時聽出旋律、節奏與和聲變化的智慧音響，能捕捉到腦波不同頻率之間「互相調控」的細微模式。更重要的是，這項研究還揭穿了一個學術界常見的陷阱：過去許多 AI 模型因為在評估時「偷看」了同一個人的其他時段資料，成績才虛高，就像考前拿到答案一樣不真實。這項研究提出更公平的測試方式，讓 AI 診斷真正具備臨床落地的潛力。",
+        "en": "Schizophrenia is a serious brain disorder that distorts thinking and reality, yet diagnosis still largely depends on a doctor's subjective judgment. Scientists have long hoped to find objective 「brain fingerprints」 in EEG signals, much like using an ECG to diagnose heart disease. The trouble is, traditional methods only look at which brainwave frequencies are loudest, like counting which songs play most often in a playlist while ignoring the rhythm changes between them. Wavelet Scattering Transform works like a smart speaker that simultaneously detects melody, rhythm, and harmonic shifts, capturing subtle patterns of how different brainwave frequencies regulate each other. Crucially, this study also exposes a common trap: many previous AI models cheated by peeking at data from the same person during evaluation, inflating their scores like getting the answers before a test. By proposing a fairer testing method, this research brings AI-based schizophrenia diagnosis a real step closer to clinical reality.",
+        "zh-CN": "思觉失调症是一种严重影响思维与现实感知的脑部疾病，但目前诊断仍高度依赖医生的主观判断。科学家长期希望能从脑波（EEG）找到客观的「生物指纹」，就像用心电图诊断心脏病一样。传统方法只分析脑波「哪个频率最强」，就像只统计播放列表里哪首歌最常播，却忽略了歌曲间的节奏变化与情绪起伏。小波散射变换就像一台能同时听出旋律、节奏与和声变化的智能音箱，能捕捉到脑波不同频率间「相互调控」的细微模式。更重要的是，这项研究还揭露了一个学术陷阱：过去许多 AI 模型因在评估时「偷看」了同一人的其他时段数据而虚高成绩，就像考前拿到答案。这项研究提出更公平的测试方式，让 AI 诊断真正具备临床落地的潜力。",
+        "ja": "統合失調症は思考や現実認識を大きく歪める脳の病気ですが、現在の診断は医師の主観的な判断に依存しています。科学者たちは心電図で心臓病を診断するように、脳波（EEG）から客観的な「脳の指紋」を見つけることを長年目指してきました。従来の方法は「どの周波数が最も強いか」しか見ず、曲のリストで一番再生された曲を数えるだけで、曲間のリズムや感情の変化を無視するようなものでした。ウェーブレット散乱変換は、旋律・リズム・和声の変化を同時に聴き取れるスマートスピーカーのように、異なる周波数帯が互いに調整し合う微妙なパターンを捉えます。さらにこの研究は、多くの AI モデルが同一人物の別時刻データを評価時に「覗き見」して成績を水増ししていた落とし穴を暴き、より公正な検証法を提案することで、臨床応用への大きな一歩を踏み出しました。",
+        "ko": "조현병은 사고와 현실 인식을 크게 왜곡하는 뇌 질환이지만, 현재 진단은 여전히 의사의 주관적 판단에 크게 의존합니다. 과학자들은 심전도로 심장병을 진단하듯 뇌파(EEG)에서 객관적인 「뇌의 지문」을 찾고자 오랫동안 노력해왔습니다. 기존 방법은 「어떤 주파수가 가장 강한지」만 분석해, 플레이리스트에서 가장 많이 재생된 곡만 세고 곡 사이의 리듬 변화와 감정 기복을 무시하는 것과 같습니다. 웨이블릿 산란 변환은 멜로디·리듬·화음 변화를 동시에 들을 수 있는 스마트 스피커처럼, 서로 다른 주파수 대역이 서로를 조절하는 미묘한 패턴을 포착합니다. 더 중요하게는, 이 연구는 많은 AI 모델이 평가 시 같은 사람의 다른 시간대 데이터를 「몰래 보며」 성적을 부풀렸던 함정을 폭로하고 더 공정한 검증법을 제안해 AI 진단의 임상 적용 가능성을 한 걸음 앞당겼습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 一個看似無害的「交叉驗證」設計缺陷，可能讓 AI 醫療模型的準確率虛高十個百分點——科學方法的嚴謹性，永遠是技術落地的第一道關卡。",
+        "en": "💡 A seemingly minor flaw in cross-validation design can inflate an AI medical model's accuracy by ten percentage points — methodological rigor is always the first gatekeeping step before any technology reaches the clinic.",
+        "zh-CN": "💡 一个看似无害的「交叉验证」设计缺陷，可能让 AI 医疗模型的准确率虚高十个百分点——科学方法的严谨性，永远是技术落地的第一道关卡。",
+        "ja": "💡 一見些細な交差検証の設計上の欠陥が、AI 医療モデルの精度を10ポイント以上水増しする可能性がある——方法論の厳密さこそ、技術が臨床に到達するための最初の関門だ。",
+        "ko": "💡 겉으로는 사소해 보이는 교차 검증 설계 결함이 AI 의료 모델의 정확도를 10퍼센트포인트나 부풀릴 수 있다 — 방법론의 엄밀성이야말로 기술이 임상에 도달하기 위한 첫 번째 관문이다."
+      }
+    }
+  ]
+}
