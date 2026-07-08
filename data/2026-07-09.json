@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-09",
+  "mode": "paper",
+  "paper_date": "2026-07-09",
+  "generated_at": "2026-07-09",
+  "cards": [
+    {
+      "id": "ai-260709",
+      "domain": "ai",
+      "day": "2026-07-09",
+      "author": "Tianjiao Yu, Xinzhuo Li et al.",
+      "ref": "arXiv:2607.06565v1",
+      "url": "https://arxiv.org/abs/2607.06565v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"60\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.25\"/><rect x=\"30\" y=\"70\" width=\"40\" height=\"40\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"38\" y=\"78\" width=\"24\" height=\"24\" rx=\"3\" fill=\"#2a9d8f\" opacity=\"0.9\"/><polygon points=\"170,20 210,60 190,100 150,100 130,60\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"2.5\" opacity=\"0.85\"/><polygon points=\"170,38 198,62 186,90 154,90 142,62\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"1.5\" opacity=\"0.55\"/><polygon points=\"170,54 186,66 180,82 160,82 154,66\" fill=\"#e76f51\" opacity=\"0.35\"/><line x1=\"90\" y1=\"90\" x2=\"128\" y2=\"72\" stroke=\"#2a9d8f\" stroke-width=\"1.8\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/><line x1=\"90\" y1=\"70\" x2=\"128\" y2=\"62\" stroke=\"#2a9d8f\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/><circle cx=\"260\" cy=\"50\" r=\"28\" fill=\"none\" stroke=\"#264653\" stroke-width=\"2.2\" opacity=\"0.7\"/><circle cx=\"260\" cy=\"50\" r=\"18\" fill=\"none\" stroke=\"#264653\" stroke-width=\"1.5\" opacity=\"0.55\"/><circle cx=\"260\" cy=\"50\" r=\"8\" fill=\"#264653\" opacity=\"0.5\"/><line x1=\"212\" y1=\"65\" x2=\"232\" y2=\"58\" stroke=\"#264653\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.6\"/><line x1=\"212\" y1=\"75\" x2=\"232\" y2=\"68\" stroke=\"#264653\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "ELSA3D：讓 AI 同時「看懂」與「生成」3D 物體的彈性語意錨定框架",
+        "en": "ELSA3D: Elastic Anchors That Let AI Understand and Create 3D Objects Together",
+        "zh-CN": "ELSA3D：让 AI 同时「理解」与「生成」3D 物体的弹性语义锚定框架",
+        "ja": "ELSA3D：AIが3Dオブジェクトを「理解」と「生成」同時にこなす弾性意味アンカー手法",
+        "ko": "ELSA3D：AI가 3D 물체를 동시에 「이해」하고 「생성」하는 탄력적 의미 앵커링 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボット",
+        "ko": "🤖 AI와 로봇"
+      },
+      "tech": {
+        "zh-TW": "ELSA3D 提出「彈性語意錨定」機制，將語言描述與3D幾何特徵依抽象層次逐級對齊，而非直接把文字與幾何 token 混在同一序列中交由自注意力機制處理。模型採用尺度感知的幾何表示，讓粗略結構線索與細緻幾何細節分別對應不同層次的語言概念，實現統一的3D理解與生成。",
+        "en": "ELSA3D introduces elastic semantic anchoring, aligning language descriptions and 3D geometry features at matched levels of abstraction rather than flattening them into a single token sequence for self-attention. A scale-aware geometric representation maps coarse structural cues and fine geometric details to corresponding linguistic concepts, enabling unified 3D understanding and generation within one backbone.",
+        "zh-CN": "ELSA3D 提出「弹性语义锚定」机制，将语言描述与3D几何特征按抽象层次逐级对齐，而非将文字与几何 token 混入同一序列交由自注意力处理。模型采用尺度感知几何表示，使粗略结构线索与精细几何细节分别对应不同层次的语言概念，实现统一的3D理解与生成。",
+        "ja": "ELSA3Dは「弾性意味アンカリング」を導入し、言語記述と3D幾何特徴を同じ抽象レベルごとに段階的に対応付ける。トークンを単一のフラット列に並べて自己注意機構に任せる従来手法と異なり、スケール対応の幾何表現で粗い構造と細かい幾何を言語概念と階層的に結合し、統一的な3D理解・生成を実現する。",
+        "ko": "ELSA3D는 언어 설명과 3D 기하 특징을 추상화 수준별로 단계적으로 정렬하는 「탄력적 의미 앵커링」을 제안한다. 텍스트와 기하 토큰을 단일 시퀀스에 혼합해 자기주의 메커니즘에 맡기는 기존 방식 대신, 스케일 인식 기하 표현으로 거친 구조와 세밀한 기하를 언어 개념과 계층적으로 연결해 통합적인 3D 이해 및 생성을 구현한다."
+      },
+      "plain": {
+        "zh-TW": "想像你要向朋友描述一張椅子：你會先說「這是一把椅子」，再說「椅腳是金屬的」，最後說「螺絲有點生鏽」——從大到小，層層遞進。過去的 AI 模型在理解3D物體時，卻把「整體輪廓」和「表面每個螺孔細節」全部丟進同一個大籃子裡攪拌，語言描述也一起混進去，結果 AI 搞不清楚「木製」這個詞到底對應的是哪個層次的幾何。ELSA3D 的做法就像給 AI 裝上一套「對焦系統」：講到大形狀就對大尺度的幾何特徵，講到細節就自動切換到細節層，語言和形狀永遠在同一個「焦距」上對話。這樣 AI 既能讀懂文字描述的3D場景，也能根據文字指令生成精確的3D模型，用的是同一個框架。這對未來的虛擬實境、工業設計自動化、以及機器人理解環境都有深遠影響——讓 AI 真正把「說的」和「看到的立體世界」連結起來。",
+        "en": "Imagine describing a chair to a friend: you start with 「it is a chair,」 then 「the legs are metal,」 then 「the screws are a bit rusty」—moving from big picture to tiny detail. Older AI models handling 3D objects threw everything—overall shape and microscopic surface details—into one giant mixing bowl along with language tokens, leaving the AI confused about which geometric level the word 「wooden」 even refers to. ELSA3D acts like an autofocus system: when language talks about overall structure, it locks onto large-scale geometry; when it mentions fine details, it shifts focus accordingly, so words and shapes always speak at the same 「zoom level.」 This lets a single AI backbone both understand 3D scenes described in text and generate accurate 3D models from language instructions. The implications reach into virtual reality, automated industrial design, and robots that truly connect what they 「hear」 with the 3D world they navigate.",
+        "zh-CN": "想象你向朋友描述一把椅子：先说「这是把椅子」，再说「椅腿是金属的」，最后说「螺丝有点生锈」——从整体到细节层层递进。过去的 AI 模型处理3D物体时，会把「整体轮廓」和「每个螺孔细节」以及语言描述全部扔进同一个大篮子搅拌，导致 AI 不清楚「木制」这个词对应哪个层次的几何信息。ELSA3D 就像给 AI 装上了「自动对焦系统」：说大形状就对准大尺度几何，说细节就自动切换到细节层，让语言和形状始终在同一个「焦距」上对话。这样 AI 既能理解文字描述的3D场景，也能根据指令生成精准的3D模型，而且用的是同一套框架。这对未来的虚拟现实、工业设计自动化和机器人环境理解都有深远影响。",
+        "ja": "友人に椅子を説明するとき、まず「これは椅子だ」、次に「脚は金属製」、そして「ネジが少し錆びている」と、大きな話から細部へと順に伝えるはずです。ところが従来のAIモデルは、3Dオブジェクトを扱う際に「全体のシルエット」も「ネジ穴の細部」も言語トークンも一つの大きな袋に放り込んでかき混ぜてしまい、「木製」という言葉がどの幾何レベルを指すのか区別できませんでした。ELSA3Dはオートフォーカスのように機能します。大きな形状の話なら大スケールの幾何に焦点を合わせ、細部の話なら細部の幾何に切り替え、言語と形状が常に同じ「ズームレベル」で対話できます。これにより一つのAI基盤モデルが3Dシーンの理解も生成も担えるようになり、VR・産業デザイン・ロボットの環境認識に大きな可能性をもたらします。",
+        "ko": "친구에게 의자를 설명할 때, 우리는 「이건 의자야」에서 시작해 「다리는 금속이야」, 「나사가 약간 녹슬었어」로 점점 세밀하게 이야기합니다. 그런데 기존 AI 모델은 3D 물체를 처리할 때 「전체 윤곽」과 「나사 구멍 세부 사항」, 그리고 언어 토큰을 모두 하나의 큰 바구니에 섞어버려, AI가 「나무 재질」이라는 단어가 어느 기하 수준을 가리키는지 파악하지 못했습니다. ELSA3D는 자동초점 시스템처럼 작동합니다. 큰 형태를 이야기할 때는 대규모 기하에 초점을 맞추고, 세부 사항을 이야기할 때는 세밀한 수준으로 전환해 언어와 형상이 항상 같은 「줌 레벨」에서 대화합니다. 이를 통해 하나의 AI 백본이 3D 장면 이해와 생성을 모두 수행할 수 있으며, VR·산업 디자인 자동화·로봇의 환경 인식에 큰 가능성을 열어줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的「理解」不是把所有資訊混在一起，而是知道哪個層次的語言對應哪個層次的結構——ELSA3D 提醒我們，對齊的粒度決定了溝通的品質。",
+        "en": "💡 True understanding is not about mixing all information together, but knowing which level of language maps to which level of structure—ELSA3D reminds us that the granularity of alignment determines the quality of communication.",
+        "zh-CN": "💡 真正的「理解」不是把所有信息混在一起，而是知道哪个层次的语言对应哪个层次的结构——ELSA3D 提醒我们，对齐的粒度决定了沟通的质量。",
+        "ja": "💡 本当の「理解」とはすべての情報を混ぜることではなく、どの言語レベルがどの構造レベルに対応するかを知ること——ELSA3Dはアライメントの粒度がコミュニケーションの質を決めることを教えてくれる。",
+        "ko": "💡 진정한 「이해」는 모든 정보를 뒤섞는 것이 아니라, 어떤 언어 수준이 어떤 구조 수준에 대응하는지 아는 것이다——ELSA3D는 정렬의 세밀함이 소통의 질을 결정한다는 사실을 일깨워준다."
+      }
+    },
+    {
+      "id": "bio-260709",
+      "domain": "bio",
+      "day": "2026-07-09",
+      "author": "Dmytro Rizdvanetskyi, Nathan Ross et al.",
+      "ref": "arXiv:2607.04987v1",
+      "url": "https://arxiv.org/abs/2607.04987v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><rect x=\"12\" y=\"30\" width=\"28\" height=\"100\" rx=\"6\" fill=\"#52b788\" opacity=\"0.9\"/><rect x=\"48\" y=\"50\" width=\"28\" height=\"80\" rx=\"6\" fill=\"#52b788\" opacity=\"0.7\"/><rect x=\"84\" y=\"40\" width=\"28\" height=\"90\" rx=\"6\" fill=\"#52b788\" opacity=\"0.85\"/><rect x=\"120\" y=\"60\" width=\"28\" height=\"70\" rx=\"6\" fill=\"#52b788\" opacity=\"0.6\"/><rect x=\"156\" y=\"35\" width=\"28\" height=\"95\" rx=\"6\" fill=\"#52b788\" opacity=\"0.95\"/><circle cx=\"240\" cy=\"55\" r=\"30\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"3\"/><circle cx=\"240\" cy=\"55\" r=\"18\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2.5\"/><circle cx=\"240\" cy=\"55\" r=\"8\" fill=\"#52b788\" opacity=\"0.8\"/><line x1=\"210\" y1=\"55\" x2=\"270\" y2=\"55\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/><line x1=\"240\" y1=\"25\" x2=\"240\" y2=\"85\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/><polyline points=\"200,130 215,115 230,122 248,105 263,118 278,100 295,110\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><circle cx=\"295\" cy=\"110\" r=\"4\" fill=\"#f4a261\"/></svg>",
+      "title": {
+        "zh-TW": "從 DNA 讀取到全身細胞地圖：資料驅動軟標籤大規模解析細胞組成",
+        "en": "Soft Labels Unlock Whole-Body Cell Mapping from Individual DNA Reads",
+        "zh-CN": "从 DNA 读取到全身细胞地图：数据驱动软标签大规模解析细胞组成",
+        "ja": "DNAリードから全身の細胞マップへ：ソフトラベルで大規模な細胞組成解析を実現",
+        "ko": "DNA 리드에서 전신 세포 지도까지: 소프트 라벨로 대규모 세포 구성 분석 실현"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出以資料驅動的「軟標籤」策略，針對個別 DNA 甲基化讀取進行細胞類型分類，避免傳統硬標籤在多類別場景下的衝突問題。方法透過學習各讀取對應多種細胞類型的機率分布，搭配可擴展的機器學習架構，首次將 DNA 讀取層級的細胞反摺積擴展至涵蓋全身數十種細胞類型的規模。",
+        "en": "The study proposes a data-driven soft-labeling strategy that assigns probabilistic cell-type labels to individual DNA methylation reads, resolving label conflicts that arise in many-class settings. Combined with a scalable machine-learning framework, it extends read-level cell-type deconvolution to whole-body scale, covering dozens of distinct cell types simultaneously.",
+        "zh-CN": "本研究提出以数据驱动的「软标签」策略，针对单条 DNA 甲基化读取进行细胞类型分类，避免传统硬标签在多类别场景下的冲突问题。方法通过学习各读取对应多种细胞类型的概率分布，配合可扩展的机器学习架构，首次将 DNA 读取层级的细胞反卷积扩展至覆盖全身数十种细胞类型的规模。",
+        "ja": "本研究は、個々の DNAメチル化リードに確率的な細胞タイプラベルを付与する「ソフトラベリング」戦略を提案し、多クラス設定でのラベル競合を解消します。スケーラブルな機械学習フレームワークと組み合わせることで、リードレベルの細胞デコンボリューションを全身数十種類の細胞タイプに初めて拡張しました。",
+        "ko": "본 연구는 개별 DNA 메틸화 리드에 확률적 세포 유형 레이블을 부여하는 데이터 기반 소프트 라벨링 전략을 제안하여 다중 클래스 환경에서의 레이블 충돌 문제를 해결합니다. 확장 가능한 머신러닝 프레임워크와 결합하여, 리드 수준의 세포 역합성을 전신 수십 종 세포 유형으로 처음 확장했습니다."
+      },
+      "plain": {
+        "zh-TW": "想像你拿到一杯混合果汁，想知道裡頭有多少比例的蘋果、橘子、葡萄——這就是「細胞反摺積」在做的事：從混合的血液或組織樣本中，推算各種細胞類型的比例。科學家常用 DNA 上的「甲基化標記」（像是貼在基因上的便利貼）來辨別細胞身份。過去的方法把大量讀取平均後才分析，就像把所有果汁混在一起再猜比例，損失了很多細節。這篇研究改為逐條分析每一段 DNA 讀取，但問題來了：當細胞種類增加到幾十種，很多 DNA 片段根本無法判斷「它屬於哪一種」，強行給它一個死板標籤反而製造錯誤。研究團隊聰明地改用「軟標籤」——不強迫每段讀取只屬於一種細胞，而是給它一個機率分布，例如「60% 像神經細胞、30% 像肌肉細胞」。這樣不但讓模型更誠實，也讓整個系統第一次能夠擴展到全身幾乎所有細胞類型。未來這項技術有望用於血液檢測，像照 X 光一樣從一管血推斷全身各器官的細胞健康狀態。",
+        "en": "Imagine trying to figure out what fruits were blended into a smoothie just by tasting it — that is essentially what cell-type deconvolution does: it estimates the proportions of different cell types hiding in a mixed biological sample like blood. Scientists use tiny chemical tags on DNA called methylation marks as fingerprints to tell cells apart. Previous methods averaged all the DNA snippets together before analyzing, losing detailed clues along the way. This new approach reads each DNA fragment one by one — but with dozens of cell types involved, many fragments are ambiguous and forcing a single hard label on them creates errors. The team's clever fix was soft labels: instead of declaring 'this fragment is definitely a liver cell,' the model says 'it is 60% liver, 30% immune cell.' This honesty about uncertainty makes the system far more accurate and, crucially, lets it scale to map virtually every cell type in the human body at once. In the future, a single blood draw could reveal the cellular health of every organ — a kind of whole-body cell census from a simple test tube.",
+        "zh-CN": "想象你拿到一杯混合果汁，想知道里面有多少苹果、橙子、葡萄——这就是「细胞反卷积」在做的事：从混合的血液或组织样本中，推算各种细胞类型的比例。科学家常用 DNA 上的「甲基化标记」（像贴在基因上的便利贴）来辨别细胞身份。过去的方法把大量读取平均后才分析，损失了很多细节。这篇研究改为逐条分析每一段 DNA 读取，但当细胞种类增加到几十种，很多片段根本无法判断归属，强行给硬标签反而制造错误。研究团队改用「软标签」——给每段读取一个概率分布，比如「60% 像神经细胞、30% 像肌肉细胞」。这让系统第一次能扩展到覆盖全身几乎所有细胞类型，未来有望通过一管血推断全身各器官的细胞健康状态。",
+        "ja": "ミックスジュースを飲んで、中にリンゴ・オレンジ・ブドウがどれだけ入っているか当てる——これが「細胞デコンボリューション」のイメージです。血液や組織サンプルから、各細胞タイプの割合を推定する技術です。科学者はDNAについた「メチル化タグ」を細胞の指紋として利用しますが、従来の方法はDNAの断片をまとめて平均してから解析するため、細かい情報が失われていました。この研究では一本一本のDNA断片を個別に解析しますが、細胞タイプが数十種類になると、多くの断片はどの細胞か判断しにくく、無理に一つのラベルを付けると誤りが生じます。そこで研究チームは「ソフトラベル」を考案——「この断片は60%神経細胞、30%筋肉細胞」と確率で表現します。これにより精度が上がり、全身ほぼすべての細胞タイプへの拡張が初めて実現しました。",
+        "ko": "믹스 주스를 마시면서 사과·오렌지·포도가 얼마나 들어있는지 맞히는 것 — 이것이 '세포 역합성'의 핵심입니다. 혈액이나 조직 샘플에서 각 세포 유형의 비율을 추정하는 기술이죠. 과학자들은 DNA에 붙은 '메틸화 태그'를 세포의 지문으로 활용하는데, 기존 방법은 DNA 조각들을 한꺼번에 평균 내어 분석해 세부 정보를 잃었습니다. 이 연구는 DNA 조각 하나하나를 개별 분석하지만, 세포 유형이 수십 가지로 늘어나면 어느 세포인지 모호한 조각이 많아져 억지로 하나의 라벨을 붙이면 오류가 생깁니다. 연구팀은 '소프트 라벨'을 도입해 '이 조각은 60% 신경세포, 30% 근육세포'처럼 확률 분포로 표현했습니다. 덕분에 전신 거의 모든 세포 유형을 한 번에 분석하는 최초의 시스템이 탄생했으며, 미래에는 혈액 한 방울로 온몸의 세포 건강 지도를 그릴 수 있을 것입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 承認不確定性不是弱點，而是讓模型得以誠實擴展的關鍵——軟標籤把「我不確定」變成了可計算的優勢。",
+        "en": "💡 Admitting uncertainty is not a weakness — soft labels turn 'I am not sure' into a computational advantage that unlocks scale.",
+        "zh-CN": "💡 承认不确定性不是弱点，软标签把「我不确定」转化为可计算的优势，让模型得以诚实地大规模扩展。",
+        "ja": "💡 不確かさを認めることは弱さではなく、ソフトラベルは「わからない」を計算上の強みに変え、大規模な拡張を可能にする鍵です。",
+        "ko": "💡 불확실성을 인정하는 것은 약점이 아니다 — 소프트 라벨은 '모르겠다'를 계산 가능한 강점으로 바꾸어 대규모 확장의 문을 열었다."
+      }
+    },
+    {
+      "id": "phys-260709",
+      "domain": "phys",
+      "day": "2026-07-09",
+      "author": "Aryaman Babbar, Sankar Das Sarma et al.",
+      "ref": "arXiv:2607.06561v1",
+      "url": "https://arxiv.org/abs/2607.06561v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"10\" y=\"70\" width=\"140\" height=\"20\" rx=\"4\" fill=\"#4a7bbf\" opacity=\"0.18\"/><rect x=\"10\" y=\"70\" width=\"140\" height=\"20\" rx=\"4\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\"/><circle cx=\"30\" cy=\"80\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"55\" cy=\"80\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"80\" cy=\"80\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"105\" cy=\"80\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"130\" cy=\"80\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.9\"/><rect x=\"190\" y=\"70\" width=\"140\" height=\"20\" rx=\"4\" fill=\"#e8734a\" opacity=\"0.18\"/><rect x=\"190\" y=\"70\" width=\"140\" height=\"20\" rx=\"4\" fill=\"none\" stroke=\"#e8734a\" stroke-width=\"1.5\"/><circle cx=\"210\" cy=\"80\" r=\"5\" fill=\"#e8734a\" opacity=\"0.6\"/><circle cx=\"240\" cy=\"80\" r=\"5\" fill=\"#e8734a\" opacity=\"0.6\"/><circle cx=\"270\" cy=\"80\" r=\"5\" fill=\"#e8734a\" opacity=\"0.6\"/><circle cx=\"300\" cy=\"80\" r=\"5\" fill=\"#e8734a\" opacity=\"0.6\"/><path d=\"M10 50 Q170 30 330 50\" stroke=\"#4a7bbf\" stroke-width=\"2\" fill=\"none\" stroke-dasharray=\"6 3\" opacity=\"0.7\"/><path d=\"M155 40 L170 55 L185 40\" fill=\"none\" stroke=\"#2ecc71\" stroke-width=\"2.5\"/><line x1=\"170\" y1=\"10\" x2=\"170\" y2=\"130\" stroke=\"#2ecc71\" stroke-width=\"2\" stroke-dasharray=\"4 3\" opacity=\"0.7\"/><rect x=\"150\" y=\"120\" width=\"40\" height=\"8\" rx=\"2\" fill=\"#2ecc71\" opacity=\"0.25\"/><rect x=\"150\" y=\"120\" width=\"40\" height=\"8\" rx=\"2\" fill=\"none\" stroke=\"#2ecc71\" stroke-width=\"1\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "平行磁場揭開謎底：2D電子究竟是「凍結晶體」還是「隨機囚徒」？",
+        "en": "In-Plane Magnetic Field as a Probe: Wigner Crystal or Anderson Localization in 2D?",
+        "zh-CN": "平行磁场揭开谜底：2D电子究竟是「冻结晶体」还是「随机囚徒」？",
+        "ja": "面内磁場が解く謎：2D電子は「結晶凍結」か「無秩序局在」か？",
+        "ko": "면내 자기장으로 밝힌다: 2D 전자는 「위그너 결정」인가 「앤더슨 국소화」인가?"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 凝態物理",
+        "en": "⚛️ Condensed Matter Physics",
+        "zh-CN": "⚛️ 凝态物理",
+        "ja": "⚛️ 凝縮系物理",
+        "ko": "⚛️ 응집물질 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究理論計算平行（面內）磁場對二維半導體中電子輸運的影響，重點在於磁場如何透過改變態密度進而影響帶電雜質的屏蔽效果。藉此判斷實驗觀測到的金屬—絕緣體轉變，是源自低密度下電子自發排列成威格納晶體，還是因隨機雜質導致安德森局域化，並對兩種機制作出可區分的實驗預測。",
+        "en": "This theoretical study calculates how a parallel in-plane magnetic field modifies 2D electron transport in doped semiconductors by altering the electronic density of states and thereby changing the screening of random charged impurities. The work derives distinguishable experimental signatures to determine whether the observed density-tuned metal-insulator transition originates from Wigner crystallization or Anderson localization.",
+        "zh-CN": "本研究从理论上计算平行（面内）磁场对二维半导体中电子输运的影响，重点是磁场如何通过改变态密度进而影响带电杂质的屏蔽效果。由此区分实验观测到的金属—绝缘体转变究竟源于低密度下电子自发排列成维格纳晶体，还是因随机杂质导致的安德森局域化。",
+        "ja": "本研究は、面内平行磁場が電子状態密度を変化させ、ランダム荷電不純物の遮蔽に影響を与えることで、2次元半導体の電子輸送をどう変えるかを理論的に計算した。これにより、実験で観測された密度制御型金属—絶縁体転移がウィグナー結晶化かアンダーソン局在のどちらに由来するかを区別できる実験的指標を導出した。",
+        "ko": "본 연구는 면내 평행 자기장이 전자 상태밀도를 변화시켜 무작위 하전 불순물의 차폐 효과에 미치는 영향을 이론적으로 계산하였다. 이를 통해 실험에서 관측된 밀도 조절 금속—절연체 전이가 위그너 결정화에서 비롯된 것인지 앤더슨 국소화에서 비롯된 것인지를 구별하는 실험적 예측을 제시하였다."
+      },
+      "plain": {
+        "zh-TW": "想像一群人擠在廣場上：人多的時候大家自由走動（金屬），但人一少，可能發生兩種截然不同的事——一是大家累了自動排成整齊方陣靜止不動（威格納晶體化），二是廣場上到處有隱形陷阱，稀稀落落的人各自被困在坑裡動不了（安德森局域化）。這兩種「凍結」在外表上看起來很像，都讓材料從導電變絕緣，科學家幾十年來爭論不休。這篇論文的妙招是：對廣場施加一個「水平磁場」，就像讓廣場微微傾斜。兩種凍結對傾斜的反應截然不同，可以一舉辨別。這不只是學術爭議，更關係到我們對低溫、低維材料的基本理解，甚至影響未來量子元件的設計。",
+        "en": "Imagine a crowd on a plaza: when dense, people move freely like a metal conducts electricity. Thin the crowd, and two very different things could happen — either people spontaneously form a neat frozen grid (Wigner crystallization), or the plaza has hidden potholes that trap isolated stragglers (Anderson localization). Both look like an insulator from the outside, and physicists have debated which is real for decades. The clever trick here is applying a sideways magnetic field — like gently tilting the plaza. The two frozen states respond differently, letting researchers tell them apart. This matters far beyond academia: understanding which mechanism dominates shapes how we design future low-dimensional quantum devices.",
+        "zh-CN": "想象一群人挤在广场上：人多时大家自由走动（导体），但人一少，可能发生两种截然不同的事——一是大家自动排成整齐方阵静止不动（维格纳晶体化），二是广场上到处有隐形陷阱，稀稀落落的人各自被困住动不了（安德森局域化）。两种「冻结」外表相似，科学家争论了几十年。这篇论文的妙招是对广场施加「水平磁场」，就像让广场微微倾斜——两种冻结对倾斜的反应截然不同，可以一举辨别。这对未来低维量子器件的设计具有深远意义。",
+        "ja": "広場に集まった人々を想像してください。人が多ければ自由に動き回れます（金属）。でも人が減ると、二つのまったく異なる「凍結」が起きる可能性があります。一つは全員が自然に整列して動かなくなること（ウィグナー結晶化）、もう一つは広場のあちこちに見えない落とし穴があって、ばらばらに孤立した人が身動き取れなくなること（アンダーソン局在）。どちらも外から見ると絶縁体のように見え、数十年来の論争でした。この論文の巧みな手法は「水平磁場」をかけることで、二つの凍結が異なる反応を示す点を利用して区別することです。これは将来の低次元量子デバイス設計にも直結する重要な知見です。",
+        "ko": "광장에 모인 사람들을 상상해 보세요. 사람이 많으면 자유롭게 돌아다닐 수 있습니다(금속). 하지만 사람이 줄면 두 가지 전혀 다른 「얼어붙음」이 일어날 수 있습니다. 하나는 모두가 저절로 줄을 맞춰 정지하는 것(위그너 결정화)이고, 다른 하나는 광장 곳곳에 보이지 않는 함정이 있어 각자 따로 갇혀버리는 것(앤더슨 국소화)입니다. 두 가지 모두 겉으로는 절연체처럼 보여 수십 년간 논쟁이 이어졌습니다. 이 논문의 묘수는 「수평 자기장」을 가하는 것으로, 두 얼어붙음이 서로 다르게 반응한다는 점을 이용해 구별합니다. 이는 미래 저차원 양자 소자 설계에도 직결되는 중요한 발견입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當兩種理論都能解釋同一現象時，真正的突破往往來自找到一個讓它們「反應不同」的外部探針，而非更精細地測量原本的數據。",
+        "en": "💡 When two competing theories both explain the same observation, the real breakthrough comes from finding an external probe that makes them respond differently — not from measuring the original data more precisely.",
+        "zh-CN": "💡 当两种理论都能解释同一现象时，真正的突破往往来自找到一个让它们「反应不同」的外部探针，而非更精细地测量原有数据。",
+        "ja": "💡 二つの競合理論が同じ現象を説明できるとき、真のブレークスルーはそれらを「異なる反応」に導く外部プローブを見つけることであり、既存データをより精密に測ることではない。",
+        "ko": "💡 두 경쟁 이론이 같은 현상을 모두 설명할 때, 진정한 돌파구는 기존 데이터를 더 정밀하게 측정하는 것이 아니라 두 이론이 「다르게 반응」하도록 만드는 외부 탐침을 찾는 데 있다."
+      }
+    },
+    {
+      "id": "neuro-260709",
+      "domain": "neuro",
+      "day": "2026-07-09",
+      "author": "Sayma Nowshin Chowdhury, Vineeta Nair et al.",
+      "ref": "arXiv:2607.06456v1",
+      "url": "https://arxiv.org/abs/2607.06456v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.7\"/><circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#ffffff\" opacity=\"0.9\"/><line x1=\"88\" y1=\"80\" x2=\"130\" y2=\"55\" stroke=\"#6a1b9a\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"88\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#6a1b9a\" stroke-width=\"2.5\" opacity=\"0.8\"/><line x1=\"88\" y1=\"80\" x2=\"130\" y2=\"105\" stroke=\"#6a1b9a\" stroke-width=\"2.5\" opacity=\"0.8\"/><rect x=\"130\" y=\"42\" width=\"36\" height=\"26\" rx=\"6\" fill=\"#f06292\" opacity=\"0.85\"/><rect x=\"130\" y=\"67\" width=\"36\" height=\"26\" rx=\"6\" fill=\"#f06292\" opacity=\"0.85\"/><rect x=\"130\" y=\"92\" width=\"36\" height=\"26\" rx=\"6\" fill=\"#f06292\" opacity=\"0.85\"/><line x1=\"166\" y1=\"55\" x2=\"220\" y2=\"80\" stroke=\"#ce93d8\" stroke-width=\"2\" opacity=\"0.8\"/><line x1=\"166\" y1=\"80\" x2=\"220\" y2=\"80\" stroke=\"#ce93d8\" stroke-width=\"2\" opacity=\"0.8\"/><line x1=\"166\" y1=\"105\" x2=\"220\" y2=\"80\" stroke=\"#ce93d8\" stroke-width=\"2\" opacity=\"0.8\"/><rect x=\"220\" y=\"58\" width=\"88\" height=\"44\" rx=\"10\" fill=\"#6a1b9a\" opacity=\"0.75\"/><rect x=\"228\" y=\"66\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.25\"/><rect x=\"255\" y=\"66\" width=\"22\" height=\"28\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.45\"/><rect x=\"282\" y=\"66\" width=\"20\" height=\"28\" rx=\"4\" fill=\"#ffffff\" opacity=\"0.65\"/></svg>",
+      "title": {
+        "zh-TW": "混合訊號脈衝神經網路硬體模擬框架：讓晶片設計看得見非理想效應",
+        "en": "Hardware-Aware Simulation for Mixed-Signal Spiking Neural Networks: Seeing Real-World Chip Imperfections",
+        "zh-CN": "混合信号脉冲神经网络硬件模拟框架：让芯片设计看见非理想效应",
+        "ja": "混合信号スパイキングニューラルネットワーク向けハードウェア対応シミュレーション基盤",
+        "ko": "혼합 신호 스파이킹 신경망을 위한 하드웨어 인식 시뮬레이션 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經形態運算",
+        "en": "🧠 Neuromorphic Computing",
+        "zh-CN": "🧠 神经形态计算",
+        "ja": "🧠 ニューロモーフィック計算",
+        "ko": "🧠 뉴로모픽 컴퓨팅"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一套開源、硬體感知的混合訊號脈衝神經網路（SNN）模擬框架，支援 LIF、Hodgkin-Huxley、Axon-Hillock 等多種神經元模型，並整合以浮閘電晶體為基礎的非揮發性類比突觸，能真實捕捉硬體製程中的非理想行為。框架提供跨神經元類型、突觸設計與網路架構的系統級比較分析，協助工程師在晶片設計初期即做出最佳化選擇。",
+        "en": "This work introduces an open-source hardware-aware simulation framework for mixed-signal SNNs, supporting LIF, Hodgkin-Huxley, and Axon-Hillock neuron models alongside non-volatile analog synapses based on floating-gate transistors. The framework captures real hardware non-idealities and enables comparative design space exploration across neuron types, synapse configurations, and network architectures at the system level.",
+        "zh-CN": "本研究提出一套开源、硬件感知的混合信号脉冲神经网络（SNN）仿真框架，支持 LIF、Hodgkin-Huxley、Axon-Hillock 等多种神经元模型，并整合基于浮栅晶体管的非易失性模拟突触，能真实捕捉硬件制程中的非理想行为。框架提供跨神经元类型、突触设计与网络架构的系统级比较分析。",
+        "ja": "本研究では、LIF・Hodgkin-Huxley・Axon-Hillock の複数ニューロンモデルと浮遊ゲートトランジスタ型不揮発性アナログシナプスを統合した、オープンソースのハードウェア対応混合信号 SNN シミュレーション基盤を提案する。ハードウェアの非理想特性を忠実に再現し、ニューロン・シナプス・アーキテクチャをまたいだシステムレベルの設計空間探索を可能にする。",
+        "ko": "본 연구는 LIF, Hodgkin-Huxley, Axon-Hillock 뉴런 모델과 플로팅 게이트 트랜지스터 기반 비휘발성 아날로그 시냅스를 통합한 오픈소스 하드웨어 인식 혼합 신호 SNN 시뮬레이션 프레임워크를 제안한다. 실제 하드웨어의 비이상적 특성을 포착하고, 뉴런·시냅스·아키텍처에 걸친 시스템 수준의 설계 공간 탐색을 지원한다."
+      },
+      "plain": {
+        "zh-TW": "想像你要蓋一棟模仿大腦運作的晶片大樓，但磚頭（電晶體）不像教科書那樣完美——每塊磚的厚度都略有差異，電流也會悄悄跑掉。脈衝神經網路（SNN）就是這樣一種「用電脈衝說話」的 AI 晶片，它模仿神經元發放電訊號的方式，能大幅節省電力，非常適合裝在手機、穿戴裝置或無人機等「邊緣裝置」上。問題是，現有的模擬軟體常常假設電晶體是理想的，導致你在電腦上設計好的網路，一放到真實晶片上就失靈。這個新框架就像一個「誠實的沙盤」：它把真實晶片的各種不完美（電流漏失、製程變異）全都納入模擬，讓工程師在設計早期就能看見問題。更棒的是，它同時支援多種「神經元風格」，可以像試穿衣服一樣快速比較哪種設計最省電又最準確。這對未來低功耗 AI 硬體的研發，就像有了一張能預測真實地形的導航地圖。",
+        "en": "Imagine building a chip that works like the human brain, but the tiny transistors inside are never perfectly uniform — they leak current and vary slightly from each other. Spiking Neural Networks (SNNs) mimic how real neurons fire electrical pulses, making them extremely energy-efficient and ideal for devices like smartwatches or drones. The problem is that most simulation tools assume perfect, textbook-ideal hardware, so a design that looks great on a computer often fails on a real chip. This new open-source framework acts like an 「honest sandbox」: it faithfully models all the messy imperfections of real mixed-signal hardware, so engineers can spot trouble early. It also lets researchers mix and match different neuron styles and synapse types side by side, like a fitting room for chip designs. This matters because getting neuromorphic AI right from the start could unlock ultra-low-power intelligence embedded in everyday objects around us.",
+        "zh-CN": "想象你要建造一栋模仿大脑运作的芯片大楼，但砖块（晶体管）并不像教科书那样完美——每块砖的厚度略有差异，电流也会悄悄流失。脉冲神经网络（SNN）模仿神经元发放电脉冲的方式，能大幅节省电力，非常适合手机、穿戴设备或无人机等「边缘设备」。问题是，现有模拟软件常假设晶体管是理想的，导致电脑上设计好的网络放到真实芯片上就失灵。这个新框架就像「诚实的沙盘」：把真实芯片的各种不完美（漏电流、工艺变异）全都纳入模拟，让工程师在设计早期就能发现问题。它还支持多种神经元模型，可以像试穿衣服一样快速比较哪种设计最省电又最准确，为低功耗 AI 硬件研发提供了可靠的导航地图。",
+        "ja": "脳のように動くチップを設計するとき、内部のトランジスタは教科書通りに完璧ではなく、微妙なばらつきや電流の漏れが生じます。スパイキングニューラルネットワーク（SNN）は、神経細胞が電気パルスを発する仕組みを模倣し、スマートウォッチやドローンなどのエッジデバイスに最適な超省エネ AI を実現します。しかし従来のシミュレーターは理想的なハードウェアを前提とするため、設計した回路が実チップ上で動かないことが多々ありました。この新しいフレームワークは「正直なテスト台」として機能し、混合信号回路の現実的な非理想特性を忠実に再現します。複数のニューロンモデルを着替えるように比較でき、設計初期段階から最適解を見つけられます。これは低消費電力 AI ハードウェアの実用化を大きく加速する地図となります。",
+        "ko": "뇌처럼 작동하는 칩을 설계할 때, 내부 트랜지스터는 교과서처럼 완벽하지 않아 미세한 편차와 전류 누설이 발생합니다. 스파이킹 신경망(SNN)은 뉴런이 전기 펄스를 발화하는 방식을 모방해 스마트워치나 드론 같은 엣지 기기에서 초저전력 AI를 구현합니다. 문제는 기존 시뮬레이터가 이상적인 하드웨어를 가정하기 때문에, 컴퓨터에서 잘 작동하는 설계가 실제 칩에서는 실패하는 경우가 많다는 점입니다. 이 새로운 프레임워크는 「정직한 모래상자」처럼 실제 혼합 신호 하드웨어의 불완전성을 충실히 재현합니다. 여러 뉴런 모델을 옷을 갈아입듯 비교할 수 있어 설계 초기 단계부터 최적의 선택을 할 수 있으며, 저전력 AI 하드웨어 개발의 신뢰할 수 있는 나침반이 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正節能的邊緣 AI，必須在設計階段就擁抱硬體的「不完美」，而非逃避它。",
+        "en": "💡 Truly energy-efficient edge AI must embrace hardware imperfections at the design stage, not ignore them.",
+        "zh-CN": "💡 真正节能的边缘 AI，必须在设计阶段就拥抱硬件的「不完美」，而非逃避它。",
+        "ja": "💡 真に省エネなエッジ AI を実現するには、設計段階からハードウェアの「不完全さ」を受け入れることが不可欠だ。",
+        "ko": "💡 진정한 저전력 엣지 AI는 하드웨어의 「불완전함」을 설계 단계에서부터 받아들여야 한다."
+      }
+    },
+    {
+      "id": "space-260709",
+      "domain": "space",
+      "day": "2026-07-09",
+      "author": "Tirth D. Surti, Martijn S. S. L. Oei et al.",
+      "ref": "arXiv:2607.06562v1",
+      "url": "https://arxiv.org/abs/2607.06562v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"18\" ry=\"18\" fill=\"#1a237e\"/><ellipse cx=\"170\" cy=\"80\" rx=\"10\" ry=\"10\" fill=\"#ffffff\"/><line x1=\"152\" y1=\"80\" x2=\"60\" y2=\"80\" stroke=\"#e53935\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"188\" y1=\"80\" x2=\"280\" y2=\"80\" stroke=\"#e53935\" stroke-width=\"4\" stroke-linecap=\"round\"/><ellipse cx=\"60\" cy=\"80\" rx=\"22\" ry=\"13\" fill=\"#e53935\" opacity=\"0.85\"/><ellipse cx=\"280\" cy=\"80\" rx=\"22\" ry=\"13\" fill=\"#e53935\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"7\" fill=\"#ffffff\" opacity=\"0.7\"/><circle cx=\"280\" cy=\"80\" r=\"7\" fill=\"#ffffff\" opacity=\"0.7\"/><ellipse cx=\"170\" cy=\"80\" rx=\"70\" ry=\"30\" fill=\"none\" stroke=\"#42a5f5\" stroke-width=\"1.2\" stroke-dasharray=\"6,4\" opacity=\"0.5\"/><circle cx=\"30\" cy=\"30\" r=\"3\" fill=\"#ffffff\" opacity=\"0.4\"/><circle cx=\"310\" cy=\"25\" r=\"2\" fill=\"#ffffff\" opacity=\"0.3\"/><circle cx=\"50\" cy=\"140\" r=\"2\" fill=\"#ffffff\" opacity=\"0.3\"/><circle cx=\"300\" cy=\"140\" r=\"3\" fill=\"#ffffff\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "雙向噴流的能量極限：緻密對稱天體的磁場與最低能量測量",
+        "en": "How Much Energy Do Baby Radio Galaxies Pack? Measuring Jets and Magnetic Fields in Compact Symmetric Objects",
+        "zh-CN": "双向喷流的能量极限：致密对称天体的磁场与最低能量测量",
+        "ja": "双方向ジェットのエネルギー限界：コンパクト対称天体の磁場と最小エネルギーの測定",
+        "ko": "양방향 제트의 에너지 한계: 소형 대칭 천체의 자기장과 최소 에너지 측정"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究利用無線電巡天資料與 VLBA 高解析度干涉觀測，對一批「邊緣增亮緻密對稱天體（CSO-2s）」估算其同步輻射最低能量與對應磁場強度。這些物理量是驗證 CSO-2 透過恆星潮汐捕獲形成、並經由同步輻射冷卻演化之理論模型的關鍵約束。",
+        "en": "The study combines radio survey data and spatially resolved VLBA interferometric observations to estimate minimum synchrotron energies and equipartition magnetic field strengths of edge-brightened compact symmetric objects (CSO-2s). These quantities provide essential constraints for testing theoretical models of CSO-2 formation via stellar capture and subsequent evolution driven by synchrotron cooling.",
+        "zh-CN": "本研究利用无线电巡天数据与 VLBA 高分辨率干涉观测，对一批「边缘增亮致密对称天体（CSO-2s）」估算其同步辐射最低能量与对应磁场强度。这些物理量是验证 CSO-2 通过恒星潮汐捕获形成、并经由同步辐射冷却演化之理论模型的关键约束。",
+        "ja": "本研究は電波サーベイデータとVLBA干渉計の空間分解観測を組み合わせ、輝縁型コンパクト対称天体（CSO-2s）のシンクロトロン最小エネルギーと等分配磁場強度を推定した。これらの物理量は、CSO-2が恒星捕獲によって形成されシンクロトロン冷却で進化するモデルを検証するための重要な制約条件となる。",
+        "ko": "이 연구는 전파 탐사 데이터와 VLBA 고해상도 간섭 관측을 결합하여 가장자리가 밝은 소형 대칭 천체(CSO-2s)의 싱크로트론 최소 에너지와 등분배 자기장 강도를 추정했다. 이 물리량은 CSO-2가 별 포획으로 형성되고 싱크로트론 냉각으로 진화한다는 이론 모델을 검증하는 핵심 제약 조건이다."
+      },
+      "plain": {
+        "zh-TW": "想像宇宙中有一種「嬰兒電台星系」——它的核心黑洞正在朝兩個相反方向猛力噴出高能粒子流，就像消防車同時往左右兩邊噴水。這類天體叫做「緻密對稱天體（CSO）」，體積不到一千光年，在宇宙尺度上只是個小嬰兒。科學家想搞清楚：這些噴流到底帶著多少能量？磁場有多強？就像替噴火龍量體溫一樣，需要精密的工具。研究團隊動用了地球上分布最廣的無線電望遠鏡網路（VLBA），把微弱的無線電波拼湊成超高解析度影像，再從發光亮度反推出儲存在粒子與磁場中的最低能量。結果提供了一把「尺」，讓我們能判斷這些噴流是否真的源自黑洞吞噬了一顆恆星——一場宇宙規模的「恆星大吞噬」事件。搞清楚嬰兒噴流的誕生與老化，就像追蹤人的成長過程，有助於解開所有大型電波星系是如何從幼小演化到壯大的謎題。",
+        "en": "Picture a baby radio galaxy: its central black hole is blasting two opposing jets of particles into space, like a fire hose spinning in both directions at once. These objects, called compact symmetric objects (CSOs), are less than a thousand light-years across — tiny infants by cosmic standards. Scientists want to know: how much energy is packed into these jets, and how strong are the magnetic fields threading through them? Think of it as taking the temperature of a newborn cosmic dragon. The team used the VLBA, a continent-spanning network of radio telescopes, to create razor-sharp images and work backwards from the brightness to find the minimum energy stored in particles and magnetic fields. These measurements act as a ruler to test whether CSOs are born when a black hole swallows a star whole — a violent cosmic snack event. Understanding how baby jets are born and age helps us crack the mystery of how all giant radio galaxies grew from small beginnings.",
+        "zh-CN": "想象宇宙中有一种「婴儿电台星系」——它的核心黑洞正在朝两个相反方向猛力喷出高能粒子流，就像消防车同时往左右两边喷水。这类天体叫做「致密对称天体（CSO）」，体积不到一千光年，在宇宙尺度上只是个小婴儿。科学家想搞清楚：这些喷流到底带着多少能量？磁场有多强？就像替喷火龙量体温一样，需要精密的工具。研究团队动用了地球上分布最广的无线电望远镜网络（VLBA），把微弱的无线电波拼凑成超高分辨率图像，再从发光亮度反推出储存在粒子与磁场中的最低能量。结果提供了一把「尺」，让我们能判断这些喷流是否真的源自黑洞吞噬了一颗恒星。搞清楚婴儿喷流的诞生与老化，有助于解开所有大型电波星系是如何从幼小演化到壮大的谜题。",
+        "ja": "宇宙に「赤ちゃん電波銀河」が存在する。中心の巨大ブラックホールが反対方向に向かって高エネルギー粒子の噴流（ジェット）を吹き出している様子は、消防車が左右同時に放水するようなイメージだ。「コンパクト対称天体（CSO）」と呼ばれるこの天体は、千光年以下という宇宙的にはごく小さな赤ちゃんだ。科学者たちが知りたいのは、このジェットにどれだけのエネルギーが詰まっているか、磁場はどれほど強いか——まるで宇宙のドラゴンの体温を測るような挑戦だ。研究チームは大陸規模の電波望遠鏡ネットワーク（VLBA）で超高解像度の画像を作り、輝度から粒子と磁場に蓄えられた最小エネルギーを逆算した。この値は、CSOがブラックホールに恒星が丸ごと飲み込まれることで生まれるという説を検証する重要な物差しとなる。",
+        "ko": "우주에는 '아기 전파 은하'가 있다. 중심 블랙홀이 반대 방향으로 고에너지 입자 제트를 동시에 뿜어내는 모습은, 소방차가 양쪽으로 동시에 물을 뿜는 것과 같다. 이런 천체를 '소형 대칭 천체(CSO)'라고 하며, 크기가 천 광년 이하로 우주 기준으로는 아주 작은 아기다. 과학자들이 알고 싶은 것은 이 제트에 얼마나 많은 에너지가 담겨 있는지, 자기장은 얼마나 강한지다. 연구팀은 대륙 규모의 전파망원경 네트워크인 VLBA로 초고해상도 영상을 만들고, 밝기로부터 입자와 자기장에 저장된 최소 에너지를 역산했다. 이 측정값은 CSO가 블랙홀이 별을 통째로 삼키는 사건으로 태어난다는 이론을 검증하는 핵심 잣대가 된다. 아기 제트의 탄생과 노화를 이해하면 모든 거대 전파 은하가 어떻게 성장했는지 수수께끼를 풀 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙中最壯觀的噴流，可能只是一顆不幸遭黑洞吞噬的恆星所留下的回響。",
+        "en": "💡 The most spectacular jets in the cosmos may be nothing more than the echoes of a single star swallowed whole by a black hole.",
+        "zh-CN": "💡 宇宙中最壮观的喷流，可能只是一颗不幸遭黑洞吞噬的恒星所留下的回响。",
+        "ja": "💡 宇宙で最も壮大なジェットは、ブラックホールに丸ごと飲み込まれた一つの星の残響に過ぎないかもしれない。",
+        "ko": "💡 우주에서 가장 장엄한 제트는, 블랙홀에 통째로 삼켜진 별 하나가 남긴 메아리일지도 모른다."
+      }
+    },
+    {
+      "id": "tech-260709",
+      "domain": "tech",
+      "day": "2026-07-09",
+      "author": "Zichao Zhang, Melda Yuksel et al.",
+      "ref": "arXiv:2607.06496v1",
+      "url": "https://arxiv.org/abs/2607.06496v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"10\" y=\"70\" width=\"18\" height=\"60\" fill=\"#00695c\" opacity=\"0.5\"/><rect x=\"34\" y=\"50\" width=\"18\" height=\"80\" fill=\"#00695c\" opacity=\"0.65\"/><rect x=\"58\" y=\"35\" width=\"18\" height=\"95\" fill=\"#00695c\" opacity=\"0.8\"/><rect x=\"82\" y=\"20\" width=\"18\" height=\"110\" fill=\"#00695c\"/><rect x=\"106\" y=\"30\" width=\"18\" height=\"100\" fill=\"#00695c\" opacity=\"0.85\"/><rect x=\"130\" y=\"45\" width=\"18\" height=\"85\" fill=\"#00695c\" opacity=\"0.7\"/><line x1=\"10\" y1=\"130\" x2=\"310\" y2=\"130\" stroke=\"#004d40\" stroke-width=\"2\"/><polyline points=\"170,110 195,75 220,55 245,40 270,35 295,38\" fill=\"none\" stroke=\"#f9a825\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/><circle cx=\"295\" cy=\"38\" r=\"5\" fill=\"#f9a825\"/><rect x=\"160\" y=\"10\" width=\"170\" height=\"4\" fill=\"#b2dfdb\" rx=\"2\"/><ellipse cx=\"245\" cy=\"12\" rx=\"6\" ry=\"6\" fill=\"#e0f2f1\" opacity=\"0.7\"/><circle cx=\"245\" cy=\"12\" r=\"3\" fill=\"#00695c\"/></svg>",
+      "title": {
+        "zh-TW": "突破奈奎斯特極限：用數學分解讓無線傳輸更快更有效率",
+        "en": "Beyond Nyquist: Unlocking Higher Spectral Efficiency with Faster-than-Nyquist Signaling",
+        "zh-CN": "突破奈奎斯特极限：用数学分解让无线传输更快更高效",
+        "ja": "ナイキスト限界を超えて：数学的分解で無線通信をより速く効率的に",
+        "ko": "나이퀴스트 한계를 넘어서: 수학적 분해로 무선 전송을 더 빠르고 효율적으로"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 & 공학"
+      },
+      "tech": {
+        "zh-TW": "本文針對有限字母輸入下的預編碼「超奈奎斯特（FTN）」信號，推導其受限通道容量。透過引入循環前綴（CP）與循環後綴（CS），利用離散傅立葉轉換（DFT）將 FTN 通道分解為一組並聯特徵子通道，進而精確計算在實際有限字母約束下的頻譜效率上限，並證明時間加速確實能超越傳統奈奎斯特速率的頻譜效率。",
+        "en": "This paper derives the constrained capacity of precoded faster-than-Nyquist (FTN) signaling under finite-alphabet inputs. By incorporating cyclic prefix (CP) and cyclic suffix (CS), the FTN channel is decomposed into parallel eigenchannels via the discrete Fourier transform (DFT), enabling precise computation of spectral efficiency limits and confirming that time acceleration surpasses conventional Nyquist-rate performance.",
+        "zh-CN": "本文针对有限字母输入下的预编码「超奈奎斯特（FTN）」信号，推导其受限信道容量。通过引入循环前缀（CP）与循环后缀（CS），利用离散傅里叶变换（DFT）将 FTN 信道分解为一组并联特征子信道，从而精确计算实际有限字母约束下的频谱效率上限，并证明时间加速确实能超越传统奈奎斯特速率的频谱效率。",
+        "ja": "本論文は、有限アルファベット入力における事前符号化された超ナイキスト（FTN）信号の制約付きチャネル容量を導出する。循環プレフィックス（CP）と循環サフィックス（CS）を導入し、離散フーリエ変換（DFT）によって FTN チャネルを並列固有チャネルに分解することで、実用的な有限アルファベット制約下でのスペクトル効率の上限を算出し、時間加速が従来のナイキスト速度を超えることを証明した。",
+        "ko": "이 논문은 유한 알파벳 입력 조건에서 사전 부호화된 나이퀴스트 초과(FTN) 신호의 제약 채널 용량을 도출한다. 순환 접두사(CP)와 순환 접미사(CS)를 도입하여 이산 푸리에 변환(DFT)으로 FTN 채널을 병렬 고유 채널로 분해하고, 실용적 유한 알파벳 제약 하에서의 스펙트럼 효율 상한을 계산하여 시간 가속이 기존 나이퀴스트 속도를 능가함을 증명했다."
+      },
+      "plain": {
+        "zh-TW": "想像高速公路上的車道：傳統通訊規則（奈奎斯特定理）要求每輛車之間必須保持固定安全距離，就算路況很好也不能靠近。「超奈奎斯特傳輸」像是允許車子縮短間距、塞進更多車輛，讓同樣的道路乘載更多資訊。問題是，車子靠太近會互相干擾（符號間干擾），以往工程師不確定這樣做到底能快多少、有沒有理論上的極限。這篇論文用一個數學技巧——就像把一條複雜的纏繞毛線，用傅立葉轉換「梳理」成許多條平行的獨立細線——把複雜的干擾問題變成許多個簡單的小問題分開解決。結果證明：只要設計得當，「超奈奎斯特」確實能在同樣頻寬下傳更多資料，而且現在我們終於有了明確的理論上限可以依據。這對 5G/6G 通訊、衛星寬頻等頻譜資源珍貴的領域，意義非常重大。",
+        "en": "Imagine a highway where traditional rules force every car to keep a fixed gap between them, even on a clear road. Faster-than-Nyquist (FTN) signaling is like allowing cars to close that gap and fit more vehicles on the same road, squeezing more data through the same bandwidth. The catch is that cars too close together can collide—signals interfere with each other. Engineers long wondered: how much faster can we really go, and what is the theoretical ceiling? This paper uses a mathematical trick—like untangling a knotted ball of yarn into many neat parallel threads using the Fourier transform—to break the complex interference problem into many simple independent sub-problems. The result confirms that FTN, when properly designed, genuinely surpasses traditional Nyquist limits. This has major implications for 5G/6G wireless, satellite broadband, and any field where radio spectrum is precious.",
+        "zh-CN": "想象一条高速公路：传统通信规则（奈奎斯特定理）要求每辆车之间必须保持固定的安全距离，即使路况良好也不能靠近。「超奈奎斯特传输」就像允许车辆缩短间距、塞入更多车辆，让同样的道路承载更多信息。问题在于，车辆靠太近会互相干扰（符号间干扰），以往工程师无法确定这样做的理论极限在哪里。这篇论文用一个数学技巧——就像用傅里叶变换把一团复杂的缠绕毛线「梳理」成许多平行的独立细线——将复杂的干扰问题分解成许多简单的小问题分别求解。结果证明：只要设计得当，「超奈奎斯特」确实能在相同带宽下传输更多数据，且现在终于有了明确的理论上限。这对 5G/6G 通信、卫星宽带等频谱资源宝贵的领域意义重大。",
+        "ja": "高速道路を想像してください。従来の通信ルール（ナイキスト定理）では、車間距離を常に一定に保つ必要があります。超ナイキスト（FTN）伝送は、その間隔を縮めてより多くの車を走らせ、同じ道路でより多くの情報を運ぶようなものです。ただし、車が近づきすぎると衝突（符号間干渉）が起きます。エンジニアたちはずっと疑問を抱いていました：理論的にどこまで速くできるのか？この論文はフーリエ変換を使い、複雑に絡まった毛糸を多くの平行な独立した糸にほぐすように、干渉問題を多数の単純なサブ問題に分解しました。結果として、適切に設計された FTN は従来のナイキスト速度を確実に上回ることが証明されました。5G/6G や衛星通信など、電波資源が貴重な分野に大きな意義をもたらします。",
+        "ko": "고속도로를 상상해 보세요. 전통적인 통신 규칙(나이퀴스트 정리)은 차량 사이에 항상 일정한 안전거리를 유지하도록 요구합니다. 나이퀴스트 초과(FTN) 전송은 그 간격을 줄여 같은 도로에 더 많은 차량을 운행하듯, 같은 주파수 대역에 더 많은 정보를 실어 나르는 방식입니다. 문제는 차량이 너무 가까워지면 충돌(심볼 간 간섭)이 발생한다는 점입니다. 이 논문은 푸리에 변환을 이용해 복잡하게 엉킨 실타래를 여러 개의 평행한 독립된 실로 풀어내듯, 복잡한 간섭 문제를 다수의 단순한 하위 문제로 분해했습니다. 결과적으로 적절히 설계된 FTN이 기존 나이퀴스트 속도를 실제로 능가함이 증명되었습니다. 5G/6G, 위성 광대역 등 주파수 자원이 귀한 분야에 매우 중요한 의미를 지닙니다."
+      },
+      "insight": {
+        "zh-TW": "💡 打破規則不是蠻幹——用對數學工具，「太快」也能變成系統化的優勢，頻譜效率的天花板比我們以為的還要高。",
+        "en": "💡 Breaking the rules isn't reckless—with the right mathematical tools, 「too fast」 can become a systematic advantage, and the ceiling of spectral efficiency is higher than we assumed.",
+        "zh-CN": "💡 打破规则并非蛮干——用对数学工具，「太快」也能变成系统化的优势，频谱效率的天花板比我们以为的还要高。",
+        "ja": "💡 ルールを破ることは無謀ではない——適切な数学的ツールを使えば、「速すぎる」ことも体系的な優位性に変わり、スペクトル効率の上限は想像以上に高い。",
+        "ko": "💡 규칙을 깨는 것은 무모한 일이 아니다——올바른 수학적 도구를 사용하면 「너무 빠름」도 체계적인 강점이 되며, 스펙트럼 효율의 한계는 우리가 생각했던 것보다 훨씬 높다."
+      }
+    }
+  ]
+}
