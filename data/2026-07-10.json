@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-10",
+  "mode": "paper",
+  "paper_date": "2026-07-10",
+  "generated_at": "2026-07-10",
+  "cards": [
+    {
+      "id": "ai-260710",
+      "domain": "ai",
+      "day": "2026-07-10",
+      "author": "Chen Tang, Yizhou Wang et al.",
+      "ref": "arXiv:2607.07708v1",
+      "url": "https://arxiv.org/abs/2607.07708v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><polygon points=\"60,130 100,70 140,130\" fill=\"#2a9d8f\" opacity=\"0.85\"/><polygon points=\"100,70 140,130 80,130\" fill=\"#264653\" opacity=\"0.45\"/><circle cx=\"100\" cy=\"68\" r=\"10\" fill=\"#e9c46a\" opacity=\"0.9\"/><circle cx=\"60\" cy=\"132\" r=\"7\" fill=\"#2a9d8f\" opacity=\"0.7\"/><circle cx=\"140\" cy=\"132\" r=\"7\" fill=\"#2a9d8f\" opacity=\"0.7\"/><line x1=\"100\" y1=\"68\" x2=\"60\" y2=\"132\" stroke=\"#264653\" stroke-width=\"2\" opacity=\"0.6\"/><line x1=\"100\" y1=\"68\" x2=\"140\" y2=\"132\" stroke=\"#264653\" stroke-width=\"2\" opacity=\"0.6\"/><line x1=\"60\" y1=\"132\" x2=\"140\" y2=\"132\" stroke=\"#264653\" stroke-width=\"2\" opacity=\"0.6\"/><rect x=\"185\" y=\"40\" width=\"50\" height=\"50\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.75\"/><rect x=\"195\" y=\"50\" width=\"30\" height=\"30\" rx=\"4\" fill=\"#e9c46a\" opacity=\"0.7\"/><line x1=\"145\" y1=\"100\" x2=\"185\" y2=\"75\" stroke=\"#e76f51\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\" opacity=\"0.8\"/><circle cx=\"265\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"2.5\" opacity=\"0.7\"/><circle cx=\"265\" cy=\"80\" r=\"14\" fill=\"#e76f51\" opacity=\"0.25\"/><circle cx=\"265\" cy=\"80\" r=\"5\" fill=\"#e76f51\" opacity=\"0.8\"/><line x1=\"237\" y1=\"80\" x2=\"293\" y2=\"80\" stroke=\"#e76f51\" stroke-width=\"1.5\" opacity=\"0.5\"/><line x1=\"265\" y1=\"52\" x2=\"265\" y2=\"108\" stroke=\"#e76f51\" stroke-width=\"1.5\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "AI 看懂分子結構再推理：跨領域「結構→性質」深度解析新框架",
+        "en": "Deep Native Structural Reasoning: AI That Truly Understands Structure-Property Relationships",
+        "zh-CN": "AI 读懂分子结构再推理：跨领域「结构→性质」深度解析新框架",
+        "ja": "構造を深く理解するAI：分野横断「構造→性質」解析の新フレームワーク",
+        "ko": "구조를 이해하는 AI：분야 통합 「구조→성질」 심층 추론 새 프레임워크"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與科學推理",
+        "en": "🤖 AI & Scientific Reasoning",
+        "zh-CN": "🤖 AI与科学推理",
+        "ja": "🤖 AIと科学的推論",
+        "ko": "🤖 AI와 과학적 추론"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一套深度「原生結構推理」框架，讓 AI 能在保留分子、晶體、生物大分子等領域原生結構表示的同時，以物理化學約束（立體化學、鍵結、對稱性、能量等）為推理依據，跨越生物學、化學與材料科學三大領域進行可解釋的結構─性質關係預測。模型設計同時兼顧表示完整性與推理透明度，使 AI 的預測結論可被科學原理追溯驗證。",
+        "en": "This work introduces a deep native structural reasoning framework enabling AI to retain domain-native structural representations—molecular graphs, crystal lattices, protein folds—while grounding predictions in physical and chemical constraints such as stereochemistry, bonding, symmetry, and energetics. The approach spans biology, chemistry, and materials science, yielding interpretable and scientifically traceable structure-property predictions.",
+        "zh-CN": "本研究提出一套深度「原生结构推理」框架，让 AI 能在保留分子、晶体、生物大分子等领域原生结构表示的同时，以物理化学约束（立体化学、键结、对称性、能量等）为推理依据，跨越生物学、化学与材料科学三大领域进行可解释的结构─性质关系预测。模型设计同时兼顾表示完整性与推理透明度，使 AI 的预测结论可被科学原理追溯验证。",
+        "ja": "本研究は、分子グラフ・結晶格子・タンパク質折り畳みなどの領域固有の構造表現を保持しながら、立体化学・結合・対称性・エネルギーなどの物理化学的制約に基づいて推論する深層ネイティブ構造推論フレームワークを提案する。生物学・化学・材料科学にまたがり、科学的に追跡可能な構造─性質予測を実現する。",
+        "ko": "이 연구는 분자 그래프, 결정 격자, 단백질 접힘 등 도메인 고유 구조 표현을 유지하면서 입체화학, 결합, 대칭성, 에너지 등 물리화학적 제약을 추론 근거로 삼는 심층 네이티브 구조 추론 프레임워크를 제안한다. 생물학·화학·재료과학에 걸쳐 과학 원리로 추적 가능한 구조─성질 예측을 제공한다."
+      },
+      "plain": {
+        "zh-TW": "想像一位頂尖化學家——她不只看分子的「外型」，還懂得用化學鍵、空間對稱、能量高低等原理來解釋「為什麼這個分子有這種特性」。過去的 AI 往往只是記住大量例子、猜出答案，卻說不清楚理由，就像學生死背公式卻不懂推導。這篇論文打造的新框架，讓 AI 真正「讀懂」分子、晶體與蛋白質的立體結構，並像科學家一樣，用物理化學規則一步步推理出性質。這對新藥設計、新材料開發、催化劑研究都意義重大——因為 AI 不只給你答案，還能給你一份「可以被科學家審查的推理報告」。更重要的是，這套方法橫跨生物、化學、材料三大領域，不需要為每個學科分別訓練一個 AI，大幅降低了跨領域研究的門檻。它代表著 AI 科學推理從「黑盒子」走向「透明可解釋」的一大步。",
+        "en": "Imagine a top chemist who not only looks at a molecule's shape but also explains why it behaves a certain way using chemical bonds, spatial symmetry, and energy rules. Past AI models often just memorized patterns and guessed answers without explaining the logic—like a student who memorizes formulas without understanding derivations. This new framework teaches AI to truly read 3D structures of molecules, crystals, and proteins, then reason through physical and chemical principles step by step, just like a scientist. This matters enormously for drug discovery, new materials, and catalysis—because AI now delivers not just an answer but a scientifically auditable reasoning report. The framework works across biology, chemistry, and materials science without needing separate AI models for each field, dramatically lowering barriers to cross-disciplinary research. It marks a major step from black-box AI toward transparent, explainable scientific reasoning.",
+        "zh-CN": "想象一位顶尖化学家——她不只看分子的「外形」，还懂得用化学键、空间对称、能量高低等原理来解释「为什么这个分子有这种特性」。过去的 AI 往往只是记住大量例子、猜出答案，却说不清楚理由，就像学生死背公式却不懂推导。这篇论文打造的新框架，让 AI 真正「读懂」分子、晶体与蛋白质的立体结构，并像科学家一样，用物理化学规则一步步推理出性质。这对新药设计、新材料开发、催化剂研究都意义重大——因为 AI 不只给你答案，还能给你一份「可以被科学家审查的推理报告」。更重要的是，这套方法横跨生物、化学、材料三大领域，大幅降低了跨领域研究的门槛，代表着 AI 科学推理从「黑盒子」走向「透明可解释」的一大步。",
+        "ja": "トップクラスの化学者を想像してください――彼女は分子の「形」を見るだけでなく、化学結合・空間対称・エネルギーなどの原理を使って「なぜこの分子はこういう性質を持つのか」を説明できます。これまでのAIは大量の例を暗記して答えを推測するだけで、理由を説明できませんでした。まるで公式を丸暗記するだけで導出を理解しない学生のようです。この新フレームワークは、AIが分子・結晶・タンパク質の立体構造を本当に「読み解き」、科学者のように物理化学の規則で段階的に性質を推論することを可能にします。創薬・新素材・触媒研究において、AIが答えだけでなく「科学者が検証できる推論レポート」を提供できるようになる点が重要です。生物学・化学・材料科学の三分野にまたがり、分野ごとに別のAIを訓練する必要がなく、学際研究のハードルを大幅に下げます。",
+        "ko": "최고의 화학자를 상상해보세요——그녀는 분자의 '형태'만 보는 게 아니라, 화학 결합·공간 대칭·에너지 원리를 이용해 '왜 이 분자가 이런 성질을 갖는지'를 설명할 수 있습니다. 기존 AI는 수많은 예시를 암기해 답을 추측할 뿐, 이유를 설명하지 못했습니다. 마치 공식만 외우고 유도 과정을 모르는 학생과 같았죠. 이 새 프레임워크는 AI가 분자·결정·단백질의 3D 구조를 진정으로 '읽고', 과학자처럼 물리화학 원리로 단계별 추론을 수행하게 합니다. 신약 개발·신소재·촉매 연구에서 AI가 답만이 아닌 '과학자가 검증할 수 있는 추론 보고서'를 제공할 수 있다는 점이 핵심입니다. 생물학·화학·재료과학 세 분야에 걸쳐 작동하며, 분야별 별도 AI 훈련이 필요 없어 학제 간 연구 장벽을 크게 낮춥니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的科學 AI 不只要「算出答案」，更要像科學家一樣「說清楚理由」——透明推理才是 AI 進入實驗室的敲門磚。",
+        "en": "💡 Truly scientific AI must not only compute answers but explain reasoning like a scientist—transparent inference is the key to earning a place in the laboratory.",
+        "zh-CN": "💡 真正的科学 AI 不只要「算出答案」，更要像科学家一样「说清楚理由」——透明推理才是 AI 进入实验室的敲门砖。",
+        "ja": "💡 真の科学AIは答えを出すだけでなく、科学者のように理由を説明しなければならない——透明な推論こそが、AIが実験室に入るための鍵である。",
+        "ko": "💡 진정한 과학 AI는 답을 계산하는 것을 넘어 과학자처럼 이유를 설명해야 한다——투명한 추론이야말로 AI가 실험실에 들어서기 위한 열쇠다."
+      }
+    },
+    {
+      "id": "bio-260710",
+      "domain": "bio",
+      "day": "2026-07-10",
+      "author": "Jeffrey D. Varner",
+      "ref": "arXiv:2607.07677v1",
+      "url": "https://arxiv.org/abs/2607.07677v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"60\" cy=\"80\" r=\"36\" fill=\"#52b788\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#ffffff\" opacity=\"0.9\"/><circle cx=\"60\" cy=\"80\" r=\"10\" fill=\"#52b788\"/><rect x=\"108\" y=\"60\" width=\"18\" height=\"40\" rx=\"4\" fill=\"#52b788\" opacity=\"0.7\"/><rect x=\"132\" y=\"72\" width=\"18\" height=\"28\" rx=\"4\" fill=\"#52b788\" opacity=\"0.5\"/><rect x=\"156\" y=\"50\" width=\"18\" height=\"50\" rx=\"4\" fill=\"#52b788\" opacity=\"0.9\"/><rect x=\"180\" y=\"66\" width=\"18\" height=\"34\" rx=\"4\" fill=\"#52b788\" opacity=\"0.6\"/><line x1=\"104\" y1=\"104\" x2=\"202\" y2=\"104\" stroke=\"#52b788\" stroke-width=\"2\"/><polygon points=\"240,44 290,80 240,116 215,80\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2.5\"/><circle cx=\"240\" cy=\"80\" r=\"8\" fill=\"#f4a261\" opacity=\"0.85\"/><circle cx=\"270\" cy=\"80\" r=\"8\" fill=\"#52b788\" opacity=\"0.85\"/><line x1=\"248\" y1=\"80\" x2=\"262\" y2=\"80\" stroke=\"#888\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><circle cx=\"310\" cy=\"55\" r=\"12\" fill=\"#52b788\" opacity=\"0.6\"/><circle cx=\"310\" cy=\"105\" r=\"8\" fill=\"#f4a261\" opacity=\"0.6\"/><line x1=\"310\" y1=\"67\" x2=\"310\" y2=\"97\" stroke=\"#888\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/></svg>",
+      "title": {
+        "zh-TW": "細菌如何「理性選擇」吃哪種糖？用經濟學消費理論解開微生物決策之謎",
+        "en": "How Bacteria 「Rationally Choose」 Which Sugar to Eat: Decoding Microbial Decision-Making with Consumer Choice Theory",
+        "zh-CN": "细菌如何「理性选择」吃哪种糖？用经济学消费理论解开微生物决策之谜",
+        "ja": "細菌はどの糖を「賢く選ぶ」のか？消費者選択理論で微生物の意思決定を解明",
+        "ko": "세균은 어떤 당을 「합리적으로 선택」할까？소비자 선택 이론으로 미생물 의사결정 해독"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學 × 計算生物學",
+        "en": "🧬 Life Science × Computational Biology",
+        "zh-CN": "🧬 生命科学 × 计算生物学",
+        "ja": "🧬 生命科学 × 計算生物学",
+        "ko": "🧬 생명과학 × 계산생물학"
+      },
+      "tech": {
+        "zh-TW": "本研究將經典的「控制論酵素合成模型（cybernetic model）」重新詮釋為微觀經濟學中的消費者選擇問題，明確寫出細菌在分配酵素合成資源時所隱含的目標函數與限制條件。藉由效用最大化框架，研究者證明細菌的「匹配規則」等價於在資源預算限制下追求最大投資報酬率的最優解，並提供可用於代謝工程的可計算模型。",
+        "en": "This study recasts the classical cybernetic model of microbial enzyme-synthesis control as a consumer choice problem from microeconomics, explicitly deriving the objective function and constraints implicit in bacterial resource allocation. Using a utility-maximization framework, the authors show that the bacterial 「matching rule」 is equivalent to an optimal solution maximizing return-on-investment under resource budget constraints, yielding a computable model applicable to metabolic engineering.",
+        "zh-CN": "本研究将经典的「控制论酵素合成模型（cybernetic model）」重新诠释为微观经济学中的消费者选择问题，明确写出细菌在分配酵素合成资源时所隐含的目标函数与约束条件。借助效用最大化框架，研究者证明细菌的「匹配规则」等价于在资源预算约束下追求最大投资回报率的最优解，并提供可用于代谢工程的可计算模型。",
+        "ja": "本研究は、古典的な「サイバネティック酵素合成モデル」を、ミクロ経済学の消費者選択問題として再定式化し、細菌が酵素合成資源を配分する際に内在する目的関数と制約条件を明示的に導出した。効用最大化フレームワークを用いて、細菌の「マッチングルール」が資源予算制約下での投資対効果最大化の最適解と等価であることを示し、代謝工学に応用可能な計算モデルを提供する。",
+        "ko": "본 연구는 고전적인 「사이버네틱 효소 합성 모델」을 미시경제학의 소비자 선택 문제로 재해석하여, 세균이 효소 합성 자원을 배분할 때 내재된 목적 함수와 제약 조건을 명시적으로 도출했다. 효용 극대화 프레임워크를 사용해 세균의 「매칭 규칙」이 자원 예산 제약 하에서 투자 수익률을 최대화하는 최적해와 동등함을 증명하고, 대사공학에 적용 가능한 계산 모델을 제공한다."
+      },
+      "plain": {
+        "zh-TW": "當你面對一桌豐盛的自助餐，你會先夾最喜歡、最划算的菜——細菌面對多種糖分時，也會做出類似的「聰明選擇」。比如大腸桿菌在同時有葡萄糖和乳糖時，會優先消化葡萄糖，等葡萄糖吃完才換乳糖，這叫做「二階段生長」。過去科學家用「控制論模型」來描述這種行為，知道細菌有一套「分配酵素資源的規則」，但從未把這個規則寫成像人類經濟決策一樣的完整數學式。這篇論文做的事，就像幫一個從不解釋自己為何點餐的老饕，寫下一份完整的「用餐哲學」——目標是什麼、預算是多少、如何權衡取捨。這不只是學術上的美感追求：一旦我們能用經濟學語言精確描述細菌的決策，就能更有系統地「預測」和「設計」微生物的代謝行為，例如讓細菌更有效率地生產藥物或生質燃料。這項研究架起了生物學與經濟學之間意想不到的橋梁，告訴我們理性選擇不只是人類的專利。",
+        "en": "When you face a buffet, you naturally pick your favorite and most rewarding dishes first — bacteria do something surprisingly similar when offered multiple sugars. For example, E. coli will eat glucose before touching lactose, switching only after glucose runs out, a phenomenon called diauxic growth. Scientists have long modeled this with a 「cybernetic model,」 knowing bacteria follow a resource-allocation matching rule, but no one had ever written down the full mathematical decision — like knowing someone always orders wisely at a restaurant without ever seeing their budget or preferences written out. This paper fills that gap, explicitly formulating bacterial enzyme allocation as a consumer choice problem: what is the objective, what are the constraints, and how does the cell trade off options? This matters because once we can describe microbial decisions in economic language, we can more systematically predict and engineer metabolism — helping bacteria produce medicines or biofuels more efficiently. It reveals that rational choice is not just a human trait.",
+        "zh-CN": "当你面对一桌丰盛的自助餐，你会先夹最喜欢、最划算的菜——细菌面对多种糖分时，也会做出类似的「聪明选择」。比如大肠杆菌在同时有葡萄糖和乳糖时，会优先消化葡萄糖，等葡萄糖吃完才换乳糖，这叫做「二阶段生长」。过去科学家用「控制论模型」来描述这种行为，知道细菌有一套「分配酵素资源的规则」，但从未把这个规则写成像人类经济决策一样的完整数学式。这篇论文做的事，就像帮一个从不解释自己为何点餐的老饕，写下一份完整的「用餐哲学」——目标是什么、预算是多少、如何权衡取舍。一旦我们能用经济学语言精确描述细菌的决策，就能更有系统地预测和设计微生物的代谢行为，例如让细菌更有效率地生产药物或生物燃料。这项研究架起了生物学与经济学之间意想不到的桥梁。",
+        "ja": "ビュッフェで一番おいしくてお得な料理から取るように、細菌も複数の糖が与えられると「賢い選択」をします。たとえば大腸菌はグルコースとラクトースが同時にあると、まずグルコースを使い切ってからラクトースに切り替えます。これを「二段階成長」と呼びます。科学者たちはこの行動を「サイバネティックモデル」で説明してきましたが、細菌がなぜそう選ぶのかを経済学的な意思決定として完全に書き下した人はいませんでした。この論文はその空白を埋め、細菌の酵素合成資源配分を「消費者選択問題」として定式化しました——目標は何か、制約は何か、どう選ぶかを明示したのです。これにより、微生物の代謝を系統的に予測・設計し、薬や燃料をより効率よく作る細菌の開発に役立てることができます。合理的選択は人間だけの特権ではないのです。",
+        "ko": "뷔페에서 가장 맛있고 가성비 좋은 음식부터 집듯이, 세균도 여러 당이 주어졌을 때 「현명한 선택」을 합니다. 예를 들어 대장균은 포도당과 젖당이 동시에 있을 때 포도당을 먼저 소모한 후 젖당으로 전환하는데, 이를 「이단계 성장」이라 합니다. 과학자들은 이 행동을 「사이버네틱 모델」로 설명해왔지만, 세균이 왜 그런 선택을 하는지를 경제학적 의사결정으로 완전히 수식화한 사람은 없었습니다. 이 논문은 그 공백을 채워, 세균의 효소 합성 자원 배분을 「소비자 선택 문제」로 명시적으로 정식화했습니다——목표는 무엇인지, 제약은 무엇인지, 어떻게 절충하는지를 밝혔습니다. 이를 통해 미생물의 대사를 체계적으로 예측하고 설계해 약물이나 바이오연료를 더 효율적으로 생산하는 세균 개발에 활용할 수 있습니다. 합리적 선택은 인간만의 특권이 아님을 보여줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 細菌沒有大腦，卻演化出堪比理性消費者的資源分配邏輯——生物最優解與經濟最優解，竟是同一件事。",
+        "en": "💡 Bacteria have no brain, yet evolution shaped them into rational consumers — biological optimality and economic optimality turn out to be the same thing.",
+        "zh-CN": "💡 细菌没有大脑，却演化出堪比理性消费者的资源分配逻辑——生物最优解与经济最优解，竟是同一件事。",
+        "ja": "💡 脳を持たない細菌が、進化によって合理的消費者に匹敵する資源配分ロジックを獲得していた——生物学的最適解と経済学的最適解は、実は同じものだった。",
+        "ko": "💡 뇌도 없는 세균이 진화를 통해 합리적 소비자에 버금가는 자원 배분 논리를 갖추었다——생물학적 최적해와 경제학적 최적해는 결국 같은 것이었다."
+      }
+    },
+    {
+      "id": "phys-260710",
+      "domain": "phys",
+      "day": "2026-07-10",
+      "author": "Si-Yu Yuan, Wen-Tan Xue et al.",
+      "ref": "arXiv:2607.07703v1",
+      "url": "https://arxiv.org/abs/2607.07703v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"10\" y=\"60\" width=\"220\" height=\"40\" rx=\"6\" fill=\"#4a7bbf22\" stroke=\"#4a7bbf\" stroke-width=\"1.5\"/><rect x=\"12\" y=\"62\" width=\"18\" height=\"36\" rx=\"4\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"34\" y=\"68\" width=\"12\" height=\"24\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.5\"/><rect x=\"50\" y=\"70\" width=\"12\" height=\"20\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.4\"/><rect x=\"66\" y=\"72\" width=\"12\" height=\"16\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.35\"/><rect x=\"82\" y=\"73\" width=\"120\" height=\"14\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.18\"/><circle cx=\"270\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#e07b3a\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/><circle cx=\"270\" cy=\"80\" r=\"14\" fill=\"#e07b3a\" opacity=\"0.18\" stroke=\"#e07b3a\" stroke-width=\"1.5\"/><circle cx=\"270\" cy=\"80\" r=\"5\" fill=\"#e07b3a\" opacity=\"0.85\"/><line x1=\"230\" y1=\"80\" x2=\"242\" y2=\"80\" stroke=\"#e07b3a\" stroke-width=\"2\" stroke-dasharray=\"3 2\"/><circle cx=\"236\" cy=\"80\" r=\"3\" fill=\"#4a7bbf\" opacity=\"0.7\"/><rect x=\"10\" y=\"120\" width=\"220\" height=\"6\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.15\"/><rect x=\"10\" y=\"120\" width=\"80\" height=\"6\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "被系統「吞噬」的邊緣態：非厄米量子系統的尺度臨界吸收現象",
+        "en": "Edge States Swallowed Alive: Scale-Critical Absorption in Non-Hermitian Quantum Systems",
+        "zh-CN": "被系统「吞噬」的边缘态：非厄米量子系统的尺度临界吸收现象",
+        "ja": "系に「飲み込まれる」端状態：非エルミート量子系のスケール臨界吸収現象",
+        "ko": "시스템에 「삼켜지는」 경계 상태：비에르미트 양자계의 척도 임계 흡수 현상"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 非厄米物理",
+        "en": "⚛️ Non-Hermitian Physics",
+        "zh-CN": "⚛️ 非厄米物理",
+        "ja": "⚛️ 非エルミート物理",
+        "ko": "⚛️ 비에르미트 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究揭示在尺度敏感的非厄米量子鏈中，原本局域於邊緣的本徵態並不如預期般持續存活至熱力學極限，而是在特定臨界系統尺寸下，先短暫形成連續體中的束縛態（BIC），隨即被塊體譜完全吸收。研究團隊利用開放邊界條件下的複數能量平面分析，定量刻畫此「邊緣態吞噬」過程的普適機制。",
+        "en": "This work demonstrates that in scale-sensitive non-Hermitian chains, edge-localized eigenstates do not generically survive the thermodynamic limit. Instead, at a critical system size, they transiently form a bound state in the continuum (BIC) before being fully absorbed into the open-boundary bulk spectrum. The team analytically characterized this 「endocytosis」 mechanism using complex energy plane analysis under open boundary conditions.",
+        "zh-CN": "本研究揭示在尺度敏感的非厄米量子链中，原本局域于边缘的本征态并不如预期般持续存活至热力学极限，而是在特定临界系统尺寸下，先短暂形成连续体中的束缚态（BIC），随即被块体谱完全吸收。研究团队利用开放边界条件下的复数能量平面分析，定量刻画此「边缘态吞噬」过程的普适机制。",
+        "ja": "本研究は、スケール感受性を持つ非エルミート鎖において、端局在固有状態が熱力学的極限まで存続しないことを示す。特定の臨界系サイズで一時的に連続体中の束縛状態（BIC）を形成した後、開放境界バルクスペクトルに完全に吸収される。開放境界条件下での複素エネルギー面解析によりこの「エンドサイトーシス」機構を定量的に解明した。",
+        "ko": "이 연구는 척도에 민감한 비에르미트 사슬에서 경계 국소화 고유상태가 열역학적 극한까지 생존하지 못함을 보여준다. 임계 계 크기에서 연속체 내 속박 상태(BIC)를 일시적으로 형성한 후 개방 경계 벌크 스펙트럼에 완전히 흡수된다. 개방 경계 조건하의 복소 에너지 평면 분석으로 이 「내포(endocytosis)」 메커니즘을 정량적으로 규명했다."
+      },
+      "plain": {
+        "zh-TW": "想像一顆泡泡漂浮在大海邊緣——在小池塘裡，這顆泡泡顯眼地存活著；但當池塘愈來愈大，泡泡在某個關鍵尺寸時，會先瞬間融入水面，然後悄悄被大海吞沒，再也看不見。這正是本研究發現的「邊緣態胞吞」現象：在某類量子材料（非厄米系統）中，聚集在材料邊界的特殊量子態，隨著系統變大，不是慢慢消散，而是撐到臨界點後被整個體系突然吸收。過去科學家以為這類邊緣態能一直存活，這個發現打破了這個預設。這項研究對設計量子感測器、拓樸量子元件非常重要：工程師必須知道元件做到多大時，邊緣態功能會突然失效。就像蓋橋時要知道橋長超過多少才會共振垮塌，量子元件的「尺寸紅線」同樣不能忽視。",
+        "en": "Imagine a bubble clinging to the edge of a small pond — clearly visible and stable. But as the pond grows larger and larger, at some critical size, the bubble briefly merges with the surface before being silently swallowed by the bulk water, vanishing completely. This is exactly the 「edge state endocytosis」 discovered here: in certain quantum materials called non-Hermitian systems, special quantum states anchored at the boundary do not gradually fade as the system grows — instead they persist stubbornly until a critical size, then get suddenly absorbed all at once. Scientists previously assumed such edge states would always survive. This discovery shatters that assumption and is crucial for designing quantum sensors and topological devices, where engineers must know the exact size limit beyond which edge-state functionality abruptly collapses — much like knowing how long a bridge can be before resonance causes it to collapse.",
+        "zh-CN": "想象一颗泡泡漂浮在小水池边缘——在小水池里，它清晰可见。但当水池越来越大，泡泡在某个关键尺寸时，会先瞬间融入水面，然后悄悄被大海吞没，再也看不见。这正是本研究发现的「边缘态胞吞」现象：在某类量子材料（非厄米系统）中，聚集在材料边界的特殊量子态，随着系统变大，不是慢慢消散，而是撑到临界点后被整个体系突然吸收。过去科学家以为这类边缘态能一直存活，这个发现打破了这个预设。对设计量子传感器和拓扑量子器件至关重要：工程师必须知道器件做到多大时，边缘态功能会突然失效。",
+        "ja": "小さな池の縁に浮かぶ泡を想像してください。小さな池では泡はくっきり見えています。しかし池がどんどん大きくなると、ある臨界サイズで泡は一瞬水面に溶け込み、そのまま静かに飲み込まれて消えてしまいます。これが本研究で発見された「端状態エンドサイトーシス」です。非エルミート量子系と呼ばれる材料では、境界に局在する特殊な量子状態が、系が大きくなっても粘り強く残り続け、臨界サイズに達した瞬間に突然バルクに吸収されます。これまで科学者はこの端状態は必ず生き残ると考えていましたが、この発見はその前提を覆します。量子センサーやトポロジカル素子の設計において、どのサイズで機能が突然失われるかを知ることが不可欠です。",
+        "ko": "작은 연못 가장자리에 떠 있는 거품을 상상해 보세요. 작은 연못에서는 거품이 또렷하게 보입니다. 하지만 연못이 점점 커지면, 어느 임계 크기에서 거품은 순간적으로 수면에 녹아들었다가 조용히 삼켜져 사라집니다. 이것이 바로 이 연구에서 발견한 「경계 상태 내포(endocytosis)」 현상입니다. 비에르미트 양자 재료에서 경계에 국소화된 특수한 양자 상태는 계가 커져도 완강히 버티다가 임계 크기에 도달하는 순간 갑자기 벌크에 흡수됩니다. 과학자들은 이런 경계 상태가 항상 살아남는다고 믿었지만, 이 발견은 그 전제를 뒤집습니다. 양자 센서와 위상 소자 설계에서 어느 크기부터 기능이 갑자기 사라지는지 아는 것이 매우 중요합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 系統的「尺寸」本身就是一種相變參數——量子元件的邊界功能可能在某個臨界體積後驟然消失，設計時不能只看小尺寸的行為。",
+        "en": "💡 System size itself acts as a phase-transition parameter — a quantum device's edge functionality can vanish abruptly beyond a critical scale, so small-sample behavior can never be blindly extrapolated.",
+        "zh-CN": "💡 系统的「尺寸」本身就是一种相变参数——量子器件的边界功能可能在某个临界体积后骤然消失，设计时不能只看小尺寸的行为。",
+        "ja": "💡 系のサイズそのものが相転移パラメータとなり得る——量子素子の端機能は臨界スケールを超えると突然消滅する可能性があり、小サイズでの挙動だけを信頼してはならない。",
+        "ko": "💡 계의 「크기」 자체가 상전이 매개변수가 될 수 있다 — 양자 소자의 경계 기능은 임계 크기를 넘으면 갑자기 사라질 수 있으므로, 소규모 거동만으로 외삽해서는 안 된다."
+      }
+    },
+    {
+      "id": "neuro-260710",
+      "domain": "neuro",
+      "day": "2026-07-10",
+      "author": "Patrick Govoni, Pawel Romanczuk et al.",
+      "ref": "arXiv:2607.07460v1",
+      "url": "https://arxiv.org/abs/2607.07460v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"2\" opacity=\"0.4\"/><circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"1.5\" opacity=\"0.3\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#6a1b9a\" opacity=\"0.9\"/><circle cx=\"110\" cy=\"65\" r=\"7\" fill=\"#ab47bc\" opacity=\"0.85\"/><circle cx=\"95\" cy=\"95\" r=\"7\" fill=\"#ab47bc\" opacity=\"0.85\"/><circle cx=\"130\" cy=\"108\" r=\"7\" fill=\"#ab47bc\" opacity=\"0.85\"/><circle cx=\"230\" cy=\"60\" r=\"7\" fill=\"#f48fb1\" opacity=\"0.85\"/><circle cx=\"245\" cy=\"90\" r=\"7\" fill=\"#f48fb1\" opacity=\"0.85\"/><circle cx=\"220\" cy=\"112\" r=\"7\" fill=\"#f48fb1\" opacity=\"0.85\"/><line x1=\"110\" y1=\"65\" x2=\"170\" y2=\"80\" stroke=\"#ab47bc\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"95\" y1=\"95\" x2=\"170\" y2=\"80\" stroke=\"#ab47bc\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"130\" y1=\"108\" x2=\"170\" y2=\"80\" stroke=\"#ab47bc\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"230\" y1=\"60\" x2=\"170\" y2=\"80\" stroke=\"#f48fb1\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/><line x1=\"245\" y1=\"90\" x2=\"170\" y2=\"80\" stroke=\"#f48fb1\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/><line x1=\"220\" y1=\"112\" x2=\"170\" y2=\"80\" stroke=\"#f48fb1\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "跟著群體走還是獨立行動？AI 智能體如何從社交脈絡學習導航策略",
+        "en": "Follow the Crowd or Go Alone? How AI Agents Learn Navigation from Social Context",
+        "zh-CN": "跟着群体走还是独立行动？AI智能体如何从社交情境学习导航策略",
+        "ja": "群れに従うか単独行動か？AIエージェントが社会的文脈からナビゲーション戦略を学ぶ",
+        "ko": "무리를 따를까, 혼자 갈까? AI 에이전트가 사회적 맥락에서 내비게이션을 학습하는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學 × 人工智慧",
+        "en": "🧠 Neuroscience × AI",
+        "zh-CN": "🧠 神经科学 × 人工智能",
+        "ja": "🧠 神経科学 × AI",
+        "ko": "🧠 신경과학 × AI"
+      },
+      "tech": {
+        "zh-TW": "研究者以神經網路控制的個體智能體為主角，讓它們在不同社交情境下學習導航。實驗設計將「社交資訊品質」作為關鍵變數，觀察智能體策略如何從獨立探索轉變為跟隨行為，乃至在擁擠覓食場景中發展出碰撞迴避機制。結果顯示，高品質社交資訊的增加會驅動策略相變，揭示了群體動力學對個體決策的非線性影響。",
+        "en": "Individual neural-network-controlled agents were trained to navigate across varying social contexts. Social information quality was used as a key variable to observe phase transitions from independent exploration to following behavior, and further to collision avoidance in crowded foraging patches. Results reveal nonlinear, phase-transition-like shifts in navigational strategy driven by the availability of high-quality social cues.",
+        "zh-CN": "研究者以神经网络控制的个体智能体为主角，令其在不同社交情境中学习导航。以「社交信息质量」为关键变量，观察智能体策略如何从独立探索转变为跟随行为，并在拥挤觅食场景中发展出碰撞回避机制。结果表明，高质量社交信息的增加驱动了策略相变，揭示了群体动力学对个体决策的非线性影响。",
+        "ja": "ニューラルネットワークで制御された個体エージェントを、様々な社会的文脈のもとでナビゲーション学習させた。社会的情報の品質を主要変数とし、独立探索から追従行動、さらに混雑した採餌環境での衝突回避へと戦略が相転移する様子を観察した。結果は、高品質な社会的手がかりが非線形な戦略転換を引き起こすことを示した。",
+        "ko": "신경망으로 제어된 개별 에이전트들이 다양한 사회적 맥락에서 내비게이션을 학습하도록 훈련되었다. 사회적 정보의 질을 핵심 변수로 삼아, 독립 탐색에서 추종 행동으로, 나아가 혼잡한 채식 환경에서의 충돌 회피로 전략이 상전이(phase transition)하는 과정을 관찰했다. 고품질 사회적 신호의 증가가 비선형적 전략 전환을 유발함을 규명했다."
+      },
+      "plain": {
+        "zh-TW": "想像你第一次去一個陌生的大賣場：你可能會先自己亂逛，但如果看到一群人朝某個方向衝過去，你很可能也跟著走——這就是「社交導航」。這篇研究讓 AI 智能體在虛擬世界裡模擬這種現象。當周圍沒有可靠的夥伴時，智能體學會獨立找路；一旦有高品質的群體資訊，它就像魚群一樣開始跟隨；而當地方太擠，它又學會主動閃人避免碰撞。有趣的是，這種轉變不是漸進的，而像水結冰一樣，到某個臨界點就突然切換。這對理解動物群體行為、設計無人機群、乃至機器人避障系統都有深遠意義：真正聰明的導航，往往靠的是讀懂周圍的人，而不只是自己的感測器。",
+        "en": "Imagine entering a huge unfamiliar supermarket: you might wander alone at first, but if you spot a crowd rushing in one direction, you will likely follow—this is social navigation in action. This study lets AI agents simulate exactly that in a virtual world. With no reliable peers around, agents learn to navigate independently; once high-quality group information appears, they switch to following behavior like a school of fish; and when space gets crowded, they develop collision avoidance. Crucially, these shifts happen as sudden phase transitions, not gradual changes. The findings matter for understanding animal swarms, designing drone fleets, and smarter robot navigation: truly intelligent movement often means reading your neighbors, not just your own sensors.",
+        "zh-CN": "想象你第一次去一个陌生的大商场：你可能先自己乱逛，但如果看到一群人朝某个方向冲去，你很可能也会跟着走——这就是「社交导航」。这项研究让AI智能体在虚拟世界里模拟这种现象。周围没有可靠同伴时，智能体学会独立找路；一旦出现高质量的群体信息，它就像鱼群一样开始跟随；地方太挤时，它又学会主动绕开避免碰撞。有趣的是，这种转变不是渐进的，而像水结冰一样在某个临界点突然切换。这对理解动物群体行为、设计无人机编队乃至机器人避障系统都有深远意义：真正聪明的导航，往往靠的是读懂周围的伙伴，而不只是自身的传感器。",
+        "ja": "知らない大型スーパーに初めて入ったとき、最初は一人でうろうろするかもしれません。でも、人の群れがある方向へ走り出したら、つい追いかけてしまいますよね——これが「社会的ナビゲーション」です。この研究は、AIエージェントに仮想世界でその現象を再現させました。信頼できる仲間がいないと独立して道を探し、高品質な群れの情報が得られると魚の群れのように追従し、場所が混雑すると衝突回避行動を身につけます。注目すべきは、この切り替えが水が氷になるような「相転移」として突然起きる点です。動物の群れ行動の理解、ドローン編隊の設計、ロボットの障害物回避など、幅広い応用が期待されます。",
+        "ko": "처음 가는 대형 마트에서 길을 잃었다고 상상해보세요. 처음엔 혼자 돌아다니겠지만, 사람들이 한쪽으로 우르르 몰려가면 자연스럽게 따라가게 되죠—이것이 바로 「사회적 내비게이션」입니다. 이 연구는 AI 에이전트가 가상 세계에서 그 현상을 재현하도록 했습니다. 믿을 만한 동료가 없으면 혼자 길을 찾고, 고품질 집단 정보가 생기면 물고기 떼처럼 따라가며, 공간이 붐비면 충돌 회피 행동을 익힙니다. 흥미롭게도 이 전환은 점진적이지 않고, 물이 얼음이 되듯 임계점에서 갑자기 일어납니다. 동물 군집 행동 이해, 드론 편대 설계, 로봇 장애물 회피 등 다양한 분야에 중요한 시사점을 줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 個體的最佳策略不由自身能力決定，而由周圍社交資訊的品質所定義——群體智慧是一種湧現的相變，而非累積的漸進。",
+        "en": "💡 An individual's best strategy is not determined by its own ability alone, but by the quality of social information around it—collective intelligence emerges as a phase transition, not a gradual accumulation.",
+        "zh-CN": "💡 个体的最优策略不由自身能力决定，而由周围社交信息的质量所定义——群体智慧是一种涌现的相变，而非累积的渐进。",
+        "ja": "💡 個体の最適戦略は自身の能力だけでなく、周囲の社会的情報の質によって決まる——集合知は漸進的な蓄積ではなく、相転移として創発する。",
+        "ko": "💡 개체의 최적 전략은 자신의 능력이 아니라 주변 사회적 정보의 질에 의해 결정된다—집단 지성은 점진적 축적이 아닌 상전이로서 창발한다."
+      }
+    },
+    {
+      "id": "space-260710",
+      "domain": "space",
+      "day": "2026-07-10",
+      "author": "Amruth Alfred, Shashpal Singh et al.",
+      "ref": "arXiv:2607.07709v1",
+      "url": "https://arxiv.org/abs/2607.07709v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"54\" ry=\"30\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2.5\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#1a237e\" opacity=\"0.85\"/><circle cx=\"80\" cy=\"60\" r=\"7\" fill=\"#5c6bc0\"/><circle cx=\"260\" cy=\"100\" r=\"5\" fill=\"#5c6bc0\"/><circle cx=\"100\" cy=\"110\" r=\"4\" fill=\"#7986cb\"/><circle cx=\"240\" cy=\"50\" r=\"6\" fill=\"#7986cb\"/><line x1=\"80\" y1=\"60\" x2=\"130\" y2=\"75\" stroke=\"#e8eaf6\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><line x1=\"260\" y1=\"100\" x2=\"210\" y2=\"87\" stroke=\"#e8eaf6\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><ellipse cx=\"170\" cy=\"80\" rx=\"80\" ry=\"48\" fill=\"none\" stroke=\"#9fa8da\" stroke-width=\"1\" stroke-dasharray=\"6,4\" opacity=\"0.6\"/><circle cx=\"40\" cy=\"80\" r=\"9\" fill=\"none\" stroke=\"#f48fb1\" stroke-width=\"2\"/><line x1=\"40\" y1=\"65\" x2=\"40\" y2=\"55\" stroke=\"#f48fb1\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"95\" x2=\"40\" y2=\"105\" stroke=\"#f48fb1\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"80\" x2=\"15\" y2=\"80\" stroke=\"#f48fb1\" stroke-width=\"1.5\"/><line x1=\"55\" y1=\"80\" x2=\"65\" y2=\"80\" stroke=\"#f48fb1\" stroke-width=\"1.5\"/><circle cx=\"300\" cy=\"80\" r=\"9\" fill=\"none\" stroke=\"#f48fb1\" stroke-width=\"2\"/><line x1=\"300\" y1=\"65\" x2=\"300\" y2=\"55\" stroke=\"#f48fb1\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"95\" x2=\"300\" y2=\"105\" stroke=\"#f48fb1\" stroke-width=\"1.5\"/></svg>",
+      "title": {
+        "zh-TW": "過度外部剪切力如何掩蓋重力透鏡的異常訊號",
+        "en": "How Excessive External Shear Hides Gravitational Lensing Anomalies",
+        "zh-CN": "过度外部剪切力如何掩盖引力透镜的异常信号",
+        "ja": "過剰な外部シアーが重力レンズの異常を隠す仕組み",
+        "ko": "과도한 외부 전단력이 중력 렌즈 이상 신호를 숨기는 방법"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究探討重力透鏡模型中「外部剪切力」參數的角色：當模型僅以多重影像的位置作為約束條件時，過大的外部剪切力可讓橢球質量分布模型幾乎完美重現影像位置，卻同時掩蓋了流量比（flux ratio）異常——即次結構擾動或暗物質暈的潛在存在。研究透過系統性模擬與參數分析，揭示過度引入外部剪切力會使模型看似「成功」，實則壓制了對宇宙次結構的敏感度。",
+        "en": "This study examines how the external shear parameter in gravitational lens models can be over-exploited: when constrained only by image positions, models with large external shear can reproduce observed configurations nearly perfectly yet mask significant flux ratio anomalies — potential signatures of dark matter substructure. Through systematic simulations and parameter analysis, the authors show that excessive external shear suppresses the model's sensitivity to sub-galactic perturbations.",
+        "zh-CN": "本研究探讨引力透镜模型中「外部剪切力」参数的角色：当模型仅以多重像的位置作为约束时，过大的外部剪切力可让椭球质量分布模型几乎完美重现像位置，却同时掩盖了流量比异常——即次结构扰动或暗物质晕的潜在存在。研究通过系统性模拟与参数分析，揭示过度引入外部剪切力会使模型看似「成功」，实则压制了对宇宙次结构的敏感度。",
+        "ja": "本研究では、重力レンズモデルにおける「外部シアー」パラメータが過剰に使われた場合の影響を調査する。像位置のみを拘束条件とすると、大きな外部シアーを持つ楕円体質量分布モデルは観測された像位置をほぼ完全に再現できるが、フラックス比の異常——暗黒物質サブ構造の痕跡——を隠してしまう。系統的なシミュレーションを通じ、過剰な外部シアーがモデルの感度を損なうことを示す。",
+        "ko": "이 연구는 중력 렌즈 모델에서 '외부 전단력' 매개변수가 과도하게 사용될 경우의 영향을 분석한다. 이미지 위치만을 제약 조건으로 삼을 때, 큰 외부 전단력을 가진 타원체 질량 분포 모델은 관측된 이미지 위치를 거의 완벽하게 재현하지만, 플럭스 비율 이상—암흑 물질 하부 구조의 잠재적 신호—을 숨긴다. 체계적인 시뮬레이션을 통해 과도한 외부 전단력이 모델의 민감도를 억제함을 밝힌다."
+      },
+      "plain": {
+        "zh-TW": "想像宇宙中有一個巨大的星系，它的重力像一片巨大的玻璃，把背後更遠天體的光線「折彎」，在我們眼中形成多個影像——這就是「重力透鏡」現象。天文學家建立數學模型來解釋這些影像，但模型裡有個可調整的「外部剪切力」參數，代表周邊星系或宇宙結構對光線的額外扭曲。問題是：就像你可以用橡皮擦把考卷上的錯誤擦掉，讓答案「看起來對了」，過度增大這個參數也能讓模型幾乎完美地匹配影像位置，卻掩蓋了重要的「流量異常」。這些流量異常本來是尋找暗物質小天體（次結構）的珍貴線索。換句話說，這篇論文揭示：模型越「配合」，反而可能讓我們遺漏宇宙中看不見的隱藏物質。這對未來暗物質研究的可信度有深遠影響，提醒科學家不能只看影像位置是否吻合，還必須嚴格檢驗流量訊號。",
+        "en": "Imagine a massive galaxy acting like a giant magnifying glass, bending light from a distant object behind it and creating multiple images — this is gravitational lensing. Astronomers build mathematical models to explain these images, and those models include a tunable parameter called external shear, which accounts for distortions from nearby galaxies or cosmic structures. The trouble is: much like erasing mistakes on a test to make your answers look correct, cranking up this parameter lets models match image positions almost perfectly — but in doing so, they hide important flux ratio anomalies. Those anomalies are precious clues for detecting invisible dark matter clumps (substructure). In other words, the more a model is allowed to cheat by adjusting external shear, the more likely it is to miss hidden matter in the universe. This finding warns astronomers that a model fitting image positions well is not enough — flux ratios must be seriously scrutinized too.",
+        "zh-CN": "想象宇宙中有一个巨大的星系，它的引力就像一片巨大的玻璃，把背后更远天体的光线「折弯」，在我们眼中形成多个像——这就是「引力透镜」现象。天文学家建立数学模型来解释这些像，模型中有个可调整的「外部剪切力」参数，代表周边星系或宇宙结构对光线的额外扭曲。问题是：就像你可以用橡皮擦把试卷上的错误擦掉，让答案「看起来对了」，过度增大这个参数也能让模型几乎完美地匹配像位置，却掩盖了重要的「流量异常」。这些流量异常本来是寻找暗物质小天体（次结构）的珍贵线索。这篇论文揭示：模型越「配合」，反而可能让我们遗漏宇宙中看不见的隐藏物质，对未来暗物质研究的可信度有深远影响。",
+        "ja": "宇宙に巨大な銀河があり、その重力が背後の天体の光を「曲げ」て複数の像を作る——これが重力レンズ現象です。天文学者はこれを説明する数学モデルを作りますが、そのモデルには「外部シアー」という調整可能なパラメータがあります。問題は、テストの答えを消しゴムで消して正解に見せるように、このパラメータを大きくしすぎると像の位置を完璧に再現できる一方で、重要な「フラックス比の異常」を隠してしまうことです。その異常こそ、目に見えない暗黒物質の小天体を探す手がかりでした。この論文は、モデルが位置を合わせるほど宇宙の隠れた物質を見逃すリスクが高まると警告しています。",
+        "ko": "우주에 거대한 은하가 있고, 그 중력이 뒤에 있는 천체의 빛을 굽혀 여러 개의 상을 만드는 것이 중력 렌즈 현상입니다. 천문학자들은 이를 설명하는 수학 모델을 만드는데, 그 모델에는 조정 가능한 외부 전단력 매개변수가 있습니다. 문제는, 시험 답안을 지우개로 지워 맞춘 것처럼 보이게 하듯, 이 매개변수를 크게 늘리면 이미지 위치를 거의 완벽하게 재현할 수 있지만 중요한 플럭스 비율 이상을 숨겨버립니다. 그 이상은 보이지 않는 암흑 물질 소천체를 찾는 귀중한 단서입니다. 이 논문은 모델이 위치를 잘 맞출수록 우주의 숨겨진 물질을 놓칠 위험이 커진다고 경고합니다."
+      },
+      "insight": {
+        "zh-TW": "💡 模型「完美擬合」有時是危險的幻覺——過度靈活的參數會讓科學家以為找到了答案，卻在不知不覺中掩蓋了真正重要的宇宙訊號。",
+        "en": "💡 A perfect model fit can be a dangerous illusion — over-flexible parameters may make scientists believe they have the answer while silently burying the universe's most important signals.",
+        "zh-CN": "💡 模型「完美拟合」有时是危险的幻觉——过度灵活的参数会让科学家以为找到了答案，却在不知不觉中掩盖了真正重要的宇宙信号。",
+        "ja": "💡 モデルの「完全な適合」は危険な幻想になりえる——過度に柔軟なパラメータは、科学者に答えを見つけたと思わせながら、宇宙の最も重要なシグナルをひっそりと埋もれさせてしまう。",
+        "ko": "💡 모델의 '완벽한 적합'은 때로 위험한 환상이다—지나치게 유연한 매개변수는 과학자들이 답을 찾았다고 믿게 만들면서, 우주의 가장 중요한 신호를 조용히 묻어버릴 수 있다."
+      }
+    },
+    {
+      "id": "tech-260710",
+      "domain": "tech",
+      "day": "2026-07-10",
+      "author": "Halimat Olamide Yusuf, Augustine O. Nwajana et al.",
+      "ref": "arXiv:2607.07661v1",
+      "url": "https://arxiv.org/abs/2607.07661v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><rect x=\"30\" y=\"70\" width=\"40\" height=\"20\" rx=\"3\" fill=\"#00695c\" opacity=\"0.25\"/><line x1=\"80\" y1=\"80\" x2=\"110\" y2=\"80\" stroke=\"#00695c\" stroke-width=\"2\"/><rect x=\"110\" y=\"55\" width=\"120\" height=\"50\" rx=\"8\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><rect x=\"122\" y=\"67\" width=\"40\" height=\"26\" rx=\"4\" fill=\"none\" stroke=\"#26a69a\" stroke-width=\"2\"/><rect x=\"178\" y=\"67\" width=\"40\" height=\"26\" rx=\"4\" fill=\"none\" stroke=\"#26a69a\" stroke-width=\"2\"/><line x1=\"122\" y1=\"80\" x2=\"110\" y2=\"80\" stroke=\"#26a69a\" stroke-width=\"1.5\"/><line x1=\"218\" y1=\"80\" x2=\"230\" y2=\"80\" stroke=\"#26a69a\" stroke-width=\"1.5\"/><path d=\"M138 80 Q148 67 158 80 Q168 93 178 80\" fill=\"none\" stroke=\"#004d40\" stroke-width=\"2\"/><line x1=\"230\" y1=\"80\" x2=\"260\" y2=\"80\" stroke=\"#00695c\" stroke-width=\"2\"/><rect x=\"260\" y=\"60\" width=\"60\" height=\"40\" rx=\"6\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><rect x=\"270\" y=\"70\" width=\"40\" height=\"20\" rx=\"3\" fill=\"#00695c\" opacity=\"0.25\"/><ellipse cx=\"170\" cy=\"130\" rx=\"40\" ry=\"6\" fill=\"none\" stroke=\"#26a69a\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><ellipse cx=\"170\" cy=\"130\" rx=\"60\" ry=\"10\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"1\" stroke-dasharray=\"3 4\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "雙頻帶通濾波器：讓 WiMAX 無線訊號同時走兩條「專用車道」",
+        "en": "Six-Pole Dual-Band Bandpass Filter: Two Dedicated Lanes for WiMAX Signals",
+        "zh-CN": "双频带通滤波器：让 WiMAX 无线信号同时走两条「专用车道」",
+        "ja": "デュアルバンド帯域通過フィルタ：WiMAX信号に「専用レーン」を2本用意する",
+        "ko": "이중 대역 대역통과 필터: WiMAX 신호를 위한 두 개의 전용 차선"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 및 공학"
+      },
+      "tech": {
+        "zh-TW": "本研究採用「折疊臂方形開環諧振器（FASOLR）」微帶平面結構，設計出六極雙頻帶通濾波器，可同時通過 WiMAX 兩個工作頻段。研究團隊以 PathWave ADS 軟體進行電磁模擬，透過折疊臂幾何形狀在單一共平面基板上實現緊湊的雙通帶響應，同時有效壓制帶外訊號干擾。",
+        "en": "This study designs a six-pole dual-band bandpass filter using a Folded-Arms Square Open-Loop Resonator (FASOLR) microstrip planar structure, simulated with PathWave ADS. The folded-arm geometry enables compact dual-passband responses on a single planar substrate, simultaneously supporting two WiMAX operating frequency bands while suppressing out-of-band interference.",
+        "zh-CN": "本研究采用「折叠臂方形开环谐振器（FASOLR）」微带平面结构，设计出六极双频带通滤波器，可同时通过 WiMAX 两个工作频段。研究团队以 PathWave ADS 软件进行电磁仿真，通过折叠臂几何形状在单一共面基板上实现紧凑的双通带响应，同时有效抑制带外信号干扰。",
+        "ja": "本研究では、折り畳みアーム正方形開ループ共振器（FASOLR）マイクロストリップ平面構造を用いた6極デュアルバンド帯域通過フィルタを設計し、PathWave ADSでシミュレーションを行った。折り畳みアームの幾何学的形状により、単一の平面基板上でコンパクトなデュアルパスバンド応答を実現し、WiMAXの2つの動作周波数帯を同時にサポートする。",
+        "ko": "본 연구는 PathWave ADS로 시뮬레이션된 FASOLR 마이크로스트립 평면 구조를 활용하여 6극 이중 대역통과 필터를 설계했다. 접힌 팔 기하학적 구조를 통해 단일 평면 기판에서 컴팩트한 이중 통과대역 응답을 구현하고, WiMAX의 두 동작 주파수 대역을 동시에 지원하면서 대역 외 간섭을 억제한다."
+      },
+      "plain": {
+        "zh-TW": "想像頻率訊號就像一條繁忙的高速公路，各種車輛（訊號）混在一起高速行駛。「帶通濾波器」就像一個智慧收費站，只讓特定速度範圍的車輛通過，其他一律擋在外面。而「雙頻」濾波器更厲害——它同時開了兩個收費閘口，讓兩段不同的頻率訊號各走各的專用車道，互不干擾。WiMAX 是一種長距離無線寬頻技術，需要同時使用兩個頻段才能發揮最佳效能。以往要達成這個目標，往往需要兩顆分開的濾波器晶片，佔用更多空間和成本。這篇論文設計的「折疊臂開環諧振器」，就像把兩個收費站巧妙折疊壓縮進一塊薄薄的電路板裡，讓裝置更小、更省電、也更便宜。這對未來智慧型手機、基地台和物聯網裝置的設計都有直接幫助。",
+        "en": "Imagine radio signals as cars on a busy highway, all rushing past at different speeds. A bandpass filter acts like a smart toll gate that only lets vehicles traveling at certain speeds through, blocking everything else. A dual-band filter is even smarter — it opens two separate gates simultaneously, giving two different frequency ranges their own dedicated lanes without interference. WiMAX is a long-range wireless broadband technology that needs to operate on two frequency bands at once for peak performance. Traditionally, achieving this required two separate filter chips, wasting space and cost. The folded-arm open-loop resonator designed in this paper cleverly folds both gates into a single thin circuit board, making devices smaller, more energy-efficient, and cheaper. This directly benefits the design of future smartphones, base stations, and IoT devices.",
+        "zh-CN": "想象频率信号就像一条繁忙高速公路上的汽车，各种车辆混在一起飞速行驶。「带通滤波器」就像一个智能收费站，只让特定速度范围的车辆通过，其他一律拦在外面。而「双频」滤波器更厉害——它同时开了两个收费闸口，让两段不同的频率信号各走各的专用车道，互不干扰。WiMAX 是一种长距离无线宽带技术，需要同时使用两个频段才能发挥最佳性能。以往要达到这个目标，往往需要两颗分开的滤波器芯片，占用更多空间和成本。这篇论文设计的「折叠臂开环谐振器」，就像把两个收费站巧妙折叠压缩进一块薄薄的电路板里，让设备更小、更省电、也更便宜。",
+        "ja": "無線信号を、賑やかな高速道路を走る車に例えてみましょう。帯域通過フィルタは「スマートな料金所」のようなもので、特定の速度範囲の車だけを通過させ、それ以外はすべてブロックします。デュアルバンドフィルタはさらに賢く、2つのゲートを同時に開いて、異なる2つの周波数帯域にそれぞれ専用レーンを与えます。WiMAXは長距離無線ブロードバンド技術で、最高のパフォーマンスを発揮するために2つの周波数帯域を同時に使う必要があります。従来は2つの別々のフィルタチップが必要でしたが、この論文の「折り畳みアーム開ループ共振器」は、2つの料金所を1枚の薄い基板に巧みに折り畳み、装置をより小型・省電力・低コストにします。",
+        "ko": "무선 신호를 바쁜 고속도로를 달리는 자동차라고 상상해 보세요. 대역통과 필터는 특정 속도 범위의 차량만 통과시키는 스마트 톨게이트와 같습니다. 이중 대역 필터는 더욱 똑똑하여, 두 개의 게이트를 동시에 열어 서로 다른 두 주파수 대역에 각자의 전용 차선을 줍니다. WiMAX는 최고 성능을 위해 두 주파수 대역을 동시에 사용해야 하는 장거리 무선 광대역 기술입니다. 기존에는 두 개의 별도 필터 칩이 필요했지만, 이 논문의 접힌 팔 개방형 루프 공진기는 두 톨게이트를 얇은 회로 기판 하나에 압축하여 장치를 더 작고, 에너지 효율적이며, 저렴하게 만듭니다."
+      },
+      "insight": {
+        "zh-TW": "💡 「折疊」不只是省空間的技巧——在微波工程中，幾何形狀的每一次折疊都是對電磁場的一次精密重塑，讓小小的電路板能完成過去需要龐大系統才能辦到的頻率篩選任務。",
+        "en": "💡 Folding isn't just about saving space — in microwave engineering, every geometric fold is a precise reshaping of electromagnetic fields, enabling a tiny circuit board to perform frequency filtering tasks that once required bulky systems.",
+        "zh-CN": "💡 「折叠」不只是省空间的技巧——在微波工程中，几何形状的每一次折叠都是对电磁场的一次精密重塑，让小小的电路板能完成过去需要庞大系统才能办到的频率筛选任务。",
+        "ja": "💡 「折り畳み」は単なる省スペースの技術ではない——マイクロ波工学では、幾何学的な折り畳みのひとつひとつが電磁場の精密な再形成であり、小さな基板がかつて大型システムを必要とした周波数選別を実現する。",
+        "ko": "💡 접는 것은 단순히 공간을 절약하는 기술이 아니다 — 마이크로파 공학에서 기하학적 형태의 모든 접힘은 전자기장의 정밀한 재형성이며, 작은 회로 기판이 과거에는 대형 시스템이 필요했던 주파수 선별 작업을 수행할 수 있게 한다."
+      }
+    }
+  ]
+}
