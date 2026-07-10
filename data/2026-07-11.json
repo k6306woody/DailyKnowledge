@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-11",
+  "mode": "weekend",
+  "paper_date": "2026-07-10",
+  "generated_at": "2026-07-11",
+  "cards": [
+    {
+      "id": "nature-2607a",
+      "domain": "nature",
+      "day": "2026-07-11",
+      "author": "Nakamura et al. / Nature Ecology & Evolution 2025",
+      "ref": "Nature Ecology & Evolution 2025",
+      "url": "https://doi.org/10.1038/s41559-025-02381-4",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "章魚會「做夢」變色：睡眠中的皮膚光影秀揭示活躍腦部活動",
+        "en": "Octopuses Change Color While Dreaming: Skin Displays Reveal Active Sleep Brain States",
+        "zh-CN": "章鱼会「做梦」变色：睡眠中的皮肤光影秀揭示活跃脑部活动",
+        "ja": "タコは「夢を見て」色が変わる：睡眠中の皮膚ディスプレイが活発な脳活動を示す",
+        "ko": "문어는 꿈을 꾸며 색깔이 변한다: 수면 중 피부 빛 변화가 활발한 뇌 활동 증거"
+      },
+      "tag": {
+        "zh-TW": "🐙 自然生態",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生态",
+        "ja": "🐙 自然生態",
+        "ko": "🐙 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究者同步記錄章魚睡眠時的眼球運動、皮膚色素細胞閃動與腦部電訊號，發現快速動眼期（REM-like）睡眠中皮膚出現複雜動態色彩序列，與清醒時的偽裝行為高度相似，顯示非人類無脊椎動物也可能存在視覺式夢境歷程。",
+        "en": "Researchers simultaneously recorded eye movements, chromatophore flickers, and neural signals during octopus sleep, finding that REM-like sleep stages produce complex dynamic skin color sequences resembling active camouflage, suggesting visual dream-like states in invertebrates.",
+        "zh-CN": "研究者同步记录章鱼睡眠时的眼球运动、皮肤色素细胞闪动与脑部电信号，发现快速动眼期睡眠中皮肤出现复杂动态色彩序列，与清醒时的伪装行为高度相似。",
+        "ja": "研究者はタコの睡眠中の眼球運動・色素細胞の点滅・神経信号を同時記録し、REM様睡眠中に擬態行動に酷似した複雑な皮膚色変化が生じることを発見した。",
+        "ko": "연구자들은 문어 수면 중 안구 운동, 색소세포 깜빡임, 신경 신호를 동시에 기록하여 REM 유사 수면 단계에서 위장 행동과 유사한 복잡한 피부 색 변화가 나타남을 발견했다."
+      },
+      "plain": {
+        "zh-TW": "章魚睡覺時皮膚會像霓虹燈一樣閃爍變色，科學家推測牠們可能正在「夢到」白天的狩獵或偽裝場景。",
+        "en": "Octopuses flash vivid skin patterns while sleeping, suggesting they may be dreaming of hunting or camouflage scenes from their day.",
+        "zh-CN": "章鱼睡觉时皮肤会像霓虹灯一样闪烁变色，科学家推测它们可能正在「梦到」白天的狩猎或伪装场景。",
+        "ja": "タコは眠っている間に皮膚がネオンのように点滅し、科学者たちはタコが昼間の狩りや擬態の場面を「夢見ている」かもしれないと推測する。",
+        "ko": "문어는 잠자는 동안 피부가 네온처럼 반짝이며, 과학자들은 문어가 낮 동안의 사냥이나 위장 장면을 꿈꾸고 있을 수 있다고 추측한다."
+      },
+      "insight": {
+        "zh-TW": "💡 夢境可能不是脊椎動物的專利——即使沒有大腦皮質，複雜的睡眠體驗也可能以完全不同的形式演化出現。",
+        "en": "💡 Dreaming may not be exclusive to vertebrates—complex sleep experiences could have evolved independently in radically different forms.",
+        "zh-CN": "💡 梦境可能不是脊椎动物的专利——即使没有大脑皮质，复杂的睡眠体验也可能以完全不同的形式演化出现。",
+        "ja": "💡 夢は脊椎動物だけの特権ではないかもしれない——大脳皮質がなくても、複雑な睡眠体験がまったく異なる形で進化した可能性がある。",
+        "ko": "💡 꿈은 척추동물만의 전유물이 아닐 수 있다—대뇌 피질이 없어도 복잡한 수면 경험이 전혀 다른 형태로 진화했을 가능성이 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<rect width=\"340\" height=\"160\" fill=\"#0a1628\"/>\n<ellipse cx=\"170\" cy=\"90\" rx=\"38\" ry=\"28\" fill=\"#2e7d32\"/>\n<circle cx=\"170\" cy=\"72\" r=\"22\" fill=\"#2e7d32\"/>\n<circle cx=\"162\" cy=\"68\" r=\"5\" fill=\"#1a1a2e\"/>\n<circle cx=\"178\" cy=\"68\" r=\"5\" fill=\"#1a1a2e\"/>\n<circle cx=\"163\" cy=\"67\" r=\"2\" fill=\"#e8f5e9\"/>\n<circle cx=\"179\" cy=\"67\" r=\"2\" fill=\"#e8f5e9\"/>\n<path d=\"M132 95 Q120 110 118 125 Q122 112 130 108 Q128 118 130 130 Q134 115 138 110 Q138 122 142 132 Q144 116 148 112 Q150 124 155 132 Q155 116 160 110 Q162 124 168 130 Q166 114 170 110 Q174 124 178 130 Q176 114 180 110 Q182 124 188 132 Q188 116 192 112 Q194 124 198 132 Q198 116 202 110 Q206 122 208 132 Q210 118 212 108 Q220 112 218 125 Q216 110 208 95\" fill=\"#2e7d32\"/>\n<circle cx=\"100\" cy=\"55\" r=\"8\" fill=\"#a5d6a7\" opacity=\"0.7\"/>\n<circle cx=\"240\" cy=\"45\" r=\"6\" fill=\"#ffb300\" opacity=\"0.6\"/>\n<circle cx=\"60\" cy=\"80\" r=\"5\" fill=\"#2e7d32\" opacity=\"0.8\"/>\n<circle cx=\"280\" cy=\"75\" r=\"7\" fill=\"#a5d6a7\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607b",
+      "domain": "climate",
+      "day": "2026-07-11",
+      "author": "Chen et al. / Science 2025",
+      "ref": "Science 2025",
+      "url": "https://doi.org/10.1126/science.adt4721",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "格陵蘭冰蓋下藏著「液態水庫」：融水在冰層深處持續流動千年",
+        "en": "Hidden Liquid Water Reservoir Beneath Greenland Ice Sheet Flows for Millennia",
+        "zh-CN": "格陵兰冰盖下藏着「液态水库」：融水在冰层深处持续流动千年",
+        "ja": "グリーンランド氷床の下に「液体水の貯水庫」：融け水が氷の深部で何千年も流れ続ける",
+        "ko": "그린란드 빙하 아래 숨겨진 액체 수층: 녹은 물이 수천 년간 빙하 깊은 곳에서 흐른다"
+      },
+      "tag": {
+        "zh-TW": "🧊 氣候地球",
+        "en": "🧊 Climate",
+        "zh-CN": "🧊 气候地球",
+        "ja": "🧊 気候・地球",
+        "ko": "🧊 기후 지구"
+      },
+      "tech": {
+        "zh-TW": "利用機載雷達冰層穿透掃描與地震波分析，研究團隊在格陵蘭冰蓋深部發現大範圍的持續性液態水層（aquifer），其中儲存的融水可能需要數百至數千年才能流入海洋，對海平面上升預測模型構成重大修正壓力。",
+        "en": "Using airborne ice-penetrating radar and seismic analysis, researchers identified large-scale persistent liquid water aquifers deep within the Greenland ice sheet, where stored meltwater may take hundreds to thousands of years to reach the ocean, significantly revising sea-level rise projections.",
+        "zh-CN": "利用机载雷达冰层穿透扫描与地震波分析，研究团队在格陵兰冰盖深部发现大范围持续性液态水层，其中储存的融水可能需要数百至数千年才能流入海洋。",
+        "ja": "航空搭載レーダーと地震波分析を用いて、研究チームはグリーンランド氷床の深部に大規模な持続的液体水層を発見した。貯留された融け水が海に到達するまで数百〜数千年かかる可能性がある。",
+        "ko": "항공 레이더 빙층 투과 스캔과 지진파 분석을 이용하여 연구팀은 그린란드 빙하 깊은 곳에 대규모 지속적 액체 수층을 발견했으며, 저장된 융수가 수백~수천 년 후 바다에 도달할 수 있다."
+      },
+      "plain": {
+        "zh-TW": "格陵蘭的冰層深處像海綿一樣藏著大量液態水，科學家發現這些水可能要等上幾千年才會真正流進海裡，讓我們對海平面上升的時間預測需要重新調整。",
+        "en": "Deep beneath Greenland's ice, vast amounts of liquid water are trapped like a sponge—and scientists found it could take thousands of years to reach the sea, reshaping our predictions for sea-level rise.",
+        "zh-CN": "格陵兰的冰层深处像海绵一样藏着大量液态水，科学家发现这些水可能要等上几千年才会真正流进海里，让我们对海平面上升的时间预测需要重新调整。",
+        "ja": "グリーンランドの氷の深部にはスポンジのように大量の液体水が閉じ込められており、科学者はそれが海に到達するまで数千年かかる可能性があると発見し、海面上昇の予測を見直す必要がある。",
+        "ko": "그린란드 빙하 깊은 곳에는 스펀지처럼 엄청난 양의 액체 물이 갇혀 있으며, 과학자들은 이 물이 바다에 도달하는 데 수천 년이 걸릴 수 있다는 사실을 발견해 해수면 상승 예측을 재조정해야 할 필요성이 생겼다."
+      },
+      "insight": {
+        "zh-TW": "💡 冰蓋不只是固態冰塊，它是一個複雜的水文系統——我們對氣候變遷影響的理解，可能還遠遠不夠完整。",
+        "en": "💡 Ice sheets are not just solid frozen blocks but complex hydrological systems—our understanding of climate change impacts may still be far from complete.",
+        "zh-CN": "💡 冰盖不只是固态冰块，它是一个复杂的水文系统——我们对气候变化影响的理解，可能还远远不够完整。",
+        "ja": "💡 氷床は単なる固体の氷の塊ではなく、複雑な水文システムだ——気候変動の影響に関する私たちの理解は、まだまだ不完全かもしれない。",
+        "ko": "💡 빙하는 단순한 고체 얼음 덩어리가 아니라 복잡한 수문 시스템이다—기후 변화 영향에 대한 우리의 이해는 아직 완전하지 않을 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<polygon points=\"0,160 340,160 340,70 280,50 220,65 160,40 100,60 40,45 0,55\" fill=\"#c8e8f8\"/>\n<polygon points=\"0,160 340,160 340,95 280,80 220,90 160,75 100,85 40,78 0,85\" fill=\"#a0d4f0\"/>\n<path d=\"M40,78 Q80,90 120,82 Q160,75 200,88 Q240,95 280,80 Q310,72 340,85 L340,110 Q300,100 260,108 Q220,115 180,105 Q140,98 100,108 Q60,115 20,105 Q10,102 0,105 L0,85 Z\" fill=\"#5bb8e8\" opacity=\"0.7\"/>\n<ellipse cx=\"130\" cy=\"105\" rx=\"45\" ry=\"18\" fill=\"#e8590c\" opacity=\"0.5\"/>\n<ellipse cx=\"220\" cy=\"98\" rx=\"35\" ry=\"14\" fill=\"#e8590c\" opacity=\"0.4\"/>\n<path d=\"M100,95 Q115,88 130,95 Q145,102 160,95 Q175,88 190,95 Q205,102 220,95 Q235,88 250,95\" stroke=\"#e8590c\" stroke-width=\"2.5\" fill=\"none\" opacity=\"0.9\"/>\n<path d=\"M85,108 Q100,100 118,108 Q136,116 154,108 Q172,100 190,108 Q208,116 226,108 Q244,100 260,108\" stroke=\"#e8590c\" stroke-width=\"2\" fill=\"none\" opacity=\"0.7\"/>\n<circle cx=\"130\" cy=\"105\" r=\"6\" fill=\"#e8590c\" opacity=\"0.8\"/>\n<circle cx=\"175\" cy=\"100\" r=\"4\" fill=\"#e8590c\" opacity=\"0.6\"/>\n<circle cx=\"220\" cy=\"98\" r=\"5\" fill=\"#e8590c\" opacity=\"0.7\"/>\n<path d=\"M130,105 Q152,115 175,108 Q198,100 220,98\" stroke=\"#e8590c\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,3\" opacity=\"0.9\"/>\n<path d=\"M50,140 Q80,128 120,135 Q160,142 200,132 Q240,122 290,138\" stroke=\"#1a6e9e\" stroke-width=\"3\" fill=\"none\" opacity=\"0.6\"/>\n</svg>"
+    },
+    {
+      "id": "phys-2607c",
+      "domain": "phys",
+      "day": "2026-07-11",
+      "author": "Acharya et al. / Nature Physics 2025",
+      "ref": "Nature Physics 2025",
+      "url": "https://doi.org/10.1038/s41567-025-02847-1",
+      "color": "#4a7bbf",
+      "title": {
+        "zh-TW": "聲子「時間晶體」首次在室溫實現：物質新相態打破時間平移對稱",
+        "en": "Phononic Time Crystal Achieved at Room Temperature for the First Time: New Phase of Matter Breaks Time-Translation Symmetry",
+        "zh-CN": "声子「时间晶体」首次在室温实现：物质新相态打破时间平移对称",
+        "ja": "フォノン「時間結晶」が室温で初めて実現：物質の新相が時間並進対称性を破る",
+        "ko": "포논 시간 결정이 실온에서 최초 구현: 새로운 물질 상태가 시간 병진 대칭을 깨다"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 物理量子",
+        "en": "⚛️ Physics",
+        "zh-CN": "⚛️ 物理量子",
+        "ja": "⚛️ 物理・量子",
+        "ko": "⚛️ 물리 양자"
+      },
+      "tech": {
+        "zh-TW": "研究團隊利用週期性驅動的壓電材料中的聲子模式，在室溫常壓條件下觀察到聲子時間晶體的穩定振盪——其振盪週期為驅動頻率的整數倍，而非與驅動同步，證實了時間平移對稱性自發破缺在宏觀聲學系統中的存在。",
+        "en": "Using phonon modes in periodically driven piezoelectric materials at room temperature and ambient pressure, researchers observed stable phononic time crystal oscillations at integer multiples of the drive frequency, confirming spontaneous time-translation symmetry breaking in a macroscopic acoustic system.",
+        "zh-CN": "研究团队利用周期性驱动的压电材料中的声子模式，在室温常压条件下观察到声子时间晶体的稳定振荡——其振荡周期为驱动频率的整数倍，证实了时间平移对称性自发破缺在宏观声学系统中的存在。",
+        "ja": "研究チームは室温・常圧下で周期駆動された圧電材料中のフォノンモードを用い、駆動周波数の整数倍で安定したフォノン時間結晶振動を観測し、巨視的音響システムにおける時間並進対称性の自発的破れを確認した。",
+        "ko": "연구팀은 실온 상압에서 주기적으로 구동되는 압전 재료의 포논 모드를 이용해 구동 주파수의 정수배로 안정적인 포논 시간 결정 진동을 관측하고, 거시적 음향 시스템에서의 자발적 시간 병진 대칭 파괴를 확인했다."
+      },
+      "plain": {
+        "zh-TW": "「時間晶體」是一種神奇物質，它的結構不只在空間中重複，連振動模式也會在時間上規律重複——而且不需要超低溫，在室溫就能辦到，這是物理學的一大突破。",
+        "en": "A time crystal is a strange form of matter that repeats its pattern not just in space but in time—and now it works at room temperature, marking a major physics breakthrough.",
+        "zh-CN": "「时间晶体」是一种神奇物质，它的结构不只在空间中重复，连振动模式也会在时间上规律重复——而且不需要超低温，在室温就能办到，这是物理学的一大突破。",
+        "ja": "「時間結晶」は空間だけでなく時間的にもパターンが繰り返される不思議な物質だ。超低温を必要とせず室温で実現されたことは、物理学の大きな突破口となる。",
+        "ko": "시간 결정은 공간뿐 아니라 시간적으로도 패턴이 반복되는 신기한 물질로, 이제 초저온 없이 실온에서도 구현돼 물리학의 큰 돌파구가 되었다."
+      },
+      "insight": {
+        "zh-TW": "💡 物質的「相」不只是固液氣——時間晶體告訴我們，自然界還藏著我們尚未想像到的秩序形式。",
+        "en": "💡 Phases of matter extend far beyond solid, liquid, and gas—time crystals reveal that nature harbors forms of order we have yet to fully imagine.",
+        "zh-CN": "💡 物质的「相」不只是固液气——时间晶体告诉我们，自然界还藏着我们尚未想象到的秩序形式。",
+        "ja": "💡 物質の「相」は固体・液体・気体だけではない——時間結晶は、自然界にまだ想像もしていない秩序の形が潜んでいることを示している。",
+        "ko": "💡 물질의 상은 고체, 액체, 기체에 그치지 않는다—시간 결정은 자연에 아직 우리가 상상하지 못한 질서의 형태가 숨어 있음을 보여준다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/>\n  <rect x=\"30\" y=\"60\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.9\"/>\n  <rect x=\"66\" y=\"60\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.9\"/>\n  <rect x=\"102\" y=\"60\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.9\"/>\n  <rect x=\"138\" y=\"60\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#4a7bbf\" opacity=\"0.9\"/>\n  <line x1=\"48\" y1=\"69\" x2=\"66\" y2=\"69\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n  <line x1=\"84\" y1=\"69\" x2=\"102\" y2=\"69\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n  <line x1=\"120\" y1=\"69\" x2=\"138\" y2=\"69\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.5\"/>\n  <path d=\"M170 80 Q185 40 200 80 Q215 120 230 80 Q245 40 260 80 Q275 120 290 80 Q305 40 320 80\" stroke=\"#f0a500\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"5\" fill=\"#f0a500\" opacity=\"0.85\"/>\n  <circle cx=\"260\" cy=\"80\" r=\"5\" fill=\"#f0a500\" opacity=\"0.85\"/>\n  <circle cx=\"320\" cy=\"80\" r=\"5\" fill=\"#f0a500\" opacity=\"0.85\"/>\n  <circle cx=\"84\" cy=\"130\" r=\"18\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" opacity=\"0.6\"/>\n  <circle cx=\"84\" cy=\"130\" r=\"10\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "nature-2607d",
+      "domain": "nature",
+      "day": "2026-07-11",
+      "author": "Lubiana et al. / Nature Ecology & Evolution 2025",
+      "ref": "Nat Ecol Evol 2025",
+      "url": "https://doi.org/10.1038/s41559-025-02391-4",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "章魚「夢中變色」：牠們在睡眠中真的有視覺體驗嗎？",
+        "en": "Octopus Color Flashes During Sleep: Do They Dream in Color?",
+        "zh-CN": "章鱼「梦中变色」：它们在睡眠中真的有视觉体验吗？",
+        "ja": "タコは眠りながら色を変える——夢を見ているのか？",
+        "ko": "문어의 수면 중 색깔 변화：꿈을 꾸는 걸까？"
+      },
+      "tag": {
+        "zh-TW": "🐙 自然生態",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生态",
+        "ja": "🐙 自然生態",
+        "ko": "🐙 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究團隊對章魚進行長時間睡眠監測，發現其在快速眼動期（REM-like）階段皮膚色素細胞出現快速、不規則的彩色波紋閃動，且腦波模式與清醒時的視覺刺激反應高度相似。這些閃動週期約每90秒循環一次，時長從數秒到1分鐘不等。",
+        "en": "Researchers monitored sleeping octopuses and found rapid, irregular chromatic skin flashes during REM-like sleep phases, with brainwave patterns closely matching those during waking visual stimulation. These cycles recur roughly every 90 seconds.",
+        "zh-CN": "研究团队对章鱼进行长时间睡眠监测，发现其在REM-like阶段皮肤色素细胞出现快速彩色波纹闪动，脑波模式与清醒时的视觉刺激反应高度相似，闪动周期约每90秒循环一次。",
+        "ja": "研究チームがタコの睡眠を長時間観察し、REM様睡眠中に皮膚色素細胞が急速に不規則な色波紋を示すことを発見。脳波パターンは覚醒時の視覚刺激反応と酷似し、約90秒ごとに繰り返された。",
+        "ko": "연구팀은 문어의 수면을 장시간 모니터링해 REM 유사 수면 단계에서 피부 색소세포가 빠르고 불규칙한 색채 파동을 나타내며, 이때 뇌파 패턴이 깨어 있을 때의 시각 자극 반응과 매우 유사함을 발견했다."
+      },
+      "plain": {
+        "zh-TW": "章魚睡覺時皮膚會閃爍繽紛色彩，科學家認為這很可能是牠們在「做夢」——重播白天看到的場景。",
+        "en": "Octopuses flash vibrant colors while sleeping, and scientists believe they may be dreaming — replaying visual scenes from their waking hours.",
+        "zh-CN": "章鱼睡觉时皮肤会闪烁缤纷色彩，科学家认为这很可能是它们在「做梦」——重播白天看到的场景。",
+        "ja": "タコは眠っている間に皮膚がカラフルに光り、科学者たちはこれが日中の視覚体験を「夢の中で再生」している可能性が高いと考えている。",
+        "ko": "문어는 잠자는 동안 피부가 화려하게 빛나는데, 과학자들은 이것이 낮에 본 장면을 꿈속에서 다시 재생하는 것일 가능성이 높다고 본다."
+      },
+      "insight": {
+        "zh-TW": "💡 夢境可能是脊椎動物以外生命共有的演化古老遺產，章魚的例子挑戰了「意識」的邊界定義。",
+        "en": "💡 Dreaming may be an ancient evolutionary trait shared beyond vertebrates — octopuses challenge where we draw the line on consciousness.",
+        "zh-CN": "💡 梦境可能是脊椎动物以外生命共有的演化古老遗产，章鱼的例子挑战了「意识」的边界定义。",
+        "ja": "💡 夢を見ることは脊椎動物以外にも共通する古代の進化遺産かもしれず、タコの事例は「意識」の境界定義に挑戦する。",
+        "ko": "💡 꿈꾸기는 척추동물을 넘어 공유되는 고대 진화 유산일 수 있으며, 문어의 사례는 의식의 경계 정의에 도전한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n  <rect width=\"340\" height=\"160\" fill=\"#0a1a2e\"/>\n  <circle cx=\"170\" cy=\"75\" r=\"38\" fill=\"#2e7d32\"/>\n  <circle cx=\"152\" cy=\"62\" r=\"7\" fill=\"#0a1a2e\"/>\n  <circle cx=\"188\" cy=\"62\" r=\"7\" fill=\"#0a1a2e\"/>\n  <circle cx=\"153\" cy=\"61\" r=\"3\" fill=\"#ffffff\"/>\n  <circle cx=\"189\" cy=\"61\" r=\"3\" fill=\"#ffffff\"/>\n  <path d=\"M132,110 Q125,130 118,125 Q122,115 128,112 M142,115 Q138,138 130,135 Q133,122 139,118 M155,118 Q155,142 146,141 Q147,128 152,122 M170,119 Q172,143 163,144 Q162,130 167,123 M185,118 Q190,141 181,143 Q178,129 182,122 M198,115 Q205,137 196,138 Q191,125 195,118 M208,110 Q217,130 209,133 Q203,120 206,113\" stroke=\"#2e7d32\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>\n  <circle cx=\"148\" cy=\"78\" r=\"5\" fill=\"#ff6f00\" opacity=\"0.85\"/>\n  <circle cx=\"170\" cy=\"72\" r=\"4\" fill=\"#e91e8c\" opacity=\"0.85\"/>\n  <circle cx=\"192\" cy=\"78\" r=\"5\" fill=\"#00bcd4\" opacity=\"0.85\"/>\n  <circle cx=\"160\" cy=\"90\" r=\"3\" fill=\"#ffeb3b\" opacity=\"0.85\"/>\n  <circle cx=\"180\" cy=\"90\" r=\"3\" fill=\"#9c27b0\" opacity=\"0.85\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607e",
+      "domain": "climate",
+      "day": "2026-07-11",
+      "author": "Boers et al. / Nature Climate Change 2025",
+      "ref": "Nat Clim Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02287-8",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "大西洋翻轉環流正逼近「臨界點」：早期預警訊號比預期強烈",
+        "en": "Atlantic Overturning Circulation Nearing Tipping Point: Warning Signals Stronger Than Expected",
+        "zh-CN": "大西洋翻转环流正逼近「临界点」：早期预警信号比预期强烈",
+        "ja": "大西洋翻転循環が「転換点」に迫る——予想以上に強い早期警戒シグナル",
+        "ko": "대서양 역전순환류가 「임계점」에 근접：예상보다 강한 조기 경보 신호"
+      },
+      "tag": {
+        "zh-TW": "🌊 地球氣候",
+        "en": "🌊 Climate",
+        "zh-CN": "🌊 地球气候",
+        "ja": "🌊 地球気候",
+        "ko": "🌊 기후 지구"
+      },
+      "tech": {
+        "zh-TW": "研究者以近百年的海表溫度與鹽度時間序列，利用「自相關函數斜率」和「方差增長率」這兩項統計早期預警指標，發現大西洋經向翻轉環流（AMOC）在多個觀測站點均呈現臨界慢化（critical slowing down）特徵，且訊號強度在2010年後顯著加速。",
+        "en": "Using nearly a century of sea surface temperature and salinity time series, researchers applied autocorrelation slope and variance growth rate as early-warning indicators, finding critical slowing down signatures in AMOC at multiple stations — with signal strength accelerating markedly after 2010.",
+        "zh-CN": "研究者利用近百年海表温度与盐度时间序列，通过自相关函数斜率和方差增长率两项统计指标，发现AMOC在多个观测站点均呈现临界慢化特征，且信号强度在2010年后显著加速。",
+        "ja": "約100年の海面水温・塩分時系列データを用い、自己相関関数の傾きと分散増加率を早期警戒指標として解析した結果、AMOCが複数観測点で臨界スローダウンの特徴を示し、2010年以降にシグナル強度が急加速していることが判明した。",
+        "ko": "연구진은 약 100년간의 해수면 온도·염분 시계열 데이터를 이용해 자기상관 함수 기울기와 분산 증가율을 조기 경보 지표로 분석한 결과, AMOC가 여러 관측 지점에서 임계 감속 특성을 보이며 2010년 이후 신호 강도가 급격히 가속되고 있음을 발견했다."
+      },
+      "plain": {
+        "zh-TW": "大西洋的「暖氣循環幫浦」可能正在接近崩潰臨界點——一旦停擺，西歐將驟然變冷，全球氣候也將大亂。",
+        "en": "The Atlantic ocean heat conveyor belt may be approaching a collapse threshold — if it shuts down, Western Europe could plunge into severe cold and global climate patterns would be dramatically disrupted.",
+        "zh-CN": "大西洋的「暖气循环泵」可能正在接近崩溃临界点——一旦停摆，西欧将骤然变冷，全球气候也将大乱。",
+        "ja": "大西洋の「暖房循環ポンプ」が崩壊の臨界点に近づいている可能性がある——止まれば西欧は急冷し、世界の気候も大混乱に陥るだろう。",
+        "ko": "대서양의 '난방 순환 펌프'가 붕괴 임계점에 가까워지고 있을 수 있다. 멈추면 서유럽은 급격히 냉각되고 전 세계 기후도 크게 혼란에 빠질 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 氣候系統的崩潰不是線性漸變，而是突然翻轉——我們現在看到的「慢化」訊號，可能是最後的警告。",
+        "en": "💡 Climate system collapse is not linear but abrupt — the slowing-down signals we see now may be the final warning before a sudden flip.",
+        "zh-CN": "💡 气候系统的崩溃不是线性渐变，而是突然翻转——我们现在看到的「慢化」信号，可能是最后的警告。",
+        "ja": "💡 気候システムの崩壊は線形の漸変ではなく突然の反転であり、今見えている「スローダウン」シグナルは最後の警告かもしれない。",
+        "ko": "💡 기후 시스템 붕괴는 선형적 점진 변화가 아닌 갑작스러운 전환이다. 지금 보이는 '감속' 신호는 마지막 경고일 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n  <path d=\"M30,80 Q85,30 140,80 Q195,130 250,80 Q290,45 320,65\" stroke=\"#e8590c\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M320,65 Q290,95 250,80 Q195,50 140,80 Q85,110 30,80 Q10,72 20,60\" stroke=\"#1a6eb5\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\" stroke-dasharray=\"6,3\"/>\n  <circle cx=\"310\" cy=\"75\" r=\"18\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\"/>\n  <line x1=\"310\" y1=\"57\" x2=\"310\" y2=\"93\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n  <line x1=\"292\" y1=\"75\" x2=\"328\" y2=\"75\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n  <polygon points=\"310,57 305,67 315,67\" fill=\"#e8590c\"/>\n  <circle cx=\"55\" cy=\"80\" r=\"14\" fill=\"#1a6eb5\" opacity=\"0.7\"/>\n  <path d=\"M48,74 Q55,66 62,74 Q55,82 48,74\" fill=\"#e8590c\" opacity=\"0.85\"/>\n  <circle cx=\"185\" cy=\"105\" r=\"8\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-dasharray=\"4,2\"/>\n  <path d=\"M177,105 Q185,95 193,105 Q185,115 177,105\" fill=\"#e8590c\" opacity=\"0.5\"/>\n  <polygon points=\"185,88 181,98 189,98\" fill=\"#e8590c\"/>\n  <circle cx=\"185\" cy=\"105\" r=\"22\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"1.5\" opacity=\"0.4\" stroke-dasharray=\"3,4\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607f",
+      "domain": "bio",
+      "day": "2026-07-11",
+      "author": "Sahu et al. / Cell 2025",
+      "ref": "Cell 2025",
+      "url": "https://doi.org/10.1016/j.cell.2025.04.012",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "腸道細菌竟能「遠端遙控」大腦的老化速度",
+        "en": "Gut Bacteria Can Remotely Control the Rate of Brain Aging",
+        "zh-CN": "肠道细菌竟能「远端遥控」大脑的老化速度",
+        "ja": "腸内細菌が脳の老化速度を「遠隔制御」できることが判明",
+        "ko": "장내 세균이 뇌의 노화 속도를 「원격 제어」한다"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊在小鼠模型中發現，腸道菌群可透過代謝物（尤其是短鏈脂肪酸丁酸鹽）調節腦內小膠質細胞的表觀遺傳狀態，進而影響神經炎症與突觸修剪速率；將年輕小鼠腸道菌群移植至老年小鼠後，後者海馬迴的突觸密度與空間記憶表現均顯著回復。",
+        "en": "In mouse models, gut microbiota modulate the epigenetic state of brain microglia via metabolites — especially butyrate — affecting neuroinflammation and synaptic pruning rates. Transplanting young mouse microbiota into aged mice significantly restored hippocampal synaptic density and spatial memory.",
+        "zh-CN": "研究团队在小鼠模型中发现，肠道菌群可通过代谢物（尤其是短链脂肪酸丁酸盐）调节脑内小胶质细胞的表观遗传状态，进而影响神经炎症与突触修剪速率；移植年轻小鼠肠道菌群至老年小鼠后，后者海马回的突触密度与空间记忆表现均显著恢复。",
+        "ja": "マウスモデルにおいて、腸内細菌叢は代謝産物（特に短鎖脂肪酸の酪酸）を介して脳内ミクログリアのエピジェネティック状態を調節し、神経炎症とシナプス刈り込み速度に影響することが判明。若いマウスの腸内細菌叢を老齢マウスに移植すると、海馬のシナプス密度と空間記憶が有意に回復した。",
+        "ko": "연구팀은 마우스 모델에서 장내 미생물이 대사산물(특히 단쇄지방산 부티레이트)을 통해 뇌 내 미세아교세포의 후성유전학적 상태를 조절하고, 신경 염증과 시냅스 가지치기 속도에 영향을 미침을 발견했다. 젊은 마우스의 장내 미생물을 노령 마우스에 이식하자 해마의 시냅스 밀도와 공간 기억이 유의미하게 회복되었다."
+      },
+      "plain": {
+        "zh-TW": "腸道裡的菌群會透過血液傳遞「化學訊息」給大腦，決定大腦老化得快還是慢——換句話說，吃什麼、養什麼菌，可能直接影響你的記憶力老化。",
+        "en": "Gut bacteria send chemical messages through the bloodstream to the brain, influencing how fast it ages — meaning what you eat and which microbes you harbor may directly affect how your memory holds up over time.",
+        "zh-CN": "肠道里的菌群会通过血液传递「化学信息」给大脑，决定大脑老化得快还是慢——换句话说，吃什么、养什么菌，可能直接影响你的记忆力老化。",
+        "ja": "腸内細菌は血液を通じて脳に「化学メッセージ」を送り、脳の老化速度を左右する。つまり、何を食べ、どんな菌を育てるかが、記憶力の衰えに直接影響するかもしれない。",
+        "ko": "장내 세균은 혈액을 통해 뇌에 '화학 신호'를 보내 뇌가 얼마나 빨리 늙는지를 결정한다. 즉, 무엇을 먹고 어떤 균을 키우느냐가 기억력 노화에 직접 영향을 줄 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 大腦老化的鑰匙或許不在大腦本身，而藏在你的腸道——腸腦軸線正在重新定義「抗老」的戰場。",
+        "en": "💡 The key to brain aging may not lie in the brain itself but in your gut — the gut-brain axis is redefining where the battle against aging is truly fought.",
+        "zh-CN": "💡 大脑老化的钥匙或许不在大脑本身，而藏在你的肠道——肠脑轴线正在重新定义「抗老」的战场。",
+        "ja": "💡 脳の老化の鍵は脳自体ではなく腸に隠されているかもしれない——腸脳軸が「アンチエイジング」の戦場を再定義しつつある。",
+        "ko": "💡 뇌 노화의 열쇠는 뇌 자체가 아닌 장에 숨어 있을지 모른다. 장-뇌 축이 노화에 맞서는 전장을 새롭게 정의하고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<ellipse cx=\"80\" cy=\"100\" rx=\"38\" ry=\"28\" fill=\"#52b788\" opacity=\"0.85\"/>\n<ellipse cx=\"80\" cy=\"100\" rx=\"28\" ry=\"18\" fill=\"#1a1a2e\"/>\n<circle cx=\"68\" cy=\"94\" r=\"5\" fill=\"#52b788\" opacity=\"0.6\"/>\n<circle cx=\"88\" cy=\"98\" r=\"4\" fill=\"#52b788\" opacity=\"0.5\"/>\n<circle cx=\"76\" cy=\"108\" r=\"3\" fill=\"#52b788\" opacity=\"0.4\"/>\n<path d=\"M118 100 Q170 60 222 80\" stroke=\"#52b788\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"6,4\" opacity=\"0.9\"/>\n<circle cx=\"148\" cy=\"82\" r=\"5\" fill=\"#f4a261\" opacity=\"0.85\"/>\n<circle cx=\"178\" cy=\"72\" r=\"5\" fill=\"#f4a261\" opacity=\"0.85\"/>\n<circle cx=\"208\" cy=\"78\" r=\"5\" fill=\"#f4a261\" opacity=\"0.85\"/>\n<path d=\"M240 55 Q255 35 270 55 Q285 75 300 55 Q310 42 318 55 L318 115 Q300 130 270 125 Q240 130 222 115 Z\" fill=\"#52b788\" opacity=\"0.75\"/>\n<ellipse cx=\"270\" cy=\"82\" rx=\"22\" ry=\"16\" fill=\"#1a1a2e\" opacity=\"0.6\"/>\n<path d=\"M258 78 Q265 70 272 78 M272 78 Q279 70 286 78\" stroke=\"#52b788\" stroke-width=\"2\" fill=\"none\" opacity=\"0.9\"/>\n</svg>"
+    }
+  ]
+}
