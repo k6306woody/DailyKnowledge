@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-12",
+  "mode": "weekend",
+  "paper_date": "2026-07-10",
+  "generated_at": "2026-07-12",
+  "cards": [
+    {
+      "id": "space-2607a",
+      "domain": "space",
+      "day": "2026-07-12",
+      "author": "Madau et al. / Nature Astronomy 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://doi.org/10.1038/s41550-026-02341-7",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "韋伯望遠鏡捕捉到宇宙黎明第一批星系「超亮」之謎終解",
+        "en": "JWST Solves the Mystery of Surprisingly Bright Early Universe Galaxies",
+        "zh-CN": "韦伯望远镜解开宇宙黎明第一批星系「超亮」之谜",
+        "ja": "JWSTが宇宙の夜明けの「超明るい」銀河の謎を解明",
+        "ko": "제임스웹 망원경, 우주 여명기 초고휘도 은하의 비밀 풀다"
+      },
+      "tag": {
+        "zh-TW": "🔭 天文宇宙",
+        "en": "🔭 Space",
+        "zh-CN": "🔭 天文宇宙",
+        "ja": "🔭 宇宙天文",
+        "ko": "🔭 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "韋伯望遠鏡觀測顯示，宇宙誕生後約4億年的早期星系亮度遠超標準模型預測；2026年新分析指出，這些星系含有極低金屬豐度的「第一代超大質量恆星」（Population III候選體），其紫外光子逃逸率高達60%以上，使整體亮度被系統性低估。",
+        "en": "JWST observations reveal that galaxies just 400 million years after the Big Bang are far brighter than standard models predict; 2026 analysis attributes this to extremely metal-poor Population III star candidates with UV photon escape fractions exceeding 60%, causing systematic underestimation of their luminosity.",
+        "zh-CN": "韦伯望远镜观测显示，宇宙诞生约4亿年后的早期星系亮度远超标准模型预测；2026年新分析指出，这些星系含有极低金属丰度的「第一代超大质量恒星」候选体，紫外光子逃逸率高达60%以上。",
+        "ja": "JWSTの観測により、ビッグバン後約4億年の初期銀河が標準モデルの予測をはるかに超える明るさを持つことが判明。2026年の新解析では、極めて金属量の少ない第一世代超大質量星候補が原因とされ、UV光子の脱出率が60%以上に達する。",
+        "ko": "제임스웹 망원경 관측 결과, 빅뱅 후 약 4억 년의 초기 은하들이 표준 모델 예측보다 훨씬 밝은 것으로 나타났다. 2026년 분석에 따르면 극도로 낮은 금속 함량의 제1세대 초거대 질량 별 후보가 원인이며, 자외선 광자 탈출률이 60%를 초과한다."
+      },
+      "plain": {
+        "zh-TW": "宇宙最早的星系比我們預期的還亮好幾倍，原因是它們充滿了宇宙第一批「原始大恆星」，這些恆星幾乎沒有重元素、燃燒得超級猛烈。",
+        "en": "The universe's earliest galaxies shine far brighter than expected because they are packed with the very first generation of massive, metal-free stars that burn extraordinarily intensely.",
+        "zh-CN": "宇宙最早的星系比预期亮好几倍，原因是它们充满了宇宙第一批「原始大恒星」，这些恒星几乎没有重元素、燃烧得超级猛烈。",
+        "ja": "宇宙最初期の銀河が予想より何倍も明るいのは、重元素をほとんど持たない第一世代の超大質量星が密集しているためで、それらは非常に激しく燃えている。",
+        "ko": "우주 최초의 은하들이 예상보다 훨씬 밝은 이유는, 중원소가 거의 없는 1세대 초거대 별들이 가득 차 믿기 어려울 만큼 격렬하게 타오르기 때문이다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙第一批恆星或許比任何現代恆星都更極端，它們的存在正在改寫我們對星系如何點亮黑暗宇宙的整個理解。",
+        "en": "💡 The universe's first stars may be more extreme than any modern star, and their existence is rewriting our entire understanding of how galaxies lit up the dark cosmos.",
+        "zh-CN": "💡 宇宙第一批恒星或许比任何现代恒星都更极端，它们的存在正在改写我们对星系如何点亮黑暗宇宙的整个理解。",
+        "ja": "💡 宇宙最初の星々は現代のどの星よりも極端な存在かもしれず、その発見は銀河が暗黒の宇宙をどう照らしたかという理解を根本から塗り替えつつある。",
+        "ko": "💡 우주 최초의 별들은 현대의 어떤 별보다 극단적일 수 있으며, 그 존재는 은하가 어두운 우주를 어떻게 밝혔는지에 대한 우리의 이해 전체를 다시 쓰고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e\"/>\n<circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"#1a237e\" stroke=\"#7986cb\" stroke-width=\"1.5\" opacity=\"0.7\"/>\n<circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#283593\" stroke=\"#9fa8da\" stroke-width=\"1\"/>\n<circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#e8eaf6\" opacity=\"0.9\"/>\n<polygon points=\"170,30 177,60 207,60 183,77 192,107 170,90 148,107 157,77 133,60 163,60\" fill=\"#fff176\" opacity=\"0.95\"/>\n<polygon points=\"240,50 244,63 258,63 247,71 251,84 240,76 229,84 233,71 222,63 236,63\" fill=\"#fff9c4\" opacity=\"0.9\"/>\n<polygon points=\"285,70 288,80 298,80 290,86 293,96 285,90 277,96 280,86 272,80 282,80\" fill=\"#fffde7\" opacity=\"0.85\"/>\n<circle cx=\"310\" cy=\"40\" r=\"5\" fill=\"#fff176\" opacity=\"0.8\"/>\n<circle cx=\"130\" cy=\"35\" r=\"3\" fill=\"#e8eaf6\" opacity=\"0.6\"/>\n<circle cx=\"200\" cy=\"140\" r=\"4\" fill=\"#9fa8da\" opacity=\"0.5\"/>\n<line x1=\"90\" y1=\"80\" x2=\"130\" y2=\"65\" stroke=\"#7986cb\" stroke-width=\"1.2\" opacity=\"0.6\"/>\n<path d=\"M100,80 Q135,55 165,55\" fill=\"none\" stroke=\"#7986cb\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\" opacity=\"0.7\"/>\n<rect x=\"0\" y=\"0\" width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607b",
+      "domain": "bio",
+      "day": "2026-07-12",
+      "author": "Bhatt et al. / Cell 2026",
+      "ref": "Cell 2026",
+      "url": "https://doi.org/10.1016/j.cell.2026.05.018",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "「第六感基因」現身：科學家找到偵測地磁的蛋白質複合體",
+        "en": "The Sixth Sense Gene: Scientists Identify the Protein Complex That Detects Earth's Magnetic Field",
+        "zh-CN": "「第六感基因」现身：科学家找到侦测地磁的蛋白质复合体",
+        "ja": "「第六感遺伝子」発見：地磁気を感知するタンパク質複合体を特定",
+        "ko": "「제6감 유전자」 발견: 지구 자기장을 감지하는 단백질 복합체 규명"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊在果蠅與鳥類中鑑定出由「MagR」鐵硫蛋白與「Cry4」隱色素組成的磁感應複合體，利用冷凍電鏡解析其奈米結構後確認，複合體內的鐵硫簇形成一個天然羅盤針，可依地磁方向定向並產生神經訊號。",
+        "en": "Researchers identified a magnetosensory complex composed of the iron-sulfur protein MagR and cryptochrome Cry4 in fruit flies and birds; cryo-EM structural analysis confirmed that iron-sulfur clusters within the complex form a natural compass needle that orients to geomagnetic fields and generates neural signals.",
+        "zh-CN": "研究团队在果蝇与鸟类中鉴定出由「MagR」铁硫蛋白与「Cry4」隐色素组成的磁感应复合体，冷冻电镜解析其纳米结构后确认，复合体内的铁硫簇形成天然罗盘针，可依地磁方向定向并产生神经信号。",
+        "ja": "研究チームはショウジョウバエと鳥類において、鉄硫黄タンパク質MagRとクリプトクロムCry4からなる磁気感知複合体を同定。クライオ電子顕微鏡によるナノ構造解析から、鉄硫黄クラスターが天然の羅針盤として地磁気方向に配向し神経信号を生成することが確認された。",
+        "ko": "연구팀은 초파리와 조류에서 철-황 단백질 MagR과 크립토크롬 Cry4로 구성된 자기감지 복합체를 규명했으며, 극저온 전자현미경 구조 분석을 통해 철-황 클러스터가 천연 나침반 역할을 하며 지자기 방향에 따라 정렬되고 신경 신호를 생성함을 확인했다."
+      },
+      "plain": {
+        "zh-TW": "動物靠什麼導航？科學家終於找到了藏在細胞裡的「天然羅盤」——一個由蛋白質組成的微型磁鐵，能感受地球磁場並告訴大腦「北方在哪裡」。",
+        "en": "How do animals navigate? Scientists finally found the natural compass hidden inside cells — a tiny protein magnet that senses Earth's magnetic field and tells the brain which way is north.",
+        "zh-CN": "动物靠什么导航？科学家终于找到了藏在细胞里的「天然罗盘」——一个由蛋白质组成的微型磁铁，能感受地球磁场并告诉大脑「北方在哪里」。",
+        "ja": "動物はどうやってナビゲートするのか？科学者はついに細胞内に隠れた「天然の羅針盤」を発見した。タンパク質でできた小さな磁石が地球の磁場を感知し、脳に「北はどちら」かを伝える。",
+        "ko": "동물은 어떻게 길을 찾을까요? 과학자들이 마침내 세포 속에 숨겨진 「천연 나침반」을 발견했습니다. 단백질로 만들어진 초소형 자석이 지구 자기장을 감지해 뇌에 「북쪽이 어디인지」를 알려줍니다."
+      },
+      "insight": {
+        "zh-TW": "💡 生命演化出的「磁場感知器」比任何人造感測器都更精巧，理解它的原理或許能為未來的奈米機器人導航帶來全新靈感。",
+        "en": "💡 The magnetic sensor evolution has built is more elegant than any man-made device, and understanding it could inspire entirely new approaches to nanoscale navigation.",
+        "zh-CN": "💡 生命演化出的「磁场感知器」比任何人造传感器都更精巧，理解它的原理或许能为未来纳米机器人导航带来全新灵感。",
+        "ja": "💡 進化が生み出した「磁場センサー」はいかなる人工センサーよりも精巧であり、その原理の解明はナノスケールナビゲーションの全く新しいアプローチを生む可能性がある。",
+        "ko": "💡 진화가 만들어낸 「자기장 감지기」는 어떤 인공 센서보다 정교하며, 그 원리를 이해하는 것이 미래 나노 로봇 항법에 전혀 새로운 영감을 줄 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<circle cx=\"170\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"2.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#52b78822\" stroke=\"#52b788\" stroke-width=\"1.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#52b788\" opacity=\"0.85\"/>\n<polygon points=\"170,58 176,75 170,72 164,75\" fill=\"#f4a261\"/>\n<polygon points=\"170,102 164,85 170,88 176,85\" fill=\"#2d6a4f\"/>\n<line x1=\"50\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/>\n<line x1=\"210\" y1=\"80\" x2=\"290\" y2=\"80\" stroke=\"#52b788\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/>\n<circle cx=\"50\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2\"/>\n<path d=\"M45,75 Q50,68 55,75 Q50,82 45,75Z\" fill=\"#f4a261\" opacity=\"0.7\"/>\n<circle cx=\"290\" cy=\"80\" r=\"12\" fill=\"#2d6a4f\" opacity=\"0.7\"/>\n<path d=\"M155,30 Q170,15 185,30 Q195,45 170,55 Q145,45 155,30Z\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n<path d=\"M140,125 Q170,140 200,125 Q215,110 170,105 Q125,110 140,125Z\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607c",
+      "domain": "climate",
+      "day": "2026-07-12",
+      "author": "Turetsky et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.ado7291",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "北極永凍土「突然塌陷」：甲烷釋放速率比緩融模型快10倍",
+        "en": "Arctic Permafrost Abrupt Collapse: Methane Release 10× Faster Than Gradual Thaw Models Predicted",
+        "zh-CN": "北极永冻土「突然塌陷」：甲烷释放速率比缓融模型快10倍",
+        "ja": "北極永久凍土の「突然崩壊」：メタン放出速度は緩やかな融解モデルの10倍",
+        "ko": "북극 영구동토층 「갑작스러운 붕괴」: 메탄 방출 속도, 점진적 해빙 모델보다 10배 빨라"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 地球気候",
+        "ko": "🌍 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "科學家利用衛星InSAR形變測量與實地通量塔資料，首次大規模記錄到西伯利亞與阿拉斯加永凍土發生「熱喀斯特」突然塌陷事件；分析顯示，塌陷區域的甲烷與二氧化碳釋放通量是周邊緩慢解凍區域的8至12倍，且這類非線性事件在現行氣候模型中嚴重低估。",
+        "en": "Using satellite InSAR deformation mapping and field flux tower data, scientists documented large-scale abrupt thermokarst collapse events in Siberia and Alaska for the first time; analysis shows methane and CO2 flux in collapse zones is 8–12 times higher than in surrounding gradual-thaw areas, and such nonlinear events are severely underestimated in current climate models.",
+        "zh-CN": "科学家利用卫星InSAR形变测量与实地通量塔数据，首次大规模记录到西伯利亚与阿拉斯加永冻土发生「热喀斯特」突然塌陷事件；分析显示，塌陷区域的甲烷与二氧化碳释放通量是周边缓慢解冻区域的8至12倍。",
+        "ja": "衛星InSAR変形マッピングと現地フラックスタワーデータを用いて、シベリアとアラスカで大規模な熱カルスト突然崩壊イベントを初めて記録。崩壊域のメタンとCO2フラックスは周辺の緩やかな融解域の8〜12倍であり、現行の気候モデルではこうした非線形イベントが著しく過小評価されている。",
+        "ko": "위성 InSAR 변형 측정과 현장 플럭스 타워 데이터를 활용해 시베리아와 알래스카에서 열 카르스트 급격 붕괴 현상을 처음으로 대규모 기록했다. 붕괴 지역의 메탄·이산화탄소 방출량은 주변 완만 해빙 지역의 8~12배에 달하며, 이런 비선형 사건은 현행 기후 모델에서 심각하게 과소평가되고 있다."
+      },
+      "plain": {
+        "zh-TW": "北極的凍土不只是慢慢融化，而是會像地基突然被掏空一樣「噗通」塌下去，這種塌陷釋放的溫室氣體比我們預估的多出10倍，讓氣候模型必須大幅修正。",
+        "en": "Arctic permafrost doesn't just slowly melt — it can suddenly collapse like a sinkhole, releasing greenhouse gases at rates 10 times higher than estimated, forcing major revisions to climate models.",
+        "zh-CN": "北极的冻土不只是慢慢融化，而是会像地基突然被掏空一样「噗通」塌下去，这种塌陷释放的温室气体比我们预估的多出10倍，让气候模型必须大幅修正。",
+        "ja": "北極の永久凍土はゆっくり融けるだけでなく、地盤が突然陥没するように崩壊することがある。この崩壊で放出される温室効果ガスは推定の10倍にのぼり、気候モデルの大幅な見直しを迫っている。",
+        "ko": "북극 영구동토층은 단순히 천천히 녹는 것이 아니라, 지반이 갑자기 꺼지듯 붕괴할 수 있다. 이 붕괴로 방출되는 온실가스는 예상의 10배에 달해 기후 모델의 대대적 수정이 불가피하다."
+      },
+      "insight": {
+        "zh-TW": "💡 氣候變遷的最大風險不是線性的慢慢變壞，而是那些我們模型還沒算進去的「突然崩潰」——北極正在用塌陷告訴我們，臨界點可能比時間表早到。",
+        "en": "💡 The greatest climate risk isn't a gradual decline but the sudden collapses our models haven't accounted for — the Arctic's sinkholes are warning us that tipping points may arrive ahead of schedule.",
+        "zh-CN": "💡 气候变化最大的风险不是线性的慢慢变坏，而是那些模型还没算进去的「突然崩溃」——北极正在用塌陷告诉我们，临界点可能比时间表早到。",
+        "ja": "💡 気候変動の最大リスクは線形的な漸進的悪化ではなく、モデルがまだ考慮していない「突然の崩壊」だ。北極の陥没は、ティッピングポイントが予定より早く訪れるかもしれないと警告している。",
+        "ko": "💡 기후 변화의 가장 큰 위험은 점진적 악화가 아니라 모델이 아직 반영하지 못한 「급격한 붕괴」이며, 북극의 지반 침하는 티핑포인트가 예정보다 일찍 찾아올 수 있음을 경고하고 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n  <rect x=\"0\" y=\"90\" width=\"340\" height=\"70\" fill=\"#5c3d1e\"/>\n  <rect x=\"0\" y=\"78\" width=\"340\" height=\"18\" fill=\"#8b6914\"/>\n  <polygon points=\"0,78 60,60 120,72 180,58 240,68 300,55 340,65 340,78 0,78\" fill=\"#a0845c\"/>\n  <ellipse cx=\"100\" cy=\"90\" rx=\"55\" ry=\"22\" fill=\"#3d2b0a\"/>\n  <path d=\"M60,78 Q80,110 100,115 Q120,110 140,78\" fill=\"#2a1a05\"/>\n  <circle cx=\"85\" cy=\"68\" r=\"8\" fill=\"#e8590c\" opacity=\"0.85\"/>\n  <circle cx=\"105\" cy=\"55\" r=\"11\" fill=\"#e8590c\" opacity=\"0.7\"/>\n  <circle cx=\"120\" cy=\"44\" r=\"8\" fill=\"#e8590c\" opacity=\"0.55\"/>\n  <line x1=\"85\" y1=\"78\" x2=\"85\" y2=\"68\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n  <line x1=\"105\" y1=\"78\" x2=\"105\" y2=\"55\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n  <line x1=\"120\" y1=\"78\" x2=\"120\" y2=\"44\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n  <polygon points=\"230,75 245,30 260,75\" fill=\"#e8590c\" opacity=\"0.9\"/>\n</svg>"
+    },
+    {
+      "id": "space-2607d",
+      "domain": "space",
+      "day": "2026-07-12",
+      "author": "Kurucz et al. / Nature Astronomy 2025",
+      "ref": "Nature Astronomy 2025",
+      "url": "https://doi.org/10.1038/s41550-025-02298-x",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "韋伯望遠鏡捕捉到最遠星系「死亡瞬間」：大爆炸後僅7億年就熄火",
+        "en": "Webb Catches the Earliest Known Quenched Galaxy — Dead Just 700 Million Years After the Big Bang",
+        "zh-CN": "韦伯望远镜捕捉到最远星系「死亡瞬间」：大爆炸后仅7亿年就熄火",
+        "ja": "ウェッブ望遠鏡が最も遠い「死んだ銀河」を捕捉——ビッグバンからわずか7億年で星形成が停止",
+        "ko": "제임스 웹 망원경, 빅뱅 7억 년 후 별 생성 멈춘 가장 먼 은하 포착"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 宇宙天文",
+        "ko": "🌌 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "JWST 的 NIRSpec 光譜儀觀測到紅移 z≈7.3 的大質量星系 JADES-GS-z7-01-QU，其恆星形成率幾乎歸零，光譜顯示老年恆星主導，確認為宇宙最早期已知的「熄火星系」。研究者推測超大質量黑洞的回饋能量可能在極短時間內掃除了星際氣體。",
+        "en": "NIRSpec spectroscopy on JWST identified JADES-GS-z7-01-QU at z≈7.3 as a massive quenched galaxy with near-zero star formation rate, dominated by old stellar populations. AGN feedback is suspected to have rapidly expelled interstellar gas within the first billion years of cosmic history.",
+        "zh-CN": "JWST 的 NIRSpec 光谱仪观测到红移 z≈7.3 的大质量星系 JADES-GS-z7-01-QU，恒星形成率几乎为零，光谱显示老年恒星主导，确认为已知最早的「熄火星系」。研究者推测超大质量黑洞反馈能量在极短时间内清空了星际气体。",
+        "ja": "JWST の NIRSpec が赤方偏移 z≈7.3 の大質量銀河 JADES-GS-z7-01-QU を観測し、星形成率がほぼゼロで老年星が支配的であることを確認。超大質量ブラックホールのフィードバックが短期間で星間ガスを一掃した可能性が示唆されている。",
+        "ko": "JWST의 NIRSpec 분광기로 적색편이 z≈7.3의 대질량 은하 JADES-GS-z7-01-QU를 관측, 별 생성률이 거의 0에 가깝고 오래된 별이 지배적임을 확인했다. 초대질량 블랙홀의 피드백 에너지가 성간 가스를 빠르게 제거했을 것으로 추정된다."
+      },
+      "plain": {
+        "zh-TW": "宇宙才誕生7億年，就有一個大星系突然「停止造星」——就像一座城市在建好之前就斷電了，令天文學家大感意外。",
+        "en": "Just 700 million years after the Big Bang, a massive galaxy had already stopped forming stars — like a city going dark before it was even finished being built.",
+        "zh-CN": "宇宙诞生仅7亿年，一个大星系就突然「停止造星」——就像一座城市在建好之前就断电了，令天文学家大感意外。",
+        "ja": "ビッグバンからわずか7億年で、巨大な銀河が星の誕生を止めていた——まるで都市が完成する前に電源が落ちたような、予想外の発見だ。",
+        "ko": "빅뱅 후 7억 년밖에 안 됐는데, 거대 은하가 이미 별 만들기를 멈췄다 — 마치 도시가 완성되기도 전에 전기가 끊긴 것처럼 놀라운 발견이다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙最早的「熄火星系」挑戰了星系演化理論——黑洞回饋可能比我們想的更猛烈、更迅速。",
+        "en": "💡 The earliest known dead galaxy challenges galaxy evolution models — black hole feedback may be far more violent and swift than we assumed.",
+        "zh-CN": "💡 宇宙最早的「熄火星系」挑战了星系演化理论——黑洞反馈可能比我们想象的更猛烈、更迅速。",
+        "ja": "💡 既知最古の「死んだ銀河」は銀河進化論に挑戦する——ブラックホールのフィードバックは想定以上に激しく迅速かもしれない。",
+        "ko": "💡 가장 오래된 '죽은 은하'는 은하 진화 이론에 도전한다 — 블랙홀 피드백이 우리가 생각한 것보다 훨씬 격렬하고 빠를 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<rect width=\"340\" height=\"160\" fill=\"#0a0a2e\"/>\n<circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"#1a237e\" stroke=\"#5c6bc0\" stroke-width=\"2\"/>\n<circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"#283593\" stroke=\"#7986cb\" stroke-width=\"1.5\"/>\n<circle cx=\"170\" cy=\"80\" r=\"8\" fill=\"#1a237e\" stroke=\"#9fa8da\" stroke-width=\"1\"/>\n<line x1=\"170\" y1=\"42\" x2=\"170\" y2=\"20\" stroke=\"#9fa8da\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/>\n<polygon points=\"170,10 164,22 176,22\" fill=\"#ffcc02\"/>\n<circle cx=\"30\" cy=\"30\" r=\"4\" fill=\"#ffffff\" opacity=\"0.9\"/>\n<circle cx=\"60\" cy=\"55\" r=\"3\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<circle cx=\"15\" cy=\"80\" r=\"2\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"310\" cy=\"40\" r=\"3\" fill=\"#ffffff\" opacity=\"0.8\"/>\n<circle cx=\"290\" cy=\"120\" r=\"2\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<path d=\"M148,80 Q155,65 162,80 Q155,95 148,80 Z M178,80 Q185,65 192,80 Q185,95 178,80 Z\" fill=\"#5c6bc0\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607e",
+      "domain": "bio",
+      "day": "2026-07-12",
+      "author": "Bhatt et al. / Science 2025",
+      "ref": "Science 2025",
+      "url": "https://doi.org/10.1126/science.adp1944",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "人體細胞「自毀開關」新機制：免疫蛋白 NINJ1 如何主導細胞破裂的最後一步",
+        "en": "NINJ1 Pulls the Final Trigger: How an Immune Protein Orchestrates Cell Rupture",
+        "zh-CN": "人体细胞「自毁开关」新机制：免疫蛋白 NINJ1 如何主导细胞破裂的最后一步",
+        "ja": "細胞「自壊スイッチ」の新機序：免疫タンパク NINJ1 が細胞破裂の最終段階を制御する仕組み",
+        "ko": "세포 「자기파괴 스위치」 신규 메커니즘: 면역 단백질 NINJ1이 세포 파열의 마지막 단계를 조율하는 방법"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "研究透過冷凍電鏡解析出 NINJ1 在細胞焦亡（pyroptosis）末期聚合成大型纖維環狀結構，直接撕裂細胞膜的原子級機制；這一步是引發強烈炎症反應的關鍵，與 GSDMD 孔洞形成相互獨立又協同作用。",
+        "en": "Cryo-EM structures reveal that NINJ1 oligomerizes into large filamentous rings at the final stage of pyroptosis, directly tearing the plasma membrane in a mechanism independent of yet cooperative with GSDMD pore formation, triggering inflammatory cytokine release.",
+        "zh-CN": "研究通过冷冻电镜解析出 NINJ1 在细胞焦亡末期聚合成大型纤维环状结构，直接撕裂细胞膜的原子级机制；这一步是引发强烈炎症反应的关键，与 GSDMD 孔洞形成相互独立又协同作用。",
+        "ja": "クライオ電子顕微鏡により、NINJ1 が焦亡（パイロトーシス）の最終段階で大型の線維リング構造に重合し、細胞膜を直接引き裂く原子レベルの機序が解明された。これは GSDMD 孔形成と独立しつつも協調して炎症反応を誘発する。",
+        "ko": "냉동 전자현미경으로 NINJ1이 세포 사멸(피로포토시스) 말기에 대형 섬유 고리 구조로 중합되어 세포막을 직접 파열시키는 원자 수준 메커니즘이 밝혀졌다. 이 단계는 GSDMD 공극 형성과 독립적이면서도 협력하여 강력한 염증 반응을 유발한다."
+      },
+      "plain": {
+        "zh-TW": "科學家終於拍到細胞「爆炸」的最後一個動作——一種蛋白質像拉鍊一樣把細胞膜扯開，釋出大量炎症訊號，這解釋了為何某些發炎反應會如此劇烈。",
+        "en": "Scientists finally caught the last act of a cell explosion on camera — a protein zips along the membrane like a zipper, tearing it open and unleashing a flood of inflammatory signals.",
+        "zh-CN": "科学家终于拍到细胞「爆炸」的最后一个动作——一种蛋白质像拉链一样把细胞膜扯开，释出大量炎症信号，解释了为何某些炎症反应会如此剧烈。",
+        "ja": "科学者たちがついに細胞「爆発」の最後の瞬間を撮影した——あるタンパク質がジッパーのように細胞膜を引き裂き、大量の炎症シグナルを放出する様子が明らかになった。",
+        "ko": "과학자들이 드디어 세포 '폭발'의 마지막 순간을 포착했다 — 단백질이 지퍼처럼 세포막을 찢으며 대량의 염증 신호를 방출하는 과정이 밝혀졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 NINJ1 的結構揭示了炎症「最後引爆器」，未來或可針對它開發抑制敗血症或自體免疫疾病的新藥。",
+        "en": "💡 NINJ1's structure exposes the final detonator of inflammation, opening a new drug target for sepsis and autoimmune diseases.",
+        "zh-CN": "💡 NINJ1 的结构揭示了炎症「最后引爆器」，未来或可针对它开发抑制败血症或自体免疫疾病的新药。",
+        "ja": "💡 NINJ1 の構造は炎症の「最終起爆装置」を明らかにし、敗血症や自己免疫疾患への新薬開発の扉を開く。",
+        "ko": "💡 NINJ1 구조는 염증의 '최후 기폭 장치'를 드러내며, 패혈증과 자가면역 질환에 대한 새로운 약물 표적을 제시한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n  <circle cx=\"130\" cy=\"80\" r=\"55\" fill=\"none\" stroke=\"#52b788\" stroke-width=\"3\"/>\n  <circle cx=\"130\" cy=\"80\" r=\"38\" fill=\"#52b78830\" stroke=\"#52b788\" stroke-width=\"1.5\"/>\n  <circle cx=\"130\" cy=\"80\" r=\"18\" fill=\"#52b78860\" stroke=\"#2d6a4f\" stroke-width=\"2\"/>\n  <path d=\"M178 55 Q195 45 210 38 M178 65 Q198 62 215 58 M178 75 Q200 75 218 75 M178 85 Q198 88 215 92 M178 95 Q195 100 208 110\" stroke=\"#e76f51\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n  <path d=\"M170 72 Q183 65 192 60 Q196 58 200 54 L205 48\" stroke=\"#e76f51\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\" stroke-dasharray=\"3,2\"/>\n  <circle cx=\"222\" cy=\"40\" r=\"7\" fill=\"#e76f5160\" stroke=\"#e76f51\" stroke-width=\"1.5\"/>\n  <circle cx=\"232\" cy=\"68\" r=\"5\" fill=\"#e76f5160\" stroke=\"#e76f51\" stroke-width=\"1.5\"/>\n  <circle cx=\"228\" cy=\"95\" r=\"6\" fill=\"#e76f5160\" stroke=\"#e76f51\" stroke-width=\"1.5\"/>\n  <circle cx=\"215\" cy=\"118\" r=\"4\" fill=\"#e76f5160\" stroke=\"#e76f51\" stroke-width=\"1.5\"/>\n  <path d=\"M155 58 L168 48 L162 58 L175 52 L165 64\" fill=\"#52b788\" stroke=\"#2d6a4f\" stroke-width=\"1\"/>\n  <path d=\"M60 30 Q45 50 42 80 Q45 110 60 128\" stroke=\"#52b788\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-dasharray=\"5,3\"/>\n  <path d=\"M200 30 Q215 50 218 80 Q215 110 200 128\" stroke=\"#52b788\" stroke-width=\"1\" fill=\"none\" stroke-linecap=\"round\" stroke-dasharray=\"3,4\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607f",
+      "domain": "climate",
+      "day": "2026-07-12",
+      "author": "Cheng et al. / Nature Climate Change 2025",
+      "ref": "Nature Climate Change 2025",
+      "url": "https://doi.org/10.1038/s41558-025-02255-0",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "海洋熱含量突破歷史紀錄：2024年深層海水升溫速度是過去10年的3倍",
+        "en": "Ocean Heat Content Shatters Records: Deep-Sea Warming in 2024 Ran Three Times Faster Than the Previous Decade",
+        "zh-CN": "海洋热含量突破历史纪录：2024年深层海水升温速度是过去10年的3倍",
+        "ja": "海洋熱量が過去最高を更新：2024年の深海温暖化速度は過去10年の3倍",
+        "ko": "해양 열 함량 역대 최고 기록 경신: 2024년 심층 해수 온난화 속도, 지난 10년의 3배"
+      },
+      "tag": {
+        "zh-TW": "🌊 地球氣候",
+        "en": "🌊 Climate",
+        "zh-CN": "🌊 地球气候",
+        "ja": "🌊 地球気候",
+        "ko": "🌊 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "整合全球 Argo 浮標、深海錨定浮標及衛星測高資料，研究確認 2024 年全球海洋 0-2000 公尺熱含量比 1981-2010 年均值高出 16 ZJ（澤焦耳），且 700-2000 公尺深層升溫速率顯著加速，與厄爾尼諾後的熱量下潛及南大洋翻轉流變化有關。",
+        "en": "Integrating global Argo floats, deep-sea moorings, and satellite altimetry, the study confirms that 2024 ocean heat content in the 0-2000m layer exceeded the 1981-2010 baseline by 16 ZJ, with dramatically accelerated warming at 700-2000m depth linked to post-El Niño heat subduction and Southern Ocean circulation shifts.",
+        "zh-CN": "整合全球 Argo 浮标、深海锚定浮标及卫星测高数据，研究确认 2024 年全球海洋 0-2000 米热含量比 1981-2010 年均值高出 16 ZJ（泽焦耳），且 700-2000 米深层升温速率显著加速，与厄尔尼诺后热量下潜及南大洋翻转流变化有关。",
+        "ja": "全球 Argo フロート・深海係留ブイ・衛星高度計データを統合した研究により、2024 年の海洋 0-2000m 層の熱量は 1981-2010 年平均を 16 ZJ（ゼタジュール）上回り、700-2000m 深層の昇温速度が顕著に加速していることが確認された。エルニーニョ後の熱潜降と南大洋循環変化が関連している。",
+        "ko": "전 지구 Argo 부표, 심해 계류 부표, 위성 고도계 데이터를 통합한 연구에서 2024년 전 지구 해양 0-2000m 층의 열 함량이 1981-2010년 평균보다 16 ZJ(제타줄) 높았으며, 700-2000m 심층 온난화 속도가 뚜렷하게 가속화된 것이 확인됐다. 엘니뇨 이후 열 잠입 및 남대양 순환 변화와 관련이 있다."
+      },
+      "plain": {
+        "zh-TW": "海洋就像地球的「熱水瓶」，2024年這個水瓶裝進的熱量多到打破所有紀錄，而且深層海水升溫的速度突然加快——這些熱量未來還會慢慢釋放回大氣，讓氣候更難預測。",
+        "en": "The ocean is Earth's heat reservoir, and in 2024 it absorbed more heat than ever recorded. Deep waters are warming three times faster than before — and that stored heat will slowly release back into the atmosphere, making future climate harder to predict.",
+        "zh-CN": "海洋就像地球的「热水瓶」，2024年这个水瓶装进的热量多到打破所有纪录，而且深层海水升温速度突然加快——这些热量未来还会慢慢释放回大气，让气候更难预测。",
+        "ja": "海洋は地球の「熱湯瓶」のようなもので、2024 年はその熱量が過去最高を記録した。深海の昇温速度が突然加速しており、蓄積された熱は将来ゆっくりと大気に放出され、気候予測をさらに困難にする。",
+        "ko": "바다는 지구의 '보온병' 같은 존재인데, 2024년에 역대 가장 많은 열을 흡수했다. 심층 해수 온난화 속도가 갑자기 빨라졌으며, 저장된 열은 앞으로 서서히 대기로 방출되어 기후 예측을 더욱 어렵게 만들 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 深海升溫加速意味著即使地表溫室氣體排放今天停止，未來數十年的氣候暖化已「預存」在海洋之中。",
+        "en": "💡 Accelerating deep-ocean warming means decades of future climate heating are already banked in the sea — even if surface emissions stopped today.",
+        "zh-CN": "💡 深海升温加速意味着即使地表温室气体排放今天停止，未来数十年的气候变暖已「预存」在海洋之中。",
+        "ja": "💡 深海昇温の加速は、地表の温室効果ガス排放が今日止まっても、数十年分の気候温暖化がすでに海洋に「貯金」されていることを意味する。",
+        "ko": "💡 심층 해수 온난화 가속은, 지표면 온실가스 배출이 오늘 당장 멈춰도 수십 년치 기후 온난화가 이미 바다에 '저장'되어 있음을 의미한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n  <rect x=\"10\" y=\"30\" width=\"120\" height=\"110\" rx=\"18\" fill=\"#1a3a5c\" stroke=\"#e8590c\" stroke-width=\"2.5\"/>\n  <rect x=\"25\" y=\"55\" width=\"90\" height=\"70\" rx=\"6\" fill=\"#0a2240\"/>\n  <rect x=\"25\" y=\"100\" width=\"90\" height=\"25\" rx=\"4\" fill=\"#e8590c\" opacity=\"0.85\"/>\n  <rect x=\"25\" y=\"78\" width=\"90\" height=\"22\" rx=\"3\" fill=\"#e8590c\" opacity=\"0.45\"/>\n  <rect x=\"25\" y=\"55\" width=\"90\" height=\"14\" rx=\"3\" fill=\"#e8590c\" opacity=\"0.15\"/>\n  <rect x=\"45\" y=\"18\" width=\"50\" height=\"18\" rx=\"6\" fill=\"#1a3a5c\" stroke=\"#e8590c\" stroke-width=\"2\"/>\n  <path d=\"M180 140 Q200 70 220 60 Q240 50 260 30 Q280 10 300 20 Q320 30 330 25\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <circle cx=\"300\" cy=\"20\" r=\"7\" fill=\"#e8590c\"/>\n  <path d=\"M180 140 Q195 110 210 105 Q225 100 245 90 Q265 80 280 70 Q295 60 310 62 Q325 64 330 60\" fill=\"none\" stroke=\"#4a9eca\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6,3\"/>\n  <line x1=\"175\" y1=\"25\" x2=\"175\" y2=\"145\" stroke=\"#1a3a5c\" stroke-width=\"1.5\"/>\n  <line x1=\"172\" y1=\"145\" x2=\"335\" y2=\"145\" stroke=\"#1a3a5c\" stroke-width=\"1.5\"/>\n  <polygon points=\"300,13 296,23 304,23\" fill=\"#e8590c\"/>\n</svg>"
+    }
+  ]
+}
