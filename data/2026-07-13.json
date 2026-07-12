@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-13",
+  "mode": "paper",
+  "paper_date": "2026-07-10",
+  "generated_at": "2026-07-13",
+  "cards": [
+    {
+      "id": "ai-260713",
+      "domain": "ai",
+      "day": "2026-07-13",
+      "author": "Zhekai Chen, Chengqi Duan et al.",
+      "ref": "arXiv:2607.08768v1",
+      "url": "https://arxiv.org/abs/2607.08768v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"70\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.85\"/><rect x=\"30\" y=\"70\" width=\"40\" height=\"8\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.7\"/><rect x=\"30\" y=\"84\" width=\"30\" height=\"8\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.5\"/><rect x=\"30\" y=\"98\" width=\"35\" height=\"8\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.5\"/><circle cx=\"170\" cy=\"80\" r=\"32\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"3\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#2a9d8f\" opacity=\"0.3\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#e76f51\"/><line x1=\"170\" y1=\"48\" x2=\"170\" y2=\"62\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><line x1=\"170\" y1=\"98\" x2=\"170\" y2=\"112\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><line x1=\"138\" y1=\"80\" x2=\"152\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><line x1=\"188\" y1=\"80\" x2=\"202\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><rect x=\"255\" y=\"40\" width=\"65\" height=\"30\" rx=\"6\" fill=\"#e76f51\" opacity=\"0.8\"/><rect x=\"255\" y=\"78\" width=\"65\" height=\"30\" rx=\"6\" fill=\"#f4a261\" opacity=\"0.8\"/><rect x=\"255\" y=\"116\" width=\"65\" height=\"30\" rx=\"6\" fill=\"#2a9d8f\" opacity=\"0.8\"/><line x1=\"202\" y1=\"68\" x2=\"255\" y2=\"55\" stroke=\"#e76f51\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><line x1=\"202\" y1=\"80\" x2=\"255\" y2=\"93\" stroke=\"#f4a261\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><line x1=\"202\" y1=\"92\" x2=\"255\" y2=\"131\" stroke=\"#2a9d8f\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/></svg>",
+      "title": {
+        "zh-TW": "UniClawBench：測試 AI 代理人在真實世界中「主動完成任務」的通用基準",
+        "en": "UniClawBench: A Universal Benchmark for Testing Proactive AI Agents on Real-World Tasks",
+        "zh-CN": "UniClawBench：评估 AI 智能体在真实世界中「主动完成任务」的通用基准",
+        "ja": "UniClawBench：現実世界のタスクで「自発的に動く AI エージェント」を評価する汎用ベンチマーク",
+        "ko": "UniClawBench：실제 환경에서 「능동적으로 행동하는 AI 에이전트」를 평가하는 범용 벤치마크"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI 與智慧代理人",
+        "en": "🤖 AI & Intelligent Agents",
+        "zh-CN": "🤖 AI 与智能体",
+        "ja": "🤖 AI とインテリジェントエージェント",
+        "ko": "🤖 AI 및 지능형 에이전트"
+      },
+      "tech": {
+        "zh-TW": "本論文提出 UniClawBench，一套針對「主動型 AI 代理人」的通用評估基準，超越沙盒環境與單輪對話限制，支援多輪真實世界任務執行。其核心創新在於將任務分類拆解為獨立的能力維度，使研究者能精確診斷代理人失敗的根本原因，而非僅觀察整體成功率。",
+        "en": "UniClawBench introduces a universal evaluation framework for proactive AI agents, moving beyond sandboxed single-turn paradigms to support multi-turn real-world task execution. Its key innovation lies in decomposing task taxonomies into isolated capability dimensions, enabling precise root-cause analysis of agent failures rather than measuring only overall success rates.",
+        "zh-CN": "本论文提出 UniClawBench，一套针对「主动型 AI 智能体」的通用评估基准，突破沙盒环境与单轮对话的限制，支持多轮真实世界任务执行。其核心创新在于将任务分类拆解为独立的能力维度，使研究者能精确定位智能体失败的根本原因，而非仅观察整体成功率。",
+        "ja": "UniClawBench は、主動型 AI エージェントを評価するための汎用フレームワークを提案し、サンドボックス環境や単一ターン評価の限界を超え、マルチターンの現実タスク実行に対応します。タスク分類を独立した能力次元に分解することで、全体成功率だけでなくエージェント失敗の根本原因を精密に特定できます。",
+        "ko": "UniClawBench는 능동적 AI 에이전트를 평가하기 위한 범용 프레임워크를 제안하며, 샌드박스 환경과 단일 턴 평가의 한계를 넘어 멀티 턴 실세계 태스크 실행을 지원합니다. 태스크 분류를 독립적인 능력 차원으로 분해하여 전체 성공률이 아닌 에이전트 실패의 근본 원인을 정밀하게 진단할 수 있습니다."
+      },
+      "plain": {
+        "zh-TW": "想像你僱了一位新助理，讓他獨立去完成「訂機票、整理郵件、上網查資料」這些日常任務，而不是只回答你的一個問題。現在的 AI 代理人就像這樣的助理，能主動使用各種工具完成複雜目標。但問題來了：我們怎麼知道這位助理「哪裡做得好、哪裡出了問題」？過去的測試方式就像只考一道選擇題，無法分辨助理是「記憶力差」還是「計畫能力不足」。UniClawBench 就像一份設計精良的職能測驗，把「記憶、規劃、使用工具、跨步驟協調」等能力分開單獨測試，讓我們能像醫生一樣準確「診斷」 AI 哪個環節出了毛病。這非常重要，因為只有找到真正的弱點，才能有效改進 AI 代理人，讓它在真實生活中更可靠、更安全地幫助我們。",
+        "en": "Imagine hiring a new assistant and asking them to independently book flights, sort emails, and research topics online — not just answer one question at a time. Modern AI agents work exactly like this, proactively using tools to accomplish complex goals. But how do we know where such an agent excels and where it stumbles? Existing tests are like a single multiple-choice exam that cannot tell whether the assistant failed due to poor memory or weak planning. UniClawBench works like a well-designed skills assessment, separately testing memory, planning, tool use, and multi-step coordination, so researchers can accurately diagnose which part of an AI agent is broken. This matters enormously: only by pinpointing true weaknesses can we build AI agents that are genuinely reliable and safe for everyday life.",
+        "zh-CN": "想象你雇了一位新助理，让他独立完成「订机票、整理邮件、上网查资料」这些日常任务，而不是只回答你的一个问题。现在的 AI 智能体就像这样的助理，能主动使用各种工具完成复杂目标。但问题来了：我们怎么知道这位助理「哪里做得好、哪里出了问题」？过去的测试方式就像只考一道选择题，无法分辨助理是「记忆力差」还是「计划能力不足」。UniClawBench 就像一份设计精良的职能测验，把「记忆、规划、工具使用、跨步骤协调」等能力分开单独测试，让我们能像医生一样精准「诊断」AI 哪个环节出了毛病。这非常重要，因为只有找到真正的弱点，才能有效改进 AI 智能体，让它在真实生活中更可靠、更安全地帮助我们。",
+        "ja": "新しいアシスタントを雇って、「航空券の予約・メール整理・ネット調査」を一人でこなしてもらうと想像してください。一問一答ではなく、複数の手順を自分で判断しながら進める作業です。現代の AI エージェントはまさにこのように動きますが、問題は「どこが得意でどこが苦手なのか」を正確に把握する方法がなかったこと。従来のテストは一問選択式のようなもので、失敗の原因が「記憶力不足」なのか「計画力不足」なのかを区別できませんでした。UniClawBench は精巧な能力評価試験のように、記憶・計画・ツール使用・複数ステップの協調を個別にテストし、医師のように AI の「どの部分が壊れているか」を正確に診断できます。真の弱点を特定してこそ、日常生活で信頼できる AI エージェントが実現します。",
+        "ko": "새 어시스턴트를 고용해서 「항공권 예약, 이메일 정리, 인터넷 조사」를 혼자 처리하게 맡긴다고 상상해 보세요. 한 번에 한 질문만 답하는 게 아니라, 여러 단계를 스스로 판단하며 진행하는 작업입니다. 현대 AI 에이전트가 바로 이렇게 동작하지만, 문제는 「어디서 잘하고 어디서 실패하는지」를 정확히 파악하는 방법이 없었다는 점입니다. 기존 테스트는 객관식 한 문제 수준으로, 실패 원인이 「기억력 부족」인지 「계획 능력 부족」인지 구분하지 못했습니다. UniClawBench는 정교한 직무 역량 평가처럼 기억·계획·도구 사용·다단계 조율 능력을 따로 측정해, 의사처럼 AI의 「어느 부분이 문제인지」를 정확히 진단합니다. 진짜 약점을 찾아야만 일상에서 진정으로 믿을 수 있는 AI 에이전트를 만들 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 評估 AI 的方式決定了 AI 進步的方向——只有把「能力」與「任務」分開測量，才能真正知道要改進什麼。",
+        "en": "💡 How we evaluate AI shapes how AI improves — only by separating capability dimensions from task scenarios can we truly know what to fix.",
+        "zh-CN": "💡 评估 AI 的方式决定了 AI 进步的方向——只有把「能力」与「任务」分开测量，才能真正知道要改进什么。",
+        "ja": "💡 AI の評価方法が AI の進化の方向を決める——能力と課題を分けて測定して初めて、何を改善すべきかが本当にわかる。",
+        "ko": "💡 AI를 평가하는 방식이 AI의 발전 방향을 결정한다 — 능력 차원과 태스크를 분리해서 측정해야만 무엇을 고쳐야 하는지 진정으로 알 수 있다."
+      }
+    },
+    {
+      "id": "bio-260713",
+      "domain": "bio",
+      "day": "2026-07-13",
+      "author": "Jeffrey D. Varner",
+      "ref": "arXiv:2607.07677v1",
+      "url": "https://arxiv.org/abs/2607.07677v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><circle cx=\"60\" cy=\"80\" r=\"36\" fill=\"#52b788\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#ffffff\" opacity=\"0.9\"/><circle cx=\"60\" cy=\"80\" r=\"10\" fill=\"#52b788\"/><rect x=\"108\" y=\"72\" width=\"44\" height=\"16\" rx=\"8\" fill=\"#52b78855\"/><polygon points=\"148,80 160,73 160,87\" fill=\"#52b788\"/><rect x=\"170\" y=\"44\" width=\"28\" height=\"28\" rx=\"6\" fill=\"#f4a261\" opacity=\"0.85\"/><rect x=\"170\" y=\"88\" width=\"28\" height=\"28\" rx=\"6\" fill=\"#e76f51\" opacity=\"0.75\"/><rect x=\"210\" y=\"54\" width=\"16\" height=\"8\" rx=\"4\" fill=\"#52b788\" opacity=\"0.7\"/><rect x=\"210\" y=\"98\" width=\"28\" height=\"8\" rx=\"4\" fill=\"#52b788\" opacity=\"0.4\"/><line x1=\"238\" y1=\"58\" x2=\"270\" y2=\"75\" stroke=\"#52b788\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"102\" x2=\"270\" y2=\"85\" stroke=\"#f4a261\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><circle cx=\"282\" cy=\"80\" r=\"18\" fill=\"#52b788\" opacity=\"0.9\"/><circle cx=\"282\" cy=\"80\" r=\"9\" fill=\"#ffffff\" opacity=\"0.95\"/></svg>",
+      "title": {
+        "zh-TW": "細菌「挑食」有邏輯：微生物的糖代謝選擇竟是理性決策",
+        "en": "Bacteria Choose Their Sugar Wisely: Microbial Metabolism as Rational Economic Decision-Making",
+        "zh-CN": "细菌「挑食」有逻辑：微生物的糖代谢选择竟是理性决策",
+        "ja": "細菌の「食べ物の好み」に隠れた論理：糖代謝の選択は合理的な意思決定だった",
+        "ko": "세균의 '편식'에는 논리가 있다：미생물 당 대사 선택은 합리적 의사결정"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Science",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "本研究將控制微生物酵素合成的「控制論模型」重新詮釋為微觀經濟學中的消費者選擇問題，明確寫出細菌在分配酵素資源時所最大化的目標函數與限制條件。作者證明，細菌的「匹配法則」等價於在投資報酬率結構下的最佳化行為，並以此建立可推廣的數學框架。",
+        "en": "This study recasts the cybernetic model of microbial enzyme-synthesis control as a consumer choice problem from microeconomics, explicitly writing down the objective function and constraints that bacteria optimize when allocating enzyme resources. The authors demonstrate that the classical matching rule is equivalent to utility maximization under a return-on-investment structure, providing a generalizable mathematical framework.",
+        "zh-CN": "本研究将控制微生物酶合成的「控制论模型」重新诠释为微观经济学中的消费者选择问题，明确写出细菌在分配酶资源时所最大化的目标函数与约束条件。作者证明细菌的「匹配法则」等价于投资回报率结构下的最优化行为，并建立了可推广的数学框架。",
+        "ja": "本研究は、微生物の酵素合成制御を記述する「サイバネティックモデル」をミクロ経済学の消費者選択問題として再定式化し、細菌が酵素資源を配分する際に最大化する目的関数と制約条件を明示的に記述した。古典的な「マッチング則」が投資収益率構造のもとでの最適化行動と等価であることを示し、汎用的な数理フレームワークを提供する。",
+        "ko": "이 연구는 미생물 효소 합성 제어를 기술하는 「사이버네틱 모델」을 미시경제학의 소비자 선택 문제로 재정식화하여, 세균이 효소 자원을 배분할 때 최대화하는 목적 함수와 제약 조건을 명시적으로 도출했다. 고전적인 「매칭 규칙」이 투자 수익률 구조 하의 최적화 행동과 동등함을 증명하고 일반화 가능한 수학적 틀을 제시한다."
+      },
+      "plain": {
+        "zh-TW": "想像你走進一家吃到飽餐廳，面前有葡萄糖和乳糖兩種食物。你會先挑最划算的那道菜吃，等它快吃完了才換下一道——細菌也是這樣做的，這就是著名的「葡萄糖效應」。科學家很早就發現細菌會「挑食」，並設計出「控制論模型」來描述它的選擇，但一直沒有人把這個選擇寫成一道明確的數學題。這篇論文首次把細菌的酵素資源分配，翻譯成微觀經濟學裡「消費者如何在預算限制下選購商品」的問題。這樣做的好處是：我們現在有了一個清晰的「目標」可以調整，就像調整商業策略一樣，能預測細菌在不同環境下的行為。這對發酵工業、抗生素開發乃至合成生物學都有深遠影響——知道細菌在「想什麼」，就能更精準地操控它。",
+        "en": "Imagine walking into an all-you-can-eat buffet with two dishes: glucose and lactose. You would naturally grab the best deal first and switch only when it runs low — bacteria do exactly the same thing, a phenomenon known as the glucose effect or diauxic growth. Scientists had long modeled this choosy behavior with cybernetic equations, but nobody had ever written down the precise goal the bacterium was trying to achieve. This paper fills that gap by translating bacterial enzyme-resource allocation into the language of consumer economics — like a shopper maximizing satisfaction under a tight budget. With an explicit objective in hand, we can now predict and engineer bacterial metabolism far more precisely. This matters for industries ranging from biofuel fermentation to antibiotic design, because knowing what a bacterium is 「optimizing for」 lets us steer it.",
+        "zh-CN": "想象你走进一家自助餐厅，面前摆着葡萄糖和乳糖两道菜。你会先挑最划算的吃，等它快吃完了再换下一道——细菌也是这样做的，这就是著名的「葡萄糖效应」。科学家早就发现细菌会「挑食」，并建立了「控制论模型」来描述它的选择，但一直没有人把这个选择写成一道明确的数学题。这篇论文首次把细菌的酶资源分配，翻译成微观经济学里「消费者如何在预算约束下选购商品」的问题。有了清晰的「目标函数」，我们就能更精准地预测和操控细菌在不同环境下的行为，这对发酵工业、抗生素开发和合成生物学都有深远影响。",
+        "ja": "ビュッフェレストランに入って、グルコースと乳糖の二つの料理が並んでいるとします。あなたはまず一番お得な料理を選び、それが減ってきたら次に切り替えるでしょう——細菌もまったく同じことをします。これが「ジオーキシー現象（二段階増殖）」です。科学者たちはこの「好き嫌い」をサイバネティックモデルで長年記述してきましたが、細菌が何を最大化しているのかを明示的な数式で書き下した人はいませんでした。この論文は初めて、細菌の酵素資源配分を「予算制約のもとで効用を最大化する消費者」という経済学の言葉に翻訳しました。これにより発酵産業や抗生物質開発において、細菌の行動をより正確に予測・制御できるようになります。",
+        "ko": "뷔페 식당에 들어가 포도당과 유당 두 가지 음식이 놓여 있다고 상상해 보세요. 당신은 가장 이득이 되는 것부터 먹고, 그것이 떨어지면 다음으로 넘어갈 것입니다 — 세균도 똑같이 합니다. 이것이 「포도당 효과」 또는 이중 성장 현상입니다. 과학자들은 이 편식 행동을 사이버네틱 모델로 설명해 왔지만, 세균이 무엇을 최대화하는지를 명확한 수식으로 적은 사람은 없었습니다. 이 논문은 처음으로 세균의 효소 자원 배분을 「예산 제약 하에서 효용을 최대화하는 소비자」라는 경제학 언어로 번역했습니다. 이로써 발효 산업과 항생제 개발에서 세균의 행동을 훨씬 정밀하게 예측하고 조종할 수 있게 됩니다."
+      },
+      "insight": {
+        "zh-TW": "💡 細菌從未學過經濟學，卻在數十億年演化中自發解出了消費者最佳化問題——理性決策或許是生命的普遍語言。",
+        "en": "💡 Bacteria never studied economics, yet billions of years of evolution led them to spontaneously solve the consumer optimization problem — rational decision-making may be a universal language of life.",
+        "zh-CN": "💡 细菌从未学过经济学，却在数十亿年的演化中自发解出了消费者最优化问题——理性决策或许是生命的普遍语言。",
+        "ja": "💡 細菌は経済学を学んだことがないのに、数十億年の進化の中で消費者最適化問題を自然に解いていた——合理的意思決定は生命の普遍的な言語かもしれない。",
+        "ko": "💡 세균은 경제학을 배운 적이 없지만, 수십억 년의 진화를 통해 소비자 최적화 문제를 스스로 풀어냈다 — 합리적 의사결정은 생명의 보편적 언어일지도 모른다."
+      }
+    },
+    {
+      "id": "phys-260713",
+      "domain": "phys",
+      "day": "2026-07-13",
+      "author": "Raul Conchello Vendrell, Carlos Díaz López et al.",
+      "ref": "arXiv:2607.08767v1",
+      "url": "https://arxiv.org/abs/2607.08767v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><rect x=\"20\" y=\"55\" width=\"40\" height=\"40\" rx=\"6\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"30\" y=\"65\" width=\"20\" height=\"20\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.5\"/><rect x=\"80\" y=\"55\" width=\"40\" height=\"40\" rx=\"6\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"90\" y=\"65\" width=\"20\" height=\"20\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.5\"/><rect x=\"140\" y=\"55\" width=\"40\" height=\"40\" rx=\"6\" fill=\"#4a7bbf\" opacity=\"0.85\"/><rect x=\"150\" y=\"65\" width=\"20\" height=\"20\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.5\"/><line x1=\"60\" y1=\"75\" x2=\"80\" y2=\"75\" stroke=\"#f0a500\" stroke-width=\"2.5\"/><line x1=\"120\" y1=\"75\" x2=\"140\" y2=\"75\" stroke=\"#f0a500\" stroke-width=\"2.5\"/><ellipse cx=\"245\" cy=\"75\" rx=\"55\" ry=\"45\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" opacity=\"0.7\"/><ellipse cx=\"245\" cy=\"75\" rx=\"35\" ry=\"28\" fill=\"none\" stroke=\"#f0a500\" stroke-width=\"1.5\" opacity=\"0.8\"/><circle cx=\"245\" cy=\"75\" r=\"10\" fill=\"#4a7bbf\" opacity=\"0.9\"/><circle cx=\"245\" cy=\"30\" r=\"5\" fill=\"#e05a5a\" opacity=\"0.85\"/><circle cx=\"288\" cy=\"95\" r=\"5\" fill=\"#e05a5a\" opacity=\"0.85\"/><circle cx=\"202\" cy=\"95\" r=\"5\" fill=\"#e05a5a\" opacity=\"0.85\"/></svg>",
+      "title": {
+        "zh-TW": "Plaquette：為真實硬體量身打造的容錯量子電腦設計平台",
+        "en": "Plaquette: A Hardware-Aware Design Platform for Fault-Tolerant Quantum Computers",
+        "zh-CN": "Plaquette：面向真实硬件的容错量子计算机设计平台",
+        "ja": "Plaquette：実ハードウェアを考慮したフォールトトレラント量子コンピュータ設計基盤",
+        "ko": "Plaquette：실제 하드웨어를 고려한 내고장성 양자 컴퓨터 설계 플랫폼"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子計算",
+        "en": "⚛️ Quantum Computing",
+        "zh-CN": "⚛️ 量子计算",
+        "ja": "⚛️ 量子コンピューティング",
+        "ko": "⚛️ 양자 컴퓨팅"
+      },
+      "tech": {
+        "zh-TW": "Plaquette 是一套理論框架與軟體平台，能模擬超導、中性原子、離子阱等真實量子硬體的非隨機泡利雜訊（如能階洩漏、相干過旋轉），進而評估容錯架構在實際裝置雜訊下的邏輯運算表現。不同於傳統穩定子模擬器只處理隨機 Pauli 錯誤模型，Plaquette 能捕捉更真實的物理雜訊，讓硬體工程師做出更精準的架構決策。",
+        "en": "Plaquette is a theoretical framework and software platform that simulates non-Pauli noise—such as leakage out of the computational subspace in transmons, coherent over-rotations from miscalibrated controls, and phonon heating in trapped ions—to evaluate the logical performance of fault-tolerant architectures under realistic device noise. Unlike conventional stabilizer simulators restricted to stochastic Pauli models, Plaquette bridges physical noise characterization and architecture-level design decisions.",
+        "zh-CN": "Plaquette 是一套理论框架与软件平台，可模拟超导、中性原子、离子阱等真实量子硬件中的非随机泡利噪声（如能级泄漏、相干过旋转），从而评估容错架构在实际器件噪声下的逻辑性能。与传统稳定子模拟器相比，Plaquette 能捕捉更真实的物理噪声，帮助硬件工程师做出更精准的架构决策。",
+        "ja": "Plaquetteは、超伝導トランスモンの計算部分空間外への漏れ、誤較正制御によるコヒーレントな過回転、トラップイオンのフォノン加熱など、非確率的パウリ雑音を模擬する理論的枠組みとソフトウェア基盤です。従来のスタビライザーシミュレータの限界を超え、実際のデバイス雑音下でのフォールトトレラントアーキテクチャの論理性能を評価できます。",
+        "ko": "Plaquette는 초전도 트랜스몬의 계산 부분공간 누설, 잘못 교정된 제어로 인한 결맞음 과회전, 이온 트랩의 포논 가열 등 비확률적 파울리 잡음을 시뮬레이션하는 이론적 프레임워크 및 소프트웨어 플랫폼입니다. 기존 안정자 시뮬레이터의 한계를 넘어 실제 소자 잡음 하에서 내고장성 아키텍처의 논리적 성능을 평가합니다."
+      },
+      "plain": {
+        "zh-TW": "想像你要蓋一棟不會倒的大樓，但每塊磚頭都有各自奇怪的瑕疵——有的會稍微歪掉、有的材質不均、有的熱脹冷縮方式不同。量子電腦就面臨同樣的問題：每種硬體（超導晶片、離子阱、中性原子）都有自己獨特的「出錯方式」，例如量子位元有時會「跑出去」忘記自己該待在哪個能量狀態，或是控制訊號稍微偏掉導致旋轉角度不精準。傳統的模擬工具就像只考慮「平均磚頭」，忽略了每塊磚的個性，因此無法告訴工程師「在你的真實機器上，用哪種容錯策略最好」。Plaquette 就像一位能讀懂每塊磚頭個性的建築師，把真實的硬體雜訊特性直接納入計算，讓工程師可以在花大錢建造之前，先模擬出「這台機器在真實雜訊下到底能不能跑對答案」。這對加速實現可靠的量子電腦至關重要——因為知道「哪裡最脆弱」才能集中資源修補它。",
+        "en": "Imagine building a skyscraper where every brick has its own unique quirk—some tilt slightly, some expand differently under heat. Quantum computers face the same challenge: each hardware type (superconducting chips, trapped ions, neutral atoms) has its own distinct failure modes, like qubits accidentally escaping their energy state or control pulses rotating by a slightly wrong angle. Traditional simulation tools act like they assume all bricks are identical, ignoring real imperfections, so they cannot tell engineers which error-correction strategy actually works best on their specific machine. Plaquette acts like an architect who truly understands each brick's personality, folding real hardware noise directly into the simulation so engineers can test whether their machine will compute correctly before spending enormous resources building it. This is crucial for accelerating the path to reliable quantum computers—because knowing exactly where the weakest point is lets you focus your effort where it matters most.",
+        "zh-CN": "想象你要建一座不会倒塌的大楼，但每块砖都有自己奇怪的缺陷——有的会稍微歪斜、有的热胀冷缩方式不同。量子计算机面临同样的问题：每种硬件（超导芯片、离子阱、中性原子）都有独特的出错方式，比如量子比特有时会「跑出去」忘记自己该在哪个能量状态，或控制信号偏差导致旋转角度不精准。传统模拟工具就像只考虑「平均砖块」，忽略每块砖的个性，因此无法告诉工程师「在你的真实机器上，哪种容错策略最好」。Plaquette就像一位能读懂每块砖个性的建筑师，将真实硬件噪声直接纳入计算，让工程师在大规模建造前先模拟出「这台机器在真实噪声下能否算出正确答案」。这对加速实现可靠量子计算机至关重要。",
+        "ja": "欠陥のあるレンガで倒れない超高層ビルを建てることを想像してください。量子コンピュータも同じ課題を抱えています。超伝導チップ、イオントラップ、中性原子など、それぞれのハードウェアには独自のエラーの起き方があります。たとえば量子ビットが本来いるべきエネルギー状態から「脱出」したり、制御パルスが微妙にずれて回転角が不正確になったりします。従来のシミュレーションツールはすべてのレンガが均一だと仮定するため、実際のエラーを見逃し、どの誤り訂正戦略が最も効果的かを教えられません。Plaquetteは各レンガの個性を理解する建築家のように、実際のハードウェア雑音を計算に直接取り込み、巨大な投資をする前に機械が正しく動くかどうかをシミュレートできます。信頼できる量子コンピュータ実現への加速に不可欠な一歩です。",
+        "ko": "결함이 있는 벽돌로 무너지지 않는 초고층 건물을 짓는 것을 상상해보세요. 양자 컴퓨터도 똑같은 도전에 직면해 있습니다. 초전도 칩, 이온 트랩, 중성 원자 등 각 하드웨어마다 고유한 오류 방식이 있습니다. 예를 들어 양자 비트가 원래 있어야 할 에너지 상태에서 탈출하거나, 제어 신호가 미묘하게 어긋나 회전 각도가 부정확해지기도 합니다. 기존 시뮬레이션 도구는 모든 벽돌이 균일하다고 가정하기 때문에 실제 결함을 놓치고, 어떤 오류 정정 전략이 가장 효과적인지 알려주지 못합니다. Plaquette는 각 벽돌의 특성을 이해하는 건축가처럼 실제 하드웨어 잡음을 계산에 직접 반영해, 막대한 투자를 하기 전에 기계가 올바르게 작동할지 시뮬레이션할 수 있게 해줍니다. 신뢰할 수 있는 양자 컴퓨터 실현을 가속화하는 데 필수적인 발걸음입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的容錯不是用理想模型逃避雜訊，而是正視每台機器的「個性缺陷」——唯有貼近真實才能設計出真正可靠的量子系統。",
+        "en": "💡 True fault tolerance is not about assuming ideal noise models—it is about embracing each machine's unique imperfections, because only by confronting reality can we build quantum systems that genuinely work.",
+        "zh-CN": "💡 真正的容错不是用理想模型逃避噪声，而是正视每台机器的「个性缺陷」——只有贴近真实，才能设计出真正可靠的量子系统。",
+        "ja": "💡 真の耐障害性とは理想的なノイズモデルで現実から逃げることではなく、各マシン固有の欠陥と正面から向き合うことで初めて、本当に信頼できる量子システムが生まれる。",
+        "ko": "💡 진정한 내고장성은 이상적인 잡음 모델로 현실을 회피하는 것이 아니라, 각 기기 고유의 결함을 직시하는 것에서 시작된다—현실과 마주할 때만 진정으로 신뢰할 수 있는 양자 시스템을 설계할 수 있다."
+      }
+    },
+    {
+      "id": "neuro-260713",
+      "domain": "neuro",
+      "day": "2026-07-13",
+      "author": "Dan Yamins, Aran Nayebi et al.",
+      "ref": "arXiv:2607.08561v1",
+      "url": "https://arxiv.org/abs/2607.08561v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"60\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ab47bc\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#6a1b9a\"/><circle cx=\"280\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#6a1b9a\" stroke-width=\"3\"/><circle cx=\"280\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#ab47bc\" stroke-width=\"2\"/><circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#6a1b9a\"/><line x1=\"96\" y1=\"58\" x2=\"180\" y2=\"40\" stroke=\"#ff8f00\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"96\" y1=\"80\" x2=\"244\" y2=\"80\" stroke=\"#ff8f00\" stroke-width=\"2.5\"/><line x1=\"96\" y1=\"102\" x2=\"180\" y2=\"120\" stroke=\"#ff8f00\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"244\" y1=\"40\" x2=\"244\" y2=\"120\" stroke=\"#ff8f00\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><polygon points=\"170,34 190,40 170,46\" fill=\"#ff8f00\"/><polygon points=\"234,74 244,80 234,86\" fill=\"#ff8f00\"/><rect x=\"148\" y=\"68\" width=\"44\" height=\"24\" rx=\"6\" fill=\"#6a1b9a\" opacity=\"0.15\" stroke=\"#6a1b9a\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#6a1b9a\" opacity=\"0.7\"/></svg>",
+      "title": {
+        "zh-TW": "AI 與大腦殊途同歸：深度網路和神經系統為何長出相同的「內部座標」？",
+        "en": "Contravariance Theory: Why Minimal AI Networks and Brains Converge on the Same Internal Axes",
+        "zh-CN": "AI 与大脑殊途同归：深度网络和神经系统为何长出相同的「内部坐标」？",
+        "ja": "AIと脳は同じ「内部座標」に収束する：最小限のネットワークが示す驚くべき一致",
+        "ko": "AI와 뇌는 왜 같은 「내부 좌표」에 도달하는가: 최소 네트워크의 수렴 이론"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經AI",
+        "en": "🧠 NeuroAI",
+        "zh-CN": "🧠 神经AI",
+        "ja": "🧠 ニューロAI",
+        "ko": "🧠 뉴로AI"
+      },
+      "tech": {
+        "zh-TW": "本研究提出「逆變理論」（Contravariance Theory），證明對於任意足夠困難任務，任意兩個最小化深度神經網路解若具備基於仿射映射的「弱對齊」，則必然導出特權軸的「強對齊」，且此對齊現象沿網路層級逐層「拉鍊式」傳遞，從端到端任務最佳化中自然湧現出一致的表徵結構。這為 NeuroAI 中人工網路與生物腦網路的收斂演化提供了嚴格的理論基礎。",
+        "en": "This work introduces Contravariance Theory, proving that for any two minimal DNN solutions to a sufficiently hard task, weak alignment via affine mappings guarantees strong alignment of privileged representational axes. Furthermore, this alignment zippers up the network hierarchy layer by layer, emerging naturally from end-to-end optimization and providing a rigorous theoretical foundation for convergent evolution between artificial and biological neural networks.",
+        "zh-CN": "本研究提出「逆变理论」（Contravariance Theory），证明对于任意足够困难任务，任意两个最小化深度神经网络解若具备基于仿射映射的「弱对齐」，则必然导出特权轴的「强对齐」，且此对齐现象沿网络层级逐层「拉链式」传递，从端到端任务最优化中自然涌现出一致的表征结构。这为 NeuroAI 中人工网络与生物脑网络的收敛演化提供了严格的理论基础。",
+        "ja": "本研究は「逆変換理論」を提唱し、十分に難しいタスクに対する任意の2つの最小DNN解において、アフィン写像に基づく「弱アライメント」が特権軸の「強アライメント」を保証することを証明した。さらにこのアライメントはネットワーク階層を層ごとに「ジッパー状」に伝播し、エンドツーエンドの最適化から一貫した表現構造が自然に創発することを示した。",
+        "ko": "본 연구는 「역변환 이론」을 제안하여, 충분히 어려운 과제에 대한 두 최소 DNN 해에서 아핀 매핑 기반 「약한 정렬」이 특권축의 「강한 정렬」을 보장함을 증명했다. 또한 이 정렬은 네트워크 계층을 따라 「지퍼식」으로 전파되며, 엔드투엔드 최적화로부터 일관된 표현 구조가 자연스럽게 창발함을 보였다."
+      },
+      "plain": {
+        "zh-TW": "想像兩位完全沒有交流過的廚師，各自獨立研發出同一道料理的最佳食譜——打開來一看，不只味道相同，連切菜的順序、醬料的比例都驚人地一致。這正是這篇論文在 AI 與大腦之間發現的現象。當兩個深度神經網路各自以最精簡的方式解決同一個「夠難」的任務，它們內部不只結果相似，連處理資訊的「關鍵維度」（特權軸）也會完全對齊。更神奇的是，這種對齊不只出現在最後一層，而是像拉鍊一樣從底層到頂層逐一咬合。這告訴我們：人工智慧與生物大腦之間的相似性，可能不是巧合，而是數學上的必然。這個發現也為「AI 能否作為研究大腦的模型」這個 NeuroAI 核心問題，首次給出了嚴格的理論解答——只要任務夠難、解夠精簡，大家殊途同歸。",
+        "en": "Imagine two chefs who have never met, each independently perfecting the same dish — and when you compare their recipes, not only do the flavors match, but the chopping order and sauce ratios are strikingly identical. This is precisely what this paper discovers between AI and the brain. When two deep neural networks each solve the same sufficiently hard task in the most minimal way, their internal 「key dimensions」 — called privileged axes — align completely. Even more remarkably, this alignment zips up layer by layer from bottom to top, like a zipper closing. This tells us the similarity between artificial intelligence and biological brains may not be coincidence, but mathematical inevitability. For the first time, this gives NeuroAI a rigorous theoretical answer: if the task is hard enough and the solution minimal, all paths converge.",
+        "zh-CN": "想象两位从未交流过的厨师，各自独立研发出同一道料理的最佳食谱——打开来一看，不只味道相同，连切菜的顺序、酱料的比例都惊人地一致。这正是这篇论文在 AI 与大脑之间发现的现象。当两个深度神经网络各自以最精简的方式解决同一个「足够难」的任务，它们内部不只结果相似，连处理信息的「关键维度」（特权轴）也会完全对齐。更神奇的是，这种对齐不只出现在最后一层，而是像拉链一样从底层到顶层逐一咬合。这告诉我们：人工智能与生物大脑之间的相似性，可能不是巧合，而是数学上的必然。这个发现也为「AI 能否作为研究大脑的模型」这个 NeuroAI 核心问题，首次给出了严格的理论解答。",
+        "ja": "一度も会ったことのない2人のシェフが、それぞれ独立して同じ料理の最高レシピを開発したとき、味だけでなく切り方やソースの配合まで驚くほど一致していた——この論文はAIと脳の間にまさにそのような現象を発見した。2つの深層ニューラルネットワークが同じ「十分に難しい」タスクを最小限の方法で解くとき、内部の「重要な次元」（特権軸）が完全に一致する。さらにこの一致は最終層だけでなく、底層から頂層へとジッパーのように層ごとに噛み合う。これはAIと生物の脳の類似性が偶然ではなく、数学的な必然である可能性を示し、NeuroAIの核心的な問いに初めて厳密な理論的回答を与えた。",
+        "ko": "한 번도 만난 적 없는 두 요리사가 각자 독립적으로 같은 요리의 최고 레시피를 개발했을 때, 맛뿐만 아니라 재료 손질 순서와 소스 비율까지 놀랍도록 일치했다고 상상해 보라. 이 논문은 AI와 뇌 사이에서 바로 그런 현상을 발견했다. 두 심층 신경망이 같은 「충분히 어려운」 과제를 최소한의 방식으로 풀 때, 내부의 「핵심 차원」(특권축)이 완전히 일치한다. 더 놀라운 점은 이 일치가 마지막 층에만 나타나는 것이 아니라, 지퍼처럼 아래층부터 위층까지 차례로 맞물린다는 것이다. 이는 AI와 생물 뇌의 유사성이 우연이 아닌 수학적 필연일 수 있음을 보여주며, NeuroAI의 핵심 질문에 처음으로 엄밀한 이론적 답을 제공했다."
+      },
+      "insight": {
+        "zh-TW": "💡 任務夠難、解夠精簡，不同起點的智慧終將長出相同的內部結構——大腦與 AI 的相似，可能是宇宙給「效率」開出的唯一解。",
+        "en": "💡 When a task is hard enough and solutions are minimal, different forms of intelligence inevitably converge on the same internal structure — suggesting that the brain-AI similarity may be the universe's only efficient answer.",
+        "zh-CN": "💡 任务够难、解够精简，不同起点的智慧终将长出相同的内部结构——大脑与 AI 的相似，可能是宇宙给「效率」开出的唯一解。",
+        "ja": "💡 タスクが十分に難しく解が最小限であれば、異なる起点を持つ知性は必ず同じ内部構造に収束する——脳とAIの類似性は、宇宙が「効率」に与えた唯一の答えかもしれない。",
+        "ko": "💡 과제가 충분히 어렵고 해법이 최소한일 때, 서로 다른 출발점을 가진 지성은 결국 같은 내부 구조로 수렴한다 — 뇌와 AI의 유사성은 우주가 「효율」에 내린 유일한 답일지도 모른다."
+      }
+    },
+    {
+      "id": "space-260713",
+      "domain": "space",
+      "day": "2026-07-13",
+      "author": "Roman R. Rafikov, Deniz Akansoy et al.",
+      "ref": "arXiv:2607.08750v1",
+      "url": "https://arxiv.org/abs/2607.08750v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"130\" ry=\"50\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1.2\" opacity=\"0.3\"/><ellipse cx=\"170\" cy=\"80\" rx=\"100\" ry=\"38\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1.5\" opacity=\"0.45\"/><ellipse cx=\"170\" cy=\"80\" rx=\"72\" ry=\"27\" fill=\"none\" stroke=\"#5c6bc0\" stroke-width=\"2\" opacity=\"0.6\"/><ellipse cx=\"170\" cy=\"80\" rx=\"48\" ry=\"18\" fill=\"none\" stroke=\"#5c6bc0\" stroke-width=\"2.5\" opacity=\"0.75\"/><ellipse cx=\"170\" cy=\"80\" rx=\"28\" ry=\"10\" fill=\"none\" stroke=\"#90caf9\" stroke-width=\"2\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#ffb300\" opacity=\"0.95\"/><ellipse cx=\"170\" cy=\"80\" rx=\"110\" ry=\"42\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\" opacity=\"0.7\"/><ellipse cx=\"170\" cy=\"80\" rx=\"85\" ry=\"32\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"2\" stroke-dasharray=\"5 5\" opacity=\"0.55\"/><circle cx=\"94\" cy=\"62\" r=\"3\" fill=\"#90caf9\" opacity=\"0.8\"/><circle cx=\"248\" cy=\"97\" r=\"3\" fill=\"#90caf9\" opacity=\"0.8\"/><circle cx=\"130\" cy=\"110\" r=\"2\" fill=\"#ffffff\" opacity=\"0.5\"/><circle cx=\"220\" cy=\"52\" r=\"2\" fill=\"#ffffff\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "行星引力悄悄「雕刻」碎屑盤：環狀結構如何洩露隱藏行星的秘密",
+        "en": "How a Hidden Planet Secretly Sculpts Debris Disc Ring Structures",
+        "zh-CN": "行星引力悄悄「雕刻」碎屑盘：环状结构如何泄露隐藏行星的秘密",
+        "ja": "隠れた惑星が「彫刻」するデブリ円盤：リング構造が惑星の存在を暴く",
+        "ko": "숨겨진 행성이 '조각'하는 잔해 원반：고리 구조가 행성의 비밀을 폭로한다"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究解析內側行星透過長期（久期）重力攝動對外側碎屑盤表面密度的影響，建立完整解析解，並開發開源數值工具 DebrisPy 加以驗證。結果顯示盤的方位角平均表面密度會演化出一系列尖銳的環狀次結構，可作為探測隱藏行星的觀測指紋。",
+        "en": "This study analytically models how an inner planet's secular (long-term) gravitational perturbations reshape the azimuthally-averaged surface density of an outer debris disc, verified with the new open-source code DebrisPy. The results reveal that sharp ring-like substructures emerge in the disc, serving as observable fingerprints of otherwise invisible planets.",
+        "zh-CN": "本研究解析内侧行星通过长期（久期）引力摄动对外侧碎屑盘表面密度的影响，建立完整解析解，并开发开源数值工具 DebrisPy 加以验证。结果显示盘的方位角平均表面密度会演化出一系列尖锐的环状次结构，可作为探测隐藏行星的观测指纹。",
+        "ja": "内側惑星の長期的（永年）重力摂動が外側デブリ円盤の方位角平均面密度をどう変えるかを解析的にモデル化し、新たなオープンソースコード DebrisPy で検証した研究です。その結果、円盤に鋭いリング状のサブ構造が形成され、直接観測できない惑星の「指紋」として機能することが示されました。",
+        "ko": "이 연구는 내부 행성의 장기적(영년) 중력 섭동이 외부 잔해 원반의 방위각 평균 표면 밀도를 어떻게 변형시키는지 해석적으로 모델링하고, 새로운 오픈소스 코드 DebrisPy로 검증했습니다. 그 결과 원반에 날카로운 고리형 하부 구조가 형성되어 직접 관측되지 않는 행성의 '지문' 역할을 함을 보였습니다."
+      },
+      "plain": {
+        "zh-TW": "想像恆星周圍有一圈由小石塊與塵埃組成的「碎屑環」，就像太陽系外圍的古柏帶。若附近藏有一顆大行星，它的引力會像一隻看不見的手，長年累月地輕輕推拉這些碎屑。這篇研究發現，這種緩慢的「引力按摩」並不會讓碎屑均勻散開，反而會把盤面捏出幾道清晰的環狀濃淡條紋。這些條紋就像行星留下的「引力指紋」——即使我們完全看不到那顆行星，也能從條紋的形狀反推它的質量與位置。就像偵探從地上的腳印推斷嫌犯體重，天文學家可以從盤面結構推斷隱藏行星的存在。研究團隊還公開了計算工具 DebrisPy，讓全球研究者都能套用。這對未來用望遠鏡搜尋系外行星，提供了一把全新的間接探測鑰匙。",
+        "en": "Imagine a ring of pebbles and dust surrounding a distant star, much like our solar system's Kuiper Belt. If a large planet lurks nearby, its gravity acts like an invisible hand, gently nudging those pebbles year after year. This study shows that such slow 'gravitational massaging' doesn't spread the debris evenly — instead, it pinches the disc into distinct bright and dark rings. These rings act like gravitational fingerprints of the hidden planet: even if we can't see the planet directly, the ring pattern betrays its mass and location. It's like a detective reading footprints to estimate a suspect's weight. The team also released their calculation tool DebrisPy publicly, so astronomers worldwide can apply it. This gives planet hunters a powerful new indirect method to detect worlds we cannot yet photograph.",
+        "zh-CN": "想象恒星周围有一圈由小石块与尘埃组成的「碎屑环」，就像太阳系外围的柯伊伯带。若附近藏有一颗大行星，它的引力会像一只看不见的手，长年累月地轻轻推拉这些碎屑。这篇研究发现，这种缓慢的「引力按摩」并不会让碎屑均匀散开，反而会把盘面捏出几道清晰的环状浓淡条纹。这些条纹就像行星留下的「引力指纹」——即使我们完全看不到那颗行星，也能从条纹的形状反推它的质量与位置。就像侦探从地上的脚印推断嫌犯体重，天文学家可以从盘面结构推断隐藏行星的存在。研究团队还公开了计算工具 DebrisPy，让全球研究者都能套用。这对未来用望远镜搜寻系外行星，提供了一把全新的间接探测钥匙。",
+        "ja": "遠い恒星の周りに小石や塵でできた「デブリリング」があると想像してください。ちょうど太陽系外縁のカイパーベルトのようなものです。近くに大きな惑星が潜んでいると、その重力が見えない手のように長年にわたってデブリをそっと押したり引いたりします。この研究では、そのゆっくりとした「重力マッサージ」がデブリを均一に広げるのではなく、くっきりとした明暗のリング模様を作ることを発見しました。このリングは惑星の「重力指紋」のようなもので、惑星が見えなくてもその質量や位置を逆算できます。靴跡から犯人の体重を推理する探偵のように、天文学者は円盤の構造から隠れた惑星を見つけられるのです。ツール DebrisPy も公開され、世界中の研究者が活用できます。",
+        "ko": "먼 별 주위에 자갈과 먼지로 이루어진 '잔해 고리'가 있다고 상상해 보세요. 태양계 외곽의 카이퍼 벨트와 비슷한 구조입니다. 근처에 거대한 행성이 숨어 있다면, 그 중력은 보이지 않는 손처럼 수백만 년에 걸쳐 잔해들을 살살 밀고 당깁니다. 이 연구는 그런 느린 '중력 마사지'가 잔해를 고르게 퍼뜨리는 것이 아니라, 오히려 원반에 뚜렷한 밝고 어두운 고리 줄무늬를 만든다는 사실을 밝혔습니다. 이 줄무늬는 숨겨진 행성의 '중력 지문'과 같아서, 행성을 직접 보지 못해도 질량과 위치를 역추적할 수 있습니다. 마치 탐정이 발자국으로 용의자의 체중을 추리하듯이요. 연구팀은 계산 도구 DebrisPy도 공개해 전 세계 연구자들이 활용할 수 있도록 했습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 看不見的行星，會在星際塵埃盤上留下精確的「引力條紋」——宇宙從不掩蓋秘密，只是需要我們學會讀懂它的語言。",
+        "en": "💡 An invisible planet always leaves precise gravitational stripes in the dust — the universe never hides its secrets, it only asks us to learn its language.",
+        "zh-CN": "💡 看不见的行星，会在星际尘埃盘上留下精确的「引力条纹」——宇宙从不掩盖秘密，只是需要我们学会读懂它的语言。",
+        "ja": "💡 見えない惑星は必ずデブリ円盤に重力の縞模様を刻む——宇宙は秘密を隠さない、ただその言葉を読む力が必要なだけだ。",
+        "ko": "💡 보이지 않는 행성은 반드시 잔해 원반에 중력 줄무늬를 남긴다 — 우주는 비밀을 숨기지 않는다, 다만 그 언어를 읽는 법을 배워야 할 뿐이다."
+      }
+    },
+    {
+      "id": "tech-260713",
+      "domain": "tech",
+      "day": "2026-07-13",
+      "author": "Emmanouil Kavvousanos, Francky Catthoor et al.",
+      "ref": "arXiv:2607.08717v1",
+      "url": "https://arxiv.org/abs/2607.08717v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"10\" y=\"60\" width=\"18\" height=\"60\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"32\" y=\"45\" width=\"18\" height=\"75\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"54\" y=\"30\" width=\"18\" height=\"90\" fill=\"#e53935\" opacity=\"0.85\"/><rect x=\"76\" y=\"50\" width=\"18\" height=\"70\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"98\" y=\"65\" width=\"18\" height=\"55\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"120\" y=\"40\" width=\"18\" height=\"80\" fill=\"#e53935\" opacity=\"0.85\"/><rect x=\"142\" y=\"55\" width=\"18\" height=\"65\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"175\" y=\"70\" width=\"30\" height=\"30\" rx=\"6\" fill=\"#00695c\"/><polygon points=\"205,85 225,75 225,95\" fill=\"#00695c\"/><rect x=\"230\" y=\"60\" width=\"18\" height=\"60\" fill=\"#00897b\" opacity=\"0.9\"/><rect x=\"252\" y=\"55\" width=\"18\" height=\"65\" fill=\"#00897b\" opacity=\"0.9\"/><rect x=\"274\" y=\"58\" width=\"18\" height=\"62\" fill=\"#00897b\" opacity=\"0.9\"/><rect x=\"296\" y=\"62\" width=\"18\" height=\"58\" fill=\"#00897b\" opacity=\"0.9\"/></svg>",
+      "title": {
+        "zh-TW": "AI 一次搞定雜訊干擾與訊號解讀：讓 OFDM 無線傳輸更乾淨更可靠",
+        "en": "AI Tackles Interference and Demodulation Together: Cleaner, Smarter OFDM Wireless",
+        "zh-CN": "AI 一次搞定杂讯干扰与信号解读：让 OFDM 无线传输更干净更可靠",
+        "ja": "AIが干渉除去と復調を同時解決：OFDM無線通信をよりクリーンに",
+        "ko": "AI로 간섭 제거와 신호 복조를 한번에: 더 깨끗하고 스마트한 OFDM 무선통신"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一套深度學習統一框架，同步執行窄頻干擾（NBI）消除與魯棒軟解調，取代傳統壓縮感知的串接流程。模型先以 NBI-CN（干擾消除網路）估測並抑制干擾，再由深度解調器直接輸出可靠的對數似然比（LLR），避免非高斯殘差導致解碼器飽和與錯誤平台問題。端對端訓練使兩個子任務相互優化，顯著提升 OFDM 系統在干擾環境下的位元錯誤率表現。",
+        "en": "This work proposes a unified deep learning framework that jointly performs narrowband interference (NBI) cancellation and robust soft demodulation in OFDM systems, replacing traditional sequential compressed-sensing pipelines. An NBI cancellation network first suppresses interference, after which a deep demapper directly produces reliable log-likelihood ratios (LLRs), avoiding non-Gaussian residuals that cause decoder saturation and error floors. End-to-end training allows both subtasks to co-optimize, yielding significant bit-error-rate gains under interference.",
+        "zh-CN": "本研究提出一套深度学习统一框架，同步执行窄频干扰（NBI）消除与鲁棒软解调，取代传统压缩感知的串接流程。模型先以干扰消除网络估测并抑制干扰，再由深度解调器直接输出可靠的对数似然比（LLR），避免非高斯残差导致解码器饱和与误码平台问题。端对端训练使两个子任务相互优化，显著提升 OFDM 系统在干扰环境下的误码率表现。",
+        "ja": "本研究は、OFDMシステムにおける狭帯域干渉（NBI）除去とロバストな軟復調を同時に行う統合深層学習フレームワークを提案し、従来の圧縮センシングの逐次パイプラインを置き換える。干渉除去ネットワークが干渉を抑制した後、深層デマッパーが信頼性の高い対数尤度比（LLR）を直接出力し、非ガウス残差によるデコーダ飽和やエラーフロアを回避する。エンドツーエンド学習により両サブタスクが共同最適化され、干渉環境でのビット誤り率が大幅に改善される。",
+        "ko": "이 연구는 OFDM 시스템에서 협대역 간섭(NBI) 제거와 견고한 소프트 복조를 동시에 수행하는 통합 딥러닝 프레임워크를 제안하며, 기존의 순차적 압축 센싱 파이프라인을 대체한다. 간섭 제거 네트워크가 간섭을 억제한 후, 딥 디매퍼가 신뢰할 수 있는 로그 가능도비(LLR)를 직접 출력하여 비가우시안 잔류 신호로 인한 디코더 포화 및 오류 바닥 문제를 방지한다. 엔드투엔드 학습으로 두 하위 작업이 공동 최적화되어 간섭 환경에서 비트 오류율이 크게 개선된다."
+      },
+      "plain": {
+        "zh-TW": "想像你在嘈雜的咖啡廳裡用手機通話——旁邊有人用麥克風大聲講話，干擾得你幾乎聽不清楚。現代無線網路（如 4G/5G）用一種叫 OFDM 的技術把訊號分成很多小頻道同時傳送，但某些頻道若被「窄頻干擾」（比如附近的電台或雷達）侵入，傳統方法很難乾淨地清除這些雜訊，清完之後還會留下奇怪的殘渣，讓後續解碼程式判斷失準、錯誤連連。這篇論文的 AI 框架就像一位同時會「滅噪」又會「聽懂意思」的翻譯官，兩件事一起學、一起做，而不是先交給一個人滅噪、再換另一個人翻譯，避免了兩道工序之間的資訊落差。這對衛星通訊、工業無線、緊急救災網路特別重要——這些場景容易遭受干擾，又不能出錯。研究結果顯示，這套 AI 方法不只速度快，在高干擾環境下的錯誤率也遠低於傳統方案。",
+        "en": "Imagine trying to have a phone call in a noisy café where someone nearby is blasting music through a speaker — that's what narrowband interference does to wireless signals. Modern networks like 4G and 5G use a technology called OFDM, which splits data across many small frequency channels simultaneously, but when one or more channels get invaded by strong interference, traditional cleaning methods leave behind messy residues that confuse the decoding step, like a translator who receives a half-cleaned manuscript and still makes errors. This AI framework acts like a single expert who both cleans the noise and interprets the meaning at the same time, learning both tasks together so they reinforce each other. This matters enormously for satellite links, industrial wireless networks, and emergency communications, where interference is common and errors are costly. The results show dramatically lower error rates compared to traditional pipelines, especially in severe interference conditions.",
+        "zh-CN": "想象你在嘈杂的咖啡馆里打电话——旁边有人用麦克风大声讲话，干扰得你几乎听不清楚。现代无线网络（如 4G/5G）用一种叫 OFDM 的技术把信号分成很多小频道同时传送，但某些频道若被「窄频干扰」侵入，传统方法很难干净地清除这些杂音，清完之后还会留下奇怪的残余，让后续解码程序判断失准、错误连连。这篇论文的 AI 框架就像一位同时会「降噪」又会「听懂意思」的翻译官，两件事一起学、一起做，避免了两道工序之间的信息落差。这对卫星通信、工业无线、紧急救灾网络特别重要。研究结果显示，这套 AI 方法不只速度快，在高干扰环境下的误码率也远低于传统方案。",
+        "ja": "騒がしいカフェで電話しているとき、隣の人がスピーカーで大音量の音楽を流していたら、通話内容がほとんど聞き取れなくなる——これが無線通信における「狭帯域干渉」だ。4Gや5Gなどの現代ネットワークはOFDMという技術でデータを多数の小さな周波数チャネルに分けて送るが、そのうちいくつかが強い干渉に侵されると、従来の除去手法では不完全な残渣が残り、復号処理を混乱させる。このAIフレームワークは「雑音除去」と「意味の解読」を同時にこなせる一人の専門家のようなもので、両タスクを一緒に学習することで互いを高め合う。衛星通信・産業用無線・緊急通信など干渉が起きやすく誤りが許されない現場で特に重要で、従来手法と比べてエラー率が大幅に低下した。",
+        "ko": "시끄러운 카페에서 전화 통화를 할 때 옆에서 누군가 스피커로 음악을 크게 틀면 거의 아무것도 들리지 않는 것처럼, 무선 통신에서도 협대역 간섭이 신호를 망가뜨린다. 4G·5G 같은 현대 네트워크는 OFDM이라는 기술로 데이터를 수많은 작은 주파수 채널에 나눠 동시에 전송하는데, 일부 채널이 강한 간섭에 침범되면 기존 제거 방법으로는 찌꺼기가 남아 해독 단계를 혼란스럽게 만든다. 이 AI 프레임워크는 '잡음 제거'와 '의미 해석'을 동시에 해내는 전문가 한 명과 같아서, 두 작업을 함께 학습해 서로를 강화한다. 위성 통신, 산업용 무선, 긴급 재난 통신처럼 간섭이 잦고 오류가 허용되지 않는 환경에 특히 중요하며, 기존 방식보다 오류율이 크게 낮아졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 當兩個緊密相關的任務被拆開各自優化時，銜接處的資訊損失往往才是最大的效能瓶頸——統一學習不只是工程簡化，更是系統思維的勝利。",
+        "en": "💡 When two tightly coupled tasks are optimized separately, the gap between them is often the biggest performance bottleneck — joint learning is not just engineering simplicity, it is a triumph of systems thinking.",
+        "zh-CN": "💡 当两个紧密相关的任务被拆开各自优化时，衔接处的信息损失往往才是最大的性能瓶颈——统一学习不只是工程简化，更是系统思维的胜利。",
+        "ja": "💡 密接に関連する二つのタスクを別々に最適化すると、その接合部での情報損失が最大のボトルネックになりやすい——共同学習は工学的な単純化ではなく、システム思考の勝利だ。",
+        "ko": "💡 긴밀하게 연결된 두 작업을 따로 최적화할 때, 그 연결 지점에서의 정보 손실이 가장 큰 성능 병목이 되는 경우가 많다—공동 학습은 단순한 공학적 간소화가 아니라 시스템적 사고의 승리다."
+      }
+    }
+  ]
+}
