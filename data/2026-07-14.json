@@ -1,0 +1,233 @@
+{
+  "date": "2026-07-14",
+  "mode": "paper",
+  "paper_date": "2026-07-14",
+  "generated_at": "2026-07-14",
+  "cards": [
+    {
+      "id": "ai-260714",
+      "domain": "ai",
+      "day": "2026-07-14",
+      "author": "Ren Takahashi, Emre Yusuf et al.",
+      "ref": "arXiv:2607.09662v1",
+      "url": "https://arxiv.org/abs/2607.09662v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><circle cx=\"60\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"80\" r=\"24\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"60\" cy=\"80\" r=\"10\" fill=\"#2a9d8f\" opacity=\"0.5\"/><polyline points=\"110,120 130,90 150,105 170,60 190,80 210,45 230,70 250,55\" fill=\"none\" stroke=\"#e9c46a\" stroke-width=\"2.5\"/><circle cx=\"130\" cy=\"90\" r=\"4\" fill=\"#e9c46a\"/><circle cx=\"170\" cy=\"60\" r=\"4\" fill=\"#e9c46a\"/><circle cx=\"210\" cy=\"45\" r=\"4\" fill=\"#e9c46a\"/><circle cx=\"250\" cy=\"55\" r=\"4\" fill=\"#e9c46a\"/><line x1=\"110\" y1=\"60\" x2=\"110\" y2=\"130\" stroke=\"#2a9d8f\" stroke-width=\"1\" opacity=\"0.4\"/><line x1=\"180\" y1=\"60\" x2=\"180\" y2=\"130\" stroke=\"#2a9d8f\" stroke-width=\"1\" opacity=\"0.4\"/><line x1=\"250\" y1=\"60\" x2=\"250\" y2=\"130\" stroke=\"#2a9d8f\" stroke-width=\"1\" opacity=\"0.4\"/><rect x=\"285\" y=\"30\" width=\"40\" height=\"100\" rx=\"6\" fill=\"none\" stroke=\"#f4a261\" stroke-width=\"2\"/><rect x=\"291\" y=\"90\" width=\"28\" height=\"34\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.7\"/><rect x=\"291\" y=\"65\" width=\"28\" height=\"20\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.4\"/><rect x=\"291\" y=\"45\" width=\"28\" height=\"14\" rx=\"3\" fill=\"#f4a261\" opacity=\"0.2\"/></svg>",
+      "title": {
+        "zh-TW": "用「拓樸形狀」解讀夢境腦波：AI 首次從 EEG 辨識你在夢什麼",
+        "en": "Reading Dreams with Topology: AI Decodes Dream Content from EEG Brainwave Shapes",
+        "zh-CN": "用「拓扑形状」解读梦境脑波：AI 首次从 EEG 辨识你在梦什么",
+        "ja": "「トポロジー形状」で夢脳波を読む：AI が EEG から夢の内容を初解読",
+        "ko": "「위상 형태」로 꿈 뇌파 해독：AI가 EEG로 꿈의 내용을 처음 인식하다"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI 與腦科學",
+        "en": "🤖 AI & Neuroscience",
+        "zh-CN": "🤖 AI 与脑科学",
+        "ja": "🤖 AI と脳科学",
+        "ko": "🤖 AI와 뇌과학"
+      },
+      "tech": {
+        "zh-TW": "PHINN-EEG 使用滑動視窗 Takens 延遲嵌入將多通道腦電圖轉換為高維相空間軌跡，再透過 Vietoris-Rips 濾波提取「動態 Betti 曲線」作為拓樸特徵，送入神經網路進行夢境內容分類，AUC 顯著超越現有 PSD 基準（約 0.70）。此框架同時具備拓樸條件式神經訊號合成能力，可依指定夢境類別生成逼真 EEG 訊號。",
+        "en": "PHINN-EEG applies sliding-window Takens delay embeddings to map multichannel EEG into high-dimensional phase-space trajectories, then uses Vietoris-Rips filtrations to extract Dynamic Betti Curves as topological features for dream content classification, substantially surpassing PSD baselines (AUC ~0.70). The framework also supports topology-conditioned neural signal synthesis to generate realistic EEG for specified dream categories.",
+        "zh-CN": "PHINN-EEG 使用滑动窗口 Takens 延迟嵌入将多通道脑电图转换为高维相空间轨迹，再通过 Vietoris-Rips 滤波提取「动态 Betti 曲线」作为拓扑特征，送入神经网络进行梦境内容分类，AUC 显著超越现有 PSD 基准（约 0.70）。该框架同时具备拓扑条件式神经信号合成能力，可依指定梦境类别生成逼真 EEG 信号。",
+        "ja": "PHINN-EEG はスライディングウィンドウ Takens 遅延埋め込みで多チャンネル EEG を高次元位相空間軌跡に変換し、Vietoris-Rips フィルトレーションで「動的ベッチ曲線」を抽出して夢内容を分類、既存 PSD 基準（AUC 約 0.70）を大幅に上回る。またトポロジー条件付き神経信号合成により、指定した夢カテゴリのリアルな EEG 生成も可能。",
+        "ko": "PHINN-EEG는 슬라이딩 윈도우 Takens 지연 임베딩으로 다채널 EEG를 고차원 위상 공간 궤적으로 변환하고, Vietoris-Rips 필트레이션으로 「동적 Betti 곡선」을 추출해 꿈 내용을 분류하며 기존 PSD 기준(AUC 약 0.70)을 크게 능가한다. 또한 위상 조건부 신경 신호 합성으로 지정한 꿈 범주의 현실적 EEG 생성도 지원한다."
+      },
+      "plain": {
+        "zh-TW": "你有沒有想過，科學家能不能「讀出」你在做什麼夢？過去的方法就像只聽音量大小來判斷一首歌的旋律——用腦波的頻率強弱來猜測夢境，準確度相當有限。PHINN-EEG 換了一種思路：把腦波訊號想像成一條在空間中繞圈的彈簧，彈簧的形狀（有幾個洞、纏了幾圈）就是「拓樸」。做惡夢的彈簧形狀，和做美夢的彈簧形狀截然不同。AI 從這些形狀特徵學習分類，就像一眼辨認出不同的毛線球。更酷的是，這套系統還能反過來「捏造」出特定夢境對應的腦波，好比給你一首歌的描述，它就能自動譜出相應的旋律。這不只對睡眠醫學意義重大，未來或許能幫助反覆做噩夢的人、甚至讓人選擇想做的夢。理解夢，是理解意識的第一步。",
+        "en": "Could scientists one day read your dreams? Past methods were like judging a song by volume alone — they measured brainwave power but missed the bigger picture. PHINN-EEG takes a fresh approach: imagine your brain signal as a spring coiling through space. The shape of that spring — how many loops or holes it makes — is its 「topology.」 A nightmare spring looks completely different from a pleasant-dream spring, and AI learns to tell them apart like recognizing different yarn tangles. Even more remarkably, the system can work in reverse: given a dream category, it generates realistic brainwaves that match it, like composing a melody from a mood description. This matters hugely for sleep medicine and could one day help people suffering recurring nightmares — or even let us steer our dreams. Understanding dreams is the first step to understanding consciousness itself.",
+        "zh-CN": "科学家能不能「读出」你在做什么梦？以前的方法就像只听音量判断旋律——用脑波频率猜测梦境，准确度相当有限。PHINN-EEG 换了个思路：把脑波信号想象成在空间中绕圈的弹簧，弹簧的形状（有几个洞、缠了几圈）就是「拓扑」。做噩梦的弹簧形状和做美梦的截然不同，AI 从这些形状特征学习分类，就像一眼辨认不同的毛线球。更酷的是，系统还能反向「伪造」特定梦境对应的脑波。这对睡眠医学意义重大，未来或许能帮助反复做噩梦的人，甚至让人选择想做的梦。理解梦，是理解意识的第一步。",
+        "ja": "科学者はあなたの夢を「読む」ことができるでしょうか？これまでの方法は曲の音量だけで旋律を判断するようなもので、脳波のパワーで夢を推測するには限界がありました。PHINN-EEG は発想を転換し、脳波信号を空間をぐるぐる巻く「バネ」として捉えます。バネの形状（穴の数や巻き方）が「トポロジー」です。悪夢のバネと良い夢のバネは形が全く異なり、AI はその違いを毛糸玉を見分けるように学習します。さらに逆方向に「夢カテゴリ→脳波」を生成することも可能。睡眠医学への応用はもちろん、将来は悪夢に悩む人の助けや夢のコントロールにつながるかもしれません。夢を理解することは、意識を理解する第一歩です。",
+        "ko": "과학자들이 당신의 꿈을 「읽을」 수 있을까요? 기존 방법은 노래의 볼륨만으로 멜로디를 판단하는 것과 같아서, 뇌파 세기로 꿈을 추측하는 데 한계가 있었습니다. PHINN-EEG는 발상을 전환해 뇌파 신호를 공간에서 회전하는 「스프링」으로 봅니다. 스프링의 형태(구멍 수, 감긴 방식)가 바로 「위상」입니다. 악몽의 스프링과 좋은 꿈의 스프링은 모양이 전혀 다르며, AI는 실뭉치를 구별하듯 이를 학습합니다. 더 놀라운 건 꿈 범주를 입력하면 현실적인 뇌파를 역으로 생성할 수도 있다는 점입니다. 수면 의학에 큰 의미가 있으며, 언젠가는 악몽에 시달리는 사람들을 돕거나 꿈을 선택할 수 있게 될지도 모릅니다. 꿈을 이해하는 것은 의식을 이해하는 첫걸음입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 當我們把腦波的「形狀」而非「強度」當作分析對象，機器看見的夢境輪廓竟比人類直覺更清晰——拓樸學或許才是解讀意識的隱藏語言。",
+        "en": "💡 When we analyze the 「shape」 of brainwaves rather than their strength, machines glimpse dream content more clearly than intuition alone suggests — topology may be the hidden language of consciousness.",
+        "zh-CN": "💡 当我们把脑波的「形状」而非「强度」作为分析对象，机器看见的梦境轮廓竟比人类直觉更清晰——拓扑学或许才是解读意识的隐藏语言。",
+        "ja": "💡 脳波の「強さ」ではなく「形」を分析すると、機械は人間の直感より鮮明に夢の輪郭を捉える——トポロジーこそ意識を解読する隠れた言語かもしれない。",
+        "ko": "💡 뇌파의 「강도」가 아닌 「형태」를 분석하면 기계는 직관보다 더 선명하게 꿈의 윤곽을 포착한다 — 위상수학이야말로 의식을 해독하는 숨겨진 언어일지 모른다."
+      }
+    },
+    {
+      "id": "bio-260714",
+      "domain": "bio",
+      "day": "2026-07-14",
+      "author": "Marjorie Watts, Carles Falcó et al.",
+      "ref": "arXiv:2607.09296v1",
+      "url": "https://arxiv.org/abs/2607.09296v1",
+      "color": "#52b788",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#52b78818\"/><rect x=\"0\" y=\"70\" width=\"340\" height=\"20\" fill=\"#52b78830\" rx=\"4\"/><ellipse cx=\"48\" cy=\"80\" rx=\"18\" ry=\"10\" fill=\"#52b788\" opacity=\"0.9\"/><ellipse cx=\"72\" cy=\"80\" rx=\"18\" ry=\"10\" fill=\"#52b788\" opacity=\"0.7\"/><ellipse cx=\"96\" cy=\"80\" rx=\"18\" ry=\"10\" fill=\"#52b788\" opacity=\"0.5\"/><ellipse cx=\"148\" cy=\"80\" rx=\"18\" ry=\"10\" fill=\"#b7e4c7\" opacity=\"0.9\"/><ellipse cx=\"172\" cy=\"80\" rx=\"18\" ry=\"10\" fill=\"#b7e4c7\" opacity=\"0.7\"/><ellipse cx=\"196\" cy=\"80\" rx=\"18\" ry=\"10\" fill=\"#b7e4c7\" opacity=\"0.5\"/><polygon points=\"240,80 260,68 260,92\" fill=\"#52b788\" opacity=\"0.8\"/><polygon points=\"268,80 288,68 288,92\" fill=\"#b7e4c7\" opacity=\"0.8\"/><polygon points=\"296,80 316,68 316,92\" fill=\"#52b788\" opacity=\"0.5\"/><rect x=\"10\" y=\"110\" width=\"60\" height=\"6\" rx=\"3\" fill=\"#52b788\" opacity=\"0.7\"/><rect x=\"10\" y=\"122\" width=\"90\" height=\"6\" rx=\"3\" fill=\"#b7e4c7\" opacity=\"0.7\"/><circle cx=\"180\" cy=\"130\" r=\"5\" fill=\"#52b788\" opacity=\"0.6\"/><circle cx=\"200\" cy=\"130\" r=\"5\" fill=\"#b7e4c7\" opacity=\"0.6\"/><circle cx=\"220\" cy=\"130\" r=\"5\" fill=\"#52b788\" opacity=\"0.4\"/></svg>",
+      "title": {
+        "zh-TW": "細胞雙人舞：感應者與消耗者如何攜手在化學訊號中集體遷移",
+        "en": "A Chemical Dance of Two: How Sensor and Consumer Cells March Together Through Chemical Gradients",
+        "zh-CN": "细胞双人舞：感应者与消耗者如何携手在化学信号中集体迁移",
+        "ja": "細胞の二人三脚：センサー細胞とコンシューマー細胞が化学勾配の中で共に移動する仕組み",
+        "ko": "세포의 이인삼각：감지 세포와 소비 세포가 화학 신호 속에서 함께 이동하는 방식"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Life Sciences",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명과학"
+      },
+      "tech": {
+        "zh-TW": "本研究將趨化性集體遷移模型推廣至異質性混合細胞群，分析兩種互動細胞類型（感應者與消耗者）在自生成化學梯度下的動態行為。數學分析揭示了「傳播台地」現象：兩種行進波前以不同速率耦合前進，形成階梯狀遷移結構。研究利用行波分析與數值模擬，確立了耦合波前存在的條件及其速度選擇機制。",
+        "en": "This study generalises self-generated chemotaxis models to heterogeneous mixtures of two interacting cell types—sensors and consumers—moving through self-created chemical gradients. Mathematical analysis reveals 「propagating terraces」: coupled travelling wave fronts advancing at distinct speeds, forming staircase-like migration patterns. Travelling wave analysis and numerical simulations establish conditions for coupled front existence and speed-selection mechanisms.",
+        "zh-CN": "本研究将趋化性集体迁移模型推广至异质性混合细胞群，分析两种互动细胞类型（感应者与消耗者）在自生成化学梯度下的动态行为。数学分析揭示了「传播台地」现象：两种行进波前以不同速率耦合前进，形成阶梯状迁移结构。研究利用行波分析与数值模拟，确立了耦合波前存在的条件及其速度选择机制。",
+        "ja": "本研究は、自己生成化学勾配の中で動く二種類の相互作用細胞（センサー型とコンシューマー型）の異質混合集団へと、趨化性集団移動モデルを拡張した。数学的解析により「伝播テラス」現象が明らかになった：異なる速度で結合した進行波前がずれて進み、階段状の移動パターンを形成する。行波解析と数値シミュレーションにより、結合波前の存在条件と速度選択機構が確立された。",
+        "ko": "이 연구는 자기 생성 화학 기울기 속에서 이동하는 두 종류의 상호작용 세포(감지 세포와 소비 세포)의 이질적 혼합 집단으로 주화성 집단 이동 모델을 확장했다. 수학적 분석을 통해 「전파 테라스」 현상이 밝혀졌다: 서로 다른 속도로 결합된 진행 파면이 계단식 이동 패턴을 형성한다. 행파 분석과 수치 시뮬레이션을 통해 결합 파면의 존재 조건과 속도 선택 메커니즘이 확립되었다."
+      },
+      "plain": {
+        "zh-TW": "想像一支由兩種士兵組成的軍隊在迷霧中前進：「偵察兵」能感應化學訊號，「補給兵」則消耗這些化學物質維持梯度。這兩種細胞並非各自為政，而是彼此牽手，形成像山間台地一樣的階梯式前進波——前後兩支隊伍以不同速度推進，卻又緊密連動。這種「傳播台地」現象在單一細胞類型研究中從未見過。在胚胎發育中，不同細胞必須協同遷移到正確位置才能形成器官；在免疫反應中，免疫細胞也需要集體衝向病灶。過去的模型都假設只有一種細胞在移動，但真實身體裡永遠是多種細胞混雜前行。這項研究首次用數學嚴格證明，混合細胞群可以產生全新的遷移模式，改寫我們對發育與免疫的基本認知，也為癌症轉移的理解開啟新視角。",
+        "en": "Imagine an army of two kinds of soldiers advancing through fog: 「scouts」 that sense chemical signals, and 「supply troops」 that consume those chemicals to maintain the gradient. These two cell types don't act alone—they hold hands and march in a staircase-like formation called a 「propagating terrace,」 with the two groups advancing at different speeds yet remaining tightly linked. This pattern was never seen in single-cell-type studies. During embryo development, different cells must migrate together to the right places to build organs; during immune responses, immune cells must collectively rush to infection sites. Old models assumed only one cell type was moving, but in reality the body is always a bustling mix. This study mathematically proves for the first time that mixed cell populations can generate entirely new migration patterns, rewriting our understanding of development and immunity—and opening a new lens on cancer metastasis.",
+        "zh-CN": "想象一支由两种士兵组成的军队在迷雾中前进：「侦察兵」能感应化学信号，「补给兵」则消耗这些化学物质维持梯度。这两种细胞并非各自为政，而是彼此牵手，形成像山间台地一样的阶梯式前进波——前后两支队伍以不同速度推进，却又紧密联动。这种「传播台地」现象在单一细胞类型研究中从未见过。在胚胎发育中，不同细胞必须协同迁移到正确位置才能形成器官；在免疫反应中，免疫细胞也需要集体冲向病灶。过去的模型都假设只有一种细胞在移动，但真实身体里永远是多种细胞混杂前行。这项研究首次用数学严格证明，混合细胞群可以产生全新的迁移模式，改写我们对发育与免疫的基本认知，也为癌症转移的理解开启新视角。",
+        "ja": "霧の中を進む二種類の兵士からなる軍隊を想像してほしい。「斥候兵」は化学信号を感知し、「補給兵」はその化学物質を消費して勾配を維持する。この二種類の細胞は別々に動くのではなく、手をつなぎ合い、山の段丘のような階段状の「伝播テラス」を形成しながら、異なる速度で、しかし緊密に連動して前進する。この現象は単一細胞種の研究では一度も観察されたことがなかった。胚発生では異なる細胞が正しい場所へ協調移動しなければ器官が形成されず、免疫応答でも免疫細胞が集団で病巣へ向かう必要がある。この研究は、混合細胞集団が全く新しい移動パターンを生み出せることを初めて数学的に証明し、発生・免疫・がん転移の理解に新たな視点をもたらす。",
+        "ko": "안개 속을 전진하는 두 종류의 병사로 이루어진 군대를 상상해보자. 「정찰병」은 화학 신호를 감지하고, 「보급병」은 그 화학 물질을 소비해 농도 기울기를 유지한다. 이 두 종류의 세포는 각자 움직이는 것이 아니라 손을 잡고, 마치 산의 계단식 지형처럼 「전파 테라스」를 형성하며 서로 다른 속도로, 하지만 긴밀하게 연동하며 전진한다. 이 현상은 단일 세포 유형 연구에서는 한 번도 관찰된 적이 없었다. 배아 발생 과정에서 서로 다른 세포들은 올바른 위치로 협력하여 이동해야 기관이 형성되고, 면역 반응에서도 면역 세포들이 집단으로 병소로 달려가야 한다. 이 연구는 혼합 세포 집단이 완전히 새로운 이동 패턴을 만들어낼 수 있음을 처음으로 수학적으로 증명하여, 발생·면역·암 전이에 대한 이해에 새로운 관점을 제시한다."
+      },
+      "insight": {
+        "zh-TW": "💡 真實生命中的集體行動從來不是單一角色的獨角戲，「異質性」才是理解細胞遷移與疾病的關鍵鑰匙。",
+        "en": "💡 Collective movement in life is never a solo act—「heterogeneity」 is the true key to understanding cell migration and disease.",
+        "zh-CN": "💡 真实生命中的集体行动从来不是单一角色的独角戏，「异质性」才是理解细胞迁移与疾病的关键钥匙。",
+        "ja": "💡 生命における集団的な動きは決して一種類の主役による独り舞台ではなく、「異質性」こそが細胞移動と疾患を理解する真の鍵だ。",
+        "ko": "💡 생명 속 집단 행동은 결코 단일 주인공의 독무대가 아니며, 「이질성」이야말로 세포 이동과 질병을 이해하는 진정한 열쇠다."
+      }
+    },
+    {
+      "id": "phys-260714",
+      "domain": "phys",
+      "day": "2026-07-14",
+      "author": "Z. Imara, A. El Allati et al.",
+      "ref": "arXiv:2607.09663v1",
+      "url": "https://arxiv.org/abs/2607.09663v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><circle cx=\"260\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><ellipse cx=\"80\" cy=\"80\" rx=\"38\" ry=\"14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/><ellipse cx=\"260\" cy=\"80\" rx=\"38\" ry=\"14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\" opacity=\"0.5\"/><rect x=\"155\" y=\"60\" width=\"30\" height=\"40\" rx=\"6\" fill=\"#e8a020\" opacity=\"0.85\"/><line x1=\"118\" y1=\"72\" x2=\"155\" y2=\"72\" stroke=\"#e8a020\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"118\" y1=\"88\" x2=\"155\" y2=\"88\" stroke=\"#e8a020\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"185\" y1=\"72\" x2=\"222\" y2=\"72\" stroke=\"#e8a020\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><line x1=\"185\" y1=\"88\" x2=\"222\" y2=\"88\" stroke=\"#e8a020\" stroke-width=\"2\" stroke-dasharray=\"5,3\"/><circle cx=\"80\" cy=\"80\" r=\"10\" fill=\"#4a7bbf\" opacity=\"0.85\"/><circle cx=\"260\" cy=\"80\" r=\"10\" fill=\"#4a7bbf\" opacity=\"0.85\"/><path d=\"M170 30 Q200 10 230 30\" fill=\"none\" stroke=\"#2ec4b6\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><path d=\"M170 130 Q200 150 230 130\" fill=\"none\" stroke=\"#2ec4b6\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/></svg>",
+      "title": {
+        "zh-TW": "用「相位開關」控制量子糾纏：環形腔中的磁子壓縮新技術",
+        "en": "Phase-Switchable Quantum Entanglement via Magnon Squeezing in a Ring Cavity",
+        "zh-CN": "用「相位开关」控制量子纠缠：环形腔中的磁子压缩新技术",
+        "ja": "「位相スイッチ」で量子もつれを制御：リング共振器における磁子スクイージング新技術",
+        "ko": "「위상 스위치」로 양자 얽힘 제어：링 공동에서의 마그논 압착 신기술"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子光學",
+        "en": "⚛️ Quantum Optics",
+        "zh-CN": "⚛️ 量子光学",
+        "ja": "⚛️ 量子光学",
+        "ko": "⚛️ 양자광학"
+      },
+      "tech": {
+        "zh-TW": "本研究在環形光機磁力學腔體中，利用相位可控的磁子壓縮技術，理論上實現了可切換的雙體與三體量子糾纏。兩個空間分離的 YIG 鐵磁微橋透過磁致伸縮效應耦合機械振動，再藉由輻射壓力與共同腔場交互作用，並以泵浦光相位作為「開關」來調控非互易糾纏的方向。",
+        "en": "This theoretical study achieves switchable bipartite and tripartite quantum entanglement in a ring optomagnomechanical cavity using phase-controlled magnon squeezing. Two spatially separated YIG ferrimagnetic microbridges are coupled via magnetostriction to a shared mechanical mode and a common cavity field; the pump phase acts as an on/off switch to control the directionality of nonreciprocal entanglement.",
+        "zh-CN": "本研究在环形光机磁力学腔体中，利用相位可控的磁子压缩技术，理论上实现了可切换的双体与三体量子纠缠。两个空间分离的 YIG 铁磁微桥通过磁致伸缩效应耦合机械振动，再借由辐射压力与共同腔场交互作用，以泵浦光相位作为「开关」调控非互易纠缠方向。",
+        "ja": "本研究はリング型光機械磁気共振器において、位相制御された磁子スクイージングを用いて、切り替え可能な二体・三体量子もつれを理論的に実現した。空間的に分離した二つの YIG 強磁性マイクロブリッジが磁歪結合と輻射圧を介して共通の腔場に接続され、ポンプ光の位相が非相反もつれの方向を制御するスイッチとして機能する。",
+        "ko": "본 연구는 링형 광-기계-자기 공동에서 위상 제어 마그논 압착 기술을 활용해 전환 가능한 이체 및 삼체 양자 얽힘을 이론적으로 구현했다. 공간적으로 분리된 두 YIG 강자성 마이크로브리지는 자기변형 결합과 복사압을 통해 공유 공동장에 연결되며, 펌프 광의 위상이 비상반 얽힘의 방향을 제어하는 스위치 역할을 한다."
+      },
+      "plain": {
+        "zh-TW": "想像兩個相距遙遠的音叉，只要輕敲其中一個，另一個也會神奇地振動——量子糾纏就像這樣，讓兩個粒子「心電感應」。這篇論文更厲害：他們在環形腔裡放入兩塊特殊磁性材料（YIG），用磁力、光壓和振動三種力量把它們「綁」在一起，形成量子糾纏。最驚人的是，只要改變照射光的相位（像調整燈光的角度），就能像撥開關一樣，決定「訊息只能從左流向右」還是反過來，甚至同時讓三個物體糾纏。這種「單向糾纏」就像量子世界的單行道，可以保護量子訊號不被干擾。未來量子網路和量子通訊晶片，可能就靠這類技術讓訊號精準傳遞而不洩漏。",
+        "en": "Imagine two distant tuning forks that vibrate in perfect sync without touching — that is quantum entanglement. In this study, researchers placed two tiny magnetic crystals (YIG) inside a ring-shaped light cavity and linked them using three forces: magnetism, light pressure, and mechanical vibration. The most striking part: simply changing the phase of the pumping laser — like tilting a light beam — works as a switch that decides whether quantum information can flow left-to-right only, right-to-left only, or be locked in a three-way dance. This one-way entanglement acts like a quantum one-way street, shielding signals from unwanted interference. Such control could become a key building block for future quantum networks and quantum chips.",
+        "zh-CN": "想象两个相距遥远的音叉，轻敲其中一个，另一个也神奇地振动——量子纠缠就是这样让两个粒子「心灵感应」。这篇论文更进一步：在环形腔里放入两块特殊磁性材料（YIG），用磁力、光压和振动三种力量将它们「绑」在一起形成量子纠缠。最惊人的是，只需改变照射光的相位（像调整灯光角度），就能像拨开关一样决定「信息只能从左流向右」还是反过来，甚至同时让三个物体纠缠。这种「单向纠缠」就像量子世界的单行道，能保护量子信号不被干扰，未来量子网络可能正是靠这类技术实现精准传输。",
+        "ja": "遠く離れた二本の音叉を叩くと、触れていないのにもう一本も振動する——量子もつれはそんな「テレパシー」です。この研究では、リング状の光共振器の中に特殊な磁性材料（YIG）を二つ配置し、磁力・光圧・振動の三つの力で結びつけて量子もつれを生成しました。最大の驚きは、照射レーザーの位相を変えるだけで——まるで照明の角度を微調整するように——「情報が左から右にしか流れない」「右から左にしか流れない」といった方向を自在に切り替えられる点です。この「一方通行のもつれ」は量子信号を雑音から守る盾となり、将来の量子ネットワーク構築に不可欠な技術になりえます。",
+        "ko": "멀리 떨어진 두 소리굽쇠 중 하나를 건드리면 다른 하나도 신기하게 울리는 것처럼, 양자 얽힘은 두 입자가 '텔레파시'처럼 연결된 현상입니다. 이 연구에서는 링 모양 광학 공동 안에 특수 자성 재료(YIG) 두 개를 넣고, 자기력·광압·진동이라는 세 가지 힘으로 연결해 양자 얽힘을 만들었습니다. 가장 놀라운 점은 레이저의 위상만 바꾸면——마치 조명 각도를 미세하게 조절하듯——정보가 왼쪽에서 오른쪽으로만 흐르거나 그 반대 방향으로만 흐르도록 스위치처럼 전환할 수 있다는 것입니다. 이 '일방통행 얽힘'은 양자 신호를 외부 간섭에서 보호하며, 미래 양자 네트워크의 핵심 기술이 될 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 光的相位，竟能成為量子糾纏方向的「總開關」——這意味著我們離可程式化的量子路由器又近了一步。",
+        "en": "💡 A laser's phase angle can act as a master switch for the direction of quantum entanglement — bringing programmable quantum routers one step closer to reality.",
+        "zh-CN": "💡 光的相位，竟能成为量子纠缠方向的「总开关」——这意味着我们距离可编程量子路由器又近了一步。",
+        "ja": "💡 レーザーの位相が量子もつれの方向を決める「マスタースイッチ」になりうる——プログラム可能な量子ルーターの実現にまた一歩近づいた。",
+        "ko": "💡 레이저의 위상이 양자 얽힘 방향을 결정하는 '마스터 스위치'가 될 수 있다——프로그래머블 양자 라우터 실현에 한 걸음 더 다가선 것이다."
+      }
+    },
+    {
+      "id": "space-260714",
+      "domain": "space",
+      "day": "2026-07-14",
+      "author": "Avinash Tiwari, Aditya Vijaykumar et al.",
+      "ref": "arXiv:2607.09658v1",
+      "url": "https://arxiv.org/abs/2607.09658v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"170\" cy=\"80\" r=\"38\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"80\" r=\"22\" fill=\"none\" stroke=\"#1a237e\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"148\" cy=\"58\" r=\"9\" fill=\"#1a237e\"/><circle cx=\"192\" cy=\"102\" r=\"7\" fill=\"#1a237e\"/><circle cx=\"170\" cy=\"80\" r=\"3.5\" fill=\"#e53935\"/><ellipse cx=\"170\" cy=\"80\" rx=\"52\" ry=\"14\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"1.2\" stroke-dasharray=\"6 4\" transform=\"rotate(-30 170 80)\"/><circle cx=\"222\" cy=\"52\" r=\"5\" fill=\"#ffd600\"/><circle cx=\"113\" cy=\"110\" r=\"4\" fill=\"#ffd600\"/><line x1=\"148\" y1=\"58\" x2=\"192\" y2=\"102\" stroke=\"#1a237e\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/><circle cx=\"40\" cy=\"30\" r=\"2\" fill=\"#ffd600\"/><circle cx=\"300\" cy=\"140\" r=\"2\" fill=\"#ffd600\"/><circle cx=\"310\" cy=\"20\" r=\"1.5\" fill=\"#ffd600\"/></svg>",
+      "title": {
+        "zh-TW": "重力波當探針：未來偵測器有望找到銀河系外的系外行星",
+        "en": "Gravitational Waves as Probes: Future Detectors May Reveal Extragalactic Exoplanets",
+        "zh-CN": "引力波当探针：未来探测器有望发现银河系外的系外行星",
+        "ja": "重力波を探針に：次世代検出器で銀河系外の系外惑星を発見できるか",
+        "ko": "중력파를 탐침으로: 미래 검출기로 외부은하 외계행성 탐색 가능성"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Cosmos",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문·우주"
+      },
+      "tech": {
+        "zh-TW": "本研究探討利用未來重力波偵測器（A+/LIGO O5、愛因斯坦望遠鏡、DECIGO）偵測銀河系外系外行星的可行性。研究方法是分析行星繞雙緻密星（雙中子星、中子星—黑洞、雙黑洞）運行時，對重力波訊號相位造成的微小擾動，從而重建外部引力位的輪廓，間接推斷行星存在。",
+        "en": "This study investigates the feasibility of detecting extragalactic exoplanets using next-generation gravitational wave (GW) detectors including A+/LIGO O5, Einstein Telescope, and DECIGO. The method involves reconstructing the external gravitational potential profile by analyzing subtle phase perturbations imprinted on GW signals from compact binary coalescences (CBCs) caused by orbiting exoplanets.",
+        "zh-CN": "本研究探讨利用未来引力波探测器（A+/LIGO O5、爱因斯坦望远镜、DECIGO）探测银河系外系外行星的可行性。研究方法是分析行星绕双致密星（双中子星、中子星—黑洞、双黑洞）运行时，对引力波信号相位造成的微小扰动，从而重建外部引力势轮廓，间接推断行星存在。",
+        "ja": "本研究は、A+/LIGO O5・アインシュタイン望遠鏡・DECIGOなど次世代重力波検出器を用いて、銀河系外の系外惑星を検出する可能性を検討した。連星合体（CBC）の重力波信号の位相に惑星が刻む微細な摂動を解析し、外部重力ポテンシャルの輪郭を再構成することで惑星の存在を間接的に推定する手法を採用している。",
+        "ko": "이 연구는 A+/LIGO O5, 아인슈타인 망원경, DECIGO 등 차세대 중력파 검출기를 이용해 외부은하 외계행성 탐지 가능성을 분석했다. 쌍성 합체(CBC)의 중력파 신호 위상에 행성이 남기는 미세한 섭동을 분석해 외부 중력 퍼텐셜 윤곽을 재구성함으로써 행성 존재를 간접 추론하는 방법론을 활용했다."
+      },
+      "plain": {
+        "zh-TW": "你知道嗎？天文學家目前發現的所有系外行星，全部都在我們的銀河系內——宇宙中還有數千億個星系，裡面的行星我們幾乎一無所知。想像一下，兩顆中子星或黑洞在遙遠星系中激烈碰撞，發出的重力波就像宇宙中的「漣漪」，以光速向外傳播。如果這對碰撞天體附近剛好有一顆行星繞著它們轉，這顆行星的引力就會像在水面上放了一顆小石頭，讓漣漪的形狀微微走樣。這篇研究發現，未來更靈敏的重力波偵測器——尤其是計畫中的愛因斯坦望遠鏡和DECIGO——或許能「聽」出這種微小的走樣，從而推斷出行星的存在，即使那顆行星遠在數億光年之外！這意味著我們不再需要「看見」行星，只要聆聽重力波就夠了。這不只是找到更多行星那麼簡單，而是打開了探索整個宇宙行星種群的全新視窗，讓我們得以比較不同星系中的行星系統，回答「我們的銀河系在宇宙中是特例還是常態？」這個深刻問題。",
+        "en": "Did you know that every single exoplanet discovered so far lies within our own Milky Way? The other hundreds of billions of galaxies remain almost completely unexplored in terms of planets. Imagine two neutron stars or black holes violently colliding in a distant galaxy, sending ripples through spacetime — gravitational waves — racing toward us at the speed of light. Now, if a planet happens to be orbiting that colliding pair, its gravity acts like a tiny pebble on a pond, subtly distorting those ripples. This study finds that future, ultra-sensitive gravitational wave detectors — especially the planned Einstein Telescope and DECIGO — could potentially 「hear」 those tiny distortions and infer the planet's presence, even from billions of light-years away. We wouldn't need to see the planet at all — just listen. This opens a breathtaking new window: comparing planetary populations across entire galaxies, and ultimately asking whether our Milky Way's planets are typical or exceptional in the cosmos.",
+        "zh-CN": "你知道吗？天文学家迄今发现的所有系外行星，全部都在我们的银河系内——宇宙中还有数千亿个星系，里面的行星我们几乎一无所知。想象一下，两颗中子星或黑洞在遥远星系中剧烈碰撞，发出的引力波就像宇宙中的「涟漪」，以光速向外传播。如果这对碰撞天体附近恰好有一颗行星绕着它们转，这颗行星的引力就会像在水面放了一颗小石子，让涟漪的形状微微走样。这篇研究发现，未来更灵敏的引力波探测器——尤其是规划中的爱因斯坦望远镜和DECIGO——或许能「听」出这种微小的走样，从而推断行星的存在，即便那颗行星远在数亿光年之外！这意味着我们不需要「看见」行星，只需聆听引力波。这不只是找到更多行星，而是打开了探索整个宇宙行星种群的全新窗口。",
+        "ja": "これまでに発見された系外惑星は、すべて私たちの天の川銀河の中にあります。数千億もの他の銀河に惑星がどれだけあるか、私たちはほぼ何も知りません。遠い銀河で二つの中子星やブラックホールが激しく衝突すると、宇宙の「さざ波」である重力波が光速で広がります。もしその周囲に惑星が公転していれば、その重力は水面の小石のように、さざ波の形をわずかに歪めます。この研究は、計画中のアインシュタイン望遠鏡やDECIGOなど次世代検出器なら、何億光年も離れた場所でもその微細な歪みを「聴き取り」、惑星の存在を推定できる可能性を示しました。惑星を「見る」必要はなく、ただ重力波に耳を澄ますだけでいいのです。これは銀河を超えた惑星探査という、まったく新しい時代の幕開けです。",
+        "ko": "지금까지 발견된 모든 외계행성은 예외 없이 우리 은하 안에 있습니다. 수천억 개의 다른 은하에 얼마나 많은 행성이 있는지, 우리는 거의 아무것도 모릅니다. 먼 은하에서 두 중성자별이나 블랙홀이 격렬하게 충돌하면 우주의 「물결」인 중력파가 빛의 속도로 퍼져 나옵니다. 만약 그 주변에 행성이 공전하고 있다면, 그 중력은 수면의 작은 돌처럼 물결 모양을 살짝 뒤틀어 놓습니다. 이 연구는 계획 중인 아인슈타인 망원경과 DECIGO 같은 차세대 검출기라면 수억 광년 밖에서도 그 미세한 뒤틀림을 「들을」 수 있고 행성 존재를 추론할 수 있음을 보여 줬습니다. 행성을 볼 필요조차 없이, 중력파에 귀를 기울이는 것만으로 충분합니다. 이는 은하 너머 행성 탐사라는 완전히 새로운 시대의 서막입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 重力波不只是探測黑洞碰撞的工具，它正在成為跨越星系、尋找外星世界的全新宇宙望遠鏡。",
+        "en": "💡 Gravitational waves are no longer just a tool for detecting black hole collisions — they are becoming an entirely new kind of cosmic telescope capable of revealing alien worlds across galaxies.",
+        "zh-CN": "💡 引力波不只是探测黑洞碰撞的工具，它正成为跨越星系、寻找外星世界的全新宇宙望远镜。",
+        "ja": "💡 重力波はブラックホール衝突を検出するだけの道具ではなく、銀河を超えて異星の世界を明かす、まったく新しい宇宙望遠鏡になりつつある。",
+        "ko": "💡 중력파는 블랙홀 충돌을 감지하는 도구를 넘어, 은하를 가로질러 외계 세계를 찾아내는 완전히 새로운 우주 망원경으로 진화하고 있다."
+      }
+    },
+    {
+      "id": "tech-260714",
+      "domain": "tech",
+      "day": "2026-07-14",
+      "author": "Hongli Liu, Qiang Li et al.",
+      "ref": "arXiv:2607.09610v1",
+      "url": "https://arxiv.org/abs/2607.09610v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"10\" y=\"60\" width=\"6\" height=\"80\" rx=\"3\" fill=\"#00695c\" opacity=\"0.5\"/><rect x=\"22\" y=\"45\" width=\"6\" height=\"95\" rx=\"3\" fill=\"#00695c\" opacity=\"0.65\"/><rect x=\"34\" y=\"30\" width=\"6\" height=\"110\" rx=\"3\" fill=\"#00695c\" opacity=\"0.8\"/><rect x=\"46\" y=\"20\" width=\"6\" height=\"120\" rx=\"3\" fill=\"#00695c\"/><rect x=\"58\" y=\"35\" width=\"6\" height=\"105\" rx=\"3\" fill=\"#00695c\" opacity=\"0.85\"/><rect x=\"70\" y=\"55\" width=\"6\" height=\"85\" rx=\"3\" fill=\"#00695c\" opacity=\"0.6\"/><line x1=\"10\" y1=\"140\" x2=\"320\" y2=\"140\" stroke=\"#00695c\" stroke-width=\"1.5\" opacity=\"0.3\"/><ellipse cx=\"220\" cy=\"80\" rx=\"70\" ry=\"50\" fill=\"none\" stroke=\"#e65100\" stroke-width=\"2\" stroke-dasharray=\"6 3\"/><circle cx=\"220\" cy=\"80\" r=\"8\" fill=\"#e65100\" opacity=\"0.85\"/><line x1=\"90\" y1=\"80\" x2=\"148\" y2=\"80\" stroke=\"#ffd54f\" stroke-width=\"2\" marker-end=\"none\"/><circle cx=\"90\" cy=\"80\" r=\"5\" fill=\"#ffd54f\"/><circle cx=\"160\" cy=\"50\" r=\"5\" fill=\"#ffd54f\"/><circle cx=\"155\" cy=\"110\" r=\"5\" fill=\"#ffd54f\"/><line x1=\"90\" y1=\"80\" x2=\"148\" y2=\"53\" stroke=\"#ffd54f\" stroke-width=\"2\" opacity=\"0.8\"/><line x1=\"90\" y1=\"80\" x2=\"143\" y2=\"107\" stroke=\"#ffd54f\" stroke-width=\"2\" opacity=\"0.8\"/><ellipse cx=\"220\" cy=\"80\" rx=\"30\" ry=\"22\" fill=\"#00695c\" opacity=\"0.15\"/></svg>",
+      "title": {
+        "zh-TW": "連續孔徑天線的「感知＋通訊」超維預編碼：一塊天線板同時看雷達又傳數據",
+        "en": "Infinite-Dimensional Precoding for Next-Gen Antennas That Sense and Communicate Simultaneously",
+        "zh-CN": "连续孔径天线的「感知＋通信」超维预编码：一块天线板同时做雷达又传数据",
+        "ja": "連続開口アンテナで「レーダー検知＋通信」を同時実現する超次元プリコーディング",
+        "ko": "연속 개구 안테나로 레이더 탐지와 데이터 통신을 동시에 처리하는 초차원 프리코딩"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 공학"
+      },
+      "tech": {
+        "zh-TW": "本文研究連續孔徑陣列（CAPA）在整合感知與通訊（ISAC）系統中的符號級預編碼設計，透過最佳化連續電流分布，在滿足「建設性干涉」通訊約束的同時最大化雷達目標照射功率。針對由此產生的無限維非凸優化問題，論文建立了最優電流解的有限維參數化結構，並提出基於交替優化的高效求解算法。",
+        "en": "This paper designs symbol-level precoding for continuous-aperture array (CAPA) ISAC systems, jointly optimizing a continuous transmit current distribution to maximize radar target illumination power while satisfying constructive-interference constraints for communication users. The authors resolve the resulting infinite-dimensional nonconvex problem by establishing a finite-dimensional parameterization of the optimal current and solving it via alternating optimization.",
+        "zh-CN": "本文研究连续孔径阵列（CAPA）在集成感知与通信（ISAC）系统中的符号级预编码设计，通过优化连续电流分布，在满足「建设性干涉」通信约束的同时最大化雷达目标照射功率。针对由此产生的无限维非凸优化问题，论文建立了最优电流解的有限维参数化结构，并提出基于交替优化的高效求解算法。",
+        "ja": "本論文は連続開口アレー（CAPA）を用いたISACシステムにおける符号レベルプリコーディングを設計し、通信ユーザへの建設的干渉制約を満たしつつレーダー目標への照射電力を最大化する連続電流分布を最適化する。生じる無限次元非凸問題に対し、最適電流の有限次元パラメータ化を確立し、交互最適化アルゴリズムで効率的に解く。",
+        "ko": "이 논문은 연속 개구 배열(CAPA) 기반 ISAC 시스템에서 심볼 수준 프리코딩을 설계하여, 통신 사용자의 건설적 간섭 조건을 충족하면서 레이더 표적 조명 전력을 최대화하는 연속 전류 분포를 최적화한다. 발생하는 무한 차원 비볼록 문제를 유한 차원 매개변수화로 풀고 교대 최적화 알고리즘을 제안한다."
+      },
+      "plain": {
+        "zh-TW": "想像一塊超薄的智慧天線板，它不只能像手機基地台一樣傳送訊息，還能像雷達一樣「看見」空中的飛機或車輛——這就是ISAC（整合感知與通訊）的夢想。傳統天線是一格一格的點陣，而這篇論文研究的「連續孔徑天線」更像一張無縫的電磁布，理論上能讓訊號更精準、更強大。問題是，這塊「電磁布」上的每一點都要精心控制電流，這在數學上等於要同時解無限多個方程式，極其困難。本文的突破在於：證明了這個看似無限複雜的問題，其實可以用有限個參數來精確描述，就像用幾個音符就能重建整首樂曲。更聰明的是，系統利用不同用戶訊號之間的干涉，讓它們「建設性地疊加」，不但不互相妨礙，還能各自收得更清晰。這項技術對未來6G網路、自動駕駛感知和智慧基地台的整合至關重要，讓一個設備同時擔當通訊塔與偵測雷達。",
+        "en": "Imagine a paper-thin intelligent antenna panel that can both send messages like a cell tower and detect objects like a radar — that is the vision of Integrated Sensing and Communication, or ISAC. Traditional antennas work like a grid of separate dots, but the 「continuous-aperture array」 studied here is more like a seamless electromagnetic fabric, theoretically delivering far sharper and stronger signals. The catch: every point on this fabric needs carefully tuned electric current, which mathematically means solving infinitely many equations at once — an enormous challenge. The breakthrough of this paper is proving that this seemingly infinite problem can actually be described by a finite set of parameters, much like reconstructing an entire song from just a handful of musical notes. Even more cleverly, the system exploits interference between different users' signals, making them 「constructively overlap」 so each user receives a cleaner signal rather than being drowned out. This matters enormously for future 6G networks, autonomous vehicle sensing, and smart base stations that serve as both a communication tower and a detection radar in one.",
+        "zh-CN": "想象一块超薄的智能天线板，它不仅能像手机基站一样传送消息，还能像雷达一样「看见」空中的飞机或路上的车辆——这就是ISAC（集成感知与通信）的愿景。传统天线是一格一格的点阵，而这篇论文研究的「连续孔径天线」更像一张无缝的电磁布，理论上能让信号更精准、更强大。难点在于：这块「电磁布」上的每一点都要精心控制电流，数学上等于要同时解无限多个方程，极其困难。本文的突破在于：证明了这个看似无限复杂的问题，其实可以用有限个参数精确描述，就像用几个音符就能还原整首乐曲。更聪明的是，系统利用不同用户信号之间的干涉，让它们「建设性叠加」，不但互不干扰，还各自收得更清晰。这项技术对未来6G网络、自动驾驶感知和智慧基站的一体化至关重要。",
+        "ja": "超薄型のスマートアンテナパネルが、携帯基地局のようにデータを送りながらレーダーのように物体を検知できたら——それがISAC（統合センシング・通信）の夢です。従来のアンテナは点の格子のようなものですが、この論文が扱う「連続開口アレー」はシームレスな電磁布のようなもので、理論上はるかに精密で強力な信号を実現できます。難しいのは、この「電磁布」の全点で電流を精密に制御する必要があり、数学的に無限の方程式を同時に解くことに相当する点です。この論文の突破口は、その無限に複雑に見える問題が実は有限のパラメータで正確に表せることを証明したことで、まるでいくつかの音符だけで曲全体を再現するようなものです。さらに賢いことに、異なるユーザーの信号干渉を「建設的重ね合わせ」として利用し、各ユーザーがよりクリアな信号を受け取れるようにしています。6G・自動運転・スマート基地局の統合に不可欠な技術です。",
+        "ko": "초박형 스마트 안테나 패널이 휴대전화 기지국처럼 데이터를 전송하면서 동시에 레이더처럼 물체를 감지할 수 있다면 어떨까요? 그것이 ISAC(통합 감지 및 통신)의 비전입니다. 기존 안테나는 점의 격자 같은 구조지만, 이 논문이 다루는 「연속 개구 배열」은 이음새 없는 전자기 천과 같아 이론적으로 훨씬 정밀하고 강력한 신호를 낼 수 있습니다. 문제는 이 천의 모든 점에서 전류를 세밀하게 제어해야 하는데, 수학적으로 무한히 많은 방정식을 동시에 풀어야 한다는 점입니다. 이 논문의 돌파구는 그 무한히 복잡해 보이는 문제가 실제로는 유한한 매개변수로 정확히 표현될 수 있음을 증명한 것으로, 마치 몇 개의 음표만으로 곡 전체를 재현하는 것과 같습니다. 더 나아가, 서로 다른 사용자 신호 간의 간섭을 「건설적 중첩」으로 활용해 각 사용자가 더 깨끗한 신호를 받을 수 있게 합니다. 6G, 자율주행, 스마트 기지국 통합에 핵심적인 기술입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 無限維的物理難題往往藏著有限維的數學結構——找到這個結構，就是把「不可能」變成「可解」的鑰匙。",
+        "en": "💡 Many seemingly infinite physical problems hide a finite mathematical skeleton — discovering that structure is what transforms 「impossible」 into 「solvable.」",
+        "zh-CN": "💡 无限维的物理难题往往藏着有限维的数学结构——找到这个结构，就是把「不可能」变成「可解」的钥匙。",
+        "ja": "💡 無限次元の物理的難問には有限次元の数学的骨格が潜んでいることが多く、その構造を見つけることが「不可能」を「解ける」に変える鍵となる。",
+        "ko": "💡 무한 차원의 물리적 난제 안에는 종종 유한 차원의 수학적 뼈대가 숨어 있으며, 그 구조를 발견하는 것이 「불가능」을 「풀 수 있음」으로 바꾸는 열쇠다."
+      }
+    }
+  ]
+}
