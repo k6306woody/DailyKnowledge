@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-15",
+  "mode": "paper",
+  "paper_date": "2026-07-15",
+  "generated_at": "2026-07-15",
+  "cards": [
+    {
+      "id": "ai-260715",
+      "domain": "ai",
+      "day": "2026-07-15",
+      "author": "Dian Wang, Jisang Park et al.",
+      "ref": "arXiv:2607.11884v1",
+      "url": "https://arxiv.org/abs/2607.11884v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.18\"/><rect x=\"25\" y=\"65\" width=\"50\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"90\" r=\"12\" fill=\"#2a9d8f\" opacity=\"0.7\"/><line x1=\"50\" y1=\"78\" x2=\"50\" y2=\"65\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><line x1=\"50\" y1=\"102\" x2=\"50\" y2=\"115\" stroke=\"#2a9d8f\" stroke-width=\"2\"/><rect x=\"110\" y=\"40\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#e9c46a\" opacity=\"0.18\"/><rect x=\"115\" y=\"45\" width=\"50\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#e9c46a\" stroke-width=\"2\"/><circle cx=\"140\" cy=\"70\" r=\"12\" fill=\"#e9c46a\" opacity=\"0.7\"/><line x1=\"140\" y1=\"58\" x2=\"140\" y2=\"45\" stroke=\"#e9c46a\" stroke-width=\"2\"/><line x1=\"140\" y1=\"82\" x2=\"140\" y2=\"95\" stroke=\"#e9c46a\" stroke-width=\"2\"/><rect x=\"200\" y=\"55\" width=\"60\" height=\"60\" rx=\"8\" fill=\"#e76f51\" opacity=\"0.18\"/><rect x=\"205\" y=\"60\" width=\"50\" height=\"50\" rx=\"6\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"85\" r=\"12\" fill=\"#e76f51\" opacity=\"0.7\"/><line x1=\"230\" y1=\"73\" x2=\"230\" y2=\"60\" stroke=\"#e76f51\" stroke-width=\"2\"/><line x1=\"230\" y1=\"97\" x2=\"230\" y2=\"110\" stroke=\"#e76f51\" stroke-width=\"2\"/><ellipse cx=\"290\" cy=\"80\" rx=\"28\" ry=\"38\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"2.5\" stroke-dasharray=\"6 3\"/><circle cx=\"290\" cy=\"80\" r=\"10\" fill=\"#2a9d8f\" opacity=\"0.5\"/><line x1=\"80\" y1=\"90\" x2=\"110\" y2=\"70\" stroke=\"#555\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><line x1=\"170\" y1=\"70\" x2=\"200\" y2=\"80\" stroke=\"#555\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><line x1=\"260\" y1=\"80\" x2=\"278\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/></svg>",
+      "title": {
+        "zh-TW": "多座標系混合策略：讓雙臂機器人同時用多種「視角」規劃動作",
+        "en": "Mixture of Frames Policy: Teaching Robots to Plan Actions from Multiple Coordinate Perspectives at Once",
+        "zh-CN": "多坐标系混合策略：让双臂机器人同时用多种「视角」规划动作",
+        "ja": "フレーム混合ポリシー：双腕ロボットが複数の「視点」で同時に動作を計画する",
+        "ko": "프레임 혼합 정책：양팔 로봇이 여러 「시점」에서 동시에 동작을 계획하다"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボティクス",
+        "ko": "🤖 AI와 로보틱스"
+      },
+      "tech": {
+        "zh-TW": "本文提出「多座標系混合策略」（MoF），是一種基於擴散模型的視覺運動策略，能在多個座標系（如末端執行器座標、底座對齊座標）中同步進行動作去噪，並透過單一正則化動作表示融合各座標系的輸出，有效降低每個座標系中動作分佈的複雜度，特別適用於雙臂移動操作任務。",
+        "en": "This paper proposes Mixture of Frames Policy (MoF), a diffusion-based visuomotor policy that performs synchronized action denoising across multiple coordinate frames simultaneously—such as end-effector and base-aligned frames—then merges outputs via a single canonical action representation, reducing distributional complexity per frame for bimanual mobile manipulation.",
+        "zh-CN": "本文提出「多坐标系混合策略」（MoF），是一种基于扩散模型的视觉运动策略，能在多个坐标系（如末端执行器坐标、底座对齐坐标）中同步进行动作去噪，并通过单一正则化动作表示融合各坐标系的输出，有效降低每个坐标系中动作分布的复杂度，特别适用于双臂移动操作任务。",
+        "ja": "本論文は「フレーム混合ポリシー」（MoF）を提案する。これは拡散モデルベースの視覚運動ポリシーで、エンドエフェクタ座標系やベース整列座標系など複数の座標系で同期的にアクションのノイズ除去を行い、単一の正準アクション表現を通じて出力を統合することで、双腕モバイルマニピュレーションにおける各座標系の動作分布の複雑さを低減する。",
+        "ko": "이 논문은 「프레임 혼합 정책」(MoF)을 제안한다. 이는 확산 모델 기반의 시각운동 정책으로, 엔드이펙터 좌표계와 베이스 정렬 좌표계 등 여러 좌표계에서 동기화된 동작 노이즈 제거를 수행하고, 단일 정준 동작 표현을 통해 출력을 융합함으로써 양팔 이동 조작 작업에서 각 좌표계의 동작 분포 복잡도를 줄인다."
+      },
+      "plain": {
+        "zh-TW": "想像你請一個助理幫你搬東西：他需要同時考慮「手指怎麼抓」（用手的視角）和「整個身體往哪走」（用房間的視角）。現有的機器人AI通常只選一個視角來學動作，就好像只能用一隻眼睛看世界，有些動作在這個視角看起來特別難、特別複雜。MoF的做法就像給機器人裝上多副眼鏡，讓它同時用「手的視角」和「全身視角」分別思考，然後把兩邊的想法合而為一。每個視角只負責自己最擅長的部分，複雜的任務就變得容易多了。這對雙臂機器人特別重要，因為兩隻手需要協調，同時還要移動整個身體。這項研究讓機器人能更自然、更靈活地完成像「端著一杯水走去桌子放下」這樣的複雜任務，是讓機器人真正走入家庭的重要一步。",
+        "en": "Imagine asking an assistant to carry a glass of water across the room: they need to think about how their fingers grip the glass AND which direction their whole body walks—two very different perspectives. Current robot AI usually picks just one perspective to learn movements from, like trying to drive using only the rearview mirror. Some actions look unnecessarily complicated from the wrong viewpoint. MoF gives the robot multiple pairs of glasses at once—one for fine hand movements, one for whole-body navigation—letting each perspective handle what it does best, then combining the results. This is especially crucial for two-armed robots that must coordinate both hands while also moving around. The result is a robot that can more naturally handle complex real-world tasks, a key step toward robots that truly help in our homes.",
+        "zh-CN": "想象一下请助理帮你搬东西：他需要同时考虑「手指怎么抓」（用手的视角）和「整个身体往哪走」（用房间的视角）。现有的机器人AI通常只选一个视角来学动作，就像只用一只眼睛看世界，某些动作在这个视角下会显得特别复杂。MoF的做法像是给机器人配上多副眼镜，让它同时用「手的视角」和「全身视角」分别思考，再把两边的想法融合在一起。每个视角只负责自己最擅长的部分，复杂任务就变得容易多了。这对双臂机器人尤为重要，因为两只手需要协调，同时还要移动整个身体。这项研究让机器人能更自然、灵活地完成复杂任务，是迈向家用机器人的重要一步。",
+        "ja": "助手に荷物を運んでもらう場面を想像してください。彼は「指でどう掴むか」（手の視点）と「体全体をどう動かすか」（部屋の視点）を同時に考える必要があります。現在のロボットAIは通常1つの視点しか使えず、片目だけで世界を見るようなもので、動作が不必要に複雑になります。MoFはロボットに複数のメガネを与え、「手の視点」と「全身の視点」で同時に考え、それを1つにまとめます。各視点は得意な部分だけを担当するため、複雑なタスクが簡単になります。両腕を協調させながら体全体を動かす双腕ロボットにとって特に重要で、「水を持って歩く」ような複雑な作業をより自然にこなせるようになります。",
+        "ko": "조수에게 물건을 옮겨달라고 할 때를 생각해보세요. 그는 「손가락으로 어떻게 잡을지」(손의 시점)와 「몸 전체를 어디로 움직일지」(방의 시점)를 동시에 고려해야 합니다. 기존 로봇 AI는 보통 하나의 시점만 선택해 동작을 학습하는데, 한쪽 눈으로만 세상을 보는 것과 같아 어떤 동작은 불필요하게 복잡해집니다. MoF는 로봇에게 여러 안경을 동시에 씌워 「손의 시점」과 「전신 시점」으로 각각 생각하고, 그 결과를 하나로 합칩니다. 각 시점이 가장 잘하는 부분만 담당하므로 복잡한 과제가 쉬워집니다. 두 팔을 협조시키며 몸 전체를 이동해야 하는 양팔 로봇에 특히 중요하며, 가정용 로봇 실현에 한 걸음 더 다가선 연구입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的智慧不是堅持單一視角，而是知道何時該用哪個框架——機器人學習如此，人類決策亦然。",
+        "en": "💡 True intelligence isn't about committing to one perspective—it's knowing which frame of reference to use when, a lesson as relevant to human decision-making as to robot control.",
+        "zh-CN": "💡 真正的智慧不是坚持单一视角，而是知道何时该用哪个框架——机器人学习如此，人类决策亦然。",
+        "ja": "💡 真の知性とは一つの視点に固執することではなく、いつどの参照枠を使うべきかを知ること——ロボット制御にも人間の意思決定にも通じる教訓だ。",
+        "ko": "💡 진정한 지능은 하나의 시점에 고집하는 것이 아니라, 언제 어떤 기준 틀을 써야 하는지 아는 것——로봇 제어뿐 아니라 인간의 의사결정에도 통하는 교훈이다."
+      }
+    },
+    {
+      "id": "phys-260715",
+      "domain": "phys",
+      "day": "2026-07-15",
+      "author": "Abhijit Chakraborty, Bharath Sambasivam et al.",
+      "ref": "arXiv:2607.11882v1",
+      "url": "https://arxiv.org/abs/2607.11882v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><circle cx=\"60\" cy=\"80\" r=\"32\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\"/><circle cx=\"60\" cy=\"80\" r=\"20\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"60\" cy=\"80\" r=\"8\" fill=\"#4a7bbf\" opacity=\"0.7\"/><line x1=\"96\" y1=\"80\" x2=\"130\" y2=\"80\" stroke=\"#4a7bbf\" stroke-width=\"2\" marker-end=\"url(#a)\"/><rect x=\"130\" y=\"52\" width=\"80\" height=\"56\" rx=\"8\" fill=\"none\" stroke=\"#e07b3a\" stroke-width=\"2\"/><rect x=\"142\" y=\"64\" width=\"56\" height=\"14\" rx=\"4\" fill=\"#e07b3a\" opacity=\"0.25\"/><rect x=\"142\" y=\"83\" width=\"36\" height=\"14\" rx=\"4\" fill=\"#e07b3a\" opacity=\"0.5\"/><rect x=\"142\" y=\"102\" width=\"20\" height=\"8\" rx=\"3\" fill=\"#e07b3a\" opacity=\"0.75\"/><line x1=\"214\" y1=\"80\" x2=\"248\" y2=\"80\" stroke=\"#4a7bbf\" stroke-width=\"2\"/><polygon points=\"248,74 262,80 248,86\" fill=\"#4a7bbf\" opacity=\"0.8\"/><circle cx=\"290\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#4ab87a\" stroke-width=\"2.5\"/><circle cx=\"290\" cy=\"80\" r=\"10\" fill=\"#4ab87a\" opacity=\"0.6\"/><line x1=\"290\" y1=\"52\" x2=\"290\" y2=\"108\" stroke=\"#4ab87a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><line x1=\"262\" y1=\"80\" x2=\"318\" y2=\"80\" stroke=\"#4ab87a\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/></svg>",
+      "title": {
+        "zh-TW": "量子模擬大躍進：「影子哈密頓演算法」讓複雜系統動態計算更高效",
+        "en": "Quantum Simulation Leap: Shadow Hamiltonian Algorithm Makes Complex Dynamics Tractable",
+        "zh-CN": "量子模拟大跃进：「影子哈密顿算法」让复杂系统动态计算更高效",
+        "ja": "量子シミュレーションの飛躍：「シャドウハミルトニアン法」で複雑系の動力学を効率計算",
+        "ko": "양자 시뮬레이션 도약：「그림자 해밀토니안 알고리즘」으로 복잡계 동역학을 효율적으로 계산"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子演算法",
+        "en": "⚛️ Quantum Algorithms",
+        "zh-CN": "⚛️ 量子算法",
+        "ja": "⚛️ 量子アルゴリズム",
+        "ko": "⚛️ 양자 알고리즘"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一種基於「影子哈密頓模擬」的高效演算法，用於近似計算時間無關哈密頓量下可觀測量的實時演化動態。該方法在由對易子生成的算符代數層次上運作，並透過系統性篩選與目標可觀測量最相關的代數元素，突破了交互系統中算符代數指數增長所造成的計算瓶頸，實現高效近似模擬。",
+        "en": "This work proposes an efficient algorithm based on shadow Hamiltonian simulation to approximately compute real-time dynamics of observables under time-independent Hamiltonians. The method operates at the level of the operator algebra generated via commutators with the Hamiltonian, and overcomes the exponential-growth bottleneck in interacting systems by systematically selecting only the algebra elements most relevant to the target observable.",
+        "zh-CN": "本研究提出一种基于「影子哈密顿模拟」的高效算法，用于近似计算时间无关哈密顿量下可观测量的实时演化动态。该方法在由对易子生成的算符代数层次上运作，通过系统性筛选与目标可观测量最相关的代数元素，突破了相互作用系统中算符代数指数增长所造成的计算瓶颈。",
+        "ja": "本研究は、時間に依存しないハミルトニアンのもとで観測量のリアルタイム動力学を近似的に計算するシャドウハミルトニアンシミュレーションに基づく効率的なアルゴリズムを提案する。交換子によって生成される演算子代数の空間で動作し、目標観測量に最も関連する代数要素のみを系統的に選択することで、相互作用系における指数的増大の計算ボトルネックを克服する。",
+        "ko": "이 연구는 시간 독립 해밀토니안 하에서 관측량의 실시간 동역학을 근사적으로 계산하는 그림자 해밀토니안 시뮬레이션 기반의 효율적인 알고리즘을 제안한다. 교환자로 생성되는 연산자 대수 공간에서 동작하며, 목표 관측량과 가장 관련 높은 대수 원소만을 체계적으로 선별하여 상호작용 시스템에서 지수적으로 증가하는 계산 병목을 극복한다."
+      },
+      "plain": {
+        "zh-TW": "想像你要預測一鍋沸騰的湯裡每顆粒子的運動——粒子越多，需要追蹤的資訊就呈爆炸式增長，連最強的電腦也會不堪負荷。量子系統也有同樣的問題：要完整描述粒子間的交互作用，所需的數學「語言詞彙量」會隨粒子數目指數暴增。這篇論文的聰明之處，在於它不試圖記下所有詞彙，而是只挑「跟你最想知道的答案最相關的那些詞」來追蹤，就像考試只複習最可能考的重點，而非死背整本教科書。這種「影子哈密頓模擬」方法，讓科學家能在普通或量子電腦上高效地預測量子系統隨時間的演化。這對量子化學、材料設計乃至藥物開發都意義深遠——因為未來我們就能用電腦精確模擬分子反應，而不需要真的做昂貴的實驗。",
+        "en": "Imagine trying to predict the motion of every single particle in a boiling pot of soup—the more particles there are, the information you need explodes exponentially, overwhelming even the most powerful computers. Quantum systems face exactly this problem: the mathematical 'vocabulary' needed to fully describe interacting particles grows at an explosive rate. The clever trick in this paper is to stop trying to memorize every word in that vocabulary, and instead only track the words most relevant to the specific question you want answered—like studying only the most likely exam topics instead of memorizing an entire textbook. This 'shadow Hamiltonian simulation' lets scientists efficiently predict how quantum systems evolve over time on classical or quantum computers. This matters enormously for quantum chemistry, materials design, and drug discovery, because it brings us closer to accurately simulating molecular reactions without costly experiments.",
+        "zh-CN": "想象你要预测一锅沸腾的汤里每颗粒子的运动——粒子越多，需要追踪的信息就呈爆炸式增长，连最强的电脑也会不堪负荷。量子系统也有同样的问题：完整描述粒子间相互作用所需的数学「词汇量」会随粒子数目指数暴增。这篇论文的聪明之处在于，它不试图记下所有词汇，而是只挑「跟你最想知道的答案最相关的那些词」来追踪，就像考试只复习最可能考的重点，而非死背整本教科书。这种「影子哈密顿模拟」方法，让科学家能在普通或量子计算机上高效预测量子系统随时间的演化，对量子化学、材料设计乃至药物开发都意义深远。",
+        "ja": "沸騰する鍋の中の全粒子の動きを予測しようとする場面を想像してほしい。粒子が増えるほど追跡すべき情報は爆発的に膨らみ、どんな強力なコンピュータでも手に負えなくなる。量子システムも同じ問題を抱えており、粒子間の相互作用を完全に記述するための数学的「語彙」は粒子数とともに指数的に増大する。この論文の賢いアイデアは、すべての語彙を覚えようとするのをやめ、「知りたい答えに最も関連する語だけ」を追跡することだ。試験前に教科書全体を丸暗記するのではなく、最も出そうな重要ポイントだけを復習するようなものだ。この「シャドウハミルトニアンシミュレーション」により、量子化学・材料設計・創薬など多くの分野で、実験なしに分子反応を精密にシミュレートできる未来に近づく。",
+        "ko": "끓는 냄비 속 모든 입자의 움직임을 예측하려 한다고 상상해보자. 입자가 많아질수록 추적해야 할 정보가 폭발적으로 늘어나 아무리 강력한 컴퓨터도 감당하기 어렵다. 양자 시스템도 마찬가지로, 입자들의 상호작용을 완전히 기술하는 데 필요한 수학적 '어휘'가 입자 수에 따라 지수적으로 불어난다. 이 논문의 핵심 아이디어는 모든 어휘를 외우려 하지 않고, '내가 알고 싶은 답과 가장 관련 있는 단어'만 추적하는 것이다. 마치 시험 전에 교과서 전체를 암기하는 대신 자주 나오는 핵심만 복습하는 것과 같다. 이 '그림자 해밀토니안 시뮬레이션'은 양자 화학, 소재 설계, 신약 개발 등 다양한 분야에서 비싼 실험 없이 분자 반응을 정밀하게 시뮬레이션하는 미래를 앞당긴다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的效率不在於「算更快」，而在於「只算值得算的」——這個道理在量子物理和人生策略中同樣成立。",
+        "en": "💡 True efficiency isn't about computing faster—it's about computing only what truly matters, a principle as valid in quantum physics as in everyday strategy.",
+        "zh-CN": "💡 真正的效率不在于「算得更快」，而在于「只算值得算的」——这个道理在量子物理和人生策略中同样成立。",
+        "ja": "💡 本当の効率とは「速く計算すること」ではなく「本当に必要なことだけを計算すること」であり、これは量子物理でも日常の戦略でも同様に通用する真理だ。",
+        "ko": "💡 진정한 효율이란 '더 빠르게 계산하는 것'이 아니라 '꼭 필요한 것만 계산하는 것'이며, 이 원칙은 양자 물리학에서도 일상의 전략에서도 똑같이 통한다."
+      }
+    },
+    {
+      "id": "tech-260715",
+      "domain": "tech",
+      "day": "2026-07-15",
+      "author": "Chamindu Liyanage, Chirantha Kurukulasuriya et al.",
+      "ref": "arXiv:2607.11868v1",
+      "url": "https://arxiv.org/abs/2607.11868v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><rect x=\"10\" y=\"70\" width=\"80\" height=\"50\" rx=\"6\" fill=\"#00695c\" opacity=\"0.85\"/><rect x=\"20\" y=\"80\" width=\"60\" height=\"8\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.6\"/><rect x=\"20\" y=\"96\" width=\"60\" height=\"8\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.6\"/><rect x=\"20\" y=\"112\" width=\"40\" height=\"8\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.4\"/><circle cx=\"200\" cy=\"55\" r=\"18\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"3\"/><line x1=\"185\" y1=\"48\" x2=\"175\" y2=\"38\" stroke=\"#00695c\" stroke-width=\"2.5\"/><line x1=\"215\" y1=\"48\" x2=\"225\" y2=\"38\" stroke=\"#00695c\" stroke-width=\"2.5\"/><line x1=\"185\" y1=\"62\" x2=\"175\" y2=\"72\" stroke=\"#00695c\" stroke-width=\"2.5\"/><line x1=\"215\" y1=\"62\" x2=\"225\" y2=\"72\" stroke=\"#00695c\" stroke-width=\"2.5\"/><circle cx=\"200\" cy=\"55\" r=\"6\" fill=\"#00695c\"/><ellipse cx=\"130\" cy=\"100\" rx=\"28\" ry=\"10\" fill=\"none\" stroke=\"#e65100\" stroke-width=\"2\" opacity=\"0.7\"/><ellipse cx=\"130\" cy=\"100\" rx=\"42\" ry=\"16\" fill=\"none\" stroke=\"#e65100\" stroke-width=\"1.5\" opacity=\"0.5\"/><ellipse cx=\"130\" cy=\"100\" rx=\"56\" ry=\"22\" fill=\"none\" stroke=\"#e65100\" stroke-width=\"1\" opacity=\"0.3\"/><rect x=\"240\" y=\"40\" width=\"80\" height=\"90\" rx=\"8\" fill=\"#00695c\" opacity=\"0.12\" stroke=\"#00695c\" stroke-width=\"1.5\"/><rect x=\"252\" y=\"55\" width=\"56\" height=\"6\" rx=\"2\" fill=\"#00695c\" opacity=\"0.5\"/><rect x=\"252\" y=\"68\" width=\"40\" height=\"6\" rx=\"2\" fill=\"#00695c\" opacity=\"0.7\"/><rect x=\"252\" y=\"81\" width=\"48\" height=\"6\" rx=\"2\" fill=\"#e65100\" opacity=\"0.6\"/><rect x=\"252\" y=\"94\" width=\"32\" height=\"6\" rx=\"2\" fill=\"#00695c\" opacity=\"0.5\"/><rect x=\"252\" y=\"107\" width=\"44\" height=\"6\" rx=\"2\" fill=\"#00695c\" opacity=\"0.3\"/></svg>",
+      "title": {
+        "zh-TW": "看不見也抓得到！多天線雷達在城市中偵測微型無人機",
+        "en": "Hidden but Caught: Multi-Antenna Radar Detects Tiny Drones in Urban Canyons",
+        "zh-CN": "看不见也抓得到！多天线雷达在城市中侦测微型无人机",
+        "ja": "見えなくても捕捉できる！多アンテナレーダーで都市の小型ドローンを検知",
+        "ko": "보이지 않아도 잡힌다! 다중 안테나 레이더로 도심 속 소형 드론 탐지"
+      },
+      "tag": {
+        "zh-TW": "📶 科技工程",
+        "en": "📶 Tech & Engineering",
+        "zh-CN": "📶 科技工程",
+        "ja": "📶 テクノロジー・工学",
+        "ko": "📶 기술 및 공학"
+      },
+      "tech": {
+        "zh-TW": "本研究以 2.47 GHz 連續波 MIMO 雷達為核心，利用小型無人飛行系統（sUAS）旋翼葉片產生的「微都卜勒頻率特徵」作為訊號來源，並以深度學習模型對非視線傳播（NLOS）環境下的回波進行分類，實現在密集都市及室內環境中的無人機偵測。頻譜相關密度（SCD）被用作特徵輸入，使模型得以區分無人機與背景雜波。",
+        "en": "This study employs a 2.47 GHz continuous-wave MIMO radar system coupled with a deep learning classifier to detect small unmanned aerial systems (sUAS) in non-line-of-sight (NLOS) urban and indoor environments. Spectral correlation densities (SCDs) derived from rotor blade micro-Doppler signatures serve as input features, enabling discrimination between drone echoes and multipath clutter.",
+        "zh-CN": "本研究以 2.47 GHz 连续波 MIMO 雷达为核心，利用小型无人飞行系统（sUAS）旋翼叶片产生的「微多普勒频率特征」作为信号来源，并以深度学习模型对非视线传播（NLOS）环境下的回波进行分类，实现在密集都市及室内环境中的无人机探测。频谱相关密度（SCD）被用作特征输入，使模型得以区分无人机与背景杂波。",
+        "ja": "本研究では 2.47 GHz の連続波 MIMO レーダーを用い、小型無人航空システム（sUAS）のロータブレードが生成する「マイクロドップラー署名」を利用して、非見通し伝搬（NLOS）環境でのドローン検知を実現した。スペクトル相関密度（SCD）を特徴量として深層学習モデルに入力し、密集した都市・屋内環境でのクラッタとの識別を可能にしている。",
+        "ko": "본 연구는 2.47 GHz 연속파 MIMO 레이더를 활용해 소형 무인항공시스템(sUAS)의 로터 블레이드가 생성하는 마이크로 도플러 특징을 추출하고, 비가시선(NLOS) 환경에서 딥러닝 모델로 드론을 탐지한다. 스펙트럼 상관 밀도(SCD)를 입력 특징으로 사용해 도심·실내의 다중경로 클러터와 드론 신호를 구별한다."
+      },
+      "plain": {
+        "zh-TW": "想像你站在一棟大樓後面，完全看不到對面的街道，卻想知道那裡是否有小型無人機在飛——這正是現代安防面臨的難題。無人機的螺旋槳高速旋轉時，會讓無線電波產生一種獨特的「顫動」，就像救護車經過時音調改變的都卜勒效應，只是版本更微弱、更複雜，稱為「微都卜勒」。研究團隊在牆壁另一側架設多根天線，接收穿牆反彈回來的訊號，再用 AI 從這些「二手訊號」中辨認出旋翼的顫動特徵。即使訊號被建築物遮擋、反射得面目全非，深度學習模型仍能準確辨識出「這是無人機」。這項技術對機場、政府建築、演唱會場館等重要地點的安全防護意義重大，因為威脅往往在你看到它之前就已出現。",
+        "en": "Imagine standing behind a building, completely blind to the street beyond, yet needing to know if a rogue drone is lurking there—this is a real security headache today. When a drone's propellers spin at high speed, they create a subtle shimmer in radio waves called the micro-Doppler effect, like a tiny version of the pitch-shift you hear as an ambulance races past. Researchers placed multiple antennas on one side of obstacles, captured radio signals that bounced off walls and objects, and fed them into an AI trained to recognize that rotor shimmer even in the noise. Despite signals being scrambled by reflections and obstructions, the deep learning model could still confidently say 「that's a drone.」 This matters enormously for airports, stadiums, and government buildings, where a threat may be invisible yet imminent.",
+        "zh-CN": "想象你站在一栋大楼后面，完全看不到对面的街道，却想知道那里是否有小型无人机在飞——这正是现代安防面临的难题。无人机的螺旋桨高速旋转时，会让无线电波产生一种独特的「颤动」，就像救护车经过时音调改变的多普勒效应，只是版本更微弱、更复杂，称为「微多普勒」。研究团队在墙壁另一侧架设多根天线，接收穿墙反弹回来的信号，再用 AI 从这些「二手信号」中辨认出旋翼的颤动特征。即使信号被建筑物遮挡、反射得面目全非，深度学习模型仍能准确识别出「这是无人机」。这项技术对机场、政府建筑、演唱会场馆等重要地点的安全防护意义重大。",
+        "ja": "建物の裏側に立ち、向こうの路地が全く見えない状態で「あそこに不審なドローンはいるか」を知りたい——これが現代の安全保障が直面するリアルな難問です。ドローンのローターが高速回転すると、無線電波に微かな「揺らぎ」が生じます。救急車が通り過ぎるときの音の変化（ドップラー効果）の、ずっと繊細なバージョン、それが「マイクロドップラー」です。研究チームは障害物の反対側に複数のアンテナを設置し、壁で跳ね返った信号をAIに学習させることで、雑音だらけの「間接信号」からでもローターの揺らぎを識別することに成功しました。空港・競技場・政府施設など、脅威が目に見えないまま迫る場所での安全確保に大きく貢献する技術です。",
+        "ko": "건물 뒤에 서서 맞은편 골목을 전혀 볼 수 없는 상태에서 「저기 드론이 있을까?」를 알아야 하는 상황, 이것이 현대 보안의 진짜 난제입니다. 드론의 프로펠러가 고속 회전하면 전파에 미세한 떨림이 생깁니다. 마치 구급차가 지나갈 때 소리 높낮이가 바뀌는 도플러 효과의 아주 작은 버전, 즉 마이크로 도플러입니다. 연구팀은 장애물 반대편에 여러 안테나를 설치해 벽에 반사된 신호를 수집하고, AI로 그 떨림 패턴을 학습시켜 잡음 속에서도 드론을 식별하게 했습니다. 공항·경기장·정부 시설처럼 위협이 눈에 보이기 전에 이미 도착해 있을 수 있는 장소의 보안에 매우 중요한 기술입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 眼睛看不到的地方，旋翼的「呼吸聲」仍會洩漏無人機的存在——物理特徵無所遁形。",
+        "en": "💡 Even when hidden behind walls, a drone's spinning rotors leave a physical fingerprint in radio waves that no stealth paint can erase.",
+        "zh-CN": "💡 眼睛看不到的地方，旋翼的「呼吸声」仍会泄露无人机的存在——物理特征无处遁形。",
+        "ja": "💡 壁の向こうに隠れていても、ローターが刻む「電波の息遣い」は消せない——物理的な痕跡は欺けない。",
+        "ko": "💡 벽 뒤에 숨어도 프로펠러가 전파에 남기는 물리적 흔적은 지울 수 없다——자연의 법칙은 스텔스를 허락하지 않는다."
+      }
+    }
+  ]
+}
