@@ -1,0 +1,233 @@
+{
+  "date": "2026-07-16",
+  "mode": "paper",
+  "paper_date": "2026-07-16",
+  "generated_at": "2026-07-16",
+  "cards": [
+    {
+      "id": "ai-260716",
+      "domain": "ai",
+      "day": "2026-07-16",
+      "author": "Junjie Yin, Xinyu Feng et al.",
+      "ref": "arXiv:2607.13034v1",
+      "url": "https://arxiv.org/abs/2607.13034v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><rect x=\"20\" y=\"60\" width=\"60\" height=\"40\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.9\"/><rect x=\"22\" y=\"62\" width=\"56\" height=\"36\" rx=\"6\" fill=\"#e9f5f4\"/><rect x=\"30\" y=\"70\" width=\"40\" height=\"5\" rx=\"2\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"30\" y=\"80\" width=\"25\" height=\"5\" rx=\"2\" fill=\"#2a9d8f\" opacity=\"0.3\"/><polygon points=\"100,80 120,65 120,95\" fill=\"#2a9d8f\" opacity=\"0.7\"/><circle cx=\"160\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"3\" stroke-dasharray=\"8 4\"/><circle cx=\"160\" cy=\"80\" r=\"16\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"3\"/><circle cx=\"160\" cy=\"80\" r=\"6\" fill=\"#2a9d8f\"/><line x1=\"196\" y1=\"80\" x2=\"216\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2.5\" marker-end=\"url(#arr)\"/><rect x=\"220\" y=\"62\" width=\"50\" height=\"36\" rx=\"8\" fill=\"#2a9d8f\" opacity=\"0.85\"/><rect x=\"228\" y=\"70\" width=\"34\" height=\"5\" rx=\"2\" fill=\"white\" opacity=\"0.8\"/><rect x=\"228\" y=\"80\" width=\"20\" height=\"5\" rx=\"2\" fill=\"white\" opacity=\"0.5\"/><line x1=\"278\" y1=\"80\" x2=\"298\" y2=\"80\" stroke=\"#e9c46a\" stroke-width=\"2.5\"/><circle cx=\"310\" cy=\"80\" r=\"12\" fill=\"#e9c46a\" opacity=\"0.9\"/><line x1=\"305\" y1=\"80\" x2=\"315\" y2=\"80\" stroke=\"white\" stroke-width=\"2.5\"/><line x1=\"310\" y1=\"75\" x2=\"310\" y2=\"85\" stroke=\"white\" stroke-width=\"2.5\"/></svg>",
+      "title": {
+        "zh-TW": "AI 代理人會判斷任務難易嗎？讓 AI 學會「量力而為」",
+        "en": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning",
+        "zh-CN": "AI智能体会判断任务难易吗？让AI学会「量力而行」",
+        "ja": "AIエージェントはタスクの難易度を判断できるか？「力量を知る」AIへ",
+        "ko": "AI 에이전트는 작업 난이도를 알까? 복잡도 인식 추론을 향해"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與機器人",
+        "en": "🤖 AI & Robotics",
+        "zh-CN": "🤖 AI与机器人",
+        "ja": "🤖 AIとロボット",
+        "ko": "🤖 AI와 로봇"
+      },
+      "tech": {
+        "zh-TW": "本論文指出，現有 LLM 代理人普遍採用「最大脈絡優先」策略，不管任務複雜度如何都反覆讀取所有檔案與依賴，造成大量認知冗餘。研究者提出「任務感知執行範疇估算」框架，定義「最小充分執行」概念，並量化「代理認知冗餘」指標，讓代理在行動前先評估任務真正需要的資訊量與最短可靠路徑。",
+        "en": "This paper identifies that current LLM agents systematically over-read context regardless of task complexity, a behavior termed Agent Cognitive Redundancy. The authors propose task-aware execution-scope estimation: before acting, an agent judges difficulty, identifies the minimum sufficient information set, and plans the shortest reliable execution path, formalizing these ideas into measurable metrics.",
+        "zh-CN": "本论文指出，现有LLM智能体普遍采用「最大上下文优先」策略，无论任务复杂度如何都反复读取所有文件，造成大量认知冗余。研究者提出「任务感知执行范围估算」框架，定义「最小充分执行」概念并量化「智能体认知冗余」指标，让智能体在行动前先评估任务真正需要的信息量与最短可靠路径。",
+        "ja": "本論文は、現在のLLMエージェントがタスクの複雑さに関わらず「最大コンテキスト優先」戦略を用いて不必要に多くのファイルを再読み込みする問題を指摘する。著者らは「タスク認識実行スコープ推定」フレームワークを提案し、「最小十分実行」の概念と「エージェント認知冗長性」指標を定式化する。",
+        "ko": "이 논문은 현재 LLM 에이전트들이 작업 복잡도와 무관하게 「최대 컨텍스트 우선」전략으로 모든 파일을 반복 읽는 인지 중복 문제를 지적한다. 연구팀은 「작업 인식 실행 범위 추정」프레임워크를 제안하며, 최소 충분 실행 개념과 에이전트 인지 중복 지표를 수식화한다."
+      },
+      "plain": {
+        "zh-TW": "想像你請一位助理幫你改一個字——他卻把整本書重新讀了一遍才動筆，這就是目前 AI 代理人的通病。不管任務有多簡單，這些 AI 都習慣「先把所有資料都看一遍再說」，就像每次外出只是買包鹽，卻非要先翻遍整個冰箱清點庫存。這種行為浪費大量運算資源，也讓執行速度變慢。這篇論文的研究者想讓 AI 學會「看菜下飯」——在動手前先評估任務真正的難度，找出最少需要哪些資訊，再走最短的路徑完成任務。這就像一位有經驗的廚師，一眼就知道煎個蛋不需要翻出整本食譜。這項能力對未來 AI 自動化工程工作至關重要，能大幅降低成本、提升效率，讓 AI 代理人更像聰明的人類協作者，而非不知輕重的機器。",
+        "en": "Imagine asking an assistant to fix a single typo, and they respond by re-reading your entire codebase before touching anything—that is exactly what today's AI agents do. No matter how tiny the task, they habitually gather every piece of context first, like checking the whole fridge inventory just to buy a bag of salt. This wastes enormous computing resources and slows everything down. This paper teaches AI agents to 「size up the job first」: estimate how hard a task really is, figure out the bare minimum information needed, and take the shortest reliable path to finish it. Think of an experienced chef who instantly knows scrambled eggs don't require cracking open a culinary encyclopedia. This capability is crucial for future AI automation—it slashes costs, speeds up execution, and makes AI agents feel less like oblivious machines and more like smart, experienced collaborators.",
+        "zh-CN": "想象一下，你请助理帮你改一个字，他却把整本书重新读了一遍才动笔——这正是当前AI智能体的通病。不管任务多简单，这些AI都习惯「先把所有资料都看一遍再说」，就像每次只是买包盐，却非要先把冰箱里的东西全部盘点一遍。这种行为浪费大量算力，也让执行速度变慢。这篇论文的研究者想让AI学会「看菜下饭」——在动手前先评估任务真正的难度，找出最少需要哪些信息，再走最短的路径完成任务。这就像一位有经验的厨师，一眼就知道煎个蛋不需要翻出整本食谱。这项能力对未来AI自动化工程工作至关重要，能大幅降低成本、提升效率。",
+        "ja": "「一文字直して」と頼んだアシスタントが、コードベース全体を読み直してから作業を始めたらどう感じるだろうか？それが今のAIエージェントの日常だ。タスクがどんなに簡単でも、まず全ての情報をかき集める習慣がある。塩を一袋買うだけなのに冷蔵庫の中身を全部確認するようなものだ。この論文はAIエージェントに「仕事の重さを先に見極める」能力を与えることを目指す。タスクの難易度を評価し、本当に必要な最小限の情報だけを使い、最短ルートでゴールへ向かう。熟練シェフが「目玉焼きにレシピ本は要らない」と即座に判断するような感覚だ。この能力はAI自動化の効率とコストを劇的に改善する。",
+        "ko": "「오타 하나만 고쳐줘」라고 부탁했더니 코드베이스 전체를 다시 읽고 나서야 손을 대는 AI—이게 지금 AI 에이전트들의 현실이다. 아무리 간단한 작업이라도 먼저 모든 정보를 긁어모으는 습관이 있어서, 소금 한 봉지 사러 나가기 전에 냉장고 전체 재고를 파악하는 것과 같다. 이 논문은 AI가 「일의 무게를 먼저 가늠하는」능력을 갖추도록 한다. 작업 난이도를 평가하고, 정말 필요한 최소한의 정보만 파악한 뒤, 가장 짧은 경로로 완료하는 것이다. 숙련된 요리사가 계란 프라이에 요리책이 필요 없다는 걸 즉시 아는 것처럼, AI도 그런 판단력을 가져야 한다. 이 능력은 AI 자동화의 비용과 효율을 크게 개선할 수 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的智慧不只在於「能做什麼」，更在於知道「做多少剛剛好」——AI 也需要學會節制。",
+        "en": "💡 True intelligence is not just about what you can do, but knowing exactly how much effort a task deserves—AI must learn the wisdom of restraint.",
+        "zh-CN": "💡 真正的智慧不只在于「能做什么」，更在于知道「做多少刚刚好」——AI也需要学会节制。",
+        "ja": "💡 本当の知性とは「何ができるか」だけでなく「どれだけやれば十分か」を知ること——AIにも自制の知恵が必要だ。",
+        "ko": "💡 진정한 지능은 「무엇을 할 수 있는가」뿐 아니라 「얼마나 하면 충분한가」를 아는 것—AI도 절제의 지혜를 배워야 한다."
+      }
+    },
+    {
+      "id": "phys-260716",
+      "domain": "phys",
+      "day": "2026-07-16",
+      "author": "Askar Iliasov, Zoltán Guba et al.",
+      "ref": "arXiv:2607.13016v1",
+      "url": "https://arxiv.org/abs/2607.13016v1",
+      "color": "#4a7bbf",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/><circle cx=\"170\" cy=\"80\" r=\"54\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" stroke-dasharray=\"5,3\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"none\" stroke=\"#e07b39\" stroke-width=\"1.5\" stroke-dasharray=\"3,2\"/><circle cx=\"170\" cy=\"26\" r=\"6\" fill=\"#4a7bbf\"/><circle cx=\"170\" cy=\"134\" r=\"6\" fill=\"#4a7bbf\"/><circle cx=\"116\" cy=\"80\" r=\"6\" fill=\"#4a7bbf\"/><circle cx=\"224\" cy=\"80\" r=\"6\" fill=\"#4a7bbf\"/><circle cx=\"124\" cy=\"34\" r=\"5\" fill=\"#e07b39\"/><circle cx=\"216\" cy=\"34\" r=\"5\" fill=\"#e07b39\"/><circle cx=\"124\" cy=\"126\" r=\"5\" fill=\"#e07b39\"/><circle cx=\"216\" cy=\"126\" r=\"5\" fill=\"#e07b39\"/><circle cx=\"170\" cy=\"80\" r=\"7\" fill=\"#f5c518\"/></svg>",
+      "title": {
+        "zh-TW": "能帶「多重縮併點」的拓樸密碼：對稱性如何決定量子材料的奇異節點",
+        "en": "Topological Codes of Multifold Band Nodes: How Symmetry Governs Exotic Quantum Degeneracies",
+        "zh-CN": "能带「多重简并点」的拓扑密码：对称性如何决定量子材料的奇异节点",
+        "ja": "エネルギー帯「多重縮退点」のトポロジー暗号：対称性が量子材料の奇妙な節点を決める仕組み",
+        "ko": "에너지 밴드 「다중 겹침점」의 위상 암호: 대칭성이 양자 물질의 특이 마디를 결정하는 방법"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 凝態物理",
+        "en": "⚛️ Condensed Matter Physics",
+        "zh-CN": "⚛️ 凝态物理",
+        "ja": "⚛️ 凝縮系物理",
+        "ko": "⚛️ 응집물질 물리"
+      },
+      "tech": {
+        "zh-TW": "本研究在 Altland-Zirnbauer（AZ）十大對稱類框架下，系統性地描述動量空間中 n 重能帶簡并點的拓樸不變量。研究發現，這類多重簡并點在動量空間的「存在維度」（餘維數）隨 n 呈二次方成長，並利用包圍球面上的拓樸不變量完整分類其穩定性，毋需借助晶體對稱性。",
+        "en": "This work systematically characterizes topological invariants of n-fold band degeneracies within the ten Altland-Zirnbauer (AZ) symmetry classes, using enclosing-sphere invariants defined purely by AZ symmetries in momentum space. The key result is that the codimension of such multifold nodes grows quadratically with n, classifying their stability without relying on crystalline symmetry.",
+        "zh-CN": "本研究在 Altland-Zirnbauer（AZ）十大对称类框架下，系统性地描述动量空间中 n 重能带简并点的拓扑不变量。研究发现，这类多重简并点在动量空间的「存在维度」（余维数）随 n 呈二次方增长，并利用包围球面上的拓扑不变量完整分类其稳定性，无需借助晶体对称性。",
+        "ja": "本研究は、Altland-Zirnbauer（AZ）の10対称類の枠組みで、運動量空間において純粋にAZ対称性のみに由来するn重エネルギー帯縮退点のトポロジー不変量を系統的に特徴付ける。多重縮退点の余次元がnに対して二次的に増大することを示し、結晶対称性に頼らずその安定性を完全に分類した。",
+        "ko": "이 연구는 Altland-Zirnbauer(AZ) 10대 대칭류 틀 안에서, 운동량 공간의 AZ 대칭성만으로 안정화되는 n중 에너지 밴드 겹침점의 위상 불변량을 체계적으로 특성화한다. 다중 겹침점의 여차원이 n에 대해 이차적으로 증가함을 밝혀, 결정 대칭성 없이도 안정성을 완전히 분류했다."
+      },
+      "plain": {
+        "zh-TW": "想像量子材料裡的電子是在一張複雜的「能量地圖」上移動，地圖上偶爾出現幾條等高線交會的「奇異節點」，就像山脈上多條登山路匯聚的制高點。這些節點越多路線交會（n 重簡并），就越罕見，就像三條路交會比兩條更難找到。這篇論文的核心發現是：交會路線數每增加一倍，要在高維動量空間找到這個點需要「更多維度的巧合」，其難度以 n 的平方快速上升。更重要的是，研究者不靠晶體的規則排列作弊，只用最基本的量子對稱規則就能預測這些節點何時能穩定存在。這讓我們明白，即使在結構不規則的材料裡，多重簡并節點也可能藏著獨特的量子效應。這對尋找新型拓樸量子材料、以及設計耐雜訊量子元件都有深遠意義。",
+        "en": "Imagine electrons in a quantum material traveling across a complex energy landscape, occasionally meeting at special crossing points where multiple energy paths converge — like mountain trails meeting at a single peak. The more trails that meet (n-fold degeneracy), the rarer the peak. This paper's key discovery is that each additional crossing path demands a quadratically higher number of coincidences in the high-dimensional momentum space, making multifold nodes exponentially harder to find. Crucially, the authors prove this purely using fundamental quantum symmetry rules, without needing the regular crystal lattice as a scaffold. This means even structurally disordered materials might host exotic multifold nodes with unique quantum properties. The findings open new routes to discovering topological quantum materials and designing noise-resilient quantum devices.",
+        "zh-CN": "想象量子材料里的电子在一张复杂的「能量地图」上移动，地图上偶尔出现几条等高线汇聚的「奇异节点」，就像山脉上多条登山路汇聚的制高点。交汇路线越多（n 重简并），这个点就越稀有，就像三条路交汇比两条更难找到。这篇论文的核心发现是：交汇路线数每增加，在高维动量空间找到这个点需要的「维度巧合」以 n 的平方快速上升。更重要的是，研究者不靠晶体的规则排列，只用最基本的量子对称规则就能预测这些节点何时能稳定存在。这让我们明白，即使结构不规则的材料里也可能藏着独特的量子效应，对寻找新型拓扑量子材料和设计耐噪声量子器件意义深远。",
+        "ja": "量子材料の中の電子が複雑な「エネルギー地図」を移動し、ときどき複数のエネルギー経路が一点に交わる「奇妙な節点」に出会うと想像してください。まるで山道が一つの頂上に集まるようなものです。集まる道の数（n重縮退）が増えるほど、その節点はより希少になります。この論文の核心的発見は、交わる経路が増えるごとに、高次元の運動量空間でその点を見つけるために必要な「偶然の一致」がnの二乗で急増するということです。さらに重要なのは、結晶の規則的な配列に頼らず、最も基本的な量子対称性の規則だけでこれを予測できる点です。これは新しいトポロジカル量子材料の探索や耐雑音量子デバイスの設計に大きな意義をもちます。",
+        "ko": "양자 물질 속 전자가 복잡한 「에너지 지도」 위를 이동하다가, 여러 에너지 경로가 한 점에서 만나는 「특이 마디」를 만난다고 상상해 보세요. 마치 여러 등산로가 하나의 정상에서 합쳐지는 것처럼요. 만나는 경로가 많을수록(n중 겹침) 그 점은 더 희귀해집니다. 이 논문의 핵심 발견은, 경로 수가 늘어날수록 고차원 운동량 공간에서 그 점을 찾기 위해 필요한 「우연의 일치」가 n의 제곱으로 급격히 증가한다는 것입니다. 더 중요한 점은, 결정의 규칙적 배열 없이 가장 기본적인 양자 대칭성 규칙만으로 이를 예측할 수 있다는 것입니다. 이는 새로운 위상 양자 물질 탐색과 잡음에 강한 양자 소자 설계에 깊은 의미를 가집니다."
+      },
+      "insight": {
+        "zh-TW": "💡 對稱性是宇宙最深的語法——光靠量子對稱規則，就能預測材料中最罕見節點的命運，晶體結構反而只是可選的腳手架。",
+        "en": "💡 Symmetry is the universe's deepest grammar — quantum symmetry rules alone can predict the fate of the rarest nodes in a material, making crystal structure merely optional scaffolding.",
+        "zh-CN": "💡 对称性是宇宙最深的语法——光靠量子对称规则，就能预测材料中最罕见节点的命运，晶体结构反而只是可选的脚手架。",
+        "ja": "💡 対称性は宇宙最深の文法——量子対称性の規則だけで材料中の最も希少な節点の運命を予測でき、結晶構造はあくまで選択可能な足場に過ぎない。",
+        "ko": "💡 대칭성은 우주에서 가장 깊은 문법이다 — 양자 대칭성 규칙만으로 물질 속 가장 희귀한 마디의 운명을 예측할 수 있으며, 결정 구조는 선택적 발판에 불과하다."
+      }
+    },
+    {
+      "id": "neuro-260716",
+      "domain": "neuro",
+      "day": "2026-07-16",
+      "author": "Jacob J. Morra, Kaitlyn E. Fouke et al.",
+      "ref": "arXiv:2607.12930v1",
+      "url": "https://arxiv.org/abs/2607.12930v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"60\" cy=\"80\" r=\"22\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"60\" cy=\"80\" r=\"14\" fill=\"#ce93d8\" opacity=\"0.7\"/><circle cx=\"150\" cy=\"50\" r=\"16\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"150\" cy=\"50\" r=\"9\" fill=\"#ce93d8\" opacity=\"0.6\"/><circle cx=\"150\" cy=\"110\" r=\"16\" fill=\"#6a1b9a\" opacity=\"0.7\"/><circle cx=\"150\" cy=\"110\" r=\"9\" fill=\"#ce93d8\" opacity=\"0.6\"/><circle cx=\"260\" cy=\"80\" r=\"20\" fill=\"#4a148c\" opacity=\"0.9\"/><line x1=\"82\" y1=\"72\" x2=\"134\" y2=\"54\" stroke=\"#ce93d8\" stroke-width=\"2.2\" opacity=\"0.8\"/><line x1=\"82\" y1=\"88\" x2=\"134\" y2=\"106\" stroke=\"#ce93d8\" stroke-width=\"2.2\" opacity=\"0.8\"/><line x1=\"166\" y1=\"54\" x2=\"240\" y2=\"74\" stroke=\"#f3e5f5\" stroke-width=\"2\" stroke-dasharray=\"5,3\" opacity=\"0.7\"/><line x1=\"166\" y1=\"106\" x2=\"240\" y2=\"86\" stroke=\"#f3e5f5\" stroke-width=\"2\" stroke-dasharray=\"5,3\" opacity=\"0.7\"/><polygon points=\"290,65 310,80 290,95 300,80\" fill=\"#ce93d8\" opacity=\"0.85\"/></svg>",
+      "title": {
+        "zh-TW": "聰明選神經刺激：用貝氏演算法高效繪製腦迴路地圖",
+        "en": "Smart Neuron Stimulation: Bayesian Optimization for Efficient Brain Circuit Mapping",
+        "zh-CN": "智能选择神经刺激：用贝叶斯算法高效绘制脑回路图",
+        "ja": "賢い神経刺激の選択：ベイズ最適化で脳回路マップを効率的に描く",
+        "ko": "스마트 뉴런 자극 선택: 베이즈 최적화로 뇌 회로 지도를 효율적으로 그리다"
+      },
+      "tag": {
+        "zh-TW": "🧠 神經科學",
+        "en": "🧠 Neuroscience",
+        "zh-CN": "🧠 神经科学",
+        "ja": "🧠 神経科学",
+        "ko": "🧠 신경과학"
+      },
+      "tech": {
+        "zh-TW": "OPhELIA 是一套貝氏框架，結合 Beta-Bernoulli 連結推斷與基於不確定性的採集函數，在有限實驗次數內自動挑選最具資訊量的神經光刺激組合。系統整合全光學雙光子全像光遺傳技術，邊刺激邊即時更新腦迴路連結機率，大幅減少需要窮舉測試的刺激次數。",
+        "en": "OPhELIA is a Bayesian framework combining Beta-Bernoulli connectivity inference with an ambiguity-based acquisition heuristic to select maximally informative photostimulation sets under limited trial budgets. Integrated with all-optical two-photon holographic optogenetics, it iteratively updates circuit connectivity posteriors in real time, drastically reducing the number of required stimulation experiments.",
+        "zh-CN": "OPhELIA 是一套贝叶斯框架，结合 Beta-Bernoulli 连接推断与基于不确定性的采集函数，在有限实验次数内自动挑选最具信息量的神经光刺激组合。系统整合全光学双光子全息光遗传技术，边刺激边实时更新脑回路连接概率，大幅减少需要穷举测试的刺激次数。",
+        "ja": "OPhELIAは、Beta-Bernoulli接続推論と曖昧さベースの獲得ヒューリスティックを組み合わせたベイズフレームワークで、限られた試行予算内で最も情報量の多い光刺激セットを自動選択します。全光学二光子ホログラフィック光遺伝学と統合し、回路接続の事後分布をリアルタイムで更新することで、必要な刺激実験数を大幅に削減します。",
+        "ko": "OPhELIA는 Beta-Bernoulli 연결 추론과 모호성 기반 획득 휴리스틱을 결합한 베이즈 프레임워크로, 제한된 실험 횟수 내에서 가장 정보량이 많은 광자극 조합을 자동으로 선택합니다. 전광학 이광자 홀로그래픽 광유전학과 통합하여 회로 연결 사후 분포를 실시간으로 업데이트하며 필요한 자극 실험 수를 대폭 줄입니다."
+      },
+      "plain": {
+        "zh-TW": "想像你要畫出一張大城市的交通地圖，但你只能派出有限的探員去每條路口觀察——你會怎麼決定先派誰去哪裡？大腦裡有數以億計的神經元彼此相連，科學家想知道「哪顆神經元激活後，會讓哪些其他神經元跟著反應」，這就是腦迴路圖譜的核心問題。傳統做法是用雷射逐一刺激每種神經元組合，但光是一千顆神經元就有天文數字種組合，根本測不完，還會傷害腦組織。OPhELIA 就像一位聰明的探勘嚮導：每次實驗結束後，它會分析「哪些連結還最不確定」，優先挑選能一口氣解決最多疑問的下一組刺激。這樣用少得多的實驗次數，就能拼出高準確度的腦迴路地圖。這對理解記憶、感知甚至精神疾病的神經機制都有深遠意義，未來也可能加速神經義肢與腦機介面的開發。",
+        "en": "Imagine mapping a huge city's road network but only having a handful of scouts to send out — you would want to deploy them where they reveal the most unknown routes first. The brain has billions of neurons all talking to each other, and scientists want to know which neurons trigger which others, forming a 「circuit map.」 The traditional approach is to zap every possible combination of neurons with lasers, but even 1,000 neurons produce an astronomically large number of combinations, making exhaustive testing impossible and even damaging to tissue. OPhELIA acts like a smart expedition guide: after each experiment, it figures out which connections are still most uncertain and picks the next stimulation set that resolves the most ambiguity at once. This lets researchers build accurate circuit maps with far fewer experiments. Understanding these maps is crucial for decoding memory, perception, and mental illness, and could accelerate the development of brain-computer interfaces and neural prosthetics.",
+        "zh-CN": "想象你要绘制一张大城市的交通地图，但只能派出有限的探员去各路口观察——你会怎么决定先派谁去哪里？大脑里有数以亿计的神经元彼此相连，科学家想知道「哪颗神经元激活后，会让哪些其他神经元跟着反应」，这就是脑回路图谱的核心问题。传统做法是用激光逐一刺激每种神经元组合，但光是一千颗神经元就有天文数字种组合，根本测不完，还会损伤脑组织。OPhELIA 就像一位聪明的探勘向导：每次实验结束后，它会分析「哪些连接还最不确定」，优先挑选能一口气解决最多疑问的下一组刺激。这样用少得多的实验次数，就能拼出高准确度的脑回路地图，对理解记忆、感知乃至精神疾病的神经机制都具有深远意义。",
+        "ja": "大都市の道路地図を作りたいけれど、派遣できる調査員が限られているとしたら、どこから調べ始めますか？脳には億を超えるニューロンが互いにつながっており、科学者たちは「どのニューロンを刺激すると、どの別のニューロンが反応するか」という回路地図を作りたいと考えています。従来の方法はレーザーですべての組み合わせを試すことですが、1,000個のニューロンだけでも組み合わせは天文学的な数になり、完全な網羅は不可能で組織へのダメージも問題です。OPhELIAは賢い探検ガイドのように、実験のたびに「まだ最も不確かな接続はどれか」を分析し、一度に最多の疑問を解消できる次の刺激セットを選びます。これにより、はるかに少ない実験回数で高精度の脳回路地図が完成します。記憶・知覚・精神疾患の神経メカニズム解明や、脳コンピューターインターフェースの開発加速にもつながる重要な研究です。",
+        "ko": "대도시의 도로 지도를 만들고 싶은데 파견할 수 있는 조사원이 한정되어 있다면 어디부터 조사하시겠습니까? 뇌에는 수억 개의 뉴런이 서로 연결되어 있으며, 과학자들은 「어떤 뉴런을 자극하면 어떤 다른 뉴런이 반응하는가」라는 회로 지도를 그리고 싶어합니다. 기존 방식은 레이저로 모든 뉴런 조합을 하나씩 자극하는 것이지만, 뉴런 1,000개만 해도 조합의 수는 천문학적이며 뇌 조직 손상도 문제입니다. OPhELIA는 똑똑한 탐험 가이드처럼, 매 실험 후 「아직 가장 불확실한 연결이 어디인가」를 분석해 한 번에 가장 많은 의문을 해소하는 다음 자극 세트를 선택합니다. 이를 통해 훨씬 적은 실험 횟수로 높은 정확도의 뇌 회로 지도를 완성할 수 있으며, 기억·지각·정신질환의 신경 메커니즘 이해와 뇌-컴퓨터 인터페이스 개발에 큰 도움이 될 것입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正的科學效率不在於「試遍所有可能」，而在於「每次都問最關鍵的問題」——OPhELIA 讓我們看見，智慧的取樣策略本身就是一種科學突破。",
+        "en": "💡 True scientific efficiency isn't about testing every possibility — it's about asking the most critical question each time; OPhELIA shows that a smart sampling strategy is itself a scientific breakthrough.",
+        "zh-CN": "💡 真正的科学效率不在于「试遍所有可能」，而在于「每次都问最关键的问题」——OPhELIA 让我们看到，智慧的采样策略本身就是一种科学突破。",
+        "ja": "💡 真の科学的効率とは「すべての可能性を試すこと」ではなく「毎回最も重要な問いを立てること」にあり、OPhELIAはスマートなサンプリング戦略そのものが科学的ブレークスルーになり得ることを示している。",
+        "ko": "💡 진정한 과학적 효율은 「모든 가능성을 시험하는 것」이 아니라 「매번 가장 핵심적인 질문을 던지는 것」에 있으며, OPhELIA는 스마트한 샘플링 전략 자체가 과학적 돌파구가 될 수 있음을 보여준다."
+      }
+    },
+    {
+      "id": "space-260716",
+      "domain": "space",
+      "day": "2026-07-16",
+      "author": "Brooke Kotten, Mary Anne Limbach et al.",
+      "ref": "arXiv:2607.13030v1",
+      "url": "https://arxiv.org/abs/2607.13030v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><circle cx=\"80\" cy=\"80\" r=\"38\" fill=\"#1a237e\" opacity=\"0.85\"/><circle cx=\"80\" cy=\"80\" r=\"28\" fill=\"#3949ab\" opacity=\"0.9\"/><ellipse cx=\"80\" cy=\"80\" rx=\"55\" ry=\"12\" fill=\"none\" stroke=\"#7986cb\" stroke-width=\"2\" opacity=\"0.7\"/><circle cx=\"135\" cy=\"68\" r=\"7\" fill=\"#ff6f00\" opacity=\"0.95\"/><circle cx=\"135\" cy=\"68\" r=\"4\" fill=\"#ffca28\"/><path d=\"M132 62 Q135 52 138 62\" fill=\"#ff6f00\" opacity=\"0.8\"/><path d=\"M133 60 Q135 48 137 60\" fill=\"#ffca28\" opacity=\"0.6\"/><ellipse cx=\"80\" cy=\"42\" rx=\"18\" ry=\"6\" fill=\"none\" stroke=\"#e8eaf6\" stroke-width=\"1.5\" opacity=\"0.5\" transform=\"rotate(-15 80 42)\"/><ellipse cx=\"80\" cy=\"118\" rx=\"18\" ry=\"6\" fill=\"none\" stroke=\"#e8eaf6\" stroke-width=\"1.5\" opacity=\"0.5\" transform=\"rotate(15 80 118)\"/><path d=\"M100 55 Q160 40 230 50\" stroke=\"#7c4dff\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.7\" stroke-dasharray=\"5 3\"/><path d=\"M105 70 Q170 65 240 70\" stroke=\"#7c4dff\" stroke-width=\"1.8\" fill=\"none\" opacity=\"0.5\" stroke-dasharray=\"5 3\"/><circle cx=\"260\" cy=\"80\" r=\"22\" fill=\"#1565c0\" opacity=\"0.8\"/><circle cx=\"260\" cy=\"80\" r=\"14\" fill=\"#1e88e5\" opacity=\"0.85\"/><path d=\"M250 60 Q260 45 270 60\" stroke=\"#e8eaf6\" stroke-width=\"2\" fill=\"none\" opacity=\"0.8\"/><path d=\"M245 55 Q260 38 275 55\" stroke=\"#b39ddb\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.6\"/></svg>",
+      "title": {
+        "zh-TW": "木衛一的宇宙版本：火山衛星能否解開超級木星極光之謎？",
+        "en": "Cosmic Io Twins: Can Volcanic Exomoons Explain Auroras on Super-Jupiters?",
+        "zh-CN": "木卫一的宇宙版本：火山卫星能否解开超级木星极光之谜？",
+        "ja": "宇宙版イオ：火山衛星がスーパー木星のオーロラを生み出す？",
+        "ko": "우주판 이오: 화산 위성이 슈퍼 목성의 오로라를 만드는가?"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astronomy & Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文・宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究評估對孤立次恆星天體（棕矮星、流浪行星）的凌日觀測，能否探測其周圍受潮汐加熱的系外衛星。研究者建立模型計算火山系外衛星供應電漿、進而驅動極光輻射電波的可行性，並分析現有及未來望遠鏡的探測極限。",
+        "en": "This study evaluates whether transit observations of isolated substellar objects—brown dwarfs and rogue planets—can detect tidally heated exosatellites around them. The team modeled how volcanic exomoons could supply plasma to drive radio-emitting auroras, and assessed detectability thresholds for current and upcoming telescopes.",
+        "zh-CN": "本研究评估对孤立次恒星天体（棕矮星、流浪行星）的凌日观测，能否探测其周围受潮汐加热的系外卫星。研究者建立模型计算火山系外卫星供应等离子体、进而驱动极光辐射电波的可行性，并分析现有及未来望远镜的探测极限。",
+        "ja": "本研究は、孤立した次恒星天体（褐色矮星・浮遊惑星）のトランジット観測によって、潮汐加熱された系外衛星を検出できるかを評価した。火山活動を持つ系外衛星がプラズマを供給しオーロラ電波放射を駆動するモデルを構築し、現在・将来の望遠鏡の検出限界を分析した。",
+        "ko": "이 연구는 고립된 준항성 천체（갈색왜성·떠돌이 행성）의 식 관측을 통해 조석 가열된 외계 위성을 탐지할 수 있는지 평가했다. 화산 활동을 가진 외계 위성이 플라즈마를 공급해 전파 오로라를 구동하는 모델을 구축하고, 현재 및 미래 망원경의 탐지 한계를 분석했다."
+      },
+      "plain": {
+        "zh-TW": "木星的極光非常特別——它不只靠太陽風，更靠最內側的衛星「木衛一」持續噴發的火山物質。木衛一因為受到木星強大引力「揉捏」而火山不斷爆發，噴出的硫磺氣體形成電漿，再沿磁場線傾入木星極區，點亮壯觀的極光。科學家在太陽系外也發現了數十個孤獨漂泊的棕矮星或流浪行星，它們也發射強烈的電波極光訊號，卻找不到「電源在哪裡」。這篇研究提出：這些天體旁邊是否也有一顆「宇宙版木衛一」，被引力揉捏成火山世界，持續為極光供電？研究者計算了用凌日法（觀察星體被衛星遮擋時的亮度變化）偵測這類火山衛星的可能性。如果成功，這將是人類首次間接發現系外衛星的新途徑，也能解釋宇宙中那些神秘電波脈衝的真正來源。這就像在遙遠的夜空看到一盞明燈，試圖推測它旁邊是否有一根蠟燭——雖然蠟燭本身看不見，但光的特徵會洩漏它的存在。",
+        "en": "Jupiter's auroras are special—they are powered not just by the solar wind, but by volcanic material constantly erupting from its innermost moon, Io. Io is squeezed by Jupiter's immense gravity, causing endless volcanic eruptions that spew plasma along magnetic field lines into Jupiter's poles, lighting up spectacular auroras. Beyond our solar system, scientists have detected strong radio aurora signals from dozens of lonely wandering brown dwarfs and rogue planets—but the power source remains a mystery. This study asks: do these objects also host a 'cosmic Io,' a volcanic moon squeezed by tidal forces that continuously fuels their auroras? The researchers calculated whether transit observations—watching for tiny dips in brightness as a moon passes in front of its host—could detect such volcanic exomoons. Success would open a new indirect pathway to discover exomoons, and finally explain those mysterious radio bursts lighting up the cosmos. It's like spotting a glowing lamp in the dark and trying to deduce whether a hidden candle nearby is responsible—the glow itself betrays the secret.",
+        "zh-CN": "木星的极光非常特别——它不只靠太阳风，更靠最内侧卫星「木卫一」持续喷发的火山物质。木卫一因受木星强大引力「揉捏」而火山不断爆发，喷出的硫磺气体形成等离子体，沿磁场线涌入木星极区，点亮壮观的极光。科学家在太阳系外也发现了数十个孤独漂泊的棕矮星或流浪行星，它们也发射强烈的电波极光信号，却找不到「电源在哪里」。这篇研究提出：这些天体旁边是否也有一颗「宇宙版木卫一」，被引力揉捏成火山世界，持续为极光供电？研究者计算了用凌日法探测这类火山卫星的可能性。如果成功，这将是人类首次间接发现系外卫星的新途径，也能解释宇宙中那些神秘电波脉冲的真正来源。",
+        "ja": "木星のオーロラは特別です——太陽風だけでなく、最も内側の衛星「イオ」の火山噴火がプラズマを供給しているからです。イオは木星の重力に「もみくちゃ」にされ、絶えず火山が噴火し、硫黄ガスのプラズマが磁力線を伝って木星の極域に注ぎ込まれ、壮大なオーロラを輝かせます。太陽系の外でも、孤立した褐色矮星や浮遊惑星から強い電波オーロラが検出されていますが、エネルギー源は謎のままです。この研究は「これらの天体にも宇宙版イオが存在し、潮汐力で加熱された火山衛星がオーロラに電力を供給しているのでは？」と問います。研究者はトランジット観測でそのような系外衛星を検出できるかを計算しました。成功すれば、系外衛星発見の新たな間接的手段が開かれ、謎の電波パルスの正体も明らかになるかもしれません。",
+        "ko": "목성의 오로라는 특별합니다——태양풍뿐만 아니라, 가장 안쪽 위성 '이오'의 화산 분출물이 플라즈마를 공급하기 때문입니다. 이오는 목성의 강력한 중력에 '주물러져' 끊임없이 화산이 폭발하고, 분출된 황 가스 플라즈마가 자기장선을 따라 목성 극지방으로 흘러들어 장관의 오로라를 밝힙니다. 태양계 밖에서도 수십 개의 고립된 갈색왜성과 떠돌이 행성에서 강한 전파 오로라 신호가 감지되었지만, 에너지원은 여전히 미스터리입니다. 이 연구는 '이 천체들에도 우주판 이오, 즉 조석력으로 가열된 화산 위성이 있어 오로라에 전력을 공급하는 것은 아닐까?'라고 묻습니다. 연구자들은 식 관측법으로 이러한 외계 위성을 탐지할 수 있는지 계산했으며, 성공한다면 외계 위성 발견의 새로운 간접적 길이 열릴 것입니다."
+      },
+      "insight": {
+        "zh-TW": "💡 宇宙中的極光可能是「看不見的衛星」最響亮的存在宣言——火山、引力、磁場三者聯手，讓隱形世界在電波頻段發光。",
+        "en": "💡 Auroras across the cosmos may be the loudest calling cards of invisible moons—where volcanism, gravity, and magnetism conspire to make hidden worlds shine in radio waves.",
+        "zh-CN": "💡 宇宙中的极光可能是「看不见的卫星」最响亮的存在宣言——火山、引力、磁场三者联手，让隐形世界在电波频段发光。",
+        "ja": "💡 宇宙のオーロラは「見えない衛星」が放つ最も雄弁な存在証明かもしれない——火山・重力・磁場が共鳴し、隠れた世界を電波で輝かせる。",
+        "ko": "💡 우주의 오로라는 '보이지 않는 위성'이 내보내는 가장 웅장한 존재 선언일지 모른다——화산, 중력, 자기장이 합쳐져 숨겨진 세계를 전파로 빛나게 한다."
+      }
+    },
+    {
+      "id": "tech-260716",
+      "domain": "tech",
+      "day": "2026-07-16",
+      "author": "Imade Bouftini",
+      "ref": "arXiv:2607.12937v1",
+      "url": "https://arxiv.org/abs/2607.12937v1",
+      "color": "#00695c",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#00695c18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"60\" ry=\"45\" fill=\"none\" stroke=\"#00695c\" stroke-width=\"2.5\"/><ellipse cx=\"170\" cy=\"80\" rx=\"60\" ry=\"45\" fill=\"#00695c\" fill-opacity=\"0.07\"/><line x1=\"110\" y1=\"80\" x2=\"230\" y2=\"80\" stroke=\"#00695c\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"170\" y1=\"35\" x2=\"170\" y2=\"125\" stroke=\"#00695c\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><path d=\"M40 130 Q80 60 130 75 Q170 88 210 72 Q255 55 300 30\" fill=\"none\" stroke=\"#e65100\" stroke-width=\"2\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"98\" r=\"5\" fill=\"#00695c\" opacity=\"0.9\"/><circle cx=\"130\" cy=\"75\" r=\"5\" fill=\"#00695c\" opacity=\"0.9\"/><circle cx=\"170\" cy=\"80\" r=\"5\" fill=\"#00695c\" opacity=\"0.9\"/><circle cx=\"210\" cy=\"72\" r=\"5\" fill=\"#00695c\" opacity=\"0.9\"/><circle cx=\"260\" cy=\"55\" r=\"5\" fill=\"#00695c\" opacity=\"0.9\"/><rect x=\"18\" y=\"55\" width=\"28\" height=\"90\" rx=\"4\" fill=\"#00695c\" fill-opacity=\"0.15\" stroke=\"#00695c\" stroke-width=\"1.5\"/><rect x=\"294\" y=\"30\" width=\"28\" height=\"90\" rx=\"4\" fill=\"#e65100\" fill-opacity=\"0.15\" stroke=\"#e65100\" stroke-width=\"1.5\"/><path d=\"M32 100 L32 85 M32 85 L27 91 M32 85 L37 91\" stroke=\"#00695c\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M308 80 L308 65 M308 65 L303 71 M308 65 L313 71\" stroke=\"#e65100\" stroke-width=\"1.5\" fill=\"none\"/></svg>",
+      "title": {
+        "zh-TW": "乳房斷層掃描新突破：擴散模型精確重建影像還能量化不確定性",
+        "en": "Sharper and Trustworthy Breast Tomosynthesis via Calibrated Diffusion Reconstruction",
+        "zh-CN": "乳腺断层扫描新突破：扩散模型精确重建影像并量化不确定性",
+        "ja": "乳房断層撮影の革新：拡散モデルで正確な画像再構成と不確実性の定量化を実現",
+        "ko": "유방 단층촬영 혁신：보정된 확산 모델로 정확한 영상 재구성과 불확실성 정량화"
+      },
+      "tag": {
+        "zh-TW": "📶 醫學影像 × AI",
+        "en": "📶 Medical Imaging × AI",
+        "zh-CN": "📶 医学影像 × AI",
+        "ja": "📶 医療画像 × AI",
+        "ko": "📶 의료 영상 × AI"
+      },
+      "tech": {
+        "zh-TW": "數位乳房斷層攝影（DBT）僅以少量低劑量投影角度重建立體影像，超過98%的影像空間無法被直接量測，必須仰賴學習式先驗補充缺失資訊。本研究以精確歐氏投影取代條件擴散取樣器中的近端更新步驟，強制達成精確的量測一致性，並透過像素級保形預測區間定位幻覺風險區域，同時校準不確定性估計，使臨床使用更為安全可靠。",
+        "en": "Digital breast tomosynthesis (DBT) reconstructs a 3-D volume from a handful of low-dose X-ray projections, leaving over 98% of image space unmeasured. This work replaces the per-step proximal update in a conditional diffusion sampler with exact Euclidean projection to enforce hard data consistency, adds pixel-wise conformal prediction intervals to localize hallucination risk, and calibrates uncertainty estimates for clinically trustworthy outputs.",
+        "zh-CN": "数字乳腺断层摄影（DBT）仅凭少量低剂量投影重建三维体积，超过98%的图像空间无法直接测量。本研究用精确欧氏投影替换条件扩散采样器中的近端更新步骤，强制实现精确数据一致性，并通过像素级保形预测区间定位幻觉风险区域，同时对不确定性进行校准，提升临床可信度。",
+        "ja": "デジタル乳房断層撮影（DBT）は少数の低線量投影から3次元ボリュームを再構成しますが、画像空間の98%以上が未計測です。本研究では条件付き拡散サンプラーの近位更新ステップを正確なユークリッド投影に置き換えてデータ整合性を厳密に保証し、ピクセル単位の共形予測区間でハルシネーションリスクを局所化、さらに不確実性を校正して臨床的信頼性を高めます。",
+        "ko": "디지털 유방 단층촬영(DBT)은 소수의 저선량 투영만으로 3D 볼륨을 재구성하며, 전체 영상 공간의 98% 이상이 미측정 상태입니다. 본 연구는 조건부 확산 샘플러의 근위 업데이트 단계를 정확한 유클리드 투영으로 대체하여 데이터 정합성을 엄격히 보장하고, 픽셀 단위 공형 예측 구간으로 환각 위험 영역을 국소화하며, 불확실성을 보정하여 임상 신뢰성을 높입니다."
+      },
+      "plain": {
+        "zh-TW": "想像你只拍了9張不同角度的X光，就要還原整個乳房的立體結構——就像從9個窗口「腦補」整棟建築的樣子。傳統的AI影像生成很厲害，但有時候會「發明」原本不存在的陰影或腫塊，這對醫生來說非常危險。這篇研究就像給AI裝了一個「誠實鎖」：每次AI生成影像，都必須嚴格對照真實的X光數據，不能亂猜。更聰明的是，它還能在影像上標出「這裡我不確定，請醫生特別注意」的警示區域，就像天氣預報不只說晴天，還附上降雨機率。這樣一來，醫生不只得到更清晰的影像，還知道哪些部分可以信賴、哪些需要再確認，大幅降低誤診風險，讓AI真正成為臨床上可靠的助手。",
+        "en": "Imagine reconstructing an entire 3-D breast structure from just 9 X-ray snapshots — like guessing a whole building's interior by peeking through 9 windows. AI can fill in the blanks brilliantly, but sometimes it invents shadows or lumps that were never there, which is dangerous in medicine. This research adds an 'honesty lock' to the AI: every generated image must strictly match the real X-ray measurements, no freelancing allowed. Even smarter, the system highlights pixels where it is uncertain — like a weather forecast that gives you both the prediction and the probability of rain. Doctors now get not only a sharper image but also a reliability map, knowing exactly where to trust the AI and where to double-check, dramatically reducing misdiagnosis risk.",
+        "zh-CN": "想象一下，只拍了9张不同角度的X光，就要还原整个乳腺的三维结构——就像从9扇窗口「脑补」整栋建筑的内部。AI填补空白的能力很强，但有时会「发明」原本不存在的阴影或肿块，这在医学上非常危险。这项研究给AI装上了「诚实锁」：每次生成影像，都必须严格对照真实X光数据，不能随意猜测。更聪明的是，系统还能标注出「这里我不确定，请医生特别留意」的警示区域，就像天气预报不只说晴天，还附上降雨概率。医生不仅得到更清晰的影像，还拥有一张可信度地图，大幅降低误诊风险。",
+        "ja": "9枚のX線写真だけで乳房全体の3D構造を復元する——まるで9つの窓から建物の内部全体を想像するようなものです。AIはその空白を埋めるのが得意ですが、時として存在しない影やしこりを「発明」してしまい、医療現場では非常に危険です。この研究はAIに「正直ロック」を取り付けました：生成する画像は必ず実際のX線データと一致しなければなりません。さらに賢いのは、「ここは不確かです、医師が特に注意を」という警告エリアを画像上に示す点です。天気予報が晴れだけでなく降水確率も伝えるように、医師は鮮明な画像だけでなく信頼度マップも手に入れ、誤診リスクを大幅に減らせます。",
+        "ko": "단 9장의 X선 사진만으로 유방 전체의 3D 구조를 복원한다고 상상해 보세요 — 마치 9개의 창문으로 건물 내부 전체를 추측하는 것과 같습니다. AI는 빈 공간을 채우는 데 뛰어나지만, 때로는 존재하지 않는 그림자나 종양을 '만들어내기'도 해서 의료 현장에서는 매우 위험합니다. 이 연구는 AI에 '정직 잠금장치'를 달았습니다: 생성된 영상은 반드시 실제 X선 데이터와 일치해야 합니다. 더 똑똑한 점은 '이 부분은 불확실하니 의사가 특별히 확인하세요'라는 경고 영역을 영상에 표시한다는 것입니다. 일기예보가 맑음만 알려주는 게 아니라 강수 확률도 알려주듯이, 의사는 선명한 영상뿐만 아니라 신뢰도 지도도 얻어 오진 위험을 크게 줄일 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 AI影像生成最大的隱憂不是「看不清」，而是「看錯了卻不知道」——為不確定性建立刻度，才是醫療AI真正成熟的標誌。",
+        "en": "💡 The greatest danger of AI imaging is not blurriness but confident wrongness — building a calibrated scale for uncertainty is the true mark of clinical-grade AI.",
+        "zh-CN": "💡 AI影像生成最大的隐患不是「看不清」，而是「看错了却不自知」——为不确定性建立刻度，才是医疗AI真正成熟的标志。",
+        "ja": "💡 AI画像生成の最大の危険は「ぼやけること」ではなく「自信を持って間違えること」——不確実性を定量化することこそ、臨床AIが真に成熟した証だ。",
+        "ko": "💡 AI 영상 생성의 가장 큰 위험은 '흐릿함'이 아니라 '확신을 가지고 틀리는 것'——불확실성을 정량화하는 것이야말로 임상 AI가 진정으로 성숙했다는 증거다."
+      }
+    }
+  ]
+}
