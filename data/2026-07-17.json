@@ -1,0 +1,143 @@
+{
+  "date": "2026-07-17",
+  "mode": "paper",
+  "paper_date": "2026-07-17",
+  "generated_at": "2026-07-17",
+  "cards": [
+    {
+      "id": "ai-260717",
+      "domain": "ai",
+      "day": "2026-07-17",
+      "author": "Ximeng Mao, Nanda H. Krishna et al.",
+      "ref": "arXiv:2607.14086v1",
+      "url": "https://arxiv.org/abs/2607.14086v1",
+      "color": "#2a9d8f",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#2a9d8f18\"/><circle cx=\"40\" cy=\"50\" r=\"8\" fill=\"#2a9d8f\" opacity=\"0.9\"/><circle cx=\"40\" cy=\"80\" r=\"8\" fill=\"#2a9d8f\" opacity=\"0.9\"/><circle cx=\"40\" cy=\"110\" r=\"8\" fill=\"#2a9d8f\" opacity=\"0.9\"/><circle cx=\"40\" cy=\"50\" r=\"4\" fill=\"#e9c46a\"/><circle cx=\"40\" cy=\"110\" r=\"4\" fill=\"#e9c46a\"/><rect x=\"65\" y=\"35\" width=\"80\" height=\"90\" rx=\"10\" fill=\"none\" stroke=\"#2a9d8f\" stroke-width=\"2.5\"/><rect x=\"75\" y=\"48\" width=\"60\" height=\"10\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.5\"/><rect x=\"75\" y=\"65\" width=\"60\" height=\"10\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.3\"/><rect x=\"75\" y=\"82\" width=\"60\" height=\"10\" rx=\"4\" fill=\"#2a9d8f\" opacity=\"0.15\"/><rect x=\"75\" y=\"99\" width=\"40\" height=\"10\" rx=\"4\" fill=\"#e9c46a\" opacity=\"0.6\"/><rect x=\"175\" y=\"55\" width=\"70\" height=\"50\" rx=\"8\" fill=\"none\" stroke=\"#e76f51\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"80\" r=\"14\" fill=\"#e76f51\" opacity=\"0.25\"/><circle cx=\"210\" cy=\"80\" r=\"7\" fill=\"#e76f51\" opacity=\"0.7\"/><line x1=\"145\" y1=\"80\" x2=\"175\" y2=\"80\" stroke=\"#2a9d8f\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"245\" y1=\"80\" x2=\"295\" y2=\"80\" stroke=\"#e76f51\" stroke-width=\"2\"/><polygon points=\"295,74 310,80 295,86\" fill=\"#e76f51\"/></svg>",
+      "title": {
+        "zh-TW": "不需標籤也能讀懂大腦：MOJO讓神經解碼器舉一反三",
+        "en": "Decoding the Brain Without Labels: MOJO Makes Neural Decoders Generalize",
+        "zh-CN": "不需标签也能读懂大脑：MOJO让神经解码器举一反三",
+        "ja": "ラベルなしで脳を読む：MOJOが神経デコーダーを汎用化する",
+        "ko": "레이블 없이도 뇌를 해독한다: MOJO로 신경 디코더 일반화"
+      },
+      "tag": {
+        "zh-TW": "🤖 AI與腦機介面",
+        "en": "🤖 AI & Brain-Computer Interface",
+        "zh-CN": "🤖 AI与脑机接口",
+        "ja": "🤖 AIとブレイン・コンピュータ・インタフェース",
+        "ko": "🤖 AI와 뇌-컴퓨터 인터페이스"
+      },
+      "tech": {
+        "zh-TW": "本研究提出MOJO（遮罩自編碼聯合訓練）框架，將自監督預訓練與監督式解碼聯合優化，使以脈衝為單元的神經資料模型能同時利用有標籤與無標籤的多場次神經記錄資料。透過遮罩自編碼器重建被遮蔽的脈衝序列，MOJO無需行為標籤即可學習豐富的神經表徵，再以少量標籤進行微調，達到跨場次、跨動物的泛化解碼能力。",
+        "en": "This work proposes MOJO (Masked autOencoder-based JOint training), a framework that jointly optimizes self-supervised pretraining and supervised decoding for spike-tokenizing neural models. By reconstructing masked spike sequences without behavioral labels, MOJO learns rich neural representations from unlabelled multi-session recordings and achieves state-of-the-art generalization with only minimal labeled fine-tuning.",
+        "zh-CN": "本研究提出MOJO（遮罩自编码联合训练）框架，将自监督预训练与监督式解码联合优化，使以脉冲为单元的神经数据模型能同时利用有标签与无标签的多场次神经记录数据。通过遮罩自编码器重建被遮蔽的脉冲序列，MOJO无需行为标签即可学习丰富的神经表征，再以少量标签进行微调，达到跨场次、跨动物的泛化解码能力。",
+        "ja": "本研究はMOJO（マスク自己符号化器ベースの結合学習）フレームワークを提案し、スパイクトークン化モデルにおいて自己教師あり事前学習と教師あり解読を同時最適化する。行動ラベルなしでマスクされたスパイク列を再構成することで豊かな神経表現を学習し、わずかなラベルで複数セッション・複数個体への汎化解読を実現する。",
+        "ko": "이 연구는 MOJO(마스크 자동인코더 기반 공동 학습) 프레임워크를 제안하여, 스파이크 토큰화 신경 모델에서 자기지도 사전학습과 지도학습 디코딩을 공동으로 최적화한다. 행동 레이블 없이 마스킹된 스파이크 시퀀스를 재구성함으로써 풍부한 신경 표현을 학습하고, 소량의 레이블만으로 다중 세션·개체 간 일반화 디코딩을 달성한다."
+      },
+      "plain": {
+        "zh-TW": "想像大腦就像一個巨大的管弦樂團，每個神經元同時演奏著複雜的樂曲。腦機介面就像是個「翻譯員」，試圖把這些電訊號翻譯成「手想往右移」之類的指令。但問題是：訓練翻譯員需要大量「配對字幕」，也就是每一段腦波都要有對應的行為標籤，這非常費時費力。MOJO的做法就像讓AI先大量「閱讀無字幕電影」，靠著猜測被遮住的片段來學會看懂大腦語言，再用少量有字幕的片段做最後調整。這樣一來，即使是來自不同人、不同實驗場次的腦波，模型也能舉一反三。這對開發通用型腦機介面至關重要——未來我們或許不需要為每個病人重新訓練一套解碼器，大幅降低臨床導入的門檻。",
+        "en": "Imagine the brain as a massive orchestra where each neuron plays its own instrument simultaneously. A brain-computer interface acts as a 「translator,」 converting these electrical signals into commands like 「move hand right.」 The catch: training this translator traditionally requires enormous amounts of 「labeled subtitles」 — every brainwave snippet matched to a specific action, which is expensive and slow. MOJO works like teaching an AI to understand a language by first reading countless books without a dictionary, learning structure by guessing blanked-out words, then fine-tuning with just a few translated pages. This means the model can generalize across different people and recording sessions with minimal labeled data. For real-world brain-computer interfaces, this could mean one decoder works for many patients — dramatically lowering the barrier to clinical use.",
+        "zh-CN": "想象大脑就像一个巨大的管弦乐团，每个神经元同时演奏着复杂的乐曲。脑机接口就像是个「翻译员」，试图把这些电信号翻译成「手想往右移」之类的指令。但问题是：训练翻译员需要大量「配对字幕」，也就是每一段脑波都要有对应的行为标签，这非常费时费力。MOJO的做法就像让AI先大量「阅读无字幕电影」，靠猜测被遮住的片段来学会看懂大脑语言，再用少量有字幕的片段做最后调整。这样一来，即使是来自不同人、不同实验场次的脑波，模型也能举一反三。这对开发通用型脑机接口至关重要——未来或许不需要为每个病人重新训练一套解码器。",
+        "ja": "脳を巨大なオーケストラと想像してください。各ニューロンが同時に複雑な音楽を奏でています。ブレイン・コンピュータ・インタフェース（BCI）はその「通訳者」で、電気信号を「右手を動かせ」といった命令に変換します。従来の問題は、通訳者の訓練に膨大な「字幕付きデータ」が必要なことでした。MOJOは、AIが字幕なしの映画を大量に見て、隠された部分を推測しながら脳の言語を学び、少量の字幕で仕上げをするようなアプローチです。異なる人物や実験セッションにも汎化でき、将来的には患者ごとに一から訓練し直さなくて済む汎用BCIの実現に近づきます。",
+        "ko": "뇌를 거대한 오케스트라라고 상상해보세요. 각 뉴런이 동시에 복잡한 음악을 연주하고 있습니다. 뇌-컴퓨터 인터페이스(BCI)는 이 전기 신호를 「오른손을 움직여라」 같은 명령으로 번역하는 「통역사」입니다. 문제는 통역사를 훈련시키려면 방대한 「자막 데이터」—뇌파 조각마다 대응하는 행동 레이블—가 필요하다는 것입니다. MOJO는 AI가 자막 없는 영화를 대량으로 보며 가려진 부분을 추측해 언어를 익히고, 마지막에 소량의 자막으로 마무리하는 방식입니다. 이렇게 하면 다양한 사람과 실험 세션에서도 일반화되어, 환자마다 처음부터 재학습하지 않아도 되는 범용 BCI 개발에 크게 기여할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 真正強大的「大腦翻譯員」不依賴標籤的多寡，而是懂得從海量未標記的神經訊號中自學語言規律——這正是讓腦機介面走向普及化的關鍵一步。",
+        "en": "💡 A truly powerful brain decoder shouldn't depend on scarce labeled data — learning the language of neurons from unlabeled signals first is the key step toward universally deployable brain-computer interfaces.",
+        "zh-CN": "💡 真正强大的「大脑翻译员」不依赖标签的多寡，而是懂得从海量未标记的神经信号中自学语言规律——这正是让脑机接口走向普及化的关键一步。",
+        "ja": "💡 真に強力な脳デコーダーはラベルの量に依存せず、未標識の神経信号から言語規則を自ら学ぶことが、BCIを普及させる決定的な一歩となる。",
+        "ko": "💡 진정으로 강력한 뇌 디코더는 레이블 데이터의 양에 의존하지 않고, 레이블 없는 신경 신호에서 스스로 언어 규칙을 배우는 것이 BCI 보편화를 향한 결정적 한 걸음이다."
+      }
+    },
+    {
+      "id": "neuro-260717",
+      "domain": "neuro",
+      "day": "2026-07-17",
+      "author": "Sven Schoonebeek, Anahita Jamshidnejad et al.",
+      "ref": "arXiv:2607.14078v1",
+      "url": "https://arxiv.org/abs/2607.14078v1",
+      "color": "#6a1b9a",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#6a1b9a18\"/><circle cx=\"40\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"40\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.7\"/><rect x=\"78\" y=\"72\" width=\"48\" height=\"16\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.75\"/><circle cx=\"170\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"170\" cy=\"80\" r=\"18\" fill=\"#f3e5f5\" opacity=\"0.6\"/><rect x=\"208\" y=\"72\" width=\"48\" height=\"16\" rx=\"8\" fill=\"#6a1b9a\" opacity=\"0.75\"/><circle cx=\"300\" cy=\"80\" r=\"28\" fill=\"#6a1b9a\" opacity=\"0.85\"/><circle cx=\"300\" cy=\"80\" r=\"18\" fill=\"#ce93d8\" opacity=\"0.7\"/><polygon points=\"300,58 310,72 290,72\" fill=\"#f3e5f5\" opacity=\"0.85\"/><rect x=\"10\" y=\"118\" width=\"60\" height=\"8\" rx=\"4\" fill=\"#ab47bc\" opacity=\"0.5\"/><rect x=\"140\" y=\"118\" width=\"60\" height=\"8\" rx=\"4\" fill=\"#ab47bc\" opacity=\"0.5\"/><rect x=\"270\" y=\"118\" width=\"60\" height=\"8\" rx=\"4\" fill=\"#ab47bc\" opacity=\"0.5\"/></svg>",
+      "title": {
+        "zh-TW": "人類如何感知、思考、再決策？模組化數學模型一次拆解大腦三階段",
+        "en": "How Humans Perceive, Think, and Decide: A Modular Math Model of the Brain's Three-Stage Pipeline",
+        "zh-CN": "人类如何感知、思考、再决策？模块化数学模型一次拆解大脑三阶段",
+        "ja": "知覚・認知・意思決定を数式で解剖：人間の脳の三段階パイプラインモデル",
+        "ko": "인간은 어떻게 인식하고 생각하고 결정하는가？모듈형 수학 모델로 뇌의 3단계 해부"
+      },
+      "tag": {
+        "zh-TW": "🧠 認知神經科學",
+        "en": "🧠 Cognitive Neuroscience",
+        "zh-CN": "🧠 认知神经科学",
+        "ja": "🧠 認知神経科学",
+        "ko": "🧠 인지 신경과학"
+      },
+      "tech": {
+        "zh-TW": "本研究提出一個模組化狀態空間模型，將人類行為拆解為「感知→認知→決策」三段流水線，以耦合數學映射分別表示注意力選擇、預測推論、認知狀態演化、意圖形成與動作選擇五個子系統。相較於黑箱神經網路，此框架同時具備心理學可解釋性與數學可分析性，適用於人機互動與自適應系統設計。",
+        "en": "The paper proposes a modular state-space model that decomposes human behavior into a perception-cognition-decision pipeline, representing attentional selection, predictive inference, cognitive-state evolution, intention formation, and action selection as coupled mathematical mappings. Unlike black-box models, this framework is both psychologically interpretable and mathematically analyzable, making it suitable for human-centered adaptive systems.",
+        "zh-CN": "本研究提出一个模块化状态空间模型，将人类行为拆解为「感知→认知→决策」三段流水线，以耦合数学映射分别表示注意力选择、预测推理、认知状态演化、意图形成与动作选择五个子系统。该框架兼具心理学可解释性与数学可分析性，适用于人机交互与自适应系统设计。",
+        "ja": "本研究は、人間の行動を「知覚→認知→意思決定」の三段階パイプラインとして分解するモジュール型状態空間モデルを提案する。注意選択・予測推論・認知状態の進化・意図形成・行動選択の五つのサブシステムを結合した数学的写像で表現し、ブラックボックスモデルと異なり心理学的解釈可能性と数学的分析可能性を両立させる。",
+        "ko": "이 연구는 인간 행동을 「지각→인지→의사결정」의 3단계 파이프라인으로 분해하는 모듈형 상태공간 모델을 제안한다. 주의 선택, 예측 추론, 인지 상태 진화, 의도 형성, 행동 선택의 다섯 하위 시스템을 결합된 수학적 매핑으로 표현하며, 블랙박스 모델과 달리 심리학적 해석 가능성과 수학적 분석 가능성을 동시에 갖춘다."
+      },
+      "plain": {
+        "zh-TW": "想像你走進一家咖啡廳點餐：眼睛先「掃描」菜單（感知），腦中浮現對各種飲料的印象與預期（認知），最後你開口說「一杯拿鐵」（決策）。這三個步驟在大腦裡其實環環相扣、動態演化，但過去的AI模型要嘛把整個過程塞進黑箱、要嘛只能描述輸入輸出，根本看不見中間發生了什麼。這篇論文把這三個階段拆成五個可數學計算的「小模組」，像樂高積木一樣組合起來，每個模組都對應真實的心理學概念，例如注意力、預測、意圖。這樣的模型不只能預測你下一步做什麼，還能解釋「為什麼」你這樣做。對設計自動駕駛、手術機器人、人機協作系統的工程師來說，這就像終於有了一張人類決策的「電路圖」，可以讓機器真正讀懂人的行為，而不是靠猜。",
+        "en": "Imagine walking into a café to order: your eyes scan the menu (perception), your mind recalls preferences and anticipates taste (cognition), and finally you say 「one latte please」 (decision). These three steps are deeply intertwined in the brain, but most AI models either stuff everything into a black box or only describe inputs and outputs — the inner workings remain invisible. This paper breaks the process into five mathematically tractable modules that work like interlocking LEGO bricks, each corresponding to a real psychological concept such as attention, prediction, and intention. The model can not only predict your next action but also explain why you made that choice. For engineers building self-driving cars, surgical robots, or human-machine collaboration systems, this is like finally having a 「circuit diagram」 for human decision-making — letting machines genuinely understand people rather than just guessing.",
+        "zh-CN": "想象你走进一家咖啡馆点餐：眼睛先「扫描」菜单（感知），脑中浮现对各种饮料的印象与预期（认知），最后你开口说「一杯拿铁」（决策）。这三个步骤在大脑里其实环环相扣、动态演化，但过去的AI模型要么把整个过程塞进黑箱、要么只能描述输入输出，根本看不见中间发生了什么。这篇论文把这三个阶段拆成五个可数学计算的「小模块」，像乐高积木一样组合起来，每个模块都对应真实的心理学概念，例如注意力、预测、意图。这样的模型不只能预测你下一步做什么，还能解释「为什么」你这样做。对设计自动驾驶、手术机器人、人机协作系统的工程师来说，这就像终于有了一张人类决策的「电路图」，让机器真正读懂人的行为。",
+        "ja": "カフェに入ってコーヒーを注文する場面を想像してください。目がメニューを「スキャン」し（知覚）、脳が好みや期待を呼び起こし（認知）、最後に「ラテをひとつ」と口にする（意思決定）。この三段階は脳の中で複雑に絡み合っていますが、従来のAIモデルはすべてをブラックボックスに押し込むか、入出力しか記述できず、内部プロセスは見えませんでした。この論文は三段階を五つの数学的モジュールに分解し、レゴブロックのように組み合わせます。各モジュールは注意・予測・意図など実際の心理学概念に対応しており、「次に何をするか」だけでなく「なぜそうするか」まで説明できます。自動運転・手術ロボット・人機協調システムを設計するエンジニアにとって、これはまさに人間の意思決定の「回路図」を手に入れたようなものです。",
+        "ko": "카페에 들어가 음료를 주문하는 상황을 상상해 보세요. 눈이 메뉴를 「스캔」하고（지각）, 뇌가 선호도와 기대를 떠올리며（인지）, 마지막으로 「라떼 한 잔」이라고 말합니다（의사결정）. 이 세 단계는 뇌 안에서 복잡하게 얽혀 있지만, 기존 AI 모델들은 모든 것을 블랙박스에 넣거나 입출력만 기술할 뿐 내부 과정은 보이지 않았습니다. 이 논문은 세 단계를 다섯 개의 수학적 모듈로 분해해 레고 블록처럼 조합합니다. 각 모듈은 주의력·예측·의도 같은 실제 심리학 개념에 대응하며, 「다음에 무엇을 할지」뿐 아니라 「왜 그런 선택을 하는지」까지 설명할 수 있습니다. 자율주행·수술 로봇·인간-기계 협업 시스템을 설계하는 엔지니어에게 이는 인간 의사결정의 「회로도」를 마침내 얻은 것과 같습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 讓機器真正理解人類，不能只靠統計黑箱——必須把心理學的「為什麼」翻譯成數學的「怎麼算」。",
+        "en": "💡 Making machines truly understand humans requires translating the psychological 「why」 into the mathematical 「how」 — black-box statistics alone will never be enough.",
+        "zh-CN": "💡 让机器真正理解人类，不能只靠统计黑箱——必须把心理学的「为什么」翻译成数学的「怎么算」。",
+        "ja": "💡 機械が人間を本当に理解するには、心理学の「なぜ」を数学の「どのように」に翻訳することが不可欠であり、ブラックボックス統計だけでは決して十分ではない。",
+        "ko": "💡 기계가 인간을 진정으로 이해하려면 심리학의 「왜」를 수학의 「어떻게」로 번역해야 하며, 블랙박스 통계만으로는 결코 충분하지 않다."
+      }
+    },
+    {
+      "id": "space-260717",
+      "domain": "space",
+      "day": "2026-07-17",
+      "author": "Zhiyuan Yao, Nir Mandelker et al.",
+      "ref": "arXiv:2607.14090v1",
+      "url": "https://arxiv.org/abs/2607.14090v1",
+      "color": "#1a237e",
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\"><rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/><ellipse cx=\"170\" cy=\"80\" rx=\"130\" ry=\"60\" fill=\"none\" stroke=\"#ff6d00\" stroke-width=\"2\" stroke-dasharray=\"6,4\" opacity=\"0.5\"/><ellipse cx=\"170\" cy=\"80\" rx=\"90\" ry=\"40\" fill=\"#ff6d0015\" stroke=\"#ff6d00\" stroke-width=\"1.5\" opacity=\"0.6\"/><rect x=\"158\" y=\"10\" width=\"24\" height=\"140\" rx=\"12\" fill=\"#1a237e\" opacity=\"0.85\"/><rect x=\"163\" y=\"10\" width=\"14\" height=\"55\" rx=\"7\" fill=\"#4fc3f7\" opacity=\"0.9\"/><circle cx=\"170\" cy=\"68\" r=\"9\" fill=\"#4fc3f7\" opacity=\"0.95\"/><circle cx=\"170\" cy=\"68\" r=\"5\" fill=\"#ffffff\" opacity=\"0.7\"/><rect x=\"163\" y=\"95\" width=\"14\" height=\"20\" rx=\"5\" fill=\"#4fc3f7\" opacity=\"0.5\"/><rect x=\"163\" y=\"120\" width=\"14\" height=\"12\" rx=\"4\" fill=\"#4fc3f7\" opacity=\"0.25\"/><circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"#1a237e\" opacity=\"0.7\" stroke=\"#7986cb\" stroke-width=\"1.5\"/><circle cx=\"60\" cy=\"80\" r=\"18\" fill=\"#ff6d0030\" stroke=\"#ff6d00\" stroke-width=\"1\"/><circle cx=\"280\" cy=\"80\" r=\"28\" fill=\"#1a237e\" opacity=\"0.7\" stroke=\"#7986cb\" stroke-width=\"1.5\"/><circle cx=\"280\" cy=\"80\" r=\"18\" fill=\"#ff6d0030\" stroke=\"#ff6d00\" stroke-width=\"1\"/><circle cx=\"170\" cy=\"80\" r=\"14\" fill=\"#1a237e\" opacity=\"0.9\" stroke=\"#7986cb\" stroke-width=\"1\"/></svg>",
+      "title": {
+        "zh-TW": "冷氣流如何穿透星系暈震波：碎裂、凝聚與瓦解的三重命運",
+        "en": "Cold Streams vs. Virial Shocks: Three Fates of Gas Filaments Feeding Galaxies",
+        "zh-CN": "冷气流如何穿透星系晕震波：碎裂、凝聚与瓦解的三重命运",
+        "ja": "銀河ハローを貫く冷たいガス流：断裂・凝集・破壊の三つの運命",
+        "ko": "은하 헤일로를 뚫는 냉가스 흐름：파편화, 응집, 파괴의 세 가지 운명"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Astrophysics",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 天文宇宙",
+        "ko": "🌌 천문 우주"
+      },
+      "tech": {
+        "zh-TW": "本研究以三維理想化數值模擬，系統性研究圓柱形冷氣流穿透高溫星周介質（CGM）的動力學，改變氣流半徑、馬赫數與壓力對比等參數，並在三種密度對比條件下追蹤氣流的演化模式，識別出碎裂、凝聚與瓦解三種主要結局。",
+        "en": "Using idealized 3D hydrodynamic simulations, the team systematically varies stream radius, Mach number, and pressure contrast between cylindrical cold streams and the hot CGM across three density contrast regimes, identifying three distinct evolutionary outcomes that determine whether cold gas successfully reaches the central galaxy.",
+        "zh-CN": "本研究以三维理想化数值模拟，系统研究圆柱形冷气流穿透高温星周介质（CGM）的动力学，改变气流半径、马赫数与压力对比等参数，在三种密度对比条件下追踪气流演化，识别出碎裂、凝聚与瓦解三种主要结局。",
+        "ja": "三次元の理想化数値シミュレーションを用い、円柱状冷ガス流の半径・マッハ数・圧力コントラストを系統的に変化させ、三種の密度コントラスト条件下での進化を追跡。断裂・凝集・破壊という三つの主要な結末を特定した。",
+        "ko": "3차원 이상화 수치 시뮬레이션을 통해 원통형 냉가스 흐름의 반지름·마하수·압력 대비를 체계적으로 변화시키고, 세 가지 밀도 대비 조건에서 진화 양상을 추적하여 파편화·응집·파괴라는 세 가지 주요 결말을 규명했다."
+      },
+      "plain": {
+        "zh-TW": "想像宇宙中有一條條巨大的「冷水管」，沿著宇宙網的絲狀結構，把冰冷的氣體送向正在成長的星系。這些冷氣流就像消防水柱，必須穿過星系周圍滾燙的「熱氣球」——也就是震波加熱的星系暈——才能把燃料送到星系中心。但熱氣球不會乖乖讓路：冷氣流可能被扯碎成無數小塊（碎裂），小塊可能重新黏合變大（凝聚），也可能整條被熱浪蒸發殆盡（瓦解）。研究者用超級電腦模擬了各種粗細、速度、壓力的冷氣流，找出決定命運的關鍵因素。這就像研究一根細麵條能不能安全插進沸騰的湯鍋而不融化！搞清楚冷氣流的存活條件，能幫我們理解為什麼宇宙早期星系能快速長大，也解釋了今天大質量星系為何最終「斷糧」停止生長。",
+        "en": "Imagine giant cosmic pipelines of cold gas flowing along the cosmic web like rivers, trying to deliver fuel to hungry, growing galaxies. These cold streams must pierce through a scorching hot bubble surrounding each galaxy — the virial shock — to reach the center. But the hot bubble fights back: a stream might shatter into tiny droplets, those droplets might clump back together, or the whole stream might simply evaporate away. Researchers ran supercomputer simulations with streams of different widths, speeds, and pressures to map out when each fate occurs. Think of it as testing whether a thin noodle can survive being pushed into a boiling pot! Understanding which streams survive tells us why galaxies in the early universe grew so rapidly, and why today's massive galaxies eventually ran out of fuel and stopped forming stars.",
+        "zh-CN": "想象宇宙中有一条条巨大的「冷水管」，沿着宇宙网的丝状结构，把冰冷的气体送向正在成长的星系。这些冷气流就像消防水柱，必须穿过星系周围滚烫的「热气球」——即震波加热的星系晕——才能把燃料送到星系中心。但热气球不会乖乖让路：冷气流可能被扯碎成无数小块（碎裂），小块可能重新黏合变大（凝聚），也可能整条被热浪蒸发殆尽（瓦解）。研究者用超级计算机模拟了各种粗细、速度、压力的冷气流，找出决定命运的关键因素。搞清楚冷气流的存活条件，能帮我们理解为何宇宙早期星系能快速长大，也解释了今天大质量星系为何最终「断粮」停止生长。",
+        "ja": "宇宙には、宇宙の大規模構造に沿って冷たいガスを銀河へ届ける「宇宙のパイプライン」が存在します。このガス流は、銀河を取り囲む灼熱の「ホットバブル」（ビリアル衝撃波）を突き破って中心部に到達しなければなりません。しかし熱いバブルは抵抗します——ガス流は無数の小塊に砕け散り（断裂）、その小塊が再び合体し（凝集）、あるいは完全に蒸発してしまう（破壊）のです。スーパーコンピューターで様々な太さ・速度・圧力のガス流をシミュレートし、運命を分ける条件を特定しました。これは「細いパスタが沸騰した鍋に入れても溶けずに届くか」を調べるようなものです！冷ガス流の生存条件を解明することで、初期宇宙の銀河がなぜ急速に成長できたかが分かります。",
+        "ko": "우주에는 거대한 차가운 가스 파이프라인이 우주의 거미줄 구조를 따라 은하로 연료를 공급합니다. 이 냉가스 흐름은 은하를 둘러싼 뜨거운 거품, 즉 비리얼 충격파를 뚫고 은하 중심부에 닿아야 합니다. 하지만 뜨거운 거품은 맞서 싸웁니다. 흐름이 수많은 작은 조각으로 부서지거나(파편화), 조각들이 다시 뭉치거나(응집), 아니면 통째로 증발해 버립니다(파괴). 연구팀은 슈퍼컴퓨터로 다양한 두께·속도·압력의 흐름을 시뮬레이션해 운명을 결정하는 조건을 찾아냈습니다. 냉가스 흐름의 생존 조건을 이해하면, 초기 우주 은하가 왜 그렇게 빠르게 성장했는지, 그리고 오늘날 거대 은하들이 왜 성장을 멈췄는지를 설명할 수 있습니다."
+      },
+      "insight": {
+        "zh-TW": "💡 星系的生死取決於一條細細的冷氣流能否在滾燙的宇宙環境中倖存——碎裂未必是終點，凝聚後重生才是真正的考驗。",
+        "en": "💡 A galaxy's fate may hinge on whether its cold gas supply can survive a gauntlet of heat and turbulence — fragmentation is not always death, for shattered droplets can coalesce and fight on.",
+        "zh-CN": "💡 星系的生死取决于一条细细的冷气流能否在滚烫的宇宙环境中幸存——碎裂未必是终点，凝聚后重生才是真正的考验。",
+        "ja": "💡 銀河の命運は、冷たいガス流が灼熱の宇宙環境を生き延びられるかどうかにかかっている——断裂は終わりではなく、凝集して再生することこそが真の試練だ。",
+        "ko": "💡 은하의 운명은 차가운 가스 흐름이 뜨거운 우주 환경을 살아남을 수 있느냐에 달려 있다——파편화가 반드시 끝은 아니며, 응집해 다시 살아나는 것이야말로 진짜 시험이다."
+      }
+    }
+  ]
+}
