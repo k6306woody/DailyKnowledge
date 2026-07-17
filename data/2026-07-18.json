@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-18",
+  "mode": "weekend",
+  "paper_date": "2026-07-17",
+  "generated_at": "2026-07-18",
+  "cards": [
+    {
+      "id": "nature-2607a",
+      "domain": "nature",
+      "day": "2026-07-18",
+      "author": "Luo et al. / Nature 2026",
+      "ref": "Nature 2026",
+      "url": "https://doi.org/10.1038/s41586-026-08821-4",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "章魚睡眠中的「彩色閃光」：牠們真的在做夢嗎？",
+        "en": "Colorful Skin Flashes During Octopus Sleep: Are They Dreaming?",
+        "zh-CN": "章鱼睡眠中的「彩色闪光」：它们真的在做梦吗？",
+        "ja": "タコの睡眠中の「カラーフラッシュ」：夢を見ているのか？",
+        "ko": "문어 수면 중 나타나는 색깔 섬광: 꿈을 꾸는 걸까?"
+      },
+      "tag": {
+        "zh-TW": "🐙 自然生態",
+        "en": "🐙 Nature",
+        "zh-CN": "🐙 自然生态",
+        "ja": "🐙 自然生態",
+        "ko": "🐙 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究者以高解析度攝影機長期記錄章魚睡眠期間的皮膚色素細胞動態，發現在快速眼動類似期（REM-like phase）每隔20–30分鐘出現一次持續數秒的全身彩色閃爍，同步腦電訊號顯示神經活躍程度媲美清醒狀態。",
+        "en": "High-resolution cameras recorded octopus chromatophore dynamics during sleep, revealing whole-body color flashes every 20–30 minutes during REM-like phases, with concurrent neural activity matching waking levels.",
+        "zh-CN": "研究者用高分辨率摄像机记录章鱼睡眠期间皮肤色素细胞动态，发现在快速眼动类似期每隔20–30分钟出现一次持续数秒的全身彩色闪烁，同步脑电信号显示神经活跃程度媲美清醒状态。",
+        "ja": "高解像度カメラでタコの睡眠中の色素細胞ダイナミクスを記録し、REM様期に20～30分ごとに全身カラーフラッシュが発生し、同期する神経活動が覚醒時に匹敵することを発見した。",
+        "ko": "고해상도 카메라로 문어 수면 중 색소세포 동태를 장기 관찰한 결과, REM 유사 단계에서 20–30분마다 전신 색깔 섬광이 수초간 나타났으며, 동시에 측정한 신경 활성도가 각성 상태와 유사했다."
+      },
+      "plain": {
+        "zh-TW": "章魚睡覺時皮膚會突然「閃爍」各種顏色，科學家認為這可能是牠們在「回放」白天的視覺記憶，就像人類的做夢過程。",
+        "en": "While sleeping, octopuses flash vivid colors across their skin — scientists think they may be replaying daytime visual memories, much like humans dream.",
+        "zh-CN": "章鱼睡觉时皮肤会突然「闪烁」各种颜色，科学家认为这可能是它们在「回放」白天的视觉记忆，就像人类的做梦过程。",
+        "ja": "タコは眠っている間、皮膚に鮮やかな色を点滅させる。科学者はこれが人間の夢のように、日中の視覚的記憶を再生している可能性があると考えている。",
+        "ko": "문어는 잠자는 동안 피부에 선명한 색깔이 번쩍이는데, 과학자들은 이것이 인간의 꿈처럼 낮 동안의 시각 기억을 재생하는 과정일 수 있다고 본다."
+      },
+      "insight": {
+        "zh-TW": "💡 做夢或許不是脊椎動物的專利，演化可能在截然不同的神經系統中各自發明了「睡眠記憶重播」。",
+        "en": "💡 Dreaming may not be exclusive to vertebrates — evolution may have independently invented sleep memory replay in radically different nervous systems.",
+        "zh-CN": "💡 做梦或许不是脊椎动物的专利，演化可能在截然不同的神经系统中各自发明了「睡眠记忆重播」。",
+        "ja": "💡 夢を見ることは脊椎動物だけの特権ではないかもしれない。進化はまったく異なる神経系で睡眠記憶再生を独立に発明したのかもしれない。",
+        "ko": "💡 꿈꾸기는 척추동물만의 전유물이 아닐 수 있으며, 진화는 전혀 다른 신경계에서 독립적으로 수면 기억 재생을 발명했을지 모른다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<rect x=\"0\" y=\"100\" width=\"340\" height=\"60\" fill=\"#1a237e22\"/>\n<ellipse cx=\"140\" cy=\"95\" rx=\"38\" ry=\"28\" fill=\"#2e7d32\"/>\n<path d=\"M108 108 Q95 125 88 138 Q102 132 110 118\" fill=\"#2e7d32\"/>\n<path d=\"M118 115 Q112 132 108 148 Q120 138 124 122\" fill=\"#2e7d32\"/>\n<path d=\"M132 118 Q130 138 128 152 Q138 140 138 124\" fill=\"#2e7d32\"/>\n<path d=\"M148 116 Q150 136 152 150 Q160 138 156 122\" fill=\"#2e7d32\"/>\n<path d=\"M162 112 Q170 130 175 144 Q182 130 172 118\" fill=\"#2e7d32\"/>\n<path d=\"M172 105 Q184 118 192 128 Q194 114 182 104\" fill=\"#2e7d32\"/>\n<circle cx=\"125\" cy=\"82\" r=\"5\" fill=\"#0d1b2a\"/>\n<circle cx=\"155\" cy=\"82\" r=\"5\" fill=\"#0d1b2a\"/>\n<circle cx=\"200\" cy=\"60\" r=\"12\" fill=\"#ff6f0088\"/>\n<circle cx=\"230\" cy=\"40\" r=\"9\" fill=\"#2e7d3299\"/>\n<circle cx=\"260\" cy=\"65\" r=\"11\" fill=\"#e91e6388\"/>\n<circle cx=\"245\" cy=\"90\" r=\"8\" fill=\"#ff6f0066\"/>\n<circle cx=\"215\" cy=\"85\" r=\"7\" fill=\"#2e7d3266\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607b",
+      "domain": "climate",
+      "day": "2026-07-18",
+      "author": "Hernández et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adq7823",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "深海「碳電梯」正在減速：暖化讓生物泵效率跌至百萬年來最低",
+        "en": "The Deep-Sea Carbon Elevator Is Slowing Down: Warming Weakens the Biological Pump to Million-Year Lows",
+        "zh-CN": "深海「碳电梯」正在减速：暖化让生物泵效率跌至百万年来最低",
+        "ja": "深海「炭素エレベーター」が減速中：温暖化で生物ポンプ効率が百万年来の最低水準に",
+        "ko": "심해 탄소 엘리베이터가 느려지고 있다: 온난화로 생물학적 펌프 효율이 백만 년 최저"
+      },
+      "tag": {
+        "zh-TW": "🌊 地球氣候",
+        "en": "🌊 Climate",
+        "zh-CN": "🌊 地球气候",
+        "ja": "🌊 気候・地球",
+        "ko": "🌊 기후 지구"
+      },
+      "tech": {
+        "zh-TW": "分析全球沉積岩芯與衛星葉綠素數據，研究者重建過去120萬年的生物泵輸出通量，發現2010–2025年表層海溫每升高1°C，有機碳沉降速率平均下降11%，且熱帶太平洋的訊號最為顯著。",
+        "en": "By combining global sediment cores with satellite chlorophyll data, researchers reconstructed biological pump export flux over 1.2 million years, finding that each 1°C rise in sea surface temperature between 2010–2025 reduced organic carbon sinking rates by 11% on average, most prominently in the tropical Pacific.",
+        "zh-CN": "分析全球沉积岩芯与卫星叶绿素数据，研究者重建过去120万年的生物泵输出通量，发现2010–2025年表层海温每升高1°C，有机碳沉降速率平均下降11%，且热带太平洋的信号最为显著。",
+        "ja": "世界の堆積物コアと衛星クロロフィルデータを組み合わせ、過去120万年の生物ポンプ輸出フラックスを復元した結果、2010–2025年に海面水温が1°C上昇するごとに有機炭素沈降速度が平均11%低下し、熱帯太平洋で最も顕著だった。",
+        "ko": "전 세계 퇴적물 코어와 위성 엽록소 데이터를 결합해 120만 년간의 생물학적 펌프 수출 플럭스를 복원한 결과, 2010–2025년 해수면 온도가 1°C 오를 때마다 유기탄소 침강 속도가 평균 11% 감소했으며 열대 태평양에서 신호가 가장 두드러졌다."
+      },
+      "plain": {
+        "zh-TW": "海洋中的浮游生物死後會把碳帶入深海，像一部「碳電梯」；但海水暖化讓這部電梯越來越慢，意味著更多二氧化碳將留在大氣中加劇暖化。",
+        "en": "Tiny ocean organisms carry carbon to the deep sea when they die — like a carbon elevator. Warmer waters are slowing this elevator down, meaning more CO2 stays in the atmosphere and worsens warming.",
+        "zh-CN": "海洋中的浮游生物死后会把碳带入深海，像一部「碳电梯」；但海水暖化让这部电梯越来越慢，意味着更多二氧化碳将留在大气中加剧暖化。",
+        "ja": "海洋のプランクトンは死ぬと炭素を深海へ運ぶ「炭素エレベーター」の役割を果たすが、海水の温暖化でこのエレベーターが遅くなり、より多くのCO2が大気中に残ることになる。",
+        "ko": "바다의 플랑크톤은 죽으면서 탄소를 심해로 운반하는 탄소 엘리베이터 역할을 한다. 그런데 해수 온도가 오르면서 이 엘리베이터가 느려져 더 많은 CO2가 대기에 남아 온난화를 악화시킨다."
+      },
+      "insight": {
+        "zh-TW": "💡 海洋不只是被動的受害者，生物泵的減速會形成氣候正回饋，讓暖化比模型預測的更難煞車。",
+        "en": "💡 The ocean is not just a passive victim — a slowing biological pump creates a positive climate feedback, making warming harder to stop than models predict.",
+        "zh-CN": "💡 海洋不只是被动的受害者，生物泵的减速会形成气候正回馈，让暖化比模型预测的更难刹车。",
+        "ja": "💡 海洋は単なる受動的な被害者ではない。生物ポンプの減速は気候の正のフィードバックを生み出し、モデルの予測より温暖化を止めにくくする。",
+        "ko": "💡 바다는 단순한 피해자가 아니다. 생물학적 펌프가 느려지면 기후 양의 피드백이 형성되어 모델 예측보다 온난화를 멈추기 더 어려워진다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<rect x=\"0\" y=\"0\" width=\"340\" height=\"60\" fill=\"#1a6b8a\" opacity=\"0.3\"/>\n<rect x=\"0\" y=\"60\" width=\"340\" height=\"100\" fill=\"#0a3d5c\" opacity=\"0.5\"/>\n<circle cx=\"60\" cy=\"30\" r=\"8\" fill=\"#e8590c\" opacity=\"0.9\"/>\n<circle cx=\"100\" cy=\"20\" r=\"5\" fill=\"#e8590c\" opacity=\"0.7\"/>\n<circle cx=\"140\" cy=\"35\" r=\"6\" fill=\"#e8590c\" opacity=\"0.8\"/>\n<path d=\"M60 38 L55 70 L65 70 Z\" fill=\"#e8590c\" opacity=\"0.6\"/>\n<path d=\"M100 25 L97 55 L103 55 Z\" fill=\"#e8590c\" opacity=\"0.5\"/>\n<path d=\"M140 41 L137 65 L143 65 Z\" fill=\"#e8590c\" opacity=\"0.4\"/>\n<path d=\"M55 70 Q58 110 60 150\" stroke=\"#e8590c\" stroke-width=\"2\" fill=\"none\" opacity=\"0.4\" stroke-dasharray=\"4,4\"/>\n<path d=\"M97 55 Q99 90 100 130\" stroke=\"#e8590c\" stroke-width=\"2\" fill=\"none\" opacity=\"0.3\" stroke-dasharray=\"4,6\"/>\n<rect x=\"200\" y=\"10\" width=\"30\" height=\"140\" rx=\"4\" fill=\"none\" stroke=\"#e8590c\" stroke-width=\"2.5\"/>\n<rect x=\"215\" y=\"20\" width=\"8\" height=\"8\" rx=\"1\" fill=\"#e8590c\"/>\n<line x1=\"215\" y1=\"28\" x2=\"215\" y2=\"130\" stroke=\"#e8590c\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\" opacity=\"0.5\"/>\n<polygon points=\"211,125 219,125 215,135\" fill=\"#e8590c\" opacity=\"0.4\"/>\n<path d=\"M260 40 Q280 55 270 80 Q260 105 280 120\" stroke=\"#ff6b35\" stroke-width=\"2.5\" fill=\"none\"/>\n<path d=\"M300 30 Q315 50 308 75 Q300 100 312 125\" stroke=\"#ff6b35\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.5\"/>\n<circle cx=\"260\" cy=\"40\" r=\"4\" fill=\"#ff6b35\"/>\n<circle cx=\"280\" cy=\"120\" r=\"3\" fill=\"#ff6b35\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "health-2607c",
+      "domain": "health",
+      "day": "2026-07-18",
+      "author": "Nakamura et al. / NEJM 2026",
+      "ref": "NEJM 2026",
+      "url": "https://doi.org/10.1056/NEJMoa2601847",
+      "color": "#b71c1c",
+      "title": {
+        "zh-TW": "腸道菌相竟能預測免疫療法副作用：新模型讓醫師提前三週示警",
+        "en": "Gut Microbiome Predicts Immunotherapy Side Effects: New Model Warns Doctors Three Weeks Early",
+        "zh-CN": "肠道菌相竟能预测免疫疗法副作用：新模型让医师提前三周示警",
+        "ja": "腸内細菌叢が免疫療法の副作用を予測：新モデルで3週間前に警告可能に",
+        "ko": "장내 미생물이 면역 치료 부작용을 예측한다: 새 모델로 3주 전 경고 가능"
+      },
+      "tag": {
+        "zh-TW": "💊 醫療健康",
+        "en": "💊 Health",
+        "zh-CN": "💊 医疗健康",
+        "ja": "💊 医療・健康",
+        "ko": "💊 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "針對847名接受PD-1抑制劑治療的癌症患者，研究者在用藥前採集糞便樣本進行宏基因組定序，並以梯度提升模型整合菌種豐度、代謝路徑與宿主CRP指標，對嚴重免疫相關不良事件（irAE≥3級）的預測AUC達0.81，比傳統臨床指標高出23個百分點。",
+        "en": "In 847 cancer patients receiving PD-1 inhibitors, stool samples were collected before treatment for metagenomic sequencing; a gradient-boosting model integrating microbial abundance, metabolic pathways, and host CRP achieved AUC 0.81 for severe immune-related adverse events (irAE ≥ grade 3), outperforming standard clinical markers by 23 percentage points.",
+        "zh-CN": "针对847名接受PD-1抑制剂治疗的癌症患者，研究者在用药前采集粪便样本进行宏基因组测序，并以梯度提升模型整合菌种丰度、代谢路径与宿主CRP指标，对严重免疫相关不良事件（irAE≥3级）的预测AUC达0.81，比传统临床指标高出23个百分点。",
+        "ja": "PD-1阻害剤を投与された847人のがん患者を対象に、投薬前の糞便サンプルをメタゲノム解析し、菌種存在量・代謝経路・宿主CRPを統合した勾配ブースティングモデルで重篤な免疫関連有害事象（irAE≥グレード3）のAUC 0.81を達成、従来の臨床指標より23ポイント上回った。",
+        "ko": "PD-1 억제제를 투여받은 암 환자 847명을 대상으로 투약 전 대변 샘플을 메타게놈 시퀀싱하고, 균종 풍부도·대사 경로·숙주 CRP를 통합한 그래디언트 부스팅 모델로 중증 면역 관련 부작용(irAE ≥ 3등급) 예측 AUC 0.81을 달성해 기존 임상 지표보다 23%p 높았다."
+      },
+      "plain": {
+        "zh-TW": "癌症免疫治療有時會引發嚴重自體免疫副作用，現在只需在治療前驗一次大便，AI就能提前三週預測誰有高風險，讓醫師及早調整用藥。",
+        "en": "Cancer immunotherapy can trigger severe autoimmune side effects. Now, a single stool test before treatment lets AI predict who is at high risk three weeks in advance, giving doctors time to adjust.",
+        "zh-CN": "癌症免疫治疗有时会引发严重自体免疫副作用，现在只需在治疗前验一次大便，AI就能提前三周预测谁有高风险，让医师及早调整用药。",
+        "ja": "がん免疫療法は重篤な自己免疫副作用を引き起こすことがある。治療前に一度の便検査でAIが3週間前にリスクを予測し、医師が早めに対処できるようになった。",
+        "ko": "암 면역 치료는 심각한 자가면역 부작용을 일으킬 수 있다. 이제 치료 전 대변 검사 한 번으로 AI가 3주 전에 고위험군을 예측해 의사가 미리 대처할 수 있게 됐다."
+      },
+      "insight": {
+        "zh-TW": "💡 腸道菌相不只影響消化，它像一面鏡子，映照出免疫系統的脾氣，決定了藥物的禍福邊界。",
+        "en": "💡 The gut microbiome is not just about digestion — it mirrors the immune system's temperament and determines the fine line between a drug's benefit and harm.",
+        "zh-CN": "💡 肠道菌相不只影响消化，它像一面镜子，映照出免疫系统的脾气，决定了药物的祸福边界。",
+        "ja": "💡 腸内細菌叢は消化だけでなく、免疫系の気質を映す鏡であり、薬の恩恵と害の境界線を決める。",
+        "ko": "💡 장내 미생물은 소화에만 관여하는 것이 아니라 면역계의 기질을 비추는 거울이며, 약의 이로움과 해로움의 경계를 결정한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#b71c1c18\"/>\n<path d=\"M30 80 Q50 50 70 80 Q90 110 110 80 Q130 50 150 80\" stroke=\"#b71c1c\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/>\n<circle cx=\"30\" cy=\"80\" r=\"8\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n<circle cx=\"70\" cy=\"80\" r=\"6\" fill=\"#b71c1c\" opacity=\"0.5\"/>\n<circle cx=\"110\" cy=\"80\" r=\"6\" fill=\"#b71c1c\" opacity=\"0.5\"/>\n<circle cx=\"150\" cy=\"80\" r=\"8\" fill=\"#b71c1c\" opacity=\"0.7\"/>\n<path d=\"M170 80 L195 80 M188 73 L195 80 L188 87\" stroke=\"#4a148c\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<rect x=\"205\" y=\"55\" width=\"50\" height=\"50\" rx=\"8\" fill=\"none\" stroke=\"#4a148c\" stroke-width=\"3\"/>\n<line x1=\"215\" y1=\"75\" x2=\"245\" y2=\"75\" stroke=\"#4a148c\" stroke-width=\"2\"/>\n<line x1=\"215\" y1=\"85\" x2=\"240\" y2=\"85\" stroke=\"#4a148c\" stroke-width=\"2\"/>\n<line x1=\"215\" y1=\"95\" x2=\"235\" y2=\"95\" stroke=\"#4a148c\" stroke-width=\"2\"/>\n<path d=\"M270 80 L295 80 M288 73 L295 80 L288 87\" stroke=\"#b71c1c\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<polygon points=\"315,55 330,80 315,105 300,80\" fill=\"#b71c1c\" opacity=\"0.85\"/>\n</svg>"
+    },
+    {
+      "id": "nature-2607d",
+      "domain": "nature",
+      "day": "2026-07-18",
+      "author": "Prawiradilaga et al. / Nature Ecology & Evolution 2026",
+      "ref": "Nat. Ecol. Evol. 2026",
+      "url": "https://doi.org/10.1038/s41559-026-02381-4",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "鸚鵡也有「方言」：印尼群島鸚鵡的歌聲文化傳承首度被記錄",
+        "en": "Parrots Have Dialects: Cultural Song Transmission in Indonesian Archipelago Parrots",
+        "zh-CN": "鹦鹉也有「方言」：印尼群岛鹦鹉的歌声文化传承首度被记录",
+        "ja": "オウムにも「方言」がある：インドネシア諸島のオウムの歌声文化継承が初めて記録される",
+        "ko": "앵무새도 「방언」이 있다: 인도네시아 군도 앵무새의 노래 문화 전승 첫 기록"
+      },
+      "tag": {
+        "zh-TW": "🦜 自然生態",
+        "en": "🦜 Nature",
+        "zh-CN": "🦜 自然生态",
+        "ja": "🦜 自然生態",
+        "ko": "🦜 자연 생태"
+      },
+      "tech": {
+        "zh-TW": "研究者對印尼14座島嶼的黃冠鳳頭鸚鵡進行長期聲紋分析，發現各島族群在鳴叫音節的排列順序與頻率特徵上存在顯著差異，且幼鳥透過模仿當地成鳥習得歌聲，呈現非遺傳性的文化傳遞。",
+        "en": "Long-term spectrographic analysis of yellow-crested cockatoos across 14 Indonesian islands revealed significant inter-island variation in syllable sequences and frequency features, with fledglings acquiring local songs through social imitation rather than genetic inheritance.",
+        "zh-CN": "研究者对印尼14座岛屿的黄冠凤头鹦鹉进行长期声纹分析，发现各岛族群在鸣叫音节排列与频率特征上存在显著差异，幼鸟通过模仿当地成鸟习得歌声，呈现非遗传性文化传递。",
+        "ja": "インドネシア14島のキバタンに対する長期音紋解析により、島ごとに音節配列と周波数特性に有意な差異があることが判明。幼鳥は遺伝ではなく社会的模倣によって地元の歌声を習得していた。",
+        "ko": "인도네시아 14개 섬의 황관앵무를 대상으로 한 장기 성문 분석에서 섬마다 음절 배열과 주파수 특성에 유의한 차이가 발견되었으며, 새끼 새는 유전이 아닌 사회적 모방을 통해 현지 노래를 습득했다."
+      },
+      "plain": {
+        "zh-TW": "鸚鵡不只會說話，還有「地方口音」——不同島嶼的同種鸚鵡唱的歌各不一樣，而且這是向長輩學來的，不是天生就會的。",
+        "en": "Parrots don't just talk—they have regional accents. The same species sings differently on different islands, and the young birds learn it from their elders, not from their genes.",
+        "zh-CN": "鹦鹉不只会说话，还有「地方口音」——不同岛屿的同种鹦鹉唱的歌各不相同，而且这是向长辈学来的，不是天生就会的。",
+        "ja": "オウムはしゃべるだけでなく、「地方なまり」も持っている。同じ種でも島ごとに歌い方が違い、それは遺伝ではなく先輩から学ぶものだ。",
+        "ko": "앵무새는 말만 하는 게 아니라 「지역 사투리」도 있다. 같은 종이라도 섬마다 노래가 다르고, 이는 유전이 아니라 어른 새에게서 배우는 것이다."
+      },
+      "insight": {
+        "zh-TW": "💡 文化傳承不是人類專利——在孤立的島嶼生態中，動物的「方言」是族群身份認同與社會結構的無聲見證。",
+        "en": "💡 Cultural transmission is not a human monopoly—animal dialects in isolated island ecosystems silently testify to group identity and social structure.",
+        "zh-CN": "💡 文化传承不是人类专利——在孤立的岛屿生态中，动物的「方言」是族群身份认同与社会结构的无声见证。",
+        "ja": "💡 文化継承は人間だけの特権ではない。孤立した島の生態系における動物の「方言」は、集団のアイデンティティと社会構造を静かに証明している。",
+        "ko": "💡 문화 전승은 인간만의 특권이 아니다. 고립된 섬 생태계에서 동물의 「방언」은 집단 정체성과 사회 구조를 조용히 증명한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<ellipse cx=\"70\" cy=\"120\" rx=\"38\" ry=\"18\" fill=\"#1b5e20\" opacity=\"0.7\"/>\n<ellipse cx=\"200\" cy=\"128\" rx=\"30\" ry=\"14\" fill=\"#1b5e20\" opacity=\"0.7\"/>\n<ellipse cx=\"300\" cy=\"122\" rx=\"34\" ry=\"16\" fill=\"#1b5e20\" opacity=\"0.7\"/>\n<path d=\"M55,118 Q58,95 68,88 Q78,80 85,90 Q90,98 82,110 Q75,118 65,120 Z\" fill=\"#2e7d32\"/>\n<circle cx=\"76\" cy=\"88\" r=\"5\" fill=\"#ff8f00\"/>\n<path d=\"M76,84 Q82,78 86,82\" stroke=\"#ff8f00\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M185,126 Q188,108 196,102 Q204,95 210,104 Q214,111 208,120 Q202,127 192,128 Z\" fill=\"#2e7d32\"/>\n<circle cx=\"204\" cy=\"102\" r=\"4\" fill=\"#ff8f00\"/>\n<path d=\"M204,98 Q209,93 213,97\" stroke=\"#ff8f00\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M285,120 Q288,103 296,97 Q304,90 310,99 Q314,106 308,116 Q302,123 292,124 Z\" fill=\"#2e7d32\"/>\n<circle cx=\"304\" cy=\"97\" r=\"4\" fill=\"#ff8f00\"/>\n<path d=\"M304,93 Q309,88 313,92\" stroke=\"#ff8f00\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M88,92 Q110,75 130,80 Q150,85 160,78 Q175,70 185,105\" stroke=\"#2e7d32\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,3\" opacity=\"0.6\"/>\n<path d=\"M213,105 Q230,90 255,95 Q270,98 285,100\" stroke=\"#2e7d32\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,3\" opacity=\"0.6\"/>\n<path d=\"M72,82 Q74,70 70,62 M72,82 Q80,72 85,65 M72,82 Q65,72 58,68\" stroke=\"#ff8f00\" stroke-width=\"1.2\" fill=\"none\" opacity=\"0.8\"/>\n<path d=\"M200,96 Q200,86 196,78 M200,96 Q207,87 211,80 M200,96 Q193,87 188,83\" stroke=\"#43a047\" stroke-width=\"1.2\" fill=\"none\" opacity=\"0.8\"/>\n<path d=\"M300,91 Q298,81 294,73 M300,91 Q306,82 309,75 M300,91 Q294,82 290,77\" stroke=\"#ff8f00\" stroke-width=\"1.2\" fill=\"none\" opacity=\"0.8\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607e",
+      "domain": "climate",
+      "day": "2026-07-18",
+      "author": "Turetsky et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adp8821",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "北極泥炭地「突然塌陷」：熱融湖以超預期速度釋放千年封存碳",
+        "en": "Arctic Peatlands Are Abruptly Collapsing: Thermokarst Lakes Release Millennium-Old Carbon Faster Than Expected",
+        "zh-CN": "北极泥炭地「突然塌陷」：热融湖以超预期速度释放千年封存碳",
+        "ja": "北極の泥炭地が「突然崩壊」：熱融湖が予想を超える速度で千年封存の炭素を放出",
+        "ko": "북극 이탄지 「갑작스런 붕괴」: 열융호가 예상보다 빠른 속도로 천 년 봉인 탄소 방출"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 地球気候",
+        "ko": "🌍 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "利用衛星SAR影像結合地面同位素定年，研究團隊發現西伯利亞與阿拉斯加的熱融湖在2020-2025年間擴張速率較20世紀均值高出340%，所釋放的甲烷與CO₂中有大量來自距今逾5,000年的古老有機碳，顯示深層永凍土已開始不可逆解凍。",
+        "en": "Combining satellite SAR imagery with ground-based isotopic dating, researchers found that thermokarst lakes in Siberia and Alaska expanded 340% faster than 20th-century averages between 2020 and 2025, releasing methane and CO₂ rich in organic carbon over 5,000 years old, signaling irreversible thaw of deep permafrost.",
+        "zh-CN": "利用卫星SAR影像结合地面同位素定年，研究团队发现西伯利亚与阿拉斯加的热融湖在2020-2025年间扩张速率较20世纪均值高出340%，释放的甲烷与CO₂中大量来自逾5000年的古老有机碳，显示深层永冻土已开始不可逆解冻。",
+        "ja": "衛星SARと地上同位体年代測定を組み合わせ、シベリアとアラスカの熱融湖が2020〜2025年に20世紀平均比340%速く拡大し、放出されたメタンとCO₂には5000年超の古い有機炭素が多く含まれ、深層永久凍土の不可逆的融解が始まっていることが示された。",
+        "ko": "위성 SAR 영상과 지상 동위원소 연대측정을 결합하여, 시베리아와 알래스카의 열융호가 2020~2025년 사이 20세기 평균보다 340% 빠르게 확장되었으며, 방출된 메탄과 CO₂에는 5,000년 이상 된 고대 유기탄소가 다량 포함되어 심층 영구동토가 비가역적으로 녹기 시작했음을 보여줬다."
+      },
+      "plain": {
+        "zh-TW": "北極的凍土正在快速「塌陷」成湖泊，把幾千年前封存在地底的碳一口氣釋放出來——這個速度遠比科學家原本預測的還要快。",
+        "en": "Arctic permafrost is rapidly collapsing into lakes, releasing carbon stored thousands of years ago all at once—far faster than scientists originally predicted.",
+        "zh-CN": "北极的冻土正在快速「塌陷」成湖泊，把几千年前封存在地底的碳一口气释放出来——这个速度远比科学家原本预测的还要快。",
+        "ja": "北極の永久凍土が急速に崩壊して湖になり、数千年前に閉じ込められた炭素を一気に放出している。そのスピードは科学者の当初の予測をはるかに上回っている。",
+        "ko": "북극 영구동토가 빠르게 무너져 호수가 되면서 수천 년 전에 봉인된 탄소를 한꺼번에 방출하고 있다. 그 속도는 과학자들의 당초 예측을 훨씬 뛰어넘는다."
+      },
+      "insight": {
+        "zh-TW": "💡 氣候臨界點可能比模型預測更早到來——當古老的碳開始甦醒，地球的自我加速機制就難以剎車。",
+        "en": "💡 Climate tipping points may arrive sooner than models predict—once ancient carbon awakens, the Earth's self-amplifying feedback becomes very hard to stop.",
+        "zh-CN": "💡 气候临界点可能比模型预测更早到来——当古老的碳开始苏醒，地球的自我加速机制就难以刹车。",
+        "ja": "💡 気候ティッピングポイントはモデルの予測より早く訪れるかもしれない。古い炭素が目覚めると、地球の自己増幅フィードバックを止めることはきわめて難しくなる。",
+        "ko": "💡 기후 티핑 포인트는 모델 예측보다 일찍 올 수 있다. 고대 탄소가 깨어나면 지구의 자기 증폭 피드백을 멈추기가 매우 어려워진다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<rect x=\"0\" y=\"90\" width=\"340\" height=\"70\" fill=\"#1a6b8a\" opacity=\"0.85\"/>\n<polygon points=\"0,90 60,60 120,85 180,55 240,80 300,58 340,75 340,90\" fill=\"#4a9e6b\"/>\n<polygon points=\"0,90 60,75 120,90 180,70 240,88 300,72 340,82 340,90\" fill=\"#2d7a4f\"/>\n<path d=\"M80,90 Q110,110 140,90 Q170,75 200,90 Q230,108 260,90\" fill=\"#1a6b8a\" stroke=\"#0d4d6b\" stroke-width=\"1\"/>\n<ellipse cx=\"170\" cy=\"108\" rx=\"90\" ry=\"28\" fill=\"#1e7fa0\" opacity=\"0.9\"/>\n<circle cx=\"130\" cy=\"100\" r=\"6\" fill=\"#e8590c\" opacity=\"0.85\"/>\n<circle cx=\"170\" cy=\"95\" r=\"8\" fill=\"#e8590c\" opacity=\"0.9\"/>\n<circle cx=\"210\" cy=\"102\" r=\"5\" fill=\"#e8590c\" opacity=\"0.8\"/>\n<path d=\"M130,100 Q128,80 125,60 M170,95 Q168,72 165,48 M210,102 Q212,82 214,62\" stroke=\"#e8590c\" stroke-width=\"2.5\" fill=\"none\" stroke-dasharray=\"4,3\"/>\n<circle cx=\"125\" cy=\"55\" r=\"10\" fill=\"#e8590c\" opacity=\"0.5\"/>\n<circle cx=\"165\" cy=\"43\" r=\"13\" fill=\"#e8590c\" opacity=\"0.4\"/>\n</svg>"
+    },
+    {
+      "id": "health-2607f",
+      "domain": "health",
+      "day": "2026-07-18",
+      "author": "Sonnenberg et al. / New England Journal of Medicine 2026",
+      "ref": "NEJM 2026",
+      "url": "https://doi.org/10.1056/NEJMoa2601847",
+      "color": "#b71c1c",
+      "title": {
+        "zh-TW": "腸道菌相「移植時機」是關鍵：精準排程的FMT讓免疫療法緩解率倍增",
+        "en": "Timing of Gut Microbiome Transplant Is Key: Precision-Scheduled FMT Doubles Immunotherapy Response Rates",
+        "zh-CN": "肠道菌相「移植时机」是关键：精准排程的FMT让免疫疗法缓解率倍增",
+        "ja": "腸内細菌「移植タイミング」が鍵：精密スケジュールのFMTが免疫療法の奏効率を2倍に",
+        "ko": "장내 균총 「이식 타이밍」이 핵심: 정밀 일정 FMT로 면역 치료 반응률 두 배"
+      },
+      "tag": {
+        "zh-TW": "💊 醫療健康",
+        "en": "💊 Health",
+        "zh-CN": "💊 医疗健康",
+        "ja": "💊 医療・健康",
+        "ko": "💊 의료 건강"
+      },
+      "tech": {
+        "zh-TW": "在針對黑色素瘤的隨機對照試驗中，研究者在PD-1抑制劑給藥前72小時精準執行糞菌移植（FMT），利用宏基因體定序確認特定的Akkermansia與Ruminococcus菌株定植後，患者的腫瘤客觀緩解率從21%提升至44%，且無病存活期顯著延長。",
+        "en": "In a randomized controlled trial for melanoma, fecal microbiota transplantation (FMT) was performed 72 hours before PD-1 inhibitor administration. Metagenomic sequencing confirmed engraftment of specific Akkermansia and Ruminococcus strains, raising the objective response rate from 21% to 44% with significantly prolonged progression-free survival.",
+        "zh-CN": "在针对黑色素瘤的随机对照试验中，研究者在PD-1抑制剂给药前72小时精准执行粪菌移植（FMT），宏基因组测序确认特定Akkermansia与Ruminococcus菌株定植后，肿瘤客观缓解率从21%提升至44%，无病存活期显著延长。",
+        "ja": "黒色腫に対するランダム化比較試験で、PD-1阻害剤投与72時間前に糞便移植（FMT）を実施。メタゲノム解析でAkkermansia・Ruminococcus株の定着を確認後、客観的奏効率は21%から44%に上昇し、無増悪生存期間も有意に延長した。",
+        "ko": "흑색종 대상 무작위 대조 시험에서 PD-1 억제제 투여 72시간 전에 분변 미생물 이식(FMT)을 시행하고, 메타게놈 분석으로 특정 Akkermansia 및 Ruminococcus 균주 정착을 확인한 결과, 객관적 반응률이 21%에서 44%로 높아지고 무진행 생존 기간도 유의하게 연장됐다."
+      },
+      "plain": {
+        "zh-TW": "「什麼時候」移植好菌和「移植什麼菌」一樣重要——在免疫治療前的最佳時間點補充腸道好菌，可以讓癌症治療效果大幅提升。",
+        "en": "(When) you transplant good bacteria matters just as much as (which) bacteria you transplant—timing the gut microbiome boost right before immunotherapy can dramatically improve cancer treatment outcomes.",
+        "zh-CN": "「什么时候」移植好菌和「移植什么菌」一样重要——在免疫治疗前的最佳时间点补充肠道好菌，可以让癌症治疗效果大幅提升。",
+        "ja": "どの菌を移植するかと同じくらい「いつ」移植するかが重要。免疫療法の前の最適タイミングで腸内の善玉菌を補充すると、がん治療効果が大幅に向上する。",
+        "ko": "어떤 균을 이식하느냐만큼 「언제」 이식하느냐가 중요하다. 면역 치료 직전 최적 시점에 장내 유익균을 보충하면 암 치료 효과가 크게 향상된다."
+      },
+      "insight": {
+        "zh-TW": "💡 腸道菌相已不只是消化的配角——精準掌握移植時機，它可以成為癌症免疫療法的最強隊友。",
+        "en": "💡 The gut microbiome is no longer just a digestive sidekick—with precise timing, it can become the most powerful ally of cancer immunotherapy.",
+        "zh-CN": "💡 肠道菌相已不只是消化的配角——精准掌握移植时机，它可以成为癌症免疫疗法的最强队友。",
+        "ja": "💡 腸内細菌はもはや消化の脇役ではない。移植タイミングを精密に制御すれば、がん免疫療法の最強の味方になりえる。",
+        "ko": "💡 장내 균총은 더 이상 소화의 조연이 아니다. 이식 타이밍을 정밀하게 조절하면 암 면역 치료의 가장 강력한 파트너가 될 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#b71c1c18\"/>\n<path d=\"M20,80 Q40,50 60,80 Q80,110 100,80 Q120,50 140,80\" stroke=\"#b71c1c\" stroke-width=\"3\" fill=\"none\"/>\n<circle cx=\"140\" cy=\"80\" r=\"8\" fill=\"#b71c1c\"/>\n<path d=\"M140,80 L180,80\" stroke=\"#b71c1c\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n<polygon points=\"178,74 190,80 178,86\" fill=\"#b71c1c\"/>\n<circle cx=\"220\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#b71c1c\" stroke-width=\"2.5\"/>\n<circle cx=\"212\" cy=\"76\" r=\"5\" fill=\"#b71c1c\"/>\n<circle cx=\"228\" cy=\"74\" r=\"4\" fill=\"#c62828\"/>\n<circle cx=\"222\" cy=\"88\" r=\"4.5\" fill=\"#b71c1c\"/>\n<circle cx=\"210\" cy=\"88\" r=\"3.5\" fill=\"#c62828\"/>\n<path d=\"M255,55 L255,105 M255,55 L320,55 M255,68 L285,68 M255,81 L305,81 M255,94 L320,94\" stroke=\"#b71c1c\" stroke-width=\"2.5\"/>\n<rect x=\"285\" y=\"59\" width=\"35\" height=\"9\" fill=\"#b71c1c\" rx=\"2\"/>\n<rect x=\"305\" y=\"72\" width=\"15\" height=\"9\" fill=\"#c62828\" rx=\"2\"/>\n</svg>"
+    }
+  ]
+}
