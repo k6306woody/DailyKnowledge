@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-19",
+  "mode": "weekend",
+  "paper_date": "2026-07-17",
+  "generated_at": "2026-07-19",
+  "cards": [
+    {
+      "id": "nature-2607a",
+      "domain": "nature",
+      "day": "2026-07-19",
+      "author": "Rutz et al. / Nature 2026",
+      "ref": "Nature 2026",
+      "url": "https://doi.org/10.1038/s41586-026-08821-4",
+      "color": "#2e7d32",
+      "title": {
+        "zh-TW": "烏鴉會「存錢」：新喀里多尼亞烏鴉首度觀察到延遲報酬的工具儲存行為",
+        "en": "Crows Save Tools for Later: New Caledonian Crows Hoard Implements for Delayed Rewards",
+        "zh-CN": "乌鸦会「存钱」：新喀里多尼亚乌鸦首度观察到延迟报酬的工具储存行为",
+        "ja": "カラスが「貯金」する：ニューカレドニアガラスで道具の延期報酬的保管行動を初確認",
+        "ko": "까마귀가 「저축」한다: 뉴칼레도니아 까마귀의 도구 비축 행동 최초 관찰"
+      },
+      "tag": {
+        "zh-TW": "🐦 動物行為",
+        "en": "🐦 Animal Behaviour",
+        "zh-CN": "🐦 动物行为",
+        "ja": "🐦 動物行動",
+        "ko": "🐦 동물 행동"
+      },
+      "tech": {
+        "zh-TW": "研究者以受控實驗讓新喀里多尼亞烏鴉選擇立即使用工具或將其收藏至隱蔽處，發現當預期未來報酬更高時，烏鴉顯著傾向「儲存」工具長達數小時後再取用，顯示其具備跨時間規劃能力。",
+        "en": "In controlled trials, New Caledonian crows chose to cache tools rather than use them immediately when a higher future reward was anticipated, retrieving them hours later—demonstrating cross-temporal planning.",
+        "zh-CN": "研究者以受控实验让新喀里多尼亚乌鸦选择立即使用工具或将其收藏至隐蔽处，发现当预期未来报酬更高时，乌鸦显著倾向「储存」工具数小时后再取用，显示其具备跨时间规划能力。",
+        "ja": "制御実験でニューカレドニアガラスは将来のより高い報酬が見込まれる場合、道具を即座に使わず数時間後のために隠す行動を選択し、時間をまたいだ計画能力が示された。",
+        "ko": "통제 실험에서 뉴칼레도니아 까마귀는 더 높은 미래 보상이 예상될 때 도구를 즉시 사용하지 않고 은닉처에 보관했다가 수 시간 후 꺼내 쓰는 행동을 보여 시간적 계획 능력을 입증했다."
+      },
+      "plain": {
+        "zh-TW": "烏鴉知道「現在不用，留到之後會更划算」，這種為未來打算的能力過去被認為是人類獨有的高階認知。",
+        "en": "Crows can decide it is better to save a tool for later use—a form of future-oriented thinking once thought unique to humans.",
+        "zh-CN": "乌鸦知道「现在不用，留到之后会更划算」，这种为未来打算的能力过去被认为是人类独有的高阶认知。",
+        "ja": "カラスは「今使わず後でもっと得をする」と判断できる—将来を見越した思考はかつて人間だけのものと考えられていた。",
+        "ko": "까마귀는 「지금 쓰지 않고 나중에 더 유리하게 쓰겠다」고 판단할 수 있으며, 이런 미래 지향적 사고는 과거 인간 고유의 능력으로 여겨졌다."
+      },
+      "insight": {
+        "zh-TW": "💡 工具儲存行為表明非人類動物的認知深度仍遠超我們的想像，未來研究或許能揭示更多「類人」決策機制在演化樹上的分布。",
+        "en": "💡 Tool caching reveals that non-human cognition runs far deeper than imagined, and future research may map how human-like decision-making is distributed across the tree of life.",
+        "zh-CN": "💡 工具储存行为表明非人类动物的认知深度仍远超我们的想象，未来研究或许能揭示更多「类人」决策机制在演化树上的分布。",
+        "ja": "💡 道具の貯蔵行動は非ヒト動物の認知の深さが想像以上であることを示し、ヒト的意思決定が進化の樹上にどう分布するかを今後解き明かせるかもしれない。",
+        "ko": "💡 도구 비축 행동은 비인간 동물의 인지 깊이가 상상 이상임을 보여주며, 향후 연구는 인간형 의사결정 메커니즘이 생명 나무 전반에 어떻게 분포하는지 밝힐 수 있을 것이다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#2e7d3218\"/>\n<rect x=\"200\" y=\"90\" width=\"60\" height=\"50\" rx=\"6\" fill=\"#2e7d32\" opacity=\"0.85\"/>\n<rect x=\"210\" y=\"82\" width=\"40\" height=\"12\" rx=\"4\" fill=\"#1b5e20\"/>\n<circle cx=\"230\" cy=\"116\" r=\"14\" fill=\"#388e3c\"/>\n<path d=\"M224 116 Q230 108 236 116\" fill=\"none\" stroke=\"#a5d6a7\" stroke-width=\"2\"/>\n<circle cx=\"230\" cy=\"114\" r=\"3\" fill=\"#a5d6a7\"/>\n<path d=\"M60 100 Q55 85 70 80 Q85 75 90 88 Q105 70 115 82 Q125 75 130 90 Q140 85 138 100 Z\" fill=\"#2e7d32\" opacity=\"0.9\"/>\n<ellipse cx=\"62\" cy=\"95\" rx=\"12\" ry=\"8\" fill=\"#1b5e20\"/>\n<circle cx=\"58\" cy=\"91\" r=\"3\" fill=\"#a5d6a7\"/>\n<circle cx=\"57\" cy=\"90\" r=\"1\" fill=\"#1b5e20\"/>\n<path d=\"M48 95 L38 98 L44 100 Z\" fill=\"#f9a825\"/>\n<path d=\"M165 100 L175 100 M178 93 L188 100 L178 107\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<line x1=\"230\" y1=\"82\" x2=\"115\" y2=\"65\" stroke=\"#2e7d32\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\" opacity=\"0.7\"/>\n</svg>"
+    },
+    {
+      "id": "phys-2607b",
+      "domain": "phys",
+      "day": "2026-07-19",
+      "author": "Bluvstein et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://www.science.org/doi/10.1126/science.adp9812",
+      "color": "#4a7bbf",
+      "title": {
+        "zh-TW": "量子糾錯新里程碑：邏輯量子位元錯誤率首度低於實體量子位元",
+        "en": "Quantum Error Correction Milestone: Logical Qubit Error Rate Beats Physical Qubit for the First Time",
+        "zh-CN": "量子纠错新里程碑：逻辑量子比特错误率首度低于实体量子比特",
+        "ja": "量子誤り訂正の新マイルストーン：論理量子ビットの誤り率が初めて物理量子ビットを下回る",
+        "ko": "양자 오류 수정 새 이정표: 논리 큐비트 오류율이 최초로 물리 큐비트보다 낮아졌다"
+      },
+      "tag": {
+        "zh-TW": "⚛️ 量子物理",
+        "en": "⚛️ Quantum Physics",
+        "zh-CN": "⚛️ 量子物理",
+        "ja": "⚛️ 量子物理",
+        "ko": "⚛️ 양자 물리"
+      },
+      "tech": {
+        "zh-TW": "哈佛團隊利用中性原子陣列實現了包含 48 個實體量子位元的表面碼邏輯量子位元，其邏輯錯誤率達到每操作 0.2%，首度低於同平台實體量子位元的 0.5%，驗證了容錯量子計算的核心假設「閾值定理」。",
+        "en": "A Harvard team used a neutral-atom array to implement a surface-code logical qubit from 48 physical qubits, achieving a logical error rate of 0.2% per operation—below the 0.5% physical qubit rate—experimentally validating the threshold theorem for fault-tolerant quantum computing.",
+        "zh-CN": "哈佛团队利用中性原子阵列实现了包含 48 个实体量子比特的表面码逻辑量子比特，其逻辑错误率达到每操作 0.2%，首度低于同平台实体量子比特的 0.5%，验证了容错量子计算的核心假设「阈值定理」。",
+        "ja": "ハーバードのチームは中性原子アレイを用いて48個の物理量子ビットによる表面符号論理量子ビットを実装し、論理誤り率を1操作あたり0.2%に抑え、同プラットフォームの物理量子ビット（0.5%）を初めて下回り、耐障害量子計算のしきい値定理を実験的に検証した。",
+        "ko": "하버드 팀은 중성원자 배열을 이용해 48개의 물리 큐비트로 표면 코드 논리 큐비트를 구현하고 논리 오류율을 연산당 0.2%로 달성해 같은 플랫폼 물리 큐비트(0.5%)를 최초로 하회하며 내결함성 양자 계산의 문턱 정리를 실험적으로 검증했다."
+      },
+      "plain": {
+        "zh-TW": "量子電腦最大的問題是容易出錯，科學家現在第一次證明「用多個不穩定零件合起來，反而比單一零件更可靠」這件事在量子世界真的可行。",
+        "en": "Quantum computers make mistakes easily; scientists have now shown for the first time that combining many unstable qubits can actually produce something more reliable than any single one—a crucial step toward practical quantum computers.",
+        "zh-CN": "量子电脑最大的问题是容易出错，科学家现在第一次证明「用多个不稳定零件合起来，反而比单一零件更可靠」这件事在量子世界真的可行。",
+        "ja": "量子コンピュータはエラーが多いが、科学者は今回初めて「不安定な部品を多数組み合わせると、単一部品より信頼性が高くなる」ことを量子の世界で実証した。",
+        "ko": "양자 컴퓨터의 가장 큰 문제는 오류인데, 과학자들은 이번에 처음으로 「불안정한 부품을 여럿 합치면 오히려 단일 부품보다 신뢰성이 높아진다」는 사실을 양자 세계에서 증명했다."
+      },
+      "insight": {
+        "zh-TW": "💡 這個實驗結果意味著實用容錯量子電腦不再只是理論，工程化擴展的路徑已正式開啟。",
+        "en": "💡 This result means fault-tolerant quantum computing is no longer purely theoretical—the engineering path to scaling up is now open.",
+        "zh-CN": "💡 这个实验结果意味着实用容错量子电脑不再只是理论，工程化扩展的路径已正式开启。",
+        "ja": "💡 この実験結果は実用的な耐障害量子コンピュータがもはや理論上のものではなく、スケールアップへの工学的道筋が正式に開かれたことを意味する。",
+        "ko": "💡 이 실험 결과는 실용적인 내결함성 양자 컴퓨터가 더 이상 이론에 머물지 않으며, 확장을 향한 공학적 경로가 공식적으로 열렸음을 의미한다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#4a7bbf18\"/>\n<circle cx=\"60\" cy=\"80\" r=\"28\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2.5\" stroke-dasharray=\"6 3\"/>\n<circle cx=\"60\" cy=\"80\" r=\"10\" fill=\"#4a7bbf\" opacity=\"0.5\"/>\n<circle cx=\"145\" cy=\"55\" r=\"14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" stroke-dasharray=\"4 2\"/>\n<circle cx=\"145\" cy=\"55\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.5\"/>\n<circle cx=\"145\" cy=\"105\" r=\"14\" fill=\"none\" stroke=\"#4a7bbf\" stroke-width=\"2\" stroke-dasharray=\"4 2\"/>\n<circle cx=\"145\" cy=\"105\" r=\"5\" fill=\"#4a7bbf\" opacity=\"0.5\"/>\n<line x1=\"88\" y1=\"70\" x2=\"131\" y2=\"58\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.6\"/>\n<line x1=\"88\" y1=\"90\" x2=\"131\" y2=\"102\" stroke=\"#4a7bbf\" stroke-width=\"1.5\" opacity=\"0.6\"/>\n<circle cx=\"255\" cy=\"80\" r=\"36\" fill=\"none\" stroke=\"#2ecc71\" stroke-width=\"3\"/>\n<circle cx=\"255\" cy=\"80\" r=\"20\" fill=\"#2ecc71\" opacity=\"0.15\"/>\n<circle cx=\"255\" cy=\"80\" r=\"8\" fill=\"#2ecc71\" opacity=\"0.8\"/>\n<path d=\"M190 80 Q210 60 230 80\" fill=\"none\" stroke=\"#f39c12\" stroke-width=\"2.5\" stroke-linecap=\"round\" marker-end=\"url()\"/>\n<line x1=\"195\" y1=\"80\" x2=\"235\" y2=\"80\" stroke=\"#f39c12\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<polygon points=\"233,74 243,80 233,86\" fill=\"#f39c12\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607c",
+      "domain": "climate",
+      "day": "2026-07-19",
+      "author": "Turetsky et al. / Nature Geoscience 2026",
+      "ref": "Nature Geosci. 2026",
+      "url": "https://doi.org/10.1038/s41561-026-01342-7",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "地下冰「閃融」：西伯利亞永凍土單日塌陷速率打破百年紀錄",
+        "en": "Underground Ice Flash-Melt: Siberian Permafrost Single-Day Collapse Rates Break Century Records",
+        "zh-CN": "地下冰「闪融」：西伯利亚永冻土单日塌陷速率打破百年纪录",
+        "ja": "地下氷の「瞬間融解」：シベリア永久凍土の1日あたりの崩壊速度が100年記録を更新",
+        "ko": "지하 얼음 「순간 용융」: 시베리아 영구동토 단일일 붕괴 속도가 100년 기록 경신"
+      },
+      "tag": {
+        "zh-TW": "🌍 氣候地球",
+        "en": "🌍 Climate & Earth",
+        "zh-CN": "🌍 气候地球",
+        "ja": "🌍 気候・地球",
+        "ko": "🌍 기후 지구"
+      },
+      "tech": {
+        "zh-TW": "衛星干涉雷達（InSAR）與野外感測器聯合監測顯示，2025年夏季西伯利亞雅庫特地區出現「熱喀斯特脈衝」事件，地表單日沉降量達 14 公分，比過去文獻記錄的最高值高出 3 倍，伴隨甲烷通量驟增 800%，顯示非線性崩潰機制已被觸發。",
+        "en": "Combined InSAR satellite and in-situ sensor monitoring revealed a thermokarst pulse event in Yakutia in summer 2025, with single-day surface subsidence of 14 cm—three times the previous record—accompanied by an 800% spike in methane flux, indicating a nonlinear collapse mechanism has been triggered.",
+        "zh-CN": "卫星干涉雷达（InSAR）与野外传感器联合监测显示，2025年夏季西伯利亚雅库特地区出现「热喀斯特脉冲」事件，地表单日沉降量达 14 厘米，比过去文献记录的最高值高出 3 倍，伴随甲烷通量骤增 800%，显示非线性崩溃机制已被触发。",
+        "ja": "InSAR衛星とin-situセンサーの複合監視により、2025年夏にヤクーチアでサーモカルストパルス現象が発生、1日あたり地表沈下量14cmは従来記録の3倍に達し、メタンフラックスが800%急増、非線形崩壊メカニズムが引き起こされたことが示された。",
+        "ko": "InSAR 위성과 현장 센서 복합 모니터링 결과, 2025년 여름 야쿠티아에서 서모카르스트 펄스 현상이 발생해 단일일 지표 침하량 14cm를 기록, 기존 최고치의 3배에 달했으며 메탄 플럭스가 800% 급증해 비선형 붕괴 메커니즘이 촉발됐음이 드러났다."
+      },
+      "plain": {
+        "zh-TW": "西伯利亞的地底冰層正在以過去從未見過的速度在一天之內崩塌，像是地面突然「洩氣」下陷，同時釋放大量溫室氣體甲烷，形成暖化加速的惡性循環。",
+        "en": "The frozen ground beneath Siberia is collapsing within a single day at speeds never recorded before, releasing huge amounts of methane and creating a vicious cycle of accelerating warming.",
+        "zh-CN": "西伯利亚的地底冰层正在以过去从未见过的速度在一天之内崩塌，像是地面突然「泄气」下陷，同时释放大量温室气体甲烷，形成暖化加速的恶性循环。",
+        "ja": "シベリアの地下氷が過去に例のない速さで一日のうちに崩壊し、地面が突然「萎む」ように沈下しながら大量のメタンを放出し、温暖化を加速する悪循環を形成している。",
+        "ko": "시베리아 지하 얼음이 하루 안에 전례 없는 속도로 붕괴되며 지면이 갑자기 꺼지는 현상이 나타나고, 동시에 대량의 메탄이 방출되어 온난화 가속의 악순환이 형성되고 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 永凍土崩塌已從「漸進式退化」轉為「脈衝式跳躍」，這意味著全球碳預算模型可能系統性低估了來自北極的碳反饋量。",
+        "en": "💡 Permafrost collapse has shifted from gradual degradation to pulsed jumps, meaning global carbon budget models may be systematically underestimating Arctic carbon feedback.",
+        "zh-CN": "💡 永冻土崩塌已从「渐进式退化」转为「脉冲式跳跃」，这意味着全球碳预算模型可能系统性低估了来自北极的碳反馈量。",
+        "ja": "💡 永久凍土の崩壊は「漸進的な劣化」から「パルス的な急変」へと移行しており、世界の炭素収支モデルが北極からの炭素フィードバック量を系統的に過小評価している可能性がある。",
+        "ko": "💡 영구동토 붕괴가 「점진적 퇴화」에서 「펄스형 급변」으로 전환됨에 따라, 전 세계 탄소 예산 모델이 북극 탄소 피드백량을 체계적으로 과소평가하고 있을 가능성이 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n  <rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n  <rect x=\"0\" y=\"90\" width=\"340\" height=\"70\" fill=\"#5a3e2b\"/>\n  <rect x=\"0\" y=\"110\" width=\"340\" height=\"50\" fill=\"#3d2812\"/>\n  <path d=\"M0,90 Q40,75 80,88 Q120,100 160,82 Q200,65 240,85 Q280,100 340,88 L340,90 L0,90 Z\" fill=\"#7a5c3a\"/>\n  <path d=\"M60,90 Q80,60 100,90\" fill=\"#a8d4e8\" stroke=\"#a8d4e8\" stroke-width=\"1\"/>\n  <path d=\"M100,90 Q130,50 160,90\" fill=\"#a8d4e8\" stroke=\"#a8d4e8\" stroke-width=\"1\"/>\n  <path d=\"M160,90 Q190,55 220,90\" fill=\"#a8d4e8\" stroke=\"#a8d4e8\" stroke-width=\"1\"/>\n  <path d=\"M80,92 Q110,115 140,92 Q170,115 200,92 Q170,130 140,115 Q110,130 80,92 Z\" fill=\"#e8590c\" opacity=\"0.85\"/>\n  <ellipse cx=\"140\" cy=\"93\" rx=\"60\" ry=\"12\" fill=\"#e8590c\" opacity=\"0.6\"/>\n  <circle cx=\"100\" cy=\"45\" r=\"6\" fill=\"#e8590c\" opacity=\"0.7\"/>\n  <circle cx=\"140\" cy=\"25\" r=\"9\" fill=\"#e8590c\" opacity=\"0.5\"/>\n  <circle cx=\"180\" cy=\"38\" r=\"5\" fill=\"#e8590c\" opacity=\"0.6\"/>\n</svg>"
+    },
+    {
+      "id": "space-2607d",
+      "domain": "space",
+      "day": "2026-07-19",
+      "author": "Valenti et al. / Nature Astronomy 2026",
+      "ref": "Nature Astronomy 2026",
+      "url": "https://doi.org/10.1038/s41550-026-02387-4",
+      "color": "#1a237e",
+      "title": {
+        "zh-TW": "韋伯望遠鏡首次直接拍到「自由漂浮行星」大氣層",
+        "en": "JWST Directly Images Atmosphere of a Free-Floating Planet",
+        "zh-CN": "韦伯望远镜首次直接拍到「自由漂浮行星」大气层",
+        "ja": "JWSTが「自由浮遊惑星」の大気を初めて直接撮像",
+        "ko": "제임스 웹 망원경, 자유 부유 행성의 대기 첫 직접 촬영"
+      },
+      "tag": {
+        "zh-TW": "🌌 天文宇宙",
+        "en": "🌌 Space",
+        "zh-CN": "🌌 天文宇宙",
+        "ja": "🌌 宇宙天文",
+        "ko": "🌌 우주 천문"
+      },
+      "tech": {
+        "zh-TW": "韋伯太空望遠鏡利用中紅外線儀器（MIRI）對一顆質量約7倍木星、無母恆星的自由漂浮行星（ONC-FFPL-1）進行光譜分析，偵測到水蒸氣、甲烷與氨的吸收特徵，並確認其大氣溫度約為1050 K。此為人類首次對孤立行星大氣進行直接光譜解析，打破過去只能間接推斷的限制。",
+        "en": "Using JWST MIRI spectroscopy on the free-floating planet ONC-FFPL-1 (~7 Jupiter masses), researchers detected water vapor, methane, and ammonia absorption features and confirmed an atmospheric temperature of ~1050 K, marking the first direct spectral characterization of an isolated planetary-mass object.",
+        "zh-CN": "韦伯太空望远镜利用中红外线仪器（MIRI）对一颗约7倍木星质量、无母恒星的自由漂浮行星进行光谱分析，探测到水蒸气、甲烷与氨的吸收特征，大气温度约1050 K。这是人类首次对孤立行星大气进行直接光谱解析。",
+        "ja": "JWSTのMIRI分光器で、母星を持たない自由浮遊惑星（木星の約7倍質量）の大気を分析。水蒸気・メタン・アンモニアの吸収特徴を検出し、大気温度は約1050 Kと確認。孤立した惑星大気の直接分光解析は史上初。",
+        "ko": "제임스 웹 우주망원경의 MIRI 분광기를 이용해 모항성 없는 자유 부유 행성（목성 질량 약 7배）의 대기에서 수증기, 메탄, 암모니아 흡수 특성을 감지하고 대기 온도 약 1050 K를 확인했다. 고립 행성 대기의 첫 직접 분광 분석이다."
+      },
+      "plain": {
+        "zh-TW": "宇宙中有些行星沒有依附任何星球，孤單地漂浮在星際間。韋伯望遠鏡首次「嗅到」這種孤獨行星的空氣成分，發現裡面有水和甲烷！",
+        "en": "Some planets wander alone in space with no star to orbit. JWST has now sniffed the atmosphere of one of these lonely worlds for the first time, finding water and methane.",
+        "zh-CN": "宇宙中有些行星孤独地漂浮在星际间，没有依附任何恒星。韦伯望远镜首次＂嗅到＂这种孤独行星的空气成分，发现里面含有水和甲烷！",
+        "ja": "宇宙には親星を持たず孤独に漂う惑星がある。JWSTがそんな「はぐれ惑星」の大気を初めて嗅ぎ取り、水とメタンを発見した！",
+        "ko": "우주에는 모항성 없이 혼자 떠다니는 행성이 있다. 제임스 웹 망원경이 그런 외로운 행성의 대기를 처음으로 분석해 물과 메탄을 발견했다!"
+      },
+      "insight": {
+        "zh-TW": "💡 連沒有「太陽」的行星也可能擁有複雜大氣，宇宙中適合生命的化學環境或許遠比我們想像的更普遍。",
+        "en": "💡 Even planets without a sun can host complex atmospheres, suggesting the chemistry favorable to life may be far more widespread than we imagined.",
+        "zh-CN": "💡 即使没有「太阳」的行星也可能拥有复杂大气，宇宙中适合生命的化学环境或许远比我们想象的更普遍。",
+        "ja": "💡 「太陽」を持たない惑星でも複雑な大気を持てるなら、生命に適した化学環境は宇宙でずっと普遍的かもしれない。",
+        "ko": "💡 태양 없는 행성도 복잡한 대기를 가질 수 있다면, 생명에 유리한 화학 환경은 우주에서 훨씬 보편적일 수 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#1a237e18\"/>\n<rect width=\"340\" height=\"160\" fill=\"#1a237e\"/>\n<circle cx=\"40\" cy=\"30\" r=\"2\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"90\" cy=\"15\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"150\" cy=\"25\" r=\"1\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<circle cx=\"220\" cy=\"10\" r=\"2\" fill=\"#ffffff\" opacity=\"0.4\"/>\n<circle cx=\"300\" cy=\"20\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"320\" cy=\"50\" r=\"1\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"60\" cy=\"80\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.3\"/>\n<circle cx=\"10\" cy=\"120\" r=\"1\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"330\" cy=\"130\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.4\"/>\n<circle cx=\"260\" cy=\"145\" r=\"1\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<circle cx=\"100\" cy=\"140\" r=\"1.5\" fill=\"#ffffff\" opacity=\"0.3\"/>\n<circle cx=\"180\" cy=\"150\" r=\"1\" fill=\"#ffffff\" opacity=\"0.5\"/>\n<circle cx=\"80\" cy=\"55\" r=\"28\" fill=\"#3949ab\"/>\n<circle cx=\"80\" cy=\"55\" r=\"24\" fill=\"#283593\"/>\n<circle cx=\"80\" cy=\"55\" r=\"18\" fill=\"#5c6bc0\"/>\n<circle cx=\"80\" cy=\"55\" r=\"12\" fill=\"#7986cb\"/>\n<circle cx=\"80\" cy=\"55\" r=\"28\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"3\" opacity=\"0.5\"/>\n<circle cx=\"80\" cy=\"55\" r=\"35\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"1.5\" opacity=\"0.3\"/>\n<circle cx=\"80\" cy=\"55\" r=\"42\" fill=\"none\" stroke=\"#80cbc4\" stroke-width=\"1\" opacity=\"0.2\"/>\n<path d=\"M240 80 L310 45 L315 55 L245 90 Z\" fill=\"#1565c0\" opacity=\"0.8\"/>\n<path d=\"M245 90 L315 55 L318 70 L248 105 Z\" fill=\"#0d47a1\" opacity=\"0.9\"/>\n<rect x=\"238\" y=\"78\" width=\"80\" height=\"30\" rx=\"4\" fill=\"#1565c0\"/>\n<rect x=\"238\" y=\"78\" width=\"80\" height=\"30\" rx=\"4\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"1.5\"/>\n<line x1=\"248\" y1=\"88\" x2=\"308\" y2=\"88\" stroke=\"#4fc3f7\" stroke-width=\"1\" opacity=\"0.6\"/>\n<line x1=\"248\" y1=\"96\" x2=\"308\" y2=\"96\" stroke=\"#80cbc4\" stroke-width=\"1\" opacity=\"0.4\"/>\n<circle cx=\"258\" cy=\"92\" r=\"4\" fill=\"#4fc3f7\" opacity=\"0.8\"/>\n<circle cx=\"272\" cy=\"92\" r=\"3\" fill=\"#80cbc4\" opacity=\"0.7\"/>\n<line x1=\"108\" y1=\"55\" x2=\"238\" y2=\"93\" stroke=\"#4fc3f7\" stroke-width=\"1.5\" stroke-dasharray=\"6,4\" opacity=\"0.7\"/>\n<circle cx=\"140\" cy=\"64\" r=\"4\" fill=\"#80cbc4\" opacity=\"0.6\"/>\n<circle cx=\"175\" cy=\"74\" r=\"3\" fill=\"#4fc3f7\" opacity=\"0.5\"/>\n<circle cx=\"210\" cy=\"84\" r=\"4\" fill=\"#80cbc4\" opacity=\"0.6\"/>\n<polygon points=\"80,27 83,36 92,36 85,42 88,51 80,45 72,51 75,42 68,36 77,36\" fill=\"#ffd54f\" opacity=\"0.15\"/>\n</svg>"
+    },
+    {
+      "id": "bio-2607e",
+      "domain": "bio",
+      "day": "2026-07-19",
+      "author": "Sánchez-Iranzo et al. / Science 2026",
+      "ref": "Science 2026",
+      "url": "https://doi.org/10.1126/science.adp8821",
+      "color": "#52b788",
+      "title": {
+        "zh-TW": "斑馬魚心臟再生的「基因開關」：單細胞定序揭開再生細胞的身份之謎",
+        "en": "The Genetic Switch for Zebrafish Heart Regeneration Revealed by Single-Cell Sequencing",
+        "zh-CN": "斑马鱼心脏再生的「基因开关」：单细胞测序揭开再生细胞的身份之谜",
+        "ja": "ゼブラフィッシュ心臓再生の「遺伝子スイッチ」：単一細胞解析で再生細胞の正体が判明",
+        "ko": "제브라피시 심장 재생의 「유전자 스위치」: 단일세포 시퀀싱으로 재생 세포의 정체 규명"
+      },
+      "tag": {
+        "zh-TW": "🧬 生命科學",
+        "en": "🧬 Biology",
+        "zh-CN": "🧬 生命科学",
+        "ja": "🧬 生命科学",
+        "ko": "🧬 생명 과학"
+      },
+      "tech": {
+        "zh-TW": "研究團隊以單細胞多組學（scRNA-seq 結合 scATAC-seq）追蹤斑馬魚心肌受損後的細胞重程式化過程，鑑定出一群表達 nppa＋/hand2＋ 的「邊界心肌細胞」，其染色質開放區域集中於 pitx2 與 klf4 調控子附近，是驅動心肌增生的關鍵。在哺乳類心臟中人工激活同源路徑，可使大鼠心梗後再生效率提升3倍。",
+        "en": "Using single-cell multi-omics (scRNA-seq + scATAC-seq), researchers tracked cellular reprogramming after zebrafish cardiac injury, identifying a nppa＋/hand2＋ border cardiomyocyte population whose open chromatin regions center on pitx2 and klf4 regulators. Activating the homologous pathway in rats tripled post-infarction regeneration efficiency.",
+        "zh-CN": "研究团队以单细胞多组学追踪斑马鱼心肌受损后的细胞重程式化过程，鉴定出一群表达nppa＋/hand2＋的「边界心肌细胞」，染色质开放区域集中于pitx2与klf4调控子附近。在哺乳类心脏中人工激活同源路径，使大鼠心梗后再生效率提升3倍。",
+        "ja": "単一細胞マルチオミクスでゼブラフィッシュ心筋損傷後の細胞リプログラミングを追跡し、nppa＋/hand2＋「境界心筋細胞」を同定。そのクロマチン開放領域はpitx2・klf4調節因子付近に集中していた。哺乳類心臓で同経路を活性化するとラット心筋梗塞後の再生効率が3倍向上した。",
+        "ko": "단일세포 멀티오믹스로 제브라피시 심근 손상 후 세포 리프로그래밍을 추적해 nppa＋/hand2＋ 경계 심근세포 집단을 확인했다. 이 세포의 열린 염색질 영역은 pitx2·klf4 조절 인자 근처에 집중되며, 포유류 심장에서 동일 경로를 활성화하면 재생 효율이 3배 향상된다."
+      },
+      "plain": {
+        "zh-TW": "斑馬魚心臟受傷後能完全復原，但人類卻不行。科學家找到了斑馬魚心臟再生的「主控開關基因」，並在老鼠身上成功讓受損心臟的修復速度快了3倍！",
+        "en": "Zebrafish can fully heal a damaged heart, but humans cannot. Scientists found the master switch genes behind this superpower and used them to triple heart repair speed in rats.",
+        "zh-CN": "斑马鱼心脏受伤后能完全复原，但人类却不行。科学家找到了斑马鱼心脏再生的「主控开关基因」，并在老鼠身上成功让受损心脏的修复速度快了3倍！",
+        "ja": "ゼブラフィッシュは心臓が傷ついても完全回復できるが、人間にはその能力がない。科学者がその「マスタースイッチ遺伝子」を発見し、ラットで心臓修復速度を3倍にすることに成功した！",
+        "ko": "제브라피시는 손상된 심장을 완전히 재생할 수 있지만 인간은 그렇지 못하다. 과학자들이 그 비밀의 「마스터 스위치 유전자」를 찾아내 쥐의 심장 회복 속도를 3배 높이는 데 성공했다!"
+      },
+      "insight": {
+        "zh-TW": "💡 心臟再生能力或許從未在演化中消失，只是被「沉默」了——找到沉默的開關，就可能重新喚醒人類心臟的自我修復力。",
+        "en": "💡 The ability to regenerate hearts may never have been lost in evolution, just silenced — finding that switch could reawaken the human heart's self-repair power.",
+        "zh-CN": "💡 心脏再生能力或许从未在演化中消失，只是被「沉默」了——找到沉默的开关，就可能重新唤醒人类心脏的自我修复力。",
+        "ja": "💡 心臓再生能力は進化で失われたのではなく、ただ「沈黙」していた可能性がある。そのスイッチを見つければ、人間の心臓の自己修復力を再び目覚めさせられるかもしれない。",
+        "ko": "💡 심장 재생 능력은 진화 과정에서 사라진 게 아니라 단지 '침묵'했을 뿐일 수 있다. 그 스위치를 찾으면 인간 심장의 자기 회복력을 다시 깨울 수 있을지 모른다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#52b78818\"/>\n<path d=\"M40 80 C40 50, 80 30, 80 80 C80 110, 40 120, 40 80Z M80 80 C80 50, 120 30, 120 80 C120 110, 80 120, 80 80Z\" fill=\"#52b788\" opacity=\"0.85\"/>\n<circle cx=\"80\" cy=\"78\" r=\"10\" fill=\"#ffffff\" opacity=\"0.6\"/>\n<path d=\"M130 78 L165 78\" stroke=\"#52b788\" stroke-width=\"2.5\" stroke-dasharray=\"5,3\"/>\n<polygon points=\"163,73 173,78 163,83\" fill=\"#52b788\"/>\n<path d=\"M185 80 C185 50, 225 30, 225 80 C225 110, 185 120, 185 80Z M225 80 C225 50, 265 30, 265 80 C265 110, 225 120, 225 80Z\" fill=\"#52b788\" opacity=\"0.6\"/>\n<circle cx=\"225\" cy=\"75\" r=\"6\" fill=\"#e76f51\" opacity=\"0.9\"/>\n<circle cx=\"225\" cy=\"75\" r=\"3\" fill=\"#ffffff\" opacity=\"0.8\"/>\n<path d=\"M215 60 L225 50 L235 60\" stroke=\"#e76f51\" stroke-width=\"2\" fill=\"none\"/>\n<line x1=\"225\" y1=\"50\" x2=\"225\" y2=\"42\" stroke=\"#e76f51\" stroke-width=\"2\"/>\n<circle cx=\"225\" cy=\"38\" r=\"5\" fill=\"#f4a261\" opacity=\"0.9\"/>\n<path d=\"M60 140 Q80 128 100 140 Q120 128 140 140\" stroke=\"#52b788\" stroke-width=\"1.5\" fill=\"none\" opacity=\"0.5\"/>\n</svg>"
+    },
+    {
+      "id": "climate-2607f",
+      "domain": "climate",
+      "day": "2026-07-19",
+      "author": "Witze et al. / Nature Geoscience 2026",
+      "ref": "Nature Geoscience 2026",
+      "url": "https://doi.org/10.1038/s41561-026-01384-7",
+      "color": "#e8590c",
+      "title": {
+        "zh-TW": "地球「反照率」急速下滑：衛星數據揭示地球反射率30年新低創下能量失衡警報",
+        "en": "Earth's Albedo Hits 30-Year Low: Satellite Data Reveals Deepening Energy Imbalance",
+        "zh-CN": "地球「反照率」急速下滑：卫星数据揭示地球反射率30年新低创下能量失衡警报",
+        "ja": "地球「アルベド」が急低下：衛星データが30年ぶりの反射率最低値とエネルギー不均衡を示す",
+        "ko": "지구 「반사율」 급락: 위성 데이터, 30년 만의 최저 반사율과 에너지 불균형 경보 확인"
+      },
+      "tag": {
+        "zh-TW": "🌍 地球氣候",
+        "en": "🌍 Climate",
+        "zh-CN": "🌍 地球气候",
+        "ja": "🌍 地球気候",
+        "ko": "🌍 지구 기후"
+      },
+      "tech": {
+        "zh-TW": "研究整合CERES衛星（2000-2025年）與地球光測光（Earthshine）觀測，發現地球反照率從2000年的約0.298持續下降至2025年的0.287，降幅相當於額外截留0.6 W/m²的太陽輻射。主要驅動因子為北冰洋海冰喪失（佔54%）以及低雲覆蓋率在副熱帶地區下降（佔31%），兩者皆形成正回饋環路加速增溫。",
+        "en": "Combining CERES satellite records (2000-2025) with Earthshine photometry, researchers found Earth's albedo declined from ~0.298 to 0.287, equivalent to an additional 0.6 W/m² of retained solar energy. Arctic sea-ice loss (54%) and declining low-cloud cover in subtropics (31%) are the main drivers, both forming positive feedback loops.",
+        "zh-CN": "研究整合CERES卫星（2000-2025年）与地球光测光观测，发现地球反照率从约0.298下降至0.287，相当于额外截留0.6 W/m²的太阳辐射。主要驱动因子为北冰洋海冰减少（占54%）以及副热带低云覆盖率下降（占31%），两者均形成正反馈环路加速增温。",
+        "ja": "CERES衛星（2000-2025年）と地球光測光を統合し、地球アルベドが約0.298から0.287に低下したことを確認。追加保持太陽エネルギーは0.6 W/m²相当。北極海氷損失（54%）と亜熱帯低雲減少（31%）が主因で、どちらも正のフィードバックループを形成し温暖化を加速させる。",
+        "ko": "CERES 위성（2000-2025년）과 지구광 측광을 결합해 지구 반사율이 약 0.298에서 0.287로 하락한 것을 확인했다. 이는 0.6 W/m²의 추가 태양 에너지 보유에 해당한다. 북극 해빙 감소（54%）와 아열대 저운량 감소（31%）가 주요 원인으로, 두 요인 모두 양성 피드백 고리를 형성해 온난화를 가속한다."
+      },
+      "plain": {
+        "zh-TW": "地球就像一面鏡子，會把部分陽光反射回太空。但這30年來，這面「鏡子」愈來愈暗——因為白色的冰融化了、雲也變少了，地球吸收的熱量比以前多得多。",
+        "en": "Earth acts like a mirror, reflecting some sunlight back to space. But over 30 years, this mirror has been getting darker — melting ice and fewer clouds mean the planet is absorbing far more heat than before.",
+        "zh-CN": "地球就像一面镜子，会把部分阳光反射回太空。但这30年来，这面「镜子」越来越暗——因为白色的冰融化了、云也变少了，地球吸收的热量比以前多得多。",
+        "ja": "地球は鏡のように太陽光の一部を宇宙へ反射している。しかしこの30年で、その「鏡」はどんどん暗くなっている。氷が溶け、雲が減ったことで、地球は以前より格段に多くの熱を吸収している。",
+        "ko": "지구는 거울처럼 햇빛 일부를 우주로 반사한다. 그런데 30년 동안 이 '거울'이 점점 어두워지고 있다. 얼음이 녹고 구름이 줄어들면서 지구는 예전보다 훨씬 많은 열을 흡수하고 있다."
+      },
+      "insight": {
+        "zh-TW": "💡 地球的「冷卻機制」正在失靈，而且冰融化→反射率降低→更多熱量→更多冰融化，這個惡性循環一旦啟動，僅靠減排已難以完全煞車。",
+        "en": "💡 Earth's natural cooling mechanisms are failing, and the vicious cycle of melting ice → lower reflectivity → more heat → more melting means emission cuts alone may no longer be enough to stop it.",
+        "zh-CN": "💡 地球的「冷却机制」正在失灵，冰融化→反射率降低→更多热量→更多冰融化的恶性循环一旦启动，仅靠减排已难以完全刹车。",
+        "ja": "💡 地球の「冷却機構」が機能不全に陥りつつある。氷融解→反射率低下→熱増加→さらなる氷融解という悪循環が始まれば、排出削減だけでは止められないかもしれない。",
+        "ko": "💡 지구의 '냉각 메커니즘'이 고장 나고 있다. 얼음 감소→반사율 하락→열 증가→더 많은 얼음 감소라는 악순환이 시작되면, 탄소 감축만으로는 멈출 수 없을 수도 있다."
+      },
+      "illus": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 160\">\n<rect width=\"340\" height=\"160\" fill=\"#e8590c18\"/>\n<circle cx=\"60\" cy=\"80\" r=\"45\" fill=\"#1a6eb5\"/>\n<circle cx=\"60\" cy=\"80\" r=\"45\" fill=\"#ffffff\" opacity=\"0.15\"/>\n<polygon points=\"35,55 25,45 15,55 25,65\" fill=\"#ffffff\" opacity=\"0.9\"/>\n<polygon points=\"60,42 48,30 36,42 48,54\" fill=\"#ffffff\" opacity=\"0.7\"/>\n<polygon points=\"85,58 75,48 65,58 75,68\" fill=\"#ffffff\" opacity=\"0.4\"/>\n<line x1=\"140\" y1=\"80\" x2=\"200\" y2=\"80\" stroke=\"#e8590c\" stroke-width=\"3\" stroke-dasharray=\"6,3\"/>\n<circle cx=\"230\" cy=\"80\" r=\"45\" fill=\"#1a6eb5\"/>\n<circle cx=\"230\" cy=\"80\" r=\"45\" fill=\"#e8590c\" opacity=\"0.25\"/>\n<polygon points=\"218,52 208,42 198,52 208,62\" fill=\"#ffffff\" opacity=\"0.25\"/>\n<path d=\"M110,30 L130,50 M110,80 L140,80 M110,130 L130,110\" stroke=\"#e8590c\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n<path d=\"M95,20 Q105,15 115,25 Q125,35 115,45\" stroke=\"#e8590c\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/>\n</svg>"
+    }
+  ]
+}
